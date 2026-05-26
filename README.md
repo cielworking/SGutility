@@ -1,4 +1,4 @@
-# 🇸🇬 SG Utility Dashboard
+# SG Utility Dashboard
 
 A modern Singapore utility dashboard built using HTML, CSS, and JavaScript.
 
