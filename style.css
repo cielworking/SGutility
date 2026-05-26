@@ -858,3 +858,235 @@ small {
   font-size: 20px;
 }
 
+/* =========================
+   FINAL MOBILE FIX
+   iPhone / small browsers
+========================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+table,
+div,
+section {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 30px 16px 34px;
+  }
+
+  header h1 {
+    font-size: 30px;
+    line-height: 1.15;
+    word-break: keep-all;
+  }
+
+  header p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .grid {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 12px 32px;
+    margin: 18px auto;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .wide-card,
+  .half-card {
+    grid-column: span 1;
+  }
+
+  .card {
+    width: 100%;
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .card-header {
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .card h2 {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  .card p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .card-header a {
+    font-size: 11px;
+    padding: 6px 9px;
+  }
+
+  .result {
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  /* SG Pools mobile */
+  .sgpools-layout {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pool-panel {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .pool-panel-title {
+    gap: 10px;
+  }
+
+  .pool-panel-title h3 {
+    font-size: 16px;
+  }
+
+  .pool-panel-title span {
+    font-size: 10px;
+  }
+
+  .pool-summary-strip {
+    gap: 6px;
+  }
+
+  .pool-summary-strip span {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .sgpools-prizes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+  }
+
+  .sgpools-prize {
+    padding: 8px 5px;
+  }
+
+  .sgpools-prize span {
+    font-size: 10px;
+  }
+
+  .sgpools-prize strong {
+    font-size: 18px;
+  }
+
+  .pool-number-section {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .number-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+  }
+
+  .number-grid span {
+    min-width: 0;
+    font-size: 11px;
+    padding: 7px 3px;
+  }
+
+  .toto-numbers span,
+  .toto-lucky span {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .lucky-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .lucky-actions button {
+    font-size: 12px;
+    padding: 9px 6px;
+  }
+
+  /* COE mobile */
+  .row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    font-size: 12px;
+  }
+
+  .row strong {
+    text-align: left;
+    font-size: 12px;
+  }
+
+  /* Petrol mobile */
+  .petrol-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .petrol-header,
+  .petrol-row {
+    min-width: 620px;
+    grid-template-columns: 1.2fr repeat(5, 0.9fr);
+    font-size: 12px;
+  }
+
+  .brand-cell img {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* BTO mobile */
+  .bto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bto-tile {
+    flex-direction: column;
+  }
+
+  .bto-status {
+    text-align: left;
+  }
+
+  /* Quick info mobile */
+  .quick-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-tile {
+    flex-direction: column;
+    padding: 13px;
+  }
+
+  .quick-tile strong {
+    font-size: 19px;
+  }
+
+  .quick-tile p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .quick-tile a {
+    align-self: flex-start;
+  }
+
+  .note {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+}
