@@ -34,7 +34,7 @@ def clean_text(value):
 def main():
     with sync_playwright() as p:
         browser = p.chromium.launch(
-            headless=False
+            headless=True
         )
 
         context = browser.new_context(
