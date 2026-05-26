@@ -136,7 +136,7 @@ This project is for educational and personal portfolio purposes.
 
 # 👨‍💻 Author
 
-Created by Jia Hao
+Created by Ciel
 
 GitHub:
 https://github.com/cielworking
