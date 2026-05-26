@@ -2,9 +2,10 @@ name: Update Dashboard Data
 
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "15 11 * * *"   # 7:15 PM SGT
+    - cron: "45 13 * * *"   # 9:45 PM SGT backup
   workflow_dispatch:
-
+  
 permissions:
   contents: write
 
