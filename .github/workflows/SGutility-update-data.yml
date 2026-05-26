@@ -1,0 +1,42 @@
+name: Update Dashboard Data
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: python -m playwright install chromium
+
+      - name: Run update scripts
+        run: |
+          python scripts/update-coe.py
+          python scripts/update-petrol.py
+          python scripts/update-quickinfo.py
+          python scripts/update-sgpools.py
+          python scripts/update-bto.py
+
+      - name: Commit updated data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update dashboard data"
+          file_pattern: data/*.json

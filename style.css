@@ -1,0 +1,860 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f4f7fb;
+  --card: rgba(255, 255, 255, 0.86);
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --blue: #2563eb;
+  --green: #16a34a;
+  --red: #dc2626;
+  --orange: #f97316;
+  --purple: #8b5cf6;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 30%),
+    linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+  color: var(--text);
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #2563eb 0%, #172554 100%);
+  color: white;
+  text-align: center;
+  padding: 42px 20px 46px;
+  box-shadow: 0 12px 34px rgba(37, 99, 235, 0.18);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 850;
+  letter-spacing: -1.2px;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  opacity: 0.88;
+}
+
+/* Layout */
+.grid {
+  max-width: 1280px;
+  margin: 28px auto;
+  padding: 0 20px 48px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.wide-card {
+  grid-column: span 2;
+}
+
+.half-card {
+  grid-column: span 1;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wide-card,
+  .half-card {
+    grid-column: span 1;
+  }
+}
+/* Cards */
+.card {
+  background: var(--card);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow:
+    0 12px 38px rgba(15, 23, 42, 0.07),
+    0 2px 10px rgba(15, 23, 42, 0.04);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 48px rgba(15, 23, 42, 0.11),
+    0 4px 18px rgba(15, 23, 42, 0.05);
+}
+
+.sgpools-card { border-top: 5px solid var(--blue); }
+.coe-card { border-top: 5px solid var(--orange); }
+.petrol-card { border-top: 5px solid var(--green); }
+.bto-card { border-top: 5px solid var(--red); }
+.quick-card { border-top: 5px solid var(--purple); }
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 850;
+  letter-spacing: -0.6px;
+}
+
+.card h2::before {
+  margin-right: 10px;
+}
+
+.sgpools-card h2::before { content: "🎲"; }
+.coe-card h2::before { content: "🚗"; }
+.petrol-card h2::before { content: "⛽"; }
+.bto-card h2::before { content: "🏠"; }
+.quick-card h2::before { content: "🇸🇬"; }
+
+.card p {
+  margin: 0 0 18px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.card-header a,
+.row a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 750;
+  color: var(--blue);
+  background: rgba(37, 99, 235, 0.08);
+  padding: 7px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.card-header a:hover,
+.row a:hover {
+  background: rgba(37, 99, 235, 0.14);
+}
+
+/* Result Container */
+.result {
+  margin-top: 16px;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.9), rgba(241, 245, 249, 0.9));
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.note {
+  margin-top: 14px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Generic Rows */
+.row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px dashed #d4dce8;
+  font-size: 13px;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row strong {
+  text-align: right;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.up { color: var(--red); }
+.down { color: var(--green); }
+
+/* Singapore Pools */
+.sgpools-layout {
+  display: grid;
+  grid-template-columns: 1.28fr 0.72fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* Tighten Singapore Pools overall */
+.pool-panel {
+  padding: 16px;
+}
+
+.pool-panel-title {
+  margin-bottom: 12px;
+}
+
+.pool-panel-title h3 {
+  font-size: 17px;
+}
+
+.pool-panel-title span {
+  font-size: 11px;
+}
+
+/* Make 4D prizes tighter */
+.sgpools-prizes {
+  gap: 10px;
+}
+
+.sgpools-prize {
+  padding: 10px;
+}
+
+.sgpools-prize strong {
+  font-size: 22px;
+}
+
+/* Compact starter/consolation */
+.pool-number-section {
+  margin-top: 14px;
+  gap: 14px;
+}
+
+.pool-number-section h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.number-grid {
+  gap: 6px;
+}
+
+.number-grid span {
+  min-width: 48px;
+  padding: 8px 6px;
+  font-size: 12px;
+  border-radius: 9px;
+}
+
+/* Make TOTO card shorter */
+.pool-side-grid {
+  gap: 14px;
+}
+
+.pool-side-grid .pool-panel {
+  padding: 14px;
+}
+
+.toto-numbers {
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.toto-numbers span {
+  width: 38px;
+  height: 38px;
+  font-size: 16px;
+}
+
+/* Additional number compact */
+.toto-additional {
+  margin-top: 10px;
+  padding: 10px 12px;
+}
+
+.toto-additional strong {
+  font-size: 24px;
+}
+
+/* Lucky Pick compact */
+.lucky-box h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.lucky-actions {
+  gap: 8px;
+}
+
+.lucky-actions button {
+  padding: 10px 8px;
+  font-size: 13px;
+}
+
+.lucky-result {
+  margin-top: 10px;
+  min-height: 42px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.four-d-lucky {
+  font-size: 28px;
+  letter-spacing: 4px;
+}
+
+/* Reduce giant empty bottom */
+.sgpools-card .result {
+  padding-bottom: 10px;
+}
+
+.pool-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+.pool-panel-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.pool-panel-title h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 850;
+}
+
+.pool-panel-title span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+  text-align: right;
+}
+
+.sgpools-prizes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.sgpools-prize {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  text-align: center;
+}
+
+.sgpools-prize span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.sgpools-prize strong {
+  font-size: 24px;
+  color: var(--text);
+}
+
+.sgpools-prize.first strong {
+  color: var(--red);
+}
+
+.pool-number-section {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.pool-number-section h4 {
+  margin: 0 0 10px;
+  font-size: 15px;
+}
+
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+.number-grid span {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 9px 8px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.pool-side-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.toto-numbers,
+.toto-lucky {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.toto-numbers {
+  margin-top: 14px;
+}
+
+.toto-numbers span,
+.toto-lucky span {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 850;
+}
+
+.toto-additional {
+  margin-top: 14px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.toto-additional span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.toto-additional strong {
+  font-size: 26px;
+  color: var(--red);
+}
+
+/* Lucky Pick */
+.lucky-box {
+  margin-top: 0;
+}
+
+.lucky-box h3 {
+  margin: 0 0 12px;
+  font-size: 17px;
+  font-weight: 850;
+}
+
+.lucky-actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.lucky-actions button,
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 11px 12px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lucky-actions button:hover,
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.24);
+}
+
+.lucky-result {
+  margin-top: 12px;
+  min-height: 56px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 13px;
+  color: #475569;
+  font-size: 13px;
+}
+
+.four-d-lucky {
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 7px;
+  color: var(--red);
+  text-align: center;
+}
+
+.lucky-additional {
+  margin-top: 10px;
+  color: #475569;
+  font-size: 13px;
+}
+
+.lucky-additional strong {
+  color: var(--red);
+  font-size: 20px;
+}
+
+.lucky-box small {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+/* COE / Generic Data */
+small {
+  font-size: 11px;
+}
+
+/* Petrol Table */
+.petrol-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.petrol-header,
+.petrol-row {
+  display: grid;
+  grid-template-columns: 1.3fr repeat(5, 1fr);
+  gap: 12px;
+  align-items: center;
+  min-width: 760px;
+}
+
+.petrol-header {
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 800;
+  color: #475569;
+  border-bottom: 2px solid #d0d5dd;
+}
+
+.petrol-row {
+  padding: 11px 0;
+  border-bottom: 1px dashed #d0d5dd;
+  font-size: 13px;
+}
+
+.petrol-row:last-child {
+  border-bottom: none;
+}
+
+.petrol-row span {
+  font-weight: 800;
+}
+
+.brand-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-cell img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 4px;
+  border: 1px solid var(--border);
+}
+
+.na {
+  color: #b6bec9;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.cheapest {
+  color: var(--green);
+  font-weight: 900;
+}
+
+.cheapest small {
+  display: block;
+  margin-top: 3px;
+  font-size: 10px;
+  color: var(--green);
+}
+
+/* BTO */
+.bto-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.bto-tile {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.bto-town {
+  display: block;
+  font-size: 17px;
+  font-weight: 850;
+}
+
+.bto-tile p {
+  margin: 7px 0 5px;
+  font-size: 13px;
+  color: #334155;
+}
+
+.bto-tile small {
+  color: var(--muted);
+}
+
+.bto-status {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.bto-status strong {
+  display: block;
+  color: var(--green);
+  font-size: 13px;
+}
+
+/* Quick Info */
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.quick-tile {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.quick-label {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+
+.quick-tile strong {
+  font-size: 22px;
+}
+
+.quick-tile p {
+  margin: 7px 0 0;
+  font-size: 13px;
+  color: #475569;
+}
+
+.quick-tile a {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Animation */
+.rolling {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+
+.final {
+  animation: popIn 0.35s ease;
+}
+
+.toto-lucky span {
+  animation: ballRoll 0.2s linear;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.3;
+  }
+
+  60% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes ballRoll {
+  0% {
+    transform: translateY(-8px) scale(0.9);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .sgpools-layout,
+  .pool-number-section,
+  .bto-grid,
+  .quick-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sgpools-prizes {
+    grid-template-columns: 1fr;
+  }
+
+  .number-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header h1 {
+    font-size: 34px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .row strong {
+    text-align: left;
+  }
+}
+
+/* Compact Singapore Pools layout fix */
+.pool-panel {
+  min-height: auto !important;
+}
+
+.sgpools-layout {
+  align-items: start;
+}
+
+.pool-panel-main {
+  min-height: auto !important;
+}
+
+.sgpools-prizes {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pool-number-section {
+  margin-top: 16px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.number-grid {
+  grid-template-columns: repeat(5, auto);
+  justify-content: start;
+}
+
+.number-grid span {
+  min-width: 56px;
+}
+
+.sgpools-card .result {
+  padding-bottom: 14px;
+}
+
+.pool-summary-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.pool-summary-strip span {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  padding: 7px 12px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.pool-summary-strip strong {
+  color: #0f172a;
+}
+
+/* Make TOTO + Lucky Pick more compact */
+.pool-side-grid .pool-panel {
+  padding: 16px;
+}
+
+.pool-side-grid .pool-panel-title h3 {
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.pool-side-grid .pool-panel-title span {
+  font-size: 12px;
+}
+
+.pool-side-grid .toto-numbers span,
+.pool-side-grid .toto-lucky span {
+  width: 42px;
+  height: 42px;
+  font-size: 17px;
+}
+
+.pool-side-grid .toto-additional {
+  padding: 14px;
+  margin-top: 14px;
+}
+
+.pool-side-grid .toto-additional strong {
+  font-size: 30px;
+}
+
+.pool-side-grid .lucky-actions button {
+  padding: 12px 10px;
+  font-size: 14px;
+}
+
+.pool-side-grid .lucky-result {
+  min-height: 50px;
+  padding: 12px;
+}
+
+.pool-side-grid .lucky-box h3 {
+  font-size: 20px;
+}
+

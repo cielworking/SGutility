@@ -1,0 +1,19 @@
+{
+  "source_name": "Official Singapore sources",
+  "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+  "last_updated": "2026-05-26T04:57:09.709335+00:00",
+  "items": [
+    {
+      "label": "Next Public Holiday",
+      "value": "Hari Raya Haji",
+      "detail": "27 May 2026, Wednesday",
+      "url": "https://www.mom.gov.sg/employment-practices/public-holidays"
+    },
+    {
+      "label": "CDC Vouchers 2026",
+      "value": "$300",
+      "detail": "Each Singaporean household can claim $300 CDC Vouchers for the 2026 tranche. Verify validity and eligibility from official CDC source.",
+      "url": "https://vouchers.cdc.gov.sg/"
+    }
+  ]
+}

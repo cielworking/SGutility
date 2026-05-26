@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SG Utility Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>SG Utility Dashboard</h1>
+    <p>Singapore transport, housing and daily information dashboard.</p>
+  </header>
+
+  <main class="grid">
+
+    <section class="card sgpools-card wide-card">
+  <div class="card-header">
+    <h2>Latest Singapore Pool Results</h2>
+    <a id="sgpoolsSourceLink" href="#" target="_blank" rel="noopener noreferrer">
+      Verify source
+    </a>
+  </div>
+
+  <p>Latest Singapore Pools 4D and TOTO draw result.</p>
+
+  <div id="sgpoolsResult" class="result"></div>
+</section>
+
+    <section class="card coe-card half-card">
+      <div class="card-header">
+        <h2>Latest COE Prices</h2>
+        <a id="coeSourceLink" href="#" target="_blank" rel="noopener noreferrer">Verify source</a>
+      </div>
+      <p>Latest COE bidding result from data.gov.sg / LTA.</p>
+      <div id="coeResult" class="result"></div>
+      
+    </section>
+
+        <section class="card bto-card half-card">
+      <div class="card-header">
+        <h2>Upcoming BTO Projects</h2>
+        <a id="btoSourceLink" href="#" target="_blank" rel="noopener noreferrer">Verify source</a>
+      </div>
+      <p>Upcoming BTO launch summary for Singapore home buyers.</p>
+      <div id="btoResult" class="result"></div>
+    </section>
+    
+    <section class="card petrol-card wide-card">
+      <div class="card-header">
+        <h2>Latest Petrol Price</h2>
+        <a id="petrolSourceLink" href="#" target="_blank" rel="noopener noreferrer">Verify source</a>
+      </div>
+      <p>Petrol prices can change frequently. Cross-check before pumping.</p>
+      <div id="petrolResult" class="result"></div>
+    </section>
+
+
+
+
+    <section class="card quick-card wide-card">
+      <div class="card-header">
+        <h2>Singapore Quick Info</h2>
+        <a id="quickSourceLink" href="#" target="_blank" rel="noopener noreferrer">Verify source</a>
+      </div>
+      <p>Small useful Singapore reminders in one place.</p>
+      <div id="quickInfo" class="result"></div>
+    </section>
+  </main>
+
+  <!--<div class="huat-box" id="huatBox">
+    <button class="huat-hide" onclick="hideHuat()">×</button>
+    <div class="huat-drag-handle" id="huatDragHandle">↕ Drag Me</div>
+    <div class="huat-title">🍍 Heng Ong Huat! 🍍</div>
+    <div id="huatNumber" class="huat-number">8888</div>
+    <button onclick="generateHuat()">HUAT AH!</button>
+  </div>
+-->
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+{
+  "source_name": "PetrolPrice.sg",
+  "source_url": "https://petrolprice.sg/",
+  "last_updated": "2026-05-26T04:56:57.767314+00:00",
+  "note": "Listed pump prices in SGD per litre. Discounts and card promotions are not included.",
+  "brands": [
+    {
+      "brand": "Esso",
+      "logo": "./assets/petrol/esso.png",
+      "ron92": "$3.43",
+      "ron95": "$3.46",
+      "ron98": "$3.98",
+      "premium": "N/A",
+      "diesel": "$4.48",
+      "url": "https://petrolprice.sg/"
+    },
+    {
+      "brand": "Shell",
+      "logo": "./assets/petrol/shell.png",
+      "ron92": "N/A",
+      "ron95": "$3.46",
+      "ron98": "$3.98",
+      "premium": "$4.20",
+      "diesel": "$4.42",
+      "url": "https://petrolprice.sg/"
+    },
+    {
+      "brand": "SPC",
+      "logo": "./assets/petrol/spc.png",
+      "ron92": "$3.39",
+      "ron95": "$3.42",
+      "ron98": "$3.93",
+      "premium": "N/A",
+      "diesel": "$4.32",
+      "url": "https://petrolprice.sg/"
+    },
+    {
+      "brand": "Caltex",
+      "logo": "./assets/petrol/caltex.png",
+      "ron92": "$3.43",
+      "ron95": "$3.46",
+      "ron98": "N/A",
+      "premium": "$4.16",
+      "diesel": "$4.42",
+      "url": "https://petrolprice.sg/"
+    },
+    {
+      "brand": "Sinopec",
+      "logo": "./assets/petrol/sinopec.png",
+      "ron92": "N/A",
+      "ron95": "$3.46",
+      "ron98": "$3.97",
+      "premium": "$4.10",
+      "diesel": "$4.41",
+      "url": "https://petrolprice.sg/"
+    },
+    {
+      "brand": "Smart Energy",
+      "logo": "./assets/petrol/smart-energy.png",
+      "ron92": "N/A",
+      "ron95": "$3.62",
+      "ron98": "$4.08",
+      "premium": "N/A",
+      "diesel": "$3.87",
+      "url": "https://petrolprice.sg/"
+    }
+  ]
+}
