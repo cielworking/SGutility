@@ -133,14 +133,15 @@ header p {
 .card-header a,
 .row a,
 .quick-tile a {
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 750;
-  color: var(--blue);
-  background: rgba(37, 99, 235, 0.08);
-  padding: 7px 12px;
-  border-radius: 999px;
-  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 800;
+  align-self: flex-start;
+  width: auto;
+  min-width: unset;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .result {
