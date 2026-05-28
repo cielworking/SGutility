@@ -12,7 +12,7 @@ This project combines useful Singapore daily information into a single clean das
 - 🚗 Latest COE prices
 - ⛽ Petrol price comparison
 - 🏠 Upcoming BTO projects
-- 🇸🇬 Singapore quick information
+- 🇸🇬 Upcoming holiday or Vouchers
 - 🎰 Lucky Pick generator
 - 📱 Fully responsive design
 
