@@ -1,39 +1,26 @@
 import json
 import pathlib
-import requests
-from bs4 import BeautifulSoup
-from datetime import datetime, timezone, date
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 OUTPUT_FILE = pathlib.Path("data/quick-info.json")
+HOLIDAY_FILE = pathlib.Path("data/public-holidays.json")
+CDC_FILE = pathlib.Path("data/cdc-vouchers.json")
 
 MOM_URL = "https://www.mom.gov.sg/employment-practices/public-holidays"
 CDC_URL = "https://vouchers.cdc.gov.sg/"
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 SGUtilityDashboard/1.0"
-}
-
-HOLIDAYS_2026 = [
-    {"name": "New Year's Day", "date": "2026-01-01"},
-    {"name": "Chinese New Year", "date": "2026-02-17"},
-    {"name": "Chinese New Year Holiday", "date": "2026-02-18"},
-    {"name": "Hari Raya Puasa", "date": "2026-03-20"},
-    {"name": "Good Friday", "date": "2026-04-03"},
-    {"name": "Labour Day", "date": "2026-05-01"},
-    {"name": "Hari Raya Haji", "date": "2026-05-27"},
-    {"name": "Vesak Day", "date": "2026-05-31"},
-    {"name": "National Day", "date": "2026-08-09"},
-    {"name": "Deepavali", "date": "2026-11-08"},
-    {"name": "Christmas Day", "date": "2026-12-25"}
-]
+SGT = ZoneInfo("Asia/Singapore")
 
 
 def get_next_holiday():
-    today = date.today()
+    today = datetime.now(SGT).date()
+
+    holidays = json.loads(HOLIDAY_FILE.read_text(encoding="utf-8"))
 
     upcoming = []
 
-    for item in HOLIDAYS_2026:
+    for item in holidays:
         holiday_date = datetime.strptime(item["date"], "%Y-%m-%d").date()
 
         if holiday_date >= today:
@@ -41,6 +28,8 @@ def get_next_holiday():
                 "name": item["name"],
                 "date": holiday_date
             })
+
+    upcoming.sort(key=lambda x: x["date"])
 
     if not upcoming:
         return {
@@ -50,21 +39,20 @@ def get_next_holiday():
 
     next_holiday = upcoming[0]
 
-    readable_date = next_holiday["date"].strftime("%d %b %Y, %A")
-
     return {
         "name": next_holiday["name"],
-        "detail": readable_date
+        "detail": next_holiday["date"].strftime("%d %b %Y, %A")
     }
 
 
 def main():
     next_holiday = get_next_holiday()
+    cdc = json.loads(CDC_FILE.read_text(encoding="utf-8"))
 
     output = {
         "source_name": "Official Singapore sources",
         "source_url": MOM_URL,
-        "last_updated": datetime.now(timezone.utc).isoformat(),
+        "last_updated": datetime.now(SGT).isoformat(),
         "items": [
             {
                 "label": "Next Public Holiday",
@@ -73,10 +61,10 @@ def main():
                 "url": MOM_URL
             },
             {
-                "label": "CDC Vouchers 2026",
-                "value": "$300",
-                "detail": "Each Singaporean household can claim $300 CDC Vouchers for the 2026 tranche. Verify validity and eligibility from official CDC source.",
-                "url": CDC_URL
+                "label": cdc["label"],
+                "value": cdc["value"],
+                "detail": cdc["detail"],
+                "url": cdc["url"]
             }
         ]
     }
