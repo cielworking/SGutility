@@ -1,13 +1,24 @@
 /* =========================================================
-   SG Utility Dashboard
-   1. Desktop / Base
-   2. Tablet
-   3. Mobile
-   4. Small Mobile
+   SG Utility Dashboard - Clean Responsive CSS
+   Sections:
+   1. Global / Variables
+   2. Header
+   3. Layout / Cards
+   4. Shared Components
+   5. News Carousel
+   6. Singapore Pools
+   7. COE
+   8. Petrol
+   9. BTO
+   10. Quick Info
+   11. Animations
+   12. Tablet
+   13. Mobile
+   14. Small Mobile
    ========================================================= */
 
 /* =========================
-   1. DESKTOP / BASE
+   1. GLOBAL / VARIABLES
    ========================= */
 
 * {
@@ -16,11 +27,14 @@
 
 :root {
   --bg: #f4f7fb;
-  --card: rgba(255, 255, 255, 0.92);
+  --card: rgba(255, 255, 255, 0.94);
   --panel: #ffffff;
+  --result: #f8fafc;
+
   --text: #0f172a;
   --muted: #64748b;
   --border: #e2e8f0;
+
   --blue: #2563eb;
   --green: #16a34a;
   --red: #dc2626;
@@ -44,7 +58,13 @@ body {
     linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
 }
 
-/* Header */
+a {
+  color: inherit;
+}
+
+/* =========================
+   2. HEADER
+   ========================= */
 
 header {
   background: linear-gradient(135deg, #2563eb 0%, #172554 100%);
@@ -60,7 +80,6 @@ header h1 {
   font-weight: 850;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  text-wrap: balance;
 }
 
 header p {
@@ -69,15 +88,17 @@ header p {
   font-size: 14px;
   line-height: 1.5;
   opacity: 0.92;
-  text-wrap: balance;
 }
 
-/* Main Layout */
+/* =========================
+   3. LAYOUT / CARDS
+   ========================= */
 
 .grid {
   max-width: 1240px;
   margin: 26px auto;
   padding: 0 18px 44px;
+
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
@@ -91,19 +112,19 @@ header p {
   grid-column: span 1;
 }
 
-/* Cards */
-
 .card {
   background: var(--card);
   backdrop-filter: blur(18px);
   border: 1px solid rgba(226, 232, 240, 0.9);
   border-radius: 22px;
   padding: 22px;
+
   box-shadow:
     0 12px 34px rgba(15, 23, 42, 0.07),
     0 2px 10px rgba(15, 23, 42, 0.04);
 }
 
+.news-card { border-top: 5px solid #ef4444; }
 .sgpools-card { border-top: 5px solid var(--blue); }
 .coe-card { border-top: 5px solid var(--orange); }
 .petrol-card { border-top: 5px solid var(--green); }
@@ -129,6 +150,7 @@ header p {
   margin-right: 9px;
 }
 
+.news-card h2::before { content: "🚨"; }
 .sgpools-card h2::before { content: "🎲"; }
 .coe-card h2::before { content: "🚗"; }
 .petrol-card h2::before { content: "⛽"; }
@@ -139,55 +161,6 @@ header p {
   margin: 0 0 15px;
   font-size: 14px;
   color: #475569;
-}
-
-/* Normal pill links */
-
-.card-header a,
-.row a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  padding: 7px 12px;
-  border-radius: 999px;
-  background: rgba(37, 99, 235, 0.08);
-  color: var(--blue);
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 750;
-  line-height: 1;
-  white-space: nowrap;
-  box-shadow: none;
-}
-
-/* Quick Info Verify button - fixed desktop shape */
-
-.quick-tile a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-start;
-
-  width: auto;
-  height: auto;
-  min-width: 0;
-  min-height: 0;
-
-  padding: 7px 12px;
-  border-radius: 999px;
-
-  background: rgba(37, 99, 235, 0.08);
-  color: var(--blue);
-  text-decoration: none;
-
-  font-size: 12px;
-  font-weight: 750;
-  line-height: 1;
-  white-space: nowrap;
-
-  box-shadow: none;
 }
 
 .result {
@@ -204,13 +177,40 @@ header p {
   color: var(--muted);
 }
 
-/* Generic Rows */
+/* =========================
+   4. SHARED COMPONENTS
+   ========================= */
+
+.card-header a,
+.row a,
+.quick-tile a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  height: auto;
+  padding: 7px 12px;
+  border-radius: 999px;
+
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--blue);
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1;
+  white-space: nowrap;
+
+  box-shadow: none;
+}
 
 .row {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 14px;
   align-items: center;
+
   padding: 9px 0;
   border-bottom: 1px dashed #d4dce8;
   font-size: 13px;
@@ -229,7 +229,143 @@ header p {
 .up { color: var(--red); }
 .down { color: var(--green); }
 
-/* SG Pools */
+/* =========================
+   5. NEWS CAROUSEL
+   ========================= */
+
+.news-card {
+  overflow: hidden;
+}
+
+.news-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.news-controls {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.news-controls button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.news-scroller {
+  width: 100%;
+  max-width: 100%;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 300px;
+  gap: 12px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 4px 4px 12px;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.news-card-item {
+  scroll-snap-align: start;
+
+  min-width: 0;
+  min-height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+
+  padding: 14px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  text-decoration: none;
+  color: var(--text);
+
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.news-card-item strong {
+  display: block;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.news-card-item small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.news-tag {
+  align-self: flex-start;
+
+  font-size: 11px;
+  font-weight: 850;
+  padding: 5px 9px;
+  border-radius: 999px;
+
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.news-crime {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.news-traffic,
+.news-transport {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.news-fire {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.news-housing {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.news-money {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* =========================
+   6. SINGAPORE POOLS
+   ========================= */
 
 .sgpools-layout {
   display: grid;
@@ -301,7 +437,7 @@ header p {
 }
 
 .sgpools-prize {
-  background: #fff;
+  background: white;
   border: 1px solid var(--border);
   border-radius: 13px;
   padding: 10px;
@@ -343,16 +479,17 @@ header p {
 }
 
 .number-grid span {
-  background: #ffffff;
-  border: 1px solid #dbe3ee;
-  border-radius: 10px;
-  min-height: 36px;
   min-width: 0;
+  min-height: 36px;
   padding: 0 6px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: white;
+  border: 1px solid #dbe3ee;
+  border-radius: 10px;
 
   text-align: center;
   font-size: 12px;
@@ -362,8 +499,6 @@ header p {
 
   box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
-
-/* TOTO */
 
 .toto-numbers,
 .toto-lucky {
@@ -381,12 +516,13 @@ header p {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-  color: white;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: white;
 
   font-size: 14px;
   font-weight: 850;
@@ -412,8 +548,6 @@ header p {
   color: var(--red);
 }
 
-/* Lucky Pick */
-
 .lucky-box h3 {
   margin: 0 0 8px;
   font-size: 15px;
@@ -431,8 +565,10 @@ button {
   border: none;
   border-radius: 10px;
   padding: 8px;
+
   background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: white;
+
   font-size: 12px;
   font-weight: 800;
   cursor: pointer;
@@ -475,7 +611,15 @@ button {
   font-size: 10px;
 }
 
-/* Petrol */
+/* =========================
+   7. COE
+   ========================= */
+
+/* COE uses generic .row styles */
+
+/* =========================
+   8. PETROL
+   ========================= */
 
 .petrol-table {
   width: 100%;
@@ -545,7 +689,9 @@ button {
   color: var(--green);
 }
 
-/* BTO */
+/* =========================
+   9. BTO
+   ========================= */
 
 .bto-grid {
   margin-top: 14px;
@@ -559,6 +705,7 @@ button {
   border: 1px solid var(--border);
   border-radius: 13px;
   padding: 13px;
+
   display: flex;
   justify-content: space-between;
   gap: 12px;
@@ -591,7 +738,9 @@ button {
   font-size: 13px;
 }
 
-/* Quick Info */
+/* =========================
+   10. QUICK INFO
+   ========================= */
 
 .quick-grid {
   display: grid;
@@ -604,6 +753,7 @@ button {
   border: 1px solid var(--border);
   border-radius: 13px;
   padding: 14px;
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -627,7 +777,9 @@ button {
   color: #475569;
 }
 
-/* Animation */
+/* =========================
+   11. ANIMATIONS
+   ========================= */
 
 .rolling {
   opacity: 0.7;
@@ -671,7 +823,7 @@ button {
 }
 
 /* =========================
-   2. TABLET
+   12. TABLET
    769px - 1024px
    ========================= */
 
@@ -689,10 +841,18 @@ button {
   .sgpools-layout {
     grid-template-columns: 1fr;
   }
+
+  .pool-number-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .news-scroller {
+    grid-auto-columns: 300px;
+  }
 }
 
 /* =========================
-   3. MOBILE
+   13. MOBILE
    421px - 768px
    ========================= */
 
@@ -707,18 +867,17 @@ button {
     padding: 24px 14px 28px;
   }
 
-header h1 {
-  font-size: clamp(24px, 8vw, 30px);
-  line-height: 1.2;
-  margin-bottom: 6px;
-}
+  header h1 {
+    font-size: clamp(24px, 8vw, 30px);
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
 
-header p {
-  font-size: 13px;
-  line-height: 1.45;
-  max-width: 34ch;
-  margin: 0 auto;
-}
+  header p {
+    max-width: 34ch;
+    font-size: 13px;
+    line-height: 1.45;
+  }
 
   .grid {
     width: 100%;
@@ -727,6 +886,11 @@ header p {
     padding: 0 10px 34px;
     grid-template-columns: 1fr;
     gap: 14px;
+  }
+
+  .wide-card,
+  .half-card {
+    grid-column: span 1;
   }
 
   .card {
@@ -767,6 +931,44 @@ header p {
     line-height: 1.35;
   }
 
+  /* Mobile - News */
+  .news-topbar {
+    align-items: center;
+    font-size: 10px;
+  }
+
+  .news-controls button {
+    width: 28px;
+    height: 28px;
+    font-size: 17px;
+  }
+
+  .news-scroller {
+    grid-auto-columns: 100%;
+    gap: 10px;
+    padding: 4px 0 12px;
+  }
+
+  .news-card-item {
+    min-height: 118px;
+    padding: 12px;
+  }
+
+  .news-card-item strong {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .news-card-item small {
+    font-size: 10px;
+  }
+
+  .news-tag {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  /* Mobile - SG Pools */
   .sgpools-layout {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -778,9 +980,8 @@ header p {
   }
 
   .pool-panel-title {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 8px;
+    flex-direction: column;
+    gap: 4px;
     margin-bottom: 9px;
   }
 
@@ -790,7 +991,7 @@ header p {
 
   .pool-panel-title span {
     font-size: 10px;
-    text-align: right;
+    text-align: left;
   }
 
   .pool-summary-strip {
@@ -821,9 +1022,8 @@ header p {
   }
 
   .pool-number-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 11px;
     margin-top: 11px;
   }
 
@@ -832,7 +1032,7 @@ header p {
   }
 
   .number-grid {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 5px;
   }
 
@@ -843,24 +1043,20 @@ header p {
     min-height: 34px;
     padding: 0 3px;
 
-    font-size: clamp(8px, 2.6vw, 11px);
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: -0.2px;
-
+    font-size: 11px;
     border-radius: 9px;
     white-space: nowrap;
   }
 
   .toto-numbers {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .toto-numbers span,
   .toto-lucky span {
-    width: 42px;
-    height: 42px;
-    font-size: 17px;
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
   }
 
   .lucky-actions {
@@ -876,6 +1072,7 @@ header p {
     font-size: 11px;
   }
 
+  /* Mobile - COE */
   .row {
     grid-template-columns: 1fr;
     gap: 3px;
@@ -888,6 +1085,7 @@ header p {
     font-size: 11px;
   }
 
+  /* Mobile - Petrol */
   .petrol-header,
   .petrol-row {
     min-width: 0;
@@ -911,9 +1109,10 @@ header p {
     font-size: 8px;
   }
 
+  /* Mobile - BTO / Quick */
   .bto-grid,
   .quick-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
   }
 
@@ -946,7 +1145,7 @@ header p {
 }
 
 /* =========================
-   4. SMALL MOBILE
+   14. SMALL MOBILE
    420px and below
    ========================= */
 
@@ -963,6 +1162,25 @@ header p {
     font-size: 17px;
   }
 
+  .result {
+    padding: 9px;
+  }
+
+  /* Small Mobile - News */
+  .news-scroller {
+    grid-auto-columns: 100%;
+  }
+
+  .news-card-item {
+    min-height: 110px;
+    padding: 11px;
+  }
+
+  .news-card-item strong {
+    font-size: 12px;
+  }
+
+  /* Small Mobile - SG Pools */
   .pool-panel {
     padding: 10px;
   }
@@ -979,13 +1197,8 @@ header p {
     font-size: 16px;
   }
 
-  .pool-number-section {
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-  }
-
   .number-grid {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 4px;
   }
 
@@ -993,18 +1206,18 @@ header p {
     height: 32px;
     min-height: 32px;
     padding: 0 2px;
-    font-size: clamp(7.5px, 2.3vw, 10px);
+    font-size: 10px;
     border-radius: 8px;
-    letter-spacing: -0.3px;
   }
 
   .toto-numbers span,
   .toto-lucky span {
-    width: 39px;
-    height: 39px;
-    font-size: 16px;
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
   }
 
+  /* Small Mobile - Petrol */
   .petrol-header,
   .petrol-row {
     grid-template-columns: 1.2fr repeat(5, 0.72fr);
@@ -1015,144 +1228,5 @@ header p {
   .brand-cell img {
     width: 20px;
     height: 20px;
-  }
-
-  .bto-grid,
-  .quick-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* =========================
-   NEWS CAROUSEL
-   ========================= */
-
-.news-card {
-  border-top: 5px solid #ef4444;
-}
-
-.news-card h2::before {
-  content: "🚨";
-}
-
-.news-topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-  font-size: 12px;
-  color: var(--muted);
-}
-
-.news-controls {
-  display: flex;
-  gap: 6px;
-}
-
-.news-controls button {
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  border-radius: 50%;
-  font-size: 18px;
-}
-
-.news-scroller {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 300px;
-  gap: 12px;
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 10px;
-  -webkit-overflow-scrolling: touch;
-}
-
-.news-card-item {
-  scroll-snap-align: start;
-  min-height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
-
-  padding: 14px;
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-
-  text-decoration: none;
-  color: var(--text);
-}
-
-.news-card-item strong {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.news-card-item small {
-  font-size: 11px;
-  color: var(--muted);
-}
-
-.news-tag {
-  align-self: flex-start;
-  font-size: 11px;
-  font-weight: 800;
-  padding: 4px 8px;
-  border-radius: 999px;
-}
-
-.news-crime {
-  background: #fee2e2;
-  color: #b91c1c;
-}
-
-.news-traffic,
-.news-transport {
-  background: #ffedd5;
-  color: #c2410c;
-}
-
-.news-fire {
-  background: #fef3c7;
-  color: #b45309;
-}
-
-.news-housing {
-  background: #dcfce7;
-  color: #15803d;
-}
-
-.news-money {
-  background: #dbeafe;
-  color: #1d4ed8;
-}
-
-/* MOBILE */
-
-@media screen and (max-width: 768px) {
-  .news-card {
-    overflow: hidden;
-  }
-
-  .news-scroller {
-    grid-auto-columns: 85vw;
-  }
-
-  .news-card-item {
-    min-height: 135px;
-  }
-
-  .news-card-item strong {
-    font-size: 13px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .news-scroller {
-    grid-auto-columns: 88vw;
   }
 }
