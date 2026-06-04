@@ -33,7 +33,7 @@ async function loadData() {
     renderBtoProjects();
     renderPetrolPrices();
     renderQuickInfo();
-    makeHuatDraggable();
+    //makeHuatDraggable();
 
   } catch (err) {
     console.error("Dashboard load failed:", err);

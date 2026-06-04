@@ -1023,6 +1023,10 @@ header p {
   }
 }
 
+/* =========================
+   NEWS CAROUSEL
+   ========================= */
+
 .news-card {
   border-top: 5px solid #ef4444;
 }
@@ -1051,41 +1055,41 @@ header p {
   height: 30px;
   padding: 0;
   border-radius: 50%;
-  font-size: 20px;
-  line-height: 1;
+  font-size: 18px;
 }
 
 .news-scroller {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: minmax(260px, 320px);
+  grid-auto-columns: 300px;
   gap: 12px;
   overflow-x: auto;
-  overscroll-behavior-x: contain;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  padding: 4px 4px 10px;
-  scrollbar-width: thin;
+  padding-bottom: 10px;
+  -webkit-overflow-scrolling: touch;
 }
 
 .news-card-item {
-  min-height: 150px;
   scroll-snap-align: start;
+  min-height: 150px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   justify-content: space-between;
-  padding: 15px;
+  gap: 10px;
+
+  padding: 14px;
   background: white;
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 14px;
+
   text-decoration: none;
   color: var(--text);
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
 }
 
 .news-card-item strong {
-  font-size: 15px;
-  line-height: 1.35;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 .news-card-item small {
@@ -1096,11 +1100,9 @@ header p {
 .news-tag {
   align-self: flex-start;
   font-size: 11px;
-  font-weight: 850;
-  padding: 5px 9px;
+  font-weight: 800;
+  padding: 4px 8px;
   border-radius: 999px;
-  background: #e2e8f0;
-  color: #334155;
 }
 
 .news-crime {
@@ -1129,16 +1131,28 @@ header p {
   color: #1d4ed8;
 }
 
+/* MOBILE */
+
 @media screen and (max-width: 768px) {
+  .news-card {
+    overflow: hidden;
+  }
+
   .news-scroller {
-    grid-auto-columns: minmax(230px, 82vw);
+    grid-auto-columns: 85vw;
   }
 
   .news-card-item {
-    min-height: 145px;
+    min-height: 135px;
   }
 
   .news-card-item strong {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .news-scroller {
+    grid-auto-columns: 88vw;
   }
 }
