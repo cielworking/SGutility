@@ -1271,6 +1271,28 @@ button {
 }
 
 /* checkpoint */
+
+.refresh-btn {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: none;
+
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--blue);
+
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+}
+
+.refresh-btn:hover {
+  background: rgba(37, 99, 235, 0.15);
+}
+
 .checkpoint-card {
   border-top: 5px solid #0ea5e9;
 }

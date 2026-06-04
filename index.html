@@ -30,25 +30,28 @@
 </section>
 
 <section class="card checkpoint-card wide-card">
-  <button onclick="refreshCheckpointData()" class="refresh-btn">
-  🔄 Refresh Cameras
-</button>
   <div class="card-header">
-    
-    <h2>Woodlands & Tuas Checkpoint</h2> 
-    
-    <a id="checkpointSourceLink" href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html" target="_blank" rel="noopener noreferrer"> 
-      Verify source
-      
-    </a>
+    <h2>Woodlands & Tuas Checkpoint</h2>
+
+    <div class="card-actions">
+      <button onclick="refreshCheckpointData()" class="refresh-btn">
+        🔄 Refresh
+      </button>
+
+      <a id="checkpointSourceLink"
+         href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html"
+         target="_blank"
+         rel="noopener noreferrer">
+        Verify source
+      </a>
+    </div>
   </div>
 
   <p>Latest official LTA checkpoint traffic camera images.</p>
 
-  <div id="checkpointResult" class="result"> 
+  <div id="checkpointResult" class="result">
     Loading checkpoint cameras...
   </div>
-  
 </section>
 
     <section class="card petrol-card wide-card">
@@ -130,6 +133,6 @@
   <div id="modalCaption" class="image-modal-caption"></div>
 </div>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
