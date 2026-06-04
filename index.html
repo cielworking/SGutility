@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
+
 <body>
   <header>
     <h1>SG Utility Dashboard</h1>
@@ -14,6 +15,19 @@
   </header>
 
   <main class="grid">
+
+      <section class="card news-card wide-card">
+    <div class="card-header">
+        <div>
+            <h2>Singapore Alerts</h2>
+            <p>Latest headlines and incidents</p>
+        </div>
+    </div>
+
+    <div id="news-result" class="result">
+        Loading latest headlines...
+    </div>
+</section>
 
     <section class="card sgpools-card wide-card">
   <div class="card-header">
@@ -56,9 +70,6 @@
       <div id="petrolResult" class="result"></div>
     </section>
 
-
-
-
     <section class="card quick-card wide-card">
       <div class="card-header">
         <h2>Quick Info</h2>
@@ -68,6 +79,8 @@
       <div id="quickInfo" class="result"></div>
     </section>
   </main>
+
+
 
   <!--<div class="huat-box" id="huatBox">
     <button class="huat-hide" onclick="hideHuat()">×</button>

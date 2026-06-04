@@ -3,6 +3,7 @@ let btoProjects = {};
 let petrolPrices = {};
 let quickInfo = {};
 let sgpoolsResults = {};
+let newsResults = {};
 let isRolling = false;
 
 async function loadData() {
@@ -15,6 +16,8 @@ async function loadData() {
 
     quickInfo = await fetch("./data/quick-info.json").then(r => r.json());
 
+    newsResults = await fetch("./data/news.json").then(r => r.json());
+
     try {
       sgpoolsResults = await fetch("./data/sgpools-results.json")
         .then(r => r.json());
@@ -24,6 +27,7 @@ async function loadData() {
       console.error("4D results failed:", e);
     }
 
+    renderNews();
     renderSourceLinks();
     renderCoePrices();
     renderBtoProjects();
@@ -35,6 +39,8 @@ async function loadData() {
     console.error("Dashboard load failed:", err);
   }
 }
+
+
 
 function formatTimestamp(timestamp) {
   if (!timestamp) return "Unknown";
@@ -61,6 +67,48 @@ function renderSourceLinks() {
   document.getElementById("petrolSourceLink").href = petrolPrices.source_url;
   document.getElementById("quickSourceLink").href = quickInfo.source_url;
   document.getElementById("sgpoolsSourceLink").href = sgpoolsResults.source_url;
+}
+
+function renderNews() {
+  const box = document.getElementById("news-result");
+  if (!box) return;
+
+  if (!newsResults.headlines || newsResults.headlines.length === 0) {
+    box.innerHTML = "No headlines available.";
+    return;
+  }
+
+  const topNews = newsResults.headlines.slice(0, 20);
+
+  box.innerHTML = `
+    <div class="news-topbar">
+      <span>Last updated: ${newsResults.last_updated}</span>
+
+      <div class="news-controls">
+        <button type="button" onclick="scrollNews(-1)">‹</button>
+        <button type="button" onclick="scrollNews(1)">›</button>
+      </div>
+    </div>
+
+    <div id="newsScroller" class="news-scroller">
+      ${topNews.map(item => `
+        <a class="news-card-item" href="${item.url}" target="_blank" rel="noopener noreferrer">
+          <span class="news-tag news-${item.category.toLowerCase()}">${item.category}</span>
+          <strong>${item.title}</strong>
+          <small>${item.source}${item.published ? " · " + item.published : ""}</small>
+        </a>
+      `).join("")}
+    </div>
+  `;
+}
+function scrollNews(direction) {
+  const scroller = document.getElementById("newsScroller");
+  if (!scroller) return;
+
+  scroller.scrollBy({
+    left: direction * 320,
+    behavior: "smooth"
+  });
 }
 
 function renderSgPoolsResults() {

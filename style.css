@@ -1022,3 +1022,123 @@ header p {
     grid-template-columns: 1fr;
   }
 }
+
+.news-card {
+  border-top: 5px solid #ef4444;
+}
+
+.news-card h2::before {
+  content: "🚨";
+}
+
+.news-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.news-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.news-controls button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.news-scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(260px, 320px);
+  gap: 12px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  padding: 4px 4px 10px;
+  scrollbar-width: thin;
+}
+
+.news-card-item {
+  min-height: 150px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 15px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.news-card-item strong {
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.news-card-item small {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.news-tag {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 850;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.news-crime {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.news-traffic,
+.news-transport {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.news-fire {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.news-housing {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.news-money {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+@media screen and (max-width: 768px) {
+  .news-scroller {
+    grid-auto-columns: minmax(230px, 82vw);
+  }
+
+  .news-card-item {
+    min-height: 145px;
+  }
+
+  .news-card-item strong {
+    font-size: 13px;
+  }
+}
