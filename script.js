@@ -5,6 +5,7 @@ let quickInfo = {};
 let sgpoolsResults = {};
 let newsResults = {};
 let isRolling = false;
+let hideGambling = localStorage.getItem("hideGambling") === "true";
 
 async function loadData() {
   try {
@@ -22,7 +23,7 @@ async function loadData() {
       sgpoolsResults = await fetch("./data/sgpools-results.json")
         .then(r => r.json());
 
-      renderSgPoolsResults();
+      applyGamblingVisibility();
     } catch (e) {
       console.error("4D results failed:", e);
     }
@@ -109,6 +110,31 @@ function scrollNews(direction) {
     left: direction * 320,
     behavior: "smooth"
   });
+}
+
+function applyGamblingVisibility() {
+  const box = document.getElementById("sgpoolsResult");
+  const btn = document.getElementById("toggleGamblingBtn");
+
+  if (!box || !btn) return;
+
+  if (hideGambling) {
+    box.innerHTML = `
+      <div class="gambling-hidden-box">
+        Singapore Pools results are hidden on this browser.
+      </div>
+    `;
+    btn.textContent = "Show";
+  } else {
+    renderSgPoolsResults();
+    btn.textContent = "Hide";
+  }
+}
+
+function toggleGamblingSection() {
+  hideGambling = !hideGambling;
+  localStorage.setItem("hideGambling", hideGambling ? "true" : "false");
+  applyGamblingVisibility();
 }
 
 function renderSgPoolsResults() {

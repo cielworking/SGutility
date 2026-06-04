@@ -1230,3 +1230,42 @@ button {
     height: 20px;
   }
 }
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hide-btn {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(220, 38, 38, 0.08);
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.gambling-hidden-box {
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .hide-btn {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+}
