@@ -26,8 +26,8 @@
 }
 
 :root {
-  --bg: #f4f7fb;
-  --card: rgba(255, 255, 255, 0.94);
+  --bg: #f10101d5;
+  --card: rgba(255, 255, 255, 0.747);
   --panel: #ffffff;
   --result: #f8fafc;
 
@@ -67,7 +67,7 @@ a {
    ========================= */
 
 header {
-  background: linear-gradient(135deg, #2563eb 0%, #172554 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #ff0a0a 100%);
   color: white;
   text-align: center;
   padding: 40px 18px 44px;
@@ -115,7 +115,7 @@ header p {
 .card {
   background: var(--card);
   backdrop-filter: blur(18px);
-  border: 1px solid rgba(226, 232, 240, 0.9);
+  border: 1px solid rgba(240, 229, 226, 0.9);
   border-radius: 22px;
   padding: 22px;
 
