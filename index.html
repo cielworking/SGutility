@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SG Utility Dashboard</title>
-  <link rel="stylesheet" href="style.css?v=2" />
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 
 
@@ -29,30 +29,37 @@
     </div>
 </section>
 
-<section class="card sgpools-card wide-card">
+<section class="card checkpoint-card wide-card">
+  <button onclick="refreshCheckpointData()" class="refresh-btn">
+  🔄 Refresh Cameras
+</button>
   <div class="card-header">
-    <h2>Latest Singapore Pool Results</h2>
-
-    <div class="card-actions">
-      <button id="toggleGamblingBtn" class="hide-btn" type="button" onclick="toggleGamblingSection()">
-        Hide
-      </button>
-
-      <a id="sgpoolsSourceLink" href="#" target="_blank" rel="noopener noreferrer">
-        Verify source
-      </a>
-    </div>
-  </div>
-
-  <p>Latest Singapore Pools 4D and TOTO draw result.</p>
-
-  <div id="sgpoolsResult" class="result"></div>
-</section>
-
     
+    <h2>Woodlands & Tuas Checkpoint</h2> 
+    
+    <a id="checkpointSourceLink" href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html" target="_blank" rel="noopener noreferrer"> 
+      Verify source
+      
     </a>
   </div>
-</div>
+
+  <p>Latest official LTA checkpoint traffic camera images.</p>
+
+  <div id="checkpointResult" class="result"> 
+    Loading checkpoint cameras...
+  </div>
+  
+</section>
+
+    <section class="card petrol-card wide-card">
+      <div class="card-header">
+        <h2>Latest Petrol Price</h2>
+        <a id="petrolSourceLink" href="#" target="_blank" rel="noopener noreferrer">Verify source</a>
+      </div>
+      <p>Petrol prices can change frequently. Cross-check before pumping.</p>
+      <div id="petrolResult" class="result"></div>
+    </section>
+
 
     <section class="card coe-card half-card">
       <div class="card-header">
@@ -73,14 +80,26 @@
       <div id="btoResult" class="result"></div>
     </section>
     
-    <section class="card petrol-card wide-card">
-      <div class="card-header">
-        <h2>Latest Petrol Price</h2>
-        <a id="petrolSourceLink" href="#" target="_blank" rel="noopener noreferrer">Verify source</a>
-      </div>
-      <p>Petrol prices can change frequently. Cross-check before pumping.</p>
-      <div id="petrolResult" class="result"></div>
-    </section>
+
+    <section class="card sgpools-card wide-card">
+  <div class="card-header">
+    <h2>Latest Singapore Pool Results</h2>
+
+    <div class="card-actions">
+      <button id="toggleGamblingBtn" class="hide-btn" type="button" onclick="toggleGamblingSection()">
+        Hide
+      </button>
+
+      <a id="sgpoolsSourceLink" href="#" target="_blank" rel="noopener noreferrer">
+        Verify source
+      </a>
+    </div>
+  </div>
+
+  <p>Latest Singapore Pools 4D and TOTO draw result.</p>
+
+  <div id="sgpoolsResult" class="result"></div>
+</section>
 
     <section class="card quick-card wide-card">
       <div class="card-header">
@@ -102,6 +121,14 @@
     <button onclick="generateHuat()">HUAT AH!</button>
   </div>
 -->
+
+<div id="imageModal" class="image-modal">
+  <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+
+  <img id="modalImage" class="image-modal-content">
+
+  <div id="modalCaption" class="image-modal-caption"></div>
+</div>
 
   <script src="script.js?v=2"></script>
 </body>

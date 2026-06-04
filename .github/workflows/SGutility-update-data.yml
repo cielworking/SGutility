@@ -36,6 +36,7 @@ jobs:
           python scripts/update-sgpools.py
           python scripts/update-bto.py
           python scripts/update-news.py
+          python scripts/update-checkpoints.py
 
       - name: Commit updated data
         uses: stefanzweifel/git-auto-commit-action@v5

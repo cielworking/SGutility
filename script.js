@@ -4,44 +4,96 @@ let petrolPrices = {};
 let quickInfo = {};
 let sgpoolsResults = {};
 let newsResults = {};
+let checkpointData = {};
 let isRolling = false;
 let hideGambling = localStorage.getItem("hideGambling") === "true";
 
 async function loadData() {
   try {
     coePrices = await fetch("./data/coe-prices.json").then(r => r.json());
-
     btoProjects = await fetch("./data/bto-projects.json").then(r => r.json());
-
     petrolPrices = await fetch("./data/petrol-prices.json").then(r => r.json());
-
     quickInfo = await fetch("./data/quick-info.json").then(r => r.json());
-
     newsResults = await fetch("./data/news.json").then(r => r.json());
+    await refreshCheckpointData();
 
     try {
-      sgpoolsResults = await fetch("./data/sgpools-results.json")
-        .then(r => r.json());
-
+      sgpoolsResults = await fetch("./data/sgpools-results.json").then(r => r.json());
       applyGamblingVisibility();
     } catch (e) {
-      console.error("4D results failed:", e);
+      console.error("Singapore Pools results failed:", e);
     }
 
     renderNews();
+    renderCheckpoints();
     renderSourceLinks();
     renderCoePrices();
     renderBtoProjects();
     renderPetrolPrices();
     renderQuickInfo();
-    //makeHuatDraggable();
 
   } catch (err) {
     console.error("Dashboard load failed:", err);
   }
 }
 
+async function refreshCheckpointData() {
+  const btn = document.querySelector(".refresh-btn");
 
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = "Refreshing...";
+  }
+
+  try {
+    const res = await fetch("https://api.data.gov.sg/v1/transport/traffic-images");
+    const payload = await res.json();
+
+    const cameras = payload.items[0].cameras;
+
+    const woodlands = [];
+    const tuas = [];
+
+    cameras.forEach(cam => {
+      const lat = cam.location.latitude;
+      const lon = cam.location.longitude;
+
+      const item = {
+        camera_id: cam.camera_id,
+        image: cam.image,
+        timestamp: cam.timestamp,
+        latitude: lat,
+        longitude: lon
+      };
+
+      if (lat >= 1.42 && lat <= 1.48 && lon >= 103.74 && lon <= 103.80) {
+        woodlands.push(item);
+      }
+
+      if (lat >= 1.30 && lat <= 1.37 && lon >= 103.62 && lon <= 103.68) {
+        tuas.push(item);
+      }
+    });
+
+    checkpointData = {
+      source_name: "LTA / data.gov.sg live API",
+      source_url: "https://api.data.gov.sg/v1/transport/traffic-images",
+      last_updated: new Date().toISOString(),
+      woodlands,
+      tuas
+    };
+
+    renderCheckpoints();
+
+  } catch (err) {
+    console.error("Live checkpoint refresh failed:", err);
+  }
+
+  if (btn) {
+    btn.disabled = false;
+    btn.textContent = "🔄 Refresh";
+  }
+}
 
 function formatTimestamp(timestamp) {
   if (!timestamp) return "Unknown";
@@ -67,8 +119,15 @@ function renderSourceLinks() {
   document.getElementById("btoSourceLink").href = btoProjects.source_url;
   document.getElementById("petrolSourceLink").href = petrolPrices.source_url;
   document.getElementById("quickSourceLink").href = quickInfo.source_url;
-  document.getElementById("sgpoolsSourceLink").href = sgpoolsResults.source_url;
+
+  if (sgpoolsResults.source_url) {
+    document.getElementById("sgpoolsSourceLink").href = sgpoolsResults.source_url;
+  }
 }
+
+/* =========================
+   NEWS
+   ========================= */
 
 function renderNews() {
   const box = document.getElementById("news-result");
@@ -102,6 +161,7 @@ function renderNews() {
     </div>
   `;
 }
+
 function scrollNews(direction) {
   const scroller = document.getElementById("newsScroller");
   if (!scroller) return;
@@ -111,6 +171,82 @@ function scrollNews(direction) {
     behavior: "smooth"
   });
 }
+
+/* =========================
+   CHECKPOINT CAMERAS
+   ========================= */
+
+function renderCheckpoints() {
+  const box = document.getElementById("checkpointResult");
+  if (!box) return;
+
+  const woodlands = checkpointData.woodlands || [];
+  const tuas = checkpointData.tuas || [];
+
+  function cameraGroup(title, cameras) {
+    return `
+      <div class="checkpoint-group">
+        <h3>${title}</h3>
+
+        ${
+          cameras.length
+            ? `<div class="checkpoint-grid">
+                ${cameras.slice(0, 4).map(cam => `
+                  <div class="checkpoint-camera"
+                       onclick="openImageModal('${cam.image}', '${title} - Camera ${cam.camera_id}')">
+                    <img src="${cam.image}" alt="${title} traffic camera ${cam.camera_id}">
+                    <span>Camera ${cam.camera_id}</span>
+                  </div>
+                `).join("")}
+              </div>`
+            : `<p class="checkpoint-empty">No camera images found.</p>`
+        }
+      </div>
+    `;
+  }
+
+  box.innerHTML = `
+    <div class="checkpoint-layout">
+      ${cameraGroup("Woodlands Checkpoint", woodlands)}
+      ${cameraGroup("Tuas Checkpoint", tuas)}
+    </div>
+
+    <div class="note">
+      Source: ${checkpointData.source_name}. Last fetched: ${formatTimestamp(checkpointData.last_updated)}.
+    </div>
+  `;
+}
+
+function openImageModal(imageUrl, caption) {
+  const modal = document.getElementById("imageModal");
+  const image = document.getElementById("modalImage");
+  const text = document.getElementById("modalCaption");
+
+  if (!modal || !image || !text) return;
+
+  image.src = imageUrl;
+  text.textContent = caption;
+  modal.classList.add("show");
+}
+
+function closeImageModal() {
+  const modal = document.getElementById("imageModal");
+  if (!modal) return;
+
+  modal.classList.remove("show");
+}
+
+window.addEventListener("click", function(event) {
+  const modal = document.getElementById("imageModal");
+
+  if (event.target === modal) {
+    closeImageModal();
+  }
+});
+
+/* =========================
+   GAMBLING HIDE / SHOW
+   ========================= */
 
 function applyGamblingVisibility() {
   const box = document.getElementById("sgpoolsResult");
@@ -137,8 +273,13 @@ function toggleGamblingSection() {
   applyGamblingVisibility();
 }
 
+/* =========================
+   SINGAPORE POOLS
+   ========================= */
+
 function renderSgPoolsResults() {
   const box = document.getElementById("sgpoolsResult");
+  if (!box) return;
 
   const fourD = sgpoolsResults.four_d;
   const toto = sgpoolsResults.toto;
@@ -233,6 +374,7 @@ function renderSgPoolsResults() {
 
 function generateFourD() {
   const resultBox = document.getElementById("luckyResult");
+  if (!resultBox) return;
 
   let counter = 0;
 
@@ -267,11 +409,11 @@ function generateFourD() {
 
 function generateToto() {
   const resultBox = document.getElementById("luckyResult");
+  if (!resultBox) return;
 
   let counter = 0;
 
   const interval = setInterval(() => {
-
     const numbers = [];
 
     while (numbers.length < 6) {
@@ -319,12 +461,16 @@ function generateToto() {
         </div>
       `;
     }
-
   }, 90);
 }
 
+/* =========================
+   COE
+   ========================= */
+
 function renderCoePrices() {
   const box = document.getElementById("coeResult");
+  if (!box) return;
 
   const categoryNames = {
     "Category A": "Cat A - Cars up to 1600cc / 130bhp",
@@ -367,8 +513,14 @@ function renderCoePrices() {
   `;
 }
 
+/* =========================
+   BTO
+   ========================= */
+
 function renderBtoProjects() {
   const box = document.getElementById("btoResult");
+  if (!box) return;
+
   const grouped = {};
 
   btoProjects.projects.forEach(item => {
@@ -418,8 +570,13 @@ function renderBtoProjects() {
   `;
 }
 
+/* =========================
+   PETROL
+   ========================= */
+
 function renderPetrolPrices() {
   const box = document.getElementById("petrolResult");
+  if (!box) return;
 
   function priceNumber(value) {
     if (!value || value === "N/A") return null;
@@ -489,8 +646,13 @@ function renderPetrolPrices() {
   `;
 }
 
+/* =========================
+   QUICK INFO
+   ========================= */
+
 function renderQuickInfo() {
   const box = document.getElementById("quickInfo");
+  if (!box) return;
 
   box.innerHTML = `
     <div class="quick-grid two-items">
@@ -513,111 +675,6 @@ function renderQuickInfo() {
       Source: ${quickInfo.source_name}. Last fetched: ${formatTimestamp(quickInfo.last_updated)}.
     </div>
   `;
-}
-
-function generateHuat() {
-  if (isRolling) return;
-
-  isRolling = true;
-
-  const finalNumber = Math.floor(Math.random() * 10000)
-    .toString()
-    .padStart(4, "0");
-
-  const display = document.getElementById("huatNumber");
-  display.textContent = "----";
-
-  const digits = ["-", "-", "-", "-"];
-  let currentDigit = 0;
-
-  function rollDigit() {
-    let rollCount = 0;
-    const targetDigit = finalNumber[currentDigit];
-
-    const rolling = setInterval(() => {
-      digits[currentDigit] = Math.floor(Math.random() * 10);
-      display.textContent = digits.join("");
-      rollCount++;
-
-      if (rollCount >= 15) {
-        clearInterval(rolling);
-        digits[currentDigit] = targetDigit;
-        display.textContent = digits.join("");
-
-        currentDigit++;
-
-        if (currentDigit < 4) {
-          setTimeout(rollDigit, 250);
-        } else {
-          isRolling = false;
-        }
-      }
-    }, 50);
-  }
-
-  rollDigit();
-}
-
-function hideHuat() {
-  document.getElementById("huatBox").style.display = "none";
-}
-
-function makeHuatDraggable() {
-  const box = document.getElementById("huatBox");
-  const handle = document.getElementById("huatDragHandle");
-
-  let dragging = false;
-  let offsetX = 0;
-  let offsetY = 0;
-
-  handle.addEventListener("mousedown", startDrag);
-  handle.addEventListener("touchstart", startDrag, { passive: false });
-
-  document.addEventListener("mousemove", drag);
-  document.addEventListener("touchmove", drag, { passive: false });
-
-  document.addEventListener("mouseup", stopDrag);
-  document.addEventListener("touchend", stopDrag);
-
-  function getPoint(event) {
-    if (event.touches && event.touches.length > 0) {
-      return event.touches[0];
-    }
-    return event;
-  }
-
-  function startDrag(event) {
-    event.preventDefault();
-    const point = getPoint(event);
-    const rect = box.getBoundingClientRect();
-
-    dragging = true;
-    offsetX = point.clientX - rect.left;
-    offsetY = point.clientY - rect.top;
-
-    box.style.right = "auto";
-    box.style.bottom = "auto";
-  }
-
-  function drag(event) {
-    if (!dragging) return;
-
-    event.preventDefault();
-    const point = getPoint(event);
-
-    let left = point.clientX - offsetX;
-    let top = point.clientY - offsetY;
-
-    left = Math.max(0, Math.min(left, window.innerWidth - box.offsetWidth));
-    top = Math.max(0, Math.min(top, window.innerHeight - box.offsetHeight));
-
-    box.style.left = `${left}px`;
-    box.style.top = `${top}px`;
-  }
-
-  function stopDrag() {
-    dragging = false;
-  }
 }
 
 loadData();
