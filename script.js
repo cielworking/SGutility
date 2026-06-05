@@ -706,14 +706,23 @@ function renderPetrolDiscounts() {
       const pumpPrice = priceNumber(brandPrice[fuelKey]);
       if (pumpPrice === null) return null;
 
-      const effectivePrice =
-        pumpPrice * (1 - discount.discount_percent / 100);
+      let effectivePrice;
+      let discountLabel;
+
+      if (discount.effective_prices && discount.effective_prices[fuelKey]) {
+        effectivePrice = Number(discount.effective_prices[fuelKey]);
+        discountLabel = "Published member price";
+      } else {
+        effectivePrice = pumpPrice * (1 - discount.discount_percent / 100);
+        discountLabel = `${discount.discount_percent}% off`;
+      }
 
       return {
         ...discount,
         logo: brandPrice.logo,
         pumpPrice,
-        effectivePrice
+        effectivePrice,
+        discountLabel
       };
     })
     .filter(Boolean)
@@ -738,7 +747,7 @@ function renderPetrolDiscounts() {
                  rel="noopener noreferrer">
                 <img src="${brandPrice?.logo || ""}" alt="${item.brand} logo">
                 <strong>${item.brand}</strong>
-                <span>${item.discount_percent}%</span>
+                <span>${item.discount_percent ? item.discount_percent + "%" : "Member"}</span>
                 <small>${item.card}</small>
               </a>
             `;
@@ -787,7 +796,7 @@ function renderPetrolDiscounts() {
 
                   <span>
                     ${item.card}
-                    <small>${item.discount_percent}% off</small>
+                    <small>${item.discountLabel}</small>
                   </span>
 
                   <strong class="effective-price">

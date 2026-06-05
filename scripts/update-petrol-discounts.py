@@ -41,6 +41,17 @@ DISCOUNTS = [
         "discount_percent": 24,
         "promo_url": "https://www.ocbc.com/personal-banking/cards/365-cashback-credit-card",
         "note": "Up to 24% fuel savings at Sinopec."
+    },
+    {
+        "brand": "Smart Energy",
+        "card": "Smart Member Price",
+        "promo_url": "https://www.smartenergy.sg/",
+        "effective_prices": {
+            "ron95": 2.57,
+            "ron98": 2.90,
+            "diesel": 2.62
+        },
+        "note": "Uses Smart Member published prices instead of percentage discount."
     }
 ]
 
@@ -50,7 +61,7 @@ def main():
         "source_name": SOURCE_NAME,
         "last_updated": datetime.now(timezone.utc).isoformat(),
         "fuel_type": "ron95",
-        "note": "Discounts may include instant discounts, rebates, cashback, membership savings, and/or minimum spend requirements. Always verify terms before use.",
+        "note": "Discounts may include instant discounts, rebates, cashback, membership savings, member prices, and/or minimum spend requirements. Always verify terms before use.",
         "discounts": DISCOUNTS
     }
 
