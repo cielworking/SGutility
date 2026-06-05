@@ -1413,3 +1413,24 @@ button {
 .checkpoint-camera {
   cursor: zoom-in;
 }
+
+.petrol-movement {
+  display: block;
+  margin-top: 3px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.petrol-up {
+  color: var(--red);
+}
+
+.petrol-down {
+  color: var(--green);
+}
+
+.petrol-flat {
+  color: var(--muted);
+  font-weight: 700;
+}

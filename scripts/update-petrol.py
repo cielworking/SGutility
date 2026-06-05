@@ -31,6 +31,8 @@ FUEL_KEY_MAP = {
     "Diesel": "diesel"
 }
 
+FUEL_KEYS = ["ron92", "ron95", "ron98", "premium", "diesel"]
+
 
 def clean_value(value):
     value = value.strip()
@@ -41,7 +43,55 @@ def clean_value(value):
     return value.replace(" ", "")
 
 
+def parse_price(value):
+    if not value or value == "N/A":
+        return None
+
+    try:
+        return float(value.replace("$", "").strip())
+    except ValueError:
+        return None
+
+
+def calculate_change(current, previous):
+    current_num = parse_price(current)
+    previous_num = parse_price(previous)
+
+    if current_num is None or previous_num is None:
+        return None
+
+    change = round(current_num - previous_num, 2)
+
+    percent = 0
+    if previous_num > 0:
+        percent = round((change / previous_num) * 100, 2)
+
+    return {
+        "previous": previous_num,
+        "change": change,
+        "percent": percent
+    }
+
+
+def load_old_brands():
+    if not OUTPUT_FILE.exists():
+        return {}
+
+    try:
+        old_data = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+    return {
+        item.get("brand"): item
+        for item in old_data.get("brands", [])
+        if item.get("brand")
+    }
+
+
 def main():
+    old_brands = load_old_brands()
+
     response = requests.get(SOURCE_URL, headers=HEADERS, timeout=30)
     response.raise_for_status()
 
@@ -84,16 +134,28 @@ def main():
     brands = []
 
     for brand in BRANDS:
-        brands.append({
+        previous_brand = old_brands.get(brand, {})
+        changes = {}
+
+        brand_data = {
             "brand": brand,
             "logo": LOGOS.get(brand, ""),
-            "ron92": fuel_rows.get("ron92", {}).get(brand, "N/A"),
-            "ron95": fuel_rows.get("ron95", {}).get(brand, "N/A"),
-            "ron98": fuel_rows.get("ron98", {}).get(brand, "N/A"),
-            "premium": fuel_rows.get("premium", {}).get(brand, "N/A"),
-            "diesel": fuel_rows.get("diesel", {}).get(brand, "N/A"),
             "url": SOURCE_URL
-        })
+        }
+
+        for fuel_key in FUEL_KEYS:
+            current_value = fuel_rows.get(fuel_key, {}).get(brand, "N/A")
+            previous_value = previous_brand.get(fuel_key, "N/A")
+
+            brand_data[fuel_key] = current_value
+
+            change_result = calculate_change(current_value, previous_value)
+
+            if change_result:
+                changes[fuel_key] = change_result
+
+        brand_data["changes"] = changes
+        brands.append(brand_data)
 
     output = {
         "source_name": SOURCE_NAME,

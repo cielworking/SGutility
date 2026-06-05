@@ -1,68 +1,195 @@
 {
   "source_name": "PetrolPrice.sg",
   "source_url": "https://petrolprice.sg/",
-  "last_updated": "2026-06-03T18:11:37.028963+00:00",
+  "last_updated": "2026-06-05T02:24:01.755777+00:00",
   "note": "Listed pump prices in SGD per litre. Discounts and card promotions are not included.",
   "brands": [
     {
       "brand": "Esso",
       "logo": "./assets/petrol/esso.png",
+      "url": "https://petrolprice.sg/",
       "ron92": "$3.43",
       "ron95": "$3.46",
       "ron98": "$3.98",
       "premium": "N/A",
       "diesel": "$4.37",
-      "url": "https://petrolprice.sg/"
+      "changes": {
+        "ron92": {
+          "previous": 3.43,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "ron95": {
+          "previous": 3.46,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "ron98": {
+          "previous": 3.98,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "diesel": {
+          "previous": 4.37,
+          "change": 0.0,
+          "percent": 0.0
+        }
+      }
     },
     {
       "brand": "Shell",
       "logo": "./assets/petrol/shell.png",
+      "url": "https://petrolprice.sg/",
       "ron92": "N/A",
       "ron95": "$3.46",
       "ron98": "$3.98",
       "premium": "$4.20",
       "diesel": "$4.37",
-      "url": "https://petrolprice.sg/"
+      "changes": {
+        "ron95": {
+          "previous": 3.46,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "ron98": {
+          "previous": 3.98,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "premium": {
+          "previous": 4.2,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "diesel": {
+          "previous": 4.37,
+          "change": 0.0,
+          "percent": 0.0
+        }
+      }
     },
     {
       "brand": "SPC",
       "logo": "./assets/petrol/spc.png",
+      "url": "https://petrolprice.sg/",
       "ron92": "$3.39",
       "ron95": "$3.42",
       "ron98": "$3.93",
       "premium": "N/A",
       "diesel": "$4.32",
-      "url": "https://petrolprice.sg/"
+      "changes": {
+        "ron92": {
+          "previous": 3.39,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "ron95": {
+          "previous": 3.42,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "ron98": {
+          "previous": 3.93,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "diesel": {
+          "previous": 4.32,
+          "change": 0.0,
+          "percent": 0.0
+        }
+      }
     },
     {
       "brand": "Caltex",
       "logo": "./assets/petrol/caltex.png",
+      "url": "https://petrolprice.sg/",
       "ron92": "$3.43",
       "ron95": "$3.46",
       "ron98": "N/A",
       "premium": "$4.16",
       "diesel": "$4.37",
-      "url": "https://petrolprice.sg/"
+      "changes": {
+        "ron92": {
+          "previous": 3.43,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "ron95": {
+          "previous": 3.46,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "premium": {
+          "previous": 4.16,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "diesel": {
+          "previous": 4.37,
+          "change": 0.0,
+          "percent": 0.0
+        }
+      }
     },
     {
       "brand": "Sinopec",
       "logo": "./assets/petrol/sinopec.png",
+      "url": "https://petrolprice.sg/",
       "ron92": "N/A",
       "ron95": "$3.46",
       "ron98": "$3.97",
       "premium": "$4.10",
       "diesel": "$4.36",
-      "url": "https://petrolprice.sg/"
+      "changes": {
+        "ron95": {
+          "previous": 3.46,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "ron98": {
+          "previous": 3.97,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "premium": {
+          "previous": 4.1,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "diesel": {
+          "previous": 4.36,
+          "change": 0.0,
+          "percent": 0.0
+        }
+      }
     },
     {
       "brand": "Smart Energy",
       "logo": "./assets/petrol/smart-energy.png",
+      "url": "https://petrolprice.sg/",
       "ron92": "N/A",
       "ron95": "$3.62",
       "ron98": "$4.08",
       "premium": "N/A",
       "diesel": "$3.69",
-      "url": "https://petrolprice.sg/"
+      "changes": {
+        "ron95": {
+          "previous": 3.62,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "ron98": {
+          "previous": 4.08,
+          "change": 0.0,
+          "percent": 0.0
+        },
+        "diesel": {
+          "previous": 3.69,
+          "change": 0.0,
+          "percent": 0.0
+        }
+      }
     }
   ]
 }

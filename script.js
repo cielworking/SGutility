@@ -574,6 +574,10 @@ function renderBtoProjects() {
    PETROL
    ========================= */
 
+/* =========================
+   PETROL
+   ========================= */
+
 function renderPetrolPrices() {
   const box = document.getElementById("petrolResult");
   if (!box) return;
@@ -604,11 +608,36 @@ function renderPetrolPrices() {
 
     const current = priceNumber(value);
     const isCheapest = current !== null && current === cheapest[key];
+    const changeInfo = item.changes ? item.changes[key] : null;
+
+    let movementHtml = "";
+
+    if (changeInfo && changeInfo.change !== 0) {
+      const change = Number(changeInfo.change);
+      const percent = Number(changeInfo.percent);
+      const isUp = change > 0;
+      const arrow = isUp ? "▲" : "▼";
+      const className = isUp ? "petrol-up" : "petrol-down";
+      const sign = isUp ? "+" : "-";
+
+      movementHtml = `
+        <small class="petrol-movement ${className}">
+          ${arrow} ${sign}$${Math.abs(change).toFixed(2)} (${sign}${Math.abs(percent).toFixed(2)}%)
+        </small>
+      `;
+    } else if (changeInfo && changeInfo.change === 0) {
+      movementHtml = `
+        <small class="petrol-movement petrol-flat">
+          — No change
+        </small>
+      `;
+    }
 
     return `
       <span class="${isCheapest ? "cheapest" : ""}">
         ${value}
-        ${isCheapest ? "<br><small>Cheapest</small>" : ""}
+        ${movementHtml}
+        ${isCheapest ? "<small>Cheapest</small>" : ""}
       </span>
     `;
   }
@@ -639,7 +668,7 @@ function renderPetrolPrices() {
         </div>
       `).join("")}
     </div>
-        
+
     <div class="note">
       Source: ${petrolPrices.source_name}. Last fetched: ${formatTimestamp(petrolPrices.last_updated)}. Listed pump prices in SGD per litre. Discounts and card promotions are not included.
     </div>
