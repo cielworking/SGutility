@@ -1,11 +1,13 @@
 let coePrices = {};
 let btoProjects = {};
 let petrolPrices = {};
+let petrolDiscounts = {};
 let quickInfo = {};
 let sgpoolsResults = {};
 let newsResults = {};
 let checkpointData = {};
 let isRolling = false;
+let selectedDiscountFuel = "ron95";
 let hideGambling = localStorage.getItem("hideGambling") === "true";
 
 async function loadData() {
@@ -13,6 +15,7 @@ async function loadData() {
     coePrices = await fetch("./data/coe-prices.json").then(r => r.json());
     btoProjects = await fetch("./data/bto-projects.json").then(r => r.json());
     petrolPrices = await fetch("./data/petrol-prices.json").then(r => r.json());
+    petrolDiscounts = await fetch("./data/petrol-discounts.json").then(r => r.json());
     quickInfo = await fetch("./data/quick-info.json").then(r => r.json());
     newsResults = await fetch("./data/news.json").then(r => r.json());
     await refreshCheckpointData();
@@ -574,10 +577,6 @@ function renderBtoProjects() {
    PETROL
    ========================= */
 
-/* =========================
-   PETROL
-   ========================= */
-
 function renderPetrolPrices() {
   const box = document.getElementById("petrolResult");
   if (!box) return;
@@ -669,12 +668,150 @@ function renderPetrolPrices() {
       `).join("")}
     </div>
 
+    ${renderPetrolDiscounts()}
+
     <div class="note">
       Source: ${petrolPrices.source_name}. Last fetched: ${formatTimestamp(petrolPrices.last_updated)}. Listed pump prices in SGD per litre. Discounts and card promotions are not included.
     </div>
   `;
 }
 
+function renderPetrolDiscounts() {
+  if (!petrolDiscounts.discounts || !petrolPrices.brands) return "";
+
+  const fuelKey = selectedDiscountFuel || "ron95";
+
+  const fuelLabels = {
+    ron92: "RON92",
+    ron95: "RON95",
+    ron98: "RON98",
+    premium: "Premium",
+    diesel: "Diesel"
+  };
+
+  function priceNumber(value) {
+    if (!value || value === "N/A") return null;
+    const match = value.match(/(\d+\.\d+)/);
+    return match ? Number(match[1]) : null;
+  }
+
+  const effectivePrices = petrolDiscounts.discounts
+    .map(discount => {
+      const brandPrice = petrolPrices.brands.find(
+        item => item.brand === discount.brand
+      );
+
+      if (!brandPrice) return null;
+
+      const pumpPrice = priceNumber(brandPrice[fuelKey]);
+      if (pumpPrice === null) return null;
+
+      const effectivePrice =
+        pumpPrice * (1 - discount.discount_percent / 100);
+
+      return {
+        ...discount,
+        logo: brandPrice.logo,
+        pumpPrice,
+        effectivePrice
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.effectivePrice - b.effectivePrice);
+
+  return `
+    <div class="petrol-extra-grid">
+
+      <div class="petrol-discount-panel">
+        <h3>💳 Best Petrol Discounts</h3>
+
+        <div class="petrol-discount-cards">
+          ${petrolDiscounts.discounts.map(item => {
+            const brandPrice = petrolPrices.brands.find(
+              brand => brand.brand === item.brand
+            );
+
+            return `
+              <a class="petrol-discount-card"
+                 href="${item.promo_url}"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                <img src="${brandPrice?.logo || ""}" alt="${item.brand} logo">
+                <strong>${item.brand}</strong>
+                <span>${item.discount_percent}%</span>
+                <small>${item.card}</small>
+              </a>
+            `;
+          }).join("")}
+        </div>
+      </div>
+
+      <div class="petrol-effective-panel full-width">
+        <div class="effective-title-row">
+          <h3>🏆 Effective Price After Discount</h3>
+
+          <select
+            class="fuel-selector"
+            onchange="selectedDiscountFuel = this.value; renderPetrolPrices();"
+          >
+            <option value="ron92" ${fuelKey === "ron92" ? "selected" : ""}>RON92</option>
+            <option value="ron95" ${fuelKey === "ron95" ? "selected" : ""}>RON95</option>
+            <option value="ron98" ${fuelKey === "ron98" ? "selected" : ""}>RON98</option>
+            <option value="premium" ${fuelKey === "premium" ? "selected" : ""}>Premium</option>
+            <option value="diesel" ${fuelKey === "diesel" ? "selected" : ""}>Diesel</option>
+          </select>
+        </div>
+
+        <div class="effective-fuel-note">
+          Showing estimated effective price for <strong>${fuelLabels[fuelKey]}</strong>.
+        </div>
+
+        <div class="effective-table">
+          <div class="effective-header">
+            <span>Brand</span>
+            <span>Pump</span>
+            <span>Discount Used</span>
+            <span>After Discount</span>
+          </div>
+
+          ${
+            effectivePrices.length
+              ? effectivePrices.map(item => `
+                <div class="effective-table-row">
+                  <div class="effective-brand">
+                    <img src="${item.logo}" alt="${item.brand} logo">
+                    <strong>${item.brand}</strong>
+                  </div>
+
+                  <span>$${item.pumpPrice.toFixed(2)}</span>
+
+                  <span>
+                    ${item.card}
+                    <small>${item.discount_percent}% off</small>
+                  </span>
+
+                  <strong class="effective-price">
+                    $${item.effectivePrice.toFixed(2)}/L
+                  </strong>
+                </div>
+              `).join("")
+              : `
+                <div class="effective-empty">
+                  No available pump price for ${fuelLabels[fuelKey]}.
+                </div>
+              `
+          }
+        </div>
+
+        <div class="petrol-discount-note">
+          Estimated only. Final savings may depend on card terms, caps, cashback,
+          membership, and minimum spend.
+        </div>
+      </div>
+
+    </div>
+  `;
+}
 /* =========================
    QUICK INFO
    ========================= */

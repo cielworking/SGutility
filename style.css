@@ -1434,3 +1434,208 @@ button {
   color: var(--muted);
   font-weight: 700;
 }
+
+/* =========================
+   9. PETROL - EXTRA INFO
+   ========================= */
+
+.petrol-extra-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.petrol-discount-panel,
+.petrol-effective-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.petrol-discount-panel h3,
+.petrol-effective-panel h3 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 850;
+}
+
+.petrol-discount-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 9px;
+}
+
+.petrol-discount-card {
+  text-decoration: none;
+  color: var(--text);
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  padding: 11px 8px;
+  text-align: center;
+}
+
+.petrol-discount-card img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 6px;
+}
+
+.petrol-discount-card strong,
+.petrol-discount-card small {
+  display: block;
+}
+
+.petrol-discount-card span {
+  display: block;
+  margin: 6px 0 4px;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--green);
+}
+
+.petrol-discount-card small {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.effective-table {
+  width: 100%;
+}
+
+.effective-header,
+.effective-table-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.7fr 1.4fr 0.9fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.effective-header {
+  padding: 8px 0;
+  border-bottom: 2px solid #d0d5dd;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.effective-table-row {
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 13px;
+}
+
+.effective-table-row:last-child {
+  border-bottom: none;
+}
+
+.effective-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.effective-brand img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.effective-table-row small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.effective-price {
+  color: var(--green);
+  font-size: 16px;
+}
+
+.petrol-discount-note {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+@media screen and (max-width: 768px) {
+  .petrol-discount-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .effective-header {
+    display: none;
+  }
+
+  .effective-table-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+
+  .effective-price {
+    font-size: 18px;
+  }
+}
+
+/* Test */
+.effective-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.effective-title-row h3 {
+  margin: 0;
+}
+
+.fuel-selector {
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: white;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.effective-fuel-note {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.effective-empty {
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .effective-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .fuel-selector {
+    width: 100%;
+  }
+}
