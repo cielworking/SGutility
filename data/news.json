@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-06-11 14:54",
+  "last_updated": "2026-06-11 17:27",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Malaysia police call for total vape ban after ‘Piu Piu’ drug found in e-liquids",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-police-vape-ban-piu-piu-drug-e-liquids-6176756",
-      "published": "2026-06-11 11:28"
-    },
     {
       "category": "Crime",
       "title": "Car turns turtle in Ubi: Driver, 61, arrested for drink driving",
@@ -30,27 +23,6 @@
       "published": "2026-06-11 12:08"
     },
     {
-      "category": "Traffic",
-      "title": "German players to pay for 600 fans' stadium trip amid soaring transport costs",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/german-players-pay-600-fans-stadium-trip-amid-soaring-transport-costs-6177166",
-      "published": "2026-06-11 14:06"
-    },
-    {
-      "category": "Traffic",
-      "title": "Serena return exciting, say Wimbledon, ahead of wildcard decision",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/serena-return-exciting-say-wimbledon-ahead-wildcard-decision-6177081",
-      "published": "2026-06-11 13:22"
-    },
-    {
-      "category": "Traffic",
-      "title": "Wimbledon announces record 20% rise in prize money amid player discontent",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/wimbledon-announces-record-20-rise-in-prize-money-amid-player-discontent-6176761",
-      "published": "2026-06-11 11:19"
-    },
-    {
       "category": "Money",
       "title": "S'porean households can claim S$500 CDC vouchers from Jun. 11",
       "source": "Mothership",
@@ -59,87 +31,115 @@
     },
     {
       "category": "General",
+      "title": "UK defence minister quits with stinging rebuke of PM Starmer",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/john-healey-starmer-uk-defence-resign-6177466",
+      "published": "2026-06-11 17:24"
+    },
+    {
+      "category": "General",
+      "title": "Qatar seek redemption against Swiss after woeful World Cup debut",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/qatar-seek-redemption-against-swiss-after-woeful-world-cup-debut-6177541",
+      "published": "2026-06-11 17:16"
+    },
+    {
+      "category": "General",
+      "title": "Mexico to open World Cup amid passion, parties and protests",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mexico-open-world-cup-amid-passion-parties-and-protests-6177521",
+      "published": "2026-06-11 17:02"
+    },
+    {
+      "category": "General",
+      "title": "Pirelli to remain sole F1 tyre supplier through 2028",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pirelli-remain-sole-f1-tyre-supplier-through-2028-6177501",
+      "published": "2026-06-11 16:56"
+    },
+    {
+      "category": "General",
+      "title": "Lyft, Uber sue New York City to block driver retention law",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/lyft-uber-sue-new-york-city-block-driver-retention-law-6177496",
+      "published": "2026-06-11 16:55"
+    },
+    {
+      "category": "General",
+      "title": "Australia first up as Guler leads Turkey in World Cup return",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/australia-first-up-guler-leads-turkey-in-world-cup-return-6177456",
+      "published": "2026-06-11 16:35"
+    },
+    {
+      "category": "General",
+      "title": "US security officials on alert for World Cup 'lone wolf' attacks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/world-cup-security-lone-wolf-attack-6177386",
+      "published": "2026-06-11 16:14"
+    },
+    {
+      "category": "General",
+      "title": "Danantara COO says new DSI unit will oversee exports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/danantara-coo-says-new-dsi-unit-will-oversee-exports-6177391",
+      "published": "2026-06-11 15:58"
+    },
+    {
+      "category": "General",
+      "title": "Novo Nordisk flags patient data breach from some clinical trials in cyberattack",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/novo-nordisk-flags-patient-data-breach-some-clinical-trials-in-cyberattack-6177361",
+      "published": "2026-06-11 15:46"
+    },
+    {
+      "category": "General",
+      "title": "Oracle shares slide as hefty AI spending, debt plans spook investors",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oracle-shares-slide-hefty-ai-spending-debt-plans-spook-investors-6177341",
+      "published": "2026-06-11 15:25"
+    },
+    {
+      "category": "General",
+      "title": "WuXi AppTec files complaint against US DoD for linking it to Chinese military",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/wuxi-apptec-files-complaint-against-us-dod-linking-it-chinese-military-6177331",
+      "published": "2026-06-11 15:20"
+    },
+    {
+      "category": "General",
+      "title": "Hazardous materials incident prompts Pentagon lockdown: Officials",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/pentagon-us-evacuation-hazardous-materials-6177306",
+      "published": "2026-06-11 15:12"
+    },
+    {
+      "category": "General",
+      "title": "Four developed market central banks are now hiking rates",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/four-developed-market-central-banks-are-now-hiking-rates-6177296",
+      "published": "2026-06-11 15:01"
+    },
+    {
+      "category": "General",
+      "title": "Euro eases after ECB hike; dollar steadies near two-month high on Iran tensions",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/euro-eases-after-ecb-hike-dollar-steadies-near-two-month-high-iran-tensions-6175591",
+      "published": "2026-06-11 14:58"
+    },
+    {
+      "category": "General",
+      "title": "Bangladesh stun Australia to claim maiden ODI series win",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/bangladesh-stun-australia-claim-maiden-odi-series-win-6177271",
+      "published": "2026-06-11 14:46"
+    },
+    {
+      "category": "General",
       "title": "Oppenheimer launches Wall Street's first coverage of SpaceX with bullish outlook",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/oppenheimer-launches-wall-streets-first-coverage-spacex-bullish-outlook-6177261",
       "published": "2026-06-11 14:39"
-    },
-    {
-      "category": "General",
-      "title": "US Homeland Security chief defends visa denials as World Cup begins",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/us-homeland-security-chief-defends-visa-denials-world-cup-begins-6177241",
-      "published": "2026-06-11 14:37"
-    },
-    {
-      "category": "General",
-      "title": "Grok's AI image generation tool violated Canadian privacy law, says watchdog",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/groks-ai-image-generation-tool-violated-canadian-privacy-law-says-watchdog-6177201",
-      "published": "2026-06-11 14:19"
-    },
-    {
-      "category": "General",
-      "title": "South Africa target winning start to new Nations Championship in tough clash against England",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/south-africa-target-winning-start-new-nations-championship-in-tough-clash-against-england-6177181",
-      "published": "2026-06-11 14:13"
-    },
-    {
-      "category": "General",
-      "title": "Alpine clear first hurdle in review of Gasly's Monaco penalty",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/alpine-clear-first-hurdle-in-review-gaslys-monaco-penalty-6177186",
-      "published": "2026-06-11 14:12"
-    },
-    {
-      "category": "General",
-      "title": "Weather pattern El Nino has begun, says US agency",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/el-nino-weather-pattern-has-begun-6177156",
-      "published": "2026-06-11 14:07"
-    },
-    {
-      "category": "General",
-      "title": "Nike's World Cup play: take on Adidas and revitalize the brand",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/nikes-world-cup-play-take-adidas-and-revitalize-brand-6177171",
-      "published": "2026-06-11 14:05"
-    },
-    {
-      "category": "General",
-      "title": "Bruised Brazil face Morocco in heavyweight World Cup opener",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/bruised-brazil-face-morocco-in-heavyweight-world-cup-opener-6177131",
-      "published": "2026-06-11 13:46"
-    },
-    {
-      "category": "General",
-      "title": "Denied World Cup entry, Somali referee Artan to officiate UEFA Super Cup",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/denied-world-cup-entry-somali-referee-artan-officiate-uefa-super-cup-6177101",
-      "published": "2026-06-11 13:32"
-    },
-    {
-      "category": "General",
-      "title": "Google in talks with Samsung to make next-generation chips, The Information reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/google-in-talks-samsung-make-next-generation-chips-information-reports-6177041",
-      "published": "2026-06-11 13:10"
-    },
-    {
-      "category": "General",
-      "title": "Trump says will hit Iran 'very hard' Thursday night",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-war-trump-hit-iran-very-hard-6176911",
-      "published": "2026-06-11 12:38"
-    },
-    {
-      "category": "General",
-      "title": "KKR launches $10 billion AI infrastructure company with Nvidia, Vistra",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/kkr-launches-10-billion-ai-infrastructure-company-nvidia-vistra-6176901",
-      "published": "2026-06-11 12:30"
     }
   ]
 }
