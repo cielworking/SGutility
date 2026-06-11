@@ -1,7 +1,7 @@
 {
   "source_name": "PetrolPrice.sg",
   "source_url": "https://petrolprice.sg/",
-  "last_updated": "2026-06-10T16:49:31.388411+00:00",
+  "last_updated": "2026-06-11T14:53:48.939696+00:00",
   "note": "Listed pump prices in SGD per litre. Discounts and card promotions are not included.",
   "brands": [
     {
@@ -44,7 +44,7 @@
       "ron95": "$3.46",
       "ron98": "$3.98",
       "premium": "$4.20",
-      "diesel": "$4.37",
+      "diesel": "$4.32",
       "changes": {
         "ron95": {
           "previous": 3.46,
@@ -63,8 +63,8 @@
         },
         "diesel": {
           "previous": 4.37,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.05,
+          "percent": -1.14
         }
       }
     },
@@ -108,7 +108,7 @@
       "ron95": "$3.46",
       "ron98": "N/A",
       "premium": "$4.16",
-      "diesel": "$4.37",
+      "diesel": "$4.32",
       "changes": {
         "ron92": {
           "previous": 3.43,
@@ -127,8 +127,8 @@
         },
         "diesel": {
           "previous": 4.37,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.05,
+          "percent": -1.14
         }
       }
     },
@@ -169,25 +169,25 @@
       "logo": "./assets/petrol/smart-energy.png",
       "url": "https://petrolprice.sg/",
       "ron92": "N/A",
-      "ron95": "$3.62",
-      "ron98": "$4.08",
+      "ron95": "$3.56",
+      "ron98": "$3.99",
       "premium": "N/A",
-      "diesel": "$3.69",
+      "diesel": "$3.62",
       "changes": {
         "ron95": {
           "previous": 3.62,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.06,
+          "percent": -1.66
         },
         "ron98": {
           "previous": 4.08,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.09,
+          "percent": -2.21
         },
         "diesel": {
           "previous": 3.69,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.07,
+          "percent": -1.9
         }
       }
     }
