@@ -1,7 +1,7 @@
 {
   "source_name": "PetrolPrice.sg",
   "source_url": "https://petrolprice.sg/",
-  "last_updated": "2026-05-26T07:47:02.503053+00:00",
+  "last_updated": "2026-06-15T03:01:22.325286+00:00",
   "note": "Listed pump prices in SGD per litre. Discounts and card promotions are not included.",
   "brands": [
     {
@@ -11,7 +11,7 @@
       "ron95": "$3.46",
       "ron98": "$3.98",
       "premium": "N/A",
-      "diesel": "$4.48",
+      "diesel": "$4.32",
       "url": "https://petrolprice.sg/"
     },
     {
@@ -21,7 +21,7 @@
       "ron95": "$3.46",
       "ron98": "$3.98",
       "premium": "$4.20",
-      "diesel": "$4.42",
+      "diesel": "$4.32",
       "url": "https://petrolprice.sg/"
     },
     {
@@ -41,7 +41,7 @@
       "ron95": "$3.46",
       "ron98": "N/A",
       "premium": "$4.16",
-      "diesel": "$4.42",
+      "diesel": "$4.32",
       "url": "https://petrolprice.sg/"
     },
     {
@@ -51,17 +51,17 @@
       "ron95": "$3.46",
       "ron98": "$3.97",
       "premium": "$4.10",
-      "diesel": "$4.41",
+      "diesel": "$4.31",
       "url": "https://petrolprice.sg/"
     },
     {
       "brand": "Smart Energy",
       "logo": "./assets/petrol/smart-energy.png",
       "ron92": "N/A",
-      "ron95": "$3.62",
-      "ron98": "$4.08",
+      "ron95": "$3.56",
+      "ron98": "$3.99",
       "premium": "N/A",
-      "diesel": "$3.87",
+      "diesel": "$3.62",
       "url": "https://petrolprice.sg/"
     }
   ]
