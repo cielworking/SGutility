@@ -1,6 +1,7 @@
 import json
 import re
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 import feedparser
@@ -128,7 +129,7 @@ def main():
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     data = {
-        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "last_updated": datetime.now(ZoneInfo("Asia/Singapore")).strftime("%Y-%m-%d %H:%M"),
         "headlines": fetch_news(),
     }
 
