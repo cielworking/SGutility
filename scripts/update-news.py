@@ -18,6 +18,15 @@ NEWS_FEEDS = [
         "source": "Mothership",
         "url": "https://mothership.sg/feed/",
     },
+
+    {
+    "source": "Straits Times",
+    "url": "https://www.straitstimes.com/news/singapore/rss.xml",
+},
+{
+    "source": "TODAY",
+    "url": "https://www.todayonline.com/feed",
+},
 ]
 
 KEYWORDS = {
@@ -87,7 +96,7 @@ def fetch_news():
 
         feed = feedparser.parse(url)
 
-        for entry in feed.entries[:20]:
+        for entry in feed.entries[:40]:
             title = clean_text(getattr(entry, "title", ""))
             link = getattr(entry, "link", "")
 
@@ -122,7 +131,7 @@ def fetch_news():
 
     headlines.sort(key=lambda x: crime_first.get(x["category"], 99))
 
-    return headlines[:20]
+    return headlines[:40]
 
 
 def main():
