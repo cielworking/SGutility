@@ -2,8 +2,7 @@ name: Update Dashboard Data
 
 on:
   schedule:
-    - cron: "15 11 * * *"   # 7:15 PM SGT
-    - cron: "45 13 * * *"   # 9:45 PM SGT backup
+    - cron: "0 * * * *"   # Every hour
   workflow_dispatch:
   
 permissions:
@@ -38,8 +37,6 @@ jobs:
           python scripts/update-news.py
           python scripts/update-checkpoints.py
           python scripts/update-petrol-discounts.py
-
-          
 
       - name: Commit updated data
         uses: stefanzweifel/git-auto-commit-action@v5
