@@ -1,20 +1,5 @@
 /* =========================================================
-   SG Utility Dashboard - Clean Responsive CSS
-   Sections:
-   1. Global / Variables
-   2. Header
-   3. Layout / Cards
-   4. Shared Components
-   5. News Carousel
-   6. Singapore Pools
-   7. COE
-   8. Petrol
-   9. BTO
-   10. Quick Info
-   11. Animations
-   12. Tablet
-   13. Mobile
-   14. Small Mobile
+   SG Alerts - Clean Responsive CSS
    ========================================================= */
 
 /* =========================
@@ -125,6 +110,7 @@ header p {
 }
 
 .news-card { border-top: 5px solid #ef4444; }
+.checkpoint-card { border-top: 5px solid #0ea5e9; }
 .sgpools-card { border-top: 5px solid var(--blue); }
 .coe-card { border-top: 5px solid var(--orange); }
 .petrol-card { border-top: 5px solid var(--green); }
@@ -151,6 +137,7 @@ header p {
 }
 
 .news-card h2::before { content: "🚨"; }
+.checkpoint-card h2::before { content: "🚗"; }
 .sgpools-card h2::before { content: "🎲"; }
 .coe-card h2::before { content: "🚗"; }
 .petrol-card h2::before { content: "⛽"; }
@@ -188,8 +175,6 @@ header p {
   align-items: center;
   justify-content: center;
 
-  width: auto;
-  height: auto;
   padding: 7px 12px;
   border-radius: 999px;
 
@@ -201,8 +186,58 @@ header p {
   font-weight: 750;
   line-height: 1;
   white-space: nowrap;
+}
 
-  box-shadow: none;
+.card-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+button,
+.lucky-actions button {
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.hide-btn {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(220, 38, 38, 0.08);
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.refresh-btn {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: none;
+
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--blue);
+
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 1;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.refresh-btn:hover {
+  background: rgba(37, 99, 235, 0.15);
 }
 
 .row {
@@ -364,7 +399,112 @@ header p {
 }
 
 /* =========================
-   6. SINGAPORE POOLS
+   6. CHECKPOINT
+   ========================= */
+
+.checkpoint-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.checkpoint-group h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 850;
+}
+
+.checkpoint-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.checkpoint-camera {
+  display: block;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--text);
+  cursor: zoom-in;
+}
+
+.checkpoint-camera img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #e2e8f0;
+}
+
+.checkpoint-camera span {
+  display: block;
+  padding: 8px 10px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.checkpoint-empty {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Image Modal */
+
+.image-modal {
+  display: none;
+
+  position: fixed;
+  z-index: 99999;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.9);
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.image-modal.show {
+  display: flex;
+}
+
+.image-modal-content {
+  max-width: 95%;
+  max-height: 90vh;
+
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.image-modal-close {
+  position: absolute;
+
+  top: 20px;
+  right: 25px;
+
+  color: white;
+  font-size: 42px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.image-modal-caption {
+  position: absolute;
+  bottom: 20px;
+
+  color: white;
+  font-size: 14px;
+}
+
+/* =========================
+   7. SINGAPORE POOLS
    ========================= */
 
 .sgpools-layout {
@@ -560,20 +700,6 @@ header p {
   gap: 7px;
 }
 
-.lucky-actions button,
-button {
-  border: none;
-  border-radius: 10px;
-  padding: 8px;
-
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: white;
-
-  font-size: 12px;
-  font-weight: 800;
-  cursor: pointer;
-}
-
 .lucky-result {
   margin-top: 9px;
   min-height: 40px;
@@ -611,11 +737,14 @@ button {
   font-size: 10px;
 }
 
-/* =========================
-   7. COE
-   ========================= */
-
-/* COE uses generic .row styles */
+.gambling-hidden-box {
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
 
 /* =========================
    8. PETROL
@@ -687,6 +816,194 @@ button {
   margin-top: 3px;
   font-size: 10px;
   color: var(--green);
+}
+
+.petrol-movement {
+  display: block;
+  margin-top: 3px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.petrol-up {
+  color: var(--red);
+}
+
+.petrol-down {
+  color: var(--green);
+}
+
+.petrol-flat {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* Petrol extra info */
+
+.petrol-extra-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.petrol-discount-panel,
+.petrol-effective-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.petrol-discount-panel h3,
+.petrol-effective-panel h3 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 850;
+}
+
+.petrol-discount-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 9px;
+}
+
+.petrol-discount-card {
+  text-decoration: none;
+  color: var(--text);
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  padding: 11px 8px;
+  text-align: center;
+}
+
+.petrol-discount-card img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 6px;
+}
+
+.petrol-discount-card strong,
+.petrol-discount-card small {
+  display: block;
+}
+
+.petrol-discount-card span {
+  display: block;
+  margin: 6px 0 4px;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--green);
+}
+
+.petrol-discount-card small {
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.effective-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.effective-title-row h3 {
+  margin: 0;
+}
+
+.fuel-selector {
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: white;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.effective-fuel-note {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.effective-empty {
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.effective-table {
+  width: 100%;
+}
+
+.effective-header,
+.effective-table-row {
+  display: grid;
+  grid-template-columns: 1.2fr 0.7fr 1.4fr 0.9fr;
+  gap: 12px;
+  align-items: center;
+}
+
+.effective-header {
+  padding: 8px 0;
+  border-bottom: 2px solid #d0d5dd;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.effective-table-row {
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 13px;
+}
+
+.effective-table-row:last-child {
+  border-bottom: none;
+}
+
+.effective-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.effective-brand img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.effective-table-row small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.effective-price {
+  color: var(--green);
+  font-size: 16px;
+}
+
+.petrol-discount-note {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
 }
 
 /* =========================
@@ -778,7 +1095,99 @@ button {
 }
 
 /* =========================
-   11. ANIMATIONS
+   11. STATIC PAGES
+   ========================= */
+
+.page-container {
+  max-width: 800px;
+  margin: 42px auto 80px;
+  padding: 0 18px;
+}
+
+.page-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 40px;
+
+  box-shadow:
+    0 16px 40px rgba(15, 23, 42, 0.10),
+    0 2px 10px rgba(15, 23, 42, 0.04);
+}
+
+.page-card h1 {
+  margin: 0 0 20px;
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.page-card p {
+  font-size: 16px;
+  line-height: 1.85;
+  color: #334155;
+}
+
+.page-meta {
+    color: #7a869a;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 26px;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   12. FOOTER
+   ========================= */
+
+.site-footer {
+  background: #07122f;
+  color: #fff;
+  text-align: center;
+  padding: 34px 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.footer-links a,
+.site-footer > a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.footer-links a:hover,
+.site-footer > a:hover {
+  opacity: 1;
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* =========================
+   13. ANIMATIONS
    ========================= */
 
 .rolling {
@@ -823,8 +1232,7 @@ button {
 }
 
 /* =========================
-   12. TABLET
-   769px - 1024px
+   14. TABLET
    ========================= */
 
 @media screen and (max-width: 1024px) {
@@ -852,8 +1260,7 @@ button {
 }
 
 /* =========================
-   13. MOBILE
-   421px - 768px
+   15. MOBILE
    ========================= */
 
 @media screen and (max-width: 768px) {
@@ -916,9 +1323,16 @@ button {
 
   .card-header a,
   .row a,
-  .quick-tile a {
+  .quick-tile a,
+  .hide-btn,
+  .refresh-btn {
     font-size: 10px;
     padding: 6px 8px;
+  }
+
+  .card-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .result {
@@ -931,7 +1345,6 @@ button {
     line-height: 1.35;
   }
 
-  /* Mobile - News */
   .news-topbar {
     align-items: center;
     font-size: 10px;
@@ -968,7 +1381,14 @@ button {
     padding: 4px 8px;
   }
 
-  /* Mobile - SG Pools */
+  .checkpoint-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkpoint-grid {
+    grid-template-columns: 1fr;
+  }
+
   .sgpools-layout {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -1072,7 +1492,6 @@ button {
     font-size: 11px;
   }
 
-  /* Mobile - COE */
   .row {
     grid-template-columns: 1fr;
     gap: 3px;
@@ -1085,7 +1504,6 @@ button {
     font-size: 11px;
   }
 
-  /* Mobile - Petrol */
   .petrol-header,
   .petrol-row {
     min-width: 0;
@@ -1109,7 +1527,37 @@ button {
     font-size: 8px;
   }
 
-  /* Mobile - BTO / Quick */
+  .petrol-discount-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .effective-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .fuel-selector {
+    width: 100%;
+  }
+
+  .effective-header {
+    display: none;
+  }
+
+  .effective-table-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+
+  .effective-price {
+    font-size: 18px;
+  }
+
   .bto-grid,
   .quick-grid {
     grid-template-columns: 1fr;
@@ -1142,11 +1590,34 @@ button {
   .quick-tile a {
     align-self: flex-start;
   }
+
+  .page-container {
+    margin: 24px auto 50px;
+    padding: 0 12px;
+  }
+
+  .page-card {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .page-card p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .footer-links {
+    gap: 18px;
+  }
+
+  .footer-copy {
+    font-size: 12px;
+    line-height: 1.5;
+  }
 }
 
 /* =========================
-   14. SMALL MOBILE
-   420px and below
+   16. SMALL MOBILE
    ========================= */
 
 @media screen and (max-width: 420px) {
@@ -1166,7 +1637,6 @@ button {
     padding: 9px;
   }
 
-  /* Small Mobile - News */
   .news-scroller {
     grid-auto-columns: 100%;
   }
@@ -1180,7 +1650,6 @@ button {
     font-size: 12px;
   }
 
-  /* Small Mobile - SG Pools */
   .pool-panel {
     padding: 10px;
   }
@@ -1217,7 +1686,6 @@ button {
     font-size: 13px;
   }
 
-  /* Small Mobile - Petrol */
   .petrol-header,
   .petrol-row {
     grid-template-columns: 1.2fr repeat(5, 0.72fr);
@@ -1228,414 +1696,5 @@ button {
   .brand-cell img {
     width: 20px;
     height: 20px;
-  }
-}
-
-.card-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.hide-btn {
-  padding: 7px 12px;
-  border-radius: 999px;
-  border: none;
-  background: rgba(220, 38, 38, 0.08);
-  color: var(--red);
-  font-size: 12px;
-  font-weight: 750;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.gambling-hidden-box {
-  padding: 16px;
-  background: #f8fafc;
-  border: 1px dashed #cbd5e1;
-  border-radius: 14px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-@media screen and (max-width: 768px) {
-  .card-actions {
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
-  .hide-btn {
-    font-size: 10px;
-    padding: 6px 8px;
-  }
-}
-
-/* checkpoint */
-
-.refresh-btn {
-  padding: 7px 12px;
-  border-radius: 999px;
-  border: none;
-
-  background: rgba(37, 99, 235, 0.08);
-  color: var(--blue);
-
-  font-size: 12px;
-  font-weight: 750;
-  line-height: 1;
-
-  cursor: pointer;
-
-  white-space: nowrap;
-}
-
-.refresh-btn:hover {
-  background: rgba(37, 99, 235, 0.15);
-}
-
-.checkpoint-card {
-  border-top: 5px solid #0ea5e9;
-}
-
-.checkpoint-card h2::before {
-  content: "🚗";
-}
-
-.checkpoint-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.checkpoint-group h3 {
-  margin: 0 0 10px;
-  font-size: 16px;
-  font-weight: 850;
-}
-
-.checkpoint-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.checkpoint-camera {
-  display: block;
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 13px;
-  overflow: hidden;
-  text-decoration: none;
-  color: var(--text);
-}
-
-.checkpoint-camera img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  background: #e2e8f0;
-}
-
-.checkpoint-camera span {
-  display: block;
-  padding: 8px 10px;
-  font-size: 11px;
-  font-weight: 800;
-}
-
-.checkpoint-empty {
-  margin: 0;
-  font-size: 12px;
-  color: var(--muted);
-}
-
-@media screen and (max-width: 768px) {
-  .checkpoint-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .checkpoint-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.image-modal {
-  display: none;
-
-  position: fixed;
-  z-index: 99999;
-
-  inset: 0;
-
-  background: rgba(0,0,0,0.9);
-
-  align-items: center;
-  justify-content: center;
-
-  padding: 20px;
-}
-
-.image-modal.show {
-  display: flex;
-}
-
-.image-modal-content {
-  max-width: 95%;
-  max-height: 90vh;
-
-  border-radius: 12px;
-  object-fit: contain;
-}
-
-.image-modal-close {
-  position: absolute;
-
-  top: 20px;
-  right: 25px;
-
-  color: white;
-  font-size: 42px;
-  font-weight: bold;
-
-  cursor: pointer;
-}
-
-.image-modal-caption {
-  position: absolute;
-
-  bottom: 20px;
-
-  color: white;
-  font-size: 14px;
-}
-
-.checkpoint-camera {
-  cursor: zoom-in;
-}
-
-.petrol-movement {
-  display: block;
-  margin-top: 3px;
-  font-size: 10px;
-  font-weight: 800;
-  line-height: 1.2;
-}
-
-.petrol-up {
-  color: var(--red);
-}
-
-.petrol-down {
-  color: var(--green);
-}
-
-.petrol-flat {
-  color: var(--muted);
-  font-weight: 700;
-}
-
-/* =========================
-   9. PETROL - EXTRA INFO
-   ========================= */
-
-.petrol-extra-grid {
-  margin-top: 16px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-}
-
-.petrol-discount-panel,
-.petrol-effective-panel {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 14px;
-}
-
-.petrol-discount-panel h3,
-.petrol-effective-panel h3 {
-  margin: 0 0 12px;
-  font-size: 15px;
-  font-weight: 850;
-}
-
-.petrol-discount-cards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 9px;
-}
-
-.petrol-discount-card {
-  text-decoration: none;
-  color: var(--text);
-  background: #f8fafc;
-  border: 1px solid var(--border);
-  border-radius: 13px;
-  padding: 11px 8px;
-  text-align: center;
-}
-
-.petrol-discount-card img {
-  width: 34px;
-  height: 34px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 6px;
-}
-
-.petrol-discount-card strong,
-.petrol-discount-card small {
-  display: block;
-}
-
-.petrol-discount-card span {
-  display: block;
-  margin: 6px 0 4px;
-  font-size: 22px;
-  font-weight: 900;
-  color: var(--green);
-}
-
-.petrol-discount-card small {
-  font-size: 10px;
-  color: var(--muted);
-}
-
-.effective-table {
-  width: 100%;
-}
-
-.effective-header,
-.effective-table-row {
-  display: grid;
-  grid-template-columns: 1.2fr 0.7fr 1.4fr 0.9fr;
-  gap: 12px;
-  align-items: center;
-}
-
-.effective-header {
-  padding: 8px 0;
-  border-bottom: 2px solid #d0d5dd;
-  color: #475569;
-  font-size: 12px;
-  font-weight: 850;
-}
-
-.effective-table-row {
-  padding: 10px 0;
-  border-bottom: 1px dashed var(--border);
-  font-size: 13px;
-}
-
-.effective-table-row:last-child {
-  border-bottom: none;
-}
-
-.effective-brand {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-}
-
-.effective-brand img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 4px;
-}
-
-.effective-table-row small {
-  display: block;
-  margin-top: 3px;
-  color: var(--muted);
-  font-size: 10px;
-}
-
-.effective-price {
-  color: var(--green);
-  font-size: 16px;
-}
-
-.petrol-discount-note {
-  margin-top: 10px;
-  color: var(--muted);
-  font-size: 11px;
-}
-
-@media screen and (max-width: 768px) {
-  .petrol-discount-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .effective-header {
-    display: none;
-  }
-
-  .effective-table-row {
-    grid-template-columns: 1fr;
-    gap: 4px;
-    background: #f8fafc;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 10px;
-    margin-bottom: 8px;
-  }
-
-  .effective-price {
-    font-size: 18px;
-  }
-}
-
-/* Test */
-.effective-title-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 8px;
-}
-
-.effective-title-row h3 {
-  margin: 0;
-}
-
-.fuel-selector {
-  padding: 7px 10px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: white;
-  color: var(--text);
-  font-size: 13px;
-  font-weight: 800;
-}
-
-.effective-fuel-note {
-  margin-bottom: 10px;
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.effective-empty {
-  padding: 14px;
-  background: #f8fafc;
-  border: 1px dashed var(--border);
-  border-radius: 12px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-@media screen and (max-width: 768px) {
-  .effective-title-row {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .fuel-selector {
-    width: 100%;
   }
 }
