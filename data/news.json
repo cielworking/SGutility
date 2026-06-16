@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-06-16 20:23",
+  "last_updated": "2026-06-17 02:10",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Stablecoins gain in Nigeria for cross-border transfers, IMF says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/stablecoins-gain-in-nigeria-cross-border-transfers-imf-says-6186986",
-      "published": "2026-06-16 17:47"
-    },
     {
       "category": "Crime",
       "title": "Man, 61, jumps off moving ambulance on SLE, runs, car hits him, gets arrested for rash act",
@@ -21,6 +14,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/fake-sanrio-products-jailed/",
       "published": "2026-06-16 22:24"
+    },
+    {
+      "category": "Crime",
+      "title": "2 Malaysian men who helped Singapore police recover stolen boat get public spiritedness award",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/2-malaysian-men-who-helped-singapore-police-recover-stolen-boat-get-public-spiritedness-award",
+      "published": "2026-06-16 23:27"
     },
     {
       "category": "Crime",
@@ -73,24 +73,10 @@
     },
     {
       "category": "Traffic",
-      "title": "‘Critical’ with RTS Link launch: Johor’s caretaker chief minister calls on Putrajaya to expedite ART rail plan",
+      "title": "Snap CEO Spiegel defends Specs as long-term bet, pushes back against activist pressure",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-johor-onn-hafiz-anthony-loke-art-rail-project-6186916",
-      "published": "2026-06-16 18:30"
-    },
-    {
-      "category": "Traffic",
-      "title": "Serena to reignite Venus partnership after receiving Wimbledon doubles wildcard",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/serena-reignite-venus-partnership-after-receiving-wimbledon-doubles-wildcard-6187051",
-      "published": "2026-06-16 18:16"
-    },
-    {
-      "category": "Traffic",
-      "title": "Dollar steady, no respite for yen after BOJ hikes rates as expected",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dollar-steady-no-respite-yen-after-boj-hikes-rates-expected-6185951",
-      "published": "2026-06-16 17:13"
+      "url": "https://www.channelnewsasia.com/business/snap-ceo-spiegel-defends-specs-long-term-bet-pushes-back-against-activist-pressure-6187961",
+      "published": "2026-06-17 00:53"
     },
     {
       "category": "Traffic",
@@ -121,20 +107,6 @@
       "published": "2026-06-15 18:01"
     },
     {
-      "category": "Traffic",
-      "title": "Career advice from a mum in a brave new world of jobs",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/parenting-education/career-advice-from-a-mum-in-a-brave-new-world-of-jobs",
-      "published": "2026-06-15 00:23"
-    },
-    {
-      "category": "Transport",
-      "title": "Mobileye to launch robotaxi business in US next year",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/mobileye-launch-robotaxi-business-in-us-next-year-6187161",
-      "published": "2026-06-16 19:22"
-    },
-    {
       "category": "Transport",
       "title": "NEA increases anti-littering patrols after online photos of rubbish near Boon Lay MRT station",
       "source": "Straits Times",
@@ -157,108 +129,136 @@
     },
     {
       "category": "General",
-      "title": "India's Wipro opens AI center for Anthropic's Claude in Bengaluru",
+      "title": "Saliba to start for France against Senegal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/indias-wipro-opens-ai-center-anthropics-claude-in-bengaluru-6187271",
-      "published": "2026-06-16 20:14"
+      "url": "https://www.channelnewsasia.com/sport/saliba-start-france-against-senegal-6188051",
+      "published": "2026-06-17 02:01"
     },
     {
       "category": "General",
-      "title": "Spain approves €719 million AI gigafactory investment and hopes for EU funds",
+      "title": "Paris store to part ways with Shein after ownership change",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spain-approves-eu719-million-ai-gigafactory-investment-and-hopes-eu-funds-6187241",
-      "published": "2026-06-16 20:01"
+      "url": "https://www.channelnewsasia.com/world/bhv-marais-paris-shein-france-ownership-6188026",
+      "published": "2026-06-17 01:49"
     },
     {
       "category": "General",
-      "title": "US supercomputer taps Intel spinout Cornelis Networks for networking chips",
+      "title": "Hacking group claims major hack of Novo Nordisk and attempted $25 million extortion",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-supercomputer-taps-intel-spinout-cornelis-networks-networking-chips-6187246",
-      "published": "2026-06-16 20:01"
+      "url": "https://www.channelnewsasia.com/business/hacking-group-claims-major-hack-novo-nordisk-and-attempted-25-million-extortion-6188031",
+      "published": "2026-06-17 01:47"
     },
     {
       "category": "General",
-      "title": "One dead, four injured after magnitude 6.3 earthquake in China's Qinghai",
+      "title": "De Minaur up and running at Queen's, Mensik suffers early defeat",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-earthquake-qinghai-haixi-6187031",
-      "published": "2026-06-16 19:34"
+      "url": "https://www.channelnewsasia.com/sport/de-minaur-up-and-running-queens-mensik-suffers-early-defeat-6188016",
+      "published": "2026-06-17 01:30"
     },
     {
       "category": "General",
-      "title": "Spanish GP organisers say new Madrid track will be ready despite hurdles",
+      "title": "Mexico, South Korea battle for control of World Cup Group A",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spanish-gp-organisers-say-new-madrid-track-will-be-ready-despite-hurdles-6187201",
-      "published": "2026-06-16 19:33"
+      "url": "https://www.channelnewsasia.com/sport/mexico-south-korea-battle-control-world-cup-group-6187981",
+      "published": "2026-06-17 01:04"
     },
     {
       "category": "General",
-      "title": "FBI says it thwarted possible threat to UFC event in Washington",
+      "title": "Snap bets on life beyond smartphones with $2,195 Specs augmented-reality glasses",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fbi-says-it-thwarted-possible-threat-ufc-event-in-washington-6187176",
-      "published": "2026-06-16 19:23"
+      "url": "https://www.channelnewsasia.com/business/snap-bets-life-beyond-smartphones-2195-specs-augmented-reality-glasses-6187966",
+      "published": "2026-06-17 00:53"
     },
     {
       "category": "General",
-      "title": "Iran deal says 'loud and clear' that Tehran won't have a nuclear weapon: Trump",
+      "title": "US Federal Reserve kicks off first meeting with Warsh as chair",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-iran-war-nuclear-weapon-6187116",
-      "published": "2026-06-16 19:09"
+      "url": "https://www.channelnewsasia.com/world/us-federal-reserve-kevin-warsh-inflation-6187906",
+      "published": "2026-06-17 00:50"
     },
     {
       "category": "General",
-      "title": "AI in Hungary could unlock productivity gains of €15 billion, McKinsey says",
+      "title": "Oslo fans could be stranded after Norway World Cup opener",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-in-hungary-could-unlock-productivity-gains-eu15-billion-mckinsey-says-6187141",
-      "published": "2026-06-16 19:07"
+      "url": "https://www.channelnewsasia.com/sport/oslo-fans-could-be-stranded-after-norway-world-cup-opener-6187941",
+      "published": "2026-06-17 00:41"
     },
     {
       "category": "General",
-      "title": "EU Commission keeps contact with Anthropic over decision to disable models in EU",
+      "title": "Czechs and South Africa under pressure after opening losses",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/eu-commission-keeps-contact-anthropic-over-decision-disable-models-in-eu-6187081",
-      "published": "2026-06-16 18:35"
+      "url": "https://www.channelnewsasia.com/sport/czechs-and-south-africa-under-pressure-after-opening-losses-6187936",
+      "published": "2026-06-17 00:33"
     },
     {
       "category": "General",
-      "title": "SpaceX locks in $60 billion Cursor deal to power AI coding push",
+      "title": "Dutch transportation minister defends Tesla FSD approval",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spacex-locks-in-60-billion-cursor-deal-power-ai-coding-push-6187086",
-      "published": "2026-06-16 18:34"
+      "url": "https://www.channelnewsasia.com/business/dutch-transportation-minister-defends-tesla-fsd-approval-6187921",
+      "published": "2026-06-17 00:28"
     },
     {
       "category": "General",
-      "title": "Real Madrid give Rudiger one-year extension to 2027",
+      "title": "Exclusive-Binance set to lose permission to operate in EU, sources say",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/real-madrid-give-rudiger-one-year-extension-2027-6187071",
-      "published": "2026-06-16 18:27"
+      "url": "https://www.channelnewsasia.com/business/exclusive-binance-set-lose-permission-operate-in-eu-sources-say-6187501",
+      "published": "2026-06-17 00:19"
     },
     {
       "category": "General",
-      "title": "Vodafone CEO says Europe's digital infrastructure needs scale to drive investment",
+      "title": "Amorim named Milan manager as club look to rebuild after tough season",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/vodafone-ceo-says-europes-digital-infrastructure-needs-scale-drive-investment-6186996",
-      "published": "2026-06-16 17:50"
+      "url": "https://www.channelnewsasia.com/sport/amorim-named-milan-manager-club-look-rebuild-after-tough-season-6187896",
+      "published": "2026-06-17 00:18"
     },
     {
       "category": "General",
-      "title": "Gazans displaced by war watch World Cup from the ruins",
+      "title": "EssilorLuxottica, Applied Materials strike deal to develop smart glasses, AR technology",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/gazans-displaced-war-watch-world-cup-ruins-6186991",
-      "published": "2026-06-16 17:46"
+      "url": "https://www.channelnewsasia.com/business/essilorluxottica-applied-materials-strike-deal-develop-smart-glasses-ar-technology-6187891",
+      "published": "2026-06-17 00:15"
     },
     {
       "category": "General",
-      "title": "Iran says talks on final US deal to begin this week",
+      "title": "French store BHV ends partnership with retailer Shein, French media say",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-war-us-deal-begin-nuclear-lebanon-6186961",
-      "published": "2026-06-16 17:37"
+      "url": "https://www.channelnewsasia.com/business/french-store-bhv-ends-partnership-retailer-shein-french-media-say-6187881",
+      "published": "2026-06-17 00:11"
     },
     {
       "category": "General",
-      "title": "SoftBank launches cybersecurity product based on OpenAI models",
+      "title": "Zverev survives Kopriva challenge at Halle, defending champion Bublik suffers shock exit",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/softbank-launches-cybersecurity-product-based-openai-models-6186971",
-      "published": "2026-06-16 17:36"
+      "url": "https://www.channelnewsasia.com/sport/zverev-survives-kopriva-challenge-halle-defending-champion-bublik-suffers-shock-exit-6187866",
+      "published": "2026-06-17 00:04"
+    },
+    {
+      "category": "General",
+      "title": "Canada face Qatar in Vancouver with wide-open Group B in focus at World Cup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/canada-face-qatar-in-vancouver-wide-open-group-b-in-focus-world-cup-6187856",
+      "published": "2026-06-17 00:01"
+    },
+    {
+      "category": "General",
+      "title": "Databricks strikes deal to buy Panther Labs in cybersecurity push",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/databricks-strikes-deal-buy-panther-labs-in-cybersecurity-push-6187826",
+      "published": "2026-06-16 23:31"
+    },
+    {
+      "category": "General",
+      "title": "Nicholls returns for New Zealand after Williamson retirement",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/nicholls-returns-new-zealand-after-williamson-retirement-6187811",
+      "published": "2026-06-16 23:18"
+    },
+    {
+      "category": "General",
+      "title": "South Africa seek to silence critics against Czech Republic",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/south-africa-seek-silence-critics-against-czech-republic-6187796",
+      "published": "2026-06-16 23:18"
     },
     {
       "category": "General",
