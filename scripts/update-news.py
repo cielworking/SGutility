@@ -1,8 +1,9 @@
 import json
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 from pathlib import Path
+SGT = ZoneInfo("Asia/Singapore")
 
 import feedparser
 
@@ -76,13 +77,20 @@ def classify(title):
 
 
 def get_published_time(entry):
+    parsed_time = None
+
     if hasattr(entry, "published_parsed") and entry.published_parsed:
-        return datetime(*entry.published_parsed[:6]).strftime("%Y-%m-%d %H:%M")
+        parsed_time = entry.published_parsed
+    elif hasattr(entry, "updated_parsed") and entry.updated_parsed:
+        parsed_time = entry.updated_parsed
 
-    if hasattr(entry, "updated_parsed") and entry.updated_parsed:
-        return datetime(*entry.updated_parsed[:6]).strftime("%Y-%m-%d %H:%M")
+    if not parsed_time:
+        return ""
 
-    return ""
+    utc_dt = datetime(*parsed_time[:6], tzinfo=timezone.utc)
+    sg_dt = utc_dt.astimezone(SGT)
+
+    return sg_dt.strftime("%Y-%m-%d %H:%M")
 
 
 def fetch_news():
