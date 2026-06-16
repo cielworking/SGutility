@@ -1,91 +1,91 @@
 {
   "source_name": "LTA / data.gov.sg",
   "source_url": "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html",
-  "last_updated": "2026-06-16T18:11:21.826956",
+  "last_updated": "2026-06-16T21:20:47.935514",
   "woodlands": [
     {
       "camera_id": "2701",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/0cabc172-2607-4d46-9178-3623a16f70b9.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/cc6a6223-208d-4abd-ab8b-99ad74eaaf51.jpg",
+      "timestamp": "2026-06-17T03:56:17+08:00",
       "latitude": 1.447023728,
       "longitude": 103.7716543
     },
     {
-      "camera_id": "2702",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/7d1eca2e-8fb1-4ca6-b21c-35d1d4296dd6.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
-      "latitude": 1.445554109,
-      "longitude": 103.7683397
-    },
-    {
       "camera_id": "2704",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/5e6fed46-4a94-4cd6-8573-f059a624a67b.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/42a84ae3-22c9-4609-8f6e-0a9ef2f8459c.jpg",
+      "timestamp": "2026-06-17T03:56:17+08:00",
       "latitude": 1.429588536,
       "longitude": 103.769311
     },
     {
       "camera_id": "9703",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/2c2b15b9-97c5-49a3-93f8-96794c7b19e8.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/1640f001-0432-4145-a944-d6f30d06517d.jpg",
+      "timestamp": "2026-06-17T03:56:17+08:00",
       "latitude": 1.422857,
       "longitude": 103.773005
     },
     {
-      "camera_id": "9704",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/f9aca31d-0c0d-4e36-9361-eff9116ea6c9.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
-      "latitude": 1.42214311,
-      "longitude": 103.79542062
-    },
-    {
       "camera_id": "9705",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/ce8f184c-bf68-4611-b412-51c4ac6ac08c.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/24be534b-d9b3-447e-a8ef-0b2718722c85.jpg",
+      "timestamp": "2026-06-17T03:56:17+08:00",
       "latitude": 1.42627712,
       "longitude": 103.78716637
+    },
+    {
+      "camera_id": "2702",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/61ffeda1-8481-49bb-96d8-cc932d29ba5e.jpg",
+      "timestamp": "2026-06-17T03:50:57+08:00",
+      "latitude": 1.445554109,
+      "longitude": 103.7683397
+    },
+    {
+      "camera_id": "9704",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/f3d7281c-76c5-4362-9ec1-7ff4a670cee0.jpg",
+      "timestamp": "2026-06-17T03:50:57+08:00",
+      "latitude": 1.42214311,
+      "longitude": 103.79542062
     }
   ],
   "tuas": [
     {
       "camera_id": "4703",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/7c5b5cdb-d080-4a19-8859-3f6bf4d68819.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/7fd53081-93ff-4f27-90ab-cec90ae3ad35.jpg",
+      "timestamp": "2026-06-17T03:56:17+08:00",
       "latitude": 1.348697862,
       "longitude": 103.6350413
     },
     {
-      "camera_id": "4707",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/739b46ed-45f7-47e1-a3c9-8d7a8e72d98f.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
-      "latitude": 1.33344648135658,
-      "longitude": 103.652700847056
-    },
-    {
       "camera_id": "4712",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/f3640e37-e8a7-46e2-8209-83069dfbb4ff.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/809778a9-15fd-49ba-a1f3-cbb46c244af3.jpg",
+      "timestamp": "2026-06-17T03:56:17+08:00",
       "latitude": 1.341244001,
       "longitude": 103.6439134
     },
     {
-      "camera_id": "4713",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/0fde374e-8d67-4c71-83fe-bd58e83710db.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
-      "latitude": 1.347645829,
-      "longitude": 103.6366955
-    },
-    {
       "camera_id": "4716",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/e8d1e0e7-45c6-4fe5-8542-e587aa3bd0dd.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/425643d2-f6e5-476d-862e-08a0d3823c91.jpg",
+      "timestamp": "2026-06-17T03:56:17+08:00",
       "latitude": 1.32227,
       "longitude": 103.67453
     },
     {
+      "camera_id": "4707",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/de0f0d65-b63a-45b1-b23a-7d4aeb284a5e.jpg",
+      "timestamp": "2026-06-17T03:50:57+08:00",
+      "latitude": 1.33344648135658,
+      "longitude": 103.652700847056
+    },
+    {
+      "camera_id": "4713",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/36532fba-8a13-4f53-8dee-56d66901eedd.jpg",
+      "timestamp": "2026-06-17T03:50:57+08:00",
+      "latitude": 1.347645829,
+      "longitude": 103.6366955
+    },
+    {
       "camera_id": "6716",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/7ba1dbcc-684a-414c-bfd0-1c3a1a0433f9.jpg",
-      "timestamp": "2026-06-17T02:06:15+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/06/723faf86-6b8a-46c2-989a-175da3b0316c.jpg",
+      "timestamp": "2026-06-17T03:50:57+08:00",
       "latitude": 1.322893,
       "longitude": 103.6635051
     }
