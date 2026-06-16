@@ -145,7 +145,7 @@ function renderNews() {
 
   box.innerHTML = `
     <div class="news-topbar">
-      <span>Last updated: ${newsResults.last_updated}</span>
+      <span>Last fetched: ${formatTimestamp(newsResults.last_updated)}</span>
 
       <div class="news-controls">
         <button type="button" onclick="scrollNews(-1)">‹</button>
