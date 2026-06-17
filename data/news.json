@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-06-17 13:16",
+  "last_updated": "2026-06-17 18:05",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Inclusive justice goes beyond the courtroom, says Pro Bono SG chairman",
+      "title": "Driver who crashed into school bus carrying ACS kids to be charged with dangerous driving, drink driving",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/inclusive-justice-law-centre-pro-bono-sg-dinesh-dhillon-6188911",
-      "published": "2026-06-17 11:21"
+      "url": "https://www.channelnewsasia.com/singapore/driver-charged-drink-driving-acs-junior-school-bus-crash-2024-6189856",
+      "published": "2026-06-17 17:07"
     },
     {
       "category": "Crime",
@@ -14,6 +14,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/man-apple-pay-banks-claim-alerts/",
       "published": "2026-06-17 01:22"
+    },
+    {
+      "category": "Crime",
+      "title": "Man allegedly drove at 114kmh before 2024 Bukit Timah accident; to be charged with traffic offences",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-allegedly-drove-at-114kmh-before-2024-bukit-timah-accident-to-be-charged-for-traffic-offences",
+      "published": "2026-06-17 16:53"
     },
     {
       "category": "Crime",
@@ -72,11 +79,25 @@
       "published": "2026-06-15 22:55"
     },
     {
-      "category": "Crime",
-      "title": "Victims have lost $60,000 in lucky draw scams since May 20; public urged to be vigilant",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/victims-lose-at-least-60000-in-lucky-draw-scams-since-may-20-police-urge-public-to-be-vigilant",
-      "published": "2026-06-15 18:20"
+      "category": "Traffic",
+      "title": "M'sian woman dies, leaves behind 3 adult sons with disabilities 'incapable of self care', MP calls it his 'most complex' case",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/06/malaysia-woman-dies-leaves-behind-3-sons/",
+      "published": "2026-06-17 03:22"
+    },
+    {
+      "category": "Traffic",
+      "title": "S'pore woman, then 19, uses grandfather's licence to help boyfriend & friend rent car, says she was influenced by boyfriend",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/06/spore-woman-grandfather-licence-boyfriend-impersonate/",
+      "published": "2026-06-17 03:12"
+    },
+    {
+      "category": "Traffic",
+      "title": "9 cyclists somehow not using Sentosa dedicated bicycle lane, 1 of them nearly gets hit by car",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/06/9-cyclists-nearly-hit-sentosa/",
+      "published": "2026-06-17 02:31"
     },
     {
       "category": "Traffic",
@@ -84,13 +105,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/phv-driver-found-dead-in-car/",
       "published": "2026-06-17 02:10"
-    },
-    {
-      "category": "Traffic",
-      "title": "Man seen speeding on PMA on Yishun pedestrian path crashes",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/06/pma-speed-yishun-crash/",
-      "published": "2026-06-16 23:06"
     },
     {
       "category": "Traffic",
@@ -107,13 +121,6 @@
       "published": "2026-06-15 21:26"
     },
     {
-      "category": "Traffic",
-      "title": "ERP alerts, roadside e-parking payment in trial ahead of ERP 2 roll-out",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/erp-alerts-roadside-e-parking-payment-among-features-in-trial-before-erp-2-rollout-on-jan-1",
-      "published": "2026-06-15 18:01"
-    },
-    {
       "category": "Transport",
       "title": "NEA increases anti-littering patrols after online photos of rubbish near Boon Lay MRT station",
       "source": "Straits Times",
@@ -121,165 +128,158 @@
       "published": "2026-06-16 15:05"
     },
     {
-      "category": "Housing",
-      "title": "Bank of Korea expects inflation to exceed its target through next year",
+      "category": "Fire",
+      "title": "G7 leaders demand ceasefire in Lebanon, welcome Iran deal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/bank-korea-expects-inflation-exceed-its-target-through-next-year-6189431",
-      "published": "2026-06-17 13:06"
+      "url": "https://www.channelnewsasia.com/world/us-iran-deal-g7-leaders-welcome-it-demand-ceasefire-lebanon-6189816",
+      "published": "2026-06-17 16:45"
+    },
+    {
+      "category": "Money",
+      "title": "Japan's May crude import price hits record high in yen terms amid Mideast war",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japans-may-crude-import-price-hits-record-high-in-yen-terms-amid-mideast-war-6189971",
+      "published": "2026-06-17 17:32"
+    },
+    {
+      "category": "Money",
+      "title": "Category A COE overtakes Category B for third time in 2026, premiums mostly down",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/coe-premiums-cat-prices-jun-17-bidding-exercise-6188786",
+      "published": "2026-06-17 16:07"
+    },
+    {
+      "category": "Money",
+      "title": "$6 FairPrice voucher promotion for shoppers extended till June 21",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/6-fairprice-voucher-promotion-for-shoppers-extended-till-june-211",
+      "published": "2026-06-17 17:01"
+    },
+    {
+      "category": "Money",
+      "title": "Cat A COE rate exceeds Cat B for third time in 4 months; premiums largely down",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/cat-a-coe-rate-exceeds-cat-b-for-third-time-in-4-months-premiums-largely-down",
+      "published": "2026-06-17 16:26"
     },
     {
       "category": "Housing",
-      "title": "Vietnam maintains 2026 GDP target despite trade deficit, inflation pressure",
+      "title": "Analysis:BOJ deputy's brief moment at the helm reveals deeper inflation anxiety",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/vietnam-maintains-2026-gdp-target-despite-trade-deficit-inflation-pressure-6189251",
-      "published": "2026-06-17 11:43"
+      "url": "https://www.channelnewsasia.com/business/analysisboj-deputys-brief-moment-helm-reveals-deeper-inflation-anxiety-6189791",
+      "published": "2026-06-17 16:10"
     },
     {
       "category": "Housing",
-      "title": "Two Prime projects in Bishan, Bukit Merah among 6,952 flats launched in June BTO exercise",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/hdb-bto-june-2026-prime-bishan-bukit-merah-6188956",
-      "published": "2026-06-17 11:14"
+      "title": "Geylang condo owners, management at odds over foreign worker housing ban",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/housing/geylang-condo-owners-management-at-odds-over-foreign-worker-housing-ban",
+      "published": "2026-06-17 17:15"
     },
     {
       "category": "Housing",
-      "title": "HDB launches 6,952 BTO flats, including Prime projects in Berlayar and Upper Thomson",
+      "title": "HDB launches over 6,950 BTO flats, including Prime projects in Berlayar and Upper Thomson",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/hdb-launches-6952-bto-flats-including-prime-projects-in-berlayar-and-upper-thomson",
       "published": "2026-06-17 10:27"
     },
     {
-      "category": "Housing",
-      "title": "Pipe burst disrupts water supply at Pek Kio HDB block for over 7 hours",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/pipe-burst-disrupts-water-supply-in-pek-kio-hdb-block-for-over-7-hours",
-      "published": "2026-06-15 17:23"
-    },
-    {
       "category": "General",
-      "title": "Malaysia’s opposition party Bersatu says ready to fight PAS ‘on all fronts’ amid political divorce",
+      "title": "AI will lead to labour shortages, Jeff Bezos says at VivaTech",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-bersatu-muhyiddin-yassin-pas-perikatan-nasional-6189351",
-      "published": "2026-06-17 13:11"
+      "url": "https://www.channelnewsasia.com/business/ai-will-lead-labour-shortages-jeff-bezos-says-vivatech-6190031",
+      "published": "2026-06-17 17:56"
     },
     {
       "category": "General",
-      "title": "Italian mother takes on Meta, TikTok after daughter's death",
+      "title": "Italy's privacy watchdog fines Emirates over handling of passenger health data",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/italian-mother-takes-meta-tiktok-after-daughters-death-6189426",
-      "published": "2026-06-17 13:05"
+      "url": "https://www.channelnewsasia.com/business/italys-privacy-watchdog-fines-emirates-over-handling-passenger-health-data-6190006",
+      "published": "2026-06-17 17:47"
     },
     {
       "category": "General",
-      "title": "New rulebook on how landowners can defend coast from rising seas launched, to be mandatory from 2028",
+      "title": "Man acquitted of receiving nearly S$300,000 in kickbacks as Keppel FELS shipyard manager",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/coastal-protection-law-singapore-landowner-requirements-code-practice-pub-6186926",
-      "published": "2026-06-17 13:00"
+      "url": "https://www.channelnewsasia.com/singapore/shipyard-manager-acquitted-kickbacks-keppel-fels-6189886",
+      "published": "2026-06-17 17:36"
     },
     {
       "category": "General",
-      "title": "Messi reaffirms enduring importance with World Cup hat-trick",
+      "title": "Inclusive playground opens in Tampines, featuring Singapore's first slide for wheelchair users",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/messi-reaffirms-enduring-importance-world-cup-hat-trick-6189376",
-      "published": "2026-06-17 12:57"
+      "url": "https://www.channelnewsasia.com/singapore/magical-bridge-playground-slide-tampines-sun-plaza-park-inclusive-disabilities-wheelchair-users-6189601",
+      "published": "2026-06-17 17:26"
     },
     {
       "category": "General",
-      "title": "Toyota shareholders back Toyoda as chairman and new CEO Kon at annual meeting",
+      "title": "Lululemon apologises for featuring Japanese Taiko drum during promotional event in China",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/toyota-shareholders-back-toyoda-chairman-and-new-ceo-kon-annual-meeting-6189381",
-      "published": "2026-06-17 12:55"
+      "url": "https://www.channelnewsasia.com/east-asia/lululemon-china-apology-japanese-drum-great-wall-controversy-6189881",
+      "published": "2026-06-17 17:19"
     },
     {
       "category": "General",
-      "title": "Conway and Tickner back in New Zealand's central contract list",
+      "title": "Italy's Engineering sells two units to Accenture",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/conway-and-tickner-back-in-new-zealands-central-contract-list-6189361",
-      "published": "2026-06-17 12:52"
+      "url": "https://www.channelnewsasia.com/business/italys-engineering-sells-two-units-accenture-6189931",
+      "published": "2026-06-17 17:14"
     },
     {
       "category": "General",
-      "title": "Algeria coach says errors helped Messi score hat-trick to tie World Cup record",
+      "title": "UK regulator sets out new rules on Google Search to boost competition",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/algeria-coach-says-errors-helped-messi-score-hat-trick-tie-world-cup-record-6189346",
-      "published": "2026-06-17 12:39"
+      "url": "https://www.channelnewsasia.com/business/uk-regulator-sets-out-new-rules-google-search-boost-competition-6189911",
+      "published": "2026-06-17 17:10"
     },
     {
       "category": "General",
-      "title": "Singapore's first White Rabbit-themed pop-up store launches at Plaza Singapura",
+      "title": "Cyber Security Agency of Singapore to get new chief executive on Jul 1",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/living/white-rabbit-pop-up-plaza-singapura-6189211",
-      "published": "2026-06-17 12:23"
+      "url": "https://www.channelnewsasia.com/singapore/csa-chief-executive-david-koh-retires-commissioner-cybersecurity-gwenda-fong-replacement-mddi-6189326",
+      "published": "2026-06-17 17:03"
     },
     {
       "category": "General",
-      "title": "West Indies recall fit-again Joseph and Da Silva for Sri Lanka series",
+      "title": "South Korea to ease civilian restrictions near North Korea border",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/west-indies-recall-fit-again-joseph-and-da-silva-sri-lanka-series-6189296",
-      "published": "2026-06-17 12:06"
+      "url": "https://www.channelnewsasia.com/east-asia/north-korea-border-south-korea-civilian-control-line-shrunk-six-km-dmz-6189786",
+      "published": "2026-06-17 16:58"
     },
     {
       "category": "General",
-      "title": "Merlin the duck: From Mexico City streets to World Cup stardom",
+      "title": "Hit Chinese film Dear You to open in Singapore with Mandarin-dubbed screenings",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/merlin-duck-mexico-city-streets-world-cup-stardom-6189256",
-      "published": "2026-06-17 11:46"
+      "url": "https://www.channelnewsasia.com/entertainment/dear-you-mandarin-teochew-singapore-6189836",
+      "published": "2026-06-17 16:55"
     },
     {
       "category": "General",
-      "title": "Messi hat-trick equals World Cup goalscoring record as Argentina beat Algeria",
+      "title": "Publicis chief urges France, Germany to lead European AI fund",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cup-messi-argentina-algeria-hat-trick-record-6189161",
-      "published": "2026-06-17 11:29"
+      "url": "https://www.channelnewsasia.com/business/publicis-chief-urges-france-germany-lead-european-ai-fund-6189861",
+      "published": "2026-06-17 16:37"
     },
     {
       "category": "General",
-      "title": "Tunisia's new coach Renard takes reins after Lamouchi sacked",
+      "title": "Arnautovic turns the tide for Austria in tense win over Jordan",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tunisias-new-coach-renard-takes-reins-after-lamouchi-sacked-6189196",
-      "published": "2026-06-17 11:21"
+      "url": "https://www.channelnewsasia.com/sport/arnautovic-turns-tide-austria-in-tense-win-over-jordan-6189801",
+      "published": "2026-06-17 16:20"
     },
     {
       "category": "General",
-      "title": "Philippines' Globe Telecom moves ahead with Mynt IPO-related filings",
+      "title": "IEA sees significant 2027 oil surplus after Hormuz recovery",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/philippines-globe-telecom-moves-ahead-mynt-ipo-related-filings-6189191",
-      "published": "2026-06-17 11:18"
+      "url": "https://www.channelnewsasia.com/world/oil-surplus-2027-iea-hormuz-recovery-6189781",
+      "published": "2026-06-17 16:17"
     },
     {
       "category": "General",
-      "title": "Cannavaro says Uzbekistan must embrace World Cup debut against Colombia",
+      "title": "Austria's Rangnick hails World Cup's smaller nations after close win over Jordan",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/cannavaro-says-uzbekistan-must-embrace-world-cup-debut-against-colombia-6189166",
-      "published": "2026-06-17 11:12"
-    },
-    {
-      "category": "General",
-      "title": "Messi hat-trick equals goalscoring record as Argentina beat Algeria",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/messi-hat-trick-equals-goalscoring-record-argentina-beat-algeria-6189171",
-      "published": "2026-06-17 11:10"
-    },
-    {
-      "category": "General",
-      "title": "Austria bench veteran striker Arnautovic for World Cup opener v Jordan",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/austria-bench-veteran-striker-arnautovic-world-cup-opener-v-jordan-6189101",
-      "published": "2026-06-17 11:02"
-    },
-    {
-      "category": "General",
-      "title": "M'sian couple cut ties with son, 26, who works in S'pore, after he borrowed from 7 loan sharks",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/06/msian-couple-cut-ties-with-son-gambling-debt/",
-      "published": "2026-06-17 02:01"
-    },
-    {
-      "category": "General",
-      "title": "Mother goes to S'pore modelling casting call to support daughter, 15, gets signed by agency instead",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/06/mother-daughter-model-audition/",
-      "published": "2026-06-17 01:32"
+      "url": "https://www.channelnewsasia.com/sport/austrias-rangnick-hails-world-cups-smaller-nations-after-close-win-over-jordan-6189771",
+      "published": "2026-06-17 15:58"
     }
   ]
 }
