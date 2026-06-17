@@ -1710,7 +1710,7 @@ button,
 }
 
 .seo-card {
-  margin-top: -45px;
+  margin-top: 11px;
   margin-bottom: 20px;
 }
 
@@ -1743,13 +1743,13 @@ button,
 
 @media screen and (max-width: 768px) {
   .seo-card {
-    margin-top: -20px;
+    margin-top: 11px;
     margin-bottom: 14px;
     padding: 14px;
   }
 
   .seo-card .card-header {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .seo-card h2 {

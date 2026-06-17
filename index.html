@@ -3,28 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>SG Alerts - Singapore Traffic, Petrol, COE & Daily Alerts</title>
 
+  <meta name="description" content="SG Alerts is a Singapore daily dashboard for live Woodlands and Tuas checkpoint cameras, petrol prices, COE results, BTO launches, Singapore Pools results and daily public alerts.">
+
+  <meta property="og:title" content="SG Alerts - Singapore Daily Dashboard">
+  <meta property="og:description" content="Live checkpoint cameras, petrol prices, COE results, BTO launches and daily Singapore alerts.">
+  <meta property="og:url" content="https://sgalerts.com">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://sgalerts.com/apple-touch-icon.png">
+
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  
+
   <link rel="stylesheet" href="style.css?v=3" />
 
-<!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-FXKD1E3N5Z');
-    </script>
-
+    gtag("js", new Date());
+    gtag("config", "G-FXKD1E3N5Z");
+  </script>
 </head>
-
 
 <body>
   <header>
@@ -33,155 +40,164 @@
   </header>
 
   <main class="grid">
-
-      <section class="card news-card wide-card">
-    <div class="card-header">
+    <section class="card news-card wide-card">
+      <div class="card-header">
         <div>
-            <h2>Singapore Alerts</h2>
-            <p>Latest incidents, news and public alerts</p>
+          <h2>Singapore Alerts</h2>
+          <p>Latest incidents, news and public alerts</p>
         </div>
-    </div>
+      </div>
 
-    <div id="news-result" class="result">
-        Loading latest headlines...
-    </div>
-</section>
+      <div id="news-result" class="result">
+        <p>Latest Singapore news, traffic incidents, crime alerts, transport updates and public information.</p>
+      </div>
+    </section>
 
-<section class="card checkpoint-card wide-card">
-  <div class="card-header">
-    <h2>Woodlands & Tuas Checkpoint</h2>
+    <section class="card checkpoint-card wide-card">
+      <div class="card-header">
+        <h2>Woodlands & Tuas Checkpoint</h2>
 
-    <div class="card-actions">
-      <button onclick="refreshCheckpointData()" class="refresh-btn">
-        🔄 Refresh
-      </button>
+        <div class="card-actions">
+          <button onclick="refreshCheckpointData()" class="refresh-btn">
+            🔄 Refresh
+          </button>
 
-      <a id="checkpointSourceLink"
-         href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html"
-         target="_blank"
-         rel="noopener noreferrer">
-        Verify source
-      </a>
-    </div>
-  </div>
+          <a id="checkpointSourceLink"
+             href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html"
+             target="_blank"
+             rel="noopener noreferrer">
+            Verify source
+          </a>
+        </div>
+      </div>
 
-  <p>Latest official LTA checkpoint traffic camera images.</p>
+      <p>Latest official LTA checkpoint traffic camera images.</p>
 
-  <div id="checkpointResult" class="result">
-    Loading checkpoint cameras...
-  </div>
-</section>
+      <div id="checkpointResult" class="result">
+        <p>Live Woodlands and Tuas checkpoint traffic camera images from official LTA sources.</p>
+      </div>
+    </section>
 
     <section class="card petrol-card wide-card">
       <div class="card-header">
         <h2>Latest Petrol Price</h2>
         <a id="petrolSourceLink" href="#" target="_blank" rel="noopener noreferrer">Verify source</a>
       </div>
-      <p>Petrol prices can change frequently. Cross-check before pumping.</p>
-      <div id="petrolResult" class="result"></div>
-    </section>
 
+      <p>Petrol prices can change frequently. Cross-check before pumping.</p>
+
+      <div id="petrolResult" class="result">
+        <p>Latest Singapore petrol prices for Shell, Esso, SPC, Caltex, Sinopec and Smart Energy.</p>
+      </div>
+    </section>
 
     <section class="card coe-card half-card">
       <div class="card-header">
         <h2>Latest COE Prices</h2>
         <a id="coeSourceLink" href="#" target="_blank" rel="noopener noreferrer">Verify source</a>
       </div>
+
       <p>Latest COE bidding result from data.gov.sg / LTA.</p>
-      <div id="coeResult" class="result"></div>
-      
+
+      <div id="coeResult" class="result">
+        <p>Latest COE bidding results for Categories A, B, C, D and E in Singapore.</p>
+      </div>
     </section>
 
-        <section class="card bto-card half-card">
+    <section class="card bto-card half-card">
       <div class="card-header">
         <h2>Upcoming BTO Projects</h2>
         <a id="btoSourceLink" href="#" target="_blank" rel="noopener noreferrer">Verify source</a>
       </div>
+
       <p>Upcoming BTO launch summary for Singapore home buyers.</p>
-      <div id="btoResult" class="result"></div>
+
+      <div id="btoResult" class="result">
+        <p>Upcoming Singapore BTO launches, project locations and flat types.</p>
+      </div>
     </section>
-    
 
     <section class="card sgpools-card wide-card">
-  <div class="card-header">
-    <h2>Latest Singapore Pool Results</h2>
+      <div class="card-header">
+        <h2>Latest Singapore Pool Results</h2>
 
-    <div class="card-actions">
-      <button id="toggleGamblingBtn" class="hide-btn" type="button" onclick="toggleGamblingSection()">
-        Hide
-      </button>
+        <div class="card-actions">
+          <button id="toggleGamblingBtn" class="hide-btn" type="button" onclick="toggleGamblingSection()">
+            Hide
+          </button>
 
-      <a id="sgpoolsSourceLink" href="#" target="_blank" rel="noopener noreferrer">
-        Verify source
-      </a>
-    </div>
-  </div>
+          <a id="sgpoolsSourceLink" href="#" target="_blank" rel="noopener noreferrer">
+            Verify source
+          </a>
+        </div>
+      </div>
 
-  <p>Latest Singapore Pools 4D and TOTO draw result.</p>
+      <p>Latest Singapore Pools 4D and TOTO draw result.</p>
 
-  <div id="sgpoolsResult" class="result"></div>
-</section>
+      <div id="sgpoolsResult" class="result">
+        <p>Latest Singapore Pools 4D and TOTO draw results, updated after official draw results are available.</p>
+      </div>
+    </section>
 
     <section class="card quick-card wide-card">
       <div class="card-header">
         <h2>Quick Info</h2>
         <a id="quickSourceLink" href="#" target="_blank" rel="noopener noreferrer">Verify source</a>
       </div>
+
       <p>Small useful Singapore reminders in one place.</p>
-      <div id="quickInfo" class="result"></div>
+
+      <div id="quickInfo" class="result">
+        <p>Useful Singapore reminders including public holidays, vouchers and daily information.</p>
+      </div>
+    </section>
+
+    <section class="card seo-card wide-card">
+      <div class="card-header">
+        <div>
+          <h2>About SG Alerts</h2>
+          <p>Singapore traffic, petrol, COE and daily utility information.</p>
+        </div>
+      </div>
+
+      <div class="seo-grid">
+        <div>
+          <h3>Singapore Checkpoint Traffic Cameras</h3>
+          <p>View live Woodlands and Tuas checkpoint traffic camera updates from official LTA sources before travelling between Singapore and Johor Bahru.</p>
+        </div>
+
+        <div>
+          <h3>Singapore Petrol Prices</h3>
+          <p>Compare Shell, Esso, SPC, Caltex, Sinopec and Smart Energy petrol prices, fuel discounts and estimated effective prices in Singapore.</p>
+        </div>
+
+        <div>
+          <h3>Latest COE Results</h3>
+          <p>Track the latest Certificate of Entitlement bidding results, quota premiums and category prices for Singapore vehicles.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <section class="card seo-card wide-card">
-  <div class="card-header">
-    <div>
-      <h2>About SG Alerts</h2>
-      <p>Singapore traffic, petrol, COE and daily utility information.</p>
-    </div>
+  <div id="imageModal" class="image-modal">
+    <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+    <img id="modalImage" class="image-modal-content">
+    <div id="modalCaption" class="image-modal-caption"></div>
   </div>
 
-  <div class="seo-grid">
-    <div>
-      <h3>Singapore Checkpoint Traffic Cameras</h3>
-      <p>View live Woodlands and Tuas checkpoint traffic camera updates from official LTA sources before travelling between Singapore and Johor Bahru.</p>
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
     </div>
 
-    <div>
-      <h3>Singapore Petrol Prices</h3>
-      <p>Compare Shell, Esso, SPC, Caltex, Sinopec and Smart Energy petrol prices, fuel discounts and estimated effective prices in Singapore.</p>
+    <div class="footer-copy">
+      © 2026 SG Alerts • Independent Singapore Information Dashboard
     </div>
+  </footer>
 
-    <div>
-      <h3>Latest COE Results</h3>
-      <p>Track the latest Certificate of Entitlement bidding results, quota premiums and category prices for Singapore vehicles.</p>
-    </div>
-  </div>
-</section>
-
-<div id="imageModal" class="image-modal">
-  <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
-
-  <img id="modalImage" class="image-modal-content">
-
-  <div id="modalCaption" class="image-modal-caption"></div>
-</div>
-
-
-
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms.html">Terms</a>
-  </div>
-
-  <div class="footer-copy">
-    © 2026 SG Alerts • Independent Singapore Information Dashboard
-  </div>
-</footer>
-
-<script src="script.js?v=4"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
-
