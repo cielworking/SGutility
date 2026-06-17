@@ -1710,8 +1710,8 @@ button,
 }
 
 .seo-card {
-    margin-top: -45px;
-    margin-bottom: 20px;
+  margin-top: -45px;
+  margin-bottom: 20px;
 }
 
 .seo-grid {
@@ -1731,6 +1731,7 @@ button,
 .seo-grid h3 {
   margin: 0 0 8px;
   font-size: 15px;
+  line-height: 1.3;
 }
 
 .seo-grid p {
@@ -1740,9 +1741,65 @@ button,
   color: var(--muted);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .seo-card {
+    margin-top: -20px;
+    margin-bottom: 14px;
+    padding: 14px;
+  }
+
+  .seo-card .card-header {
+    margin-bottom: 10px;
+  }
+
+  .seo-card h2 {
+    font-size: 18px;
+  }
+
+  .seo-card .card-header p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 0;
+  }
+
   .seo-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .seo-grid div {
+    padding: 13px;
+    min-height: auto;
+    border-radius: 14px;
+  }
+
+  .seo-grid h3 {
+    font-size: 15px;
+    line-height: 1.25;
+    margin-bottom: 6px;
+  }
+
+  .seo-grid p {
+    font-size: 12px;
+    line-height: 1.45;
   }
 }
 
+@media screen and (max-width: 420px) {
+  .seo-card {
+    padding: 12px;
+  }
+
+  .seo-grid div {
+    padding: 12px;
+  }
+
+  .seo-grid h3 {
+    font-size: 14px;
+  }
+
+  .seo-grid p {
+    font-size: 11.5px;
+    line-height: 1.45;
+  }
+}
