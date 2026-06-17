@@ -1710,8 +1710,14 @@ button,
 }
 
 .seo-card {
-  margin-top: 11px;
+  background: var(--card);
+  border-top: 4px solid var(--purple);
+  margin-top: 0;
   margin-bottom: 20px;
+}
+
+.seo-card h2::before {
+  content: "ℹ️";
 }
 
 .seo-grid {
@@ -1721,7 +1727,7 @@ button,
 }
 
 .seo-grid div {
-  background: white;
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
   border: 1px solid var(--border);
   border-radius: 14px;
   padding: 16px;
@@ -1742,64 +1748,11 @@ button,
 }
 
 @media screen and (max-width: 768px) {
-  .seo-card {
-    margin-top: 11px;
-    margin-bottom: 14px;
-    padding: 14px;
-  }
-
-  .seo-card .card-header {
-    margin-bottom: 15px;
-  }
-
-  .seo-card h2 {
-    font-size: 18px;
-  }
-
-  .seo-card .card-header p {
-    font-size: 12px;
-    line-height: 1.4;
-    margin-bottom: 0;
-  }
-
   .seo-grid {
     grid-template-columns: 1fr;
-    gap: 10px;
   }
 
   .seo-grid div {
-    padding: 13px;
     min-height: auto;
-    border-radius: 14px;
-  }
-
-  .seo-grid h3 {
-    font-size: 15px;
-    line-height: 1.25;
-    margin-bottom: 6px;
-  }
-
-  .seo-grid p {
-    font-size: 12px;
-    line-height: 1.45;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .seo-card {
-    padding: 12px;
-  }
-
-  .seo-grid div {
-    padding: 12px;
-  }
-
-  .seo-grid h3 {
-    font-size: 14px;
-  }
-
-  .seo-grid p {
-    font-size: 11.5px;
-    line-height: 1.45;
   }
 }
