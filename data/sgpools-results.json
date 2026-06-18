@@ -1,7 +1,7 @@
 {
   "source_name": "Singapore Pools",
   "source_url": "https://www.singaporepools.com.sg/en/product/pages/4d_results.aspx",
-  "last_updated": "2026-06-18T07:05:54.174091+00:00",
+  "last_updated": "2026-06-18T11:17:43.714949+00:00",
   "four_d": {
     "source_url": "https://www.singaporepools.com.sg/en/product/pages/4d_results.aspx",
     "data_url": "https://www.singaporepools.com.sg/DataFileArchive/Lottery/Output/fourd_result_top_draws_en.html",
@@ -38,16 +38,16 @@
   "toto": {
     "source_url": "https://www.singaporepools.com.sg/en/product/pages/toto_results.aspx",
     "data_url": "https://www.singaporepools.com.sg/DataFileArchive/Lottery/Output/toto_result_top_draws_en.html",
-    "draw_date": "Mon, 15 Jun 2026",
-    "draw_no": "4191",
+    "draw_date": "Thu, 18 Jun 2026",
+    "draw_no": "4192",
     "winning_numbers": [
-      "15",
-      "9",
-      "16",
-      "27",
-      "28",
-      "32"
+      "18",
+      "2",
+      "7",
+      "11",
+      "19",
+      "20"
     ],
-    "additional_number": "49"
+    "additional_number": "42"
   }
 }
