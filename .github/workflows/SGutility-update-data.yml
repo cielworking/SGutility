@@ -39,7 +39,7 @@ jobs:
           python scripts/update-petrol-discounts.py
 
       - name: Commit updated data
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Update dashboard data"
           file_pattern: data/*.json
