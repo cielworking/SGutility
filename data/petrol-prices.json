@@ -1,7 +1,7 @@
 {
   "source_name": "PetrolPrice.sg",
   "source_url": "https://petrolprice.sg/",
-  "last_updated": "2026-06-19T12:17:53.049904+00:00",
+  "last_updated": "2026-06-19T15:44:47.865575+00:00",
   "note": "Listed pump prices in SGD per litre. Discounts and card promotions are not included.",
   "brands": [
     {
@@ -47,19 +47,19 @@
       "diesel": "$4.22",
       "changes": {
         "ron95": {
-          "previous": 3.46,
-          "change": -0.04,
-          "percent": -1.16
+          "previous": 3.42,
+          "change": 0.0,
+          "percent": 0.0
         },
         "ron98": {
-          "previous": 3.98,
-          "change": -0.04,
-          "percent": -1.01
+          "previous": 3.94,
+          "change": 0.0,
+          "percent": 0.0
         },
         "premium": {
-          "previous": 4.2,
-          "change": -0.04,
-          "percent": -0.95
+          "previous": 4.16,
+          "change": 0.0,
+          "percent": 0.0
         },
         "diesel": {
           "previous": 4.22,
@@ -104,26 +104,26 @@
       "brand": "Caltex",
       "logo": "./assets/petrol/caltex.png",
       "url": "https://petrolprice.sg/",
-      "ron92": "$3.43",
-      "ron95": "$3.46",
+      "ron92": "$3.39",
+      "ron95": "$3.42",
       "ron98": "N/A",
-      "premium": "$4.16",
+      "premium": "$4.12",
       "diesel": "$4.22",
       "changes": {
         "ron92": {
           "previous": 3.43,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.04,
+          "percent": -1.17
         },
         "ron95": {
           "previous": 3.46,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.04,
+          "percent": -1.16
         },
         "premium": {
           "previous": 4.16,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.04,
+          "percent": -0.96
         },
         "diesel": {
           "previous": 4.22,
@@ -158,9 +158,9 @@
           "percent": 0.0
         },
         "diesel": {
-          "previous": 4.31,
-          "change": -0.15,
-          "percent": -3.48
+          "previous": 4.16,
+          "change": 0.0,
+          "percent": 0.0
         }
       }
     },
