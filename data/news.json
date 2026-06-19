@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-06-20 04:03",
+  "last_updated": "2026-06-20 05:34",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Two trains collide north of London, leaving at least one person dead, police say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/train-collision-north-london-bedford-one-dead-6196416",
+      "published": "2026-06-20 04:58"
+    },
     {
       "category": "Crime",
       "title": "M'sian girl, 15, allegedly robbed & sexually assaulted during morning run",
@@ -66,17 +73,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Canadian PM Carney praises character of team after first World Cup finals win",
+      "title": "Pitch not perfect: World Cup players find weirdness underfoot on innovative grass",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/canadian-pm-carney-praises-character-team-after-first-world-cup-finals-win-6196166",
-      "published": "2026-06-20 01:17"
-    },
-    {
-      "category": "Traffic",
-      "title": "Criticism of captain Odegaard is rubbish and nonsense, say Norway players",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/criticism-captain-odegaard-rubbish-and-nonsense-say-norway-players-6196156",
-      "published": "2026-06-20 01:00"
+      "url": "https://www.channelnewsasia.com/sport/pitch-not-perfect-world-cup-players-find-weirdness-underfoot-innovative-grass-6196391",
+      "published": "2026-06-20 04:33"
     },
     {
       "category": "Traffic",
@@ -91,13 +91,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/22-people-taken-to-hospital-after-multi-vehicle-accident-in-tuas",
       "published": "2026-06-18 18:45"
-    },
-    {
-      "category": "Traffic",
-      "title": "CCL Stage 6: Building an MRT tunnel directly under Keppel Viaduct with live traffic overhead",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/ccl-stage-6-building-an-mrt-tunnel-directly-under-keppel-viaduct-with-live-traffic-overhead",
-      "published": "2026-06-18 12:00"
     },
     {
       "category": "Transport",
@@ -150,6 +143,76 @@
     },
     {
       "category": "General",
+      "title": "US reach World Cup knockout round with dominant 2-0 win over Australia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/us-reach-world-cup-knockout-round-dominant-2-0-win-over-australia-6196441",
+      "published": "2026-06-20 05:08"
+    },
+    {
+      "category": "General",
+      "title": "Paulino, El Bakkali victorious as Tharanga pips Chopra in Doha Diamond League",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/paulino-el-bakkali-victorious-tharanga-pips-chopra-in-doha-diamond-league-6196436",
+      "published": "2026-06-20 05:03"
+    },
+    {
+      "category": "General",
+      "title": "Coach Clarke boosts Scotland defence, Morocco unchanged from opener",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/coach-clarke-boosts-scotland-defence-morocco-unchanged-opener-6196421",
+      "published": "2026-06-20 04:51"
+    },
+    {
+      "category": "General",
+      "title": "US scientist John Jumper to leave Google DeepMind for Anthropic",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-scientist-john-jumper-leave-google-deepmind-anthropic-6196411",
+      "published": "2026-06-20 04:40"
+    },
+    {
+      "category": "General",
+      "title": "Clark hopes to close door on locker saga at Shinnecock Hills",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/clark-hopes-close-door-locker-saga-shinnecock-hills-6196401",
+      "published": "2026-06-20 04:34"
+    },
+    {
+      "category": "General",
+      "title": "Kansas City reassures fans after eventful World Cup start",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/kansas-city-reassures-fans-after-eventful-world-cup-start-6196371",
+      "published": "2026-06-20 04:11"
+    },
+    {
+      "category": "General",
+      "title": "Japan v Tunisia marks 1,000th World Cup match, FIFA says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/japan-v-tunisia-marks-1000th-world-cup-match-fifa-says-6196351",
+      "published": "2026-06-20 03:59"
+    },
+    {
+      "category": "General",
+      "title": "Outrage in Italy after Trump says Meloni 'begged' for photo op",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/meloni-italy-trump-us-photo-begged-6196306",
+      "published": "2026-06-20 03:58"
+    },
+    {
+      "category": "General",
+      "title": "Mum is here! Vozinha's World Cup wish comes true",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mum-here-vozinhas-world-cup-wish-comes-true-6196341",
+      "published": "2026-06-20 03:56"
+    },
+    {
+      "category": "General",
+      "title": "Trump tells Axios he no longer views Anthropic as national security threat",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/trump-tells-axios-he-no-longer-views-anthropic-national-security-threat-6196336",
+      "published": "2026-06-20 03:54"
+    },
+    {
+      "category": "General",
       "title": "Japan seek winning edge against Tunisia in landmark World Cup clash",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/japan-seek-winning-edge-against-tunisia-in-landmark-world-cup-clash-6196326",
@@ -199,76 +262,6 @@
     },
     {
       "category": "General",
-      "title": "Algeria complain to FIFA about refereeing in loss to Argentina",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/algeria-complain-fifa-about-refereeing-in-loss-argentina-6196196",
-      "published": "2026-06-20 01:35"
-    },
-    {
-      "category": "General",
-      "title": "Cape Verde eye another upset against wounded Uruguay",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/cape-verde-eye-another-upset-against-wounded-uruguay-6196181",
-      "published": "2026-06-20 01:32"
-    },
-    {
-      "category": "General",
-      "title": "Spain must be patient, says Yamal as he continues to manage return from injury",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spain-must-be-patient-says-yamal-he-continues-manage-return-injury-6196176",
-      "published": "2026-06-20 01:24"
-    },
-    {
-      "category": "General",
-      "title": "Canada's Kone thanks fans, team as recovery from broken leg begins",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/canadas-kone-thanks-fans-team-recovery-broken-leg-begins-6196161",
-      "published": "2026-06-20 01:13"
-    },
-    {
-      "category": "General",
-      "title": "Sri Lanka battles surge in dengue fever, with more than 44,000 cases so far this year",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/sri-lanka-dengue-fever-cases-surge-6196126",
-      "published": "2026-06-20 00:49"
-    },
-    {
-      "category": "General",
-      "title": "Moutet loses nearly all Queen's prize money after sweary interview",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/moutet-loses-nearly-all-queens-prize-money-after-sweary-interview-6196141",
-      "published": "2026-06-20 00:42"
-    },
-    {
-      "category": "General",
-      "title": "Trapped on Everest for days, Nepali survivor recounts escape",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/mount-everest-nepal-survivor-dawa-sherpa-6196116",
-      "published": "2026-06-20 00:28"
-    },
-    {
-      "category": "General",
-      "title": "Rybakina withdraws from Bad Homburg Open citing hip discomfort",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rybakina-withdraws-bad-homburg-open-citing-hip-discomfort-6196061",
-      "published": "2026-06-19 23:40"
-    },
-    {
-      "category": "General",
-      "title": "Spain's worrying lack of cutting edge faces Saudi test",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spains-worrying-lack-cutting-edge-faces-saudi-test-6196051",
-      "published": "2026-06-19 23:36"
-    },
-    {
-      "category": "General",
-      "title": "Portugal tuning out 'noise' as Ronaldo criticism mounts at World Cup, says Dias",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/portugal-tuning-out-noise-ronaldo-criticism-mounts-world-cup-says-dias-6196021",
-      "published": "2026-06-19 23:08"
-    },
-    {
-      "category": "General",
       "title": "M’sian tourist who called China locals 'smelly' to take legal actions, cites damaged 'good name' & 'reputation'",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/malaysian-tourist-mock-chinese-local-legal-action/",
@@ -280,6 +273,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/us-teacher-have-sex-with-student/",
       "published": "2026-06-19 23:55"
+    },
+    {
+      "category": "General",
+      "title": "Haidilao S’pore goes big on coriander with coriander soup base & coriander cocktail from Jun. 18, 2026",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/06/haidilao-coriander-menu/",
+      "published": "2026-06-19 23:49"
     }
   ]
 }
