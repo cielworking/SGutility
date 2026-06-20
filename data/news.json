@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20 20:09",
+  "last_updated": "2026-06-20 22:30",
   "headlines": [
     {
       "category": "Crime",
@@ -24,7 +24,7 @@
     },
     {
       "category": "Crime",
-      "title": "Two men charged with theft of diamond worth $199,000 at Chinatown jewellery store",
+      "title": "Two men charged over theft of $199,000 diamond at Chinatown jewellery store",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/two-men-arrested-for-theft-of-diamond-worth-over-235000-at-chinatown-jewellery-store",
       "published": "2026-06-20 07:40"
@@ -84,6 +84,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/everybodys-crying-tearful-turkey-crash-out-without-goal-6197051",
       "published": "2026-06-20 15:34"
+    },
+    {
+      "category": "Traffic",
+      "title": "At least 1 killed, 89 injured in fatal train crash near London",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/06/london-trains-collide-dead-injured/",
+      "published": "2026-06-20 20:08"
     },
     {
       "category": "Traffic",
@@ -149,11 +156,39 @@
       "published": "2026-06-19 23:39"
     },
     {
-      "category": "Money",
-      "title": "Why has Cat A COE price exceeded Cat B’s thrice in four months?",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/why-has-the-cat-a-coe-price-exceeded-cat-bs-thrice-in-four-months",
-      "published": "2026-06-18 21:30"
+      "category": "General",
+      "title": "England lose early wickets after NZ set target of 463 in 2nd test",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/england-lose-early-wickets-after-nz-set-target-463-in-2nd-test-6197356",
+      "published": "2026-06-20 22:17"
+    },
+    {
+      "category": "General",
+      "title": "Iran says Hormuz Strait closed over Israel attacks on Lebanon",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-strait-hormuz-closed-israel-attacks-lebanon-6197326",
+      "published": "2026-06-20 21:45"
+    },
+    {
+      "category": "General",
+      "title": "Retirement planning isn't just about having more money. It's about getting the basics right",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/today/voices/retirement-planning-mistakes-basics-money-longevity-6194671",
+      "published": "2026-06-20 21:30"
+    },
+    {
+      "category": "General",
+      "title": "He wasn't 'smart enough' for studies. Now, he owns five drum schools and holds a Guinness World Record",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/today/up-close/drummer-guinness-world-records-drum-teacher-music-6185256",
+      "published": "2026-06-20 21:30"
+    },
+    {
+      "category": "General",
+      "title": "New Zealand stretch lead to over 400 against England on day four",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/new-zealand-stretch-lead-over-400-against-england-day-four-6197266",
+      "published": "2026-06-20 20:30"
     },
     {
       "category": "General",
@@ -199,7 +234,7 @@
     },
     {
       "category": "General",
-      "title": "Israeli strikes kill 10 in Lebanon after truce, with prospect of US-Iran talks unclear",
+      "title": "Israeli strikes kill 16 in Lebanon after truce, prospect of US-Iran talks unclear",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/us-iran-envoy-head-talks-switzerland-israel-strikes-lebanon-after-ceasefire-6196991",
       "published": "2026-06-20 14:31"
@@ -241,45 +276,10 @@
     },
     {
       "category": "General",
-      "title": "Haiti exit World Cup but coach Migne says team proved they belong",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/haiti-exit-world-cup-coach-migne-says-team-proved-they-belong-6196916",
-      "published": "2026-06-20 12:19"
-    },
-    {
-      "category": "General",
-      "title": "Ancelotti expects Neymar back for Brazil's Scotland World Cup showdown",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ancelotti-expects-neymar-back-brazils-scotland-world-cup-showdown-6196901",
-      "published": "2026-06-20 12:08"
-    },
-    {
-      "category": "General",
-      "title": "Cunha gives Brazil balance as Ancelotti's diamond begins to shine",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/cunha-gives-brazil-balance-ancelottis-diamond-begins-shine-6196896",
-      "published": "2026-06-20 11:59"
-    },
-    {
-      "category": "General",
-      "title": "‘Play with your heart’: Saibari’s rise fuels Morocco dream",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/play-your-heart-saibaris-rise-fuels-morocco-dream-6196871",
-      "published": "2026-06-20 11:32"
-    },
-    {
-      "category": "General",
-      "title": "American Douglass breaks 50m freestyle world record",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/american-douglass-breaks-50m-freestyle-world-record-6196846",
-      "published": "2026-06-20 11:00"
-    },
-    {
-      "category": "General",
-      "title": "S'porean woman, 48, in S$220,000 debt, withdraws insurance policy & cashes out, had only S$7 in bank when she filed for bankruptcy",
+      "title": "Golden Village adds 8 more screenings of 'Dear You' in Teochew, cites 'overwhelming demand'",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/06/spore-woman-debt-insurance-policy-jail/",
-      "published": "2026-06-20 03:08"
+      "url": "https://mothership.sg/2026/06/dear-you-additional-teochew-screenings-demand/",
+      "published": "2026-06-20 19:28"
     }
   ]
 }
