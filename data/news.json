@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21 18:07",
+  "last_updated": "2026-06-21 20:22",
   "headlines": [
     {
       "category": "Crime",
@@ -24,13 +24,6 @@
     },
     {
       "category": "Crime",
-      "title": "Some F&B establishments given extended liquor trading hours during World Cup",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/some-fb-establishments-given-extended-liquor-trading-hours-during-world-cup",
-      "published": "2026-06-21 11:10"
-    },
-    {
-      "category": "Crime",
       "title": "Two men charged over theft of $199,000 diamond at Chinatown jewellery store",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/two-men-arrested-for-theft-of-diamond-worth-over-235000-at-chinatown-jewellery-store",
@@ -42,27 +35,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/3-days-jail-for-man-who-allowed-chicken-compost-to-be-dumped-at-tuas-site-he-oversaw",
       "published": "2026-06-19 20:50"
-    },
-    {
-      "category": "Crime",
-      "title": "3 doctors fail in court challenge against IRAS ruling over tax avoidance scheme",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/3-doctors-fail-in-court-challenge-against-iras-ruling-over-tax-avoidance-scheme",
-      "published": "2026-06-19 19:39"
-    },
-    {
-      "category": "Crime",
-      "title": "Coroner’s inquiry for woman, 25, found dead in hotel room; she faced Kpod trafficking charges",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/coroners-inquiry-for-woman-25-found-dead-in-hotel-room-she-was-facing-kpod-trafficking-charges",
-      "published": "2026-06-19 18:31"
-    },
-    {
-      "category": "Crime",
-      "title": "15-year-old among 76 people arrested for suspected drug offences in Singapore",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/15-year-old-among-76-people-arrested-for-suspected-drug-offences-in-singapore",
-      "published": "2026-06-19 18:28"
     },
     {
       "category": "Traffic",
@@ -135,18 +107,18 @@
       "published": "2026-06-19 21:35"
     },
     {
-      "category": "Transport",
-      "title": "UK business minister says he has no reason to think PM Starmer will resign on Monday",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/uk-prime-minister-resign-keir-starmer-6198256",
-      "published": "2026-06-21 17:34"
-    },
-    {
       "category": "Fire",
       "title": "Japan's firepower comes to the fore as Ueda bags a double at World Cup",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/japans-firepower-comes-fore-ueda-bags-double-world-cup-6198221",
       "published": "2026-06-21 15:11"
+    },
+    {
+      "category": "Money",
+      "title": "Ukrainian attacks prompt Russian-held Crimea to halt civilian petrol sales",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/ukraine-russia-attack-crimea-petrol-sales-civilian-6198291",
+      "published": "2026-06-21 19:21"
     },
     {
       "category": "Money",
@@ -164,7 +136,56 @@
     },
     {
       "category": "General",
-      "title": "US-Iran peace talks to begin at Swiss resort with Hormuz, Lebanon conflict in spotlight",
+      "title": "After Samurai Blue sweep aside Tunisia, Japan fans clean up Monterrey stadium",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-japan-tunisia-fans-clean-up-stadium-6198246",
+      "published": "2026-06-21 20:12"
+    },
+    {
+      "category": "General",
+      "title": "Poll finds Israelis believe Iran won Middle East war",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/israelis-believe-iran-won-middle-east-war-us-netanyahu-6198346",
+      "published": "2026-06-21 19:29"
+    },
+    {
+      "category": "General",
+      "title": "Yoghurt wars: Danone-Chobani clash underscores wider protein battle",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/protein-yoghurt-danone-chobani-lawsuit-6198096",
+      "published": "2026-06-21 19:26"
+    },
+    {
+      "category": "General",
+      "title": "Spain's Yamal says the best is yet to come",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/spains-yamal-says-best-yet-come-6198336",
+      "published": "2026-06-21 19:04"
+    },
+    {
+      "category": "General",
+      "title": "Brilliant Henry wraps up victory for New Zealand as England collapse",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/brilliant-henry-wraps-up-victory-new-zealand-england-collapse-6198331",
+      "published": "2026-06-21 18:58"
+    },
+    {
+      "category": "General",
+      "title": "Stokes withdrawn from Durham fixture at ECB request",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/stokes-withdrawn-durham-fixture-ecb-request-6198311",
+      "published": "2026-06-21 18:18"
+    },
+    {
+      "category": "General",
+      "title": "UK minister says Starmer is considering 'political realities' as position under threat",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/uk-prime-minister-resign-keir-starmer-6198256",
+      "published": "2026-06-21 17:34"
+    },
+    {
+      "category": "General",
+      "title": "US, Iran begin talks in Switzerland, diplomacy overshadowed by Hormuz closure",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/iran-us-talks-switzerland-lebanon-israel-hormuz-6198271",
       "published": "2026-06-21 17:02"
@@ -241,45 +262,24 @@
     },
     {
       "category": "General",
-      "title": "Fifteen saves, one point: Room leads Curacao to World Cup history",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fifteen-saves-one-point-room-leads-curacao-world-cup-history-6198091",
-      "published": "2026-06-21 12:00"
+      "title": "3.3-magnitude weak earthquake hits waters off Batu Pahat, Johor at 1:17am on Jun. 21",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/06/batu-pahat-johor-weak-earthquake/",
+      "published": "2026-06-21 18:39"
     },
     {
       "category": "General",
-      "title": "New Zealand need collective effort to stop Salah, says former coach Herbert",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/new-zealand-need-collective-effort-stop-salah-says-former-coach-herbert-6198066",
-      "published": "2026-06-21 11:49"
+      "title": "Ex-KKH doctors move to private practice & declare low salaries to avoid income tax, lose IRAS challenge",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/06/iras-doctor-tax-avoidance/",
+      "published": "2026-06-21 04:39"
     },
     {
       "category": "General",
-      "title": "Iran World Cup travel restrictions to be eased, says coach",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-world-cup-travel-restrictions-eased-6198056",
-      "published": "2026-06-21 11:38"
-    },
-    {
-      "category": "General",
-      "title": "Japan turn to Kamada, Ito with Kubo sidelined for Tunisia clash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/japan-turn-kamada-ito-kubo-sidelined-tunisia-clash-6198046",
-      "published": "2026-06-21 11:18"
-    },
-    {
-      "category": "General",
-      "title": "Iran coach questions inconsistency as preparation for Belgium match cut short",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/iran-coach-questions-inconsistency-preparation-belgium-match-cut-short-6198051",
-      "published": "2026-06-21 11:16"
-    },
-    {
-      "category": "General",
-      "title": "Trump, blaming alleged vandals, says Washington Reflecting Pool needs repairs",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-blame-vandals-lincoln-memorial-reflecting-pool-6198031",
-      "published": "2026-06-21 10:51"
+      "title": "S'porean woman, 35, catches Helpling cleaner stealing money with 'CCTV trap' & planted S$50 notes",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/06/employer-spore-helpling-cleaner-theft-money/",
+      "published": "2026-06-21 03:52"
     }
   ]
 }
