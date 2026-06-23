@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-24 02:14",
+  "last_updated": "2026-06-24 04:22",
   "headlines": [
     {
       "category": "Crime",
@@ -129,20 +129,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Mark Zuckerberg directed Meta to create a prediction markets app, NYT reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/mark-zuckerberg-directed-meta-create-prediction-markets-app-nyt-reports-6204391",
-      "published": "2026-06-24 00:55"
-    },
-    {
-      "category": "Traffic",
-      "title": "Journalist loses World Cup credentials after on-air outburst over Almiron red card",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/journalist-loses-world-cup-credentials-after-air-outburst-over-almiron-red-card-6204286",
-      "published": "2026-06-24 00:11"
-    },
-    {
-      "category": "Traffic",
       "title": "Chinese man, 75, raises daughter, 6, while caring for ill wife, says he wants to ‘live a few more decades’",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/chinese-man-75-raise-kid/",
@@ -184,6 +170,13 @@
       "published": "2026-06-22 13:55"
     },
     {
+      "category": "Fire",
+      "title": "'I'm back': Record-breaker Ronaldo fires Portugal to 5-0 win over Uzbekistan",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/im-back-record-breaker-ronaldo-fires-portugal-5-0-win-over-uzbekistan-6204626",
+      "published": "2026-06-24 03:06"
+    },
+    {
       "category": "Money",
       "title": "Man in Punggol gets S$10 FairPrice voucher from neighbour as apology for renovation noise",
       "source": "Mothership",
@@ -206,80 +199,87 @@
     },
     {
       "category": "General",
+      "title": "US look to keep World Cup momentum going against eliminated Turkey",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/us-look-keep-world-cup-momentum-going-against-eliminated-turkey-6204726",
+      "published": "2026-06-24 04:15"
+    },
+    {
+      "category": "General",
+      "title": "US Commerce Secretary signals possible action on Chinese robots after review, Politico reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-commerce-secretary-signals-possible-action-chinese-robots-after-review-politico-reports-6204711",
+      "published": "2026-06-24 04:06"
+    },
+    {
+      "category": "General",
+      "title": "In Los Angeles, Mexico fans make every World Cup game their own",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/in-los-angeles-mexico-fans-make-every-world-cup-game-their-own-6204706",
+      "published": "2026-06-24 04:02"
+    },
+    {
+      "category": "General",
+      "title": "Mexico City bans alcohol sales ahead of Mexico-Czech Republic match",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mexico-city-bans-alcohol-sales-ahead-mexico-czech-republic-match-6204681",
+      "published": "2026-06-24 03:48"
+    },
+    {
+      "category": "General",
+      "title": "US eases restrictions on Iran's world cup team, allowing them in a day earlier",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/us-eases-restrictions-irans-world-cup-team-allowing-them-in-day-earlier-6204616",
+      "published": "2026-06-24 03:00"
+    },
+    {
+      "category": "General",
+      "title": "England make changes in defence, Partey returns for Ghana",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/england-make-changes-in-defence-partey-returns-ghana-6204611",
+      "published": "2026-06-24 02:54"
+    },
+    {
+      "category": "General",
+      "title": "Leweling to get Brazilian Ronaldo's triangle fringe haircut if Germany win World Cup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/leweling-get-brazilian-ronaldos-triangle-fringe-haircut-if-germany-win-world-cup-6204596",
+      "published": "2026-06-24 02:51"
+    },
+    {
+      "category": "General",
+      "title": "Bale looks into club ownership with American investment partner",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/bale-looks-club-ownership-american-investment-partner-6204591",
+      "published": "2026-06-24 02:48"
+    },
+    {
+      "category": "General",
+      "title": "US spectrum auction raises $3.5 billion, will fund replacing Chinese telecom equipment",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-spectrum-auction-raises-35-billion-will-fund-replacing-chinese-telecom-equipment-6204586",
+      "published": "2026-06-24 02:47"
+    },
+    {
+      "category": "General",
+      "title": "SpaceX launches $25 billion notes offering, source says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/spacex-launches-25-billion-notes-offering-source-says-6204546",
+      "published": "2026-06-24 02:23"
+    },
+    {
+      "category": "General",
+      "title": "Iraq and Saudi Arabia flags will not be placed on ground at World Cup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/iraq-and-saudi-arabia-flags-will-not-be-placed-ground-world-cup-6204536",
+      "published": "2026-06-24 02:14"
+    },
+    {
+      "category": "General",
       "title": "Japan seeking to shackle Swedish strike force in World Cup showdown",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/japan-seeking-shackle-swedish-strike-force-in-world-cup-showdown-6204521",
       "published": "2026-06-24 02:07"
-    },
-    {
-      "category": "General",
-      "title": "Trump to present trophy at World Cup final, says Infantino",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/trump-present-trophy-world-cup-final-says-infantino-6204506",
-      "published": "2026-06-24 01:57"
-    },
-    {
-      "category": "General",
-      "title": "Barcelona keeper Pena to join Greek side Panathinaikos",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/barcelona-keeper-pena-join-greek-side-panathinaikos-6204496",
-      "published": "2026-06-24 01:53"
-    },
-    {
-      "category": "General",
-      "title": "Alibaba sues US Department of Defense for branding it a 'Chinese military company'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/alibaba-sues-us-department-defense-branding-it-chinese-military-company-6204446",
-      "published": "2026-06-24 01:23"
-    },
-    {
-      "category": "General",
-      "title": "Savannah Guthrie says family remains 'in agony' over missing mom, begs the public for tips",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/savannah-guthrie-missing-mother-ransom-notes-6204336",
-      "published": "2026-06-24 01:02"
-    },
-    {
-      "category": "General",
-      "title": "Anthropic launches Claude Tag in research preview for Slack users",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/anthropic-launches-claude-tag-in-research-preview-slack-users-6204406",
-      "published": "2026-06-24 01:02"
-    },
-    {
-      "category": "General",
-      "title": "Exclusive-SPS Commerce explores sale amid activist pressure, sources say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-sps-commerce-explores-sale-amid-activist-pressure-sources-say-6204411",
-      "published": "2026-06-24 01:01"
-    },
-    {
-      "category": "General",
-      "title": "Springboks braced for fearless England and unpredictable Pollock",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/springboks-braced-fearless-england-and-unpredictable-pollock-6204416",
-      "published": "2026-06-24 00:59"
-    },
-    {
-      "category": "General",
-      "title": "France name squad for opening Nations Championship encounter",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/france-name-squad-opening-nations-championship-encounter-6204396",
-      "published": "2026-06-24 00:56"
-    },
-    {
-      "category": "General",
-      "title": "In Mexico, World Cup jerseys fit all shapes, sizes - and species",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/in-mexico-world-cup-jerseys-fit-all-shapes-sizes-and-species-6204361",
-      "published": "2026-06-24 00:46"
-    },
-    {
-      "category": "General",
-      "title": "No 'I' in team as Mbappe puts World Cup glory above records",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/no-i-in-team-mbappe-puts-world-cup-glory-above-records-6204331",
-      "published": "2026-06-24 00:37"
     }
   ]
 }
