@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>RiderLink - Email Confirmed</title>
+  <meta
+    name="description"
+    content="Your RiderLink email has been confirmed successfully."
+  />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#081120" />
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #081120;
+      --card: rgba(17, 24, 39, 0.94);
+      --border: rgba(255, 255, 255, 0.10);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --green: #69f6c3;
+      --blue: #2788ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(39, 136, 255, 0.20), transparent 38%),
+        radial-gradient(circle at 85% 85%, rgba(105, 246, 195, 0.14), transparent 34%),
+        var(--bg);
+      color: var(--text);
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(100%, 470px);
+      padding: 34px 28px 30px;
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(18px);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 26px;
+      color: var(--text);
+      font-size: 19px;
+      font-weight: 850;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: linear-gradient(145deg, var(--blue), #1556d8);
+      box-shadow: 0 10px 25px rgba(39, 136, 255, 0.35);
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .success-icon {
+      width: 86px;
+      height: 86px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      color: #052016;
+      background: var(--green);
+      box-shadow: 0 15px 36px rgba(105, 246, 195, 0.25);
+      font-size: 45px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(26px, 7vw, 34px);
+      line-height: 1.12;
+      letter-spacing: -0.8px;
+    }
+
+    p {
+      margin: 14px auto 0;
+      max-width: 360px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    .instruction {
+      margin-top: 24px;
+      padding: 15px 16px;
+      border: 1px solid rgba(105, 246, 195, 0.18);
+      border-radius: 16px;
+      background: rgba(105, 246, 195, 0.07);
+      color: #d8fff0;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .footer {
+      margin-top: 24px;
+      color: rgba(148, 163, 184, 0.72);
+      font-size: 12px;
+    }
+
+    @media (max-width: 420px) {
+      main {
+        padding: 30px 20px 26px;
+        border-radius: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main aria-labelledby="page-title">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">RL</span>
+      <span>RiderLink</span>
+    </div>
+
+    <div class="success-icon" aria-hidden="true">✓</div>
+
+    <h1 id="page-title">Email confirmed</h1>
+
+    <p>
+      Your RiderLink account is ready. You may now return to the RiderLink app
+      and sign in using your email and password.
+    </p>
+
+    <div class="instruction">
+      You can safely close this browser tab.
+    </div>
+
+    <div class="footer">
+      RiderLink by SG Alerts
+    </div>
+  </main>
+</body>
+</html>
