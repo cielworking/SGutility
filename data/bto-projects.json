@@ -2,7 +2,7 @@
   "source_name": "HDB Flat Portal",
   "source_url": "https://homes.hdb.gov.sg/",
   "api_url": "https://api.homes.hdb.gov.sg/flatback/public/v1/launch/getUpcomingProjects",
-  "last_updated": "2026-06-24T15:07:42.532242+00:00",
+  "last_updated": "2026-06-24T17:18:08.418597+00:00",
   "note": "BTO project prices, classification and waiting time are usually confirmed closer to launch.",
   "upcoming": {
     "exercise": "October 2026 BTO",
