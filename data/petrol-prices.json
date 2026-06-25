@@ -1,33 +1,33 @@
 {
   "source_name": "PetrolPrice.sg",
   "source_url": "https://petrolprice.sg/",
-  "last_updated": "2026-06-25T00:21:43.927367+00:00",
+  "last_updated": "2026-06-25T05:15:32.596538+00:00",
   "note": "Listed pump prices in SGD per litre. Discounts and card promotions are not included.",
   "brands": [
     {
       "brand": "Esso",
       "logo": "./assets/petrol/esso.png",
       "url": "https://petrolprice.sg/",
-      "ron92": "$3.43",
-      "ron95": "$3.46",
-      "ron98": "$3.98",
+      "ron92": "$3.39",
+      "ron95": "$3.42",
+      "ron98": "$3.94",
       "premium": "N/A",
       "diesel": "$4.22",
       "changes": {
         "ron92": {
           "previous": 3.43,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.04,
+          "percent": -1.17
         },
         "ron95": {
           "previous": 3.46,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.04,
+          "percent": -1.16
         },
         "ron98": {
           "previous": 3.98,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.04,
+          "percent": -1.01
         },
         "diesel": {
           "previous": 4.22,
