@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-06-27 04:55",
+  "last_updated": "2026-06-27 06:36",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Hakimi to appeal ruling to stand trial for rape, lawyer says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/hakimi-appeal-ruling-stand-trial-rape-lawyer-says-6213871",
-      "published": "2026-06-27 01:48"
-    },
     {
       "category": "Crime",
       "title": "Man, 31, arrested for allegedly molesting girl, 11, at Woodlands",
@@ -73,6 +66,20 @@
     },
     {
       "category": "Traffic",
+      "title": "Austria full back Laimer says Bayern contract extension is almost done",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/austria-full-back-laimer-says-bayern-contract-extension-almost-done-6214311",
+      "published": "2026-06-27 06:15"
+    },
+    {
+      "category": "Traffic",
+      "title": "US strikes Iran to respond to attack on cargo ship",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-strikes-iran-trump-hormuz-caargo-ship-attack-6214191",
+      "published": "2026-06-27 05:20"
+    },
+    {
+      "category": "Traffic",
       "title": "French teen accused of licking iJooz straw expected to plead guilty in Jul. 2026",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/french-teen-ijooz-expected-plead-guilty/",
@@ -128,13 +135,6 @@
       "published": "2026-06-25 16:20"
     },
     {
-      "category": "Traffic",
-      "title": "Empower nurses to be architects of care in S’pore: Rahayu",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/empowering-nurses-to-be-architects-of-care-in-spore",
-      "published": "2026-06-25 16:20"
-    },
-    {
       "category": "Transport",
       "title": "Local proptech company Ohmyhome sells core brokerage business for S$1.30, shifts focus to digital marketing",
       "source": "Mothership",
@@ -164,10 +164,17 @@
     },
     {
       "category": "Fire",
-      "title": "Trump slams Iran drone attack as 'foolish' ceasefire violation",
+      "title": "US strikes Iran in response to attack on ship that Trump said violated ceasefire",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-iran-foolish-ceasefire-violation-drone-attack-hormuz-6213741",
-      "published": "2026-06-27 00:47"
+      "url": "https://www.channelnewsasia.com/world/us-strikes-iran-cargo-ship-strait-hormuz-6214181",
+      "published": "2026-06-27 05:32"
+    },
+    {
+      "category": "Fire",
+      "title": "Dembele's quick-fire treble powers France to 4-1 win over second-string Norway",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/dembeles-quick-fire-treble-powers-france-4-1-win-over-second-string-norway-6214211",
+      "published": "2026-06-27 05:11"
     },
     {
       "category": "Housing",
@@ -175,6 +182,90 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/new-hdb-site-shrunk-to-preserve-part-of-forest-in-sembawang",
       "published": "2026-06-26 17:00"
+    },
+    {
+      "category": "General",
+      "title": "Why Ningxia may be China’s most underrated destination",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/experiences/ningxia-china-travel-guide-6202926",
+      "published": "2026-06-27 06:19"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Micron’s huge AI windfall is bad news for most of us",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/micron-technology-semiconductor-chip-ai-data-centre-demand-supply-6212661",
+      "published": "2026-06-27 06:00"
+    },
+    {
+      "category": "General",
+      "title": "France too fast for second-string Norway says coach Solbakken",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/france-too-fast-second-string-norway-says-coach-solbakken-6214286",
+      "published": "2026-06-27 05:57"
+    },
+    {
+      "category": "General",
+      "title": "Five-star Senegal keep World Cup hopes alive and send Iraq home",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/five-star-senegal-keep-world-cup-hopes-alive-and-send-iraq-home-6214271",
+      "published": "2026-06-27 05:53"
+    },
+    {
+      "category": "General",
+      "title": "Jordan coach Sellami in awe of Argentina despite possible Messi absence",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/jordan-coach-sellami-in-awe-argentina-despite-possible-messi-absence-6214281",
+      "published": "2026-06-27 05:48"
+    },
+    {
+      "category": "General",
+      "title": "Ryan Cohen-led GameStop pledges to pursue its takeover offer for eBay",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ryan-cohen-led-gamestop-pledges-pursue-its-takeover-offer-ebay-6214276",
+      "published": "2026-06-27 05:46"
+    },
+    {
+      "category": "General",
+      "title": "France's Dembele steals the show with 25-minute hat-trick against Norway",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/frances-dembele-steals-show-25-minute-hat-trick-against-norway-6214246",
+      "published": "2026-06-27 05:32"
+    },
+    {
+      "category": "General",
+      "title": "Zuckerberg asks Meta to explore working with Polymarket and Kalshi, NYT reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/zuckerberg-asks-meta-explore-working-polymarket-and-kalshi-nyt-reports-6214241",
+      "published": "2026-06-27 05:31"
+    },
+    {
+      "category": "General",
+      "title": "Cannavaro shields Uzbekistan from pressure before targeted Congo clash",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/cannavaro-shields-uzbekistan-pressure-targeted-congo-clash-6214231",
+      "published": "2026-06-27 05:22"
+    },
+    {
+      "category": "General",
+      "title": "Rayan's Japan homework awaits as Brazil eye World Cup last-32 win",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/rayans-japan-homework-awaits-brazil-eye-world-cup-last-32-win-6214196",
+      "published": "2026-06-27 05:08"
+    },
+    {
+      "category": "General",
+      "title": "Australia's Bos leads 'Baby-roos' push into World Cup knockouts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/australias-bos-leads-baby-roos-push-world-cup-knockouts-6214201",
+      "published": "2026-06-27 05:05"
+    },
+    {
+      "category": "General",
+      "title": "Austria, Algeria dismiss talk of avoiding Spain in knockout stage",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/austria-algeria-dismiss-talk-avoiding-spain-in-knockout-stage-6214186",
+      "published": "2026-06-27 05:00"
     },
     {
       "category": "General",
@@ -189,97 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/us-launches-new-chinese-tech-crackdown-will-ban-some-imports-6214171",
       "published": "2026-06-27 04:39"
-    },
-    {
-      "category": "General",
-      "title": "Colombia coach wary of Portugal's Vitinha, Ronaldo in Group K showdown",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/colombia-coach-wary-portugals-vitinha-ronaldo-in-group-k-showdown-6214156",
-      "published": "2026-06-27 04:25"
-    },
-    {
-      "category": "General",
-      "title": "DR Congo to go on the attack in must-win clash against Uzbekistan",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/dr-congo-go-attack-in-must-win-clash-against-uzbekistan-6214121",
-      "published": "2026-06-27 04:15"
-    },
-    {
-      "category": "General",
-      "title": "Israel, Lebanon sign framework peace deal after US-mediated talks",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israel-lebanon-sign-framework-peace-deal-after-us-mediated-talks-6214081",
-      "published": "2026-06-27 03:32"
-    },
-    {
-      "category": "General",
-      "title": "Ghana's Semenyo says team must pressure World Cup referees more",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ghanas-semenyo-says-team-must-pressure-world-cup-referees-more-6214071",
-      "published": "2026-06-27 03:05"
-    },
-    {
-      "category": "General",
-      "title": "EU defends digital tax approach, says ready to act if Trump takes measures",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/eu-defends-digital-tax-approach-says-ready-act-if-trump-takes-measures-6214066",
-      "published": "2026-06-27 03:05"
-    },
-    {
-      "category": "General",
-      "title": "Argentina's Romero steps up recovery but set to miss Jordan clash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/argentinas-romero-steps-up-recovery-set-miss-jordan-clash-6214076",
-      "published": "2026-06-27 03:03"
-    },
-    {
-      "category": "General",
-      "title": "Ceballos announces his Real Madrid exit",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ceballos-announces-his-real-madrid-exit-6214036",
-      "published": "2026-06-27 02:47"
-    },
-    {
-      "category": "General",
-      "title": "Canada and South Africa enter uncharted territory in first World Cup last-32 game",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/canada-and-south-africa-enter-uncharted-territory-in-first-world-cup-last-32-game-6214031",
-      "published": "2026-06-27 02:43"
-    },
-    {
-      "category": "General",
-      "title": "New Zealand's Tickner ruled out of rest of third test against England with concussion",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/new-zealands-tickner-ruled-out-rest-third-test-against-england-concussion-6214006",
-      "published": "2026-06-27 02:21"
-    },
-    {
-      "category": "General",
-      "title": "Usyk vacates titles before 'last dance'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/usyk-vacates-titles-last-dance-6213906",
-      "published": "2026-06-27 02:02"
-    },
-    {
-      "category": "General",
-      "title": "UAE apologises for 'incorrect' missile alerts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/uea-apologise-incorrect-missile-attack-phone-alert-6213801",
-      "published": "2026-06-27 01:56"
-    },
-    {
-      "category": "General",
-      "title": "Diaw starts for injured Mendy as Senegal face Iraq",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/diaw-starts-injured-mendy-senegal-face-iraq-6213896",
-      "published": "2026-06-27 01:56"
-    },
-    {
-      "category": "General",
-      "title": "Norway's Haaland on the bench, France striker Mbappe to start last group match",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/norways-haaland-bench-france-striker-mbappe-start-last-group-match-6213886",
-      "published": "2026-06-27 01:50"
     }
   ]
 }
