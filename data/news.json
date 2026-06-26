@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-06-26 06:45",
+  "last_updated": "2026-06-26 09:29",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Paris court gives French oil company TotalEnergies 6 months to tighten its climate policies",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/totalenergies-climate-change-paris-court-ruling-six-months-6210416",
-      "published": "2026-06-26 05:00"
-    },
     {
       "category": "Crime",
       "title": "S'pore property agent jailed 3 months after promoting Australia housing scheme that lost investors S$16 million",
@@ -73,10 +66,10 @@
     },
     {
       "category": "Traffic",
-      "title": "BHP-backed I-Pulse wins $250 million US CHIPS award for silicon-carbide semiconductors",
+      "title": "Core inflation in Tokyo accelerates as energy-driven price pressures begin to broaden",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/bhp-backed-i-pulse-wins-250-million-us-chips-award-silicon-carbide-semiconductors-6211401",
-      "published": "2026-06-26 06:07"
+      "url": "https://www.channelnewsasia.com/business/core-inflation-in-tokyo-accelerates-energy-driven-price-pressures-begin-broaden-6211576",
+      "published": "2026-06-26 07:42"
     },
     {
       "category": "Traffic",
@@ -129,10 +122,10 @@
     },
     {
       "category": "Money",
-      "title": "Nasdaq falls again on mixed day for US stocks, oil prices rise",
+      "title": "South Korea to lower fuel price caps, finance minister says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/wall-street-micron-nasdaq-apple-hormuz-oil-prices-6211336",
-      "published": "2026-06-26 05:28"
+      "url": "https://www.channelnewsasia.com/business/south-korea-lower-fuel-price-caps-finance-minister-says-6211611",
+      "published": "2026-06-26 08:18"
     },
     {
       "category": "Money",
@@ -157,122 +150,129 @@
     },
     {
       "category": "General",
+      "title": "Australia make six changes for Paraguay World Cup clash",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/australia-make-six-changes-paraguay-world-cup-clash-6211761",
+      "published": "2026-06-26 09:14"
+    },
+    {
+      "category": "General",
+      "title": "Nothing changes for Cape Verde in crunch clash with Saudi Arabia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/nothing-changes-cape-verde-in-crunch-clash-saudi-arabia-6211751",
+      "published": "2026-06-26 09:11"
+    },
+    {
+      "category": "General",
+      "title": "Japan draw 1-1 with Sweden to finish second in Group F",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/japan-draw-1-1-sweden-finish-second-in-group-f-6211756",
+      "published": "2026-06-26 09:09"
+    },
+    {
+      "category": "General",
+      "title": "Oil edges lower amid resumption of strait shipments even as vessel hit near Oman",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-edges-lower-amid-resumption-strait-shipments-even-vessel-hit-near-oman-6211711",
+      "published": "2026-06-26 09:08"
+    },
+    {
+      "category": "General",
+      "title": "Japan through to World Cup last 32 after 1-1 draw with Sweden",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-japan-through-last-32-after-1-1-draw-sweden-6211626",
+      "published": "2026-06-26 09:06"
+    },
+    {
+      "category": "General",
+      "title": "Pulisic on the bench as US, Turkey make wholesale changes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pulisic-bench-us-turkey-make-wholesale-changes-6211701",
+      "published": "2026-06-26 09:06"
+    },
+    {
+      "category": "General",
+      "title": "Dutch ease past Tunisia 3-1 to finish top of Group F",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/dutch-ease-past-tunisia-3-1-finish-top-group-f-6211706",
+      "published": "2026-06-26 09:06"
+    },
+    {
+      "category": "General",
+      "title": "Iran trying to make nation proud despite challenges, Ghalenoei says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/iran-trying-make-nation-proud-despite-challenges-ghalenoei-says-6211671",
+      "published": "2026-06-26 08:53"
+    },
+    {
+      "category": "General",
+      "title": "World Cup like a pressure cooker but we will be smart, says Norway coach",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-pressure-cooker-we-will-be-smart-says-norway-coach-6211676",
+      "published": "2026-06-26 08:51"
+    },
+    {
+      "category": "General",
+      "title": "Germany's Nagelsmann will learn from loss to Ecuador, as knockout round looms",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/germanys-nagelsmann-will-learn-loss-ecuador-knockout-round-looms-6211661",
+      "published": "2026-06-26 08:44"
+    },
+    {
+      "category": "General",
+      "title": "Beccacece hails Ecuador's biggest World Cup victory",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/beccacece-hails-ecuadors-biggest-world-cup-victory-6211646",
+      "published": "2026-06-26 08:32"
+    },
+    {
+      "category": "General",
+      "title": "New Zealand eye Belgium shock as World Cup surprises fuel belief",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/new-zealand-eye-belgium-shock-world-cup-surprises-fuel-belief-6211636",
+      "published": "2026-06-26 08:23"
+    },
+    {
+      "category": "General",
+      "title": "Pepe's double against Curacao sees Ivory Coast striker come out of the cold",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pepes-double-against-curacao-sees-ivory-coast-striker-come-out-cold-6211621",
+      "published": "2026-06-26 08:20"
+    },
+    {
+      "category": "General",
+      "title": "Always-on won: dealers fret about risks in landmark shift to 24-hour trading",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/always-won-dealers-fret-about-risks-in-landmark-shift-24-hour-trading-6211601",
+      "published": "2026-06-26 08:02"
+    },
+    {
+      "category": "General",
       "title": "Ivory Coast advance as Pepe scores twice to send Curacao home",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ivory-coast-advance-pepe-scores-twice-send-curacao-home-6211446",
-      "published": "2026-06-26 06:19"
+      "url": "https://www.channelnewsasia.com/sport/ivory-coast-advance-pepe-scores-twice-send-curacao-home-6211596",
+      "published": "2026-06-26 07:59"
     },
     {
       "category": "General",
-      "title": "World Cup sets all-time attendance record, surpassing 1994 mark",
+      "title": "Ecuador, Beccacece wake from World Cup nightmare",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cup-sets-all-time-attendance-record-surpassing-1994-mark-6211441",
-      "published": "2026-06-26 06:14"
+      "url": "https://www.channelnewsasia.com/sport/ecuador-beccacece-wake-world-cup-nightmare-6211556",
+      "published": "2026-06-26 07:33"
     },
     {
       "category": "General",
-      "title": "Netherlands defender Ake replaces Van de Ven against Tunisia",
+      "title": "Tokyo June core CPI rises 1.6% yr/yr",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/netherlands-defender-ake-replaces-van-de-ven-against-tunisia-6211421",
-      "published": "2026-06-26 06:13"
+      "url": "https://www.channelnewsasia.com/business/tokyo-june-core-cpi-rises-16-yryr-6211566",
+      "published": "2026-06-26 07:33"
     },
     {
       "category": "General",
-      "title": "Sweden boss Potter calls up Elanga as Japan make three changes",
+      "title": "Man City agree club-record deal for Anderson, BBC reports",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/sweden-boss-potter-calls-up-elanga-japan-make-three-changes-6211426",
-      "published": "2026-06-26 06:08"
-    },
-    {
-      "category": "General",
-      "title": "Ecuador fight back to shock Germany and reach knockout stage",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ecuador-fight-back-shock-germany-and-reach-knockout-stage-6211406",
-      "published": "2026-06-26 06:05"
-    },
-    {
-      "category": "General",
-      "title": "Why Malaysian fashion label Motoguo disappeared for two years – and what brought it back",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/malaysian-fashion-label-motoguo-comeback-6200116",
-      "published": "2026-06-26 06:03"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Singapore should not focus only on productivity gains from AI",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/singapore-ai-council-workplace-adopt-productivity-6209631",
-      "published": "2026-06-26 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Windsor case: What families should know about nursing home red flags",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/windsor-nursing-home-elderly-regulation-safety-6206406",
-      "published": "2026-06-26 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Why is getting to a World Cup game so hard?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/world-cup-2026-travel-transport-difficulties-6209491",
-      "published": "2026-06-26 05:59"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: 85% of kids in Australia still using social media - has the ban failed?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/social-media-ban-children-australia-measuring-success-6209561",
-      "published": "2026-06-26 05:58"
-    },
-    {
-      "category": "General",
-      "title": "England's Eze not concerned by outside noise ahead of final World Cup group game",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/englands-eze-not-concerned-outside-noise-ahead-final-world-cup-group-game-6211371",
-      "published": "2026-06-26 05:55"
-    },
-    {
-      "category": "General",
-      "title": "King Charles III will not live at Buckingham Palace after refurbishment completion",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/king-charles-iii-will-not-live-buckingham-palace-after-refurbishment-completion-6211326",
-      "published": "2026-06-26 05:53"
-    },
-    {
-      "category": "General",
-      "title": "Saudi Arabia a work in progress ahead of World Cup clash with Cape Verde",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/saudi-arabia-work-in-progress-ahead-world-cup-clash-cape-verde-6211361",
-      "published": "2026-06-26 05:52"
-    },
-    {
-      "category": "General",
-      "title": "Trading Day: Tech outlook is cloudy",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trading-day-tech-outlook-cloudy-6211351",
-      "published": "2026-06-26 05:09"
-    },
-    {
-      "category": "General",
-      "title": "Marsch mind games bring more questions than answers about Canada's injured Davies",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/marsch-mind-games-bring-more-questions-answers-about-canadas-injured-davies-6211311",
-      "published": "2026-06-26 04:52"
-    },
-    {
-      "category": "General",
-      "title": "Iraq looking to make history against Senegal, says coach Arnold",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/iraq-looking-make-history-against-senegal-says-coach-arnold-6211306",
-      "published": "2026-06-26 04:42"
-    },
-    {
-      "category": "General",
-      "title": "OpenAI leans toward waiting until next year for IPO, NYT reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-leans-toward-waiting-until-next-year-ipo-nyt-reports-6211301",
-      "published": "2026-06-26 04:33"
+      "url": "https://www.channelnewsasia.com/sport/man-city-agree-club-record-deal-anderson-bbc-reports-6211561",
+      "published": "2026-06-26 07:31"
     },
     {
       "category": "General",
