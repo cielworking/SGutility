@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-06-27 22:09",
+  "last_updated": "2026-06-27 23:38",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Smith leads charge for New Zealand as England trail",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/smith-leads-charge-new-zealand-england-trail-6215151",
+      "published": "2026-06-27 20:15"
+    },
     {
       "category": "Crime",
       "title": "Pilot killed when small plane crashed into Beijing skyscraper: Authorities",
@@ -63,13 +70,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/jail-for-man-fired-from-cambodian-scam-syndicate-that-targeted-sporeans-after-3-days-on-the-job",
       "published": "2026-06-26 13:11"
-    },
-    {
-      "category": "Crime",
-      "title": "At least $252,000 lost in 3 weeks as Singapore victims scammed into taking out loans",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/at-least-250000-lost-in-3-weeks-to-scams-in-which-spore-victims-are-instructed-to-take-out-loans",
-      "published": "2026-06-25 23:09"
     },
     {
       "category": "Traffic",
@@ -136,13 +136,6 @@
     },
     {
       "category": "Transport",
-      "title": "‘Highest priority’ to prevent border travel disruptions on Johor’s Jul 11 polling day: Malaysia minister",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/highest-priority-prevent-border-travel-disruptions-johors-jul-11-polling-day-malaysia-minister-6214931",
-      "published": "2026-06-27 16:28"
-    },
-    {
-      "category": "Transport",
       "title": "Tower Transit celebrates 10th anniversary with new wedding bus for hire; hosts first marriage proposal",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/tower-transits-new-wedding-bus-for-hire-sees-first-proposal-at-its-10th-anniversary-celebration",
@@ -168,6 +161,20 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/new-hdb-site-shrunk-to-preserve-part-of-forest-in-sembawang",
       "published": "2026-06-26 17:00"
+    },
+    {
+      "category": "General",
+      "title": "Dutch striker Weghorst leaves Ajax for Twente",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/dutch-striker-weghorst-leaves-ajax-twente-6215266",
+      "published": "2026-06-27 22:26"
+    },
+    {
+      "category": "General",
+      "title": "Hezbollah rejects US-brokered Israel-Lebanon security deal as 'surrender'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/hezbollah-us-israel-lebanon-deal-surrender-6215236",
+      "published": "2026-06-27 22:14"
     },
     {
       "category": "General",
@@ -227,13 +234,6 @@
     },
     {
       "category": "General",
-      "title": "New Zealand's bowlers fight back against England in third test",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/new-zealands-bowlers-fight-back-against-england-in-third-test-6215151",
-      "published": "2026-06-27 20:15"
-    },
-    {
-      "category": "General",
       "title": "Russell pips teammate Antonelli in Austrian GP practice",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/russell-pips-teammate-antonelli-in-austrian-gp-practice-6215156",
@@ -262,17 +262,10 @@
     },
     {
       "category": "General",
-      "title": "Iran says it hits US-linked targets as Bahrain reports drone attack",
+      "title": "Tanker struck in Hormuz as Iran, US trade attacks in worst escalation since peace deal",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/iran-us-war-hit-targets-bahrain-drone-attack-6215026",
       "published": "2026-06-27 17:58"
-    },
-    {
-      "category": "General",
-      "title": "Former Sevilla boss Caparros diagnosed with colon cancer",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/former-sevilla-boss-caparros-diagnosed-colon-cancer-6214981",
-      "published": "2026-06-27 16:41"
     },
     {
       "category": "General",
@@ -280,6 +273,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/stupid-girls-run-away/",
       "published": "2026-06-27 19:11"
+    },
+    {
+      "category": "General",
+      "title": "Strong 5.6-magnitude quake strikes near Mount Fuji, 10 injured",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/06/earthquake-japan-mount-fuji/",
+      "published": "2026-06-27 18:59"
     }
   ]
 }
