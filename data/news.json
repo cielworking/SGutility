@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-06-27 16:06",
+  "last_updated": "2026-06-27 18:23",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Pilot killed when small plane crashed into Beijing skyscraper: Authorities",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-beijing-skyscraper-plane-crash-citic-tower-6215061",
+      "published": "2026-06-27 18:14"
+    },
+    {
+      "category": "Crime",
+      "title": "More than 110 active mobility devices seized in nine-day operation between LTA and police",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/lta-police-pmds-confiscated-mobility-devices-6213481",
+      "published": "2026-06-27 17:00"
+    },
     {
       "category": "Crime",
       "title": "Thailand arrests Australian after teen's body found in suitcase",
@@ -10,10 +24,10 @@
     },
     {
       "category": "Crime",
-      "title": "Former world champion Simpson discharged from hospital after cardiac arrest",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/former-world-champion-simpson-discharged-hospital-after-cardiac-arrest-6214756",
-      "published": "2026-06-27 11:44"
+      "title": "Woman, 41, arrested in Yishun for allegedly selling counterfeit luxury goods on TikTok",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/06/woman-yishun-counterfeit-arrested-tiktok/",
+      "published": "2026-06-27 18:18"
     },
     {
       "category": "Crime",
@@ -58,11 +72,11 @@
       "published": "2026-06-25 23:09"
     },
     {
-      "category": "Crime",
-      "title": "3 men who allegedly fell asleep while driving among 41 charged with drink driving in one day",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/3-men-who-fell-asleep-while-driving-among-41-drivers-charged-with-drink-driving-in-one-day",
-      "published": "2026-06-25 17:29"
+      "category": "Traffic",
+      "title": "Salah still the centrepiece of Egypt attack but supporting cast are stepping up",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/salah-still-centrepiece-egypt-attack-supporting-cast-are-stepping-up-6214971",
+      "published": "2026-06-27 16:18"
     },
     {
       "category": "Traffic",
@@ -108,6 +122,13 @@
     },
     {
       "category": "Transport",
+      "title": "‘Highest priority’ to prevent border travel disruptions on Johor’s Jul 11 polling day: Malaysia minister",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/highest-priority-prevent-border-travel-disruptions-johors-jul-11-polling-day-malaysia-minister-6214931",
+      "published": "2026-06-27 16:28"
+    },
+    {
+      "category": "Transport",
       "title": "China Eastern Airlines to buy 25 Airbus A330neo jets for US$9.4 billion",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/china-eastern-airlines-purchase-airbus-a330neo-jets-6212911",
@@ -115,17 +136,10 @@
     },
     {
       "category": "Transport",
-      "title": "'Our world is so much bigger & wilder': S'porean woman, 32, who has lived in the Arctic since 2019, starts travel business hosting tours there",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/06/low-weisi-svalbard/",
-      "published": "2026-06-27 00:29"
-    },
-    {
-      "category": "Transport",
-      "title": "Local proptech company Ohmyhome sells core brokerage business for S$1.30, shifts focus to digital marketing",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/06/ohmyhome-sells-core-brokerage-business/",
-      "published": "2026-06-26 23:53"
+      "title": "Tower Transit celebrates 10th anniversary with new wedding bus for hire; hosts first marriage proposal",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/tower-transits-new-wedding-bus-for-hire-sees-first-proposal-at-its-10th-anniversary-celebration",
+      "published": "2026-06-27 16:10"
     },
     {
       "category": "Transport",
@@ -154,6 +168,27 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/new-hdb-site-shrunk-to-preserve-part-of-forest-in-sembawang",
       "published": "2026-06-26 17:00"
+    },
+    {
+      "category": "General",
+      "title": "World Cup opens US eyes to soccer's global roar",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-opens-us-eyes-soccers-global-roar-6215056",
+      "published": "2026-06-27 18:02"
+    },
+    {
+      "category": "General",
+      "title": "Iran says it hits US-linked targets as Bahrain reports drone attack",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-us-war-hit-targets-bahrain-drone-attack-6215026",
+      "published": "2026-06-27 17:58"
+    },
+    {
+      "category": "General",
+      "title": "Former Sevilla boss Caparros diagnosed with colon cancer",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/former-sevilla-boss-caparros-diagnosed-colon-cancer-6214981",
+      "published": "2026-06-27 16:41"
     },
     {
       "category": "General",
@@ -206,7 +241,7 @@
     },
     {
       "category": "General",
-      "title": "Johor polls: Refreshed slate for PM Anwar’s PH, lean lineup for opposition PN as campaigning kicks off",
+      "title": "Battle for Johor begins as Anwar’s PH unveils fresh lineup, opposition PN cedes key battlegrounds",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/johor-election-nomination-bn-ph-pn-6212626",
       "published": "2026-06-27 14:12"
@@ -234,52 +269,17 @@
     },
     {
       "category": "General",
-      "title": "Trump unveils new US passport - with picture of himself",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-unveils-new-us-passport-picture-himself-6214771",
-      "published": "2026-06-27 12:27"
-    },
-    {
-      "category": "General",
-      "title": "Spain fans keep Manolo's drumbeat alive in Mexico",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spain-fans-keep-manolos-drumbeat-alive-in-mexico-6214821",
-      "published": "2026-06-27 12:23"
-    },
-    {
-      "category": "General",
-      "title": "Australia 'gutted' as Italiano, Leckie out of World Cup with injuries",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/australia-gutted-italiano-leckie-out-world-cup-injuries-6214806",
-      "published": "2026-06-27 12:10"
-    },
-    {
-      "category": "General",
-      "title": "Coach Bubista hails Cape Verde's fearless dreamers after World Cup leap",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/coach-bubista-hails-cape-verdes-fearless-dreamers-after-world-cup-leap-6214761",
-      "published": "2026-06-27 11:55"
-    },
-    {
-      "category": "General",
-      "title": "Spain’s De la Fuente praises team's resilience, lauds World Cup progress",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spains-de-la-fuente-praises-teams-resilience-lauds-world-cup-progress-6214751",
-      "published": "2026-06-27 11:46"
-    },
-    {
-      "category": "General",
-      "title": "Uruguay's World Cup ends in failure, friction and no wins",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/uruguays-world-cup-ends-in-failure-friction-and-no-wins-6214741",
-      "published": "2026-06-27 11:39"
-    },
-    {
-      "category": "General",
-      "title": "Changi Airport reveals 6 Easter eggs in 'Where the World Comes to Play' World Cup film",
+      "title": "LTA spots 380 illegal vehicle modifications islandwide, including BMW with laser-engraved number plate",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/06/changi-airport-world-cup-easter-egg/",
-      "published": "2026-06-27 02:12"
+      "url": "https://mothership.sg/2026/06/380-illegal-vehicle-modifications/",
+      "published": "2026-06-27 18:31"
+    },
+    {
+      "category": "General",
+      "title": "S’porean man, 29, slashes man, 41, after seeing girlfriend drinking with him, man claims she told him she was single",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/06/man-slash-man-drink-girlfriend/",
+      "published": "2026-06-27 03:09"
     }
   ]
 }
