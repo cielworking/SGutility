@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27 06:36",
+  "last_updated": "2026-06-27 08:20",
   "headlines": [
     {
       "category": "Crime",
@@ -70,13 +70,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/austria-full-back-laimer-says-bayern-contract-extension-almost-done-6214311",
       "published": "2026-06-27 06:15"
-    },
-    {
-      "category": "Traffic",
-      "title": "US strikes Iran to respond to attack on cargo ship",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-strikes-iran-trump-hormuz-caargo-ship-attack-6214191",
-      "published": "2026-06-27 05:20"
     },
     {
       "category": "Traffic",
@@ -163,25 +156,109 @@
       "published": "2026-06-25 21:15"
     },
     {
-      "category": "Fire",
-      "title": "US strikes Iran in response to attack on ship that Trump said violated ceasefire",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-strikes-iran-cargo-ship-strait-hormuz-6214181",
-      "published": "2026-06-27 05:32"
-    },
-    {
-      "category": "Fire",
-      "title": "Dembele's quick-fire treble powers France to 4-1 win over second-string Norway",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/dembeles-quick-fire-treble-powers-france-4-1-win-over-second-string-norway-6214211",
-      "published": "2026-06-27 05:11"
-    },
-    {
       "category": "Housing",
       "title": "New HDB site shrunk to preserve part of forest in Sembawang",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/new-hdb-site-shrunk-to-preserve-part-of-forest-in-sembawang",
       "published": "2026-06-26 17:00"
+    },
+    {
+      "category": "General",
+      "title": "World Cup fans left flustered by last-minute StubHub ticket cancellations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-fans-left-flustered-last-minute-stubhub-ticket-cancellations-6214441",
+      "published": "2026-06-27 07:55"
+    },
+    {
+      "category": "General",
+      "title": "Scaloni confirms Messi will not start against Jordanians",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/scaloni-confirms-messi-will-not-start-against-jordanians-6214421",
+      "published": "2026-06-27 07:44"
+    },
+    {
+      "category": "General",
+      "title": "Senegal's quiet man Sarr becomes his nation's leading World Cup scorer",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/senegals-quiet-man-sarr-becomes-his-nations-leading-world-cup-scorer-6214416",
+      "published": "2026-06-27 07:42"
+    },
+    {
+      "category": "General",
+      "title": "Cape Verde make five changes for Group H clash with Saudi Arabia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/cape-verde-make-five-changes-group-h-clash-saudi-arabia-6214391",
+      "published": "2026-06-27 07:16"
+    },
+    {
+      "category": "General",
+      "title": "Senegal coach says team can improve after 5-0 mauling of Iraq",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/senegal-coach-says-team-can-improve-after-5-0-mauling-iraq-6214396",
+      "published": "2026-06-27 07:14"
+    },
+    {
+      "category": "General",
+      "title": "Is frozen yoghurt better for you than ice cream? What nutrition experts say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/frozen-yogurt-ice-cream-benefits-6190506",
+      "published": "2026-06-27 07:13"
+    },
+    {
+      "category": "General",
+      "title": "I thought my daughter was learning spelling for school – but she was also learning gender stereotypes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/gender-stereotypes-learning-materials-children-6206631",
+      "published": "2026-06-27 07:12"
+    },
+    {
+      "category": "General",
+      "title": "James blow leaves Tuchel tinkering as England seek Panama progress",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/james-blow-leaves-tuchel-tinkering-england-seek-panama-progress-6214381",
+      "published": "2026-06-27 07:12"
+    },
+    {
+      "category": "General",
+      "title": "France gave something special to absent coach Deschamps, Stephan says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/france-gave-something-special-absent-coach-deschamps-stephan-says-6214361",
+      "published": "2026-06-27 06:55"
+    },
+    {
+      "category": "General",
+      "title": "Lamine starts as Spain make three changes for Uruguay clash",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/lamine-starts-spain-make-three-changes-uruguay-clash-6214366",
+      "published": "2026-06-27 06:54"
+    },
+    {
+      "category": "General",
+      "title": "SpaceX, Charter discuss mobile phone partnership in US, Bloomberg News says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/spacex-charter-discuss-mobile-phone-partnership-in-us-bloomberg-news-says-6214356",
+      "published": "2026-06-27 06:53"
+    },
+    {
+      "category": "General",
+      "title": "US seizes nearly 400 websites that were illegally streaming World Cup, DOJ says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-seizes-nearly-400-websites-were-illegally-streaming-world-cup-doj-says-6214346",
+      "published": "2026-06-27 06:47"
+    },
+    {
+      "category": "General",
+      "title": "US allows Anthropic to release Mythos to some US companies",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-allows-anthropic-release-mythos-some-us-companies-6214336",
+      "published": "2026-06-27 06:36"
+    },
+    {
+      "category": "General",
+      "title": "Iraq should be proud of World Cup display despite early exit, says coach Arnold",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/iraq-should-be-proud-world-cup-display-despite-early-exit-says-coach-arnold-6214341",
+      "published": "2026-06-27 06:34"
     },
     {
       "category": "General",
@@ -199,87 +276,10 @@
     },
     {
       "category": "General",
-      "title": "France too fast for second-string Norway says coach Solbakken",
+      "title": "France too fast for second-string Norway but decision to rotate was correct, says coach Solbakken",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/france-too-fast-second-string-norway-says-coach-solbakken-6214286",
+      "url": "https://www.channelnewsasia.com/sport/france-too-fast-second-string-norway-decision-rotate-was-correct-says-coach-solbakken-6214286",
       "published": "2026-06-27 05:57"
-    },
-    {
-      "category": "General",
-      "title": "Five-star Senegal keep World Cup hopes alive and send Iraq home",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/five-star-senegal-keep-world-cup-hopes-alive-and-send-iraq-home-6214271",
-      "published": "2026-06-27 05:53"
-    },
-    {
-      "category": "General",
-      "title": "Jordan coach Sellami in awe of Argentina despite possible Messi absence",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/jordan-coach-sellami-in-awe-argentina-despite-possible-messi-absence-6214281",
-      "published": "2026-06-27 05:48"
-    },
-    {
-      "category": "General",
-      "title": "Ryan Cohen-led GameStop pledges to pursue its takeover offer for eBay",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ryan-cohen-led-gamestop-pledges-pursue-its-takeover-offer-ebay-6214276",
-      "published": "2026-06-27 05:46"
-    },
-    {
-      "category": "General",
-      "title": "France's Dembele steals the show with 25-minute hat-trick against Norway",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/frances-dembele-steals-show-25-minute-hat-trick-against-norway-6214246",
-      "published": "2026-06-27 05:32"
-    },
-    {
-      "category": "General",
-      "title": "Zuckerberg asks Meta to explore working with Polymarket and Kalshi, NYT reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/zuckerberg-asks-meta-explore-working-polymarket-and-kalshi-nyt-reports-6214241",
-      "published": "2026-06-27 05:31"
-    },
-    {
-      "category": "General",
-      "title": "Cannavaro shields Uzbekistan from pressure before targeted Congo clash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/cannavaro-shields-uzbekistan-pressure-targeted-congo-clash-6214231",
-      "published": "2026-06-27 05:22"
-    },
-    {
-      "category": "General",
-      "title": "Rayan's Japan homework awaits as Brazil eye World Cup last-32 win",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rayans-japan-homework-awaits-brazil-eye-world-cup-last-32-win-6214196",
-      "published": "2026-06-27 05:08"
-    },
-    {
-      "category": "General",
-      "title": "Australia's Bos leads 'Baby-roos' push into World Cup knockouts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/australias-bos-leads-baby-roos-push-world-cup-knockouts-6214201",
-      "published": "2026-06-27 05:05"
-    },
-    {
-      "category": "General",
-      "title": "Austria, Algeria dismiss talk of avoiding Spain in knockout stage",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/austria-algeria-dismiss-talk-avoiding-spain-in-knockout-stage-6214186",
-      "published": "2026-06-27 05:00"
-    },
-    {
-      "category": "General",
-      "title": "Panama coach Christiansen says World Cup tiebreak rule bad for competition",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/panama-coach-christiansen-says-world-cup-tiebreak-rule-bad-competition-6214176",
-      "published": "2026-06-27 04:46"
-    },
-    {
-      "category": "General",
-      "title": "US launches new Chinese tech crackdown, will ban some imports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-launches-new-chinese-tech-crackdown-will-ban-some-imports-6214171",
-      "published": "2026-06-27 04:39"
     }
   ]
 }
