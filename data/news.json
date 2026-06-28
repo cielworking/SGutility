@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28 20:44",
+  "last_updated": "2026-06-28 22:57",
   "headlines": [
     {
       "category": "Crime",
@@ -45,6 +45,27 @@
     },
     {
       "category": "Traffic",
+      "title": "Saudi Aramco helicopter crash kills 14 nationals: Report",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/saudi-arabia-aramco-helicopter-crash-ras-tanura-6216326",
+      "published": "2026-06-28 21:52"
+    },
+    {
+      "category": "Traffic",
+      "title": "Skydiving plane crash kills 11 in France",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/france-tomblaine-civilian-place-crash-6216421",
+      "published": "2026-06-28 21:34"
+    },
+    {
+      "category": "Traffic",
+      "title": "Ogura seals landmark Dutch GP win, Bezzecchi crashes out",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ogura-seals-landmark-dutch-gp-win-bezzecchi-crashes-out-6216416",
+      "published": "2026-06-28 21:20"
+    },
+    {
+      "category": "Traffic",
       "title": "France records around 1,000 more deaths than expected in heatwave",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/france-heatwave-1000-more-deaths-6216196",
@@ -56,6 +77,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/infant-boy-clubfoot-treatment/",
       "published": "2026-06-28 20:14"
+    },
+    {
+      "category": "Traffic",
+      "title": "Pritam Singh re-elected, cementing his position as Workers’ Party chief",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/pritam-singh-reelected-cementing-his-position-as-wp-party-chief",
+      "published": "2026-06-28 22:00"
     },
     {
       "category": "Traffic",
@@ -73,17 +101,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Live: Pritam Singh re-elected as WP secretary-general",
+      "title": "Recap: Pritam Singh re-elected as WP secretary-general",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/live-wp-cadres-to-vote-on-pritam-singhs-leadership",
       "published": "2026-06-28 09:08"
-    },
-    {
-      "category": "Traffic",
-      "title": "‘Diseases, unfortunately, do not sleep’: How CDA is using AI to lead S’pore’s infectious diseases fight",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/diseases-unfortunately-do-not-sleep-how-cda-is-using-ai-to-lead-spores-infectious-diseases-fight",
-      "published": "2026-06-28 05:00"
     },
     {
       "category": "Traffic",
@@ -97,6 +118,13 @@
       "title": "‘Every life is precious’: How miscarriage shaped one mum’s journey to having baby No. 6",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/community/every-life-is-precious-how-a-miscarriage-shaped-one-mums-journey-to-having-baby-number-six",
+      "published": "2026-06-28 05:00"
+    },
+    {
+      "category": "Traffic",
+      "title": "‘Diseases, unfortunately, do not sleep’: How CDA is using AI to lead S’pore’s infectious diseases fight",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/health/diseases-unfortunately-do-not-sleep-how-cda-is-using-ai-to-lead-spores-infectious-diseases-fight",
       "published": "2026-06-28 05:00"
     },
     {
@@ -121,18 +149,46 @@
       "published": "2026-06-27 16:10"
     },
     {
-      "category": "Money",
-      "title": "Asia's vendors grapple with rising costs of ever-present plastics",
+      "category": "General",
+      "title": "Russell wins in Austria to trim Antonelli's lead",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/vendors-rising-costs-plastic-middle-east-war-6216111",
-      "published": "2026-06-28 13:42"
+      "url": "https://www.channelnewsasia.com/sport/russell-wins-in-austria-trim-antonellis-lead-6216486",
+      "published": "2026-06-28 22:45"
     },
     {
-      "category": "Money",
-      "title": "Errors cost Jordan at World Cup but lessons have been learnt, says coach",
+      "category": "General",
+      "title": "England test captain Stokes to retire from international cricket",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/errors-cost-jordan-world-cup-lessons-have-been-learnt-says-coach-6216131",
-      "published": "2026-06-28 13:16"
+      "url": "https://www.channelnewsasia.com/sport/england-test-captain-stokes-retire-international-cricket-6216476",
+      "published": "2026-06-28 22:34"
+    },
+    {
+      "category": "General",
+      "title": "Snap Insight: Pritam Singh prevails in leadership vote but must demonstrate he is not bigger than WP",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/pritam-singh-workers-party-wp-vote-snap-insight-6216436",
+      "published": "2026-06-28 22:22"
+    },
+    {
+      "category": "General",
+      "title": "Australia's Firmus Technologies strikes AI access deal with Nvidia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/australias-firmus-technologies-strikes-ai-access-deal-nvidia-6216451",
+      "published": "2026-06-28 22:02"
+    },
+    {
+      "category": "General",
+      "title": "Austria urges Europe to host Anthropic following US curbs on AI access",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/austria-urges-europe-host-anthropic-following-us-curbs-ai-access-6216396",
+      "published": "2026-06-28 20:58"
+    },
+    {
+      "category": "General",
+      "title": "Bergs beats Humbert to clinch first ATP title at Eastbourne Open",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/bergs-beats-humbert-clinch-first-atp-title-eastbourne-open-6216401",
+      "published": "2026-06-28 20:55"
     },
     {
       "category": "General",
@@ -192,55 +248,6 @@
     },
     {
       "category": "General",
-      "title": "Petkovic praises Algeria spirit after 'crazy' Austria draw",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/petkovic-praises-algeria-spirit-after-crazy-austria-draw-6216146",
-      "published": "2026-06-28 14:17"
-    },
-    {
-      "category": "General",
-      "title": "South Korea, Japan reaffirm denuclearisation goal, closer defence ties",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/south-korea-japan-denuculearisation-closer-defence-ties-6216121",
-      "published": "2026-06-28 14:17"
-    },
-    {
-      "category": "General",
-      "title": "Late drama ends Iran's hopes of reaching World Cup knockouts for first time",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/late-drama-ends-irans-hopes-reaching-world-cup-knockouts-first-time-6216141",
-      "published": "2026-06-28 13:34"
-    },
-    {
-      "category": "General",
-      "title": "Google limits Meta’s use of its Gemini AI models, FT reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/google-limits-metas-use-its-gemini-ai-models-ft-reports-6216136",
-      "published": "2026-06-28 13:23"
-    },
-    {
-      "category": "General",
-      "title": "Argentina's depth a warning to rivals heading into World Cup knockouts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/argentinas-depth-warning-rivals-heading-world-cup-knockouts-6216126",
-      "published": "2026-06-28 13:11"
-    },
-    {
-      "category": "General",
-      "title": "Employer of hundreds of unpaid migrant workers back in Singapore: Manpower Ministry",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/migrant-workers-unpaid-ramu-velu-kpa-engineering-6215256",
-      "published": "2026-06-28 12:55"
-    },
-    {
-      "category": "General",
-      "title": "China strips generals, ex-financial regulator, politburo member of lawmaker posts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-corruption-generals-financial-regulator-congress-6214736",
-      "published": "2026-06-28 12:51"
-    },
-    {
-      "category": "General",
       "title": "S'pore man, 50, who went missing on Jun. 23, found dead in waters off Coney Island the next day",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/coney-island-tony-hou/",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/australian-man-thai-girl-murder/",
       "published": "2026-06-28 19:04"
-    },
-    {
-      "category": "General",
-      "title": "Singha heir was sued by mum under 'ungrateful child law', accused of damaging family's reputation",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/06/singha-beer-empire-ungrateful-child-lawsuit/",
-      "published": "2026-06-28 04:24"
     }
   ]
 }
