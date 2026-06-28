@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-06-28 22:57",
+  "last_updated": "2026-06-29 00:37",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Draper says injury rate in men's game is worrying",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/draper-says-injury-rate-in-mens-game-worrying-6216571",
+      "published": "2026-06-29 00:17"
+    },
     {
       "category": "Crime",
       "title": "Serena Williams to make Wimbledon return on Centre Court",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/serena-williams-make-wimbledon-return-centre-court-6216336",
       "published": "2026-06-28 19:57"
-    },
-    {
-      "category": "Crime",
-      "title": "Thai family mourns teen girl found dead in suitcase as Australian arrested",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/thailand-pattaya-teenager-murder-australian-arrested-6216216",
-      "published": "2026-06-28 16:48"
     },
     {
       "category": "Crime",
@@ -45,6 +45,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Nine players added to France squad for Nations Championship",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/nine-players-added-france-squad-nations-championship-6216516",
+      "published": "2026-06-28 23:04"
+    },
+    {
+      "category": "Traffic",
       "title": "Saudi Aramco helicopter crash kills 14 nationals: Report",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/saudi-arabia-aramco-helicopter-crash-ras-tanura-6216326",
@@ -63,13 +70,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/ogura-seals-landmark-dutch-gp-win-bezzecchi-crashes-out-6216416",
       "published": "2026-06-28 21:20"
-    },
-    {
-      "category": "Traffic",
-      "title": "France records around 1,000 more deaths than expected in heatwave",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/france-heatwave-1000-more-deaths-6216196",
-      "published": "2026-06-28 16:15"
     },
     {
       "category": "Traffic",
@@ -115,16 +115,16 @@
     },
     {
       "category": "Traffic",
-      "title": "‘Every life is precious’: How miscarriage shaped one mum’s journey to having baby No. 6",
+      "title": "‘Diseases, unfortunately, do not sleep’: How CDA is using AI to lead S’pore’s infectious diseases fight",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/community/every-life-is-precious-how-a-miscarriage-shaped-one-mums-journey-to-having-baby-number-six",
+      "url": "https://www.straitstimes.com/singapore/health/diseases-unfortunately-do-not-sleep-how-cda-is-using-ai-to-lead-spores-infectious-diseases-fight",
       "published": "2026-06-28 05:00"
     },
     {
       "category": "Traffic",
-      "title": "‘Diseases, unfortunately, do not sleep’: How CDA is using AI to lead S’pore’s infectious diseases fight",
+      "title": "‘Every life is precious’: How miscarriage shaped one mum’s journey to having baby No. 6",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/diseases-unfortunately-do-not-sleep-how-cda-is-using-ai-to-lead-spores-infectious-diseases-fight",
+      "url": "https://www.straitstimes.com/singapore/community/every-life-is-precious-how-a-miscarriage-shaped-one-mums-journey-to-having-baby-number-six",
       "published": "2026-06-28 05:00"
     },
     {
@@ -150,9 +150,37 @@
     },
     {
       "category": "General",
-      "title": "Russell wins in Austria to trim Antonelli's lead",
+      "title": "'Decaffeinated' Portugal left with bitter taste after Colombia stalemate",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/russell-wins-in-austria-trim-antonellis-lead-6216486",
+      "url": "https://www.channelnewsasia.com/sport/decaffeinated-portugal-left-bitter-taste-after-colombia-stalemate-6216576",
+      "published": "2026-06-29 00:15"
+    },
+    {
+      "category": "General",
+      "title": "Argentina wary of 'tough' Cape Verde after cruising through group stage",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/argentina-wary-tough-cape-verde-after-cruising-through-group-stage-6216566",
+      "published": "2026-06-29 00:05"
+    },
+    {
+      "category": "General",
+      "title": "Raducanu plans Wimbledon start despite leg injury concerns",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/raducanu-plans-wimbledon-start-despite-leg-injury-concerns-6216556",
+      "published": "2026-06-28 23:53"
+    },
+    {
+      "category": "General",
+      "title": "Williams looking to enjoy Wimbledon return after initial doubts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/williams-looking-enjoy-wimbledon-return-after-initial-doubts-6216511",
+      "published": "2026-06-28 23:08"
+    },
+    {
+      "category": "General",
+      "title": "Thirsty Russell trims Antonelli's lead with tight win in Austria",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/thirsty-russell-trims-antonellis-lead-tight-win-in-austria-6216486",
       "published": "2026-06-28 22:45"
     },
     {
@@ -192,9 +220,9 @@
     },
     {
       "category": "General",
-      "title": "Ravindra and Mitchell build up New Zealand's lead",
+      "title": "Stokes leads fightback in his final test for England",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ravindra-and-mitchell-build-up-new-zealands-lead-6216386",
+      "url": "https://www.channelnewsasia.com/sport/stokes-leads-fightback-in-his-final-test-england-6216386",
       "published": "2026-06-28 20:31"
     },
     {
@@ -217,34 +245,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/online-harassment-safety-commission-doxxing-osc-report-6207016",
       "published": "2026-06-28 18:11"
-    },
-    {
-      "category": "General",
-      "title": "Pritam Singh holds on to party chief position after secret vote at WP special cadres conference",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/workers-party-pritam-singh-cadres-cec-election-6216191",
-      "published": "2026-06-28 17:51"
-    },
-    {
-      "category": "General",
-      "title": "Rangnick dismisses collusion talk after Austria, Algeria play out six-goal thriller",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rangnick-dismisses-collusion-talk-after-austria-algeria-play-out-six-goal-thriller-6216151",
-      "published": "2026-06-28 14:22"
-    },
-    {
-      "category": "General",
-      "title": "Austria, Algeria defy controversial format to deliver World Cup thriller",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/austria-algeria-defy-controversial-format-deliver-world-cup-thriller-6216156",
-      "published": "2026-06-28 14:21"
-    },
-    {
-      "category": "General",
-      "title": "Scaloni running out of superlatives as Messi continues to break records",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/scaloni-running-out-superlatives-messi-continues-break-records-6216161",
-      "published": "2026-06-28 14:19"
     },
     {
       "category": "General",
