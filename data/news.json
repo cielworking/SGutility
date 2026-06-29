@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29 07:18",
+  "last_updated": "2026-06-29 09:33",
   "headlines": [
     {
       "category": "Crime",
@@ -73,16 +73,16 @@
     },
     {
       "category": "Traffic",
-      "title": "‘Every life is precious’: How miscarriage shaped one mum’s journey to having baby No. 6",
+      "title": "‘Diseases, unfortunately, do not sleep’: How CDA is using AI to lead S’pore’s infectious diseases fight",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/community/every-life-is-precious-how-a-miscarriage-shaped-one-mums-journey-to-having-baby-number-six",
+      "url": "https://www.straitstimes.com/singapore/health/diseases-unfortunately-do-not-sleep-how-cda-is-using-ai-to-lead-spores-infectious-diseases-fight",
       "published": "2026-06-28 05:00"
     },
     {
       "category": "Traffic",
-      "title": "‘Diseases, unfortunately, do not sleep’: How CDA is using AI to lead S’pore’s infectious diseases fight",
+      "title": "‘Every life is precious’: How miscarriage shaped one mum’s journey to having baby No. 6",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/diseases-unfortunately-do-not-sleep-how-cda-is-using-ai-to-lead-spores-infectious-diseases-fight",
+      "url": "https://www.straitstimes.com/singapore/community/every-life-is-precious-how-a-miscarriage-shaped-one-mums-journey-to-having-baby-number-six",
       "published": "2026-06-28 05:00"
     },
     {
@@ -114,11 +114,102 @@
       "published": "2026-06-27 16:10"
     },
     {
+      "category": "Fire",
+      "title": "France's firepower puts Sweden in the firing line",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/frances-firepower-puts-sweden-in-firing-line-6216991",
+      "published": "2026-06-29 07:36"
+    },
+    {
       "category": "Money",
       "title": "The GST InvoiceNow Requirement is coming – acting early could save your company money",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/gst-invoicenow-requirement-act-early-save-company-money-iras",
       "published": "2026-06-29 04:00"
+    },
+    {
+      "category": "General",
+      "title": "Saudi federation president Al-Misehal stands down after World Cup exit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/saudi-federation-president-al-misehal-stands-down-after-world-cup-exit-6217136",
+      "published": "2026-06-29 09:14"
+    },
+    {
+      "category": "General",
+      "title": "Swedes happy with underdog tag ahead of France World Cup showdown",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/swedes-happy-underdog-tag-ahead-france-world-cup-showdown-6217096",
+      "published": "2026-06-29 08:55"
+    },
+    {
+      "category": "General",
+      "title": "Putin acknowledges fuel shortages after Ukraine strikes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/putin-acknowledges-fuel-shortages-after-ukraine-strikes-6216986",
+      "published": "2026-06-29 08:22"
+    },
+    {
+      "category": "General",
+      "title": "In blow to DC Studios, Supergirl is no match for Toy Story 5 at North American box office",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/supergirl-toy-story-5-box-office-6216586",
+      "published": "2026-06-29 08:10"
+    },
+    {
+      "category": "General",
+      "title": "Ecuador's comeback spirit faces test at Mexico's Azteca fortress",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ecuadors-comeback-spirit-faces-test-mexicos-azteca-fortress-6217031",
+      "published": "2026-06-29 07:52"
+    },
+    {
+      "category": "General",
+      "title": "Mandopop megastar Jolin Tsai wins best album at Taiwan's Golden Melody Awards",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/golden-melody-awards-taiwan-jolin-tsai-6215371",
+      "published": "2026-06-29 07:49"
+    },
+    {
+      "category": "General",
+      "title": "Morocco need different solutions against the Netherlands, says coach Ouahbi",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/morocco-need-different-solutions-against-netherlands-says-coach-ouahbi-6217001",
+      "published": "2026-06-29 07:41"
+    },
+    {
+      "category": "General",
+      "title": "I don't have to prove myself to anyone, says Germany's Nagelsmann",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/i-dont-have-prove-myself-anyone-says-germanys-nagelsmann-6217006",
+      "published": "2026-06-29 07:41"
+    },
+    {
+      "category": "General",
+      "title": "Iran and US agree to halt attacks and renew talks, US official says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-and-us-agree-halt-attacks-and-renew-talks-us-official-says-6216976",
+      "published": "2026-06-29 07:28"
+    },
+    {
+      "category": "General",
+      "title": "Squamish Nation women showcase their culture as Canada down South Africa",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/squamish-nation-women-showcase-their-culture-canada-down-south-africa-6216971",
+      "published": "2026-06-29 07:21"
+    },
+    {
+      "category": "General",
+      "title": "Paraguay coach says after beating Brazil and Argentina, why not Germany?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/paraguay-coach-says-after-beating-brazil-and-argentina-why-not-germany-6216966",
+      "published": "2026-06-29 07:13"
+    },
+    {
+      "category": "General",
+      "title": "Period poop is real: Why you may be constipated one week and going to the loo more the next",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/period-poop-menstrual-cycle-bowel-changes-6162111",
+      "published": "2026-06-29 07:12"
     },
     {
       "category": "General",
@@ -168,97 +259,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/cape-verdes-world-cup-magic-has-italy-great-materazzi-spellbound-6216901",
       "published": "2026-06-29 06:16"
-    },
-    {
-      "category": "General",
-      "title": "Japan coach vows to pick penalty shootout takers against Brazil",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/japan-coach-vows-pick-penalty-shootout-takers-against-brazil-6216896",
-      "published": "2026-06-29 06:05"
-    },
-    {
-      "category": "General",
-      "title": "Why Chinese watch brands are finally being taken seriously",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/chinese-watch-brands-rise-watchmaking-6209121",
-      "published": "2026-06-29 06:02"
-    },
-    {
-      "category": "General",
-      "title": "Missed opportunities: How Asian Football Confederation teams fared in the World Cup group phase",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cup-group-phase-asian-teams-underperform-6215946",
-      "published": "2026-06-29 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Why 'You suggest, you do lah!' is the wrong response to an employee who speaks up",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/speaking-up-work-singapore-workplace-culture-6212481",
-      "published": "2026-06-29 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Canada score late winner to advance to last 16 at World Cup",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/canada-score-late-winner-advance-last-16-world-cup-6216826",
-      "published": "2026-06-29 05:07"
-    },
-    {
-      "category": "General",
-      "title": "Israel destroys Hezbollah underground infrastructure in southern Lebanon",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israel-destroys-hezbollah-underground-infrastructure-in-southern-lebanon-6216751",
-      "published": "2026-06-29 05:05"
-    },
-    {
-      "category": "General",
-      "title": "Record heatwave disrupts Europe as France warns death toll to rise",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/record-heatwave-disrupts-europe-france-warns-death-toll-rise-6216766",
-      "published": "2026-06-29 04:45"
-    },
-    {
-      "category": "General",
-      "title": "McLaren boss replies to Verstappen talk with banana peel quip",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mclaren-boss-replies-verstappen-talk-banana-peel-quip-6216761",
-      "published": "2026-06-29 04:27"
-    },
-    {
-      "category": "General",
-      "title": "Robertson hails Clarke's Scotland legacy as reign ends after World Cup exit",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/robertson-hails-clarkes-scotland-legacy-reign-ends-after-world-cup-exit-6216736",
-      "published": "2026-06-29 03:56"
-    },
-    {
-      "category": "General",
-      "title": "Bromell beats Lyles in Paris Diamond League 100m, Duplantis wins",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/bromell-beats-lyles-in-paris-diamond-league-100m-duplantis-wins-6216726",
-      "published": "2026-06-29 03:39"
-    },
-    {
-      "category": "General",
-      "title": "Iraq detains politicians, officials in anti-corruption crackdown",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iraq-detains-politicians-officials-in-anti-corruption-crackdown-6216236",
-      "published": "2026-06-29 03:29"
-    },
-    {
-      "category": "General",
-      "title": "South Koreans turn on Hong after disappointing World Cup campaign",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/south-koreans-turn-hong-after-disappointing-world-cup-campaign-6216716",
-      "published": "2026-06-29 03:20"
-    },
-    {
-      "category": "General",
-      "title": "England test captain Stokes to retire from international cricket",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-test-captain-stokes-retire-international-cricket-6216706",
-      "published": "2026-06-29 03:18"
     },
     {
       "category": "General",
