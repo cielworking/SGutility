@@ -1,7 +1,7 @@
 {
   "source_name": "PetrolPrice.sg",
   "source_url": "https://petrolprice.sg/",
-  "last_updated": "2026-06-29T07:04:09.765689+00:00",
+  "last_updated": "2026-06-29T12:09:11.262849+00:00",
   "note": "Listed pump prices in SGD per litre. Discounts and card promotions are not included.",
   "brands": [
     {
@@ -57,14 +57,14 @@
           "percent": 0.0
         },
         "premium": {
-          "previous": 3.94,
-          "change": 0.22,
-          "percent": 5.58
+          "previous": 4.16,
+          "change": 0.0,
+          "percent": 0.0
         },
         "diesel": {
-          "previous": 4.22,
-          "change": -0.1,
-          "percent": -2.37
+          "previous": 4.12,
+          "change": 0.0,
+          "percent": 0.0
         }
       }
     },
@@ -108,7 +108,7 @@
       "ron95": "$3.42",
       "ron98": "N/A",
       "premium": "$4.12",
-      "diesel": "$4.22",
+      "diesel": "$4.12",
       "changes": {
         "ron92": {
           "previous": 3.39,
@@ -127,8 +127,8 @@
         },
         "diesel": {
           "previous": 4.22,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.1,
+          "percent": -2.37
         }
       }
     },
