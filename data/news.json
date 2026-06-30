@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-06-30 06:20",
+  "last_updated": "2026-06-30 08:19",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "UK dilutes stablecoin capital requirement in final crypto rulebook",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/uk-dilutes-stablecoin-capital-requirement-in-final-crypto-rulebook-6219951",
+      "published": "2026-06-30 07:09"
+    },
     {
       "category": "Crime",
       "title": "Police, firefighters proudly wear World Cup badges as they provide security",
@@ -10,17 +17,10 @@
     },
     {
       "category": "Crime",
-      "title": "Low salaries, million-dollar dividends: Why three doctors' tax arrangement didn't hold up in court",
+      "title": "Why three doctors who paid themselves low salaries to dodge taxes failed to convince the courts",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/doctors-iras-income-tax-avoidance-evasion-6207676",
       "published": "2026-06-30 06:00"
-    },
-    {
-      "category": "Crime",
-      "title": "Lethal shooting near World Cup fan zone an isolated incident, say San Jose police",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lethal-shooting-near-world-cup-fan-zone-isolated-incident-say-san-jose-police-6219771",
-      "published": "2026-06-30 05:16"
     },
     {
       "category": "Crime",
@@ -87,10 +87,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Zenvo Aurora: The Danish hypercar that puts driving experience first",
+      "title": "Thai K-pop star Ten on his solo career plans, NCT and WayV – and why Doraemon inspires him",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/zenvo-aurora-danish-hypercar-v12-6212701",
-      "published": "2026-06-30 05:34"
+      "url": "https://www.channelnewsasia.com/entertainment/nct-ten-interview-crunchyroll-anime-awards-6203101",
+      "published": "2026-06-30 07:12"
     },
     {
       "category": "Traffic",
@@ -150,13 +150,6 @@
     },
     {
       "category": "Transport",
-      "title": "Exclusive-NBCUniversal may enter video game business after Comcast split, sources say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-nbcuniversal-may-enter-video-game-business-after-comcast-split-sources-say-6219691",
-      "published": "2026-06-30 04:35"
-    },
-    {
-      "category": "Transport",
       "title": "Singapore’s first dedicated housing for bus drivers opens next to Sengkang West Depot",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/singapores-first-dedicated-residential-facility-for-bus-drivers-opens-next-to-sengkang-west-depot",
@@ -170,13 +163,6 @@
       "published": "2026-06-29 04:00"
     },
     {
-      "category": "Fire",
-      "title": "Lewandowski joins Chicago Fire on deal until 2028",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lewandowski-joins-chicago-fire-deal-until-2028-6219726",
-      "published": "2026-06-30 04:53"
-    },
-    {
       "category": "Money",
       "title": "The GST InvoiceNow Requirement is coming – acting early could save your company money",
       "source": "Straits Times",
@@ -185,101 +171,115 @@
     },
     {
       "category": "General",
+      "title": "Commentary: Will US-Iran talks bring about new trade routes for India and China?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/us-iran-peace-deal-india-china-southeast-asia-trade-energy-hormuz-6212036",
+      "published": "2026-06-30 08:09"
+    },
+    {
+      "category": "General",
+      "title": "Reijnders dropped by the Dutch while Morocco make four changes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/reijnders-dropped-dutch-while-morocco-make-four-changes-6220051",
+      "published": "2026-06-30 08:04"
+    },
+    {
+      "category": "General",
+      "title": "Son apologises to fans after South Korea's early World Cup exit; coach Hong jeered on return home",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/south-korea-world-cup-son-heung-min-hong-myung-bo-6219981",
+      "published": "2026-06-30 08:02"
+    },
+    {
+      "category": "General",
+      "title": "How a Bangkok fashion label went from self-taught knitting to an IU music video and an LVMH Prize nod",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/style-beauty/nong-rak-bangkok-knitwear-6186871",
+      "published": "2026-06-30 07:58"
+    },
+    {
+      "category": "General",
+      "title": "Japan's May factory output growth lagged forecasts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japans-may-factory-output-growth-lagged-forecasts-6220026",
+      "published": "2026-06-30 07:55"
+    },
+    {
+      "category": "General",
+      "title": "Paraguay stun Germany 4-3 in penalty shootout in biggest upset of the World Cup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/paraguay-stun-germany-4-3-in-penalty-shootout-in-biggest-upset-world-cup-6219996",
+      "published": "2026-06-30 07:38"
+    },
+    {
+      "category": "General",
+      "title": "Paraguay knock Germany out of World Cup on penalties in major upset",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/paraguay-knock-germany-out-world-cup-penalties-in-major-upset-6220001",
+      "published": "2026-06-30 07:35"
+    },
+    {
+      "category": "General",
+      "title": "Norway's Odegaard living the dream ahead of Ivory Coast clash",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/norways-odegaard-living-dream-ahead-ivory-coast-clash-6219986",
+      "published": "2026-06-30 07:31"
+    },
+    {
+      "category": "General",
+      "title": "Figure skating-Russian two-time Olympic pairs champion Dmitriev dies",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/figure-skating-russian-two-time-olympic-pairs-champion-dmitriev-dies-6219991",
+      "published": "2026-06-30 07:29"
+    },
+    {
+      "category": "General",
+      "title": "Aguirre says Mexico must be near perfect as Ecuador test awaits",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/aguirre-says-mexico-must-be-near-perfect-ecuador-test-awaits-6219971",
+      "published": "2026-06-30 07:21"
+    },
+    {
+      "category": "General",
+      "title": "US House passes youth online safety legislation",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-house-passes-youth-online-safety-legislation-6219966",
+      "published": "2026-06-30 07:18"
+    },
+    {
+      "category": "General",
+      "title": "Australia sues Amazon unit over alleged breach via Prime Video ads",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/australia-sues-amazon-unit-over-alleged-breach-prime-video-ads-6219946",
+      "published": "2026-06-30 07:12"
+    },
+    {
+      "category": "General",
+      "title": "Bitcoin miner and AI firm Ionic Digital files for Nasdaq direct listing",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/bitcoin-miner-and-ai-firm-ionic-digital-files-nasdaq-direct-listing-6219941",
+      "published": "2026-06-30 07:06"
+    },
+    {
+      "category": "General",
+      "title": "Son apologises after South Korea's early World Cup exit, urges fans to support team",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/son-apologises-after-south-koreas-early-world-cup-exit-urges-fans-support-team-6219926",
+      "published": "2026-06-30 06:59"
+    },
+    {
+      "category": "General",
+      "title": "Uber, Waymo end robotaxi partnership in Phoenix",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/uber-waymo-end-robotaxi-partnership-in-phoenix-6219906",
+      "published": "2026-06-30 06:42"
+    },
+    {
+      "category": "General",
       "title": "Commentary: Despite its best efforts, Iran won’t be able to toll the Strait of Hormuz",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/commentary/iran-toll-strait-hormuz-reopening-middle-east-conflict-6218221",
       "published": "2026-06-30 05:59"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Can America avoid a 'Jack Ma moment'?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/america-china-ai-race-jack-ma-alibaba-anthropic-6218276",
-      "published": "2026-06-30 05:58"
-    },
-    {
-      "category": "General",
-      "title": "Weaknesses hard to find in France defence, says Sweden coach Potter",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/weaknesses-hard-find-in-france-defence-says-sweden-coach-potter-6219851",
-      "published": "2026-06-30 05:51"
-    },
-    {
-      "category": "General",
-      "title": "Tech rebound lifts Dow to record, yen hits 40-year low against dollar",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-stocks-oil-prices-market-tech-dow-record-6219791",
-      "published": "2026-06-30 05:43"
-    },
-    {
-      "category": "General",
-      "title": "Brazil match shows Japan closing gap on top teams, coach Moriyasu says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/brazil-match-shows-japan-closing-gap-top-teams-coach-moriyasu-says-6219826",
-      "published": "2026-06-30 05:35"
-    },
-    {
-      "category": "General",
-      "title": "In Brazil, a World Cup clash pits homeland against home for vast Japanese community",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/in-brazil-world-cup-clash-pits-homeland-against-home-vast-japanese-community-6219796",
-      "published": "2026-06-30 05:27"
-    },
-    {
-      "category": "General",
-      "title": "Trading Day: Wall Street gains, Dow hits record closing high as fragile US-Iran truce holds",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trading-day-wall-street-gains-dow-hits-record-closing-high-fragile-us-iran-truce-holds-6219801",
-      "published": "2026-06-30 05:26"
-    },
-    {
-      "category": "General",
-      "title": "US and Iran peace negotiators head to Doha, meeting uncertain",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-iran-peace-negotiatiors-doha-meeting-uncertain-weekend-strikes-6219746",
-      "published": "2026-06-30 05:19"
-    },
-    {
-      "category": "General",
-      "title": "Ivory Coast's Diomande brushes off speculation to stay focused on Norway",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ivory-coasts-diomande-brushes-speculation-stay-focused-norway-6219721",
-      "published": "2026-06-30 04:50"
-    },
-    {
-      "category": "General",
-      "title": "Confident Madueke embraces penalty pressure as England prepare for DR Congo",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/confident-madueke-embraces-penalty-pressure-england-prepare-dr-congo-6219701",
-      "published": "2026-06-30 04:47"
-    },
-    {
-      "category": "General",
-      "title": "US face unpredictable Bosnia test in World Cup round of 32",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/us-face-unpredictable-bosnia-test-in-world-cup-round-32-6219706",
-      "published": "2026-06-30 04:45"
-    },
-    {
-      "category": "General",
-      "title": "Norway's Ryerson out of clash with 'physical' Ivory Coast, says Solbakken",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/norways-ryerson-out-clash-physical-ivory-coast-says-solbakken-6219676",
-      "published": "2026-06-30 04:30"
-    },
-    {
-      "category": "General",
-      "title": "Injured Kone leads Canada celebrations after historic last-16 World Cup berth",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/injured-kone-leads-canada-celebrations-after-historic-last-16-world-cup-berth-6219681",
-      "published": "2026-06-30 04:29"
-    },
-    {
-      "category": "General",
-      "title": "Analysis:Brazil survive like Real Madrid in Ancelotti thriller",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/analysisbrazil-survive-real-madrid-in-ancelotti-thriller-6219666",
-      "published": "2026-06-30 04:24"
     }
   ]
 }
