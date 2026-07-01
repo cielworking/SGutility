@@ -1,34 +1,6 @@
 {
-  "last_updated": "2026-07-01 20:47",
+  "last_updated": "2026-07-01 23:49",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Swedish court says Google is to pay $1.5 billion to Klarna in antitrust damages",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/swedish-court-says-google-pay-15-billion-klarna-in-antitrust-damages-6224756",
-      "published": "2026-07-01 19:20"
-    },
-    {
-      "category": "Crime",
-      "title": "Watchdog probes two police after dying UK student handcuffed",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/uk-police-dying-student-handcuff-probe-stabbing-6224736",
-      "published": "2026-07-01 19:16"
-    },
-    {
-      "category": "Crime",
-      "title": "Police warn of cryptocurrency scams leveraging World Cup to target victims",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/spf-police-advisory-cryptocurrency-scams-world-cup-2026-6224431",
-      "published": "2026-07-01 18:04"
-    },
-    {
-      "category": "Crime",
-      "title": "Wayve courts automakers with AI driving system that learns like humans",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/wayve-courts-automakers-ai-driving-system-learns-humans-6224546",
-      "published": "2026-07-01 18:03"
-    },
     {
       "category": "Crime",
       "title": "Gym operator group behind several Anytime Fitness, BFT outlets to be charged over late CPF payments to employees",
@@ -157,10 +129,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Pogacar seeks record-equalling fifth Tour title as Vingegaard and Seixas challenge",
+      "title": "Sabalenka relies on survival instincts to tame Kessler",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pogacar-seeks-record-equalling-fifth-tour-title-vingegaard-and-seixas-challenge-6224721",
-      "published": "2026-07-01 19:06"
+      "url": "https://www.channelnewsasia.com/sport/sabalenka-relies-survival-instincts-tame-kessler-6225156",
+      "published": "2026-07-01 22:26"
     },
     {
       "category": "Traffic",
@@ -192,10 +164,17 @@
     },
     {
       "category": "Transport",
-      "title": "Mass 'Viking row', uprooted plants and dented trains as Norway World Cup fans celebrate",
+      "title": "FIFA says World Cup sees 13-fold surge in online abuse, 11% racially motivated",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mass-viking-row-uprooted-plants-and-dented-trains-norway-world-cup-fans-celebrate-6224766",
-      "published": "2026-07-01 19:26"
+      "url": "https://www.channelnewsasia.com/sport/fifa-says-world-cup-sees-13-fold-surge-in-online-abuse-11-racially-motivated-6225011",
+      "published": "2026-07-01 21:02"
+    },
+    {
+      "category": "Transport",
+      "title": "Meta building cloud business to sell excess AI capacity, Bloomberg News reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/meta-building-cloud-business-sell-excess-ai-capacity-bloomberg-news-reports-6224996",
+      "published": "2026-07-01 20:52"
     },
     {
       "category": "Transport",
@@ -212,6 +191,13 @@
       "published": "2026-07-01 20:37"
     },
     {
+      "category": "Fire",
+      "title": "Singapore set to buy Hellfire missiles from US as part of proposed $28.9 million defence package",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/singapore-set-to-buy-hellfire-missiles-from-us-as-part-of-proposed-28-9-million-defence-package",
+      "published": "2026-07-01 21:08"
+    },
+    {
       "category": "Housing",
       "title": "HDB resale prices dip for second straight quarter, private home prices rise at slower pace",
       "source": "Straits Times",
@@ -220,66 +206,80 @@
     },
     {
       "category": "General",
-      "title": "Micron, GM sign semiconductor supply agreement for vehicles",
+      "title": "Sinner stays clear of trouble against Borges to reach round three",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/micron-gm-sign-semiconductor-supply-agreement-vehicles-6224956",
-      "published": "2026-07-01 20:42"
+      "url": "https://www.channelnewsasia.com/sport/sinner-stays-clear-trouble-against-borges-reach-round-three-6225326",
+      "published": "2026-07-01 23:32"
     },
     {
       "category": "General",
-      "title": "World Cup's smallest venue in Toronto ready for its grand finale",
+      "title": "Analysis:AI hopes and fears dominate global central bank meet",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cups-smallest-venue-in-toronto-ready-its-grand-finale-6224961",
-      "published": "2026-07-01 20:40"
+      "url": "https://www.channelnewsasia.com/business/analysisai-hopes-and-fears-dominate-global-central-bank-meet-6225311",
+      "published": "2026-07-01 23:23"
     },
     {
       "category": "General",
-      "title": "Serena fighting to be fit for Wimbledon doubles with Venus after knee issue",
+      "title": "Rice returns as England make three changes for DR Congo clash",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/serena-fighting-be-fit-wimbledon-doubles-venus-after-knee-issue-6224946",
-      "published": "2026-07-01 20:31"
+      "url": "https://www.channelnewsasia.com/sport/rice-returns-england-make-three-changes-dr-congo-clash-6225221",
+      "published": "2026-07-01 22:57"
     },
     {
       "category": "General",
-      "title": "Osaka brings the style again to beat Gasanova in Wimbledon second round",
+      "title": "Promoted Hull sell Pandur and Shehu to satisfy financial rules",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/osaka-brings-style-again-beat-gasanova-in-wimbledon-second-round-6224881",
-      "published": "2026-07-01 19:58"
+      "url": "https://www.channelnewsasia.com/sport/promoted-hull-sell-pandur-and-shehu-satisfy-financial-rules-6225191",
+      "published": "2026-07-01 22:35"
     },
     {
       "category": "General",
-      "title": "Dollar bulls gain ground even as most FX strategists still expect weakness: Reuters poll",
+      "title": "British hopes on a high for Silverstone weekend",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dollar-bulls-gain-ground-even-most-fx-strategists-still-expect-weakness-reuters-poll-6224831",
-      "published": "2026-07-01 19:48"
+      "url": "https://www.channelnewsasia.com/sport/british-hopes-high-silverstone-weekend-6225126",
+      "published": "2026-07-01 22:22"
     },
     {
       "category": "General",
-      "title": "Wimbledon day three",
+      "title": "Chelsea sign defender Palestra from Atalanta",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/wimbledon-day-three-6224771",
-      "published": "2026-07-01 19:24"
+      "url": "https://www.channelnewsasia.com/sport/chelsea-sign-defender-palestra-atalanta-6225096",
+      "published": "2026-07-01 21:57"
     },
     {
       "category": "General",
-      "title": "Yen wallows at 40-year low as dollar rally gets yield boost",
+      "title": "Trump defends earning more than US$1 billion on crypto",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/yen-wallows-40-year-low-dollar-rally-gets-yield-boost-6223291",
-      "published": "2026-07-01 18:52"
+      "url": "https://www.channelnewsasia.com/world/us-president-trump-defends-earning-billion-crypto-6225081",
+      "published": "2026-07-01 21:54"
     },
     {
       "category": "General",
-      "title": "Marseille appoint Genesio as head coach after Beye's exit",
+      "title": "Sony to end discs for new PlayStation releases as gaming shifts online",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/marseille-appoint-genesio-head-coach-after-beyes-exit-6224656",
-      "published": "2026-07-01 18:30"
+      "url": "https://www.channelnewsasia.com/business/sony-end-discs-new-playstation-releases-gaming-shifts-online-6225086",
+      "published": "2026-07-01 21:53"
     },
     {
       "category": "General",
-      "title": "BYD's sales rise for second month, buoyed by exports",
+      "title": "Fans warned of severe heat in Toronto for Portugal-Croatia game",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/byds-sales-rise-second-month-buoyed-exports-6224626",
-      "published": "2026-07-01 18:20"
+      "url": "https://www.channelnewsasia.com/sport/fans-warned-severe-heat-in-toronto-portugal-croatia-game-6225091",
+      "published": "2026-07-01 21:52"
+    },
+    {
+      "category": "General",
+      "title": "NTU provost Christian Wolfrum appointed to lead Singapore's national AI programme",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/ntu-provost-christian-wolfrum-ai-singapore-executive-chairman-6224836",
+      "published": "2026-07-01 21:20"
+    },
+    {
+      "category": "General",
+      "title": "FactSet tops quarterly profit estimates on steady demand for data, analytics services",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/factset-tops-quarterly-profit-estimates-steady-demand-data-analytics-services-6224976",
+      "published": "2026-07-01 20:48"
     }
   ]
 }
