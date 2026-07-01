@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01 06:40",
+  "last_updated": "2026-07-01 08:21",
   "headlines": [
     {
       "category": "Crime",
@@ -73,17 +73,10 @@
     },
     {
       "category": "Traffic",
-      "title": "IN FOCUS: ‘Nobody suspected I was using drugs' - why Indonesia is considering a ban on vapes",
+      "title": "Boeing says IT outage affected computer systems, applications",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/in-focus-indonesia-proposes-vape-ban-6173711",
-      "published": "2026-07-01 06:00"
-    },
-    {
-      "category": "Traffic",
-      "title": "Dutch players suffer online racist abuse after shootout loss to Morocco",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/dutch-players-suffer-online-racist-abuse-after-shootout-loss-morocco-6222841",
-      "published": "2026-07-01 04:48"
+      "url": "https://www.channelnewsasia.com/business/boeing-says-it-outage-affected-computer-systems-applications-6223051",
+      "published": "2026-07-01 07:15"
     },
     {
       "category": "Traffic",
@@ -91,6 +84,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/06/lc-nursing-home-licence-revoked-lapses/",
       "published": "2026-07-01 00:58"
+    },
+    {
+      "category": "Traffic",
+      "title": "How a student’s pen-pal project connected teenagers in Hougang",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/how-a-students-penpal-project-connected-teenagers-in-hougang",
+      "published": "2026-07-01 07:00"
     },
     {
       "category": "Traffic",
@@ -114,11 +114,18 @@
       "published": "2026-06-29 20:59"
     },
     {
-      "category": "Traffic",
-      "title": "Decathlon Singapore’s second-hand bazaar expands to 2 locations with up to 1,000 refurbished bikes",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/decathlon-singapores-second-hand-bike-fest-expands-to-2-locations-with-up-to-1000-refurbished-rides",
-      "published": "2026-06-29 19:45"
+      "category": "Transport",
+      "title": "Japan business mood improves despite Middle East war, BOJ survey shows",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japan-business-mood-improves-despite-middle-east-war-boj-survey-shows-6223126",
+      "published": "2026-07-01 08:08"
+    },
+    {
+      "category": "Transport",
+      "title": "Microsoft to cut under 2.5% of workforce in latest layoffs, Business Insider reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/microsoft-cut-under-25-workforce-in-latest-layoffs-business-insider-reports-6223071",
+      "published": "2026-07-01 07:27"
     },
     {
       "category": "Transport",
@@ -143,10 +150,10 @@
     },
     {
       "category": "Money",
-      "title": "Inexperience proves costly for young Ivory Coast outfit, says coach",
+      "title": "Digital infrastructure firm ITG prices US IPO below range, raises $312 million",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/inexperience-proves-costly-young-ivory-coast-outfit-says-coach-6222826",
-      "published": "2026-07-01 04:39"
+      "url": "https://www.channelnewsasia.com/business/digital-infrastructure-firm-itg-prices-us-ipo-below-range-raises-312-million-6223066",
+      "published": "2026-07-01 07:19"
     },
     {
       "category": "Money",
@@ -161,6 +168,90 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/over-1-million-sporean-hdb-households-to-get-u-save-scc-rebates-in-july",
       "published": "2026-06-30 13:00"
+    },
+    {
+      "category": "General",
+      "title": "Politics aside, Mexico and Ecuador fans keep World Cup rivalry friendly",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/politics-aside-mexico-and-ecuador-fans-keep-world-cup-rivalry-friendly-6223156",
+      "published": "2026-07-01 08:11"
+    },
+    {
+      "category": "General",
+      "title": "Jimenez and Lira return for Mexico against Ecuador",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/jimenez-and-lira-return-mexico-against-ecuador-6223116",
+      "published": "2026-07-01 07:54"
+    },
+    {
+      "category": "General",
+      "title": "US coach Pochettino cool on favourites tag against Bosnia after World Cup shocks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/us-coach-pochettino-cool-favourites-tag-against-bosnia-after-world-cup-shocks-6223111",
+      "published": "2026-07-01 07:45"
+    },
+    {
+      "category": "General",
+      "title": "Mbappe uncorks France as Sweden are swept aside in Champagne World Cup show",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mbappe-uncorks-france-sweden-are-swept-aside-in-champagne-world-cup-show-6223101",
+      "published": "2026-07-01 07:41"
+    },
+    {
+      "category": "General",
+      "title": "Mission possible: Mbappe and Deschamps in perfect harmony as France gather steam",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mission-possible-mbappe-and-deschamps-in-perfect-harmony-france-gather-steam-6223086",
+      "published": "2026-07-01 07:35"
+    },
+    {
+      "category": "General",
+      "title": "No over-confidence from Tuchel's England in World Cup of fine margins",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/no-over-confidence-tuchels-england-in-world-cup-fine-margins-6223076",
+      "published": "2026-07-01 07:27"
+    },
+    {
+      "category": "General",
+      "title": "Can prickly heat powder and cooling water really beat the heat? The facts behind some popular remedies",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/do-cooling-remedies-work-prickly-heat-powder-cooling-water-6184046",
+      "published": "2026-07-01 07:25"
+    },
+    {
+      "category": "General",
+      "title": "Defence not just about capabilities, intention also matters: Chan Chun Sing",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/chan-chun-sing-defence-saf-national-service-pes-deep-dive-6220996",
+      "published": "2026-07-01 07:23"
+    },
+    {
+      "category": "General",
+      "title": "US lifts export controls on Anthropic's Fable, Mythos AI models",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-lifts-export-controls-anthropics-fable-mythos-ai-models-6223031",
+      "published": "2026-07-01 07:08"
+    },
+    {
+      "category": "General",
+      "title": "Fury to fight Polish journeyman Wach in Thailand on July 24",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/fury-fight-polish-journeyman-wach-in-thailand-july-24-6223011",
+      "published": "2026-07-01 07:02"
+    },
+    {
+      "category": "General",
+      "title": "Mbappe double as France ease past Sweden 3-0 to reach last 16",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mbappe-double-france-ease-past-sweden-3-0-reach-last-16-6223001",
+      "published": "2026-07-01 06:56"
+    },
+    {
+      "category": "General",
+      "title": "Apollo's Athene names ex-Goldman executive as Japan head to drive reinsurance push",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/apollos-athene-names-ex-goldman-executive-japan-head-drive-reinsurance-push-6222991",
+      "published": "2026-07-01 06:36"
     },
     {
       "category": "General",
@@ -189,97 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/investing-dividends-inflation-market-volatility-6221111",
       "published": "2026-07-01 06:00"
-    },
-    {
-      "category": "General",
-      "title": "PM Anwar’s coalition partners pledge to finish term, despite state polls feud: Selangor chief minister",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/anwar-coalition-partners-pledge-commitiment-government-despite-state-election-feud-6220486",
-      "published": "2026-07-01 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Economics cannot be relied on to bring about peace",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/war-peace-power-small-states-asean-6212086",
-      "published": "2026-07-01 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Want to work from home? Make sure your boss isn’t a narcissist",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/wfh-remote-work-boss-narcissism-study-6220956",
-      "published": "2026-07-01 05:59"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Football’s Asian century is still on hold",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/world-cup-football-japan-south-korea-6221011",
-      "published": "2026-07-01 05:58"
-    },
-    {
-      "category": "General",
-      "title": "Race first, holiday after: Why Hyrox fans are turning competitions into vacations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/experiences/hyrox-races-asia-fitness-holidays-6217256",
-      "published": "2026-07-01 05:51"
-    },
-    {
-      "category": "General",
-      "title": "Nasdaq ends best quarter in 6 years as yen extends drop against dollar",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/nasdaq-sp-dollar-yen-oil-prices-us-stocks-market-6222916",
-      "published": "2026-07-01 05:45"
-    },
-    {
-      "category": "General",
-      "title": "Desabre says DR Congo face England with nothing to lose",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/desabre-says-dr-congo-face-england-nothing-lose-6222911",
-      "published": "2026-07-01 05:34"
-    },
-    {
-      "category": "General",
-      "title": "US have courage to prevail if World Cup shootout ensues, Pulisic says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/us-have-courage-prevail-if-world-cup-shootout-ensues-pulisic-says-6222906",
-      "published": "2026-07-01 05:30"
-    },
-    {
-      "category": "General",
-      "title": "Solbakken endures sideline stress as Haaland steers Norway into World Cup last 16",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/solbakken-endures-sideline-stress-haaland-steers-norway-world-cup-last-16-6222896",
-      "published": "2026-07-01 05:26"
-    },
-    {
-      "category": "General",
-      "title": "Wawrinka bows out of final Wimbledon after loss to Berrettini",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/wawrinka-bows-out-final-wimbledon-after-loss-berrettini-6222886",
-      "published": "2026-07-01 05:22"
-    },
-    {
-      "category": "General",
-      "title": "Hungary, Slovakia hit new temperature records",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/hungary-slovakia-european-heatwave-temperature-records-6222861",
-      "published": "2026-07-01 05:22"
-    },
-    {
-      "category": "General",
-      "title": "Haaland shakes off Ivory Coast shackles to haul Norway into World Cup last 16",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/norway-ivory-coast-game-haaland-world-cup-6222756",
-      "published": "2026-07-01 04:13"
-    },
-    {
-      "category": "General",
-      "title": "TikTok settles with minor plaintiff ahead of second individual trial over social media harm to children, law firm says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/tiktok-settles-minor-plaintiff-ahead-second-individual-trial-over-social-media-harm-children-law-firm-says-6222726",
-      "published": "2026-07-01 03:57"
     }
   ]
 }
