@@ -1,6 +1,27 @@
 {
-  "last_updated": "2026-07-02 02:16",
+  "last_updated": "2026-07-02 04:16",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "At least 5 people killed in fire in Antwerp apartment tower, Belgian police say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/least-5-people-killed-in-fire-in-antwerp-apartment-tower-belgian-police-say-6225841",
+      "published": "2026-07-02 03:50"
+    },
+    {
+      "category": "Crime",
+      "title": "Looting, arrests after South Africa's anti-foreigner protests",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/south-africa-anti-immigrant-protests-looting-shops-arrests-6225636",
+      "published": "2026-07-02 02:21"
+    },
+    {
+      "category": "Crime",
+      "title": "Foreign worker in S'pore says he wasn't paid for 1,848 overtime hours, takes company to court & wins S$20,000",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/foreign-worker-1848-overtime-hours/",
+      "published": "2026-07-02 00:56"
+    },
     {
       "category": "Crime",
       "title": "S'pore police seize S$55 million Good Class Bungalow linked to Nvidia chips fraud case",
@@ -31,185 +52,234 @@
     },
     {
       "category": "Crime",
-      "title": "S'porean doctor, 36, convicted of drug consumption after arrest at Sentosa hotel party",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/sporean-doctor-drugs-sentosa-convicted/",
-      "published": "2026-07-01 22:07"
+      "title": "Ex-bank branch manager charged after allegedly taking over $1.7m from vault in Serangoon Road",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/ex-bank-branch-manager-charged-after-allegedly-taking-over-1-7m-from-vault-in-serangoon-road",
+      "published": "2026-07-01 16:28"
+    },
+    {
+      "category": "Crime",
+      "title": "Beware of cryptocurrency scams involving World Cup tickets and merchandise",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/beware-of-cryptocurrency-scams-involving-world-cup-tickets-and-merchandise",
+      "published": "2026-07-01 16:10"
+    },
+    {
+      "category": "Crime",
+      "title": "Life in jail for man who poured hot oil on roommate in Redhill rental flat and stabbed him to death",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-who-poured-hot-oil-on-flatmate-and-stabbed-him-to-death-gets-life-imprisonment",
+      "published": "2026-07-01 14:19"
+    },
+    {
+      "category": "Crime",
+      "title": "4 men face 5 charges in total after Singapore’s largest seizure of illegally imported Kpods",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/4-men-face-5-charges-in-total-after-singapores-largest-seizure-of-illegally-imported-kpods",
+      "published": "2026-07-01 14:02"
+    },
+    {
+      "category": "Crime",
+      "title": "Man charged over using airsoft gun to shoot another person in Tampines",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-charged-with-using-airsoft-gun-to-shoot-another-person-in-tampines",
+      "published": "2026-07-01 13:57"
+    },
+    {
+      "category": "Crime",
+      "title": "Nvidia chips case: 4 firms face charges over false representation accusations; $56m in assets seized",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/nvidia-chips-case-4-firms-charged-over-false-representation-accusations-56m-in-assets-seized",
+      "published": "2026-07-01 13:33"
+    },
+    {
+      "category": "Crime",
+      "title": "Woman arrested after fire breaks out in Sembawang HDB flat",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/1-taken-to-hospital-after-fire-breaks-out-in-sembawang-hdb-flat",
+      "published": "2026-07-01 12:23"
+    },
+    {
+      "category": "Crime",
+      "title": "Man charged after he allegedly abused infant son by repeatedly shaking him",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-charged-after-he-allegedly-abused-infant-son-by-repeatedly-shaking-him",
+      "published": "2026-07-01 10:53"
+    },
+    {
+      "category": "Crime",
+      "title": "Man to be charged after shooting, injuring another with air gun",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-to-be-charged-after-shooting-another-with-air-gun",
+      "published": "2026-06-30 22:23"
+    },
+    {
+      "category": "Crime",
+      "title": "Doctor convicted of drug use; he was among 49 men arrested at Sentosa hotel in police raid",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/doctor-convicted-of-drug-use-he-was-among-49-men-arrested-at-sentosa-hotel-in-police-raid",
+      "published": "2026-06-30 20:36"
+    },
+    {
+      "category": "Crime",
+      "title": "Woman jailed over use of fake passport to enter S’pore; husband jailed for false declarations",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/woman-jailed-over-use-of-fake-passport-to-enter-spore-husband-jailed-for-false-visa-declarations",
+      "published": "2026-06-30 19:18"
+    },
+    {
+      "category": "Crime",
+      "title": "New Singpass passkey turns mobile devices into digital keys, renders phishing scams useless",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/tech/new-singpass-passkey-turns-mobile-devices-into-digital-keys-renders-phishing-scams-useless",
+      "published": "2026-06-30 18:30"
+    },
+    {
+      "category": "Crime",
+      "title": "2½ years’ jail for speeding van driver who fatally struck jaywalker in Woodlands",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/2-5-years-jail-for-speeding-van-driver-who-fatally-struck-jaywalker-in-woodlands",
+      "published": "2026-06-30 18:17"
+    },
+    {
+      "category": "Crime",
+      "title": "Former bank manager to be charged over allegedly taking $1.8m from bank vault",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/former-bank-manager-to-be-charged-over-allegedly-taking-1-8m-from-bank-vault",
+      "published": "2026-06-30 18:16"
     },
     {
       "category": "Traffic",
-      "title": "Morocco forward Saibari joins Bayern Munich from PSV",
+      "title": "'It's crazy': Broadcasters toil, and revel, in supersized World Cup",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/morocco-forward-saibari-joins-bayern-munich-psv-6225511",
-      "published": "2026-07-02 00:46"
+      "url": "https://www.channelnewsasia.com/sport/its-crazy-broadcasters-toil-and-revel-in-supersized-world-cup-6225846",
+      "published": "2026-07-02 03:25"
+    },
+    {
+      "category": "Traffic",
+      "title": "England survive huge DR Congo scare to set up Mexico showdown",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/england-survive-huge-dr-congo-scare-set-up-mexico-showdown-6225811",
+      "published": "2026-07-02 03:16"
+    },
+    {
+      "category": "Traffic",
+      "title": "Short, thundery showers expected in S’pore in first half of July but drier conditions may kick in",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/short-thundery-showers-expected-in-spore-in-first-half-of-july-but-drier-conditions-may-kick-in",
+      "published": "2026-07-01 16:48"
+    },
+    {
+      "category": "Traffic",
+      "title": "$5k fine for ex-air force chief whose car hit woman pushing stroller at Pasir Panjang",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/5k-fine-for-ex-air-force-chief-whose-car-hit-woman-pushing-stroller-at-pasir-panjang",
+      "published": "2026-07-01 15:21"
+    },
+    {
+      "category": "Traffic",
+      "title": "How a student’s pen-pal project connected teenagers in Hougang",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/how-a-students-penpal-project-connected-teenagers-in-hougang",
+      "published": "2026-07-01 07:00"
     },
     {
       "category": "Transport",
-      "title": "Meta shares surge on report of new AI cloud business",
+      "title": "Two boys, 11 and 12, given conditional warnings after breaking into MRT train’s back cabin",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/two-boys-11-and-12-given-conditional-warnings-after-breaking-into-mrt-trains-back-cabin",
+      "published": "2026-06-30 19:55"
+    },
+    {
+      "category": "Fire",
+      "title": "Singapore set to buy Hellfire missiles from US as part of proposed $28.9 million defence package",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/singapore-set-to-buy-hellfire-missiles-from-us-as-part-of-proposed-28-9-million-defence-package",
+      "published": "2026-07-01 21:08"
+    },
+    {
+      "category": "Housing",
+      "title": "HDB resale prices dip for second straight quarter, private home prices rise at slower pace",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/housing/hdb-resale-prices-dip-for-second-straight-quarter",
+      "published": "2026-07-01 08:52"
+    },
+    {
+      "category": "General",
+      "title": "DR Congo leave positive image, says coach after epic battle with England",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/meta-shares-surge-wall-street-bloomberg-report-ai-cloud-6225576",
-      "published": "2026-07-02 01:30"
+      "url": "https://www.channelnewsasia.com/sport/dr-congo-leave-positive-image-says-coach-after-epic-battle-england-6225901",
+      "published": "2026-07-02 04:04"
     },
     {
-      "category": "Money",
-      "title": "US LNG exports to Europe decline as Asia prices surge",
+      "category": "General",
+      "title": "Inglewood, once known for danger, uses World Cup to rebrand as a fun place",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-lng-exports-europe-decline-asia-prices-surge-6225656",
-      "published": "2026-07-02 01:49"
+      "url": "https://www.channelnewsasia.com/sport/inglewood-once-known-danger-uses-world-cup-rebrand-fun-place-6225861",
+      "published": "2026-07-02 03:46"
     },
     {
       "category": "General",
-      "title": "Kane double rescues England in comeback win over DR Congo",
+      "title": "England-India T20 abandoned because of rain",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/kane-double-rescues-england-in-comeback-win-over-dr-congo-6225671",
-      "published": "2026-07-02 02:05"
+      "url": "https://www.channelnewsasia.com/sport/england-india-t20-abandoned-because-rain-6225856",
+      "published": "2026-07-02 03:42"
     },
     {
       "category": "General",
-      "title": "California man with bipolar disorder says ChatGPT fueled delusions, led to self-harm in new lawsuit",
+      "title": "Senegal's Pape Gueye gets start against Belgium",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/california-man-bipolar-disorder-says-chatgpt-fueled-delusions-led-self-harm-in-new-lawsuit-6225621",
-      "published": "2026-07-02 01:32"
+      "url": "https://www.channelnewsasia.com/sport/senegals-pape-gueye-gets-start-against-belgium-6225791",
+      "published": "2026-07-02 03:12"
     },
     {
       "category": "General",
-      "title": "India asks WhatsApp to hold 'usernames' rollout pending consultations, letter shows",
+      "title": "US FTC says AI bias safeguards may run afoul of consumer law",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/india-asks-whatsapp-hold-usernames-rollout-pending-consultations-letter-shows-6225606",
-      "published": "2026-07-02 01:28"
+      "url": "https://www.channelnewsasia.com/business/us-ftc-says-ai-bias-safeguards-may-run-afoul-consumer-law-6225786",
+      "published": "2026-07-02 03:08"
     },
     {
       "category": "General",
-      "title": "Oaktree-backed ITG jumps in Nasdaq debut, signaling strong AI infrastructure demand",
+      "title": "Valar nuclear startup partners with Nvidia on data center aiming to conserve water",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oaktree-backed-itg-jumps-in-nasdaq-debut-signaling-strong-ai-infrastructure-demand-6225581",
-      "published": "2026-07-02 01:18"
+      "url": "https://www.channelnewsasia.com/business/valar-nuclear-startup-partners-nvidia-data-center-aiming-conserve-water-6225766",
+      "published": "2026-07-02 03:03"
     },
     {
       "category": "General",
-      "title": "Fed's Warsh plans to harness better economic data within a year",
+      "title": "Musk denies WSJ report that SpaceX showed AI handset prototype before IPO",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/feds-warsh-plans-harness-better-economic-data-within-year-6225551",
-      "published": "2026-07-02 01:08"
+      "url": "https://www.channelnewsasia.com/business/musk-denies-wsj-report-spacex-showed-ai-handset-prototype-ipo-6225771",
+      "published": "2026-07-02 03:02"
     },
     {
       "category": "General",
-      "title": "Gauff survives tense tiebreak to keep Wimbledon hopes alive",
+      "title": "Alibaba, AUS Merchant Services to pay $600 million to resolve alleged illegal pharmaceuticals sales, DOJ says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/gauff-survives-tense-tiebreak-keep-wimbledon-hopes-alive-6225556",
-      "published": "2026-07-02 01:06"
+      "url": "https://www.channelnewsasia.com/business/alibaba-aus-merchant-services-pay-600-million-resolve-alleged-illegal-pharmaceuticals-sales-doj-says-6225776",
+      "published": "2026-07-02 02:57"
     },
     {
       "category": "General",
-      "title": "Cape Verde plot Argentina upset to continue fairytale run at World Cup",
+      "title": "Former champion Krejcikova rallies past Andreeva into Wimbledon third round",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/cape-verde-plot-argentina-upset-continue-fairytale-run-world-cup-6225561",
-      "published": "2026-07-02 01:03"
+      "url": "https://www.channelnewsasia.com/sport/former-champion-krejcikova-rallies-past-andreeva-wimbledon-third-round-6225751",
+      "published": "2026-07-02 02:50"
     },
     {
       "category": "General",
-      "title": "Stocks mixed with eyes on US Fed",
+      "title": "At a fan-owned club, a 'band of optimists' reflects Canada's soccer moment",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/stocks-mixed-market-us-fed-warsh-6225496",
-      "published": "2026-07-02 01:02"
+      "url": "https://www.channelnewsasia.com/sport/fan-owned-club-band-optimists-reflects-canadas-soccer-moment-6225736",
+      "published": "2026-07-02 02:45"
     },
     {
       "category": "General",
-      "title": "Russia warns Apple of $52 million fine over alleged bias against local apps",
+      "title": "Zverev and Swiatek look to gain Wimbledon momentum",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/russia-warns-apple-52-million-fine-over-alleged-bias-against-local-apps-6225506",
-      "published": "2026-07-02 00:47"
-    },
-    {
-      "category": "General",
-      "title": "Ubisoft taps Amazon Games VP to lead Tom Clancy franchise",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ubisoft-taps-amazon-games-vp-lead-tom-clancy-franchise-6225471",
-      "published": "2026-07-02 00:36"
-    },
-    {
-      "category": "General",
-      "title": "Potter's Sweden rebuild to continue after World Cup exit",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/potters-sweden-rebuild-continue-after-world-cup-exit-6225461",
-      "published": "2026-07-02 00:32"
-    },
-    {
-      "category": "General",
-      "title": "Israel defence minister says troops to stay in Lebanon, Syria, Gaza 'until further notice'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israel-troop-withdrawal-lebanon-syria-gaza-hezbollah-6225431",
-      "published": "2026-07-02 00:29"
-    },
-    {
-      "category": "General",
-      "title": "Meta names Alex Schultz first chief data officer",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/meta-names-alex-schultz-first-chief-data-officer-6225446",
-      "published": "2026-07-02 00:27"
-    },
-    {
-      "category": "General",
-      "title": "Sciver-Brunt to lead England in semis",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/sciver-brunt-lead-england-in-semis-6225436",
-      "published": "2026-07-02 00:21"
-    },
-    {
-      "category": "General",
-      "title": "France's fearsome attack enters debate over World Cup's greatest forward line",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/frances-fearsome-attack-enters-debate-over-world-cups-greatest-forward-line-6225426",
-      "published": "2026-07-02 00:15"
-    },
-    {
-      "category": "General",
-      "title": "Google has exceeded $1 billion Africa investment target",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/google-has-exceeded-1-billion-africa-investment-target-6225396",
-      "published": "2026-07-02 00:06"
-    },
-    {
-      "category": "General",
-      "title": "Together AI raises $800 million at $8.3 billion valuation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/together-ai-raises-800-million-83-billion-valuation-6225401",
-      "published": "2026-07-02 00:05"
-    },
-    {
-      "category": "General",
-      "title": "Some people purportedly had to queue 2 to 3 hours to collect NDP tickets, others say queue moved quickly",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/ndp-tickets-long-queues/",
-      "published": "2026-07-01 23:52"
-    },
-    {
-      "category": "General",
-      "title": "Uzbeks in S'pore celebrate country's 1st World Cup from MacPherson as Cristiano Ronaldo SIUs on them",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/uzbekistan-community-singapore-world-cup/",
-      "published": "2026-07-01 23:24"
-    },
-    {
-      "category": "General",
-      "title": "OCBC introduces new avatar banking for 24/7 wealth management services",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/ocbc-ai-avatar-banking-app/",
-      "published": "2026-07-01 23:24"
-    },
-    {
-      "category": "General",
-      "title": "Man, 42, falls through roof of shelter in Yishun, dies after being conveyed to hospital",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-falls-roof-yishun-dies/",
-      "published": "2026-07-01 22:57"
-    },
-    {
-      "category": "General",
-      "title": "S'pore woman finds lizard in Wok Hey fried rice, company says 'no sign of lizard activity' at kiosk",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/lizard-fried-rice-tampines-1-wok-hey/",
-      "published": "2026-07-01 22:39"
+      "url": "https://www.channelnewsasia.com/sport/zverev-and-swiatek-look-gain-wimbledon-momentum-6225741",
+      "published": "2026-07-02 02:45"
     }
   ]
 }
