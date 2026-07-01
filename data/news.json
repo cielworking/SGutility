@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-01 18:13",
+  "last_updated": "2026-07-01 20:47",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Swedish court says Google is to pay $1.5 billion to Klarna in antitrust damages",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/swedish-court-says-google-pay-15-billion-klarna-in-antitrust-damages-6224756",
+      "published": "2026-07-01 19:20"
+    },
+    {
+      "category": "Crime",
+      "title": "Watchdog probes two police after dying UK student handcuffed",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/uk-police-dying-student-handcuff-probe-stabbing-6224736",
+      "published": "2026-07-01 19:16"
+    },
     {
       "category": "Crime",
       "title": "Police warn of cryptocurrency scams leveraging World Cup to target victims",
@@ -17,10 +31,17 @@
     },
     {
       "category": "Crime",
-      "title": "Police bar disposal of S$55 million Good Class Bungalow in Nvidia chip movement case",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/gcb-55-million-nvidia-chip-movement-case-6223876",
-      "published": "2026-07-01 13:53"
+      "title": "Gym operator group behind several Anytime Fitness, BFT outlets to be charged over late CPF payments to employees",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/watchtower-holdings-anytime-fitness-cpf-contributions/",
+      "published": "2026-07-02 00:32"
+    },
+    {
+      "category": "Crime",
+      "title": "Taiwan man instigates girlfriend to sexually assault her 3 sons, gets 9 years & 8 months' jail",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/taiwan-man-instigates-lover-sexually-assault-sons/",
+      "published": "2026-07-02 00:28"
     },
     {
       "category": "Crime",
@@ -35,27 +56,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/sporean-doctor-drugs-sentosa-convicted/",
       "published": "2026-07-01 22:07"
-    },
-    {
-      "category": "Crime",
-      "title": "Man, 38, arrested after allegedly shooting man, 37, with airsoft gun in Tampines",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-shoot-man-airsoft/",
-      "published": "2026-07-01 20:29"
-    },
-    {
-      "category": "Crime",
-      "title": "Chinese national, 40, arrested at Kaki Bukit self-storage facility, 1,188 bottles of duty-unpaid liquor seized",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/1188-duty-unpaid-liquor-kaki-bukit-raid-chinese-man-arrested/",
-      "published": "2026-07-01 20:19"
-    },
-    {
-      "category": "Crime",
-      "title": "Man, 63, gets life imprisonment for pouring boiling oil & stabbing co-tenant to death at Redhill flat in 2023",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-life-imprisonment-oil-stab-death-redhill/",
-      "published": "2026-07-01 20:07"
     },
     {
       "category": "Crime",
@@ -156,25 +156,11 @@
       "published": "2026-06-30 18:16"
     },
     {
-      "category": "Crime",
-      "title": "Man arrested in Toa Payoh for obscene act, punching police officer in the face",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/man-arrested-in-toa-payoh-for-obscene-act-punching-police-officer-in-the-face",
-      "published": "2026-06-30 16:37"
-    },
-    {
-      "category": "Crime",
-      "title": "Jail for Kpod peddler who drove off during 2025 HSA raid in Bishan, almost hitting officers",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/jail-for-kpod-peddler-who-drove-off-during-2025-hsa-raid-in-bishan-almost-hitting-officers",
-      "published": "2026-06-30 16:34"
-    },
-    {
       "category": "Traffic",
-      "title": "Opening of North Korea-Russia road bridge likely delayed, US think tank says",
+      "title": "Pogacar seeks record-equalling fifth Tour title as Vingegaard and Seixas challenge",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/opening-north-korea-russia-road-bridge-likely-delayed-us-think-tank-says-6224296",
-      "published": "2026-07-01 17:59"
+      "url": "https://www.channelnewsasia.com/sport/pogacar-seeks-record-equalling-fifth-tour-title-vingegaard-and-seixas-challenge-6224721",
+      "published": "2026-07-01 19:06"
     },
     {
       "category": "Traffic",
@@ -205,11 +191,11 @@
       "published": "2026-07-01 07:00"
     },
     {
-      "category": "Traffic",
-      "title": "Systems infected by malware in Singapore more than doubled in 2025: CSA",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/tech/systems-infected-by-malware-in-spore-more-than-double-in-2025-csa",
-      "published": "2026-06-30 17:28"
+      "category": "Transport",
+      "title": "Mass 'Viking row', uprooted plants and dented trains as Norway World Cup fans celebrate",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mass-viking-row-uprooted-plants-and-dented-trains-norway-world-cup-fans-celebrate-6224766",
+      "published": "2026-07-01 19:26"
     },
     {
       "category": "Transport",
@@ -219,11 +205,11 @@
       "published": "2026-06-30 19:55"
     },
     {
-      "category": "Housing",
-      "title": "HDB resale prices fall for 2nd straight quarter, 0.3% lower compared to Q1 2026",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/hdb-resale-prices-fall-2nd-quarter/",
-      "published": "2026-07-01 20:14"
+      "category": "Fire",
+      "title": "Singapore set to buy additional Hellfire missiles after US approves proposed US$22.3 million package",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/hellfire-missile-sale-singapore-apache-mindef-6223081",
+      "published": "2026-07-01 20:37"
     },
     {
       "category": "Housing",
@@ -234,52 +220,66 @@
     },
     {
       "category": "General",
-      "title": "Defense startups raid auto and fracking sectors for parts to speed weapons output",
+      "title": "Micron, GM sign semiconductor supply agreement for vehicles",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/defense-startups-raid-auto-and-fracking-sectors-parts-speed-weapons-output-6224571",
-      "published": "2026-07-01 18:07"
+      "url": "https://www.channelnewsasia.com/business/micron-gm-sign-semiconductor-supply-agreement-vehicles-6224956",
+      "published": "2026-07-01 20:42"
     },
     {
       "category": "General",
-      "title": "Ngee Ann Kongsi sponsors 900 tickets to Dear You screenings in Teochew",
+      "title": "World Cup's smallest venue in Toronto ready for its grand finale",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/dear-you-teochew-tickets-ngee-ann-kongsi-6224401",
-      "published": "2026-07-01 17:32"
+      "url": "https://www.channelnewsasia.com/sport/world-cups-smallest-venue-in-toronto-ready-its-grand-finale-6224961",
+      "published": "2026-07-01 20:40"
     },
     {
       "category": "General",
-      "title": "Former air force chief fined for driving into maid who was pushing toddler in stroller",
+      "title": "Serena fighting to be fit for Wimbledon doubles with Venus after knee issue",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/air-force-chief-fined-collide-maid-stroller-6224376",
-      "published": "2026-07-01 17:24"
+      "url": "https://www.channelnewsasia.com/sport/serena-fighting-be-fit-wimbledon-doubles-venus-after-knee-issue-6224946",
+      "published": "2026-07-01 20:31"
     },
     {
       "category": "General",
-      "title": "Contractor, supervisor get conditional warning over Lower Peirce Reservoir tree clearance: NParks",
+      "title": "Osaka brings the style again to beat Gasanova in Wimbledon second round",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/nparks-tree-clearance-lower-peirce-reservoir-conditional-warning-6224381",
-      "published": "2026-07-01 17:21"
+      "url": "https://www.channelnewsasia.com/sport/osaka-brings-style-again-beat-gasanova-in-wimbledon-second-round-6224881",
+      "published": "2026-07-01 19:58"
     },
     {
       "category": "General",
-      "title": "China imposes 'national security' rules on overseas investments",
+      "title": "Dollar bulls gain ground even as most FX strategists still expect weakness: Reuters poll",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-national-security-overseas-investments-6224361",
-      "published": "2026-07-01 16:50"
+      "url": "https://www.channelnewsasia.com/business/dollar-bulls-gain-ground-even-most-fx-strategists-still-expect-weakness-reuters-poll-6224831",
+      "published": "2026-07-01 19:48"
     },
     {
       "category": "General",
-      "title": "US, Iran officials to hold indirect talks in Doha",
+      "title": "Wimbledon day three",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-iran-officials-qatar-indirect-talks-6224371",
-      "published": "2026-07-01 16:44"
+      "url": "https://www.channelnewsasia.com/sport/wimbledon-day-three-6224771",
+      "published": "2026-07-01 19:24"
     },
     {
       "category": "General",
-      "title": "European holidaymakers stay closer to home as Middle East conflict reshapes summer travel",
+      "title": "Yen wallows at 40-year low as dollar rally gets yield boost",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/europe-travel-middle-east-conflict-6224281",
-      "published": "2026-07-01 16:42"
+      "url": "https://www.channelnewsasia.com/business/yen-wallows-40-year-low-dollar-rally-gets-yield-boost-6223291",
+      "published": "2026-07-01 18:52"
+    },
+    {
+      "category": "General",
+      "title": "Marseille appoint Genesio as head coach after Beye's exit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/marseille-appoint-genesio-head-coach-after-beyes-exit-6224656",
+      "published": "2026-07-01 18:30"
+    },
+    {
+      "category": "General",
+      "title": "BYD's sales rise for second month, buoyed by exports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/byds-sales-rise-second-month-buoyed-exports-6224626",
+      "published": "2026-07-01 18:20"
     }
   ]
 }
