@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-02 07:42",
+  "last_updated": "2026-07-02 12:21",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Commentary: The true cost of AI scams isn’t financial - it's human",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/ai-deepfake-iswaran-interview-scam-cost-6224366",
-      "published": "2026-07-02 06:00"
+      "title": "Woman, 46, arrested after fire at Sembawang HDB flat",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/woman-arrested-fire-sembawang-hdb/",
+      "published": "2026-07-02 00:57"
     },
     {
       "category": "Crime",
@@ -38,10 +38,10 @@
     },
     {
       "category": "Crime",
-      "title": "Man, 29, charged for ill-treating 5-month-old son by shaking child repeatedly in Hougang flat",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-shake-son/",
-      "published": "2026-07-01 23:02"
+      "title": "Over 1,000 ChargEco EV charging points to be handed over to SP Mobility from July 2",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/over-1000-chargeco-ev-charging-points-to-be-handed-over-to-sp-mobility-from-july-2",
+      "published": "2026-07-02 09:01"
     },
     {
       "category": "Crime",
@@ -121,32 +121,11 @@
       "published": "2026-06-30 19:18"
     },
     {
-      "category": "Crime",
-      "title": "New Singpass passkey turns mobile devices into digital keys, renders phishing scams useless",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/tech/new-singpass-passkey-turns-mobile-devices-into-digital-keys-renders-phishing-scams-useless",
-      "published": "2026-06-30 18:30"
-    },
-    {
-      "category": "Crime",
-      "title": "2½ years’ jail for speeding van driver who fatally struck jaywalker in Woodlands",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/2-5-years-jail-for-speeding-van-driver-who-fatally-struck-jaywalker-in-woodlands",
-      "published": "2026-06-30 18:17"
-    },
-    {
-      "category": "Crime",
-      "title": "Former bank manager to be charged over allegedly taking $1.8m from bank vault",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/former-bank-manager-to-be-charged-over-allegedly-taking-1-8m-from-bank-vault",
-      "published": "2026-06-30 18:16"
-    },
-    {
       "category": "Traffic",
-      "title": "Djoker Djokovic scares ball girl, then eyes McIlroy's Green Jacket",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/djoker-djokovic-scares-ball-girl-then-eyes-mcilroys-green-jacket-6226191",
-      "published": "2026-07-02 07:21"
+      "title": "Contractor who carried out unauthorised clearance of saplings at Lower Peirce Reservoir given warning, bore cost of replanting",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/lower-peirce-saplings-update/",
+      "published": "2026-07-02 01:46"
     },
     {
       "category": "Traffic",
@@ -171,10 +150,17 @@
     },
     {
       "category": "Transport",
-      "title": "She ditched a six-figure salary to save her dad’s business, and uncovered S$500,000 in bad debt",
+      "title": "Exclusive-Japan shifts to ambush intervention tactics against yen short sellers, sources say",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/hup-cheong-roast-meat-save-family-business-bad-debt-6224441",
-      "published": "2026-07-02 06:00"
+      "url": "https://www.channelnewsasia.com/business/exclusive-japan-shifts-ambush-intervention-tactics-against-yen-short-sellers-sources-say-6226656",
+      "published": "2026-07-02 11:36"
+    },
+    {
+      "category": "Transport",
+      "title": "MRT staff perform CPR on commuter who collapsed at Woodlands South station",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/mrt-staff-cpr-woodlands-south/",
+      "published": "2026-07-02 01:42"
     },
     {
       "category": "Transport",
@@ -185,17 +171,31 @@
     },
     {
       "category": "Fire",
+      "title": "Singapore to shorten timber scaffold use from 9 months to 3 to improve fire safety",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/singapore-shorten-timber-scaffold-use-9-months-3-improve-fire-safety-6225201",
+      "published": "2026-07-02 10:18"
+    },
+    {
+      "category": "Fire",
+      "title": "Singapore tightens timber scaffold rules to reduce fire risk after 2025 Hong Kong blaze",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/timber-scaffolds-must-be-dismantled-within-3-months-to-reduce-fire-risk-tan-see-leng",
+      "published": "2026-07-02 10:09"
+    },
+    {
+      "category": "Fire",
       "title": "Singapore set to buy Hellfire missiles from US as part of proposed $28.9 million defence package",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/singapore-set-to-buy-hellfire-missiles-from-us-as-part-of-proposed-28-9-million-defence-package",
       "published": "2026-07-01 21:08"
     },
     {
-      "category": "Housing",
-      "title": "South Korea's inflation rate quickens to 2-1/2-year high",
+      "category": "Money",
+      "title": "Construction firms adjust to ‘new normal’ of higher material costs after Middle East conflict",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-koreas-inflation-rate-quickens-2-12-year-high-6226196",
-      "published": "2026-07-02 07:21"
+      "url": "https://www.channelnewsasia.com/singapore/construction-materials-higher-costs-middle-east-conflict-6212916",
+      "published": "2026-07-02 10:26"
     },
     {
       "category": "Housing",
@@ -206,80 +206,80 @@
     },
     {
       "category": "General",
-      "title": "California to institute Bruce Lee Day, a first for a Chinese American in the state's history",
+      "title": "Japan likely reaped record tax revenues last year, sources say",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/bruce-lee-day-california-first-chinese-american-6225831",
-      "published": "2026-07-02 07:23"
+      "url": "https://www.channelnewsasia.com/business/japan-likely-reaped-record-tax-revenues-last-year-sources-say-6226681",
+      "published": "2026-07-02 11:57"
     },
     {
       "category": "General",
-      "title": "Your new perfume doesn’t smell like the one you tested at the store – here are 7 reasons why",
+      "title": "Chanel vs Dior: Why luxury’s two biggest reboots are under scrutiny",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/style-beauty/why-new-perfume-smells-different-store-tester-6189776",
-      "published": "2026-07-02 07:20"
+      "url": "https://www.channelnewsasia.com/obsessions/chanel-dior-luxury-reboots-6226531",
+      "published": "2026-07-02 11:38"
     },
     {
       "category": "General",
-      "title": "No room for sentiment when we take on Switzerland, says Algeria boss Petkovic",
+      "title": "SoftBank's LY, Bain raise Kakaku bid again, widen lead over rival EQT offer",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/no-room-sentiment-when-we-take-switzerland-says-algeria-boss-petkovic-6226161",
-      "published": "2026-07-02 07:11"
+      "url": "https://www.channelnewsasia.com/business/softbanks-ly-bain-raise-kakaku-bid-again-widen-lead-over-rival-eqt-offer-6226626",
+      "published": "2026-07-02 11:31"
     },
     {
       "category": "General",
-      "title": "Swiss to face familiar foe in Algeria World Cup showdown",
+      "title": "Asian shares fall as chipmakers drag; US jobs data looms",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/swiss-face-familiar-foe-in-algeria-world-cup-showdown-6226166",
-      "published": "2026-07-02 07:10"
+      "url": "https://www.channelnewsasia.com/business/asian-markets-shares-fall-us-jobs-6226516",
+      "published": "2026-07-02 11:18"
     },
     {
       "category": "General",
-      "title": "Pulisic to start for United States in round-of-32 match against Bosnia",
+      "title": "Vietnam central bank says global risks complicate policymaking",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pulisic-start-united-states-in-round-32-match-against-bosnia-6226126",
-      "published": "2026-07-02 07:03"
+      "url": "https://www.channelnewsasia.com/business/vietnam-central-bank-says-global-risks-complicate-policymaking-6226591",
+      "published": "2026-07-02 11:13"
     },
     {
       "category": "General",
-      "title": "Belgium late show floors Senegal at World Cup",
+      "title": "Balogun goes from hero to suspended spectator as US advance",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/belgium-late-show-floors-senegal-world-cup-6226116",
-      "published": "2026-07-02 06:54"
+      "url": "https://www.channelnewsasia.com/sport/balogun-goes-hero-suspended-spectator-us-advance-6226546",
+      "published": "2026-07-02 10:52"
     },
     {
       "category": "General",
-      "title": "CNA Explains: Why AI stocks are whipsawing markets from Wall Street to Seoul",
+      "title": "Singaporean short film Buah wins top prize at Palm Springs International ShortFest",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ai-stocks-sell-tech-bubble-wall-street-kospi-6224231",
-      "published": "2026-07-02 06:00"
+      "url": "https://www.channelnewsasia.com/entertainment/buah-short-film-palm-springs-international-shortfest-6226401",
+      "published": "2026-07-02 10:50"
     },
     {
       "category": "General",
-      "title": "Jokowi's first public political tour signals he is not done trying to shape Indonesia's future",
+      "title": "US keep World Cup dream alive with gutsy win over Bosnia",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-jokowi-politics-gibran-kaesang-psi-6224181",
-      "published": "2026-07-02 06:00"
+      "url": "https://www.channelnewsasia.com/sport/us-keep-world-cup-dream-alive-gutsy-win-over-bosnia-6226541",
+      "published": "2026-07-02 10:39"
     },
     {
       "category": "General",
-      "title": "Windsor, LC closures expose pressures on smaller nursing homes, but experts say lapses go beyond money",
+      "title": "Ten-man United States beat Bosnia 2-0 to reach World Cup round of 16",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/windsor-lc-nursing-home-moh-audit-6221331",
-      "published": "2026-07-02 06:00"
+      "url": "https://www.channelnewsasia.com/sport/ten-man-united-states-beat-bosnia-2-0-reach-world-cup-round-16-6226456",
+      "published": "2026-07-02 10:15"
     },
     {
       "category": "General",
-      "title": "Commentary: Indian sailors’ deaths in US strike reopen old wounds and deepen new grievances",
+      "title": "Another 70 Teochew screenings of Dear You added after repeated sellouts",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/us-india-ties-strike-sailors-hormuz-strait-6224271",
-      "published": "2026-07-02 05:59"
+      "url": "https://www.channelnewsasia.com/entertainment/dear-you-70-more-teochew-screenings-6226371",
+      "published": "2026-07-02 10:10"
     },
     {
       "category": "General",
-      "title": "Commentary: World Cup propels surveillance to new heights",
+      "title": "The AI questions Asia must answer next",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/world-cup-surveillance-technology-us-stadium-6224326",
-      "published": "2026-07-02 05:58"
+      "url": "https://www.channelnewsasia.com/brand-studio/ai-questions-asia-must-answer-next-6220546",
+      "published": "2026-07-02 10:09"
     }
   ]
 }
