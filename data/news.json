@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02 22:29",
+  "last_updated": "2026-07-03 01:01",
   "headlines": [
     {
       "category": "Crime",
@@ -21,6 +21,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/violin-teacher-assault-female-student/",
       "published": "2026-07-02 20:21"
+    },
+    {
+      "category": "Crime",
+      "title": "At least $1 million lost since May in Microsoft, Crypto.com impersonation scams",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/at-least-1-million-lost-since-may-in-microsoft-crypto-com-impersonation-scams",
+      "published": "2026-07-02 23:05"
     },
     {
       "category": "Crime",
@@ -107,18 +114,11 @@
       "published": "2026-07-01 12:23"
     },
     {
-      "category": "Crime",
-      "title": "Man charged after he allegedly abused infant son by repeatedly shaking him",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/man-charged-after-he-allegedly-abused-infant-son-by-repeatedly-shaking-him",
-      "published": "2026-07-01 10:53"
-    },
-    {
       "category": "Traffic",
-      "title": "Horse racing-Italian jockey Dettori injured in Newmarket car accident",
+      "title": "Wales players focused on Saturday clash after pay talks, coach says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/horse-racing-italian-jockey-dettori-injured-in-newmarket-car-accident-6227781",
-      "published": "2026-07-02 19:09"
+      "url": "https://www.channelnewsasia.com/sport/wales-players-focused-saturday-clash-after-pay-talks-coach-says-6228321",
+      "published": "2026-07-02 22:57"
     },
     {
       "category": "Traffic",
@@ -164,13 +164,6 @@
     },
     {
       "category": "Fire",
-      "title": "Firefighters battle blazes in southern France after European heatwave",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/firefighters-battle-blazes-in-southern-france-after-european-heatwave-6227036",
-      "published": "2026-07-02 19:36"
-    },
-    {
-      "category": "Fire",
       "title": "Singapore tightens timber scaffold rules to reduce fire risk after 2025 Hong Kong blaze",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/timber-scaffolds-must-be-dismantled-within-3-months-to-reduce-fire-risk-tan-see-leng",
@@ -192,94 +185,101 @@
     },
     {
       "category": "General",
-      "title": "DR Congo coach’s father dies before England match",
+      "title": "Anisimova sees off Kenin in all-American scrap to reach Wimbledon third round",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/dr-congo-coachs-father-dies-england-match-6228221",
-      "published": "2026-07-02 22:12"
+      "url": "https://www.channelnewsasia.com/sport/anisimova-sees-kenin-in-all-american-scrap-reach-wimbledon-third-round-6228566",
+      "published": "2026-07-03 00:53"
     },
     {
       "category": "General",
-      "title": "Pollock on the bench as England name team to face Springboks",
+      "title": "Hot spell roasts eastern US ahead of holiday weekend",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pollock-bench-england-name-team-face-springboks-6228181",
-      "published": "2026-07-02 21:42"
+      "url": "https://www.channelnewsasia.com/world/us-heatwave-east-fourth-july-6228461",
+      "published": "2026-07-03 00:51"
     },
     {
       "category": "General",
-      "title": "Man City sign Anderson from Forest in record transfer",
+      "title": "Trump administration and Anthropic have not discussed the government taking a stake in it, source says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/man-city-sign-anderson-forest-in-record-transfer-6228111",
-      "published": "2026-07-02 21:22"
+      "url": "https://www.channelnewsasia.com/business/trump-administration-and-anthropic-have-not-discussed-government-taking-stake-in-it-source-says-6228521",
+      "published": "2026-07-03 00:30"
     },
     {
       "category": "General",
-      "title": "Four changes for Ireland as Prendergast returns at flyhalf",
+      "title": "Antonelli is far ahead, says Hamilton of his title chances",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/four-changes-ireland-prendergast-returns-flyhalf-6228086",
-      "published": "2026-07-02 21:09"
+      "url": "https://www.channelnewsasia.com/sport/antonelli-far-ahead-says-hamilton-his-title-chances-6228526",
+      "published": "2026-07-03 00:29"
     },
     {
       "category": "General",
-      "title": "Italy's Intesa shifts core IT banking systems to Google's cloud technology",
+      "title": "Raptors give coach Darko Rajakovic multi-year extension",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/italys-intesa-shifts-core-it-banking-systems-googles-cloud-technology-6228066",
-      "published": "2026-07-02 21:05"
+      "url": "https://www.channelnewsasia.com/sport/raptors-give-coach-darko-rajakovic-multi-year-extension-6228506",
+      "published": "2026-07-03 00:25"
     },
     {
       "category": "General",
-      "title": "So far so perfect for De Minaur as he eyes deep Wimbledon run",
+      "title": "England's World Cup hopes cannot rest on Kane alone",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/so-far-so-perfect-de-minaur-he-eyes-deep-wimbledon-run-6228011",
-      "published": "2026-07-02 20:49"
+      "url": "https://www.channelnewsasia.com/sport/englands-world-cup-hopes-cannot-rest-kane-alone-6228511",
+      "published": "2026-07-03 00:23"
     },
     {
       "category": "General",
-      "title": "Recovery question worries Norway fans before Brazil clash",
+      "title": "Zverev stands tall to see off Royer and reach Wimbledon third round",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/recovery-question-worries-norway-fans-brazil-clash-6227981",
-      "published": "2026-07-02 20:36"
+      "url": "https://www.channelnewsasia.com/sport/zverev-stands-tall-see-royer-and-reach-wimbledon-third-round-6228486",
+      "published": "2026-07-03 00:22"
     },
     {
       "category": "General",
-      "title": "Unclear if French musketeer d'Artagnan's bones were found, research shows",
+      "title": "Tour de France is my childhood dream, says Seixas",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/unclear-if-french-musketeer-dartagnans-bones-were-found-research-shows-6227951",
-      "published": "2026-07-02 20:31"
+      "url": "https://www.channelnewsasia.com/sport/tour-de-france-my-childhood-dream-says-seixas-6228491",
+      "published": "2026-07-03 00:21"
     },
     {
       "category": "General",
-      "title": "Eliminated but not alone: Mexico City cafe becomes haven for World Cup heartbreak",
+      "title": "Senegal's exit from World Cup highlights rifts",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/eliminated-not-alone-mexico-city-cafe-becomes-haven-world-cup-heartbreak-6227901",
-      "published": "2026-07-02 20:11"
+      "url": "https://www.channelnewsasia.com/sport/senegals-exit-world-cup-highlights-rifts-6228481",
+      "published": "2026-07-03 00:13"
     },
     {
       "category": "General",
-      "title": "Lithuania moves to end nuclear weapon ban as 'situation getting worse'",
+      "title": "WHO declares cruise ship-linked hantavirus outbreak over",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/lithuania-end-nuclear-weapon-ban-6227386",
-      "published": "2026-07-02 20:10"
+      "url": "https://www.channelnewsasia.com/world/hantavirus-cruise-outbreak-over-who-6228436",
+      "published": "2026-07-02 23:59"
     },
     {
       "category": "General",
-      "title": "Wimbledon day four",
+      "title": "Former Arsenal and Spain midfielder Cazorla retires at 41",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/wimbledon-day-four-6227886",
-      "published": "2026-07-02 20:07"
+      "url": "https://www.channelnewsasia.com/sport/former-arsenal-and-spain-midfielder-cazorla-retires-41-6228416",
+      "published": "2026-07-02 23:35"
     },
     {
       "category": "General",
-      "title": "Rees-Zammit back on the wing for Wales",
+      "title": "Irish amateur Howard caps remarkable journey to reach Open Championship",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rees-zammit-back-wing-wales-6227861",
-      "published": "2026-07-02 19:50"
+      "url": "https://www.channelnewsasia.com/sport/irish-amateur-howard-caps-remarkable-journey-reach-open-championship-6228421",
+      "published": "2026-07-02 23:33"
     },
     {
       "category": "General",
-      "title": "Hong Kong's assets under management grow to record $5.38 trillion, SFC survey shows",
+      "title": "Alemanno to bring up century of Argentina caps against Scotland",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/hong-kongs-assets-under-management-grow-record-538-trillion-sfc-survey-shows-6227811",
-      "published": "2026-07-02 19:26"
+      "url": "https://www.channelnewsasia.com/sport/alemanno-bring-up-century-argentina-caps-against-scotland-6228351",
+      "published": "2026-07-02 23:03"
+    },
+    {
+      "category": "General",
+      "title": "Venezuelan security guard pulled alive from building basement 8 days after twin quakes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/venezuela-earthquake-security-guard-pulled-alive-8-days-after-6228161",
+      "published": "2026-07-02 22:57"
     }
   ]
 }
