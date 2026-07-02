@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-03 01:01",
+  "last_updated": "2026-07-03 02:48",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Thai man, 31, with S$32 in bank account, posed as millionaire to defraud victims in S'pore of S$400,000",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/thai-man-act-tycoon-defraud-victims/",
+      "published": "2026-07-02 23:41"
+    },
     {
       "category": "Crime",
       "title": "Man allegedly stabbed in neck during fight outside Orchard nightclub",
@@ -115,13 +122,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Wales players focused on Saturday clash after pay talks, coach says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/wales-players-focused-saturday-clash-after-pay-talks-coach-says-6228321",
-      "published": "2026-07-02 22:57"
-    },
-    {
-      "category": "Traffic",
       "title": "Baby civets found by dog-walker near drain at Petir Road, initially thought to be kittens",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/civet-in-box-petir-road/",
@@ -185,101 +185,101 @@
     },
     {
       "category": "General",
+      "title": "Radradra back for Fiji against Wales",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/radradra-back-fiji-against-wales-6228771",
+      "published": "2026-07-03 02:31"
+    },
+    {
+      "category": "General",
+      "title": "Europeans fill most gaps left by US in NATO defence plans, top commander says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/europeans-fill-most-gaps-left-us-in-nato-defence-plans-top-commander-says-6228691",
+      "published": "2026-07-03 02:31"
+    },
+    {
+      "category": "General",
+      "title": "A breath of fresh air? England in peril as they hit the high ground in Mexico City",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/breath-fresh-air-england-in-peril-they-hit-high-ground-in-mexico-city-6228746",
+      "published": "2026-07-03 02:16"
+    },
+    {
+      "category": "General",
+      "title": "Sinner faces tricky Brooksby as confident Gauff eyes Wimbledon surge",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/sinner-faces-tricky-brooksby-confident-gauff-eyes-wimbledon-surge-6228711",
+      "published": "2026-07-03 02:11"
+    },
+    {
+      "category": "General",
+      "title": "Google disrupts NetNut proxy network used in malware operations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/google-disrupts-netnut-proxy-network-used-in-malware-operations-6228706",
+      "published": "2026-07-03 02:11"
+    },
+    {
+      "category": "General",
+      "title": "Spain bring in Porro and Olmo for Austria World Cup clash",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/spain-bring-in-porro-and-olmo-austria-world-cup-clash-6228716",
+      "published": "2026-07-03 02:11"
+    },
+    {
+      "category": "General",
+      "title": "Here's why the South Pole froze over before the North Pole",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/heres-why-south-pole-froze-over-north-pole-6228696",
+      "published": "2026-07-03 02:02"
+    },
+    {
+      "category": "General",
+      "title": "Eala's dream run blooms at Wimbledon as she makes history for Philippines",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ealas-dream-run-blooms-wimbledon-she-makes-history-philippines-6228676",
+      "published": "2026-07-03 01:47"
+    },
+    {
+      "category": "General",
+      "title": "Russia bombards Kyiv in one of war's biggest strikes, at least 21 people killed",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/russia-bombards-kyiv-in-one-wars-biggest-strikes-least-21-people-killed-6228626",
+      "published": "2026-07-03 01:46"
+    },
+    {
+      "category": "General",
+      "title": "Forest parts ways with head coach Pereira",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/forest-parts-ways-head-coach-pereira-6228636",
+      "published": "2026-07-03 01:20"
+    },
+    {
+      "category": "General",
+      "title": "Norris and Hamilton expect Silverstone to be less challenging in new era",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/norris-and-hamilton-expect-silverstone-be-less-challenging-in-new-era-6228641",
+      "published": "2026-07-03 01:20"
+    },
+    {
+      "category": "General",
+      "title": "France wary of Paraguay revenge mission amid World Cup hype",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/france-wary-paraguay-revenge-mission-amid-world-cup-hype-6228581",
+      "published": "2026-07-03 00:58"
+    },
+    {
+      "category": "General",
+      "title": "Pick n Pay launches AI grocery shopping assistant in South Africa",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/pick-n-pay-launches-ai-grocery-shopping-assistant-in-south-africa-6228571",
+      "published": "2026-07-03 00:55"
+    },
+    {
+      "category": "General",
       "title": "Anisimova sees off Kenin in all-American scrap to reach Wimbledon third round",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/anisimova-sees-kenin-in-all-american-scrap-reach-wimbledon-third-round-6228566",
       "published": "2026-07-03 00:53"
-    },
-    {
-      "category": "General",
-      "title": "Hot spell roasts eastern US ahead of holiday weekend",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-heatwave-east-fourth-july-6228461",
-      "published": "2026-07-03 00:51"
-    },
-    {
-      "category": "General",
-      "title": "Trump administration and Anthropic have not discussed the government taking a stake in it, source says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-administration-and-anthropic-have-not-discussed-government-taking-stake-in-it-source-says-6228521",
-      "published": "2026-07-03 00:30"
-    },
-    {
-      "category": "General",
-      "title": "Antonelli is far ahead, says Hamilton of his title chances",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/antonelli-far-ahead-says-hamilton-his-title-chances-6228526",
-      "published": "2026-07-03 00:29"
-    },
-    {
-      "category": "General",
-      "title": "Raptors give coach Darko Rajakovic multi-year extension",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/raptors-give-coach-darko-rajakovic-multi-year-extension-6228506",
-      "published": "2026-07-03 00:25"
-    },
-    {
-      "category": "General",
-      "title": "England's World Cup hopes cannot rest on Kane alone",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/englands-world-cup-hopes-cannot-rest-kane-alone-6228511",
-      "published": "2026-07-03 00:23"
-    },
-    {
-      "category": "General",
-      "title": "Zverev stands tall to see off Royer and reach Wimbledon third round",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zverev-stands-tall-see-royer-and-reach-wimbledon-third-round-6228486",
-      "published": "2026-07-03 00:22"
-    },
-    {
-      "category": "General",
-      "title": "Tour de France is my childhood dream, says Seixas",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tour-de-france-my-childhood-dream-says-seixas-6228491",
-      "published": "2026-07-03 00:21"
-    },
-    {
-      "category": "General",
-      "title": "Senegal's exit from World Cup highlights rifts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/senegals-exit-world-cup-highlights-rifts-6228481",
-      "published": "2026-07-03 00:13"
-    },
-    {
-      "category": "General",
-      "title": "WHO declares cruise ship-linked hantavirus outbreak over",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/hantavirus-cruise-outbreak-over-who-6228436",
-      "published": "2026-07-02 23:59"
-    },
-    {
-      "category": "General",
-      "title": "Former Arsenal and Spain midfielder Cazorla retires at 41",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/former-arsenal-and-spain-midfielder-cazorla-retires-41-6228416",
-      "published": "2026-07-02 23:35"
-    },
-    {
-      "category": "General",
-      "title": "Irish amateur Howard caps remarkable journey to reach Open Championship",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/irish-amateur-howard-caps-remarkable-journey-reach-open-championship-6228421",
-      "published": "2026-07-02 23:33"
-    },
-    {
-      "category": "General",
-      "title": "Alemanno to bring up century of Argentina caps against Scotland",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/alemanno-bring-up-century-argentina-caps-against-scotland-6228351",
-      "published": "2026-07-02 23:03"
-    },
-    {
-      "category": "General",
-      "title": "Venezuelan security guard pulled alive from building basement 8 days after twin quakes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/venezuela-earthquake-security-guard-pulled-alive-8-days-after-6228161",
-      "published": "2026-07-02 22:57"
     }
   ]
 }
