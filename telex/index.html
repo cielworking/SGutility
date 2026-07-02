@@ -7,11 +7,17 @@
   <meta name="description" content="TeleX is a private Android media browser and downloader for Telegram chats you can access.">
   <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <header class="nav">
-    <a class="brand" href="./"><span class="mark">T</span><span>TeleX</span></a>
+    <a class="brand" href="./">
+      <span class="mark">T</span>
+      <span>TeleX</span>
+    </a>
+
     <nav>
       <a href="./download.html">Download</a>
+      <a href="./api-guide.html">API Guide</a>
       <a href="./faq.html">FAQ</a>
       <a href="./support.html">Support</a>
     </nav>
@@ -22,19 +28,41 @@
       <div class="hero-copy">
         <p class="eyebrow">Android media management</p>
         <h1>Browse, preview, queue, and save Telegram media faster.</h1>
-        <p class="lead">TeleX is built for users who need a clean way to manage photos, videos, and documents from Telegram chats they can access.</p>
+
+        <p class="lead">
+          TeleX is built for users who need a clean way to manage photos, videos, and documents from Telegram chats they can access.
+        </p>
+
         <div class="actions">
           <a class="button primary" href="./download.html">Download TeleX</a>
+          <a class="button ghost" href="./api-guide.html">API Guide</a>
           <a class="button ghost" href="./faq.html">Read FAQ</a>
         </div>
       </div>
+
       <div class="phone-card" aria-label="TeleX app preview">
         <div class="phone-top"></div>
         <div class="screen-title">Chats</div>
-        <div class="chat-row"><span></span><div><b>Family Media</b><small>Photos • Videos • Documents</small></div></div>
-        <div class="chat-row"><span></span><div><b>Project Archive</b><small>Photos • Videos • Documents</small></div></div>
+
+        <div class="chat-row">
+          <span></span>
+          <div>
+            <b>Family Media</b>
+            <small>Photos • Videos • Documents</small>
+          </div>
+        </div>
+
+        <div class="chat-row">
+          <span></span>
+          <div>
+            <b>Project Archive</b>
+            <small>Photos • Videos • Documents</small>
+          </div>
+        </div>
+
         <div class="grid">
-          <i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i>
+          <i></i><i></i><i></i>
         </div>
       </div>
     </section>
@@ -44,10 +72,12 @@
         <h2>Media-first</h2>
         <p>No message clutter. TeleX focuses on photos, videos, and documents.</p>
       </article>
+
       <article>
         <h2>Preview before saving</h2>
         <p>Open media previews, check duration and size, then decide what to download.</p>
       </article>
+
       <article>
         <h2>Download queue</h2>
         <p>Add media from different chats to a queue, review it, then start downloading.</p>
@@ -57,9 +87,14 @@
 
   <footer>
     <span>© <span id="year"></span> TeleX</span>
+    <a href="./api-guide.html">API Guide</a>
     <a href="./privacy.html">Privacy</a>
     <a href="./terms.html">Terms</a>
+    <a href="./support.html">Support</a>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
