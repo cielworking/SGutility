@@ -1,7 +1,7 @@
 {
   "source_name": "PetrolPrice.sg",
   "source_url": "https://petrolprice.sg/",
-  "last_updated": "2026-07-02T08:25:08.171985+00:00",
+  "last_updated": "2026-07-02T11:43:25.145331+00:00",
   "note": "Listed pump prices in SGD per litre. Discounts and card promotions are not included.",
   "brands": [
     {
@@ -44,7 +44,7 @@
       "ron95": "$3.37",
       "ron98": "$3.89",
       "premium": "$4.11",
-      "diesel": "$4.12",
+      "diesel": "$4.05",
       "changes": {
         "ron95": {
           "previous": 3.37,
@@ -63,8 +63,8 @@
         },
         "diesel": {
           "previous": 4.12,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.07,
+          "percent": -1.7
         }
       }
     },
@@ -111,24 +111,24 @@
       "diesel": "$4.05",
       "changes": {
         "ron92": {
-          "previous": 3.39,
-          "change": -0.05,
-          "percent": -1.47
+          "previous": 3.34,
+          "change": 0.0,
+          "percent": 0.0
         },
         "ron95": {
-          "previous": 3.42,
-          "change": -0.05,
-          "percent": -1.46
+          "previous": 3.37,
+          "change": 0.0,
+          "percent": 0.0
         },
         "premium": {
-          "previous": 4.12,
-          "change": -0.05,
-          "percent": -1.21
+          "previous": 4.07,
+          "change": 0.0,
+          "percent": 0.0
         },
         "diesel": {
-          "previous": 4.12,
-          "change": -0.07,
-          "percent": -1.7
+          "previous": 4.05,
+          "change": 0.0,
+          "percent": 0.0
         }
       }
     },
@@ -143,19 +143,19 @@
       "diesel": "$4.06",
       "changes": {
         "ron95": {
-          "previous": 3.42,
-          "change": -0.05,
-          "percent": -1.46
+          "previous": 3.37,
+          "change": 0.0,
+          "percent": 0.0
         },
         "ron98": {
-          "previous": 3.93,
-          "change": -0.05,
-          "percent": -1.27
+          "previous": 3.88,
+          "change": 0.0,
+          "percent": 0.0
         },
         "premium": {
-          "previous": 4.06,
-          "change": -0.05,
-          "percent": -1.23
+          "previous": 4.01,
+          "change": 0.0,
+          "percent": 0.0
         },
         "diesel": {
           "previous": 4.06,
