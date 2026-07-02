@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Get Telegram API ID and Hash - TeleX</title>
+  <meta name="description" content="Step-by-step guide to create a Telegram API ID and API hash for TeleX.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <span class="mark">T</span>
+      <span>TeleX</span>
+    </a>
+
+    <nav>
+      <a href="download.html">Download</a>
+      <a href="faq.html">FAQ</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <main class="page legal">
+    <p class="eyebrow">Telegram Setup</p>
+
+    <h1>Get your Telegram API ID and Hash</h1>
+
+    <p class="lead">
+      TeleX uses TDLib, Telegram's official client library. Some builds may require your own Telegram developer credentials.
+    </p>
+
+    <div class="panel">
+      <h2>Before you start</h2>
+      <ul>
+        <li>You need an active Telegram account.</li>
+        <li>You need access to the phone number linked to that Telegram account.</li>
+        <li>Use a desktop or mobile browser.</li>
+        <li>Do not post your API hash publicly.</li>
+      </ul>
+    </div>
+
+    <section class="faq">
+      <h2>Step 1: Open Telegram developer tools</h2>
+      <p>Go to the official Telegram developer page:</p>
+
+      <p>
+        <a class="button primary" href="https://my.telegram.org/apps" target="_blank" rel="noopener noreferrer">
+          Open my.telegram.org/apps
+        </a>
+      </p>
+
+      <h2>Step 2: Log in with your phone number</h2>
+      <p>Enter your Telegram phone number in international format.</p>
+      <p>Example:</p>
+      <p><code>+65xxxxxxxx</code></p>
+      <p>Telegram will send a login code to your Telegram app, not necessarily by SMS.</p>
+
+      <h2>Step 3: Open API Development Tools</h2>
+      <p>After logging in, choose <strong>API development tools</strong>.</p>
+
+      <h2>Step 4: Create an application</h2>
+      <p>Fill in the required fields. Suggested values:</p>
+
+      <ul>
+        <li><strong>App title:</strong> TeleX</li>
+        <li><strong>Short name:</strong> telex</li>
+        <li><strong>Platform:</strong> Android</li>
+        <li><strong>Description:</strong> Personal Telegram media browser</li>
+      </ul>
+
+      <p>
+        If a short name is already taken, use something unique like
+        <code>telex_yourname</code>.
+      </p>
+
+      <h2>Step 5: Copy your credentials</h2>
+      <p>After creating the application, Telegram will show:</p>
+
+      <ul>
+        <li><strong>api_id</strong></li>
+        <li><strong>api_hash</strong></li>
+      </ul>
+
+      <p>
+        Keep both values safe. The API hash is sensitive and should not be shared publicly.
+      </p>
+
+      <h2>Step 6: Use the credentials with TeleX</h2>
+      <p>
+        If your TeleX build supports custom credentials, enter your API ID and API hash inside the app setup screen.
+      </p>
+
+      <p>
+        If your TeleX build does not show a setup screen, contact the official support channel.
+      </p>
+    </section>
+
+    <div class="panel muted">
+      <h2>Security notes</h2>
+
+      <ul>
+        <li>Never publish your API hash on social media, forums, or screenshots.</li>
+        <li>Only create credentials on <code>my.telegram.org</code>.</li>
+        <li>TeleX will still require your normal Telegram login before accessing your chats.</li>
+        <li>Your API ID/hash is not your Telegram password.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>Need help?</h2>
+      <p>If you are unsure what to enter, contact support.</p>
+
+      <a class="button ghost" href="mailto:support@sgalerts.com">
+        support@sgalerts.com
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <a href="download.html">Download</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html">Support</a>
+  </footer>
+</body>
+</html>
