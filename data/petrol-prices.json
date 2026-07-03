@@ -1,38 +1,38 @@
 {
   "source_name": "PetrolPrice.sg",
   "source_url": "https://petrolprice.sg/",
-  "last_updated": "2026-07-03T04:56:21.458965+00:00",
+  "last_updated": "2026-07-03T08:27:28.561766+00:00",
   "note": "Listed pump prices in SGD per litre. Discounts and card promotions are not included.",
   "brands": [
     {
       "brand": "Esso",
       "logo": "./assets/petrol/esso.png",
       "url": "https://petrolprice.sg/",
-      "ron92": "$3.39",
-      "ron95": "$3.42",
-      "ron98": "$3.94",
+      "ron92": "$3.34",
+      "ron95": "$3.37",
+      "ron98": "$3.89",
       "premium": "N/A",
-      "diesel": "$4.12",
+      "diesel": "$4.05",
       "changes": {
         "ron92": {
           "previous": 3.39,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.05,
+          "percent": -1.47
         },
         "ron95": {
           "previous": 3.42,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.05,
+          "percent": -1.46
         },
         "ron98": {
           "previous": 3.94,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.05,
+          "percent": -1.27
         },
         "diesel": {
           "previous": 4.12,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.07,
+          "percent": -1.7
         }
       }
     },
@@ -72,26 +72,26 @@
       "brand": "SPC",
       "logo": "./assets/petrol/spc.png",
       "url": "https://petrolprice.sg/",
-      "ron92": "$3.39",
-      "ron95": "$3.42",
-      "ron98": "$3.93",
+      "ron92": "$3.34",
+      "ron95": "$3.36",
+      "ron98": "$3.88",
       "premium": "N/A",
       "diesel": "$4.05",
       "changes": {
         "ron92": {
           "previous": 3.39,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.05,
+          "percent": -1.47
         },
         "ron95": {
           "previous": 3.42,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.06,
+          "percent": -1.75
         },
         "ron98": {
           "previous": 3.93,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.05,
+          "percent": -1.27
         },
         "diesel": {
           "previous": 4.05,
@@ -140,7 +140,7 @@
       "ron95": "$3.37",
       "ron98": "$3.88",
       "premium": "$4.01",
-      "diesel": "$4.06",
+      "diesel": "$4.04",
       "changes": {
         "ron95": {
           "previous": 3.37,
@@ -159,8 +159,8 @@
         },
         "diesel": {
           "previous": 4.06,
-          "change": 0.0,
-          "percent": 0.0
+          "change": -0.02,
+          "percent": -0.49
         }
       }
     },
