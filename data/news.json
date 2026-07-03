@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-03 16:27",
+  "last_updated": "2026-07-03 19:42",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Allegri takes charge at Napoli after Milan exit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/allegri-takes-charge-napoli-after-milan-exit-6230216",
+      "published": "2026-07-03 16:38"
+    },
+    {
+      "category": "Crime",
+      "title": "M'sia man, 49, rapes girl, 8, offers her S$0.95 to keep quiet",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/malaysia-man-rape-girl-bribe-rm3/",
+      "published": "2026-07-03 21:28"
+    },
     {
       "category": "Crime",
       "title": "Eminent Frog Porridge owner, 49, charged for tax evasion & money laundering, benefits included over S$2.4 million cash, a Lamborghini & landed property",
@@ -10,14 +24,28 @@
     },
     {
       "category": "Crime",
-      "title": "Pilot, 66, who flew plane into Beijing skyscraper expressed suicidal thoughts, was divorcé who lived alone",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/beijing-tower-crash-pilot-details/",
-      "published": "2026-07-03 03:18"
+      "title": "Man who tried to rape former flatmate gets heavier sentence after losing appeal",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-who-tried-to-rape-former-flatmate-gets-heavier-sentence-after-losing-appeal",
+      "published": "2026-07-03 17:32"
     },
     {
       "category": "Crime",
-      "title": "3 men allegedly involved in Orchard Road brawl charged with slashing man with kitchen knife",
+      "title": "Two men handed jail terms for unlicensed remittance operation; $10m collected from migrant workers",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/two-men-handed-jail-terms-for-unlicensed-remittance-operation-10m-collected-from-migrant-workers",
+      "published": "2026-07-03 16:59"
+    },
+    {
+      "category": "Crime",
+      "title": "Two men jailed 20 days each for trying to bribe Sembcorp Marine employee, who rejected them",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/two-men-jailed-20-days-each-for-trying-to-bribe-sembcorp-marine-employee-who-rejected-them",
+      "published": "2026-07-03 16:53"
+    },
+    {
+      "category": "Crime",
+      "title": "3 men allegedly involved in Orchard Road brawl accused of slashing man with kitchen knife",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/3-men-allegedly-involved-in-orchard-road-brawl-charged-with-slashing-man-with-kitchen-knife",
       "published": "2026-07-03 15:18"
@@ -86,11 +114,18 @@
       "published": "2026-07-02 09:01"
     },
     {
-      "category": "Crime",
-      "title": "Ex-bank branch manager charged after allegedly taking over $1.7m from vault in Serangoon Road",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/ex-bank-branch-manager-charged-after-allegedly-taking-over-1-7m-from-vault-in-serangoon-road",
-      "published": "2026-07-01 16:28"
+      "category": "Traffic",
+      "title": "Healthcare and social sectors say technology should ease workloads, not replace human touch",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/healthcare-social-services-technology-ai-human-touch-6230066",
+      "published": "2026-07-03 18:32"
+    },
+    {
+      "category": "Traffic",
+      "title": "Stanway joins Arsenal after Bayern Munich contract expires",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/stanway-joins-arsenal-after-bayern-munich-contract-expires-6230271",
+      "published": "2026-07-03 17:15"
     },
     {
       "category": "Traffic",
@@ -121,11 +156,11 @@
       "published": "2026-07-02 12:35"
     },
     {
-      "category": "Traffic",
-      "title": "Short, thundery showers expected in S’pore in first half of July but drier conditions may kick in",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/short-thundery-showers-expected-in-spore-in-first-half-of-july-but-drier-conditions-may-kick-in",
-      "published": "2026-07-01 16:48"
+      "category": "Transport",
+      "title": "PM Wong encourages Singaporeans to visit, do business in Timor-Leste as it opens up",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/lawrence-wong-singaporeans-visit-timor-leste-6230091",
+      "published": "2026-07-03 17:00"
     },
     {
       "category": "Transport",
@@ -157,129 +192,94 @@
     },
     {
       "category": "General",
+      "title": "Climate change behind sweltering World Cup, scientists say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sustainability/climate-change-behind-sweltering-world-cup-scientists-say-6230461",
+      "published": "2026-07-03 19:03"
+    },
+    {
+      "category": "General",
+      "title": "NASA launches 'space robot' to rescue Swift telescope; tech could reshape satellite servicing",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/nasa-launches-spacecraft-link-rescue-neil-gehrels-swift-observatory-telescope-katalyst-ghonhee-lee-6230431",
+      "published": "2026-07-03 19:01"
+    },
+    {
+      "category": "General",
+      "title": "Monaco blast suspect is a Ukrainian woman who fled to Germany",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/monaco-blast-suspect-ukrainian-woman-fled-germany-6229801",
+      "published": "2026-07-03 18:48"
+    },
+    {
+      "category": "General",
+      "title": "Welcome to 'FIFA Gully': the Kolkata lane transformed by a love for football",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/welcome-fifa-gully-kolkata-lane-transformed-love-football-6230416",
+      "published": "2026-07-03 18:29"
+    },
+    {
+      "category": "General",
+      "title": "Swiss glaciers rapidly lose protective snow in punishing European heatwave",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sustainability/swiss-glaciers-rapidly-lose-protective-snow-in-punishing-european-heatwave-6230351",
+      "published": "2026-07-03 18:14"
+    },
+    {
+      "category": "General",
+      "title": "Germany coach Nagelsmann steps down after World Cup exit; DFB talking to Klopp",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/germany-coach-nagelsmann-steps-down-after-world-cup-exit-dfb-talking-klopp-6230381",
+      "published": "2026-07-03 18:09"
+    },
+    {
+      "category": "General",
+      "title": "Analysis:Argentina's plan for AI-run companies can't avoid humans",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/analysisargentinas-plan-ai-run-companies-cant-avoid-humans-6230366",
+      "published": "2026-07-03 18:01"
+    },
+    {
+      "category": "General",
+      "title": "Global equity fund inflows rise as investors add tech stocks after market dip",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/global-equity-fund-inflows-rise-investors-add-tech-stocks-after-market-dip-6230356",
+      "published": "2026-07-03 17:47"
+    },
+    {
+      "category": "General",
+      "title": "Myanmar leader Min Aung Hlaing visits Laos in first trip to an ASEAN member state",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/myanmar-min-aung-hlaing-laos-first-trip-asean-member-state-6230231",
+      "published": "2026-07-03 17:38"
+    },
+    {
+      "category": "General",
+      "title": "India investigating Tata data leak that exposed Apple iPhone secrets",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-apple-tata-data-leak-iphone-18-pro-investigations-6230331",
+      "published": "2026-07-03 17:37"
+    },
+    {
+      "category": "General",
+      "title": "GPC to table motion on long-term transport strategy to boost Singapore's global connectivity",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/transport-motion-parliament-gpc-global-hub-6230081",
+      "published": "2026-07-03 17:22"
+    },
+    {
+      "category": "General",
+      "title": "China says Japan-India cooperation 'should not target' Beijing",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-japan-india-cooperation-critical-minerals-trade-target-6230236",
+      "published": "2026-07-03 16:58"
+    },
+    {
+      "category": "General",
       "title": "Drones spot sharks 73 times in two days off Sydney beaches",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/australia-drone-spots-sharks-beach-attack-6230146",
       "published": "2026-07-03 16:09"
-    },
-    {
-      "category": "General",
-      "title": "Lufthansa expects challenging second half of 2026 but sees growth in Asia Pacific",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/lufthansa-second-half-2026-asia-pacific-growth-6230041",
-      "published": "2026-07-03 16:06"
-    },
-    {
-      "category": "General",
-      "title": "Eneos secures enough crude through September, seeks source diversification",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/eneos-secures-enough-crude-through-september-seeks-source-diversification-6230106",
-      "published": "2026-07-03 15:53"
-    },
-    {
-      "category": "General",
-      "title": "Toyota and Daimler to reduce stakes in Archion, selling shares up to worth $1.87 billion, Nikkei says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/toyota-and-daimler-reduce-stakes-in-archion-selling-shares-up-worth-187-billion-nikkei-says-6230086",
-      "published": "2026-07-03 15:35"
-    },
-    {
-      "category": "General",
-      "title": "Exclusive-World's biggest domain seller fears India's fake site crackdown could damage internet",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-worlds-biggest-domain-seller-fears-indias-fake-site-crackdown-could-damage-internet-6230051",
-      "published": "2026-07-03 15:19"
-    },
-    {
-      "category": "General",
-      "title": "South Korean conglomerates unveil $195 billion of investment in industrial projects",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-korean-conglomerates-unveil-195-billion-investment-in-industrial-projects-6230036",
-      "published": "2026-07-03 15:11"
-    },
-    {
-      "category": "General",
-      "title": "France deaths rose by 30% during heatwave",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/heatwave-france-weather-hot-paris-6230006",
-      "published": "2026-07-03 15:01"
-    },
-    {
-      "category": "General",
-      "title": "Nagelsmann quits as Germany coach after World Cup exit: Reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/germany-nagelsmann-quits-world-cup-exit-6229966",
-      "published": "2026-07-03 14:52"
-    },
-    {
-      "category": "General",
-      "title": "Germany coach Nagelsmann set to quit after World Cup exit, Bild says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/germany-coach-nagelsmann-set-quit-after-world-cup-exit-bild-says-6229976",
-      "published": "2026-07-03 14:50"
-    },
-    {
-      "category": "General",
-      "title": "Manzambi at the heart of Switzerland's long-awaited knockout success",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/manzambi-heart-switzerlands-long-awaited-knockout-success-6229961",
-      "published": "2026-07-03 14:47"
-    },
-    {
-      "category": "General",
-      "title": "Hong Kong actor Lawrence Ng licenses younger likeness for AI role, says he’s ‘very satisfied’ with result",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/lawrence-ng-licenses-likeness-ai-role-6229856",
-      "published": "2026-07-03 14:37"
-    },
-    {
-      "category": "General",
-      "title": "Data of 70,000 people compromised in cybersecurity incident involving SLA’s vendor IBM",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ibm-sla-data-breach-70000-people-cybersecurity-6229876",
-      "published": "2026-07-03 14:25"
-    },
-    {
-      "category": "General",
-      "title": "Algeria coach says his team were punished heavily for mistakes against Swiss",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/algeria-coach-says-his-team-were-punished-heavily-mistakes-against-swiss-6229901",
-      "published": "2026-07-03 14:24"
-    },
-    {
-      "category": "General",
-      "title": "Swiss steel sees off Algeria World Cup challenge, says Yakin",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/swiss-steel-sees-algeria-world-cup-challenge-says-yakin-6229891",
-      "published": "2026-07-03 14:21"
-    },
-    {
-      "category": "General",
-      "title": "Actress Fiona Xie makes surprise appearance in viral TikToker Tokyo Sims' video",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/fiona-xie-tokyo-sims-tiktok-video-6229481",
-      "published": "2026-07-03 14:18"
-    },
-    {
-      "category": "General",
-      "title": "Chinese firm UBTech sells hyper-real, 'always loyal' humanoid robots",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-ubtech-humanoid-robots-companion-loneliness-6227251",
-      "published": "2026-07-03 13:59"
-    },
-    {
-      "category": "General",
-      "title": "Iran supreme leader's body arrives at Tehran religious complex for funeral",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-supreme-leader-ali-khamenei-funeral-6229741",
-      "published": "2026-07-03 13:36"
-    },
-    {
-      "category": "General",
-      "title": "Indonesian military recovers body of American pilot killed by rebels in Papua",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-rebels-papua-american-pilot-killed-nicholas-gosselin-6229761",
-      "published": "2026-07-03 13:33"
     }
   ]
 }
