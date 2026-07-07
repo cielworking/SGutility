@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-08 01:26",
+  "last_updated": "2026-07-08 04:14",
   "headlines": [
     {
       "category": "Crime",
@@ -121,13 +121,6 @@
       "published": "2026-07-07 16:00"
     },
     {
-      "category": "Traffic",
-      "title": "Potential sale of Golden Mile Tower units creates fresh uncertainty for Filmhouse, Carnival Cinemas",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/potential-golden-mile-tower-sale-creates-fresh-uncertainty-for-filmhouse-carnival-cinemas",
-      "published": "2026-07-06 16:45"
-    },
-    {
       "category": "Transport",
       "title": "MPs propose seamless air-sea transfers, training workers for future jobs during Parliament debate",
       "source": "Straits Times",
@@ -140,13 +133,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/lta-transport-operators-tasked-with-studying-ways-to-improve-lrt-safety-jeffrey-siow",
       "published": "2026-07-07 20:45"
-    },
-    {
-      "category": "Fire",
-      "title": "Brentford sign forward Anthony from Burnley",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/brentford-sign-forward-anthony-burnley-6239021",
-      "published": "2026-07-08 00:32"
     },
     {
       "category": "Fire",
@@ -164,122 +150,136 @@
     },
     {
       "category": "General",
+      "title": "Mboko withdraws from Canadian Open due to knee injury",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mboko-withdraws-canadian-open-due-knee-injury-6239316",
+      "published": "2026-07-08 04:06"
+    },
+    {
+      "category": "General",
+      "title": "Magic mortal Messi rescues Argentina and lives to fight another day",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/magic-mortal-messi-rescues-argentina-and-lives-fight-another-day-6239296",
+      "published": "2026-07-08 04:00"
+    },
+    {
+      "category": "General",
+      "title": "India blown away by England pace",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/india-blown-away-england-pace-6239301",
+      "published": "2026-07-08 03:59"
+    },
+    {
+      "category": "General",
+      "title": "US Soccer to hold post-World Cup talks with Pochettino over future",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/us-soccer-hold-post-world-cup-talks-pochettino-over-future-6239281",
+      "published": "2026-07-08 03:53"
+    },
+    {
+      "category": "General",
+      "title": "Oil jumps after settlement as US revokes general license for Iran oil sales",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-jumps-after-settlement-us-revokes-general-license-iran-oil-sales-6239271",
+      "published": "2026-07-08 03:34"
+    },
+    {
+      "category": "General",
+      "title": "Sheeran keeps up England tradition with World Cup camp visit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/sheeran-keeps-up-england-tradition-world-cup-camp-visit-6239261",
+      "published": "2026-07-08 03:26"
+    },
+    {
+      "category": "General",
+      "title": "Ukrainian Foreign Ministry says IOC Russia decision 'troubling', wants restrictions upheld",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ukrainian-foreign-ministry-says-ioc-russia-decision-troubling-wants-restrictions-upheld-6239251",
+      "published": "2026-07-08 03:23"
+    },
+    {
+      "category": "General",
+      "title": "Manzambi to miss Swiss World Cup clash with Colombia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/manzambi-miss-swiss-world-cup-clash-colombia-6239236",
+      "published": "2026-07-08 03:07"
+    },
+    {
+      "category": "General",
+      "title": "Perplexity says it plans to use Nvidia's new CPU",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/perplexity-says-it-plans-use-nvidias-new-cpu-6239231",
+      "published": "2026-07-08 03:03"
+    },
+    {
+      "category": "General",
+      "title": "Zverev and Kostyuk bid to continue dominance in quarter-finals at Wimbledon",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/zverev-and-kostyuk-bid-continue-dominance-in-quarter-finals-wimbledon-6239216",
+      "published": "2026-07-08 02:29"
+    },
+    {
+      "category": "General",
+      "title": "Belgium's Onana suffers World Cup-ending knee injury against US",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/belgiums-onana-suffers-world-cup-ending-knee-injury-against-us-6239206",
+      "published": "2026-07-08 02:25"
+    },
+    {
+      "category": "General",
+      "title": "Gauff dares to dream after \"bit of a breakthrough on grass\"",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/gauff-dares-dream-after-bit-breakthrough-grass-6239211",
+      "published": "2026-07-08 02:23"
+    },
+    {
+      "category": "General",
+      "title": "Gauff and Zverev break new ground at Wimbledon, Osaka bows out",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/gauff-and-zverev-break-new-ground-wimbledon-osaka-bows-out-6239186",
+      "published": "2026-07-08 02:21"
+    },
+    {
+      "category": "General",
+      "title": "UK populist leader Farage to quit parliament, seek re-election after gift allegations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/uk-populist-leader-farage-quit-parliament-seek-re-election-after-gift-allegations-6239121",
+      "published": "2026-07-08 02:20"
+    },
+    {
+      "category": "General",
+      "title": "Manzambi out of Switzerland World Cup showdown with Colombia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/manzambi-out-switzerland-world-cup-showdown-colombia-6239171",
+      "published": "2026-07-08 02:17"
+    },
+    {
+      "category": "General",
+      "title": "Argentina produce epic World Cup fightback to beat Egypt, reach quarters",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/argentina-produce-epic-world-cup-fightback-beat-egypt-reach-quarters-6239176",
+      "published": "2026-07-08 02:17"
+    },
+    {
+      "category": "General",
+      "title": "Meta expands generative AI tools with Muse Image rollout",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/meta-expands-generative-ai-tools-muse-image-rollout-6239156",
+      "published": "2026-07-08 02:05"
+    },
+    {
+      "category": "General",
+      "title": "Ukrainian face of Games Heraskevych urges coalition against Russia’s Olympic return",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ukrainian-face-games-heraskevych-urges-coalition-against-russias-olympic-return-6239096",
+      "published": "2026-07-08 01:25"
+    },
+    {
+      "category": "General",
       "title": "Muchova downs Osaka to set up Gauff semi",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/muchova-downs-osaka-set-up-gauff-semi-6239086",
       "published": "2026-07-08 01:23"
-    },
-    {
-      "category": "General",
-      "title": "US coach Pochettino's viral shirt gives Hugo Boss welcome buzz",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/us-coach-pochettinos-viral-shirt-gives-hugo-boss-welcome-buzz-6239071",
-      "published": "2026-07-08 01:12"
-    },
-    {
-      "category": "General",
-      "title": "US power use to beat record highs in 2026 and 2027 as AI use surges, EIA says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-power-use-beat-record-highs-in-2026-and-2027-ai-use-surges-eia-says-6239066",
-      "published": "2026-07-08 01:01"
-    },
-    {
-      "category": "General",
-      "title": "Judge approves $46.75 million payout for 23andMe data breach victims",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/judge-approves-4675-million-payout-23andme-data-breach-victims-6239041",
-      "published": "2026-07-08 00:46"
-    },
-    {
-      "category": "General",
-      "title": "Beleaguered Prince Harry loses lawsuit against UK tabloid",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/prince-harry-lost-trial-daily-mail-uk-6238946",
-      "published": "2026-07-08 00:43"
-    },
-    {
-      "category": "General",
-      "title": "Zverev finishes off Lehecka after wobble to reach quarter-finals",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zverev-finishes-lehecka-after-wobble-reach-quarter-finals-6238996",
-      "published": "2026-07-08 00:22"
-    },
-    {
-      "category": "General",
-      "title": "Diop never wanted to play against France but must now deal with Mbappe",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/diop-never-wanted-play-against-france-must-now-deal-mbappe-6238971",
-      "published": "2026-07-08 00:07"
-    },
-    {
-      "category": "General",
-      "title": "Denmark's Pedersen wins Tour stage four, Norway's Traeen takes yellow jersey",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/denmarks-pedersen-wins-tour-stage-four-norways-traeen-takes-yellow-jersey-6238951",
-      "published": "2026-07-07 23:58"
-    },
-    {
-      "category": "General",
-      "title": "IOC axes Nordic combined for 2030 French Alps Games",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ioc-axes-nordic-combined-2030-french-alps-games-6238861",
-      "published": "2026-07-07 23:06"
-    },
-    {
-      "category": "General",
-      "title": "IOC lifts Russia suspension, athletes to return to international competitions",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ioc-lifts-russia-suspension-athletes-return-international-competitions-6238846",
-      "published": "2026-07-07 23:03"
-    },
-    {
-      "category": "General",
-      "title": "Belgium's new approach without big names pays dividends",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/belgiums-new-approach-without-big-names-pays-dividends-6238851",
-      "published": "2026-07-07 23:00"
-    },
-    {
-      "category": "General",
-      "title": "Sinner snuffs out Struff's Wimbledon dream to reach semi-finals",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/sinner-snuffs-out-struffs-wimbledon-dream-reach-semi-finals-6238816",
-      "published": "2026-07-07 22:56"
-    },
-    {
-      "category": "General",
-      "title": "Alvarez starts as Argentina make three changes for Egypt clash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/alvarez-starts-argentina-make-three-changes-egypt-clash-6238821",
-      "published": "2026-07-07 22:55"
-    },
-    {
-      "category": "General",
-      "title": "Gauff beats Pegula to reach Wimbledon semis for first time",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/gauff-beats-pegula-reach-wimbledon-semis-first-time-6238796",
-      "published": "2026-07-07 22:44"
-    },
-    {
-      "category": "General",
-      "title": "Dollar higher after data as yen holds near 40-year low",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dollar-higher-after-data-yen-holds-near-40-year-low-6236656",
-      "published": "2026-07-07 22:40"
-    },
-    {
-      "category": "General",
-      "title": "Trump says US will lift sanctions on Türkiye, possibly sell F-35 fighter jets",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trumps-lift-turkiye-sanctions-sell-f35-stealth-fighter-jets-6238586",
-      "published": "2026-07-07 22:37"
-    },
-    {
-      "category": "General",
-      "title": "AI startup CEO pleaded guilty in US to trading on insider tips from lawyers",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-startup-ceo-pleaded-guilty-in-us-trading-insider-tips-lawyers-6238771",
-      "published": "2026-07-07 22:36"
     }
   ]
 }
