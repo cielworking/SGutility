@@ -1,51 +1,51 @@
 {
   "source_name": "LTA / data.gov.sg",
   "source_url": "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html",
-  "last_updated": "2026-07-08T00:11:41.995718",
+  "last_updated": "2026-07-08T03:43:42.163258",
   "woodlands": [
     {
       "camera_id": "2701",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/5bfb88b3-da19-4d3d-a3c0-436cb5bd129b.jpg",
-      "timestamp": "2026-07-08T08:10:39+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/4a64ae7a-8dec-43bf-8a38-6dde6e33b39a.jpg",
+      "timestamp": "2026-07-08T11:35:47+08:00",
       "latitude": 1.447023728,
       "longitude": 103.7716543
     },
     {
       "camera_id": "2702",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/d6e416b0-92df-4552-8752-380bfb9ff8ea.jpg",
-      "timestamp": "2026-07-08T08:10:39+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/55692590-e56e-40a7-99a9-1a452152fa92.jpg",
+      "timestamp": "2026-07-08T11:35:47+08:00",
       "latitude": 1.445554109,
       "longitude": 103.7683397
     },
     {
       "camera_id": "2704",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/ec0ef83d-4e9c-4cbf-818f-d625deef1ce1.jpg",
-      "timestamp": "2026-07-08T08:10:39+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/bf09682b-c9d3-4d2d-8a3b-b2dbaf05a168.jpg",
+      "timestamp": "2026-07-08T11:35:47+08:00",
       "latitude": 1.429588536,
       "longitude": 103.769311
     }
   ],
   "tuas": [
     {
-      "camera_id": "4713",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/6558f903-8b12-4991-8496-9f644dbb558d.jpg",
-      "timestamp": "2026-07-08T08:10:39+08:00",
-      "latitude": 1.347645829,
-      "longitude": 103.6366955
-    },
-    {
       "camera_id": "4703",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/70c65d8a-7f08-48fb-80db-5dfdcc13c586.jpg",
-      "timestamp": "2026-07-08T08:10:39+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/a00607a5-abff-4173-add0-58412e44e4fb.jpg",
+      "timestamp": "2026-07-08T11:35:47+08:00",
       "latitude": 1.348697862,
       "longitude": 103.6350413
     },
     {
       "camera_id": "4712",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/a300e8b5-4ea3-4ea6-9c67-a9b78e57d6b1.jpg",
-      "timestamp": "2026-07-08T08:10:39+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/92406f2f-298c-403b-bf80-0e9c8544abe0.jpg",
+      "timestamp": "2026-07-08T11:35:47+08:00",
       "latitude": 1.341244001,
       "longitude": 103.6439134
+    },
+    {
+      "camera_id": "4713",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/10c2386c-74cb-401c-8964-e1ffd403d3c9.jpg",
+      "timestamp": "2026-07-08T11:35:47+08:00",
+      "latitude": 1.347645829,
+      "longitude": 103.6366955
     }
   ],
   "note": "Images are from official LTA traffic cameras. Jam level is visually estimated by users."
