@@ -1,19 +1,26 @@
 {
-  "last_updated": "2026-07-08 19:57",
+  "last_updated": "2026-07-08 22:40",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Man, 40, to be charged over false bomb threats targeting Parliament House and HTX",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/bomb-threat-parliament-house-htx-building-man-charged-6241406",
+      "published": "2026-07-08 22:07"
+    },
+    {
+      "category": "Crime",
+      "title": "Nepal court convicts ex-ministers over Bhutan refugee scam",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/nepal-court-convicts-ex-ministers-over-bhutan-refugee-scam-6241091",
+      "published": "2026-07-08 19:58"
+    },
     {
       "category": "Crime",
       "title": "Big Tech joins Calgary Stampede oil bash, as Canada courts data centers",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/big-tech-joins-calgary-stampede-oil-bash-canada-courts-data-centers-6240921",
       "published": "2026-07-08 18:17"
-    },
-    {
-      "category": "Crime",
-      "title": "Man dies of heart disease in Woodlands flat after release from jail for killing temple worker: Coroner",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/man-dies-heart-disease-jail-release-kill-temple-worker-6240501",
-      "published": "2026-07-08 16:20"
     },
     {
       "category": "Crime",
@@ -28,6 +35,20 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/indian-passenger-thanks-singapore-airline-crew/",
       "published": "2026-07-09 00:05"
+    },
+    {
+      "category": "Crime",
+      "title": "Police searching for 44-year-old driver involved in hit-and-run in Punggol",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/police-searching-for-driver-involved-in-hit-and-run-in-punggol",
+      "published": "2026-07-08 22:37"
+    },
+    {
+      "category": "Crime",
+      "title": "Man to be charged over fake bomb threats at government buildings, including Parliament House",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-to-be-charged-over-fake-bomb-threats-at-government-buildings-including-parliament-house",
+      "published": "2026-07-08 22:13"
     },
     {
       "category": "Crime",
@@ -80,10 +101,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Apple to spend $30 billion in Broadcom chips deal that will see Colorado factory expand",
+      "title": "England's Beaumont to end international career at 35",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apple-spend-30-billion-in-broadcom-chips-deal-will-see-colorado-factory-expand-6240896",
-      "published": "2026-07-08 18:01"
+      "url": "https://www.channelnewsasia.com/sport/englands-beaumont-end-international-career-35-6241391",
+      "published": "2026-07-08 21:41"
     },
     {
       "category": "Traffic",
@@ -136,13 +157,6 @@
     },
     {
       "category": "Transport",
-      "title": "Messi, Mbappe, Haaland and Kane set up blockbuster World Cup Golden Boot race",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/messi-mbappe-haaland-kane-world-cup-golden-boot-6228166",
-      "published": "2026-07-08 18:00"
-    },
-    {
-      "category": "Transport",
       "title": "NDP 2026: Six bus services to skip some stops in July for National Education shows, preview",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/ndp-2026-six-bus-services-to-skip-some-stops-in-july-for-national-education-shows-preview",
@@ -192,9 +206,72 @@
     },
     {
       "category": "General",
-      "title": "Croatia coach Dalic steps down after nine years, Croatian federation says",
+      "title": "Noskova downs Mertens to reach first Grand Slam semi-final",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/croatia-coach-dalic-steps-down-after-nine-years-croatian-federation-says-6241036",
+      "url": "https://www.channelnewsasia.com/sport/noskova-downs-mertens-reach-first-grand-slam-semi-final-6241456",
+      "published": "2026-07-08 22:16"
+    },
+    {
+      "category": "General",
+      "title": "Tour de France favourites face Tourmalet in first major test",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/tour-de-france-favourites-face-tourmalet-in-first-major-test-6241436",
+      "published": "2026-07-08 22:12"
+    },
+    {
+      "category": "General",
+      "title": "Kostyuk makes quick work of Paolini to take Wimbledon semi-final slot",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/kostyuk-makes-quick-work-paolini-take-wimbledon-semi-final-slot-6241441",
+      "published": "2026-07-08 22:09"
+    },
+    {
+      "category": "General",
+      "title": "Bezos' Blue Origin seeks first outside funding at $130 billion valuation, NYT DealBook reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/bezos-blue-origin-seeks-first-outside-funding-130-billion-valuation-nyt-dealbook-reports-6241421",
+      "published": "2026-07-08 21:59"
+    },
+    {
+      "category": "General",
+      "title": "Thai parliament approves amnesty for hundreds of activists",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/thailand-amnesty-yellow-red-shirt-activists-6241356",
+      "published": "2026-07-08 21:51"
+    },
+    {
+      "category": "General",
+      "title": "Martinez departs as Portugal head coach, confirms Portuguese Football Federation",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/martinez-departs-portugal-head-coach-confirms-portuguese-football-federation-6241396",
+      "published": "2026-07-08 21:44"
+    },
+    {
+      "category": "General",
+      "title": "Egypt FA criticises VAR after dramatic World Cup defeat by Argentina",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/egypt-fa-criticises-var-after-dramatic-world-cup-defeat-argentina-6241146",
+      "published": "2026-07-08 20:26"
+    },
+    {
+      "category": "General",
+      "title": "Trump blasts NATO for rejecting his efforts to claim Greenland as leaders hold summit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-blasts-nato-greenland-summit-6241136",
+      "published": "2026-07-08 20:24"
+    },
+    {
+      "category": "General",
+      "title": "HSBC drops 'overweight' call on EM equities on AI spending fears",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/hsbc-drops-overweight-call-em-equities-ai-spending-fears-6241121",
+      "published": "2026-07-08 20:02"
+    },
+    {
+      "category": "General",
+      "title": "Croatia coach Dalic steps down after leading team at three World Cups",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/croatia-coach-dalic-steps-down-after-leading-team-three-world-cups-6241036",
       "published": "2026-07-08 19:26"
     },
     {
@@ -203,83 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/east-asia/china-anthropic-claude-code-ai-backdoor-security-alert-6240476",
       "published": "2026-07-08 19:06"
-    },
-    {
-      "category": "General",
-      "title": "Allianz to cut up to 1,800 jobs due to increasing AI use",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/allianz-cut-up-1800-jobs-due-increasing-ai-use-6241016",
-      "published": "2026-07-08 19:03"
-    },
-    {
-      "category": "General",
-      "title": "MOH investigating if LC Nursing Home CEO failed to disclose disciplinary actions during licence application",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/lc-nursing-home-moh-investigating-ceo-disciplinary-action-struck-6240746",
-      "published": "2026-07-08 19:01"
-    },
-    {
-      "category": "General",
-      "title": "Trump's Board of Peace planning pilot 'humanitarian zone' in south Gaza: Official",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-board-peace-gaza-humanitarian-zone-rafah-6240961",
-      "published": "2026-07-08 18:44"
-    },
-    {
-      "category": "General",
-      "title": "AI chip startup SambaNova valued at $11 billion in $1 billion funding round",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-chip-startup-sambanova-valued-11-billion-in-1-billion-funding-round-6240926",
-      "published": "2026-07-08 18:22"
-    },
-    {
-      "category": "General",
-      "title": "Families mourn 26 killed in deadly Sri Lanka prison riot",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/sri-lanka-prison-riot-26-killed-families-6240811",
-      "published": "2026-07-08 18:09"
-    },
-    {
-      "category": "General",
-      "title": "Crypto firms prepare defenses as quantum threat to encryption draws nearer",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/crypto-firms-prepare-defenses-quantum-threat-encryption-draws-nearer-6240891",
-      "published": "2026-07-08 18:02"
-    },
-    {
-      "category": "General",
-      "title": "French antitrust watchdog orders Meta to resume talks with media groups over publishing fees",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/french-antitrust-watchdog-orders-meta-resume-talks-media-groups-over-publishing-fees-6240816",
-      "published": "2026-07-08 17:36"
-    },
-    {
-      "category": "General",
-      "title": "Dollar around one-week high as Trump says Iran MOU 'over'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dollar-around-one-week-high-trump-says-iran-mou-over-6239736",
-      "published": "2026-07-08 17:34"
-    },
-    {
-      "category": "General",
-      "title": "Trump says at NATO summit he has ordered cutoff of US trade with Spain",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-nato-spain-cutoff-us-trade-6240691",
-      "published": "2026-07-08 17:01"
-    },
-    {
-      "category": "General",
-      "title": "Trump says interim accord with Iran to end war is 'over'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-says-interim-peace-deal-iran-over-6240661",
-      "published": "2026-07-08 16:36"
-    },
-    {
-      "category": "General",
-      "title": "Over 850 fewer spots in Phase 2A of 2026 Primary 1 registration exercise",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/primary-1-registration-phase-2a-vacancies-balloting-6240506",
-      "published": "2026-07-08 16:31"
     }
   ]
 }
