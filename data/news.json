@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-08 17:36",
+  "last_updated": "2026-07-08 19:57",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Big Tech joins Calgary Stampede oil bash, as Canada courts data centers",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/big-tech-joins-calgary-stampede-oil-bash-canada-courts-data-centers-6240921",
+      "published": "2026-07-08 18:17"
+    },
     {
       "category": "Crime",
       "title": "Man dies of heart disease in Woodlands flat after release from jail for killing temple worker: Coroner",
@@ -10,17 +17,24 @@
     },
     {
       "category": "Crime",
-      "title": "Elderly woman, 73, dies after Toa Payoh PMD & lorry collision, drug paraphernalia found in lorry, driver arrested",
+      "title": "S'porean politician Lim Tean, 61, ordered to start 3 months & 1 week jail term on Jul. 20",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/toa-payoh-lorry-pmd-dies/",
-      "published": "2026-07-08 03:35"
+      "url": "https://mothership.sg/2026/07/lim-tean-ordered-jail/",
+      "published": "2026-07-09 00:14"
     },
     {
       "category": "Crime",
-      "title": "Man, 51, walks home woman, 71, with dementia, later visits several times to rape & molest her",
+      "title": "Indian passenger, 47, pens note thanking SIA crew after news of molest case, apologises on behalf of community",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-rape-woman-dementia/",
-      "published": "2026-07-08 02:16"
+      "url": "https://mothership.sg/2026/07/indian-passenger-thanks-singapore-airline-crew/",
+      "published": "2026-07-09 00:05"
+    },
+    {
+      "category": "Crime",
+      "title": "Jail and caning for repeat drug offender who used friend’s NRIC to rent cars",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/repeat-drug-offender-jailed-caned-and-fined-for-using-friends-nric-to-rent-cars",
+      "published": "2026-07-08 17:55"
     },
     {
       "category": "Crime",
@@ -31,7 +45,7 @@
     },
     {
       "category": "Crime",
-      "title": "Man walks free after facing charge over $2.4m in unlawful money transfers",
+      "title": "Man walks free after facing charge over $2.4m in illegal money transfers",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/man-walks-free-after-facing-charge-over-2-4m-in-unlawful-money-transfers",
       "published": "2026-07-08 14:02"
@@ -65,25 +79,25 @@
       "published": "2026-07-07 16:37"
     },
     {
-      "category": "Crime",
-      "title": "Lower alcohol limits, jail for first-time drink-driving offenders proposed",
+      "category": "Traffic",
+      "title": "Apple to spend $30 billion in Broadcom chips deal that will see Colorado factory expand",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/apple-spend-30-billion-in-broadcom-chips-deal-will-see-colorado-factory-expand-6240896",
+      "published": "2026-07-08 18:01"
+    },
+    {
+      "category": "Traffic",
+      "title": "Can the Lions deliver? SG football’s future, World Cup ambitions & career pathways",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/lower-alcohol-limits-jail-for-first-time-drink-driving-offenders-proposed",
-      "published": "2026-07-07 12:30"
+      "url": "https://www.straitstimes.com/singapore/can-the-lions-deliver-sg-footballs-future-world-cup-ambitions-career-pathways",
+      "published": "2026-07-08 18:00"
     },
     {
       "category": "Traffic",
-      "title": "The World Cup's hidden runners: referees keep pace with players and pressure",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cups-hidden-runners-referees-keep-pace-players-and-pressure-6240601",
-      "published": "2026-07-08 16:05"
-    },
-    {
-      "category": "Traffic",
-      "title": "Temasek's near-term carbon emissions set to rise amid aviation, energy hurdles",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/temasek-sustainability-report-carbon-emissions-6235126",
-      "published": "2026-07-08 15:00"
+      "title": "Decathlon Singapore’s second-hand bike bazaar to run for another weekend due to popular demand",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/decathlon-singapores-second-hand-bike-bazaar-to-run-for-another-weekend-due-to-popular-demand",
+      "published": "2026-07-08 18:00"
     },
     {
       "category": "Traffic",
@@ -122,6 +136,13 @@
     },
     {
       "category": "Transport",
+      "title": "Messi, Mbappe, Haaland and Kane set up blockbuster World Cup Golden Boot race",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/messi-mbappe-haaland-kane-world-cup-golden-boot-6228166",
+      "published": "2026-07-08 18:00"
+    },
+    {
+      "category": "Transport",
       "title": "NDP 2026: Six bus services to skip some stops in July for National Education shows, preview",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/ndp-2026-six-bus-services-to-skip-some-stops-in-july-for-national-education-shows-preview",
@@ -150,13 +171,6 @@
     },
     {
       "category": "Money",
-      "title": "Category A COE premium rises to record S$129,000 as prices increase across the board",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/coe-premiums-july-8-bidding-exercise-6240126",
-      "published": "2026-07-08 16:07"
-    },
-    {
-      "category": "Money",
       "title": "Singapore travellers to get new low-cost option to Guangzhou with 9air’s daily flights",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/spore-travellers-to-get-direct-access-to-guangzhou-with-low-cost-carrier-9airs-new-daily-flights",
@@ -178,6 +192,76 @@
     },
     {
       "category": "General",
+      "title": "Croatia coach Dalic steps down after nine years, Croatian federation says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/croatia-coach-dalic-steps-down-after-nine-years-croatian-federation-says-6241036",
+      "published": "2026-07-08 19:26"
+    },
+    {
+      "category": "General",
+      "title": "China warns of 'security backdoor' in Anthropic AI coding tool",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-anthropic-claude-code-ai-backdoor-security-alert-6240476",
+      "published": "2026-07-08 19:06"
+    },
+    {
+      "category": "General",
+      "title": "Allianz to cut up to 1,800 jobs due to increasing AI use",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/allianz-cut-up-1800-jobs-due-increasing-ai-use-6241016",
+      "published": "2026-07-08 19:03"
+    },
+    {
+      "category": "General",
+      "title": "MOH investigating if LC Nursing Home CEO failed to disclose disciplinary actions during licence application",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/lc-nursing-home-moh-investigating-ceo-disciplinary-action-struck-6240746",
+      "published": "2026-07-08 19:01"
+    },
+    {
+      "category": "General",
+      "title": "Trump's Board of Peace planning pilot 'humanitarian zone' in south Gaza: Official",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-board-peace-gaza-humanitarian-zone-rafah-6240961",
+      "published": "2026-07-08 18:44"
+    },
+    {
+      "category": "General",
+      "title": "AI chip startup SambaNova valued at $11 billion in $1 billion funding round",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ai-chip-startup-sambanova-valued-11-billion-in-1-billion-funding-round-6240926",
+      "published": "2026-07-08 18:22"
+    },
+    {
+      "category": "General",
+      "title": "Families mourn 26 killed in deadly Sri Lanka prison riot",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/sri-lanka-prison-riot-26-killed-families-6240811",
+      "published": "2026-07-08 18:09"
+    },
+    {
+      "category": "General",
+      "title": "Crypto firms prepare defenses as quantum threat to encryption draws nearer",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/crypto-firms-prepare-defenses-quantum-threat-encryption-draws-nearer-6240891",
+      "published": "2026-07-08 18:02"
+    },
+    {
+      "category": "General",
+      "title": "French antitrust watchdog orders Meta to resume talks with media groups over publishing fees",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/french-antitrust-watchdog-orders-meta-resume-talks-media-groups-over-publishing-fees-6240816",
+      "published": "2026-07-08 17:36"
+    },
+    {
+      "category": "General",
+      "title": "Dollar around one-week high as Trump says Iran MOU 'over'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/dollar-around-one-week-high-trump-says-iran-mou-over-6239736",
+      "published": "2026-07-08 17:34"
+    },
+    {
+      "category": "General",
       "title": "Trump says at NATO summit he has ordered cutoff of US trade with Spain",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/trump-nato-spain-cutoff-us-trade-6240691",
@@ -196,90 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/primary-1-registration-phase-2a-vacancies-balloting-6240506",
       "published": "2026-07-08 16:31"
-    },
-    {
-      "category": "General",
-      "title": "Thai beer dynasty mother drops 'ungrateful child' case against son",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/thai-beer-singha-ungrateful-child-law-inheritance-jeeranuch-bhirombhakdi-siranudh-psi-scott-6240631",
-      "published": "2026-07-08 16:26"
-    },
-    {
-      "category": "General",
-      "title": "Honda recalls over 300,000 US vehicles over rearview image display issues",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/honda-recalls-over-300000-us-vehicles-over-rearview-image-display-issues-6240626",
-      "published": "2026-07-08 16:19"
-    },
-    {
-      "category": "General",
-      "title": "Trump berates NATO, praises Erdogan as summit starts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-nato-erdogan-turkiye-summit-6240611",
-      "published": "2026-07-08 16:11"
-    },
-    {
-      "category": "General",
-      "title": "Apple loses challenges against EU rules to curb Big Tech",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apple-loses-challenges-against-eu-rules-curb-big-tech-6240581",
-      "published": "2026-07-08 16:03"
-    },
-    {
-      "category": "General",
-      "title": "Man blown from 12th-floor apartment as survivors recount deadly Hubei tornadoes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-tornadoes-hubei-survivors-recount-ordeal-6240531",
-      "published": "2026-07-08 15:57"
-    },
-    {
-      "category": "General",
-      "title": "South Korean AI chip startup Rebellions targets IPO next year",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-korean-ai-chip-startup-rebellions-targets-ipo-next-year-6240536",
-      "published": "2026-07-08 15:34"
-    },
-    {
-      "category": "General",
-      "title": "Singer Wu Chun returns to Singapore phone booth where he tearfully called his wife 30 years ago",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/wu-chun-singapore-trip-phone-booth-6240076",
-      "published": "2026-07-08 15:33"
-    },
-    {
-      "category": "General",
-      "title": "Taiwan's premium chocolate makers earn global recognition but climate change threatens growth",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/taiwan-premium-chocolate-makers-earn-recognition-6238031",
-      "published": "2026-07-08 15:24"
-    },
-    {
-      "category": "General",
-      "title": "Dollar-selling linked to SK Hynix share offer sends won to over 1-month high, source says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dollar-selling-linked-sk-hynix-share-offer-sends-won-over-1-month-high-source-says-6240496",
-      "published": "2026-07-08 15:17"
-    },
-    {
-      "category": "General",
-      "title": "Temasek aims to more than double AI investment portfolio share to as much as 15% by 2031",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/temasek-ai-portfolio-investments-private-credit-infrastructure-6240171",
-      "published": "2026-07-08 15:00"
-    },
-    {
-      "category": "General",
-      "title": "Temasek’s net portfolio value grows 10.5% to S$518 billion; Mideast conflict dampens gains",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/temasek-review-portfolio-performance-mideast-conflict-6238041",
-      "published": "2026-07-08 15:00"
-    },
-    {
-      "category": "General",
-      "title": "With SpaceX Starship, Japan's ispace provides ride-share to the moon",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spacex-starship-japans-ispace-provides-ride-share-moon-6240466",
-      "published": "2026-07-08 14:52"
     }
   ]
 }
