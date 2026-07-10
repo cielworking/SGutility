@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tuas Checkpoint Traffic Cameras | SG Alerts</title>
+  <meta name="description" content="View Tuas Checkpoint live camera images and traffic conditions from available Singapore traffic camera feeds before crossing between Singapore and Malaysia.">
+  <link rel="canonical" href="https://sgalerts.com/tuas-checkpoint.html">
+
+  <meta property="og:title" content="Tuas Checkpoint Traffic Cameras | SG Alerts">
+  <meta property="og:description" content="Live camera images and traffic conditions from available feeds for Tuas Checkpoint in Singapore.">
+  <meta property="og:url" content="https://sgalerts.com/tuas-checkpoint.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://sgalerts.com/apple-touch-icon.png">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" href="style.css?v=5" />
+</head>
+
+<body>
+  <header>
+    <div class="site-title">SG Alerts</div>
+    <p>Singapore Traffic, Petrol, COE, BTO & Daily Alerts</p>
+  </header>
+
+  <main class="grid landing-grid">
+    <section class="card landing-card wide-card checkpoint-card">
+      <div class="eyebrow">Checkpoint traffic</div>
+      <h1>Tuas Checkpoint Traffic Cameras</h1>
+      <p>
+        Use this page to check Tuas Checkpoint live camera images and traffic
+        conditions from available camera feeds before travelling via the Second
+        Link between Singapore and Malaysia.
+      </p>
+      <p>
+        Tuas conditions can differ from Woodlands, especially around weekends,
+        public holidays, and heavy travel periods. Camera images are useful for
+        a quick visual check, but they are not exact waiting-time estimates.
+      </p>
+
+      <div class="topic-links">
+        <a href="/">Back to dashboard</a>
+        <a href="/woodlands-checkpoint.html">Woodlands Checkpoint</a>
+        <a href="/singapore-petrol-prices.html">Petrol prices</a>
+      </div>
+    </section>
+
+    <section class="card checkpoint-card wide-card">
+      <div class="card-header">
+        <h2>Tuas Live Camera Images</h2>
+
+        <div class="card-actions">
+          <button onclick="refreshCheckpointData()" class="refresh-btn">Refresh</button>
+          <a href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/tuas.html" target="_blank" rel="noopener noreferrer">Verify source</a>
+        </div>
+      </div>
+
+      <p>Traffic conditions from available Tuas Checkpoint camera feeds.</p>
+
+      <div id="checkpointResult" class="result" data-checkpoint-filter="tuas">
+        <p>Loading Tuas Checkpoint camera images.</p>
+      </div>
+
+      <p class="disclaimer">
+        Camera images and data may be delayed or temporarily unavailable. Verify
+        with official sources when timing is important.
+      </p>
+    </section>
+  </main>
+
+  <div id="imageModal" class="image-modal">
+    <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+    <img id="modalImage" class="image-modal-content" alt="">
+    <div id="modalCaption" class="image-modal-caption"></div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+
+    <div class="footer-copy">
+      &copy; 2026 SG Alerts &bull; Independent Singapore Information Dashboard
+    </div>
+  </footer>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>

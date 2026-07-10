@@ -67,7 +67,8 @@ header {
   box-shadow: 0 12px 34px rgba(37, 99, 235, 0.18);
 }
 
-header h1 {
+header h1,
+header .site-title {
   margin: 0 0 8px;
   font-size: clamp(28px, 4vw, 40px);
   font-weight: 850;
@@ -126,6 +127,66 @@ header p {
 .petrol-card { border-top: 4px solid #16a34a; }
 .bto-card { border-top: 4px solid #8b5cf6; }
 .quick-card { border-top: 4px solid #64748b; }
+
+.landing-grid {
+  align-items: start;
+}
+
+.landing-card h1 {
+  margin: 0 0 14px;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.landing-card p {
+  max-width: 78ch;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.eyebrow {
+  margin-bottom: 10px;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.topic-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 8px 0 14px;
+}
+
+.topic-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 8px 12px;
+  border: 1px solid rgba(37, 99, 235, 0.16);
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.topic-links a:hover {
+  background: rgba(37, 99, 235, 0.14);
+}
+
+.disclaimer {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
 
 .card-header {
   display: flex;
@@ -1290,6 +1351,12 @@ button,
     margin-bottom: 6px;
   }
 
+  header .site-title {
+    font-size: clamp(24px, 8vw, 30px);
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
   header p {
     max-width: 34ch;
     font-size: 13px;
@@ -1329,6 +1396,25 @@ button,
     font-size: 12px;
     line-height: 1.4;
     margin-bottom: 12px;
+  }
+
+  .landing-card h1 {
+    font-size: 27px;
+  }
+
+  .landing-card p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+  .topic-links {
+    gap: 7px;
+  }
+
+  .topic-links a {
+    min-height: 32px;
+    padding: 7px 10px;
+    font-size: 11px;
   }
 
   .card-header a,

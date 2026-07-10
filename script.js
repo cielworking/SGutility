@@ -12,19 +12,46 @@ let hideGambling = localStorage.getItem("hideGambling") === "true";
 
 async function loadData() {
   try {
-    coePrices = await fetch("./data/coe-prices.json").then(r => r.json());
-    btoProjects = await fetch("./data/bto-projects.json").then(r => r.json());
-    petrolPrices = await fetch("./data/petrol-prices.json").then(r => r.json());
-    petrolDiscounts = await fetch("./data/petrol-discounts.json").then(r => r.json());
-    quickInfo = await fetch("./data/quick-info.json").then(r => r.json());
-    newsResults = await fetch("./data/news.json").then(r => r.json());
-    await refreshCheckpointData();
+    const needsNews = hasElement("news-result");
+    const needsCheckpoint = hasElement("checkpointResult");
+    const needsPetrol = hasElement("petrolResult");
+    const needsCoe = hasElement("coeResult");
+    const needsBto = hasElement("btoResult");
+    const needsQuickInfo = hasElement("quickInfo");
+    const needsSgPools = hasElement("sgpoolsResult");
 
-    try {
-      sgpoolsResults = await fetch("./data/sgpools-results.json").then(r => r.json());
-      applyGamblingVisibility();
-    } catch (e) {
-      console.error("Singapore Pools results failed:", e);
+    if (needsCoe) {
+      coePrices = await fetch("./data/coe-prices.json").then(r => r.json());
+    }
+
+    if (needsBto) {
+      btoProjects = await fetch("./data/bto-projects.json").then(r => r.json());
+    }
+
+    if (needsPetrol) {
+      petrolPrices = await fetch("./data/petrol-prices.json").then(r => r.json());
+      petrolDiscounts = await fetch("./data/petrol-discounts.json").then(r => r.json());
+    }
+
+    if (needsQuickInfo) {
+      quickInfo = await fetch("./data/quick-info.json").then(r => r.json());
+    }
+
+    if (needsNews) {
+      newsResults = await fetch("./data/news.json").then(r => r.json());
+    }
+
+    if (needsCheckpoint) {
+      await refreshCheckpointData();
+    }
+
+    if (needsSgPools) {
+      try {
+        sgpoolsResults = await fetch("./data/sgpools-results.json").then(r => r.json());
+        applyGamblingVisibility();
+      } catch (e) {
+        console.error("Singapore Pools results failed:", e);
+      }
     }
 
     renderNews();
@@ -38,6 +65,10 @@ async function loadData() {
   } catch (err) {
     console.error("Dashboard load failed:", err);
   }
+}
+
+function hasElement(id) {
+  return Boolean(document.getElementById(id));
 }
 
 async function refreshCheckpointData() {
@@ -90,6 +121,13 @@ async function refreshCheckpointData() {
 
   } catch (err) {
     console.error("Live checkpoint refresh failed:", err);
+
+    try {
+      checkpointData = await fetch("./data/checkpoints.json").then(r => r.json());
+      renderCheckpoints();
+    } catch (fallbackErr) {
+      console.error("Cached checkpoint data failed:", fallbackErr);
+    }
   }
 
   if (btn) {
@@ -118,14 +156,21 @@ function money(value) {
 }
 
 function renderSourceLinks() {
-  document.getElementById("coeSourceLink").href = coePrices.source_url;
-  document.getElementById("btoSourceLink").href = btoProjects.source_url;
-  document.getElementById("petrolSourceLink").href = petrolPrices.source_url;
-  document.getElementById("quickSourceLink").href = quickInfo.source_url;
+  setSourceHref("coeSourceLink", coePrices.source_url);
+  setSourceHref("btoSourceLink", btoProjects.source_url);
+  setSourceHref("petrolSourceLink", petrolPrices.source_url);
+  setSourceHref("quickSourceLink", quickInfo.source_url);
 
   if (sgpoolsResults.source_url) {
-    document.getElementById("sgpoolsSourceLink").href = sgpoolsResults.source_url;
+    setSourceHref("sgpoolsSourceLink", sgpoolsResults.source_url);
   }
+}
+
+function setSourceHref(id, url) {
+  const link = document.getElementById(id);
+  if (!link || !url) return;
+
+  link.href = url;
 }
 
 /* =========================
@@ -185,6 +230,7 @@ function renderCheckpoints() {
 
   const woodlands = checkpointData.woodlands || [];
   const tuas = checkpointData.tuas || [];
+  const filter = box.dataset.checkpointFilter || "all";
 
   function cameraGroup(title, cameras) {
     return `
@@ -210,8 +256,8 @@ function renderCheckpoints() {
 
   box.innerHTML = `
     <div class="checkpoint-layout">
-      ${cameraGroup("Woodlands Checkpoint", woodlands)}
-      ${cameraGroup("Tuas Checkpoint", tuas)}
+      ${filter !== "tuas" ? cameraGroup("Woodlands Checkpoint", woodlands) : ""}
+      ${filter !== "woodlands" ? cameraGroup("Tuas Checkpoint", tuas) : ""}
     </div>
 
     <div class="note">
