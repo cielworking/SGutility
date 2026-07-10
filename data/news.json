@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10 22:51",
+  "last_updated": "2026-07-11 01:07",
   "headlines": [
     {
       "category": "Crime",
@@ -80,10 +80,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Tanker traffic slows in Strait of Hormuz after US and Iran clashes",
+      "title": "Merlier sprints to stage seven victory as Pogacar retains Tour de France lead",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/oil-tanker-traffic-slows-strait-hormuz-us-iran-clashes-6246451",
-      "published": "2026-07-10 21:17"
+      "url": "https://www.channelnewsasia.com/sport/merlier-sprints-stage-seven-victory-pogacar-retains-tour-de-france-lead-6246876",
+      "published": "2026-07-10 23:26"
     },
     {
       "category": "Traffic",
@@ -129,20 +129,6 @@
     },
     {
       "category": "Transport",
-      "title": "Philippine Air to order 15 Boeing 787-10 and nine Airbus A350-1000",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/philippine-air-order-15-boeing-787-10-and-nine-airbus-a350-1000-6246506",
-      "published": "2026-07-10 20:27"
-    },
-    {
-      "category": "Transport",
-      "title": "SK Hynix options to trade two business days after Nasdaq debut, sources say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sk-hynix-options-trade-two-business-days-after-nasdaq-debut-sources-say-6246471",
-      "published": "2026-07-10 20:17"
-    },
-    {
-      "category": "Transport",
       "title": "Gillman Barracks businesses to wait and see, as tenancies wind down ahead of redevelopment",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/gillman-barracks-businesses-to-wait-and-see-as-tenancies-wind-down-ahead-of-redevelopment",
@@ -150,10 +136,10 @@
     },
     {
       "category": "Fire",
-      "title": "O'Ward says he has asked to be 'fired' as McLaren F1 reserve",
+      "title": "Trump says US agreed to Iran's request to continue talks, but ceasefire is over",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/oward-says-he-has-asked-be-fired-mclaren-f1-reserve-6246431",
-      "published": "2026-07-10 19:56"
+      "url": "https://www.channelnewsasia.com/world/iran-us-agree-continue-peace-talks-donald-trump-6246781",
+      "published": "2026-07-10 22:57"
     },
     {
       "category": "Fire",
@@ -171,17 +157,17 @@
     },
     {
       "category": "Money",
+      "title": "Wall Street and oil prices tread water as investors eye SK Hynix, Middle East tensions",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/wall-street-and-oil-prices-tread-water-investors-eye-sk-hynix-middle-east-tensions-6245346",
+      "published": "2026-07-10 23:07"
+    },
+    {
+      "category": "Money",
       "title": "Locally grown vegetables from at least 3 S’pore farms to be taken off FairPrice shelves",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/locally-grown-vegetables-from-at-least-3-spore-farms-to-be-taken-off-fairprice-shelves",
       "published": "2026-07-10 17:30"
-    },
-    {
-      "category": "Housing",
-      "title": "Nature groups call for stronger environmental safeguards over Sunset Way, Gillman Barracks housing plans",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/gillman-barracks-sunset-way-housing-environment-safeguards-nature-groups-6246426",
-      "published": "2026-07-10 21:13"
     },
     {
       "category": "Housing",
@@ -199,6 +185,90 @@
     },
     {
       "category": "General",
+      "title": "Muchova and Noskova chase Wimbledon glory as Czech conveyor belt of champions rolls on",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/muchova-and-noskova-chase-wimbledon-glory-czech-conveyor-belt-champions-rolls-6247026",
+      "published": "2026-07-11 01:03"
+    },
+    {
+      "category": "General",
+      "title": "China successfully lands reusable rocket for the first time",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/reusable-rocket-china-land-cnsa-space-6246961",
+      "published": "2026-07-11 00:58"
+    },
+    {
+      "category": "General",
+      "title": "Eliminated Morocco turn attention to co-hosting 2030 World Cup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/eliminated-morocco-turn-attention-co-hosting-2030-world-cup-6246981",
+      "published": "2026-07-11 00:10"
+    },
+    {
+      "category": "General",
+      "title": "WSL champions Man City sign England defender Charles from Chelsea",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/wsl-champions-man-city-sign-england-defender-charles-chelsea-6246971",
+      "published": "2026-07-11 00:03"
+    },
+    {
+      "category": "General",
+      "title": "Scotland captain Tuipulotu relishing Springbok challenge on familiar ground",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/scotland-captain-tuipulotu-relishing-springbok-challenge-familiar-ground-6246916",
+      "published": "2026-07-10 23:43"
+    },
+    {
+      "category": "General",
+      "title": "Meta AI image detector fails to identify some of its own cropped AI images, Reuters analysis finds",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/meta-ai-image-detector-fails-identify-some-its-own-cropped-ai-images-reuters-analysis-finds-6246906",
+      "published": "2026-07-10 23:42"
+    },
+    {
+      "category": "General",
+      "title": "SK Hynix shares jump 14% in Nasdaq debut",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/sk-hynix-shares-jump-14-in-nasdaq-debut-6246911",
+      "published": "2026-07-10 23:42"
+    },
+    {
+      "category": "General",
+      "title": "England captain George eager to see ‘Air Caluori’ in action against Fiji",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/england-captain-george-eager-see-air-caluori-in-action-against-fiji-6246861",
+      "published": "2026-07-10 23:21"
+    },
+    {
+      "category": "General",
+      "title": "Du Toit hails record-breaker Erasmus ahead of Scotland clash",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/du-toit-hails-record-breaker-erasmus-ahead-scotland-clash-6246841",
+      "published": "2026-07-10 23:08"
+    },
+    {
+      "category": "General",
+      "title": "Ruthless Zverev spoils Fery's Wimbledon dream to power into final",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ruthless-zverev-spoils-ferys-wimbledon-dream-power-final-6246836",
+      "published": "2026-07-10 23:03"
+    },
+    {
+      "category": "General",
+      "title": "Singapore-led resolution on protecting vital shipping lanes adopted by International Maritime Organization",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/singapore-international-maritime-organization-shipping-resolution-protect-vital-shipping-lanes-6246731",
+      "published": "2026-07-10 22:52"
+    },
+    {
+      "category": "General",
+      "title": "Yen strengthens as Japan considers nudging pension funds into domestic assets",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/yen-strengthens-japan-considers-nudging-pension-funds-domestic-assets-6245251",
+      "published": "2026-07-10 22:46"
+    },
+    {
+      "category": "General",
       "title": "Jorge Jesus appointed new Portugal coach after World Cup exit",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/jorge-jesus-appointed-new-portugal-coach-after-world-cup-exit-6246736",
@@ -210,76 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/viking-enthusiasts-hail-spirit-if-not-technique-norway-fans-viking-row-6246706",
       "published": "2026-07-10 22:01"
-    },
-    {
-      "category": "General",
-      "title": "The invisible grief of being an adult orphan",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/today/voices/adult-orphan-grief-death-loss-parents-6243146",
-      "published": "2026-07-10 21:58"
-    },
-    {
-      "category": "General",
-      "title": "Zimbabwe confirm future captains across all formats",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zimbabwe-confirm-future-captains-across-all-formats-6246691",
-      "published": "2026-07-10 21:49"
-    },
-    {
-      "category": "General",
-      "title": "Al-Ittihad turn to Wissing after Gamba Osaka's Asian triumph",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/al-ittihad-turn-wissing-after-gamba-osakas-asian-triumph-6246656",
-      "published": "2026-07-10 21:41"
-    },
-    {
-      "category": "General",
-      "title": "Singapore's blue bins were made for frictionless recycling. Is it time to ditch them?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/today/big-read/recycling-blue-bins-better-habits-less-waste-6244671",
-      "published": "2026-07-10 21:30"
-    },
-    {
-      "category": "General",
-      "title": "Turned down by NUS and NTU, this self-described 'late bloomer' now has a Harvard PhD",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/today/up-close/harvard-phd-graduate-rejection-singapore-education-6243446",
-      "published": "2026-07-10 21:30"
-    },
-    {
-      "category": "General",
-      "title": "In their 80s, these volunteers say helping others is the secret to staying young at heart",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/today/in-pixels/elderly-volunteers-give-back-haircuts-home-repairs-6235041",
-      "published": "2026-07-10 21:30"
-    },
-    {
-      "category": "General",
-      "title": "Shein could aim for September or October IPO in Hong Kong, source says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/shein-could-aim-september-or-october-ipo-in-hong-kong-source-says-6246631",
-      "published": "2026-07-10 21:27"
-    },
-    {
-      "category": "General",
-      "title": "SpaceX's near-term AI payoff seen tethered to Earth, not outer space",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spacexs-near-term-ai-payoff-seen-tethered-earth-not-outer-space-6246626",
-      "published": "2026-07-10 21:18"
-    },
-    {
-      "category": "General",
-      "title": "Thai crew of ship struck in Strait of Hormuz sues operators",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/thai-ship-crew-strait-hormuz-sues-operators-6246621",
-      "published": "2026-07-10 21:15"
-    },
-    {
-      "category": "General",
-      "title": "Nvidia supplier King Yuan Electronics to invest up to $1.4 billion in US facility",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-supplier-king-yuan-electronics-invest-up-14-billion-in-us-facility-6246501",
-      "published": "2026-07-10 20:28"
     }
   ]
 }
