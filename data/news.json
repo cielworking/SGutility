@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-11 01:07",
+  "last_updated": "2026-07-11 02:44",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "UK police launch murder probe into ex-MP's death",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/ann-widdecombe-murdered-dies-uk-minister-6247181",
+      "published": "2026-07-11 02:39"
+    },
+    {
+      "category": "Crime",
+      "title": "Murder, terror charges for suspects in Trump cage fight attack plot",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/murder-terror-charges-suspects-in-trump-cage-fight-attack-plot-6247031",
+      "published": "2026-07-11 01:30"
+    },
     {
       "category": "Crime",
       "title": "S'pore lawyer, 56, a repeated drink driver, struck off the rolls for lying to police over Bukit Panjang drink driving accident",
@@ -80,6 +94,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Burnley appoint Belgian Hayen as head coach",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/burnley-appoint-belgian-hayen-head-coach-6247101",
+      "published": "2026-07-11 01:59"
+    },
+    {
+      "category": "Traffic",
       "title": "Merlier sprints to stage seven victory as Pogacar retains Tour de France lead",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/merlier-sprints-stage-seven-victory-pogacar-retains-tour-de-france-lead-6246876",
@@ -136,13 +157,6 @@
     },
     {
       "category": "Fire",
-      "title": "Trump says US agreed to Iran's request to continue talks, but ceasefire is over",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-us-agree-continue-peace-talks-donald-trump-6246781",
-      "published": "2026-07-10 22:57"
-    },
-    {
-      "category": "Fire",
       "title": "Electric bicycle causes house fire in Thailand, 3 chihuahuas left alone inside saved",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/dogs-saved-house-fire-ebike/",
@@ -154,13 +168,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/part-of-luxury-yacht-wreck-in-sentosa-retrieved-a-month-after-fire-works-ongoing-for-rest-of-vessel",
       "published": "2026-07-10 16:51"
-    },
-    {
-      "category": "Money",
-      "title": "Wall Street and oil prices tread water as investors eye SK Hynix, Middle East tensions",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/wall-street-and-oil-prices-tread-water-investors-eye-sk-hynix-middle-east-tensions-6245346",
-      "published": "2026-07-10 23:07"
     },
     {
       "category": "Money",
@@ -182,6 +189,55 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/upcoming-gillman-barracks-housing-estate-will-retain-25-heritage-buildings-green-spaces",
       "published": "2026-07-10 09:00"
+    },
+    {
+      "category": "General",
+      "title": "SK Hynix CEO sees worst-ever memory supply shortage in 2027, says demand to outstrip supply beyond 2030",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/sk-hynix-ceo-sees-worst-ever-memory-supply-shortage-in-2027-says-demand-outstrip-supply-beyond-2030-6247161",
+      "published": "2026-07-11 02:23"
+    },
+    {
+      "category": "General",
+      "title": "Spain bench Pedri, De Bruyne and Doku start for Belgium",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/spain-bench-pedri-de-bruyne-and-doku-start-belgium-6247086",
+      "published": "2026-07-11 01:57"
+    },
+    {
+      "category": "General",
+      "title": "Clinical Sinner demolishes Djokovic in semi-final",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/clinical-sinner-demolishes-djokovic-in-semi-final-6247091",
+      "published": "2026-07-11 01:56"
+    },
+    {
+      "category": "General",
+      "title": "Africa can look back on World Cup with satisfaction despite no top-four finish",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/africa-can-look-back-world-cup-satisfaction-despite-no-top-four-finish-6247096",
+      "published": "2026-07-11 01:53"
+    },
+    {
+      "category": "General",
+      "title": "Scheffler misses cut at Scottish Open, ending 78-event run",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/scheffler-misses-cut-scottish-open-ending-78-event-run-6247061",
+      "published": "2026-07-11 01:20"
+    },
+    {
+      "category": "General",
+      "title": "Webber dismisses 'fiction' amid speculation about Piastri's future",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/webber-dismisses-fiction-amid-speculation-about-piastris-future-6247056",
+      "published": "2026-07-11 01:14"
+    },
+    {
+      "category": "General",
+      "title": "Mbappe keeps France’s greats comparison on ice as semi-final beckons",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mbappe-keeps-frances-greats-comparison-ice-semi-final-beckons-6247036",
+      "published": "2026-07-11 01:09"
     },
     {
       "category": "General",
@@ -224,62 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/meta-ai-image-detector-fails-identify-some-its-own-cropped-ai-images-reuters-analysis-finds-6246906",
       "published": "2026-07-10 23:42"
-    },
-    {
-      "category": "General",
-      "title": "SK Hynix shares jump 14% in Nasdaq debut",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sk-hynix-shares-jump-14-in-nasdaq-debut-6246911",
-      "published": "2026-07-10 23:42"
-    },
-    {
-      "category": "General",
-      "title": "England captain George eager to see ‘Air Caluori’ in action against Fiji",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-captain-george-eager-see-air-caluori-in-action-against-fiji-6246861",
-      "published": "2026-07-10 23:21"
-    },
-    {
-      "category": "General",
-      "title": "Du Toit hails record-breaker Erasmus ahead of Scotland clash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/du-toit-hails-record-breaker-erasmus-ahead-scotland-clash-6246841",
-      "published": "2026-07-10 23:08"
-    },
-    {
-      "category": "General",
-      "title": "Ruthless Zverev spoils Fery's Wimbledon dream to power into final",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ruthless-zverev-spoils-ferys-wimbledon-dream-power-final-6246836",
-      "published": "2026-07-10 23:03"
-    },
-    {
-      "category": "General",
-      "title": "Singapore-led resolution on protecting vital shipping lanes adopted by International Maritime Organization",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-international-maritime-organization-shipping-resolution-protect-vital-shipping-lanes-6246731",
-      "published": "2026-07-10 22:52"
-    },
-    {
-      "category": "General",
-      "title": "Yen strengthens as Japan considers nudging pension funds into domestic assets",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/yen-strengthens-japan-considers-nudging-pension-funds-domestic-assets-6245251",
-      "published": "2026-07-10 22:46"
-    },
-    {
-      "category": "General",
-      "title": "Jorge Jesus appointed new Portugal coach after World Cup exit",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/jorge-jesus-appointed-new-portugal-coach-after-world-cup-exit-6246736",
-      "published": "2026-07-10 22:21"
-    },
-    {
-      "category": "General",
-      "title": "Viking enthusiasts hail spirit, if not technique, of Norway fans' \"Viking row\"",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/viking-enthusiasts-hail-spirit-if-not-technique-norway-fans-viking-row-6246706",
-      "published": "2026-07-10 22:01"
     }
   ]
 }
