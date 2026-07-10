@@ -1,6 +1,34 @@
 {
-  "last_updated": "2026-07-10 16:40",
+  "last_updated": "2026-07-10 20:08",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Circle wins final regulatory approval to establish US trust bank, shares rise",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/circle-wins-final-regulatory-approval-establish-us-trust-bank-shares-rise-6246301",
+      "published": "2026-07-10 18:55"
+    },
+    {
+      "category": "Crime",
+      "title": "UK to regulate cloud service providers Microsoft, Google and others to protect financial stability",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/uk-regulate-cloud-service-providers-microsoft-google-and-others-protect-financial-stability-6246241",
+      "published": "2026-07-10 18:20"
+    },
+    {
+      "category": "Crime",
+      "title": "Maid gets jail for abusing 97-year-old employer with dementia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/maid-abuse-beat-old-man-dementia-employer-6245986",
+      "published": "2026-07-10 17:34"
+    },
+    {
+      "category": "Crime",
+      "title": "S'pore lawyer, 56, a repeated drink driver, struck off the rolls for lying to police over Bukit Panjang drink driving accident",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/drink-driving-lawyer-lie-struck-off/",
+      "published": "2026-07-10 20:40"
+    },
     {
       "category": "Crime",
       "title": "Taiwan man jailed 12 years for breaking into ex-girlfriend's home & slashing her new partner while young child slept in same room",
@@ -17,6 +45,20 @@
     },
     {
       "category": "Crime",
+      "title": "Agencies in S’pore among dozens involved in Interpol anti-fraud operation held in 97 jurisdictions",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/agencies-in-spore-among-dozens-involved-in-interpol-anti-fraud-operation-held-in-97-jurisdictions",
+      "published": "2026-07-10 18:30"
+    },
+    {
+      "category": "Crime",
+      "title": "Woman taken to hospital after accident involving van in Bishan, driver arrested",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/van-collides-with-woman-near-kuo-chuan-presbyterian-secondary-school-in-bishan-eyewitness",
+      "published": "2026-07-10 15:20"
+    },
+    {
+      "category": "Crime",
       "title": "Two lorries towed away by Traffic Police during checks for speed limiters",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/two-lorries-towed-away-by-traffic-police-for-failure-to-install-speed-limiters",
@@ -24,7 +66,7 @@
     },
     {
       "category": "Crime",
-      "title": "Man given jail in June over $58k in bribes now handed 100-plus extra charges for other offences",
+      "title": "Man given jail sentence in June over $58,000 in bribes now handed more than 100 extra charges",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/man-given-jail-in-june-over-58k-in-bribes-now-handed-100-plus-extra-charges-for-other-offences",
       "published": "2026-07-10 13:50"
@@ -51,39 +93,25 @@
       "published": "2026-07-09 15:56"
     },
     {
-      "category": "Crime",
-      "title": "Man charged after allegedly making false bomb threats to Prime Minister’s Office, HTX",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/man-charged-after-allegedly-making-false-bomb-threats-to-prime-ministers-office-htx",
-      "published": "2026-07-09 12:32"
-    },
-    {
-      "category": "Crime",
-      "title": "Police searching for 44-year-old driver involved in hit-and-run in Punggol",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/police-searching-for-driver-involved-in-hit-and-run-in-punggol",
-      "published": "2026-07-08 22:37"
+      "category": "Traffic",
+      "title": "DBS card users get up to S$6 off eggs & rice on Saturdays at Sheng Siong or Giant from Jul. 18-Aug. 29",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/dbs-offer-eggs-rice-saturdays/",
+      "published": "2026-07-10 21:02"
     },
     {
       "category": "Traffic",
-      "title": "H5 bird flu detected in Australian seabird for first time",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/h5-bird-flu-australian-seabird-6245696",
-      "published": "2026-07-10 13:31"
-    },
-    {
-      "category": "Traffic",
-      "title": "Managing healthcare costs: What to know about insurance riders",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/brand-studio/managing-healthcare-costs-what-know-about-insurance-riders-6241936",
-      "published": "2026-07-10 11:59"
-    },
-    {
-      "category": "Traffic",
-      "title": "Woman taken to hospital after accident involving van in Bishan",
+      "title": "11 former Certis officers convicted; they kept cigarettes dumped in HSA bins and seized vapes",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/van-collides-with-woman-near-kuo-chuan-presbyterian-secondary-school-in-bishan-eyewitness",
-      "published": "2026-07-10 15:20"
+      "url": "https://www.straitstimes.com/singapore/courts-crime/11-former-certis-officers-convicted-they-kept-cigarettes-dumped-in-hsa-bins-and-seized-vapes",
+      "published": "2026-07-10 18:52"
+    },
+    {
+      "category": "Traffic",
+      "title": "Global recall of Volvo plug-in hybrids, 22 cars in Singapore affected",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/global-recall-of-volvo-plug-in-hybrids-22-cars-in-singapore-affected",
+      "published": "2026-07-10 17:00"
     },
     {
       "category": "Traffic",
@@ -100,32 +128,25 @@
       "published": "2026-07-10 04:00"
     },
     {
-      "category": "Traffic",
-      "title": "18 SIA, Scoot flights to and from S’pore affected as Typhoon Bavi approaches Taiwan and China",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/18-sia-scoot-flights-to-and-from-spore-affected-as-typhoon-bavi-approaches-taiwan-and-china",
-      "published": "2026-07-09 13:20"
-    },
-    {
-      "category": "Traffic",
-      "title": "Cyclist taken to hospital after accident involving taxi in Ang Mo Kio",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/cyclist-taken-to-hospital-after-accident-involving-taxi-in-ang-mo-kio",
-      "published": "2026-07-09 10:10"
-    },
-    {
       "category": "Transport",
-      "title": "South Korean chip titan SK hynix raises US$26.5 billion in blockbuster US listing",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/sk-hynix-us-listing-ai-chips-stocks-6245691",
-      "published": "2026-07-10 13:47"
+      "title": "Gillman Barracks businesses to wait and see, as tenancies wind down ahead of redevelopment",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/gillman-barracks-businesses-to-wait-and-see-as-tenancies-wind-down-ahead-of-redevelopment",
+      "published": "2026-07-10 18:56"
     },
     {
       "category": "Fire",
-      "title": "Spain wildfire roars through village leaving 11 dead and 19 missing",
+      "title": "O'Ward says he has asked to be 'fired' as McLaren F1 reserve",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/spain-wildfire-village-11-dead-19-missing-6245926",
-      "published": "2026-07-10 16:28"
+      "url": "https://www.channelnewsasia.com/sport/oward-says-he-has-asked-be-fired-mclaren-f1-reserve-6246431",
+      "published": "2026-07-10 19:56"
+    },
+    {
+      "category": "Fire",
+      "title": "Mission creep: FIFA's embrace of technology backfires in controversy-riven World Cup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mission-creep-fifas-embrace-technology-backfires-in-controversy-riven-world-cup-6246226",
+      "published": "2026-07-10 18:05"
     },
     {
       "category": "Fire",
@@ -136,24 +157,31 @@
     },
     {
       "category": "Fire",
+      "title": "Part of luxury yacht wreck in Sentosa retrieved a month after fire; works ongoing for rest of vessel",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/part-of-luxury-yacht-wreck-in-sentosa-retrieved-a-month-after-fire-works-ongoing-for-rest-of-vessel",
+      "published": "2026-07-10 16:51"
+    },
+    {
+      "category": "Fire",
       "title": "Overworked, bullied and burnt-out: Is being a lawyer still a dream job?",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/overworked-bullied-and-burnt-out-is-being-a-lawyer-still-a-dream-job",
       "published": "2026-07-09 14:00"
     },
     {
-      "category": "Fire",
-      "title": "8 taken to hospital, including 2 with minor burn injuries, after fire in Tuas dormitory",
+      "category": "Money",
+      "title": "Locally grown vegetables from at least 4 S’pore farms to be taken off FairPrice shelves",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/8-taken-to-hospital-including-2-with-minor-burn-injuries-after-fire-in-tuas-dormitory",
-      "published": "2026-07-09 08:53"
+      "url": "https://www.straitstimes.com/singapore/environment/locally-grown-vegetables-from-at-least-4-spore-farms-to-be-taken-off-supermarket-shelves",
+      "published": "2026-07-10 17:30"
     },
     {
-      "category": "Money",
-      "title": "Eligible Singaporeans to receive up to $850 in GSTV cash, up to $450 in MediSave top-ups in August",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/eligible-singaporeans-to-receive-up-to-850-in-gstv-cash-up-to-450-in-medisave-top-ups-in-august",
-      "published": "2026-07-09 10:01"
+      "category": "Housing",
+      "title": "Fullerton Health co-founders fined for submitting and approving false and inflated expense claims",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/fullerton-health-ceo-corruption-bribery-false-claims-6246191",
+      "published": "2026-07-10 18:51"
     },
     {
       "category": "Housing",
@@ -161,13 +189,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/boj-may-raise-growth-forecast-maintain-vigilance-inflation-risk-sources-say-6245966",
       "published": "2026-07-10 16:31"
-    },
-    {
-      "category": "Housing",
-      "title": "HDB to redevelop Gillman Barracks & Sunset Way for housing",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/hdb-redevelop-gillman-barracks-sunset-way/",
-      "published": "2026-07-10 17:10"
     },
     {
       "category": "Housing",
@@ -184,102 +205,81 @@
       "published": "2026-07-10 09:00"
     },
     {
-      "category": "Housing",
-      "title": "More two-room flexi BTO flats have been built. Why are singles’ application rates still so high?",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/housing/more-two-room-flexi-bto-flats-have-been-built-why-are-singles-application-rates-still-so-high",
-      "published": "2026-07-09 05:00"
+      "category": "General",
+      "title": "One million women and girls lose access to support amid aid cuts: UN",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/one-million-women-and-girls-lose-access-support-amid-aid-cuts-un-6246121",
+      "published": "2026-07-10 19:53"
     },
     {
       "category": "General",
-      "title": "Girl dies in France celebrating World Cup win",
+      "title": "Heavy rain threatens Oslo World Cup parties as Norway take on England",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/france-morocco-world-cup-girl-dies-6245916",
-      "published": "2026-07-10 16:22"
+      "url": "https://www.channelnewsasia.com/sport/heavy-rain-threatens-oslo-world-cup-parties-norway-take-england-6246421",
+      "published": "2026-07-10 19:52"
     },
     {
       "category": "General",
-      "title": "Johor state polls: Parties roll out heavy hitters in bid to sway young fence-sitters, but is it ‘counterproductive’?",
+      "title": "Bengaluru introduces curbs on drinking water use amid dry spell",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/johor-state-election-political-bigwigs-anwar-ibrahim-ahmad-zahid-hamidi-abdul-hadi-awang-6245551",
-      "published": "2026-07-10 16:00"
+      "url": "https://www.channelnewsasia.com/asia/bengaluru-curbs-drinking-water-use-dry-spell-6246236",
+      "published": "2026-07-10 19:06"
     },
     {
       "category": "General",
-      "title": "Marriages in Singapore dip by 6.2% in 2025, couples having children later",
+      "title": "South Korean billionaire's risky bet pays off, as SK Hynix debuts in New York",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/family-trends-report-marriage-parenthood-preschools-elderly-msf-6239956",
-      "published": "2026-07-10 16:00"
+      "url": "https://www.channelnewsasia.com/business/south-korean-billionaires-risky-bet-pays-sk-hynix-debuts-in-new-york-6246316",
+      "published": "2026-07-10 19:02"
     },
     {
       "category": "General",
-      "title": "Former TVB actress Cecilia Yiu announces acting comeback after 30 years",
+      "title": "'You made us proud': Egypt gives heroes' welcome to World Cup team",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/cecilia-yiu-hong-kong-actress-comeback-30-years-6245676",
-      "published": "2026-07-10 15:37"
+      "url": "https://www.channelnewsasia.com/sport/you-made-us-proud-egypt-gives-heroes-welcome-world-cup-team-6246281",
+      "published": "2026-07-10 18:41"
     },
     {
       "category": "General",
-      "title": "SK Hynix set for marquee US debut in test for AI appetite",
+      "title": "World Cup brings fans joy, torment and lifelong memories",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sk-hynix-set-marquee-us-debut-in-test-ai-appetite-6245846",
-      "published": "2026-07-10 15:28"
+      "url": "https://www.channelnewsasia.com/sport/world-cup-brings-fans-joy-torment-and-lifelong-memories-6246246",
+      "published": "2026-07-10 18:17"
     },
     {
       "category": "General",
-      "title": "Hanwha Ocean sold around $2 billion in dollar-won forward market, source says",
+      "title": "EU tells Instagram, Facebook to change addictive features or risk fines",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/hanwha-ocean-sold-around-2-billion-in-dollar-won-forward-market-source-says-6245796",
-      "published": "2026-07-10 14:51"
+      "url": "https://www.channelnewsasia.com/business/eu-tells-instagram-facebook-change-addictive-features-or-risk-fines-6246206",
+      "published": "2026-07-10 18:01"
     },
     {
       "category": "General",
-      "title": "Olympic champion McKeown to miss Pan Pacs, Commonwealth Games due to illness",
+      "title": "Changi Airport opens new building with aerobridges for flights parked away from terminals",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/olympic-champion-mckeown-miss-pan-pacs-commonwealth-games-due-illness-6245741",
-      "published": "2026-07-10 14:03"
+      "url": "https://www.channelnewsasia.com/singapore/changi-airport-new-building-remote-flights-aerobridges-ramp-6246036",
+      "published": "2026-07-10 18:00"
     },
     {
       "category": "General",
-      "title": "North Korea vows boost to nuclear buildup, military intelligence",
+      "title": "City sign goalkeeper Charles from Sheffield Wednesday",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/north-korea-vows-boost-nuclear-military-intelligence-6245681",
-      "published": "2026-07-10 13:31"
+      "url": "https://www.channelnewsasia.com/sport/city-sign-goalkeeper-charles-sheffield-wednesday-6246151",
+      "published": "2026-07-10 17:52"
     },
     {
       "category": "General",
-      "title": "ASEAN to discuss engagement with Myanmar at special meeting, Philippines says",
+      "title": "SoftBank, PayPay in talks to invest in Seven & i, Bloomberg reports",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/asean-discuss-myanmar-engagement-meeting-6245631",
-      "published": "2026-07-10 13:18"
+      "url": "https://www.channelnewsasia.com/business/softbank-paypay-in-talks-invest-in-seven-i-bloomberg-reports-6246146",
+      "published": "2026-07-10 17:51"
     },
     {
       "category": "General",
-      "title": "Special delivery: Italy's postman joins the AI infrastructure race",
+      "title": "Philippines rejects Chinese academics' sovereignty claims",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/special-delivery-italys-postman-joins-ai-infrastructure-race-6245641",
-      "published": "2026-07-10 13:02"
-    },
-    {
-      "category": "General",
-      "title": "DBS to offer up to S$6 off eggs and rice for seven Saturdays from Jul 18",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/posb-dbs-savings-supermarket-sheng-siong-giant-6245491",
-      "published": "2026-07-10 12:14"
-    },
-    {
-      "category": "General",
-      "title": "Two lorries towed for not complying with speed limiter requirements after Jul 1 deadline",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/lorries-towed-speed-limiters-installation-police-6245461",
-      "published": "2026-07-10 12:07"
-    },
-    {
-      "category": "General",
-      "title": "Singapore rolls out initiatives, including orientation programme, to better integrate new foreign professionals",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/orientation-programme-new-employment-pass-holders-foreign-professionals-integrate-6245411",
-      "published": "2026-07-10 12:03"
+      "url": "https://www.channelnewsasia.com/asia/philippines-china-academics-batanes-disputed-islands-sovereignty-6243461",
+      "published": "2026-07-10 17:46"
     }
   ]
 }
