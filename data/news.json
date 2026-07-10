@@ -1,27 +1,6 @@
 {
-  "last_updated": "2026-07-10 20:08",
+  "last_updated": "2026-07-10 22:51",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Circle wins final regulatory approval to establish US trust bank, shares rise",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/circle-wins-final-regulatory-approval-establish-us-trust-bank-shares-rise-6246301",
-      "published": "2026-07-10 18:55"
-    },
-    {
-      "category": "Crime",
-      "title": "UK to regulate cloud service providers Microsoft, Google and others to protect financial stability",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/uk-regulate-cloud-service-providers-microsoft-google-and-others-protect-financial-stability-6246241",
-      "published": "2026-07-10 18:20"
-    },
-    {
-      "category": "Crime",
-      "title": "Maid gets jail for abusing 97-year-old employer with dementia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/maid-abuse-beat-old-man-dementia-employer-6245986",
-      "published": "2026-07-10 17:34"
-    },
     {
       "category": "Crime",
       "title": "S'pore lawyer, 56, a repeated drink driver, struck off the rolls for lying to police over Bukit Panjang drink driving accident",
@@ -42,6 +21,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/man-press-karambit-daughter-neck-jail/",
       "published": "2026-07-10 18:35"
+    },
+    {
+      "category": "Crime",
+      "title": "16-year-olds among 550 under probe for scam and unlicensed moneylending activities",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/16-year-olds-among-550-under-probe-for-scam-and-unlicensed-moneylending-activities",
+      "published": "2026-07-10 22:40"
     },
     {
       "category": "Crime",
@@ -94,10 +80,24 @@
     },
     {
       "category": "Traffic",
+      "title": "Tanker traffic slows in Strait of Hormuz after US and Iran clashes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/oil-tanker-traffic-slows-strait-hormuz-us-iran-clashes-6246451",
+      "published": "2026-07-10 21:17"
+    },
+    {
+      "category": "Traffic",
       "title": "DBS card users get up to S$6 off eggs & rice on Saturdays at Sheng Siong or Giant from Jul. 18-Aug. 29",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/dbs-offer-eggs-rice-saturdays/",
       "published": "2026-07-10 21:02"
+    },
+    {
+      "category": "Traffic",
+      "title": "Fines for 2 co-founders of Fullerton Healthcare Corp over falsified claims linked to $211k",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/fines-for-2-co-founders-of-fullerton-healthcare-corp-over-falsified-claims-linked-to-211k",
+      "published": "2026-07-10 20:12"
     },
     {
       "category": "Traffic",
@@ -108,7 +108,7 @@
     },
     {
       "category": "Traffic",
-      "title": "Global recall of Volvo plug-in hybrids, 22 cars in Singapore affected",
+      "title": "Global recall of Volvo plug-in hybrids; 22 cars in Singapore affected",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/global-recall-of-volvo-plug-in-hybrids-22-cars-in-singapore-affected",
       "published": "2026-07-10 17:00"
@@ -129,6 +129,20 @@
     },
     {
       "category": "Transport",
+      "title": "Philippine Air to order 15 Boeing 787-10 and nine Airbus A350-1000",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/philippine-air-order-15-boeing-787-10-and-nine-airbus-a350-1000-6246506",
+      "published": "2026-07-10 20:27"
+    },
+    {
+      "category": "Transport",
+      "title": "SK Hynix options to trade two business days after Nasdaq debut, sources say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/sk-hynix-options-trade-two-business-days-after-nasdaq-debut-sources-say-6246471",
+      "published": "2026-07-10 20:17"
+    },
+    {
+      "category": "Transport",
       "title": "Gillman Barracks businesses to wait and see, as tenancies wind down ahead of redevelopment",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/gillman-barracks-businesses-to-wait-and-see-as-tenancies-wind-down-ahead-of-redevelopment",
@@ -140,13 +154,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/oward-says-he-has-asked-be-fired-mclaren-f1-reserve-6246431",
       "published": "2026-07-10 19:56"
-    },
-    {
-      "category": "Fire",
-      "title": "Mission creep: FIFA's embrace of technology backfires in controversy-riven World Cup",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mission-creep-fifas-embrace-technology-backfires-in-controversy-riven-world-cup-6246226",
-      "published": "2026-07-10 18:05"
     },
     {
       "category": "Fire",
@@ -163,32 +170,18 @@
       "published": "2026-07-10 16:51"
     },
     {
-      "category": "Fire",
-      "title": "Overworked, bullied and burnt-out: Is being a lawyer still a dream job?",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/overworked-bullied-and-burnt-out-is-being-a-lawyer-still-a-dream-job",
-      "published": "2026-07-09 14:00"
-    },
-    {
       "category": "Money",
-      "title": "Locally grown vegetables from at least 4 S’pore farms to be taken off FairPrice shelves",
+      "title": "Locally grown vegetables from at least 3 S’pore farms to be taken off FairPrice shelves",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/environment/locally-grown-vegetables-from-at-least-4-spore-farms-to-be-taken-off-supermarket-shelves",
+      "url": "https://www.straitstimes.com/singapore/environment/locally-grown-vegetables-from-at-least-3-spore-farms-to-be-taken-off-fairprice-shelves",
       "published": "2026-07-10 17:30"
     },
     {
       "category": "Housing",
-      "title": "Fullerton Health co-founders fined for submitting and approving false and inflated expense claims",
+      "title": "Nature groups call for stronger environmental safeguards over Sunset Way, Gillman Barracks housing plans",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/fullerton-health-ceo-corruption-bribery-false-claims-6246191",
-      "published": "2026-07-10 18:51"
-    },
-    {
-      "category": "Housing",
-      "title": "BOJ may raise growth forecast, maintain vigilance to inflation risk, sources say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/boj-may-raise-growth-forecast-maintain-vigilance-inflation-risk-sources-say-6245966",
-      "published": "2026-07-10 16:31"
+      "url": "https://www.channelnewsasia.com/singapore/gillman-barracks-sunset-way-housing-environment-safeguards-nature-groups-6246426",
+      "published": "2026-07-10 21:13"
     },
     {
       "category": "Housing",
@@ -206,80 +199,87 @@
     },
     {
       "category": "General",
-      "title": "One million women and girls lose access to support amid aid cuts: UN",
+      "title": "Jorge Jesus appointed new Portugal coach after World Cup exit",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/one-million-women-and-girls-lose-access-support-amid-aid-cuts-un-6246121",
-      "published": "2026-07-10 19:53"
+      "url": "https://www.channelnewsasia.com/sport/jorge-jesus-appointed-new-portugal-coach-after-world-cup-exit-6246736",
+      "published": "2026-07-10 22:21"
     },
     {
       "category": "General",
-      "title": "Heavy rain threatens Oslo World Cup parties as Norway take on England",
+      "title": "Viking enthusiasts hail spirit, if not technique, of Norway fans' \"Viking row\"",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/heavy-rain-threatens-oslo-world-cup-parties-norway-take-england-6246421",
-      "published": "2026-07-10 19:52"
+      "url": "https://www.channelnewsasia.com/sport/viking-enthusiasts-hail-spirit-if-not-technique-norway-fans-viking-row-6246706",
+      "published": "2026-07-10 22:01"
     },
     {
       "category": "General",
-      "title": "Bengaluru introduces curbs on drinking water use amid dry spell",
+      "title": "The invisible grief of being an adult orphan",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/bengaluru-curbs-drinking-water-use-dry-spell-6246236",
-      "published": "2026-07-10 19:06"
+      "url": "https://www.channelnewsasia.com/today/voices/adult-orphan-grief-death-loss-parents-6243146",
+      "published": "2026-07-10 21:58"
     },
     {
       "category": "General",
-      "title": "South Korean billionaire's risky bet pays off, as SK Hynix debuts in New York",
+      "title": "Zimbabwe confirm future captains across all formats",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-korean-billionaires-risky-bet-pays-sk-hynix-debuts-in-new-york-6246316",
-      "published": "2026-07-10 19:02"
+      "url": "https://www.channelnewsasia.com/sport/zimbabwe-confirm-future-captains-across-all-formats-6246691",
+      "published": "2026-07-10 21:49"
     },
     {
       "category": "General",
-      "title": "'You made us proud': Egypt gives heroes' welcome to World Cup team",
+      "title": "Al-Ittihad turn to Wissing after Gamba Osaka's Asian triumph",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/you-made-us-proud-egypt-gives-heroes-welcome-world-cup-team-6246281",
-      "published": "2026-07-10 18:41"
+      "url": "https://www.channelnewsasia.com/sport/al-ittihad-turn-wissing-after-gamba-osakas-asian-triumph-6246656",
+      "published": "2026-07-10 21:41"
     },
     {
       "category": "General",
-      "title": "World Cup brings fans joy, torment and lifelong memories",
+      "title": "Singapore's blue bins were made for frictionless recycling. Is it time to ditch them?",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cup-brings-fans-joy-torment-and-lifelong-memories-6246246",
-      "published": "2026-07-10 18:17"
+      "url": "https://www.channelnewsasia.com/today/big-read/recycling-blue-bins-better-habits-less-waste-6244671",
+      "published": "2026-07-10 21:30"
     },
     {
       "category": "General",
-      "title": "EU tells Instagram, Facebook to change addictive features or risk fines",
+      "title": "Turned down by NUS and NTU, this self-described 'late bloomer' now has a Harvard PhD",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/eu-tells-instagram-facebook-change-addictive-features-or-risk-fines-6246206",
-      "published": "2026-07-10 18:01"
+      "url": "https://www.channelnewsasia.com/today/up-close/harvard-phd-graduate-rejection-singapore-education-6243446",
+      "published": "2026-07-10 21:30"
     },
     {
       "category": "General",
-      "title": "Changi Airport opens new building with aerobridges for flights parked away from terminals",
+      "title": "In their 80s, these volunteers say helping others is the secret to staying young at heart",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/changi-airport-new-building-remote-flights-aerobridges-ramp-6246036",
-      "published": "2026-07-10 18:00"
+      "url": "https://www.channelnewsasia.com/today/in-pixels/elderly-volunteers-give-back-haircuts-home-repairs-6235041",
+      "published": "2026-07-10 21:30"
     },
     {
       "category": "General",
-      "title": "City sign goalkeeper Charles from Sheffield Wednesday",
+      "title": "Shein could aim for September or October IPO in Hong Kong, source says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/city-sign-goalkeeper-charles-sheffield-wednesday-6246151",
-      "published": "2026-07-10 17:52"
+      "url": "https://www.channelnewsasia.com/business/shein-could-aim-september-or-october-ipo-in-hong-kong-source-says-6246631",
+      "published": "2026-07-10 21:27"
     },
     {
       "category": "General",
-      "title": "SoftBank, PayPay in talks to invest in Seven & i, Bloomberg reports",
+      "title": "SpaceX's near-term AI payoff seen tethered to Earth, not outer space",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/softbank-paypay-in-talks-invest-in-seven-i-bloomberg-reports-6246146",
-      "published": "2026-07-10 17:51"
+      "url": "https://www.channelnewsasia.com/business/spacexs-near-term-ai-payoff-seen-tethered-earth-not-outer-space-6246626",
+      "published": "2026-07-10 21:18"
     },
     {
       "category": "General",
-      "title": "Philippines rejects Chinese academics' sovereignty claims",
+      "title": "Thai crew of ship struck in Strait of Hormuz sues operators",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/philippines-china-academics-batanes-disputed-islands-sovereignty-6243461",
-      "published": "2026-07-10 17:46"
+      "url": "https://www.channelnewsasia.com/asia/thai-ship-crew-strait-hormuz-sues-operators-6246621",
+      "published": "2026-07-10 21:15"
+    },
+    {
+      "category": "General",
+      "title": "Nvidia supplier King Yuan Electronics to invest up to $1.4 billion in US facility",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nvidia-supplier-king-yuan-electronics-invest-up-14-billion-in-us-facility-6246501",
+      "published": "2026-07-10 20:28"
     }
   ]
 }
