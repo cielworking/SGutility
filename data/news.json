@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-12 02:08",
+  "last_updated": "2026-07-12 03:31",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Belgium coach Garcia's tenure in doubt after Courtois substitution",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/belgium-coach-garcias-tenure-in-doubt-after-courtois-substitution-6248406",
+      "published": "2026-07-12 02:16"
+    },
     {
       "category": "Crime",
       "title": "Chinese woman, 37, had delusions her ex-husband cheated & drugged her, jailed after Chinatown knife attack left 2 injured",
@@ -59,9 +66,9 @@
     },
     {
       "category": "Traffic",
-      "title": "India get stuck in traffic jam on way to fifth T20 against England, start delayed",
+      "title": "Traffic jam delay adds to India's woes ahead of 56-run T20 loss to England",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/india-get-stuck-in-traffic-jam-way-fifth-t20-against-england-start-delayed-6248366",
+      "url": "https://www.channelnewsasia.com/sport/traffic-jam-delay-adds-indias-woes-ahead-56-run-t20-loss-england-6248366",
       "published": "2026-07-12 01:08"
     },
     {
@@ -70,13 +77,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/back-back-sprint-wins-merlier-tour-de-france-pogacar-keeps-overall-lead-6248281",
       "published": "2026-07-11 23:34"
-    },
-    {
-      "category": "Traffic",
-      "title": "Masked World Cup players spotlight soccer's overlooked facial injury risk",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/masked-world-cup-players-spotlight-soccers-overlooked-facial-injury-risk-6248161",
-      "published": "2026-07-11 21:06"
     },
     {
       "category": "Traffic",
@@ -199,9 +199,37 @@
     },
     {
       "category": "General",
-      "title": "Noskova shakes off nerves to beat Muchova in Wimbledon final",
+      "title": "Australia's Bos to miss three months for Feyenoord after World Cup knee injury",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/noskova-shakes-nerves-beat-muchova-in-wimbledon-final-6248386",
+      "url": "https://www.channelnewsasia.com/sport/australias-bos-miss-three-months-feyenoord-after-world-cup-knee-injury-6248436",
+      "published": "2026-07-12 03:07"
+    },
+    {
+      "category": "General",
+      "title": "Six dead, dozens wounded as Russia strikes Ukraine with missiles, drones",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/six-dead-dozens-wounded-russia-strikes-ukraine-missiles-drones-6248431",
+      "published": "2026-07-12 03:03"
+    },
+    {
+      "category": "General",
+      "title": "Floods, landslides kill 44 in Bangladesh, leave over 1 million stranded",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/floods-landslides-kill-44-in-bangladesh-leave-over-1-million-stranded-6248421",
+      "published": "2026-07-12 02:53"
+    },
+    {
+      "category": "General",
+      "title": "Frustrated Townsend proud of Scotland effort in defeat to South Africa",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/frustrated-townsend-proud-scotland-effort-in-defeat-south-africa-6248416",
+      "published": "2026-07-12 02:24"
+    },
+    {
+      "category": "General",
+      "title": "Noskova survives Muchova fightback in all-Czech final to lift Wimbledon trophy",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/noskova-survives-muchova-fightback-in-all-czech-final-lift-wimbledon-trophy-6248386",
       "published": "2026-07-12 01:40"
     },
     {
@@ -252,34 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/us-lebanon-israel-pilot-zone-withdrawal-6248221",
       "published": "2026-07-11 22:28"
-    },
-    {
-      "category": "General",
-      "title": "South Africa World Cup midfielder Adams dies aged 25",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/south-africa-jayden-adams-dead-world-cup-football-6248206",
-      "published": "2026-07-11 22:02"
-    },
-    {
-      "category": "General",
-      "title": "Patten, Heliovaara win second Wimbledon men's doubles title",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/patten-heliovaara-win-second-wimbledon-mens-doubles-title-6248201",
-      "published": "2026-07-11 21:55"
-    },
-    {
-      "category": "General",
-      "title": "Marc Marquez cruises to historic sprint victory from pole at German Grand Prix",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/marc-marquez-cruises-historic-sprint-victory-pole-german-grand-prix-6248171",
-      "published": "2026-07-11 21:33"
-    },
-    {
-      "category": "General",
-      "title": "Your child wasn't invited to a birthday party? Here's why you should pause before reacting",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/today/adulting/parenting-children-friendship-rejection-resilience-child-development-6242731",
-      "published": "2026-07-11 21:30"
     }
   ]
 }
