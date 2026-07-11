@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-07-11 14:26",
+  "last_updated": "2026-07-11 16:59",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Fewer but more stable marriages in S'pore in 2025: MSF survey",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/fewer-marriages-2026-family-trend-report/",
+      "published": "2026-07-11 00:00"
+    },
     {
       "category": "Crime",
       "title": "S'pore cop, 24, allegedly committed voyeurism against 9 men including colleagues, accused of molesting 2 of them",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/singapore-cop-voyeurism-molestation-charge/",
       "published": "2026-07-10 23:54"
-    },
-    {
-      "category": "Crime",
-      "title": "S'pore lawyer, 56, a repeated drink driver, struck off the rolls for lying to police over Bukit Panjang drink driving accident",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/drink-driving-lawyer-lie-struck-off/",
-      "published": "2026-07-10 20:40"
     },
     {
       "category": "Crime",
@@ -66,6 +66,13 @@
     },
     {
       "category": "Traffic",
+      "title": "MHA clarifies: Eating, drinking & smoking while driving not offences, but can be if it results in accident",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/mha-eating-driving/",
+      "published": "2026-07-11 01:19"
+    },
+    {
+      "category": "Traffic",
       "title": "4 boys, under 14 years old, fatally hit & set fire to stray dog & puppies in China, case highlighted by national media",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/four-boys-fatally-abuse-dogs-china/",
@@ -73,10 +80,10 @@
     },
     {
       "category": "Traffic",
-      "title": "DBS card users get up to S$6 off eggs & rice on Saturdays at Sheng Siong or Giant from Jul. 18-Aug. 29",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/dbs-offer-eggs-rice-saturdays/",
-      "published": "2026-07-10 21:02"
+      "title": "Focus on concept, reasoning to tackle science papers: Ex-PSLE examiner at ST PSLE Companion",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/parenting-education/focus-on-concept-reasoning-to-tackle-science-papers-ex-psle-examiner-at-st-psle-companion",
+      "published": "2026-07-11 16:46"
     },
     {
       "category": "Traffic",
@@ -122,6 +129,13 @@
     },
     {
       "category": "Transport",
+      "title": "Man leaves paper bag with S$20,000 cash on S'pore bus, Yishun interchange staff return full amount",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/20000-cash-left-in-singapore-bus-sbs-transit-staff-return/",
+      "published": "2026-07-11 01:11"
+    },
+    {
+      "category": "Transport",
       "title": "Gillman Barracks businesses to wait and see, as tenancies wind down ahead of redevelopment",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/gillman-barracks-businesses-to-wait-and-see-as-tenancies-wind-down-ahead-of-redevelopment",
@@ -143,6 +157,13 @@
     },
     {
       "category": "Housing",
+      "title": "One in three appeals from 2020-2025 approved for EC buyers who exceeded income cap: HDB",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/housing/one-in-three-appeals-from-2020-2025-approved-for-ec-buyers-who-exceeded-income-cap-hdb",
+      "published": "2026-07-11 16:25"
+    },
+    {
+      "category": "Housing",
       "title": "Parts of Maju Forest to make way for new public housing estate in Clementi",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/parts-of-maju-forest-to-make-way-for-new-public-housing-estate-in-clementi",
@@ -154,6 +175,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/upcoming-gillman-barracks-housing-estate-will-retain-25-heritage-buildings-green-spaces",
       "published": "2026-07-10 09:00"
+    },
+    {
+      "category": "General",
+      "title": "Jordan takes try-scoring record as All Blacks hammer Italy 47-17",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/jordan-takes-try-scoring-record-all-blacks-hammer-italy-47-17-6247996",
+      "published": "2026-07-11 15:35"
     },
     {
       "category": "General",
@@ -252,34 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/entertainment/king-charles-prince-harry-royal-family-6247601",
       "published": "2026-07-11 08:10"
-    },
-    {
-      "category": "General",
-      "title": "Apple sues OpenAI for stealing trade secrets",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/apple-sues-openai-trade-secrets-6247591",
-      "published": "2026-07-11 08:02"
-    },
-    {
-      "category": "General",
-      "title": "King Charles meets Prince Harry's children for first time since 2022",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/prince-harry-king-charles-family-6247586",
-      "published": "2026-07-11 07:52"
-    },
-    {
-      "category": "General",
-      "title": "Meta scraps AI image feature days after launch following privacy backlash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/meta-scraps-ai-image-feature-days-after-launch-following-privacy-backlash-6247581",
-      "published": "2026-07-11 07:32"
-    },
-    {
-      "category": "General",
-      "title": "Magic Merino strikes again as Spain down Belgium to reach World Cup semis",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/magic-merino-strikes-again-spain-down-belgium-reach-world-cup-semis-6247571",
-      "published": "2026-07-11 07:22"
     }
   ]
 }
