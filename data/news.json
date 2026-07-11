@@ -1,26 +1,19 @@
 {
-  "last_updated": "2026-07-11 11:41",
+  "last_updated": "2026-07-11 14:26",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "S'pore cop, 24, allegedly committed voyeurism against 9 men including colleagues, accused of molesting 2 of them",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/singapore-cop-voyeurism-molestation-charge/",
+      "published": "2026-07-10 23:54"
+    },
     {
       "category": "Crime",
       "title": "S'pore lawyer, 56, a repeated drink driver, struck off the rolls for lying to police over Bukit Panjang drink driving accident",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/drink-driving-lawyer-lie-struck-off/",
       "published": "2026-07-10 20:40"
-    },
-    {
-      "category": "Crime",
-      "title": "Taiwan man jailed 12 years for breaking into ex-girlfriend's home & slashing her new partner while young child slept in same room",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/taiwan-man-break-into-ex-girlfriends-home-stab-new-partner/",
-      "published": "2026-07-10 19:02"
-    },
-    {
-      "category": "Crime",
-      "title": "S’pore man, 46, presses karambit onto neck of daughter, 11, for oversleeping & missing school, gets 15 months’ jail",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-press-karambit-daughter-neck-jail/",
-      "published": "2026-07-10 18:35"
     },
     {
       "category": "Crime",
@@ -65,11 +58,11 @@
       "published": "2026-07-10 11:20"
     },
     {
-      "category": "Crime",
-      "title": "Lawyer struck off the rolls for lying to police over drink-driving accident",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/lawyer-struck-off-the-rolls-for-lying-to-police-over-drink-driving-accident",
-      "published": "2026-07-09 18:26"
+      "category": "Traffic",
+      "title": "Australia striker Mitch Duke ends international career",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/australia-striker-mitch-duke-ends-international-career-6247866",
+      "published": "2026-07-11 12:03"
     },
     {
       "category": "Traffic",
@@ -84,6 +77,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/dbs-offer-eggs-rice-saturdays/",
       "published": "2026-07-10 21:02"
+    },
+    {
+      "category": "Traffic",
+      "title": "After years of caring for their ill parents, they quit their jobs to care for other caregivers",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/community/after-years-of-caring-for-their-ill-parents-these-two-sons-quit-their-jobs-to-care-for-caregivers",
+      "published": "2026-07-11 12:00"
     },
     {
       "category": "Traffic",
@@ -129,13 +129,6 @@
     },
     {
       "category": "Fire",
-      "title": "Electric bicycle causes house fire in Thailand, 3 chihuahuas left alone inside saved",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/dogs-saved-house-fire-ebike/",
-      "published": "2026-07-10 18:50"
-    },
-    {
-      "category": "Fire",
       "title": "Part of luxury yacht wreck in Sentosa retrieved a month after fire; works ongoing for rest of vessel",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/part-of-luxury-yacht-wreck-in-sentosa-retrieved-a-month-after-fire-works-ongoing-for-rest-of-vessel",
@@ -161,6 +154,27 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/upcoming-gillman-barracks-housing-estate-will-retain-25-heritage-buildings-green-spaces",
       "published": "2026-07-10 09:00"
+    },
+    {
+      "category": "General",
+      "title": "Iran hits back at Trump after he insists truce is over",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-trump-ceasefire-over-hormuz-6247936",
+      "published": "2026-07-11 14:19"
+    },
+    {
+      "category": "General",
+      "title": "Auger-Aliassime parts ways with long-time coach Fontang after Wimbledon exit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/auger-aliassime-parts-ways-long-time-coach-fontang-after-wimbledon-exit-6247931",
+      "published": "2026-07-11 14:07"
+    },
+    {
+      "category": "General",
+      "title": "Thousands shelter in Taiwan as Typhoon Bavi lashes Japan islands",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/typhoon-bavi-taiwan-thousands-evacuated-6247921",
+      "published": "2026-07-11 14:03"
     },
     {
       "category": "General",
@@ -266,20 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/magic-merino-strikes-again-spain-down-belgium-reach-world-cup-semis-6247571",
       "published": "2026-07-11 07:22"
-    },
-    {
-      "category": "General",
-      "title": "Do high-intensity workouts raise cortisol? Here's why the stress hormone isn't always bad",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/wellness/exercise-stress-cortisol-levels-6228051",
-      "published": "2026-07-11 07:18"
-    },
-    {
-      "category": "General",
-      "title": "Life as a football fan’s wife: I still don’t get offside, but I understand why it’s ‘the people’s game’",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/women/married-football-fan-wife-world-cup-6240551",
-      "published": "2026-07-11 07:18"
     }
   ]
 }
