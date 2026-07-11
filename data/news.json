@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-12 05:05",
+  "last_updated": "2026-07-12 06:07",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Courtois rethinks quitting Belgium but wants time off",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/courtois-rethinks-quitting-belgium-wants-time-6248546",
+      "published": "2026-07-12 05:43"
+    },
     {
       "category": "Crime",
       "title": "UK police release suspect held over murder of Ann Widdecombe",
@@ -63,20 +70,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/man-given-jail-in-june-over-58k-in-bribes-now-handed-100-plus-extra-charges-for-other-offences",
       "published": "2026-07-10 13:50"
-    },
-    {
-      "category": "Traffic",
-      "title": "Traffic jam delay adds to India's woes ahead of 56-run T20 loss to England",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/traffic-jam-delay-adds-indias-woes-ahead-56-run-t20-loss-england-6248366",
-      "published": "2026-07-12 01:08"
-    },
-    {
-      "category": "Traffic",
-      "title": "Back-to-back sprint wins for Merlier at Tour de France, Pogacar keeps overall lead",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/back-back-sprint-wins-merlier-tour-de-france-pogacar-keeps-overall-lead-6248281",
-      "published": "2026-07-11 23:34"
     },
     {
       "category": "Traffic",
@@ -164,10 +157,10 @@
     },
     {
       "category": "Fire",
-      "title": "Coventry sign Tchaouna from Burnley on five-year deal",
+      "title": "Firefighters gain upper hand on deadly Spain wildfire",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/coventry-sign-tchaouna-burnley-five-year-deal-6248316",
-      "published": "2026-07-11 23:59"
+      "url": "https://www.channelnewsasia.com/world/firefighters-gain-upper-hand-deadly-spain-wildfire-6248511",
+      "published": "2026-07-12 05:23"
     },
     {
       "category": "Fire",
@@ -199,6 +192,69 @@
     },
     {
       "category": "General",
+      "title": "Commentary: Micron’s massive profits are a guarantee of trouble",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/micron-sk-hynix-samsung-profits-chip-shortage-rising-prices-6245961",
+      "published": "2026-07-12 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Trump administration subpoenas journalists over Air Force One story",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-administration-subpoenas-journalists-over-air-force-one-story-6248551",
+      "published": "2026-07-12 05:55"
+    },
+    {
+      "category": "General",
+      "title": "Former Argentina World Cup captain Rattin dies aged 89",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/former-argentina-world-cup-captain-rattin-dies-aged-89-6248541",
+      "published": "2026-07-12 05:46"
+    },
+    {
+      "category": "General",
+      "title": "Bhutan beyond Tiger’s Nest: A slower journey through Paro, Thimphu and Punakha",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/experiences/bhutan-travel-luxury-lodges-tigers-nest-punakha-6222446",
+      "published": "2026-07-12 05:33"
+    },
+    {
+      "category": "General",
+      "title": "US seeks free Hormuz access from Iran as talks focus on strait",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-seeks-free-hormuz-access-iran-talks-focus-strait-6248521",
+      "published": "2026-07-12 05:30"
+    },
+    {
+      "category": "General",
+      "title": "Former England captain Knight retires",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/former-england-captain-knight-retires-6248506",
+      "published": "2026-07-12 05:09"
+    },
+    {
+      "category": "General",
+      "title": "Konsa starts at right back for England against Norway",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/konsa-starts-right-back-england-against-norway-6248486",
+      "published": "2026-07-12 05:07"
+    },
+    {
+      "category": "General",
+      "title": "'I'm taking the big one' - how Noskova stared down heartbreak to win Wimbledon",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/im-taking-big-one-how-noskova-stared-down-heartbreak-win-wimbledon-6248491",
+      "published": "2026-07-12 05:06"
+    },
+    {
+      "category": "General",
+      "title": "Maldini named technical director of Italian federation",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/maldini-named-technical-director-italian-federation-6248496",
+      "published": "2026-07-12 05:06"
+    },
+    {
+      "category": "General",
       "title": "Muchova vows to keep chasing maiden major after Wimbledon heartbreak",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/muchova-vows-keep-chasing-maiden-major-after-wimbledon-heartbreak-6248461",
@@ -224,62 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/floods-landslides-kill-44-in-bangladesh-leave-over-1-million-stranded-6248421",
       "published": "2026-07-12 02:53"
-    },
-    {
-      "category": "General",
-      "title": "Frustrated Townsend proud of Scotland effort in defeat to South Africa",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/frustrated-townsend-proud-scotland-effort-in-defeat-south-africa-6248416",
-      "published": "2026-07-12 02:24"
-    },
-    {
-      "category": "General",
-      "title": "Noskova survives Muchova fightback in all-Czech final to lift Wimbledon trophy",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/noskova-survives-muchova-fightback-in-all-czech-final-lift-wimbledon-trophy-6248386",
-      "published": "2026-07-12 01:40"
-    },
-    {
-      "category": "General",
-      "title": "Heatwave forces Tour de France organisers to shorten stage nine",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/heatwave-forces-tour-de-france-organisers-shorten-stage-nine-6248361",
-      "published": "2026-07-12 01:01"
-    },
-    {
-      "category": "General",
-      "title": "German FA says it has started talks with coach Klopp for national team post, confident of a deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/german-fa-says-it-has-started-talks-coach-klopp-national-team-post-confident-deal-6248331",
-      "published": "2026-07-12 00:28"
-    },
-    {
-      "category": "General",
-      "title": "Confident Zverev faces ultimate test against Sinner in Wimbledon final",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/confident-zverev-faces-ultimate-test-against-sinner-in-wimbledon-final-6248326",
-      "published": "2026-07-12 00:14"
-    },
-    {
-      "category": "General",
-      "title": "Rampant England bounce back to winning ways with 11-try spree against Fiji",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rampant-england-bounce-back-winning-ways-11-try-spree-against-fiji-6248311",
-      "published": "2026-07-11 23:57"
-    },
-    {
-      "category": "General",
-      "title": "Johor polls: BN sweeps 48 of 56 seats as PM Anwar’s PH cedes ground in southern state",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/johor-state-election-results-barisan-nasional-6248056",
-      "published": "2026-07-11 23:13"
-    },
-    {
-      "category": "General",
-      "title": "Former Chelsea chairman Ken Bates dies at 94",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/former-chelsea-chairman-ken-bates-dies-94-6248231",
-      "published": "2026-07-11 22:45"
     }
   ]
 }
