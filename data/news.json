@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-12 03:31",
+  "last_updated": "2026-07-12 05:05",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "UK police release suspect held over murder of Ann Widdecombe",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/uk-police-release-suspect-held-over-murder-ann-widdecombe-6248466",
+      "published": "2026-07-12 04:09"
+    },
     {
       "category": "Crime",
       "title": "Belgium coach Garcia's tenure in doubt after Courtois substitution",
@@ -56,13 +63,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/man-given-jail-in-june-over-58k-in-bribes-now-handed-100-plus-extra-charges-for-other-offences",
       "published": "2026-07-10 13:50"
-    },
-    {
-      "category": "Crime",
-      "title": "Cop allegedly committed voyeurism against 9 men including colleagues; purportedly molested 2 of them",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/cop-allegedly-committed-voyeurism-against-9-men-including-colleagues-purportedly-molested-2-of-them",
-      "published": "2026-07-10 11:20"
     },
     {
       "category": "Traffic",
@@ -143,10 +143,10 @@
     },
     {
       "category": "Transport",
-      "title": "Move over brownies and matcha, beautifully designed flats are the new home-based business venture",
+      "title": "France defenders Saliba, Upamecano not in team training",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/today/ground-up/hdb-home-design-renovation-side-hustle-income-6243121",
-      "published": "2026-07-11 21:30"
+      "url": "https://www.channelnewsasia.com/sport/france-defenders-saliba-upamecano-not-in-team-training-6248471",
+      "published": "2026-07-12 04:43"
     },
     {
       "category": "Transport",
@@ -196,6 +196,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/one-in-three-appeals-from-2020-2025-approved-for-ec-buyers-who-exceeded-income-cap-hdb",
       "published": "2026-07-11 16:25"
+    },
+    {
+      "category": "General",
+      "title": "Muchova vows to keep chasing maiden major after Wimbledon heartbreak",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/muchova-vows-keep-chasing-maiden-major-after-wimbledon-heartbreak-6248461",
+      "published": "2026-07-12 04:00"
     },
     {
       "category": "General",
@@ -273,13 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/former-chelsea-chairman-ken-bates-dies-94-6248231",
       "published": "2026-07-11 22:45"
-    },
-    {
-      "category": "General",
-      "title": "US delegation in Lebanon to discuss Israel 'pilot zone' withdrawal: Official",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-lebanon-israel-pilot-zone-withdrawal-6248221",
-      "published": "2026-07-11 22:28"
     }
   ]
 }
