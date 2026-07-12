@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13 03:30",
+  "last_updated": "2026-07-13 05:06",
   "headlines": [
     {
       "category": "Crime",
@@ -66,6 +66,13 @@
     },
     {
       "category": "Transport",
+      "title": "Singapore proposes mandatory notification when firms use personal data for AI training",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/tech/singapore-proposes-ai-specific-notices-for-personal-data-used-in-ai-training",
+      "published": "2026-07-13 05:00"
+    },
+    {
+      "category": "Transport",
       "title": "Areas near National Stadium to be cordoned off for SAF training exercise on July 13 and 14",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/areas-near-national-stadium-to-be-cordoned-off-for-saf-training-exercise-on-july-13-and-14",
@@ -101,6 +108,20 @@
     },
     {
       "category": "General",
+      "title": "Israeli attacks in Gaza kill six people, including a girl, medics say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/israeli-attacks-in-gaza-kill-six-people-including-girl-medics-say-6249616",
+      "published": "2026-07-13 04:56"
+    },
+    {
+      "category": "General",
+      "title": "Bellingham's brilliance outweighs brief disagreement with Tuchel",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/bellinghams-brilliance-outweighs-brief-disagreement-tuchel-6249586",
+      "published": "2026-07-13 03:54"
+    },
+    {
+      "category": "General",
       "title": "Dallas talent factory confident World Cup will deliver development dividend",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/dallas-talent-factory-confident-world-cup-will-deliver-development-dividend-6249531",
@@ -115,9 +136,9 @@
     },
     {
       "category": "General",
-      "title": "Sinner beats Zverev to retain Wimbledon title after marathon battle",
+      "title": "Sinner fends off Zverev in power battle to retain Wimbledon crown",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/sinner-beats-zverev-retain-wimbledon-title-after-marathon-battle-6249521",
+      "url": "https://www.channelnewsasia.com/sport/sinner-fends-zverev-in-power-battle-retain-wimbledon-crown-6249521",
       "published": "2026-07-13 02:58"
     },
     {
@@ -206,20 +227,6 @@
     },
     {
       "category": "General",
-      "title": "McCullum sacked as England test coach after four years",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mccullum-sacked-england-test-coach-after-four-years-6249241",
-      "published": "2026-07-12 21:02"
-    },
-    {
-      "category": "General",
-      "title": "Dominant Marquez seals landmark German GP win to reignite title challenge",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/dominant-marquez-seals-landmark-german-gp-win-reignite-title-challenge-6249246",
-      "published": "2026-07-12 20:59"
-    },
-    {
-      "category": "General",
       "title": "Austrian man flies to S'pore just for completed Circle Line opening, among first to ride 3 new stations",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/circle-line-stage-6-opens/",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/hornets-redhill-market-four-hospital/",
       "published": "2026-07-12 00:57"
-    },
-    {
-      "category": "General",
-      "title": "Upcoming Woodlands Gateway to have major transport hub with retail, park and office spaces",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/upcoming-woodlands-gateway-to-feature-major-transport-hub-with-retail-park-and-office-spaces",
-      "published": "2026-07-12 15:15"
     }
   ]
 }
