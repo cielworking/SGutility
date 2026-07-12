@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-12 11:56",
+  "last_updated": "2026-07-12 14:47",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Taiwan woman crashes car en route to temple to pray for daughter, police find daughter dead inside",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/taiwan-woman-crashes-car-daughter-dead-body-inside/",
+      "published": "2026-07-12 02:17"
+    },
+    {
+      "category": "Crime",
+      "title": "M'sian paediatrician in Perth, 41, faces 57 charges after sexually abusing young patients, granted bail",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/malaysian-paediatrician-peth-sexually-abuse-children-bail/",
+      "published": "2026-07-12 01:14"
+    },
     {
       "category": "Crime",
       "title": "Chinese woman, 37, had delusions her ex-husband cheated & drugged her, jailed after Chinatown knife attack left 2 injured",
@@ -30,25 +44,18 @@
       "published": "2026-07-10 18:30"
     },
     {
-      "category": "Crime",
-      "title": "Woman taken to hospital after accident involving van in Bishan, driver arrested",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/van-collides-with-woman-near-kuo-chuan-presbyterian-secondary-school-in-bishan-eyewitness",
-      "published": "2026-07-10 15:20"
-    },
-    {
-      "category": "Crime",
-      "title": "Two lorries towed away by Traffic Police during checks for speed limiters",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/two-lorries-towed-away-by-traffic-police-for-failure-to-install-speed-limiters",
-      "published": "2026-07-10 14:30"
+      "category": "Traffic",
+      "title": "Embolo red card turns Swiss dream into heartbreak against Argentina",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/embolo-red-card-turns-swiss-dream-heartbreak-against-argentina-6248996",
+      "published": "2026-07-12 13:26"
     },
     {
       "category": "Traffic",
-      "title": "Let’s chill out about our sleep habits and stop obsessing over eight hours",
+      "title": "Former soccer players show brain changes but no cognitive decline, researchers find",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/wellness/sleep-health-8-hours-6233796",
-      "published": "2026-07-12 07:11"
+      "url": "https://www.channelnewsasia.com/sport/former-soccer-players-show-brain-changes-no-cognitive-decline-researchers-find-6248901",
+      "published": "2026-07-12 12:03"
     },
     {
       "category": "Traffic",
@@ -56,13 +63,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/teen-kpod-user-swaying-standing-middle-road/",
       "published": "2026-07-11 22:59"
-    },
-    {
-      "category": "Traffic",
-      "title": "MHA clarifies: Eating, drinking & smoking while driving not offences, but can be if it results in accident",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/mha-eating-driving/",
-      "published": "2026-07-11 01:19"
     },
     {
       "category": "Traffic",
@@ -105,6 +105,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/global-recall-of-volvo-plug-in-hybrids-22-cars-in-singapore-affected",
       "published": "2026-07-10 17:00"
+    },
+    {
+      "category": "Transport",
+      "title": "Bus services in Tampines to be fully handed over to Go-Ahead Singapore on July 19",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/bus-services-in-tampines-to-be-fully-handed-over-to-go-ahead-singapore-on-july-19",
+      "published": "2026-07-12 11:55"
     },
     {
       "category": "Transport",
@@ -154,6 +161,55 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/one-in-three-appeals-from-2020-2025-approved-for-ec-buyers-who-exceeded-income-cap-hdb",
       "published": "2026-07-11 16:25"
+    },
+    {
+      "category": "General",
+      "title": "Snap Insight: Barisan Nasional won big in Johor state polls - it has Pakatan Harapan to thank",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/malaysia-johor-election-anwar-ibrahim-bn-umno-ph-ge16-snap-insight-6248971",
+      "published": "2026-07-12 14:25"
+    },
+    {
+      "category": "General",
+      "title": "US Senator Lindsey Graham dies at 71",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-senator-lindsey-graham-dies-71-6249011",
+      "published": "2026-07-12 14:25"
+    },
+    {
+      "category": "General",
+      "title": "Scaloni says suffering is in Argentina's DNA after extra-time win over Switzerland",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/scaloni-says-suffering-in-argentinas-dna-after-extra-time-win-over-switzerland-6249006",
+      "published": "2026-07-12 14:08"
+    },
+    {
+      "category": "General",
+      "title": "Switzerland coach blasts 'unacceptable' VAR rule after Argentina defeat",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/switzerland-coach-blasts-unacceptable-var-rule-after-argentina-defeat-6248991",
+      "published": "2026-07-12 13:20"
+    },
+    {
+      "category": "General",
+      "title": "Conor McGregor's long-awaited UFC return ends with another leg injury",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/conor-mcgregors-long-awaited-ufc-return-ends-another-leg-injury-6248931",
+      "published": "2026-07-12 12:25"
+    },
+    {
+      "category": "General",
+      "title": "Japan to push its massive pension fund to boost alternative investments, Nikkei says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japan-push-its-massive-pension-fund-boost-alternative-investments-nikkei-says-6248921",
+      "published": "2026-07-12 12:19"
+    },
+    {
+      "category": "General",
+      "title": "Argentina strike late in extra time to sink 10-man Swiss and reach World Cup semis",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/argentina-strike-late-in-extra-time-sink-10-man-swiss-and-reach-world-cup-semis-6248876",
+      "published": "2026-07-12 11:51"
     },
     {
       "category": "General",
@@ -220,66 +276,10 @@
     },
     {
       "category": "General",
-      "title": "A lost AirPod, AI fakes and the secret garden: How fans experienced Taylor Swift's private wedding",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/taylor-swift-wedding-6248686",
-      "published": "2026-07-12 08:38"
-    },
-    {
-      "category": "General",
-      "title": "Alvarez strikes in extra time as Argentina edge Switzerland to reach World Cup semis",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cup-2026-argentina-switzerland-julian-alvarez-6248691",
-      "published": "2026-07-12 08:37"
-    },
-    {
-      "category": "General",
-      "title": "Bellingham double guides England to World Cup semis in extra-time win over Norway",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/bellingham-double-guides-england-world-cup-semis-in-extra-time-win-over-norway-6248661",
-      "published": "2026-07-12 07:52"
-    },
-    {
-      "category": "General",
-      "title": "Bellingham heroics edge England past Norway and into World Cup semis",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cup-2026-england-norway-quarter-final-6248656",
-      "published": "2026-07-12 07:48"
-    },
-    {
-      "category": "General",
-      "title": "US launches new strikes on Iran after container ship hit in Hormuz",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-strait-hormuz-closed-unauthorised-vessel-hit-6248636",
-      "published": "2026-07-12 07:36"
-    },
-    {
-      "category": "General",
-      "title": "World Cup reflects growing US appetite for soccer, Ted Lasso creators say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cup-reflects-growing-us-appetite-soccer-ted-lasso-creators-say-6248626",
-      "published": "2026-07-12 07:31"
-    },
-    {
-      "category": "General",
-      "title": "Are Ozempic and other weight loss drugs also longevity drugs? Here's what early research suggests",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/wellness/glp1-drugs-ozempic-longevity-6225001",
-      "published": "2026-07-12 07:11"
-    },
-    {
-      "category": "General",
-      "title": "WhatsApp usernames of S’pore politicians like Lawrence Wong & Lee Hsien Loong already locked down to prevent impersonation",
+      "title": "4 taken to hospital after getting stung by hornets near Redhill Market",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/whatsapp-usernames-singapore-politicians-locked/",
-      "published": "2026-07-11 23:56"
-    },
-    {
-      "category": "General",
-      "title": "Intern, 19, in S'pore urinates into female colleague's water bottle after becoming unhappy at work",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/intern-urinate-colleague-water-bottle/",
-      "published": "2026-07-11 23:03"
+      "url": "https://mothership.sg/2026/07/hornets-redhill-market-four-hospital/",
+      "published": "2026-07-12 00:57"
     }
   ]
 }
