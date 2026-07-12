@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-07-12 08:10",
+  "last_updated": "2026-07-12 11:56",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Courtois rethinks quitting Belgium but wants time off",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/courtois-rethinks-quitting-belgium-wants-time-6248546",
-      "published": "2026-07-12 05:43"
-    },
     {
       "category": "Crime",
       "title": "Chinese woman, 37, had delusions her ex-husband cheated & drugged her, jailed after Chinatown knife attack left 2 injured",
@@ -49,13 +42,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/two-lorries-towed-away-by-traffic-police-for-failure-to-install-speed-limiters",
       "published": "2026-07-10 14:30"
-    },
-    {
-      "category": "Crime",
-      "title": "Man given jail sentence in June over $58,000 in bribes now handed more than 100 extra charges",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/man-given-jail-in-june-over-58k-in-bribes-now-handed-100-plus-extra-charges-for-other-offences",
-      "published": "2026-07-10 13:50"
     },
     {
       "category": "Traffic",
@@ -121,20 +107,6 @@
       "published": "2026-07-10 17:00"
     },
     {
-      "category": "Traffic",
-      "title": "$3 off eggs and rice for DBS, POSB cardholders every Saturday at Sheng Siong, Giant from July 18",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/3-off-eggs-and-rice-for-dbs-posb-cardholders-every-saturday-at-sheng-siong-giant-from-july-18",
-      "published": "2026-07-10 13:45"
-    },
-    {
-      "category": "Transport",
-      "title": "Man leaves paper bag with S$20,000 cash on S'pore bus, Yishun interchange staff return full amount",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/20000-cash-left-in-singapore-bus-sbs-transit-staff-return/",
-      "published": "2026-07-11 01:11"
-    },
-    {
       "category": "Transport",
       "title": "Gillman Barracks businesses to wait and see, as tenancies wind down ahead of redevelopment",
       "source": "Straits Times",
@@ -143,10 +115,17 @@
     },
     {
       "category": "Fire",
-      "title": "Firefighters gain upper hand on deadly Spain wildfire",
+      "title": "Senegal fire coach Thiaw after disappointing World Cup",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/firefighters-gain-upper-hand-deadly-spain-wildfire-6248511",
-      "published": "2026-07-12 05:23"
+      "url": "https://www.channelnewsasia.com/sport/senegal-fire-coach-thiaw-after-disappointing-world-cup-6248836",
+      "published": "2026-07-12 10:49"
+    },
+    {
+      "category": "Fire",
+      "title": "Bellingham double fires England past Norway into World Cup semis",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/bellingham-double-fires-england-past-norway-world-cup-semis-6248791",
+      "published": "2026-07-12 10:15"
     },
     {
       "category": "Fire",
@@ -178,6 +157,83 @@
     },
     {
       "category": "General",
+      "title": "Japan successfully launches, lands reusable rocket",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/japan-reusable-rocket-success-space-agency-6248826",
+      "published": "2026-07-12 11:02"
+    },
+    {
+      "category": "General",
+      "title": "President Tharman to make first state visit to Malaysia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/president-tharman-shanmugaratnam-first-state-visit-malaysia-6248816",
+      "published": "2026-07-12 10:38"
+    },
+    {
+      "category": "General",
+      "title": "Norway coach convinced ball hit cable before England goal in quarter-final",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/norway-coach-convinced-ball-hit-cable-england-goal-in-quarter-final-6248786",
+      "published": "2026-07-12 10:15"
+    },
+    {
+      "category": "General",
+      "title": "2 dead, several hurt in Toronto shooting, attacker at large",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/2-dead-several-hurt-in-toronto-shooting-attacker-large-6248771",
+      "published": "2026-07-12 09:55"
+    },
+    {
+      "category": "General",
+      "title": "New Zealand, India strike 'milestone' strategic partnership",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-new-zealand-strategic-partnership-modi-indo-pacific-6248756",
+      "published": "2026-07-12 09:49"
+    },
+    {
+      "category": "General",
+      "title": "Bellingham is not wrong but England must play better, says Tuchel",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/bellingham-not-wrong-england-must-play-better-says-tuchel-6248761",
+      "published": "2026-07-12 09:44"
+    },
+    {
+      "category": "General",
+      "title": "World Cup dream ends but party goes on as proud Norwegians salute historic run",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-dream-ends-party-goes-proud-norwegians-salute-historic-run-6248726",
+      "published": "2026-07-12 09:06"
+    },
+    {
+      "category": "General",
+      "title": "Tearful Solbakken proud of Norway after World Cup odyssey ended by England",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/tearful-solbakken-proud-norway-after-world-cup-odyssey-ended-england-6248696",
+      "published": "2026-07-12 08:43"
+    },
+    {
+      "category": "General",
+      "title": "'Enough said': Midfield engine Bellingham stamps his authority as England advance",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/enough-said-midfield-engine-bellingham-stamps-his-authority-england-advance-6248701",
+      "published": "2026-07-12 08:41"
+    },
+    {
+      "category": "General",
+      "title": "A lost AirPod, AI fakes and the secret garden: How fans experienced Taylor Swift's private wedding",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/taylor-swift-wedding-6248686",
+      "published": "2026-07-12 08:38"
+    },
+    {
+      "category": "General",
+      "title": "Alvarez strikes in extra time as Argentina edge Switzerland to reach World Cup semis",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-2026-argentina-switzerland-julian-alvarez-6248691",
+      "published": "2026-07-12 08:37"
+    },
+    {
+      "category": "General",
       "title": "Bellingham double guides England to World Cup semis in extra-time win over Norway",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/bellingham-double-guides-england-world-cup-semis-in-extra-time-win-over-norway-6248661",
@@ -185,14 +241,21 @@
     },
     {
       "category": "General",
-      "title": "Iran declares Strait of Hormuz closed as 'unauthorised' vessel hit",
+      "title": "Bellingham heroics edge England past Norway and into World Cup semis",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-2026-england-norway-quarter-final-6248656",
+      "published": "2026-07-12 07:48"
+    },
+    {
+      "category": "General",
+      "title": "US launches new strikes on Iran after container ship hit in Hormuz",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/iran-strait-hormuz-closed-unauthorised-vessel-hit-6248636",
       "published": "2026-07-12 07:36"
     },
     {
       "category": "General",
-      "title": "World Cup reflects growing US appetite for soccer, 'Ted Lasso' creators say",
+      "title": "World Cup reflects growing US appetite for soccer, Ted Lasso creators say",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/world-cup-reflects-growing-us-appetite-soccer-ted-lasso-creators-say-6248626",
       "published": "2026-07-12 07:31"
@@ -206,80 +269,17 @@
     },
     {
       "category": "General",
-      "title": "Twisted your knee? Heard a pop? How to tell what you've injured and when to seek treatment",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/wellness/knee-acl-mcl-meniscus-injury-6226981",
-      "published": "2026-07-12 07:10"
+      "title": "WhatsApp usernames of S’pore politicians like Lawrence Wong & Lee Hsien Loong already locked down to prevent impersonation",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/whatsapp-usernames-singapore-politicians-locked/",
+      "published": "2026-07-11 23:56"
     },
     {
       "category": "General",
-      "title": "From Algerian fervour to Oranje march, World Cup transforms Kansas City",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/algerian-fervour-oranje-march-world-cup-transforms-kansas-city-6248596",
-      "published": "2026-07-12 07:10"
-    },
-    {
-      "category": "General",
-      "title": "South Africa take risk with team selections as fans back experimentation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/south-africa-take-risk-team-selections-fans-back-experimentation-6248591",
-      "published": "2026-07-12 06:55"
-    },
-    {
-      "category": "General",
-      "title": "Typhoon makes landfall in China after forcing nearly two million to flee",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-typhoon-bavi-two-million-evacuate-6248586",
-      "published": "2026-07-12 06:54"
-    },
-    {
-      "category": "General",
-      "title": "Mitchell out of England’s trip to Argentina",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mitchell-out-englands-trip-argentina-6248561",
-      "published": "2026-07-12 06:23"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Micron’s massive profits are a guarantee of trouble",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/micron-sk-hynix-samsung-profits-chip-shortage-rising-prices-6245961",
-      "published": "2026-07-12 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Trump administration subpoenas New York Times journalists over Air Force One story: Report",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-administration-subpoenas-new-york-times-journalists-over-air-force-one-story-report-6248551",
-      "published": "2026-07-12 05:55"
-    },
-    {
-      "category": "General",
-      "title": "Former Argentina World Cup captain Rattin dies aged 89",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/former-argentina-world-cup-captain-rattin-dies-aged-89-6248541",
-      "published": "2026-07-12 05:46"
-    },
-    {
-      "category": "General",
-      "title": "Bhutan beyond Tiger’s Nest: A slower journey through Paro, Thimphu and Punakha",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/experiences/bhutan-travel-luxury-lodges-tigers-nest-punakha-6222446",
-      "published": "2026-07-12 05:33"
-    },
-    {
-      "category": "General",
-      "title": "US seeks free Hormuz access from Iran as talks focus on strait",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-war-us-strait-hormuz-iran-talks-6248521",
-      "published": "2026-07-12 05:30"
-    },
-    {
-      "category": "General",
-      "title": "Former England captain Knight retires",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/former-england-captain-knight-retires-6248506",
-      "published": "2026-07-12 05:09"
+      "title": "Intern, 19, in S'pore urinates into female colleague's water bottle after becoming unhappy at work",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/intern-urinate-colleague-water-bottle/",
+      "published": "2026-07-11 23:03"
     }
   ]
 }
