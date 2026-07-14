@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14 07:12",
+  "last_updated": "2026-07-14 08:06",
   "headlines": [
     {
       "category": "Crime",
@@ -66,6 +66,13 @@
     },
     {
       "category": "Transport",
+      "title": "Bus arrival timing system unavailable due to 'technical issues'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/bus-eta-timing-system-lta-down-6252156",
+      "published": "2026-07-14 07:21"
+    },
+    {
+      "category": "Transport",
       "title": "Maligned Spence morphs into England super sub at business end of World Cup",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/maligned-spence-morphs-england-super-sub-business-end-world-cup-6252146",
@@ -119,6 +126,27 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/bangkok-fire-27-dead/",
       "published": "2026-07-13 18:56"
+    },
+    {
+      "category": "Fire",
+      "title": "MOM instructs firm to stop manhole cover replacement works after 2 workers are injured in flash fire",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/mom-instructs-firm-to-stop-manhole-cover-replacement-works-after-2-workers-are-injured-in-flash-fire",
+      "published": "2026-07-14 07:35"
+    },
+    {
+      "category": "General",
+      "title": "France ready to fight Spain for midfield control in World Cup semi-final",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/france-ready-fight-spain-midfield-control-in-world-cup-semi-final-6252181",
+      "published": "2026-07-14 07:25"
+    },
+    {
+      "category": "General",
+      "title": "Singapore's Boutiques fair heads to Bangkok: More than 120 independent brands and what to expect",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/style-beauty/boutiques-fairs-bangkok-iconsiam-6234076",
+      "published": "2026-07-14 07:22"
     },
     {
       "category": "General",
@@ -227,27 +255,6 @@
     },
     {
       "category": "General",
-      "title": "France’s secret weapon: the conversations nobody else hears",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/frances-secret-weapon-conversations-nobody-else-hears-6251906",
-      "published": "2026-07-14 03:16"
-    },
-    {
-      "category": "General",
-      "title": "Canada regulator cited Anthropic's Claude Mythos in warning to banks on cyber risks, email shows",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/canada-regulator-cited-anthropics-claude-mythos-in-warning-banks-cyber-risks-email-shows-6251836",
-      "published": "2026-07-14 02:07"
-    },
-    {
-      "category": "General",
-      "title": "California-led states sue to block Paramount’s $110 billion Warner Bros Discovery deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/california-led-states-sue-block-paramounts-110-billion-warner-bros-discovery-deal-6251801",
-      "published": "2026-07-14 01:40"
-    },
-    {
-      "category": "General",
       "title": "Chinese teen, 19, wills S$3.8 million estate to childhood friend",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/chinese-teen-wills-estate-to-childhood-friend/",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/msian-mans-pregnant-wife-accusedof-hiding-stolen-items-in-baby-bump/",
       "published": "2026-07-13 01:12"
-    },
-    {
-      "category": "General",
-      "title": "‘I repair things underwater’: He braves sharks, stingrays for a living",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/i-repair-things-underwater-he-braves-sharks-stingrays-for-a-living",
-      "published": "2026-07-14 05:00"
     }
   ]
 }
