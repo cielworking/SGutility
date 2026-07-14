@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14 23:03",
+  "last_updated": "2026-07-15 00:38",
   "headlines": [
     {
       "category": "Crime",
@@ -17,13 +17,6 @@
     },
     {
       "category": "Crime",
-      "title": "Australia to establish government AI office to coordinate regulation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/australia-establish-government-ai-office-coordinate-regulation-6253516",
-      "published": "2026-07-14 20:33"
-    },
-    {
-      "category": "Crime",
       "title": "Lorry causes S$1.4 million of damages to CTE tunnel ceiling: Driver, a Chinese national, 56, gets 13 months’ jail & S$1,000 fine",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/lorry-damaged-cte-tunnel-ceiling-jailed/",
@@ -35,13 +28,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/cte-midnight-joyride-jail/",
       "published": "2026-07-14 21:54"
-    },
-    {
-      "category": "Crime",
-      "title": "Man, 46, arrested after car seen not adhering to red light in Jalan Besar, colliding with motorcycle",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-arrested-collide-motorcyclist-jalan-besar/",
-      "published": "2026-07-14 11:49"
     },
     {
       "category": "Crime",
@@ -101,17 +87,17 @@
     },
     {
       "category": "Traffic",
+      "title": "Pogacar rides to solo victory in Tour de France's Bastille Day showdown",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pogacar-rides-solo-victory-in-tour-de-frances-bastille-day-showdown-6253976",
+      "published": "2026-07-14 23:26"
+    },
+    {
+      "category": "Traffic",
       "title": "Ireland boosted by players returning from injury",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/ireland-boosted-players-returning-injury-6253601",
       "published": "2026-07-14 21:01"
-    },
-    {
-      "category": "Traffic",
-      "title": "UK teens report sleep, wellbeing gains under social media restrictions, study shows",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/uk-teens-report-sleep-wellbeing-gains-under-social-media-restrictions-study-shows-6253551",
-      "published": "2026-07-14 20:48"
     },
     {
       "category": "Traffic",
@@ -177,10 +163,73 @@
       "published": "2026-07-14 07:35"
     },
     {
-      "category": "General",
-      "title": "Russia launches American and two cosmonauts on space station mission",
+      "category": "Housing",
+      "title": "Stocks gain on softer inflation, bank results while oil rises on US-Iran hostilities",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/russia-launches-american-and-two-cosmonauts-space-station-mission-6253891",
+      "url": "https://www.channelnewsasia.com/business/stocks-gain-softer-inflation-bank-results-while-oil-rises-us-iran-hostilities-6252286",
+      "published": "2026-07-14 23:46"
+    },
+    {
+      "category": "General",
+      "title": "Trump steps back from proposal for Hormuz fees in favour of Gulf investment deals",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-hormuz-fees-blockade-iran-6254066",
+      "published": "2026-07-15 00:25"
+    },
+    {
+      "category": "General",
+      "title": "McIlroy calls for golf major season to be stretched out",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mcilroy-calls-golf-major-season-be-stretched-out-6254016",
+      "published": "2026-07-14 23:52"
+    },
+    {
+      "category": "General",
+      "title": "Kane dismisses talk of Tuchel-Bellingham rift before Argentina semi-final",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/kane-dismisses-talk-tuchel-bellingham-rift-argentina-semi-final-6254021",
+      "published": "2026-07-14 23:50"
+    },
+    {
+      "category": "General",
+      "title": "Singapore, Indonesia launch defence alumni initiative",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/indonesia-singapore-defence-alumni-initiative-chan-chun-sing-saf-tni-6253141",
+      "published": "2026-07-14 23:44"
+    },
+    {
+      "category": "General",
+      "title": "Wales call up two replacements as they sweat on skipper Lake",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/wales-call-up-two-replacements-they-sweat-skipper-lake-6253991",
+      "published": "2026-07-14 23:31"
+    },
+    {
+      "category": "General",
+      "title": "Shanmugam and Tan See Leng to donate Bloomberg damages to charity, say defamation suit was about protecting integrity",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/shanmugam-tan-see-leng-bloomberg-defamation-damages-donate-charity-6253136",
+      "published": "2026-07-14 23:28"
+    },
+    {
+      "category": "General",
+      "title": "Exclusive-Data center firm Switch taps banks for IPO that could value it up to $80 billion, sources say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/exclusive-data-center-firm-switch-taps-banks-ipo-could-value-it-up-80-billion-sources-say-6253956",
+      "published": "2026-07-14 23:22"
+    },
+    {
+      "category": "General",
+      "title": "Singapore, Malaysia reaffirm need to 'deepen cooperation' in areas including food security and energy",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/singapore-malaysia-tharman-anwar-meeting-cooperation-food-security-energy-6253776",
+      "published": "2026-07-14 23:11"
+    },
+    {
+      "category": "General",
+      "title": "Russia launches American and two cosmonauts to space station with rare NASA chief visit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/russia-launches-american-and-two-cosmonauts-space-station-rare-nasa-chief-visit-6253891",
       "published": "2026-07-14 22:57"
     },
     {
@@ -220,66 +269,17 @@
     },
     {
       "category": "General",
-      "title": "F1 rookie Lindblad has first driving lesson as Spa looms",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/f1-rookie-lindblad-has-first-driving-lesson-spa-looms-6253606",
-      "published": "2026-07-14 20:58"
-    },
-    {
-      "category": "General",
-      "title": "German media regulator says Google's AI Overviews subject to German media law",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/german-media-regulator-says-googles-ai-overviews-subject-german-media-law-6253556",
-      "published": "2026-07-14 20:47"
-    },
-    {
-      "category": "General",
-      "title": "Justin Rose returns to Birkdale chasing elusive Open title",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/justin-rose-returns-birkdale-chasing-elusive-open-title-6253536",
-      "published": "2026-07-14 20:41"
-    },
-    {
-      "category": "General",
-      "title": "SLB partners with Liberty Energy to supply modular parts, power to data centers",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/slb-partners-liberty-energy-supply-modular-parts-power-data-centers-6253531",
-      "published": "2026-07-14 20:40"
-    },
-    {
-      "category": "General",
-      "title": "Oil hits four-week high as US-Iran conflict escalates",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-iran-conflict-oil-four-week-high-6253506",
-      "published": "2026-07-14 20:37"
-    },
-    {
-      "category": "General",
-      "title": "EU scrambles to seal new Russia sanctions as deadline looms",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/eu-scrambles-seal-new-russia-sanctions-deadline-looms-6253496",
-      "published": "2026-07-14 20:34"
-    },
-    {
-      "category": "General",
-      "title": "Nine EU nations urge funding cut for sports bodies including IOC over readmitting Russians",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/nine-eu-nations-urge-funding-cut-sports-bodies-including-ioc-over-readmitting-russians-6253461",
-      "published": "2026-07-14 20:17"
-    },
-    {
-      "category": "General",
-      "title": "United sign goalkeeper Darlow on two-year deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/united-sign-goalkeeper-darlow-two-year-deal-6253446",
-      "published": "2026-07-14 20:07"
-    },
-    {
-      "category": "General",
-      "title": "S'pore influencer Mangobossku's cat grooming service probed after 'rough' handling claims, denies wrongdoing",
+      "title": "S'pore man 'retired' by company at 63 without notice or payment, wins S$26,350 for wrongful dismissal",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/mangobossku-cat-grooming-service-rough-handling/",
-      "published": "2026-07-14 20:57"
+      "url": "https://mothership.sg/2026/07/man-retired-by-company-wins-case-wrongful-dismissal/",
+      "published": "2026-07-15 00:31"
+    },
+    {
+      "category": "General",
+      "title": "Vivian Balakrishnan pays respects to late Princess Bajrakitiyabha & meets Thai PM Anutin in Bangkok",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/vivian-pays-respects-bajrakitiyabha/",
+      "published": "2026-07-15 00:09"
     }
   ]
 }
