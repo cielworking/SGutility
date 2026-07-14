@@ -1,12 +1,19 @@
 {
-  "last_updated": "2026-07-14 18:57",
+  "last_updated": "2026-07-14 20:40",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Man who drove into Suntec City's Fountain of Wealth gets jail, driving ban",
+      "title": "UK approval for China's mega embassy in London challenged in court by locals",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/man-crash-suntec-city-fountain-wealth-jail-6252926",
-      "published": "2026-07-14 16:15"
+      "url": "https://www.channelnewsasia.com/world/uk-china-mega-embassy-challenged-court-locals-6253376",
+      "published": "2026-07-14 19:42"
+    },
+    {
+      "category": "Crime",
+      "title": "S'porean man, 23, among 6 who went on CTE midnight joyride that ended in major accident, gets 4 months' jail",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/cte-midnight-joyride-jail/",
+      "published": "2026-07-14 21:54"
     },
     {
       "category": "Crime",
@@ -24,13 +31,6 @@
     },
     {
       "category": "Crime",
-      "title": "S'porean man, 24, has sex with girl, 14, says he'll marry her when she's 18, gets 22 months' jail",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/singapore-man-sex-with-underage-girl-jail/",
-      "published": "2026-07-14 02:50"
-    },
-    {
-      "category": "Crime",
       "title": "Cop jailed over false work permit application to raise funds for wedding",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/cop-jailed-over-false-work-permit-application-to-raise-funds-for-wedding",
@@ -38,7 +38,7 @@
     },
     {
       "category": "Crime",
-      "title": "13 months’ jail for man who caused 10-hour jam, $1.4m in damages to CTE tunnel with crane boom",
+      "title": "13 months’ jail for man who caused 10-hour jam, $1.4m in damage to CTE tunnel with crane boom",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/13-months-jail-for-man-who-caused-10-hour-jam-1-4m-in-damages-to-cte-tunnel-with-crane-boom",
       "published": "2026-07-14 17:21"
@@ -49,6 +49,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/jail-for-man-who-drank-about-a-litre-of-beer-drove-car-which-fell-into-suntec-fountain-in-2024",
       "published": "2026-07-14 16:59"
+    },
+    {
+      "category": "Crime",
+      "title": "Bloomberg defamation suit: Court finds news provider maliciously defamed Shanmugam, Tan See Leng",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/bloomberg-defamation-suit-shanmugam-tan-see-leng-each-awarded-230k-in-damages",
+      "published": "2026-07-14 16:09"
     },
     {
       "category": "Crime",
@@ -70,13 +77,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-arrested-for-dangerous-driving-causing-hurt-after-accident-with-motorcycle-in-jalan-besar",
       "published": "2026-07-13 14:43"
-    },
-    {
-      "category": "Traffic",
-      "title": "Tour de France concussion cases expose limits of roadside checks",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tour-de-france-concussion-cases-expose-limits-roadside-checks-6253081",
-      "published": "2026-07-14 17:04"
     },
     {
       "category": "Traffic",
@@ -122,10 +122,94 @@
     },
     {
       "category": "Fire",
+      "title": "‘Am I still beautiful?’: Injured Bangkok nightclub fire survivor asks boyfriend after escaping deadly blaze",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/am-i-still-beautiful-bangkok-fire-victim-said-to-boyfriend/",
+      "published": "2026-07-14 22:12"
+    },
+    {
+      "category": "Fire",
       "title": "MOM tells firm to stop manhole-cover replacement works after 2 workers injured in flash fire",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/mom-instructs-firm-to-stop-manhole-cover-replacement-works-after-2-workers-are-injured-in-flash-fire",
       "published": "2026-07-14 07:35"
+    },
+    {
+      "category": "General",
+      "title": "EU scrambles to seal new Russia sanctions as deadline looms",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/eu-scrambles-seal-new-russia-sanctions-deadline-looms-6253496",
+      "published": "2026-07-14 20:34"
+    },
+    {
+      "category": "General",
+      "title": "Nine EU nations urge funding cut for sports bodies including IOC over readmitting Russians",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/nine-eu-nations-urge-funding-cut-sports-bodies-including-ioc-over-readmitting-russians-6253461",
+      "published": "2026-07-14 20:17"
+    },
+    {
+      "category": "General",
+      "title": "United sign goalkeeper Darlow on two-year deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/united-sign-goalkeeper-darlow-two-year-deal-6253446",
+      "published": "2026-07-14 20:07"
+    },
+    {
+      "category": "General",
+      "title": "Analysis:US state officials fear Paramount-Warner deal will squeeze local movie theaters",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/analysisus-state-officials-fear-paramount-warner-deal-will-squeeze-local-movie-theaters-6253441",
+      "published": "2026-07-14 20:06"
+    },
+    {
+      "category": "General",
+      "title": "WHO says it has less than half funding needed to fight Ebola",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/who-ebola-outbreak-funding-congo-health-6253201",
+      "published": "2026-07-14 19:43"
+    },
+    {
+      "category": "General",
+      "title": "AI finance startup Flex doubles valuation to about $1.2 billion, source says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ai-finance-startup-flex-doubles-valuation-about-12-billion-source-says-6253386",
+      "published": "2026-07-14 19:37"
+    },
+    {
+      "category": "General",
+      "title": "EU population to peak in 2029 before long-term decline",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/eu-population-peak-in-2029-long-term-decline-6253341",
+      "published": "2026-07-14 19:25"
+    },
+    {
+      "category": "General",
+      "title": "EU rallies dozens of nations to pledge US$1 billion for Gaza recovery fund",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/eu-gaza-recovery-fund-6251651",
+      "published": "2026-07-14 19:18"
+    },
+    {
+      "category": "General",
+      "title": "IBM warns AI boom is squeezing software budgets, triggers sector rout",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ibm-warns-ai-boom-squeezing-software-budgets-triggers-sector-rout-6253321",
+      "published": "2026-07-14 19:10"
+    },
+    {
+      "category": "General",
+      "title": "AI startup Reflection signs over $1 billion computing deal with Nebius",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ai-startup-reflection-signs-over-1-billion-computing-deal-nebius-6253326",
+      "published": "2026-07-14 19:09"
+    },
+    {
+      "category": "General",
+      "title": "UK's BBC warns its current funding model is not sustainable",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/uks-bbc-warns-its-current-funding-model-not-sustainable-6253316",
+      "published": "2026-07-14 19:02"
     },
     {
       "category": "General",
@@ -185,73 +269,10 @@
     },
     {
       "category": "General",
-      "title": "Hormuz closure, Gulf strikes: What we know about the latest Iran-US attacks",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-iran-strikes-hormuz-gulf-what-we-know-6252986",
-      "published": "2026-07-14 17:01"
-    },
-    {
-      "category": "General",
-      "title": "The world is your Oyster: How Rolex helped build the modern sports watch",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/rolex-oyster-modern-sports-watch-100-years-6250761",
-      "published": "2026-07-14 16:54"
-    },
-    {
-      "category": "General",
-      "title": "Lebanon and Israel hold talks in Rome amid renewed Mideast fighting",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/lebanon-israel-hezbollah-peace-talks-rome-us-iran-war-fighting-6253021",
-      "published": "2026-07-14 16:35"
-    },
-    {
-      "category": "General",
-      "title": "Bloomberg, reporter ordered to pay Shanmugam, Tan See Leng S$230,000 each in damages over defamatory article",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/bloomberg-shanmugam-tan-see-leng-defamation-230000-damages-6252946",
-      "published": "2026-07-14 16:09"
-    },
-    {
-      "category": "General",
-      "title": "Singapore pledges US$2 million to support Ebola response in DR Congo and Uganda",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-us2-million-ebola-support-drc-congo-uganda-6252861",
-      "published": "2026-07-14 15:59"
-    },
-    {
-      "category": "General",
-      "title": "Subaru to recall over 541,000 US vehicles over incorrect label",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/subaru-recall-over-541000-us-vehicles-over-incorrect-label-6252931",
-      "published": "2026-07-14 15:40"
-    },
-    {
-      "category": "General",
-      "title": "Samsung Electronics denies report that it is exploring US listing",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/samsung-electronics-denies-report-it-exploring-us-listing-6252916",
-      "published": "2026-07-14 15:37"
-    },
-    {
-      "category": "General",
-      "title": "Mediacorp Tamil drama Must Date The Playboy! surpasses 100 million views, fans can meet cast on Jul 18",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/must-date-playboy-cast-meet-greet-jul-18-6252806",
-      "published": "2026-07-14 15:34"
-    },
-    {
-      "category": "General",
-      "title": "Malaysia probes startup community based in Johor's Forest City over alleged Israeli links",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/johor-israel-network-school-forest-city-onn-hafiz-6252686",
-      "published": "2026-07-14 15:31"
-    },
-    {
-      "category": "General",
-      "title": "Global investors turn most bullish since February, BofA survey shows",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/global-investors-turn-most-bullish-february-bofa-survey-shows-6252911",
-      "published": "2026-07-14 15:30"
+      "title": "S'pore influencer Mangobossku's cat grooming service probed after 'rough' handling claims, denies wrongdoing",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/mangobossku-cat-grooming-service-rough-handling/",
+      "published": "2026-07-14 20:57"
     },
     {
       "category": "General",
@@ -259,27 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/trump-us-congress-war-iran-resumed/",
       "published": "2026-07-14 20:40"
-    },
-    {
-      "category": "General",
-      "title": "Grab driver allegedly asks passenger for S$2 after offering her wet tissue, locks doors until she pays",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/grab-driver-ask-money-tissues/",
-      "published": "2026-07-14 20:02"
-    },
-    {
-      "category": "General",
-      "title": "Ex-offender opens S$7 'cai fan buffet' stall in Woodlands to give back to community",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/buffet-economy-rice-woodlands/",
-      "published": "2026-07-14 19:53"
-    },
-    {
-      "category": "General",
-      "title": "S$12.8 million Toto top prize won by 2 winning tickets, 1 sold at Bedok Reservoir betting outlet",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/toto-bedok-reservoir-winning-ticket/",
-      "published": "2026-07-14 11:05"
     }
   ]
 }
