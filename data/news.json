@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-14 11:32",
+  "last_updated": "2026-07-14 14:24",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "South Korean court suspends FTC designation Coupang founder Kim Bom as controlling entity",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/south-korean-court-suspends-ftc-designation-coupang-founder-kim-bom-controlling-entity-6252731",
+      "published": "2026-07-14 13:47"
+    },
+    {
+      "category": "Crime",
+      "title": "Syndicate linked to S$51 million in scam losses sold chat accounts to criminals; financier jailed",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/scam-51-million-syndicate-chat-accounts-jail-6252516",
+      "published": "2026-07-14 12:11"
+    },
     {
       "category": "Crime",
       "title": "Australia finds serious gaps in Big Tech response to online child sexual abuse",
@@ -10,17 +24,31 @@
     },
     {
       "category": "Crime",
+      "title": "S'porean man, 24, has sex with girl, 14, says he'll marry her when she's 18, gets 22 months' jail",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/singapore-man-sex-with-underage-girl-jail/",
+      "published": "2026-07-14 02:50"
+    },
+    {
+      "category": "Crime",
+      "title": "Man in China gets nose bitten off while trying to stop another man from assaulting woman",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/china-man-nose-bitten-off/",
+      "published": "2026-07-14 02:21"
+    },
+    {
+      "category": "Crime",
+      "title": "S'pore man sells watch online & falls for phishing scam, his mum, 64, loses S$4,600, retains S$0.12 bank balance",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/woman-son-fall-phishing-scam/",
+      "published": "2026-07-14 01:27"
+    },
+    {
+      "category": "Crime",
       "title": "S'pore police looking for man to assist in investigations into incident at Compass One",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/police-looking-man-compass-one/",
       "published": "2026-07-13 22:02"
-    },
-    {
-      "category": "Crime",
-      "title": "S'pore man, 67, admits to misappropriating S$600,000 in cash over 2 years, to be charged",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/spore-man-admits-misappropriating-over-600000-cash/",
-      "published": "2026-07-13 19:52"
     },
     {
       "category": "Crime",
@@ -45,20 +73,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Telok Blangah HDB block residents affected by persistent foul smell, some resort to burning incense & using fans",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/telok-blangah-hdb-foul-odour/",
-      "published": "2026-07-13 20:14"
-    },
-    {
-      "category": "Traffic",
-      "title": "Boy, 13, gets foot pierced by screw-like nozzle while playing at Sengkang void deck",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/boy-step-nozzle-ground-sengkang/",
-      "published": "2026-07-13 03:28"
-    },
-    {
-      "category": "Traffic",
       "title": "Community care apartments to have lower eligible age of 55, service fees reduced by up to 75%",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/age-eligibility-for-community-care-apartments-to-go-down-from-65-to-55-service-fees-lowered",
@@ -70,20 +84,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/community/the-ground-is-not-ready-pwds-caregivers-raise-concerns-over-finding-jobs-and-staying-employed",
       "published": "2026-07-12 18:00"
-    },
-    {
-      "category": "Transport",
-      "title": "S&P maintains Indonesia credit rating, saying fiscal strains could be temporary",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-sp-maintains-indonesia-credit-rating-6250731",
-      "published": "2026-07-14 09:23"
-    },
-    {
-      "category": "Transport",
-      "title": "Senegal team doctor 'trained as a gynaecologist', federation president says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/senegal-team-doctor-trained-gynaecologist-federation-president-says-6252206",
-      "published": "2026-07-14 08:04"
     },
     {
       "category": "Transport",
@@ -114,45 +114,108 @@
       "published": "2026-07-12 16:35"
     },
     {
-      "category": "Transport",
-      "title": "Bus services in Tampines to be fully handed over to Go-Ahead Singapore on July 19",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/bus-services-in-tampines-to-be-fully-handed-over-to-go-ahead-singapore-on-july-19",
-      "published": "2026-07-12 11:55"
+      "category": "Fire",
+      "title": "More than 260,000 evacuated as Typhoon Bavi brings severe floods",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/typhoon-bavi-china-floods-people-evacuated-6252536",
+      "published": "2026-07-14 14:22"
     },
     {
       "category": "Fire",
-      "title": "At least 27 dead, 63 injured after fire at pub in Chatuchak",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/bangkok-fire-27-dead/",
-      "published": "2026-07-13 18:56"
+      "title": "Death toll from a Bangkok music bar fire rises to 30, dozens remain in hospital",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/bangkok-bar-fire-death-toll-dozens-hospital-6252596",
+      "published": "2026-07-14 12:49"
     },
     {
       "category": "Fire",
-      "title": "MOM instructs firm to stop manhole-cover replacement works after 2 workers are injured in flash fire",
+      "title": "MOM tells firm to stop manhole-cover replacement works after 2 workers injured in flash fire",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/mom-instructs-firm-to-stop-manhole-cover-replacement-works-after-2-workers-are-injured-in-flash-fire",
       "published": "2026-07-14 07:35"
     },
     {
-      "category": "Housing",
-      "title": "Dollar steady before US inflation data, yen under pressure",
+      "category": "Money",
+      "title": "'Durians don't wait for you': Sellers in Singapore say prices have started to rise again",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dollar-steady-us-inflation-data-yen-under-pressure-6252256",
-      "published": "2026-07-14 08:50"
+      "url": "https://www.channelnewsasia.com/dining/durian-low-prices-oversupply-over-increase-6252276",
+      "published": "2026-07-14 12:19"
     },
     {
       "category": "General",
-      "title": "China's June trade tops forecasts buoyed by AI boom",
+      "title": "Egg-free school meals scramble politics in India",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-june-trade-tops-forecasts-ai-boom-6252426",
-      "published": "2026-07-14 11:22"
+      "url": "https://www.channelnewsasia.com/asia/egg-free-school-meals-west-bengal-politics-india-6252756",
+      "published": "2026-07-14 14:09"
+    },
+    {
+      "category": "General",
+      "title": "Veteran Hong Kong film producer Nansun Shi dies at 75",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/nansun-shi-dies-hong-kong-film-producer-better-tomorrow-6252656",
+      "published": "2026-07-14 14:09"
+    },
+    {
+      "category": "General",
+      "title": "Sacked McCullum apologises for England's test results",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/sacked-mccullum-apologises-englands-test-results-6252766",
+      "published": "2026-07-14 14:06"
+    },
+    {
+      "category": "General",
+      "title": "Changi Airport says Terminal 5 capacity remains on track despite global uncertainties",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/changi-airport-t5-capacity-lim-ching-kiat-6251246",
+      "published": "2026-07-14 14:00"
+    },
+    {
+      "category": "General",
+      "title": "SoftBank's Son says AI will need $5 trillion per year by 2040, dismisses bubble talk",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/softbanks-son-says-ai-will-need-5-trillion-year-2040-dismisses-bubble-talk-6252696",
+      "published": "2026-07-14 13:20"
+    },
+    {
+      "category": "General",
+      "title": "US immigration agents involved in another fatal shooting",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-ice-shooting-maine-immigration-6252646",
+      "published": "2026-07-14 12:43"
+    },
+    {
+      "category": "General",
+      "title": "Man made to retire without notice or payment wins S$26,350 in claims against employer",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/employment-law-retirement-wrongful-dismissal-claims-tribunals-6252421",
+      "published": "2026-07-14 12:24"
+    },
+    {
+      "category": "General",
+      "title": "China expels former Politburo member Ma Xingrui from Communist Party after graft probe",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-expel-ma-xingrui-former-politburo-corruption-probe-6252506",
+      "published": "2026-07-14 12:10"
+    },
+    {
+      "category": "General",
+      "title": "SK Hynix set to benefit as South Korea's ruling party seeks to ease capital-raising rules",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/sk-hynix-set-benefit-south-koreas-ruling-party-seeks-ease-capital-raising-rules-6252496",
+      "published": "2026-07-14 11:33"
     },
     {
       "category": "General",
       "title": "Twice's Tzuyu reportedly leaving longtime agency JYP Entertainment",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/entertainment/twice-tzuyu-leaving-jyp-6252436",
+      "published": "2026-07-14 11:22"
+    },
+    {
+      "category": "General",
+      "title": "China's June trade tops forecasts buoyed by AI boom",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-june-trade-tops-forecasts-ai-boom-6252426",
       "published": "2026-07-14 11:22"
     },
     {
@@ -178,73 +241,31 @@
     },
     {
       "category": "General",
-      "title": "Who pays for greener flying? IATA says airlines cannot bear the burden alone",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/greener-flying-iata-airlines-burden-decarbonisation-6250906",
-      "published": "2026-07-14 10:37"
+      "title": "French student accused of licking iJooz straw to plead guilty on Jul. 30, pending ICA check on student pass status",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/french-teen-ijooz-guilty-plea-adjourned/",
+      "published": "2026-07-14 02:51"
     },
     {
       "category": "General",
-      "title": "Argentina's war veterans urge fans to focus on football ahead of England match",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/argentinas-war-veterans-urge-fans-focus-football-ahead-england-match-6252361",
-      "published": "2026-07-14 10:15"
+      "title": "Surfer claims 2 surfboards worth S$3,600 ‘broken in half’ on Scoot flight",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/woman-claims-2-surfboards-broken-in-half-on-scoot-flight/",
+      "published": "2026-07-14 02:46"
     },
     {
       "category": "General",
-      "title": "Beautiful Things singer Benson Boone to perform in Singapore on Nov 2",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/benson-boone-singapore-concert-2026-6250866",
-      "published": "2026-07-14 09:59"
+      "title": "M’sian dad with end-stage cancer fulfils dying wish to take 3 kids to theme park, passes on days later",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/malaysia-end-stage-cancer-last-wish/",
+      "published": "2026-07-14 00:18"
     },
     {
       "category": "General",
-      "title": "Japan signals chance of pension allocation shift, offers scant details",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japan-signals-chance-pension-allocation-shift-offers-scant-details-6252301",
-      "published": "2026-07-14 09:31"
-    },
-    {
-      "category": "General",
-      "title": "Sushi Ryujiro by Michelin-starred Ryujiro Nakamura returns with a new home at Capitol Kempinski",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/experiences/sushi-ryujiro-capitol-kempinski-singapore-6250276",
-      "published": "2026-07-14 09:16"
-    },
-    {
-      "category": "General",
-      "title": "Oil climbs to one-month high as US, Iran step up attacks in Strait of Hormuz",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/oil-rise-us-iran-war-attacks-strait-hormuz-6252266",
-      "published": "2026-07-14 09:08"
-    },
-    {
-      "category": "General",
-      "title": "SM Lee to attend Brunei sultan’s 80th birthday celebrations; Singapore leaders extend congratulations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/sm-lee-brunei-sultan-hassanal-bolkiah-birthday-6252216",
-      "published": "2026-07-14 08:56"
-    },
-    {
-      "category": "General",
-      "title": "Lamine says football must unite as Spain prepare for France semi-final",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lamine-says-football-must-unite-spain-prepare-france-semi-final-6252236",
-      "published": "2026-07-14 08:35"
-    },
-    {
-      "category": "General",
-      "title": "Spain 'favourites' says France's Deschamps ahead of World Cup semi-final showdown",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spain-france-semi-final-world-cup-2026-6252231",
-      "published": "2026-07-14 08:29"
-    },
-    {
-      "category": "General",
-      "title": "Singapore's economy grew 5.7% in Q2, easing from 6.3% in previous quarter: Advance estimates",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/gdp-singapore-economy-growth-mti-6250876",
-      "published": "2026-07-14 08:00"
+      "title": "Sheng Siong pours S$520 million into new HQ & warehouse that can support 120 stores",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/sheng-siong-is-spending-s520-million-on-a-new-hq-and-warehouse/",
+      "published": "2026-07-14 00:14"
     },
     {
       "category": "General",
@@ -255,31 +276,10 @@
     },
     {
       "category": "General",
-      "title": "S'pore hawker who ran Chef Hainanese Western Food at Margaret Drive dies at 82",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/chef-hainanese-western-food-hawker-dies/",
-      "published": "2026-07-13 03:49"
-    },
-    {
-      "category": "General",
-      "title": "Chinese woman, 37, reunites with family after going missing at 2, learns she had been living across the street from them",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/chinese-woman-reunites-with-family-after-going-missing-at-2/",
-      "published": "2026-07-13 01:24"
-    },
-    {
-      "category": "General",
-      "title": "Lotus's M’sia staff accuse 38-week pregnant woman of hiding stolen items in her baby bump, hypermarket later apologises",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/msian-mans-pregnant-wife-accusedof-hiding-stolen-items-in-baby-bump/",
-      "published": "2026-07-13 01:12"
-    },
-    {
-      "category": "General",
-      "title": "$12.8 million Toto jackpot to be split between 2 winning tickets",
+      "title": "Three in five S’pore PMETs not confident in identifying AI-generated misinformation: Poll",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/12-8-million-toto-jackpot-to-be-split-between-2-winning-tickets",
-      "published": "2026-07-14 10:00"
+      "url": "https://www.straitstimes.com/tech/three-in-five-spore-pmets-not-confident-in-identifying-ai-generated-misinformation-poll",
+      "published": "2026-07-14 14:18"
     }
   ]
 }
