@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14 17:17",
+  "last_updated": "2026-07-14 18:57",
   "headlines": [
     {
       "category": "Crime",
@@ -31,14 +31,21 @@
     },
     {
       "category": "Crime",
-      "title": "Man in China gets nose bitten off while trying to stop another man from assaulting woman",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/china-man-nose-bitten-off/",
-      "published": "2026-07-14 02:21"
+      "title": "Cop jailed over false work permit application to raise funds for wedding",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/cop-jailed-over-false-work-permit-application-to-raise-funds-for-wedding",
+      "published": "2026-07-14 18:00"
     },
     {
       "category": "Crime",
-      "title": "Jail for man who drank about a litre of beer, drove car which fell into Suntec fountain in 2024",
+      "title": "13 months’ jail for man who caused 10-hour jam, $1.4m in damages to CTE tunnel with crane boom",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/13-months-jail-for-man-who-caused-10-hour-jam-1-4m-in-damages-to-cte-tunnel-with-crane-boom",
+      "published": "2026-07-14 17:21"
+    },
+    {
+      "category": "Crime",
+      "title": "Jail for man who drank about a litre of beer, drove car that fell into Suntec fountain in 2024",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/jail-for-man-who-drank-about-a-litre-of-beer-drove-car-which-fell-into-suntec-fountain-in-2024",
       "published": "2026-07-14 16:59"
@@ -93,18 +100,11 @@
       "published": "2026-07-13 15:35"
     },
     {
-      "category": "Traffic",
-      "title": "‘The ground is not ready’: PWDs, caregivers raise concerns over finding jobs and staying employed",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/community/the-ground-is-not-ready-pwds-caregivers-raise-concerns-over-finding-jobs-and-staying-employed",
-      "published": "2026-07-12 18:00"
-    },
-    {
       "category": "Transport",
-      "title": "India's AI training boom draws professionals seeking an edge, but questions remain over quality",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-artificial-intelligence-upskilling-boom-working-professionals-6252671",
-      "published": "2026-07-14 15:28"
+      "title": "Cyclist who fought with bus driver in Punggol appeals after serving 7-day sentence",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/cyclist-fight-bus-driver-punggol-east-appeals-sentence/",
+      "published": "2026-07-14 20:08"
     },
     {
       "category": "Transport",
@@ -122,17 +122,52 @@
     },
     {
       "category": "Fire",
-      "title": "More than 260,000 evacuated in China as Typhoon Bavi brings severe floods",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/typhoon-bavi-china-floods-people-evacuated-6252536",
-      "published": "2026-07-14 14:22"
-    },
-    {
-      "category": "Fire",
       "title": "MOM tells firm to stop manhole-cover replacement works after 2 workers injured in flash fire",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/mom-instructs-firm-to-stop-manhole-cover-replacement-works-after-2-workers-are-injured-in-flash-fire",
       "published": "2026-07-14 07:35"
+    },
+    {
+      "category": "General",
+      "title": "Brighton sign Croatia defender Vuskovic from Spurs",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/brighton-sign-croatia-defender-vuskovic-spurs-6253241",
+      "published": "2026-07-14 18:25"
+    },
+    {
+      "category": "General",
+      "title": "Bangladesh floods heighten dengue, cholera risks, says IFRC",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/bangladesh-floods-dengue-cholera-risk-ifrc-6253181",
+      "published": "2026-07-14 18:22"
+    },
+    {
+      "category": "General",
+      "title": "Rahm plans cautious approach in firm conditions at Birkdale",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/rahm-plans-cautious-approach-in-firm-conditions-birkdale-6253226",
+      "published": "2026-07-14 18:16"
+    },
+    {
+      "category": "General",
+      "title": "Tower Semiconductor to invest $3 billion in Japan, backed by government grants",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/tower-semiconductor-invest-3-billion-in-japan-backed-government-grants-6253211",
+      "published": "2026-07-14 18:10"
+    },
+    {
+      "category": "General",
+      "title": "Pollution from Musk’s unpermitted xAI power project hits hardest in Black communities",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/pollution-musks-unpermitted-xai-power-project-hits-hardest-in-black-communities-6253196",
+      "published": "2026-07-14 18:02"
+    },
+    {
+      "category": "General",
+      "title": "EU approves €659 million in German aid for four chip plants",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/eu-approves-eu659-million-in-german-aid-four-chip-plants-6253151",
+      "published": "2026-07-14 17:46"
     },
     {
       "category": "General",
@@ -143,9 +178,9 @@
     },
     {
       "category": "General",
-      "title": "ECB picks 36 payment service providers for digital euro pilot",
+      "title": "ECB picks 36 payment firms for digital euro pilot",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ecb-picks-36-payment-service-providers-digital-euro-pilot-6253076",
+      "url": "https://www.channelnewsasia.com/business/ecb-picks-36-payment-firms-digital-euro-pilot-6253076",
       "published": "2026-07-14 17:06"
     },
     {
@@ -206,7 +241,7 @@
     },
     {
       "category": "General",
-      "title": "Johor government calls for probe into startup community based in Forest City over alleged Israeli links",
+      "title": "Malaysia probes startup community based in Johor's Forest City over alleged Israeli links",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/johor-israel-network-school-forest-city-onn-hafiz-6252686",
       "published": "2026-07-14 15:31"
@@ -220,31 +255,10 @@
     },
     {
       "category": "General",
-      "title": "Google probed by Swiss regulator over Android default search feature",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/google-probed-swiss-regulator-over-android-default-search-feature-6252866",
-      "published": "2026-07-14 15:18"
-    },
-    {
-      "category": "General",
-      "title": "2027 school year to start on Jan 4 and end on Nov 19",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/2027-school-start-holiday-primary-secondary-moe-6252831",
-      "published": "2026-07-14 15:15"
-    },
-    {
-      "category": "General",
-      "title": "India's LTM expects AI revenue to outpace traditional services, CEO says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/indias-ltm-expects-ai-revenue-outpace-traditional-services-ceo-says-6252781",
-      "published": "2026-07-14 14:14"
-    },
-    {
-      "category": "General",
-      "title": "Egg-free school meals scramble politics in India",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/egg-free-school-meals-west-bengal-politics-india-6252756",
-      "published": "2026-07-14 14:09"
+      "title": "Trump announces US formally at war with Iran again, 60 days to use military force without Congress approval",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/trump-us-congress-war-iran-resumed/",
+      "published": "2026-07-14 20:40"
     },
     {
       "category": "General",
@@ -266,20 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/toto-bedok-reservoir-winning-ticket/",
       "published": "2026-07-14 11:05"
-    },
-    {
-      "category": "General",
-      "title": "French student accused of licking iJooz straw to plead guilty on Jul. 30, pending ICA check on student pass status",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/french-teen-ijooz-guilty-plea-adjourned/",
-      "published": "2026-07-14 02:51"
-    },
-    {
-      "category": "General",
-      "title": "Surfer claims 2 surfboards worth S$3,600 ‘broken in half’ on Scoot flight",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/woman-claims-2-surfboards-broken-in-half-on-scoot-flight/",
-      "published": "2026-07-14 02:46"
     }
   ]
 }
