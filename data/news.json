@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-15 11:32",
+  "last_updated": "2026-07-15 14:27",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "S'pore man, 50, who financed WhatsApp & WeChat scam syndicate linked to S$51 million in losses, jailed & fined S$52,000",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/man-financed-whatsapp-wechat-scam-syndicate/",
+      "published": "2026-07-15 01:38"
+    },
     {
       "category": "Crime",
       "title": "Lorry causes S$1.4 million of damages to CTE tunnel ceiling: Driver, a Chinese national, 56, gets 13 months’ jail & S$1,000 fine",
@@ -14,6 +21,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/cte-midnight-joyride-jail/",
       "published": "2026-07-14 21:54"
+    },
+    {
+      "category": "Crime",
+      "title": "Driver charged over allegedly injuring 3 people in 4 months while driving different vehicles",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/driver-allegedly-injured-3-people-in-4-months-charged-motorists-hurt-in-sengkang-simei-along-mce",
+      "published": "2026-07-15 13:13"
     },
     {
       "category": "Crime",
@@ -65,25 +79,11 @@
       "published": "2026-07-13 19:14"
     },
     {
-      "category": "Crime",
-      "title": "Man arrested for dangerous driving causing hurt after accident with motorcycle in Jalan Besar",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/man-arrested-for-dangerous-driving-causing-hurt-after-accident-with-motorcycle-in-jalan-besar",
-      "published": "2026-07-13 14:43"
-    },
-    {
       "category": "Traffic",
       "title": "TV host Lee Teng opens up about wife's miscarriage during pandemic: 'I felt like an empty shell'",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/entertainment/lee-teng-gina-lin-miscarriage-pandemic-6254906",
       "published": "2026-07-15 10:19"
-    },
-    {
-      "category": "Traffic",
-      "title": "2 workers injured after fire breaks out in Pioneer while replacing manhole cover, employer instructed to stop similar works",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/workers-injured-mahole-fire/",
-      "published": "2026-07-14 20:05"
     },
     {
       "category": "Traffic",
@@ -108,10 +108,10 @@
     },
     {
       "category": "Transport",
-      "title": "Cyclist who fought with bus driver in Punggol appeals after serving 7-day sentence",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/cyclist-fight-bus-driver-punggol-east-appeals-sentence/",
-      "published": "2026-07-14 20:08"
+      "title": "LTA investigating cause of 95-minute bus arrival time display outage on MyTransport app",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/lta-investigating-cause-of-95-minute-bus-arrival-time-display-outage-on-mytransport-app",
+      "published": "2026-07-15 12:10"
     },
     {
       "category": "Transport",
@@ -119,6 +119,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/display-of-bus-arrival-timings-back-to-normal-after-90-min-disruption",
       "published": "2026-07-14 06:52"
+    },
+    {
+      "category": "Fire",
+      "title": "Death toll in Thai bar fire rises to 32, officials say, with dozens still in hospital",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/bangkok-bar-fire-death-toll-rise-6255236",
+      "published": "2026-07-15 13:29"
     },
     {
       "category": "Fire",
@@ -135,18 +142,11 @@
       "published": "2026-07-14 07:35"
     },
     {
-      "category": "Money",
-      "title": "Exclusive-AI cloud company CoreWeave explores Wall Street playbook to hedge memory-chip price risk",
+      "category": "Housing",
+      "title": "Lapses in HDB season parking eligibility checks, MOH contracts among issues flagged in Auditor-General report",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-ai-cloud-company-coreweave-explores-wall-street-playbook-hedge-memory-chip-price-risk-6254781",
-      "published": "2026-07-15 07:50"
-    },
-    {
-      "category": "Money",
-      "title": "Japan manufacturers stay upbeat on chip demand, services hit by costs",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japan-manufacturers-stay-upbeat-chip-demand-services-hit-costs-6254711",
-      "published": "2026-07-15 07:03"
+      "url": "https://www.channelnewsasia.com/singapore/ago-report-hdb-season-parking-moh-lapses-6254981",
+      "published": "2026-07-15 12:16"
     },
     {
       "category": "Housing",
@@ -154,6 +154,62 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/dollar-struggles-softer-inflation-dims-fed-hike-bets-6254966",
       "published": "2026-07-15 09:53"
+    },
+    {
+      "category": "Housing",
+      "title": "S’porean couple, aged 36 & 37, sell Yishun HDB flat & relocate to KL, M'sia",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/singaporean-couple-sell-yishun-hdb-relocate-malaysia/",
+      "published": "2026-07-15 02:46"
+    },
+    {
+      "category": "General",
+      "title": "Shaw Theatres in Singapore will screen The Odyssey on 35mm film, only cinema in Southeast Asia to do so",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/odyssey-35mm-film-shaw-theatres-singapore-6255276",
+      "published": "2026-07-15 13:55"
+    },
+    {
+      "category": "General",
+      "title": "China's Q2 economic growth cools to 3.5-year low as imbalances worsen",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-q2-economy-gdp-growth-35-year-low-6255001",
+      "published": "2026-07-15 13:53"
+    },
+    {
+      "category": "General",
+      "title": "Wife of Ryanair passenger sucked out of dislodged window recalls incident",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/wife-ryanair-passenger-sucked-window-incident-6254721",
+      "published": "2026-07-15 13:28"
+    },
+    {
+      "category": "General",
+      "title": "Intel turns to next-generation ASML tool to help make its laptop chips",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/intel-turns-next-generation-asml-tool-help-make-its-laptop-chips-6255291",
+      "published": "2026-07-15 13:11"
+    },
+    {
+      "category": "General",
+      "title": "Singapore laws must keep pace with technologies yet to be invented: Edwin Tong",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/legislation-law-anticipate-technology-singapore-edwin-tong-6255051",
+      "published": "2026-07-15 12:41"
+    },
+    {
+      "category": "General",
+      "title": "Former Air Force chief Ng Chee Khern to take over as chairman of CAAS from Aug 1",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/caas-chairman-aviation-ng-chee-khern-edmund-cheng-6255091",
+      "published": "2026-07-15 12:37"
+    },
+    {
+      "category": "General",
+      "title": "Rosmah Mansor, wife of Malaysia's ex-PM Najib Razak, files lawsuit against comedian Harith Iskander over stand-up show",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/rosmah-mansor-harith-iskander-lawsuit-6255141",
+      "published": "2026-07-15 12:35"
     },
     {
       "category": "General",
@@ -220,66 +276,10 @@
     },
     {
       "category": "General",
-      "title": "England together and blocking out the noise ahead of Argentina showdown",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-together-and-blocking-out-noise-ahead-argentina-showdown-6254851",
-      "published": "2026-07-15 08:37"
-    },
-    {
-      "category": "General",
-      "title": "Scientists sail for Greenland to study glacier melt risk",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/scientists-sail-greenland-study-glacier-melt-risk-6254806",
-      "published": "2026-07-15 08:03"
-    },
-    {
-      "category": "General",
-      "title": "Kuroda's negative rate surprise shocked his own BOJ board, minutes show",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/kurodas-negative-rate-surprise-shocked-his-own-boj-board-minutes-show-6254791",
-      "published": "2026-07-15 07:54"
-    },
-    {
-      "category": "General",
-      "title": "Haiti part ways with coach Migne after World Cup campaign",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/haiti-part-ways-coach-migne-after-world-cup-campaign-6254766",
-      "published": "2026-07-15 07:48"
-    },
-    {
-      "category": "General",
-      "title": "'I want to fight': At 31, this former SIA stewardess is battling the most aggressive form of brain cancer",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/women/glioblastoma-brain-cancer-former-sia-stewardess-6236996",
-      "published": "2026-07-15 07:23"
-    },
-    {
-      "category": "General",
-      "title": "De la Fuente says Spain have recaptured 2010 spirit after France masterclass",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/de-la-fuente-says-spain-have-recaptured-2010-spirit-after-france-masterclass-6254731",
-      "published": "2026-07-15 07:08"
-    },
-    {
-      "category": "General",
-      "title": "Deschamps' golden France era to end after another heartbreak, but legacy intact",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/deschamps-golden-france-era-end-after-another-heartbreak-legacy-intact-6254726",
-      "published": "2026-07-15 07:04"
-    },
-    {
-      "category": "General",
-      "title": "Ministers K Shanmugam & Tan See Leng awarded S$230,000 each in defamation suit against Bloomberg & reporter",
+      "title": "Fernvale fitness corner used to dry laundry, AMK town council puts up notices after complaint",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/k-shanmugam-tan-see-leng-awarded-230000-each-defamation-suit-bloomberg-low-de-wei/",
-      "published": "2026-07-15 00:31"
-    },
-    {
-      "category": "General",
-      "title": "S'pore man 'retired' by company at 63 without notice or payment, wins S$26,350 for wrongful dismissal",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-retired-by-company-wins-case-wrongful-dismissal/",
-      "published": "2026-07-15 00:31"
+      "url": "https://mothership.sg/2026/07/laundry-fitness-corner/",
+      "published": "2026-07-15 02:09"
     }
   ]
 }
