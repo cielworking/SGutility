@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-07-16 01:38",
+  "last_updated": "2026-07-16 03:35",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Musk's xAI sues Grok user over sexualized 'deepfakes'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/musks-xai-sues-grok-user-over-sexualized-deepfakes-6256786",
+      "published": "2026-07-16 01:51"
+    },
     {
       "category": "Crime",
       "title": "Atlanta police prepare for Argentina-England World Cup semi-final",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/atlanta-police-prepare-argentina-england-world-cup-semi-final-6256631",
       "published": "2026-07-15 23:50"
-    },
-    {
-      "category": "Crime",
-      "title": "Syria says arrested Assad-era officer specialising in chemical weapons",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/syria-says-arrested-assad-era-officer-specialising-in-chemical-weapons-6256406",
-      "published": "2026-07-15 21:46"
     },
     {
       "category": "Crime",
@@ -108,27 +108,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Five cloud business groups urge EU interim measures against Broadcom",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/five-cloud-business-groups-urge-eu-interim-measures-against-broadcom-6256441",
-      "published": "2026-07-15 22:16"
-    },
-    {
-      "category": "Traffic",
-      "title": "German leader not opposed to Chinese taking over car plants",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/german-leader-not-opposed-chinese-taking-over-car-plants-6256426",
-      "published": "2026-07-15 22:07"
-    },
-    {
-      "category": "Traffic",
-      "title": "GovTech layoffs reflect broader reorganisation trends in tech sector, say analysts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/govtech-jobs-layoffs-retrenchment-public-sector-6256216",
-      "published": "2026-07-15 22:03"
-    },
-    {
-      "category": "Traffic",
       "title": "1,800 pest management workers to get better wages & career pathways under Progressive Wage Model",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/pest-management-workers-progressive-wage-model/",
@@ -220,6 +199,48 @@
     },
     {
       "category": "General",
+      "title": "France's parliament adopts assisted dying law",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/assisted-dying-law-france-parliament-protest-6256866",
+      "published": "2026-07-16 03:33"
+    },
+    {
+      "category": "General",
+      "title": "Uber nears €12.5bn deal to acquire Delivery Hero, FT reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/uber-nears-eu125bn-deal-acquire-delivery-hero-ft-reports-6256856",
+      "published": "2026-07-16 02:50"
+    },
+    {
+      "category": "General",
+      "title": "Bangladesh seizes US$6.2 bn in assets tied to ousted PM Hasina",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/bangladesh-assests-sheikh-hasina-ex-pm-6256821",
+      "published": "2026-07-16 02:46"
+    },
+    {
+      "category": "General",
+      "title": "England bring in James, Spence and Rogers, Argentina make one change",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/england-bring-in-james-spence-and-rogers-argentina-make-one-change-6256801",
+      "published": "2026-07-16 02:00"
+    },
+    {
+      "category": "General",
+      "title": "Besiktas sign winger Trossard from Arsenal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/besiktas-sign-winger-trossard-arsenal-6256776",
+      "published": "2026-07-16 01:43"
+    },
+    {
+      "category": "General",
+      "title": "Amazon AWS executive and CEO advisor Dave Brown to leave after 19 years",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/amazon-aws-executive-and-ceo-advisor-dave-brown-leave-after-19-years-6256771",
+      "published": "2026-07-16 01:42"
+    },
+    {
+      "category": "General",
       "title": "Traditionalist Catholic group appeals over excommunications",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/traditionalist-catholic-group-pope-vatican-excommunication-6256686",
@@ -259,27 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/eu-accepts-action-plan-elon-musks-x-become-more-transparent-6256661",
       "published": "2026-07-16 00:27"
-    },
-    {
-      "category": "General",
-      "title": "Apple chasing AI chip company deals, The Information reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apple-chasing-ai-chip-company-deals-information-reports-6256606",
-      "published": "2026-07-15 23:42"
-    },
-    {
-      "category": "General",
-      "title": "Waerenskjold claims surprise win in stage 11 of Tour de France",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/waerenskjold-claims-surprise-win-in-stage-11-tour-de-france-6256561",
-      "published": "2026-07-15 23:27"
-    },
-    {
-      "category": "General",
-      "title": "China investigates retired top media censor",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-investigates-cai-fuchao-retired-top-media-censor-6256471",
-      "published": "2026-07-15 23:06"
     }
   ]
 }
