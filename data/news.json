@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-16 05:15",
+  "last_updated": "2026-07-16 06:12",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Vietnam arrests publishers of book on Communist Party founder",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/vietnam-communist-party-arrest-book-publishers-6257051",
+      "published": "2026-07-16 05:49"
+    },
     {
       "category": "Crime",
       "title": "Hong Kong police raid independent bookstore run by former journalists",
@@ -14,13 +21,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/musks-xai-sues-grok-user-over-sexualized-deepfakes-6256786",
       "published": "2026-07-16 01:51"
-    },
-    {
-      "category": "Crime",
-      "title": "Atlanta police prepare for Argentina-England World Cup semi-final",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/atlanta-police-prepare-argentina-england-world-cup-semi-final-6256631",
-      "published": "2026-07-15 23:50"
     },
     {
       "category": "Crime",
@@ -108,6 +108,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Argentine players brandish political Falklands flag after England match",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/argentine-players-brandish-political-falklands-flag-after-england-match-6257071",
+      "published": "2026-07-16 05:57"
+    },
+    {
+      "category": "Traffic",
       "title": "1,800 pest management workers to get better wages & career pathways under Progressive Wage Model",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/pest-management-workers-progressive-wage-model/",
@@ -164,13 +171,6 @@
     },
     {
       "category": "Money",
-      "title": "SpaceX shares slide below IPO price for the first time as blistering rally unravels",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spacex-shares-slide-below-ipo-price-first-time-blistering-rally-unravels-6256671",
-      "published": "2026-07-16 00:38"
-    },
-    {
-      "category": "Money",
       "title": "People’s Park Centre guns for third collective sale at lower $1.48 billion guide price",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/peoples-park-centre-guns-for-third-collective-sale-at-lower-1-48-billion-guide-price",
@@ -182,13 +182,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/stocks-us-market-wall-street-inflation-6256966",
       "published": "2026-07-16 04:59"
-    },
-    {
-      "category": "Housing",
-      "title": "Stocks rise after soft US inflation reading with Middle East in focus",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/stocks-rise-after-soft-us-inflation-reading-middle-east-in-focus-6254956",
-      "published": "2026-07-16 00:12"
     },
     {
       "category": "Housing",
@@ -213,9 +206,58 @@
     },
     {
       "category": "General",
-      "title": "Argentina beat England 2-1 to reach World Cup final",
+      "title": "Luxury hotels are setting sail – but can they master life at sea?",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/argentina-beat-england-2-1-reach-world-cup-final-6256986",
+      "url": "https://www.channelnewsasia.com/experiences/four-seasons-yacht-cost-worth-it-6252801",
+      "published": "2026-07-16 06:07"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: In the age of budget travel and Johor weekend trips, where does Sentosa fit?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/sentosa-weekend-getaway-tourism-travel-destination-6255966",
+      "published": "2026-07-16 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Thousands of entry-level PMET jobs are available, but the job hunt remains challenging for some fresh grads",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/fresh-university-graduates-job-search-market-expectations-6255721",
+      "published": "2026-07-16 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Johor polls result raises stakes for Anwar in upcoming Negeri Sembilan election",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/malaysia-anwar-negeri-sembilan-election-high-stakes-6255311",
+      "published": "2026-07-16 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: What science loses when T rex becomes a trophy",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/t-rex-gus-dinosaur-fossil-sold-record-what-it-means-science-6255556",
+      "published": "2026-07-16 05:58"
+    },
+    {
+      "category": "General",
+      "title": "England tried to hold on but it wasn't enough, says Kane",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/england-tried-hold-it-wasnt-enough-says-kane-6257061",
+      "published": "2026-07-16 05:50"
+    },
+    {
+      "category": "General",
+      "title": "Argentina late show sinks England and sets up World Cup final against Spain",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/argentina-late-show-sinks-england-and-sets-up-world-cup-final-against-spain-6257026",
+      "published": "2026-07-16 05:13"
+    },
+    {
+      "category": "General",
+      "title": "Messi's Argentina stun England in comeback to reach World Cup final",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/argentina-england-world-cup-semi-final-6256986",
       "published": "2026-07-16 05:09"
     },
     {
@@ -238,48 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/bangladesh-assests-sheikh-hasina-ex-pm-6256821",
       "published": "2026-07-16 02:46"
-    },
-    {
-      "category": "General",
-      "title": "England bring in James, Spence and Rogers, Argentina make one change",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-bring-in-james-spence-and-rogers-argentina-make-one-change-6256801",
-      "published": "2026-07-16 02:00"
-    },
-    {
-      "category": "General",
-      "title": "Besiktas sign winger Trossard from Arsenal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/besiktas-sign-winger-trossard-arsenal-6256776",
-      "published": "2026-07-16 01:43"
-    },
-    {
-      "category": "General",
-      "title": "Amazon AWS executive and CEO advisor Dave Brown to leave after 19 years",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amazon-aws-executive-and-ceo-advisor-dave-brown-leave-after-19-years-6256771",
-      "published": "2026-07-16 01:42"
-    },
-    {
-      "category": "General",
-      "title": "Traditionalist Catholic group appeals over excommunications",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/traditionalist-catholic-group-pope-vatican-excommunication-6256686",
-      "published": "2026-07-16 01:26"
-    },
-    {
-      "category": "General",
-      "title": "Baked Birkdale offers different Open test from 2017",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/baked-birkdale-offers-different-open-test-2017-6256731",
-      "published": "2026-07-16 01:18"
-    },
-    {
-      "category": "General",
-      "title": "France’s golden generation left heartbroken as Zidane era beckons",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/frances-golden-generation-left-heartbroken-zidane-era-beckons-6256701",
-      "published": "2026-07-16 00:54"
     }
   ]
 }
