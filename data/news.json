@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-07-15 23:49",
+  "last_updated": "2026-07-16 01:38",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Atlanta police prepare for Argentina-England World Cup semi-final",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/atlanta-police-prepare-argentina-england-world-cup-semi-final-6256631",
+      "published": "2026-07-15 23:50"
+    },
     {
       "category": "Crime",
       "title": "Syria says arrested Assad-era officer specialising in chemical weapons",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/syria-says-arrested-assad-era-officer-specialising-in-chemical-weapons-6256406",
       "published": "2026-07-15 21:46"
-    },
-    {
-      "category": "Crime",
-      "title": "Italian prosecutors request to drop sports fraud case against referee chief",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/italian-prosecutors-request-drop-sports-fraud-case-against-referee-chief-6256116",
-      "published": "2026-07-15 19:49"
     },
     {
       "category": "Crime",
@@ -35,13 +35,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/accidents-etomidate-man-driving/",
       "published": "2026-07-15 20:29"
-    },
-    {
-      "category": "Crime",
-      "title": "S’porean man, 58, crashes Porsche into Suntec City's Fountain of Wealth, gets 5 weeks’ jail & 30 months’ driving ban",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-crash-porsche-suntec-city-jail-ban/",
-      "published": "2026-07-15 11:38"
     },
     {
       "category": "Crime",
@@ -171,13 +164,6 @@
     },
     {
       "category": "Transport",
-      "title": "Some businesses will lose out amid deeper Singapore-Malaysia economic integration, but both sides will benefit: Tharman",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/president-tharman-malaysia-state-visit-economy-businesses-6255946",
-      "published": "2026-07-15 20:57"
-    },
-    {
-      "category": "Transport",
       "title": "Bus drivers need to regulate speed to prevent bunching, says LTA after passenger’s video complaint",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/bus-drivers-need-to-regulate-speed-to-prevent-bunching-says-lta-after-passengers-video-complaint",
@@ -192,10 +178,24 @@
     },
     {
       "category": "Money",
+      "title": "SpaceX shares slide below IPO price for the first time as blistering rally unravels",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/spacex-shares-slide-below-ipo-price-first-time-blistering-rally-unravels-6256671",
+      "published": "2026-07-16 00:38"
+    },
+    {
+      "category": "Money",
       "title": "People’s Park Centre guns for third collective sale at lower $1.48 billion guide price",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/peoples-park-centre-guns-for-third-collective-sale-at-lower-1-48-billion-guide-price",
       "published": "2026-07-15 16:14"
+    },
+    {
+      "category": "Housing",
+      "title": "Stocks rise after soft US inflation reading with Middle East in focus",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/stocks-rise-after-soft-us-inflation-reading-middle-east-in-focus-6254956",
+      "published": "2026-07-16 00:12"
     },
     {
       "category": "Housing",
@@ -220,6 +220,48 @@
     },
     {
       "category": "General",
+      "title": "Traditionalist Catholic group appeals over excommunications",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/traditionalist-catholic-group-pope-vatican-excommunication-6256686",
+      "published": "2026-07-16 01:26"
+    },
+    {
+      "category": "General",
+      "title": "Baked Birkdale offers different Open test from 2017",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/baked-birkdale-offers-different-open-test-2017-6256731",
+      "published": "2026-07-16 01:18"
+    },
+    {
+      "category": "General",
+      "title": "France’s golden generation left heartbroken as Zidane era beckons",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/frances-golden-generation-left-heartbroken-zidane-era-beckons-6256701",
+      "published": "2026-07-16 00:54"
+    },
+    {
+      "category": "General",
+      "title": "Amazon Leo to bring satellite internet to South Africa in 2027",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/amazon-leo-bring-satellite-internet-south-africa-in-2027-6256676",
+      "published": "2026-07-16 00:43"
+    },
+    {
+      "category": "General",
+      "title": "Buffett says his children are ready to distribute his fortune, calls Bill Gates' Epstein ties 'distasteful'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/buffett-gates-foundation-epstein-distasteful-6256651",
+      "published": "2026-07-16 00:33"
+    },
+    {
+      "category": "General",
+      "title": "EU accepts action plan by Elon Musk's X to become more transparent",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/eu-accepts-action-plan-elon-musks-x-become-more-transparent-6256661",
+      "published": "2026-07-16 00:27"
+    },
+    {
+      "category": "General",
       "title": "Apple chasing AI chip company deals, The Information reports",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/apple-chasing-ai-chip-company-deals-information-reports-6256606",
@@ -227,9 +269,9 @@
     },
     {
       "category": "General",
-      "title": "Soren Waerenskjold wins stage 11 of Tour de France",
+      "title": "Waerenskjold claims surprise win in stage 11 of Tour de France",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/soren-waerenskjold-wins-stage-11-tour-de-france-6256561",
+      "url": "https://www.channelnewsasia.com/sport/waerenskjold-claims-surprise-win-in-stage-11-tour-de-france-6256561",
       "published": "2026-07-15 23:27"
     },
     {
@@ -238,48 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/east-asia/china-investigates-cai-fuchao-retired-top-media-censor-6256471",
       "published": "2026-07-15 23:06"
-    },
-    {
-      "category": "General",
-      "title": "US Republicans unveil US$95 billion pre-election spending push",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-republicans-unveil-us95-billion-pre-election-spending-push-6256491",
-      "published": "2026-07-15 23:03"
-    },
-    {
-      "category": "General",
-      "title": "F1 leader Antonelli needs a win after recent blows",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/f1-leader-antonelli-needs-win-after-recent-blows-6256516",
-      "published": "2026-07-15 23:00"
-    },
-    {
-      "category": "General",
-      "title": "London City sign France forward Diani",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/london-city-sign-france-forward-diani-6256366",
-      "published": "2026-07-15 21:32"
-    },
-    {
-      "category": "General",
-      "title": "Biden announces memoir, says cancer treatment 'going really well'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/biden-announces-memoir-says-cancer-treatment-going-really-well-6256326",
-      "published": "2026-07-15 21:21"
-    },
-    {
-      "category": "General",
-      "title": "US launches new round of strikes against Iran as escalation threatens shipping",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-new-strikes-iran-escalation-shipping-6255271",
-      "published": "2026-07-15 20:47"
-    },
-    {
-      "category": "General",
-      "title": "EU chief announces 'drone deal' with Ukraine",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/eu-chief-announces-drone-deal-ukraine-6255841",
-      "published": "2026-07-15 20:46"
     }
   ]
 }
