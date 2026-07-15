@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-16 03:35",
+  "last_updated": "2026-07-16 05:15",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Hong Kong police raid independent bookstore run by former journalists",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/hong-kong-bookstores-arrest-raided-6256936",
+      "published": "2026-07-16 04:33"
+    },
     {
       "category": "Crime",
       "title": "Musk's xAI sues Grok user over sexualized 'deepfakes'",
@@ -100,13 +107,6 @@
       "published": "2026-07-14 16:59"
     },
     {
-      "category": "Crime",
-      "title": "Bloomberg defamation suit: Court finds news provider maliciously defamed Shanmugam, Tan See Leng",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/bloomberg-defamation-suit-shanmugam-tan-see-leng-each-awarded-230k-in-damages",
-      "published": "2026-07-14 16:09"
-    },
-    {
       "category": "Traffic",
       "title": "1,800 pest management workers to get better wages & career pathways under Progressive Wage Model",
       "source": "Mothership",
@@ -143,6 +143,13 @@
     },
     {
       "category": "Transport",
+      "title": "Quieter spaces, training for front-line staff: How businesses are ensuring more inclusivity in public spaces",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/autism-inclusive-public-spaces-sensory-friendly-time-for-acceptance-mastercard",
+      "published": "2026-07-16 04:00"
+    },
+    {
+      "category": "Transport",
       "title": "Bus drivers need to regulate speed to prevent bunching, says LTA after passenger’s video complaint",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/bus-drivers-need-to-regulate-speed-to-prevent-bunching-says-lta-after-passengers-video-complaint",
@@ -171,6 +178,13 @@
     },
     {
       "category": "Housing",
+      "title": "US stocks gain after reassuring inflation data, tech giants advance",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/stocks-us-market-wall-street-inflation-6256966",
+      "published": "2026-07-16 04:59"
+    },
+    {
+      "category": "Housing",
       "title": "Stocks rise after soft US inflation reading with Middle East in focus",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/stocks-rise-after-soft-us-inflation-reading-middle-east-in-focus-6254956",
@@ -196,6 +210,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/hdb-lapses-saw-flats-allocated-housing-grants-given-to-ineligible-applicants-ago-report",
       "published": "2026-07-15 15:58"
+    },
+    {
+      "category": "General",
+      "title": "Argentina beat England 2-1 to reach World Cup final",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/argentina-beat-england-2-1-reach-world-cup-final-6256986",
+      "published": "2026-07-16 05:09"
     },
     {
       "category": "General",
@@ -259,27 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/frances-golden-generation-left-heartbroken-zidane-era-beckons-6256701",
       "published": "2026-07-16 00:54"
-    },
-    {
-      "category": "General",
-      "title": "Amazon Leo to bring satellite internet to South Africa in 2027",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amazon-leo-bring-satellite-internet-south-africa-in-2027-6256676",
-      "published": "2026-07-16 00:43"
-    },
-    {
-      "category": "General",
-      "title": "Buffett says his children are ready to distribute his fortune, calls Bill Gates' Epstein ties 'distasteful'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/buffett-gates-foundation-epstein-distasteful-6256651",
-      "published": "2026-07-16 00:33"
-    },
-    {
-      "category": "General",
-      "title": "EU accepts action plan by Elon Musk's X to become more transparent",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/eu-accepts-action-plan-elon-musks-x-become-more-transparent-6256661",
-      "published": "2026-07-16 00:27"
     }
   ]
 }
