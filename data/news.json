@@ -1,6 +1,48 @@
 {
-  "last_updated": "2026-07-15 14:27",
+  "last_updated": "2026-07-15 17:21",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "AGC urges court to declare Raymond Ng, Iris Koh vexatious litigants; defence backs their right to sue",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/agc-raymond-iris-vexatious-litigants-lawfare-6255561",
+      "published": "2026-07-15 17:15"
+    },
+    {
+      "category": "Crime",
+      "title": "European Athletics, broadcasters issue guidelines on preventing sexualisation of female athletes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/european-athletics-broadcasters-issue-guidelines-preventing-sexualisation-female-athletes-6255656",
+      "published": "2026-07-15 17:00"
+    },
+    {
+      "category": "Crime",
+      "title": "Victims lose more than S$259,000 in courier phishing scams since Jun 24",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/scam-police-fraud-victims-money-couriers-6255511",
+      "published": "2026-07-15 16:27"
+    },
+    {
+      "category": "Crime",
+      "title": "S’porean man, 58, crashes Porsche into Suntec City's Fountain of Wealth, gets 5 weeks’ jail & 30 months’ driving ban",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/man-crash-porsche-suntec-city-jail-ban/",
+      "published": "2026-07-15 11:38"
+    },
+    {
+      "category": "Crime",
+      "title": "Woman in China breaks mother-in-law's ribs for prioritising dating over babysitting, husband defends assault",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/china-woman-breaks-mother-in-laws-ribs/",
+      "published": "2026-07-15 06:36"
+    },
+    {
+      "category": "Crime",
+      "title": "Man, 26, arrested in Ang Mo Kio 2 weeks after allegedly using knife & causing injury",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/man-arrested-ang-mo-kio/",
+      "published": "2026-07-15 02:49"
+    },
     {
       "category": "Crime",
       "title": "S'pore man, 50, who financed WhatsApp & WeChat scam syndicate linked to S$51 million in losses, jailed & fined S$52,000",
@@ -10,21 +52,21 @@
     },
     {
       "category": "Crime",
-      "title": "Lorry causes S$1.4 million of damages to CTE tunnel ceiling: Driver, a Chinese national, 56, gets 13 months’ jail & S$1,000 fine",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/lorry-damaged-cte-tunnel-ceiling-jailed/",
-      "published": "2026-07-14 23:04"
+      "title": "Wrong address? Beware of failed delivery scams, police say",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/wrong-address-beware-of-failed-delivery-scams-police-say",
+      "published": "2026-07-15 16:19"
     },
     {
       "category": "Crime",
-      "title": "S'porean man, 23, among 6 who went on CTE midnight joyride that ended in major accident, gets 4 months' jail",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/cte-midnight-joyride-jail/",
-      "published": "2026-07-14 21:54"
+      "title": "Man gets over 9 years’ jail, 12 strokes of cane for raping two 13-year-old girls",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-gets-over-9-years-jail-12-strokes-of-cane-for-sexual-offences-against-two-13-year-old-girls",
+      "published": "2026-07-15 14:34"
     },
     {
       "category": "Crime",
-      "title": "Driver charged over allegedly injuring 3 people in 4 months while driving different vehicles",
+      "title": "Driver charged after allegedly injuring 3 people in 4 months while driving different vehicles",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/driver-allegedly-injured-3-people-in-4-months-charged-motorists-hurt-in-sengkang-simei-along-mce",
       "published": "2026-07-15 13:13"
@@ -80,10 +122,24 @@
     },
     {
       "category": "Traffic",
-      "title": "TV host Lee Teng opens up about wife's miscarriage during pandemic: 'I felt like an empty shell'",
+      "title": "People with disabilities, caregivers call for better healthcare and job support as task force weighs recommendations",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/lee-teng-gina-lin-miscarriage-pandemic-6254906",
-      "published": "2026-07-15 10:19"
+      "url": "https://www.channelnewsasia.com/singapore/people-disabilities-pwds-caregivers-hopes-inter-agency-task-force-recommendations-6253001",
+      "published": "2026-07-15 16:14"
+    },
+    {
+      "category": "Traffic",
+      "title": "Air India crash probe enters final stages after cockpit recorder, psychology reviews",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/air-india-crash-investigation-final-stage-6255246",
+      "published": "2026-07-15 16:08"
+    },
+    {
+      "category": "Traffic",
+      "title": "India turns to AI to improve healthcare access",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/artificial-intelligence-eye-diseases-medical-scans-india-6255286",
+      "published": "2026-07-15 15:26"
     },
     {
       "category": "Traffic",
@@ -98,13 +154,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/worried-about-being-caught-in-a-fire-abroad-these-steps-could-save-your-life",
       "published": "2026-07-14 16:30"
-    },
-    {
-      "category": "Traffic",
-      "title": "Community care apartments to have lower eligible age of 55, service fees reduced by up to 75%",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/housing/age-eligibility-for-community-care-apartments-to-go-down-from-65-to-55-service-fees-lowered",
-      "published": "2026-07-13 15:35"
     },
     {
       "category": "Transport",
@@ -122,38 +171,31 @@
     },
     {
       "category": "Fire",
-      "title": "Death toll in Thai bar fire rises to 32, officials say, with dozens still in hospital",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/bangkok-bar-fire-death-toll-rise-6255236",
-      "published": "2026-07-15 13:29"
-    },
-    {
-      "category": "Fire",
-      "title": "‘Am I still beautiful?’: Injured Bangkok nightclub fire survivor asks boyfriend after escaping deadly blaze",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/am-i-still-beautiful-bangkok-fire-victim-said-to-boyfriend/",
-      "published": "2026-07-14 22:12"
-    },
-    {
-      "category": "Fire",
       "title": "MOM tells firm to stop manhole-cover replacement works after 2 workers injured in flash fire",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/mom-instructs-firm-to-stop-manhole-cover-replacement-works-after-2-workers-are-injured-in-flash-fire",
       "published": "2026-07-14 07:35"
     },
     {
-      "category": "Housing",
-      "title": "Lapses in HDB season parking eligibility checks, MOH contracts among issues flagged in Auditor-General report",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ago-report-hdb-season-parking-moh-lapses-6254981",
-      "published": "2026-07-15 12:16"
+      "category": "Money",
+      "title": "People’s Park Centre guns for third collective sale at lower $1.48 billion guide price",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/housing/peoples-park-centre-guns-for-third-collective-sale-at-lower-1-48-billion-guide-price",
+      "published": "2026-07-15 16:14"
     },
     {
       "category": "Housing",
-      "title": "Dollar struggles as softer inflation dims Fed hike bets",
+      "title": "Seoul leads Asian stocks higher as US inflation eases rate fears",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dollar-struggles-softer-inflation-dims-fed-hike-bets-6254966",
-      "published": "2026-07-15 09:53"
+      "url": "https://www.channelnewsasia.com/asia/asian-stocks-us-inflation-fed-rate-6255536",
+      "published": "2026-07-15 16:10"
+    },
+    {
+      "category": "Housing",
+      "title": "Ineligible applicants allocated HDB flats, housing grants due to weaknesses in checks: AGO report",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/hdb-ago-lapses-season-parking-housing-grant-car-park-6255066",
+      "published": "2026-07-15 15:13"
     },
     {
       "category": "Housing",
@@ -163,123 +205,81 @@
       "published": "2026-07-15 02:46"
     },
     {
-      "category": "General",
-      "title": "Shaw Theatres in Singapore will screen The Odyssey on 35mm film, only cinema in Southeast Asia to do so",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/odyssey-35mm-film-shaw-theatres-singapore-6255276",
-      "published": "2026-07-15 13:55"
+      "category": "Housing",
+      "title": "HDB lapses saw flats allocated, housing grants given to ineligible applicants: AGO report",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/hdb-lapses-saw-flats-allocated-housing-grants-given-to-ineligible-applicants-ago-report",
+      "published": "2026-07-15 15:58"
     },
     {
       "category": "General",
-      "title": "China's Q2 economic growth cools to 3.5-year low as imbalances worsen",
+      "title": "Japan refiners to diversify crude sources, explore support for Hormuz bypass routes",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-q2-economy-gdp-growth-35-year-low-6255001",
-      "published": "2026-07-15 13:53"
+      "url": "https://www.channelnewsasia.com/business/japan-refiners-diversify-crude-sources-explore-support-hormuz-bypass-routes-6255661",
+      "published": "2026-07-15 17:02"
     },
     {
       "category": "General",
-      "title": "Wife of Ryanair passenger sucked out of dislodged window recalls incident",
+      "title": "Exclusive-Files relating to India’s largest nuclear power plant Kudankulam exposed in data breach",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/wife-ryanair-passenger-sucked-window-incident-6254721",
-      "published": "2026-07-15 13:28"
+      "url": "https://www.channelnewsasia.com/business/exclusive-files-relating-indias-largest-nuclear-power-plant-kudankulam-exposed-in-data-breach-6255651",
+      "published": "2026-07-15 17:01"
     },
     {
       "category": "General",
-      "title": "Intel turns to next-generation ASML tool to help make its laptop chips",
+      "title": "Taiwan’s opposition TPP launches historic first trip to mainland China",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/intel-turns-next-generation-asml-tool-help-make-its-laptop-chips-6255291",
-      "published": "2026-07-15 13:11"
+      "url": "https://www.channelnewsasia.com/east-asia/taiwan-tpp-first-trip-mainland-china-cross-strait-6255476",
+      "published": "2026-07-15 16:37"
     },
     {
       "category": "General",
-      "title": "Singapore laws must keep pace with technologies yet to be invented: Edwin Tong",
+      "title": "England fans allege bias after referee with 5-0 Messi record gets semifinal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/legislation-law-anticipate-technology-singapore-edwin-tong-6255051",
-      "published": "2026-07-15 12:41"
+      "url": "https://www.channelnewsasia.com/sport/england-fans-allege-bias-after-referee-5-0-messi-record-gets-semifinal-6255576",
+      "published": "2026-07-15 16:26"
     },
     {
       "category": "General",
-      "title": "Former Air Force chief Ng Chee Khern to take over as chairman of CAAS from Aug 1",
+      "title": "One dead, 3 missing after boat sinks near San Francisco's Alcatraz",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/caas-chairman-aviation-ng-chee-khern-edmund-cheng-6255091",
-      "published": "2026-07-15 12:37"
+      "url": "https://www.channelnewsasia.com/world/san-francisco-alcatraz-boat-fire-sinking-6254786",
+      "published": "2026-07-15 16:25"
     },
     {
       "category": "General",
-      "title": "Rosmah Mansor, wife of Malaysia's ex-PM Najib Razak, files lawsuit against comedian Harith Iskander over stand-up show",
+      "title": "Japan to recognise cryptocurrency as 'financial assets', NHK says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/rosmah-mansor-harith-iskander-lawsuit-6255141",
-      "published": "2026-07-15 12:35"
+      "url": "https://www.channelnewsasia.com/business/japan-recognise-cryptocurrency-financial-assets-nhk-says-6255571",
+      "published": "2026-07-15 16:15"
     },
     {
       "category": "General",
-      "title": "Exclusive-Stripe, Advent offer to buy PayPal for more than $53 billion, sources say",
+      "title": "Body of Indian sailor missing after Oman ship attack found",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-stripe-advent-offer-buy-paypal-more-53-billion-sources-say-6255126",
-      "published": "2026-07-15 11:25"
+      "url": "https://www.channelnewsasia.com/asia/india-sailor-found-oman-ship-strait-hormuz-6255526",
+      "published": "2026-07-15 16:13"
     },
     {
       "category": "General",
-      "title": "Commentary: Gillman Barracks - can we rethink how the public participates in decisions on redevelopment?",
+      "title": "‘Too sloppy technically’: France’s Mbappe rues defeat by Spain",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/gillman-barracks-redevelopment-public-feedback-environment-heritage-6253276",
-      "published": "2026-07-15 11:12"
+      "url": "https://www.channelnewsasia.com/sport/too-sloppy-technically-frances-mbappe-rues-defeat-spain-6255541",
+      "published": "2026-07-15 16:07"
     },
     {
       "category": "General",
-      "title": "1,800 pest management workers to benefit from sustainable pay rises under Progressive Wage Model",
+      "title": "Crystal Jade to shut Suntec City outlet, last day on Jul 15",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/pest-management-workers-progressive-wage-model-expand-6254856",
-      "published": "2026-07-15 11:00"
+      "url": "https://www.channelnewsasia.com/dining/crystal-jade-suntec-city-closing-6255486",
+      "published": "2026-07-15 16:01"
     },
     {
       "category": "General",
-      "title": "National Gallery Singapore to host pop art exhibition featuring Andy Warhol, Barbara Kruger and more from December",
+      "title": "Where authorities are restricting data centres amid AI boom",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/living/pop-after-pop-art-around-us-national-gallery-singapore-guggenheim-6254951",
-      "published": "2026-07-15 10:47"
-    },
-    {
-      "category": "General",
-      "title": "Oil rises after US-Iran hostilities flare again with strikes on energy targets",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-rises-after-us-iran-hostilities-flare-again-strikes-energy-targets-6254901",
-      "published": "2026-07-15 09:14"
-    },
-    {
-      "category": "General",
-      "title": "England coach Tuchel understands Argentina's dark blue-kit superstition",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-coach-tuchel-understands-argentinas-dark-blue-kit-superstition-6254896",
-      "published": "2026-07-15 09:09"
-    },
-    {
-      "category": "General",
-      "title": "US gripped by major outbreak of intestinal infections",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-cyclosporiasis-outbreak-fda-intestinal-infection-6254861",
-      "published": "2026-07-15 09:04"
-    },
-    {
-      "category": "General",
-      "title": "SK Hynix shares surge 13% on AI hopes as US tech stocks resume their climb",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sk-hynix-shares-surge-13-ai-hopes-us-tech-stocks-resume-their-climb-6254871",
-      "published": "2026-07-15 08:58"
-    },
-    {
-      "category": "General",
-      "title": "England focused on future, not history, before Argentina clash, says Tuchel",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-focused-future-not-history-argentina-clash-says-tuchel-6254866",
-      "published": "2026-07-15 08:54"
-    },
-    {
-      "category": "General",
-      "title": "Fernvale fitness corner used to dry laundry, AMK town council puts up notices after complaint",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/laundry-fitness-corner/",
-      "published": "2026-07-15 02:09"
+      "url": "https://www.channelnewsasia.com/business/where-authorities-are-restricting-data-centres-amid-ai-boom-6253646",
+      "published": "2026-07-15 15:33"
     }
   ]
 }
