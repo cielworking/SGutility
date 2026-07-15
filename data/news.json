@@ -1,33 +1,26 @@
 {
-  "last_updated": "2026-07-15 19:47",
+  "last_updated": "2026-07-15 22:08",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Syria says arrested Assad-era officer specialising in chemical weapons",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/syria-says-arrested-assad-era-officer-specialising-in-chemical-weapons-6256406",
+      "published": "2026-07-15 21:46"
+    },
+    {
+      "category": "Crime",
+      "title": "Italian prosecutors request to drop sports fraud case against referee chief",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/italian-prosecutors-request-drop-sports-fraud-case-against-referee-chief-6256116",
+      "published": "2026-07-15 19:49"
+    },
     {
       "category": "Crime",
       "title": "Google urges EU top court to back ruling scrapping $1.7 billion antitrust fine",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/google-urges-eu-top-court-back-ruling-scrapping-17-billion-antitrust-fine-6255926",
       "published": "2026-07-15 18:25"
-    },
-    {
-      "category": "Crime",
-      "title": "AGC urges court to declare Raymond Ng, Iris Koh vexatious litigants; defence backs their right to sue",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/agc-raymond-iris-vexatious-litigants-lawfare-6255561",
-      "published": "2026-07-15 17:15"
-    },
-    {
-      "category": "Crime",
-      "title": "European Athletics, broadcasters issue guidelines on preventing sexualisation of female athletes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/european-athletics-broadcasters-issue-guidelines-preventing-sexualisation-female-athletes-6255656",
-      "published": "2026-07-15 17:00"
-    },
-    {
-      "category": "Crime",
-      "title": "Victims lose more than S$259,000 in courier phishing scams since Jun 24",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/scam-police-fraud-victims-money-couriers-6255511",
-      "published": "2026-07-15 16:27"
     },
     {
       "category": "Crime",
@@ -56,6 +49,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/man-crash-porsche-suntec-city-jail-ban/",
       "published": "2026-07-15 11:38"
+    },
+    {
+      "category": "Crime",
+      "title": "Repeat drink driver gets over 4 months’ jail after reoffending a year following last conviction",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/repeat-drink-driver-gets-over-4-months-jail-after-reoffending-a-year-following-last-conviction",
+      "published": "2026-07-15 19:55"
     },
     {
       "category": "Crime",
@@ -122,10 +122,17 @@
     },
     {
       "category": "Traffic",
-      "title": "Japan to receive first Mexican crude cargo since start of Iran war",
+      "title": "GovTech layoffs reflect broader reorganisation trends in tech sector, say analysts",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japan-receive-first-mexican-crude-cargo-start-iran-war-6255786",
-      "published": "2026-07-15 17:52"
+      "url": "https://www.channelnewsasia.com/singapore/govtech-jobs-layoffs-retrenchment-public-sector-6256216",
+      "published": "2026-07-15 22:03"
+    },
+    {
+      "category": "Traffic",
+      "title": "1,800 pest management workers to get better wages & career pathways under Progressive Wage Model",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/pest-management-workers-progressive-wage-model/",
+      "published": "2026-07-15 23:56"
     },
     {
       "category": "Traffic",
@@ -157,17 +164,17 @@
     },
     {
       "category": "Transport",
+      "title": "Some businesses will lose out amid deeper Singapore-Malaysia economic integration, but both sides will benefit: Tharman",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/president-tharman-malaysia-state-visit-economy-businesses-6255946",
+      "published": "2026-07-15 20:57"
+    },
+    {
+      "category": "Transport",
       "title": "LTA investigating cause of 95-minute bus arrival time display outage on MyTransport app",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/lta-investigating-cause-of-95-minute-bus-arrival-time-display-outage-on-mytransport-app",
       "published": "2026-07-15 12:10"
-    },
-    {
-      "category": "Fire",
-      "title": "‘A recurring nightmare’: After another deadly bar fire, Thailand confronts familiar safety questions",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/thailand-bangkok-deadly-bar-fire-safety-failures-loopholes-6255636",
-      "published": "2026-07-15 18:00"
     },
     {
       "category": "Money",
@@ -192,7 +199,7 @@
     },
     {
       "category": "Housing",
-      "title": "Frasers Property-led consortium outbids two others with $2.13 billion offer for Bayshore Drive mixed-use site",
+      "title": "Frasers Property-led consortium outbids two others with $2.13b offer for Bayshore Drive mixed-use site",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/frasers-property-led-consortium-outbids-two-others-with-2-13-billion-offer-for-bayshore-drive-mixed",
       "published": "2026-07-15 19:23"
@@ -203,6 +210,55 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/hdb-lapses-saw-flats-allocated-housing-grants-given-to-ineligible-applicants-ago-report",
       "published": "2026-07-15 15:58"
+    },
+    {
+      "category": "General",
+      "title": "London City sign France forward Diani",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/london-city-sign-france-forward-diani-6256366",
+      "published": "2026-07-15 21:32"
+    },
+    {
+      "category": "General",
+      "title": "Biden announces memoir, says cancer treatment 'going really well'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/biden-announces-memoir-says-cancer-treatment-going-really-well-6256326",
+      "published": "2026-07-15 21:21"
+    },
+    {
+      "category": "General",
+      "title": "US launches new round of strikes against Iran as escalation threatens shipping",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-new-strikes-iran-escalation-shipping-6255271",
+      "published": "2026-07-15 20:47"
+    },
+    {
+      "category": "General",
+      "title": "EU chief announces 'drone deal' with Ukraine",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/eu-chief-announces-drone-deal-ukraine-6255841",
+      "published": "2026-07-15 20:46"
+    },
+    {
+      "category": "General",
+      "title": "Sri Lanka expands anti-dengue drive as deaths mount",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/sri-lanka-expands-anti-dengue-drive-deaths-mount-6256186",
+      "published": "2026-07-15 20:25"
+    },
+    {
+      "category": "General",
+      "title": "Open organisers mulling tee time changes to avoid World Cup final clash",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/open-organisers-mulling-tee-time-changes-avoid-world-cup-final-clash-6256161",
+      "published": "2026-07-15 20:07"
+    },
+    {
+      "category": "General",
+      "title": "Malaysia says startup residents in Johor's Forest City have valid travel papers, amid alleged Israeli links",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/malaysia-forest-city-commune-israeli-travel-documents-6255296",
+      "published": "2026-07-15 20:04"
     },
     {
       "category": "General",
@@ -224,62 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/east-asia/japan-kfc-sushi-chain-fear-supply-shortages-after-cyberattack-6255996",
       "published": "2026-07-15 18:57"
-    },
-    {
-      "category": "General",
-      "title": "35 schools oversubscribed in Phase 2A of Primary 1 registration exercise",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/phase-2a-oversubscribed-schools-p1-registration-6255811",
-      "published": "2026-07-15 18:36"
-    },
-    {
-      "category": "General",
-      "title": "Sunderland sign Belgium defender Meunier on free transfer",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/sunderland-sign-belgium-defender-meunier-free-transfer-6255956",
-      "published": "2026-07-15 18:33"
-    },
-    {
-      "category": "General",
-      "title": "GovTech cuts 93 jobs in ‘first phase’ of transition to new operating model",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/govtech-retrenchment-jobs-transition-layoffs-6255641",
-      "published": "2026-07-15 18:30"
-    },
-    {
-      "category": "General",
-      "title": "EU extends right to stay for Ukrainians, excludes military-age men",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/eu-ukrainians-right-stay-military-men-6255836",
-      "published": "2026-07-15 18:10"
-    },
-    {
-      "category": "General",
-      "title": "Netflix's next growth chapter hinges on keeping viewers hooked",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/netflixs-next-growth-chapter-hinges-keeping-viewers-hooked-6255826",
-      "published": "2026-07-15 18:01"
-    },
-    {
-      "category": "General",
-      "title": "Israel kills four people in Gaza, including a child, medics say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israel-kills-four-people-in-gaza-including-child-medics-say-6255586",
-      "published": "2026-07-15 17:37"
-    },
-    {
-      "category": "General",
-      "title": "Japan refiners to diversify crude sources, explore support for Hormuz bypass routes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japan-refiners-diversify-crude-sources-explore-support-hormuz-bypass-routes-6255661",
-      "published": "2026-07-15 17:02"
-    },
-    {
-      "category": "General",
-      "title": "Exclusive-Files relating to India’s largest nuclear power plant Kudankulam exposed in data breach",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-files-relating-indias-largest-nuclear-power-plant-kudankulam-exposed-in-data-breach-6255651",
-      "published": "2026-07-15 17:01"
     }
   ]
 }
