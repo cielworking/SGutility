@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-17 08:12",
+  "last_updated": "2026-07-17 11:36",
   "headlines": [
     {
       "category": "Crime",
@@ -72,18 +72,11 @@
       "published": "2026-07-15 16:19"
     },
     {
-      "category": "Crime",
-      "title": "Man gets over 9 years’ jail, 12 strokes of cane for raping two 13-year-old girls",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/man-gets-over-9-years-jail-12-strokes-of-cane-for-sexual-offences-against-two-13-year-old-girls",
-      "published": "2026-07-15 14:34"
-    },
-    {
       "category": "Traffic",
-      "title": "Lower age limit, lower fees but Community Care Apartments unlikely to see surge in demand: Analysts",
+      "title": "The smarter way to choose a healthcare provider",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/community-care-apartment-cca-age-fees-demand-hdb-6258251",
-      "published": "2026-07-17 06:00"
+      "url": "https://www.channelnewsasia.com/brand-studio/smarter-way-choose-healthcare-provider-6252386",
+      "published": "2026-07-17 10:01"
     },
     {
       "category": "Traffic",
@@ -129,6 +122,13 @@
     },
     {
       "category": "Transport",
+      "title": "Singapore's June non-oil exports rise 20.7% as AI demand stays robust",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/nodx-june-exports-growth-ai-demand-6259826",
+      "published": "2026-07-17 08:30"
+    },
+    {
+      "category": "Transport",
       "title": "Passenger scolds S'pore bus driver for driving at 'very slow speed', but driver wins praise for being calm & professional",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/passenger-scold-bus-driver-slow/",
@@ -164,10 +164,10 @@
     },
     {
       "category": "Fire",
-      "title": "Tuchel under fire but England undone by more than manager's tactics",
+      "title": "Hazardous Canadian wildfire smoke choking millions in US",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tuchel-under-fire-england-undone-more-managers-tactics-6259621",
-      "published": "2026-07-17 05:02"
+      "url": "https://www.channelnewsasia.com/world/canada-wildfire-us-smoke-new-york-6259861",
+      "published": "2026-07-17 08:58"
     },
     {
       "category": "Fire",
@@ -177,11 +177,11 @@
       "published": "2026-07-16 09:44"
     },
     {
-      "category": "Money",
-      "title": "People’s Park Centre guns for third collective sale at lower $1.48 billion guide price",
+      "category": "Fire",
+      "title": "Youth under probe after 2 fires in Bukit Panjang HDB block, with 3 in total reported in 2 months",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/housing/peoples-park-centre-guns-for-third-collective-sale-at-lower-1-48-billion-guide-price",
-      "published": "2026-07-15 16:14"
+      "url": "https://www.straitstimes.com/singapore/youth-under-probe-after-2-fires-in-bukit-panjang-hdb-block-with-3-in-total-reported-in-2-months",
+      "published": "2026-07-17 11:05"
     },
     {
       "category": "Housing",
@@ -191,11 +191,81 @@
       "published": "2026-07-15 19:23"
     },
     {
-      "category": "Housing",
-      "title": "HDB lapses saw flats allocated, housing grants given to ineligible applicants: AGO report",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/hdb-lapses-saw-flats-allocated-housing-grants-given-to-ineligible-applicants-ago-report",
-      "published": "2026-07-15 15:58"
+      "category": "General",
+      "title": "China's Xi says AI should not be dominated by one country",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-ai-not-dominated-one-country-xi-6260096",
+      "published": "2026-07-17 11:14"
+    },
+    {
+      "category": "General",
+      "title": "Uniper targets data centres in strategy shift, plans €5 billion in investment",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/uniper-targets-data-centres-in-strategy-shift-plans-eu5-billion-in-investment-6260116",
+      "published": "2026-07-17 11:06"
+    },
+    {
+      "category": "General",
+      "title": "Pursuit Of Jade concert in China announced without main stars Zhang Linghe and Tian Xiwei in lineup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/pursuit-jade-concert-without-zhang-linghe-tian-xiwei-6260016",
+      "published": "2026-07-17 11:02"
+    },
+    {
+      "category": "General",
+      "title": "South Korea-US team unveils robotic technology that dresses the wearer",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/south-korea-us-team-unveils-robotic-technology-dresses-wearer-6260091",
+      "published": "2026-07-17 10:57"
+    },
+    {
+      "category": "General",
+      "title": "Seven & i shares jump 3% on Zabka convenience store stake talks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/seven-i-shares-jump-3-zabka-convenience-store-stake-talks-6260041",
+      "published": "2026-07-17 10:45"
+    },
+    {
+      "category": "General",
+      "title": "Actor Richard Low reveals incurable colon condition behind recent six-day hospitalisation",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/richard-low-hospitalised-colon-condition-6259891",
+      "published": "2026-07-17 10:09"
+    },
+    {
+      "category": "General",
+      "title": "Trump accuses China of 2020 voting interference, contradicting US intelligence findings",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-accuse-china-2020-us-voting-interference-6259916",
+      "published": "2026-07-17 10:02"
+    },
+    {
+      "category": "General",
+      "title": "How Christopher Nolan turned Homer’s The Odyssey into an IMAX epic",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/advertorial/how-christopher-nolan-turned-homers-odyssey-imax-epic-6242716",
+      "published": "2026-07-17 09:32"
+    },
+    {
+      "category": "General",
+      "title": "'Messi effect' a dream for MLS after World Cup, says Garber",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/messi-effect-dream-mls-after-world-cup-says-garber-6259946",
+      "published": "2026-07-17 09:31"
+    },
+    {
+      "category": "General",
+      "title": "Oil rises on intensifying US-Iran hostilities and threat of Red Sea closure",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-rises-intensifying-us-iran-hostilities-and-threat-red-sea-closure-6259956",
+      "published": "2026-07-17 09:31"
+    },
+    {
+      "category": "General",
+      "title": "Databricks valued at $188 billion after Coatue-led investment, WSJ reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/databricks-valued-188-billion-after-coatue-led-investment-wsj-reports-6259931",
+      "published": "2026-07-17 09:28"
     },
     {
       "category": "General",
@@ -206,80 +276,10 @@
     },
     {
       "category": "General",
-      "title": "PMS making your usual workout feel impossible? 6 gym exercise swaps to try",
+      "title": "Kioxia owes Viasat $229 million for infringing flash-memory patents, US jury says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/women/women-exercise-during-period-pms-workout-tips-6161746",
-      "published": "2026-07-17 07:21"
-    },
-    {
-      "category": "General",
-      "title": "Trump media to sell faster access to president's posts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-media-sell-faster-access-6259761",
-      "published": "2026-07-17 07:13"
-    },
-    {
-      "category": "General",
-      "title": "SpaceX Starship rocket aborts before liftoff in 13th flight test attempt",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spacex-starship-rocket-aborts-liftoff-in-13th-flight-test-attempt-6259756",
-      "published": "2026-07-17 06:59"
-    },
-    {
-      "category": "General",
-      "title": "US strikes in Iran hit airport, bridges and railway station",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-strikes-iran-war-airport-bridges-railway-6259721",
-      "published": "2026-07-17 06:38"
-    },
-    {
-      "category": "General",
-      "title": "PayPal board sees Stripe-Advent offer as inadequate, sources say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/paypal-board-sees-stripe-advent-offer-inadequate-sources-say-6259716",
-      "published": "2026-07-17 06:27"
-    },
-    {
-      "category": "General",
-      "title": "I tasted 300 Nebbiolo wines from Barolo, Barbaresco and Roero. These 6 producers stood out",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/experiences/nebbiolo-wines-piedmont-barolo-barbaresco-roero-6252971",
-      "published": "2026-07-17 06:22"
-    },
-    {
-      "category": "General",
-      "title": "Xpeng L03: New electric SUV puts AI and Google Maps at the centre",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/xpeng-l03-electric-suv-ai-google-maps-6259681",
-      "published": "2026-07-17 06:18"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: India’s long-held strategy is paying off in the Indo-Pacific",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/india-modi-indo-pacific-asia-middle-power-australia-indonesia-6257866",
-      "published": "2026-07-17 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Quitting Anwar’s PH would fall into political rivals' trap, says DAP leader Anthony Loke",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-democratic-action-party-anthony-loke-johor-negeri-sembilan-elections-6257471",
-      "published": "2026-07-17 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Did the host overshadow the football in the 2026 World Cup?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/world-cup-2026-america-football-culture-controversies-6257556",
-      "published": "2026-07-17 05:59"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Gen Z is pushing back against AI - a reminder that the future isn’t written",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/gen-z-pushback-against-ai-6258016",
-      "published": "2026-07-17 05:58"
+      "url": "https://www.channelnewsasia.com/business/kioxia-owes-viasat-229-million-infringing-flash-memory-patents-us-jury-says-6259796",
+      "published": "2026-07-17 07:37"
     }
   ]
 }
