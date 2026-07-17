@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-17 22:02",
+  "last_updated": "2026-07-17 23:38",
   "headlines": [
     {
       "category": "Crime",
@@ -17,24 +17,24 @@
     },
     {
       "category": "Crime",
-      "title": "CNB arrests 100 suspected drug offenders in islandwide operation; drugs worth more than S$34,000 seized",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/cnb-100-suspected-drug-offenders-arrested-islandwide-operation-foreign-worker-dorm-6260961",
-      "published": "2026-07-17 19:19"
-    },
-    {
-      "category": "Crime",
-      "title": "Maid jailed after stealing more than S$217,000 from employer, bought condo, vehicles and land in the Philippines",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/domestic-helper-stole-cash-jewellery-employer-buy-condo-unit-car-farmland-philippines-6260966",
-      "published": "2026-07-17 19:18"
-    },
-    {
-      "category": "Crime",
       "title": "M'sian girl, 11, found dead after going missing for 3 days, 2 men arrested on suspicion of murder",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/malaysian-girl-dead-two-men-arrested/",
       "published": "2026-07-17 20:41"
+    },
+    {
+      "category": "Crime",
+      "title": "Man to be charged with cheating victim of over $86,000 after posing as renovation firm employee",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-to-be-charged-with-cheating-victim-of-over-86000-after-posing-as-renovation-company-staff",
+      "published": "2026-07-17 22:53"
+    },
+    {
+      "category": "Crime",
+      "title": "Man arrested after alleged shoplifting spree at Changi Airport",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-arrested-after-alleged-shoplifting-spree-at-changi-airport",
+      "published": "2026-07-17 22:35"
     },
     {
       "category": "Crime",
@@ -107,11 +107,11 @@
       "published": "2026-07-16 15:22"
     },
     {
-      "category": "Crime",
-      "title": "$3b money laundering case: Conveyancing lawyer charged with forgery over property purchase",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/3-billion-money-laundering-case-conveyancing-lawyer-charged-with-forgery-over-property-purchase",
-      "published": "2026-07-16 10:03"
+      "category": "Traffic",
+      "title": "World Cup final halftime to last more than 15 minutes, broadcasting sources say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-final-halftime-last-more-15-minutes-broadcasting-sources-say-6261501",
+      "published": "2026-07-17 22:22"
     },
     {
       "category": "Traffic",
@@ -133,20 +133,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/zoox-recalls-self-driving-cars-because-they-may-not-detect-smoke-6261376",
       "published": "2026-07-17 21:01"
-    },
-    {
-      "category": "Traffic",
-      "title": "Man pleads guilty to raping 32-year-old woman at field near Tuas West Road MRT station",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/man-rape-woman-field-tuas-west-road-mrt-train-6261046",
-      "published": "2026-07-17 19:55"
-    },
-    {
-      "category": "Traffic",
-      "title": "Chemical smell detected across central region in Singapore, NEA says air quality within 'usual' range",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/chemical-gas-smell-central-region-nea-air-quality-usual-6261091",
-      "published": "2026-07-17 19:52"
     },
     {
       "category": "Traffic",
@@ -191,13 +177,6 @@
       "published": "2026-07-16 14:09"
     },
     {
-      "category": "Traffic",
-      "title": "Missed the PSLE essential exam strategies forum? Watch the sessions here",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/parenting-education/missed-the-psle-essential-exam-strategies-forum-here-are-recordings-of-the-two-sessions",
-      "published": "2026-07-16 12:36"
-    },
-    {
       "category": "Transport",
       "title": "MRT reliability stays above 2 million train-km mark for third consecutive month",
       "source": "Straits Times",
@@ -220,14 +199,7 @@
     },
     {
       "category": "Fire",
-      "title": "Northeast Spain wildfire destroys over 12,000 hectares: Regional authorities",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/northeast-spain-wildfire-destroys-over-12000-hectares-regional-authorities-6261151",
-      "published": "2026-07-17 19:20"
-    },
-    {
-      "category": "Fire",
-      "title": "Youth under probe for 2 fires in Bukit Panjang HDB block; 3 total reported in 2 months",
+      "title": "Youth under probe for 2 fires at Bukit Panjang HDB block; 3 in total reported in 2 months",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/youth-under-probe-after-2-fires-in-bukit-panjang-hdb-block-with-3-in-total-reported-in-2-months",
       "published": "2026-07-17 11:05"
@@ -241,10 +213,52 @@
     },
     {
       "category": "Housing",
+      "title": "Sunset Way housing plans 'not final'; HDB says it remains open to feedback",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/sunset-way-maju-forest-petition-hdb-6258136",
+      "published": "2026-07-17 22:56"
+    },
+    {
+      "category": "Housing",
       "title": "Toa Payoh HDB resident sees note on how P6 boy can develop better 'lift etiquette', realises it's about his son",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/lift-etiquette-toa-payoh/",
       "published": "2026-07-17 23:23"
+    },
+    {
+      "category": "General",
+      "title": "As life expectancy rises, talks start on a UN treaty to protect older persons",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/un-treaty-ageism-protect-older-people-6261101",
+      "published": "2026-07-17 23:04"
+    },
+    {
+      "category": "General",
+      "title": "Tour de France unveils new mountain test as riders brace for Col du Haag",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/tour-de-france-unveils-new-mountain-test-riders-brace-col-du-haag-6261606",
+      "published": "2026-07-17 22:59"
+    },
+    {
+      "category": "General",
+      "title": "BofA names senior executives to drive AI adoption in global markets-memo",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/bofa-names-senior-executives-drive-ai-adoption-in-global-markets-memo-6261561",
+      "published": "2026-07-17 22:47"
+    },
+    {
+      "category": "General",
+      "title": "Rubio to visit Southeast Asia in bid to reaffirm partnerships",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/rubio-visit-southeast-asia-in-bid-reaffirm-partnerships-6261556",
+      "published": "2026-07-17 22:45"
+    },
+    {
+      "category": "General",
+      "title": "Musk's X, major labels end dispute over music on social-media platform",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/musks-x-major-labels-end-dispute-over-music-social-media-platform-6261496",
+      "published": "2026-07-17 22:17"
     },
     {
       "category": "General",
@@ -257,7 +271,7 @@
       "category": "General",
       "title": "World Cup winners to receive US-style championship rings",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cup-winners-receive-us-style-championship-rings-6261446",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-winners-championship-rings-6261446",
       "published": "2026-07-17 21:38"
     },
     {
@@ -265,20 +279,6 @@
       "title": "Gen Z workers in Asia say they are using AI to do more – but their bosses are expecting more too",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/today/big-read/money-mind-survey-ai-gen-z-workers-asia-6257496",
-      "published": "2026-07-17 21:30"
-    },
-    {
-      "category": "General",
-      "title": "'You feel like rubbish': Why the toxic culture in law firms persists",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/today/ground-up/lawyer-toxic-work-culture-lawsoc-mental-health-6257316",
-      "published": "2026-07-17 21:30"
-    },
-    {
-      "category": "General",
-      "title": "Am I a fake World Cup fan? Here's why jumping on the bandwagon is healthy for society",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/today/voices/world-cup-football-fake-fan-sports-fandom-6254996",
       "published": "2026-07-17 21:30"
     }
   ]
