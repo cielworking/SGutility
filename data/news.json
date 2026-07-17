@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-17 19:40",
+  "last_updated": "2026-07-17 22:02",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "SportSG to free up more tennis courts for public bookings",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/tennis-courts-booking-sportsg-measures-6261196",
+      "published": "2026-07-17 20:49"
+    },
+    {
+      "category": "Crime",
+      "title": "Indian regulator warns of 'boss scam', a cyber fraud targeting top executives",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/indian-regulator-warns-boss-scam-cyber-fraud-targeting-top-executives-6261286",
+      "published": "2026-07-17 20:28"
+    },
     {
       "category": "Crime",
       "title": "CNB arrests 100 suspected drug offenders in islandwide operation; drugs worth more than S$34,000 seized",
@@ -14,13 +28,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/domestic-helper-stole-cash-jewellery-employer-buy-condo-unit-car-farmland-philippines-6260966",
       "published": "2026-07-17 19:18"
-    },
-    {
-      "category": "Crime",
-      "title": "Jail for 66-year-old man who offered 12-year-old boy cash and cigarettes in exchange for sexual acts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/jail-man-sexual-acts-boy-cigarettes-cash-6260866",
-      "published": "2026-07-17 18:11"
     },
     {
       "category": "Crime",
@@ -108,10 +115,38 @@
     },
     {
       "category": "Traffic",
-      "title": "Players' body questions ICC over World Cup format change",
+      "title": "From Bar to bench: Chief Justice Sundaresh Menon's career and landmark rulings",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/players-body-questions-icc-over-world-cup-format-change-6260741",
-      "published": "2026-07-17 16:27"
+      "url": "https://www.channelnewsasia.com/singapore/chief-justice-sundaresh-menon-retire-career-decisions-judgments-court-6261201",
+      "published": "2026-07-17 21:30"
+    },
+    {
+      "category": "Traffic",
+      "title": "US import prices unexpectedly rise in June",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-import-prices-unexpectedly-rise-in-june-6261381",
+      "published": "2026-07-17 21:02"
+    },
+    {
+      "category": "Traffic",
+      "title": "Zoox recalls self-driving cars because they may not detect smoke",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/zoox-recalls-self-driving-cars-because-they-may-not-detect-smoke-6261376",
+      "published": "2026-07-17 21:01"
+    },
+    {
+      "category": "Traffic",
+      "title": "Man pleads guilty to raping 32-year-old woman at field near Tuas West Road MRT station",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/man-rape-woman-field-tuas-west-road-mrt-train-6261046",
+      "published": "2026-07-17 19:55"
+    },
+    {
+      "category": "Traffic",
+      "title": "Chemical smell detected across central region in Singapore, NEA says air quality within 'usual' range",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/chemical-gas-smell-central-region-nea-air-quality-usual-6261091",
+      "published": "2026-07-17 19:52"
     },
     {
       "category": "Traffic",
@@ -119,6 +154,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/freedom-expression-carries-responsibilities-shanmugam-bloomberg-defamation/",
       "published": "2026-07-17 23:33"
+    },
+    {
+      "category": "Traffic",
+      "title": "GovTech’s restructuring reflects what is expected of agile tech teams",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/govtechs-restructuring-reflects-what-is-expected-of-agile-tech-teams",
+      "published": "2026-07-17 21:09"
     },
     {
       "category": "Traffic",
@@ -157,27 +199,6 @@
     },
     {
       "category": "Transport",
-      "title": "SpaceX IPO earns millions for US Small Business Administration head Kelly Loeffler",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spacex-ipo-earns-millions-us-small-business-administration-head-kelly-loeffler-6260936",
-      "published": "2026-07-17 18:03"
-    },
-    {
-      "category": "Transport",
-      "title": "Italy fines six companies over 2026 Winter Olympic Games 'ambush marketing'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/italy-fines-six-companies-over-2026-winter-olympic-games-ambush-marketing-6260911",
-      "published": "2026-07-17 17:44"
-    },
-    {
-      "category": "Transport",
-      "title": "MRT network logs third month of high reliability, no major delays since November",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/lta-train-reliability-june-2026-mrt-transport-6260541",
-      "published": "2026-07-17 17:24"
-    },
-    {
-      "category": "Transport",
       "title": "MRT reliability stays above 2 million train-km mark for third consecutive month",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/mrt-reliability-stays-above-2-million-train-km-mark-for-third-consecutive-month",
@@ -198,32 +219,11 @@
       "published": "2026-07-16 15:50"
     },
     {
-      "category": "Transport",
-      "title": "Quieter spaces, training for front-line staff: How businesses are ensuring more inclusivity in public spaces",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/autism-inclusive-public-spaces-sensory-friendly-time-for-acceptance-mastercard",
-      "published": "2026-07-16 04:00"
-    },
-    {
-      "category": "Transport",
-      "title": "Bus drivers need to regulate speed to prevent bunching, says LTA after passenger’s video complaint",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/bus-drivers-need-to-regulate-speed-to-prevent-bunching-says-lta-after-passengers-video-complaint",
-      "published": "2026-07-15 22:58"
-    },
-    {
       "category": "Fire",
       "title": "Northeast Spain wildfire destroys over 12,000 hectares: Regional authorities",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/northeast-spain-wildfire-destroys-over-12000-hectares-regional-authorities-6261151",
       "published": "2026-07-17 19:20"
-    },
-    {
-      "category": "Fire",
-      "title": "Hong Kong wraps up probe into 'preventable' deadly fire",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/hong-kong-fire-probe-wang-fuk-court-6260761",
-      "published": "2026-07-17 16:32"
     },
     {
       "category": "Fire",
@@ -248,38 +248,38 @@
     },
     {
       "category": "General",
-      "title": "Bowen confirms stay at West Ham despite Premier League relegation",
+      "title": "Herbert narrowly misses record round as he seizes Open lead",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/bowen-confirms-stay-west-ham-despite-premier-league-relegation-6261161",
-      "published": "2026-07-17 19:23"
+      "url": "https://www.channelnewsasia.com/sport/herbert-narrowly-misses-record-round-he-seizes-open-lead-6261456",
+      "published": "2026-07-17 21:45"
     },
     {
       "category": "General",
-      "title": "Telstra CEO points to undocumented software change for outage in Senate testimony",
+      "title": "World Cup winners to receive US-style championship rings",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/telstra-ceo-points-undocumented-software-change-outage-in-senate-testimony-6261086",
-      "published": "2026-07-17 19:01"
+      "url": "https://www.channelnewsasia.com/sport/world-cup-winners-receive-us-style-championship-rings-6261446",
+      "published": "2026-07-17 21:38"
     },
     {
       "category": "General",
-      "title": "Australian Herbert moves top of Open leaderboard with birdie blitz",
+      "title": "Gen Z workers in Asia say they are using AI to do more – but their bosses are expecting more too",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/australian-herbert-moves-top-open-leaderboard-birdie-blitz-6261051",
-      "published": "2026-07-17 18:52"
+      "url": "https://www.channelnewsasia.com/today/big-read/money-mind-survey-ai-gen-z-workers-asia-6257496",
+      "published": "2026-07-17 21:30"
     },
     {
       "category": "General",
-      "title": "India moves to bring Formula One back to the country",
+      "title": "'You feel like rubbish': Why the toxic culture in law firms persists",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/india-moves-bring-formula-one-back-country-6261016",
-      "published": "2026-07-17 18:30"
+      "url": "https://www.channelnewsasia.com/today/ground-up/lawyer-toxic-work-culture-lawsoc-mental-health-6257316",
+      "published": "2026-07-17 21:30"
     },
     {
       "category": "General",
-      "title": "Global equity funds draw inflows for the eighth week on earnings optimism",
+      "title": "Am I a fake World Cup fan? Here's why jumping on the bandwagon is healthy for society",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/global-equity-funds-draw-inflows-eighth-week-earnings-optimism-6260971",
-      "published": "2026-07-17 18:12"
+      "url": "https://www.channelnewsasia.com/today/voices/world-cup-football-fake-fan-sports-fandom-6254996",
+      "published": "2026-07-17 21:30"
     }
   ]
 }
