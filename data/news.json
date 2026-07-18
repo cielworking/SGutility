@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18 16:11",
+  "last_updated": "2026-07-18 17:44",
   "headlines": [
     {
       "category": "Crime",
@@ -14,6 +14,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/singapore-bus-driver-police-report-filmed-drive-slow/",
       "published": "2026-07-18 00:08"
+    },
+    {
+      "category": "Crime",
+      "title": "Man arrested for drink driving after fatal hit-and-run accident near Suntec City",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-arrested-for-drink-driving-after-fatal-hit-and-run-accident-near-suntec-city",
+      "published": "2026-07-18 17:30"
     },
     {
       "category": "Crime",
@@ -72,20 +79,6 @@
       "published": "2026-07-16 19:20"
     },
     {
-      "category": "Crime",
-      "title": "Motorist charged with drink driving after his vehicle struck police car",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/motorist-charged-with-drink-driving-after-his-vehicle-allegedly-collided-with-police-car",
-      "published": "2026-07-16 17:34"
-    },
-    {
-      "category": "Crime",
-      "title": "Man charged with drink driving again despite three past convictions and lifetime driving ban",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/man-given-lifetime-driving-ban-in-2023-for-drink-driving-allegedly-reoffended-and-charged",
-      "published": "2026-07-16 17:23"
-    },
-    {
       "category": "Traffic",
       "title": "Cartier owner Richemont reports ‘stratospheric’ sales growth as jewellery demand surges",
       "source": "CNA",
@@ -101,20 +94,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Abbott investigates two separate cyber incidents, says no operations affected",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/abbott-investigates-two-separate-cyber-incidents-says-no-operations-affected-6262176",
-      "published": "2026-07-18 07:02"
-    },
-    {
-      "category": "Traffic",
-      "title": "Reddit, video games and other unexpected tools savvy travellers are using to plan and enhance their trips",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/travel/travellers-online-platforms-reddit-geoguessr-netflix-6240986",
-      "published": "2026-07-18 07:01"
-    },
-    {
-      "category": "Traffic",
       "title": "'Freedom of expression carries responsibilities': Shanmugam on Bloomberg defamation case",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/freedom-expression-carries-responsibilities-shanmugam-bloomberg-defamation/",
@@ -122,7 +101,7 @@
     },
     {
       "category": "Traffic",
-      "title": "Some Orchard Road properties are changing hands. Can new owners give it a new lease of life?",
+      "title": "New mall owners, but still a slow reset for Orchard Road",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/some-orchard-road-properties-are-changing-hands-can-new-owners-give-it-a-new-lease-of-life",
       "published": "2026-07-18 05:00"
@@ -213,14 +192,35 @@
     },
     {
       "category": "Housing",
-      "title": "Cat fosterers to be allowed up to six cats in HDB flats under new pilot",
+      "title": "Cat fosterers to be allowed up to six cats in HDB flats under pilot scheme",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/cat-fosterers-to-be-allowed-up-to-six-cats-in-hdb-flats-under-new-pilot",
       "published": "2026-07-18 15:23"
     },
     {
       "category": "General",
-      "title": "Negeri Sembilan election campaign begins after 103 candidates confirmed; BN, PN to campaign for each other",
+      "title": "No discrepancy found in O-Level English oral exam questions: SEAB",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/o-level-english-oral-exam-seab-no-discrepancy-reddit-complaints-6262561",
+      "published": "2026-07-18 17:05"
+    },
+    {
+      "category": "General",
+      "title": "Laos says cannot determine cause of tourist deaths linked to tainted alcohol",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/laos-authorities-cannot-determine-tourist-death-linked-tainted-alcohol-6262581",
+      "published": "2026-07-18 16:56"
+    },
+    {
+      "category": "General",
+      "title": "Flash flood kills 4, leaves 4 others missing in northern Vietnam",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/vietnam-flash-flood-4-killed-6262571",
+      "published": "2026-07-18 16:23"
+    },
+    {
+      "category": "General",
+      "title": "Negeri Sembilan electoral battle begins after 103 candidates confirmed; BN, PN to campaign for each other",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/negeri-sembilan-state-election-nomination-day-6262536",
       "published": "2026-07-18 16:00"
