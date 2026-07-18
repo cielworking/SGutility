@@ -1,12 +1,26 @@
 {
-  "last_updated": "2026-07-18 11:30",
+  "last_updated": "2026-07-18 14:17",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "S'porean man, 25, to be charged with murder for killing girlfriend in Bali, victim identified",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/singaporean-man-charged-murder-bali-girlfriend-death/",
+      "published": "2026-07-18 01:31"
+    },
     {
       "category": "Crime",
       "title": "S'pore bus driver lodges police report after being filmed & scolded for driving at 'very slow speed'",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/singapore-bus-driver-police-report-filmed-drive-slow/",
       "published": "2026-07-18 00:08"
+    },
+    {
+      "category": "Crime",
+      "title": "‘Not even that dangerous’: 10 jaywalkers fined $50 each in Traffic Police ops near Boon Keng MRT",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/not-even-that-dangerous-10-jaywalkers-fined-50-each-in-traffic-police-ops-near-boon-keng-mrt",
+      "published": "2026-07-18 12:00"
     },
     {
       "category": "Crime",
@@ -79,20 +93,6 @@
       "published": "2026-07-16 17:17"
     },
     {
-      "category": "Crime",
-      "title": "$3b money laundering case: 32 weeks’ jail for man who cooked financial figures for shell companies",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/3b-money-laundering-case-32-weeks-jail-for-man-who-cooked-financial-figures-for-shell-companies",
-      "published": "2026-07-16 17:08"
-    },
-    {
-      "category": "Crime",
-      "title": "Cleaning firm, worksite manager charged over fatal incident at PUB’s Choa Chu Kang Waterworks",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/cleaning-firm-worksite-manager-charged-over-fatal-incident-at-pub-choa-chu-kang-waterworks",
-      "published": "2026-07-16 15:22"
-    },
-    {
       "category": "Traffic",
       "title": "Cartier owner Richemont reports ‘stratospheric’ sales growth as jewellery demand surges",
       "source": "CNA",
@@ -156,18 +156,18 @@
       "published": "2026-07-17 15:35"
     },
     {
-      "category": "Traffic",
-      "title": "Short, thundery showers expected in second half of July; days to remain warm",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/short-thundery-showers-expected-in-second-half-of-july",
-      "published": "2026-07-16 16:10"
+      "category": "Transport",
+      "title": "No MRT delays above 30 min since Nov. 2025, longest such period since records started in 2011: LTA",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/mrt-rail-reliability-figures/",
+      "published": "2026-07-18 00:55"
     },
     {
-      "category": "Traffic",
-      "title": "Restaurant Carnivore Brazilian Churrascaria to serve its final cut in September after 20 years",
+      "category": "Transport",
+      "title": "DBS rolls out $3 grocery discounts; Desmond Lee hopes for more businesses to complement Govt efforts",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/barbecue-restaurant-carnivore-brazilian-churrascaria-to-serve-its-final-cut-in-sept-after-20-years",
-      "published": "2026-07-16 14:09"
+      "url": "https://www.straitstimes.com/singapore/dbs-rolls-out-3-grocery-discounts-desmond-lee-says-corporate-initiatives-complement-govt-efforts",
+      "published": "2026-07-18 13:41"
     },
     {
       "category": "Transport",
@@ -184,20 +184,6 @@
       "published": "2026-07-16 21:55"
     },
     {
-      "category": "Transport",
-      "title": "MSF explores using tech to keep closer watch on abused children after they return home",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/community/msf-explores-using-tech-to-keep-closer-watch-on-abused-children-after-they-return-home",
-      "published": "2026-07-16 15:50"
-    },
-    {
-      "category": "Fire",
-      "title": "Wildfire smoke engulfs millions in US ahead of World Cup final",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/canada-wildfire-smoke-us-world-cup-6262096",
-      "published": "2026-07-18 05:39"
-    },
-    {
       "category": "Fire",
       "title": "Youth under probe for 2 fires at Bukit Panjang HDB block; 3 in total reported in 2 months",
       "source": "Straits Times",
@@ -206,10 +192,10 @@
     },
     {
       "category": "Money",
-      "title": "Why functional drinks cost more but may deliver less than consumers expect",
+      "title": "Colombia's Ecopetrol says cyberattack stole data tied to 3,300 accounts",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/functional-drinks-gut-health-mental-focus-cost-premium-mushrooms-6260976",
-      "published": "2026-07-18 06:00"
+      "url": "https://www.channelnewsasia.com/business/colombias-ecopetrol-says-cyberattack-stole-data-tied-3300-accounts-6262426",
+      "published": "2026-07-18 12:22"
     },
     {
       "category": "Money",
@@ -226,11 +212,25 @@
       "published": "2026-07-18 00:08"
     },
     {
-      "category": "Housing",
-      "title": "Toa Payoh HDB resident sees note on how P6 boy can develop better 'lift etiquette', realises it's about his son",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/lift-etiquette-toa-payoh/",
-      "published": "2026-07-17 23:23"
+      "category": "General",
+      "title": "Ajax land Brazilian forward Marcos Leonardo from Al-Hilal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ajax-land-brazilian-forward-marcos-leonardo-al-hilal-6262511",
+      "published": "2026-07-18 13:49"
+    },
+    {
+      "category": "General",
+      "title": "Iran renews attacks on Gulf states after another night of US strikes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-renews-attacks-gulf-states-us-war-strikes-6262401",
+      "published": "2026-07-18 12:54"
+    },
+    {
+      "category": "General",
+      "title": "Indian activist moved to hospital after 20-day hunger strike to protest country’s exam system",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-sonam-wangchuk-hunger-strike-medicine-exam-protest-6262421",
+      "published": "2026-07-18 12:15"
     },
     {
       "category": "General",
