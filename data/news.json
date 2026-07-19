@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19 20:06",
+  "last_updated": "2026-07-19 21:52",
   "headlines": [
     {
       "category": "Crime",
@@ -10,20 +10,6 @@
     },
     {
       "category": "Crime",
-      "title": "'Manosphere' influencer Andrew Tate and brother arrested in Miami, UK seeks extradition",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/manosphere-influencer-andrew-tate-and-brother-arrested-in-miami-uk-seeks-extradition-6263361",
-      "published": "2026-07-19 11:11"
-    },
-    {
-      "category": "Crime",
-      "title": "Deschamps takes responsibility for unacceptable first half in last game in charge of France",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/deschamps-takes-responsibility-unacceptable-first-half-in-last-game-in-charge-france-6263386",
-      "published": "2026-07-19 08:32"
-    },
-    {
-      "category": "Crime",
       "title": "Man, 43, dies in drink-driving hit-&-run at Suntec Convention loading bay, driver, 38, arrested",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/man-drink-driving-driver-arrested/",
@@ -31,7 +17,14 @@
     },
     {
       "category": "Crime",
-      "title": "Woman assisting police investigations for hurting teenage girl at *Scape football event",
+      "title": "About $274,000 lost in scams involving phone calls from numbers starting with the digit 3",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/about-274000-lost-in-scams-involving-phone-calls-from-numbers-starting-with-the-digit-3",
+      "published": "2026-07-19 21:25"
+    },
+    {
+      "category": "Crime",
+      "title": "Woman assisting police after teenage girl hurt at *Scape football event",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/woman-assisting-police-investigations-for-hurting-teenage-girl-at-scape-football-event",
       "published": "2026-07-19 16:50"
@@ -73,6 +66,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Tour leaders Pogacar, Vingegaard sleepy after anti-doping tests in small hours",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/tour-leaders-pogacar-vingegaard-sleepy-after-anti-doping-tests-in-small-hours-6263766",
+      "published": "2026-07-19 20:55"
+    },
+    {
+      "category": "Traffic",
       "title": "Wrestling-Askren calls time on wrestling career after loss in comeback bout",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/wrestling-askren-calls-time-wrestling-career-after-loss-in-comeback-bout-6263686",
@@ -84,13 +84,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/american-boxer-hannah-rapp-dies-26-after-being-hit-car-while-cycling-6263676",
       "published": "2026-07-19 18:20"
-    },
-    {
-      "category": "Traffic",
-      "title": "Tuchel hopes England players will look back on World Cup with pride",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tuchel-hopes-england-players-will-look-back-world-cup-pride-6263416",
-      "published": "2026-07-19 09:53"
     },
     {
       "category": "Traffic",
@@ -135,18 +128,18 @@
       "published": "2026-07-18 05:00"
     },
     {
-      "category": "Traffic",
-      "title": "GovTech’s restructuring reflects what is expected of agile tech teams",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/govtechs-restructuring-reflects-what-is-expected-of-agile-tech-teams",
-      "published": "2026-07-17 21:09"
-    },
-    {
       "category": "Transport",
       "title": "DBS rolls out $3 grocery discounts; Desmond Lee hopes more businesses complement govt efforts",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/dbs-rolls-out-3-grocery-discounts-desmond-lee-says-corporate-initiatives-complement-govt-efforts",
       "published": "2026-07-18 13:41"
+    },
+    {
+      "category": "Fire",
+      "title": "Burns starts final day of Open with two-shot lead",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/burns-starts-final-day-open-two-shot-lead-6263761",
+      "published": "2026-07-19 20:49"
     },
     {
       "category": "Fire",
@@ -164,24 +157,31 @@
     },
     {
       "category": "Housing",
-      "title": "Housing plan at site within Maju Forest not final: HDB chief town planner",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/hdb-sunset-way-maju-forest-plans-not-final/",
-      "published": "2026-07-18 21:01"
-    },
-    {
-      "category": "Housing",
-      "title": "Approved cat fosterers can keep up to 6 cats in HDB flats & 10 in private premises from Aug. 3 under pilot scheme",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/recognised-cat-fosterer-nparks/",
-      "published": "2026-07-18 20:16"
-    },
-    {
-      "category": "Housing",
       "title": "Cat fosterers to be allowed up to six cats in HDB flats under pilot scheme",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/cat-fosterers-to-be-allowed-up-to-six-cats-in-hdb-flats-under-new-pilot",
       "published": "2026-07-18 15:23"
+    },
+    {
+      "category": "General",
+      "title": "F1 title contender Russell out of Belgian GP",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/f1-title-contender-russell-out-belgian-gp-6263801",
+      "published": "2026-07-19 21:24"
+    },
+    {
+      "category": "General",
+      "title": "Deschamps says stifling atmosphere led to his decision to step down as France coach",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/deschamps-says-stifling-atmosphere-led-his-decision-step-down-france-coach-6263791",
+      "published": "2026-07-19 21:20"
+    },
+    {
+      "category": "General",
+      "title": "India floods and landslides kill at least 19",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-floods-landslides-jammu-kashmir-monsoon-6263781",
+      "published": "2026-07-19 21:20"
     },
     {
       "category": "General",
@@ -262,17 +262,17 @@
     },
     {
       "category": "General",
-      "title": "North Korean foreign minister on official visit to Russia, state media say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/north-korea-foreign-minister-top-diplomat-choe-son-hui-moscow-envoy-visit-6263401",
-      "published": "2026-07-19 09:49"
+      "title": "Leave entitlement raised to 10 days for outsourced Progressive Wage Model workers from 2029: MOM",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/leave-entitlement-progressive-wage-model-raised/",
+      "published": "2026-07-19 19:42"
     },
     {
       "category": "General",
-      "title": "Which Singapore celebrities own cafes? 35 stars who have gone into F&B, from Ben Yeo to JJ Lin and Rebecca Lim",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/which-singapore-celebrities-own-cafes-35-stars-who-have-gone-fb-ben-yeo-jj-lin-and-rebecca-lim-6262801",
-      "published": "2026-07-19 08:00"
+      "title": "Trump wants US to host the World Cup again, but 'leave Canada & Mexico out'",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/trump-host-world-cup-no-canada-mexico/",
+      "published": "2026-07-19 19:38"
     },
     {
       "category": "General",
