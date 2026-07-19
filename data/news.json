@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-19 08:09",
+  "last_updated": "2026-07-19 11:52",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "'Manosphere' influencer Andrew Tate and brother arrested in Miami, UK seeks extradition",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/manosphere-influencer-andrew-tate-and-brother-arrested-in-miami-uk-seeks-extradition-6263361",
+      "published": "2026-07-19 11:11"
+    },
+    {
+      "category": "Crime",
+      "title": "Deschamps takes responsibility for unacceptable first half in last game in charge of France",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/deschamps-takes-responsibility-unacceptable-first-half-in-last-game-in-charge-france-6263386",
+      "published": "2026-07-19 08:32"
+    },
     {
       "category": "Crime",
       "title": "S’porean woman, 64, fined S$3,000 fine for cursing at police officer in Chinatown",
@@ -101,6 +115,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Tuchel hopes England players will look back on World Cup with pride",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/tuchel-hopes-england-players-will-look-back-world-cup-pride-6263416",
+      "published": "2026-07-19 09:53"
+    },
+    {
+      "category": "Traffic",
       "title": "Man, 69, says someone threw canned mushrooms & baked beans from block onto his new Toyota car causing dents",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/man-toyota-car-dented-by-can-food/",
@@ -143,13 +164,6 @@
     },
     {
       "category": "Transport",
-      "title": "No MRT delays above 30 min since Nov. 2025, longest such period since records started in 2011: LTA",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/mrt-rail-reliability-figures/",
-      "published": "2026-07-18 00:55"
-    },
-    {
-      "category": "Transport",
       "title": "DBS rolls out $3 grocery discounts; Desmond Lee hopes more businesses complement govt efforts",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/dbs-rolls-out-3-grocery-discounts-desmond-lee-says-corporate-initiatives-complement-govt-efforts",
@@ -163,20 +177,6 @@
       "published": "2026-07-17 13:50"
     },
     {
-      "category": "Fire",
-      "title": "From delivery room to Claret Jug dream, Burns takes Open lead",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/delivery-room-claret-jug-dream-burns-takes-open-lead-6263186",
-      "published": "2026-07-19 05:31"
-    },
-    {
-      "category": "Fire",
-      "title": "Youth under probe for 2 fires at Bukit Panjang HDB block; 3 in total reported in 2 months",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/youth-under-probe-after-2-fires-in-bukit-panjang-hdb-block-with-3-in-total-reported-in-2-months",
-      "published": "2026-07-17 11:05"
-    },
-    {
       "category": "Money",
       "title": "FairPrice supermarkets to play Singapore-made songs islandwide at peak periods in new tie-up",
       "source": "Straits Times",
@@ -185,10 +185,31 @@
     },
     {
       "category": "Housing",
+      "title": "Approved cat fosterers can keep up to 6 cats in HDB flats & 10 in private premises from Aug. 3 under pilot scheme",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/recognised-cat-fosterer-nparks/",
+      "published": "2026-07-18 20:16"
+    },
+    {
+      "category": "Housing",
       "title": "Cat fosterers to be allowed up to six cats in HDB flats under pilot scheme",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/cat-fosterers-to-be-allowed-up-to-six-cats-in-hdb-flats-under-new-pilot",
       "published": "2026-07-18 15:23"
+    },
+    {
+      "category": "General",
+      "title": "Annual leave for outsourced Progressive Wage Model workers to increase from 7 to 10 days from 2029",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/annual-leave-increase-10-days-pwm-workers-outsourced-mom-6262866",
+      "published": "2026-07-19 11:31"
+    },
+    {
+      "category": "General",
+      "title": "North Korean foreign minister on official visit to Russia, state media say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/north-korea-foreign-minister-top-diplomat-choe-son-hui-moscow-envoy-visit-6263401",
+      "published": "2026-07-19 09:49"
     },
     {
       "category": "General",
@@ -213,9 +234,9 @@
     },
     {
       "category": "General",
-      "title": "England survive France fightback to secure third place in Miami goalfest",
+      "title": "England survive France fightback and secure third place in World Cup goalfest",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-survive-france-fightback-secure-third-place-in-miami-goalfest-6263346",
+      "url": "https://www.channelnewsasia.com/sport/england-survive-france-fightback-and-secure-third-place-in-world-cup-goalfest-6263346",
       "published": "2026-07-19 07:42"
     },
     {
@@ -250,7 +271,7 @@
       "category": "General",
       "title": "Spain braces for third heatwave with highs above 40°C",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/spain-braces-third-heatwave-highs-above-40degc-6263226",
+      "url": "https://www.channelnewsasia.com/world/spain-third-heatwave-40-degree-highs-6263226",
       "published": "2026-07-19 06:00"
     },
     {
@@ -259,27 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/commentary/world-cup-2026-ai-social-media-tweets-6255621",
       "published": "2026-07-19 06:00"
-    },
-    {
-      "category": "General",
-      "title": "From heavy floods to tornadoes and typhoons: How a faster-warming China is battling more climate extremes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-climate-change-temperature-rise-extreme-weather-events-6255411",
-      "published": "2026-07-19 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Samsung Electronics America to reduce workforce by 739 in New Jersey, WARN notice says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/samsung-electronics-america-reduce-workforce-739-in-new-jersey-warn-notice-says-6263221",
-      "published": "2026-07-19 05:58"
-    },
-    {
-      "category": "General",
-      "title": "England post statement away victory in niggly clash with Argentina",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-post-statement-away-victory-in-niggly-clash-argentina-6263211",
-      "published": "2026-07-19 05:39"
     }
   ]
 }
