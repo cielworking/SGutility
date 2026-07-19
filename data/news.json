@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-20 05:07",
+  "last_updated": "2026-07-20 06:08",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Inside India’s cybercrime investigations: How scammers exploit Telegram",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/inside-indias-cybercrime-investigations-how-scammers-exploit-telegram-6260666",
+      "published": "2026-07-20 06:00"
+    },
     {
       "category": "Crime",
       "title": "Israelis march to Gaza border demanding re-establishment of settlements",
@@ -59,6 +66,20 @@
     },
     {
       "category": "Traffic",
+      "title": "Lotus Emira was meant to be the carmaker’s last petrol car. Now its future looks hybrid",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/obsessions/lotus-emira-hybrid-future-6257466",
+      "published": "2026-07-20 06:01"
+    },
+    {
+      "category": "Traffic",
+      "title": "After taking the long road, Fox wastes no time sealing Open glory",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/after-taking-long-road-fox-wastes-no-time-sealing-open-glory-6264146",
+      "published": "2026-07-20 05:49"
+    },
+    {
+      "category": "Traffic",
       "title": "Russian strikes on Turkish cargo ship kill five: Kyiv",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/russian-strikes-turkish-cargo-ship-kill-five-kyiv-6264071",
@@ -70,27 +91,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/hamilton-cleared-blame-after-his-car-knocked-over-mechanic-6264036",
       "published": "2026-07-20 03:09"
-    },
-    {
-      "category": "Traffic",
-      "title": "Evenepoel wins Tour de France stage 15 as Vingegaard abandons race after crash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/evenepoel-wins-tour-de-france-stage-15-vingegaard-abandons-race-after-crash-6263896",
-      "published": "2026-07-19 23:13"
-    },
-    {
-      "category": "Traffic",
-      "title": "Antonelli wins in Belgium as Russell crashes out",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/antonelli-wins-in-belgium-russell-crashes-out-6263876",
-      "published": "2026-07-19 22:40"
-    },
-    {
-      "category": "Traffic",
-      "title": "Tour riders unhappy with sleep being interrupted for early-hours doping tests",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tour-riders-unhappy-sleep-being-interrupted-early-hours-doping-tests-6263766",
-      "published": "2026-07-19 20:55"
     },
     {
       "category": "Traffic",
@@ -150,13 +150,6 @@
     },
     {
       "category": "Fire",
-      "title": "South Korea's Kim leads Open as Burns falters",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/south-koreas-kim-leads-open-burns-falters-6263761",
-      "published": "2026-07-19 20:49"
-    },
-    {
-      "category": "Fire",
       "title": "Trump threatens Canada with more tariffs over wildfire haze, World Cup final stadium seen shrouded in smog",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/trump-canada-haze-wildlife-world-cup-final/",
@@ -168,6 +161,55 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/cat-fosterers-to-be-allowed-up-to-six-cats-in-hdb-flats-under-new-pilot",
       "published": "2026-07-18 15:23"
+    },
+    {
+      "category": "General",
+      "title": "Spain battle past 10-man Argentina 1-0 in extra time to win World Cup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/spain-battle-past-10-man-argentina-1-0-in-extra-time-win-world-cup-6264161",
+      "published": "2026-07-20 06:03"
+    },
+    {
+      "category": "General",
+      "title": "Singapore Pools app can be used to bet from overseas, despite rules against it",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/singapore-pools-app-gambling-bets-overseas-6246171",
+      "published": "2026-07-20 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Why Johor Bahru should roll out congestion pricing when RTS opens",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/johor-bahru-congestion-pricing-traffic-rts-bus-6240016",
+      "published": "2026-07-20 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Scheffler defends Dechambeau after two-stroke penalty row",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/scheffler-defends-dechambeau-after-two-stroke-penalty-row-6264156",
+      "published": "2026-07-20 05:56"
+    },
+    {
+      "category": "General",
+      "title": "World Cup final between 10-man Argentina and Spain goes to extra time",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-final-between-10-man-argentina-and-spain-goes-extra-time-6264121",
+      "published": "2026-07-20 05:19"
+    },
+    {
+      "category": "General",
+      "title": "Spain beat Argentina 1-0 after extra time to win World Cup title",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/spain-argentina-world-cup-2026-final-6260011",
+      "published": "2026-07-20 05:16"
+    },
+    {
+      "category": "General",
+      "title": "Madonna, BTS and Bieber bring star power to World Cup halftime show",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/madonna-bts-and-bieber-bring-star-power-world-cup-halftime-show-6264111",
+      "published": "2026-07-20 05:01"
     },
     {
       "category": "General",
@@ -203,48 +245,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/argentina-make-three-changes-spain-unchanged-world-cup-final-6263991",
       "published": "2026-07-20 01:54"
-    },
-    {
-      "category": "General",
-      "title": "New Zealand's fearless Fox wins British Open thriller at final hole",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/new-zealands-fearless-fox-wins-british-open-thriller-final-hole-6263986",
-      "published": "2026-07-20 01:47"
-    },
-    {
-      "category": "General",
-      "title": "US launches strikes to 'punish' Iran after troops killed",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-iran-strikes-american-troops-killed-jordan-israel-6263826",
-      "published": "2026-07-19 21:55"
-    },
-    {
-      "category": "General",
-      "title": "Russell 'numb to the disappointment' after Belgian GP blow",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/russell-numb-disappointment-after-belgian-gp-blow-6263801",
-      "published": "2026-07-19 21:24"
-    },
-    {
-      "category": "General",
-      "title": "Deschamps says stifling atmosphere led to his decision to step down as France coach",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/deschamps-says-stifling-atmosphere-led-his-decision-step-down-france-coach-6263791",
-      "published": "2026-07-19 21:20"
-    },
-    {
-      "category": "General",
-      "title": "India floods and landslides kill at least 19",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-floods-landslides-jammu-kashmir-monsoon-6263781",
-      "published": "2026-07-19 21:20"
-    },
-    {
-      "category": "General",
-      "title": "Starbucks Korea staff form union after 'Tank Day' campaign fiasco",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/starbucks-south-korea-tank-day-union-6263716",
-      "published": "2026-07-19 19:55"
     },
     {
       "category": "General",
