@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-07-20 07:11",
+  "last_updated": "2026-07-20 08:11",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Inside India’s cybercrime investigations: How scammers exploit Telegram",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/inside-indias-cybercrime-investigations-how-scammers-exploit-telegram-6260666",
-      "published": "2026-07-20 06:00"
-    },
-    {
-      "category": "Crime",
-      "title": "Israelis march to Gaza border demanding re-establishment of settlements",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israelis-march-gaza-border-demanding-re-establishment-settlements-6264051",
-      "published": "2026-07-20 03:47"
-    },
     {
       "category": "Crime",
       "title": "S'porean man, 34, arrested after Indonesian police raid Jakarta house used to produce Kpods",
@@ -66,6 +52,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Spain coach De la Fuente hails world-class players",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/spain-coach-de-la-fuente-hails-world-class-players-6264266",
+      "published": "2026-07-20 07:13"
+    },
+    {
+      "category": "Traffic",
       "title": "The Lotus Emira was meant to be the carmaker’s last petrol car. Now its future looks hybrid",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/obsessions/lotus-emira-hybrid-future-6257466",
@@ -77,20 +70,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/after-taking-long-road-fox-wastes-no-time-sealing-open-glory-6264146",
       "published": "2026-07-20 05:49"
-    },
-    {
-      "category": "Traffic",
-      "title": "Russian strikes on Turkish cargo ship kill five: Kyiv",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/russian-strikes-turkish-cargo-ship-kill-five-kyiv-6264071",
-      "published": "2026-07-20 04:10"
-    },
-    {
-      "category": "Traffic",
-      "title": "Hamilton cleared of blame after his car knocked over mechanic",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/hamilton-cleared-blame-after-his-car-knocked-over-mechanic-6264036",
-      "published": "2026-07-20 03:09"
     },
     {
       "category": "Traffic",
@@ -122,24 +101,10 @@
     },
     {
       "category": "Transport",
-      "title": "Trump visit causes logistical delays ahead of World Cup final",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-visit-causes-logistical-delays-ahead-world-cup-final-6264056",
-      "published": "2026-07-20 03:54"
-    },
-    {
-      "category": "Transport",
       "title": "DBS rolls out $3 grocery discounts; Desmond Lee hopes more businesses complement govt efforts",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/dbs-rolls-out-3-grocery-discounts-desmond-lee-says-corporate-initiatives-complement-govt-efforts",
       "published": "2026-07-18 13:41"
-    },
-    {
-      "category": "Fire",
-      "title": "Burnham likely to steer steady ship on UK foreign policy",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/burnham-likely-steer-steady-ship-uk-foreign-policy-6264076",
-      "published": "2026-07-20 04:24"
     },
     {
       "category": "Fire",
@@ -154,6 +119,55 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/cat-fosterers-to-be-allowed-up-to-six-cats-in-hdb-flats-under-new-pilot",
       "published": "2026-07-18 15:23"
+    },
+    {
+      "category": "General",
+      "title": "Argentines lament World Cup loss and chance to be champions again",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/argentines-lament-world-cup-loss-and-chance-be-champions-again-6264361",
+      "published": "2026-07-20 08:07"
+    },
+    {
+      "category": "General",
+      "title": "We gave it everything, says Argentina coach Scaloni",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/we-gave-it-everything-says-argentina-coach-scaloni-6264356",
+      "published": "2026-07-20 08:03"
+    },
+    {
+      "category": "General",
+      "title": "The Odyssey brings in US$264.1 million in worldwide ticket sales, studio says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/odyssey-brings-in-us2641-million-in-worldwide-ticket-sales-studio-says-6263911",
+      "published": "2026-07-20 08:03"
+    },
+    {
+      "category": "General",
+      "title": "Spain's ball worship delivers World Cup glory and a nation's shared embrace",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/spains-ball-worship-delivers-world-cup-glory-and-nations-shared-embrace-6264346",
+      "published": "2026-07-20 07:51"
+    },
+    {
+      "category": "General",
+      "title": "Her daughter survived leukaemia as a baby. Five years later, she was diagnosed with Stage 3 breast cancer",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/mother-daughter-leukaemia-breast-cancer-fashion-cancer-6250651",
+      "published": "2026-07-20 07:29"
+    },
+    {
+      "category": "General",
+      "title": "Argentina run out of late Messi miracles against Spanish machine",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/argentina-run-out-late-messi-miracles-against-spanish-machine-6264291",
+      "published": "2026-07-20 07:19"
+    },
+    {
+      "category": "General",
+      "title": "UK chief financial officers turn more hopeful about AI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/uk-chief-financial-officers-turn-more-hopeful-about-ai-6264256",
+      "published": "2026-07-20 07:06"
     },
     {
       "category": "General",
@@ -185,7 +199,14 @@
     },
     {
       "category": "General",
-      "title": "Singapore Pools app can be used to bet from overseas, despite rules against it",
+      "title": "Why Telegram keeps surfacing in India’s cybercrime investigations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/why-telegram-keeps-surfacing-in-indias-cybercrime-investigations-6260666",
+      "published": "2026-07-20 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Loophole lets Singapore Pools app users place bets from overseas – despite rules against it",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/singapore-pools-app-gambling-bets-overseas-6246171",
       "published": "2026-07-20 06:00"
@@ -220,24 +241,10 @@
     },
     {
       "category": "General",
-      "title": "Madonna, BTS and Bieber bring star power to World Cup halftime show",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/madonna-bts-and-bieber-bring-star-power-world-cup-halftime-show-6264111",
-      "published": "2026-07-20 05:01"
-    },
-    {
-      "category": "General",
-      "title": "Madonna, Shakira, Bieber and The Muppets light up World Cup half-time show",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/madonna-shakira-bieber-and-muppets-light-up-world-cup-half-time-show-6264096",
-      "published": "2026-07-20 04:41"
-    },
-    {
-      "category": "General",
-      "title": "Duckett's big century sets up England series win over India",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ducketts-big-century-sets-up-england-series-win-over-india-6264031",
-      "published": "2026-07-20 03:00"
+      "title": "M'sian man in Penang turns 60 cent lottery ticket into S$2.57 million jackpot",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/malaysia-man-penang-lottery-win-60-cent-ticket/",
+      "published": "2026-07-19 22:31"
     },
     {
       "category": "General",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/hougang-abc-cheating-summary/",
       "published": "2026-07-19 08:16"
-    },
-    {
-      "category": "General",
-      "title": "Ex-Mediacorp actress Florence Tan, 49, graduates with degree in health science after 5 years",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/florence-tan-graduation-health-science/",
-      "published": "2026-07-19 02:07"
     }
   ]
 }
