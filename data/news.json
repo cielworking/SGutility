@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-20 21:17",
+  "last_updated": "2026-07-20 23:22",
   "headlines": [
     {
       "category": "Crime",
@@ -7,6 +7,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/italy-bologna-man-death-police-arrest-protest-6265616",
       "published": "2026-07-20 19:14"
+    },
+    {
+      "category": "Crime",
+      "title": "Ex-actor Edmund Chen, 64, gets jail term for accident cut from 5 days to 1 after appeal",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/edmund-chen-jail-term-1-day/",
+      "published": "2026-07-21 00:40"
     },
     {
       "category": "Crime",
@@ -73,13 +80,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Immediate priority is to ensure Kembangan residents taken care of, say MPs after Faishal resigns",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/immediate-priority-is-to-ensure-kembangan-residents-taken-care-of-say-mps-after-faishal-resigns",
-      "published": "2026-07-20 16:55"
-    },
-    {
-      "category": "Traffic",
       "title": "Parents, are you fighting over the PSLE? Put your child first",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/parenting-education/parents-are-you-fighting-over-the-psle-put-your-child-first",
@@ -122,6 +122,13 @@
     },
     {
       "category": "Transport",
+      "title": "‘Business will go on as usual’: Seah Kian Peng says MPs will look after Kembangan residents",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/immediate-priority-is-to-ensure-kembangan-residents-taken-care-of-say-mps-after-faishal-resigns",
+      "published": "2026-07-20 16:55"
+    },
+    {
+      "category": "Transport",
       "title": "Crowding and waiting times, air-con in trains among 3 areas for improvement on public transport: PTC",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/crowding-and-waiting-times-air-con-in-trains-among-3-areas-for-improvement-on-public-transport-ptc",
@@ -143,7 +150,7 @@
     },
     {
       "category": "Fire",
-      "title": "Andy Burnham becomes UK prime minister after meeting king",
+      "title": "Andy Burnham becomes prime minister vowing 10-year plan for Britain",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/andy-burham-new-british-prime-minister-6265696",
       "published": "2026-07-20 19:36"
@@ -154,6 +161,69 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/pm-wong-congratulates-andy-burnham-on-appointment-as-british-pm",
       "published": "2026-07-20 20:20"
+    },
+    {
+      "category": "General",
+      "title": "Chelsea sign forward Malard from Manchester United",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/chelsea-sign-forward-malard-manchester-united-6266086",
+      "published": "2026-07-20 22:52"
+    },
+    {
+      "category": "General",
+      "title": "Hamas names Khalil Al-Hayya as new overall leader",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/hamas-names-khalil-al-hayya-new-overall-leader-6265706",
+      "published": "2026-07-20 22:51"
+    },
+    {
+      "category": "General",
+      "title": "Former Liverpool and England star Kevin Keegan dies aged 75",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/kevin-keegan-dies-liverpool-england-football-6266066",
+      "published": "2026-07-20 22:43"
+    },
+    {
+      "category": "General",
+      "title": "India markets regulator penalises depository over 2022 malware attack",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/india-markets-regulator-penalises-depository-over-2022-malware-attack-6266061",
+      "published": "2026-07-20 22:41"
+    },
+    {
+      "category": "General",
+      "title": "ASML to offer employees €20,000 retention bonus for staying in 2027-2030",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/asml-offer-employees-eu20000-retention-bonus-staying-in-2027-2030-6266031",
+      "published": "2026-07-20 22:11"
+    },
+    {
+      "category": "General",
+      "title": "Evenepoel eyes time trial triumph to cement runner-up spot",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/evenepoel-eyes-time-trial-triumph-cement-runner-up-spot-6266021",
+      "published": "2026-07-20 22:08"
+    },
+    {
+      "category": "General",
+      "title": "Google plans new chip to run Gemini models more efficiently, the Information reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/google-plans-new-chip-run-gemini-models-more-efficiently-information-reports-6265986",
+      "published": "2026-07-20 21:57"
+    },
+    {
+      "category": "General",
+      "title": "Coach Garcia to leave Belgium job at the end of the month",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/coach-garcia-leave-belgium-job-end-month-6265936",
+      "published": "2026-07-20 21:16"
+    },
+    {
+      "category": "General",
+      "title": "Belgium national squad coach Rudi Garcia contract not extended",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/belgium-national-squad-coach-rudi-garcia-contract-not-extended-6265931",
+      "published": "2026-07-20 21:10"
     },
     {
       "category": "General",
@@ -206,80 +276,10 @@
     },
     {
       "category": "General",
-      "title": "Aston Villa sign Joao Gomes from Wolves",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/aston-villa-sign-joao-gomes-wolves-6265656",
-      "published": "2026-07-20 19:01"
-    },
-    {
-      "category": "General",
-      "title": "Rohit brushes aside retirement talk, says focus remains on representing India",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rohit-brushes-aside-retirement-talk-says-focus-remains-representing-india-6265606",
-      "published": "2026-07-20 18:44"
-    },
-    {
-      "category": "General",
-      "title": "Hut 8 signs $9.8 billion AI data center lease, fully commercializes Texas campus",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/hut-8-signs-98-billion-ai-data-center-lease-fully-commercializes-texas-campus-6265576",
-      "published": "2026-07-20 18:38"
-    },
-    {
-      "category": "General",
-      "title": "Philippine military says China injured sailor in sea clash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/philippines-sailor-injured-china-south-china-sea-spratly-clash-6265481",
-      "published": "2026-07-20 18:19"
-    },
-    {
-      "category": "General",
-      "title": "Meta faces Tennessee trial over allegations Instagram was designed to be addictive",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/meta-faces-tennessee-trial-over-allegations-instagram-was-designed-be-addictive-6265466",
-      "published": "2026-07-20 18:11"
-    },
-    {
-      "category": "General",
-      "title": "AliExpress hit with $629 million EU fine over sales of illegal, counterfeit products",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/aliexpress-hit-629-million-eu-fine-over-sales-illegal-counterfeit-products-6265451",
-      "published": "2026-07-20 18:05"
-    },
-    {
-      "category": "General",
-      "title": "How PayPal went from Wall Street favorite to unwilling merger target",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/how-paypal-went-wall-street-favorite-unwilling-merger-target-6265431",
-      "published": "2026-07-20 18:03"
-    },
-    {
-      "category": "General",
-      "title": "Veteran Hong Kong actor and filmmaker Patrick Tse dies at age 89",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/patrick-tse-dies-89-hong-kong-actor-6265311",
-      "published": "2026-07-20 17:30"
-    },
-    {
-      "category": "General",
-      "title": "Regional issues high on the agenda as ASEAN foreign ministers meet in Manila",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/asean-amm-foreign-ministers-related-meetings-manila-philippines-6265256",
-      "published": "2026-07-20 17:15"
-    },
-    {
-      "category": "General",
       "title": "M'sia wants to host World Cup: M'sia DPM",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/malaysia-wants-host-world-cup/",
       "published": "2026-07-21 00:37"
-    },
-    {
-      "category": "General",
-      "title": "Faishal Ibrahim resigns: Zaqy Mohamad & Masagos Zulkifli address issue",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/faishal-ibrahim-resigns-zaqy-mohamad-acting-minister-in-charge-of-muslim-affairs/",
-      "published": "2026-07-20 23:17"
     }
   ]
 }
