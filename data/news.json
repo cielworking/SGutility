@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-20 08:11",
+  "last_updated": "2026-07-20 12:03",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "India's cockroach movement supporters gather to march despite police ban",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-cockroach-janta-party-protest-education-minister-resign-6264606",
+      "published": "2026-07-20 11:04"
+    },
+    {
+      "category": "Crime",
+      "title": "Police arrest man, 64, for attempting to snatch handbag of woman, 72, at Balestier bus stop",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/police-snatch-theft-balestier-arrest/",
+      "published": "2026-07-19 22:32"
+    },
     {
       "category": "Crime",
       "title": "S'porean man, 34, arrested after Indonesian police raid Jakarta house used to produce Kpods",
@@ -44,32 +58,18 @@
       "published": "2026-07-18 17:30"
     },
     {
-      "category": "Crime",
-      "title": "‘Not even that dangerous’: 10 jaywalkers fined $50 each in Traffic Police ops near Boon Keng MRT",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/not-even-that-dangerous-10-jaywalkers-fined-50-each-in-traffic-police-ops-near-boon-keng-mrt",
-      "published": "2026-07-18 12:00"
+      "category": "Traffic",
+      "title": "Spain captain Rodri wins World Cup player of the tournament award",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-golden-ball-award-rodri-spain-captain-6264491",
+      "published": "2026-07-20 09:30"
     },
     {
       "category": "Traffic",
-      "title": "Spain coach De la Fuente hails world-class players",
+      "title": "Two Singapore basketball club players handed lifetime FIBA bans over match manipulation",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spain-coach-de-la-fuente-hails-world-class-players-6264266",
-      "published": "2026-07-20 07:13"
-    },
-    {
-      "category": "Traffic",
-      "title": "The Lotus Emira was meant to be the carmaker’s last petrol car. Now its future looks hybrid",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/lotus-emira-hybrid-future-6257466",
-      "published": "2026-07-20 06:01"
-    },
-    {
-      "category": "Traffic",
-      "title": "After taking the long road, Fox wastes no time sealing Open glory",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/after-taking-long-road-fox-wastes-no-time-sealing-open-glory-6264146",
-      "published": "2026-07-20 05:49"
+      "url": "https://www.channelnewsasia.com/sport/basketball-association-singapore-club-players-fiba-ban-match-fixing-6264341",
+      "published": "2026-07-20 08:58"
     },
     {
       "category": "Traffic",
@@ -101,6 +101,13 @@
     },
     {
       "category": "Transport",
+      "title": "AI-specific notifications mandatory for firms using personal data to train AI models: PDPC",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/tech/ai-specific-notifications-mandatory-for-firms-using-personal-data-to-train-ai-models-pdpc",
+      "published": "2026-07-20 10:30"
+    },
+    {
+      "category": "Transport",
       "title": "DBS rolls out $3 grocery discounts; Desmond Lee hopes more businesses complement govt efforts",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/dbs-rolls-out-3-grocery-discounts-desmond-lee-says-corporate-initiatives-complement-govt-efforts",
@@ -108,10 +115,10 @@
     },
     {
       "category": "Fire",
-      "title": "Trump threatens Canada with more tariffs over wildfire haze, World Cup final stadium seen shrouded in smog",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/trump-canada-haze-wildlife-world-cup-final/",
-      "published": "2026-07-19 07:50"
+      "title": "Andy Burnham set to take over as new British PM",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/andy-burnham-new-uk-prime-minister-6264731",
+      "published": "2026-07-20 11:50"
     },
     {
       "category": "Housing",
@@ -119,6 +126,104 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/cat-fosterers-to-be-allowed-up-to-six-cats-in-hdb-flats-under-new-pilot",
       "published": "2026-07-18 15:23"
+    },
+    {
+      "category": "General",
+      "title": "Women's tour mandates gene test for eligibility",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/womens-tour-mandates-gene-test-eligibility-6264666",
+      "published": "2026-07-20 11:17"
+    },
+    {
+      "category": "General",
+      "title": "Singapore launches 'nutrition label' guidelines for GenAI chatbots",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/genai-ai-chatbot-nutrition-label-guidelines-data-6263571",
+      "published": "2026-07-20 10:33"
+    },
+    {
+      "category": "General",
+      "title": "Oil jumps on Iran strikes, Hormuz shipping incident",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-prices-iran-us-strikes-hormuz-ship-hit-6264541",
+      "published": "2026-07-20 10:16"
+    },
+    {
+      "category": "General",
+      "title": "Demand for pro bono funeral rites on the rise as more people die without family",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/strangers-accompany-seniors-final-journey-6261226",
+      "published": "2026-07-20 10:11"
+    },
+    {
+      "category": "General",
+      "title": "US launches ninth night of strikes on Iran as it hits out at Gulf neighbours",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-iran-strikes-gulf-nations-kuwait-bahrain-6264506",
+      "published": "2026-07-20 09:47"
+    },
+    {
+      "category": "General",
+      "title": "Former Wallabies centre Perese signs with Reds, eyes World Cup spot",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/former-wallabies-centre-perese-signs-reds-eyes-world-cup-spot-6264481",
+      "published": "2026-07-20 09:15"
+    },
+    {
+      "category": "General",
+      "title": "Rodri returns from 'hell' to drive Spain to World Cup glory",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/rodri-returns-hell-drive-spain-world-cup-glory-6264476",
+      "published": "2026-07-20 09:12"
+    },
+    {
+      "category": "General",
+      "title": "World Cup review: American makeover leaves soccer facing a battle for its soul",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-review-american-makeover-leaves-soccer-facing-battle-its-soul-6264461",
+      "published": "2026-07-20 09:03"
+    },
+    {
+      "category": "General",
+      "title": "It's tattoo time for Spain defender Cucurella says coach De la Fuente",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/its-tattoo-time-spain-defender-cucurella-says-coach-de-la-fuente-6264431",
+      "published": "2026-07-20 08:48"
+    },
+    {
+      "category": "General",
+      "title": "Jubilation in Spain after World Cup win",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/spain-world-cup-final-madrid-celebrations-6264401",
+      "published": "2026-07-20 08:40"
+    },
+    {
+      "category": "General",
+      "title": "'The last of Messi': Argentines mourn loss and end of an era",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/last-messi-argentines-mourn-loss-and-end-era-6264411",
+      "published": "2026-07-20 08:38"
+    },
+    {
+      "category": "General",
+      "title": "Asia shares shaky as oil climbs, earnings loom",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/asia-shares-shaky-oil-climbs-earnings-loom-6264416",
+      "published": "2026-07-20 08:35"
+    },
+    {
+      "category": "General",
+      "title": "Mbappe retains World Cup Golden Boot crown",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mbappe-retains-world-cup-golden-boot-crown-6264396",
+      "published": "2026-07-20 08:34"
+    },
+    {
+      "category": "General",
+      "title": "Emotional Scaloni says Argentina gave utmost, needs to think about what comes next",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/emotional-scaloni-says-argentina-gave-utmost-needs-think-about-what-comes-next-6264366",
+      "published": "2026-07-20 08:14"
     },
     {
       "category": "General",
@@ -133,111 +238,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/we-gave-it-everything-says-argentina-coach-scaloni-6264356",
       "published": "2026-07-20 08:03"
-    },
-    {
-      "category": "General",
-      "title": "The Odyssey brings in US$264.1 million in worldwide ticket sales, studio says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/odyssey-brings-in-us2641-million-in-worldwide-ticket-sales-studio-says-6263911",
-      "published": "2026-07-20 08:03"
-    },
-    {
-      "category": "General",
-      "title": "Spain's ball worship delivers World Cup glory and a nation's shared embrace",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spains-ball-worship-delivers-world-cup-glory-and-nations-shared-embrace-6264346",
-      "published": "2026-07-20 07:51"
-    },
-    {
-      "category": "General",
-      "title": "Her daughter survived leukaemia as a baby. Five years later, she was diagnosed with Stage 3 breast cancer",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/women/mother-daughter-leukaemia-breast-cancer-fashion-cancer-6250651",
-      "published": "2026-07-20 07:29"
-    },
-    {
-      "category": "General",
-      "title": "Argentina run out of late Messi miracles against Spanish machine",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/argentina-run-out-late-messi-miracles-against-spanish-machine-6264291",
-      "published": "2026-07-20 07:19"
-    },
-    {
-      "category": "General",
-      "title": "UK chief financial officers turn more hopeful about AI",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/uk-chief-financial-officers-turn-more-hopeful-about-ai-6264256",
-      "published": "2026-07-20 07:06"
-    },
-    {
-      "category": "General",
-      "title": "Boos as Trump and Infantino enter the field for World Cup trophy ceremony",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/boos-trump-and-infantino-enter-field-world-cup-trophy-ceremony-6264246",
-      "published": "2026-07-20 06:53"
-    },
-    {
-      "category": "General",
-      "title": "Tempers flare at end of Spain-Argentina World Cup final",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tempers-flare-end-spain-argentina-world-cup-final-6264236",
-      "published": "2026-07-20 06:36"
-    },
-    {
-      "category": "General",
-      "title": "SpaceX moves Starship launch attempt to Thursday",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spacex-moves-starship-launch-attempt-thursday-6264231",
-      "published": "2026-07-20 06:28"
-    },
-    {
-      "category": "General",
-      "title": "Spain battle past 10-man Argentina 1-0 in extra time to win World Cup",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spain-battle-past-10-man-argentina-1-0-in-extra-time-win-world-cup-6264161",
-      "published": "2026-07-20 06:03"
-    },
-    {
-      "category": "General",
-      "title": "Why Telegram keeps surfacing in India’s cybercrime investigations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/why-telegram-keeps-surfacing-in-indias-cybercrime-investigations-6260666",
-      "published": "2026-07-20 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Loophole lets Singapore Pools app users place bets from overseas – despite rules against it",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-pools-app-gambling-bets-overseas-6246171",
-      "published": "2026-07-20 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Why Johor Bahru should roll out congestion pricing when RTS opens",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/johor-bahru-congestion-pricing-traffic-rts-bus-6240016",
-      "published": "2026-07-20 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Scheffler defends Dechambeau after two-stroke penalty row",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/scheffler-defends-dechambeau-after-two-stroke-penalty-row-6264156",
-      "published": "2026-07-20 05:56"
-    },
-    {
-      "category": "General",
-      "title": "World Cup final between 10-man Argentina and Spain goes to extra time",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cup-final-between-10-man-argentina-and-spain-goes-extra-time-6264121",
-      "published": "2026-07-20 05:19"
-    },
-    {
-      "category": "General",
-      "title": "Spain beat Argentina 1-0 after extra time to win World Cup title",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spain-argentina-world-cup-2026-final-6260011",
-      "published": "2026-07-20 05:16"
     },
     {
       "category": "General",
