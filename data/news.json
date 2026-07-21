@@ -1,27 +1,6 @@
 {
-  "last_updated": "2026-07-22 04:36",
+  "last_updated": "2026-07-22 06:12",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Murdered ex-UK minister Widdecombe was struck on head with hammer 21 times, court told",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/widdecombe-murder-hammer-uk-minister-court-6268731",
-      "published": "2026-07-22 00:39"
-    },
-    {
-      "category": "Crime",
-      "title": "Italian court rejects TIM's precautionary appeal in network tariff dispute",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/italian-court-rejects-tims-precautionary-appeal-in-network-tariff-dispute-6268701",
-      "published": "2026-07-21 23:42"
-    },
-    {
-      "category": "Crime",
-      "title": "Malaysian to be charged over links to money laundering syndicate targeting Singapore bank accounts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/money-laundering-syndicate-malaysian-arrested-charged-singapore-bank-accounts-6268526",
-      "published": "2026-07-21 23:37"
-    },
     {
       "category": "Crime",
       "title": "Man, 59, dies after alleged neighbour dispute at Lengkok Bahru block, police arrest another man, 59",
@@ -105,20 +84,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/evenepoel-admits-bittersweet-win-after-teammate-lipowitz-crashed-6268916",
       "published": "2026-07-22 02:08"
-    },
-    {
-      "category": "Traffic",
-      "title": "Chess-Carlsen to headline FIDE-backed Total Chess World Championship pilot",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/chess-carlsen-headline-fide-backed-total-chess-world-championship-pilot-6268761",
-      "published": "2026-07-22 00:14"
-    },
-    {
-      "category": "Traffic",
-      "title": "Evenepoel wins time trial to cut Pogacar's lead",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/evenepoel-wins-time-trial-cut-pogacars-lead-6268766",
-      "published": "2026-07-22 00:06"
     },
     {
       "category": "Traffic",
@@ -212,17 +177,101 @@
       "published": "2026-07-20 20:20"
     },
     {
-      "category": "General",
-      "title": "Super Micro says fourth-quarter orders topped $60 billion",
+      "category": "Money",
+      "title": "Stocks rise despite climbing oil prices",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/super-micro-says-fourth-quarter-orders-topped-60-billion-6269086",
+      "url": "https://www.channelnewsasia.com/world/stocks-rise-despite-climbing-oil-prices-6269191",
+      "published": "2026-07-22 05:53"
+    },
+    {
+      "category": "General",
+      "title": "Singapore bank stocks are at record highs. Should you buy, hold or sell?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/dbs-ocbc-uob-bank-stocks-invest-6260561",
+      "published": "2026-07-22 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: The other recession risk that Singapore should be wary of",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/singapore-social-recession-risk-weaker-social-ties-volunteering-6260151",
+      "published": "2026-07-22 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Trump is slipping into an Iran quagmire",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/trump-cannot-negotiate-regime-change-possible-6267676",
+      "published": "2026-07-22 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Why people are ordering fake food and fashion deliveries on free ‘dopamine apps’",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/ordering-fake-food-fashion-free-dopamine-apps-6267626",
+      "published": "2026-07-22 05:58"
+    },
+    {
+      "category": "General",
+      "title": "Gaza civil defence says Israeli strikes kill 12, including family of six",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/gaza-israeli-strikes-kill-family-six-6269171",
+      "published": "2026-07-22 05:35"
+    },
+    {
+      "category": "General",
+      "title": "OpenAI says AI models went rogue during testing, triggering 'unprecedented' breach at startup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openai-says-ai-models-went-rogue-during-testing-triggering-unprecedented-breach-startup-6269186",
+      "published": "2026-07-22 05:30"
+    },
+    {
+      "category": "General",
+      "title": "Can AI replace Expedia? Its CEO says travel is more complicated than that",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/experiences/expedia-ceo-ai-travel-booking-ariane-gorin-6265106",
+      "published": "2026-07-22 05:30"
+    },
+    {
+      "category": "General",
+      "title": "Chelsea sign England's Rogers from Villa in record British deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/chelsea-sign-englands-rogers-villa-in-record-british-deal-6269151",
+      "published": "2026-07-22 05:11"
+    },
+    {
+      "category": "General",
+      "title": "Gang claims responsibility for hack at Coca-Cola's fairlife unit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/gang-claims-responsibility-hack-coca-colas-fairlife-unit-6269146",
+      "published": "2026-07-22 05:10"
+    },
+    {
+      "category": "General",
+      "title": "Ukraine's Zelenskyy sacks army chief Syrsky",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/zelesnkyy-syrsky-ukraine-defence-army-chief-sacked-6269091",
+      "published": "2026-07-22 04:41"
+    },
+    {
+      "category": "General",
+      "title": "All remaining Tour de France riders undergo anti-doping blood tests",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/all-remaining-tour-de-france-riders-undergo-anti-doping-blood-tests-6269096",
+      "published": "2026-07-22 04:39"
+    },
+    {
+      "category": "General",
+      "title": "Super Micro sees strong margins, books $60 billion in orders; shares jump",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/super-micro-sees-strong-margins-books-60-billion-in-orders-shares-jump-6269086",
       "published": "2026-07-22 04:24"
     },
     {
       "category": "General",
-      "title": "US senator urges Wall Street to reject 'troubling' paid early access to Trump posts",
+      "title": "US senator urges Wall Street to reject offer of paid early access to Trump posts",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-senator-urges-wall-street-reject-troubling-paid-early-access-trump-posts-6269016",
+      "url": "https://www.channelnewsasia.com/business/us-senator-urges-wall-street-reject-offer-paid-early-access-trump-posts-6269016",
       "published": "2026-07-22 03:46"
     },
     {
@@ -231,55 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/canada-evaluating-all-options-after-fresh-us-tariffs-threat-6268931",
       "published": "2026-07-22 02:37"
-    },
-    {
-      "category": "General",
-      "title": "Scientists spot evidence of two huge companion stars that blew up",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/scientists-spot-evidence-two-huge-companion-stars-blew-up-6268871",
-      "published": "2026-07-22 01:42"
-    },
-    {
-      "category": "General",
-      "title": "Asian refiners look to Suez Canal to move Saudi oil amid Houthi shipping threats",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/asian-refiners-look-suez-canal-move-saudi-oil-amid-houthi-shipping-threats-6268866",
-      "published": "2026-07-22 01:36"
-    },
-    {
-      "category": "General",
-      "title": "Pharma heavyweights Novo Nordisk and Eli Lilly clash over anti-obesity drug ads",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/novo-nordisk-eli-lilly-ads-weightloss-drug-6268796",
-      "published": "2026-07-22 01:32"
-    },
-    {
-      "category": "General",
-      "title": "Ipswich sign winger Fatawu from Leicester City",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ipswich-sign-winger-fatawu-leicester-city-6268836",
-      "published": "2026-07-22 01:24"
-    },
-    {
-      "category": "General",
-      "title": "Anthony Taylor announces retirement from elite refereeing",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/anthony-taylor-announces-retirement-elite-refereeing-6268756",
-      "published": "2026-07-22 00:28"
-    },
-    {
-      "category": "General",
-      "title": "US ambassador sees $40 billion tech investment wave into Portugal by 2031",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-ambassador-sees-40-billion-tech-investment-wave-portugal-2031-6268746",
-      "published": "2026-07-22 00:22"
-    },
-    {
-      "category": "General",
-      "title": "Meta adds Xbox Game Pass starter to Horizon+ subscription",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/meta-adds-xbox-game-pass-starter-horizon-subscription-6268751",
-      "published": "2026-07-22 00:12"
     }
   ]
 }
