@@ -39,6 +39,18 @@
   </url>
 
   <url>
+    <loc>https://sgalerts.com/4d-results.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://sgalerts.com/toto-results.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
     <loc>https://sgalerts.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
