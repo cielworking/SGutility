@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-07-21 22:20",
+  "last_updated": "2026-07-22 00:40",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Italian court rejects TIM's precautionary appeal in network tariff dispute",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/italian-court-rejects-tims-precautionary-appeal-in-network-tariff-dispute-6268701",
+      "published": "2026-07-21 23:42"
+    },
+    {
+      "category": "Crime",
+      "title": "Malaysian to be charged over links to money laundering syndicate targeting Singapore bank accounts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/money-laundering-syndicate-malaysian-arrested-charged-singapore-bank-accounts-6268526",
+      "published": "2026-07-21 23:37"
+    },
     {
       "category": "Crime",
       "title": "S’porean man, 72, who kept grooming & raping step-granddaughter since she was 9, gets 23 years’ jail",
@@ -80,6 +94,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Google updates lightweight Gemini models, but flagship still delayed",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/google-updates-lightweight-gemini-models-flagship-still-delayed-6268596",
+      "published": "2026-07-21 23:03"
+    },
+    {
+      "category": "Traffic",
       "title": "More car dealers opening showrooms in shopping malls as competition heats up in motoring sector",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/more-car-dealers-opening-showrooms-in-shopping-malls-as-competition-heats-up-in-motoring-sector",
@@ -105,20 +126,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/alphabets-gemini-delay-spending-worries-loom-over-earnings-6268446",
       "published": "2026-07-21 21:45"
-    },
-    {
-      "category": "Transport",
-      "title": "Network School in Johor’s Forest City ordered to cease operations after business licence revoked",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/network-school-forest-city-startup-johor-6267971",
-      "published": "2026-07-21 19:25"
-    },
-    {
-      "category": "Transport",
-      "title": "Philippine Airlines orders nine Airbus A350 jets, with rights for five more",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/philippine-airlines-orders-nine-airbus-a350-jets-rights-five-more-6268131",
-      "published": "2026-07-21 19:18"
     },
     {
       "category": "Transport",
@@ -178,13 +185,6 @@
     },
     {
       "category": "Fire",
-      "title": "Hundreds battle new mega-wildfire in Spain",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/spain-wildfire-heat-guadalajara-6268071",
-      "published": "2026-07-21 19:14"
-    },
-    {
-      "category": "Fire",
       "title": "Andy Burnham becomes new UK Prime Minister",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/andy-burnham-uk-prime-minister/",
@@ -196,6 +196,34 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/pm-wong-congratulates-andy-burnham-on-appointment-as-british-pm",
       "published": "2026-07-20 20:20"
+    },
+    {
+      "category": "General",
+      "title": "University of Tennessee sues Anthropic over neural network technology",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/university-tennessee-sues-anthropic-over-neural-network-technology-6268696",
+      "published": "2026-07-21 23:43"
+    },
+    {
+      "category": "General",
+      "title": "Apple to launch 'Upgrade' device leasing program to spur sales, Bloomberg News reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/apple-launch-upgrade-device-leasing-program-spur-sales-bloomberg-news-reports-6268676",
+      "published": "2026-07-21 23:20"
+    },
+    {
+      "category": "General",
+      "title": "La Liga chief Tebas accuses FIFA of 'destroying football industry', calls for Infantino to quit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/la-liga-chief-tebas-accuses-fifa-destroying-football-industry-calls-infantino-quit-6268631",
+      "published": "2026-07-21 23:13"
+    },
+    {
+      "category": "General",
+      "title": "US lawmakers urge Trump to act against EU tech rules, suggest trade probes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-lawmakers-urge-trump-act-against-eu-tech-rules-suggest-trade-probes-6268506",
+      "published": "2026-07-21 22:19"
     },
     {
       "category": "General",
@@ -252,34 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/microsoft-fund-mistrals-european-ai-expansion-in-multibillion-dollar-deal-6268256",
       "published": "2026-07-21 20:32"
-    },
-    {
-      "category": "General",
-      "title": "Singapore warns technology becoming 'actor in its own right' as AI reshapes military operations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/digital-defence-symposium-technology-tool-actor-agentic-ai-6267791",
-      "published": "2026-07-21 20:15"
-    },
-    {
-      "category": "General",
-      "title": "AI could lift Sub-Saharan Africa economy 4% if power, internet improve, IMF says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-could-lift-sub-saharan-africa-economy-4-if-power-internet-improve-imf-says-6268206",
-      "published": "2026-07-21 20:05"
-    },
-    {
-      "category": "General",
-      "title": "Advanced chipmaking tool arrives at New York state innovation hub",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/advanced-chipmaking-tool-arrives-new-york-state-innovation-hub-6268201",
-      "published": "2026-07-21 20:01"
-    },
-    {
-      "category": "General",
-      "title": "Trump prepares fresh tariffs on dozens of countries: Report",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/donald-trump-preparing-fresh-tariffs-many-countries-6268001",
-      "published": "2026-07-21 19:45"
     }
   ]
 }
