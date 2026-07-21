@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-07-21 19:59",
+  "last_updated": "2026-07-21 22:20",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "India court hands 44 Somalis life imprisonment for piracy",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-somalia-life-imprisonment-piracy-6267861",
-      "published": "2026-07-21 17:54"
-    },
     {
       "category": "Crime",
       "title": "S’porean man, 72, who kept grooming & raping step-granddaughter since she was 9, gets 23 years’ jail",
@@ -86,13 +79,6 @@
       "published": "2026-07-20 12:02"
     },
     {
-      "category": "Crime",
-      "title": "About $274,000 lost in scams involving phone calls from numbers starting with the digit 3",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/about-274000-lost-in-scams-involving-phone-calls-from-numbers-starting-with-the-digit-3",
-      "published": "2026-07-19 21:25"
-    },
-    {
       "category": "Traffic",
       "title": "More car dealers opening showrooms in shopping malls as competition heats up in motoring sector",
       "source": "Straits Times",
@@ -115,6 +101,13 @@
     },
     {
       "category": "Transport",
+      "title": "Alphabet's Gemini delay, spending worries loom over earnings",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/alphabets-gemini-delay-spending-worries-loom-over-earnings-6268446",
+      "published": "2026-07-21 21:45"
+    },
+    {
+      "category": "Transport",
       "title": "Network School in Johor’s Forest City ordered to cease operations after business licence revoked",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/network-school-forest-city-startup-johor-6267971",
@@ -129,17 +122,17 @@
     },
     {
       "category": "Transport",
-      "title": "After challenging Japan training camp, Gavin Lee's Lions face ASEAN football championship test",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/asean-championship-singapore-football-lions-gavin-lee-6267291",
-      "published": "2026-07-21 18:00"
-    },
-    {
-      "category": "Transport",
       "title": "Power bank catches fire at Woodlands MRT station, staff puts it out",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/power-bank-woodlands-mrt-smoke/",
       "published": "2026-07-21 19:33"
+    },
+    {
+      "category": "Transport",
+      "title": "Heritage firm My Community winding up; founder says it cannot continue business due to liabilities",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/community/heritage-firm-my-community-winding-up-founder-says-it-cannot-continue-business-due-to-liabilities",
+      "published": "2026-07-21 20:40"
     },
     {
       "category": "Transport",
@@ -192,20 +185,6 @@
     },
     {
       "category": "Fire",
-      "title": "Burnham targets lower energy bills in first move as UK prime minister",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/new-uk-pm-andy-burnham-cut-electricity-bill-taxes-6267346",
-      "published": "2026-07-21 18:10"
-    },
-    {
-      "category": "Fire",
-      "title": "Tesla cash burn to test investor faith in AI bets",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/tesla-cash-burn-test-investor-faith-in-ai-bets-6267906",
-      "published": "2026-07-21 18:01"
-    },
-    {
-      "category": "Fire",
       "title": "Andy Burnham becomes new UK Prime Minister",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/andy-burnham-uk-prime-minister/",
@@ -220,66 +199,87 @@
     },
     {
       "category": "General",
+      "title": "England's Bethell to miss The Hundred with knee injury",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/englands-bethell-miss-hundred-knee-injury-6268466",
+      "published": "2026-07-21 21:55"
+    },
+    {
+      "category": "General",
+      "title": "PGA Tour and DP World Tour announce partnership with Asian Tour",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pga-tour-and-dp-world-tour-announce-partnership-asian-tour-6268436",
+      "published": "2026-07-21 21:42"
+    },
+    {
+      "category": "General",
+      "title": "Tesla expands robotaxi service to Orlando, Tampa ahead of earnings",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/tesla-expands-robotaxi-service-orlando-tampa-ahead-earnings-6268426",
+      "published": "2026-07-21 21:37"
+    },
+    {
+      "category": "General",
+      "title": "BofA enhances AI-powered tool to resolve client needs faster",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/bofa-enhances-ai-powered-tool-resolve-client-needs-faster-6268341",
+      "published": "2026-07-21 21:13"
+    },
+    {
+      "category": "General",
+      "title": "Tan Boon Liat tenants brace for break-up of furniture hub after en bloc sale",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/tan-boon-liat-furniture-hub-tenants-en-bloc-6268106",
+      "published": "2026-07-21 20:51"
+    },
+    {
+      "category": "General",
+      "title": "Google connects new transatlantic cable between Portugal and the US",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/google-connects-new-transatlantic-cable-between-portugal-and-us-6268291",
+      "published": "2026-07-21 20:48"
+    },
+    {
+      "category": "General",
+      "title": "IEA says Mideast fighting increases energy concerns",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iea-says-mideast-fighting-increases-energy-concerns-6268261",
+      "published": "2026-07-21 20:42"
+    },
+    {
+      "category": "General",
+      "title": "Microsoft to fund Mistral's European AI expansion in multibillion-dollar deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/microsoft-fund-mistrals-european-ai-expansion-in-multibillion-dollar-deal-6268256",
+      "published": "2026-07-21 20:32"
+    },
+    {
+      "category": "General",
+      "title": "Singapore warns technology becoming 'actor in its own right' as AI reshapes military operations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/digital-defence-symposium-technology-tool-actor-agentic-ai-6267791",
+      "published": "2026-07-21 20:15"
+    },
+    {
+      "category": "General",
+      "title": "AI could lift Sub-Saharan Africa economy 4% if power, internet improve, IMF says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ai-could-lift-sub-saharan-africa-economy-4-if-power-internet-improve-imf-says-6268206",
+      "published": "2026-07-21 20:05"
+    },
+    {
+      "category": "General",
+      "title": "Advanced chipmaking tool arrives at New York state innovation hub",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/advanced-chipmaking-tool-arrives-new-york-state-innovation-hub-6268201",
+      "published": "2026-07-21 20:01"
+    },
+    {
+      "category": "General",
       "title": "Trump prepares fresh tariffs on dozens of countries: Report",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/donald-trump-preparing-fresh-tariffs-many-countries-6268001",
       "published": "2026-07-21 19:45"
-    },
-    {
-      "category": "General",
-      "title": "Lebanese army enters southern town after Israeli withdrawal, in first test of US-brokered deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/lebanese-army-enters-southern-town-after-israeli-withdrawal-in-first-test-us-brokered-deal-6267621",
-      "published": "2026-07-21 19:28"
-    },
-    {
-      "category": "General",
-      "title": "Iran steps up attacks in return to war with US",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-us-attacks-return-war-6268111",
-      "published": "2026-07-21 19:25"
-    },
-    {
-      "category": "General",
-      "title": "Africa surpasses Asia with highest population facing hunger: UN",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/africa-surpasses-asia-highest-population-facing-hunger-un-6267991",
-      "published": "2026-07-21 19:09"
-    },
-    {
-      "category": "General",
-      "title": "BlackRock-backed group commits $5 billion for Aligned Data Centers after completing acquisition",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/blackrock-backed-group-commits-5-billion-aligned-data-centers-after-completing-acquisition-6268081",
-      "published": "2026-07-21 19:07"
-    },
-    {
-      "category": "General",
-      "title": "Mobileye to supply Stellantis with cloud-based driver assistance technology",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/mobileye-supply-stellantis-cloud-based-driver-assistance-technology-6268066",
-      "published": "2026-07-21 19:02"
-    },
-    {
-      "category": "General",
-      "title": "Hasbro raises annual forecasts on digital gaming demand, 'Magic' boost",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/hasbro-raises-annual-forecasts-digital-gaming-demand-magic-boost-6268006",
-      "published": "2026-07-21 18:38"
-    },
-    {
-      "category": "General",
-      "title": "US looks to speed air taxis, supersonic planes to market",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-looks-speed-air-taxis-supersonic-planes-market-6267941",
-      "published": "2026-07-21 18:09"
-    },
-    {
-      "category": "General",
-      "title": "How a 64-team World Cup could transform soccer's economics",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/how-64-team-world-cup-could-transform-soccers-economics-6267946",
-      "published": "2026-07-21 18:09"
     }
   ]
 }
