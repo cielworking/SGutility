@@ -332,6 +332,102 @@ function renderSgPoolsResults() {
 
   const fourD = sgpoolsResults.four_d;
   const toto = sgpoolsResults.toto;
+  const filter = box.dataset.poolsFilter || "all";
+
+  if (filter === "four-d") {
+    box.innerHTML = `
+      <div class="pool-panel pool-panel-main">
+        <div class="pool-panel-title">
+          <h3>Latest 4D Result</h3>
+          <span>${fourD.draw_date} · Draw ${fourD.draw_no}</span>
+        </div>
+
+        <div class="pool-summary-strip">
+          <span>Top prize: <strong>${fourD.first_prize}</strong></span>
+          <span>Starter: <strong>${fourD.starter.length}</strong></span>
+          <span>Consolation: <strong>${fourD.consolation.length}</strong></span>
+        </div>
+
+        <div class="sgpools-prizes">
+          <div class="sgpools-prize first">
+            <span>1st Prize</span>
+            <strong>${fourD.first_prize}</strong>
+          </div>
+          <div class="sgpools-prize">
+            <span>2nd Prize</span>
+            <strong>${fourD.second_prize}</strong>
+          </div>
+          <div class="sgpools-prize">
+            <span>3rd Prize</span>
+            <strong>${fourD.third_prize}</strong>
+          </div>
+        </div>
+
+        <div class="pool-number-section">
+          <div>
+            <h4>Starter Prizes</h4>
+            <div class="number-grid">
+              ${fourD.starter.map(num => `<span>${num}</span>`).join("")}
+            </div>
+          </div>
+          <div>
+            <h4>Consolation Prizes</h4>
+            <div class="number-grid">
+              ${fourD.consolation.map(num => `<span>${num}</span>`).join("")}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pool-panel lucky-box modern-lucky">
+        <h3>4D Lucky Pick</h3>
+        <div class="lucky-actions">
+          <button onclick="generateFourD()">Generate 4D</button>
+        </div>
+        <div id="luckyResult" class="lucky-result">Click to generate a lucky number.</div>
+        <small>For entertainment only. This does not predict winning results.</small>
+      </div>
+
+      <div class="note">
+        Source: ${sgpoolsResults.source_name}. Last fetched: ${formatTimestamp(sgpoolsResults.last_updated)}.
+      </div>
+    `;
+    return;
+  }
+
+  if (filter === "toto") {
+    box.innerHTML = `
+      <div class="pool-panel">
+        <div class="pool-panel-title">
+          <h3>Latest TOTO Result</h3>
+          <span>${toto.draw_date} · Draw ${toto.draw_no}</span>
+        </div>
+
+        <div class="toto-numbers">
+          ${toto.winning_numbers.map(num => `<span>${num}</span>`).join("")}
+        </div>
+
+        <div class="toto-additional compact">
+          <span>Additional Number</span>
+          <strong>${toto.additional_number}</strong>
+        </div>
+      </div>
+
+      <div class="pool-panel lucky-box modern-lucky">
+        <h3>TOTO Lucky Pick</h3>
+        <div class="lucky-actions">
+          <button onclick="generateToto()">Generate TOTO</button>
+        </div>
+        <div id="luckyResult" class="lucky-result">Click to generate lucky numbers.</div>
+        <small>For entertainment only. This does not predict winning results.</small>
+      </div>
+
+      <div class="note">
+        Source: ${sgpoolsResults.source_name}. Last fetched: ${formatTimestamp(sgpoolsResults.last_updated)}.
+      </div>
+    `;
+    return;
+  }
 
   box.innerHTML = `
     <div class="sgpools-layout">
