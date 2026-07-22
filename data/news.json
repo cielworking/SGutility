@@ -1,26 +1,19 @@
 {
-  "last_updated": "2026-07-22 20:03",
+  "last_updated": "2026-07-22 22:21",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Zelle must face New York attorney general's lawsuit over fraud, judge rules",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/zelle-must-face-new-york-attorney-generals-lawsuit-over-fraud-judge-rules-6271336",
+      "published": "2026-07-22 22:00"
+    },
     {
       "category": "Crime",
       "title": "EU regulator sends charge sheet to JD.com over Ceconomy deal",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/eu-regulator-sends-charge-sheet-jdcom-over-ceconomy-deal-6271006",
       "published": "2026-07-22 19:40"
-    },
-    {
-      "category": "Crime",
-      "title": "Southampton coach Tonda Eckert charged by FA over 'spygate' scandal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/southampton-coach-tonda-eckert-charged-fa-over-spygate-scandal-6270876",
-      "published": "2026-07-22 18:56"
-    },
-    {
-      "category": "Crime",
-      "title": "S&P lifts Pakistan's credit rating to 'B' on institutional stability, IMF reform progress",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sp-lifts-pakistans-credit-rating-b-institutional-stability-imf-reform-progress-6270836",
-      "published": "2026-07-22 18:34"
     },
     {
       "category": "Crime",
@@ -70,6 +63,20 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/lengkok-bahru-fight-man-charged-with-murder-of-neighbour",
       "published": "2026-07-22 10:01"
+    },
+    {
+      "category": "Traffic",
+      "title": "Vingegaard undergoes successful collarbone surgery after Tour de France crash",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/vingegaard-undergoes-successful-collarbone-surgery-after-tour-de-france-crash-6271236",
+      "published": "2026-07-22 21:08"
+    },
+    {
+      "category": "Traffic",
+      "title": "World Rugby, UK bodies seek to throw out ex-players' concussion lawsuits",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-rugby-uk-bodies-seek-throw-out-ex-players-concussion-lawsuits-6271121",
+      "published": "2026-07-22 20:35"
     },
     {
       "category": "Traffic",
@@ -135,11 +142,11 @@
       "published": "2026-07-21 20:40"
     },
     {
-      "category": "Fire",
-      "title": "Analysis:Meta employees' lawsuit shows that if AI fires you, proving it is the hard part",
+      "category": "Money",
+      "title": "Samsung unveils wider foldable phone, hikes prices as chip costs rise",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/analysismeta-employees-lawsuit-shows-if-ai-fires-you-proving-it-hard-part-6270726",
-      "published": "2026-07-22 18:04"
+      "url": "https://www.channelnewsasia.com/business/samsung-unveils-wider-foldable-phone-hikes-prices-chip-costs-rise-6271216",
+      "published": "2026-07-22 21:01"
     },
     {
       "category": "Money",
@@ -154,6 +161,90 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/cat-a-coe-price-eases-to-126000-after-reaching-record-in-previous-tender-cat-b-also-down",
       "published": "2026-07-22 16:21"
+    },
+    {
+      "category": "General",
+      "title": "China warns of retaliation over French law to curb fast fashion",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-warns-retaliation-over-french-law-curb-fast-fashion-6271316",
+      "published": "2026-07-22 22:01"
+    },
+    {
+      "category": "General",
+      "title": "Hamilton can head into F1's August break on a Hungary high",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/hamilton-can-head-f1s-august-break-hungary-high-6271341",
+      "published": "2026-07-22 22:01"
+    },
+    {
+      "category": "General",
+      "title": "What to know about Iran's Pickaxe Mountain, home to an underground nuclear site threatened by Trump",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-us-war-pickaxe-mountain-underground-nuclear-6270226",
+      "published": "2026-07-22 21:23"
+    },
+    {
+      "category": "General",
+      "title": "Germany approves controversial French-Russian nuclear project",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/germany-controversial-french-russian-nuclear-project-6271176",
+      "published": "2026-07-22 21:09"
+    },
+    {
+      "category": "General",
+      "title": "Ipswich Town sign defender Issa Diop from Fulham",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ipswich-town-sign-defender-issa-diop-fulham-6271241",
+      "published": "2026-07-22 21:06"
+    },
+    {
+      "category": "General",
+      "title": "Man City's Foden extends contract until 2030",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/man-citys-foden-extends-contract-until-2030-6271221",
+      "published": "2026-07-22 21:02"
+    },
+    {
+      "category": "General",
+      "title": "Polymarket intends to challenge France's decision to block its website",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/polymarket-intends-challenge-frances-decision-block-its-website-6271111",
+      "published": "2026-07-22 20:38"
+    },
+    {
+      "category": "General",
+      "title": "AMD to invest up to $5 billion in Anthropic; AI startup to buy up to 2 GW of chips",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/amd-invest-up-5-billion-in-anthropic-ai-startup-buy-up-2-gw-chips-6271116",
+      "published": "2026-07-22 20:37"
+    },
+    {
+      "category": "General",
+      "title": "Rahmat Shah named Afghanistan's test and ODI captain",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/rahmat-shah-named-afghanistans-test-and-odi-captain-6271091",
+      "published": "2026-07-22 20:27"
+    },
+    {
+      "category": "General",
+      "title": "CAF president confident 2027 Cup of Nations will be successful despite challenges",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/caf-president-confident-2027-cup-nations-will-be-successful-despite-challenges-6271076",
+      "published": "2026-07-22 20:20"
+    },
+    {
+      "category": "General",
+      "title": "Shanghai holds compliance guidance meeting with automakers including Tesla, BYD",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/shanghai-holds-compliance-guidance-meeting-automakers-including-tesla-byd-6271026",
+      "published": "2026-07-22 19:55"
+    },
+    {
+      "category": "General",
+      "title": "Teledyne lifts annual profit forecast, tops quarterly results estimates",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/teledyne-lifts-annual-profit-forecast-tops-quarterly-results-estimates-6271031",
+      "published": "2026-07-22 19:54"
     },
     {
       "category": "General",
@@ -175,97 +266,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/rubio-wang-yi-xi-jinping-us-visit-6270711",
       "published": "2026-07-22 19:32"
-    },
-    {
-      "category": "General",
-      "title": "Mexico's Ochoa announces retirement from professional football",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mexicos-ochoa-announces-retirement-professional-football-6270926",
-      "published": "2026-07-22 19:10"
-    },
-    {
-      "category": "General",
-      "title": "New Acting Manpower Minister Jasmin Lau says responsiblity is to help workers, companies navigate tech changes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/cabinet-reshuffle-jasmin-lau-new-acting-manpower-minister-political-lessons-6270646",
-      "published": "2026-07-22 19:08"
-    },
-    {
-      "category": "General",
-      "title": "India student protests keep up pressure on Modi government",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-cockroach-janta-party-protest-modi-6270816",
-      "published": "2026-07-22 18:51"
-    },
-    {
-      "category": "General",
-      "title": "Senior management of critical information infrastructure owners 'directly accountable' for cybersecurity",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/csa-code-practice-critical-information-infrastructure-6270206",
-      "published": "2026-07-22 18:44"
-    },
-    {
-      "category": "General",
-      "title": "US SEC settles FOIA lawsuit with Coinbase over lost messages, WSJ op-ed says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-sec-settles-foia-lawsuit-coinbase-over-lost-messages-wsj-op-ed-says-6270846",
-      "published": "2026-07-22 18:42"
-    },
-    {
-      "category": "General",
-      "title": "AT&T tops targets for wireless subscriber additions as bundle offers gain traction",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/att-tops-targets-wireless-subscriber-additions-bundle-offers-gain-traction-6270826",
-      "published": "2026-07-22 18:37"
-    },
-    {
-      "category": "General",
-      "title": "Spain keeper Rodriguez joins Arsenal after six years at Real",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spain-keeper-rodriguez-joins-arsenal-after-six-years-real-6270831",
-      "published": "2026-07-22 18:35"
-    },
-    {
-      "category": "General",
-      "title": "Ng Chee Meng's Cabinet return 'timely' amid jobs, workplace transformation challenges: PM Wong",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ng-chee-meng-minister-cabinet-reshuffle-6270696",
-      "published": "2026-07-22 18:22"
-    },
-    {
-      "category": "General",
-      "title": "Intel results to test if AI-fueled rally has room to run",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/intel-results-test-if-ai-fueled-rally-has-room-run-6270786",
-      "published": "2026-07-22 18:14"
-    },
-    {
-      "category": "General",
-      "title": "TE Connectivity projects upbeat quarterly results, to buy Astrodyne for $1.4 billion",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/te-connectivity-projects-upbeat-quarterly-results-buy-astrodyne-14-billion-6270756",
-      "published": "2026-07-22 18:13"
-    },
-    {
-      "category": "General",
-      "title": "Exclusive-Marco Rubio tells diplomats to play down talk of American tech 'kill switch'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-marco-rubio-tells-diplomats-play-down-talk-american-tech-kill-switch-6270691",
-      "published": "2026-07-22 18:03"
-    },
-    {
-      "category": "General",
-      "title": "No exception could be made for Faishal over resignation, same standards apply to all PAP MPs: PM Wong",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/faishal-ibrahim-resigns-pm-lawrence-wong-6270611",
-      "published": "2026-07-22 18:02"
-    },
-    {
-      "category": "General",
-      "title": "PM Wong announces Cabinet changes, with experienced leaders in place as younger office holders step up",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/cabinet-reshuffle-6270631",
-      "published": "2026-07-22 18:00"
     },
     {
       "category": "General",
