@@ -1,26 +1,19 @@
 {
-  "last_updated": "2026-07-22 11:45",
+  "last_updated": "2026-07-22 14:42",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Australia protests China's 'destabilising' missile test",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/australia-protests-chinas-destabilising-missile-test-6270111",
+      "published": "2026-07-22 13:58"
+    },
     {
       "category": "Crime",
       "title": "Hitler's Austrian birthplace to become a police station",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/hitler-birthplace-police-station-austria-6269741",
       "published": "2026-07-22 11:05"
-    },
-    {
-      "category": "Crime",
-      "title": "Man, 59, charged with murder after fatal fight at Lengkok Bahru",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/man-charged-murder-state-courts-lengkok-bahru-murder-6269531",
-      "published": "2026-07-22 10:14"
-    },
-    {
-      "category": "Crime",
-      "title": "Prosecutors begin gruesome arguments against pop singer D4vd in murder case",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/d4vd-murder-preliminary-hearing-6267966",
-      "published": "2026-07-22 07:58"
     },
     {
       "category": "Crime",
@@ -52,7 +45,14 @@
     },
     {
       "category": "Crime",
-      "title": "$6.8m in penalties imposed on nightclubs that charge for flower garlands",
+      "title": "Singapore bank accounts targeted by money laundering syndicate: Alleged member charged",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/singapore-bank-accounts-targeted-by-money-laundering-syndicate-alleged-member-charged",
+      "published": "2026-07-22 13:09"
+    },
+    {
+      "category": "Crime",
+      "title": "$6.8m in penalties and taxes imposed on nightclubs that charge for flower garlands",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/6-8m-in-penalties-imposed-on-nightclubs-that-charge-for-flower-garlands",
       "published": "2026-07-22 11:45"
@@ -114,32 +114,25 @@
       "published": "2026-07-20 17:05"
     },
     {
-      "category": "Crime",
-      "title": "Ex-actor Edmund Chen’s jail term over accident that injured motorcyclist cut from 5 days to 1 day",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/ex-actor-edmund-chens-jail-term-over-accident-that-injured-motorcyclist-cut-from-5-days-to-1-day",
-      "published": "2026-07-20 12:17"
-    },
-    {
       "category": "Traffic",
-      "title": "Kaylee Hottle, deaf Godzilla actor, killed in car crash at 18",
+      "title": "Cathay Pacific flags stronger first-half profit on travel, cargo demand",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/kaylee-hottle-deaf-godzilla-actor-killed-in-car-crash-18-6268991",
-      "published": "2026-07-22 08:22"
+      "url": "https://www.channelnewsasia.com/business/cathay-pacific-flags-stronger-first-half-profit-travel-cargo-demand-6269966",
+      "published": "2026-07-22 12:25"
     },
     {
       "category": "Traffic",
-      "title": "2 CTE exits to close during early hours of July 28 to 31 for bridge launching works",
+      "title": "40 people evacuated from Serangoon Road shophouse fire, no injuries reported",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/2-cte-exits-to-close-during-early-hours-of-july-28-to-31-for-bridge-launching-works",
+      "url": "https://www.straitstimes.com/singapore/40-people-evacuated-from-serangoon-road-shophouse-fire-no-injuries-reported",
+      "published": "2026-07-22 12:29"
+    },
+    {
+      "category": "Traffic",
+      "title": "2 CTE exits to close during early hours of certain days in July for bridge launching works",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/2-cte-exits-to-close-during-early-hours-of-certain-days-in-july-for-bridge-launching-works",
       "published": "2026-07-22 11:34"
-    },
-    {
-      "category": "Traffic",
-      "title": "Avoid Jalan Boon Lay, Tractor Road, Pesawat Drive in Pioneer due to risk of flash flood: PUB",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/avoid-jalan-boon-lay-tractor-road-in-pioneer-due-to-risk-of-flash-flood-pub",
-      "published": "2026-07-22 11:31"
     },
     {
       "category": "Traffic",
@@ -168,6 +161,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/power-bank-woodlands-mrt-smoke/",
       "published": "2026-07-21 19:33"
+    },
+    {
+      "category": "Transport",
+      "title": "Heading to Changi Airport? Some service 36 buses will have luggage racks from 2027",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/heading-to-changi-airport-some-of-service-36-buses-will-have-luggage-racks-from-2027",
+      "published": "2026-07-22 13:33"
     },
     {
       "category": "Transport",
@@ -206,10 +206,10 @@
     },
     {
       "category": "Fire",
-      "title": "Andy Burnham becomes new UK Prime Minister",
+      "title": "Fire breaks out at prata shop at Cheong Chin Nam Rd at 12am, about 20 evacuated",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/andy-burnham-uk-prime-minister/",
-      "published": "2026-07-21 16:49"
+      "url": "https://mothership.sg/2026/07/restaurant-fire-bukit-timah/",
+      "published": "2026-07-22 02:09"
     },
     {
       "category": "Fire",
@@ -226,60 +226,60 @@
       "published": "2026-07-22 10:38"
     },
     {
-      "category": "Money",
-      "title": "Hegseth estimates Iran war has cost US$37.5 billion as he defends funding request at fiery hearing",
+      "category": "General",
+      "title": "K-pop group Le Sserafim to stage upcoming Pureflow concert at new Apex @ Expo in Singapore",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/war-iran-cost-hegseth-375-billion-hearing-6269446",
-      "published": "2026-07-22 08:38"
-    },
-    {
-      "category": "Money",
-      "title": "Oil prices rise slightly after US announces new round of strikes on Iran",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-prices-rise-slightly-after-us-announces-new-round-strikes-iran-6269441",
-      "published": "2026-07-22 08:28"
+      "url": "https://www.channelnewsasia.com/entertainment/le-sserafim-pureflow-singapore-2026-apex-expo-6268511",
+      "published": "2026-07-22 14:26"
     },
     {
       "category": "General",
-      "title": "Allowing Iran control of Hormuz 'dangerous precedent', Rubio tells ASEAN",
+      "title": "Blast in a tunnel at Indian hydropower project leaves 12 dead and 13 missing",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-strait-hormuz-rubio-asean-dangerous-precedent-6269826",
-      "published": "2026-07-22 11:25"
+      "url": "https://www.channelnewsasia.com/asia/blast-in-tunnel-indian-hydropower-project-leaves-12-dead-and-13-missing-6270156",
+      "published": "2026-07-22 14:14"
     },
     {
       "category": "General",
-      "title": "Australia's Origin Energy probes potential unauthorised data access",
+      "title": "Sands For Singapore Charity Festival 2026 by Marina Bay Sands will have free performances, dining pop-ups and more",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/australias-origin-energy-probes-potential-unauthorised-data-access-6269846",
-      "published": "2026-07-22 11:24"
+      "url": "https://www.channelnewsasia.com/living/sands-singapore-charity-festival-2026-marina-bay-sands-6270026",
+      "published": "2026-07-22 14:07"
     },
     {
       "category": "General",
-      "title": "Tech lifts Asia stocks, Brent crude back above US$92",
+      "title": "Zimbabwe call up wicketkeeper Tsiga for T20 series against India",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/tech-lifts-asia-stocks-brent-crude-back-above-us92-6269771",
-      "published": "2026-07-22 11:16"
+      "url": "https://www.channelnewsasia.com/sport/zimbabwe-call-up-wicketkeeper-tsiga-t20-series-against-india-6270186",
+      "published": "2026-07-22 14:04"
     },
     {
       "category": "General",
-      "title": "K-pop group NewJeans reunites in newly released videos celebrating anniversary, former member Danielle shares update",
+      "title": "From laundry rooms to convenience stores: Humanoids at China's World AI Conference",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/newjeans-reunion-fourth-anniversary-6269621",
-      "published": "2026-07-22 10:49"
+      "url": "https://www.channelnewsasia.com/asia/robots-shine-china-world-ai-conference-6265701",
+      "published": "2026-07-22 13:34"
     },
     {
       "category": "General",
-      "title": "Japan sizzles in first 'brutally hot' days of the year",
+      "title": "New head of Indonesia’s free meals programme quits after 45 days citing health reasons, as budget cuts loom",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/japan-hot-weather-temperature-heat-6269676",
-      "published": "2026-07-22 10:34"
+      "url": "https://www.channelnewsasia.com/asia/indonesia-free-meals-programme-nanik-deyang-resigns-health-budget-6269926",
+      "published": "2026-07-22 13:30"
     },
     {
       "category": "General",
-      "title": "Taiwanese host Jacky Wu holds surprise meet-and-greet with fans at Clementi pasar malam",
+      "title": "India opposition leader Rahul Gandhi released after protest detention",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/jacky-wu-clementi-pasar-malam-6269511",
-      "published": "2026-07-22 10:29"
+      "url": "https://www.channelnewsasia.com/asia/india-protest-cockroach-movement-rahul-gandhi-6270066",
+      "published": "2026-07-22 13:25"
+    },
+    {
+      "category": "General",
+      "title": "Garmin launches Cirqa, its first screen-free fitness tracker with up to 10 days of battery life",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/living/garmin-cirqa-screen-free-fitness-band-singapore-6269736",
+      "published": "2026-07-22 13:18"
     }
   ]
 }
