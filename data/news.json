@@ -1,12 +1,40 @@
 {
-  "last_updated": "2026-07-22 08:06",
+  "last_updated": "2026-07-22 11:45",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Hitler's Austrian birthplace to become a police station",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/hitler-birthplace-police-station-austria-6269741",
+      "published": "2026-07-22 11:05"
+    },
+    {
+      "category": "Crime",
+      "title": "Man, 59, charged with murder after fatal fight at Lengkok Bahru",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/man-charged-murder-state-courts-lengkok-bahru-murder-6269531",
+      "published": "2026-07-22 10:14"
+    },
     {
       "category": "Crime",
       "title": "Prosecutors begin gruesome arguments against pop singer D4vd in murder case",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/entertainment/d4vd-murder-preliminary-hearing-6267966",
       "published": "2026-07-22 07:58"
+    },
+    {
+      "category": "Crime",
+      "title": "Edmund Chen, 64, serves 1-day jail term, reports to prison in morning, gets out at 9pm",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/edmund-chen-serve-jail-term/",
+      "published": "2026-07-22 00:26"
+    },
+    {
+      "category": "Crime",
+      "title": "SAF captain, 26, charged with possession of sexually explicit child abuse materials",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/saf-captain-child-abuse-materials-charged/",
+      "published": "2026-07-22 00:11"
     },
     {
       "category": "Crime",
@@ -21,6 +49,20 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/man-sexually-abuse-step-grandaughter-jail/",
       "published": "2026-07-21 20:22"
+    },
+    {
+      "category": "Crime",
+      "title": "$6.8m in penalties imposed on nightclubs that charge for flower garlands",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/6-8m-in-penalties-imposed-on-nightclubs-that-charge-for-flower-garlands",
+      "published": "2026-07-22 11:45"
+    },
+    {
+      "category": "Crime",
+      "title": "Lengkok Bahru fight: Man charged with murder of neighbour",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/lengkok-bahru-fight-man-charged-with-murder-of-neighbour",
+      "published": "2026-07-22 10:01"
     },
     {
       "category": "Crime",
@@ -79,18 +121,25 @@
       "published": "2026-07-20 12:17"
     },
     {
-      "category": "Crime",
-      "title": "Tourist jailed over theft of $200k diamond his partner hid in mouth at Chinatown store",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/tourist-jailed-over-theft-of-200k-diamond-his-partner-hid-in-mouth-at-chinatown-store",
-      "published": "2026-07-20 12:02"
+      "category": "Traffic",
+      "title": "Kaylee Hottle, deaf Godzilla actor, killed in car crash at 18",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/kaylee-hottle-deaf-godzilla-actor-killed-in-car-crash-18-6268991",
+      "published": "2026-07-22 08:22"
     },
     {
       "category": "Traffic",
-      "title": "Evenepoel admits 'bittersweet' win after teammate Lipowitz crashed",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/evenepoel-admits-bittersweet-win-after-teammate-lipowitz-crashed-6268916",
-      "published": "2026-07-22 02:08"
+      "title": "2 CTE exits to close during early hours of July 28 to 31 for bridge launching works",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/2-cte-exits-to-close-during-early-hours-of-july-28-to-31-for-bridge-launching-works",
+      "published": "2026-07-22 11:34"
+    },
+    {
+      "category": "Traffic",
+      "title": "Avoid Jalan Boon Lay, Tractor Road, Pesawat Drive in Pioneer due to risk of flash flood: PUB",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/avoid-jalan-boon-lay-tractor-road-in-pioneer-due-to-risk-of-flash-flood-pub",
+      "published": "2026-07-22 11:31"
     },
     {
       "category": "Traffic",
@@ -156,20 +205,6 @@
       "published": "2026-07-20 16:55"
     },
     {
-      "category": "Transport",
-      "title": "Crowding and waiting times, air-con in trains among 3 areas for improvement on public transport: PTC",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/crowding-and-waiting-times-air-con-in-trains-among-3-areas-for-improvement-on-public-transport-ptc",
-      "published": "2026-07-20 12:05"
-    },
-    {
-      "category": "Transport",
-      "title": "AI-specific notifications mandatory for firms using personal data to train AI models: PDPC",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/tech/ai-specific-notifications-mandatory-for-firms-using-personal-data-to-train-ai-models-pdpc",
-      "published": "2026-07-20 10:30"
-    },
-    {
       "category": "Fire",
       "title": "Andy Burnham becomes new UK Prime Minister",
       "source": "Mothership",
@@ -185,101 +220,66 @@
     },
     {
       "category": "Money",
-      "title": "Time to sell or too late to buy? What to know about Singapore banks' record share prices",
+      "title": "Japan imports jump to record high on oil price surge, complicating BOJ policy",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/dbs-ocbc-uob-bank-stocks-invest-6260561",
-      "published": "2026-07-22 06:00"
+      "url": "https://www.channelnewsasia.com/business/japan-imports-jump-record-high-oil-price-surge-complicating-boj-policy-6269406",
+      "published": "2026-07-22 10:38"
     },
     {
       "category": "Money",
-      "title": "Stocks rise despite climbing oil prices",
+      "title": "Hegseth estimates Iran war has cost US$37.5 billion as he defends funding request at fiery hearing",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/stocks-rise-despite-climbing-oil-prices-6269191",
-      "published": "2026-07-22 05:53"
+      "url": "https://www.channelnewsasia.com/world/war-iran-cost-hegseth-375-billion-hearing-6269446",
+      "published": "2026-07-22 08:38"
+    },
+    {
+      "category": "Money",
+      "title": "Oil prices rise slightly after US announces new round of strikes on Iran",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-prices-rise-slightly-after-us-announces-new-round-strikes-iran-6269441",
+      "published": "2026-07-22 08:28"
     },
     {
       "category": "General",
-      "title": "US readies new tariffs as Trump's 10% global levy to expire",
+      "title": "Allowing Iran control of Hormuz 'dangerous precedent', Rubio tells ASEAN",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-new-tariffs-trump-canada-brazil-6269346",
-      "published": "2026-07-22 07:57"
+      "url": "https://www.channelnewsasia.com/world/iran-strait-hormuz-rubio-asean-dangerous-precedent-6269826",
+      "published": "2026-07-22 11:25"
     },
     {
       "category": "General",
-      "title": "A job interview made her question the barriers women face at work so she built a platform to uncover them",
+      "title": "Australia's Origin Energy probes potential unauthorised data access",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/women/khatija-aslam-moxy-women-workplace-issues-6255501",
-      "published": "2026-07-22 07:22"
+      "url": "https://www.channelnewsasia.com/business/australias-origin-energy-probes-potential-unauthorised-data-access-6269846",
+      "published": "2026-07-22 11:24"
     },
     {
       "category": "General",
-      "title": "Illinois man sentenced for hacking Snapchat accounts to steal nude photos",
+      "title": "Tech lifts Asia stocks, Brent crude back above US$92",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/illinois-man-sentenced-hacking-snapchat-accounts-steal-nude-photos-6269276",
-      "published": "2026-07-22 07:15"
+      "url": "https://www.channelnewsasia.com/asia/tech-lifts-asia-stocks-brent-crude-back-above-us92-6269771",
+      "published": "2026-07-22 11:16"
     },
     {
       "category": "General",
-      "title": "Commentary: The other recession risk that Singapore should be wary of",
+      "title": "K-pop group NewJeans reunites in newly released videos celebrating anniversary, former member Danielle shares update",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/singapore-social-recession-risk-weaker-social-ties-volunteering-6260151",
-      "published": "2026-07-22 06:00"
+      "url": "https://www.channelnewsasia.com/entertainment/newjeans-reunion-fourth-anniversary-6269621",
+      "published": "2026-07-22 10:49"
     },
     {
       "category": "General",
-      "title": "Commentary: Trump is slipping into an Iran quagmire",
+      "title": "Japan sizzles in first 'brutally hot' days of the year",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/trump-cannot-negotiate-regime-change-possible-6267676",
-      "published": "2026-07-22 05:59"
+      "url": "https://www.channelnewsasia.com/east-asia/japan-hot-weather-temperature-heat-6269676",
+      "published": "2026-07-22 10:34"
     },
     {
       "category": "General",
-      "title": "Commentary: Why people are ordering fake food and fashion deliveries on free ‘dopamine apps’",
+      "title": "Taiwanese host Jacky Wu holds surprise meet-and-greet with fans at Clementi pasar malam",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/ordering-fake-food-fashion-free-dopamine-apps-6267626",
-      "published": "2026-07-22 05:58"
-    },
-    {
-      "category": "General",
-      "title": "Gaza civil defence says Israeli strikes kill 12, including family of six",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/gaza-israeli-strikes-kill-family-six-6269171",
-      "published": "2026-07-22 05:35"
-    },
-    {
-      "category": "General",
-      "title": "OpenAI says AI models went rogue during testing, triggering 'unprecedented' breach at startup",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/open-ai-rogue-testing-hugging-face-6269186",
-      "published": "2026-07-22 05:30"
-    },
-    {
-      "category": "General",
-      "title": "Can AI replace Expedia? Its CEO says travel is more complicated than that",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/experiences/expedia-ceo-ai-travel-booking-ariane-gorin-6265106",
-      "published": "2026-07-22 05:30"
-    },
-    {
-      "category": "General",
-      "title": "Chelsea sign England's Rogers from Villa in record British deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/chelsea-sign-englands-rogers-villa-in-record-british-deal-6269151",
-      "published": "2026-07-22 05:11"
-    },
-    {
-      "category": "General",
-      "title": "Gang claims responsibility for hack at Coca-Cola's fairlife unit",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/gang-claims-responsibility-hack-coca-colas-fairlife-unit-6269146",
-      "published": "2026-07-22 05:10"
-    },
-    {
-      "category": "General",
-      "title": "Ukraine's Zelenskyy sacks army chief Syrsky",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/zelesnkyy-syrsky-ukraine-defence-army-chief-sacked-6269091",
-      "published": "2026-07-22 04:41"
+      "url": "https://www.channelnewsasia.com/entertainment/jacky-wu-clementi-pasar-malam-6269511",
+      "published": "2026-07-22 10:29"
     }
   ]
 }
