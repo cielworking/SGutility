@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-23 20:02",
+  "last_updated": "2026-07-23 22:30",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "MOM arrests 14 over suspected employment offences involving 'phantom workers'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/14-arrested-phantom-workers-employment-offences-syndicate-foreign-workers-mom-6273451",
+      "published": "2026-07-23 19:59"
+    },
     {
       "category": "Crime",
       "title": "Domestic helper, 28, steals over S$56,000 from S'pore employer, 82, to fund online gambling, gets 1 year jail",
@@ -10,7 +17,7 @@
     },
     {
       "category": "Crime",
-      "title": "PE teacher who pursued student admits to sexual offences against teenage girl",
+      "title": "PE teacher admits to sexual offences against student he pursued romantically",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/pe-teacher-who-pursued-student-admits-sexual-offences-against-teenage-girl",
       "published": "2026-07-23 18:01"
@@ -38,10 +45,17 @@
     },
     {
       "category": "Traffic",
-      "title": "AMD expected to launch next generation of AI infrastructure to challenge Nvidia",
+      "title": "Russell confident Mercedes have resolved car issue",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amd-expected-launch-next-generation-ai-infrastructure-challenge-nvidia-6273336",
-      "published": "2026-07-23 18:06"
+      "url": "https://www.channelnewsasia.com/sport/russell-confident-mercedes-have-resolved-car-issue-6274041",
+      "published": "2026-07-23 22:23"
+    },
+    {
+      "category": "Traffic",
+      "title": "Heavy traffic on ECP after sports car catches fire; no injuries reported",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/heavy-traffic-on-ecp-after-sports-car-catches-fire-no-injuries-reported",
+      "published": "2026-07-23 21:20"
     },
     {
       "category": "Traffic",
@@ -114,11 +128,11 @@
       "published": "2026-07-22 17:40"
     },
     {
-      "category": "Transport",
-      "title": "Heading to Changi Airport? Some service 36 buses will have luggage racks from 2027",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/heading-to-changi-airport-some-of-service-36-buses-will-have-luggage-racks-from-2027",
-      "published": "2026-07-22 13:33"
+      "category": "Fire",
+      "title": "Alphabet's cash burn raises alarm for Big Tech as AI spending climbs",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/alphabets-cash-burn-raises-alarm-big-tech-ai-spending-climbs-6273731",
+      "published": "2026-07-23 20:05"
     },
     {
       "category": "Fire",
@@ -150,136 +164,122 @@
     },
     {
       "category": "General",
+      "title": "Food security in Gaza improves but remains fragile: UN",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/gaza-food-security-improve-fragile-un-6273986",
+      "published": "2026-07-23 22:24"
+    },
+    {
+      "category": "General",
+      "title": "Anthropic mulls mandatory employee stock trading plans after IPO, The Information reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/anthropic-mulls-mandatory-employee-stock-trading-plans-after-ipo-information-reports-6274016",
+      "published": "2026-07-23 22:17"
+    },
+    {
+      "category": "General",
+      "title": "Spain's Cellnex explores strategic options, Bloomberg News reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/spains-cellnex-explores-strategic-options-bloomberg-news-reports-6274006",
+      "published": "2026-07-23 22:13"
+    },
+    {
+      "category": "General",
+      "title": "Aston Villa sign winger Garnacho on loan from Chelsea",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/aston-villa-sign-winger-garnacho-loan-chelsea-6274011",
+      "published": "2026-07-23 22:11"
+    },
+    {
+      "category": "General",
+      "title": "AI 'kill switch' bill floated by US House lawmakers",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ai-kill-switch-bill-floated-us-house-lawmakers-6273916",
+      "published": "2026-07-23 21:36"
+    },
+    {
+      "category": "General",
+      "title": "Dinosaur-era fossil provides insight into snake evolution",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/dinosaur-era-fossil-provides-insight-snake-evolution-6273906",
+      "published": "2026-07-23 21:30"
+    },
+    {
+      "category": "General",
+      "title": "Google rolls out new selfie video sign-in feature",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/google-rolls-out-new-selfie-video-sign-in-feature-6273881",
+      "published": "2026-07-23 21:21"
+    },
+    {
+      "category": "General",
+      "title": "India relaxes e-commerce investment rules for exports in win for Amazon",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/india-relaxes-e-commerce-investment-rules-exports-in-win-amazon-6273871",
+      "published": "2026-07-23 21:11"
+    },
+    {
+      "category": "General",
+      "title": "Trump says US-Saudi nuclear deal conditional on country joining Abraham Accords",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/saudi-arabia-nuclear-deal-abraham-accords-donald-trump-6273851",
+      "published": "2026-07-23 21:07"
+    },
+    {
+      "category": "General",
+      "title": "Indian payments firms oppose one-click UPI checkout proposal, citing competition risks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/indian-payments-firms-oppose-one-click-upi-checkout-proposal-citing-competition-risks-6273821",
+      "published": "2026-07-23 20:51"
+    },
+    {
+      "category": "General",
+      "title": "Singapore made case against potential US tariffs to US Secretary of State Rubio: Vivian Balakrishnan",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/marco-rubio-us-tariffs-vivian-balakrishnan-asean-6273596",
+      "published": "2026-07-23 20:46"
+    },
+    {
+      "category": "General",
+      "title": "Arsenal sign forward Tzolis from Club Brugge",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/arsenal-sign-forward-tzolis-club-brugge-6273796",
+      "published": "2026-07-23 20:42"
+    },
+    {
+      "category": "General",
+      "title": "Short sellers notch $15.5 billion profit as SpaceX shares slip -Ortex",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/short-sellers-notch-155-billion-profit-spacex-shares-slip-ortex-6273741",
+      "published": "2026-07-23 19:59"
+    },
+    {
+      "category": "General",
+      "title": "Oil soars close to US$100 on fresh Middle East attacks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/oil-us100-middle-east-attacks-6273646",
+      "published": "2026-07-23 19:59"
+    },
+    {
+      "category": "General",
+      "title": "India urges caution for ships entering Black Sea",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/india-urges-caution-ships-entering-black-sea-6273666",
+      "published": "2026-07-23 19:58"
+    },
+    {
+      "category": "General",
+      "title": "EU slams 'unacceptable' Houthi Red Sea tanker attack",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/houthis-red-sea-attack-unacceptable-eu-6273626",
+      "published": "2026-07-23 19:57"
+    },
+    {
+      "category": "General",
       "title": "Musk proposes peer review for frontier AI models in Economist interview",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/musk-proposes-peer-review-frontier-ai-models-in-economist-interview-6273606",
       "published": "2026-07-23 19:42"
-    },
-    {
-      "category": "General",
-      "title": "Saudi PIF's $55 billion EA deal approved under EU merger rules",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/saudi-pifs-55-billion-ea-deal-approved-under-eu-merger-rules-6273576",
-      "published": "2026-07-23 19:26"
-    },
-    {
-      "category": "General",
-      "title": "India's Infosys misses quarterly revenue view, names insider as CEO designate",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/indias-infosys-misses-quarterly-revenue-view-names-insider-ceo-designate-6273531",
-      "published": "2026-07-23 19:07"
-    },
-    {
-      "category": "General",
-      "title": "Barcelona sign pacy winger Adeyemi from Dortmund",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/barcelona-sign-pacy-winger-adeyemi-dortmund-6273536",
-      "published": "2026-07-23 19:06"
-    },
-    {
-      "category": "General",
-      "title": "IBM buys HRL Laboratories in shift to two-track quantum computing strategy",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ibm-buys-hrl-laboratories-in-shift-two-track-quantum-computing-strategy-6273506",
-      "published": "2026-07-23 19:02"
-    },
-    {
-      "category": "General",
-      "title": "Blackstone beats profit estimates on AI gains as assets hit $1.35 trillion",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/blackstone-beats-profit-estimates-ai-gains-assets-hit-135-trillion-6273511",
-      "published": "2026-07-23 19:00"
-    },
-    {
-      "category": "General",
-      "title": "Mobileye beats estimates, hunts for CEO as founder departs",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/mobileye-beats-estimates-hunts-ceo-founder-departs-6273486",
-      "published": "2026-07-23 18:51"
-    },
-    {
-      "category": "General",
-      "title": "Primary 1 registration: 33 primary schools oversubscribed in Phase 2B of 2026 exercise",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/primary-1-p1-registration-phase-2b-schools-ballot-6273386",
-      "published": "2026-07-23 18:40"
-    },
-    {
-      "category": "General",
-      "title": "European semiconductor stocks diverge as investors weigh AI demand, growth expectations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/european-semiconductor-stocks-diverge-investors-weigh-ai-demand-growth-expectations-6273456",
-      "published": "2026-07-23 18:36"
-    },
-    {
-      "category": "General",
-      "title": "Comcast's Peacock records first ever profit on World Cup, 'Love Island USA' boost",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/comcasts-peacock-records-first-ever-profit-world-cup-love-island-usa-boost-6273356",
-      "published": "2026-07-23 18:35"
-    },
-    {
-      "category": "General",
-      "title": "France to unveil new coach on Jul 28 as Zidane waits in wings",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/france-football-zidane-new-coach-6273391",
-      "published": "2026-07-23 18:33"
-    },
-    {
-      "category": "General",
-      "title": "T-Mobile raises free cash flow forecast as customers migrate to premium plans",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/t-mobile-raises-free-cash-flow-forecast-customers-migrate-premium-plans-6273431",
-      "published": "2026-07-23 18:31"
-    },
-    {
-      "category": "General",
-      "title": "Byzantine gold objects help archaeologists uncover past of ship wrecked off Croatia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/byzantine-gold-objects-help-archaeologists-uncover-past-ship-wrecked-croatia-6273401",
-      "published": "2026-07-23 18:28"
-    },
-    {
-      "category": "General",
-      "title": "Google hit with US$1 billion EU fine, first under landmark rules",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/google-hit-us1-billion-eu-fine-first-under-landmark-rules-6273331",
-      "published": "2026-07-23 18:07"
-    },
-    {
-      "category": "General",
-      "title": "Heroics and heartache: looking back at the World Cup",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/heroics-and-heartache-looking-back-world-cup-6273346",
-      "published": "2026-07-23 18:05"
-    },
-    {
-      "category": "General",
-      "title": "HSA warns against 3 products after consumers, including a 12-year-old, suffer serious health effects",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/hsa-banned-products-health-banned-potent-6273166",
-      "published": "2026-07-23 18:04"
-    },
-    {
-      "category": "General",
-      "title": "Exclusive-Amazon's Bezos pushes Prime Video redesign focused on AI",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-amazons-bezos-pushes-prime-video-redesign-focused-ai-6273341",
-      "published": "2026-07-23 18:03"
-    },
-    {
-      "category": "General",
-      "title": "Cryptocurrency exchange BitMEX to shut down",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/cryptocurrency-exchange-bitmex-shut-down-6273316",
-      "published": "2026-07-23 18:00"
-    },
-    {
-      "category": "General",
-      "title": "South Korea shifting to ‘peace first’ North Korea policy, retains denuclearisation goal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/south-korea-north-denuclearisation-peace-first-policy-6273246",
-      "published": "2026-07-23 17:55"
     }
   ]
 }
