@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-24 00:45",
+  "last_updated": "2026-07-24 04:19",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Lengkok Bahru murder victim a single father, his son, 20, reportedly at the scene at the time",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/lengkok-bahru-victim-single-father/",
+      "published": "2026-07-23 23:29"
+    },
     {
       "category": "Crime",
       "title": "Domestic helper, 28, steals over S$56,000 from S'pore employer, 82, to fund online gambling, gets 1 year jail",
@@ -59,13 +66,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Russell confident Mercedes have resolved car issue",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/russell-confident-mercedes-have-resolved-car-issue-6274041",
-      "published": "2026-07-23 22:23"
-    },
-    {
-      "category": "Traffic",
       "title": "Heavy traffic on ECP after sports car catches fire; no injuries reported",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/heavy-traffic-on-ecp-after-sports-car-catches-fire-no-injuries-reported",
@@ -107,11 +107,11 @@
       "published": "2026-07-22 17:00"
     },
     {
-      "category": "Traffic",
-      "title": "Pedestrian dies after accident involving lorry in Changi Village",
+      "category": "Transport",
+      "title": "The hidden victims of drug abuse: The ripple effect on families and friends",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/pedestrian-dies-after-accident-involving-lorry-in-changi-village",
-      "published": "2026-07-22 15:40"
+      "url": "https://www.straitstimes.com/singapore/cnb-hidden-victims-of-drug-abuse-drug-victims-remembrance-day-2026",
+      "published": "2026-07-24 04:00"
     },
     {
       "category": "Transport",
@@ -136,13 +136,6 @@
     },
     {
       "category": "Fire",
-      "title": "Stocks sink on Big Tech cash burn; oil hits $100 for first time since May",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/stocks-sink-big-tech-cash-burn-oil-hits-100-first-time-may-6272331",
-      "published": "2026-07-23 22:24"
-    },
-    {
-      "category": "Fire",
       "title": "Fire breaks out in backyard of Bukit Batok terraced house",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/fire-breaks-out-in-backyard-of-bukit-batok-terrace-house",
@@ -163,11 +156,88 @@
       "published": "2026-07-22 16:21"
     },
     {
-      "category": "Housing",
-      "title": "Woman, 49, locks herself in Bukit Panjang flat for more than 2 hours, gets apprehended",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/woman-apprehended-locking-bukit-panjang/",
-      "published": "2026-07-23 02:47"
+      "category": "General",
+      "title": "Intel sales, profit forecast beat estimates, boosts spending plans on AI boom",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/intel-sales-profit-forecast-beat-estimates-boosts-spending-plans-ai-boom-6274591",
+      "published": "2026-07-24 04:03"
+    },
+    {
+      "category": "General",
+      "title": "Landslide death toll rises to 11 in southwest China, 50 still missing",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/china-landslide-deathtoll-chongqing-rescue-missing-6274541",
+      "published": "2026-07-24 03:32"
+    },
+    {
+      "category": "General",
+      "title": "Kalshi hits the back of the net with $27 billion FIFA World Cup windfall",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/kalshi-hits-back-net-27-billion-fifa-world-cup-windfall-6274546",
+      "published": "2026-07-24 03:12"
+    },
+    {
+      "category": "General",
+      "title": "Trump threatens Houthis with 'major military punishment'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/houthis-red-sea-attacks-trump-warn-iran-6274446",
+      "published": "2026-07-24 02:37"
+    },
+    {
+      "category": "General",
+      "title": "Eric Trump-backed Foundation partners with AMD to develop humanoid robots",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/eric-trump-backed-foundation-partners-amd-develop-humanoid-robots-6274471",
+      "published": "2026-07-24 02:32"
+    },
+    {
+      "category": "General",
+      "title": "US House passes symbolic Iran war rebuke to Trump",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-house-representatives-vote-iran-war-6274406",
+      "published": "2026-07-24 02:18"
+    },
+    {
+      "category": "General",
+      "title": "EU countries to restore interim measure on allowing Big Tech to fight online child pornography",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/eu-countries-restore-interim-measure-allowing-big-tech-fight-online-child-pornography-6274411",
+      "published": "2026-07-24 01:47"
+    },
+    {
+      "category": "General",
+      "title": "Barcelona's De Jong ruled out for weeks due to serious knee injury",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/barcelonas-de-jong-ruled-out-weeks-due-serious-knee-injury-6274381",
+      "published": "2026-07-24 01:17"
+    },
+    {
+      "category": "General",
+      "title": "Israel says Saudi recognition would be 'historic' for regional peace",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/israel-saudi-arabia-us-nuclear-deal-netanyahu-6274316",
+      "published": "2026-07-24 01:12"
+    },
+    {
+      "category": "General",
+      "title": "Tour returns to Alpe d'Huez with back-to-back summit stages",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/tour-returns-alpe-dhuez-back-back-summit-stages-6274366",
+      "published": "2026-07-24 01:10"
+    },
+    {
+      "category": "General",
+      "title": "Modric, 40, extends Milan stay until 2027",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/modric-40-extends-milan-stay-until-2027-6274346",
+      "published": "2026-07-24 00:58"
+    },
+    {
+      "category": "General",
+      "title": "France opposes EU approval of Tesla's FSD driver assistance software for now",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/france-opposes-eu-approval-teslas-fsd-driver-assistance-software-now-6274311",
+      "published": "2026-07-24 00:49"
     },
     {
       "category": "General",
@@ -206,80 +276,10 @@
     },
     {
       "category": "General",
-      "title": "Defending champion Johnson-Thompson withdraws from Commonwealth Games",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/defending-champion-johnson-thompson-withdraws-commonwealth-games-6274121",
-      "published": "2026-07-23 22:56"
-    },
-    {
-      "category": "General",
-      "title": "US announces visa restriction policy for people complicit in cybercrime",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-announces-visa-restriction-policy-people-complicit-in-cybercrime-6274101",
-      "published": "2026-07-23 22:48"
-    },
-    {
-      "category": "General",
-      "title": "Italy sounded out Ancelotti before Guardiola about coach role",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/italy-sounded-out-ancelotti-guardiola-about-coach-role-6274106",
-      "published": "2026-07-23 22:43"
-    },
-    {
-      "category": "General",
-      "title": "Trump tech adviser was briefed on OpenAI agent going rogue",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-tech-adviser-was-briefed-openai-agent-going-rogue-6274081",
-      "published": "2026-07-23 22:39"
-    },
-    {
-      "category": "General",
-      "title": "Sooryavanshi smashes maiden half-century as India thump Zimbabwe",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/sooryavanshi-smashes-maiden-half-century-india-thump-zimbabwe-6274086",
-      "published": "2026-07-23 22:38"
-    },
-    {
-      "category": "General",
-      "title": "Food security in Gaza improves but remains fragile: UN",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/gaza-food-security-improve-fragile-un-6273986",
-      "published": "2026-07-23 22:24"
-    },
-    {
-      "category": "General",
-      "title": "Anthropic mulls mandatory employee stock trading plans after IPO, The Information reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/anthropic-mulls-mandatory-employee-stock-trading-plans-after-ipo-information-reports-6274016",
-      "published": "2026-07-23 22:17"
-    },
-    {
-      "category": "General",
-      "title": "Spain's Cellnex explores strategic options, Bloomberg News reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spains-cellnex-explores-strategic-options-bloomberg-news-reports-6274006",
-      "published": "2026-07-23 22:13"
-    },
-    {
-      "category": "General",
-      "title": "Aston Villa sign winger Garnacho on loan from Chelsea",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/aston-villa-sign-winger-garnacho-loan-chelsea-6274011",
-      "published": "2026-07-23 22:11"
-    },
-    {
-      "category": "General",
-      "title": "White House monitors OpenAI's 'rogue' AI incident as lawmakers push kill switch",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/white-house-monitors-openais-rogue-ai-incident-lawmakers-push-kill-switch-6273916",
-      "published": "2026-07-23 21:36"
-    },
-    {
-      "category": "General",
-      "title": "Humbled, grateful, 'big shoes to fill': New & old office holders react to the Cabinet reshuffle",
+      "title": "Man, 76, found dead at 2nd floor landing above Jalan Kukoh Food Centre",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/cabinet-reshuffle-2026-reactions/",
-      "published": "2026-07-23 22:55"
+      "url": "https://mothership.sg/2026/07/man-dead-jalan-kukoh/",
+      "published": "2026-07-23 23:47"
     }
   ]
 }
