@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24 04:19",
+  "last_updated": "2026-07-24 06:14",
   "headlines": [
     {
       "category": "Crime",
@@ -45,27 +45,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Ubisoft maintains outlook, says some major titles delayed to 2028, 2029",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ubisoft-maintains-outlook-says-some-major-titles-delayed-2028-2029-6274186",
-      "published": "2026-07-23 23:47"
-    },
-    {
-      "category": "Traffic",
-      "title": "DBS PayLah! hit by service disruption, bank says affected transactions will be refunded",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/dbs-paylah-down-issues-service-bank-6274141",
-      "published": "2026-07-23 23:42"
-    },
-    {
-      "category": "Traffic",
-      "title": "Carapaz secures solo victory in Tour de France stage 18, Pogacar stays in yellow",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/carapaz-secures-solo-victory-in-tour-de-france-stage-18-pogacar-stays-in-yellow-6274161",
-      "published": "2026-07-23 23:32"
-    },
-    {
-      "category": "Traffic",
       "title": "Heavy traffic on ECP after sports car catches fire; no injuries reported",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/heavy-traffic-on-ecp-after-sports-car-catches-fire-no-injuries-reported",
@@ -108,6 +87,20 @@
     },
     {
       "category": "Transport",
+      "title": "Digital Realty raises annual FFO forecast on robust data center demand",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/digital-realty-raises-annual-ffo-forecast-robust-data-center-demand-6274666",
+      "published": "2026-07-24 04:59"
+    },
+    {
+      "category": "Transport",
+      "title": "Ng Chee Meng’s Cabinet return gives workers a stronger voice amid AI disruption, say union leaders",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/ng-chee-mengs-cabinet-return-gives-workers-a-stronger-voice-amid-ai-disruption-say-union-leaders",
+      "published": "2026-07-24 05:00"
+    },
+    {
+      "category": "Transport",
       "title": "The hidden victims of drug abuse: The ripple effect on families and friends",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/cnb-hidden-victims-of-drug-abuse-drug-victims-remembrance-day-2026",
@@ -136,10 +129,24 @@
     },
     {
       "category": "Fire",
+      "title": "Trading Day: Burn, baby, burn",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/trading-day-burn-baby-burn-6274676",
+      "published": "2026-07-24 05:02"
+    },
+    {
+      "category": "Fire",
       "title": "Fire breaks out in backyard of Bukit Batok terraced house",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/fire-breaks-out-in-backyard-of-bukit-batok-terrace-house",
       "published": "2026-07-23 17:14"
+    },
+    {
+      "category": "Money",
+      "title": "Six IPOs this year, most trading below issue price: What this means for Singapore's market reforms",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/sgx-ipo-price-stocks-justco-foundation-healthcare-6270171",
+      "published": "2026-07-24 06:00"
     },
     {
       "category": "Money",
@@ -149,17 +156,87 @@
       "published": "2026-07-22 19:45"
     },
     {
-      "category": "Money",
-      "title": "Cat A COE price eases to $126,000 after reaching record in previous tender; Cat B also down",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/cat-a-coe-price-eases-to-126000-after-reaching-record-in-previous-tender-cat-b-also-down",
-      "published": "2026-07-22 16:21"
+      "category": "General",
+      "title": "US warns against excessive yen volatility, calls for BOJ rate hikes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-warns-against-excessive-yen-volatility-calls-boj-rate-hikes-6274776",
+      "published": "2026-07-24 06:07"
     },
     {
       "category": "General",
-      "title": "Intel sales, profit forecast beat estimates, boosts spending plans on AI boom",
+      "title": "Commentary: Faishal Ibrahim’s resignation needs more transparency for proper closure",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/intel-sales-profit-forecast-beat-estimates-boosts-spending-plans-ai-boom-6274591",
+      "url": "https://www.channelnewsasia.com/commentary/faishal-ibrahim-minister-resigns-transparency-closure-singapore-6273286",
+      "published": "2026-07-24 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Beyond Seoul: Can China become Asia’s next medical aesthetics hub?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-medical-aesthetics-foreigners-beauty-tourism-industry-6272866",
+      "published": "2026-07-24 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: How the US-Iran war will reshape the Gulf",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/us-iran-war-gulf-impact-hormuz-control-6273151",
+      "published": "2026-07-24 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Why the US is losing Chinese AI stars",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/us-losing-chinese-ai-founders-moonshotai-6272996",
+      "published": "2026-07-24 05:59"
+    },
+    {
+      "category": "General",
+      "title": "SAP CFO says AI must move beyond chatbot 'low-hanging fruit' before seeing returns",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/sap-cfo-says-ai-must-move-beyond-chatbot-low-hanging-fruit-seeing-returns-6274751",
+      "published": "2026-07-24 05:53"
+    },
+    {
+      "category": "General",
+      "title": "Nvidia, Amkor strike $1.5 billion chip packaging deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nvidia-amkor-strike-15-billion-chip-packaging-deal-6274746",
+      "published": "2026-07-24 05:45"
+    },
+    {
+      "category": "General",
+      "title": "US unveils new tariffs on 60 partners as Trump rebuilds trade agenda",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-unveils-new-tariffs-60-partners-trump-rebuilds-trade-agenda-6274721",
+      "published": "2026-07-24 05:45"
+    },
+    {
+      "category": "General",
+      "title": "Where to book a National Day staycation in Singapore for the SG61 long weekend",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/experiences/national-day-staycations-singapore-sg61-6269216",
+      "published": "2026-07-24 05:19"
+    },
+    {
+      "category": "General",
+      "title": "Ukraine's ousted defence minister pushes for return",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/ukraine-defence-minister-fedorov-zelesnkyy-6274641",
+      "published": "2026-07-24 05:02"
+    },
+    {
+      "category": "General",
+      "title": "Pentagon awards Oracle nearly $7 billion deal in latest software consolidation push",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/pentagon-awards-oracle-nearly-7-billion-deal-in-latest-software-consolidation-push-6274661",
+      "published": "2026-07-24 05:01"
+    },
+    {
+      "category": "General",
+      "title": "Intel forecast crushes estimates as AI boom boosts chip demand; shares jump",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/intel-forecast-crushes-estimates-ai-boom-boosts-chip-demand-shares-jump-6274591",
       "published": "2026-07-24 04:03"
     },
     {
@@ -196,83 +273,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/us-house-representatives-vote-iran-war-6274406",
       "published": "2026-07-24 02:18"
-    },
-    {
-      "category": "General",
-      "title": "EU countries to restore interim measure on allowing Big Tech to fight online child pornography",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/eu-countries-restore-interim-measure-allowing-big-tech-fight-online-child-pornography-6274411",
-      "published": "2026-07-24 01:47"
-    },
-    {
-      "category": "General",
-      "title": "Barcelona's De Jong ruled out for weeks due to serious knee injury",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/barcelonas-de-jong-ruled-out-weeks-due-serious-knee-injury-6274381",
-      "published": "2026-07-24 01:17"
-    },
-    {
-      "category": "General",
-      "title": "Israel says Saudi recognition would be 'historic' for regional peace",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israel-saudi-arabia-us-nuclear-deal-netanyahu-6274316",
-      "published": "2026-07-24 01:12"
-    },
-    {
-      "category": "General",
-      "title": "Tour returns to Alpe d'Huez with back-to-back summit stages",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tour-returns-alpe-dhuez-back-back-summit-stages-6274366",
-      "published": "2026-07-24 01:10"
-    },
-    {
-      "category": "General",
-      "title": "Modric, 40, extends Milan stay until 2027",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/modric-40-extends-milan-stay-until-2027-6274346",
-      "published": "2026-07-24 00:58"
-    },
-    {
-      "category": "General",
-      "title": "France opposes EU approval of Tesla's FSD driver assistance software for now",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/france-opposes-eu-approval-teslas-fsd-driver-assistance-software-now-6274311",
-      "published": "2026-07-24 00:49"
-    },
-    {
-      "category": "General",
-      "title": "From Wallsend Boys Club to Man City's record signing, Anderson eyes next step",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/wallsend-boys-club-man-citys-record-signing-anderson-eyes-next-step-6274246",
-      "published": "2026-07-24 00:07"
-    },
-    {
-      "category": "General",
-      "title": "US and allies say Russian hackers stole emails without social engineering",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-and-allies-say-russian-hackers-stole-emails-without-social-engineering-6274226",
-      "published": "2026-07-23 23:55"
-    },
-    {
-      "category": "General",
-      "title": "Forest sign midfielder Schlager from Leipzig",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/forest-sign-midfielder-schlager-leipzig-6274191",
-      "published": "2026-07-23 23:44"
-    },
-    {
-      "category": "General",
-      "title": "Hezbollah says Lebanon president's US visit 'submission' to foreign power",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/hezbollah-says-lebanon-presidents-us-visit-submission-foreign-power-6274166",
-      "published": "2026-07-23 23:36"
-    },
-    {
-      "category": "General",
-      "title": "Databricks expands Microsoft Azure partnership, to use more custom chips",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/databricks-expands-microsoft-azure-partnership-use-more-custom-chips-6274126",
-      "published": "2026-07-23 23:01"
     },
     {
       "category": "General",
