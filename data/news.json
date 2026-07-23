@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-07-23 08:14",
+  "last_updated": "2026-07-23 11:44",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Ex-UK water boss charged in plot to 'manipulate' test results",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/ex-uk-water-boss-charged-in-plot-manipulate-test-results-6271861",
-      "published": "2026-07-23 04:43"
-    },
     {
       "category": "Crime",
       "title": "Ex-IRAS tax investigator, 49, charged for accessing taxpayer info illegally after friend asked",
@@ -21,13 +14,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/lengkok-bahru-fatal-stabbing-funeral-queenstown-grassroots/",
       "published": "2026-07-23 00:18"
-    },
-    {
-      "category": "Crime",
-      "title": "'If I hear sounds, I will scold people': Man, 59, charged with neighbour's murder at Lengkok Bahru tells court",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-charged-murder-neighbour-lengkok-bahru/",
-      "published": "2026-07-22 18:56"
     },
     {
       "category": "Crime",
@@ -52,10 +38,10 @@
     },
     {
       "category": "Traffic",
-      "title": "South Korea economy expands 0.6% q/q in Q2, better than expected",
+      "title": "WNBA, players' union vow stronger security measures amid online abuse concerns",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-korea-economy-expands-06-qq-in-q2-better-expected-6272141",
-      "published": "2026-07-23 07:21"
+      "url": "https://www.channelnewsasia.com/sport/wnba-players-union-vow-stronger-security-measures-amid-online-abuse-concerns-6272221",
+      "published": "2026-07-23 08:29"
     },
     {
       "category": "Traffic",
@@ -122,10 +108,17 @@
     },
     {
       "category": "Money",
-      "title": "Oil prices jump on Mideast war, stock markets diverge",
+      "title": "Tesla shares fall as Musk touts ambitious – and costly – plans",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-stocks-oil-brent-crude-prices-rise-6271936",
-      "published": "2026-07-23 05:03"
+      "url": "https://www.channelnewsasia.com/world/tesla-elon-musk-plans-shares-6272261",
+      "published": "2026-07-23 09:18"
+    },
+    {
+      "category": "Money",
+      "title": "Oil prices rise to six-week high as US-Iran tensions escalate",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-prices-rise-six-week-high-us-iran-tensions-escalate-6272231",
+      "published": "2026-07-23 08:40"
     },
     {
       "category": "Money",
@@ -143,7 +136,42 @@
     },
     {
       "category": "General",
-      "title": "US House passes US$1 trillion defence bill despite Iran, Israel concerns",
+      "title": "Mugiwara Store Singapore at Jewel Changi Airport to close on Aug 31",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/living/one-piece-mugiwara-store-singapore-closing-jewel-6272381",
+      "published": "2026-07-23 11:22"
+    },
+    {
+      "category": "General",
+      "title": "Indian opposition disrupts parliament to support student protesters and pressure Modi",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-student-protests-exams-education-minister-cockroach-party-6272286",
+      "published": "2026-07-23 09:22"
+    },
+    {
+      "category": "General",
+      "title": "Pichai pushes back on claims Google is losing ground in AI race",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/pichai-pushes-back-claims-google-losing-ground-in-ai-race-6272271",
+      "published": "2026-07-23 09:17"
+    },
+    {
+      "category": "General",
+      "title": "US-Iran tensions underpin dollar as yen nears 40-year low",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-iran-tensions-underpin-dollar-yen-nears-40-year-low-6272241",
+      "published": "2026-07-23 08:50"
+    },
+    {
+      "category": "General",
+      "title": "Spider-Man: Brand New Day keeps fans guessing with mystery roles and Marvel cameos",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/spider-man-brand-new-day-keeps-fans-guessing-mystery-roles-and-marvel-cameos-6267951",
+      "published": "2026-07-23 08:27"
+    },
+    {
+      "category": "General",
+      "title": "US House passes US$1 trillion defence Bill despite Iran, Israel concerns",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/us-house-us1-trillion-defence-bill-iran-israel-6272171",
       "published": "2026-07-23 07:59"
@@ -161,6 +189,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/style-beauty/bandung-indonesia-handmade-boots-6226486",
       "published": "2026-07-23 07:28"
+    },
+    {
+      "category": "General",
+      "title": "South Korea's Q2 GDP beats estimates on chip export boom",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/south-koreas-q2-gdp-beats-estimates-chip-export-boom-6272141",
+      "published": "2026-07-23 07:21"
     },
     {
       "category": "General",
@@ -206,45 +241,24 @@
     },
     {
       "category": "General",
-      "title": "Amanzoe: The Greek resort where architecture, art and landscape come together",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/remarkable-living/amanzoe-greece-luxury-resort-6264576",
-      "published": "2026-07-23 05:34"
+      "title": "Jasmin Lau to be promoted to Acting Minister for Manpower & SMS for Digital Development & Information",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/jasmin-lau-acting-minister-for-manpower/",
+      "published": "2026-07-23 02:00"
     },
     {
       "category": "General",
-      "title": "Trading Day: $100 oil looms",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trading-day-100-oil-looms-6271961",
-      "published": "2026-07-23 05:05"
+      "title": "Shanmugam to be appointed Senior Minister, will retain other ministerial positions",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/shanmugam-senior-minister/",
+      "published": "2026-07-23 02:00"
     },
     {
       "category": "General",
-      "title": "ServiceNow raises annual subscription revenue forecast again on AI-driven demand",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/servicenow-raises-annual-subscription-revenue-forecast-again-ai-driven-demand-6271866",
-      "published": "2026-07-23 04:13"
-    },
-    {
-      "category": "General",
-      "title": "IBM cuts annual revenue growth forecast as customers prioritize AI infrastructure spending",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ibm-cuts-annual-revenue-growth-forecast-customers-prioritize-ai-infrastructure-spending-6271871",
-      "published": "2026-07-23 04:12"
-    },
-    {
-      "category": "General",
-      "title": "Argentina assistant Ayala says sorry for Olmo incident after World Cup final",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/argentina-assistant-ayala-says-sorry-olmo-incident-after-world-cup-final-6271856",
-      "published": "2026-07-23 04:07"
-    },
-    {
-      "category": "General",
-      "title": "Texas Instruments forecasts upbeat revenue on analog chip demand",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/texas-instruments-forecasts-upbeat-revenue-analog-chip-demand-6271846",
-      "published": "2026-07-23 04:07"
+      "title": "MTI to be renamed Ministry of Energy, Trade & Industry, helmed by Gan Kim Yong & Tan See Leng",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/ministry-energy-trade-industry-new-name/",
+      "published": "2026-07-23 02:00"
     },
     {
       "category": "General",
@@ -266,20 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/shanmugam-faishal-ibrahim-resign/",
       "published": "2026-07-23 00:43"
-    },
-    {
-      "category": "General",
-      "title": "Boy, 11, drowns in China after getting partially sucked into swimming pool's drain",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/china-boy-sucked-drain-drown/",
-      "published": "2026-07-22 23:12"
-    },
-    {
-      "category": "General",
-      "title": "16,000 people & organisations in S'pore receive legal aid from law charity Pro Bono SG",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/pro-bono-sg-help-16000-people/",
-      "published": "2026-07-22 22:21"
     }
   ]
 }
