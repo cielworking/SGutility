@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-25 03:45",
+  "last_updated": "2026-07-25 05:20",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "US appeals court blocks part of Texas children's online safety law",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-appeals-court-blocks-part-texas-childrens-online-safety-law-6277141",
+      "published": "2026-07-25 03:42"
+    },
     {
       "category": "Crime",
       "title": "Australian woman, 21, allegedly steals S$312 perfume from Changi Airport shop, comes back a month later, gets arrested",
@@ -220,6 +227,13 @@
     },
     {
       "category": "Fire",
+      "title": "Over 100,000 flee or hole up indoors as wildfires rage in France and Spain",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/spain-france-wildfires-europe-heatwave-6276986",
+      "published": "2026-07-25 02:50"
+    },
+    {
+      "category": "Fire",
       "title": "Lamborghini catches fire on ECP",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/lamborghini-catches-fire/",
@@ -241,6 +255,13 @@
     },
     {
       "category": "Money",
+      "title": "Mixed day for global equities as oil prices retreat",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/oil-prices-us-stocks-wall-street-market-6277261",
+      "published": "2026-07-25 05:16"
+    },
+    {
+      "category": "Money",
       "title": "Trump says EU to pay 'very big price' for Google fine",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/trump-eu-tariff-google-fine-6277101",
@@ -259,27 +280,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/private-residential-rents-rise-0-7-in-q2-as-home-prices-inch-up-0-5-ura",
       "published": "2026-07-24 15:30"
-    },
-    {
-      "category": "General",
-      "title": "Sinner, Djokovic withdraw from US Open tune-up in Montreal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/sinner-djokovic-withdraw-us-open-tune-up-in-montreal-6277126",
-      "published": "2026-07-25 03:22"
-    },
-    {
-      "category": "General",
-      "title": "Tens of thousands flee forest infernos in France and Spain",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/spain-france-wildfires-europe-heatwave-6276986",
-      "published": "2026-07-25 02:50"
-    },
-    {
-      "category": "General",
-      "title": "Trump says US to launch EU probe over 'illegal' Google fine",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-says-us-launch-eu-probe-over-illegal-google-fine-6277071",
-      "published": "2026-07-25 02:29"
     }
   ]
 }
