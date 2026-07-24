@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24 08:10",
+  "last_updated": "2026-07-24 11:43",
   "headlines": [
     {
       "category": "Crime",
@@ -52,6 +52,20 @@
     },
     {
       "category": "Traffic",
+      "title": "Singaporean comedian Suhaimi Yusof welcomes first grandchild: 'My heart is still racing until I can't sleep'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/suhaimi-yusof-welcomes-first-grandchild-grandfather-6275011",
+      "published": "2026-07-24 10:11"
+    },
+    {
+      "category": "Traffic",
+      "title": "British Open winner Fox looks forward to showing off Claret Jug, finding a steak pie in New Zealand",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/british-open-winner-fox-looks-forward-showing-claret-jug-finding-steak-pie-in-new-zealand-6275026",
+      "published": "2026-07-24 09:41"
+    },
+    {
+      "category": "Traffic",
       "title": "Heavy traffic on ECP after sports car catches fire; no injuries reported",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/heavy-traffic-on-ecp-after-sports-car-catches-fire-no-injuries-reported",
@@ -86,11 +100,11 @@
       "published": "2026-07-22 17:04"
     },
     {
-      "category": "Traffic",
-      "title": "Changi Airport control tower to be revamped as part of $4b investment in air traffic systems",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/changi-airport-control-tower-to-be-revamped-as-part-of-4b-investment-in-air-traffic-systems",
-      "published": "2026-07-22 17:00"
+      "category": "Transport",
+      "title": "Myanmar's ties with ASEAN remain strained despite signs of renewed engagement",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/myanmar-asean-ties-remain-strained-despite-signs-renewed-engagement-6273146",
+      "published": "2026-07-24 09:46"
     },
     {
       "category": "Transport",
@@ -136,24 +150,10 @@
     },
     {
       "category": "Fire",
-      "title": "Trading Day: Burn, baby, burn",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trading-day-burn-baby-burn-6274676",
-      "published": "2026-07-24 05:02"
-    },
-    {
-      "category": "Fire",
       "title": "Fire breaks out in backyard of Bukit Batok terraced house",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/fire-breaks-out-in-backyard-of-bukit-batok-terrace-house",
       "published": "2026-07-23 17:14"
-    },
-    {
-      "category": "Money",
-      "title": "Six IPOs this year, most trading below issue price: What this means for Singapore's market reforms",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/sgx-ipo-price-stocks-justco-foundation-healthcare-6270171",
-      "published": "2026-07-24 06:00"
     },
     {
       "category": "Money",
@@ -164,10 +164,87 @@
     },
     {
       "category": "Housing",
+      "title": "Asian stocks skid as oil spike revives inflation fears, bonds take a hit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/asian-stocks-skid-oil-spike-revives-inflation-fears-bonds-take-hit-6274986",
+      "published": "2026-07-24 09:20"
+    },
+    {
+      "category": "Housing",
       "title": "Japan June core inflation accelerates, stays below BOJ target",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/japan-june-core-inflation-accelerates-stays-below-boj-target-6274861",
       "published": "2026-07-24 07:43"
+    },
+    {
+      "category": "General",
+      "title": "Comic-Con 2026: Johnny Depp promotes Ebenezer and Enhypen members meet Twilight cast",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/comic-con-2026-johnny-depp-promotes-ebenezer-and-enhypen-members-meet-twilight-cast-6275111",
+      "published": "2026-07-24 11:35"
+    },
+    {
+      "category": "General",
+      "title": "US hits Singapore with 12.5% tariffs, citing failure to ban imports produced with forced labour",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/us-tariffs-singapore-trade-mti-forced-labour-6275051",
+      "published": "2026-07-24 10:28"
+    },
+    {
+      "category": "General",
+      "title": "More Singapore landlords turn to multi-tenant rentals for higher returns",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/landlords-multi-tenant-higher-returns-6272981",
+      "published": "2026-07-24 10:25"
+    },
+    {
+      "category": "General",
+      "title": "Japan's Nikkei falls more than 2% on AI spending worries",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japans-nikkei-falls-more-2-ai-spending-worries-6275061",
+      "published": "2026-07-24 09:57"
+    },
+    {
+      "category": "General",
+      "title": "Seoul advances increased cash rules for leveraged ETFs to July 31",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/seoul-advances-increased-cash-rules-leveraged-etfs-july-31-6275021",
+      "published": "2026-07-24 09:42"
+    },
+    {
+      "category": "General",
+      "title": "Oil set for weekly rise amid Red Sea shipping attacks, Kazakhstan output cuts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-set-weekly-rise-amid-red-sea-shipping-attacks-kazakhstan-output-cuts-6275016",
+      "published": "2026-07-24 09:37"
+    },
+    {
+      "category": "General",
+      "title": "Athletic-Lyles, Richardson ease through opening 100m heats at US championships",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/athletic-lyles-richardson-ease-through-opening-100m-heats-us-championships-6274991",
+      "published": "2026-07-24 09:27"
+    },
+    {
+      "category": "General",
+      "title": "Japan's factory activity stays firm as output surges in July, PMI shows",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japans-factory-activity-stays-firm-output-surges-in-july-pmi-shows-6274931",
+      "published": "2026-07-24 08:54"
+    },
+    {
+      "category": "General",
+      "title": "First look at Loulouca, the new dessert cafe by award-winning former Odette pastry chef Louisa Lim",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/dining/loulouca-louisa-lim-odette-dessert-cafe-6272676",
+      "published": "2026-07-24 08:41"
+    },
+    {
+      "category": "General",
+      "title": "Indian activist ends fast but youth protesters still seek minister's ouster",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-sonam-wangchuk-hunger-strike-youth-protesters-6274891",
+      "published": "2026-07-24 08:32"
     },
     {
       "category": "General",
@@ -192,87 +269,10 @@
     },
     {
       "category": "General",
-      "title": "Argentina defender Otamendi retires from international football",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/argentina-defender-otamendi-retires-international-football-6274796",
-      "published": "2026-07-24 06:31"
-    },
-    {
-      "category": "General",
-      "title": "American Lyles still hungry in off year",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/american-lyles-still-hungry-in-year-6274781",
-      "published": "2026-07-24 06:16"
-    },
-    {
-      "category": "General",
-      "title": "GIC’s 20-year annualised real return falls to 3.4%, lowest in 6 years",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/gic-reserves-returns-portfolio-ai-investing-6272926",
-      "published": "2026-07-24 06:11"
-    },
-    {
-      "category": "General",
-      "title": "US warns against excessive yen volatility, calls for BOJ rate hikes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-warns-against-excessive-yen-volatility-calls-boj-rate-hikes-6274776",
-      "published": "2026-07-24 06:07"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Faishal Ibrahim’s resignation needs more transparency for proper closure",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/faishal-ibrahim-minister-resigns-transparency-closure-singapore-6273286",
-      "published": "2026-07-24 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Beyond Seoul: Can China become Asia’s next medical aesthetics hub?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-medical-aesthetics-foreigners-beauty-tourism-industry-6272866",
-      "published": "2026-07-24 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: How the US-Iran war will reshape the Gulf",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/us-iran-war-gulf-impact-hormuz-control-6273151",
-      "published": "2026-07-24 05:59"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Why the US is losing Chinese AI stars",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/us-losing-chinese-ai-founders-moonshotai-6272996",
-      "published": "2026-07-24 05:59"
-    },
-    {
-      "category": "General",
-      "title": "SAP CFO says AI must move beyond chatbot 'low-hanging fruit' before seeing returns",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sap-cfo-says-ai-must-move-beyond-chatbot-low-hanging-fruit-seeing-returns-6274751",
-      "published": "2026-07-24 05:53"
-    },
-    {
-      "category": "General",
-      "title": "Nvidia, Amkor strike $1.5 billion chip packaging deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-amkor-strike-15-billion-chip-packaging-deal-6274746",
-      "published": "2026-07-24 05:45"
-    },
-    {
-      "category": "General",
-      "title": "US unveils new tariffs on 60 partners as Trump rebuilds trade agenda",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-unveils-new-tariffs-60-partners-trump-rebuilds-trade-agenda-6274721",
-      "published": "2026-07-24 05:45"
-    },
-    {
-      "category": "General",
-      "title": "Where to book a National Day staycation in Singapore for the SG61 long weekend",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/experiences/national-day-staycations-singapore-sg61-6269216",
-      "published": "2026-07-24 05:19"
+      "title": "Group films themselves foraging large amount of marine life from Changi, allegedly cooks them after",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/changi-marine-life-intertidal-forage/",
+      "published": "2026-07-23 23:51"
     },
     {
       "category": "General",
