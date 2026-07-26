@@ -1,12 +1,33 @@
 {
-  "last_updated": "2026-07-26 08:12",
+  "last_updated": "2026-07-26 11:54",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "German police hunt suspect after deadly car ramming near Berlin Gay Pride",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/berlin-pride-car-crowd-one-killed-6278451",
+      "published": "2026-07-26 06:21"
+    },
     {
       "category": "Crime",
       "title": "Scottish police arrest 15 after anti-migrant protest clashes",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/scottish-police-arrest-15-after-anti-migrant-protest-clashes-6278446",
       "published": "2026-07-26 05:46"
+    },
+    {
+      "category": "Crime",
+      "title": "S'pore man, 24, forges & sells police warrant card for S$100, gets jailed",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/man-jailed-fake-police-id-card/",
+      "published": "2026-07-26 00:01"
+    },
+    {
+      "category": "Crime",
+      "title": "2024 Beach Road murder: Woman jailed 12 years for fatally stabbing married lover, did so over money issues",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/woman-jailed-12-years-stabbing-lover/",
+      "published": "2026-07-25 23:14"
     },
     {
       "category": "Crime",
@@ -24,10 +45,10 @@
     },
     {
       "category": "Crime",
-      "title": "2 doctors among 3 charged with planning drug party at Orchid Country Club",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/doctors-drug-party/",
-      "published": "2026-07-25 19:43"
+      "title": "IMH nurses trained to defuse tense situations before they escalate into abuse and assault",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/health/imh-nurses-trained-to-defuse-tense-situations-before-they-escalate-into-abuse-and-assault",
+      "published": "2026-07-26 11:00"
     },
     {
       "category": "Crime",
@@ -87,24 +108,10 @@
     },
     {
       "category": "Traffic",
-      "title": "One killed, 15 wounded after car hits crowds near Berlin Pride",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/berlin-pride-car-crowd-one-killed-6278451",
-      "published": "2026-07-26 06:21"
-    },
-    {
-      "category": "Traffic",
       "title": "Syria bus crash kills at least 35",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/syria-bus-crash-kills-least-35-6278441",
       "published": "2026-07-26 05:40"
-    },
-    {
-      "category": "Traffic",
-      "title": "Ecuadorian Carapaz wins 20th stage of Tour de France",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ecuadorian-carapaz-wins-20th-stage-tour-de-france-6278161",
-      "published": "2026-07-25 22:49"
     },
     {
       "category": "Traffic",
@@ -142,53 +149,11 @@
       "published": "2026-07-24 16:49"
     },
     {
-      "category": "Traffic",
-      "title": "Construction firm behind 2022 Farrer Road sinkhole fined $84,000 for lapses in tunnelling works",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/construction-firm-behind-2022-farrer-road-sinkhole-fined-84000-for-lapses-in-tunneling-works",
-      "published": "2026-07-24 15:53"
-    },
-    {
-      "category": "Traffic",
-      "title": "US universities remain popular with S’porean students, despite stricter visa rules",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/parenting-education/us-universities-remain-popular-with-sporean-students-despite-stricter-visa-rules",
-      "published": "2026-07-24 15:35"
-    },
-    {
       "category": "Transport",
       "title": "Why every senior should strength train – and it's not just to prevent falls",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/wellness/strength-training-seniors-cancer-risk-muscle-loss-6243161",
       "published": "2026-07-26 07:04"
-    },
-    {
-      "category": "Transport",
-      "title": "MOM: More salary & wrongful dismissal claims in S'pore in 2025, likely linked to retrenchments & business closures",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/mom-salary-claims-rose-to-highest-2025/",
-      "published": "2026-07-25 19:34"
-    },
-    {
-      "category": "Fire",
-      "title": "Houthis fire on Saudi oil sites; no US strike on Iran for first time in two weeks",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/houthis-fire-saudi-oil-sites-no-us-strike-iran-first-time-in-two-weeks-6278296",
-      "published": "2026-07-26 01:53"
-    },
-    {
-      "category": "Fire",
-      "title": "Tour de France finale shortened as security forces redeploy to fight wildfires",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tour-de-france-finale-shortened-security-forces-redeploy-fight-wildfires-6278126",
-      "published": "2026-07-25 22:28"
-    },
-    {
-      "category": "Fire",
-      "title": "Devastating wildfires send 267,000 fleeing in France and Spain",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/france-spain-wildfires-evacuations-267000-flee-6278096",
-      "published": "2026-07-25 22:13"
     },
     {
       "category": "Fire",
@@ -212,18 +177,46 @@
       "published": "2026-07-24 17:50"
     },
     {
-      "category": "Money",
-      "title": "Private residential rents rise 0.7% in Q2 as home prices inch up 0.5%: URA",
+      "category": "Housing",
+      "title": "How my Housing Board flat has given my family a sense of home",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/private-residential-rents-rise-0-7-in-q2-as-home-prices-inch-up-0-5-ura",
-      "published": "2026-07-24 15:30"
+      "url": "https://www.straitstimes.com/singapore/parenting-education/how-my-housing-board-flat-has-given-my-family-a-sense-of-home",
+      "published": "2026-07-26 11:32"
     },
     {
       "category": "Housing",
-      "title": "Small flats, big renovations: Seniors who downsize embrace compact living in style",
+      "title": "Spend $80k to renovate a 2-room flat? See why these seniors are going all out on their dream homes",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/small-flats-big-renovations-seniors-who-downsize-embrace-compact-living-in-style",
       "published": "2026-07-26 05:00"
+    },
+    {
+      "category": "General",
+      "title": "Iraola begins Liverpool reign with pre-season win over Sunderland",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/iraola-begins-liverpool-reign-pre-season-win-over-sunderland-6278681",
+      "published": "2026-07-26 10:48"
+    },
+    {
+      "category": "General",
+      "title": "Ryan Gosling joins Marvel Cinematic Universe as Ghost Rider, film set for release in 2028",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/ryan-gosling-ghost-rider-marvel-2028-6278626",
+      "published": "2026-07-26 10:45"
+    },
+    {
+      "category": "General",
+      "title": "Southern China drenched as Typhoon Noul makes landfall",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/southern-china-drenched-typhoon-noul-makes-landfall-6278561",
+      "published": "2026-07-26 09:49"
+    },
+    {
+      "category": "General",
+      "title": "Spider-Man: Brand New Day director explains why Sadie Sink's role is being kept secret",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/spider-man-brand-new-day-sadie-sink-character-secret-6278551",
+      "published": "2026-07-26 08:18"
     },
     {
       "category": "General",
@@ -255,7 +248,7 @@
     },
     {
       "category": "General",
-      "title": "Box office hit Dear You is fuelling heritage tours to China’s Chaoshan. How are villages responding?",
+      "title": "Teochew film Dear You fuels heritage tours to China’s Chaoshan. How are villages responding?",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/east-asia/dear-you-china-chaoshan-tourism-villages-6273016",
       "published": "2026-07-26 06:00"
@@ -280,6 +273,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/palestinians-bury-four-killed-in-west-bank-clash-israeli-settlers-6278351",
       "published": "2026-07-26 03:56"
+    },
+    {
+      "category": "General",
+      "title": "Ukraine strikes Siberia refinery as Kazakh leader tells Putin war should end",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/ukraine-strikes-siberia-refinery-kazakh-leader-tells-putin-war-should-end-6278346",
+      "published": "2026-07-26 03:48"
     }
   ]
 }
