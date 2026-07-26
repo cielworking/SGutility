@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-26 11:54",
+  "last_updated": "2026-07-26 14:48",
   "headlines": [
     {
       "category": "Crime",
@@ -17,6 +17,13 @@
     },
     {
       "category": "Crime",
+      "title": "Woman in Taiwan, 31, drugged & suffocated her sons, 8 & 3, charged with murder",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/taiwan-mother-drugged-suffocated-sons/",
+      "published": "2026-07-26 00:31"
+    },
+    {
+      "category": "Crime",
       "title": "S'pore man, 24, forges & sells police warrant card for S$100, gets jailed",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/man-jailed-fake-police-id-card/",
@@ -28,20 +35,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/woman-jailed-12-years-stabbing-lover/",
       "published": "2026-07-25 23:14"
-    },
-    {
-      "category": "Crime",
-      "title": "S’porean man, 71, sexually abused daughter, granddaughter, nieces & students over 26 years",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-sexually-assaulted-11-children/",
-      "published": "2026-07-25 21:14"
-    },
-    {
-      "category": "Crime",
-      "title": "S'pore woman loses over S$1 million to scammer who used MP's photo as profile pic",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/singapore-woman-scammed-1-million-mp-photo/",
-      "published": "2026-07-25 19:52"
     },
     {
       "category": "Crime",
@@ -93,25 +86,25 @@
       "published": "2026-07-24 18:50"
     },
     {
-      "category": "Crime",
-      "title": "2 doctors charged with planning drug party; offence carries maximum 20 years’ jail sentence",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/2-doctors-charged-with-planning-drug-party-offence-carries-maximum-20-years-jail-sentence",
-      "published": "2026-07-24 17:53"
-    },
-    {
-      "category": "Crime",
-      "title": "Man arrested in Toa Payoh for drug, drink-driving offences; K9 dogs deployed",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/man-arrested-in-toa-payoh-for-drug-drink-driving-offences-k9-dogs-deployed",
-      "published": "2026-07-24 16:20"
-    },
-    {
       "category": "Traffic",
       "title": "Syria bus crash kills at least 35",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/syria-bus-crash-kills-least-35-6278441",
       "published": "2026-07-26 05:40"
+    },
+    {
+      "category": "Traffic",
+      "title": "Man, 48, taken unconscious to hospital after being attacked by group in Yishun carpark",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/man-attacked-yishun-carpark/",
+      "published": "2026-07-26 02:11"
+    },
+    {
+      "category": "Traffic",
+      "title": "PSLE playbook: What worked – and didn’t – for parents and pupils who have been through the exam",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/parenting-education/psle-playbook-what-worked-and-didnt-work-for-parents-and-pupils-who-have-gone-through-exam",
+      "published": "2026-07-26 14:25"
     },
     {
       "category": "Traffic",
@@ -142,13 +135,6 @@
       "published": "2026-07-24 18:57"
     },
     {
-      "category": "Traffic",
-      "title": "Domestic helper rescued after leg was pinned under car in Sembawang",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/domestic-helper-rescued-after-leg-was-pinned-under-car-in-sembawang",
-      "published": "2026-07-24 16:49"
-    },
-    {
       "category": "Transport",
       "title": "Why every senior should strength train – and it's not just to prevent falls",
       "source": "CNA",
@@ -164,21 +150,21 @@
     },
     {
       "category": "Money",
+      "title": "S'porean seniors have more savings to spend on health, but 'unnecessary treatments' could drive up costs: Ong Ye Kung",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/singapore-healthcare-unnecessary-treatments-ong-ye-kung/",
+      "published": "2026-07-26 00:49"
+    },
+    {
+      "category": "Money",
       "title": "Youth worry about jobs, costs and missing out; David Neo says new plan aims to address concerns",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/youth-worry-about-jobs-rising-costs-and-missing-out-on-opportunities-says-david-neo",
       "published": "2026-07-25 13:47"
     },
     {
-      "category": "Money",
-      "title": "Cat A COE supply cut again from August to October, but overall quota up 0.2%",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/cat-a-coe-supply-to-dip-again-from-august-to-october-overall-quota-up-0-2",
-      "published": "2026-07-24 17:50"
-    },
-    {
       "category": "Housing",
-      "title": "How my Housing Board flat has given my family a sense of home",
+      "title": "How my HDB flat has given my family a sense of home",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/parenting-education/how-my-housing-board-flat-has-given-my-family-a-sense-of-home",
       "published": "2026-07-26 11:32"
@@ -189,6 +175,34 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/small-flats-big-renovations-seniors-who-downsize-embrace-compact-living-in-style",
       "published": "2026-07-26 05:00"
+    },
+    {
+      "category": "General",
+      "title": "Former lawyer and Beam Artistes founder Samuel Seow dies at 53",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/samuel-seow-dies-beams-artistes-6278756",
+      "published": "2026-07-26 14:05"
+    },
+    {
+      "category": "General",
+      "title": "Newcastle boss Howe uncertain about Guimaraes' future",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/newcastle-boss-howe-uncertain-about-guimaraes-future-6278726",
+      "published": "2026-07-26 12:36"
+    },
+    {
+      "category": "General",
+      "title": "Rescuers scour South China Sea for 23 missing after Vietnamese vessel sinks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/rescue-south-china-sea-vietnamese-vessel-sinks-23-missing-6278706",
+      "published": "2026-07-26 12:07"
+    },
+    {
+      "category": "General",
+      "title": "Games-Ramsay-Peaty ponders future after 100m breaststroke bronze",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/games-ramsay-peaty-ponders-future-after-100m-breaststroke-bronze-6278716",
+      "published": "2026-07-26 12:02"
     },
     {
       "category": "General",
@@ -266,20 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/visiting-un-chief-urges-respect-syrias-sovereignty-international-support-6278366",
       "published": "2026-07-26 04:05"
-    },
-    {
-      "category": "General",
-      "title": "Palestinians bury four killed in West Bank clash with Israeli settlers",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/palestinians-bury-four-killed-in-west-bank-clash-israeli-settlers-6278351",
-      "published": "2026-07-26 03:56"
-    },
-    {
-      "category": "General",
-      "title": "Ukraine strikes Siberia refinery as Kazakh leader tells Putin war should end",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/ukraine-strikes-siberia-refinery-kazakh-leader-tells-putin-war-should-end-6278346",
-      "published": "2026-07-26 03:48"
     }
   ]
 }
