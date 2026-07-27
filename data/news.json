@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27 08:11",
+  "last_updated": "2026-07-27 12:02",
   "headlines": [
     {
       "category": "Crime",
@@ -7,13 +7,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/toa-payoh-drink-driving-accident/",
       "published": "2026-07-26 19:01"
-    },
-    {
-      "category": "Crime",
-      "title": "'Trust me completely, I am a S'porean': S'pore man, 37, allegedly scams 6 Indian nationals into paying S$14,000 for fake work permits",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/spore-man-scams-indian-nationals/",
-      "published": "2026-07-26 02:54"
     },
     {
       "category": "Crime",
@@ -52,9 +45,16 @@
     },
     {
       "category": "Traffic",
-      "title": "Tre Ver condo grapples with termite trouble; property giant UOL helping residents in affected units",
+      "title": "One dead, 3 taken to hospital after pre-dawn accident on CTE",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/housing/tre-ver-condo-grapples-with-termite-trouble-property-giant-uol-helping-residents-in-affected-units",
+      "url": "https://www.straitstimes.com/singapore/one-dead-3-taken-to-hospital-after-pre-dawn-accident-on-cte",
+      "published": "2026-07-27 11:01"
+    },
+    {
+      "category": "Traffic",
+      "title": "S’pore corals may come under threat in 2027 if El Nino turns strong as predicted; NParks monitoring",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/environment/spore-corals-may-come-under-threat-in-2027-if-el-nino-turns-strong-as-predicted-nparks-monitoring",
       "published": "2026-07-27 05:00"
     },
     {
@@ -66,9 +66,9 @@
     },
     {
       "category": "Traffic",
-      "title": "S’pore corals may come under threat in 2027 if El Nino turns strong as predicted; NParks monitoring",
+      "title": "Tre Ver condo grapples with termite trouble; property giant UOL helping residents in affected units",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/environment/spore-corals-may-come-under-threat-in-2027-if-el-nino-turns-strong-as-predicted-nparks-monitoring",
+      "url": "https://www.straitstimes.com/singapore/housing/tre-ver-condo-grapples-with-termite-trouble-property-giant-uol-helping-residents-in-affected-units",
       "published": "2026-07-27 05:00"
     },
     {
@@ -128,11 +128,11 @@
       "published": "2026-07-26 23:16"
     },
     {
-      "category": "Fire",
-      "title": "Israeli settlers set fire to West Bank mosques after deadly clash",
+      "category": "Money",
+      "title": "Oil prices sink as US-Iran pause fuels fresh Hormuz hopes",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israeli-settlers-set-fire-west-bank-mosques-after-deadly-clash-6279411",
-      "published": "2026-07-27 04:35"
+      "url": "https://www.channelnewsasia.com/world/oil-prices-sink-us-iran-pause-fuels-fresh-hormuz-hopes-6279656",
+      "published": "2026-07-27 08:41"
     },
     {
       "category": "Money",
@@ -150,6 +150,13 @@
     },
     {
       "category": "Housing",
+      "title": "Japan PM Takaichi's approval rating slides as inflation bites",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/japan-sanae-takaichi-approval-rating-inflation-6279611",
+      "published": "2026-07-27 11:17"
+    },
+    {
+      "category": "Housing",
       "title": "How my HDB flat has given my family a sense of home",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/parenting-education/how-my-housing-board-flat-has-given-my-family-a-sense-of-home",
@@ -161,6 +168,83 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/small-flats-big-renovations-seniors-who-downsize-embrace-compact-living-in-style",
       "published": "2026-07-26 05:00"
+    },
+    {
+      "category": "General",
+      "title": "Shooting at a Seattle food festival leaves 2 dead and wounds 5: Official",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/seattle-shooting-us-food-festival-6279851",
+      "published": "2026-07-27 11:50"
+    },
+    {
+      "category": "General",
+      "title": "Chinese actor Zhang Linghe doesn't have a regular hairstylist, says his hair is cut 'randomly'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/zhang-linghe-hair-interview-6279756",
+      "published": "2026-07-27 11:48"
+    },
+    {
+      "category": "General",
+      "title": "TV presenter Diana Ser lists out life advice for her children entering university: 'Don’t just make friends'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/diana-ser-advice-university-kids-james-lye-6279786",
+      "published": "2026-07-27 11:35"
+    },
+    {
+      "category": "General",
+      "title": "In Israel vote, ex-army chief emerges main rival to Netanyahu",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/israel-election-gadi-eisenkot-main-rival-benjamin-netanyahu-6279821",
+      "published": "2026-07-27 11:16"
+    },
+    {
+      "category": "General",
+      "title": "Red Sea shipping slows after Houthi attack on Saudi Arabia, data shows",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/red-sea-shipping-slows-after-houthi-attack-saudi-arabia-data-shows-6279606",
+      "published": "2026-07-27 11:11"
+    },
+    {
+      "category": "General",
+      "title": "Why more Singaporeans are choosing Integrated Shield Plans",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/brand-studio/why-more-singaporeans-are-choosing-integrated-shield-plans-6271761",
+      "published": "2026-07-27 10:56"
+    },
+    {
+      "category": "General",
+      "title": "Chipmaker CXMT vaults to top of China's valuation with 470% surge in Shanghai debut",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/china-chipmaker-cxmt-shares-surge-shanghai-trading-debut-6279601",
+      "published": "2026-07-27 10:09"
+    },
+    {
+      "category": "General",
+      "title": "Japan considers foreign bank financing for $33 billion US power projects",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japan-considers-foreign-bank-financing-33-billion-us-power-projects-6279736",
+      "published": "2026-07-27 09:52"
+    },
+    {
+      "category": "General",
+      "title": "Indonesia central bank governor Perry Warjiyo steps down in surprise move",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/indonesia-central-bank-governor-perry-warjiyo-steps-down-6279666",
+      "published": "2026-07-27 09:14"
+    },
+    {
+      "category": "General",
+      "title": "The Odyssey has now made over US$600 million globally since its release",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/odyssey-box-office-second-weekend-6279216",
+      "published": "2026-07-27 08:14"
+    },
+    {
+      "category": "General",
+      "title": "MAS tightens monetary policy for the second time in a row",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/mas-monetary-policy-inflation-economy-outlook-6275571",
+      "published": "2026-07-27 08:12"
     },
     {
       "category": "General",
@@ -185,9 +269,9 @@
     },
     {
       "category": "General",
-      "title": "Nvidia to acquire $1 billion of new shares of South Korea's Naver",
+      "title": "South Korea's Naver jumps 10% on Nvidia's US$1 billion investment plan",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-acquire-1-billion-new-shares-south-koreas-naver-6279546",
+      "url": "https://www.channelnewsasia.com/east-asia/naver-south-korea-nvidia-investment-6279546",
       "published": "2026-07-27 07:04"
     },
     {
@@ -196,90 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/east-asia/north-korea-kim-jong-un-sister-blast-asean-denuclearisation-6279516",
       "published": "2026-07-27 06:53"
-    },
-    {
-      "category": "General",
-      "title": "Lyles eases injury fears after cramp halts 200m run",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lyles-eases-injury-fears-after-cramp-halts-200m-run-6279521",
-      "published": "2026-07-27 06:49"
-    },
-    {
-      "category": "General",
-      "title": "Teen Lutkenhaus keeps meteoric rise on track with 800m US title",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/teen-lutkenhaus-keeps-meteoric-rise-track-800m-us-title-6279496",
-      "published": "2026-07-27 06:08"
-    },
-    {
-      "category": "General",
-      "title": "‘Don’t push it down our throats’: Why India’s ethanol-blending fuel policy is facing backlash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-e20-fuel-ethanol-consumer-backlash-6275781",
-      "published": "2026-07-27 06:00"
-    },
-    {
-      "category": "General",
-      "title": "AI cyberattacks mean we can't defend ourselves the same way as before: Singapore's founding cybersecurity chief",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/cybersecurity-csa-founding-chief-david-koh-ai-cyberattack-defend-6275631",
-      "published": "2026-07-27 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: A ‘we first’ Singapore begins in everyday acts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/singapore-public-transport-move-in-give-way-drivers-6275491",
-      "published": "2026-07-27 06:00"
-    },
-    {
-      "category": "General",
-      "title": "The faces behind China's AI rise: Meet the founders of DeepSeek, Z.ai and Moonshot AI",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-deepseek-zhipu-ai-moonshot-liang-wenfeng-yang-zhilin-tang-jie-6269866",
-      "published": "2026-07-27 06:00"
-    },
-    {
-      "category": "General",
-      "title": "How Trump’s immigration crackdown is putting pressure on Indonesians in the US",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesians-us-trump-immigration-asylum-6264716",
-      "published": "2026-07-27 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Maebashi is quietly becoming one of Japan’s most creative cities",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/remarkable-living/maebashi-japan-travel-guide-6265391",
-      "published": "2026-07-27 05:31"
-    },
-    {
-      "category": "General",
-      "title": "Israel to allow international force into Gaza: Official",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israel-allow-international-force-gaza-official-6279381",
-      "published": "2026-07-27 03:32"
-    },
-    {
-      "category": "General",
-      "title": "Hungary hurt pushes Russell 'past the point of disappointment'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/hungary-hurt-pushes-russell-past-point-disappointment-6279371",
-      "published": "2026-07-27 03:15"
-    },
-    {
-      "category": "General",
-      "title": "Honduras ex-president Hernandez returns home after Trump pardon",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/honduras-ex-president-hernandez-returns-home-after-trump-pardon-6279351",
-      "published": "2026-07-27 03:13"
-    },
-    {
-      "category": "General",
-      "title": "UN chief urges immediate removal of all Syria sanctions",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/un-chief-urges-immediate-removal-all-syria-sanctions-6279326",
-      "published": "2026-07-27 02:38"
     }
   ]
 }
