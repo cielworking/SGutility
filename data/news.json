@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-28 20:13",
+  "last_updated": "2026-07-28 22:36",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Johor police arrest 335 scam suspects in Forest City crackdown",
+      "title": "Flight MH370 families want 'facts' as China court hears appeal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-forest-city-johor-scam-syndicates-call-centres-6282901",
-      "published": "2026-07-28 18:50"
+      "url": "https://www.channelnewsasia.com/asia/flight-mh370-court-appeal-families-6283331",
+      "published": "2026-07-28 20:51"
     },
     {
       "category": "Crime",
@@ -73,6 +73,13 @@
     },
     {
       "category": "Traffic",
+      "title": "47 cars, including 11 Rolls-Royces, linked to $3b money laundering probe up for closed-bid auction",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/47-cars-including-11-rolls-royces-linked-to-3b-money-laundering-probe-up-for-closed-bid-auction",
+      "published": "2026-07-28 21:37"
+    },
+    {
+      "category": "Traffic",
       "title": "Elderly man dies after fire at Circuit Road HDB flat",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/one-taken-to-hospital-about-80-evacuated-after-fire-breaks-out-in-macpherson",
@@ -93,20 +100,6 @@
       "published": "2026-07-27 13:25"
     },
     {
-      "category": "Traffic",
-      "title": "One dead, 3 taken to hospital after pre-dawn accident between car and lorry on CTE",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/one-dead-3-taken-to-hospital-after-pre-dawn-accident-on-cte",
-      "published": "2026-07-27 11:01"
-    },
-    {
-      "category": "Transport",
-      "title": "Amazon winds down most flagship AI models in strategy overhaul, Business Insider reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amazon-winds-down-most-flagship-ai-models-in-strategy-overhaul-business-insider-reports-6283066",
-      "published": "2026-07-28 18:34"
-    },
-    {
       "category": "Transport",
       "title": "Anti-drug campaign spotlights casual remarks that downplay drug abuse",
       "source": "Straits Times",
@@ -121,25 +114,11 @@
       "published": "2026-07-27 13:35"
     },
     {
-      "category": "Fire",
-      "title": "Zidane primed to unleash France attacking firepower",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zidane-primed-unleash-france-attacking-firepower-6282921",
-      "published": "2026-07-28 17:53"
-    },
-    {
       "category": "Money",
-      "title": "Fuel costs, Air India losses push SIA into Q1 red despite record revenue",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/sia-q1-net-loss-air-india-fuel-costs-6282861",
-      "published": "2026-07-28 17:55"
-    },
-    {
-      "category": "Housing",
-      "title": "Removal of 15-month rule unlikely to drive up HDB resale prices: Analysts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/hdb-resale-condos-wait-out-period-private-property-absd-6282371",
-      "published": "2026-07-28 18:31"
+      "title": "ABSD changes aside, mega collective sale sites must be priced realistically to attract developers",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/housing/absd-changes-aside-mega-en-bloc-sites-must-be-priced-realistically-to-attract-developers",
+      "published": "2026-07-28 22:00"
     },
     {
       "category": "Housing",
@@ -171,6 +150,76 @@
     },
     {
       "category": "General",
+      "title": "Hedge funds on track for another stellar year on AI boom",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/hedge-funds-track-another-stellar-year-ai-boom-6283661",
+      "published": "2026-07-28 22:12"
+    },
+    {
+      "category": "General",
+      "title": "16-year-old gymnast Amanda Yap clinches Singapore's first Glasgow Commonwealth Games medal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/amanda-yap-medal-singapore-commonwealth-games-6283461",
+      "published": "2026-07-28 21:26"
+    },
+    {
+      "category": "General",
+      "title": "For India, World Cup qualification is still just a distant dream",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/india-world-cup-qualification-still-just-distant-dream-6283466",
+      "published": "2026-07-28 21:03"
+    },
+    {
+      "category": "General",
+      "title": "Apple launches US device leasing program with Klarna",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/apple-launches-us-device-leasing-program-klarna-6283426",
+      "published": "2026-07-28 20:52"
+    },
+    {
+      "category": "General",
+      "title": "Kenyan footprints shed light on prehistoric human cousin Paranthropus",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/kenyan-footprints-shed-light-prehistoric-human-cousin-paranthropus-6283416",
+      "published": "2026-07-28 20:48"
+    },
+    {
+      "category": "General",
+      "title": "Visa to lay off 7% of staff as efficiency push deepens",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/visa-lay-7-staff-efficiency-push-deepens-6283421",
+      "published": "2026-07-28 20:48"
+    },
+    {
+      "category": "General",
+      "title": "S&P Global profit jumps, strikes datacenterHawk, Agusto deals",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/sp-global-profit-jumps-strikes-datacenterhawk-agusto-deals-6283391",
+      "published": "2026-07-28 20:42"
+    },
+    {
+      "category": "General",
+      "title": "Food technology firm GrubMarket confidentially files for US IPO",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/food-technology-firm-grubmarket-confidentially-files-us-ipo-6283376",
+      "published": "2026-07-28 20:36"
+    },
+    {
+      "category": "General",
+      "title": "Ruud completes Team Europe line-up at Laver Cup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ruud-completes-team-europe-line-up-laver-cup-6283291",
+      "published": "2026-07-28 20:12"
+    },
+    {
+      "category": "General",
+      "title": "Ipswich sign Dutch goalkeeper Scherpen",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ipswich-sign-dutch-goalkeeper-scherpen-6283296",
+      "published": "2026-07-28 20:09"
+    },
+    {
+      "category": "General",
       "title": "Embolo's sending-off in World Cup quarter-final against Argentina was wrong, IFAB says",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/embolos-sending-in-world-cup-quarter-final-against-argentina-was-wrong-ifab-says-6283241",
@@ -178,9 +227,9 @@
     },
     {
       "category": "General",
-      "title": "Mancini to become Italy coach for second time, source says",
+      "title": "Mancini returns as Italy coach with Ranieri as technical director",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mancini-become-italy-coach-second-time-source-says-6283201",
+      "url": "https://www.channelnewsasia.com/sport/mancini-returns-italy-coach-ranieri-technical-director-6283201",
       "published": "2026-07-28 19:38"
     },
     {
@@ -231,55 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/qatar-and-bahrain-wec-rounds-moved-barcelona-and-monza-6283126",
       "published": "2026-07-28 19:00"
-    },
-    {
-      "category": "General",
-      "title": "India's Pine Labs profit jumps four-fold as digital payments adoption increases",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/indias-pine-labs-profit-jumps-four-fold-digital-payments-adoption-increases-6283006",
-      "published": "2026-07-28 18:21"
-    },
-    {
-      "category": "General",
-      "title": "Ukraine's Zelenskyy in US to secure fresh Trump support",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/zelenskyy-us-ukraine-trump-support-6282846",
-      "published": "2026-07-28 18:14"
-    },
-    {
-      "category": "General",
-      "title": "Sports betting industry spending on US midterm elections surpasses $72 million",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sports-betting-industry-spending-us-midterm-elections-surpasses-72-million-6282946",
-      "published": "2026-07-28 18:03"
-    },
-    {
-      "category": "General",
-      "title": "Meta, BlackRock partner on $14 billion El Paso data center",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/meta-blackrock-partner-14-billion-el-paso-data-center-6282891",
-      "published": "2026-07-28 17:42"
-    },
-    {
-      "category": "General",
-      "title": "Canal+ says 'Paddington 4' is in works, as it locks down French streaming advantage",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/canal-says-paddington-4-in-works-it-locks-down-french-streaming-advantage-6282896",
-      "published": "2026-07-28 17:42"
-    },
-    {
-      "category": "General",
-      "title": "MAS reports net profit of S$20 billion driven by strong investment gains",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/mas-profit-ai-investment-6282646",
-      "published": "2026-07-28 17:30"
-    },
-    {
-      "category": "General",
-      "title": "HSBC to set up Global AI Centre of Excellence in S'pore, hiring over 100 AI specialists & wealth managers",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/hsbc-hire-100-ai-specialists/",
-      "published": "2026-07-28 23:09"
     }
   ]
 }
