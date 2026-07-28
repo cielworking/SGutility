@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-29 04:34",
+  "last_updated": "2026-07-29 06:16",
   "headlines": [
     {
       "category": "Crime",
@@ -94,17 +94,31 @@
     },
     {
       "category": "Transport",
+      "title": "Dengue cases in Singapore low but increasing, numbers may rise further with dengue strain change",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/health/dengue-cases-in-singapore-low-but-increasing-numbers-may-rise-further-with-dengue-strain-change",
+      "published": "2026-07-29 05:00"
+    },
+    {
+      "category": "Transport",
       "title": "Anti-drug campaign spotlights casual remarks that downplay drug abuse",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/anti-drug-campaign-spotlights-casual-remarks-that-downplay-drugs-abuse",
       "published": "2026-07-27 17:40"
     },
     {
-      "category": "Transport",
-      "title": "NDP 2026: Bus and train services to end later on eve of National Day",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/ndp-2026-bus-and-train-services-to-be-extended-on-eve-of-national-day",
-      "published": "2026-07-27 13:35"
+      "category": "Fire",
+      "title": "Spain lets wildfire evacuees return but France fears flames spreading",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/france-spain-wildfire-heatwave-evacuees-6284316",
+      "published": "2026-07-29 05:41"
+    },
+    {
+      "category": "Money",
+      "title": "Mixed day for global stocks but oil prices fall along with chip shares",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/mixed-day-global-stocks-oil-prices-fall-along-chip-shares-6284381",
+      "published": "2026-07-29 05:52"
     },
     {
       "category": "Money",
@@ -122,10 +136,10 @@
     },
     {
       "category": "Housing",
-      "title": "BIS says AI boom risks clouding central banks' inflation signals",
+      "title": "Property agencies welcome new minimum transaction rule, seek safeguards for consumer ratings",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/bis-says-ai-boom-risks-clouding-central-banks-inflation-signals-6283906",
-      "published": "2026-07-29 00:53"
+      "url": "https://www.channelnewsasia.com/singapore/property-agencies-minimum-transactions-consumer-ratings-cea-6283516",
+      "published": "2026-07-29 06:00"
     },
     {
       "category": "Housing",
@@ -154,6 +168,69 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/15-month-wait-out-period-for-private-home-owners-to-buy-hdb-resale-flats-lifted-chee-hong-tat",
       "published": "2026-07-28 10:01"
+    },
+    {
+      "category": "General",
+      "title": "Tech employees call for US-backed global effort to manage risks of advanced AI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/tech-employees-call-us-backed-global-effort-manage-risks-advanced-ai-6284401",
+      "published": "2026-07-29 06:03"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Latest excuse for US tariffs somehow arrives at the same conclusion as previous attempts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/trump-tariffs-forced-labour-legal-justification-6282076",
+      "published": "2026-07-29 06:00"
+    },
+    {
+      "category": "General",
+      "title": "IN FOCUS: China mastered manufacturing. Can it now build the world’s next big brands?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-homegrown-chinese-brands-global-growth-6237246",
+      "published": "2026-07-29 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Panic over Moonshot’s Kimi K3 is a sputnik moment for ‘open’ AI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/moonshot-kimi-panic-ai-sputnik-moment-6282731",
+      "published": "2026-07-29 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Exclusive-OpenAI's rogue agent compromised an account at a second tech firm, executive says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/exclusive-openais-rogue-agent-compromised-account-second-tech-firm-executive-says-6284346",
+      "published": "2026-07-29 05:27"
+    },
+    {
+      "category": "General",
+      "title": "AT&T closes $23 billion deal to acquire spectrum from Echostar",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/att-closes-23-billion-deal-acquire-spectrum-echostar-6284266",
+      "published": "2026-07-29 04:53"
+    },
+    {
+      "category": "General",
+      "title": "US midfielder Berhalter joins Middlesbrough on four-year deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/us-midfielder-berhalter-joins-middlesbrough-four-year-deal-6284236",
+      "published": "2026-07-29 04:40"
+    },
+    {
+      "category": "General",
+      "title": "Oman presents Iran with Gulf-backed plan for voluntary fees to use Hormuz",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/oman-proposal-iran-hormuz-us-paused-strikes-6284111",
+      "published": "2026-07-29 04:35"
+    },
+    {
+      "category": "General",
+      "title": "KLA results beat Wall Street estimates, but shares fall on high investor expectations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/kla-results-beat-wall-street-estimates-shares-fall-high-investor-expectations-6284201",
+      "published": "2026-07-29 04:28"
     },
     {
       "category": "General",
@@ -187,7 +264,7 @@
       "category": "General",
       "title": "Destroyed Aeon mall had just reopened for 'fresh start' a decade on from deadly quake",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/aeon-mall-japan-earthquake-reopened-destroyed-6284021",
+      "url": "https://www.channelnewsasia.com/east-asia/aeon-mall-japan-earthquake-reopened-destroyed-6284021",
       "published": "2026-07-29 02:01"
     },
     {
@@ -203,83 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/asmi-lifts-2027-outlook-forecasts-third-quarter-revenue-above-estimates-6283926",
       "published": "2026-07-29 00:56"
-    },
-    {
-      "category": "General",
-      "title": "Cucurella gets tattoo of Spain coach to honour World Cup promise",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/cucurella-gets-tattoo-spain-coach-honour-world-cup-promise-6283896",
-      "published": "2026-07-29 00:42"
-    },
-    {
-      "category": "General",
-      "title": "Trump shows irritation with Netanyahu before White House talks on Iran",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-netanyahu-white-house-zelenskyy-talks-6283846",
-      "published": "2026-07-29 00:40"
-    },
-    {
-      "category": "General",
-      "title": "Asia’s 50 Best Bars 2026: Guangzhou bar Hope & Sesame is No.1, Singapore scores four spots",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/experiences/asias-50-best-bars-2026-6283876",
-      "published": "2026-07-29 00:34"
-    },
-    {
-      "category": "General",
-      "title": "Rogers, Prime Video sign 12-year deal for NHL deal for Canada",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/rogers-prime-video-sign-12-year-deal-nhl-deal-canada-6283866",
-      "published": "2026-07-29 00:27"
-    },
-    {
-      "category": "General",
-      "title": "Shein's US operations under FTC scrutiny",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sheins-us-operations-under-ftc-scrutiny-6283851",
-      "published": "2026-07-29 00:21"
-    },
-    {
-      "category": "General",
-      "title": "Bitcoin miner and AI firm Ionic Digital valued at $2.25 billion in Nasdaq debut",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/bitcoin-miner-and-ai-firm-ionic-digital-valued-225-billion-in-nasdaq-debut-6283831",
-      "published": "2026-07-29 00:05"
-    },
-    {
-      "category": "General",
-      "title": "Robinhood CEO Vlad Tenev says X account was hacked",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/robinhood-ceo-vlad-tenev-says-x-account-was-hacked-6283811",
-      "published": "2026-07-28 23:54"
-    },
-    {
-      "category": "General",
-      "title": "Apple briefly tops $5 trillion market value for first time",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apple-briefly-tops-5-trillion-market-value-first-time-6283756",
-      "published": "2026-07-28 23:02"
-    },
-    {
-      "category": "General",
-      "title": "EBay, former executives to pay $56 million to settle couple's harassment case",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ebay-former-executives-pay-56-million-settle-couples-harassment-case-6283706",
-      "published": "2026-07-28 22:31"
-    },
-    {
-      "category": "General",
-      "title": "FIFA plans to raise $4.2 billion via stake sales in new subsidiary, angering UEFA",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fifa-plans-raise-42-billion-stake-sales-in-new-subsidiary-angering-uefa-6283711",
-      "published": "2026-07-28 22:29"
-    },
-    {
-      "category": "General",
-      "title": "Hedge funds on track for another stellar year on AI boom",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/hedge-funds-track-another-stellar-year-ai-boom-6283661",
-      "published": "2026-07-28 22:12"
     }
   ]
 }
