@@ -1,26 +1,26 @@
 {
   "source_name": "LTA / data.gov.sg",
   "source_url": "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html",
-  "last_updated": "2026-07-29T12:21:35.016245",
+  "last_updated": "2026-07-29T15:20:00.267348",
   "woodlands": [
     {
       "camera_id": "2701",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/54349497-556b-49ad-9d63-7b45096fffc7.jpg",
-      "timestamp": "2026-07-29T20:20:23+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/eafef5f5-9a03-4b3b-8247-5d77308a844c.jpg",
+      "timestamp": "2026-07-29T23:15:50+08:00",
       "latitude": 1.447023728,
       "longitude": 103.7716543
     },
     {
       "camera_id": "2702",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/64484c03-8fa8-4255-909e-52d820ff263e.jpg",
-      "timestamp": "2026-07-29T20:20:23+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/caddf4f1-98c6-47d8-93b1-575ab512f7d2.jpg",
+      "timestamp": "2026-07-29T23:15:50+08:00",
       "latitude": 1.445554109,
       "longitude": 103.7683397
     },
     {
       "camera_id": "2704",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/41862a3b-cc95-448b-9bfd-e4f43fbe2eac.jpg",
-      "timestamp": "2026-07-29T20:20:23+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/55ea51d8-e7ca-4ec1-906c-d3069aefb2da.jpg",
+      "timestamp": "2026-07-29T23:15:50+08:00",
       "latitude": 1.429588536,
       "longitude": 103.769311
     }
@@ -28,8 +28,8 @@
   "tuas": [
     {
       "camera_id": "4703",
-      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/96a464c6-d1bb-452f-a9be-0282d7c8aed5.jpg",
-      "timestamp": "2026-07-29T20:20:23+08:00",
+      "image": "https://images.data.gov.sg/api/traffic-images/2026/07/81c672cc-9192-41b5-bcdb-7bf77033f878.jpg",
+      "timestamp": "2026-07-29T23:15:50+08:00",
       "latitude": 1.348697862,
       "longitude": 103.6350413
     }
