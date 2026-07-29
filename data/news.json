@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-30 03:42",
+  "last_updated": "2026-07-30 05:12",
   "headlines": [
     {
       "category": "Crime",
@@ -129,6 +129,13 @@
     },
     {
       "category": "Transport",
+      "title": "Robinhood beats quarterly profit estimates as trading activity remains robust",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/robinhood-beats-quarterly-profit-estimates-trading-activity-remains-robust-6286801",
+      "published": "2026-07-30 04:12"
+    },
+    {
+      "category": "Transport",
       "title": "Power bank in commuter’s backpack emits smoke at Buangkok MRT station; no injuries reported",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/smoke-emits-from-commuters-backpack-at-buangkok-mrt-station-no-injuries-reported",
@@ -161,13 +168,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/fire-block-39-circuit-road-family-funeral/",
       "published": "2026-07-30 00:19"
-    },
-    {
-      "category": "Money",
-      "title": "Apple says UK App Store proposal amounts to price regulation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apple-says-uk-app-store-proposal-amounts-price-regulation-6286416",
-      "published": "2026-07-29 23:48"
     },
     {
       "category": "Money",
@@ -213,6 +213,55 @@
     },
     {
       "category": "General",
+      "title": "PGA Tour suspends Mullinax for six months over anti-doping violation",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pga-tour-suspends-mullinax-six-months-over-anti-doping-violation-6286876",
+      "published": "2026-07-30 04:48"
+    },
+    {
+      "category": "General",
+      "title": "SpaceX gets $1.6 billion US Space Force order for 18 Falcon 9 launches",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/spacex-gets-16-billion-us-space-force-order-18-falcon-9-launches-6286816",
+      "published": "2026-07-30 04:17"
+    },
+    {
+      "category": "General",
+      "title": "World Cup lifts MLS ticket sales and ratings, Garber says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-lifts-mls-ticket-sales-and-ratings-garber-says-6286806",
+      "published": "2026-07-30 04:11"
+    },
+    {
+      "category": "General",
+      "title": "Microsoft tops quarterly cloud growth estimates, easing spending concerns",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/microsoft-tops-quarterly-cloud-growth-estimates-easing-spending-concerns-6286781",
+      "published": "2026-07-30 04:08"
+    },
+    {
+      "category": "General",
+      "title": "Meta's free cash flow wiped out as AI buildout grows",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/metas-free-cash-flow-wiped-out-ai-buildout-grows-6286786",
+      "published": "2026-07-30 04:07"
+    },
+    {
+      "category": "General",
+      "title": "Qualcomm forecasts weak quarterly profit, expects Apple revenue drop to accelerate",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/qualcomm-forecasts-weak-quarterly-profit-expects-apple-revenue-drop-accelerate-6286756",
+      "published": "2026-07-30 04:01"
+    },
+    {
+      "category": "General",
+      "title": "Explainer-How world soccer is governed: FIFA, UEFA and the balance of power",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/explainer-how-world-soccer-governed-fifa-uefa-and-balance-power-6286761",
+      "published": "2026-07-30 03:59"
+    },
+    {
+      "category": "General",
       "title": "Infantino calls plan to sell World Cup stake a proposal, 'not an obligation'",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/infantino-calls-plan-sell-world-cup-stake-proposal-not-obligation-6286726",
@@ -227,59 +276,10 @@
     },
     {
       "category": "General",
-      "title": "OpenAI's Sam Altman discusses rogue agent and new AI models with US senators",
+      "title": "OpenAI's Sam Altman discusses rogue agent with US senators, as Trump considers AI controls",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openais-sam-altman-discusses-rogue-agent-and-new-ai-models-us-senators-6286676",
+      "url": "https://www.channelnewsasia.com/business/openais-sam-altman-discusses-rogue-agent-us-senators-trump-considers-ai-controls-6286676",
       "published": "2026-07-30 02:44"
-    },
-    {
-      "category": "General",
-      "title": "Explainer-What does Infantino's proposal to sell stakes in FIFA subsidiary entail?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/explainer-what-does-infantinos-proposal-sell-stakes-in-fifa-subsidiary-entail-6286636",
-      "published": "2026-07-30 02:20"
-    },
-    {
-      "category": "General",
-      "title": "Harrington named vice captain for Europe's 2027 Ryder Cup team",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/harrington-named-vice-captain-europes-2027-ryder-cup-team-6286576",
-      "published": "2026-07-30 01:44"
-    },
-    {
-      "category": "General",
-      "title": "DAZN investor Aser explores options for stake in sports streamer",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/dazn-investor-aser-explores-options-stake-in-sports-streamer-6286551",
-      "published": "2026-07-30 01:24"
-    },
-    {
-      "category": "General",
-      "title": "Italy, US to sign off on Pax Silica AI initiative after spat with Trump",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/italy-us-sign-pax-silica-ai-initiative-after-spat-trump-6286521",
-      "published": "2026-07-30 01:00"
-    },
-    {
-      "category": "General",
-      "title": "FIFA opens disciplinary case over Argentina Falklands banner at World Cup",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fifa-opens-disciplinary-case-over-argentina-falklands-banner-world-cup-6286516",
-      "published": "2026-07-30 00:52"
-    },
-    {
-      "category": "General",
-      "title": "Richardson injury denies Commonwealth Games track showdown",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/richardson-injury-denies-commonwealth-games-track-showdown-6286511",
-      "published": "2026-07-30 00:46"
-    },
-    {
-      "category": "General",
-      "title": "Wales to reduce professional franchises from four to three",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/wales-reduce-professional-franchises-four-three-6286496",
-      "published": "2026-07-30 00:38"
     }
   ]
 }
