@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-29 17:48",
+  "last_updated": "2026-07-29 20:20",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Russia charges Telegram founder Durov with facilitating terrorism",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/russia-charges-telegram-ceo-founder-pavel-durov-terrorism-6285301",
-      "published": "2026-07-29 16:40"
+      "title": "4 men, aged 28-45, allegedly provided foreigners with modified foodpanda app for illegal platform work, to be charged",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/foodpanda-modified-app/",
+      "published": "2026-07-29 21:59"
     },
     {
       "category": "Crime",
@@ -17,10 +17,10 @@
     },
     {
       "category": "Crime",
-      "title": "Large empty fuel tanks left at Eunos car park, police & SCDF called to scene",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/empty-fuel-tanks-car-park-eunos/",
-      "published": "2026-07-29 02:10"
+      "title": "Four charged over modifying food delivery app to let foreigners work illegally",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/four-charged-over-modifying-food-delivery-app-to-let-foreigners-work-illegally",
+      "published": "2026-07-29 19:55"
     },
     {
       "category": "Crime",
@@ -42,13 +42,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/man-who-drove-deregistered-vehicles-at-bedok-reservoir-road-punggol-charged",
       "published": "2026-07-29 15:13"
-    },
-    {
-      "category": "Crime",
-      "title": "Incoming Chief Justice: Lawyers attrition issues a priority; bullying at work, in court unacceptable",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/incoming-chief-justice-lawyers-attrition-issues-a-priority-bullying-at-work-in-court-unacceptable",
-      "published": "2026-07-29 15:06"
     },
     {
       "category": "Crime",
@@ -101,10 +94,17 @@
     },
     {
       "category": "Traffic",
-      "title": "Man, 61, allegedly slaps woman outside Tampines childcare centre & throws her stroller into bushes",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/man-slaps-woman-throws-her-stroller-into-bushes/",
-      "published": "2026-07-29 02:40"
+      "title": "UK regulator investigates whether Microsoft misled personal and family customers",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/uk-regulator-investigates-whether-microsoft-misled-personal-and-family-customers-6285731",
+      "published": "2026-07-29 18:13"
+    },
+    {
+      "category": "Traffic",
+      "title": "Revenue service for Punggol self-driving shuttles delayed to Q4; Grab to test on-demand rides",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/revenue-service-for-punggol-self-driving-shuttles-delayed-to-q4-grab-to-test-on-demand-rides",
+      "published": "2026-07-29 18:00"
     },
     {
       "category": "Traffic",
@@ -122,31 +122,31 @@
     },
     {
       "category": "Traffic",
+      "title": "Incoming Chief Justice wants to ensure lawyers have sustainable careers, says bullying at work unacceptable",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/incoming-chief-justice-lawyers-attrition-issues-a-priority-bullying-at-work-in-court-unacceptable",
+      "published": "2026-07-29 15:06"
+    },
+    {
+      "category": "Traffic",
       "title": "47 cars, including 11 Rolls-Royces, linked to $3b money laundering probe up for closed-bid auction",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/47-cars-including-11-rolls-royces-linked-to-3b-money-laundering-probe-up-for-closed-bid-auction",
       "published": "2026-07-28 21:37"
     },
     {
-      "category": "Traffic",
-      "title": "Elderly man dies after fire at Circuit Road HDB flat",
+      "category": "Transport",
+      "title": "What Network School’s closure tells foreign investors about doing business in Malaysia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/network-school-johor-malaysia-lessons-foreign-tech-investors-6285236",
+      "published": "2026-07-29 17:39"
+    },
+    {
+      "category": "Transport",
+      "title": "MRT disruption possibly affecting travel plans? Google Maps now provides real-time alerts",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/one-taken-to-hospital-about-80-evacuated-after-fire-breaks-out-in-macpherson",
-      "published": "2026-07-28 08:43"
-    },
-    {
-      "category": "Transport",
-      "title": "Dan's Steaks by former radio DJ Daniel Ong to shut down: 'Running a small business is incredibly tough'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/dining/dans-steaks-daniel-ong-shut-down-6285316",
-      "published": "2026-07-29 15:26"
-    },
-    {
-      "category": "Transport",
-      "title": "IPL's business value soars above $20 billion, says report",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ipls-business-value-soars-above-20-billion-says-report-6285326",
-      "published": "2026-07-29 14:58"
+      "url": "https://www.straitstimes.com/singapore/mrt-disruption-possibly-affecting-travel-plans-google-maps-now-provides-real-time-alerts",
+      "published": "2026-07-29 18:17"
     },
     {
       "category": "Transport",
@@ -164,20 +164,6 @@
     },
     {
       "category": "Money",
-      "title": "Additional S$300 CDC vouchers, U-Save rebates for Singaporean households amid Middle East crisis",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/cdc-voucher-300-usave-rebate-support-package-6285241",
-      "published": "2026-07-29 16:00"
-    },
-    {
-      "category": "Money",
-      "title": "Sony poised for 'GTA VI' boost as memory prices bite",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sony-poised-gta-vi-boost-memory-prices-bite-6285401",
-      "published": "2026-07-29 15:33"
-    },
-    {
-      "category": "Money",
       "title": "SIA reports S$76 million quarterly net loss despite 'record revenue' owing to fuel costs & Air India losses",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/singapore-airlines-76-million-quarterly-net-loss/",
@@ -192,94 +178,108 @@
     },
     {
       "category": "Housing",
-      "title": "Govt to consider lowering eligibility age for singles to buy HDB flats: Chee Hong Tat",
+      "title": "Over 12,500 flat listings on Resale Flat Listing service, MND & HDB studying if it should be compulsory",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/govt-considering-hdb-eligibility-age-singles/",
-      "published": "2026-07-29 01:07"
+      "url": "https://mothership.sg/2026/07/resale-flat-listing-service-hdb/",
+      "published": "2026-07-29 22:33"
     },
     {
       "category": "Housing",
-      "title": "S’pore households to get $300 in CDC vouchers in January 2027 to cushion impact of inflation",
+      "title": "Foreign domestic worker gets life imprisonment for suffocating employer, 73, to death in Bishan flat over theft accusation",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/helper-murder-employer-bishan-life-imprisonment/",
+      "published": "2026-07-29 21:24"
+    },
+    {
+      "category": "Housing",
+      "title": "S’porean households to get $300 in CDC vouchers in January 2027 to cushion impact of inflation",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/spore-households-to-get-300-cdc-vouchers-in-january-2027-to-cushion-impact-of-inflation",
       "published": "2026-07-29 16:01"
     },
     {
       "category": "Housing",
-      "title": "Life imprisonment for maid who killed employer’s father, 73, with pillow at Bishan flat in 2022",
+      "title": "Life imprisonment for domestic worker who killed employer’s father, 73, with pillow in Bishan flat",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/life-imprisonment-for-maid-who-killed-employers-father-73-with-pillow-at-bishan-flat-in-2022",
       "published": "2026-07-29 15:50"
     },
     {
-      "category": "Housing",
-      "title": "Refresher exam for property agents with fewer than 3 deals in 3 years amid industry review",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/housing/refresher-exam-for-property-agents-with-fewer-than-3-deals-in-3-years-amid-industry-review",
-      "published": "2026-07-28 13:28"
-    },
-    {
-      "category": "Housing",
-      "title": "No more 15-month wait-out period for private home owners to buy HDB resale flats: Chee Hong Tat",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/15-month-wait-out-period-for-private-home-owners-to-buy-hdb-resale-flats-lifted-chee-hong-tat",
-      "published": "2026-07-28 10:01"
+      "category": "General",
+      "title": "Brookfield, NextEra to develop $100 billion data center campus in Kentucky, source says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/brookfield-nextera-develop-100-billion-data-center-campus-in-kentucky-source-says-6285956",
+      "published": "2026-07-29 20:01"
     },
     {
       "category": "General",
-      "title": "Reaction to FIFA's private investment plan",
+      "title": "Nvidia partner ChipAgents raises $60 million to accelerate chip design with AI agents",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/reaction-fifas-private-investment-plan-6285611",
-      "published": "2026-07-29 17:42"
+      "url": "https://www.channelnewsasia.com/business/nvidia-partner-chipagents-raises-60-million-accelerate-chip-design-ai-agents-6285936",
+      "published": "2026-07-29 19:49"
     },
     {
       "category": "General",
-      "title": "Network School closure in Forest City could spook startups, but tech giants are unlikely to blink",
+      "title": "Suriname name former Dutch international Fraser as coach",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/network-school-johor-malaysia-lessons-foreign-tech-investors-6285236",
-      "published": "2026-07-29 17:39"
+      "url": "https://www.channelnewsasia.com/sport/suriname-name-former-dutch-international-fraser-coach-6285886",
+      "published": "2026-07-29 19:20"
     },
     {
       "category": "General",
-      "title": "Germany's financial watchdog to monitor AI use at banks and insurers",
+      "title": "Cognizant forecasts weak quarterly revenue amid cautious client spending",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/germanys-financial-watchdog-monitor-ai-use-banks-and-insurers-6285596",
-      "published": "2026-07-29 17:32"
+      "url": "https://www.channelnewsasia.com/business/cognizant-forecasts-weak-quarterly-revenue-amid-cautious-client-spending-6285881",
+      "published": "2026-07-29 19:20"
     },
     {
       "category": "General",
-      "title": "China accuses US of suppression over humanoid robot ban",
+      "title": "SoFi lifts 2026 revenue forecast as member growth, new loans hit records",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-us-humanoid-robot-ban-suppression-6285536",
-      "published": "2026-07-29 17:27"
+      "url": "https://www.channelnewsasia.com/business/sofi-lifts-2026-revenue-forecast-member-growth-new-loans-hit-records-6285831",
+      "published": "2026-07-29 19:05"
     },
     {
       "category": "General",
-      "title": "West Bank violence, annexation 'only getting worse': UN",
+      "title": "Explainer-What are credit default swaps and why are they spooking AI investors?",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/west-bank-violence-annexation-only-getting-worse-un-6285566",
-      "published": "2026-07-29 17:17"
+      "url": "https://www.channelnewsasia.com/business/explainer-what-are-credit-default-swaps-and-why-are-they-spooking-ai-investors-6285811",
+      "published": "2026-07-29 19:03"
     },
     {
       "category": "General",
-      "title": "Astronomers observe companion star orbiting stellar giant Betelgeuse",
+      "title": "Asian football body 'disappointed' by FIFA investment plans",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/astronomers-observe-companion-star-orbiting-stellar-giant-betelgeuse-6285541",
-      "published": "2026-07-29 17:01"
+      "url": "https://www.channelnewsasia.com/sport/fifa-investment-asian-football-confederation-disappointed-6285786",
+      "published": "2026-07-29 18:54"
     },
     {
       "category": "General",
-      "title": "FIFA’s private equity push opens new front in decades-old power-struggle with Europe",
+      "title": "Apple set for strongest June-quarter sales growth in 5 years",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fifas-private-equity-push-opens-new-front-in-decades-old-power-struggle-europe-6285506",
-      "published": "2026-07-29 16:41"
+      "url": "https://www.channelnewsasia.com/business/apple-set-strongest-june-quarter-sales-growth-in-5-years-6285766",
+      "published": "2026-07-29 18:33"
     },
     {
       "category": "General",
-      "title": "Americas governing body 'deeply concerned' by lack of due process over FIFA private investment plan",
+      "title": "Japanese population below 120 million for first time in decades",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/americas-governing-body-deeply-concerned-lack-due-process-over-fifa-private-investment-plan-6285456",
-      "published": "2026-07-29 16:11"
+      "url": "https://www.channelnewsasia.com/east-asia/japan-population-falls-below-120-million-first-time-in-decades-6285721",
+      "published": "2026-07-29 18:24"
+    },
+    {
+      "category": "General",
+      "title": "Microsoft set for $190 billion market value swing after earnings results, options indicate",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/microsoft-set-190-billion-market-value-swing-after-earnings-results-options-indicate-6285701",
+      "published": "2026-07-29 18:04"
+    },
+    {
+      "category": "General",
+      "title": "Shanti Pereira clocks season's best, books 200m semi-finals spot at Glasgow Commonwealth Games",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/shanti-pereira-clocks-seasons-best-books-200m-semi-finals-spot-glasgow-commonwealth-games-6285581",
+      "published": "2026-07-29 18:01"
     }
   ]
 }
