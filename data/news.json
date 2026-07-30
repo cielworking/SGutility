@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-31 04:34",
+  "last_updated": "2026-07-31 06:19",
   "headlines": [
     {
       "category": "Crime",
@@ -80,6 +80,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Singapore's measles cases reach six-year high, three vaccinated cases among 40 infections",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/measles-infectious-diseases-health-moh-6287746",
+      "published": "2026-07-31 06:00"
+    },
+    {
+      "category": "Traffic",
       "title": "Vehicle at Yishun condo car park catches fire, 1 person taken to hospital",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/vehicle-fire-condominium-yishun/",
@@ -114,18 +121,11 @@
       "published": "2026-07-29 17:10"
     },
     {
-      "category": "Traffic",
-      "title": "Lower-income families to get temporarily higher payouts under two ComCare schemes",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/community/lower-income-families-to-get-temporarily-higher-payouts-under-two-comcare-schemes",
-      "published": "2026-07-29 16:01"
-    },
-    {
       "category": "Transport",
-      "title": "OpenAI cuts prices on smaller models as businesses scrutinize AI spend",
+      "title": "Inside the Jakarta alleyway 'gym' training young gymnastics champions",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-cuts-prices-smaller-models-businesses-scrutinize-ai-spend-6289206",
-      "published": "2026-07-31 01:01"
+      "url": "https://www.channelnewsasia.com/asia/indonesia-jakarta-penjaringan-alley-gymnastics-children-yoga-ardian-6275181",
+      "published": "2026-07-31 06:00"
     },
     {
       "category": "Transport",
@@ -150,17 +150,17 @@
     },
     {
       "category": "Fire",
+      "title": "Gaza ceasefire talks see rare progress, sources say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/gaza-ceasefire-talks-see-rare-progress-sources-say-6289601",
+      "published": "2026-07-31 05:47"
+    },
+    {
+      "category": "Fire",
       "title": "Firefighters in eastern England make 'progress' battling 'dynamic' wildfire",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/uk-wildfire-england-suffolk-heat-6289396",
       "published": "2026-07-31 03:49"
-    },
-    {
-      "category": "Fire",
-      "title": "Firefighters battle to contain deadly Crete blaze in Greece",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/crete-wildfire-evacuees-tourist-holiday-greece-6289131",
-      "published": "2026-07-31 00:52"
     },
     {
       "category": "Fire",
@@ -171,10 +171,87 @@
     },
     {
       "category": "Money",
+      "title": "BOJ to keep rates steady, deliver hawkish signal as price pressures mount",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/boj-keep-rates-steady-deliver-hawkish-signal-price-pressures-mount-6289541",
+      "published": "2026-07-31 05:01"
+    },
+    {
+      "category": "Money",
       "title": "4,500 low-income youngsters to get protein drinks at Cheers outlets under FairPrice pilot programme",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/4500-low-income-youth-to-get-protein-drinks-at-cheers-outlets-under-fairprice-pilot-programme",
       "published": "2026-07-30 11:45"
+    },
+    {
+      "category": "General",
+      "title": "Singapore's Shanti Pereira makes history at Glasgow Commonwealth Games, qualifies for 200m final",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/shanti-pereira-commonwealth-games-200m-qualify-final-semi-finals-singapore-6289356",
+      "published": "2026-07-31 06:09"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Book clubs tend to be attended by women - here’s why I created one for men",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/mens-book-club-male-loneliness-epidemic-6284906",
+      "published": "2026-07-31 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Gianni Infantino wants to sell the World Cup - but it’s not his to sell",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/infantino-plan-sell-world-cup-stake-fifa-6288016",
+      "published": "2026-07-31 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Another critical oil waterway is about to close",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/hormuz-bab-el-mandeb-iran-war-rhine-river-europe-6288226",
+      "published": "2026-07-31 05:58"
+    },
+    {
+      "category": "General",
+      "title": "Blowout Microsoft results lift US stocks as oil retreats",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-stocks-wall-street-market-microsoft-oil-6289546",
+      "published": "2026-07-31 05:19"
+    },
+    {
+      "category": "General",
+      "title": "FIFA stake-sale push tests football's 'American century,' Bennett says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/fifa-stake-sale-push-tests-footballs-american-century-bennett-says-6289556",
+      "published": "2026-07-31 05:04"
+    },
+    {
+      "category": "General",
+      "title": "Producer sues Netflix for $105 million over missing Nicolas Cage movie",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/producer-sues-netflix-105-million-over-missing-nicolas-cage-movie-6289536",
+      "published": "2026-07-31 05:02"
+    },
+    {
+      "category": "General",
+      "title": "Japan conducts massive yen-buying intervention, Nikkei reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japan-conducts-massive-yen-buying-intervention-nikkei-reports-6289521",
+      "published": "2026-07-31 04:53"
+    },
+    {
+      "category": "General",
+      "title": "Hundreds of migrants flood into Spain's Ceuta exclave from Morocco",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/morocco-spain-ceuta-migrant-crossing-sea-6289516",
+      "published": "2026-07-31 04:51"
+    },
+    {
+      "category": "General",
+      "title": "Bank of America to buy UK's MDSec Consulting to bolster cyber defenses",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/bank-america-buy-uks-mdsec-consulting-bolster-cyber-defenses-6289506",
+      "published": "2026-07-31 04:37"
     },
     {
       "category": "General",
@@ -185,101 +262,24 @@
     },
     {
       "category": "General",
-      "title": "Crypto exchange Coinbase reports third straight quarterly loss on trading slowdown",
+      "title": "Crypto exchange Coinbase logs third straight quarterly loss on trading slowdown",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/crypto-exchange-coinbase-reports-third-straight-quarterly-loss-trading-slowdown-6289451",
+      "url": "https://www.channelnewsasia.com/business/crypto-exchange-coinbase-logs-third-straight-quarterly-loss-trading-slowdown-6289451",
       "published": "2026-07-31 04:17"
     },
     {
       "category": "General",
-      "title": "Roblox forecasts quarterly bookings below estimates",
+      "title": "Roblox forecasts quarterly bookings below estimates as safety features dampen engagement",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/roblox-forecasts-quarterly-bookings-below-estimates-6289441",
+      "url": "https://www.channelnewsasia.com/business/roblox-forecasts-quarterly-bookings-below-estimates-safety-features-dampen-engagement-6289441",
       "published": "2026-07-31 04:12"
     },
     {
       "category": "General",
-      "title": "Reddit expects revenue above estimates as AI tools attract advertisers",
+      "title": "Reddit flags volatile search referrals as US user growth slows",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/reddit-expects-revenue-above-estimates-ai-tools-attract-advertisers-6289446",
+      "url": "https://www.channelnewsasia.com/business/reddit-flags-volatile-search-referrals-us-user-growth-slows-6289446",
       "published": "2026-07-31 04:11"
-    },
-    {
-      "category": "General",
-      "title": "Amazon beats estimates for quarterly cloud revenue growth",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amazon-beats-estimates-quarterly-cloud-revenue-growth-6289436",
-      "published": "2026-07-31 04:06"
-    },
-    {
-      "category": "General",
-      "title": "CONCACAF rejects FIFA World Cup Stake sale proposal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/concacaf-rejects-fifa-world-cup-stake-sale-proposal-6289421",
-      "published": "2026-07-31 03:41"
-    },
-    {
-      "category": "General",
-      "title": "Microsoft set for record one-day market cap gain after upbeat Azure forecast",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/microsoft-set-record-one-day-market-cap-gain-after-upbeat-azure-forecast-6289416",
-      "published": "2026-07-31 03:41"
-    },
-    {
-      "category": "General",
-      "title": "Liverpool's Gomez set to miss Premier League opener with muscle injury",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/liverpools-gomez-set-miss-premier-league-opener-muscle-injury-6289361",
-      "published": "2026-07-31 02:59"
-    },
-    {
-      "category": "General",
-      "title": "World Boxing lifts all restrictions on Russians",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-boxing-lifts-all-restrictions-russians-6289351",
-      "published": "2026-07-31 02:57"
-    },
-    {
-      "category": "General",
-      "title": "England defender Stones joins Inter Milan on two-year deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-defender-stones-joins-inter-milan-two-year-deal-6289346",
-      "published": "2026-07-31 02:52"
-    },
-    {
-      "category": "General",
-      "title": "US signs letters of intent worth $874 million to boost semiconductor research",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-signs-letters-intent-worth-874-million-boost-semiconductor-research-6289341",
-      "published": "2026-07-31 02:29"
-    },
-    {
-      "category": "General",
-      "title": "Banks in talks to lend $15 billion for Anthropic data center backed by Google, WSJ reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/banks-in-talks-lend-15-billion-anthropic-data-center-backed-google-wsj-reports-6289331",
-      "published": "2026-07-31 02:25"
-    },
-    {
-      "category": "General",
-      "title": "Reaction to UEFA vote to boycott World Cup over FIFA stake sale plans",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/reaction-uefa-vote-boycott-world-cup-over-fifa-stake-sale-plans-6289311",
-      "published": "2026-07-31 02:17"
-    },
-    {
-      "category": "General",
-      "title": "Citadel buys most of Situational's stock holdings after AI share rout, sources say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/citadel-buys-most-situationals-stock-holdings-after-ai-share-rout-sources-say-6289306",
-      "published": "2026-07-31 02:04"
-    },
-    {
-      "category": "General",
-      "title": "Death toll from China landslide rises to 51, 10 missing: authorities",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/china-landslide-death-toll-chongqing-missing-rescue-6289226",
-      "published": "2026-07-31 01:48"
     }
   ]
 }
