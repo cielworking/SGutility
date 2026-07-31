@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-01 00:56",
+  "last_updated": "2026-08-01 02:45",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "UK funeral director jailed for 20 years for 'dreadful' practices",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/funeral-director-robert-bush-uk-jailed-6291736",
+      "published": "2026-08-01 00:56"
+    },
     {
       "category": "Crime",
       "title": "UK court dismisses challenge against new Chinese embassy in London",
@@ -84,13 +91,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/catering-company-gourmetz-charged-over-river-valley-primary-gastroenteritis-incident",
       "published": "2026-07-30 22:34"
-    },
-    {
-      "category": "Traffic",
-      "title": "The long road to curbing motorists' need for speed in Singapore",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/big-read/singapore-speeding-culture-demerit-points-road-design-6287946",
-      "published": "2026-07-31 21:30"
     },
     {
       "category": "Traffic",
@@ -185,6 +185,34 @@
     },
     {
       "category": "General",
+      "title": "Ryu recovers from bad second-round start to take halfway lead at Women's Open",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ryu-recovers-bad-second-round-start-take-halfway-lead-womens-open-6291896",
+      "published": "2026-08-01 02:27"
+    },
+    {
+      "category": "General",
+      "title": "Poland summons Russian ambassador after missile incident",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/poland-summons-russian-ambassador-after-missile-incident-6291836",
+      "published": "2026-08-01 01:56"
+    },
+    {
+      "category": "General",
+      "title": "Israel must approve Trump agreement before Hamas will implement, says Hamas official",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/israel-hamas-gaza-trump-peace-agreement-6291791",
+      "published": "2026-08-01 01:11"
+    },
+    {
+      "category": "General",
+      "title": "NXP in talks to buy chip developer Ambarella, FT reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nxp-in-talks-buy-chip-developer-ambarella-ft-reports-6291811",
+      "published": "2026-08-01 01:06"
+    },
+    {
+      "category": "General",
       "title": "Trump says he never spoke to FIFA leader about sale",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/trump-says-he-never-spoke-fifa-leader-about-sale-6291746",
@@ -227,9 +255,9 @@
     },
     {
       "category": "General",
-      "title": "Fed hawks push yields higher, stocks give back gains",
+      "title": "Wall Street gains on tech earnings; bond yields hit multi-year highs",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/fed-hawks-push-yields-higher-stocks-give-back-gains-6289901",
+      "url": "https://www.channelnewsasia.com/business/wall-street-gains-tech-earnings-bond-yields-hit-multi-year-highs-6289901",
       "published": "2026-07-31 23:03"
     },
     {
@@ -252,34 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/chime-cut-10-total-workforce-ai-driven-efficiencies-6291496",
       "published": "2026-07-31 22:33"
-    },
-    {
-      "category": "General",
-      "title": "New Zealand get rapturous reception as S.Africa tour begins in Cape Town 'home'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/new-zealand-get-rapturous-reception-safrica-tour-begins-in-cape-town-home-6291466",
-      "published": "2026-07-31 21:59"
-    },
-    {
-      "category": "General",
-      "title": "Fan group calls for FIFA reform amid widespread opposition to World Cup stake sale plan",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fan-group-calls-fifa-reform-amid-widespread-opposition-world-cup-stake-sale-plan-6291436",
-      "published": "2026-07-31 21:42"
-    },
-    {
-      "category": "General",
-      "title": "US Treasury informed banks that it may intervene in Japan's yen, source says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-treasury-informed-banks-it-may-intervene-in-japans-yen-source-says-6291441",
-      "published": "2026-07-31 21:41"
-    },
-    {
-      "category": "General",
-      "title": "Spain says huge surge across border into enclave has reversed, half of migrants go back",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/spain-morocco-border-enclave-ceuta-migrant-wave-reversed-6290726",
-      "published": "2026-07-31 21:32"
     }
   ]
 }
