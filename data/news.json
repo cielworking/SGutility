@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-01 02:45",
+  "last_updated": "2026-08-01 04:36",
   "headlines": [
     {
       "category": "Crime",
@@ -10,24 +10,10 @@
     },
     {
       "category": "Crime",
-      "title": "UK court dismisses challenge against new Chinese embassy in London",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/uk-chinese-embassy-court-dismisses-challenge-6291416",
-      "published": "2026-07-31 21:40"
-    },
-    {
-      "category": "Crime",
       "title": "Ex-SAF captain vaped & cheated colleagues of nearly S$87,000, jailed 21 months & 2 weeks",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/ex-saf-captain-vapes-cheated-money-jail/",
       "published": "2026-07-31 22:53"
-    },
-    {
-      "category": "Crime",
-      "title": "Massive Attack hold up Palestine flag at S'pore concert, police & IMDA investigating possible licensing breach",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/massive-attack-palestine-flag/",
-      "published": "2026-07-31 19:29"
     },
     {
       "category": "Crime",
@@ -94,6 +80,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Govt takes possession of 38 Oxley Road site",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/govt-takes-possession-38-oxley-road/",
+      "published": "2026-08-01 00:39"
+    },
+    {
+      "category": "Traffic",
       "title": "Drier conditions expected in Singapore in first half of August, after rainy end to July",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/drier-conditions-expected-in-first-half-of-august-after-rainy-end-to-july",
@@ -119,6 +112,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/4-new-mrt-stations-to-be-built-for-cross-island-line-interchanges-at-jurong-pier-gul-circle",
       "published": "2026-07-31 11:16"
+    },
+    {
+      "category": "Transport",
+      "title": "S'pore exploring new Bus Rapid Transit System for better connectivity in Tuas South: LTA",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/spore-bus-rapid-transit-system-connectivity-tuas-south-lta/",
+      "published": "2026-08-01 01:37"
     },
     {
       "category": "Transport",
@@ -182,6 +182,34 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/bloomberg-defamation-publication-reporter-to-pay-290k-in-legal-costs-to-shanmugam-tan-see-leng",
       "published": "2026-07-31 10:17"
+    },
+    {
+      "category": "Housing",
+      "title": "US Fed dissenters call for rate hikes over sustained inflation",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-fed-dissenters-high-inflation-rate-hikes-6291956",
+      "published": "2026-08-01 03:38"
+    },
+    {
+      "category": "General",
+      "title": "Sri Lanka sentences two ex-security officials to death over 2019 Easter bombings",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/sri-lanka-easter-bombings-sentence-two-security-officials-6292011",
+      "published": "2026-08-01 04:26"
+    },
+    {
+      "category": "General",
+      "title": "Exclusive-OpenAI finds evidence other AI agents escaped containment as it widens hacking probe",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/exclusive-openai-finds-evidence-other-ai-agents-escaped-containment-it-widens-hacking-probe-6292036",
+      "published": "2026-08-01 04:18"
+    },
+    {
+      "category": "General",
+      "title": "Amgen discloses data breach, says patient information was stolen",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/amgen-discloses-data-breach-says-patient-information-was-stolen-6292031",
+      "published": "2026-08-01 04:12"
     },
     {
       "category": "General",
@@ -252,34 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/moonshot-has-nvidia-chip-cluster-alibaba-computing-deal-bloomberg-news-reports-6291621",
       "published": "2026-07-31 23:08"
-    },
-    {
-      "category": "General",
-      "title": "Wall Street gains on tech earnings; bond yields hit multi-year highs",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/wall-street-gains-tech-earnings-bond-yields-hit-multi-year-highs-6289901",
-      "published": "2026-07-31 23:03"
-    },
-    {
-      "category": "General",
-      "title": "Singapore hold heavyweights Vietnam to a draw at ASEAN football championship",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/singapore-hold-heavyweights-vietnam-draw-asean-football-championship-6291386",
-      "published": "2026-07-31 23:00"
-    },
-    {
-      "category": "General",
-      "title": "Throwers hurl themselves onto social media, build supporter communities",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/throwers-hurl-themselves-social-media-build-supporter-communities-6291526",
-      "published": "2026-07-31 22:48"
-    },
-    {
-      "category": "General",
-      "title": "Chime to cut 10% of total workforce on AI driven efficiencies",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/chime-cut-10-total-workforce-ai-driven-efficiencies-6291496",
-      "published": "2026-07-31 22:33"
     }
   ]
 }
