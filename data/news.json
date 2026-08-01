@@ -1,12 +1,19 @@
 {
-  "last_updated": "2026-08-01 08:12",
+  "last_updated": "2026-08-01 14:40",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Ex-SAF captain vaped & cheated colleagues of nearly S$87,000, jailed 21 months & 2 weeks",
+      "title": "S’porean ex-lawyer, 29, gets 4 weeks’ jail for taking upskirt video at Woodleigh MRT station",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/ex-saf-captain-vapes-cheated-money-jail/",
-      "published": "2026-07-31 22:53"
+      "url": "https://mothership.sg/2026/07/lawyer-jail-upskirt-videos-mrt/",
+      "published": "2026-08-01 02:32"
+    },
+    {
+      "category": "Crime",
+      "title": "3 women, aged 32 to 38, seen fighting at Paya Lebar, arrested for affray & given warnings by police",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/women-fight-paya-lebar-arrested-warning-affray/",
+      "published": "2026-08-01 01:56"
     },
     {
       "category": "Crime",
@@ -65,13 +72,6 @@
       "published": "2026-07-31 12:55"
     },
     {
-      "category": "Crime",
-      "title": "Catering company Gourmetz charged over River Valley Primary gastroenteritis incident",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/catering-company-gourmetz-charged-over-river-valley-primary-gastroenteritis-incident",
-      "published": "2026-07-30 22:34"
-    },
-    {
       "category": "Traffic",
       "title": "Commentary: Fast-tracking of former public servants into Cabinet shows PM Wong has limited cards to play",
       "source": "CNA",
@@ -122,13 +122,6 @@
     },
     {
       "category": "Transport",
-      "title": "4 new MRT stations to be added to Cross Island Line by late 2030s to serve Taman Jurong & western industrial estates",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/4-new-mrt-stations-cross-island-line/",
-      "published": "2026-07-31 20:35"
-    },
-    {
-      "category": "Transport",
       "title": "New Cross Island Line trains: 3 key features",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/what-to-know-about-the-new-cross-island-line-trains",
@@ -143,24 +136,17 @@
     },
     {
       "category": "Fire",
-      "title": "Firefighters among 3 taken to hospital after fire in Clementi HDB flat",
+      "title": "Two firefighters injured in Clementi flat fire",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/firefighters-injured-clementi-flat-fire-burns-scdf-hdb-6292251",
+      "published": "2026-08-01 08:18"
+    },
+    {
+      "category": "Fire",
+      "title": "One person dies, 2 firefighters taken to hospital, after fire in Clementi HDB flat",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/firefighters-among-3-taken-to-hospital-after-fire-in-clementi-hdb-flat",
+      "url": "https://www.straitstimes.com/singapore/one-person-dies-2-firefighters-taken-to-hospital-after-fire-in-clementi-hdb-flat",
       "published": "2026-08-01 07:45"
-    },
-    {
-      "category": "Money",
-      "title": "Bloomberg & reporter ordered to pay S$290,000 in legal costs to Shanmugam & Tan See Leng, on top of S$230,000 in damages awarded to each of them",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/bloomberg-reporter-145000-legal-costs-defamation-suit-shanmugam-tan-see-leng/",
-      "published": "2026-07-31 23:03"
-    },
-    {
-      "category": "Money",
-      "title": "Sheng Siong ready to adjust prices before JB-S’pore RTS Link opens in Jan. 2027",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/sheng-siong-review-prices/",
-      "published": "2026-07-31 22:14"
     },
     {
       "category": "Money",
@@ -178,10 +164,87 @@
     },
     {
       "category": "Housing",
-      "title": "US Fed dissenters call for rate hikes over sustained inflation",
+      "title": "S'porean man, 55, who retired at 35, rents out room in fully-paid S$87,000 flat to recoup costs, helps underprivileged overseas",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/07/singaporean-retire-35/",
+      "published": "2026-08-01 02:19"
+    },
+    {
+      "category": "General",
+      "title": "More students can pursue mother tongue languages under expanded programme from 2027",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-fed-dissenters-high-inflation-rate-hikes-6291956",
-      "published": "2026-08-01 03:38"
+      "url": "https://www.channelnewsasia.com/singapore/tamil-chinese-malay-mother-tongue-language-secondary-school-jc-moe-6292576",
+      "published": "2026-08-01 13:46"
+    },
+    {
+      "category": "General",
+      "title": "Asian confederation chief welcome's FIFA decision to scrap World Cup sell-off plan",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/asian-confederation-chief-welcomes-fifa-decision-scrap-world-cup-sell-plan-6292496",
+      "published": "2026-08-01 12:34"
+    },
+    {
+      "category": "General",
+      "title": "TikTok CEO Chew Shou Zi urges NTU doctoral graduates to 'actively seek the unknown' at conferment ceremony",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/tiktok-ceo-chew-shou-zi-technology-ntu-graduation-ceremony-6292416",
+      "published": "2026-08-01 11:58"
+    },
+    {
+      "category": "General",
+      "title": "Singapore deepens Latin America ties as MERCOSUR trade pact takes effect for Brazil",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/singapore-deepens-latin-america-ties-mercosur-trade-pact-takes-effect-brazil-6292436",
+      "published": "2026-08-01 11:36"
+    },
+    {
+      "category": "General",
+      "title": "Mamamoo 4ward concert in Singapore: Solar, Moonbyul, Wheein and Hwasa prove why they’re the vocal queens of K-pop",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/mamamoo-singapore-concert-2026-4ward-6292396",
+      "published": "2026-08-01 11:06"
+    },
+    {
+      "category": "General",
+      "title": "For a day, anyone could create and spread fake Singapore satellite images. Then Google backtracked",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/google-earth-ai-nano-banana-fake-disinformation-satellite-6290916",
+      "published": "2026-08-01 10:43"
+    },
+    {
+      "category": "General",
+      "title": "Wang Leehom releases new English song Hope to support Singapore charity Epworth Community Services",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/wang-leehom-releases-new-english-song-hope-support-singapore-charity-epworth-community-services-6292296",
+      "published": "2026-08-01 09:09"
+    },
+    {
+      "category": "General",
+      "title": "FIFA scraps private investment plan after backlash: Infantino",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/fifa-scraps-private-investment-plan-after-backlash-infantino-6292276",
+      "published": "2026-08-01 08:46"
+    },
+    {
+      "category": "General",
+      "title": "From alcohol to diet and exercise: The best and worst habits for your liver",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/liver-health-tips-6276871",
+      "published": "2026-08-01 08:40"
+    },
+    {
+      "category": "General",
+      "title": "Is walking your dog enough? Inside Singapore's dog gym that's changing canine fitness",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/living/barker-pooch-canine-fitness-singapore-dog-gym-6282816",
+      "published": "2026-08-01 08:38"
+    },
+    {
+      "category": "General",
+      "title": "US Treasury intervenes to support yen after Japan steps in, FT reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-treasury-intervenes-support-yen-after-japan-steps-in-ft-reports-6292256",
+      "published": "2026-08-01 08:28"
     },
     {
       "category": "General",
@@ -189,13 +252,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/situational-awareness-ai-deal-citadels-griffin-rides-rescue-again-6292246",
       "published": "2026-08-01 07:59"
-    },
-    {
-      "category": "General",
-      "title": "Alphabet rolls back AI image generation in Google Earth over policy violations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/alphabet-rolls-back-ai-image-generation-in-google-earth-over-policy-violations-6292226",
-      "published": "2026-08-01 07:28"
     },
     {
       "category": "General",
@@ -224,62 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/older-men-senior-suicide-vulnerable-mental-health-sos-6291301",
       "published": "2026-08-01 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Fauci’s COVID‑origins hearing shows how conspiracy theories became political weapons",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/fauci-hearing-covid-origin-conspiracy-lab-leak-wuhan-6290671",
-      "published": "2026-08-01 06:00"
-    },
-    {
-      "category": "General",
-      "title": "5 things to know about Negeri Sembilan’s state polls on Aug 1 - a high-stakes test for Anwar’s PH",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/negeri-sembilan-election-polling-day-what-know-malaysia-6290231",
-      "published": "2026-08-01 06:00"
-    },
-    {
-      "category": "General",
-      "title": "FTC approves IonQ acquisition of SkyWater semiconductor ‍foundry",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ftc-approves-ionq-acquisition-skywater-semiconductor-foundry-6292131",
-      "published": "2026-08-01 05:43"
-    },
-    {
-      "category": "General",
-      "title": "Amazon surges as US stocks shrug off bond yield worries",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/amazon-us-stocks-market-fed-6292111",
-      "published": "2026-08-01 05:43"
-    },
-    {
-      "category": "General",
-      "title": "CONMEBOL seeks more information, launches consultations on FIFA World Cup stake sale proposal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/conmebol-seeks-more-information-launches-consultations-fifa-world-cup-stake-sale-proposal-6292106",
-      "published": "2026-08-01 05:31"
-    },
-    {
-      "category": "General",
-      "title": "French, Italian winegrowers face earliest ever harvest",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/france-italy-wine-growers-early-harvest-6292051",
-      "published": "2026-08-01 04:59"
-    },
-    {
-      "category": "General",
-      "title": "Sri Lanka sentences two ex-security officials to death over 2019 Easter bombings",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/sri-lanka-easter-bombings-sentence-two-security-officials-6292011",
-      "published": "2026-08-01 04:26"
-    },
-    {
-      "category": "General",
-      "title": "Exclusive-OpenAI finds evidence other AI agents escaped containment as it widens hacking probe",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-openai-finds-evidence-other-ai-agents-escaped-containment-it-widens-hacking-probe-6292036",
-      "published": "2026-08-01 04:18"
     }
   ]
 }
