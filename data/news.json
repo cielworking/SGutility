@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-08-01 07:16",
+  "last_updated": "2026-08-01 08:12",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "UK funeral director jailed for 20 years for 'dreadful' practices",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/funeral-director-robert-bush-uk-jailed-6291736",
-      "published": "2026-08-01 00:56"
-    },
     {
       "category": "Crime",
       "title": "Ex-SAF captain vaped & cheated colleagues of nearly S$87,000, jailed 21 months & 2 weeks",
@@ -149,6 +142,13 @@
       "published": "2026-07-31 11:17"
     },
     {
+      "category": "Fire",
+      "title": "Firefighters among 3 taken to hospital after fire in Clementi HDB flat",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/firefighters-among-3-taken-to-hospital-after-fire-in-clementi-hdb-flat",
+      "published": "2026-08-01 07:45"
+    },
+    {
       "category": "Money",
       "title": "Bloomberg & reporter ordered to pay S$290,000 in legal costs to Shanmugam & Tan See Leng, on top of S$230,000 in damages awarded to each of them",
       "source": "Mothership",
@@ -185,6 +185,20 @@
     },
     {
       "category": "General",
+      "title": "With Situational Awareness AI deal, Citadel's Griffin rides to the rescue again",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/situational-awareness-ai-deal-citadels-griffin-rides-rescue-again-6292246",
+      "published": "2026-08-01 07:59"
+    },
+    {
+      "category": "General",
+      "title": "Alphabet rolls back AI image generation in Google Earth over policy violations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/alphabet-rolls-back-ai-image-generation-in-google-earth-over-policy-violations-6292226",
+      "published": "2026-08-01 07:28"
+    },
+    {
+      "category": "General",
       "title": "Exclusive-Bessent's 'to do' list: buy $5-10 billion worth of Japanese yen, Reuters photo shows",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/exclusive-bessents-do-list-buy-5-10-billion-worth-japanese-yen-reuters-photo-shows-6292201",
@@ -206,7 +220,7 @@
     },
     {
       "category": "General",
-      "title": "More than loneliness: Why older men may be more vulnerable to suicide",
+      "title": "Why older men may be particularly vulnerable to suicide in Singapore",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/older-men-senior-suicide-vulnerable-mental-health-sos-6291301",
       "published": "2026-08-01 06:00"
@@ -266,20 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/exclusive-openai-finds-evidence-other-ai-agents-escaped-containment-it-widens-hacking-probe-6292036",
       "published": "2026-08-01 04:18"
-    },
-    {
-      "category": "General",
-      "title": "Amgen discloses data breach involving patient health information",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amgen-discloses-data-breach-involving-patient-health-information-6292031",
-      "published": "2026-08-01 04:12"
-    },
-    {
-      "category": "General",
-      "title": "Ryu recovers from bad second-round start to take halfway lead at Women's Open",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ryu-recovers-bad-second-round-start-take-halfway-lead-womens-open-6291896",
-      "published": "2026-08-01 02:27"
     }
   ]
 }
