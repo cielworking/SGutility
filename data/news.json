@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-01 21:53",
+  "last_updated": "2026-08-01 23:18",
   "headlines": [
     {
       "category": "Crime",
@@ -21,6 +21,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/missing-singaporean-student-cambodia-found/",
       "published": "2026-08-01 08:08"
+    },
+    {
+      "category": "Crime",
+      "title": "Police appeal for missing teen, last seen in Changi Village",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/police-appeal-for-missing-teen-last-seen-in-changi-village",
+      "published": "2026-08-01 22:33"
     },
     {
       "category": "Crime",
@@ -72,13 +79,6 @@
       "published": "2026-07-31 17:18"
     },
     {
-      "category": "Crime",
-      "title": "Police officer’s jail term upped to 11½ years over fatal abuse of Myanmar helper Piang Ngaih Don",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/police-officers-jail-term-upped-to-111-2-years-over-fatal-abuse-of-myanmar-maid-piang-ngaih-don",
-      "published": "2026-07-31 12:55"
-    },
-    {
       "category": "Traffic",
       "title": "A bus crash left her bedridden at 30. Three years later, she’s deadlifting 110kg and getting seniors into the gym",
       "source": "CNA",
@@ -128,13 +128,6 @@
       "published": "2026-07-31 15:39"
     },
     {
-      "category": "Transport",
-      "title": "LTA studying feasibility of Bus Rapid Transit system for Tuas South",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/lta-studying-feasibility-of-bus-rapid-transit-system-for-tuas-south",
-      "published": "2026-07-31 11:17"
-    },
-    {
       "category": "Fire",
       "title": "Infantino's FIFA future in jeopardy after private equity gamble backfires",
       "source": "CNA",
@@ -178,6 +171,20 @@
     },
     {
       "category": "General",
+      "title": "Bournemouth sign Portugal centre-back Silva from Benfica",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/bournemouth-sign-portugal-centre-back-silva-benfica-6292921",
+      "published": "2026-08-01 22:20"
+    },
+    {
+      "category": "General",
+      "title": "Negeri Sembilan polls: Zahid declares BN-PN supermajority victory, with Anwar’s PH poised to suffer setback",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/malaysia-negeri-sembilan-election-bn-pn-claims-win-supermajority-ph-loss-6292516",
+      "published": "2026-08-01 22:17"
+    },
+    {
+      "category": "General",
       "title": "Alonso delighted at Mudryk doping resolution but Chelsea lose to Spurs in Sydney",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/alonso-delighted-mudryk-doping-resolution-chelsea-lose-spurs-in-sydney-6292876",
@@ -192,7 +199,7 @@
     },
     {
       "category": "General",
-      "title": "Famed Nepali climber Nirmal Purja, nine others, die in avalanche in Pakistan",
+      "title": "Famed climber Nirmal Purja, nine others, die in avalanche in Pakistan",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/nepali-climber-nirmal-purja-die-pakistan-avalanche-6292801",
       "published": "2026-08-01 20:34"
@@ -262,24 +269,17 @@
     },
     {
       "category": "General",
-      "title": "More students can pursue mother tongue languages under expanded programme from 2027",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/tamil-chinese-malay-mother-tongue-language-secondary-school-jc-moe-6292576",
-      "published": "2026-08-01 13:46"
-    },
-    {
-      "category": "General",
-      "title": "FIFA faces fresh transparency calls after retreat on World Cup sell-off plan",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fifa-faces-fresh-transparency-calls-after-retreat-world-cup-sell-plan-6292496",
-      "published": "2026-08-01 12:34"
-    },
-    {
-      "category": "General",
       "title": "New book written by S'pore's leading thinkers examines SM Lee's 20 years as prime minister",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/sm-lee-essay-collection/",
       "published": "2026-08-01 20:08"
+    },
+    {
+      "category": "General",
+      "title": "S'pore family questions Woodlands Hospital after mother, 59, died 4 months after heart surgery, hospital denies negligence",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/woman-dies-heart-surgery-woodlands-hospital/",
+      "published": "2026-08-01 20:02"
     }
   ]
 }
