@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-08-01 14:40",
+  "last_updated": "2026-08-01 17:20",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Cambodia police find missing S'porean woman, 20, who went there without telling her family",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/missing-singaporean-student-cambodia-found/",
+      "published": "2026-08-01 08:08"
+    },
     {
       "category": "Crime",
       "title": "S’porean ex-lawyer, 29, gets 4 weeks’ jail for taking upskirt video at Woodleigh MRT station",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/lawyer-jail-upskirt-videos-mrt/",
       "published": "2026-08-01 02:32"
-    },
-    {
-      "category": "Crime",
-      "title": "3 women, aged 32 to 38, seen fighting at Paya Lebar, arrested for affray & given warnings by police",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/women-fight-paya-lebar-arrested-warning-affray/",
-      "published": "2026-08-01 01:56"
     },
     {
       "category": "Crime",
@@ -73,20 +73,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Commentary: Fast-tracking of former public servants into Cabinet shows PM Wong has limited cards to play",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/singapore-prime-minister-lawrence-wong-cabinet-public-servants-6290346",
-      "published": "2026-08-01 06:00"
-    },
-    {
-      "category": "Traffic",
-      "title": "Govt takes possession of 38 Oxley Road site",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/govt-takes-possession-38-oxley-road/",
-      "published": "2026-08-01 00:39"
-    },
-    {
-      "category": "Traffic",
       "title": "Drier conditions expected in Singapore in first half of August, after rainy end to July",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/drier-conditions-expected-in-first-half-of-august-after-rainy-end-to-july",
@@ -115,10 +101,10 @@
     },
     {
       "category": "Transport",
-      "title": "S'pore exploring new Bus Rapid Transit System for better connectivity in Tuas South: LTA",
+      "title": "2:30am-4:30am MRT trains available for 2026 BYD S'pore International Marathon",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/07/spore-bus-rapid-transit-system-connectivity-tuas-south-lta/",
-      "published": "2026-08-01 01:37"
+      "url": "https://mothership.sg/2026/08/early-mrt-train-rides-marathon/",
+      "published": "2026-08-01 11:51"
     },
     {
       "category": "Transport",
@@ -136,14 +122,21 @@
     },
     {
       "category": "Fire",
-      "title": "Two firefighters injured in Clementi flat fire",
+      "title": "Firefighters in Greece struggle to save coastal resort as winds rage",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/firefighters-in-greece-struggle-save-coastal-resort-winds-rage-6292651",
+      "published": "2026-08-01 16:43"
+    },
+    {
+      "category": "Fire",
+      "title": "One person dead, two firefighters injured in Clementi flat fire",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/firefighters-injured-clementi-flat-fire-burns-scdf-hdb-6292251",
       "published": "2026-08-01 08:18"
     },
     {
       "category": "Fire",
-      "title": "One person dies, 2 firefighters taken to hospital, after fire in Clementi HDB flat",
+      "title": "One dead, 2 firefighters taken to hospital after fire in Clementi flat",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/one-person-dies-2-firefighters-taken-to-hospital-after-fire-in-clementi-hdb-flat",
       "published": "2026-08-01 07:45"
@@ -156,18 +149,60 @@
       "published": "2026-07-31 14:00"
     },
     {
-      "category": "Money",
-      "title": "Bloomberg defamation suit: Publication, reporter to pay $290k in legal costs to Shanmugam, Tan See Leng",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/bloomberg-defamation-publication-reporter-to-pay-290k-in-legal-costs-to-shanmugam-tan-see-leng",
-      "published": "2026-07-31 10:17"
-    },
-    {
       "category": "Housing",
       "title": "S'porean man, 55, who retired at 35, rents out room in fully-paid S$87,000 flat to recoup costs, helps underprivileged overseas",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/07/singaporean-retire-35/",
       "published": "2026-08-01 02:19"
+    },
+    {
+      "category": "Housing",
+      "title": "Lifting of wait-out period will reduce stress of moving, say private home owners eyeing a flat",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/housing/lifting-of-wait-out-period-will-reduce-stress-of-moving-say-private-home-owners-eyeing-a-flat",
+      "published": "2026-08-01 17:00"
+    },
+    {
+      "category": "General",
+      "title": "Reaction to FIFA backing down on World Cup sell-off plans",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/reaction-fifa-backing-down-world-cup-sell-plans-6292671",
+      "published": "2026-08-01 17:12"
+    },
+    {
+      "category": "General",
+      "title": "Dogs allowed: Animal hospital opens doors to Japan quake survivors and their pets",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/dogs-allowed-animal-hospital-opens-doors-japan-quake-survivors-and-their-pets-6292486",
+      "published": "2026-08-01 16:45"
+    },
+    {
+      "category": "General",
+      "title": "China's Commerce Ministry denies US accusation of forced labour in Xinjiang",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/chinas-commerce-ministry-denies-us-accusation-forced-labour-in-xinjiang-6292616",
+      "published": "2026-08-01 16:14"
+    },
+    {
+      "category": "General",
+      "title": "China conducts naval, air patrols around disputed shoal in South China Sea",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-conducts-naval-air-patrols-around-disputed-shoal-in-south-china-sea-6292351",
+      "published": "2026-08-01 16:11"
+    },
+    {
+      "category": "General",
+      "title": "Russia pounds Kyiv with missiles, killing at least nine",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/russia-pounds-kyiv-missiles-killing-least-nine-6292216",
+      "published": "2026-08-01 16:04"
+    },
+    {
+      "category": "General",
+      "title": "Indonesia president says willing to visit North Korea to open dialogue on request of South Korea president",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/indonesia-president-says-willing-visit-north-korea-open-dialogue-request-south-korea-president-6290781",
+      "published": "2026-08-01 15:52"
     },
     {
       "category": "General",
@@ -178,9 +213,9 @@
     },
     {
       "category": "General",
-      "title": "Asian confederation chief welcome's FIFA decision to scrap World Cup sell-off plan",
+      "title": "FIFA faces fresh transparency calls after retreat on World Cup sell-off plan",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/asian-confederation-chief-welcomes-fifa-decision-scrap-world-cup-sell-plan-6292496",
+      "url": "https://www.channelnewsasia.com/sport/fifa-faces-fresh-transparency-calls-after-retreat-world-cup-sell-plan-6292496",
       "published": "2026-08-01 12:34"
     },
     {
@@ -245,41 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/us-treasury-intervenes-support-yen-after-japan-steps-in-ft-reports-6292256",
       "published": "2026-08-01 08:28"
-    },
-    {
-      "category": "General",
-      "title": "With Situational Awareness AI deal, Citadel's Griffin rides to the rescue again",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/situational-awareness-ai-deal-citadels-griffin-rides-rescue-again-6292246",
-      "published": "2026-08-01 07:59"
-    },
-    {
-      "category": "General",
-      "title": "Exclusive-Bessent's 'to do' list: buy $5-10 billion worth of Japanese yen, Reuters photo shows",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-bessents-do-list-buy-5-10-billion-worth-japanese-yen-reuters-photo-shows-6292201",
-      "published": "2026-08-01 06:57"
-    },
-    {
-      "category": "General",
-      "title": "Singapore's Shanti Pereira finishes eighth in Commonwealth Games 200m final",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/shanti-pereira-commonwealth-games-200m-final-eighth-singapore-6292041",
-      "published": "2026-08-01 06:04"
-    },
-    {
-      "category": "General",
-      "title": "Years after working together, three former colleagues reunited to design a home in Singapore",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/singapore-family-house-design-6285246",
-      "published": "2026-08-01 06:03"
-    },
-    {
-      "category": "General",
-      "title": "Why older men may be particularly vulnerable to suicide in Singapore",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/older-men-senior-suicide-vulnerable-mental-health-sos-6291301",
-      "published": "2026-08-01 06:00"
     }
   ]
 }
