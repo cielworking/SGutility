@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-02 06:10",
+  "last_updated": "2026-08-02 08:11",
   "headlines": [
     {
       "category": "Crime",
@@ -28,13 +28,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/im-out-of-a-deep-hole-41-year-old-mother-on-her-two-year-journey-in-building-stability",
       "published": "2026-08-02 04:00"
-    },
-    {
-      "category": "Crime",
-      "title": "Police appeal for missing teen, last seen in Changi Village",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/police-appeal-for-missing-teen-last-seen-in-changi-village",
-      "published": "2026-08-01 22:33"
     },
     {
       "category": "Crime",
@@ -87,13 +80,6 @@
     },
     {
       "category": "Traffic",
-      "title": "‘Very scary’: Greenland's Southeast Asian migrants caught in Trump’s takeover push",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-greenland-migrants-economy-thais-filipinos-6269986",
-      "published": "2026-08-02 06:00"
-    },
-    {
-      "category": "Traffic",
       "title": "Rallying-Pajari leads in Finland after Ogier crashes out",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/rallying-pajari-leads-in-finland-after-ogier-crashes-out-6293041",
@@ -101,7 +87,7 @@
     },
     {
       "category": "Traffic",
-      "title": "A bus crash left her bedridden at 30. Three years later, she’s deadlifting 110kg and getting seniors into the gym",
+      "title": "From bedridden to 'baddie': How surviving a near-fatal crash spurred this trainer to get mums and seniors moving",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/today/up-close/accident-strength-training-fitness-mother-senior-gymbaddiesg-6282331",
       "published": "2026-08-01 21:30"
@@ -164,6 +150,13 @@
     },
     {
       "category": "General",
+      "title": "Iran threatens to strike other nations' energy fields if US launches fresh attacks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-threatens-strike-other-nations-energy-fields-if-us-launches-fresh-attacks-6293236",
+      "published": "2026-08-02 06:51"
+    },
+    {
+      "category": "General",
       "title": "‘I don’t want to miss out’: Why India’s youth are choosing debt over savings",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/cna-insider/fomo-india-youth-bad-debt-loan-apps-borrowing-savings-6291491",
@@ -174,6 +167,13 @@
       "title": "Commentary: China is smarter about subsidies than everybody else",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/commentary/china-smarter-about-subsidies-strategic-sectors-economy-6290556",
+      "published": "2026-08-02 06:00"
+    },
+    {
+      "category": "General",
+      "title": "‘It's enough already’: Trump’s Greenland push leaves Southeast Asian migrants fearing for their future",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-greenland-migrants-economy-thais-filipinos-6269986",
       "published": "2026-08-02 06:00"
     },
     {
@@ -269,17 +269,17 @@
     },
     {
       "category": "General",
-      "title": "Alonso delighted at Mudryk doping resolution but Chelsea lose to Spurs in Sydney",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/alonso-delighted-mudryk-doping-resolution-chelsea-lose-spurs-in-sydney-6292876",
-      "published": "2026-08-01 21:05"
-    },
-    {
-      "category": "General",
       "title": "New book written by S'pore's leading thinkers examines SM Lee's 20 years as prime minister",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/sm-lee-essay-collection/",
       "published": "2026-08-01 20:08"
+    },
+    {
+      "category": "General",
+      "title": "S'pore family questions Woodlands Hospital after mother, 59, died 4 months after heart surgery, hospital denies negligence",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/woman-dies-heart-surgery-woodlands-hospital/",
+      "published": "2026-08-01 20:02"
     }
   ]
 }
