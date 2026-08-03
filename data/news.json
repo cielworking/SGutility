@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04 03:56",
+  "last_updated": "2026-08-04 05:21",
   "headlines": [
     {
       "category": "Crime",
@@ -94,13 +94,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Kidney patient’s son carries on legacy of donating to NKF",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/kidney-patients-son-carries-on-legacy-donation-to-nkf",
-      "published": "2026-08-03 05:00"
-    },
-    {
-      "category": "Traffic",
       "title": "NKF pushes for more sustainable dialysis to reduce carbon footprint and ease staff’s back pain",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/health/nkf-pushes-for-more-sustainable-dialysis-to-reduce-carbon-footprint-and-ease-staffs-back-pain",
@@ -108,10 +101,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Will a $10,000 reward motivate my PSLE child?",
+      "title": "Kidney patient’s son carries on legacy of donating to NKF",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/parenting-education/will-a-10000-reward-motivate-my-psle-child",
-      "published": "2026-08-02 13:39"
+      "url": "https://www.straitstimes.com/singapore/health/kidney-patients-son-carries-on-legacy-donation-to-nkf",
+      "published": "2026-08-03 05:00"
     },
     {
       "category": "Transport",
@@ -126,6 +119,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/all-existing-mrt-lines-to-have-system-to-detect-overheating-train-axle-boxes-by-2028",
       "published": "2026-08-03 18:05"
+    },
+    {
+      "category": "Fire",
+      "title": "Wildfire flares up again in Greece as water bombers deployed",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/wildfire-flares-up-again-in-greece-water-bombers-deployed-6296221",
+      "published": "2026-08-04 04:50"
     },
     {
       "category": "Fire",
@@ -150,6 +150,13 @@
     },
     {
       "category": "Money",
+      "title": "Dow hits fresh record as oil prices tumble",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/oil-price-stocks-deal-iran-war-us-6295856",
+      "published": "2026-08-03 23:32"
+    },
+    {
+      "category": "Money",
       "title": "When love meets the bill: The cost of loving a pet in Singapore",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/when-love-meets-the-bill-the-cost-of-loving-a-pet-in-singapore",
@@ -168,6 +175,27 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/90-year-old-man-who-killed-wife-in-bukit-panjang-flat-unfit-to-stand-trial-prosecution",
       "published": "2026-08-03 16:47"
+    },
+    {
+      "category": "General",
+      "title": "MLS owners appoint Berg next commissioner",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mls-owners-appoint-berg-next-commissioner-6296256",
+      "published": "2026-08-04 05:13"
+    },
+    {
+      "category": "General",
+      "title": "Snap beats revenue estimates on ad boost from World Cup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/snap-beats-revenue-estimates-ad-boost-world-cup-6296186",
+      "published": "2026-08-04 04:13"
+    },
+    {
+      "category": "General",
+      "title": "Palantir lifts annual revenue forecast as data analytics spending booms",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/palantir-lifts-annual-revenue-forecast-data-analytics-spending-booms-6296176",
+      "published": "2026-08-04 04:07"
     },
     {
       "category": "General",
@@ -206,9 +234,9 @@
     },
     {
       "category": "General",
-      "title": "Philippines' Eala beats Pegula to win first WTA title in Washington",
+      "title": "Philippines' Eala wins first WTA title, Fritz claims Washington crown",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/philippines-eala-beats-pegula-win-first-wta-title-in-washington-6296021",
+      "url": "https://www.channelnewsasia.com/sport/philippines-eala-wins-first-wta-title-fritz-claims-washington-crown-6296021",
       "published": "2026-08-04 01:24"
     },
     {
@@ -252,34 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/gaza-hamas-disarmament-deal-trump-israel-attacks-6295716",
       "published": "2026-08-03 23:32"
-    },
-    {
-      "category": "General",
-      "title": "Oil slides, stocks rise on hopes of deal to end Middle East war",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/oil-price-stocks-deal-iran-war-us-6295856",
-      "published": "2026-08-03 23:32"
-    },
-    {
-      "category": "General",
-      "title": "Ireland's Maguire returns for fourth Solheim Cup as a captain's pick",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/irelands-maguire-returns-fourth-solheim-cup-captains-pick-6295866",
-      "published": "2026-08-03 23:27"
-    },
-    {
-      "category": "General",
-      "title": "Chelsea sign England midfielder Henderson from Brentford",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/chelsea-sign-england-midfielder-henderson-brentford-6295871",
-      "published": "2026-08-03 23:27"
-    },
-    {
-      "category": "General",
-      "title": "Meta, Anthropic invited to meet with Trump officials about AI safety testing",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/meta-anthropic-invited-meet-trump-officials-about-ai-safety-testing-6295861",
-      "published": "2026-08-03 23:25"
     }
   ]
 }
