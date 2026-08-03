@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-03 23:14",
+  "last_updated": "2026-08-04 01:19",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Broadcom loses court bid to suspend EU antitrust request for US legal papers",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/broadcom-loses-court-bid-suspend-eu-antitrust-request-us-legal-papers-6295911",
+      "published": "2026-08-03 23:57"
+    },
     {
       "category": "Crime",
       "title": "Geylang Road massage place fight: Woman, 40, cuts colleague with fruit knife & bites her, gets 2 weeks' jail",
@@ -38,17 +45,17 @@
     },
     {
       "category": "Traffic",
+      "title": "Williams sisters awarded doubles wild card for Cincinnati Open",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/williams-sisters-awarded-doubles-wild-card-cincinnati-open-6295986",
+      "published": "2026-08-04 00:49"
+    },
+    {
+      "category": "Traffic",
       "title": "Five people taken to hospital after being trapped in burning Race Course Road flat",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/fire-race-course-road-scdf-hospital-6295726",
       "published": "2026-08-03 22:13"
-    },
-    {
-      "category": "Traffic",
-      "title": "Tour de France winner Pogacar to compete in Vuelta a Espana",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tour-de-france-winner-pogacar-compete-in-vuelta-espana-6295346",
-      "published": "2026-08-03 19:17"
     },
     {
       "category": "Traffic",
@@ -94,16 +101,16 @@
     },
     {
       "category": "Traffic",
-      "title": "NKF pushes for more sustainable dialysis to reduce carbon footprint and ease staff’s back pain",
+      "title": "Kidney patient’s son carries on legacy of donating to NKF",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/nkf-pushes-for-more-sustainable-dialysis-to-reduce-carbon-footprint-and-ease-staffs-back-pain",
+      "url": "https://www.straitstimes.com/singapore/health/kidney-patients-son-carries-on-legacy-donation-to-nkf",
       "published": "2026-08-03 05:00"
     },
     {
       "category": "Traffic",
-      "title": "Kidney patient’s son carries on legacy of donating to NKF",
+      "title": "NKF pushes for more sustainable dialysis to reduce carbon footprint and ease staff’s back pain",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/kidney-patients-son-carries-on-legacy-donation-to-nkf",
+      "url": "https://www.straitstimes.com/singapore/health/nkf-pushes-for-more-sustainable-dialysis-to-reduce-carbon-footprint-and-ease-staffs-back-pain",
       "published": "2026-08-03 05:00"
     },
     {
@@ -133,6 +140,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/all-existing-mrt-lines-to-have-system-to-detect-overheating-train-axle-boxes-by-2028",
       "published": "2026-08-03 18:05"
+    },
+    {
+      "category": "Fire",
+      "title": "Wildfires raze neighborhoods in northwest US city of Spokane",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/spokane-wildfires-buildings-evacuees-washington-6295936",
+      "published": "2026-08-04 00:30"
     },
     {
       "category": "Fire",
@@ -171,9 +185,86 @@
     },
     {
       "category": "General",
+      "title": "Oil falls, stocks gain amid Iran peace hopes; yen firms after intervention",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-falls-stocks-gain-amid-iran-peace-hopes-yen-firms-after-intervention-6294246",
+      "published": "2026-08-04 01:07"
+    },
+    {
+      "category": "General",
+      "title": "UK regulator says it is monitoring developments after rogue AI agent hacks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/uk-regulator-says-it-monitoring-developments-after-rogue-ai-agent-hacks-6295981",
+      "published": "2026-08-04 00:52"
+    },
+    {
+      "category": "General",
+      "title": "Russia set to increase exports from western ports in August amid firm demand in Asia, sources say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/russia-set-increase-exports-western-ports-in-august-amid-firm-demand-in-asia-sources-say-6295961",
+      "published": "2026-08-04 00:31"
+    },
+    {
+      "category": "General",
+      "title": "Sititi says All Blacks axing was tough as he eyes test return",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/sititi-says-all-blacks-axing-was-tough-he-eyes-test-return-6295921",
+      "published": "2026-08-04 00:02"
+    },
+    {
+      "category": "General",
+      "title": "Norway's Haugset rides to solo win, takes yellow jersey in Tour de France Femmes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/norways-haugset-rides-solo-win-takes-yellow-jersey-in-tour-de-france-femmes-6295926",
+      "published": "2026-08-04 00:00"
+    },
+    {
+      "category": "General",
+      "title": "After deadly day, Gazans say Trump's touting of plan jars with grim reality",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/gaza-hamas-disarmament-deal-trump-israel-attacks-6295716",
+      "published": "2026-08-03 23:32"
+    },
+    {
+      "category": "General",
+      "title": "Oil slides, stocks rise on hopes of deal to end Middle East war",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/oil-price-stocks-deal-iran-war-us-6295856",
+      "published": "2026-08-03 23:32"
+    },
+    {
+      "category": "General",
+      "title": "Ireland's Maguire returns for fourth Solheim Cup as a captain's pick",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/irelands-maguire-returns-fourth-solheim-cup-captains-pick-6295866",
+      "published": "2026-08-03 23:27"
+    },
+    {
+      "category": "General",
+      "title": "Chelsea sign England midfielder Henderson from Brentford",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/chelsea-sign-england-midfielder-henderson-brentford-6295871",
+      "published": "2026-08-03 23:27"
+    },
+    {
+      "category": "General",
+      "title": "US finalizes voluntary AI safety tests, White House official says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-finalizes-voluntary-ai-safety-tests-white-house-official-says-6295861",
+      "published": "2026-08-03 23:25"
+    },
+    {
+      "category": "General",
+      "title": "Britain says it is open to AI regulation if voluntary safeguards fall short",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/britain-says-it-open-ai-regulation-if-voluntary-safeguards-fall-short-6295846",
+      "published": "2026-08-03 23:10"
+    },
+    {
+      "category": "General",
       "title": "Amazon enters $3 trillion club as AI, cloud growth power rally",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amazon-enters-3-trillion-club-ai-cloud-growth-power-rally-6295711",
+      "url": "https://www.channelnewsasia.com/business/amazon-3-trillion-market-cap-shares-ai-cloud-growth-6295711",
       "published": "2026-08-03 21:45"
     },
     {
@@ -189,97 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/webb-telescope-finds-signs-ancient-disaster-neptunes-moons-6295626",
       "published": "2026-08-03 21:03"
-    },
-    {
-      "category": "General",
-      "title": "Worker dies after scaffolding collapses at Jurong Port construction site",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/jurong-port-construction-site-lorry-scaffolding-collapsed-6295526",
-      "published": "2026-08-03 20:52"
-    },
-    {
-      "category": "General",
-      "title": "Visa beefs up cybersecurity offerings with $2.4 billion BioCatch deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/visa-beefs-up-cybersecurity-offerings-24-billion-biocatch-deal-6295586",
-      "published": "2026-08-03 20:49"
-    },
-    {
-      "category": "General",
-      "title": "Vozinha arrives in Chile to sign for Colo-Colo",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/vozinha-arrives-in-chile-sign-colo-colo-6295561",
-      "published": "2026-08-03 20:43"
-    },
-    {
-      "category": "General",
-      "title": "FIFA's Infantino sought Trump backing after failed World Cup sell-off plan, NY Post reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fifas-infantino-sought-trump-backing-after-failed-world-cup-sell-plan-ny-post-reports-6295566",
-      "published": "2026-08-03 20:42"
-    },
-    {
-      "category": "General",
-      "title": "South Korea's central bank to buy gold from domestic producers",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-koreas-central-bank-buy-gold-domestic-producers-6295491",
-      "published": "2026-08-03 20:23"
-    },
-    {
-      "category": "General",
-      "title": "US shakes up currency markets with unusual yen-buying via selling euros",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-shakes-up-currency-markets-unusual-yen-buying-selling-euros-6295496",
-      "published": "2026-08-03 20:19"
-    },
-    {
-      "category": "General",
-      "title": "Toyota distributor Borneo Motors lays off workers in restructuring exercise",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/borneo-motors-layoff-workers-toyota-lexus-6295341",
-      "published": "2026-08-03 20:10"
-    },
-    {
-      "category": "General",
-      "title": "All Blacks aim to start South Africa tour at full speed",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/all-blacks-aim-start-south-africa-tour-full-speed-6295471",
-      "published": "2026-08-03 20:04"
-    },
-    {
-      "category": "General",
-      "title": "Japan, US confirm joint yen-buying intervention, signal more action",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/japan-yen-intervention-us-more-action-6295441",
-      "published": "2026-08-03 19:56"
-    },
-    {
-      "category": "General",
-      "title": "Trump brothers-backed American Bitcoin swings to second-quarter loss",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-brothers-backed-american-bitcoin-swings-second-quarter-loss-6295431",
-      "published": "2026-08-03 19:47"
-    },
-    {
-      "category": "General",
-      "title": "Negeri Sembilan polls: As BN-PN rides Malay-Muslim support to win big, what's next for them and Malaysian politics?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-bn-pn-ph-politics-negeri-sembilan-anwar-ibrahim-6294911",
-      "published": "2026-08-03 19:30"
-    },
-    {
-      "category": "General",
-      "title": "China steps up protection for chip designs in revised regulations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-chip-design-protection-revised-regulation-6295281",
-      "published": "2026-08-03 19:00"
-    },
-    {
-      "category": "General",
-      "title": "South Africa issues draft rules for cross-border crypto",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-africa-issues-draft-rules-cross-border-crypto-6295296",
-      "published": "2026-08-03 18:46"
     }
   ]
 }
