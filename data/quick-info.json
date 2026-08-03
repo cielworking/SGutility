@@ -1,7 +1,7 @@
 {
   "source_name": "Official Singapore sources",
   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
-  "last_updated": "2026-08-03T11:53:02.443749+08:00",
+  "last_updated": "2026-08-03T12:22:44.933007+08:00",
   "items": [
     {
       "label": "Next Public Holiday",
@@ -11,8 +11,8 @@
     },
     {
       "label": "CDC Vouchers 2026",
-      "value": "$300",
-      "detail": "Each Singaporean household can claim $300 CDC Vouchers for the 2026 tranche. Verify validity and eligibility from official CDC source.",
+      "value": "$800 total",
+      "detail": "$300 January tranche: valid until 31 Dec 2026. $500 June tranche: $250 for hawkers/heartland merchants and $250 for supermarkets, valid until 31 Dec 2027.",
       "url": "https://vouchers.cdc.gov.sg/"
     }
   ]
