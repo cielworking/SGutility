@@ -1,12 +1,26 @@
 {
-  "last_updated": "2026-08-05 02:51",
+  "last_updated": "2026-08-05 04:42",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Amazon loses US court ban on Perplexity's AI shopping tools",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/amazon-loses-us-court-ban-perplexitys-ai-shopping-tools-6298941",
+      "published": "2026-08-05 03:53"
+    },
     {
       "category": "Crime",
       "title": "Arson suspect arrested as US northwest battles wildfires",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/spokane-wildfire-arson-arrest-us-6298806",
       "published": "2026-08-05 02:21"
+    },
+    {
+      "category": "Crime",
+      "title": "S'pore man, 38, got into sexual relationship with niece, 13, used blindfold & rope on her, given 21 years’ jail & caning",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/man-sexual-assault-niece-blindfold-rope/",
+      "published": "2026-08-04 23:36"
     },
     {
       "category": "Crime",
@@ -108,13 +122,6 @@
     },
     {
       "category": "Traffic",
-      "title": "4 children seen with heads & bodies out of GetGo car’s sunroof, firm warns of user suspension & ban",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/getgo-car-children-sunroof/",
-      "published": "2026-08-04 19:45"
-    },
-    {
-      "category": "Traffic",
       "title": "Strong support from MPs on tougher traffic laws; some call for even harsher penalties",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/strong-support-from-mps-on-tougher-traffic-laws-some-call-for-even-harsher-penalties",
@@ -206,80 +213,73 @@
     },
     {
       "category": "General",
+      "title": "Match's weak quarterly revenue forecast clouds improving trends at Tinder",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/matchs-weak-quarterly-revenue-forecast-clouds-improving-trends-tinder-6298996",
+      "published": "2026-08-05 04:18"
+    },
+    {
+      "category": "General",
+      "title": "AMD forecasts revenue above estimates on AI chip demand, but shares fall",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/amd-forecasts-revenue-above-estimates-ai-chip-demand-shares-fall-6299001",
+      "published": "2026-08-05 04:17"
+    },
+    {
+      "category": "General",
+      "title": "Pinterest expects slower quarterly revenue growth as ad competition heats up",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/pinterest-expects-slower-quarterly-revenue-growth-ad-competition-heats-up-6298986",
+      "published": "2026-08-05 04:08"
+    },
+    {
+      "category": "General",
+      "title": "Paramount Skydance reports mixed second quarter as Warner deal faces March trial",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/paramount-skydance-reports-mixed-second-quarter-warner-deal-faces-march-trial-6298966",
+      "published": "2026-08-05 04:08"
+    },
+    {
+      "category": "General",
+      "title": "Ukraine slams Russian drone 'safari' against civilians",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/ukraine-russia-drone-video-chasing-street-vendor-6298881",
+      "published": "2026-08-05 03:38"
+    },
+    {
+      "category": "General",
+      "title": "Samsung Electronics launches next-generation AI memory technology",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/samsung-electronics-launches-next-generation-ai-memory-technology-6298916",
+      "published": "2026-08-05 03:33"
+    },
+    {
+      "category": "General",
+      "title": "OpenAI pays $3.2 million in US probe over hiring foreign workers",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openai-pays-32-million-in-us-probe-over-hiring-foreign-workers-6298906",
+      "published": "2026-08-05 03:16"
+    },
+    {
+      "category": "General",
+      "title": "Brotherly love abounds for brutal Springboks ahead of Argentina test",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/brotherly-love-abounds-brutal-springboks-ahead-argentina-test-6298876",
+      "published": "2026-08-05 03:06"
+    },
+    {
+      "category": "General",
+      "title": "Barcelona sign forward Kerolin from Man City in record WSL sale",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/barcelona-sign-forward-kerolin-man-city-in-record-wsl-sale-6298846",
+      "published": "2026-08-05 02:47"
+    },
+    {
+      "category": "General",
       "title": "Springboks recall experienced World Cup winners for Argentina test",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/springboks-recall-experienced-world-cup-winners-argentina-test-6298776",
       "published": "2026-08-05 01:49"
-    },
-    {
-      "category": "General",
-      "title": "Heat kills 19 in South Korea this summer: government agency",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/heat-kills-19-in-south-korea-summer-government-agency-6298721",
-      "published": "2026-08-05 01:38"
-    },
-    {
-      "category": "General",
-      "title": "Next MLS commissioner Berg targets quality improvement to build on World Cup excitement",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/next-mls-commissioner-berg-targets-quality-improvement-build-world-cup-excitement-6298736",
-      "published": "2026-08-05 01:37"
-    },
-    {
-      "category": "General",
-      "title": "Analysis:Oracle Corp goes for high-stakes ratings gamble in AI strategy",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/analysisoracle-corp-goes-high-stakes-ratings-gamble-in-ai-strategy-6298706",
-      "published": "2026-08-05 01:23"
-    },
-    {
-      "category": "General",
-      "title": "AI data-centre race builds $1 trillion lease burden for Big Tech",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-data-centre-race-builds-1-trillion-lease-burden-big-tech-6298711",
-      "published": "2026-08-05 01:22"
-    },
-    {
-      "category": "General",
-      "title": "Austria records all-time temperature high of 41C",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/austria-records-all-time-temperature-high-41c-6298646",
-      "published": "2026-08-05 01:12"
-    },
-    {
-      "category": "General",
-      "title": "Jordan FA chief accuses FIFA's Infantino of 'blackmail' over endorsement",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/jordan-fa-chief-accuses-fifas-infantino-blackmail-over-endorsement-6298686",
-      "published": "2026-08-05 01:02"
-    },
-    {
-      "category": "General",
-      "title": "Reusser triumphs in time trial to take yellow jersey in Tour de France Femmes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/reusser-triumphs-in-time-trial-take-yellow-jersey-in-tour-de-france-femmes-6298631",
-      "published": "2026-08-05 00:43"
-    },
-    {
-      "category": "General",
-      "title": "Record funding package announced for Britain's winter athletes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/record-funding-package-announced-britains-winter-athletes-6298626",
-      "published": "2026-08-05 00:31"
-    },
-    {
-      "category": "General",
-      "title": "Yen eases but retains intervention-driven gains",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/yen-eases-retains-intervention-driven-gains-6296491",
-      "published": "2026-08-05 00:27"
-    },
-    {
-      "category": "General",
-      "title": "Chelsea undecided on Mudryk future, says Alonso",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/chelsea-undecided-mudryk-future-says-alonso-6298586",
-      "published": "2026-08-05 00:07"
     }
   ]
 }
