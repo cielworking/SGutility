@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04 22:41",
+  "last_updated": "2026-08-05 01:03",
   "headlines": [
     {
       "category": "Crime",
@@ -7,13 +7,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/man-arrested-drugs-woodlands-checkpoint-cannabis-ice-malaysia-car-6298136",
       "published": "2026-08-04 21:16"
-    },
-    {
-      "category": "Crime",
-      "title": "Indonesia arrests second Malaysian in less than a week for drug smuggling",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-arrest-second-malaysian-drug-smuggling-6297891",
-      "published": "2026-08-04 19:26"
     },
     {
       "category": "Crime",
@@ -28,6 +21,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/lim-tean-warrant-of-arrest-review/",
       "published": "2026-08-04 22:31"
+    },
+    {
+      "category": "Crime",
+      "title": "Police looking for car driver involved in PIE accident that injured motorcyclist",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/police-looking-for-car-driver-involved-in-pie-accident-that-injured-motorcyclist",
+      "published": "2026-08-04 23:36"
     },
     {
       "category": "Crime",
@@ -101,13 +101,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Broadridge quarterly profit climbs on investor communications strength",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/broadridge-quarterly-profit-climbs-investor-communications-strength-6298006",
-      "published": "2026-08-04 19:54"
-    },
-    {
-      "category": "Traffic",
       "title": "Race Course Road flat fire: 3 found unconscious",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/fire-race-course-road-flat/",
@@ -170,25 +163,11 @@
       "published": "2026-08-03 20:55"
     },
     {
-      "category": "Traffic",
-      "title": "23-year-old worker dies after scaffolding collapses on lorry at Jurong Port construction site",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/worker-dies-after-scaffolding-collapses-on-lorry-at-jurong-port-construction-site",
-      "published": "2026-08-03 19:07"
-    },
-    {
       "category": "Transport",
       "title": "Body of Chinese businessman, 39, found with hands & feet tied in river in Johor",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/body-chinese-businessman-johor-msia/",
       "published": "2026-08-04 22:33"
-    },
-    {
-      "category": "Fire",
-      "title": "Michelin Guide Singapore 2026: 1887 by Andre blazes into the list with 2 stars, 6 new restaurants get their first star",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/experiences/michelin-guide-singapore-2026-6297336",
-      "published": "2026-08-04 19:55"
     },
     {
       "category": "Fire",
@@ -220,66 +199,87 @@
     },
     {
       "category": "General",
-      "title": "Law passed to lower drink-driving limits, impose harsher penalties for dangerous driving causing grievous hurt",
+      "title": "Reusser triumphs in time trial to take yellow jersey in Tour de France Femmes",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/lower-drink-driving-limits-harsher-penalties-dangerous-driving-law-passed-6298166",
-      "published": "2026-08-04 22:35"
+      "url": "https://www.channelnewsasia.com/sport/reusser-triumphs-in-time-trial-take-yellow-jersey-in-tour-de-france-femmes-6298631",
+      "published": "2026-08-05 00:43"
     },
     {
       "category": "General",
-      "title": "MPs raise concerns over mounted devices, private-hire drivers as law passed to criminalise holding phones while driving",
+      "title": "Record funding package announced for Britain's winter athletes",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/mobile-phones-holding-driving-offence-mounted-law-passed-6298156",
-      "published": "2026-08-04 21:38"
+      "url": "https://www.channelnewsasia.com/sport/record-funding-package-announced-britains-winter-athletes-6298626",
+      "published": "2026-08-05 00:31"
     },
     {
       "category": "General",
-      "title": "US has used 'virtually all' of its long-range precision missiles during Iran war: Sources",
+      "title": "Yen eases but retains intervention-driven gains",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-iran-war-long-range-missiles-used-up-6297671",
-      "published": "2026-08-04 21:28"
+      "url": "https://www.channelnewsasia.com/business/yen-eases-retains-intervention-driven-gains-6296491",
+      "published": "2026-08-05 00:27"
     },
     {
       "category": "General",
-      "title": "South Korean students detained for allegedly breaking into US military base",
+      "title": "Chelsea undecided on Mudryk future, says Alonso",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/south-korea-students-detained-breaking-us-military-base-6298206",
-      "published": "2026-08-04 21:04"
+      "url": "https://www.channelnewsasia.com/sport/chelsea-undecided-mudryk-future-says-alonso-6298586",
+      "published": "2026-08-05 00:07"
     },
     {
       "category": "General",
-      "title": "AI offers 'lifeline' for emerging economies, World Bank says",
+      "title": "US to face Peru, Chile, Mexico and Canada in friendlies",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-offers-lifeline-emerging-economies-world-bank-says-6298226",
-      "published": "2026-08-04 21:02"
+      "url": "https://www.channelnewsasia.com/sport/us-face-peru-chile-mexico-and-canada-in-friendlies-6298541",
+      "published": "2026-08-04 23:45"
     },
     {
       "category": "General",
-      "title": "Infantino gets backing from leading African football administrators",
+      "title": "Erectile dysfunction drug found in honey product sold on e-commerce platforms",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/infantino-gets-backing-leading-african-football-administrators-6298171",
-      "published": "2026-08-04 20:48"
+      "url": "https://www.channelnewsasia.com/singapore/honey-product-erectile-dysfunction-drug-e-commerce-sfa-6298401",
+      "published": "2026-08-04 23:44"
     },
     {
       "category": "General",
-      "title": "Norway keeper Nyland rejoins Leipzig",
+      "title": "Vinicius Jr embraces Mourinho's 'happy football' philosophy as contract talks loom",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/norway-keeper-nyland-rejoins-leipzig-6298176",
-      "published": "2026-08-04 20:44"
+      "url": "https://www.channelnewsasia.com/sport/vinicius-jr-embraces-mourinhos-happy-football-philosophy-contract-talks-loom-6298516",
+      "published": "2026-08-04 23:37"
     },
     {
       "category": "General",
-      "title": "Caterpillar lifts 2026 sales growth forecast as AI buildout powers on; shares surge 12%",
+      "title": "SK Hynix rises as brokerages launch coverage with bullish ratings",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/caterpillar-lifts-2026-sales-growth-forecast-ai-buildout-powers-shares-surge-12-6298151",
-      "published": "2026-08-04 20:39"
+      "url": "https://www.channelnewsasia.com/business/sk-hynix-rises-brokerages-launch-coverage-bullish-ratings-6298501",
+      "published": "2026-08-04 23:31"
     },
     {
       "category": "General",
-      "title": "Payments firm FIS shares slide after outlook cut",
+      "title": "Frenchman Renard named Ivory Coast coach for second spell",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/payments-firm-fis-shares-slide-after-outlook-cut-6298106",
-      "published": "2026-08-04 20:24"
+      "url": "https://www.channelnewsasia.com/sport/frenchman-renard-named-ivory-coast-coach-second-spell-6298451",
+      "published": "2026-08-04 22:58"
+    },
+    {
+      "category": "General",
+      "title": "Former Premier League referee Taylor joins Turkish refereeing committee",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/former-premier-league-referee-taylor-joins-turkish-refereeing-committee-6298426",
+      "published": "2026-08-04 22:45"
+    },
+    {
+      "category": "General",
+      "title": "AI cloud startup Volta valued at $2.4 billion, announces $10 billion AI partnership",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ai-cloud-startup-volta-valued-24-billion-announces-10-billion-ai-partnership-6298416",
+      "published": "2026-08-04 22:42"
+    },
+    {
+      "category": "General",
+      "title": "Meta, Anthropic, Google, OpenAI to meet with Trump advisers amid rogue AI agent fallout",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/meta-anthropic-google-openai-meet-trump-advisers-amid-rogue-ai-agent-fallout-6298421",
+      "published": "2026-08-04 22:38"
     }
   ]
 }
