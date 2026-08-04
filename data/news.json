@@ -1,19 +1,75 @@
 {
-  "last_updated": "2026-08-04 11:35",
+  "last_updated": "2026-08-04 14:40",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Geylang Road massage place fight: Woman, 40, cuts colleague with fruit knife & bites her, gets 2 weeks' jail",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/geylang-road-massage-fight-jail/",
-      "published": "2026-08-03 20:25"
+      "title": "MHA proposes giving police powers to order banks, telcos to share information, disable scam-linked accounts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/scams-banks-telcos-disclose-info-disable-accounts-ocha-fines-6294631",
+      "published": "2026-08-04 13:46"
     },
     {
       "category": "Crime",
-      "title": "S’porean woman, 31, flings & slaps boy, 3, in preschool, gets 5 months’ jail",
+      "title": "Warrant of arrest issued for Lim Tean after he fails to surrender to begin jail term",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/warrant-arrest-issued-lim-tean-surrender-6295606",
+      "published": "2026-08-04 13:44"
+    },
+    {
+      "category": "Crime",
+      "title": "Man gets jail for setting fire to cardboard cat houses placed at void decks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/man-set-fire-cat-house-void-deck-jail-6296851",
+      "published": "2026-08-04 13:02"
+    },
+    {
+      "category": "Crime",
+      "title": "Man, 39, arrested for allegedly injuring teen, 14, with pliers in Yishun",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/woman-flung-slapped-boy-jail/",
-      "published": "2026-08-03 18:59"
+      "url": "https://mothership.sg/2026/08/man-teen-pliers/",
+      "published": "2026-08-04 10:03"
+    },
+    {
+      "category": "Crime",
+      "title": "Traffic police issue 154 summonses to commercial vehicle drivers, including for speeding",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/commercial-vehicles-summonses/",
+      "published": "2026-08-04 03:39"
+    },
+    {
+      "category": "Crime",
+      "title": "8 men in S'pore, aged 23-41, charged for having commercial sex with girl, 16",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/sexual-exploitation-minors-charges/",
+      "published": "2026-08-04 03:13"
+    },
+    {
+      "category": "Crime",
+      "title": "3 months’ jail for man who set fire to community cat houses at Bukit Batok void deck",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/3-months-jail-for-man-who-set-fire-to-community-cat-houses-at-bukit-batok-void-deck",
+      "published": "2026-08-04 14:20"
+    },
+    {
+      "category": "Crime",
+      "title": "Police appeal for information on two missing people, last seen near Chai Chee Road and Bishan",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/police-appeal-for-information-on-two-missing-people-last-seen-near-chai-chee-road-and-bishan",
+      "published": "2026-08-04 14:15"
+    },
+    {
+      "category": "Crime",
+      "title": "New anti-scam laws target Carousell, TikTok account mules; online harms order fine up from $1m to $10m",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/new-anti-scam-laws-target-carousell-tiktok-account-mules-online-harms-order-fine-up-from-1m-to-10m",
+      "published": "2026-08-04 13:47"
+    },
+    {
+      "category": "Crime",
+      "title": "Warrant of arrest review scheduled for Lim Tean; lawyer was to begin jail term on July 20",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/warrant-of-arrest-review-scheduled-for-lim-tean-lawyer-was-to-begin-jail-term-on-july-20",
+      "published": "2026-08-04 12:12"
     },
     {
       "category": "Crime",
@@ -38,10 +94,31 @@
     },
     {
       "category": "Traffic",
-      "title": "Antarctic cold snap sweeps New Zealand's South Island, shuts roads and schools",
+      "title": "Three lions die of suspected heatstroke at Japan zoo",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/new-zealand-south-island-antarctic-cold-6296546",
-      "published": "2026-08-04 10:18"
+      "url": "https://www.channelnewsasia.com/east-asia/japan-zoo-three-lions-heatstroke-6296776",
+      "published": "2026-08-04 12:07"
+    },
+    {
+      "category": "Traffic",
+      "title": "Understanding the road to online radicalisation: Why platforms like Roblox are only one part of the puzzle",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/road-online-radicalisation-platform-roblox-puzzle-6295306",
+      "published": "2026-08-04 12:06"
+    },
+    {
+      "category": "Traffic",
+      "title": "Man, 23, dies after scaffolding collapses onto lorry at Jurong construction site",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/jurong-scaffolding-man-dies/",
+      "published": "2026-08-04 10:25"
+    },
+    {
+      "category": "Traffic",
+      "title": "S'porean man, 56, dies after his motorcycle allegedly hit car on Johor, M'sia expressway",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/sg-motorcycist-die-mpv-johor/",
+      "published": "2026-08-04 00:22"
     },
     {
       "category": "Traffic",
@@ -94,16 +171,16 @@
     },
     {
       "category": "Traffic",
-      "title": "NKF pushes for more sustainable dialysis to reduce carbon footprint and ease staff’s back pain",
+      "title": "Kidney patient’s son carries on legacy of donating to NKF",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/nkf-pushes-for-more-sustainable-dialysis-to-reduce-carbon-footprint-and-ease-staffs-back-pain",
+      "url": "https://www.straitstimes.com/singapore/health/kidney-patients-son-carries-on-legacy-donation-to-nkf",
       "published": "2026-08-03 05:00"
     },
     {
       "category": "Traffic",
-      "title": "Kidney patient’s son carries on legacy of donating to NKF",
+      "title": "NKF pushes for more sustainable dialysis to reduce carbon footprint and ease staff’s back pain",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/kidney-patients-son-carries-on-legacy-donation-to-nkf",
+      "url": "https://www.straitstimes.com/singapore/health/nkf-pushes-for-more-sustainable-dialysis-to-reduce-carbon-footprint-and-ease-staffs-back-pain",
       "published": "2026-08-03 05:00"
     },
     {
@@ -122,10 +199,17 @@
     },
     {
       "category": "Fire",
-      "title": "Fatal Clementi blaze: Dry rising main not in proper working condition during firefighting operation",
+      "title": "SCDF seeks powers to take action against suppliers of non-compliant bomb shelter products",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/scdf-bomb-shelter-door-fire-safety-parliament-6294771",
+      "published": "2026-08-04 13:45"
+    },
+    {
+      "category": "Fire",
+      "title": "Proposed changes to law for SCDF to prosecute suppliers of non-compliant bomb shelter products",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/fatal-clementi-blaze-dry-rising-main-not-in-proper-working-condition-during-firefighting-operation",
-      "published": "2026-08-02 18:35"
+      "url": "https://www.straitstimes.com/singapore/politics/proposed-changes-to-law-for-scdf-to-prosecute-suppliers-of-non-compliant-bomb-shelter-products",
+      "published": "2026-08-04 13:49"
     },
     {
       "category": "Money",
@@ -133,20 +217,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/when-love-meets-the-bill-the-cost-of-loving-a-pet-in-singapore",
       "published": "2026-08-03 05:00"
-    },
-    {
-      "category": "Housing",
-      "title": "Japan's economy minister offers sanguine view on inflation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japans-economy-minister-offers-sanguine-view-inflation-6296671",
-      "published": "2026-08-04 10:40"
-    },
-    {
-      "category": "Housing",
-      "title": "South Korea inflation cools, but back-to-back rate hike not ruled out",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-korea-inflation-cools-back-back-rate-hike-not-ruled-out-6296371",
-      "published": "2026-08-04 07:03"
     },
     {
       "category": "Housing",
@@ -164,122 +234,52 @@
     },
     {
       "category": "General",
-      "title": "Hong Kong actor Mat Yeung marries Malaysian actress Lisa Ch'ng in star-studded Kuala Lumpur wedding",
+      "title": "SG Science Fest offers free entry to Science Centre with science shows and activities over National Day weekend",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/mat-yeung-lisa-chng-wedding-malaysia-6296596",
-      "published": "2026-08-04 10:54"
+      "url": "https://www.channelnewsasia.com/living/sg-science-fest-2026-science-centre-singapore-6296561",
+      "published": "2026-08-04 14:28"
     },
     {
       "category": "General",
-      "title": "South Korea's Lee urges authorities to step up support as heatwave kills 16",
+      "title": "GovTech layoffs necessary to maintain quality of digital services for Singaporeans, says Jasmin Lau",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/south-korea-heatwave-kills-16-lee-jae-myung-6296586",
-      "published": "2026-08-04 10:14"
+      "url": "https://www.channelnewsasia.com/singapore/govtech-layoff-retrench-workers-40s-mddi-technology-workforce-6296931",
+      "published": "2026-08-04 14:28"
     },
     {
       "category": "General",
-      "title": "Beyond hydration: A closer look at ECM-based skin boosters",
+      "title": "Rabobank to spend €2 billion in AI and tech as net profit stagnates",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/advertorial/beyond-hydration-closer-look-ecm-based-skin-boosters-6285866",
-      "published": "2026-08-04 10:07"
+      "url": "https://www.channelnewsasia.com/business/rabobank-spend-eu2-billion-in-ai-and-tech-net-profit-stagnates-6297056",
+      "published": "2026-08-04 14:15"
     },
     {
       "category": "General",
-      "title": "Meet the AI tutor helping polytechnic students learn better",
+      "title": "SoftBank's AI funding plans to face reckoning at earnings",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/brand-studio/meet-ai-tutor-helping-polytechnic-students-learn-better-6288056",
-      "published": "2026-08-04 09:24"
+      "url": "https://www.channelnewsasia.com/business/softbanks-ai-funding-plans-face-reckoning-earnings-6297061",
+      "published": "2026-08-04 14:14"
     },
     {
       "category": "General",
-      "title": "Oil ticks up after selloff as talks to end US-Iran war remain uncertain",
+      "title": "Japan, US likely to intervene again if yen resumes slide, ex-BOJ official says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-ticks-up-after-selloff-talks-end-us-iran-war-remain-uncertain-6296486",
-      "published": "2026-08-04 09:02"
+      "url": "https://www.channelnewsasia.com/business/japan-us-likely-intervene-again-if-yen-resumes-slide-ex-boj-official-says-6297021",
+      "published": "2026-08-04 14:01"
     },
     {
       "category": "General",
-      "title": "Australia's Cooper steps down from leadership group after Commonwealth Games no-show",
+      "title": "Apple seeks preliminary injunction against OpenAI in trade secrets case",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/australias-cooper-steps-down-leadership-group-after-commonwealth-games-no-show-6296476",
-      "published": "2026-08-04 08:48"
+      "url": "https://www.channelnewsasia.com/business/apple-seeks-preliminary-injunction-against-openai-in-trade-secrets-case-6296996",
+      "published": "2026-08-04 13:58"
     },
     {
       "category": "General",
-      "title": "Spider-Man: Brand New Day beats Avengers: Endgame box office record",
+      "title": "South Korea vows to soothe stock market volatility as ETF boom slows",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/spider-man-brand-new-day-box-office-record-6295851",
-      "published": "2026-08-04 08:46"
-    },
-    {
-      "category": "General",
-      "title": "Singapore's Grab lifts 2026 forecasts on solid delivery, ride-hailing demand",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/singapores-grab-lifts-2026-forecasts-solid-delivery-ride-hailing-demand-6296336",
-      "published": "2026-08-04 08:33"
-    },
-    {
-      "category": "General",
-      "title": "All Blacks hooker Bell ruled out of South Africa tour, Slater called up",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/all-blacks-hooker-bell-ruled-out-south-africa-tour-slater-called-up-6296426",
-      "published": "2026-08-04 08:03"
-    },
-    {
-      "category": "General",
-      "title": "Death toll from Venezuela quakes rises past 6,000",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/venezuela-earthquake-death-toll-6000-6296411",
-      "published": "2026-08-04 07:57"
-    },
-    {
-      "category": "General",
-      "title": "T-beauty explained: Why Thailand’s beauty brands are taking Southeast Asia by storm",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/style-beauty/t-beauty-sunscreen-makeup-skincare-bangkok-6275716",
-      "published": "2026-08-04 07:25"
-    },
-    {
-      "category": "General",
-      "title": "Electronic Arts misses quarterly bookings estimates ahead of Saudi-backed buyout",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/electronic-arts-misses-quarterly-bookings-estimates-ahead-saudi-backed-buyout-6296391",
-      "published": "2026-08-04 07:17"
-    },
-    {
-      "category": "General",
-      "title": "Michigan reports first US deaths in cyclosporiasis outbreak",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-michigan-death-cyclosporiasis-outbreak-6295811",
-      "published": "2026-08-04 07:06"
-    },
-    {
-      "category": "General",
-      "title": "Australia's Qantas to exit Jetstar Japan in $52 million share buyback deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/australias-qantas-exit-jetstar-japan-in-52-million-share-buyback-deal-6296366",
-      "published": "2026-08-04 06:59"
-    },
-    {
-      "category": "General",
-      "title": "TikTok settling three teen social media lawsuits ahead of trial",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/tiktok-settling-three-teen-social-media-lawsuits-ahead-trial-6296331",
-      "published": "2026-08-04 06:08"
-    },
-    {
-      "category": "General",
-      "title": "Why Hermes wants to be taken seriously as a watchmaker",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/hermes-watches-fine-watchmaking-6293396",
-      "published": "2026-08-04 06:06"
-    },
-    {
-      "category": "General",
-      "title": "This Singaporean retired at 35 without getting rich. Here’s how he made it work",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/singaporean-colin-lau-retire-35-flat-stop-fearing-retrenchment-6296171",
-      "published": "2026-08-04 06:00"
+      "url": "https://www.channelnewsasia.com/business/south-korea-vows-soothe-stock-market-volatility-etf-boom-slows-6297001",
+      "published": "2026-08-04 13:57"
     }
   ]
 }
