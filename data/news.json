@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-08-05 06:21",
+  "last_updated": "2026-08-05 08:14",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Amazon loses US court ban on Perplexity's AI shopping tools",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amazon-loses-us-court-ban-perplexitys-ai-shopping-tools-6298941",
-      "published": "2026-08-05 03:53"
-    },
     {
       "category": "Crime",
       "title": "S'pore man, 38, got into sexual relationship with niece, 13, used blindfold & rope on her, given 21 years’ jail & caning",
@@ -28,6 +21,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/lim-tean-warrant-of-arrest-review/",
       "published": "2026-08-04 22:31"
+    },
+    {
+      "category": "Crime",
+      "title": "4 persons, including 2 women, arrested for abduction, possession of weapon",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/4-arrested-for-abduction-possession-of-weapon",
+      "published": "2026-08-05 06:40"
     },
     {
       "category": "Crime",
@@ -108,6 +108,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Defending champion Alcaraz withdraws from Cincinnati Open",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/defending-champion-alcaraz-withdraws-cincinnati-open-6299191",
+      "published": "2026-08-05 06:51"
+    },
+    {
+      "category": "Traffic",
       "title": "Race Course Road flat fire: 3 found unconscious",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/fire-race-course-road-flat/",
@@ -156,11 +163,11 @@
       "published": "2026-08-03 21:23"
     },
     {
-      "category": "Traffic",
-      "title": "Roadside parking payment via OBU now under way for 1,000 trial users",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/roadside-parking-payment-via-obu-now-underway-for-1000-trial-users",
-      "published": "2026-08-03 20:55"
+      "category": "Transport",
+      "title": "SpaceX revenue jumps in debut results as satellite, AI businesses surge",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/spacex-revenue-jumps-in-debut-results-satellite-ai-businesses-surge-6298971",
+      "published": "2026-08-05 07:54"
     },
     {
       "category": "Transport",
@@ -198,11 +205,32 @@
       "published": "2026-08-04 15:22"
     },
     {
-      "category": "Housing",
-      "title": "More rental housing options being studied as demand from young Singaporeans grows",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/housing/more-rental-housing-options-being-studied-as-demand-from-young-singaporeans-grows",
-      "published": "2026-08-03 20:42"
+      "category": "General",
+      "title": "Ariana Grande on decision to withdraw from the public eye: 'Not a reactive or impulsive thing'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/ariana-grande-decision-withdraw-public-eye-not-reactive-or-impulsive-thing-6298581",
+      "published": "2026-08-05 07:45"
+    },
+    {
+      "category": "General",
+      "title": "Japan real wages up for sixth straight month in June",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japan-real-wages-up-sixth-straight-month-in-june-6299261",
+      "published": "2026-08-05 07:33"
+    },
+    {
+      "category": "General",
+      "title": "Are words like 'supermum' and 'girl boss' doing women more harm than good?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/girl-boss-supermum-labels-women-unrealistic-expectations-6287596",
+      "published": "2026-08-05 07:20"
+    },
+    {
+      "category": "General",
+      "title": "Disney exits A+E as media conglomerate Hearst gains full ownership in $1.2 billion deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/disney-exits-ae-media-conglomerate-hearst-gains-full-ownership-in-12-billion-deal-6299221",
+      "published": "2026-08-05 07:08"
     },
     {
       "category": "General",
@@ -213,14 +241,14 @@
     },
     {
       "category": "General",
-      "title": "Commentary: Has Singapore reached a ‘when, not if’ moment for school attacks?",
+      "title": "Commentary: Has Singapore reached a 'when, not if' moment for school attacks?",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/commentary/singapore-school-attack-security-isa-radicalised-teen-6297456",
       "published": "2026-08-05 06:00"
     },
     {
       "category": "General",
-      "title": "Months after Singapore lifted its pig blood ban, hawkers and supermarkets still can't keep up with demand",
+      "title": "Singapore's pig blood curd demand still outpacing supply two months after ban lifted",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/pig-blood-curd-high-demand-lack-supply-hawkers-6290586",
       "published": "2026-08-05 06:00"
@@ -234,7 +262,7 @@
     },
     {
       "category": "General",
-      "title": "Italian garbagemen help recover lost 1 mln euro lottery ticket",
+      "title": "Italian garbagemen help recover lost 1m euro lottery ticket",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/italy-lottery-ticket-garbagemen-help-6299101",
       "published": "2026-08-05 05:53"
@@ -252,34 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/experiences/europe-alternative-canal-cities-6296666",
       "published": "2026-08-05 05:39"
-    },
-    {
-      "category": "General",
-      "title": "Oil drops, stocks hit records on hopes of Hormuz opening",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/oil-prices-fall-us-iran-hormuz-deal-6299081",
-      "published": "2026-08-05 05:28"
-    },
-    {
-      "category": "General",
-      "title": "Trading Day: The only way is up",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trading-day-only-way-up-6299066",
-      "published": "2026-08-05 05:02"
-    },
-    {
-      "category": "General",
-      "title": "Turkey's Trabzonspor say transfer talks with Salah underway",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/turkeys-trabzonspor-say-transfer-talks-salah-underway-6299061",
-      "published": "2026-08-05 04:59"
-    },
-    {
-      "category": "General",
-      "title": "EU ministers seek tougher migration response after Ceuta influx",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/ceuta-morocco-spain-migrants-eu-6299036",
-      "published": "2026-08-05 04:44"
     }
   ]
 }
