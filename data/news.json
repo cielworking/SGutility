@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-05 11:32",
+  "last_updated": "2026-08-05 14:41",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Analysis:Europe's established tech firms emerge as unexpected AI winners",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/analysiseuropes-established-tech-firms-emerge-unexpected-ai-winners-6300261",
+      "published": "2026-08-05 14:03"
+    },
     {
       "category": "Crime",
       "title": "Jetstar to charge for carry-on bags in overhead lockers",
@@ -52,10 +59,17 @@
     },
     {
       "category": "Crime",
-      "title": "Warrant of arrest issued for Lim Tean for not surrendering to court to start jail term",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/lim-tean-warrant-of-arrest-review/",
-      "published": "2026-08-04 22:31"
+      "title": "Man who allegedly abducted 19-year-old over car rental dispute charged",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-who-allegedly-abducted-19-year-old-over-car-rental-dispute-charged",
+      "published": "2026-08-05 14:02"
+    },
+    {
+      "category": "Crime",
+      "title": "More than $1.2m lost to scams involving courier firms and Apple’s iMessage",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/over-1-2m-lost-to-scams-involving-courier-firms-and-apples-imessage",
+      "published": "2026-08-05 13:30"
     },
     {
       "category": "Crime",
@@ -114,25 +128,11 @@
       "published": "2026-08-04 14:20"
     },
     {
-      "category": "Crime",
-      "title": "New proposed anti-scam laws target Carousell, TikTok account mules; online harms order fine up from $1m to $10m",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/new-anti-scam-laws-target-carousell-tiktok-account-mules-online-harms-order-fine-up-from-1m-to-10m",
-      "published": "2026-08-04 13:47"
-    },
-    {
-      "category": "Crime",
-      "title": "Arrest warrant issued against Lim Tean after he fails to surrender at State Courts",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/warrant-of-arrest-issued-against-lim-tean-lawyer-was-to-begin-jail-term-on-aug-3",
-      "published": "2026-08-04 12:12"
-    },
-    {
-      "category": "Crime",
-      "title": "Man arrested after allegedly injuring teen with pliers during dispute in Yishun",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/man-arrested-after-allegedly-injuring-teen-with-pliers-over-dispute-in-yishun",
-      "published": "2026-08-03 21:11"
+      "category": "Traffic",
+      "title": "Cape Verde keeper Vozinha says he always believed he was a 'big club' player after Colo-Colo move",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/cape-verde-keeper-vozinha-says-he-always-believed-he-was-big-club-player-after-colo-colo-move-6300286",
+      "published": "2026-08-05 14:18"
     },
     {
       "category": "Traffic",
@@ -150,10 +150,24 @@
     },
     {
       "category": "Traffic",
-      "title": "Race Course Road flat fire: 3 found unconscious",
+      "title": "Vietnam woman, 25, gives birth on motorcycle outside hospital",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/fire-race-course-road-flat/",
-      "published": "2026-08-04 22:38"
+      "url": "https://mothership.sg/2026/08/pregnant-woman-birth-motorcycle-outside-hospital-vietnam/",
+      "published": "2026-08-05 01:32"
+    },
+    {
+      "category": "Traffic",
+      "title": "What are you most proud of? New card deck encourages seniors to share personal memories",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/community/what-are-you-most-proud-of-new-card-deck-encourages-seniors-to-share-personal-memories",
+      "published": "2026-08-05 13:00"
+    },
+    {
+      "category": "Traffic",
+      "title": "AI becomes a non-starter in healthcare if there is inherent distrust in its use: Ong Ye Kung",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/ai-becomes-a-non-starter-in-healthcare-if-there-is-inherent-distrust-in-its-use-ong-ye-kung",
+      "published": "2026-08-05 12:47"
     },
     {
       "category": "Traffic",
@@ -184,20 +198,6 @@
       "published": "2026-08-04 16:35"
     },
     {
-      "category": "Traffic",
-      "title": "Live: Parliament to discuss O-level English oral concerns, development of healthcare AI model",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/live-parliament-to-discuss-maju-forest-redevelopment-and-govtech-retrenchments",
-      "published": "2026-08-04 10:37"
-    },
-    {
-      "category": "Traffic",
-      "title": "Three people unconscious after fire in Race Course Road flat; they are among 5 taken to hospital",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/three-people-unconscious-after-fire-in-little-india-flat-they-are-among-5-taken-to-hospital",
-      "published": "2026-08-03 21:23"
-    },
-    {
       "category": "Transport",
       "title": "Facial recognition gantries being tested at Punggol Coast MRT station, no plans to expand trial for now: LTA",
       "source": "CNA",
@@ -206,24 +206,38 @@
     },
     {
       "category": "Transport",
-      "title": "Turning AI momentum into business transformation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/advertorial/turning-ai-momentum-business-transformation-6281971",
-      "published": "2026-08-05 09:20"
-    },
-    {
-      "category": "Transport",
-      "title": "SpaceX revenue jumps in debut results as satellite, AI businesses surge",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spacex-revenue-jumps-in-debut-results-satellite-ai-businesses-surge-6298971",
-      "published": "2026-08-05 07:54"
-    },
-    {
-      "category": "Transport",
-      "title": "Body of Chinese businessman, 39, found with hands & feet tied in river in Johor",
+      "title": "S’porean man, 60, chases after bus that pulled away & shatters its glass door, gets S$5,000 fine",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/body-chinese-businessman-johor-msia/",
-      "published": "2026-08-04 22:33"
+      "url": "https://mothership.sg/2026/08/man-chased-bus-shattered-door/",
+      "published": "2026-08-05 02:26"
+    },
+    {
+      "category": "Transport",
+      "title": "Australia engineer, fired after delaying SIA flight by 17 minutes, gets S$36,000 in compensation",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/australia-engineer-fired-singapore-airlines-flight-delay/",
+      "published": "2026-08-05 01:25"
+    },
+    {
+      "category": "Transport",
+      "title": "Checks on Mercedes-Benz public buses stepped up after fire incidents: Murali",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/checks-on-mercedes-benz-public-buses-stepped-up-after-fire-incidents-murali",
+      "published": "2026-08-05 14:24"
+    },
+    {
+      "category": "Transport",
+      "title": "Bus arrival timing system vendor penalised for three of four disruptions between January and July",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/bus-arrival-timing-system-vendor-penalised-for-three-of-four-disruptions-between-january-and-july",
+      "published": "2026-08-05 13:55"
+    },
+    {
+      "category": "Transport",
+      "title": "SMRT Buses investigating after double-decker bus mounts kerb, strikes bollard in Boon Lay",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/smrt-buses-investigating-after-double-decker-bus-mounts-kerb-strikes-bollard-in-boon-lay",
+      "published": "2026-08-05 12:40"
     },
     {
       "category": "Fire",
@@ -231,27 +245,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/south-african-le-clos-loses-home-in-fatal-fire-6299841",
       "published": "2026-08-05 11:22"
-    },
-    {
-      "category": "Fire",
-      "title": "Proposed changes to law for SCDF to prosecute suppliers of non-compliant bomb shelter products",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/proposed-changes-to-law-for-scdf-to-prosecute-suppliers-of-non-compliant-bomb-shelter-products",
-      "published": "2026-08-04 13:49"
-    },
-    {
-      "category": "Money",
-      "title": "BOJ debated mounting price risks even upon hiking rates in June, minutes show",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/boj-debated-mounting-price-risks-even-upon-hiking-rates-in-june-minutes-show-6299481",
-      "published": "2026-08-05 09:15"
-    },
-    {
-      "category": "Money",
-      "title": "Japan's services growth slows amid cost pressures, PMI shows",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japans-services-growth-slows-amid-cost-pressures-pmi-shows-6299366",
-      "published": "2026-08-05 08:40"
     },
     {
       "category": "Housing",
@@ -262,24 +255,31 @@
     },
     {
       "category": "General",
-      "title": "North Korea warns of 'military options' over Japan rearmament",
+      "title": "6.3-magnitude earthquake hits off southern Philippines: USGS",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/north-korea-warns-japan-military-options-rearmament-6299791",
-      "published": "2026-08-05 11:24"
+      "url": "https://www.channelnewsasia.com/asia/sarangani-south-philippines-earthquake-usgs-6300171",
+      "published": "2026-08-05 13:15"
     },
     {
       "category": "General",
-      "title": "Reported discrepancies in O-Level English oral not technical in nature or result of malicious act: MOE",
+      "title": "Popular Arab Street eatery Fika Swedish Cafe And Bistro to close in August",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/o-level-english-oral-question-moe-6299666",
-      "published": "2026-08-05 10:42"
+      "url": "https://www.channelnewsasia.com/dining/fika-swedish-cafe-closure-august-6300116",
+      "published": "2026-08-05 12:56"
     },
     {
       "category": "General",
-      "title": "Why Japan is propping up the yen with US help",
+      "title": "Trump warns Iran to open Hormuz or get 'hit very hard'",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/japan-yen-us-help-intervention-6299661",
-      "published": "2026-08-05 10:36"
+      "url": "https://www.channelnewsasia.com/world/donald-trump-warns-iran-open-hormuz-strait-or-get-hit-very-hard-6300131",
+      "published": "2026-08-05 12:41"
+    },
+    {
+      "category": "General",
+      "title": "Grace Chang, Hong Kong screen icon and Mambo Girl star, dies at 93",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/grace-chang-dies-93-hong-kong-actress-singer-6299756",
+      "published": "2026-08-05 12:22"
     }
   ]
 }
