@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-08-08 00:08",
+  "last_updated": "2026-08-08 01:06",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Man to be charged for causing death of petrol station attendant, driving deregistered car",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/petrol-station-attendant-death-man-charged-drive-deregistered-car-6306636",
+      "published": "2026-08-08 00:16"
+    },
     {
       "category": "Crime",
       "title": "US appeals court blocks Trump’s US$400 million White House ballroom project",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/donald-trump-ballroom-white-house-6306526",
       "published": "2026-08-07 22:49"
-    },
-    {
-      "category": "Crime",
-      "title": "Jail for training officer who pushed woman with intellectual disability, causing knee injuries",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/training-officer-jail-push-woman-intellectual-disability-knee-fractures-6306046",
-      "published": "2026-08-07 19:39"
     },
     {
       "category": "Crime",
@@ -35,6 +35,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/drink-driving-2023-2025-k-shanmugam-jamus-lim/",
       "published": "2026-08-07 19:50"
+    },
+    {
+      "category": "Crime",
+      "title": "Man to be charged with driving without licence, causing death of petrol station attendant",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-to-be-charged-with-driving-without-licence-causing-death-of-petrol-station-attendant",
+      "published": "2026-08-08 00:25"
     },
     {
       "category": "Crime",
@@ -91,13 +98,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-to-be-charged-for-insulting-the-religion-of-another-person",
       "published": "2026-08-06 19:45"
-    },
-    {
-      "category": "Crime",
-      "title": "Fatal 2024 Kitchener Road brawl: Man jailed 17 months for using chair to hit victim of knife attack",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/fatal-2024-kitchener-road-brawl-man-jailed-17-months-for-using-chair-to-hit-victim-of-knife-attack",
-      "published": "2026-08-06 16:28"
     },
     {
       "category": "Traffic",
@@ -213,6 +213,13 @@
     },
     {
       "category": "General",
+      "title": "Palace sign Japan defender Tomiyasu after trial period",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/palace-sign-japan-defender-tomiyasu-after-trial-period-6306686",
+      "published": "2026-08-08 00:15"
+    },
+    {
+      "category": "General",
       "title": "Niewiadoma-Phinney conquers Ventoux to snatch Tour de France Femmes lead",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/niewiadoma-phinney-conquers-ventoux-snatch-tour-de-france-femmes-lead-6306671",
@@ -273,13 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/japans-yen-surges-after-us-jobs-data-traders-wary-intervention-risk-6306351",
       "published": "2026-08-07 20:46"
-    },
-    {
-      "category": "General",
-      "title": "Airbnb hits four-year high as investors cheer revenue forecast raise, AI payoff",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/airbnb-hits-four-year-high-investors-cheer-revenue-forecast-raise-ai-payoff-6306291",
-      "published": "2026-08-07 20:26"
     }
   ]
 }
