@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-08-07 21:38",
+  "last_updated": "2026-08-08 00:08",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "US appeals court blocks Trump’s US$400 million White House ballroom project",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/donald-trump-ballroom-white-house-6306526",
+      "published": "2026-08-07 22:49"
+    },
     {
       "category": "Crime",
       "title": "Jail for training officer who pushed woman with intellectual disability, causing knee injuries",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/training-officer-jail-push-woman-intellectual-disability-knee-fractures-6306046",
       "published": "2026-08-07 19:39"
-    },
-    {
-      "category": "Crime",
-      "title": "Man gets jail for taking 179 upskirt videos over three years, molesting woman at MRT station",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/man-jail-upskirt-videos-molest-mrt-station-6305756",
-      "published": "2026-08-07 18:00"
     },
     {
       "category": "Crime",
@@ -35,6 +35,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/drink-driving-2023-2025-k-shanmugam-jamus-lim/",
       "published": "2026-08-07 19:50"
+    },
+    {
+      "category": "Crime",
+      "title": "Three people arrested for roles in scheme that compromised work permit holders’ Singpass accounts",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/three-people-arrested-for-roles-in-scheme-that-compromised-work-permit-holders-singpass-accounts",
+      "published": "2026-08-07 23:47"
     },
     {
       "category": "Crime",
@@ -94,10 +101,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Retailers tap AI shopping traffic but fight to keep customer data",
+      "title": "FA bans solid pitchside barriers after player dies",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/retailers-tap-ai-shopping-traffic-fight-keep-customer-data-6306011",
-      "published": "2026-08-07 18:07"
+      "url": "https://www.channelnewsasia.com/sport/fa-bans-solid-pitchside-barriers-after-player-dies-6306511",
+      "published": "2026-08-07 22:33"
     },
     {
       "category": "Traffic",
@@ -164,9 +171,16 @@
     },
     {
       "category": "Transport",
+      "title": "Trump says Congress wants to regulate AI industry 'out of business'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/trump-says-congress-wants-regulate-ai-industry-out-business-6306486",
+      "published": "2026-08-07 22:20"
+    },
+    {
+      "category": "Transport",
       "title": "With Johor Bahru set to be just a 5-minute train ride away, Singapore merchants need to raise their game",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/today/big-read/johor-bahru-rts-link-singapore-businesses-lower-prices-6303161",
+      "url": "https://www.channelnewsasia.com/today/big-read/johor-bahru-rts-link-singapore-business-shopping-lower-prices-6303161",
       "published": "2026-08-07 21:30"
     },
     {
@@ -184,11 +198,53 @@
       "published": "2026-08-06 19:35"
     },
     {
+      "category": "Money",
+      "title": "Shields says fight with Price likely to take place in 2027",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/shields-says-fight-price-likely-take-place-in-2027-6306456",
+      "published": "2026-08-07 21:46"
+    },
+    {
       "category": "Housing",
       "title": "Man allegedly punched daughter, told son to strip naked and go to ground floor of HDB block",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/man-allegedly-punched-daughter-told-son-to-strip-naked-and-go-to-ground-floor-of-hdb-block",
       "published": "2026-08-06 19:15"
+    },
+    {
+      "category": "General",
+      "title": "Niewiadoma-Phinney conquers Ventoux to snatch Tour de France Femmes lead",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/niewiadoma-phinney-conquers-ventoux-snatch-tour-de-france-femmes-lead-6306671",
+      "published": "2026-08-07 23:59"
+    },
+    {
+      "category": "General",
+      "title": "Cambridge to review hiring process amid plagiarism row",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/cambridge-reviewing-hiring-process-plagiarism-accusations-6306566",
+      "published": "2026-08-07 23:12"
+    },
+    {
+      "category": "General",
+      "title": "Singapore advance to ASEAN football championship semi-finals after draw with Indonesia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/football-asean-championship-singapore-indonesia-draw-6306161",
+      "published": "2026-08-07 22:59"
+    },
+    {
+      "category": "General",
+      "title": "All Blacks great Ma’a Nonu to face New Zealand in Sharks debut",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/all-blacks-great-maa-nonu-face-new-zealand-in-sharks-debut-6306546",
+      "published": "2026-08-07 22:50"
+    },
+    {
+      "category": "General",
+      "title": "Thai students in disbelief after deadly school shooting",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/thailand-school-shooting-debsirin-nonthaburi-students-6306466",
+      "published": "2026-08-07 22:00"
     },
     {
       "category": "General",
@@ -220,66 +276,10 @@
     },
     {
       "category": "General",
-      "title": "Airbnb shares gain as investors cheer revenue forecast raise, AI payoff",
+      "title": "Airbnb hits four-year high as investors cheer revenue forecast raise, AI payoff",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/airbnb-shares-gain-investors-cheer-revenue-forecast-raise-ai-payoff-6306291",
+      "url": "https://www.channelnewsasia.com/business/airbnb-hits-four-year-high-investors-cheer-revenue-forecast-raise-ai-payoff-6306291",
       "published": "2026-08-07 20:26"
-    },
-    {
-      "category": "General",
-      "title": "Saudi Arabia, Türkiye, Pakistan pledge mutual defence as Middle East turmoil escalates",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/saudi-arabia-turkiye-pakistan-mutual-defence-middle-east-6305676",
-      "published": "2026-08-07 20:21"
-    },
-    {
-      "category": "General",
-      "title": "Singapore grants conditional approvals to import solar power from Malaysia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/solar-power-electricity-import-malaysia-conditional-approval-6306061",
-      "published": "2026-08-07 20:09"
-    },
-    {
-      "category": "General",
-      "title": "Take-Two sticks to annual bookings outlook, says on track for 'GTA VI' November launch",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/take-two-sticks-annual-bookings-outlook-says-track-gta-vi-november-launch-6306236",
-      "published": "2026-08-07 19:42"
-    },
-    {
-      "category": "General",
-      "title": "What China’s new PLA leaders reveal about Xi’s unfinished military rebuild",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-military-promotions-reshuffle-anti-corruption-xi-jinping-6305871",
-      "published": "2026-08-07 19:35"
-    },
-    {
-      "category": "General",
-      "title": "Guotai Junan International receives take-private offer at over $3.6 billion valuation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/guotai-junan-international-receives-take-private-offer-over-36-billion-valuation-6306176",
-      "published": "2026-08-07 19:12"
-    },
-    {
-      "category": "General",
-      "title": "New Belgium coach Van Bommel had no hesitation accepting job",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/new-belgium-coach-van-bommel-had-no-hesitation-accepting-job-6306171",
-      "published": "2026-08-07 19:11"
-    },
-    {
-      "category": "General",
-      "title": "Levi Strauss reveals cybersecurity breach amid wider wave of attacks",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/levi-strauss-reveals-cybersecurity-breach-amid-wider-wave-attacks-6306096",
-      "published": "2026-08-07 18:58"
-    },
-    {
-      "category": "General",
-      "title": "Cloudflare shares jump after forecast raise on higher AI-driven spending",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/cloudflare-shares-jump-after-forecast-raise-higher-ai-driven-spending-6306101",
-      "published": "2026-08-07 18:54"
     }
   ]
 }
