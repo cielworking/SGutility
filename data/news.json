@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-09 17:55",
+  "last_updated": "2026-08-09 19:44",
   "headlines": [
     {
       "category": "Crime",
@@ -28,6 +28,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/fun-coffee-ponzi-scheme/",
       "published": "2026-08-09 01:27"
+    },
+    {
+      "category": "Crime",
+      "title": "Police close access to several areas near National Stadium due to crowding at NDP 2026",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/police-close-access-to-areas-near-national-stadium-due-to-crowding-at-ndp-2026",
+      "published": "2026-08-09 18:02"
     },
     {
       "category": "Crime",
@@ -105,13 +112,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-gets-award-from-singapore-police-for-aiding-in-arrest-of-suspected-thief-on-flight",
       "published": "2026-08-07 21:32"
-    },
-    {
-      "category": "Crime",
-      "title": "CNB investigating online sale of Trader Joe’s seasoning product containing poppy seeds",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/cnb-investigating-online-sale-of-trader-joes-seasoning-product-containing-poppy-seeds",
-      "published": "2026-08-07 18:45"
     },
     {
       "category": "Traffic",
@@ -198,20 +198,6 @@
       "published": "2026-08-08 10:00"
     },
     {
-      "category": "Fire",
-      "title": "NDP 2026: Six places to catch a view of the fireworks, and tips for taking better pictures",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/community/ndp-2026-six-places-to-catch-a-view-of-the-fireworks-and-tips-for-taking-better-pictures",
-      "published": "2026-08-07 18:30"
-    },
-    {
-      "category": "Money",
-      "title": "Man, 22, allegedly reversed into petrol station attendant causing death, drove without valid licence while on drugs",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/man-charged-petrol-station-deregistered-car/",
-      "published": "2026-08-08 19:01"
-    },
-    {
       "category": "Money",
       "title": "PM Wong to announce details on support for families, costs of raising children at NDR",
       "source": "Straits Times",
@@ -224,6 +210,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/an-sg61-treat-get-up-to-180-in-fairprice-vouchers-with-your-straits-times-subscription",
       "published": "2026-08-08 05:00"
+    },
+    {
+      "category": "General",
+      "title": "Three in five Americans favor stronger oversight of social media companies, Reuters/Ipsos poll finds",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/three-in-five-americans-favor-stronger-oversight-social-media-companies-reutersipsos-poll-finds-6308356",
+      "published": "2026-08-09 18:03"
     },
     {
       "category": "General",
@@ -248,9 +241,9 @@
     },
     {
       "category": "General",
-      "title": "Typhoon Dolphin set to hit China's east coast, triggering flood warnings",
+      "title": "Typhoon Dolphin makes landfall on China's eastern coast",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/typhoon-dolphin-set-hit-chinas-east-coast-triggering-flood-warnings-6308191",
+      "url": "https://www.channelnewsasia.com/east-asia/typhoon-dolphin-makes-landfall-chinas-eastern-coast-6308191",
       "published": "2026-08-09 13:48"
     },
     {
@@ -280,6 +273,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/living/viral-singapore-moments-memes-6294871",
       "published": "2026-08-09 08:15"
+    },
+    {
+      "category": "General",
+      "title": "FIFA condemns 'concerted and ongoing effort' to weaken Infantino",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/fifa-condemns-efforts-weaken-infantino-6307986",
+      "published": "2026-08-09 07:29"
     }
   ]
 }
