@@ -1,6 +1,27 @@
 {
-  "last_updated": "2026-08-11 19:04",
+  "last_updated": "2026-08-11 19:55",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "‘I’m not a hero’: Cleaner who subdued knife-wielding man in Clementi learned silat in prison",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/clementi-knife-osman-sidin-hero-yellow-ribbon-silat-6312061",
+      "published": "2026-08-11 19:38"
+    },
+    {
+      "category": "Crime",
+      "title": "Philippine VP Duterte hit with criminal charge over Marcos 'threat'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/philippines-sara-duterte-marcos-threat-criminal-charge-6312101",
+      "published": "2026-08-11 19:23"
+    },
+    {
+      "category": "Crime",
+      "title": "Former teacher charged over sexual communication with male student",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/teacher-sexual-communication-student-6311991",
+      "published": "2026-08-11 19:08"
+    },
     {
       "category": "Crime",
       "title": "Regular Sammyboy Forum user gets jail for possessing videos of toilet users, sharing obscene images",
@@ -10,10 +31,17 @@
     },
     {
       "category": "Crime",
-      "title": "Driver who severed pedestrian's body appeals for less jail; prosecution seeks longer sentence",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/driver-severed-body-appeal-lower-jail-6311486",
-      "published": "2026-08-11 16:21"
+      "title": "Man stabs himself in Clementi: Man, 56, who stepped in to stop self-injury, identified",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/ex-inmate-stop-clementi-stabbing/",
+      "published": "2026-08-11 21:36"
+    },
+    {
+      "category": "Crime",
+      "title": "Man to be charged after allegedly pushing airline staff, delaying Changi flight",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-to-be-charged-after-allegedly-pushing-airline-staff-delaying-changi-flight",
+      "published": "2026-08-11 19:50"
     },
     {
       "category": "Crime",
@@ -73,27 +101,6 @@
     },
     {
       "category": "Traffic",
-      "title": "'Flawed' funding system behind silence of smaller nations in FIFA's civil war, says ex-PNG player",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/flawed-funding-system-behind-silence-smaller-nations-in-fifas-civil-war-says-ex-png-player-6311761",
-      "published": "2026-08-11 17:08"
-    },
-    {
-      "category": "Traffic",
-      "title": "Andrea DeCruz and Pierre Png reflect on her liver transplant, their marriage and overcoming fears",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/andrea-decruz-pierre-png-liver-transplant-marriage-6311531",
-      "published": "2026-08-11 16:05"
-    },
-    {
-      "category": "Traffic",
-      "title": "Colombia rescue efforts press on after quake, death toll expected to rise",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/colombia-earthquake-rescue-efforts-death-toll-rise-6311401",
-      "published": "2026-08-11 15:31"
-    },
-    {
-      "category": "Traffic",
       "title": "Large crowds from S'pore to JB over long weekend, but stores report less-than-expected bump in sales",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/national-day-weekend-jb-sales-less-than-expected/",
@@ -119,6 +126,41 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/ride-vouchers-after-dark-discounts-up-for-grabs-to-draw-tourists-to-singapores-precincts",
       "published": "2026-08-11 12:55"
+    },
+    {
+      "category": "General",
+      "title": "Tian Tian Chicken Rice now has a flagship eatery at Jewel Changi Airport, with new chicken curry",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/dining/tian-tian-chicken-rice-jewel-changi-airport-6311871",
+      "published": "2026-08-11 19:32"
+    },
+    {
+      "category": "General",
+      "title": "Forest bolster defence with signing of Diomande from Sporting",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/forest-bolster-defence-signing-diomande-sporting-6312126",
+      "published": "2026-08-11 19:27"
+    },
+    {
+      "category": "General",
+      "title": "French media asks French anti-trust watchdog to act on Google's AI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/french-media-asks-french-anti-trust-watchdog-act-googles-ai-6312111",
+      "published": "2026-08-11 19:15"
+    },
+    {
+      "category": "General",
+      "title": "Dogs can distinguish between emotions in a human face, study shows",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/dogs-can-distinguish-between-emotions-in-human-face-study-shows-6312091",
+      "published": "2026-08-11 19:07"
+    },
+    {
+      "category": "General",
+      "title": "Tickets for Singapore's ASEAN football championship semi-final first-leg match against Thailand on sale Aug 12",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/singapore-asean-championship-semi-final-first-leg-thailand-sale-aug-12-6311976",
+      "published": "2026-08-11 19:01"
     },
     {
       "category": "General",
@@ -192,31 +234,17 @@
     },
     {
       "category": "General",
-      "title": "Trump Media's quarterly loss widens to $238 million from $20 million a year earlier",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-medias-quarterly-loss-widens-238-million-20-million-year-earlier-6311716",
-      "published": "2026-08-11 16:56"
+      "title": "Shanghai woman buys 2nd-hand designer bag online, finds out it was same one stolen from her home a year ago",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/shanghai-woman-2nd-hand-bag/",
+      "published": "2026-08-11 21:07"
     },
     {
       "category": "General",
-      "title": "Toyota to recall over 508,000 US vehicles over instrument cluster display issues",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/toyota-recall-over-508000-us-vehicles-over-instrument-cluster-display-issues-6311511",
-      "published": "2026-08-11 15:28"
-    },
-    {
-      "category": "General",
-      "title": "Shein plans to launch Hong Kong IPO as soon as next Wednesday, sources say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/shein-plans-launch-hong-kong-ipo-soon-next-wednesday-sources-say-6311481",
-      "published": "2026-08-11 15:12"
-    },
-    {
-      "category": "General",
-      "title": "‘Never encountered this before’: What an extreme El Nino means for Southeast Asia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/southeast-asia-thailand-intense-el-nino-2026-6311201",
-      "published": "2026-08-11 15:03"
+      "title": "NUS students to get ChatGPT access, freshmen to undergo compulsory AI module",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/nus-get-chatgpt/",
+      "published": "2026-08-11 20:43"
     },
     {
       "category": "General",
@@ -252,34 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/man-kidnapped-malaysia/",
       "published": "2026-08-11 18:19"
-    },
-    {
-      "category": "General",
-      "title": "M'sia man, 32, owed loan sharks over S$62,700, takes own life, they immediately start harassing family",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/msia-accountant-loan-shark-die/",
-      "published": "2026-08-11 03:24"
-    },
-    {
-      "category": "General",
-      "title": "Canada flight cancelled after toddler refuses to put on seatbelt & parent unable to get him buckled",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/canada-flight-cancelled-after-toddler-refuses-to-put-on-seatbelt/",
-      "published": "2026-08-11 02:58"
-    },
-    {
-      "category": "General",
-      "title": "'Our best National Day gift': MP Tan Kiat How's wife water breaks during NDP, welcomes their 3rd child on Aug. 10",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/tan-kiat-how-3rd-kid/",
-      "published": "2026-08-11 02:20"
-    },
-    {
-      "category": "General",
-      "title": "S'pore man, 47, challenges colleagues to duel with swords after they joked he was a freeloader",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/singapore-samurai-sword-duel/",
-      "published": "2026-08-11 02:06"
     }
   ]
 }
