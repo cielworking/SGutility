@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-08-12 00:11",
+  "last_updated": "2026-08-12 02:05",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Lim Tean arrested after being handed over to Singapore police by Malaysian authorities",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/lim-team-arrest-malaysia-return-6312281",
-      "published": "2026-08-11 20:46"
-    },
     {
       "category": "Crime",
       "title": "S'porean man, 58, who fled by boat in 2002, entered & left S'pore illegally after, gets over 14 months' jail",
@@ -107,6 +100,13 @@
       "published": "2026-08-10 17:10"
     },
     {
+      "category": "Fire",
+      "title": "Over 100 people evacuated after fire breaks out at Junction 8 restaurant; 1 taken to hospital",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/over-100-people-evacuated-after-fire-breaks-out-at-junction-8-restaurant-1-taken-to-hospital",
+      "published": "2026-08-12 00:10"
+    },
+    {
       "category": "Money",
       "title": "Oil prices lower, stocks higher as Hormuz doubts drag on",
       "source": "CNA",
@@ -129,6 +129,55 @@
     },
     {
       "category": "General",
+      "title": "Spotify to launch badge identifying AI music",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/spotify-launch-badge-identifying-ai-music-6312811",
+      "published": "2026-08-12 01:56"
+    },
+    {
+      "category": "General",
+      "title": "UK 'on course' to record warmest summer for second year in a row",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/uk-record-warmest-summer-heatwave-drought-6312786",
+      "published": "2026-08-12 01:34"
+    },
+    {
+      "category": "General",
+      "title": "Exclusive-Alpha Compute to buy Pennsylvania land, gas rights for $55 million data center campus, company says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/exclusive-alpha-compute-buy-pennsylvania-land-gas-rights-55-million-data-center-campus-company-says-6312776",
+      "published": "2026-08-12 01:03"
+    },
+    {
+      "category": "General",
+      "title": "PSG boss Luis Enrique does not expect top-level Super Cup game due to lack of preparation",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/psg-boss-luis-enrique-does-not-expect-top-level-super-cup-game-due-lack-preparation-6312766",
+      "published": "2026-08-12 00:48"
+    },
+    {
+      "category": "General",
+      "title": "AI firm Manus to resume 'independent' operations after China blocks Meta deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/ai-firm-manus-resume-independent-operations-after-china-blocks-meta-deal-6312716",
+      "published": "2026-08-12 00:45"
+    },
+    {
+      "category": "General",
+      "title": "Senior OpenAI executive Brad Lightcap to leave for new venture",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/senior-openai-executive-brad-lightcap-leave-new-venture-6312746",
+      "published": "2026-08-12 00:41"
+    },
+    {
+      "category": "General",
+      "title": "Wrexham sign goalkeeper Patterson from Sunderland for reported record fee",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/wrexham-sign-goalkeeper-patterson-sunderland-reported-record-fee-6312711",
+      "published": "2026-08-12 00:17"
+    },
+    {
+      "category": "General",
       "title": "Sunderland to set off on 19-day record bid a year later than planned",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/sunderland-set-19-day-record-bid-year-later-planned-6312671",
@@ -143,9 +192,9 @@
     },
     {
       "category": "General",
-      "title": "New Zealand joins France in committing to FIFA Under-20 Women's World Cup",
+      "title": "Poland says preparations for Women's under-20 World Cup remain on schedule",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/new-zealand-joins-france-in-committing-fifa-under-20-womens-world-cup-6312586",
+      "url": "https://www.channelnewsasia.com/sport/poland-says-preparations-womens-under-20-world-cup-remain-schedule-6312586",
       "published": "2026-08-11 23:06"
     },
     {
@@ -157,9 +206,9 @@
     },
     {
       "category": "General",
-      "title": "Nvidia is developing Nemotron 4 open-source models, The Information reports",
+      "title": "Nvidia building 1-trillion-parameter Nemotron 4 to rival open AI models, The Information reports",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-developing-nemotron-4-open-source-models-information-reports-6312521",
+      "url": "https://www.channelnewsasia.com/business/nvidia-building-1-trillion-parameter-nemotron-4-rival-open-ai-models-information-reports-6312521",
       "published": "2026-08-11 22:31"
     },
     {
@@ -199,48 +248,6 @@
     },
     {
       "category": "General",
-      "title": "Air taxi firm Joby acquires defense tech company for $500 million",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/air-taxi-firm-joby-acquires-defense-tech-company-500-million-6312401",
-      "published": "2026-08-11 21:26"
-    },
-    {
-      "category": "General",
-      "title": "XAI co-founder's startup River AI raises $1.1 billion to expand custom AI tools",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/xai-co-founders-startup-river-ai-raises-11-billion-expand-custom-ai-tools-6312381",
-      "published": "2026-08-11 21:14"
-    },
-    {
-      "category": "General",
-      "title": "Mourinho's return adds extra spice to LaLiga title race",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mourinhos-return-adds-extra-spice-laliga-title-race-6312351",
-      "published": "2026-08-11 21:03"
-    },
-    {
-      "category": "General",
-      "title": "Singapore's upgraded economic outlook a 'bullish signal' of AI-driven expansion, but other sectors also contributing: Experts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ai-gdp-economy-manufacturing-finance-6312146",
-      "published": "2026-08-11 20:41"
-    },
-    {
-      "category": "General",
-      "title": "Exclusive-Sri Lanka central bank sees no need for further rate hikes this year, governor says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-sri-lanka-central-bank-sees-no-need-further-rate-hikes-year-governor-says-6312276",
-      "published": "2026-08-11 20:31"
-    },
-    {
-      "category": "General",
-      "title": "IBM, Together AI ink $240 million deal for Nvidia-powered AI inference cluster",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ibm-together-ai-ink-240-million-deal-nvidia-powered-ai-inference-cluster-6312206",
-      "published": "2026-08-11 20:02"
-    },
-    {
-      "category": "General",
       "title": "American couple plans trip to S'pore using Mario Kart's S'pore Speedway racecourse",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/american-couple-plans-trip-singapore-speedway-mario-kart/",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/thai-school-shooters-mother-apologises/",
       "published": "2026-08-11 20:08"
-    },
-    {
-      "category": "General",
-      "title": "S'pore youths asked National Youth Council some hard questions about the new SG Youth Plan. NYC responded.",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/national-youth-council-sg-youth-plan/",
-      "published": "2026-08-11 20:00"
     }
   ]
 }
