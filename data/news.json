@@ -1,11 +1,18 @@
 {
-  "last_updated": "2026-08-11 14:03",
+  "last_updated": "2026-08-11 17:12",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Driver who severed pedestrian's body appeals for less jail; prosecution seeks longer sentence",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/driver-severed-body-appeal-lower-jail-6311486",
+      "published": "2026-08-11 16:21"
+    },
     {
       "category": "Crime",
       "title": "Man fled Singapore on fishing boat to avoid jail, caught at Changi Airport more than 20 years later",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/changi-airport-ica-immigration-offence-false-identity-fake-indonesian-passport-6311291",
+      "url": "https://www.channelnewsasia.com/singapore/changi-airport-ica-immigration-offence-false-identity-fake-passport-6311291",
       "published": "2026-08-11 13:56"
     },
     {
@@ -31,6 +38,34 @@
     },
     {
       "category": "Crime",
+      "title": "Man jailed after climbing on top of elderly nursing home resident and pinning him down",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-jailed-after-climbing-on-top-of-elderly-nursing-home-resident-and-pinning-him-down",
+      "published": "2026-08-11 16:16"
+    },
+    {
+      "category": "Crime",
+      "title": "Man on the run for 24 years arrested after failing immigration clearance at Changi Airport",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-on-the-run-for-24-years-arrested-after-failing-immigration-clearance-at-changi-airport",
+      "published": "2026-08-11 15:47"
+    },
+    {
+      "category": "Crime",
+      "title": "Prudential warns against scammers impersonating staff, financial representatives",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/prudential-warns-against-scammers-impersonating-staff-financial-representatives",
+      "published": "2026-08-11 15:00"
+    },
+    {
+      "category": "Crime",
+      "title": "4 years’ jail for ex-sales manager who cheated 2 firms, causing over $726k in losses",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/4-years-jail-for-ex-sales-manager-who-cheated-2-firms-causing-over-726k-in-losses",
+      "published": "2026-08-11 14:53"
+    },
+    {
+      "category": "Crime",
       "title": "Unmasked: Bosses behind Chen Zhi’s global scam syndicate hired S’poreans as personal assistants",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/unmasked-bosses-behind-chen-zhis-global-scam-syndicate-hired-sporeans-as-personal-assistants",
@@ -44,11 +79,25 @@
       "published": "2026-08-10 19:20"
     },
     {
-      "category": "Crime",
-      "title": "‘Weird, childish’ events and bad coffee: How a Singaporean sniffed out the Fun Coffee investment scam",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/weird-childish-events-and-bad-coffee-how-a-sporean-sniffed-out-the-fun-coffee-investment-scam",
-      "published": "2026-08-09 15:00"
+      "category": "Traffic",
+      "title": "'Flawed' funding system behind silence of smaller nations in FIFA's civil war, says ex-PNG player",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/flawed-funding-system-behind-silence-smaller-nations-in-fifas-civil-war-says-ex-png-player-6311761",
+      "published": "2026-08-11 17:08"
+    },
+    {
+      "category": "Traffic",
+      "title": "Andrea DeCruz and Pierre Png reflect on her liver transplant, their marriage and overcoming fears",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/andrea-decruz-pierre-png-liver-transplant-marriage-6311531",
+      "published": "2026-08-11 16:05"
+    },
+    {
+      "category": "Traffic",
+      "title": "Colombia rescue efforts press on after quake, death toll expected to rise",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/colombia-earthquake-rescue-efforts-death-toll-rise-6311401",
+      "published": "2026-08-11 15:31"
     },
     {
       "category": "Traffic",
@@ -66,17 +115,31 @@
     },
     {
       "category": "Transport",
+      "title": "Airbus joins probe into Air India flight plunge",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/airbus-joins-probe-air-india-flight-plunge-6311456",
+      "published": "2026-08-11 14:59"
+    },
+    {
+      "category": "Transport",
       "title": "Vietnam's Sun PhuQuoc Airways to receive 8 Airbus A330 planes by end-April 2027",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/vietnams-sun-phuquoc-airways-receive-8-airbus-a330-planes-end-april-2027-6311366",
       "published": "2026-08-11 13:46"
     },
     {
-      "category": "Money",
-      "title": "Oil prices rise, Asia stocks drift amid US-Iran stalemate",
+      "category": "Fire",
+      "title": "Prabowo orders coordinated measures against Indonesia wildfires",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-prices-asia-stocks-us-iran-stalemate-6310901",
-      "published": "2026-08-11 10:44"
+      "url": "https://www.channelnewsasia.com/asia/indonesia-wildfire-bromo-el-nino-haze-singapore-sarawak-6311376",
+      "published": "2026-08-11 14:03"
+    },
+    {
+      "category": "Fire",
+      "title": "Ukraine says Russia fired North Korean missiles in deadly attack",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/ukraine-says-russia-fired-north-korean-missiles-in-deadly-attack-6311371",
+      "published": "2026-08-11 13:53"
     },
     {
       "category": "Money",
@@ -87,10 +150,52 @@
     },
     {
       "category": "General",
-      "title": "Russian barrage on Ukraine kills 9, wounds dozens",
+      "title": "Trump Media's quarterly loss widens to $238 million from $20 million a year earlier",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/russian-barrage-ukraine-kills-9-wounds-dozens-6311371",
-      "published": "2026-08-11 13:53"
+      "url": "https://www.channelnewsasia.com/business/trump-medias-quarterly-loss-widens-238-million-20-million-year-earlier-6311716",
+      "published": "2026-08-11 16:56"
+    },
+    {
+      "category": "General",
+      "title": "Toyota to recall over 508,000 US vehicles over instrument cluster display issues",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/toyota-recall-over-508000-us-vehicles-over-instrument-cluster-display-issues-6311511",
+      "published": "2026-08-11 15:28"
+    },
+    {
+      "category": "General",
+      "title": "Shein plans to launch Hong Kong IPO as soon as next Wednesday, sources say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/shein-plans-launch-hong-kong-ipo-soon-next-wednesday-sources-say-6311481",
+      "published": "2026-08-11 15:12"
+    },
+    {
+      "category": "General",
+      "title": "‘Never encountered this before’: What an extreme El Nino means for Southeast Asia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/southeast-asia-thailand-intense-el-nino-2026-6311201",
+      "published": "2026-08-11 15:03"
+    },
+    {
+      "category": "General",
+      "title": "CONMEBOL postpones two continental ties due to Colombia earthquake",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/conmebol-postpones-two-continental-ties-due-colombia-earthquake-6311446",
+      "published": "2026-08-11 14:53"
+    },
+    {
+      "category": "General",
+      "title": "Philippines' Marcos proposes $118 billion budget for 2027",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/philippines-marcos-proposes-118-billion-budget-2027-6311416",
+      "published": "2026-08-11 14:18"
+    },
+    {
+      "category": "General",
+      "title": "Bank of Korea likely to raise interest rates further, outgoing deputy chief says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/bank-korea-likely-raise-interest-rates-further-outgoing-deputy-chief-says-6311406",
+      "published": "2026-08-11 14:02"
     },
     {
       "category": "General",
@@ -122,87 +227,24 @@
     },
     {
       "category": "General",
-      "title": "South Korea's Samsung SDI to buy out GM's stake in battery joint venture",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-koreas-samsung-sdi-buy-out-gms-stake-in-battery-joint-venture-6311241",
-      "published": "2026-08-11 12:30"
+      "title": "Kidnappers of S'porean man, 72, allegedly demanded S$1 million ransom from family",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/sporean-man-kidnapped-ransom/",
+      "published": "2026-08-11 19:48"
     },
     {
       "category": "General",
-      "title": "Singapore manufacturers adjust to higher US tariff, hold off on major production shifts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/manufacturers-adjust-productivity-united-states-tariffs-6309396",
-      "published": "2026-08-11 12:25"
+      "title": "S'porean man, 72, rescued after getting kidnapped in M'sia",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/man-kidnapped-malaysia/",
+      "published": "2026-08-11 18:19"
     },
     {
       "category": "General",
-      "title": "Lulu’s Lounge returns to Singapore with a new home in Chinatown",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/experiences/lulus-lounge-singapore-nightlife-chinatown-6310646",
-      "published": "2026-08-11 12:20"
-    },
-    {
-      "category": "General",
-      "title": "Actress Tasha Low reveals what filming Yes Captain! inside Changi Prison was really like",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/tasha-low-changi-prison-yes-captain-filming-6310941",
-      "published": "2026-08-11 12:16"
-    },
-    {
-      "category": "General",
-      "title": "Malaysia's June industrial production up 6.5%, below forecast",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/malaysias-june-industrial-production-up-65-below-forecast-6311131",
-      "published": "2026-08-11 12:02"
-    },
-    {
-      "category": "General",
-      "title": "Typhoon Dolphin's vast storm system pushes inland, threatens central China",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/typhoon-dolphin-central-china-storm-6311111",
-      "published": "2026-08-11 12:00"
-    },
-    {
-      "category": "General",
-      "title": "Vietnam starts building largest homemade anti-submarine warship",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/vietnam-anti-submarine-warship-6310986",
-      "published": "2026-08-11 11:37"
-    },
-    {
-      "category": "General",
-      "title": "Vietnam's VinSpace signs SpaceX launch deal for 2027",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/vietnams-vinspace-signs-spacex-launch-deal-2027-6311036",
-      "published": "2026-08-11 11:21"
-    },
-    {
-      "category": "General",
-      "title": "China says Long March 7A rocket launch failed after flight anomaly",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-long-march-7a-rocket-launch-failed-6310976",
-      "published": "2026-08-11 11:20"
-    },
-    {
-      "category": "General",
-      "title": "NUS students to get ChatGPT access; AI module compulsory for incoming freshmen",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/nus-chatgpt-compulsory-ai-module-6306826",
-      "published": "2026-08-11 11:02"
-    },
-    {
-      "category": "General",
-      "title": "Baby Shark star to make K-pop debut as Baby Shark Boy",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/baby-shark-boy-k-pop-debut-6310911",
-      "published": "2026-08-11 10:59"
-    },
-    {
-      "category": "General",
-      "title": "Trump took secret flight out of Türkiye due to Iran threat: Report",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/donald-trump-secret-air-force-one-flight-turkiye-iran-threat-6310791",
-      "published": "2026-08-11 10:37"
+      "title": "M'sia man, 32, owed loan sharks over S$62,700, takes own life, they immediately start harassing family",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/msia-accountant-loan-shark-die/",
+      "published": "2026-08-11 03:24"
     },
     {
       "category": "General",
@@ -234,52 +276,10 @@
     },
     {
       "category": "General",
-      "title": "S'pore woman complains of 'expensive' S$9 cai fan at Punggol hawker, stall says they gave her extra for her daughter",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/cai-fan-punggol/",
-      "published": "2026-08-10 22:27"
-    },
-    {
-      "category": "General",
-      "title": "POV: I paid S$21.50 to watch a S’pore AI sci-fi movie on National Day. It was quite bad.",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/trace-project-ai-movie-review/",
-      "published": "2026-08-10 20:56"
-    },
-    {
-      "category": "General",
-      "title": "Chinese actress, 75, sued for S$950,000 by ex-assistant, 37, who claims they were in relationship & he was underpaid",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/chinese-actress-sued-former-photography-assistant-38-years-her-junior-who-claims-they-lived-together-for-6-years/",
-      "published": "2026-08-10 20:37"
-    },
-    {
-      "category": "General",
       "title": "NUS makes AI courses compulsory, gives all students and staff free ChatGPT Edu access",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/parenting-education/nus-makes-ai-courses-compulsory-gives-all-students-and-staff-free-chatgpt-edu-access",
       "published": "2026-08-11 11:00"
-    },
-    {
-      "category": "General",
-      "title": "News as it happens: Aug 11-14, 2026",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/news-as-it-happens-aug-11-14-2026",
-      "published": "2026-08-11 07:41"
-    },
-    {
-      "category": "General",
-      "title": "No lesson slots at driving school? Try Bukit Batok centre at weekend but be prepared to pay more",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/no-lesson-slots-at-driving-school-try-bukit-batok-centre-at-weekend-but-be-prepared-to-pay-more",
-      "published": "2026-08-11 07:00"
-    },
-    {
-      "category": "General",
-      "title": "More young people behind terror threats with radicalisation taking just weeks: Experts",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/more-young-people-behind-terror-threats-with-radicalisation-taking-just-weeks-experts",
-      "published": "2026-08-11 05:00"
     }
   ]
 }
