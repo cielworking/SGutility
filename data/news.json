@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-11 19:55",
+  "last_updated": "2026-08-11 23:15",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Lim Tean arrested after being handed over to Singapore police by Malaysian authorities",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/lim-team-arrest-malaysia-return-6312281",
+      "published": "2026-08-11 20:46"
+    },
     {
       "category": "Crime",
       "title": "‘I’m not a hero’: Cleaner who subdued knife-wielding man in Clementi learned silat in prison",
@@ -17,17 +24,10 @@
     },
     {
       "category": "Crime",
-      "title": "Former teacher charged over sexual communication with male student",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/teacher-sexual-communication-student-6311991",
-      "published": "2026-08-11 19:08"
-    },
-    {
-      "category": "Crime",
-      "title": "Regular Sammyboy Forum user gets jail for possessing videos of toilet users, sharing obscene images",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/sammyboy-forum-obscene-photos-upskirt-toilet-voyeur-6311621",
-      "published": "2026-08-11 17:15"
+      "title": "S'porean man, 58, who fled by boat in 2002, entered & left S'pore illegally after, gets over 14 months' jail",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/singaporean-man-absconded-jail/",
+      "published": "2026-08-11 21:54"
     },
     {
       "category": "Crime",
@@ -38,7 +38,14 @@
     },
     {
       "category": "Crime",
-      "title": "Man to be charged after allegedly pushing airline staff, delaying Changi flight",
+      "title": "Lim Tean deported to S’pore after arrest in Johor over failing to surrender for jail term",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/lim-tean-deported-to-spore-after-arrest-in-johor-over-failing-to-surrender-for-jail-term",
+      "published": "2026-08-11 20:38"
+    },
+    {
+      "category": "Crime",
+      "title": "Man to be charged after allegedly pushing past airline staff to board plane, delaying Changi flight",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-to-be-charged-after-allegedly-pushing-airline-staff-delaying-changi-flight",
       "published": "2026-08-11 19:50"
@@ -94,13 +101,6 @@
     },
     {
       "category": "Traffic",
-      "title": "South Korea's Lotte Group sells car rental unit to private equity TPG for $925 million",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-koreas-lotte-group-sells-car-rental-unit-private-equity-tpg-925-million-6311771",
-      "published": "2026-08-11 17:17"
-    },
-    {
-      "category": "Traffic",
       "title": "Large crowds from S'pore to JB over long weekend, but stores report less-than-expected bump in sales",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/national-day-weekend-jb-sales-less-than-expected/",
@@ -114,18 +114,109 @@
       "published": "2026-08-10 17:10"
     },
     {
-      "category": "Traffic",
-      "title": "RSAF carries out helicopter rescue for ailing vessel crew member at sea",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/rsaf-carries-out-helicopter-rescue-for-ailing-vessel-crew-member-at-sea",
-      "published": "2026-08-09 20:05"
-    },
-    {
       "category": "Money",
       "title": "Ride vouchers, after-dark discounts up for grabs to draw tourists to Singapore’s precincts",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/ride-vouchers-after-dark-discounts-up-for-grabs-to-draw-tourists-to-singapores-precincts",
       "published": "2026-08-11 12:55"
+    },
+    {
+      "category": "Housing",
+      "title": "Dollar steady as traders await key US inflation data",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/dollar-steady-traders-await-key-us-inflation-data-6310886",
+      "published": "2026-08-11 21:32"
+    },
+    {
+      "category": "General",
+      "title": "Four crew members killed in Red Sea attack while missile strike reported in Gulf",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/red-sea-attack-yemen-houthis-gulf-6312561",
+      "published": "2026-08-11 23:01"
+    },
+    {
+      "category": "General",
+      "title": "Nvidia is developing Nemotron 4 open-source models, The Information reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nvidia-developing-nemotron-4-open-source-models-information-reports-6312521",
+      "published": "2026-08-11 22:31"
+    },
+    {
+      "category": "General",
+      "title": "Formula E announces global streaming deal with Disney+ and ESPN",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/formula-e-announces-global-streaming-deal-disney-and-espn-6312506",
+      "published": "2026-08-11 22:25"
+    },
+    {
+      "category": "General",
+      "title": "Disney wins global streaming rights for Formula E races",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/disney-wins-global-streaming-rights-formula-e-races-6312496",
+      "published": "2026-08-11 22:25"
+    },
+    {
+      "category": "General",
+      "title": "Air India captain tests positive for marijuana: Reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/air-india-captain-drug-test-positive-marijuana-6312461",
+      "published": "2026-08-11 22:06"
+    },
+    {
+      "category": "General",
+      "title": "Germany re-introduces standing room tickets for national team home matches after more than 25 years",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/germany-re-introduces-standing-room-tickets-national-team-home-matches-after-more-25-years-6312471",
+      "published": "2026-08-11 22:04"
+    },
+    {
+      "category": "General",
+      "title": "Bumble eases women-first messaging rule as dating apps seek engagement boost",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/bumble-eases-women-first-messaging-rule-dating-apps-seek-engagement-boost-6312466",
+      "published": "2026-08-11 22:04"
+    },
+    {
+      "category": "General",
+      "title": "Air taxi firm Joby acquires defense tech company for $500 million",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/air-taxi-firm-joby-acquires-defense-tech-company-500-million-6312401",
+      "published": "2026-08-11 21:26"
+    },
+    {
+      "category": "General",
+      "title": "XAI co-founder's startup River AI raises $1.1 billion to expand custom AI tools",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/xai-co-founders-startup-river-ai-raises-11-billion-expand-custom-ai-tools-6312381",
+      "published": "2026-08-11 21:14"
+    },
+    {
+      "category": "General",
+      "title": "Mourinho's return adds extra spice to LaLiga title race",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mourinhos-return-adds-extra-spice-laliga-title-race-6312351",
+      "published": "2026-08-11 21:03"
+    },
+    {
+      "category": "General",
+      "title": "Singapore's upgraded economic outlook a 'bullish signal' of AI-driven expansion, but other sectors also contributing: Experts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/ai-gdp-economy-manufacturing-finance-6312146",
+      "published": "2026-08-11 20:41"
+    },
+    {
+      "category": "General",
+      "title": "Exclusive-Sri Lanka central bank sees no need for further rate hikes this year, governor says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/exclusive-sri-lanka-central-bank-sees-no-need-further-rate-hikes-year-governor-says-6312276",
+      "published": "2026-08-11 20:31"
+    },
+    {
+      "category": "General",
+      "title": "IBM, Together AI ink $240 million deal for Nvidia-powered AI inference cluster",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ibm-together-ai-ink-240-million-deal-nvidia-powered-ai-inference-cluster-6312206",
+      "published": "2026-08-11 20:02"
     },
     {
       "category": "General",
@@ -143,94 +234,17 @@
     },
     {
       "category": "General",
-      "title": "French media asks French anti-trust watchdog to act on Google's AI",
+      "title": "French press body asks competition watchdog to take action over Google AI",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/french-media-asks-french-anti-trust-watchdog-act-googles-ai-6312111",
+      "url": "https://www.channelnewsasia.com/business/french-press-body-asks-competition-watchdog-take-action-over-google-ai-6312111",
       "published": "2026-08-11 19:15"
     },
     {
       "category": "General",
-      "title": "Dogs can distinguish between emotions in a human face, study shows",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dogs-can-distinguish-between-emotions-in-human-face-study-shows-6312091",
-      "published": "2026-08-11 19:07"
-    },
-    {
-      "category": "General",
-      "title": "Tickets for Singapore's ASEAN football championship semi-final first-leg match against Thailand on sale Aug 12",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-asean-championship-semi-final-first-leg-thailand-sale-aug-12-6311976",
-      "published": "2026-08-11 19:01"
-    },
-    {
-      "category": "General",
-      "title": "Former Australia all-rounder Henriques to captain Portugal in WC qualifying",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/former-australia-all-rounder-henriques-captain-portugal-in-wc-qualifying-6312051",
-      "published": "2026-08-11 18:48"
-    },
-    {
-      "category": "General",
-      "title": "Everton, Palace complete Johnson-McNeil swap deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/everton-palace-complete-johnson-mcneil-swap-deal-6312021",
-      "published": "2026-08-11 18:45"
-    },
-    {
-      "category": "General",
-      "title": "Fulham sign midfielder Charles from Southampton",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fulham-sign-midfielder-charles-southampton-6312001",
-      "published": "2026-08-11 18:40"
-    },
-    {
-      "category": "General",
-      "title": "Syria sentences ousted leader Bashar al-Assad to death in absentia over killings, torture",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/syria-bashar-al-assad-death-sentence-crimes-6311791",
-      "published": "2026-08-11 18:39"
-    },
-    {
-      "category": "General",
-      "title": "Thai PM suspends gun licences as teen shooter, grandparents cremated",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/thailand-gun-licence-suspended-shooting-anutin-6311946",
-      "published": "2026-08-11 18:34"
-    },
-    {
-      "category": "General",
-      "title": "TSMC, Sony to invest $4.7 billion in joint venture for image sensors",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/tsmc-sony-invest-47-billion-in-joint-venture-image-sensors-6311851",
-      "published": "2026-08-11 18:24"
-    },
-    {
-      "category": "General",
-      "title": "Hong Kong's tech index plans expansion with AI and robotics themes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/hong-kong-hang-seng-tech-index-ai-robotics-themes-6311861",
-      "published": "2026-08-11 18:05"
-    },
-    {
-      "category": "General",
-      "title": "Mentality key to Premier League revival for Spurs, says De Zerbi",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mentality-key-premier-league-revival-spurs-says-de-zerbi-6311866",
-      "published": "2026-08-11 17:53"
-    },
-    {
-      "category": "General",
-      "title": "More than 2,400 people caught vaping in second quarter of 2026",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/vaping-offenders-caught-etomidate-moh-hsa-6311451",
-      "published": "2026-08-11 17:23"
-    },
-    {
-      "category": "General",
-      "title": "South Africa name Fortuin as skipper for limited-overs trip to Namibia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/south-africa-name-fortuin-skipper-limited-overs-trip-namibia-6311781",
-      "published": "2026-08-11 17:20"
+      "title": "American couple plans trip to S'pore using Mario Kart's S'pore Speedway racecourse",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/american-couple-plans-trip-singapore-speedway-mario-kart/",
+      "published": "2026-08-11 23:25"
     },
     {
       "category": "General",
@@ -266,20 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/national-youth-council-sg-youth-plan/",
       "published": "2026-08-11 20:00"
-    },
-    {
-      "category": "General",
-      "title": "Kidnappers of S'porean man, 72, allegedly demanded S$1 million ransom from family",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/sporean-man-kidnapped-ransom/",
-      "published": "2026-08-11 19:48"
-    },
-    {
-      "category": "General",
-      "title": "S'porean man, 72, rescued after getting kidnapped in M'sia",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/man-kidnapped-malaysia/",
-      "published": "2026-08-11 18:19"
     }
   ]
 }
