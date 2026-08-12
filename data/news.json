@@ -1,6 +1,27 @@
 {
-  "last_updated": "2026-08-12 10:43",
+  "last_updated": "2026-08-12 13:01",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Online listings of popular Trader Joe's seasoning removed on CNB’s order over prohibited poppy seeds",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/trader-joes-everything-bagel-poppy-seeds-cnb-prohibited-goods-6306356",
+      "published": "2026-08-12 12:29"
+    },
+    {
+      "category": "Crime",
+      "title": "Doctor and friend get jail for taking ecstasy at Sentosa villa party after spiked drinks claim rejected",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/doctor-friend-sentosa-villa-party-ecstasy-spiked-drinks-6313761",
+      "published": "2026-08-12 12:11"
+    },
+    {
+      "category": "Crime",
+      "title": "Mosque staff, 42, allegedly misappropriated more than S$14,000 from donation boxes, to be charged",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/mosque-employee-allegedly-steal-donation-box/",
+      "published": "2026-08-12 03:06"
+    },
     {
       "category": "Crime",
       "title": "S'porean man, 58, who fled by boat in 2002, entered & left S'pore illegally after, gets over 14 months' jail",
@@ -10,14 +31,21 @@
     },
     {
       "category": "Crime",
-      "title": "Man stabs himself in Clementi: Man, 56, who stepped in to stop self-injury, identified",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/ex-inmate-stop-clementi-stabbing/",
-      "published": "2026-08-11 21:36"
+      "title": "Doctor, acquaintance who took drugs in Sentosa hotel get a year’s jail each",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/doctor-acquaintance-who-took-drugs-in-sentosa-hotel-get-a-years-jail-each",
+      "published": "2026-08-12 12:06"
     },
     {
       "category": "Crime",
-      "title": "‘I didn’t want him to hurt the kids,’ says 56-year-old who stopped knife-wielding man in Clementi",
+      "title": "Man charged with being drunken nuisance at Changi Airport, bulldozing past airport staff",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-charged-with-being-drunken-nuisance-at-changi-airport-bulldozing-past-airport-staff",
+      "published": "2026-08-12 11:34"
+    },
+    {
+      "category": "Crime",
+      "title": "I didn’t want him to hurt the kids: 56-year-old who stopped knife-wielding man in Clementi",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/i-didnt-want-him-to-hurt-the-kids-says-man-who-stopped-knife-wielding-man-in-clementi",
       "published": "2026-08-12 09:45"
@@ -87,10 +115,24 @@
     },
     {
       "category": "Traffic",
-      "title": "Large crowds from S'pore to JB over long weekend, but stores report less-than-expected bump in sales",
+      "title": "S'pore woman spends 4 years rough sleeping due to clutter at home, more than 30 volunteers step in",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/national-day-weekend-jb-sales-less-than-expected/",
-      "published": "2026-08-11 20:17"
+      "url": "https://mothership.sg/2026/08/singapore-woman-rough-sleeping-volunteers-clear-hoarded-items/",
+      "published": "2026-08-12 03:02"
+    },
+    {
+      "category": "Traffic",
+      "title": "Edmund Chen uploads dashcam footage of road accident, draws divisive reactions",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/edmund-chen-dashcam-video-incident/",
+      "published": "2026-08-12 01:11"
+    },
+    {
+      "category": "Traffic",
+      "title": "New park in Orchard Road to combine Istana Park, Dhoby Ghaut Green and Penang Road Open Space",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/new-park-in-orchard-road-to-combine-istana-park-dhoby-ghaut-green-and-penang-road-open-space",
+      "published": "2026-08-12 11:00"
     },
     {
       "category": "Traffic",
@@ -100,25 +142,11 @@
       "published": "2026-08-10 17:10"
     },
     {
-      "category": "Transport",
-      "title": "Japan business mood rises as semiconductor boom lifts manufacturers: Reuters poll",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japan-business-mood-rises-semiconductor-boom-lifts-manufacturers-reuters-poll-6313211",
-      "published": "2026-08-12 07:02"
-    },
-    {
       "category": "Fire",
-      "title": "North Korea fires ballistic missile ahead of major US-South Korea military drills",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/north-korea-fires-ballistic-missile-south-6313116",
-      "published": "2026-08-12 06:32"
-    },
-    {
-      "category": "Fire",
-      "title": "US helicopter fired on ship that tried to break Iran ports blockade",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-helicopter-fire-panama-ship-iran-blockade-6313141",
-      "published": "2026-08-12 05:51"
+      "title": "Man sets woman, 62, on fire in M'sia lottery shop, motive for attack unknown",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/malaysia-woman-set-on-fire-unknown-man/",
+      "published": "2026-08-12 01:50"
     },
     {
       "category": "Fire",
@@ -133,6 +161,76 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/ride-vouchers-after-dark-discounts-up-for-grabs-to-draw-tourists-to-singapores-precincts",
       "published": "2026-08-11 12:55"
+    },
+    {
+      "category": "Housing",
+      "title": "Oil prices rise, stocks mixed ahead of crucial US inflation data",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/asian-stocks-oil-prices-us-inflation-data-6313676",
+      "published": "2026-08-12 10:51"
+    },
+    {
+      "category": "General",
+      "title": "Toyota ex-chief Okuda, pioneer of the Prius, dead at 93",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/toyota-ex-chief-hiroshi-okuda-prius-pioneer-dies-age-93-6313951",
+      "published": "2026-08-12 12:38"
+    },
+    {
+      "category": "General",
+      "title": "Australia's 'Fab Four' bowlers all in for first test v Bangladesh",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/australias-fab-four-bowlers-all-in-first-test-v-bangladesh-6313956",
+      "published": "2026-08-12 12:34"
+    },
+    {
+      "category": "General",
+      "title": "Brazil's natural areas shrink, worsening El Nino impact",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sustainability/brazils-natural-areas-shrink-worsening-el-nino-impact-6313906",
+      "published": "2026-08-12 12:11"
+    },
+    {
+      "category": "General",
+      "title": "Singapore-born gelateria Tom’s Palette to close after 21 years",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/dining/tom-palette-singapore-gelato-closing-21-years-6313641",
+      "published": "2026-08-12 12:00"
+    },
+    {
+      "category": "General",
+      "title": "Out of season, out of the ordinary: Australia meet Bangladesh in rare home winter tests",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/out-season-out-ordinary-australia-meet-bangladesh-in-rare-home-winter-tests-6313756",
+      "published": "2026-08-12 11:03"
+    },
+    {
+      "category": "General",
+      "title": "Pop Toy Show Singapore 2026 will debut chrysanthemum Molly ice cream and offer exclusive figures",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/pop-toy-show-singapore-2026-6313581",
+      "published": "2026-08-12 11:00"
+    },
+    {
+      "category": "General",
+      "title": "New orchid park, family-friendly facilities proposed as part of expanded Istana Park",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/istana-park-orchard-road-dhoby-ghaut-orchid-plaza-6313491",
+      "published": "2026-08-12 11:00"
+    },
+    {
+      "category": "General",
+      "title": "New attacks on shipping as Iran war talks hit fresh impasse",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-war-new-attacks-shipping-6313681",
+      "published": "2026-08-12 10:54"
+    },
+    {
+      "category": "General",
+      "title": "Trump's secret plane swap triggers questions and confusion",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-secret-air-force-one-plane-swap-turkiye-iran-greater-risk-6313406",
+      "published": "2026-08-12 10:43"
     },
     {
       "category": "General",
@@ -178,108 +276,10 @@
     },
     {
       "category": "General",
-      "title": "Gauff reaches Toronto semis after Bencic withdraws",
+      "title": "Rybakina fights back to beat Osaka at Canadian Open, will meet Gauff in semis",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/gauff-reaches-toronto-semis-after-bencic-withdraws-6313266",
+      "url": "https://www.channelnewsasia.com/sport/rybakina-fights-back-beat-osaka-canadian-open-will-meet-gauff-in-semis-6313266",
       "published": "2026-08-12 07:28"
-    },
-    {
-      "category": "General",
-      "title": "Being intimate during your period: What doctors say about the benefits and risks",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/women/period-sex-benefits-risks-6288336",
-      "published": "2026-08-12 07:26"
-    },
-    {
-      "category": "General",
-      "title": "Ryanair signs five-year Google Cloud deal, expands use of AI in airline operations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ryanair-signs-five-year-google-cloud-deal-expands-use-ai-in-airline-operations-6313206",
-      "published": "2026-08-12 07:02"
-    },
-    {
-      "category": "General",
-      "title": "Ronaldo weds longtime partner Rodriguez in Portugal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ronaldo-weds-longtime-partner-rodriguez-in-portugal-6313196",
-      "published": "2026-08-12 06:32"
-    },
-    {
-      "category": "General",
-      "title": "Beyond Rolex and Patek Philippe: The independent watch brands worth knowing",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/independent-watch-brands-6300376",
-      "published": "2026-08-12 06:19"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Complacency is the hidden risk in Singapore’s success",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/singapore-success-risk-threat-complacency-national-service-tariffs-6312006",
-      "published": "2026-08-12 06:00"
-    },
-    {
-      "category": "General",
-      "title": "IN FOCUS: What happens when those who hurt their families seek help",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/domestic-abuse-family-violence-self-reporting-seeking-help-6311901",
-      "published": "2026-08-12 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Bali tightens scrutiny of foreign content creators, prompting calls for clearer visa rules",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-bali-content-creators-influencers-visa-crackdown-6311031",
-      "published": "2026-08-12 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: The US ammunition crunch is a global disaster",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/us-iran-war-missile-ammo-shortage-global-disaster-6311821",
-      "published": "2026-08-12 05:59"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: AI will affect your social life, even if you've never used it",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/ai-chatgpt-tips-how-people-use-lives-friends-dates-6311856",
-      "published": "2026-08-12 05:58"
-    },
-    {
-      "category": "General",
-      "title": "All Blacks tour win heightens competition for test places",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/all-blacks-tour-win-heightens-competition-test-places-6313161",
-      "published": "2026-08-12 05:49"
-    },
-    {
-      "category": "General",
-      "title": "American couple plans trip to S'pore using Mario Kart's S'pore Speedway racecourse",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/american-couple-plans-trip-singapore-speedway-mario-kart/",
-      "published": "2026-08-11 23:25"
-    },
-    {
-      "category": "General",
-      "title": "Shanghai woman buys 2nd-hand designer bag online, finds out it was same one stolen from her home a year ago",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/shanghai-woman-2nd-hand-bag/",
-      "published": "2026-08-11 21:07"
-    },
-    {
-      "category": "General",
-      "title": "NUS students to get ChatGPT access, freshmen to undergo compulsory AI module",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/nus-get-chatgpt/",
-      "published": "2026-08-11 20:43"
-    },
-    {
-      "category": "General",
-      "title": "Retired M’sian teacher, 63, to pay S$27,574 to student for slapping him 7 years ago",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/malaysia-teacher-pay-slapping-student-kelantan/",
-      "published": "2026-08-11 20:38"
     }
   ]
 }
