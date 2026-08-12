@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-13 05:02",
+  "last_updated": "2026-08-13 06:02",
   "headlines": [
     {
       "category": "Crime",
@@ -192,6 +192,13 @@
     },
     {
       "category": "Money",
+      "title": "Oil prices climb again, as global stocks gain",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-prices-climb-again-global-stocks-gain-6315521",
+      "published": "2026-08-13 00:34"
+    },
+    {
+      "category": "Money",
       "title": "Cost among top drivers – and barriers – to climate action in S’pore, survey finds",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/cost-among-top-drivers-and-barriers-to-climate-action-in-spore-survey-finds",
@@ -213,10 +220,38 @@
     },
     {
       "category": "Housing",
+      "title": "US stocks mostly up after data shows slightly lower inflation in July",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-stocks-inflation-wall-street-6315951",
+      "published": "2026-08-13 05:34"
+    },
+    {
+      "category": "Housing",
       "title": "US inflation slows slightly in July despite elevated fuel prices",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/us-inflation-july-slows-fuel-prices-6315461",
       "published": "2026-08-13 00:27"
+    },
+    {
+      "category": "General",
+      "title": "Trump's spokesperson Karoline Leavitt to step down",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/leavitt-trump-white-house-press-step-down-6315956",
+      "published": "2026-08-13 05:53"
+    },
+    {
+      "category": "General",
+      "title": "What it takes to recreate a Dior haute couture dress from the archives",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/obsessions/dior-haute-couture-archival-dress-6311411",
+      "published": "2026-08-13 05:53"
+    },
+    {
+      "category": "General",
+      "title": "PSG retain UEFA Super Cup with 2-1 win over Aston Villa",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/psg-retain-uefa-super-cup-2-1-win-over-aston-villa-6315931",
+      "published": "2026-08-13 05:15"
     },
     {
       "category": "General",
@@ -245,41 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/cisco-forecasts-annual-revenue-above-estimates-sustained-ai-spending-6315791",
       "published": "2026-08-13 04:10"
-    },
-    {
-      "category": "General",
-      "title": "Cerebras raises annual targets on strong AI chip demand",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/cerebras-raises-annual-targets-strong-ai-chip-demand-6315786",
-      "published": "2026-08-13 04:07"
-    },
-    {
-      "category": "General",
-      "title": "Spain darkens as solar eclipses races south from Arctic",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/solar-eclipse-spain-europe-arctic-6315731",
-      "published": "2026-08-13 04:01"
-    },
-    {
-      "category": "General",
-      "title": "FIFA members should decide Infantino's future at 2027 election, says CAF president",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fifa-members-should-decide-infantinos-future-2027-election-says-caf-president-6315726",
-      "published": "2026-08-13 03:23"
-    },
-    {
-      "category": "General",
-      "title": "EU wheat jumps after Ukraine attacks grain terminals in major Russian export port",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/eu-wheat-jumps-after-ukraine-attacks-grain-terminals-in-major-russian-export-port-6315666",
-      "published": "2026-08-13 03:03"
-    },
-    {
-      "category": "General",
-      "title": "Italy's Curtis takes McKeown's 50m backstroke world record",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/italys-curtis-takes-mckeowns-50m-backstroke-world-record-6315641",
-      "published": "2026-08-13 02:11"
     }
   ]
 }
