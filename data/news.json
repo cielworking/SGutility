@@ -1,12 +1,40 @@
 {
-  "last_updated": "2026-08-13 16:43",
+  "last_updated": "2026-08-13 18:21",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Couple arrested after drugs found at home with young children",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/couple-arrested-drugs-children-cnb-6317111",
+      "published": "2026-08-13 18:02"
+    },
+    {
+      "category": "Crime",
+      "title": "Man, 26, to be charged for allegedly operating massage shops without valid licenses, causing a fire in unrelated incident",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/man-alleged-massage-outlets-fire/",
+      "published": "2026-08-13 20:23"
+    },
     {
       "category": "Crime",
       "title": "M'sian man, 23, caught with fake staff passes & stamps with Supreme Court and MHA emblems at Woodlands Checkpoint",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/malaysian-man-caught-fake-stamps-passes/",
       "published": "2026-08-13 19:36"
+    },
+    {
+      "category": "Crime",
+      "title": "Couple arrested after exposing toddler, 7-month-old baby to drugs",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/couple-arrested-after-exposing-their-toddler-and-7-month-old-baby-to-drugs",
+      "published": "2026-08-13 17:58"
+    },
+    {
+      "category": "Crime",
+      "title": "6 charged over alleged links to unlicensed moneylending syndicate",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/6-charged-over-alleged-links-to-unlicensed-moneylending-syndicate",
+      "published": "2026-08-13 17:37"
     },
     {
       "category": "Crime",
@@ -100,22 +128,15 @@
       "published": "2026-08-11 20:38"
     },
     {
-      "category": "Crime",
-      "title": "Man to be charged after allegedly pushing past airline staff to board plane, delaying Changi flight",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/man-to-be-charged-after-allegedly-pushing-airline-staff-delaying-changi-flight",
-      "published": "2026-08-11 19:50"
-    },
-    {
       "category": "Traffic",
-      "title": "Elected Presidency, GRC, NCMP schemes have 'served S'pore well': SM Lee at Jayakumar's new book launch",
+      "title": "NEA advisory for Hungry Ghost Festival: Clear offerings after prayers, items left behind may constitute littering",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/sm-lee-jayakumar-book-launch-constitution-laws/",
-      "published": "2026-08-13 03:46"
+      "url": "https://mothership.sg/2026/08/nea-hungry-ghost-festival/",
+      "published": "2026-08-13 20:16"
     },
     {
       "category": "Traffic",
-      "title": "Singapore-registered container ship crashes into riverbank in India",
+      "title": "Singapore-registered container ship crashes into riverbank in India; MPA to probe incident",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/singapore-registered-container-ship-crashes-into-riverbank-in-india",
       "published": "2026-08-13 16:35"
@@ -157,24 +178,10 @@
     },
     {
       "category": "Fire",
-      "title": "Rescuers comb waters near Bali for 5 missing after ferry blaze",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/bali-ferry-rescuers-5-missing-6316721",
-      "published": "2026-08-13 14:01"
-    },
-    {
-      "category": "Fire",
-      "title": "Xinmin Secondary School students & staff evacuated after bomb threat: ST",
+      "title": "Xinmin Secondary School students & staff evacuated after bomb hoax",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/xinmin-secondary-school-evacuated-bomb-threat/",
       "published": "2026-08-13 19:19"
-    },
-    {
-      "category": "Fire",
-      "title": "Over 500 fake websites impersonating MHA, 7 Home Team agencies including SPF & SCDF taken down",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/500-fake-websites-impersonating-mha-home-team-agencies-taken-down/",
-      "published": "2026-08-13 19:11"
     },
     {
       "category": "Fire",
@@ -205,10 +212,52 @@
       "published": "2026-08-12 17:55"
     },
     {
+      "category": "Housing",
+      "title": "S'pore football head coach Gavin Lee & Irfan Fandi support anti-scalping campaign after S'pore vs Thailand ticket resales",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/gavin-lee-irfan-fandi-scalpers/",
+      "published": "2026-08-13 20:34"
+    },
+    {
+      "category": "General",
+      "title": "Shein loses UK copyright lawsuit against rival Temu over photos of clothing",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/shein-loses-uk-copyright-lawsuit-against-rival-temu-over-photos-clothing-6317191",
+      "published": "2026-08-13 17:49"
+    },
+    {
+      "category": "General",
+      "title": "US ambassador denounces settler siege as Israel dispatches troops",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-ambassador-denounces-settler-siege-israel-dispatches-troops-6315036",
+      "published": "2026-08-13 17:29"
+    },
+    {
+      "category": "General",
+      "title": "Gimmick or game changer? Chinese smart device maker Honor launches ‘robot phone’",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/honor-robot-phone-artificial-intelligence-smartphone-6317006",
+      "published": "2026-08-13 17:19"
+    },
+    {
+      "category": "General",
+      "title": "CK Hutchison first-half underlying profit up 6.7%",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ck-hutchison-first-half-underlying-profit-up-67-6317086",
+      "published": "2026-08-13 17:07"
+    },
+    {
+      "category": "General",
+      "title": "Rise of AI shopping pushes merchants to protect loyalty, Adyen says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/rise-ai-shopping-pushes-merchants-protect-loyalty-adyen-says-6317071",
+      "published": "2026-08-13 17:00"
+    },
+    {
       "category": "General",
       "title": "Taiwan says it was targeted last month in AI-driven hacking campaign",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/taiwan-ai-driven-cyberattack-hacking-campaign-6316266",
+      "url": "https://www.channelnewsasia.com/east-asia/taiwan-ai-cyberattack-hacking-campaign-6316266",
       "published": "2026-08-13 16:38"
     },
     {
@@ -220,9 +269,9 @@
     },
     {
       "category": "General",
-      "title": "Bangladesh humble Australia on day one of Darwin test",
+      "title": "Barnstorming Bangladesh humble Australia on day one of Darwin test",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/bangladesh-humble-australia-day-one-darwin-test-6317001",
+      "url": "https://www.channelnewsasia.com/sport/barnstorming-bangladesh-humble-australia-day-one-darwin-test-6317001",
       "published": "2026-08-13 16:22"
     },
     {
@@ -231,55 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/son-dutch-football-xavi-honoured-be-named-netherlands-coach-6316986",
       "published": "2026-08-13 16:10"
-    },
-    {
-      "category": "General",
-      "title": "Social media trends to blame? Why Malaysia is tightening hiking rules and what it means for hikers",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-hiking-new-rules-social-media-influence-6314241",
-      "published": "2026-08-13 16:03"
-    },
-    {
-      "category": "General",
-      "title": "Wallabies look for improvement against Japan after nervous debut under Kiss",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/wallabies-look-improvement-against-japan-after-nervous-debut-under-kiss-6316966",
-      "published": "2026-08-13 16:02"
-    },
-    {
-      "category": "General",
-      "title": "Iran to join BRICS development bank soon, central bank governor says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-join-brics-development-bank-us-international-sanctions-6316931",
-      "published": "2026-08-13 15:53"
-    },
-    {
-      "category": "General",
-      "title": "Meta says it has taken down 756,000 Australian teen accounts as ban enforcement looms",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/meta-australia-ban-social-media-6316436",
-      "published": "2026-08-13 15:36"
-    },
-    {
-      "category": "General",
-      "title": "Dollar-yuan becomes Hong Kong's most-traded currency pair for first time",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dollar-yuan-becomes-hong-kongs-most-traded-currency-pair-first-time-6316831",
-      "published": "2026-08-13 14:58"
-    },
-    {
-      "category": "General",
-      "title": "SAF regular siphoned S$1.6 million from father, including S$533,800 in CPF funds",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/saf-regular-siphon-16-million-father-cpf-funds-6316701",
-      "published": "2026-08-13 14:54"
-    },
-    {
-      "category": "General",
-      "title": "Jones shakes up Japan for second test v Australia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/jones-shakes-up-japan-second-test-v-australia-6316821",
-      "published": "2026-08-13 14:47"
     }
   ]
 }
