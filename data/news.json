@@ -1,12 +1,33 @@
 {
-  "last_updated": "2026-08-14 18:16",
+  "last_updated": "2026-08-14 19:09",
   "headlines": [
     {
       "category": "Crime",
-      "title": "3 charged over alleged scheme to pass off China-made mattresses as Singapore goods to avoid US duties",
+      "title": "Maid jailed after struggle over walking stick leaves 94-year-old employer with head injury",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-customs-mattress-china-us-import-duties-6319416",
-      "published": "2026-08-14 16:56"
+      "url": "https://www.channelnewsasia.com/singapore/maid-elderly-man-head-injury-walking-stick-6319676",
+      "published": "2026-08-14 18:50"
+    },
+    {
+      "category": "Crime",
+      "title": "Stablecoin issuer Tether says KPMG US has audited its 2025 statements",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/stablecoin-issuer-tether-says-kpmg-us-has-audited-its-2025-statements-6319736",
+      "published": "2026-08-14 18:28"
+    },
+    {
+      "category": "Crime",
+      "title": "Luigi Mangione, accused insurance CEO killer, due in court amid plea deal reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/luigi-mangione-trial-us-health-insurance-ceo-murder-plea-deal-6319691",
+      "published": "2026-08-14 18:19"
+    },
+    {
+      "category": "Crime",
+      "title": "Indonesian woman, 32, jailed 8.5 years in S'pore for cheating victims of over S$1.9 million, started out selling Taylor Swift tickets",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/indonesian-woman-32-jailed-taylor-swift-tickets/",
+      "published": "2026-08-14 23:39"
     },
     {
       "category": "Crime",
@@ -38,10 +59,10 @@
     },
     {
       "category": "Crime",
-      "title": "S'pore man, 34, allegedly molests 2 girls in 1 day, including 17-year-old stepdaughter",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/man-molest-2-girls-1-day-stepdaughter/",
-      "published": "2026-08-14 19:10"
+      "title": "3 people and firm charged over alleged false declarations involving $1.9m worth of goods",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/3-people-and-firm-charged-over-alleged-false-declarations-involving-1-9m-worth-of-goods",
+      "published": "2026-08-14 18:26"
     },
     {
       "category": "Crime",
@@ -150,17 +171,17 @@
     },
     {
       "category": "Traffic",
+      "title": "Mudslide in eastern China kills one, more heavy rain expected",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/mudslide-in-eastern-china-kills-one-more-heavy-rain-expected-6319611",
+      "published": "2026-08-14 18:23"
+    },
+    {
+      "category": "Traffic",
       "title": "Carrick seeks to build on revival as Man United chase return to elite",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/carrick-seeks-build-revival-man-united-chase-return-elite-6319551",
       "published": "2026-08-14 17:10"
-    },
-    {
-      "category": "Traffic",
-      "title": "French taxpayers' data stolen in cyber attack, French Finance Ministry says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/french-taxpayers-data-stolen-in-cyber-attack-french-finance-ministry-says-6319366",
-      "published": "2026-08-14 15:33"
     },
     {
       "category": "Traffic",
@@ -189,20 +210,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/singapore-registered-container-ship-crashes-into-riverbank-in-india",
       "published": "2026-08-13 16:35"
-    },
-    {
-      "category": "Traffic",
-      "title": "Royal Caribbean’s Navigator of the Seas Singapore season to be extended to a year from October",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/royal-caribbeans-navigator-of-the-seas-singapore-season-will-be-year-round-from-october",
-      "published": "2026-08-13 08:09"
-    },
-    {
-      "category": "Transport",
-      "title": "Air India A320 briefly lost key flight controls, Airbus analysis shows",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/air-india-phuket-delhi-flight-key-controls-unresponsive-airbus-6319356",
-      "published": "2026-08-14 15:37"
     },
     {
       "category": "Transport",
@@ -234,52 +241,45 @@
     },
     {
       "category": "General",
+      "title": "Oil set for weekly gains after US threatens indefinite blockade of Iran",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-set-weekly-gains-after-us-threatens-indefinite-blockade-iran-6319831",
+      "published": "2026-08-14 19:01"
+    },
+    {
+      "category": "General",
+      "title": "Manchester City's Maresca coy on Rodri future ahead of Community Shield",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/manchester-citys-maresca-coy-rodri-future-ahead-community-shield-6319796",
+      "published": "2026-08-14 18:56"
+    },
+    {
+      "category": "General",
+      "title": "Prabowo proposes US$230 billion budget for 2027; targets deficit at 2.4% of GDP",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/indonesia-budget-2027-president-prabowo-subianto-6319501",
+      "published": "2026-08-14 18:53"
+    },
+    {
+      "category": "General",
+      "title": "China's Z.ai says new model nears Anthropic's Mythos 5 in cyber-defence tests",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/china-ai-new-model-glm-anthropic-mythos-5-6319716",
+      "published": "2026-08-14 18:45"
+    },
+    {
+      "category": "General",
+      "title": "India seek boost in Sri Lanka to revive WTC hopes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/india-seek-boost-in-sri-lanka-revive-wtc-hopes-6319721",
+      "published": "2026-08-14 18:17"
+    },
+    {
+      "category": "General",
       "title": "Alphabet's SpaceX bet grows 100-fold over a decade to $94 billion",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/alphabets-spacex-bet-grows-100-fold-over-decade-94-billion-6319671",
       "published": "2026-08-14 18:05"
-    },
-    {
-      "category": "General",
-      "title": "Philippine president says joint oil and gas exploration with China a 'distinct possibility'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/philippines-china-joint-oil-gas-exploration-marcos-6319601",
-      "published": "2026-08-14 17:45"
-    },
-    {
-      "category": "General",
-      "title": "Cambodia says to resume military drills with US next year",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/cambodia-us-resume-military-drills-6319606",
-      "published": "2026-08-14 17:40"
-    },
-    {
-      "category": "General",
-      "title": "NATO jets shoot down drone in Latvian airspace: Spokesperson",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/latvia-shoots-down-drone-in-airspace-nato-russia-6318841",
-      "published": "2026-08-14 17:36"
-    },
-    {
-      "category": "General",
-      "title": "Odds stacked against promoted sides but Sunderland have shown the way",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/odds-stacked-against-promoted-sides-sunderland-have-shown-way-6319556",
-      "published": "2026-08-14 17:10"
-    },
-    {
-      "category": "General",
-      "title": "Revamped Chelsea aim to draw a line under years of disappointment",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/revamped-chelsea-aim-draw-line-under-years-disappointment-6319561",
-      "published": "2026-08-14 17:09"
-    },
-    {
-      "category": "General",
-      "title": "New boss Iraola aiming to re-ignite Liverpool challenge as new season looms",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/new-boss-iraola-aiming-re-ignite-liverpool-challenge-new-season-looms-6319541",
-      "published": "2026-08-14 17:04"
     }
   ]
 }
