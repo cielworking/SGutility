@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-SG">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,9 +11,14 @@
 
   <meta property="og:title" content="SG Alerts - Singapore Daily Dashboard">
   <meta property="og:description" content="Live checkpoint cameras, petrol prices, COE results, BTO launches and daily Singapore alerts.">
-  <meta property="og:url" content="https://sgalerts.com">
+    <meta property="og:url" content="https://sgalerts.com/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SG Alerts">
   <meta property="og:image" content="https://sgalerts.com/apple-touch-icon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SG Alerts - Singapore Daily Dashboard">
+  <meta name="twitter:description" content="Live checkpoint cameras, petrol prices, COE results, BTO launches and daily Singapore alerts.">
+  <meta name="twitter:image" content="https://sgalerts.com/apple-touch-icon.png">
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -26,11 +31,56 @@
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag("js", new Date());
-    gtag("config", "G-FXKD1E3N5Z");
+  <script src="/analytics.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://sgalerts.com/#website",
+        "url": "https://sgalerts.com/",
+        "name": "SG Alerts",
+        "description": "Singapore daily dashboard for checkpoint cameras, petrol prices, COE results, BTO launches and public information.",
+        "inLanguage": "en-SG"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://sgalerts.com/#organization",
+        "name": "SG Alerts",
+        "url": "https://sgalerts.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sgalerts.com/android-chrome-512x512.png"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://sgalerts.com/#webpage",
+        "url": "https://sgalerts.com/",
+        "name": "SG Alerts - Singapore Traffic, Petrol, COE & Daily Alerts",
+        "description": "SG Alerts is a Singapore daily dashboard for live Woodlands and Tuas checkpoint cameras, petrol prices, COE results, BTO launches, Singapore Pools results and daily public alerts.",
+        "isPartOf": { "@id": "https://sgalerts.com/#website" },
+        "about": { "@id": "https://sgalerts.com/#organization" },
+        "inLanguage": "en-SG"
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://sgalerts.com/#tools",
+        "name": "Singapore utility tools",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Woodlands Checkpoint Cameras", "url": "https://sgalerts.com/woodlands-checkpoint.html" },
+          { "@type": "ListItem", "position": 2, "name": "Tuas Checkpoint Cameras", "url": "https://sgalerts.com/tuas-checkpoint.html" },
+          { "@type": "ListItem", "position": 3, "name": "Singapore Petrol Prices", "url": "https://sgalerts.com/singapore-petrol-prices.html" },
+          { "@type": "ListItem", "position": 4, "name": "Latest COE Prices", "url": "https://sgalerts.com/latest-coe-prices.html" },
+          { "@type": "ListItem", "position": 5, "name": "Upcoming BTO Launches", "url": "https://sgalerts.com/bto-launches.html" },
+          { "@type": "ListItem", "position": 6, "name": "Latest 4D Results", "url": "https://sgalerts.com/4d-results.html" },
+          { "@type": "ListItem", "position": 7, "name": "Latest TOTO Results", "url": "https://sgalerts.com/toto-results.html" }
+        ]
+      }
+    ]
+  }
   </script>
 </head>
 
@@ -54,55 +104,13 @@
       </div>
     </section>
 
-    <section class="card cinelink-card wide-card">
-      <div class="cinelink-card-layout">
-        <div class="cinelink-card-copy">
-          <span class="cinelink-eyebrow">CineLink</span>
-          <h2>Watch Free Movies</h2>
-          <p>Browse the latest movies, TV series and anime, with title details and available viewing options.</p>
-
-          <a class="cinelink-card-button"
-             href="https://cinelink.sgalerts.com/"
-             target="_blank"
-             rel="noopener noreferrer">
-            Explore CineLink <span aria-hidden="true">→</span>
-          </a>
-        </div>
-
-        <a class="cinelink-card-preview"
-           href="https://cinelink.sgalerts.com/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Open the CineLink movie catalogue">
-          <img src="https://pxduxuuwajkdquxsqngh.supabase.co/storage/v1/object/public/movie-posters/66s6/2026/29166/df84afc98691ad1572c7a4a9c431e7b35160f63ca7e4f111c570abaf55bdd2cd.jpg"
-               alt="CineLink movie poster preview"
-               loading="lazy"
-               decoding="async">
-          <img src="https://pxduxuuwajkdquxsqngh.supabase.co/storage/v1/object/public/movie-posters/nnyy/2026/20260782/ff856446195f218ad5bff2d2900724e13e282906384d2f73680c2675be7eded9.jpg"
-               alt="CineLink movie poster preview"
-               loading="lazy"
-               decoding="async">
-          <img src="https://pxduxuuwajkdquxsqngh.supabase.co/storage/v1/object/public/movie-posters/nnyy/2026/20265539/505ed67ba9de4e204c0803cdbe710587e96ffcf0e0ae552a1192ee559a867c40.jpg"
-               alt="CineLink movie poster preview"
-               loading="lazy"
-               decoding="async">
-          <img src="https://pxduxuuwajkdquxsqngh.supabase.co/storage/v1/object/public/movie-posters/nnyy/2026/20264266/1f59d8694fae0d6c32adc80189b22333d43b8cbf62856aa5972bcb8e3c5070de.jpg"
-               alt="CineLink movie poster preview"
-               loading="lazy"
-               decoding="async">
-
-          <span class="cinelink-preview-label">Movies • TV • Anime</span>
-        </a>
-      </div>
-    </section>
-
     <section class="card checkpoint-card wide-card">
       <div class="card-header">
         <h2>Woodlands & Tuas Checkpoint</h2>
 
         <div class="card-actions">
           <button onclick="refreshCheckpointData()" class="refresh-btn">
-            🔄 Refresh
+            Refresh
           </button>
 
           <a id="checkpointSourceLink"
@@ -115,6 +123,11 @@
       </div>
 
       <p>Latest official LTA checkpoint traffic camera images.</p>
+
+      <div class="topic-links">
+        <a href="/woodlands-checkpoint.html">Woodlands live cameras</a>
+        <a href="/tuas-checkpoint.html">Tuas live cameras</a>
+      </div>
 
       <div id="checkpointResult" class="result">
         <p>Live Woodlands and Tuas checkpoint traffic camera images from official LTA sources.</p>
@@ -129,6 +142,10 @@
 
       <p>Petrol prices can change frequently. Cross-check before pumping.</p>
 
+      <div class="topic-links">
+        <a href="/singapore-petrol-prices.html">Compare Singapore petrol prices</a>
+      </div>
+
       <div id="petrolResult" class="result">
         <p>Latest Singapore petrol prices for Shell, Esso, SPC, Caltex, Sinopec and Smart Energy.</p>
       </div>
@@ -142,6 +159,10 @@
 
       <p>Latest COE bidding result from data.gov.sg / LTA.</p>
 
+      <div class="topic-links">
+        <a href="/latest-coe-prices.html">View full COE price table</a>
+      </div>
+
       <div id="coeResult" class="result">
         <p>Latest COE bidding results for Categories A, B, C, D and E in Singapore.</p>
       </div>
@@ -154,6 +175,10 @@
       </div>
 
       <p>Upcoming BTO launch summary for Singapore home buyers.</p>
+
+      <div class="topic-links">
+        <a href="/bto-launches.html">View upcoming BTO launches</a>
+      </div>
 
       <div id="btoResult" class="result">
         <p>Upcoming Singapore BTO launches, project locations and flat types.</p>
@@ -225,9 +250,8 @@
         </div>
 
         <div>
-          <h3>CineLink Movies</h3>
-          <p>Browse movies, TV series and anime in the CineLink catalogue and explore title details and available viewing options.</p>
-          <p><a href="https://cinelink.sgalerts.com/">Explore CineLink Movies</a></p>
+          <h3>BTO and Singapore Pools Updates</h3>
+          <p>Plan ahead with upcoming <a href="/bto-launches.html">BTO launches</a>, or check the latest <a href="/4d-results.html">4D</a> and <a href="/toto-results.html">TOTO</a> results.</p>
         </div>
       </div>
     </section>
@@ -235,7 +259,7 @@
 
   <div id="imageModal" class="image-modal">
     <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
-    <img id="modalImage" class="image-modal-content">
+    <img id="modalImage" class="image-modal-content" alt="">
     <div id="modalCaption" class="image-modal-caption"></div>
   </div>
 
@@ -243,13 +267,12 @@
     <div class="footer-links">
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="https://cinelink.sgalerts.com/">CineLink Movies</a>
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="terms.html">Terms</a>
     </div>
 
     <div class="footer-copy">
-      © 2026 SG Alerts • Independent Singapore Information Dashboard
+      &copy; 2026 SG Alerts &bull; Independent Singapore Information Dashboard
     </div>
   </footer>
 
