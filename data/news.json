@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-15 04:45",
+  "last_updated": "2026-08-15 05:39",
   "headlines": [
     {
       "category": "Crime",
@@ -42,6 +42,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/singapore-boy-14-sexual-assault-5-girls/",
       "published": "2026-08-14 21:08"
+    },
+    {
+      "category": "Crime",
+      "title": "ST Explains: How do scammers exploit government directories, and how can they be stopped?",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/tech/st-explains-how-do-scammers-exploit-government-directories-and-how-to-stop-it",
+      "published": "2026-08-15 05:10"
     },
     {
       "category": "Crime",
@@ -163,13 +170,6 @@
       "published": "2026-08-13 17:37"
     },
     {
-      "category": "Crime",
-      "title": "Police issue warning over compromised Telegram accounts due to fake public transport voucher links",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/police-issue-warning-after-telegram-accounts-compromised-due-to-fake-public-transport-voucher-links",
-      "published": "2026-08-13 14:30"
-    },
-    {
       "category": "Traffic",
       "title": "Italy's Euro 2020 winner Immobile retires after 17-year career",
       "source": "CNA",
@@ -182,6 +182,20 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/new-ambulance-features-reconfigured-two-patients-scdf-6319726",
       "published": "2026-08-15 00:00"
+    },
+    {
+      "category": "Traffic",
+      "title": "More pre-school choices, higher expectations: What do parents want from childcare now?",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/community/more-pre-school-choices-higher-expectations-what-do-parents-want-from-childcare-now",
+      "published": "2026-08-15 05:00"
+    },
+    {
+      "category": "Traffic",
+      "title": "New SCDF ambulance equipped to carry up to two patients; enhanced safety features for occupants",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/new-scdf-ambulance-equipped-to-carry-up-to-two-patients-enhanced-safety-features-for-occupants",
+      "published": "2026-08-15 05:00"
     },
     {
       "category": "Traffic",
@@ -210,13 +224,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/caring-for-the-elderly-brahm-centre-inks-agreement-with-ttsh-to-train-more-vocational-students",
       "published": "2026-08-13 19:45"
-    },
-    {
-      "category": "Traffic",
-      "title": "Singapore-registered container ship crashes into riverbank in India; MPA to probe incident",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/singapore-registered-container-ship-crashes-into-riverbank-in-india",
-      "published": "2026-08-13 16:35"
     },
     {
       "category": "Transport",
@@ -255,31 +262,24 @@
     },
     {
       "category": "General",
-      "title": "Hanwha, Fincantieri shares rise after Trump opens Navy shipbuilding to foreign yards",
+      "title": "Switzerland's Werro beats Olympic champion Hodgkinson for European 800m title",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/hanwha-fincantieri-shares-rise-after-trump-opens-navy-shipbuilding-foreign-yards-6320631",
-      "published": "2026-08-15 04:32"
+      "url": "https://www.channelnewsasia.com/sport/switzerlands-werro-beats-olympic-champion-hodgkinson-european-800m-title-6320681",
+      "published": "2026-08-15 05:16"
     },
     {
       "category": "General",
-      "title": "US regulator approves bank charter for Trump-backed crypto company World Liberty Financial",
+      "title": "Luigi Mangione admits killing insurance CEO, pleads guilty in federal case",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-regulator-approves-bank-charter-trump-backed-crypto-company-world-liberty-financial-6320586",
-      "published": "2026-08-15 04:05"
+      "url": "https://www.channelnewsasia.com/world/luigi-mangione-admits-killing-insurance-ceo-pleads-guilty-in-federal-case-6320656",
+      "published": "2026-08-15 05:15"
     },
     {
       "category": "General",
-      "title": "Romero bids farewell to Spurs ahead of Atletico move",
+      "title": "Trump says will 'soon' declare Hormuz strait US territory",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/romero-bids-farewell-spurs-ahead-atletico-move-6320541",
-      "published": "2026-08-15 03:12"
-    },
-    {
-      "category": "General",
-      "title": "New Zealand wing Clarke out of South Africa tour with shoulder injury",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/new-zealand-wing-clarke-out-south-africa-tour-shoulder-injury-6320501",
-      "published": "2026-08-15 02:32"
+      "url": "https://www.channelnewsasia.com/world/hormuz-trump-us-territory-soon-declare-iran-6320596",
+      "published": "2026-08-15 04:43"
     }
   ]
 }
