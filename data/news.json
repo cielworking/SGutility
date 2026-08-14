@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-15 02:05",
+  "last_updated": "2026-08-15 03:13",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Trump asks US Supreme Court to approve White House ballroom project",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/white-house-ballroom-project-trump-court-6320486",
+      "published": "2026-08-15 03:00"
+    },
     {
       "category": "Crime",
       "title": "At least S$6.1 million lost to scammers impersonating ICA, China officials",
@@ -233,18 +240,25 @@
       "published": "2026-08-14 04:00"
     },
     {
-      "category": "Money",
-      "title": "Down the rabbit hole: Social media is exploiting youthful angst for profit or politics",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/today/big-read/youth-online-social-media-influence-consumption-politics-extremist-views-6317066",
-      "published": "2026-08-14 21:30"
-    },
-    {
       "category": "Housing",
       "title": "New rules for property agents likely to weed out inactive ones, help consumers make better decisions",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/new-rules-for-property-agents-likely-to-weed-out-inactive-ones-help-consumers-make-better-decisions",
       "published": "2026-08-14 05:00"
+    },
+    {
+      "category": "General",
+      "title": "New Zealand wing Clarke out of South Africa tour with shoulder injury",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/new-zealand-wing-clarke-out-south-africa-tour-shoulder-injury-6320501",
+      "published": "2026-08-15 02:32"
+    },
+    {
+      "category": "General",
+      "title": "UK parliament probe into Farage resumes after polls win",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/farage-gift-investigation-parliament-uk-6320431",
+      "published": "2026-08-15 02:10"
     },
     {
       "category": "General",
@@ -262,24 +276,10 @@
     },
     {
       "category": "General",
-      "title": "Workday buyout may restore confidence in battered software valuations, analysts say",
+      "title": "Joshua Kushner's Thrive Capital discloses $215 million Amazon stake",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/workday-buyout-may-restore-confidence-in-battered-software-valuations-analysts-say-6320366",
-      "published": "2026-08-15 00:18"
-    },
-    {
-      "category": "General",
-      "title": "US raises pressure on EU to 'deliver' on non-tariff trade commitments",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-raises-pressure-eu-deliver-non-tariff-trade-commitments-6320346",
-      "published": "2026-08-15 00:17"
-    },
-    {
-      "category": "General",
-      "title": "Liverpool owners secure new investment from Bezos-backed consortium",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/liverpool-owners-secure-new-investment-bezos-backed-consortium-6320356",
-      "published": "2026-08-15 00:05"
+      "url": "https://www.channelnewsasia.com/business/joshua-kushners-thrive-capital-discloses-215-million-amazon-stake-6320391",
+      "published": "2026-08-15 00:57"
     }
   ]
 }
