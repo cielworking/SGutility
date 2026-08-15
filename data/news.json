@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-15 11:53",
+  "last_updated": "2026-08-15 12:46",
   "headlines": [
     {
       "category": "Crime",
@@ -142,13 +142,6 @@
       "published": "2026-08-13 19:46"
     },
     {
-      "category": "Crime",
-      "title": "Court of Appeal reserves judgment over TikToker’s appeal against 2025 rape conviction, sentence",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/court-of-appeal-reserves-judgement-over-tiktokers-appeal-against-2025-rape-conviction-sentence",
-      "published": "2026-08-13 19:41"
-    },
-    {
       "category": "Traffic",
       "title": "M'sian mosque caretaker & cleaner fined S$1,565 each for trying to have sex in mortuary room",
       "source": "Mothership",
@@ -157,16 +150,23 @@
     },
     {
       "category": "Traffic",
-      "title": "New SCDF ambulance equipped to carry up to two patients; enhanced safety features for occupants",
+      "title": "13 motorists caught for traffic offences at Woodlands Checkpoint during National Day period",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/new-scdf-ambulance-equipped-to-carry-up-to-two-patients-enhanced-safety-features-for-occupants",
-      "published": "2026-08-15 05:00"
+      "url": "https://www.straitstimes.com/singapore/13-motorists-caught-for-traffic-offences-at-woodlands-checkpoint-during-national-day-period",
+      "published": "2026-08-15 12:30"
     },
     {
       "category": "Traffic",
       "title": "More pre-school choices, higher expectations: What do parents want from childcare now?",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/community/more-pre-school-choices-higher-expectations-what-do-parents-want-from-childcare-now",
+      "published": "2026-08-15 05:00"
+    },
+    {
+      "category": "Traffic",
+      "title": "New SCDF ambulance equipped to carry up to two patients; enhanced safety features for occupants",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/new-scdf-ambulance-equipped-to-carry-up-to-two-patients-enhanced-safety-features-for-occupants",
       "published": "2026-08-15 05:00"
     },
     {
@@ -234,6 +234,20 @@
     },
     {
       "category": "General",
+      "title": "South Korea president proposes talks with North to formally end Korean War",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/south-korea-propose-talks-north-end-korean-war-6321036",
+      "published": "2026-08-15 12:24"
+    },
+    {
+      "category": "General",
+      "title": "India opt to bat in Galle opener against Sri Lanka",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/india-opt-bat-in-galle-opener-against-sri-lanka-6321021",
+      "published": "2026-08-15 12:17"
+    },
+    {
+      "category": "General",
       "title": "7 killed in tunnel collapse at Indian hydropower project",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/india-uttarakhand-tunnel-collapse-7-dead-6319141",
@@ -266,20 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/exclusive-anthropic-ipo-valuation-hinges-190-200-billion-2028-revenue-forecast-sources-say-6320831",
       "published": "2026-08-15 08:11"
-    },
-    {
-      "category": "General",
-      "title": "Putin says Russia, North Korea coordinating on regional security: Report",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/north-korea-russia-security-6320736",
-      "published": "2026-08-15 08:07"
-    },
-    {
-      "category": "General",
-      "title": "Nvidia scales back funding guarantee for Ohio OpenAI data center, WSJ reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-scales-back-funding-guarantee-ohio-openai-data-center-wsj-reports-6320821",
-      "published": "2026-08-15 07:43"
     }
   ]
 }
