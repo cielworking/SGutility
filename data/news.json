@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-16 00:40",
+  "last_updated": "2026-08-16 01:34",
   "headlines": [
     {
       "category": "Crime",
@@ -164,13 +164,6 @@
     },
     {
       "category": "Transport",
-      "title": "India PM Modi woos youth with free coaching, AI training",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-modi-education-youth-free-coaching-ai-training-6321086",
-      "published": "2026-08-15 13:00"
-    },
-    {
-      "category": "Transport",
       "title": "Go-Ahead bus captain finds & returns purse containing S$1,200 in cash",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/go-ahead-bus-captain-returns-cash/",
@@ -198,11 +191,25 @@
       "published": "2026-08-14 04:00"
     },
     {
+      "category": "Fire",
+      "title": "Residents evacuate as Belgium wildfire scorches 1,600 hectares",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/residents-evacuate-belgium-wildfire-scorches-1600-hectares-6321601",
+      "published": "2026-08-16 00:38"
+    },
+    {
       "category": "Housing",
       "title": "New rules for property agents likely to weed out inactive ones, help consumers make better decisions",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/new-rules-for-property-agents-likely-to-weed-out-inactive-ones-help-consumers-make-better-decisions",
       "published": "2026-08-14 05:00"
+    },
+    {
+      "category": "General",
+      "title": "Taliban government supporters dance, take selfies in Kabul celebrations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/taliban-government-supporters-dance-take-selfies-in-kabul-celebrations-6321626",
+      "published": "2026-08-16 01:10"
     },
     {
       "category": "General",
@@ -273,13 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/liverpools-como-double-header-key-test-new-season-says-iraola-6321301",
       "published": "2026-08-15 18:25"
-    },
-    {
-      "category": "General",
-      "title": "Spain's Perez and Italian Fiorini set women's race walk world records",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spains-perez-and-italian-fiorini-set-womens-race-walk-world-records-6321291",
-      "published": "2026-08-15 17:49"
     }
   ]
 }
