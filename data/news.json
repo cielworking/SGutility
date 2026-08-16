@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-08-17 05:34",
+  "last_updated": "2026-08-17 06:35",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Man arrested on suspicion of fraud after security operation disrupts European Championships",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/man-arrested-suspicion-fraud-after-security-operation-disrupts-european-championships-6322341",
-      "published": "2026-08-16 20:45"
-    },
     {
       "category": "Crime",
       "title": "M'sia authorities issue arrest warrant for S'porean man, he denies 'running away' & will continue to cooperate",
@@ -35,6 +28,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/driver-arrested-for-drug-offences-after-multi-vehicle-accident-in-bukit-panjang-vapes-found-in-van",
       "published": "2026-08-15 13:15"
+    },
+    {
+      "category": "Traffic",
+      "title": "Porsche to end production of flagship electric car: Report",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/obsessions/porsche-taycan-production-end-2030-6322751",
+      "published": "2026-08-17 06:08"
     },
     {
       "category": "Traffic",
@@ -94,17 +94,10 @@
     },
     {
       "category": "Fire",
-      "title": "67-year-old man dies in Jurong East flat fire; 50 residents evacuated",
+      "title": "Two dead, hundreds evacuated from fires on island near Athens",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/jurong-east-flat-fire-one-person-dead-50-residents-evacuated-6322301",
-      "published": "2026-08-16 19:26"
-    },
-    {
-      "category": "Fire",
-      "title": "Belgium counts on air support as record wildfire jumps in size",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/belgium-wildfire-record-size-air-support-6322246",
-      "published": "2026-08-16 17:30"
+      "url": "https://www.channelnewsasia.com/world/two-dead-hundreds-evacuated-fires-island-near-athens-6322716",
+      "published": "2026-08-17 05:50"
     },
     {
       "category": "Fire",
@@ -115,6 +108,13 @@
     },
     {
       "category": "Housing",
+      "title": "Slips, falls and stuck wheels: Residents raise concerns over tactile tiles in HDB estates",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/hdb-lta-tactile-tiles-falls-residents-6311086",
+      "published": "2026-08-17 06:00"
+    },
+    {
+      "category": "Housing",
       "title": "‘They don’t simply open doors and earn five figures’: How much do property agents really earn?",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/they-dont-simply-open-doors-and-earn-five-figures-how-much-do-property-agents-really-earn",
@@ -122,10 +122,52 @@
     },
     {
       "category": "General",
+      "title": "This Indonesian patisserie is drawing queues on Paris’ Rue Saint-Honore",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/experiences/la-petite-manis-indonesian-patisserie-paris-6316876",
+      "published": "2026-08-17 06:09"
+    },
+    {
+      "category": "General",
+      "title": "Zhu Rongji’s death adds new dimension to China's high-profile remembrance of Jiang Zemin",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-jiang-zemin-zhu-rongji-death-legacy-reforms-6319441",
+      "published": "2026-08-17 06:00"
+    },
+    {
+      "category": "General",
+      "title": "India wants to tap technology to prevent exam paper leaks, but experts say it’s not so simple",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-wants-tap-technology-prevent-exam-paper-leaks-experts-say-its-not-so-simple-6319071",
+      "published": "2026-08-17 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Are perceptions of university prestige changing as Asian institutions rise up the ranks?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/qs-university-ranking-asia-china-study-abroad-6309371",
+      "published": "2026-08-17 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Pandemic lockdowns never ended for some people",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/young-people-social-ties-isolation-inequality-6322271",
+      "published": "2026-08-17 05:59"
+    },
+    {
+      "category": "General",
       "title": "Trump's envoys meet mediators, Israel strikes Gaza",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/trumps-envoys-meet-mediators-israel-strikes-gaza-6322671",
       "published": "2026-08-17 05:09"
+    },
+    {
+      "category": "General",
+      "title": "Ngah’s double leads Cameroon to maiden Women’s Cup of Nations title",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ngahs-double-leads-cameroon-maiden-womens-cup-nations-title-6322696",
+      "published": "2026-08-17 05:08"
     },
     {
       "category": "General",
@@ -196,48 +238,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/sri-lanka-fight-back-through-spinners-india-460-9-6322346",
       "published": "2026-08-16 20:50"
-    },
-    {
-      "category": "General",
-      "title": "More than 1,000 rally at Hong Lim Park over Maju Forest, Gillman Barracks plans",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/sg-climate-rally-hong-lim-park-maju-forest-gillman-barracks-6322031",
-      "published": "2026-08-16 20:44"
-    },
-    {
-      "category": "General",
-      "title": "Bangladesh says PM will not visit India until ex-premier Hasina extradited",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/bangladesh-prime-minister-india-visit-hasina-extradited-6322326",
-      "published": "2026-08-16 20:13"
-    },
-    {
-      "category": "General",
-      "title": "Anwar pledges reforms, reaffirms needs-based policies at party congress after electoral setbacks",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-pkr-anwar-ibrahim-pakatan-harapan-6322121",
-      "published": "2026-08-16 19:01"
-    },
-    {
-      "category": "General",
-      "title": "Malaysia’s DAP votes overwhelmingly to stay on in Cabinet, offering reprieve to PM Anwar",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-dap-congress-anthony-loke-government-6322111",
-      "published": "2026-08-16 17:14"
-    },
-    {
-      "category": "General",
-      "title": "'Not functioning': Australia captain Cummins tips batting review after Bangladesh shock",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/not-functioning-australia-captain-cummins-tips-batting-review-after-bangladesh-shock-6322241",
-      "published": "2026-08-16 17:07"
-    },
-    {
-      "category": "General",
-      "title": "Iran accuses Qatar of thwarting probe into fate of pilots",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-accuse-qatar-probe-pilots-war-6322221",
-      "published": "2026-08-16 16:56"
     },
     {
       "category": "General",
