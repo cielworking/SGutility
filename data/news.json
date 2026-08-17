@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-17 23:38",
+  "last_updated": "2026-08-18 00:45",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Trump appeal in sex assault, defamation case rejected again",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-carroll-sexual-assault-defamation-case-rejected-6324316",
+      "published": "2026-08-18 00:16"
+    },
     {
       "category": "Crime",
       "title": "S'pore man, 60, threatens another man, 70, with knife during argument about alleged debt",
@@ -17,7 +24,7 @@
     },
     {
       "category": "Crime",
-      "title": "Repeat offender jailed over assault; fined in 2022 after harassing nurse during pandemic",
+      "title": "Repeat offender jailed over assault; past offences included harassing nurse during pandemic",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/repeat-offender-jailed-over-assault-fined-in-2022-after-harassing-nurse-during-pandemic",
       "published": "2026-08-17 18:31"
@@ -108,13 +115,6 @@
     },
     {
       "category": "Fire",
-      "title": "Singapore could experience haze if fires in Sumatra and Kalimantan intensify: Met Service",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/hazy-conditions-dry-weather-rainfall-temperatures-august-nea-6323631",
-      "published": "2026-08-17 18:49"
-    },
-    {
-      "category": "Fire",
       "title": "Drones used for the first time to fight fire on ship in Pasir Panjang terminal",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/drones-used-for-the-first-time-to-fight-fire-on-ship-in-pasir-panjang-terminal",
@@ -147,6 +147,27 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/they-dont-simply-open-doors-and-earn-five-figures-how-much-do-property-agents-really-earn",
       "published": "2026-08-16 12:00"
+    },
+    {
+      "category": "General",
+      "title": "Crowds turn out for 'Total Eclipse' singer Bonnie Tyler's funeral",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/bonnie-tyler-funeral-wales-crowds-6324331",
+      "published": "2026-08-18 00:33"
+    },
+    {
+      "category": "General",
+      "title": "Vingegaard will not race again this season",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/vingegaard-will-not-race-again-season-6324361",
+      "published": "2026-08-18 00:31"
+    },
+    {
+      "category": "General",
+      "title": "All Blacks confident Jordan and Roigard can make test side",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/all-blacks-confident-jordan-and-roigard-can-make-test-side-6324356",
+      "published": "2026-08-18 00:26"
     },
     {
       "category": "General",
@@ -259,27 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/higgsfields-valuation-soars-fourfold-54-billion-in-six-months-ai-content-demand-6323856",
       "published": "2026-08-17 19:49"
-    },
-    {
-      "category": "General",
-      "title": "Former Chua Chu Kang MP Tang See Chim, advocate for displaced farmers, dies at 94",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/tang-see-chim-chua-chu-kang-pap-mp-dies-farmers-6323671",
-      "published": "2026-08-17 19:33"
-    },
-    {
-      "category": "General",
-      "title": "Chess-Former Spain defender Pique joins chess investment boom",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/chess-former-spain-defender-pique-joins-chess-investment-boom-6323751",
-      "published": "2026-08-17 18:46"
-    },
-    {
-      "category": "General",
-      "title": "Apple to change app data consent rules, German regulator says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apple-change-app-data-consent-rules-german-regulator-says-6323721",
-      "published": "2026-08-17 18:23"
     }
   ]
 }
