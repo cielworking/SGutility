@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-17 15:15",
+  "last_updated": "2026-08-17 16:01",
   "headlines": [
     {
       "category": "Crime",
@@ -10,7 +10,7 @@
     },
     {
       "category": "Crime",
-      "title": "Unaccredited religious teacher gets jail and caning for raping boy and molesting his brother",
+      "title": "'Religious influencer' gets jail and caning for raping boy and molesting his brother",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/religious-teacher-unaccredited-rape-boys-brothers-jail-caning-6323246",
       "published": "2026-08-17 14:31"
@@ -115,6 +115,13 @@
     },
     {
       "category": "Fire",
+      "title": "Drones used for the first time to fight fire on ship in Pasir Panjang terminal",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/drones-used-for-the-first-time-to-fight-fire-on-ship-in-pasir-panjang-terminal",
+      "published": "2026-08-17 15:54"
+    },
+    {
+      "category": "Fire",
       "title": "One dead, 50 evacuated after fire at Jurong East HDB flat",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/one-dead-50-evacuated-after-fire-at-jurong-east-hdb-flat",
@@ -140,6 +147,34 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/they-dont-simply-open-doors-and-earn-five-figures-how-much-do-property-agents-really-earn",
       "published": "2026-08-16 12:00"
+    },
+    {
+      "category": "General",
+      "title": "China's industrial output slows in July, retail sales miss forecasts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/chinas-industrial-output-slows-in-july-retail-sales-miss-forecasts-6323436",
+      "published": "2026-08-17 15:55"
+    },
+    {
+      "category": "General",
+      "title": "South Korea reviewing Trump's comments on drills, hopes for US-North Korea talks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/south-korea-trump-us-drills-north-talks-6323391",
+      "published": "2026-08-17 15:29"
+    },
+    {
+      "category": "General",
+      "title": "Doctors raise alarm over Trump’s push to scale back US childhood vaccinations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/doctors-raise-alarm-trump-push-us-childhood-vaccinations-6323361",
+      "published": "2026-08-17 15:20"
+    },
+    {
+      "category": "General",
+      "title": "Xi Jinping leads event marking late Chinese leader Jiang Zemin's 100th birth anniversary",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-xi-jinping-jiang-zemin-100th-birth-anniversary-6323301",
+      "published": "2026-08-17 15:13"
     },
     {
       "category": "General",
@@ -199,7 +234,7 @@
     },
     {
       "category": "General",
-      "title": "Search for Indonesia quake victims underway on Independence Day",
+      "title": "Nearly 13,000 displaced after deadly Indonesian quake",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/indonesia-earthquake-victims-search-independence-day-6323036",
       "published": "2026-08-17 11:23"
@@ -227,31 +262,10 @@
     },
     {
       "category": "General",
-      "title": "Japan Q2 growth misses forecasts on weaker spending, investment",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/japan-q2-growth-misses-forecasts-weaker-spending-investment-6322871",
-      "published": "2026-08-17 10:10"
-    },
-    {
-      "category": "General",
-      "title": "MOH, major retailers say N95 mask stocks sufficient to meet demand if haze worsens",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/major-retailers-n95-masks-haze-air-quality-6319566",
-      "published": "2026-08-17 09:38"
-    },
-    {
-      "category": "General",
-      "title": "First Philippine rejects KKR proposal to buy stake in power generation unit",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/first-philippine-rejects-kkr-proposal-buy-stake-in-power-generation-unit-6322946",
-      "published": "2026-08-17 09:38"
-    },
-    {
-      "category": "General",
-      "title": "The couple that flies together stays together",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/advertorial/couple-flies-together-stays-together-6287291",
-      "published": "2026-08-17 09:25"
+      "title": "Lee Kuan Yew’s pen sold for S$461,500 at auction in S’pore",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/lee-kuan-yew-pen-sold/",
+      "published": "2026-08-17 19:34"
     },
     {
       "category": "General",
@@ -266,20 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/flores-indonesia-aftershock/",
       "published": "2026-08-17 19:22"
-    },
-    {
-      "category": "General",
-      "title": "Over 2,000 people turn up at Hong Lim Park over Maju Forest & Gillman Barracks plans",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/hong-lim-park-maju-forest-rally/",
-      "published": "2026-08-17 06:53"
-    },
-    {
-      "category": "General",
-      "title": "Offering table set up in front of Jalan Besar MPs' National Day billboard at Chinatown raises eyebrows",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/7th-month-prayers-jalan-besar-mps-billboard/",
-      "published": "2026-08-17 02:39"
     }
   ]
 }
