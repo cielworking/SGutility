@@ -1,12 +1,19 @@
 {
-  "last_updated": "2026-08-17 11:12",
+  "last_updated": "2026-08-17 12:57",
   "headlines": [
     {
       "category": "Crime",
-      "title": "M'sia authorities issue arrest warrant for S'porean man, he denies 'running away' & will continue to cooperate",
+      "title": "Family of elderly man, 73, thrown to ground at Roxy Square coffee shop lodges police report",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/sporean-wanted-msia-denies-running/",
-      "published": "2026-08-16 18:28"
+      "url": "https://mothership.sg/2026/08/elderly-man-thrown-ground-police-report/",
+      "published": "2026-08-17 02:47"
+    },
+    {
+      "category": "Crime",
+      "title": "Australian man, 37 & American man, 50, to be charged for allegedly stealing perfume bottles at Changi Airport",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/foreigners-arrest-theft-perfume-charged/",
+      "published": "2026-08-16 23:44"
     },
     {
       "category": "Crime",
@@ -31,6 +38,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Bike-sharing operator HelloRide warned over attempts to discuss prices with rival Anywheel",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/helloride-warned-attempting-price-fixing-discussions-anywheel-ccs-bike-sharing-6323116",
+      "published": "2026-08-17 12:29"
+    },
+    {
+      "category": "Traffic",
       "title": "It’s 2026 – why are brands still objectifying women to sell e-bikes, air-conditioners and more?",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/women/sexist-advertising-objectifying-women-6314456",
@@ -38,10 +52,17 @@
     },
     {
       "category": "Traffic",
-      "title": "Porsche to end production of flagship electric car: Report",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/porsche-taycan-production-end-2030-6322751",
-      "published": "2026-08-17 06:08"
+      "title": "Childcare costs, time with family among main challenges faced by S'porean couples: Indranee Rajah",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/childcare-costs-time-with-family-among-main-challenges-faced-by-sporean-couples-indranee-rajah/",
+      "published": "2026-08-17 03:30"
+    },
+    {
+      "category": "Traffic",
+      "title": "Man, 67, dies in fire at Jurong East block, no foul play suspected",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/man-die-jurong-east-ave-1-fire/",
+      "published": "2026-08-16 21:40"
     },
     {
       "category": "Traffic",
@@ -86,25 +107,11 @@
       "published": "2026-08-15 19:55"
     },
     {
-      "category": "Traffic",
-      "title": "13 motorists caught for traffic offences at Woodlands Checkpoint during National Day period",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/13-motorists-caught-for-traffic-offences-at-woodlands-checkpoint-during-national-day-period",
-      "published": "2026-08-15 12:30"
-    },
-    {
       "category": "Transport",
       "title": "Sheltered linkway to connect Tanjong Pagar CC to MRT station in a few years’ time",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/community/sheltered-linkway-to-connect-tanjong-pagar-cc-to-mrt-station-in-a-few-years-time",
       "published": "2026-08-15 21:15"
-    },
-    {
-      "category": "Fire",
-      "title": "Two dead, hundreds evacuated from fires on island near Athens",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/two-dead-hundreds-evacuated-fires-island-near-athens-6322716",
-      "published": "2026-08-17 05:50"
     },
     {
       "category": "Fire",
@@ -114,11 +121,11 @@
       "published": "2026-08-16 09:13"
     },
     {
-      "category": "Housing",
-      "title": "Tactile tiles in HDB estates pose risks too, say residents after LTA review",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/hdb-lta-tactile-tiles-falls-residents-6311086",
-      "published": "2026-08-17 06:00"
+      "category": "Money",
+      "title": "Free breakfast bundles for 12,000 P6 pupils at Cheers, FairPrice Xpress outlets in September",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/free-breakfast-for-12000-p6-pupils-at-cheers-fairprice-xpress-outlets-in-september",
+      "published": "2026-08-17 12:15"
     },
     {
       "category": "Housing",
@@ -126,6 +133,41 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/they-dont-simply-open-doors-and-earn-five-figures-how-much-do-property-agents-really-earn",
       "published": "2026-08-16 12:00"
+    },
+    {
+      "category": "General",
+      "title": "Ex-Senior Minister of State Lee Yi Shyan, WP MPs spar over party's stance on foreign firms",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/lee-yi-shyan-kenneth-tiong-jamus-lim-wp-pap-6323211",
+      "published": "2026-08-17 12:53"
+    },
+    {
+      "category": "General",
+      "title": "Maguire hopes 'big asset' Rashford stays at Manchester United",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/maguire-hopes-big-asset-rashford-stays-manchester-united-6323146",
+      "published": "2026-08-17 11:59"
+    },
+    {
+      "category": "General",
+      "title": "Indonesian beauty queen Putri Andriani Juficha dies at age 25",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/putri-andriani-juficha-miss-earth-indonesia-dies-6323016",
+      "published": "2026-08-17 11:58"
+    },
+    {
+      "category": "General",
+      "title": "American actress Hayden Panettiere dies at 36: Report",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/american-actress-hayden-panettiere-dies-36-report-6323061",
+      "published": "2026-08-17 11:30"
+    },
+    {
+      "category": "General",
+      "title": "Search for Indonesia quake victims underway on Independence Day",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/indonesia-earthquake-victims-search-independence-day-6323036",
+      "published": "2026-08-17 11:23"
     },
     {
       "category": "General",
@@ -160,6 +202,13 @@
       "title": "MOH, major retailers say N95 mask stocks sufficient to meet demand if haze worsens",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/major-retailers-n95-masks-haze-air-quality-6319566",
+      "published": "2026-08-17 09:38"
+    },
+    {
+      "category": "General",
+      "title": "First Philippine rejects KKR proposal to buy stake in power generation unit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/first-philippine-rejects-kkr-proposal-buy-stake-in-power-generation-unit-6322946",
       "published": "2026-08-17 09:38"
     },
     {
@@ -213,73 +262,24 @@
     },
     {
       "category": "General",
-      "title": "Zhu Rongji’s death adds new dimension to China's high-profile remembrance of Jiang Zemin",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-jiang-zemin-zhu-rongji-death-legacy-reforms-6319441",
-      "published": "2026-08-17 06:00"
-    },
-    {
-      "category": "General",
-      "title": "As India seeks to prevent exam paper leaks, what can it learn from other countries?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-seeks-prevent-exam-paper-leaks-what-can-it-learn-other-countries-6319071",
-      "published": "2026-08-17 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Do university rankings still matter to parents and students?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/qs-university-ranking-asia-china-study-abroad-6309371",
-      "published": "2026-08-17 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Pandemic lockdowns never ended for some people",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/young-people-social-ties-isolation-inequality-6322271",
-      "published": "2026-08-17 05:59"
-    },
-    {
-      "category": "General",
-      "title": "1 person conveyed to hospital after incident at Jurong West Swimming Complex",
+      "title": "Over 2,000 people turn up at Hong Lim Park over Maju Forest & Gillman Barracks plans",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/person-hospital-jurong-west-swimming-complex/",
-      "published": "2026-08-16 19:34"
+      "url": "https://mothership.sg/2026/08/hong-lim-park-maju-forest-rally/",
+      "published": "2026-08-17 06:53"
     },
     {
       "category": "General",
-      "title": "Indonesia 7.7-magnitude earthquake: Death toll rises to 47, at least 50 injured",
+      "title": "Offering table set up in front of Jalan Besar MPs' National Day billboard at Chinatown raises eyebrows",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/indonesia-quake-death-toll-47/",
-      "published": "2026-08-16 18:50"
+      "url": "https://mothership.sg/2026/08/7th-month-prayers-jalan-besar-mps-billboard/",
+      "published": "2026-08-17 02:39"
     },
     {
       "category": "General",
-      "title": "'Never give up': President Tharman cheers on S'pore Lions taking on Thailand",
+      "title": "NTU to stop using AI detectors from 2027: CNA",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/never-give-up-president-tharman-lions-football/",
-      "published": "2026-08-16 18:46"
-    },
-    {
-      "category": "General",
-      "title": "Current Ebola outbreak on track to be deadliest with 2,000 deaths recorded: WHO chief",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/ebola-outbreak-2026/",
-      "published": "2026-08-16 02:57"
-    },
-    {
-      "category": "General",
-      "title": "At least 38 dead after 7.7-magnitude earthquake hits eastern Indonesia",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/indonesia-flores-earthquake/",
-      "published": "2026-08-16 01:53"
-    },
-    {
-      "category": "General",
-      "title": "Maid in S'pore grabs 94-year-old employer's cane after he asks her to make food, he falls & hits head",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/maid-in-spore-grabs-94-year-old-employers-cane-after-he-asks-her-to-make-food-he-falls-hits-head/",
-      "published": "2026-08-16 01:39"
+      "url": "https://mothership.sg/2026/08/ntu-stop-ai-detectors-2027/",
+      "published": "2026-08-17 01:28"
     }
   ]
 }
