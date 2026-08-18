@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19 02:55",
+  "last_updated": "2026-08-19 03:40",
   "headlines": [
     {
       "category": "Crime",
@@ -164,6 +164,13 @@
     },
     {
       "category": "Transport",
+      "title": "OpenAI slows model training to bolster security after Hugging Face hack",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openai-slows-model-training-bolster-security-after-hugging-face-hack-6326676",
+      "published": "2026-08-19 03:03"
+    },
+    {
+      "category": "Transport",
       "title": "Six more bus interchanges, including Bishan and Tampines, to get upgraded facilities",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/six-more-bus-interchanges-including-bishan-and-tampines-to-get-upgraded-facilities",
@@ -203,6 +210,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/dollar-mostly-flat-softer-us-data-fuel-dovish-rate-bets-6324906",
       "published": "2026-08-18 23:22"
+    },
+    {
+      "category": "General",
+      "title": "US securities regulator proposes long-awaited crypto rules",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-securities-regulator-proposes-long-awaited-crypto-rules-6326661",
+      "published": "2026-08-19 02:50"
     },
     {
       "category": "General",
@@ -266,20 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/british-data-group-quantexa-exploring-uk-or-us-ipo-6326476",
       "published": "2026-08-19 00:29"
-    },
-    {
-      "category": "General",
-      "title": "Apple changes fees for alternative app stores in EU",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apple-changes-fees-alternative-app-stores-in-eu-6326421",
-      "published": "2026-08-19 00:03"
-    },
-    {
-      "category": "General",
-      "title": "Ukraine calls on FIA to reconsider lifting ban on competitors from Russia, Belarus",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ukraine-calls-fia-reconsider-lifting-ban-competitors-russia-belarus-6326406",
-      "published": "2026-08-18 23:56"
     }
   ]
 }
