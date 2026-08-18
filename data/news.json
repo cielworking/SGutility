@@ -1,12 +1,47 @@
 {
-  "last_updated": "2026-08-18 16:52",
+  "last_updated": "2026-08-18 17:48",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Man gets 9 months' jail after hitting, throwing pillow at baby daughter whose crying angered him",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/man-jailed-nine-months-abuse-infant-daughter-6325466",
+      "published": "2026-08-18 17:00"
+    },
+    {
+      "category": "Crime",
+      "title": "15-year-old arrested over Xinmin Secondary bomb hoax",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/teenager-arrested-xinmin-secondary-school-bomb-hoax-6325526",
+      "published": "2026-08-18 16:59"
+    },
     {
       "category": "Crime",
       "title": "WhatsApp, Telegram and other messaging services face new anti-scam rules in Singapore",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/anti-scam-ocha-messaging-social-media-ecommerce-spf-6325181",
       "published": "2026-08-18 15:00"
+    },
+    {
+      "category": "Crime",
+      "title": "S'pore driver fights with M'sian police on the way to Woodlands Checkpoint",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/driver-fight-malaysia-police-woodlands/",
+      "published": "2026-08-18 20:18"
+    },
+    {
+      "category": "Crime",
+      "title": "2 men, aged 43 & 50, both Chinese nationals, arrested for allegedly stealing up to S$400 from donation box at Balestier temple",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/2-chinese-men-steal-cash-donation-box-balestier-temple/",
+      "published": "2026-08-18 19:57"
+    },
+    {
+      "category": "Crime",
+      "title": "Woman, 42, a Chinese national, punches woman, 60, a S’porean colleague, over work matters at beauty salon, gets 3 months’ jail",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/woman-punch-colleague-work-arrangement-jail/",
+      "published": "2026-08-18 18:51"
     },
     {
       "category": "Crime",
@@ -31,10 +66,10 @@
     },
     {
       "category": "Crime",
-      "title": "Traffic police chase cyclists who took up 3 lanes along West Coast Highway",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/traffic-police-cyclists-west-coast/",
-      "published": "2026-08-17 22:50"
+      "title": "15-year-old arrested over bomb hoax at Xinmin Secondary School",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/15-year-old-arrested-in-relation-to-bomb-hoax-at-xinmin-secondary-school",
+      "published": "2026-08-18 17:06"
     },
     {
       "category": "Crime",
@@ -45,7 +80,7 @@
     },
     {
       "category": "Crime",
-      "title": "17-year-old arrested after claiming companions at Woodlands Checkpoint had a bomb, vaporiser",
+      "title": "17-year-old arrested after claiming companions at Woodlands Checkpoint had a bomb and vaporiser",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/17-year-old-arrested-after-claiming-companions-at-woodlands-checkpoint-had-a-bomb-vaporiser",
       "published": "2026-08-18 16:45"
@@ -93,13 +128,6 @@
       "published": "2026-08-17 16:39"
     },
     {
-      "category": "Crime",
-      "title": "Pedestrian, 79, dies in hospital after accident with car in Orchard Road area; driver arrested",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/pedestrian-79-dies-in-hospital-after-accident-with-car-in-orchard-road-area-driver-arrested",
-      "published": "2026-08-16 17:23"
-    },
-    {
       "category": "Traffic",
       "title": "Cathay Pacific pilots selected wrong radio frequency before NATO jets intercepted flight, investigation finds",
       "source": "CNA",
@@ -122,10 +150,10 @@
     },
     {
       "category": "Traffic",
-      "title": "More than 81,000 cartons of counterfeit cigarettes seized at Changi Free Trade Zone",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/customs-counterfeit-cigarettes-81000-cartons-seized-changi-6324996",
-      "published": "2026-08-18 11:54"
+      "title": "Choa Chu Kang resident accidentally throws phone down rubbish chute, town council worker helps retrieve it",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/choa-chu-kang-resident-throw-phone-rubbish-chute/",
+      "published": "2026-08-18 20:21"
     },
     {
       "category": "Traffic",
@@ -133,20 +161,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/toddler-alone-road-punggol/",
       "published": "2026-08-18 18:43"
-    },
-    {
-      "category": "Traffic",
-      "title": "Boy allegedly puts ‘Out of Order’ sign on Downtown East vending machine, owner says sales possibly affected",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/out-of-order-sign-vending-machine/",
-      "published": "2026-08-18 00:48"
-    },
-    {
-      "category": "Traffic",
-      "title": "Luxury eldercare from $8k to over $13k a month at Singapore’s first private assisted living project",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/housing/luxury-eldercare-from-8k-to-over-13k-a-month-at-singapores-first-private-assisted-living-project",
-      "published": "2026-08-18 12:00"
     },
     {
       "category": "Traffic",
@@ -184,18 +198,18 @@
       "published": "2026-08-18 15:37"
     },
     {
+      "category": "Transport",
+      "title": "All-day dining, hydrotherapy pool, hair salon bus at S’pore’s first private assisted living project",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/housing/luxury-eldercare-from-8k-to-over-13k-a-month-at-singapores-first-private-assisted-living-project",
+      "published": "2026-08-18 12:00"
+    },
+    {
       "category": "Fire",
       "title": "Make it rain: Indonesia chases clouds to stem El Nino fires",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sustainability/indonesia-forest-fires-el-nino-cloud-seeding-6325196",
       "published": "2026-08-18 12:55"
-    },
-    {
-      "category": "Fire",
-      "title": "Bond yields jump, oil extends gains as US-Iran ceasefire expires",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/bond-yields-jump-oil-extends-gains-us-iran-ceasefire-expires-6324846",
-      "published": "2026-08-18 12:04"
     },
     {
       "category": "Fire",
@@ -213,24 +227,31 @@
     },
     {
       "category": "Money",
-      "title": "P6 students can get free breakfast set worth over S$25 at Cheers & Fairprice Xpress outlets from Sep. 3 to 6",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/cheers-breakfast-bundle-2026/",
-      "published": "2026-08-18 00:47"
-    },
-    {
-      "category": "Money",
-      "title": "S’porean woman, 32, didn't declare jewellery brought into S'pore to evade S$946 GST, fined S$11,400",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/woman-fined-evade-gst-jewellery/",
-      "published": "2026-08-17 23:41"
-    },
-    {
-      "category": "Money",
       "title": "Free breakfast bundles for 12,000 P6 pupils at Cheers, FairPrice Xpress outlets in September",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/free-breakfast-for-12000-p6-pupils-at-cheers-fairprice-xpress-outlets-in-september",
       "published": "2026-08-17 12:15"
+    },
+    {
+      "category": "General",
+      "title": "Holders Al-Ahli to face former winners Al-Ain in Asian Champions League",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/holders-al-ahli-face-former-winners-al-ain-in-asian-champions-league-6325591",
+      "published": "2026-08-18 17:11"
+    },
+    {
+      "category": "General",
+      "title": "The Milky Way devoured a smaller galaxy about 11.8 billion years ago",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/milky-way-devoured-smaller-galaxy-about-118-billion-years-ago-6325576",
+      "published": "2026-08-18 17:00"
+    },
+    {
+      "category": "General",
+      "title": "Myanmar leader in Russia on diplomatic push, even as legal risks complicate travel elsewhere",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/myanmar-min-aung-hlaing-russia-visit-vladimir-putin-6325471",
+      "published": "2026-08-18 16:59"
     },
     {
       "category": "General",
@@ -259,27 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/asia-chief-hits-out-qatar-over-pushback-letter-attacking-infantino-6325316",
       "published": "2026-08-18 14:31"
-    },
-    {
-      "category": "General",
-      "title": "Malaysia considering consumption tax reform: Prime Minister Anwar",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-pm-anwar-consumption-tax-reform-gst-6325246",
-      "published": "2026-08-18 14:16"
-    },
-    {
-      "category": "General",
-      "title": "Why obesity is not simply about willpower",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/advertorial/why-obesity-not-simply-about-willpower-6255261",
-      "published": "2026-08-18 13:02"
-    },
-    {
-      "category": "General",
-      "title": "Park Eun-bin's K-drama Spooky In Love filmed in Singapore, features Lau Pa Sat, Kampong Glam and Charlie Goh",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/singapore-locations-park-eun-bin-spooky-in-love-6325076",
-      "published": "2026-08-18 12:59"
     }
   ]
 }
