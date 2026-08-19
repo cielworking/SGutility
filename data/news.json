@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19 09:52",
+  "last_updated": "2026-08-19 11:10",
   "headlines": [
     {
       "category": "Crime",
@@ -7,6 +7,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/australian-mushroom-murderer-erin-patterson-begins-appeal-against-sentence-6327221",
       "published": "2026-08-19 08:52"
+    },
+    {
+      "category": "Crime",
+      "title": "Man, 79, dies after accident with car in Orchard Road area, man, 46, arrested",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/man-dies-accident-orchard/",
+      "published": "2026-08-19 00:40"
     },
     {
       "category": "Crime",
@@ -28,13 +35,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/2-chinese-men-steal-cash-donation-box-balestier-temple/",
       "published": "2026-08-18 19:57"
-    },
-    {
-      "category": "Crime",
-      "title": "Woman, 42, a Chinese national, punches woman, 60, a S’porean colleague, over work matters at beauty salon, gets 3 months’ jail",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/woman-punch-colleague-work-arrangement-jail/",
-      "published": "2026-08-18 18:51"
     },
     {
       "category": "Crime",
@@ -136,31 +136,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Disney, ABC sue FCC over threats to broadcast licenses",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/disney-abc-sue-fcc-over-threats-broadcast-licenses-6326021",
-      "published": "2026-08-19 05:45"
-    },
-    {
-      "category": "Traffic",
-      "title": "Ferrari’s first electric car sells for record US$40 million despite design backlash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/ferrari-luce-ev-us40-million-auction-6326886",
-      "published": "2026-08-19 05:41"
-    },
-    {
-      "category": "Traffic",
       "title": "Choa Chu Kang resident accidentally throws phone down rubbish chute, town council worker helps retrieve it",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/choa-chu-kang-resident-throw-phone-rubbish-chute/",
       "published": "2026-08-18 20:21"
-    },
-    {
-      "category": "Traffic",
-      "title": "Toddler spotted running across road in Punggol, man immediately stops car & brings him to safety",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/toddler-alone-road-punggol/",
-      "published": "2026-08-18 18:43"
     },
     {
       "category": "Traffic",
@@ -191,13 +170,6 @@
       "published": "2026-08-17 17:15"
     },
     {
-      "category": "Traffic",
-      "title": "Competition watchdog warns HelloBikeSG over ‘attempts to propose price talks with rival Anywheel’",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/competition-watchdog-warns-hellobikesg-for-attempts-to-propose-price-talks-with-rival-anywheel",
-      "published": "2026-08-17 13:18"
-    },
-    {
       "category": "Transport",
       "title": "AI, sanctions and geopolitics: What they mean for businesses operating across borders",
       "source": "Straits Times",
@@ -226,17 +198,52 @@
       "published": "2026-08-17 15:54"
     },
     {
-      "category": "Money",
-      "title": "Free breakfast bundles for 12,000 P6 pupils at Cheers, FairPrice Xpress outlets in September",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/free-breakfast-for-12000-p6-pupils-at-cheers-fairprice-xpress-outlets-in-september",
-      "published": "2026-08-17 12:15"
+      "category": "Housing",
+      "title": "Japan bond yields near 3% as inflation, fiscal worries mount",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japan-bond-yields-near-3-inflation-fiscal-worries-mount-6327521",
+      "published": "2026-08-19 10:35"
     },
     {
       "category": "General",
-      "title": "Chinese humanoid robot maker Unitree set to jump over 600% in Shanghai debut",
+      "title": "Iman Fandi performs at Snoop Dogg’s Los Angeles music event, debuts upcoming single",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/chinese-humanoid-robot-maker-unitree-set-jump-over-600-in-shanghai-debut-6327331",
+      "url": "https://www.channelnewsasia.com/entertainment/iman-fandi-snoop-dogg-los-angeles-event-6327301",
+      "published": "2026-08-19 10:45"
+    },
+    {
+      "category": "General",
+      "title": "Peter Seah steps down as chair of National Wages Council for personal reasons; Hsieh Fu Hua takes over",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/peter-seah-step-down-chair-national-wages-council-hsieh-fu-hua-6327426",
+      "published": "2026-08-19 10:33"
+    },
+    {
+      "category": "General",
+      "title": "Chinese AI models at the centre of growing divide in Silicon Valley",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/chinese-ai-models-centre-growing-divide-silicon-valley-6327386",
+      "published": "2026-08-19 10:06"
+    },
+    {
+      "category": "General",
+      "title": "Beyond standard tuition: How Scholars Hall rebuilds academic confidence",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/advertorial/beyond-standard-tuition-how-scholars-hall-rebuilds-academic-confidence-6314281",
+      "published": "2026-08-19 10:02"
+    },
+    {
+      "category": "General",
+      "title": "New Zealand blocks lawsuits against firms over climate harm",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/new-zealand-block-lawsuit-climate-harm-6327366",
+      "published": "2026-08-19 09:53"
+    },
+    {
+      "category": "General",
+      "title": "Chinese humanoid robot maker Unitree opens over 600% higher in Shanghai debut",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/unitree-china-humanoid-robot-share-price-ipo-shanghai-6327331",
       "published": "2026-08-19 09:27"
     },
     {
@@ -273,13 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/oil-edges-up-uncertainty-over-exports-through-hormuz-6327231",
       "published": "2026-08-19 08:39"
-    },
-    {
-      "category": "General",
-      "title": "North Korea media slams joint US-South drills as 'open threat'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/north-korea-media-slams-joint-us-south-military-drills-6326936",
-      "published": "2026-08-19 08:08"
     }
   ]
 }
