@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19 21:07",
+  "last_updated": "2026-08-19 21:57",
   "headlines": [
     {
       "category": "Crime",
@@ -164,6 +164,13 @@
     },
     {
       "category": "Transport",
+      "title": "More graduating youth to benefit from NTUC’s bond-free scholarship with leadership training",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/more-graduating-youth-to-benefit-from-ntucs-bond-free-scholarship-with-leadership-training",
+      "published": "2026-08-19 20:40"
+    },
+    {
+      "category": "Transport",
       "title": "AI, sanctions and geopolitics: What they mean for businesses operating across borders",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/ai-sanctions-and-geopolitics-what-it-means-for-businesses-operating-across-borders",
@@ -175,13 +182,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/six-more-bus-interchanges-including-bishan-and-tampines-to-get-upgraded-facilities",
       "published": "2026-08-18 18:19"
-    },
-    {
-      "category": "Transport",
-      "title": "All-day dining, hydrotherapy pool, hair salon bus at S’pore’s first private assisted living project",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/housing/luxury-eldercare-from-8k-to-over-13k-a-month-at-singapores-first-private-assisted-living-project",
-      "published": "2026-08-18 12:00"
     },
     {
       "category": "Fire",
@@ -206,10 +206,31 @@
     },
     {
       "category": "General",
-      "title": "Trump to host crypto executives as SEC weighs regulations",
+      "title": "Coventry signs teenage forward Cherif from Fenerbahce",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-host-crypto-executives-sec-weighs-regulations-6328821",
+      "url": "https://www.channelnewsasia.com/sport/coventry-signs-teenage-forward-cherif-fenerbahce-6328926",
+      "published": "2026-08-19 21:53"
+    },
+    {
+      "category": "General",
+      "title": "Infantino loses more support as FIFA official says COO dismissal was 'final straw'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/infantino-loses-more-support-fifa-official-says-coo-dismissal-was-final-straw-6328916",
+      "published": "2026-08-19 21:44"
+    },
+    {
+      "category": "General",
+      "title": "Trump to host crypto executives as SEC considers regulations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/trump-host-crypto-executives-sec-considers-regulations-6328821",
       "published": "2026-08-19 20:57"
+    },
+    {
+      "category": "General",
+      "title": "Sailing-Ocean Race launches twin race for Atlantic glory and greenest crew",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/sailing-ocean-race-launches-twin-race-atlantic-glory-and-greenest-crew-6328796",
+      "published": "2026-08-19 20:48"
     },
     {
       "category": "General",
@@ -259,27 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/villa-bolster-squad-arrivals-suzuki-and-ruggeri-6328571",
       "published": "2026-08-19 18:30"
-    },
-    {
-      "category": "General",
-      "title": "India captain Gill hails long-term prospect Suthar",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/india-captain-gill-hails-long-term-prospect-suthar-6328541",
-      "published": "2026-08-19 18:26"
-    },
-    {
-      "category": "General",
-      "title": "Most Americans believe Trump has inappropriately profited since returning to power, Reuters/Ipsos poll finds",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/most-americans-believe-trump-has-inappropriately-profited-returning-power-reutersipsos-poll-finds-6328516",
-      "published": "2026-08-19 18:08"
-    },
-    {
-      "category": "General",
-      "title": "Demand from US data-center boom radiates out through factory supply chains",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/demand-us-data-center-boom-radiates-out-through-factory-supply-chains-6328521",
-      "published": "2026-08-19 18:05"
     }
   ]
 }
