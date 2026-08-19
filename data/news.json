@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19 19:38",
+  "last_updated": "2026-08-19 21:07",
   "headlines": [
     {
       "category": "Crime",
@@ -21,6 +21,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/woman-accuses-singapore-braised-duck-stall-exposed/",
       "published": "2026-08-19 20:17"
+    },
+    {
+      "category": "Crime",
+      "title": "Man jailed for assaulting 59-year-old coffeeshop employee, who suffered spinal fracture",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-jailed-for-assaulting-59-year-old-coffeeshop-employee-who-suffered-spinal-fracture",
+      "published": "2026-08-19 19:52"
     },
     {
       "category": "Crime",
@@ -100,11 +107,18 @@
       "published": "2026-08-18 14:05"
     },
     {
-      "category": "Crime",
-      "title": "Two men arrested for allegedly breaking into Balestier temple, stealing cash from donation boxes",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/two-men-arrested-for-allegedly-breaking-into-balestier-temple-stealing-cash-from-donation-boxes",
-      "published": "2026-08-17 23:00"
+      "category": "Traffic",
+      "title": "NTUC ramping up early career support for graduating youths amid AI shifts: Ng Chee Meng",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/career-support-jobs-graduation-youth-ntuc-ai-6328701",
+      "published": "2026-08-19 20:56"
+    },
+    {
+      "category": "Traffic",
+      "title": "Initiative to help rough sleepers find co-tenants for rental flats among pilot projects given MSF funding",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/homeless-rough-sleeper-msf-funding-jobs-housing-6328336",
+      "published": "2026-08-19 20:01"
     },
     {
       "category": "Traffic",
@@ -119,6 +133,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/japanese-receptionist-steals-credit-card/",
       "published": "2026-08-19 19:24"
+    },
+    {
+      "category": "Traffic",
+      "title": "Housing, jobs, rebuilding family ties: 17 projects to be piloted to help rough sleepers in S’pore",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/community/housing-jobs-rebuilding-family-ties-17-projects-to-be-piloted-to-help-rough-sleepers-in-spore",
+      "published": "2026-08-19 20:00"
     },
     {
       "category": "Traffic",
@@ -143,13 +164,6 @@
     },
     {
       "category": "Transport",
-      "title": "Polytechnics step up autonomous mobility training as industry needs evolve",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/polytechnics-autonomous-transport-vehicles-training-6328186",
-      "published": "2026-08-19 16:47"
-    },
-    {
-      "category": "Transport",
       "title": "AI, sanctions and geopolitics: What they mean for businesses operating across borders",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/ai-sanctions-and-geopolitics-what-it-means-for-businesses-operating-across-borders",
@@ -171,13 +185,6 @@
     },
     {
       "category": "Fire",
-      "title": "Fire in a building housing several hotels in eastern India kills 9 and injures 6",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/fire-in-building-housing-several-hotels-in-eastern-india-kills-9-and-injures-6-6328256",
-      "published": "2026-08-19 16:35"
-    },
-    {
-      "category": "Fire",
       "title": "Man set woman, 62, on fire in M'sia lottery shop, allegedly due to lottery winnings dispute",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/malaysia-suspect-set-woman-on-fire-lottery-ticket-dispute/",
@@ -192,17 +199,52 @@
     },
     {
       "category": "Money",
-      "title": "COE prices close mostly higher; Category A premiums rise to more than S$128,500",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/coe-premiums-aug-19-bidding-exercise-6325771",
-      "published": "2026-08-19 16:12"
-    },
-    {
-      "category": "Money",
       "title": "COE premiums up across most categories; Cat A price climbs 3.7% to $128,501",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/coe-premiums-up-across-most-categories-cat-a-price-climbs-3-7-to-128501",
       "published": "2026-08-19 16:20"
+    },
+    {
+      "category": "General",
+      "title": "Trump to host crypto executives as SEC weighs regulations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/trump-host-crypto-executives-sec-weighs-regulations-6328821",
+      "published": "2026-08-19 20:57"
+    },
+    {
+      "category": "General",
+      "title": "Israeli military launches criminal probes into killings of Hind Rajab and Palestinian paramedics",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/israel-gaza-war-military-launches-probes-killing-hind-rajab-palestinian-paramedics-6328636",
+      "published": "2026-08-19 20:39"
+    },
+    {
+      "category": "General",
+      "title": "Marvell gives Google option to buy $12.2 billion stake in custom chip deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/marvell-gives-google-option-buy-122-billion-stake-in-custom-chip-deal-6328781",
+      "published": "2026-08-19 20:38"
+    },
+    {
+      "category": "General",
+      "title": "Sheffield United's ex-owners winds up company which bought club",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/sheffield-uniteds-ex-owners-winds-up-company-which-bought-club-6328786",
+      "published": "2026-08-19 20:36"
+    },
+    {
+      "category": "General",
+      "title": "Nebius plans $4.5 billion convertible debt sale to fund data centers, AI platform",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nebius-plans-45-billion-convertible-debt-sale-fund-data-centers-ai-platform-6328756",
+      "published": "2026-08-19 20:12"
+    },
+    {
+      "category": "General",
+      "title": "Analog Devices' quarterly forecast tops estimates on AI-fueled chip demand",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/analog-devices-quarterly-forecast-tops-estimates-ai-fueled-chip-demand-6328696",
+      "published": "2026-08-19 19:42"
     },
     {
       "category": "General",
@@ -238,48 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/demand-us-data-center-boom-radiates-out-through-factory-supply-chains-6328521",
       "published": "2026-08-19 18:05"
-    },
-    {
-      "category": "General",
-      "title": "Europe AI data centres seek cheaper, quicker energy and land",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/europe-ai-data-centres-seek-cheaper-quicker-energy-and-land-6328491",
-      "published": "2026-08-19 18:01"
-    },
-    {
-      "category": "General",
-      "title": "Former Meta engineer resumes testimony in landmark trial over social media's harm to young users",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/former-meta-engineer-resumes-testimony-in-landmark-trial-over-social-medias-harm-young-users-6328496",
-      "published": "2026-08-19 18:01"
-    },
-    {
-      "category": "General",
-      "title": "Japan criticises US over 'unfortunate' sanctions on ICC",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/japan-criticises-us-sanctions-icc-netanyahu-tomoko-akane-6328436",
-      "published": "2026-08-19 17:48"
-    },
-    {
-      "category": "General",
-      "title": "Woman reportedly attacked by wild boar sues NParks, alleging negligence",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/nparks-lawsuit-negligence-wild-boar-attack-botanic-gardens-fall-6328201",
-      "published": "2026-08-19 17:30"
-    },
-    {
-      "category": "General",
-      "title": "Pogba and Monaco part ways after one season",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pogba-and-monaco-part-ways-after-one-season-6328396",
-      "published": "2026-08-19 17:29"
-    },
-    {
-      "category": "General",
-      "title": "Crossing a ‘red’ line? Chinese comedy star investigated over altered song lyrics",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-comedian-guo-degang-investigated-song-lyrics-6328251",
-      "published": "2026-08-19 17:14"
     }
   ]
 }
