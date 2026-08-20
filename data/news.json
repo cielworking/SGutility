@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-20 17:49",
+  "last_updated": "2026-08-20 18:46",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Singapore police say they are looking into iron ore trader Radiant World",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/singapore-police-say-they-are-looking-iron-ore-trader-radiant-world-6330141",
+      "published": "2026-08-20 18:39"
+    },
     {
       "category": "Crime",
       "title": "Trial opens for man accused of sexually assaulting 16-year-old girl in Admiralty Park female toilet",
@@ -31,6 +38,13 @@
     },
     {
       "category": "Crime",
+      "title": "Town council files police report after boys allegedly access HDB lift shaft in Woodlands",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/town-council-files-police-report-after-boys-allegedly-access-hdb-lift-shaft-in-woodlands",
+      "published": "2026-08-20 17:50"
+    },
+    {
+      "category": "Crime",
       "title": "Motorcyclist arrested after fleeing police roadblock and getting into accident in Farrer Road",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/motorcyclist-arrested-after-fleeing-police-roadblock-and-getting-into-accident-in-farrer-road",
@@ -38,7 +52,7 @@
     },
     {
       "category": "Crime",
-      "title": "Yishun jewellery store employee swopped gold pieces with Taobao copies, gets over 2 years’ jail",
+      "title": "Yishun jewellery store employee who swopped gold pieces with Taobao copies gets over 2 years’ jail",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/yishun-jewellery-store-employee-swopped-gold-pieces-with-copies-from-taobao-gets-over-2-years-jail",
       "published": "2026-08-20 16:28"
@@ -101,10 +115,10 @@
     },
     {
       "category": "Traffic",
-      "title": "North Korea fires suspected ballistic missile, Japanese authorities say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/north-korea-fires-suspected-ballistic-missile-japan-6330706",
-      "published": "2026-08-20 17:08"
+      "title": "4 masked men with sledgehammers rob Klang, M'sia goldsmith, flee with valuables on motorcycles",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/gold-robbery-klang-malaysia/",
+      "published": "2026-08-20 23:18"
     },
     {
       "category": "Traffic",
@@ -136,10 +150,10 @@
     },
     {
       "category": "Transport",
-      "title": "S'pore woman, 37, sues NParks for S$39,827 in special damages after wild boar attack at bus stop",
+      "title": "SBS Transit staff & commuters perform CPR on man who collapsed at Woodleigh MRT station",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/nparks-sued-negligence-wild-boar-attack-falls-botanic-gardens/",
-      "published": "2026-08-20 03:09"
+      "url": "https://mothership.sg/2026/08/sbs-transit-staff-commuters-perform-cpr-on-man-who-collapsed-at-woodleigh-mrt-station/",
+      "published": "2026-08-20 23:44"
     },
     {
       "category": "Transport",
@@ -164,24 +178,10 @@
     },
     {
       "category": "Fire",
-      "title": "Man, who allegedly harassed ABC Brickworks hawkers, fired by security firm",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/man-harass-hawkers/",
-      "published": "2026-08-20 11:04"
-    },
-    {
-      "category": "Fire",
       "title": "Fire at NAFA workshop leads to evacuation of campus wing; no injuries reported",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/nafa-campus-wing-evacuated-as-scdf-puts-out-fire-in-workshop",
       "published": "2026-08-20 10:50"
-    },
-    {
-      "category": "Money",
-      "title": "COE premiums up across most categories; Cat A price climbs 3.7% to $128,501",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/coe-premiums-up-across-most-categories-cat-a-price-climbs-3-7-to-128501",
-      "published": "2026-08-19 16:20"
     },
     {
       "category": "Housing",
@@ -189,6 +189,48 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/east-asia/china-property-evergrande-hui-ka-yan-sentence-china-economy-6330606",
       "published": "2026-08-20 15:47"
+    },
+    {
+      "category": "General",
+      "title": "Breaking's next move: escaping the long shadow of Raygun",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/breakings-next-move-escaping-long-shadow-raygun-6330921",
+      "published": "2026-08-20 18:32"
+    },
+    {
+      "category": "General",
+      "title": "Gains in AI company stakes juice second-quarter earnings for S&P 500",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/gains-in-ai-company-stakes-juice-second-quarter-earnings-sp-500-6330896",
+      "published": "2026-08-20 18:24"
+    },
+    {
+      "category": "General",
+      "title": "New Zealand's Jordan, Roigard fit to face Springboks in first test",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/new-zealands-jordan-roigard-fit-face-springboks-in-first-test-6330901",
+      "published": "2026-08-20 18:24"
+    },
+    {
+      "category": "General",
+      "title": "Ant Group quarterly profits rise 1% on year",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ant-group-quarterly-profits-rise-1-year-6330836",
+      "published": "2026-08-20 18:06"
+    },
+    {
+      "category": "General",
+      "title": "Exclusive-How a Texas student blew the whistle on a rogue AI hacking attempt",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/exclusive-how-texas-student-blew-whistle-rogue-ai-hacking-attempt-6330841",
+      "published": "2026-08-20 18:05"
+    },
+    {
+      "category": "General",
+      "title": "Satellite proliferation imperils astronomical observations, study finds",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/satellite-proliferation-imperils-astronomical-observations-study-finds-6330816",
+      "published": "2026-08-20 18:03"
     },
     {
       "category": "General",
@@ -203,6 +245,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/psg-heavily-fancied-win-sixth-successive-ligue-1-title-6330726",
       "published": "2026-08-20 17:10"
+    },
+    {
+      "category": "General",
+      "title": "North Korea launches 10 ballistic missiles as US-South Korea drills near end",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/north-korea-fires-suspected-ballistic-missile-japan-6330706",
+      "published": "2026-08-20 17:08"
     },
     {
       "category": "General",
@@ -231,55 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/australia-passes-law-levy-tech-giants-fail-pay-local-news-6330636",
       "published": "2026-08-20 15:54"
-    },
-    {
-      "category": "General",
-      "title": "Qatar still not satisfied with Asia chief over Infantino letter",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/qatar-still-not-satisfied-asia-chief-over-infantino-letter-6330611",
-      "published": "2026-08-20 15:35"
-    },
-    {
-      "category": "General",
-      "title": "Singapore and India discuss bilateral cooperation on semiconductors, food security at ministerial meeting",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/india-singapore-semiconductors-food-safety-6330246",
-      "published": "2026-08-20 15:30"
-    },
-    {
-      "category": "General",
-      "title": "Verstappen commits to Red Bull until end of 2030",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/verstappen-commits-red-bull-until-end-2030-6330576",
-      "published": "2026-08-20 15:14"
-    },
-    {
-      "category": "General",
-      "title": "Beijing ‘commends’ Malaysia PM Anwar’s ‘One China’ stance following Taiwan’s rebuke",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/china-malaysia-anwar-ibrahim-taiwan-force-6330456",
-      "published": "2026-08-20 14:58"
-    },
-    {
-      "category": "General",
-      "title": "Skanska to build four US data centres for $1.2 billion",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/skanska-build-four-us-data-centres-12-billion-6330536",
-      "published": "2026-08-20 14:53"
-    },
-    {
-      "category": "General",
-      "title": "New Mofusand and Starbucks Singapore merchandise launching on Aug 25",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/dining/mofusand-starbucks-singapore-new-merchandise-6330396",
-      "published": "2026-08-20 14:34"
-    },
-    {
-      "category": "General",
-      "title": "Law Society to release audit report on workplace issues after redaction process",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/law-society-release-full-workplace-culture-audit-report-6330416",
-      "published": "2026-08-20 14:27"
     }
   ]
 }
