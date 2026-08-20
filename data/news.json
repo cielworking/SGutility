@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-20 15:05",
+  "last_updated": "2026-08-20 15:56",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "China charges 17 members of Myanmar-based human trafficking ring targeting Chinese citizens",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-myanmar-human-trafficking-ring-17-charged-6330601",
+      "published": "2026-08-20 15:52"
+    },
     {
       "category": "Crime",
       "title": "China jails Evergrande founder for life, fines firm more than US$2 billion",
@@ -14,13 +21,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/fun-coffee-woman-claims-victim/",
       "published": "2026-08-20 00:38"
-    },
-    {
-      "category": "Crime",
-      "title": "Seletar West Link car & motorcycle traffic incident: Man, 25, dead, woman, 57, arrested",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/man-dies-seletar-link/",
-      "published": "2026-08-19 23:18"
     },
     {
       "category": "Crime",
@@ -108,20 +108,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Kane content at Bayern, no longer feels same 'itch' to make Premier League return",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/kane-content-bayern-no-longer-feels-same-itch-make-premier-league-return-6330201",
-      "published": "2026-08-20 11:56"
-    },
-    {
-      "category": "Traffic",
-      "title": "Singapore Arrival Card enhanced with more language options, passport scan autofill",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-arrival-card-sgac-update-7-language-passport-scan-6330076",
-      "published": "2026-08-20 11:32"
-    },
-    {
-      "category": "Traffic",
       "title": "SG Arrival Card to get refreshed interface with 19 language options, passport scan autofill",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/sg-arrival-card-to-see-refreshed-interface-with19-language-options-and-passport-scan-autofill",
@@ -149,18 +135,32 @@
       "published": "2026-08-19 13:11"
     },
     {
-      "category": "Traffic",
-      "title": "Age-related hearing loss: Why acting early can help older adults stay connected",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/age-related-hearing-loss-acting-early-helps-older-adults-stay-connected-20db",
-      "published": "2026-08-19 04:00"
-    },
-    {
       "category": "Transport",
       "title": "Four workers hit and killed by train in Japan",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/east-asia/japan-train-hit-four-workers-6330276",
       "published": "2026-08-20 12:32"
+    },
+    {
+      "category": "Transport",
+      "title": "S'pore woman, 37, sues NParks for S$39,827 in special damages after wild boar attack at bus stop",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/nparks-sued-negligence-wild-boar-attack-falls-botanic-gardens/",
+      "published": "2026-08-20 03:09"
+    },
+    {
+      "category": "Transport",
+      "title": "'Now have to constantly restrain myself': Halimah Yacob on patting kids following Roxy Square altercation",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/halimah-yacob-restrain-myself-touching-kids-endearment/",
+      "published": "2026-08-20 02:21"
+    },
+    {
+      "category": "Transport",
+      "title": "Robot in Little India MRT station can help commuters find their way, give travel information",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/robot-in-little-india-mrt-station-can-help-commuters-find-their-way-give-travel-information",
+      "published": "2026-08-20 15:43"
     },
     {
       "category": "Transport",
@@ -178,10 +178,10 @@
     },
     {
       "category": "Fire",
-      "title": "Man set woman, 62, on fire in M'sia lottery shop, allegedly due to lottery winnings dispute",
+      "title": "Man, who allegedly harassed ABC Brickworks hawkers, fired by security firm",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/malaysia-suspect-set-woman-on-fire-lottery-ticket-dispute/",
-      "published": "2026-08-20 00:18"
+      "url": "https://mothership.sg/2026/08/man-harass-hawkers/",
+      "published": "2026-08-20 11:04"
     },
     {
       "category": "Fire",
@@ -206,6 +206,13 @@
     },
     {
       "category": "Housing",
+      "title": "What property giant Evergrande's sentence means for China's economy",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-property-evergrande-hui-ka-yan-sentence-china-economy-6330606",
+      "published": "2026-08-20 15:47"
+    },
+    {
+      "category": "Housing",
       "title": "S'pore man, 69, allegedly breaches protection order by singing & banging cans outside neighbour's Yishun flat",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/yishun-man-sing-bang-can/",
@@ -213,10 +220,38 @@
     },
     {
       "category": "General",
+      "title": "Qatar still not satisfied with Asia chief over Infantino letter",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/qatar-still-not-satisfied-asia-chief-over-infantino-letter-6330611",
+      "published": "2026-08-20 15:35"
+    },
+    {
+      "category": "General",
+      "title": "Singapore and India discuss bilateral cooperation on semiconductors, food security at ministerial meeting",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/india-singapore-semiconductors-food-safety-6330246",
+      "published": "2026-08-20 15:30"
+    },
+    {
+      "category": "General",
+      "title": "Verstappen will continue with Red Bull Racing until the end of the 2030 Formula One season",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/verstappen-will-continue-red-bull-racing-until-end-2030-formula-one-season-6330576",
+      "published": "2026-08-20 15:14"
+    },
+    {
+      "category": "General",
       "title": "Beijing ‘commends’ Malaysia PM Anwar’s ‘One China’ stance following Taiwan’s rebuke",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/china-malaysia-anwar-ibrahim-taiwan-force-6330456",
       "published": "2026-08-20 14:58"
+    },
+    {
+      "category": "General",
+      "title": "Skanska to build four US data centres for $1.2 billion",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/skanska-build-four-us-data-centres-12-billion-6330536",
+      "published": "2026-08-20 14:53"
     },
     {
       "category": "General",
@@ -245,41 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/obsessions/womens-suits-tailoring-trend-6330371",
       "published": "2026-08-20 14:05"
-    },
-    {
-      "category": "General",
-      "title": "Australia races to shield little penguins from H5N1 bird flu",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/australia-h5n1-bird-flu-penguin-vaccinate-6330421",
-      "published": "2026-08-20 13:46"
-    },
-    {
-      "category": "General",
-      "title": "SK Hynix to pay 60% of employee bonuses in stock under preliminary deal, source says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sk-hynix-pay-60-employee-bonuses-in-stock-under-preliminary-deal-source-says-6330426",
-      "published": "2026-08-20 13:33"
-    },
-    {
-      "category": "General",
-      "title": "South Korea estimates North Korea has up to 120 nuclear warheads, far above Trump's figure",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/north-korea-south-120-nuclear-warheads-trump-6330321",
-      "published": "2026-08-20 13:24"
-    },
-    {
-      "category": "General",
-      "title": "Australia look for response to 'Darwin Disaster' in second Bangladesh test",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/australia-look-response-darwin-disaster-in-second-bangladesh-test-6330386",
-      "published": "2026-08-20 13:16"
-    },
-    {
-      "category": "General",
-      "title": "Robots poised for 'ChatGPT moment', says Unitree CEO",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-unitree-wang-xingxing-humanoid-robot-chatgpt-6330271",
-      "published": "2026-08-20 13:03"
     }
   ]
 }
