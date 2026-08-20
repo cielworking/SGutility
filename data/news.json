@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-20 11:58",
+  "last_updated": "2026-08-20 12:52",
   "headlines": [
     {
       "category": "Crime",
@@ -17,10 +17,17 @@
     },
     {
       "category": "Crime",
-      "title": "Woman accuses S'pore braised duck stall of contaminated food, demands compensation, turns out to be scam",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/woman-accuses-singapore-braised-duck-stall-exposed/",
-      "published": "2026-08-19 20:17"
+      "title": "Nearly $2.2 million lost to impersonation scams on iMessage in less than 2 months",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/nearly-2-2-million-lost-to-impersonation-scams-on-imessage-in-less-than-2-months",
+      "published": "2026-08-20 12:49"
+    },
+    {
+      "category": "Crime",
+      "title": "Two men charged with drink driving, falling asleep behind the wheel in Geylang, Nicoll Highway",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/two-men-charged-with-drink-driving-falling-asleep-behind-the-wheel-in-geylang-nicoll-highway",
+      "published": "2026-08-20 12:08"
     },
     {
       "category": "Crime",
@@ -79,11 +86,18 @@
       "published": "2026-08-18 19:37"
     },
     {
-      "category": "Crime",
-      "title": "15-year-old girl arrested over bomb hoax at Xinmin Secondary School",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/15-year-old-arrested-in-relation-to-bomb-hoax-at-xinmin-secondary-school",
-      "published": "2026-08-18 17:06"
+      "category": "Traffic",
+      "title": "Overcrowded units, short stays: Suspected illegal accommodation cases on the rise in Singapore",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/suspected-illegal-accommodation-cases-rise-in-singapore-6330186",
+      "published": "2026-08-20 12:45"
+    },
+    {
+      "category": "Traffic",
+      "title": "Kane content at Bayern, no longer feels same 'itch' to make Premier League return",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/kane-content-bayern-no-longer-feels-same-itch-make-premier-league-return-6330201",
+      "published": "2026-08-20 11:56"
     },
     {
       "category": "Traffic",
@@ -136,10 +150,10 @@
     },
     {
       "category": "Transport",
-      "title": "AIA Group's first-half new business value rises 10%",
+      "title": "Four workers hit by train in Japan",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/aia-groups-first-half-new-business-value-rises-10-6329751",
-      "published": "2026-08-20 06:56"
+      "url": "https://www.channelnewsasia.com/east-asia/japan-train-hit-four-workers-6330276",
+      "published": "2026-08-20 12:32"
     },
     {
       "category": "Transport",
@@ -161,13 +175,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/ai-sanctions-and-geopolitics-what-it-means-for-businesses-operating-across-borders",
       "published": "2026-08-19 04:00"
-    },
-    {
-      "category": "Transport",
-      "title": "Six more bus interchanges, including Bishan and Tampines, to get upgraded facilities",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/six-more-bus-interchanges-including-bishan-and-tampines-to-get-upgraded-facilities",
-      "published": "2026-08-18 18:19"
     },
     {
       "category": "Fire",
@@ -212,6 +219,41 @@
       "published": "2026-08-20 08:23"
     },
     {
+      "category": "Housing",
+      "title": "S'pore man, 69, allegedly breaches protection order by singing & banging cans outside neighbour's Yishun flat",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/yishun-man-sing-bang-can/",
+      "published": "2026-08-20 01:39"
+    },
+    {
+      "category": "General",
+      "title": "Samsung Electroncis to announce more than $72 billion shareholder return programme, media reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/samsung-electroncis-announce-more-72-billion-shareholder-return-programme-media-reports-6330341",
+      "published": "2026-08-20 12:44"
+    },
+    {
+      "category": "General",
+      "title": "Vanness Wu defends wife after she’s accused of faking age and academic background",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/vanness-wu-wife-emi-aramaki-fake-age-6330161",
+      "published": "2026-08-20 12:31"
+    },
+    {
+      "category": "General",
+      "title": "Banker-turned-hawker sells S$7 NYC Levain-style cookies at Golden Mile Food Centre",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/dining/ate-cookies-levain-style-hawker-golden-mile-6330061",
+      "published": "2026-08-20 12:18"
+    },
+    {
+      "category": "General",
+      "title": "Serrano, Manzur trade knockout talk before featherweight title bout",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/serrano-manzur-trade-knockout-talk-featherweight-title-bout-6330226",
+      "published": "2026-08-20 12:01"
+    },
+    {
       "category": "General",
       "title": "Iran goes on offensive as diplomacy with US stalls",
       "source": "CNA",
@@ -238,48 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/asian-stocks-rally-us-treasury-steps-in-ease-bond-fears-6329931",
       "published": "2026-08-20 10:49"
-    },
-    {
-      "category": "General",
-      "title": "Rebuilding core strength after pregnancy: Why muscle recovery matters",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/advertorial/rebuilding-core-strength-after-pregnancy-why-muscle-recovery-matters-6290686",
-      "published": "2026-08-20 09:06"
-    },
-    {
-      "category": "General",
-      "title": "Messi scores emotional first goal since father's death",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/messi-scores-emotional-first-goal-fathers-death-6329911",
-      "published": "2026-08-20 09:02"
-    },
-    {
-      "category": "General",
-      "title": "Japan's exports jump 23% to monthly record in July",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japans-exports-jump-23-monthly-record-in-july-6329831",
-      "published": "2026-08-20 08:53"
-    },
-    {
-      "category": "General",
-      "title": "CK Hutchison seeks US$1.5 billion from Panama in treaty dispute arbitration",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ck-hutchison-seeks-us15-billion-panama-in-treaty-dispute-arbitration-6329856",
-      "published": "2026-08-20 08:48"
-    },
-    {
-      "category": "General",
-      "title": "Trump threatens economic punishment on 'any country' helping Iran",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-threatens-economic-punishment-any-country-helping-iran-6329846",
-      "published": "2026-08-20 08:39"
-    },
-    {
-      "category": "General",
-      "title": "US provides US$206 million for Gaza force despite deadlocked peace plan",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-provide-206-million-gaza-peace-plan-israel-palestinians-6329441",
-      "published": "2026-08-20 08:08"
     }
   ]
 }
