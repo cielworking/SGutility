@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-20 13:45",
+  "last_updated": "2026-08-20 15:05",
   "headlines": [
     {
       "category": "Crime",
@@ -21,6 +21,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/man-dies-seletar-link/",
       "published": "2026-08-19 23:18"
+    },
+    {
+      "category": "Crime",
+      "title": "Two Court of Appeal judges to retire; Family Justice Courts judge appointment extended",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/two-court-of-appeal-judges-to-retire-family-justice-courts-judge-appointment-extended",
+      "published": "2026-08-20 14:17"
     },
     {
       "category": "Crime",
@@ -93,13 +100,6 @@
       "published": "2026-08-19 11:46"
     },
     {
-      "category": "Crime",
-      "title": "Internet-enabled scams and AI pose challenges, Shanmugam says at MHA scholarship event",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/internet-enabled-scams-and-ai-pose-challenges-shanmugam-tells-mha-scholars",
-      "published": "2026-08-18 21:50"
-    },
-    {
       "category": "Traffic",
       "title": "Overcrowded units, short stays: Suspected illegal accommodation cases on the rise in Singapore",
       "source": "CNA",
@@ -119,13 +119,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/singapore-arrival-card-sgac-update-7-language-passport-scan-6330076",
       "published": "2026-08-20 11:32"
-    },
-    {
-      "category": "Traffic",
-      "title": "2,000 tech roles curated for fresh grads, workers looking to upskill, switch careers",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/tech/2000-tech-roles-curated-for-fresh-grads-workers-looking-to-upskill-switch-careers",
-      "published": "2026-08-20 13:03"
     },
     {
       "category": "Traffic",
@@ -163,15 +156,8 @@
       "published": "2026-08-19 04:00"
     },
     {
-      "category": "Traffic",
-      "title": "Food scientist who turned soya pulp into food among 14 recipients of Singapore eco award",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/environment/food-scientist-who-turns-soya-pulp-to-food-among-14-recipients-of-singapore-eco-award",
-      "published": "2026-08-18 20:25"
-    },
-    {
       "category": "Transport",
-      "title": "Four workers hit by train in Japan",
+      "title": "Four workers hit and killed by train in Japan",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/east-asia/japan-train-hit-four-workers-6330276",
       "published": "2026-08-20 12:32"
@@ -189,13 +175,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/more-graduating-youth-to-benefit-from-ntucs-bond-free-scholarship-with-leadership-training",
       "published": "2026-08-19 20:40"
-    },
-    {
-      "category": "Transport",
-      "title": "AI, sanctions and geopolitics: What they mean for businesses operating across borders",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/ai-sanctions-and-geopolitics-what-it-means-for-businesses-operating-across-borders",
-      "published": "2026-08-19 04:00"
     },
     {
       "category": "Fire",
@@ -220,13 +199,6 @@
     },
     {
       "category": "Money",
-      "title": "Oil prices steady as investors assess US-Iran war outlook",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-prices-steady-investors-assess-us-iran-war-outlook-6329916",
-      "published": "2026-08-20 09:14"
-    },
-    {
-      "category": "Money",
       "title": "COE premiums up across most categories; Cat A price climbs 3.7% to $128,501",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/coe-premiums-up-across-most-categories-cat-a-price-climbs-3-7-to-128501",
@@ -241,9 +213,51 @@
     },
     {
       "category": "General",
-      "title": "SK Hynix to pay 60% of employee bonuses in company stock, says source",
+      "title": "Beijing ‘commends’ Malaysia PM Anwar’s ‘One China’ stance following Taiwan’s rebuke",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sk-hynix-pay-60-employee-bonuses-in-company-stock-says-source-6330426",
+      "url": "https://www.channelnewsasia.com/asia/china-malaysia-anwar-ibrahim-taiwan-force-6330456",
+      "published": "2026-08-20 14:58"
+    },
+    {
+      "category": "General",
+      "title": "New Mofusand and Starbucks Singapore merchandise launching on Aug 25",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/dining/mofusand-starbucks-singapore-new-merchandise-6330396",
+      "published": "2026-08-20 14:34"
+    },
+    {
+      "category": "General",
+      "title": "Law Society to release audit report on workplace issues after redaction process",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/law-society-release-full-workplace-culture-audit-report-6330416",
+      "published": "2026-08-20 14:27"
+    },
+    {
+      "category": "General",
+      "title": "Japan's Miura, 59, becomes oldest scorer in Emperor's Cup history",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/japans-miura-59-becomes-oldest-scorer-in-emperors-cup-history-6330481",
+      "published": "2026-08-20 14:08"
+    },
+    {
+      "category": "General",
+      "title": "Why the suit is making a comeback – and becoming easier to wear",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/obsessions/womens-suits-tailoring-trend-6330371",
+      "published": "2026-08-20 14:05"
+    },
+    {
+      "category": "General",
+      "title": "Australia races to shield little penguins from H5N1 bird flu",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/australia-h5n1-bird-flu-penguin-vaccinate-6330421",
+      "published": "2026-08-20 13:46"
+    },
+    {
+      "category": "General",
+      "title": "SK Hynix to pay 60% of employee bonuses in stock under preliminary deal, source says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/sk-hynix-pay-60-employee-bonuses-in-stock-under-preliminary-deal-source-says-6330426",
       "published": "2026-08-20 13:33"
     },
     {
@@ -266,20 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/east-asia/china-unitree-wang-xingxing-humanoid-robot-chatgpt-6330271",
       "published": "2026-08-20 13:03"
-    },
-    {
-      "category": "General",
-      "title": "Samsung Electroncis to announce more than $72 billion shareholder return programme, media reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/samsung-electroncis-announce-more-72-billion-shareholder-return-programme-media-reports-6330341",
-      "published": "2026-08-20 12:44"
-    },
-    {
-      "category": "General",
-      "title": "Vanness Wu defends wife after she’s accused of faking age and academic background",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/vanness-wu-wife-emi-aramaki-fake-age-6330161",
-      "published": "2026-08-20 12:31"
     }
   ]
 }
