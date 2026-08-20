@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-20 16:56",
+  "last_updated": "2026-08-20 17:49",
   "headlines": [
     {
       "category": "Crime",
@@ -17,13 +17,6 @@
     },
     {
       "category": "Crime",
-      "title": "China jails Evergrande founder for life, fines firm more than US$2 billion",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-evergrande-founder-hui-ka-yan-sentenced-life-in-prison-6330256",
-      "published": "2026-08-20 13:17"
-    },
-    {
-      "category": "Crime",
       "title": "Body of TikToker, 29, found burned at vineyard in France, 2 men arrested",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/french-tiktoker-burned-vineyard-2-men-arrested/",
@@ -38,7 +31,14 @@
     },
     {
       "category": "Crime",
-      "title": "Yishun jewellery store employee swopped gold pieces with copies from Taobao, gets over 2 years’ jail",
+      "title": "Motorcyclist arrested after fleeing police roadblock and getting into accident in Farrer Road",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/motorcyclist-arrested-after-fleeing-police-roadblock-and-getting-into-accident-in-farrer-road",
+      "published": "2026-08-20 17:45"
+    },
+    {
+      "category": "Crime",
+      "title": "Yishun jewellery store employee swopped gold pieces with Taobao copies, gets over 2 years’ jail",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/yishun-jewellery-store-employee-swopped-gold-pieces-with-copies-from-taobao-gets-over-2-years-jail",
       "published": "2026-08-20 16:28"
@@ -100,25 +100,11 @@
       "published": "2026-08-19 18:41"
     },
     {
-      "category": "Crime",
-      "title": "31 motorists to be charged with drink driving",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/31-motorists-to-be-charged-with-drink-driving",
-      "published": "2026-08-19 12:45"
-    },
-    {
-      "category": "Crime",
-      "title": "Driver arrested after Seletar West Link accident that left motorcyclist dead",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/driver-arrested-after-seletar-west-link-accident-that-left-motorcyclist-dead",
-      "published": "2026-08-19 12:35"
-    },
-    {
-      "category": "Crime",
-      "title": "Man jailed, fined for role in syndicate that stored 58,000 vape items in ‘warehouses’",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/man-jailed-fined-for-role-in-syndicate-storing-58k-vape-items-in-lentor-sembawang-warehouses",
-      "published": "2026-08-19 11:46"
+      "category": "Traffic",
+      "title": "North Korea fires suspected ballistic missile, Japanese authorities say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/north-korea-fires-suspected-ballistic-missile-japan-6330706",
+      "published": "2026-08-20 17:08"
     },
     {
       "category": "Traffic",
@@ -126,13 +112,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/man-seletar-west-link-accident-cpr/",
       "published": "2026-08-20 19:42"
-    },
-    {
-      "category": "Traffic",
-      "title": "Carlton Hotel takes back space formerly occupied by Korea Artiz Studio",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/carlton-hotel-takes-back-space-formerly-occupied-by-korea-artiz-studio",
-      "published": "2026-08-20 16:49"
     },
     {
       "category": "Traffic",
@@ -156,13 +135,6 @@
       "published": "2026-08-19 20:00"
     },
     {
-      "category": "Traffic",
-      "title": "SBS Transit bus driver, 2 motorists taken to hospital after accident across both sides of BKE",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/sbs-transit-bus-driver-2-motorists-taken-to-hospital-after-accident-across-both-sides-of-bke",
-      "published": "2026-08-19 13:11"
-    },
-    {
       "category": "Transport",
       "title": "S'pore woman, 37, sues NParks for S$39,827 in special damages after wild boar attack at bus stop",
       "source": "Mothership",
@@ -171,14 +143,7 @@
     },
     {
       "category": "Transport",
-      "title": "'Now have to constantly restrain myself': Halimah Yacob on patting kids following Roxy Square altercation",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/halimah-yacob-restrain-myself-touching-kids-endearment/",
-      "published": "2026-08-20 02:21"
-    },
-    {
-      "category": "Transport",
-      "title": "Robot in Little India MRT station can help commuters find their way, give travel information",
+      "title": "Robot at Little India MRT station can help commuters find their way, give travel information",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/robot-in-little-india-mrt-station-can-help-commuters-find-their-way-give-travel-information",
       "published": "2026-08-20 15:43"
@@ -212,13 +177,6 @@
       "published": "2026-08-20 10:50"
     },
     {
-      "category": "Fire",
-      "title": "Some residents evacuated after fire breaks out in kitchen of Sengkang HDB flat; no one injured",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/fire-breaks-out-in-kitchen-of-sengkang-hdb-flat-no-one-injured",
-      "published": "2026-08-19 11:27"
-    },
-    {
       "category": "Money",
       "title": "COE premiums up across most categories; Cat A price climbs 3.7% to $128,501",
       "source": "Straits Times",
@@ -234,6 +192,27 @@
     },
     {
       "category": "General",
+      "title": "UK faces climate rethink after summer of extreme heat and drought",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/uk-faces-climate-rethink-extreme-heat-drought-6330691",
+      "published": "2026-08-20 17:29"
+    },
+    {
+      "category": "General",
+      "title": "PSG heavily fancied to win sixth successive Ligue 1 title",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/psg-heavily-fancied-win-sixth-successive-ligue-1-title-6330726",
+      "published": "2026-08-20 17:10"
+    },
+    {
+      "category": "General",
+      "title": "Singapore's Loh Kean Yew exits BWF World Championships after round of 16 loss to Canada's Victor Lai",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/loh-kean-yew-exit-world-championships-victor-lai-6330621",
+      "published": "2026-08-20 16:53"
+    },
+    {
+      "category": "General",
       "title": "Dollar falls to three-month low as Treasury moves to soothe bond jitters",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/dollar-falls-three-month-low-treasury-moves-soothe-bond-jitters-6329866",
@@ -241,7 +220,7 @@
     },
     {
       "category": "General",
-      "title": "Dog's death during canine-catching operation renews scrutiny of how Malaysia manages strays",
+      "title": "After Rocky’s death, calls grow for new approach to Malaysia’s stray dogs",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/malaysia-rocky-stray-dogs-killing-abuse-animal-cruelty-6328981",
       "published": "2026-08-20 16:15"
@@ -280,6 +259,27 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/china-malaysia-anwar-ibrahim-taiwan-force-6330456",
       "published": "2026-08-20 14:58"
+    },
+    {
+      "category": "General",
+      "title": "Skanska to build four US data centres for $1.2 billion",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/skanska-build-four-us-data-centres-12-billion-6330536",
+      "published": "2026-08-20 14:53"
+    },
+    {
+      "category": "General",
+      "title": "New Mofusand and Starbucks Singapore merchandise launching on Aug 25",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/dining/mofusand-starbucks-singapore-new-merchandise-6330396",
+      "published": "2026-08-20 14:34"
+    },
+    {
+      "category": "General",
+      "title": "Law Society to release audit report on workplace issues after redaction process",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/law-society-release-full-workplace-culture-audit-report-6330416",
+      "published": "2026-08-20 14:27"
     }
   ]
 }
