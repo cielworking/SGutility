@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-08-21 06:44",
+  "last_updated": "2026-08-21 07:39",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "World Cup surprise package Cape Verde name Bettencourt as coach",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-cup-surprise-package-cape-verde-name-bettencourt-coach-6332001",
-      "published": "2026-08-21 03:48"
-    },
     {
       "category": "Crime",
       "title": "Man, 31, charged with trafficking Kpods found in rental car after traffic accident",
@@ -21,6 +14,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/french-tiktoker-burned-vineyard-2-men-arrested/",
       "published": "2026-08-20 19:57"
+    },
+    {
+      "category": "Crime",
+      "title": "Missing: Police appeal for information on 14-year-old girl last seen in Boon Lay",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/missing-police-appeal-for-information-on-14-year-old-girl-last-seen-in-boon-lay",
+      "published": "2026-08-21 06:54"
     },
     {
       "category": "Crime",
@@ -98,13 +98,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/broadcom-seeks-more-60-billion-in-latest-ai-debt-deal-bloomberg-news-reports-6332071",
       "published": "2026-08-21 04:38"
-    },
-    {
-      "category": "Traffic",
-      "title": "IndyCar takes to Washington streets for landmark Freedom 250",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/indycar-takes-washington-streets-landmark-freedom-250-6331996",
-      "published": "2026-08-21 03:44"
     },
     {
       "category": "Traffic",
@@ -199,6 +192,20 @@
     },
     {
       "category": "General",
+      "title": "This Singaporean's cute cat guitar pickguards have found fans worldwide – even metalheads love them",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/julia-becker-threestools-guitar-pickguards-6323201",
+      "published": "2026-08-21 07:17"
+    },
+    {
+      "category": "General",
+      "title": "AI reshapes India's IT services sector contracts as clients demand more for less",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ai-reshapes-indias-it-services-sector-contracts-clients-demand-more-less-6332256",
+      "published": "2026-08-21 07:02"
+    },
+    {
+      "category": "General",
       "title": "US judge rejects Disney bid for quick hearing in FCC lawsuit",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/us-judge-rejects-disney-bid-quick-hearing-in-fcc-lawsuit-6331771",
@@ -241,16 +248,16 @@
     },
     {
       "category": "General",
-      "title": "What a cancer survivor's legal win means for workers returning after illness",
+      "title": "CNA Explains: A cancer survivor who needed work flexibility was forced to quit – what went wrong?",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/cancer-survivor-work-home-flexible-policy-employer-forced-resign-wrongful-dismissal-6330206",
       "published": "2026-08-21 06:00"
     },
     {
       "category": "General",
-      "title": "Trump signs memo to help drastically boost US space launches",
+      "title": "Trump signs memo to help drastically boost US commercial space launches",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-signs-memo-help-drastically-boost-us-space-launches-6332186",
+      "url": "https://www.channelnewsasia.com/business/trump-signs-memo-help-drastically-boost-us-commercial-space-launches-6332186",
       "published": "2026-08-21 05:58"
     },
     {
@@ -273,13 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/two-binance-employees-were-detained-in-uae-in-recent-weeks-nyt-reports-6332156",
       "published": "2026-08-21 05:17"
-    },
-    {
-      "category": "General",
-      "title": "Former Pakistani PM Imran Khan to private hospital for medical treatment",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/pakistan-khan-hospital-prison-care-6332131",
-      "published": "2026-08-21 05:15"
     }
   ]
 }
