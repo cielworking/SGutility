@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-08-21 19:40",
+  "last_updated": "2026-08-21 21:09",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Singaporean man, 56, jailed 14 days and fined US$1,733 for insulting Islam in Johor",
+      "title": "Photo of reported crocodile sighting at Pandan Reservoir found to be fake; police report lodged: PUB",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-johor-bahru-singaporean-jailed-insulting-islam-quran-6333141",
-      "published": "2026-08-21 17:17"
+      "url": "https://www.channelnewsasia.com/singapore/pub-pandan-reservoir-crocodile-sighting-fake-photo-police-report-6333501",
+      "published": "2026-08-21 20:50"
     },
     {
       "category": "Crime",
-      "title": "Tradenation luxury goods scam: Tradeluxury director charged with money laundering",
+      "title": "Website that falsely claimed to have MFA links blocked by Singapore police",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/tradeluxury-goods-scam-cheating-bags-preorders-moneylaundering-6333061",
-      "published": "2026-08-21 17:16"
+      "url": "https://www.channelnewsasia.com/singapore/global-asia-false-website-blocked-police-6333411",
+      "published": "2026-08-21 20:38"
     },
     {
       "category": "Crime",
@@ -35,6 +35,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/man-stab-priest-plead-guilty/",
       "published": "2026-08-21 20:05"
+    },
+    {
+      "category": "Crime",
+      "title": "PUB files police report after photo of crocodile sighting at Pandan Reservoir found to be fake",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/pub-files-police-report-after-photo-of-crocodile-sighting-at-pandan-reservoir-found-to-be-fake",
+      "published": "2026-08-21 20:47"
     },
     {
       "category": "Crime",
@@ -107,20 +114,6 @@
       "published": "2026-08-20 16:28"
     },
     {
-      "category": "Crime",
-      "title": "Two Court of Appeal judges to retire; Family Justice Courts judge’s appointment extended",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/two-court-of-appeal-judges-to-retire-family-justice-courts-judge-appointment-extended",
-      "published": "2026-08-20 14:17"
-    },
-    {
-      "category": "Traffic",
-      "title": "Musiala's on-field collapses were the result of treatment change, says Bayern coach Kompany",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/musialas-field-collapses-were-result-treatment-change-says-bayern-coach-kompany-6333151",
-      "published": "2026-08-21 17:07"
-    },
-    {
       "category": "Traffic",
       "title": "S'porean man, 46, in Johor road rage incident, identified as chicken rice restaurant owner",
       "source": "Mothership",
@@ -178,6 +171,69 @@
     },
     {
       "category": "General",
+      "title": "LA28 Olympic ticket sales top 6 million; next public sale set for 2027",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/la28-olympic-ticket-sales-top-6-million-next-public-sale-set-2027-6333526",
+      "published": "2026-08-21 21:02"
+    },
+    {
+      "category": "General",
+      "title": "Chinese flash-memory chipmaker YMTC plans to raise $4.9 billion in Shanghai IPO",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/chinese-flash-memory-chipmaker-ymtc-plans-raise-49-billion-in-shanghai-ipo-6333456",
+      "published": "2026-08-21 20:46"
+    },
+    {
+      "category": "General",
+      "title": "Danish FA calls for FIFA presidential alternative as Infantino support wanes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/danish-fa-calls-fifa-presidential-alternative-infantino-support-wanes-6333491",
+      "published": "2026-08-21 20:35"
+    },
+    {
+      "category": "General",
+      "title": "China launches biggest ever auto recall campaign over door handle safety",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/china-biggest-auto-recall-car-door-handle-safety-tesla-xiaomi-6333346",
+      "published": "2026-08-21 20:30"
+    },
+    {
+      "category": "General",
+      "title": "Eric Trump-backed Space-Eyes to appoint ex-Delta Force officer and ex-banker, sources say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/eric-trump-backed-space-eyes-appoint-ex-delta-force-officer-and-ex-banker-sources-say-6333451",
+      "published": "2026-08-21 20:09"
+    },
+    {
+      "category": "General",
+      "title": "Exclusive-Dutch regulator fines Uber $966 million for automating driver suspensions, document shows",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/exclusive-dutch-regulator-fines-uber-966-million-automating-driver-suspensions-document-shows-6333436",
+      "published": "2026-08-21 20:03"
+    },
+    {
+      "category": "General",
+      "title": "Antonelli fastest in sole Dutch GP practice",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/antonelli-fastest-in-sole-dutch-gp-practice-6333441",
+      "published": "2026-08-21 20:01"
+    },
+    {
+      "category": "General",
+      "title": "Iran president says time to end war while in position of strength",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-president-time-end-war-us-sanctions-6333426",
+      "published": "2026-08-21 19:49"
+    },
+    {
+      "category": "General",
+      "title": "Duplantis swaps pole for microphone with anthem for World Athletics Ultimate",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/duplantis-swaps-pole-microphone-anthem-world-athletics-ultimate-6333421",
+      "published": "2026-08-21 19:42"
+    },
+    {
+      "category": "General",
       "title": "World rugby, UK bodies lose bid to throw out concussion lawsuits",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/world-rugby-uk-bodies-lose-bid-throw-out-concussion-lawsuits-6333401",
@@ -224,62 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/how-tethers-bitcoin-mining-plans-in-uruguay-unraveled-6333266",
       "published": "2026-08-21 18:09"
-    },
-    {
-      "category": "General",
-      "title": "Analysis:US corporate AI debt surge tests investor limits as fatigue emerges",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/analysisus-corporate-ai-debt-surge-tests-investor-limits-fatigue-emerges-6333251",
-      "published": "2026-08-21 18:02"
-    },
-    {
-      "category": "General",
-      "title": "Mourinho returns with calm words and hard edge as Real reset begins",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mourinho-returns-calm-words-and-hard-edge-real-reset-begins-6333216",
-      "published": "2026-08-21 17:53"
-    },
-    {
-      "category": "General",
-      "title": "China, Indonesia agree to boost military ties, work closer on minerals, energy and tech",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/china-indonesia-military-ties-minerals-energy-tech-6333081",
-      "published": "2026-08-21 17:10"
-    },
-    {
-      "category": "General",
-      "title": "Customers bring gifts, children to meet elderly stallholder after he was shoved over head-pat",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/roxy-square-wanton-noodles-head-pat-customers-children-6333011",
-      "published": "2026-08-21 17:05"
-    },
-    {
-      "category": "General",
-      "title": "China says US 'sanctions and pressure' on Iran not a solution",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-us-iran-sanctions-economic-pressure-6333101",
-      "published": "2026-08-21 16:55"
-    },
-    {
-      "category": "General",
-      "title": "MOM looking into claims airport wheelchair assistant had S$5 docked from pay for being 11 seconds late",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/airport-wheelchair-assistant-pay-deduction-mom-sats-aventa-services-6325211",
-      "published": "2026-08-21 16:50"
-    },
-    {
-      "category": "General",
-      "title": "Oil set for second weekly gain as US ramps up pressure on Iran",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-set-second-weekly-gain-us-ramps-up-pressure-iran-6332451",
-      "published": "2026-08-21 16:32"
-    },
-    {
-      "category": "General",
-      "title": "Woman in Hong Kong mauled to death by dog in pet hotel",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/hong-kong-woman-mauled-attack-death-dog-pet-hotel-6333056",
-      "published": "2026-08-21 16:28"
     }
   ]
 }
