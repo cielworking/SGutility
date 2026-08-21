@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-22 04:40",
+  "last_updated": "2026-08-22 05:37",
   "headlines": [
     {
       "category": "Crime",
@@ -7,13 +7,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/sec-charges-former-bank-america-investment-banker-insider-trading-6334206",
       "published": "2026-08-22 04:27"
-    },
-    {
-      "category": "Crime",
-      "title": "Swedish police say one dead after sword attack at school",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/man-sword-attack-injuries-sweden-high-school-6333786",
-      "published": "2026-08-21 23:05"
     },
     {
       "category": "Crime",
@@ -122,6 +115,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Costs of public community care apartments reduced, basic services cut following lacklustre demand",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/housing/costs-of-public-community-care-apartments-reduced-basic-services-cut-following-lacklustre-demand",
+      "published": "2026-08-22 05:00"
+    },
+    {
+      "category": "Traffic",
       "title": "National Day Rally 2026: Expect road, lane closures in Ang Mo Kio on Aug 23",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/national-day-rally-2026-expect-road-lane-closures-in-ang-mo-kio-on-aug-23",
@@ -168,6 +168,27 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/artificial-intelligence-could-push-up-inflation-snbs-tschudin-says-6333881",
       "published": "2026-08-21 23:24"
+    },
+    {
+      "category": "General",
+      "title": "Marseille secure 4-0 win over Strasbourg as Ligue 1 gets under way",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/marseille-secure-4-0-win-over-strasbourg-ligue-1-gets-under-way-6334261",
+      "published": "2026-08-22 05:10"
+    },
+    {
+      "category": "General",
+      "title": "Arsenal sweep Coventry aside to start title defence with 3-0 win",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/arsenal-sweep-coventry-aside-start-title-defence-3-0-win-6334246",
+      "published": "2026-08-22 05:05"
+    },
+    {
+      "category": "General",
+      "title": "Manchester United agree deal for Brighton midfielder Baleba",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/manchester-united-agree-deal-brighton-midfielder-baleba-6334221",
+      "published": "2026-08-22 04:37"
     },
     {
       "category": "General",
@@ -259,27 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/russell-takes-sprint-pole-dutch-grand-prix-ahead-norris-6333906",
       "published": "2026-08-21 23:30"
-    },
-    {
-      "category": "General",
-      "title": "How would a vote of no confidence work to oust FIFA president Infantino?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/how-would-vote-no-confidence-work-oust-fifa-president-infantino-6333886",
-      "published": "2026-08-21 23:28"
-    },
-    {
-      "category": "General",
-      "title": "Arsenal bolster defence with Konsa signing from Villa",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/arsenal-bolster-defence-konsa-signing-villa-6333871",
-      "published": "2026-08-21 23:18"
-    },
-    {
-      "category": "General",
-      "title": "Bok captain Du Toit warns concentration is key to seeing off All Blacks threat",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/bok-captain-du-toit-warns-concentration-key-seeing-all-blacks-threat-6333861",
-      "published": "2026-08-21 23:16"
     }
   ]
 }
