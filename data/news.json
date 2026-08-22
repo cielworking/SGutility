@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-08-22 09:49",
+  "last_updated": "2026-08-22 11:06",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Dissected: How scammers built a fake Zoom call from real videos of PM Wong and other Singapore leaders",
+      "title": "How scammers built a fake Zoom call from real videos of PM Wong and other Singapore leaders",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/zoom-scam-5-million-analysis-full-video-6332621",
       "published": "2026-08-22 06:00"
@@ -21,13 +21,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/motorcycle-flees-farrer-road-crash/",
       "published": "2026-08-21 23:31"
-    },
-    {
-      "category": "Crime",
-      "title": "Town council management agent employee, 63, charged for taking S$220,000 in bribes from firm directors, used money to buy Mercedes Benz",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/town-council-management-bribery-charges/",
-      "published": "2026-08-21 20:33"
     },
     {
       "category": "Crime",
@@ -115,6 +108,13 @@
     },
     {
       "category": "Traffic",
+      "title": "HSA working with companies to halt sales & recall Medicube cream suspected to contain prohibited ingredient",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/hsa-recall-medicube-pdrn-pink-collagen-capsule-cream/",
+      "published": "2026-08-22 01:30"
+    },
+    {
+      "category": "Traffic",
       "title": "S'porean man, 46, in Johor road rage incident, identified as chicken rice restaurant owner",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/sporean-man-johor-road-rage-chicken-rice/",
@@ -185,10 +185,24 @@
     },
     {
       "category": "Fire",
+      "title": "4 fatal fires in 19 days highlight challenges of evacuating elderly residents with mobility issues",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/4-fatal-fires-in-19-days-highlight-challenges-of-evacuating-elderly-residents-with-mobility-issues",
+      "published": "2026-08-22 10:00"
+    },
+    {
+      "category": "Fire",
       "title": "Man taken to hospital after fire in Buangkok HDB flat",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-taken-to-hospital-after-fire-in-buangkok-hdb-flat",
       "published": "2026-08-20 19:15"
+    },
+    {
+      "category": "General",
+      "title": "Starc takes five wickets, Bangladesh 35 for six at lunch in second test",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/starc-takes-five-wickets-bangladesh-35-six-lunch-in-second-test-6334501",
+      "published": "2026-08-22 10:25"
     },
     {
       "category": "General",
@@ -241,9 +255,9 @@
     },
     {
       "category": "General",
-      "title": "Nakashima rallies past Fritz to reach back-to-back Masters semis",
+      "title": "Tiafoe beats Musetti to set up Nakashima clash in semis",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/nakashima-rallies-past-fritz-reach-back-back-masters-semis-6334361",
+      "url": "https://www.channelnewsasia.com/sport/tiafoe-beats-musetti-set-up-nakashima-clash-in-semis-6334361",
       "published": "2026-08-22 06:53"
     },
     {
@@ -266,20 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/commentary/roxy-square-shoving-incident-pat-childs-head-6333196",
       "published": "2026-08-22 06:00"
-    },
-    {
-      "category": "General",
-      "title": "CNA Explains: Why is Trump pushing to meet Kim Jong Un again?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/trump-kim-jong-un-south-korea-military-exercises-cna-explains-6331066",
-      "published": "2026-08-22 06:00"
-    },
-    {
-      "category": "General",
-      "title": "OpenAI cuts developer pricing for frontier GPT-5.6 Sol model by more than 20%",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-cuts-developer-pricing-frontier-gpt-56-sol-model-more-20-6334271",
-      "published": "2026-08-22 05:29"
     }
   ]
 }
