@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-22 11:55",
+  "last_updated": "2026-08-22 12:48",
   "headlines": [
     {
       "category": "Crime",
@@ -10,10 +10,24 @@
     },
     {
       "category": "Crime",
+      "title": "S’pore police appeal for info on missing girl, 13, last seen in Boon Lay",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/missing-girl-westwood-avenue/",
+      "published": "2026-08-22 01:36"
+    },
+    {
+      "category": "Crime",
       "title": "Motorcyclist, 37, with pillion rider, 26, flees & crashes in Farrer Road, police find vape & drugs",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/motorcycle-flees-farrer-road-crash/",
       "published": "2026-08-21 23:31"
+    },
+    {
+      "category": "Crime",
+      "title": "Child abuse at educational facility: Man’s aunt faces charges for failing to protect the kids",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/child-abuse-at-educational-facility-mans-aunt-faces-charges-for-failing-to-protect-the-kids",
+      "published": "2026-08-22 12:17"
     },
     {
       "category": "Crime",
@@ -84,13 +98,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/town-council-files-police-report-after-boys-allegedly-access-hdb-lift-shaft-in-woodlands",
       "published": "2026-08-20 17:50"
-    },
-    {
-      "category": "Crime",
-      "title": "Motorcyclist arrested after fleeing police roadblock and getting into accident in Farrer Road",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/motorcyclist-arrested-after-fleeing-police-roadblock-and-getting-into-accident-in-farrer-road",
-      "published": "2026-08-20 17:45"
     },
     {
       "category": "Traffic",
@@ -199,6 +206,27 @@
     },
     {
       "category": "General",
+      "title": "US, Canada deepen trade war as sides fail to reach tariff deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-canada-trade-war-failed-tariff-deal-6334641",
+      "published": "2026-08-22 12:22"
+    },
+    {
+      "category": "General",
+      "title": "US, Iran keep up hostile rhetoric ahead of new sanctions",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-iran-hostile-rhetoric-new-sanctions-6334576",
+      "published": "2026-08-22 12:03"
+    },
+    {
+      "category": "General",
+      "title": "Bangladesh bowled out for 64 in first innings of second test v Australia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/bangladesh-bowled-out-64-in-first-innings-second-test-v-australia-6334586",
+      "published": "2026-08-22 11:49"
+    },
+    {
+      "category": "General",
       "title": "Starc takes five wickets, Bangladesh 35 for six at lunch in second test",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/starc-takes-five-wickets-bangladesh-35-six-lunch-in-second-test-6334501",
@@ -252,34 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/dining/nouri-ivan-brehm-checkpoint-theatre-6332646",
       "published": "2026-08-22 07:11"
-    },
-    {
-      "category": "General",
-      "title": "Tiafoe books Nakashima clash, Bejlek to face Gauff in Cincinnati semis",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tiafoe-books-nakashima-clash-bejlek-face-gauff-in-cincinnati-semis-6334361",
-      "published": "2026-08-22 06:53"
-    },
-    {
-      "category": "General",
-      "title": "Arsenal hand promoted Coventry a lesson, not another crisis",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/arsenal-hand-promoted-coventry-lesson-not-another-crisis-6334336",
-      "published": "2026-08-22 06:36"
-    },
-    {
-      "category": "General",
-      "title": "Why is it so hard to let go of the things we own?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/people/decluttering-letting-go-6330491",
-      "published": "2026-08-22 06:20"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Don’t settle for easy explanations after a pat on a child’s head turns into shoving incident",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/roxy-square-shoving-incident-pat-childs-head-6333196",
-      "published": "2026-08-22 06:00"
     }
   ]
 }
