@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-23 12:00",
+  "last_updated": "2026-08-23 12:51",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "S'pore police car on patrol catches fire on BKE, officers sent to hospital for smoke inhalation",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/singapore-police-car-fire-bke/",
+      "published": "2026-08-23 00:16"
+    },
     {
       "category": "Crime",
       "title": "Crocodile 'sighting' at Pandan Reservoir that led to suspension of activities is fake, police report lodged",
@@ -24,10 +31,10 @@
     },
     {
       "category": "Crime",
-      "title": "Florida woman, 31, allegedly a scammer, hid more than S$4,000 inside her before going to US jail",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/woman-hides-money-in-her-body/",
-      "published": "2026-08-22 02:45"
+      "title": "Cyclists in viral video chased by Traffic Police among 18 nabbed in enforcement operation",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/cyclists-in-viral-video-chased-by-traffic-police-among-18-nabbed-in-enforcement-operation",
+      "published": "2026-08-23 12:15"
     },
     {
       "category": "Crime",
@@ -87,6 +94,13 @@
     },
     {
       "category": "Traffic",
+      "title": "7-Eleven Singapore launches self-care spots at dining spaces islandwide",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/7-eleven-singapore-take-five-spot-6332681",
+      "published": "2026-08-23 12:04"
+    },
+    {
+      "category": "Traffic",
       "title": "Bayern battle past Dortmund 2-1 to win German Supercup",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/bayern-battle-past-dortmund-2-1-win-german-supercup-6335301",
@@ -98,6 +112,20 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/simplygo-pre-peak-s0-50-discount-issue-that-affected-210000-trips-a-day-on-aug-20-21-fixed/",
       "published": "2026-08-22 23:07"
+    },
+    {
+      "category": "Traffic",
+      "title": "Is your stressed PSLE child overwhelmed or burnt out? How to spot the difference",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/parenting-education/is-your-stressed-psle-child-overwhelmed-or-burned-out-how-to-spot-the-difference",
+      "published": "2026-08-23 12:18"
+    },
+    {
+      "category": "Traffic",
+      "title": "What your child’s P6 prelim results are telling you and how to boost PSLE marks",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/parenting-education/what-your-childs-p6-prelim-results-are-telling-you-and-how-to-boost-psle-marks",
+      "published": "2026-08-23 12:18"
     },
     {
       "category": "Traffic",
@@ -185,24 +213,24 @@
     },
     {
       "category": "Fire",
-      "title": "Parenting expert and Dopamine Kids author thinks your children need more fire and knives",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/parenting-education/parenting-expert-and-dopamine-kids-author-thinks-your-children-need-more-fire-and-knives",
-      "published": "2026-08-23 11:42"
-    },
-    {
-      "category": "Fire",
       "title": "4 fatal fires in 19 days highlight challenges of evacuating elderly residents with mobility issues",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/4-fatal-fires-in-19-days-highlight-challenges-of-evacuating-elderly-residents-with-mobility-issues",
       "published": "2026-08-22 10:00"
     },
     {
-      "category": "Money",
-      "title": "Nvidia customers notified about AI-related price hikes above 15%, Bloomberg News reports",
+      "category": "General",
+      "title": "Bangladesh's gas crisis hits factories, homes and transport",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-customers-notified-about-ai-related-price-hikes-above-15-bloomberg-news-reports-6335256",
-      "published": "2026-08-23 03:20"
+      "url": "https://www.channelnewsasia.com/asia/bangladesh-gas-shortage-energy-crisis-6335601",
+      "published": "2026-08-23 12:42"
+    },
+    {
+      "category": "General",
+      "title": "Man City boss Maresca targets next Rodri after midfielder's exit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/man-city-boss-maresca-targets-next-rodri-after-midfielders-exit-6335571",
+      "published": "2026-08-23 12:13"
     },
     {
       "category": "General",
@@ -252,34 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/milei-puts-himself-in-drivers-seat-bring-f1-back-argentina-6335381",
       "published": "2026-08-23 06:36"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Trump’s South Korea defence flip reminds Japan it has no Plan B",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/trump-south-korea-japan-military-defence-6333256",
-      "published": "2026-08-23 06:00"
-    },
-    {
-      "category": "General",
-      "title": "‘This is our home’: The women fighting a company’s land claim on Indonesia’s Pari Island",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-pari-island-women-jakarta-environment-advocacy-6332926",
-      "published": "2026-08-23 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Substitute Espi snatches last-gasp winner in Real Madrid LaLiga opener",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/substitute-espi-snatches-last-gasp-winner-in-real-madrid-laliga-opener-6335351",
-      "published": "2026-08-23 05:55"
-    },
-    {
-      "category": "General",
-      "title": "Wins for Lens and Lyon on opening Ligue 1 weekend",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/wins-lens-and-lyon-opening-ligue-1-weekend-6335346",
-      "published": "2026-08-23 05:37"
     }
   ]
 }
