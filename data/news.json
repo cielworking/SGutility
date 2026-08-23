@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-23 21:01",
+  "last_updated": "2026-08-23 21:45",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "M’sian man, 35, repeatedly punched S’porean man, 52, at Limbang Shopping Centre in Choa Chu Kang, gets 12 weeks’ jail & ordered to pay S$873 compensation",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/man-punch-man-limbang-shopping-centre-jail/",
+      "published": "2026-08-23 23:12"
+    },
     {
       "category": "Crime",
       "title": "Police & LTA officers caught 17 cyclists & 1 PMD user at night at West Coast Highway & Jalan Anak Bukit",
@@ -17,20 +24,6 @@
     },
     {
       "category": "Crime",
-      "title": "Woman, 28, files fake police report against bus driver boyfriend, 60, in S'pore for not spending time with her",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/woman-false-police-report-boyfriend/",
-      "published": "2026-08-23 01:01"
-    },
-    {
-      "category": "Crime",
-      "title": "S'pore police car on patrol catches fire on BKE, officers sent to hospital for smoke inhalation",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/singapore-police-car-fire-bke/",
-      "published": "2026-08-23 00:16"
-    },
-    {
-      "category": "Crime",
       "title": "Man arrested for drink driving, driving without licence after accident in Geylang",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-arrested-for-drink-driving-driving-without-licence-after-accident-in-geylang",
@@ -44,11 +37,25 @@
       "published": "2026-08-23 12:15"
     },
     {
-      "category": "Crime",
-      "title": "Child abuse at educational facility: Man’s aunt faces charges for failing to protect the kids",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/child-abuse-at-educational-facility-mans-aunt-faces-charges-for-failing-to-protect-the-kids",
-      "published": "2026-08-22 12:17"
+      "category": "Traffic",
+      "title": "NDR 2026: 7 key takeaways – more childcare leave, higher income ceilings for BTO flats",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-key-takeaways-childcare-leave-support-hdb-bto-income-ceiling-6335906",
+      "published": "2026-08-23 21:30"
+    },
+    {
+      "category": "Traffic",
+      "title": "Verstappen crashes out of home Dutch GP on opening lap",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/verstappen-crashes-out-home-dutch-gp-opening-lap-6336036",
+      "published": "2026-08-23 21:22"
+    },
+    {
+      "category": "Traffic",
+      "title": "NDR 2026: Singapore's multiracial character will endure even as country stays open to newcomers, says PM Wong",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-immigration-new-citizens-6335821",
+      "published": "2026-08-23 21:03"
     },
     {
       "category": "Traffic",
@@ -66,24 +73,38 @@
     },
     {
       "category": "Traffic",
-      "title": "NDR 2026: Prime Minister Lawrence Wong announces major changes to childcare support",
+      "title": "NDR 2026: More childcare leave, BTO income ceiling raised as PM Wong unveils major family support measures",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-live-updates-6330631",
       "published": "2026-08-23 17:29"
     },
     {
       "category": "Traffic",
-      "title": "Two rescued after bulk carrier sinks off India",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-bulk-carrier-mv-ocean-winner-panana-flagged-singapore-6335636",
-      "published": "2026-08-23 13:16"
+      "title": "Bus driver gets off bus to scold car drivers using bus lane near JB customs",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/bus-driver-scold-car-drivers-bus-lane/",
+      "published": "2026-08-23 20:25"
     },
     {
       "category": "Traffic",
-      "title": "SimplyGo pre-peak S$0.50 discount issue that affected 210,000 trips a day on Aug. 20 & 21 fixed",
+      "title": "Tree falls on at least 2 cars in Dempsey, 1 driver trapped as car roof crushed",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/simplygo-pre-peak-s0-50-discount-issue-that-affected-210000-trips-a-day-on-aug-20-21-fixed/",
-      "published": "2026-08-22 23:07"
+      "url": "https://mothership.sg/2026/08/fallen-tree-dempsey/",
+      "published": "2026-08-23 20:11"
+    },
+    {
+      "category": "Traffic",
+      "title": "Ex-actor Huang Yiliang on Roxy Square altercation: Dad ‘overreacted’, but ‘you can’t just go & touch other people’s children’",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/huang-yi-liang-roxy-square/",
+      "published": "2026-08-23 19:11"
+    },
+    {
+      "category": "Traffic",
+      "title": "More childcare leave, BTO income ceiling raised: 10 highlights from PM Wong’s National Day Rally speech",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/more-childcare-leave-bto-income-ceiling-raised-10-highlights-from-pm-wongs-national-day-rally-speech",
+      "published": "2026-08-23 21:22"
     },
     {
       "category": "Traffic",
@@ -108,16 +129,16 @@
     },
     {
       "category": "Traffic",
-      "title": "Is your stressed PSLE child overwhelmed or burnt out? How to spot the difference",
+      "title": "What your child’s P6 prelim results are telling you and how to boost PSLE marks",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/parenting-education/is-your-stressed-psle-child-overwhelmed-or-burned-out-how-to-spot-the-difference",
+      "url": "https://www.straitstimes.com/singapore/parenting-education/what-your-childs-p6-prelim-results-are-telling-you-and-how-to-boost-psle-marks",
       "published": "2026-08-23 12:18"
     },
     {
       "category": "Traffic",
-      "title": "What your child’s P6 prelim results are telling you and how to boost PSLE marks",
+      "title": "Is your stressed PSLE child overwhelmed or burnt out? How to spot the difference",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/parenting-education/what-your-childs-p6-prelim-results-are-telling-you-and-how-to-boost-psle-marks",
+      "url": "https://www.straitstimes.com/singapore/parenting-education/is-your-stressed-psle-child-overwhelmed-or-burned-out-how-to-spot-the-difference",
       "published": "2026-08-23 12:18"
     },
     {
@@ -156,20 +177,6 @@
       "published": "2026-08-22 13:30"
     },
     {
-      "category": "Traffic",
-      "title": "Motorcyclist dies in hospital after two-bike accident on BKE",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/45-year-old-woman-motorcyclist-dies-in-hospital-after-two-bike-accident-on-bke",
-      "published": "2026-08-22 09:40"
-    },
-    {
-      "category": "Traffic",
-      "title": "LTA proposes tighter rules for deregistered cars amid rise in illegal use on roads",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/lta-proposes-tighter-rules-for-deregistered-cars-amid-rise-in-illegal-use-on-roads",
-      "published": "2026-08-22 07:00"
-    },
-    {
       "category": "Transport",
       "title": "Train and bus users will have reminders to keep Singapore clean in Public Hygiene Council campaign",
       "source": "Straits Times",
@@ -177,25 +184,18 @@
       "published": "2026-08-23 13:55"
     },
     {
-      "category": "Fire",
-      "title": "'Keep up the spirit': Indonesian teenage 'Superman' joins wildfire fight",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-kalimantan-forest-fire-superman-teenager-6335686",
-      "published": "2026-08-23 15:16"
-    },
-    {
-      "category": "Fire",
-      "title": "4 fatal fires in 19 days highlight challenges of evacuating elderly residents with mobility issues",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/4-fatal-fires-in-19-days-highlight-challenges-of-evacuating-elderly-residents-with-mobility-issues",
-      "published": "2026-08-22 10:00"
-    },
-    {
       "category": "Housing",
       "title": "NDR 2026: Income ceilings for BTO flats, executive condos raised; first-time buyers to get extra ballot per child",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-income-ceiling-bto-flats-ec-singles-ballot-families-6335846",
       "published": "2026-08-23 20:47"
+    },
+    {
+      "category": "Housing",
+      "title": "Woman, 76, uses ikan bilis, duck bones & oyster sauce bait to trap 20 rats in 3 weeks at Chinatown block of flats",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/woman-trap-rats-chinatown/",
+      "published": "2026-08-23 22:12"
     },
     {
       "category": "Housing",
@@ -212,11 +212,25 @@
       "published": "2026-08-23 20:43"
     },
     {
-      "category": "Housing",
-      "title": "Live: S’pore to raise the income ceiling for HDB home-buyers, says PM Wong",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/live-pm-wong-to-deliver-his-national-day-rally-speech-on-aug-23",
-      "published": "2026-08-23 16:06"
+      "category": "General",
+      "title": "NDR 2026: Singapore studying feasibility of undersea tunnels to connect Tekong to mainland",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-undersea-tunnel-tekong-sentosa-brani-6335841",
+      "published": "2026-08-23 21:19"
+    },
+    {
+      "category": "General",
+      "title": "Kejelcha regains half marathon world record in Buenos Aires",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/kejelcha-regains-half-marathon-world-record-in-buenos-aires-6336031",
+      "published": "2026-08-23 21:18"
+    },
+    {
+      "category": "General",
+      "title": "NDR 2026: Semakau, Bukom and Pulau Sudong may be merged into new island for industrial, power needs",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-semakau-bukom-new-island-power-6335816",
+      "published": "2026-08-23 21:08"
     },
     {
       "category": "General",
@@ -266,20 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/canada-us-trade-war-mark-carney-donald-trump-6335786",
       "published": "2026-08-23 17:56"
-    },
-    {
-      "category": "General",
-      "title": "Zandvoort bows out after 'final lap' Dutch GP party",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zandvoort-bows-out-after-final-lap-dutch-gp-party-6335781",
-      "published": "2026-08-23 17:34"
-    },
-    {
-      "category": "General",
-      "title": "Senior Minister Lee Hsien Loong to make official visits to Kazakhstan and Uzbekistan",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/kazakhstan-uzbekistan-singapore-lee-hsien-loong-6330961",
-      "published": "2026-08-23 17:02"
     }
   ]
 }
