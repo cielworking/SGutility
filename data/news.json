@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-23 18:39",
+  "last_updated": "2026-08-23 19:34",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "S’porean man, 66, sprays insecticide at a flame to burn roommate, 66, & steals girl's slippers, gets 6 months & 1 week’s jail",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/man-burn-man-steal-girl-slippers-jail/",
+      "published": "2026-08-23 17:58"
+    },
     {
       "category": "Crime",
       "title": "Woman, 28, files fake police report against bus driver boyfriend, 60, in S'pore for not spending time with her",
@@ -80,13 +87,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Is your stressed PSLE child overwhelmed or burnt out? How to spot the difference",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/parenting-education/is-your-stressed-psle-child-overwhelmed-or-burned-out-how-to-spot-the-difference",
-      "published": "2026-08-23 12:18"
-    },
-    {
-      "category": "Traffic",
       "title": "What your child’s P6 prelim results are telling you and how to boost PSLE marks",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/parenting-education/what-your-childs-p6-prelim-results-are-telling-you-and-how-to-boost-psle-marks",
@@ -94,16 +94,23 @@
     },
     {
       "category": "Traffic",
-      "title": "As bicycle accidents hit 4-year high, cyclists call for more mutual respect from peers, road users",
+      "title": "Is your stressed PSLE child overwhelmed or burnt out? How to spot the difference",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/as-bicycle-accidents-hit-4-year-high-cyclists-call-for-more-mutual-respect-from-peers-road-users",
-      "published": "2026-08-23 05:00"
+      "url": "https://www.straitstimes.com/singapore/parenting-education/is-your-stressed-psle-child-overwhelmed-or-burned-out-how-to-spot-the-difference",
+      "published": "2026-08-23 12:18"
     },
     {
       "category": "Traffic",
       "title": "Accidents involving cyclists surge to 4-year high with over 770 cases in 2025 as road safety worsens",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/accidents-involving-cyclists-surge-to-4-year-high-with-over-770-cases-in-2025-as-road-safety-worsens",
+      "published": "2026-08-23 05:00"
+    },
+    {
+      "category": "Traffic",
+      "title": "As bicycle accidents hit 4-year high, cyclists call for more mutual respect from peers, road users",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/as-bicycle-accidents-hit-4-year-high-cyclists-call-for-more-mutual-respect-from-peers-road-users",
       "published": "2026-08-23 05:00"
     },
     {
@@ -171,13 +178,6 @@
     },
     {
       "category": "Fire",
-      "title": "S'pore teen, 18, bravely helps save grandfather & grandson from Buangkok flat fire",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/ite-student-18-rescues-grandfather-grandson-fire-buangkok/",
-      "published": "2026-08-22 21:00"
-    },
-    {
-      "category": "Fire",
       "title": "4 fatal fires in 19 days highlight challenges of evacuating elderly residents with mobility issues",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/4-fatal-fires-in-19-days-highlight-challenges-of-evacuating-elderly-residents-with-mobility-issues",
@@ -189,6 +189,20 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/nepalese-woman-japan-body-river/",
       "published": "2026-08-23 02:51"
+    },
+    {
+      "category": "General",
+      "title": "NDR 2026: Singapore can make more room for dialects while promoting Mandarin, says PM Wong",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-film-dialect-rules-6335796",
+      "published": "2026-08-23 19:16"
+    },
+    {
+      "category": "General",
+      "title": "NDR 2026: New committee set up to help Malay-Muslim community seize economic opportunities, develop skills",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-malay-muslim-community-economic-resilience-committee-6335806",
+      "published": "2026-08-23 19:01"
     },
     {
       "category": "General",
@@ -206,7 +220,7 @@
     },
     {
       "category": "General",
-      "title": "National Day Rally 2026: PM Wong to unveil new plans to support families",
+      "title": "National Day Rally 2026: Support for families in focus as PM Wong delivers key speech",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-live-updates-6330631",
       "published": "2026-08-23 17:29"
@@ -266,20 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/east-asia/japan-tokyo-earthquake-train-service-disrupted-6335551",
       "published": "2026-08-23 11:31"
-    },
-    {
-      "category": "General",
-      "title": "Bangladesh 39-3 at lunch, trail by 107 runs in second test v Australia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/bangladesh-39-3-lunch-trail-107-runs-in-second-test-v-australia-6335501",
-      "published": "2026-08-23 10:18"
-    },
-    {
-      "category": "General",
-      "title": "What actually works for knee pain? Expert advice for wear and tear, overuse and acute injuries",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/wellness/knee-pain-causes-treatments-6312436",
-      "published": "2026-08-23 07:14"
     }
   ]
 }
