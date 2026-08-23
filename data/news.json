@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24 01:33",
+  "last_updated": "2026-08-24 02:47",
   "headlines": [
     {
       "category": "Crime",
@@ -38,6 +38,20 @@
     },
     {
       "category": "Traffic",
+      "title": "China says unmanned moon mission delayed over 'launch conditions'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-says-unmanned-moon-mission-delayed-over-launch-conditions-6335991",
+      "published": "2026-08-24 02:06"
+    },
+    {
+      "category": "Traffic",
+      "title": "Can Emery do it again? Player churn leaves Spaniard facing greatest Villa challenge",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/can-emery-do-it-again-player-churn-leaves-spaniard-facing-greatest-villa-challenge-6336326",
+      "published": "2026-08-24 01:41"
+    },
+    {
+      "category": "Traffic",
       "title": "NDR 2026: Businesses welcome government move to cover childcare leave costs, but manpower concerns remain",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-businesses-childcare-leave-6336011",
@@ -63,13 +77,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/dutch-gp-re-starts-after-verstappen-crashes-opening-lap-6336036",
       "published": "2026-08-23 21:22"
-    },
-    {
-      "category": "Traffic",
-      "title": "NDR 2026: Singapore's multiracial character will endure even as country stays open to newcomers, says PM Wong",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-immigration-new-citizens-6335821",
-      "published": "2026-08-23 21:03"
     },
     {
       "category": "Traffic",
@@ -143,16 +150,16 @@
     },
     {
       "category": "Traffic",
-      "title": "Accidents involving cyclists surge to 4-year high with over 770 cases in 2025 as road safety worsens",
+      "title": "As bicycle accidents hit 4-year high, cyclists call for more mutual respect from peers, road users",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/accidents-involving-cyclists-surge-to-4-year-high-with-over-770-cases-in-2025-as-road-safety-worsens",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/as-bicycle-accidents-hit-4-year-high-cyclists-call-for-more-mutual-respect-from-peers-road-users",
       "published": "2026-08-23 05:00"
     },
     {
       "category": "Traffic",
-      "title": "As bicycle accidents hit 4-year high, cyclists call for more mutual respect from peers, road users",
+      "title": "Accidents involving cyclists surge to 4-year high with over 770 cases in 2025 as road safety worsens",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/as-bicycle-accidents-hit-4-year-high-cyclists-call-for-more-mutual-respect-from-peers-road-users",
+      "url": "https://www.straitstimes.com/singapore/accidents-involving-cyclists-surge-to-4-year-high-with-over-770-cases-in-2025-as-road-safety-worsens",
       "published": "2026-08-23 05:00"
     },
     {
@@ -185,13 +192,6 @@
     },
     {
       "category": "Housing",
-      "title": "NDR 2026: Income ceilings for BTO flats, executive condos raised; first-time buyers to get extra ballot per child",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-income-ceiling-bto-flats-ec-singles-ballot-families-6335846",
-      "published": "2026-08-23 20:47"
-    },
-    {
-      "category": "Housing",
       "title": "Woman, 76, uses ikan bilis, duck bones & oyster sauce bait to trap 20 rats in 3 weeks at Chinatown block of flats",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/woman-trap-rats-chinatown/",
@@ -203,6 +203,34 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/ndr-2026-higher-income-ceiling-for-bto-flats-ecs-more-ballot-chances-for-first-timers-with-kids",
       "published": "2026-08-23 20:43"
+    },
+    {
+      "category": "General",
+      "title": "Formula One leader Antonelli to take grid drop at Monza home race",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/formula-one-leader-antonelli-take-grid-drop-monza-home-race-6336356",
+      "published": "2026-08-24 02:16"
+    },
+    {
+      "category": "General",
+      "title": "Newcastle draw 2-2 with Liverpool as former hero Keegan hailed",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/newcastle-draw-2-2-liverpool-former-hero-keegan-hailed-6336351",
+      "published": "2026-08-24 02:08"
+    },
+    {
+      "category": "General",
+      "title": "Giuliano rescues Atletico as Alvarez jeered in Villarreal draw",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/giuliano-rescues-atletico-alvarez-jeered-in-villarreal-draw-6336331",
+      "published": "2026-08-24 01:45"
+    },
+    {
+      "category": "General",
+      "title": "Jefferson-Wooden beats Alfred in Silesia, Seville takes men's sprint",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/jefferson-wooden-beats-alfred-in-silesia-seville-takes-mens-sprint-6336321",
+      "published": "2026-08-24 01:43"
     },
     {
       "category": "General",
@@ -220,9 +248,9 @@
     },
     {
       "category": "General",
-      "title": "Late Gvardiol strike earns Maresca winning start and Brighton hammer Villa",
+      "title": "Late Gvardiol strike earns Maresca winning start, Liverpool snatch last-gasp draw",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/late-gvardiol-strike-earns-maresca-winning-start-and-brighton-hammer-villa-6336241",
+      "url": "https://www.channelnewsasia.com/sport/late-gvardiol-strike-earns-maresca-winning-start-liverpool-snatch-last-gasp-draw-6336241",
       "published": "2026-08-23 23:14"
     },
     {
@@ -252,34 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/man-city-set-sign-morocco-midfielder-bouaddi-lille-6336121",
       "published": "2026-08-23 21:50"
-    },
-    {
-      "category": "General",
-      "title": "NDR 2026: Singapore studying feasibility of undersea tunnels to connect Tekong to mainland",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-undersea-tunnel-tekong-sentosa-brani-6335841",
-      "published": "2026-08-23 21:19"
-    },
-    {
-      "category": "General",
-      "title": "Kejelcha regains half marathon world record in Buenos Aires",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/kejelcha-regains-half-marathon-world-record-in-buenos-aires-6336031",
-      "published": "2026-08-23 21:18"
-    },
-    {
-      "category": "General",
-      "title": "NDR 2026: Semakau, Bukom and Pulau Sudong may be merged into new island for industrial, power needs",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/national-day-rally-2026-semakau-bukom-new-island-power-6335816",
-      "published": "2026-08-23 21:08"
-    },
-    {
-      "category": "General",
-      "title": "Nordic nations say they have lost confidence in Infantino and FIFA governance",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/nordic-nations-say-they-have-lost-confidence-in-infantino-and-fifa-governance-6335971",
-      "published": "2026-08-23 20:53"
     }
   ]
 }
