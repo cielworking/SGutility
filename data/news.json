@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-24 18:53",
+  "last_updated": "2026-08-24 19:43",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Nvidia worker among 9 charged in Taiwan chip smuggling case",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nvidia-worker-charged-taiwan-chip-smuggling-case-6337651",
+      "published": "2026-08-24 18:53"
+    },
     {
       "category": "Crime",
       "title": "Two to be charged over separate shop thefts at Changi Airport and Jewel",
@@ -14,6 +21,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/woman-jailed-cambodia-scam-syndicate-singapore-6337476",
       "published": "2026-08-24 17:59"
+    },
+    {
+      "category": "Crime",
+      "title": "Drunk helper kicks S'pore employer, 83, flings her to floor, gets 17 weeks' jail",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/helper-drunk-assault-elderly-employer/",
+      "published": "2026-08-25 00:55"
     },
     {
       "category": "Crime",
@@ -56,13 +70,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/17-weeks-jail-for-helper-who-got-drunk-and-assaulted-elderly-woman-under-her-care",
       "published": "2026-08-24 13:26"
-    },
-    {
-      "category": "Traffic",
-      "title": "PSG coach warns players need to compete out of their comfort zone",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/psg-coach-warns-players-need-compete-out-their-comfort-zone-6337306",
-      "published": "2026-08-24 15:34"
     },
     {
       "category": "Traffic",
@@ -122,13 +129,6 @@
     },
     {
       "category": "Fire",
-      "title": "Haze could return to Singapore as fires intensify in Sumatra, Kalimantan",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/haze-nea-psi-sumatra-kalimantan-indonesia-hotspots-6320986",
-      "published": "2026-08-24 15:23"
-    },
-    {
-      "category": "Fire",
       "title": "Fire breaks out at York Hotel kitchen at Orchard, 1 person conveyed to hospital",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/fire-york-hotel/",
@@ -154,6 +154,27 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/ndr-2026-higher-income-ceiling-for-bto-flats-ecs-more-ballot-chances-for-first-timers-with-kids",
       "published": "2026-08-23 20:43"
+    },
+    {
+      "category": "General",
+      "title": "Millions of Teslas recalled in China over door handle safety",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/tesla-recall-china-hidden-door-handle-safety-6337706",
+      "published": "2026-08-24 19:23"
+    },
+    {
+      "category": "General",
+      "title": "Typhoon Narra wreaks havoc in China, Vietnam as rains lead to floods",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/typhoon-narra-wreaks-havoc-in-china-vietnam-rains-lead-floods-6336951",
+      "published": "2026-08-24 19:03"
+    },
+    {
+      "category": "General",
+      "title": "Norris showing more self-confidence, says Stella after Dutch win",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/norris-showing-more-self-confidence-says-stella-after-dutch-win-6337661",
+      "published": "2026-08-24 18:53"
     },
     {
       "category": "General",
@@ -248,38 +269,17 @@
     },
     {
       "category": "General",
-      "title": "Trabzonspor set to sign Fabinho on free transfer",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/trabzonspor-set-sign-fabinho-free-transfer-6337276",
-      "published": "2026-08-24 15:21"
-    },
-    {
-      "category": "General",
-      "title": "Ex-employee let go after probation without one month's notice wins claim against law firm",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/law-firm-employee-probation-terminated-one-month-notice-win-claim-6337241",
-      "published": "2026-08-24 15:20"
-    },
-    {
-      "category": "General",
-      "title": "S'pore pet transporter, 43, wants to abolish stigma that 'Muslims cannot handle dogs'",
+      "title": "Ex-Acting Minister Faishal Ibrahim in talks to return to academia: NUS",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/spore-pet-transporter-abolish-stigma-dogs/",
-      "published": "2026-08-24 19:45"
+      "url": "https://mothership.sg/2026/08/faishal-return-academia-nus/",
+      "published": "2026-08-24 23:04"
     },
     {
       "category": "General",
-      "title": "National Day Rally 2026 in summary: Supporting families, preserving culture & growing bigger",
+      "title": "Man, 57, found floating unconscious in Rochor Canal, passes away in hospital",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/ndr-2026-summary/",
-      "published": "2026-08-24 05:42"
-    },
-    {
-      "category": "General",
-      "title": "Comment: PM Wong's NDR supports the S'porean child regardless of their parents' circumstances. It may be what's needed for an 'existential crisis'.",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/comment-ndr-2026-support-children/",
-      "published": "2026-08-24 05:22"
+      "url": "https://mothership.sg/2026/08/bukit-timah-canal-man-unconscious/",
+      "published": "2026-08-24 22:36"
     }
   ]
 }
