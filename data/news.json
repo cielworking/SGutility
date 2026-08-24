@@ -1,19 +1,12 @@
 {
-  "last_updated": "2026-08-24 15:19",
+  "last_updated": "2026-08-24 17:03",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Theft cases in homes jump 25% in first half of 2026 even as Singapore's overall crime rate stays stable",
+      "title": "Theft cases in homes jump 25% in first half of 2026 even as Singapore's overall physical crime rate stays stable",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/spf-mid-year-crime-brief-2026-theft-molestation-6329966",
       "published": "2026-08-24 15:00"
-    },
-    {
-      "category": "Crime",
-      "title": "Indonesian police arrest 72 people suspected of starting forest fires",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-arrest-forest-fires-haze-kalimantan-6335946",
-      "published": "2026-08-24 11:47"
     },
     {
       "category": "Crime",
@@ -21,13 +14,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/yew-tee-foodcourt-fight/",
       "published": "2026-08-24 03:02"
-    },
-    {
-      "category": "Crime",
-      "title": "M’sian man, 35, repeatedly punched S’porean man, 52, at Limbang Shopping Centre in Choa Chu Kang, gets 12 weeks’ jail & ordered to pay S$873 compensation",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/man-punch-man-limbang-shopping-centre-jail/",
-      "published": "2026-08-23 23:12"
     },
     {
       "category": "Crime",
@@ -42,6 +28,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/17-weeks-jail-for-helper-who-got-drunk-and-assaulted-elderly-woman-under-her-care",
       "published": "2026-08-24 13:26"
+    },
+    {
+      "category": "Traffic",
+      "title": "PSG coach warns players need to compete out of their comfort zone",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/psg-coach-warns-players-need-compete-out-their-comfort-zone-6337306",
+      "published": "2026-08-24 15:34"
     },
     {
       "category": "Traffic",
@@ -73,7 +66,7 @@
     },
     {
       "category": "Traffic",
-      "title": "Man dies after being found unconscious in Bukit Timah canal; no foul play suspected",
+      "title": "Man dies after being found unconscious in canal in Bukit Timah; no foul play suspected",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-dies-after-being-found-unconscious-in-bukit-timah-canal-no-foul-play-suspected",
       "published": "2026-08-24 12:18"
@@ -114,11 +107,11 @@
       "published": "2026-08-23 18:25"
     },
     {
-      "category": "Transport",
-      "title": "Train and bus users will have reminders to keep Singapore clean in Public Hygiene Council campaign",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/environment/train-and-bus-users-will-have-reminders-to-keep-singapore-clean-in-public-hygiene-council-campaign",
-      "published": "2026-08-23 13:55"
+      "category": "Fire",
+      "title": "Haze could return to Singapore as fires intensify in Sumatra, Kalimantan",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-nea-psi-sumatra-kalimantan-indonesia-hotspots-6320986",
+      "published": "2026-08-24 15:23"
     },
     {
       "category": "Fire",
@@ -147,6 +140,62 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/ndr-2026-higher-income-ceiling-for-bto-flats-ecs-more-ballot-chances-for-first-timers-with-kids",
       "published": "2026-08-23 20:43"
+    },
+    {
+      "category": "General",
+      "title": "Ukraine wants peace but won't give in, Zelenskyy says on Independence Day",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/ukraine-war-independence-day-zelenskyy-russia-6337426",
+      "published": "2026-08-24 16:55"
+    },
+    {
+      "category": "General",
+      "title": "Indonesia to open airspace for cloud seeding to tackle haze, Malaysia says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/haze-indonesia-open-airspace-cloud-seeding-malaysia-6337376",
+      "published": "2026-08-24 16:49"
+    },
+    {
+      "category": "General",
+      "title": "Shares, oil dip as US sanctions on Iran loom",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/shares-oil-dip-us-sanctions-iran-loom-6336701",
+      "published": "2026-08-24 16:31"
+    },
+    {
+      "category": "General",
+      "title": "Alibaba launches Wan3.0 AI video model after $10 billion share sale",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/alibaba-launches-wan30-ai-video-model-after-10-billion-share-sale-6337366",
+      "published": "2026-08-24 16:15"
+    },
+    {
+      "category": "General",
+      "title": "Lions name team to take on All Blacks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/lions-name-team-take-all-blacks-6337351",
+      "published": "2026-08-24 16:03"
+    },
+    {
+      "category": "General",
+      "title": "Faishal Ibrahim in discussions to return to academia with NUS",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/faishal-ibrahim-nus-academia-return-professor-6337236",
+      "published": "2026-08-24 15:47"
+    },
+    {
+      "category": "General",
+      "title": "Trabzonspor set to sign Fabinho on free transfer",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/trabzonspor-set-sign-fabinho-free-transfer-6337276",
+      "published": "2026-08-24 15:21"
+    },
+    {
+      "category": "General",
+      "title": "Ex-employee let go after probation without one month's notice wins claim against law firm",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/law-firm-employee-probation-terminated-one-month-notice-win-claim-6337241",
+      "published": "2026-08-24 15:20"
     },
     {
       "category": "General",
@@ -192,66 +241,10 @@
     },
     {
       "category": "General",
-      "title": "Sonova unveils new AI-powered hearing-aid platform to support growth targets",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sonova-unveils-new-ai-powered-hearing-aid-platform-support-growth-targets-6337051",
-      "published": "2026-08-24 13:08"
-    },
-    {
-      "category": "General",
-      "title": "New Zealand to introduce Bill banning social media for children under 16",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/new-zealand-social-media-ban-under-16-6336941",
-      "published": "2026-08-24 11:55"
-    },
-    {
-      "category": "General",
-      "title": "Oil falls as Trump pledges economic war on Iran",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-us-iran-economic-war-oil-prices-6336931",
-      "published": "2026-08-24 11:41"
-    },
-    {
-      "category": "General",
-      "title": "Shein to pay up to $3.5 billion to select pre-IPO investors around Hong Kong listing",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/shein-pay-up-35-billion-select-pre-ipo-investors-around-hong-kong-listing-6336936",
-      "published": "2026-08-24 11:31"
-    },
-    {
-      "category": "General",
-      "title": "Nvidia discusses Perplexity investment at $30 billion-plus valuation, The Information reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-discusses-perplexity-investment-30-billion-plus-valuation-information-reports-6336911",
-      "published": "2026-08-24 11:18"
-    },
-    {
-      "category": "General",
-      "title": "Nike and Adidas are back in the running shoe race",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/nike-adidas-running-shoes-hoka-6336876",
-      "published": "2026-08-24 11:05"
-    },
-    {
-      "category": "General",
-      "title": "Trump administration predicts US trade war 'devastating' for Canada",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-canada-trade-war-trump-carney-6336791",
-      "published": "2026-08-24 10:07"
-    },
-    {
-      "category": "General",
-      "title": "Blackpink's Jennie releasing new solo EP on Aug 28",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/jennie-blackpink-new-ep-fallen-angel-6336706",
-      "published": "2026-08-24 10:06"
-    },
-    {
-      "category": "General",
-      "title": "Alibaba shares fall 8% after $10 billion Hong Kong share sale",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/alibaba-shares-fall-8-after-10-billion-hong-kong-share-sale-6336756",
-      "published": "2026-08-24 09:53"
+      "title": "Comment: PM Wong's NDR supports the S'porean child regardless of their parents' circumstances. It may be what's needed for an 'existential crisis'.",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/comment-ndr-2026-support-children/",
+      "published": "2026-08-24 05:22"
     },
     {
       "category": "General",
@@ -280,6 +273,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/national-day-rally-2026-social-media/",
       "published": "2026-08-24 04:25"
+    },
+    {
+      "category": "General",
+      "title": "MDDI to relax restrictions on dialect film screenings in S'pore from Sep. 2026",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/dialect-film-screening-limit-removal-ndr-2026/",
+      "published": "2026-08-24 03:12"
     }
   ]
 }
