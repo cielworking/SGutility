@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-26 06:44",
+  "last_updated": "2026-08-26 07:36",
   "headlines": [
     {
       "category": "Crime",
@@ -28,6 +28,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/hong-kong-nurse-steal-bind-over/",
       "published": "2026-08-25 03:13"
+    },
+    {
+      "category": "Crime",
+      "title": "Two to be charged for counterfeiting Singapore currency notes",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/two-to-be-charged-for-counterfeiting-singapore-currency-notes",
+      "published": "2026-08-26 06:50"
     },
     {
       "category": "Crime",
@@ -100,13 +107,6 @@
       "published": "2026-08-24 15:00"
     },
     {
-      "category": "Crime",
-      "title": "17 weeks’ jail for helper who got drunk and assaulted elderly woman under her care",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/17-weeks-jail-for-helper-who-got-drunk-and-assaulted-elderly-woman-under-her-care",
-      "published": "2026-08-24 13:26"
-    },
-    {
       "category": "Traffic",
       "title": "More leave for parents, more work for the rest? Childcare leave boost sparks workplace debate",
       "source": "CNA",
@@ -156,18 +156,39 @@
       "published": "2026-08-24 14:10"
     },
     {
-      "category": "Traffic",
-      "title": "New platform to create AI agents available to all public healthcare professionals",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/tech/new-platform-to-create-ai-agents-available-to-all-public-healthcare-professionals",
-      "published": "2026-08-24 12:30"
-    },
-    {
       "category": "Fire",
       "title": "One person taken to hospital after fire breaks out in York Hotel kitchen",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/one-person-taken-to-hospital-after-fire-breaks-out-in-york-hotel-kitchen",
       "published": "2026-08-24 14:59"
+    },
+    {
+      "category": "Money",
+      "title": "US oil prices extend losses on hopes of Iran-Oman talks on Strait of Hormuz",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-oil-prices-extend-losses-hopes-iran-oman-talks-strait-hormuz-6341076",
+      "published": "2026-08-26 07:02"
+    },
+    {
+      "category": "General",
+      "title": "Canada slaps retaliatory tariffs on US goods worth US$20 billion as trade war intensifies",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/canada-us-retaliatory-tariffs-us20-billion-trade-war-6341106",
+      "published": "2026-08-26 07:21"
+    },
+    {
+      "category": "General",
+      "title": "How Singapore fashion label The Dori turns old saris into one-of-a-kind shirts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/style-beauty/dori-upcycled-saris-6310991",
+      "published": "2026-08-26 07:17"
+    },
+    {
+      "category": "General",
+      "title": "Iran and Oman discuss temporary Hormuz corridor as impasse with US drags on",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-oman-hormuz-corridor-us-impasse-6341021",
+      "published": "2026-08-26 06:47"
     },
     {
       "category": "General",
@@ -259,27 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/us-spy-chief-russia-visit-ratcliffe-6340786",
       "published": "2026-08-26 03:46"
-    },
-    {
-      "category": "General",
-      "title": "All Blacks come from behind to edge Lions and stay unbeaten on tour",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/all-blacks-come-behind-edge-lions-and-stay-unbeaten-tour-6340801",
-      "published": "2026-08-26 03:01"
-    },
-    {
-      "category": "General",
-      "title": "Japan eyes blockchain for instant stock, government bond settlement, Nikkei reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japan-eyes-blockchain-instant-stock-government-bond-settlement-nikkei-reports-6340781",
-      "published": "2026-08-26 02:52"
-    },
-    {
-      "category": "General",
-      "title": "US country music legend Dolly Parton dies at 80",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/dolly-parton-dies-80-country-music-6340736",
-      "published": "2026-08-26 02:32"
     }
   ]
 }
