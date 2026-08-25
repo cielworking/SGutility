@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25 18:49",
+  "last_updated": "2026-08-25 19:42",
   "headlines": [
     {
       "category": "Crime",
@@ -14,6 +14,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/amos-yee-charged-racial-harmony-offences-indecent-comments-children-6339566",
       "published": "2026-08-25 16:24"
+    },
+    {
+      "category": "Crime",
+      "title": "S'porean man, 22, gets 1 week's jail for striking down & killing elderly pedestrian while cycling along Rochor Road",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/cycle-negligent-kill-elderly/",
+      "published": "2026-08-25 20:38"
     },
     {
       "category": "Crime",
@@ -38,13 +45,6 @@
     },
     {
       "category": "Crime",
-      "title": "2 Thai men, 41 & 21, arrested for allegedly abducting Chinese national in Bangkok",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/thai-men-abduct-chinese-bangkok/",
-      "published": "2026-08-25 01:45"
-    },
-    {
-      "category": "Crime",
       "title": "Amos Yee to be charged over comments allegedly threatening racial harmony, supporting child sex",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/amos-yee-to-be-handed-more-charges-for-threatening-racial-harmony-and-comments-over-paedophilia",
@@ -52,7 +52,7 @@
     },
     {
       "category": "Crime",
-      "title": "Man to be charged for allegedly sending abusive, insulting e-mails to police, MHA",
+      "title": "Man to be charged over abusive, insulting e-mails sent to police, MHA",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-to-be-charged-after-allegedly-sending-abusive-insulting-e-mails-to-police-mha",
       "published": "2026-08-25 15:20"
@@ -171,20 +171,6 @@
     },
     {
       "category": "Fire",
-      "title": "Prabowo orders permits to be revoked for firms linked to Indonesia forest fires",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-haze-forest-fires-permit-revocation-malaysia-singapore-6339461",
-      "published": "2026-08-25 15:15"
-    },
-    {
-      "category": "Fire",
-      "title": "M'sia professor who said Romans learnt shipbuilding from Malays fired from university",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/malaysian-professor-shipbuilding-roman-malay-dismissed/",
-      "published": "2026-08-25 02:25"
-    },
-    {
-      "category": "Fire",
       "title": "One person taken to hospital after fire breaks out in York Hotel kitchen",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/one-person-taken-to-hospital-after-fire-breaks-out-in-york-hotel-kitchen",
@@ -192,17 +178,31 @@
     },
     {
       "category": "Money",
-      "title": "Japanese bond ETFs attract a record $1.5 billion in net inflows in 2026 so far, Morningstar say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japanese-bond-etfs-attract-record-15-billion-in-net-inflows-in-2026-so-far-morningstar-say-6339591",
-      "published": "2026-08-25 16:18"
-    },
-    {
-      "category": "Money",
       "title": "Japan's debt-servicing costs seen at record in next fiscal year, Kyodo reports",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/japans-debt-servicing-costs-seen-record-in-next-fiscal-year-kyodo-reports-6339556",
       "published": "2026-08-25 15:50"
+    },
+    {
+      "category": "General",
+      "title": "NDP 2027 to return to the Padang as Singapore marks 60 years of National Service",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/ndp-2027-padang-venue-national-service-6339681",
+      "published": "2026-08-25 19:30"
+    },
+    {
+      "category": "General",
+      "title": "Hamilton accepts sarcastic radio messages did not show him in best light",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/hamilton-accepts-sarcastic-radio-messages-did-not-show-him-in-best-light-6340006",
+      "published": "2026-08-25 19:26"
+    },
+    {
+      "category": "General",
+      "title": "DBS brings back PayLah! campaign with up to S$3 cashback on 17 Saturdays from Aug 29",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/dbs-paylah-cashback-campaign-aug-29-hawker-wet-market-6339896",
+      "published": "2026-08-25 18:54"
     },
     {
       "category": "General",
@@ -262,6 +262,13 @@
     },
     {
       "category": "General",
+      "title": "Japanese bond funds see record inflows as yields attract European buyers",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japanese-bond-funds-see-record-inflows-yields-attract-european-buyers-6339591",
+      "published": "2026-08-25 16:18"
+    },
+    {
+      "category": "General",
       "title": "Changing workplace attitudes a ‘much harder’ challenge in supporting parenthood: Indranee",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/changing-workplace-attitudes-much-harder-challenge-supporting-parenthood-indranee-rajah-6339486",
@@ -273,13 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/india-space-startups-taking-can-they-scale-6339466",
       "published": "2026-08-25 15:51"
-    },
-    {
-      "category": "General",
-      "title": "China says its cooperation with Iran should not be disrupted",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-iran-cooperation-us-sanctions-6339551",
-      "published": "2026-08-25 15:49"
     }
   ]
 }
