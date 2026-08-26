@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-08-26 15:58",
+  "last_updated": "2026-08-26 17:01",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Man who made more than 1,000 silent calls to police 'for fun and enjoyment' gets jail",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/1000-silent-calls-police-npc-obstruction-6342106",
+      "published": "2026-08-26 16:35"
+    },
     {
       "category": "Crime",
       "title": "Our Times actress Tsai Yi-chen arrested in Japan for allegedly pouring oil on temple monument",
@@ -17,10 +24,17 @@
     },
     {
       "category": "Crime",
-      "title": "South Korea's Lee calls for greater police accountability after Jeju missing-person cases",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/south-koreas-lee-calls-greater-police-accountability-after-jeju-missing-person-cases-6341566",
-      "published": "2026-08-26 11:46"
+      "title": "Amos Yee, 27, given 4 new charges in court, offered S$15,000 bail",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/amos-yee-charged-comments-online/",
+      "published": "2026-08-26 17:55"
+    },
+    {
+      "category": "Crime",
+      "title": "S’porean man, 33, filmed couples having sex in public & attempted extortion, given 2 years & 10 months’ jail & caning",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/man-film-couples-sex-public-extort-jail-caning/",
+      "published": "2026-08-26 11:19"
     },
     {
       "category": "Crime",
@@ -45,23 +59,30 @@
     },
     {
       "category": "Crime",
-      "title": "Man, 47, sends harassment emails to MHA & police, to be charged for using insulting & abusive words towards public servants",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/man-send-harassment-emails-mha-spf/",
-      "published": "2026-08-25 23:01"
+      "title": "Restaurant chef sexually assaulted girl, 11, while staff and customers were present",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/restaurant-chef-sexually-assaulted-girl-11-while-staff-and-customers-were-present",
+      "published": "2026-08-26 16:25"
     },
     {
       "category": "Crime",
-      "title": "Over $410m lost to scams in first half of 2026; 8 in 10 victims voluntarily handed money to scammers",
+      "title": "29-year-old arrested for driving under influence of drugs after BKE accident",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/over-410m-lost-to-scams-in-first-half-of-2026-8-in-10-victims-voluntarily-handed-money-to-scammers",
-      "published": "2026-08-26 15:00"
+      "url": "https://www.straitstimes.com/singapore/29-year-old-driver-arrested-for-driving-under-influence-of-drugs-after-bke-accident",
+      "published": "2026-08-26 15:58"
     },
     {
       "category": "Crime",
       "title": "‘I was too naive’: Retiree loses over $70k to investment scam after meeting woman on TikTok",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/retiree-loses-over-70k-to-investment-scam-after-meeting-woman-on-tiktok",
+      "published": "2026-08-26 15:00"
+    },
+    {
+      "category": "Crime",
+      "title": "Over $410m lost to scams in first half of 2026; 8 in 10 victims voluntarily handed money to scammers",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/over-410m-lost-to-scams-in-first-half-of-2026-8-in-10-victims-voluntarily-handed-money-to-scammers",
       "published": "2026-08-26 15:00"
     },
     {
@@ -143,6 +164,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Higher BTO demand expected after income ceiling raised, but supply can keep pace: Chee Hong Tat",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/national-development-minister-chee-hong-tat-mnd-hdb-bto-housing-income-ceiling-resale-6342096",
+      "published": "2026-08-26 16:39"
+    },
+    {
+      "category": "Traffic",
       "title": "Former Bayern quartet part of group investing in Portuguese side Estrela",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/former-bayern-quartet-part-group-investing-in-portuguese-side-estrela-6341986",
@@ -192,6 +220,13 @@
     },
     {
       "category": "Fire",
+      "title": "Indonesia’s forestry ministry processes 42 forest fire cases, sanctions six companies",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/indonesia-forest-fires-haze-kalimantan-6342171",
+      "published": "2026-08-26 16:48"
+    },
+    {
+      "category": "Fire",
       "title": "Pakistan hospital fire kills 14 infants",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/pakistan-hospital-fire-14-infants-killed-6341981",
@@ -203,6 +238,34 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/fire-breaks-out-in-bedroom-of-balestier-apartment-no-injuries-reported",
       "published": "2026-08-26 09:02"
+    },
+    {
+      "category": "Money",
+      "title": "Australia's top software firm WiseTech slumps 10% as e2open acquisition costs weigh",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/australias-top-software-firm-wisetech-slumps-10-e2open-acquisition-costs-weigh-6341926",
+      "published": "2026-08-26 13:45"
+    },
+    {
+      "category": "General",
+      "title": "Singer Angela Chang briefly stops concert for medical treatment, returns to finish show",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/angela-chang-chengdu-concert-ill-costume-heart-6342046",
+      "published": "2026-08-26 16:15"
+    },
+    {
+      "category": "General",
+      "title": "South Korea steps up checks as China probes formaldehyde-tainted cabbages",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-cabbage-formaldehyde-south-korea-food-safety-6342101",
+      "published": "2026-08-26 16:11"
+    },
+    {
+      "category": "General",
+      "title": "The overlooked health effects of climate change",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/brand-studio/overlooked-health-effects-climate-change-6336976",
+      "published": "2026-08-26 16:00"
     },
     {
       "category": "General",
@@ -217,69 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/finswimming-coach-conspire-false-results-athletes-sea-games-6341966",
       "published": "2026-08-26 15:42"
-    },
-    {
-      "category": "General",
-      "title": "Mediacorp wins Singapore Environmental Achievement Award 2026 for leadership and advocacy",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/mediacorp-singapore-environmental-achievement-awards-2026-6341366",
-      "published": "2026-08-26 15:00"
-    },
-    {
-      "category": "General",
-      "title": "Former actress Jazreel Low spends ‘high 6-figure sum’ on new cafe in Bishan Park",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/dining/jazreel-low-shared-table-cafe-bishan-6341546",
-      "published": "2026-08-26 15:00"
-    },
-    {
-      "category": "General",
-      "title": "Hyundai lifts margin target, expands US hybrid lineup",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/hyundai-lifts-margin-target-expands-us-hybrid-lineup-6342006",
-      "published": "2026-08-26 14:41"
-    },
-    {
-      "category": "General",
-      "title": "CD Projekt RED to launch remastered version of 'The Witcher 3' ahead of new expansion",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/cd-projekt-red-launch-remastered-version-witcher-3-ahead-new-expansion-6341971",
-      "published": "2026-08-26 14:15"
-    },
-    {
-      "category": "General",
-      "title": "Media and events firm TechTV Network on trial for S$190,000 in allegedly unpaid salaries",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/techtv-company-unpaid-salary-wages-pay-190000-employment-act-mom-6341661",
-      "published": "2026-08-26 13:59"
-    },
-    {
-      "category": "General",
-      "title": "Australia selectors ponder Lyon role amid pace push",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/australia-selectors-ponder-lyon-role-amid-pace-push-6341931",
-      "published": "2026-08-26 13:53"
-    },
-    {
-      "category": "General",
-      "title": "Surfing-Canada's Brooks kicks off Fiji Pro with perfect 10-point ride",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/surfing-canadas-brooks-kicks-fiji-pro-perfect-10-point-ride-6341936",
-      "published": "2026-08-26 13:50"
-    },
-    {
-      "category": "General",
-      "title": "SoftBank mulls up to $20 billion bond sale for OpenAI financing, Bloomberg News reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/softbank-mulls-up-20-billion-bond-sale-openai-financing-bloomberg-news-reports-6341881",
-      "published": "2026-08-26 13:26"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: NDR 2026 – if Singapore can plan 50 years ahead for infrastructure, can it do the same for nature?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/ndr-2026-western-island-development-marine-nature-6341481",
-      "published": "2026-08-26 13:11"
     }
   ]
 }
