@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-29 07:02",
+  "last_updated": "2026-08-29 12:09",
   "headlines": [
     {
       "category": "Crime",
@@ -7,6 +7,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/commentary/us-china-xi-trump-visit-strategic-stability-6347451",
       "published": "2026-08-29 06:00"
+    },
+    {
+      "category": "Crime",
+      "title": "Man in S'pore, 25, who worked as teacher aide, charged over sexual offences committed against 11-year-old pupil",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/teacher-aide-charged-sexual-offence/",
+      "published": "2026-08-28 23:28"
     },
     {
       "category": "Crime",
@@ -121,11 +128,11 @@
       "published": "2026-08-27 20:07"
     },
     {
-      "category": "Crime",
-      "title": "Plans to turn Singapore Recreation Club billiards room into co-working space headed for court trial",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/plans-to-turn-singapore-recreation-club-billiards-room-into-co-working-space-headed-for-court-trial",
-      "published": "2026-08-27 19:05"
+      "category": "Traffic",
+      "title": "Once excluded from PE, now a national athlete: Meet Singapore’s only female national wheelchair rugby player",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/singapore-female-wheelchair-rugby-national-athlete-6330156",
+      "published": "2026-08-29 07:10"
     },
     {
       "category": "Traffic",
@@ -133,13 +140,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/brilliant-bayern-ease-5-1-bundesliga-win-over-stuttgart-6348771",
       "published": "2026-08-29 05:33"
-    },
-    {
-      "category": "Traffic",
-      "title": "Sabalenka, Pegula welcome US Open prize money boost, new player council",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/sabalenka-pegula-welcome-us-open-prize-money-boost-new-player-council-6348686",
-      "published": "2026-08-29 04:20"
     },
     {
       "category": "Traffic",
@@ -198,20 +198,6 @@
       "published": "2026-08-27 19:50"
     },
     {
-      "category": "Traffic",
-      "title": "Car rental firm RentLah sues former director and finance company over alleged ‘cashback’ scheme",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/car-rental-firm-rentlah-sues-former-director-and-finance-company-over-alleged-cashback-scheme",
-      "published": "2026-08-27 19:20"
-    },
-    {
-      "category": "Transport",
-      "title": "Business class passenger caught smoking in SIA plane toilet during S'pore to Shanghai flight",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/passenger-smoke-sq-plane-toilet/",
-      "published": "2026-08-28 19:13"
-    },
-    {
       "category": "Transport",
       "title": "Tests on new MRT backup train control system completed; findings to be evaluated",
       "source": "Straits Times",
@@ -234,52 +220,66 @@
     },
     {
       "category": "General",
+      "title": "S$3b money laundering case: Forfeited luxury goods, properties to go on auction from September",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/money-laundering-auction-properties-handbags-jewellery-6344921",
+      "published": "2026-08-29 12:00"
+    },
+    {
+      "category": "General",
+      "title": "AIA suspends employee linked to viral Hong Kong mall spat involving girl, 5, slapped by elderly woman",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/aia-hong-kong-suspension-viral-mall-brawl-6349056",
+      "published": "2026-08-29 11:30"
+    },
+    {
+      "category": "General",
+      "title": "Nepal needs help in technical areas, not search and rescue, foreign minister says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/nepal-tibet-disaster-foreign-assistance-technical-areas-6349016",
+      "published": "2026-08-29 10:42"
+    },
+    {
+      "category": "General",
+      "title": "OpenAI to end agreement with SpaceX's AI coding tool Cursor, deepening Musk-Altman clash",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openai-end-agreement-spacexs-ai-coding-tool-cursor-deepening-musk-altman-clash-6348951",
+      "published": "2026-08-29 10:01"
+    },
+    {
+      "category": "General",
+      "title": "Leaders of Russia, China, Iran to attend summit in Kyrgyzstan",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/sco-summit-kyrgyzstan-russia-china-iran-6348911",
+      "published": "2026-08-29 09:49"
+    },
+    {
+      "category": "General",
+      "title": "Katseye replaced at Olivia Rodrigo festival after band member suffers ankle injury",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/katseye-replaced-olivia-rodrigo-festival-ankle-injury-6348881",
+      "published": "2026-08-29 08:27"
+    },
+    {
+      "category": "General",
+      "title": "6 simple exercises physical therapists wish everyone did to age well",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/6-exercises-physical-therapists-wish-everyone-did-age-well-6326071",
+      "published": "2026-08-29 07:10"
+    },
+    {
+      "category": "General",
+      "title": "Number of missing in deadly Nepal, China floods soars past 2,400",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/nepal-tibet-china-floods-2400-missing-6348831",
+      "published": "2026-08-29 07:07"
+    },
+    {
+      "category": "General",
       "title": "Cherki checks all the boxes as Man City crush Crystal Palace",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/cherki-checks-all-boxes-man-city-crush-crystal-palace-6348826",
       "published": "2026-08-29 06:29"
-    },
-    {
-      "category": "General",
-      "title": "Why this Sentosa Cove house was wrapped in charred black timber",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/sentosa-cove-house-shou-sugi-ban-6341461",
-      "published": "2026-08-29 06:22"
-    },
-    {
-      "category": "General",
-      "title": "Will Meta's massive settlement in a landmark US suit spur it to implement age restriction measures worldwide?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/facebook-instagram-teen-restrictions-social-media-lawsuit-6347956",
-      "published": "2026-08-29 06:14"
-    },
-    {
-      "category": "General",
-      "title": "CNA Explains: What caused the deadly Nepal-Tibet disaster?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/interactive/nepal-tibet-glacier-flood-explainer/%2E",
-      "published": "2026-08-29 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Nepal‑Tibet disaster - when a crisis strikes before communities recover from the last one",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/nepal-tibet-floods-landslide-disaster-strikes-communities-recover-6345166",
-      "published": "2026-08-29 05:59"
-    },
-    {
-      "category": "General",
-      "title": "Norwegians mourn King Harald as son succeeds to throne",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/norway-king-harald-mourn-death-6348751",
-      "published": "2026-08-29 05:48"
-    },
-    {
-      "category": "General",
-      "title": "Marquinhos grabs late equaliser as PSG draw 2-2 with Lille",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/marquinhos-grabs-late-equaliser-psg-draw-2-2-lille-6348766",
-      "published": "2026-08-29 05:36"
     }
   ]
 }
