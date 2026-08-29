@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-29 19:05",
+  "last_updated": "2026-08-29 23:38",
   "headlines": [
     {
       "category": "Crime",
@@ -35,13 +35,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/08/teacher-aide-charged-sexual-offence/",
       "published": "2026-08-28 23:28"
-    },
-    {
-      "category": "Crime",
-      "title": "Bloomberg’s decision not to appeal High Court decision shows it knew article was ‘full of falsehoods’: Shanmugam",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/bloombergs-decision-not-to-appeal-high-court-decision-shows-it-knew-article-was-full-of-falsehoods",
-      "published": "2026-08-29 17:52"
     },
     {
       "category": "Crime",
@@ -115,6 +108,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Vuelta leader Pogacar forced to abandon after stage eight crash",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/vuelta-leader-pogacar-forced-abandon-after-stage-eight-crash-6349586",
+      "published": "2026-08-29 23:27"
+    },
+    {
+      "category": "Traffic",
       "title": "US Open 'RedZone' broadcast hopes to replicate NFL TV success",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/us-open-redzone-broadcast-hopes-replicate-nfl-tv-success-6349381",
@@ -129,17 +129,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Alcaraz says uncertainty over comeback fuelled 'intrusive thoughts'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/alcaraz-says-uncertainty-over-comeback-fuelled-intrusive-thoughts-6349276",
-      "published": "2026-08-29 15:29"
-    },
-    {
-      "category": "Traffic",
-      "title": "Fatal accidents & fatalities down, but accidents & casualties up in S'pore in 1st half of 2026",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/2026-mid-year-road-traffic-situation-singapore/",
-      "published": "2026-08-28 23:27"
+      "title": "Woman taken to hospital after being hit by car while running across road junction in Clementi",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/woman-taken-to-hospital-after-being-hit-by-car-while-crossing-road-junction-in-clementi",
+      "published": "2026-08-29 23:08"
     },
     {
       "category": "Traffic",
@@ -170,11 +163,11 @@
       "published": "2026-08-28 11:20"
     },
     {
-      "category": "Traffic",
-      "title": "More than a job: What young Singaporeans say they need to help build their careers",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/more-than-a-job-what-young-singaporeans-say-they-need-to-help-build-their-careers",
-      "published": "2026-08-28 04:00"
+      "category": "Transport",
+      "title": "'Why are you trying so hard?' A Primary 1 dropout's gritty journey to becoming a trainee teacher",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/today/up-close/primary-school-dropout-timeline-isolation-bullying-6345081",
+      "published": "2026-08-29 21:30"
     },
     {
       "category": "Transport",
@@ -192,10 +185,73 @@
     },
     {
       "category": "Fire",
-      "title": "Indonesia escalates battle against fires, putrid haze",
+      "title": "Fire involving about 3ha of greenery extinguished near Seletar Link",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-escalates-battle-wildfires-putrid-haze-6349301",
-      "published": "2026-08-29 16:12"
+      "url": "https://www.channelnewsasia.com/singapore/seletar-link-fire-extinguished-6349346",
+      "published": "2026-08-29 20:12"
+    },
+    {
+      "category": "General",
+      "title": "New boss Iraola encouraged despite Liverpool's winless start",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/new-boss-iraola-encouraged-despite-liverpools-winless-start-6349591",
+      "published": "2026-08-29 23:28"
+    },
+    {
+      "category": "General",
+      "title": "Unrelenting Djokovic refuses to give up on record major dream as US Open begins",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/unrelenting-djokovic-refuses-give-up-record-major-dream-us-open-begins-6349566",
+      "published": "2026-08-29 22:58"
+    },
+    {
+      "category": "General",
+      "title": "Temasek backs SIA's Air India investment amid growing scrutiny",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/temasek-sia-air-india-investment-6349216",
+      "published": "2026-08-29 22:31"
+    },
+    {
+      "category": "General",
+      "title": "Iceland votes on whether to resume EU membership talks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iceland-vote-resume-eu-membership-talks-6349506",
+      "published": "2026-08-29 21:50"
+    },
+    {
+      "category": "General",
+      "title": "Marquez brothers go one-two at Aragon as Marc claims record 20th sprint win",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/marquez-brothers-go-one-two-aragon-marc-claims-record-20th-sprint-win-6349496",
+      "published": "2026-08-29 21:41"
+    },
+    {
+      "category": "General",
+      "title": "Munoz's late strike earns Liverpool draw with Forest in Iraola's Anfield debut",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/munozs-late-strike-earns-liverpool-draw-forest-in-iraolas-anfield-debut-6349501",
+      "published": "2026-08-29 21:39"
+    },
+    {
+      "category": "General",
+      "title": "Russian strike on Kyiv-area warehouse sparks detonation, killing 37",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/russia-strike-ukraine-kyiv-warehouse-detonation-6349491",
+      "published": "2026-08-29 21:33"
+    },
+    {
+      "category": "General",
+      "title": "I took 10 weeks of parental leave but couldn't fully leave work behind",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/today/voices/paternity-leave-childcare-father-fatherhood-workplace-work-life-balance-6344816",
+      "published": "2026-08-29 21:30"
+    },
+    {
+      "category": "General",
+      "title": "War weighs on Iran's economy as US intensifies sanctions",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/war-us-sanctions-iran-economy-strait-horrmuz-6349426",
+      "published": "2026-08-29 20:02"
     },
     {
       "category": "General",
@@ -224,62 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/bloomberg-defamation-case-shanmugam-tan-see-leng-6349311",
       "published": "2026-08-29 17:37"
-    },
-    {
-      "category": "General",
-      "title": "Liverpool finalise agreement to sign PSG's Barcola in deal worth up to £123 million, reports say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/liverpool-finalise-agreement-sign-psgs-barcola-in-deal-worth-up-ps123-million-reports-say-6349326",
-      "published": "2026-08-29 17:05"
-    },
-    {
-      "category": "General",
-      "title": "MUIS to strengthen safeguards for children and youth through common framework across mosques",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/muis-safeguard-framework-mosques-children-youth-6349296",
-      "published": "2026-08-29 17:04"
-    },
-    {
-      "category": "General",
-      "title": "Risk of lake burst near China-Nepal border disaster site wanes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/china-nepal-border-disaster-lake-burst-threat-wanes-6349266",
-      "published": "2026-08-29 15:12"
-    },
-    {
-      "category": "General",
-      "title": "Widow of British passenger who died after SQ321 turbulence sues Singapore Airlines",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/sq321-widow-passenger-sues-singapore-airlines-6349151",
-      "published": "2026-08-29 14:43"
-    },
-    {
-      "category": "General",
-      "title": "Leao bids emotional farewell to Milan amid reports of Galatasaray switch",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/leao-bids-emotional-farewell-milan-amid-reports-galatasaray-switch-6349241",
-      "published": "2026-08-29 14:17"
-    },
-    {
-      "category": "General",
-      "title": "Mertens joins Parry in Monterrey final after rallying past Bartunkova",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mertens-joins-parry-in-monterrey-final-after-rallying-past-bartunkova-6349121",
-      "published": "2026-08-29 12:20"
-    },
-    {
-      "category": "General",
-      "title": "S$3b money laundering case: Forfeited luxury goods, properties to go on auction from September",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/money-laundering-auction-properties-handbags-jewellery-6344921",
-      "published": "2026-08-29 12:00"
-    },
-    {
-      "category": "General",
-      "title": "AIA suspends employee linked to viral Hong Kong mall spat involving girl, 5, slapped by elderly woman",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/aia-hong-kong-suspension-viral-mall-brawl-6349056",
-      "published": "2026-08-29 11:30"
     }
   ]
 }
