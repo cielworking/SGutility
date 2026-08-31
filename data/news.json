@@ -1,19 +1,68 @@
 {
-  "last_updated": "2026-08-31 13:32",
+  "last_updated": "2026-08-31 21:46",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Man, 25, to be charged in court with murder of 29-year-old man in Tuas South",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/man-murder-tuas-charged/",
-      "published": "2026-08-31 00:47"
+      "title": "Meta removes ads for fraud apps posing as porn after India sounds alarm",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/meta-removes-ads-fraud-apps-posing-porn-after-india-sounds-alarm-6352456",
+      "published": "2026-08-31 21:21"
     },
     {
       "category": "Crime",
-      "title": "M'sia man, 49, arrested for allegedly slitting throat of nephew, 5, after taking drugs",
+      "title": "Swiss man arrested over deadly rave shooting: Police",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/switzerland-rave-shooting-man-arrested-6352216",
+      "published": "2026-08-31 19:47"
+    },
+    {
+      "category": "Crime",
+      "title": "Nepal-Tibet disaster: Singapore to send police officers specialising in disaster victim identification",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/nepal-tibet-disaster-singapore-mfa-humanitarian-aid-6351861",
+      "published": "2026-08-31 17:01"
+    },
+    {
+      "category": "Crime",
+      "title": "Man, 25, charged with murdering man, 29, in Tuas by slashing him with chopper",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/malaysian-man-murder-nephew-drugs/",
-      "published": "2026-08-30 21:21"
+      "url": "https://mothership.sg/2026/08/man-charged-murder-man-chopper-tuas/",
+      "published": "2026-08-31 23:40"
+    },
+    {
+      "category": "Crime",
+      "title": "Singapore to send police team, humanitarian supplies to aid Nepal flood relief efforts: MFA",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/singapore-to-send-police-team-humanitarian-supplies-to-aid-nepal-flood-relief-efforts-mfa",
+      "published": "2026-08-31 17:20"
+    },
+    {
+      "category": "Crime",
+      "title": "Man who allegedly hid 19cm knife in shoe at Changi Airport T4 charged with carrying offensive weapon",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-who-allegedly-hid-19cm-knife-in-shoe-at-changi-airport-t4-charged-with-carrying-offensive-weapon",
+      "published": "2026-08-31 16:56"
+    },
+    {
+      "category": "Crime",
+      "title": "Repeat offender jailed for assaulting colleague in Coleman Street, causing brain injury",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/repeat-violent-offender-jailed-for-assaulting-colleague-in-coleman-street-causing-brain-injury",
+      "published": "2026-08-31 15:40"
+    },
+    {
+      "category": "Crime",
+      "title": "Suspect in Tuas murder case charged after allegedly slashing victim’s neck with a chopper",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-charged-with-murder-of-29-year-old-man-in-tuas-south",
+      "published": "2026-08-31 14:59"
+    },
+    {
+      "category": "Crime",
+      "title": "ERP charges to resume at 11 locations in Orchard Road area from Sept 7 to ease congestion",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/erp-charges-to-resume-at-11-locations-in-orchard-road-area-from-sept-7-to-ease-congestion",
+      "published": "2026-08-31 14:35"
     },
     {
       "category": "Crime",
@@ -24,31 +73,17 @@
     },
     {
       "category": "Traffic",
-      "title": "Heavy traffic expected at Singapore-Malaysia land checkpoints during September school holidays",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/heavy-traffic-woodlands-tuas-checkpoints-malaysia-september-school-holidays-ica-6351126",
-      "published": "2026-08-31 11:20"
+      "title": "Chinatown pottery studio MIT Artspace shutters abruptly; customers left without art pieces",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/chinatown-pottery-studio-mit-artspace-shutters-abruptly-customers-left-without-art-pieces",
+      "published": "2026-08-31 18:06"
     },
     {
       "category": "Traffic",
-      "title": "Grange House, Live Nation's new entertainment venue, will open at Orchard Road by mid-2027",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/grange-house-live-nation-singapore-orchard-road-6351151",
-      "published": "2026-08-31 10:50"
-    },
-    {
-      "category": "Traffic",
-      "title": "Orange cat aptly named 'King Oyen' arrives on superbike, steals hearts at M'sia's National Day rehearsal",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/king-oyen-malaysia-national-day-cat/",
-      "published": "2026-08-31 00:10"
-    },
-    {
-      "category": "Traffic",
-      "title": "S'pore man with cerebral palsy, 42, carried up Batu Caves annually by brother passes away",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/man-cerebral-palsy-batu-passes-away/",
-      "published": "2026-08-30 22:27"
+      "title": "Motorcyclist taken unconscious to hospital after accident in Admiralty",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/motorcyclist-taken-unconscious-to-hospital-after-accident-in-admiralty",
+      "published": "2026-08-31 14:55"
     },
     {
       "category": "Traffic",
@@ -79,11 +114,18 @@
       "published": "2026-08-30 13:15"
     },
     {
-      "category": "Traffic",
-      "title": "Free breakfast packs, AI study tool, stress-busting activities to support PSLE pupils",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/parenting-education/free-breakfast-packs-ai-study-tool-stress-busting-activities-to-support-psle-pupils",
-      "published": "2026-08-30 12:33"
+      "category": "Transport",
+      "title": "Robot guide Olly stumbles on some directions, gets others right in first MRT trial",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/robot-olly-little-india-mrt-station-6351896",
+      "published": "2026-08-31 18:56"
+    },
+    {
+      "category": "Transport",
+      "title": "Villa-Chelsea transfer links are about business, not friendship, says Emery",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/villa-chelsea-transfer-links-are-about-business-not-friendship-says-emery-6351926",
+      "published": "2026-08-31 17:28"
     },
     {
       "category": "Transport",
@@ -91,6 +133,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/singapores-rie2025-plan-saw-more-business-spending-more-jobs-created-in-rd",
       "published": "2026-08-31 10:00"
+    },
+    {
+      "category": "Fire",
+      "title": "S'pore animal lovers put up billboard sign in Selegie for Wang Wang, dog who died after 4 boys set her on fire in China",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/08/wang-wang-selegie-animal-lovers-billboard/",
+      "published": "2026-08-31 23:30"
     },
     {
       "category": "Fire",
@@ -107,179 +156,130 @@
       "published": "2026-08-31 05:00"
     },
     {
-      "category": "Fire",
-      "title": "2 taken to hospital, 200 evacuated after fire in Choa Chu Kang flat",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/2-taken-to-hospital-200-evacuated-after-fire-breaks-out-in-choa-chu-kang-flat",
-      "published": "2026-08-30 10:42"
-    },
-    {
-      "category": "Housing",
-      "title": "Flats with shorter waiting times being built in Sin Ming and Toa Payoh",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/housing/flats-with-shorter-waiting-times-being-built-at-sin-ming-and-toa-payoh",
-      "published": "2026-08-30 05:00"
-    },
-    {
-      "category": "General",
-      "title": "Pokemon World Championships coming to Singapore in August 2027",
+      "category": "Money",
+      "title": "More than six months into Iran war, no clear winner as costs mount for US",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/pokemon-world-championships-singapore-2027-6351431",
-      "published": "2026-08-31 13:11"
+      "url": "https://www.channelnewsasia.com/world/six-months-iran-war-no-clear-winner-us-costs-mount-6351811",
+      "published": "2026-08-31 17:00"
     },
     {
       "category": "General",
-      "title": "England captain Root shrugs off concerns over lbw run",
+      "title": "Glasner was key reason for joining Nottingham Forest, says Munoz",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-captain-root-shrugs-concerns-over-lbw-run-6351451",
-      "published": "2026-08-31 13:08"
+      "url": "https://www.channelnewsasia.com/sport/glasner-was-key-reason-joining-nottingham-forest-says-munoz-6352446",
+      "published": "2026-08-31 21:13"
     },
     {
       "category": "General",
-      "title": "Iran says supertanker struck by mines in Strait of Hormuz",
+      "title": "Liverpool sign France forward Barcola from PSG",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-strait-hormuz-supertanker-struck-mines-6351441",
-      "published": "2026-08-31 12:56"
+      "url": "https://www.channelnewsasia.com/sport/liverpool-sign-france-forward-barcola-psg-6352441",
+      "published": "2026-08-31 21:12"
     },
     {
       "category": "General",
-      "title": "Borrowing from a licensed moneylender? New cooling-off period starts Sep 15",
+      "title": "Engine Capital pushes EPAM for share buybacks or sale, source says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/licensed-moneylenders-unsecured-loans-cooling-period-6351276",
-      "published": "2026-08-31 12:55"
+      "url": "https://www.channelnewsasia.com/business/engine-capital-pushes-epam-share-buybacks-or-sale-source-says-6352346",
+      "published": "2026-08-31 20:56"
     },
     {
       "category": "General",
-      "title": "Nepal buries dead as rescuers seek thousands missing",
+      "title": "Man City confirm signing of Allan Elias from Palmeiras",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/nepal-tibet-disaster-rescuers-seek-thousands-missing-6351321",
-      "published": "2026-08-31 12:49"
+      "url": "https://www.channelnewsasia.com/sport/man-city-confirm-signing-allan-elias-palmeiras-6352241",
+      "published": "2026-08-31 20:08"
     },
     {
       "category": "General",
-      "title": "OpenAI issued warrants worth $5.5 billion in SB Energy, WSJ reports",
+      "title": "Adobe to offer free access to AI tools in Saudi Arabia in $4 billion deal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-issued-warrants-worth-55-billion-in-sb-energy-wsj-reports-6351421",
-      "published": "2026-08-31 12:30"
+      "url": "https://www.channelnewsasia.com/business/adobe-offer-free-access-ai-tools-in-saudi-arabia-in-4-billion-deal-6352211",
+      "published": "2026-08-31 19:38"
     },
     {
       "category": "General",
-      "title": "Ailing Djokovic stunned in US Open first round by Navone",
+      "title": "GameStop expects lower quarterly sales on store closures, France exit",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ailing-djokovic-stunned-in-us-open-first-round-navone-6351371",
-      "published": "2026-08-31 12:16"
+      "url": "https://www.channelnewsasia.com/business/gamestop-expects-lower-quarterly-sales-store-closures-france-exit-6352121",
+      "published": "2026-08-31 19:02"
     },
     {
       "category": "General",
-      "title": "LIV Golf prepares for bankruptcy filing in September, FT reports",
+      "title": "From classrooms to communities: Young Singaporeans build ties in Uzbekistan",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/liv-golf-prepares-bankruptcy-filing-in-september-ft-reports-6351376",
-      "published": "2026-08-31 12:14"
+      "url": "https://www.channelnewsasia.com/singapore/young-singaporeans-build-ties-expertise-in-uzbekistan-6351791",
+      "published": "2026-08-31 18:58"
     },
     {
       "category": "General",
-      "title": "Djokovic stunned in US Open first round by Navone",
+      "title": "South Africa make one change to squad for third test v New Zealand",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/djokovic-stunned-in-us-open-first-round-navone-6351311",
-      "published": "2026-08-31 12:05"
+      "url": "https://www.channelnewsasia.com/sport/south-africa-make-one-change-squad-third-test-v-new-zealand-6352041",
+      "published": "2026-08-31 18:15"
     },
     {
       "category": "General",
-      "title": "Singapore to legislate stronger safeguards, possible daily time limit for teens on social media",
+      "title": "Japan seeks record US$55.6 billion defence budget, with AI focus",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/time-limit-social-media-teens-facebook-instagram-6349291",
-      "published": "2026-08-31 12:00"
+      "url": "https://www.channelnewsasia.com/east-asia/japan-defence-ministry-seeks-record-budget-ai-6352001",
+      "published": "2026-08-31 18:11"
     },
     {
       "category": "General",
-      "title": "Spidey keeps spinning gold for North American box office",
+      "title": "From cracks to corrosion: How inspectors track down defects in Singapore's buildings",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/spider-man-brand-new-day-box-office-6351251",
-      "published": "2026-08-31 12:00"
+      "url": "https://www.channelnewsasia.com/singapore/building-cracks-corrosion-how-inspectors-track-down-defects-6347166",
+      "published": "2026-08-31 18:04"
     },
     {
       "category": "General",
-      "title": "Analysis:Toyota and Honda may get stuck with the bill for Trump’s Canada tariffs",
+      "title": "ChatGPT becomes first AI chatbot to face tougher EU rules",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/analysistoyota-and-honda-may-get-stuck-bill-trumps-canada-tariffs-6351281",
-      "published": "2026-08-31 11:51"
+      "url": "https://www.channelnewsasia.com/business/eu-chatgpt-reddit-roblox-tougher-regulation-6351981",
+      "published": "2026-08-31 18:02"
     },
     {
       "category": "General",
-      "title": "ComfortDelGro joint venture wins S$3.4 billion contract to operate and maintain Copenhagen Metro",
+      "title": "Singapore's young table tennis team confident but face 'uphill battle' at Asian Games",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/comfortdelgro-copenhagen-metro-contract-kbh-partner-ratp-dev-6351136",
-      "published": "2026-08-31 11:51"
+      "url": "https://www.channelnewsasia.com/sport/singapore-table-tennis-asian-games-aichi-nagoya-6351746",
+      "published": "2026-08-31 17:32"
     },
     {
       "category": "General",
-      "title": "Land Transport Authority to get new chairman",
+      "title": "As typhoon risks grow, farmers in China’s Guangdong adapt to protect their livelihoods",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/lta-chairman-mot-new-board-members-6351181",
-      "published": "2026-08-31 11:36"
+      "url": "https://www.channelnewsasia.com/east-asia/farmers-guangdong-adapt-typhoon-risks-climate-resilience-6351761",
+      "published": "2026-08-31 17:18"
     },
     {
       "category": "General",
-      "title": "Russia's Putin and China's Xi to attend summit in Kyrgyzstan",
+      "title": "Incoming Apple CEO Ternus to take helm amid AI and China challenges",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/putin-xi-summit-kyrgyzstan-shanghai-cooperation-organisation-6351186",
-      "published": "2026-08-31 11:03"
+      "url": "https://www.channelnewsasia.com/world/apple-ceo-john-ternus-tech-ai-china-6351821",
+      "published": "2026-08-31 17:03"
     },
     {
       "category": "General",
-      "title": "South Korean actor Lee Yong-joo of Blue Tower and Princess Hours dies at 44",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/lee-yong-joo-blue-tower-princess-hours-dies-44-6351111",
-      "published": "2026-08-31 10:27"
-    },
-    {
-      "category": "General",
-      "title": "Singapore steps up efforts to turn research into real-world impact under S$37 billion RIE2030 plan",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/nrf-rie2030-research-innovation-grants-6347981",
-      "published": "2026-08-31 10:00"
-    },
-    {
-      "category": "General",
-      "title": "How practical AI skills are helping workers tackle real job demands",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/advertorial/how-practical-ai-skills-are-helping-workers-tackle-real-job-demands-6325476",
-      "published": "2026-08-31 09:56"
-    },
-    {
-      "category": "General",
-      "title": "Uncle Ong, 73, out of neck brace, thanks 'the heavens' & public as he can still feed 23 cats daily in Kallang & Hougang",
+      "title": "2 S'pore financial 'experts' who drove Lamborghinis now bankrupt, over 50 people invested S$5 million: ST",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/uncle-ong-kallang-still-feeding-cats/",
-      "published": "2026-08-31 02:24"
+      "url": "https://mothership.sg/2026/08/financial-experts-lamborghinis-bankrupt-investors/",
+      "published": "2026-09-01 00:25"
     },
     {
       "category": "General",
-      "title": "Over 2,000 items at 50% off at Four Star Mattress Brandfest Sale for 5 days only",
+      "title": "MP Alex Yam calls out 'racist' & 'heartless' comments about nationality of 9 S'poreans missing in Nepal floods",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/over-2000-items-at-50-off-at-four-star-mattress-brandfest-sale-for-5-days-only/",
-      "published": "2026-08-31 01:57"
+      "url": "https://mothership.sg/2026/08/alex-yam-comments-nepal-floods-racist/",
+      "published": "2026-08-31 22:51"
     },
     {
       "category": "General",
-      "title": "Nepal floods: Some bodies decompose beyond recognition, local govt to preserve DNA before remains are handled",
+      "title": "ERP to resume at Orchard on weekdays from Sep. 7, 2026 due to congestion",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/nepal-bodies-decompose-preserve-dna/",
-      "published": "2026-08-31 00:02"
-    },
-    {
-      "category": "General",
-      "title": "Corgi allegedly dragged & left under hot sun for 1 hour at Seletar condo, SPCA says investigations ongoing",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/corgi-sun-seletar/",
-      "published": "2026-08-30 23:11"
-    },
-    {
-      "category": "General",
-      "title": "Thai bar manager allegedly shaves female customer's head over unpaid S$2,300 bill",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/08/thai-bar-manager-allegedly-shaves-female-customers-head-over-unpaid-s2300-bill/",
-      "published": "2026-08-30 20:30"
+      "url": "https://mothership.sg/2026/08/erp-operations-resume-orchard-cordon-weekdays/",
+      "published": "2026-08-31 22:47"
     }
   ]
 }
