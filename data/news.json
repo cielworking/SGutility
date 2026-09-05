@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05 20:42",
+  "last_updated": "2026-09-06 00:04",
   "headlines": [
     {
       "category": "Crime",
@@ -7,13 +7,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/fia-appeal-court-asserts-impartiality-and-integrity-after-briatore-targets-judge-6364631",
       "published": "2026-09-05 19:38"
-    },
-    {
-      "category": "Crime",
-      "title": "Police looking into 'shameful' racist online comments about Nepal-Tibet disaster, Air India: SM Shanmugam",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/racist-comments-nepal-air-india-shanmugam-police-6364346",
-      "published": "2026-09-05 17:00"
     },
     {
       "category": "Crime",
@@ -87,6 +80,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Alpine's Gasly seizes first career F1 pole ahead of Russell at Monza",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/alpines-gasly-seizes-first-career-f1-pole-ahead-russell-monza-6364886",
+      "published": "2026-09-05 23:18"
+    },
+    {
+      "category": "Traffic",
       "title": "Pogacar ends 2026 season early after Vuelta crash",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/pogacar-ends-2026-season-early-after-vuelta-crash-6364646",
@@ -105,13 +105,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/fire-breaks-out-near-heavy-vehicle-park-in-seletar-west-road",
       "published": "2026-09-04 19:10"
-    },
-    {
-      "category": "Transport",
-      "title": "Sydney sweats in spring hot spell, faces 'extreme' bushfire risk",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/sydney-hot-bushfire-risk-6364231",
-      "published": "2026-09-05 12:06"
     },
     {
       "category": "Transport",
@@ -150,6 +143,20 @@
     },
     {
       "category": "Fire",
+      "title": "One person taken to hospital after Simon Lane house fire",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/fire-simon-lane-one-person-hospital-6364706",
+      "published": "2026-09-05 21:42"
+    },
+    {
+      "category": "Fire",
+      "title": "When should a boss step in? What my own burnout taught me about managing others",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/today/voices/boss-burnout-sleep-managing-gen-z-6356706",
+      "published": "2026-09-05 21:30"
+    },
+    {
+      "category": "Fire",
       "title": "Taiwan electric vehicle catches fire, driver, 40, trapped inside & dies",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/taiwan-electric-vehicle-fire-driver-die/",
@@ -157,10 +164,66 @@
     },
     {
       "category": "Fire",
-      "title": "30 people evacuated after fire breaks out in Kovan home",
+      "title": "30 people evacuated, one taken to hospital after fire breaks out in Kovan home",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/30-people-evacuated-after-fire-breaks-out-in-kovan-home",
       "published": "2026-09-05 19:27"
+    },
+    {
+      "category": "General",
+      "title": "Dortmund, Elversberg stage fine comebacks in Bundesliga",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/dortmund-elversberg-stage-fine-comebacks-in-bundesliga-6364906",
+      "published": "2026-09-05 23:50"
+    },
+    {
+      "category": "General",
+      "title": "OpenAI acknowledges 'wiki incident' and need for more transparency around unintended AI behavior",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openai-acknowledges-wiki-incident-and-need-more-transparency-around-unintended-ai-behavior-6364861",
+      "published": "2026-09-05 22:55"
+    },
+    {
+      "category": "General",
+      "title": "Manager Rose rues Bournemouth's unwanted Premier League record",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/manager-rose-rues-bournemouths-unwanted-premier-league-record-6364856",
+      "published": "2026-09-05 22:52"
+    },
+    {
+      "category": "General",
+      "title": "Singapore air quality improves to moderate range after unhealthy readings",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-singapore-air-quality-moderate-range-psi-6364811",
+      "published": "2026-09-05 22:46"
+    },
+    {
+      "category": "General",
+      "title": "Modric available to play for Croatia in Nations League",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/modric-available-play-croatia-in-nations-league-6364826",
+      "published": "2026-09-05 22:35"
+    },
+    {
+      "category": "General",
+      "title": "Figure skating-Russian Valieva's neutral athlete status revoked, source says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/figure-skating-russian-valievas-neutral-athlete-status-revoked-source-says-6364771",
+      "published": "2026-09-05 21:42"
+    },
+    {
+      "category": "General",
+      "title": "He taught himself traditional Teochew crafts as a boy. More than 40 years later, he's still learning",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/today/up-close/traditional-teochew-crafts-boy-self-taught-6353671",
+      "published": "2026-09-05 21:30"
+    },
+    {
+      "category": "General",
+      "title": "Racism has no place in Singapore; concerns about SIA-Air India deal ‘purely commercial’, says MP Kenneth Tiong",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/racism-sia-air-india-deal-commercial-kenneth-tiong-shanmugam-6364671",
+      "published": "2026-09-05 21:15"
     },
     {
       "category": "General",
@@ -199,80 +262,17 @@
     },
     {
       "category": "General",
-      "title": "Iranian tanker hit by US attack near Iran's Kharg Island: Report",
+      "title": "US strikes three Iranian oil tankers after IRGC attack on American naval ships: Central Command",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/iran-tanker-hit-us-attack-kharg-island-war-6364541",
       "published": "2026-09-05 17:54"
     },
     {
       "category": "General",
-      "title": "Infantino to attend Under-20 Women's World Cup opener in Katowice",
+      "title": "Infantino tight-lipped on abandoned proposal, says FIFA focused on growth",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/infantino-attend-under-20-womens-world-cup-opener-in-katowice-6364531",
+      "url": "https://www.channelnewsasia.com/sport/infantino-tight-lipped-abandoned-proposal-says-fifa-focused-growth-6364531",
       "published": "2026-09-05 17:30"
-    },
-    {
-      "category": "General",
-      "title": "‘Worried’ and ‘confused’: Sarawakians grapple with worst haze since 2019",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/sarawak-haze-kuching-serian-businesses-state-emergency-forest-fires-6364401",
-      "published": "2026-09-05 16:00"
-    },
-    {
-      "category": "General",
-      "title": "Nepal tunnel rescue revives hopes 10 days after flood",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/nepal-survivor-chinese-national-flood-underground-hydropower-projects-6364381",
-      "published": "2026-09-05 14:36"
-    },
-    {
-      "category": "General",
-      "title": "Philippine VP Duterte posts bail over 'grave threats' against Marcos",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/philippine-sara-duterte-bail-over-ferdinand-marcos-6364366",
-      "published": "2026-09-05 13:56"
-    },
-    {
-      "category": "General",
-      "title": "South Korea exports surpass full-year record, hit $709.4 billion YTD",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-korea-exports-surpass-full-year-record-hit-7094-billion-ytd-6364376",
-      "published": "2026-09-05 13:55"
-    },
-    {
-      "category": "General",
-      "title": "Malaysia PM Anwar open to considering early GE, with DPM Zahid latest to call for snap polls",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-anwar-ibrahim-early-general-election-6364326",
-      "published": "2026-09-05 12:32"
-    },
-    {
-      "category": "General",
-      "title": "US midterms begin with chaos over mail-voting crackdown",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-midterms-begin-chaos-mail-voting-crackdown-6364251",
-      "published": "2026-09-05 11:52"
-    },
-    {
-      "category": "General",
-      "title": "White House reviews candidates to replace Hegseth deputy Feinberg, sources say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/white-house-reviews-candidates-replace-hegseth-deputy-feinberg-sources-6364151",
-      "published": "2026-09-05 11:26"
-    },
-    {
-      "category": "General",
-      "title": "Seattle Times, Newsday sue OpenAI, Microsoft, alleging copyright infringement",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/seattle-times-newsday-sue-openai-microsoft-alleging-copyright-infringement-6364191",
-      "published": "2026-09-05 11:00"
-    },
-    {
-      "category": "General",
-      "title": "US embassy issues health alert for Cuba amid oil blockade, sanctions",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-embassy-health-alert-cuba-6364161",
-      "published": "2026-09-05 10:44"
     },
     {
       "category": "General",
