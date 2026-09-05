@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05 05:28",
+  "last_updated": "2026-09-05 08:04",
   "headlines": [
     {
       "category": "Crime",
@@ -73,17 +73,17 @@
     },
     {
       "category": "Traffic",
+      "title": "PSG extend Luis Enrique's deal to 2030, sign new deals with five players",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/psg-extend-luis-enriques-deal-2030-sign-new-deals-five-players-6363981",
+      "published": "2026-09-05 05:39"
+    },
+    {
+      "category": "Traffic",
       "title": "Wanyonyi storms to Diamond League Final 800m title, Duplantis faces fitness scare",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/wanyonyi-storms-diamond-league-final-800m-title-duplantis-faces-fitness-scare-6363881",
       "published": "2026-09-05 04:07"
-    },
-    {
-      "category": "Traffic",
-      "title": "5 EU countries aim to send rejected migrants to 'return hub' by 2027",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/5-eu-countries-rejected-migrants-return-hub-6363666",
-      "published": "2026-09-05 01:06"
     },
     {
       "category": "Traffic",
@@ -114,11 +114,11 @@
       "published": "2026-09-04 10:55"
     },
     {
-      "category": "Traffic",
-      "title": "SMRT completes inspection of tunnel doors after metal layer fell on track in 2025 incident",
+      "category": "Transport",
+      "title": "Smart pendant that can alert visually impaired commuters when bus arrives under development",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/smrt-completes-inspection-of-tunnel-doors-after-metal-layer-fell-on-track-in-2025-incident",
-      "published": "2026-09-03 20:47"
+      "url": "https://www.straitstimes.com/singapore/transport/smart-pendant-that-can-alert-visually-impaired-commuters-when-bus-arrives-under-development",
+      "published": "2026-09-05 07:00"
     },
     {
       "category": "Transport",
@@ -142,11 +142,81 @@
       "published": "2026-09-04 20:13"
     },
     {
-      "category": "Fire",
-      "title": "Fire breaks out at Bukit Panjang open grass patch, no injuries reported",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/fire-breaks-out-in-bukit-panjang-open-grass-patch-no-injuries-reported",
-      "published": "2026-09-03 22:35"
+      "category": "General",
+      "title": "Is motion sickness preventable? What works and what doesn't",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/motion-sickness-prevention-treatment-6345526",
+      "published": "2026-09-05 07:33"
+    },
+    {
+      "category": "General",
+      "title": "At this decades-old Chinatown antiques shop, a father and son cast old objects in a new light",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/living/east-inspirations-chinatown-antique-shop-table-lamps-6346976",
+      "published": "2026-09-05 07:31"
+    },
+    {
+      "category": "General",
+      "title": "Haze in Singapore: Air quality at unhealthy range in two regions",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-singapore-unhealthy-three-regions-6362856",
+      "published": "2026-09-05 06:54"
+    },
+    {
+      "category": "General",
+      "title": "Exclusive-Anthropic IPO launch shifts toward mid-October, sources say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/exclusive-anthropic-ipo-launch-shifts-toward-mid-october-sources-say-6364056",
+      "published": "2026-09-05 06:42"
+    },
+    {
+      "category": "General",
+      "title": "Inside Singapore’s secret intelligence agency: Three former SID leaders on threats, sacrifice and service",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/security-intelligence-division-secret-agency-sid-mindef-6362946",
+      "published": "2026-09-05 06:21"
+    },
+    {
+      "category": "General",
+      "title": "US Justice Department pauses cooperation with Canadian government, WSJ reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-justice-department-pauses-cooperation-canadian-government-6364001",
+      "published": "2026-09-05 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Chevron just exposed the gap between Venezuela rhetoric and reality",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/chevron-oil-deal-venezuela-us-trump-6362696",
+      "published": "2026-09-05 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Can China’s chip ambitions reshape the global tech landscape?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/interactive/china-chip-ambitions-semiconductor-duv-euv/%2E",
+      "published": "2026-09-05 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Andre Fu reflects on 25 years of design and his enduring Singapore connection",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/people/andre-fu-hotel-design-singapore-hong-kong-6357066",
+      "published": "2026-09-05 05:52"
+    },
+    {
+      "category": "General",
+      "title": "Mbappe denied at the death as Betis beat Real Madrid",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mbappe-denied-death-betis-beat-real-madrid-6363976",
+      "published": "2026-09-05 05:36"
+    },
+    {
+      "category": "General",
+      "title": "Navarro stuns seventh seed Muchova to reach US Open fourth round",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/navarro-stuns-seventh-seed-muchova-reach-us-open-fourth-round-6363966",
+      "published": "2026-09-05 05:23"
     },
     {
       "category": "General",
@@ -199,87 +269,17 @@
     },
     {
       "category": "General",
-      "title": "UCI moves to strengthen race safety with live tracking after rider's death",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/uci-moves-strengthen-race-safety-live-tracking-after-riders-death-6363861",
-      "published": "2026-09-05 03:50"
-    },
-    {
-      "category": "General",
-      "title": "Nscale seeks about $3.5 billion pre-IPO funding, source says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nscale-seeks-about-35-billion-pre-ipo-funding-source-says-6363831",
-      "published": "2026-09-05 03:30"
-    },
-    {
-      "category": "General",
-      "title": "Medvedev's strong form continues with convincing win over Rinderknech",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/medvedevs-strong-form-continues-convincing-win-over-rinderknech-6363826",
-      "published": "2026-09-05 03:17"
-    },
-    {
-      "category": "General",
-      "title": "Pegula fights through, Sabalenka cruises as US Open awaits Williams sisters' return",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pegula-fights-through-sabalenka-cruises-us-open-awaits-williams-sisters-return-6363801",
-      "published": "2026-09-05 03:02"
-    },
-    {
-      "category": "General",
-      "title": "UEFA sanctions Fenerbahce's Guendouzi, Greenwood after Lyon playoff incident",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/uefa-sanctions-fenerbahces-guendouzi-greenwood-after-lyon-playoff-incident-6363771",
-      "published": "2026-09-05 02:32"
-    },
-    {
-      "category": "General",
-      "title": "Duplantis pulls out of Diamond League Final with muscle tightness",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/duplantis-pulls-out-diamond-league-final-muscle-tightness-6363741",
-      "published": "2026-09-05 02:22"
-    },
-    {
-      "category": "General",
-      "title": "Pegula overcomes Fernandez to return to US Open fourth round",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pegula-overcomes-fernandez-return-us-open-fourth-round-6363726",
-      "published": "2026-09-05 02:04"
-    },
-    {
-      "category": "General",
-      "title": "Former referee Dean defends integrity after backlash over playing 'games' during matches",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/former-referee-dean-defends-integrity-after-backlash-over-playing-games-during-matches-6363721",
-      "published": "2026-09-05 01:56"
-    },
-    {
-      "category": "General",
-      "title": "US and allies want IAEA board to report Iran to UN Security Council, diplomats say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/us-iaea-report-iran-un-security-council-6363371",
-      "published": "2026-09-05 01:35"
-    },
-    {
-      "category": "General",
-      "title": "Defending champion Sabalenka extends US Open winning streak with Rakhimova victory",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/defending-champion-sabalenka-extends-us-open-winning-streak-rakhimova-victory-6363701",
-      "published": "2026-09-05 01:23"
-    },
-    {
-      "category": "General",
-      "title": "Judge declares mistrial in US infanticide case",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/judge-declares-mistrial-us-infanticide-case-6363536",
-      "published": "2026-09-05 00:46"
-    },
-    {
-      "category": "General",
       "title": "S'porean man, 30, took S$1,000 from secret society 'boss' to beat up stranger in Toa Payoh lift, victim fractures ankle",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/man-secret-society/",
       "published": "2026-09-04 23:25"
+    },
+    {
+      "category": "General",
+      "title": "Woman loses suit against Prudential after S$100,000 brain aneurysm surgery claim denied, says she plans to appeal",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/woman-loses-suit-prudential/",
+      "published": "2026-09-04 21:48"
     }
   ]
 }
