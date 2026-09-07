@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-08 03:57",
+  "last_updated": "2026-09-08 06:50",
   "headlines": [
     {
       "category": "Crime",
@@ -10,17 +10,10 @@
     },
     {
       "category": "Crime",
-      "title": "China jails former senior finance official for bribery",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-bribery-jail-former-finance-official-6367581",
-      "published": "2026-09-07 20:57"
-    },
-    {
-      "category": "Crime",
-      "title": "China's top court posts guidelines on deepfakes, AI disputes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-ai-guidelines-deepfakes-voice-cloning-6367451",
-      "published": "2026-09-07 20:08"
+      "title": "UK man, 22, handed 5-day SDO & 100 hours' community service for assaulting S'porean PHV driver, 66, who has since died",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/uk-man-22-handed-5-day-sdo-100-hours-community-service-for-assaulting-sporean-phv-driver-66-who-later-died/",
+      "published": "2026-09-07 19:57"
     },
     {
       "category": "Crime",
@@ -101,20 +94,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Russia, North Korea open first road bridge across border",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/russia-north-korea-first-road-bridge-6367571",
-      "published": "2026-09-07 20:51"
-    },
-    {
-      "category": "Traffic",
-      "title": "Teen gets reformative training for trafficking Kpods, kicking 84-year-old woman",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/teen-reformative-training-kpods-trafficking-money-laundering-6367281",
-      "published": "2026-09-07 20:13"
-    },
-    {
-      "category": "Traffic",
       "title": "Trapped minibus driver rescued after accident in Bedok",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/trapped-minibus-driver-rescued-after-accident-in-bedok",
@@ -133,6 +112,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/parenting-education/how-can-i-best-support-my-son-to-ensure-he-stays-focused-and-confident-for-the-psle",
       "published": "2026-09-06 13:50"
+    },
+    {
+      "category": "Transport",
+      "title": "‘It has to be absorbed by the business’: Why Indian merchants are wary of instant payment fees",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/it-has-be-absorbed-business-why-indian-merchants-are-wary-instant-payment-fees-6367101",
+      "published": "2026-09-08 06:00"
     },
     {
       "category": "Transport",
@@ -163,13 +149,6 @@
       "published": "2026-09-06 15:29"
     },
     {
-      "category": "Money",
-      "title": "Oil prices rise to six-week highs on worsening Middle East conflict",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-prices-rise-six-week-highs-worsening-middle-east-conflict-6366156",
-      "published": "2026-09-07 19:31"
-    },
-    {
       "category": "Housing",
       "title": "S'pore woman gets flak for room setup with small space for helper in 4-room BTO",
       "source": "Mothership",
@@ -177,11 +156,67 @@
       "published": "2026-09-07 08:08"
     },
     {
-      "category": "Housing",
-      "title": "S'pore photographer urges Tampines town council & MP to reconsider painting over brick facade of iconic HDB blocks",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/darren-soh-tampines-street-45-brick-facade/",
-      "published": "2026-09-07 00:21"
+      "category": "General",
+      "title": "From boats to buildings: Sembawang Shipyard’s final voyage",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/sembawang-shipyard-seatrium-admiralty-redevelopment-housing-6366731",
+      "published": "2026-09-08 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Why America’s debt binge is starting to matter",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/us-national-debt-threatens-ai-market-boom-6367086",
+      "published": "2026-09-08 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Don't ban children from social media, Estonia tells EU",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/dont-ban-children-social-media-estonia-tells-eu-6368126",
+      "published": "2026-09-08 05:53"
+    },
+    {
+      "category": "General",
+      "title": "Thousands bid farewell to Bosnian Serb war criminal in Belgrade",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/thousands-bid-farewell-bosnian-serb-war-criminal-in-belgrade-6368116",
+      "published": "2026-09-08 05:39"
+    },
+    {
+      "category": "General",
+      "title": "Why a Singapore bar imports around 900kg of ice from Japan every year",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/experiences/premium-japanese-cocktail-ice-6365536",
+      "published": "2026-09-08 05:39"
+    },
+    {
+      "category": "General",
+      "title": "Rybakina thumps Osaka to reach US Open quarters, close in on top ranking",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/rybakina-thumps-osaka-reach-us-open-quarters-close-in-top-ranking-6368111",
+      "published": "2026-09-08 05:32"
+    },
+    {
+      "category": "General",
+      "title": "Jakarta airport and others reopen after volcanic ash crisis",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/anak-krakatau-eruption-indonesia-soekarno-hatta-reopens-6368031",
+      "published": "2026-09-08 05:06"
+    },
+    {
+      "category": "General",
+      "title": "US envoy sees 'movement' toward three-way talks with Russia, Ukraine",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-envoy-sees-movement-toward-three-way-talks-russia-ukraine-6368071",
+      "published": "2026-09-08 05:01"
+    },
+    {
+      "category": "General",
+      "title": "Italy logs hottest summer for more than 75 years, institute says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sustainability/italy-logs-hottest-summer-more-75-years-institute-says-6367681",
+      "published": "2026-09-08 04:49"
     },
     {
       "category": "General",
@@ -238,41 +273,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/secret-assad-syria-nuclear-reactor-almost-complete-un-6367686",
       "published": "2026-09-07 22:11"
-    },
-    {
-      "category": "General",
-      "title": "ArianeGroup studies increase in European space launches",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/arianegroup-studies-increase-in-european-space-launches-6367506",
-      "published": "2026-09-07 20:18"
-    },
-    {
-      "category": "General",
-      "title": "AI replacing certain tasks, but not entire jobs: Ong Ye Kung",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ai-job-market-nus-ministerial-forum-ong-ye-kung-6366591",
-      "published": "2026-09-07 20:14"
-    },
-    {
-      "category": "General",
-      "title": "Bavuma to captain South Africa ODI squad against Australia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/bavuma-captain-south-africa-odi-squad-against-australia-6367461",
-      "published": "2026-09-07 19:57"
-    },
-    {
-      "category": "General",
-      "title": "Mourinho not feeling pressure to win Champions League in second Real Madrid spell",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mourinho-not-feeling-pressure-win-champions-league-in-second-real-madrid-spell-6367426",
-      "published": "2026-09-07 19:54"
-    },
-    {
-      "category": "General",
-      "title": "Lebanon says Israel conducts wave of deadly strikes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israel-lebanon-hezbollah-strikes-truce-violations-6367371",
-      "published": "2026-09-07 19:35"
     },
     {
       "category": "General",
