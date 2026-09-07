@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07 23:52",
+  "last_updated": "2026-09-08 03:57",
   "headlines": [
     {
       "category": "Crime",
@@ -21,6 +21,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/east-asia/china-ai-guidelines-deepfakes-voice-cloning-6367451",
       "published": "2026-09-07 20:08"
+    },
+    {
+      "category": "Crime",
+      "title": "Resident allegedly reports Yishun getai to police over noise, organiser says it's a 1st in 23 years",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/yishun-getai-police/",
+      "published": "2026-09-07 19:53"
     },
     {
       "category": "Crime",
@@ -87,6 +94,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Shelton next up as Alcaraz tackles all-American gauntlet in path to US Open final",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/shelton-next-up-alcaraz-tackles-all-american-gauntlet-in-path-us-open-final-6367886",
+      "published": "2026-09-08 00:30"
+    },
+    {
+      "category": "Traffic",
       "title": "Russia, North Korea open first road bridge across border",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/russia-north-korea-first-road-bridge-6367571",
@@ -98,20 +112,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/teen-reformative-training-kpods-trafficking-money-laundering-6367281",
       "published": "2026-09-07 20:13"
-    },
-    {
-      "category": "Traffic",
-      "title": "Jaguar Land Rover to cut 4,000 jobs as European car sector hits skids",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/jaguar-land-rover-cut-4000-jobs-european-car-sector-hits-skids-6367356",
-      "published": "2026-09-07 19:23"
-    },
-    {
-      "category": "Traffic",
-      "title": "Pietersen back in England colours as mentor in build-up to 2027 World Cup",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pietersen-back-in-england-colours-mentor-in-build-up-2027-world-cup-6367331",
-      "published": "2026-09-07 18:45"
     },
     {
       "category": "Traffic",
@@ -150,13 +150,6 @@
     },
     {
       "category": "Fire",
-      "title": "On-duty SCDF NSF, 20, dies after being found unconscious at Marina Bay Fire Station",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/scdf-nsf-dies-marina-bay-fire-station/",
-      "published": "2026-09-07 00:09"
-    },
-    {
-      "category": "Fire",
       "title": "No injuries reported after vegetation fire near Gali Batu Depot in Woodlands",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/no-injuries-reported-after-vegetation-fire-near-gali-batu-mrt-depot-off-sungei-kadut",
@@ -171,9 +164,9 @@
     },
     {
       "category": "Money",
-      "title": "Oil prices hold near six-week highs on US-Iran attacks",
+      "title": "Oil prices rise to six-week highs on worsening Middle East conflict",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-prices-hold-near-six-week-highs-us-iran-attacks-6366156",
+      "url": "https://www.channelnewsasia.com/business/oil-prices-rise-six-week-highs-worsening-middle-east-conflict-6366156",
       "published": "2026-09-07 19:31"
     },
     {
@@ -189,6 +182,55 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/darren-soh-tampines-street-45-brick-facade/",
       "published": "2026-09-07 00:21"
+    },
+    {
+      "category": "General",
+      "title": "Springboks make two changes to starting XV for final New Zealand test",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/springboks-make-two-changes-starting-xv-final-new-zealand-test-6367981",
+      "published": "2026-09-08 02:25"
+    },
+    {
+      "category": "General",
+      "title": "Zheng mounts another fight back to stun Swiatek in fourth round",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/zheng-mounts-another-fight-back-stun-swiatek-in-fourth-round-6367966",
+      "published": "2026-09-08 02:01"
+    },
+    {
+      "category": "General",
+      "title": "Former F1 supremo Ecclestone stopped in Portugal over shotgun on private jet",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/former-f1-supremo-ecclestone-stopped-in-portugal-over-shotgun-private-jet-6367961",
+      "published": "2026-09-08 01:58"
+    },
+    {
+      "category": "General",
+      "title": "Andreeva extends deepest US Open run into quarters",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/andreeva-extends-deepest-us-open-run-quarters-6367951",
+      "published": "2026-09-08 01:50"
+    },
+    {
+      "category": "General",
+      "title": "Europe’s biggest mobile operators in talks for satellite-to-mobile venture, Bloomberg News reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/europes-biggest-mobile-operators-in-talks-satellite-mobile-venture-bloomberg-news-reports-6367941",
+      "published": "2026-09-08 01:44"
+    },
+    {
+      "category": "General",
+      "title": "Hadjar still out for Spanish Grand Prix, Lawson stands in again",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/hadjar-still-out-spanish-grand-prix-lawson-stands-in-again-6367936",
+      "published": "2026-09-08 01:30"
+    },
+    {
+      "category": "General",
+      "title": "Fiorentina turn to familiar face Vanoli after sacking Grosso",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/fiorentina-turn-familiar-face-vanoli-after-sacking-grosso-6367891",
+      "published": "2026-09-08 00:44"
     },
     {
       "category": "General",
@@ -231,48 +273,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/israel-lebanon-hezbollah-strikes-truce-violations-6367371",
       "published": "2026-09-07 19:35"
-    },
-    {
-      "category": "General",
-      "title": "Air quality to remain in moderate to low unhealthy range on Tuesday: NEA",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/haze-singapore-moderate-unhealthy-psi-advisory-nea-sep-8-6366266",
-      "published": "2026-09-07 19:12"
-    },
-    {
-      "category": "General",
-      "title": "OpenAI has sent EU incident report on hijacked German website, Commission says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-has-sent-eu-incident-report-hijacked-german-website-commission-says-6367346",
-      "published": "2026-09-07 18:56"
-    },
-    {
-      "category": "General",
-      "title": "Board of Peace's Mladenov says Gaza, West Bank escalation makes two-state solution 'impossible'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/board-peaces-mladenov-says-gaza-west-bank-escalation-makes-two-state-solution-impossible-6367321",
-      "published": "2026-09-07 18:51"
-    },
-    {
-      "category": "General",
-      "title": "CNA Explains: Lake America to Department of War – Trump-era name changes and why they matter",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-renaming-lake-ontario-gulf-mexico-us-place-names-power-6366801",
-      "published": "2026-09-07 18:25"
-    },
-    {
-      "category": "General",
-      "title": "Macron says France, South Korea to invest US$1.15 billion to support audiovisual industry",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/macron-says-france-south-korea-invest-us115-billion-support-audiovisual-industry-6367241",
-      "published": "2026-09-07 18:15"
-    },
-    {
-      "category": "General",
-      "title": "Singaporeans in Indonesia advised to e-register with MFA amid Anak Krakatau eruption",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singaporeans-indonesia-mount-anak-krakatau-eregister-mfa-6367156",
-      "published": "2026-09-07 18:14"
     },
     {
       "category": "General",
