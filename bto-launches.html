@@ -22,6 +22,53 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <link rel="stylesheet" href="style.css?v=5" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
+  <script src="/analytics.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "Upcoming BTO Launches in Singapore",
+        "description": "View upcoming Singapore BTO launches, towns, flat types and launch status from available HDB portal data.",
+        "url": "https://sgalerts.com/bto-launches.html",
+        "isPartOf": { "@type": "WebSite", "name": "SG Alerts", "url": "https://sgalerts.com/" },
+        "inLanguage": "en-SG"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "SG Alerts", "item": "https://sgalerts.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Upcoming BTO Launches", "item": "https://sgalerts.com/bto-launches.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What BTO information is shown?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The page summarises available upcoming BTO launch information such as towns, project names, flat types and launch status." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can BTO project details change?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Prices, classification, waiting time, flat supply and application details may change or be confirmed closer to launch." }
+          },
+          {
+            "@type": "Question",
+            "name": "Where should applicants verify a BTO launch?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Applicants should verify launch dates, eligibility, prices and application details on the official HDB portal." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -63,6 +110,30 @@
 
       <div id="btoResult" class="result">
         <p>Loading upcoming Singapore BTO launches.</p>
+      </div>
+    </section>
+
+    <section class="card seo-card wide-card">
+      <div class="card-header">
+        <div>
+          <h2>Singapore BTO Launch FAQ</h2>
+          <p>What home buyers should verify before applying.</p>
+        </div>
+      </div>
+
+      <div class="seo-grid">
+        <div>
+          <h3>What information is shown?</h3>
+          <p>The summary includes available towns, project names, flat types and launch status.</p>
+        </div>
+        <div>
+          <h3>Can project details change?</h3>
+          <p>Yes. Prices, classification, waiting time, supply and application details may be confirmed closer to launch.</p>
+        </div>
+        <div>
+          <h3>Where should I verify details?</h3>
+          <p>Always check the official HDB portal for launch dates, eligibility, prices and application information.</p>
+        </div>
       </div>
     </section>
   </main>

@@ -128,136 +128,6 @@ header p {
 .bto-card { border-top: 4px solid #8b5cf6; }
 .quick-card { border-top: 4px solid #64748b; }
 
-.cinelink-card {
-  padding: 0;
-  overflow: hidden;
-  border-top: 4px solid #7c3aed;
-  background:
-    radial-gradient(circle at 12% 10%, rgba(139, 92, 246, 0.12), transparent 34%),
-    #ffffff;
-}
-
-.cinelink-card-layout {
-  min-height: 230px;
-  display: grid;
-  grid-template-columns: minmax(260px, 0.85fr) minmax(420px, 1.45fr);
-}
-
-.cinelink-card-copy {
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.cinelink-eyebrow {
-  display: inline-flex;
-  margin-bottom: 10px;
-  padding: 5px 9px;
-  border-radius: 999px;
-  background: rgba(124, 58, 237, 0.1);
-  color: #6d28d9;
-  font-size: 11px;
-  font-weight: 850;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.cinelink-card h2 {
-  margin: 0 0 10px;
-  font-size: clamp(24px, 3vw, 34px);
-  line-height: 1.1;
-}
-
-.cinelink-card h2::before {
-  content: "🎬";
-}
-
-.cinelink-card p {
-  max-width: 43ch;
-  margin-bottom: 20px;
-  line-height: 1.65;
-}
-
-.cinelink-card-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  min-height: 40px;
-  padding: 10px 15px;
-  border-radius: 11px;
-  background: linear-gradient(135deg, #7c3aed, #2563eb);
-  box-shadow: 0 7px 16px rgba(79, 70, 229, 0.22);
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 850;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.cinelink-card-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 11px 22px rgba(79, 70, 229, 0.3);
-}
-
-.cinelink-card-button:focus-visible,
-.cinelink-card-preview:focus-visible {
-  outline: 3px solid rgba(37, 99, 235, 0.34);
-  outline-offset: 3px;
-}
-
-.cinelink-card-preview {
-  position: relative;
-  height: 230px;
-  min-height: 230px;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 6px;
-  padding: 14px;
-  overflow: hidden;
-  background: #0b1020;
-  text-decoration: none;
-}
-
-.cinelink-card-preview::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(180deg, transparent 48%, rgba(4, 7, 18, 0.78) 100%);
-}
-
-.cinelink-card-preview img {
-  width: 100%;
-  height: 100%;
-  min-width: 0;
-  object-fit: cover;
-  border-radius: 10px;
-  background: #1e293b;
-  transition: transform 0.25s ease, filter 0.25s ease;
-}
-
-.cinelink-card-preview:hover img {
-  transform: scale(1.025);
-  filter: brightness(1.06);
-}
-
-.cinelink-preview-label {
-  position: absolute;
-  z-index: 1;
-  right: 24px;
-  bottom: 22px;
-  padding: 7px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 999px;
-  background: rgba(8, 15, 33, 0.72);
-  color: #ffffff;
-  font-size: 11px;
-  font-weight: 800;
-  backdrop-filter: blur(7px);
-}
-
 .landing-grid {
   align-items: start;
 }
@@ -1513,31 +1383,6 @@ button,
     border-radius: 18px;
   }
 
-  .cinelink-card {
-    padding: 0;
-  }
-
-  .cinelink-card-layout {
-    min-height: 0;
-    grid-template-columns: 1fr;
-  }
-
-  .cinelink-card-copy {
-    padding: 22px;
-  }
-
-  .cinelink-card-preview {
-    height: 220px;
-    min-height: 220px;
-    padding: 10px;
-    gap: 5px;
-  }
-
-  .cinelink-preview-label {
-    right: 18px;
-    bottom: 17px;
-  }
-
   .card-header {
     gap: 8px;
   }
@@ -1545,10 +1390,6 @@ button,
   .card h2 {
     font-size: 18px;
     line-height: 1.2;
-  }
-
-  .cinelink-card h2 {
-    font-size: 24px;
   }
 
   .card p {
@@ -1884,25 +1725,8 @@ button,
     padding: 12px;
   }
 
-  .cinelink-card {
-    padding: 0;
-  }
-
-  .cinelink-card-copy {
-    padding: 18px;
-  }
-
-  .cinelink-card-preview {
-    height: 190px;
-    min-height: 190px;
-  }
-
   .card h2 {
     font-size: 17px;
-  }
-
-  .cinelink-card h2 {
-    font-size: 22px;
   }
 
   .result {
