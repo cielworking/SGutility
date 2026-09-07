@@ -1,6 +1,7 @@
 import json
 import pathlib
 import re
+import time
 import requests
 import urllib3
 from bs4 import BeautifulSoup
@@ -22,6 +23,10 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 SGUtilityDashboard/1.0"
 }
 
+MAX_ATTEMPTS = 4
+BACKOFF_SECONDS = 2
+RETRYABLE_STATUS_CODES = {429, 500, 502, 503, 504}
+
 
 def clean(text):
     return re.sub(r"\s+", " ", text or "").strip()
@@ -40,15 +45,58 @@ def get_4d_numbers(block):
     return numbers
 
 
-def get_first_li(url):
-    response = requests.get(
-        url,
-        headers=HEADERS,
-        timeout=30,
-        verify=False
-    )
+def get_with_retry(
+    url,
+    request_get=None,
+    sleep=None,
+    max_attempts=MAX_ATTEMPTS
+):
+    request_get = request_get or requests.get
+    sleep = sleep or time.sleep
 
-    response.raise_for_status()
+    for attempt in range(1, max_attempts + 1):
+        try:
+            response = request_get(
+                url,
+                headers=HEADERS,
+                timeout=30,
+                verify=False
+            )
+            response.raise_for_status()
+            return response
+        except requests.RequestException as error:
+            status_code = getattr(error.response, "status_code", None)
+            retryable = (
+                status_code is None
+                or status_code in RETRYABLE_STATUS_CODES
+            )
+
+            if not retryable or attempt == max_attempts:
+                raise
+
+            delay = BACKOFF_SECONDS * (2 ** (attempt - 1))
+            print(
+                f"Singapore Pools request failed on attempt "
+                f"{attempt}/{max_attempts}: {error}. "
+                f"Retrying in {delay}s."
+            )
+            sleep(delay)
+
+    raise RuntimeError(f"Request retry loop ended unexpectedly for {url}")
+
+
+def get_first_li(
+    url,
+    request_get=None,
+    sleep=None,
+    max_attempts=MAX_ATTEMPTS
+):
+    response = get_with_retry(
+        url,
+        request_get=request_get,
+        sleep=sleep,
+        max_attempts=max_attempts
+    )
 
     soup = BeautifulSoup(response.text, "html.parser")
     first_draw = soup.find("li")
