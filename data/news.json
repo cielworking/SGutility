@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-09-08 06:50",
+  "last_updated": "2026-09-08 09:12",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Man gets jail, S$1.4 million penalty for instigating son to evade taxes on luxury watch business",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/evade-tax-jail-14-million-luxury-watch-iras-6367606",
-      "published": "2026-09-07 21:26"
-    },
     {
       "category": "Crime",
       "title": "UK man, 22, handed 5-day SDO & 100 hours' community service for assaulting S'porean PHV driver, 66, who has since died",
@@ -87,13 +80,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Shelton next up as Alcaraz tackles all-American gauntlet in path to US Open final",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/shelton-next-up-alcaraz-tackles-all-american-gauntlet-in-path-us-open-final-6367886",
-      "published": "2026-09-08 00:30"
-    },
-    {
-      "category": "Traffic",
       "title": "Trapped minibus driver rescued after accident in Bedok",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/trapped-minibus-driver-rescued-after-accident-in-bedok",
@@ -115,17 +101,17 @@
     },
     {
       "category": "Transport",
-      "title": "‘It has to be absorbed by the business’: Why Indian merchants are wary of instant payment fees",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/it-has-be-absorbed-business-why-indian-merchants-are-wary-instant-payment-fees-6367101",
-      "published": "2026-09-08 06:00"
-    },
-    {
-      "category": "Transport",
       "title": "Ecuadorian runner, 38, killed in hit & run during early morning training for her first marathon",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/monica-martinich-hit-and-run/",
       "published": "2026-09-07 08:40"
+    },
+    {
+      "category": "Transport",
+      "title": "ST Live: Latest on Indonesia airports and flight disruptions, US Open",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/news-as-it-happens-sept-7-11-2026",
+      "published": "2026-09-07 07:30"
     },
     {
       "category": "Transport",
@@ -150,6 +136,13 @@
     },
     {
       "category": "Housing",
+      "title": "Sembawang Shipyard: A final voyage before housing redevelopment",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/sembawang-shipyard-seatrium-admiralty-redevelopment-housing-6366731",
+      "published": "2026-09-08 06:00"
+    },
+    {
+      "category": "Housing",
       "title": "S'pore woman gets flak for room setup with small space for helper in 4-room BTO",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/singapore-woman-helper-bed-divider-4-room-bto/",
@@ -157,9 +150,51 @@
     },
     {
       "category": "General",
-      "title": "From boats to buildings: Sembawang Shipyard’s final voyage",
+      "title": "How two men survived nine days in a Nepal flood tunnel",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/sembawang-shipyard-seatrium-admiralty-redevelopment-housing-6366731",
+      "url": "https://www.channelnewsasia.com/asia/nepal-flood-two-men-survived-nine-days-tunnel-6368241",
+      "published": "2026-09-08 08:54"
+    },
+    {
+      "category": "General",
+      "title": "Oil rises as risks of prolonged Mideast conflict heighten supply worries",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-rises-risks-prolonged-mideast-conflict-heighten-supply-worries-6368261",
+      "published": "2026-09-08 08:50"
+    },
+    {
+      "category": "General",
+      "title": "Japan upgrades Q2 GDP on slight capex improvement",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japan-upgrades-q2-gdp-slight-capex-improvement-6368216",
+      "published": "2026-09-08 08:01"
+    },
+    {
+      "category": "General",
+      "title": "Osaka takes major title wait in stride after US Open exit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/osaka-takes-major-title-wait-in-stride-after-us-open-exit-6368211",
+      "published": "2026-09-08 07:54"
+    },
+    {
+      "category": "General",
+      "title": "Eight concertos and two instruments in one night: Pianist Niu Niu takes on big challenge for kids with cancer",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/niu-niu-singapore-charity-concert-6363241",
+      "published": "2026-09-08 07:34"
+    },
+    {
+      "category": "General",
+      "title": "Want a Korean hair makeover? Here's how to achieve the Seoul salon look in Singapore",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/style-beauty/how-get-korean-haircut-perm-colour-in-singapore-6324831",
+      "published": "2026-09-08 07:23"
+    },
+    {
+      "category": "General",
+      "title": "India built world’s largest real-time payment system. Now merchants fear being stuck with the bill",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-built-worlds-largest-real-time-payment-system-now-merchants-fear-being-stuck-bill-6367101",
       "published": "2026-09-08 06:00"
     },
     {
@@ -227,9 +262,9 @@
     },
     {
       "category": "General",
-      "title": "Zheng mounts another fight back to stun Swiatek in fourth round",
+      "title": "Zheng Qinwen shocks Swiatek in another incredible US Open comeback",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zheng-mounts-another-fight-back-stun-swiatek-in-fourth-round-6367966",
+      "url": "https://www.channelnewsasia.com/sport/zheng-qinwen-shocks-swiatek-in-another-incredible-us-open-comeback-6367966",
       "published": "2026-09-08 02:01"
     },
     {
@@ -245,41 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/andreeva-extends-deepest-us-open-run-quarters-6367951",
       "published": "2026-09-08 01:50"
-    },
-    {
-      "category": "General",
-      "title": "Europe’s biggest mobile operators in talks for satellite-to-mobile venture, Bloomberg News reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/europes-biggest-mobile-operators-in-talks-satellite-mobile-venture-bloomberg-news-reports-6367941",
-      "published": "2026-09-08 01:44"
-    },
-    {
-      "category": "General",
-      "title": "Hadjar still out for Spanish Grand Prix, Lawson stands in again",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/hadjar-still-out-spanish-grand-prix-lawson-stands-in-again-6367936",
-      "published": "2026-09-08 01:30"
-    },
-    {
-      "category": "General",
-      "title": "Fiorentina turn to familiar face Vanoli after sacking Grosso",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fiorentina-turn-familiar-face-vanoli-after-sacking-grosso-6367891",
-      "published": "2026-09-08 00:44"
-    },
-    {
-      "category": "General",
-      "title": "Secret Assad-era Syrian nuclear reactor was almost complete: UN",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/secret-assad-syria-nuclear-reactor-almost-complete-un-6367686",
-      "published": "2026-09-07 22:11"
-    },
-    {
-      "category": "General",
-      "title": "Calvin Cheng weighs in on comments about Indian nationals forming 'enclaves' in S'pore",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/calvin-cheng-weighs-in-race-comments/",
-      "published": "2026-09-07 19:25"
     }
   ]
 }
