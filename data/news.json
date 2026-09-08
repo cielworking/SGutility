@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-09 02:39",
+  "last_updated": "2026-09-09 05:51",
   "headlines": [
     {
       "category": "Crime",
@@ -45,6 +45,13 @@
     },
     {
       "category": "Traffic",
+      "title": "3 S'pore cars allegedly broken into in Desaru, M'sia, including a Tribecar vehicle",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/singapore-cars-break-in-desaru-malaysia/",
+      "published": "2026-09-08 23:35"
+    },
+    {
+      "category": "Traffic",
       "title": "American's modified muscle car denied entry into S'pore, says S'pore more restrictive than North Korea",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/muscle-car-denied-entry-singapore/",
@@ -87,13 +94,6 @@
     },
     {
       "category": "Fire",
-      "title": "Houthis report Saudi reprisals after oil sites set ablaze in wave of strikes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/yemen-houthi-oil-site-strikes-saudi-arabia-retaliation-6369716",
-      "published": "2026-09-08 22:06"
-    },
-    {
-      "category": "Fire",
       "title": "New laws give SCDF powers to target suppliers of non-compliant bomb shelter products",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/new-laws-give-scdf-powers-to-target-suppliers-of-non-compliant-bomb-shelter-products",
@@ -119,6 +119,62 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/learning-points-from-private-housing-market-to-be-taken-into-account-as-vers-framework-is-developed",
       "published": "2026-09-08 22:59"
+    },
+    {
+      "category": "General",
+      "title": "Messi nears deal to acquire Spanish second-tier club Eldense",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/messi-nears-deal-acquire-spanish-second-tier-club-eldense-6371076",
+      "published": "2026-09-09 05:38"
+    },
+    {
+      "category": "General",
+      "title": "US slaps sanctions on Iran airlines, service providers",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-slaps-sanctions-iran-airlines-service-providers-6371061",
+      "published": "2026-09-09 05:37"
+    },
+    {
+      "category": "General",
+      "title": "Sunderland beat Hull City 1-0 to reach League Cup last 16",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/sunderland-beat-hull-city-1-0-reach-league-cup-last-16-6371041",
+      "published": "2026-09-09 05:16"
+    },
+    {
+      "category": "General",
+      "title": "LIV Golf files for Chapter 11 bankruptcy in New Jersey",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/liv-golf-files-chapter-11-bankruptcy-in-new-jersey-6371001",
+      "published": "2026-09-09 04:51"
+    },
+    {
+      "category": "General",
+      "title": "Wiese relishing one last shot at New Zealand to wrap up series",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/wiese-relishing-one-last-shot-new-zealand-wrap-up-series-6370951",
+      "published": "2026-09-09 04:25"
+    },
+    {
+      "category": "General",
+      "title": "Real punish Inter errors, Haaland double lifts Man City",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/real-punish-inter-errors-haaland-double-lifts-man-city-6370856",
+      "published": "2026-09-09 02:59"
+    },
+    {
+      "category": "General",
+      "title": "Sabalenka steamrolls into US Open semis, home fans await 'Battle of the Billionaires'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/sabalenka-steamrolls-us-open-semis-home-fans-await-battle-billionaires-6370841",
+      "published": "2026-09-09 02:52"
+    },
+    {
+      "category": "General",
+      "title": "US FCC proposes to open more spectrum for space-based wireless service",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-fcc-proposes-open-more-spectrum-space-based-wireless-service-6370836",
+      "published": "2026-09-09 02:43"
     },
     {
       "category": "General",
@@ -192,55 +248,6 @@
     },
     {
       "category": "General",
-      "title": "Singapore open to considering chemical castration for sex offenders if proven effective: SM Shanmugam",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/chemical-castration-sex-crimes-offenders-shanmugam-mha-6370321",
-      "published": "2026-09-08 22:40"
-    },
-    {
-      "category": "General",
-      "title": "Robinhood expands prediction-market push with Crypto.com, OG.com tie-up",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/robinhood-expands-prediction-market-push-cryptocom-ogcom-tie-up-6370431",
-      "published": "2026-09-08 22:32"
-    },
-    {
-      "category": "General",
-      "title": "European Leagues tackles FIFA over women's match calendar in expanded EU complaint",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/european-leagues-tackles-fifa-over-womens-match-calendar-in-expanded-eu-complaint-6370436",
-      "published": "2026-09-08 22:31"
-    },
-    {
-      "category": "General",
-      "title": "More than 100,000 back complaint over Infantino's Trump ties, says FairSquare",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/more-100000-back-complaint-over-infantinos-trump-ties-says-fairsquare-6370406",
-      "published": "2026-09-08 22:25"
-    },
-    {
-      "category": "General",
-      "title": "Amazon accused in lawsuit of systematic discrimination against pregnant employees",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amazon-accused-in-lawsuit-systematic-discrimination-against-pregnant-employees-6370391",
-      "published": "2026-09-08 22:18"
-    },
-    {
-      "category": "General",
-      "title": "MS Now rolls out membership program featuring live Q&A with reporters",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ms-now-rolls-out-membership-program-featuring-live-qa-reporters-6370351",
-      "published": "2026-09-08 22:01"
-    },
-    {
-      "category": "General",
-      "title": "South Korea dispatches team to assess Strait of Hormuz conditions",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/south-korea-dispatches-team-strait-hormuz-6370291",
-      "published": "2026-09-08 21:42"
-    },
-    {
-      "category": "General",
       "title": "Chan Chun Sing: Money must not be primary motivation for entering political service",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/chan-chun-sing-salary-review/",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/pm-wong-donate-pay-increment-5-years-adjustment-political-salaries/",
       "published": "2026-09-08 20:43"
-    },
-    {
-      "category": "General",
-      "title": "S’porean man, 29, runs over cyclist, 48, in Perth, pleads guilty to manslaughter",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/singaporean-man-manslaughter-perth-run-over-cyclist/",
-      "published": "2026-09-08 19:26"
     }
   ]
 }
