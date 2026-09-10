@@ -1,26 +1,33 @@
 {
-  "last_updated": "2026-09-10 12:41",
+  "last_updated": "2026-09-10 17:43",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Actor Kiki Darling leaves Ah Boys To Firefighters after past sexual assault conviction surfaces online",
+      "title": "Hong Kong’s Buildings Department files 259 charges over repair works at fire-hit Wang Fuk Court",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/kiki-darling-case-ah-boys-firefighters-sexual-assault-conviction-6374431",
-      "published": "2026-09-10 12:27"
+      "url": "https://www.channelnewsasia.com/east-asia/hong-kong-buildings-department-wang-fuk-court-fire-charges-6375401",
+      "published": "2026-09-10 16:40"
     },
     {
       "category": "Crime",
-      "title": "Jack Neo removes Kiki Darling from 'Ah Boys to Firefighters' movie after sexual assault revelations",
+      "title": "Woman, 30, a Chinese national, climbs into ex-boyfriend's house in S'pore, tries to grab police gun",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/jack-neo-kiki-darling-ah-boys-to-firefighters/",
-      "published": "2026-09-10 05:01"
+      "url": "https://mothership.sg/2026/09/break-in-ex-boyfriend-house-gun/",
+      "published": "2026-09-10 19:44"
     },
     {
       "category": "Crime",
-      "title": "Man, 32, found to be wanted for drug-related offences during police patrol at Tiong Bahru, puts up struggle, is arrested",
+      "title": "Man, 51, found dead on bench at Jalan Besar alley, police investigating",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/man-arrested-tiong-bahru/",
-      "published": "2026-09-10 03:04"
+      "url": "https://mothership.sg/2026/09/man-dead-jalan-besar-alley/",
+      "published": "2026-09-10 19:22"
+    },
+    {
+      "category": "Crime",
+      "title": "254 people in police probe for involvement in scams where victims lost $7.5m",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/254-people-in-police-probe-for-involvement-in-scams-where-victims-lost-7-5m",
+      "published": "2026-09-10 16:05"
     },
     {
       "category": "Crime",
@@ -44,46 +51,39 @@
       "published": "2026-09-09 14:30"
     },
     {
-      "category": "Crime",
-      "title": "Almost 40 per cent of molestation cases which occurred in homes involved victims under 16: MHA",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/almost-40-per-cent-of-molestation-cases-which-occurred-in-homes-involved-victims-under-16-mha",
-      "published": "2026-09-09 13:31"
-    },
-    {
-      "category": "Crime",
-      "title": "Singpass passkey that turns cellphones into digital keys to counter scams extended to Android users",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/tech/singpass-passkey-that-turns-mobile-devices-into-digital-keys-to-counter-scams-now-available-to",
-      "published": "2026-09-09 11:37"
-    },
-    {
-      "category": "Crime",
-      "title": "6 women charged with public disorder offences over events mainly linked to Gaza conflict",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/6-women-involved-in-unlawful-events-held-over-gaza-conflict-charged-with-public-disorder-offences",
-      "published": "2026-09-09 11:17"
-    },
-    {
-      "category": "Crime",
-      "title": "Police interview 5 over online comments on Nepal floods, SIA-Air India deal; investigations ongoing",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/5-people-identified-in-connection-with-comments-on-nepal-floods-air-india-police-investigating",
-      "published": "2026-09-09 08:37"
-    },
-    {
       "category": "Traffic",
-      "title": "Beyond cargo: The family culture behind MSC",
+      "title": "Suspected gunman in Thailand kindergarten shooting surrenders after 18-hour standoff",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/brand-studio/beyond-cargo-family-culture-behind-msc-6359086",
-      "published": "2026-09-10 09:43"
+      "url": "https://www.channelnewsasia.com/asia/thai-kindergarten-shooting-gunman-surrenders-standoff-police-6375301",
+      "published": "2026-09-10 15:09"
     },
     {
       "category": "Traffic",
-      "title": "Sheng Siong raises CHAS discounts to 6% for Blue & Orange cardholders till Jan. 1, 2027",
+      "title": "Enhanced childcare leave details to be announced in early 2027: Indranee Rajah",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/childcare-leave-enhanced-2027-indranee-6374771",
+      "published": "2026-09-10 14:04"
+    },
+    {
+      "category": "Traffic",
+      "title": "Elderly woman, 85, falls down in shower at Bukit Batok community care apartment, pressed call bell but no help for 2 hours",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/sheng-siong-chas-discount-extended/",
-      "published": "2026-09-10 18:28"
+      "url": "https://mothership.sg/2026/09/elderly-woman-bukit-batok-assisted-living-fall/",
+      "published": "2026-09-10 20:10"
+    },
+    {
+      "category": "Traffic",
+      "title": "WP supports broad changes to political salaries, but calls for more transparency over ministers’ pay",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/wp-supports-broad-changes-to-political-salaries-but-calls-for-more-transparency-over-ministers-pay",
+      "published": "2026-09-10 17:38"
+    },
+    {
+      "category": "Traffic",
+      "title": "Details on when new childcare leave benefits kick in to be shared in early 2027: Indranee",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/details-on-when-new-childcare-leave-benefits-kick-in-to-be-shared-in-early-2027-indranee",
+      "published": "2026-09-10 14:55"
     },
     {
       "category": "Traffic",
@@ -143,10 +143,10 @@
     },
     {
       "category": "Fire",
-      "title": "Philippine ferry fire kills 5, dozens missing",
+      "title": "Chinese auto supplier compensates 107 graduates fired barely a month into jobs, punishes managers",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/philippine-ferry-kills-missing-palawan-6374296",
-      "published": "2026-09-10 08:13"
+      "url": "https://www.channelnewsasia.com/east-asia/china-auto-supplier-xingyu-graduates-fired-compensated-6375396",
+      "published": "2026-09-10 15:56"
     },
     {
       "category": "Fire",
@@ -157,17 +157,10 @@
     },
     {
       "category": "Money",
-      "title": "BOJ policymaker warns of price risks that may trigger rapid rate hikes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/boj-policymaker-warns-price-risks-may-trigger-rapid-rate-hikes-6374601",
-      "published": "2026-09-10 10:27"
-    },
-    {
-      "category": "Money",
-      "title": "Shopped while on holiday? You might need to pay GST or get fined",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/gst-customs/",
-      "published": "2026-09-10 01:57"
+      "title": "Pool of capable Singaporeans will narrow if personal cost of public service is too high: Tan See Leng",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/pool-of-capable-sporeans-will-narrow-if-personal-cost-of-entering-public-service-too-high-tan-see",
+      "published": "2026-09-10 17:15"
     },
     {
       "category": "Money",
@@ -178,10 +171,10 @@
     },
     {
       "category": "Housing",
-      "title": "Random people, likely neighbours, allegedly enter Woodlands flat during renovations, property agent asks, 'Isn't this trespassing?'",
+      "title": "Man, 32, argues with wife & locks himself in Ang Mo Kio flat, gets apprehended under Mental Health Act",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/neighbours-woodlands-flat-enter/",
-      "published": "2026-09-10 02:40"
+      "url": "https://mothership.sg/2026/09/man-locks-himself-ang-mo-kio-unit-apprehended/",
+      "published": "2026-09-10 20:00"
     },
     {
       "category": "Housing",
@@ -199,87 +192,94 @@
     },
     {
       "category": "General",
-      "title": "Nepal’s flood-hit China trade route exposes risks in its push to diversify from India",
+      "title": "Wipro's AI push frees capacity equivalent to 20,000 workers, CTO says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/nepal-china-flood-disaster-trade-routes-6374776",
-      "published": "2026-09-10 12:31"
+      "url": "https://www.channelnewsasia.com/business/wipros-ai-push-frees-capacity-equivalent-20000-workers-cto-says-6375701",
+      "published": "2026-09-10 17:37"
     },
     {
       "category": "General",
-      "title": "Singapore parliament debates changes to political salary framework",
+      "title": "Perennial Living opens in Singapore with a new model for assisted living",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/minister-salary-review-parliament-debate-6369416",
-      "published": "2026-09-10 11:29"
+      "url": "https://www.channelnewsasia.com/obsessions/perennial-living-assisted-living-singapore-6371741",
+      "published": "2026-09-10 17:30"
     },
     {
       "category": "General",
-      "title": "Trump offers US$5,000 to every American if Republicans win midterm elections",
+      "title": "OpenAI faces Senate probe into Hugging Face incident",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/donald-trump-offers-us5000-republicans-midterm-elections-6374646",
-      "published": "2026-09-10 11:06"
+      "url": "https://www.channelnewsasia.com/business/openai-faces-senate-probe-hugging-face-incident-6375631",
+      "published": "2026-09-10 17:15"
     },
     {
       "category": "General",
-      "title": "Bank of Korea to assess conditions to determine pace and timing of tightening, says board member",
+      "title": "North Korea leader's daughter believed to have younger sibling: Seoul",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/bank-korea-assess-conditions-determine-pace-and-timing-tightening-says-board-member-6374696",
-      "published": "2026-09-10 11:05"
+      "url": "https://www.channelnewsasia.com/east-asia/kim-jong-un-daughter-ju-ae-has-sister-north-korea-6375471",
+      "published": "2026-09-10 17:05"
     },
     {
       "category": "General",
-      "title": "Lamine Yamal becomes Barcelona's youngest captain at 19",
+      "title": "EU's cybersecurity agency granted access to Mythos 5 AI model, Commission says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lamine-yamal-becomes-barcelonas-youngest-captain-19-6374691",
-      "published": "2026-09-10 11:01"
+      "url": "https://www.channelnewsasia.com/business/eus-cybersecurity-agency-granted-access-mythos-5-ai-model-commission-says-6375521",
+      "published": "2026-09-10 16:56"
     },
     {
       "category": "General",
-      "title": "Singaporean actress Chen Yixin moves to Paris: 'I have to trust the process and I have to grow'",
+      "title": "Khaw Boon Wan to step down as SPH Media Trust chairman",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/chen-yixin-moves-paris-6374566",
-      "published": "2026-09-10 10:53"
+      "url": "https://www.channelnewsasia.com/singapore/khaw-boon-wan-step-down-sph-media-trust-chairman-6375236",
+      "published": "2026-09-10 16:00"
     },
     {
       "category": "General",
-      "title": "Zverev passes Van de Zandschulp test to reach US Open semis",
+      "title": "South Korea leader rules out term extension",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zverev-passes-van-de-zandschulp-test-reach-us-open-semis-6374631",
-      "published": "2026-09-10 10:48"
+      "url": "https://www.channelnewsasia.com/east-asia/south-korea-lee-jae-myung-term-extension-6375341",
+      "published": "2026-09-10 15:36"
     },
     {
       "category": "General",
-      "title": "They grew up South Korean – then found out they may not be citizens",
+      "title": "Racketeering conspiracy trial against Chinese tech giant Huawei begins in New York",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/transnational-families-in-south-korea-may-not-be-citizens-6372781",
-      "published": "2026-09-10 10:01"
+      "url": "https://www.channelnewsasia.com/world/racketeering-conspiracy-trial-against-chinese-tech-giant-huawei-begins-in-new-york-6374016",
+      "published": "2026-09-10 15:30"
     },
     {
       "category": "General",
-      "title": "Brent holds above $100 as tanker attacks deepen supply fear",
+      "title": "Exclusive-VinFast plans to develop two India-specific EVs in strategy shift, sources say",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/brent-holds-above-100-tanker-attacks-deepen-supply-fear-6374451",
-      "published": "2026-09-10 09:26"
+      "url": "https://www.channelnewsasia.com/business/exclusive-vinfast-plans-develop-two-india-specific-evs-in-strategy-shift-sources-say-6375381",
+      "published": "2026-09-10 15:29"
     },
     {
       "category": "General",
-      "title": "NFL's Buffalo Bills to present Canadian and US anthems at season opener",
+      "title": "WP chief Pritam Singh supports MP allowance increase, questions mayors' wages and roles",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/nfls-buffalo-bills-present-canadian-and-us-anthems-season-opener-6374441",
-      "published": "2026-09-10 09:17"
+      "url": "https://www.channelnewsasia.com/singapore/pritam-singh-parliament-wp-ministers-salary-mp-6375316",
+      "published": "2026-09-10 15:27"
     },
     {
       "category": "General",
-      "title": "DOJ probes Nvidia's licensing deal with AI startup Groq, NYT reports",
+      "title": "EgyptAir plans direct flights between Singapore and Cairo from early 2027",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/doj-probes-nvidias-licensing-deal-ai-startup-groq-nyt-reports-6374416",
-      "published": "2026-09-10 08:52"
+      "url": "https://www.channelnewsasia.com/travel/egyptair-direct-flights-singapore-cairo-2027-6374916",
+      "published": "2026-09-10 15:13"
     },
     {
       "category": "General",
-      "title": "Nvidia plans major expansion of data centre capacity in Australia to meet AI demand",
+      "title": "Trump says Iran war to end after US midterm elections, threatens to attack Pickaxe Mountain",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-plans-major-expansion-data-centre-capacity-in-australia-meet-ai-demand-6374396",
-      "published": "2026-09-10 08:24"
+      "url": "https://www.channelnewsasia.com/world/trump-iran-war-midterm-elections-pickaxe-mountain-6375171",
+      "published": "2026-09-10 15:09"
+    },
+    {
+      "category": "General",
+      "title": "Asia Pacific Screen Awards 2026 nominees include Yeo Yann Yann, The Violinist and other Singaporean co-productions",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/asia-pacific-screen-awards-2026-yeo-yann-yann-violinist-6375061",
+      "published": "2026-09-10 14:41"
     }
   ]
 }
