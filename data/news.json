@@ -1,12 +1,19 @@
 {
-  "last_updated": "2026-09-12 17:20",
+  "last_updated": "2026-09-12 21:36",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Police warn of rise in unauthorised cryptocurrency account access through compromised emails",
+      "title": "French police suspect train derailment was sabotage",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/cryptocurrency-unauthorised-access-compromised-emails-data-breach-scams-6380001",
-      "published": "2026-09-12 13:00"
+      "url": "https://www.channelnewsasia.com/world/france-train-derailment-suspected-sabotage-police-6380221",
+      "published": "2026-09-12 21:02"
+    },
+    {
+      "category": "Crime",
+      "title": "Root takes charge, guiding England to series whitewash over Pakistan",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/root-takes-charge-guiding-england-series-whitewash-over-pakistan-6380316",
+      "published": "2026-09-12 20:33"
     },
     {
       "category": "Crime",
@@ -21,13 +28,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/security-guard-gropes-73-colleague/",
       "published": "2026-09-12 17:46"
-    },
-    {
-      "category": "Crime",
-      "title": "Thai man, 51, allegedly sexually assaults koi fish in Bangkok, arrested by police",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/thai-man-sexually-assaulting-koi-fish-bangkok/",
-      "published": "2026-09-12 01:43"
     },
     {
       "category": "Crime",
@@ -65,18 +65,32 @@
       "published": "2026-09-10 22:16"
     },
     {
-      "category": "Crime",
-      "title": "Jail for man who molested woman with mild intellectual disability, schizophrenia",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/jail-for-man-who-molested-woman-with-mild-intellectual-disability-schizophrenia",
-      "published": "2026-09-10 18:45"
+      "category": "Traffic",
+      "title": "DR Congo's World Cup exploits encourage more players to join their cause",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/dr-congos-world-cup-exploits-encourage-more-players-join-their-cause-6380231",
+      "published": "2026-09-12 19:38"
     },
     {
       "category": "Traffic",
-      "title": "Tunnelling under major roads and MRT lines: North-South Corridor construction enters 'most challenging phase'",
+      "title": "Hamilton and Bearman crash in final Spanish GP practice, Antonelli top",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/north-south-corridor-construction-completion-lta-6372156",
-      "published": "2026-09-12 17:07"
+      "url": "https://www.channelnewsasia.com/sport/hamilton-and-bearman-crash-in-final-spanish-gp-practice-antonelli-top-6380236",
+      "published": "2026-09-12 19:33"
+    },
+    {
+      "category": "Traffic",
+      "title": "Silver lining: Olyslagers' runner-up finish brings unexpected reward",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/silver-lining-olyslagers-runner-up-finish-brings-unexpected-reward-6380201",
+      "published": "2026-09-12 18:50"
+    },
+    {
+      "category": "Traffic",
+      "title": "Many radicalised individuals are ‘normal’ folk misled into believing ideologies: Expert",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/radicalised-individuals-normal-people-misled-duped-into-believing-ideologies-isd-psychologist",
+      "published": "2026-09-12 17:29"
     },
     {
       "category": "Traffic",
@@ -91,20 +105,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/sites-in-mandai-and-upper-jurong-road-to-be-sold-for-purpose-built-dormitories-over-by-end-2027",
       "published": "2026-09-11 19:00"
-    },
-    {
-      "category": "Traffic",
-      "title": "WP supports broad changes to political salaries, but calls for more transparency over ministers’ pay",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/wp-supports-broad-changes-to-political-salaries-but-calls-for-more-transparency-over-ministers-pay",
-      "published": "2026-09-10 17:38"
-    },
-    {
-      "category": "Transport",
-      "title": "AI startup Discovery Loop seeks around $50 billion valuation, Business Insider reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-startup-discovery-loop-seeks-around-50-billion-valuation-business-insider-reports-6379771",
-      "published": "2026-09-12 07:23"
     },
     {
       "category": "Transport",
@@ -128,18 +128,67 @@
       "published": "2026-09-11 04:00"
     },
     {
-      "category": "Transport",
-      "title": "Government’s approach is to raise political salaries ‘progressively and with restraint’: PM Wong",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/governments-approach-is-to-raise-political-salaries-progressively-and-with-restraint-pm-wong",
-      "published": "2026-09-10 20:40"
+      "category": "General",
+      "title": "The para-athlete who once won a medal for Singapore and now sells art on the streets of Kuala Lumpur",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/today/up-close/singapore-para-athlete-disabled-street-artist-dasuki-skate-kuala-lumpur-6376091",
+      "published": "2026-09-12 21:30"
     },
     {
-      "category": "Fire",
-      "title": "First bodies of Philippines ferry fire victims brought ashore as toll hits 35",
+      "category": "General",
+      "title": "I don't have much money. Do I really need financial education?",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/philippine-ferry-fire-death-toll-palawan-6379931",
-      "published": "2026-09-12 11:55"
+      "url": "https://www.channelnewsasia.com/today/voices/money-financial-literacy-education-debt-6375611",
+      "published": "2026-09-12 21:30"
+    },
+    {
+      "category": "General",
+      "title": "Not your regular gym: A space for people with special needs to grow stronger",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/today/in-pixels/gym-special-needs-stronger-6367036",
+      "published": "2026-09-12 21:30"
+    },
+    {
+      "category": "General",
+      "title": "Danish FA chief says FIFA Legal Committee evaded questions on Infantino proposal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/danish-fa-chief-says-fifa-legal-committee-evaded-questions-infantino-proposal-6380331",
+      "published": "2026-09-12 20:52"
+    },
+    {
+      "category": "General",
+      "title": "Singapore kitefoiler Max Maeder wins third consecutive European Championships open title",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/max-maeder-european-champs-open-win-6380281",
+      "published": "2026-09-12 20:49"
+    },
+    {
+      "category": "General",
+      "title": "BRICS agrees to joint declaration in test of unity despite Mideast tensions",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/brics-india-china-russia-summit-test-unity-6380141",
+      "published": "2026-09-12 19:28"
+    },
+    {
+      "category": "General",
+      "title": "Zelenskyy says he is willing to meet Putin at G20 in Miami",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/ukraine-zelenskyy-willing-meet-russia-putin-g20-miami-6380171",
+      "published": "2026-09-12 18:19"
+    },
+    {
+      "category": "General",
+      "title": "Bezzecchi smashes San Marino lap record to take pole ahead of Marquez",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/bezzecchi-smashes-san-marino-lap-record-take-pole-ahead-marquez-6380166",
+      "published": "2026-09-12 18:08"
+    },
+    {
+      "category": "General",
+      "title": "Trump arrives in Ireland to meet leaders before attending golf tournament",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-arrives-in-ireland-meet-leaders-attending-golf-tournament-6380041",
+      "published": "2026-09-12 17:51"
     },
     {
       "category": "General",
@@ -147,6 +196,13 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/sgsecure-terrorism-psychology-isd-mha-home-team-6378676",
       "published": "2026-09-12 17:08"
+    },
+    {
+      "category": "General",
+      "title": "North-South Corridor construction enters its 'most challenging phase': LTA",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/north-south-corridor-construction-completion-lta-6372156",
+      "published": "2026-09-12 17:07"
     },
     {
       "category": "General",
@@ -178,80 +234,31 @@
     },
     {
       "category": "General",
-      "title": "Spurs' Mudryk sidelined by injury after comeback from doping ban",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/spurs-mudryk-sidelined-injury-after-comeback-doping-ban-6380061",
-      "published": "2026-09-12 13:19"
+      "title": "Chinese mukbang influencer, 24, dies after repeatedly inducing vomiting after binge eating",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/chinese-mukbanger-dies-ganfan-yingying/",
+      "published": "2026-09-12 20:07"
     },
     {
       "category": "General",
-      "title": "Tiafoe proud of comeback season despite Shelton semi-final loss",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tiafoe-proud-comeback-season-despite-shelton-semi-final-loss-6380026",
-      "published": "2026-09-12 13:02"
+      "title": "'Sad & disappointed': S'porean actress Chen Xiuhuan who signed 'lifetime' True Fitness membership in 2017 on sudden closure",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/chen-xiuhuan-true-fitness/",
+      "published": "2026-09-12 19:51"
     },
     {
       "category": "General",
-      "title": "Lady Gaga welcomes first child with fiance: US media",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/lady-gaga-first-child-6380016",
-      "published": "2026-09-12 12:46"
+      "title": "'What's going to happen to my children?': Mum-&-daughter cancer survivors, 48 & 8, bond over fight against cancer",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/mother-daughter-cancer-survivors/",
+      "published": "2026-09-12 19:36"
     },
     {
       "category": "General",
-      "title": "Festival Of Thrills at RWS returns with Halloween Horror Nights, Minions live show, racing experiences and more",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/festival-thrills-resorts-world-sentosa-2026-6379881",
-      "published": "2026-09-12 12:29"
-    },
-    {
-      "category": "General",
-      "title": "Antonio returns to English football with Watford move",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/antonio-returns-english-football-watford-move-6379966",
-      "published": "2026-09-12 12:03"
-    },
-    {
-      "category": "General",
-      "title": "Southeast Asia's first Moutai House opens at Fullerton Waterboat House in October",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/dining/moutai-house-singapore-fullerton-waterboat-house-6376676",
-      "published": "2026-09-12 12:00"
-    },
-    {
-      "category": "General",
-      "title": "Shelton advances to US Open final for Zverev showdown",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/shelton-advances-us-open-final-zverev-showdown-6379916",
-      "published": "2026-09-12 11:16"
-    },
-    {
-      "category": "General",
-      "title": "Xi Jinping arrives in India for BRICS summit overshadowed by war",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/brics-china-xi-jinping-india-modi-war-6379866",
-      "published": "2026-09-12 10:20"
-    },
-    {
-      "category": "General",
-      "title": "Zverev goes from 'pointless' start to US Open final",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zverev-goes-pointless-start-us-open-final-6379796",
-      "published": "2026-09-12 08:00"
-    },
-    {
-      "category": "General",
-      "title": "Blackpink's Jisoo hopes fans see more of her personality on new album",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/blackpink-jisoo-new-album-6379781",
-      "published": "2026-09-12 07:43"
-    },
-    {
-      "category": "General",
-      "title": "Is mouthwash bad for your oral health? Here's what the research found",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/wellness/mouthwash-oral-microbiome-harms-6360641",
-      "published": "2026-09-12 07:23"
+      "title": "Female aide, 47, caught having sex with monk, 66, allegedly owns 2 houses just a few years after bankruptcy",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/female-aide-sex-scandal-thai-abbot-bankrupt-single-mother/",
+      "published": "2026-09-12 19:23"
     },
     {
       "category": "General",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/sheng-siong-mother-wreaths-funeral/",
       "published": "2026-09-12 02:51"
-    },
-    {
-      "category": "General",
-      "title": "Hong Kong actor Simon Lui dies at 62 after cancer relapse",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/simon-lui-dies/",
-      "published": "2026-09-12 02:32"
     }
   ]
 }
