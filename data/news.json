@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-09-12 21:36",
+  "last_updated": "2026-09-13 01:08",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Man gets nine years over robbery of Manchester City's Donnarumma",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/man-gets-nine-years-over-robbery-manchester-citys-donnarumma-6380516",
+      "published": "2026-09-13 00:42"
+    },
     {
       "category": "Crime",
       "title": "French police suspect train derailment was sabotage",
@@ -58,11 +65,11 @@
       "published": "2026-09-11 12:00"
     },
     {
-      "category": "Crime",
-      "title": "Jail or reformative training not default sentence for young money mules: High Court",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/jail-or-reformative-training-not-default-sentence-for-young-money-mules-high-court",
-      "published": "2026-09-10 22:16"
+      "category": "Traffic",
+      "title": "Norris produces a masterpiece to take Spanish GP pole",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/norris-produces-masterpiece-take-spanish-gp-pole-6380456",
+      "published": "2026-09-12 23:07"
     },
     {
       "category": "Traffic",
@@ -77,13 +84,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/hamilton-and-bearman-crash-in-final-spanish-gp-practice-antonelli-top-6380236",
       "published": "2026-09-12 19:33"
-    },
-    {
-      "category": "Traffic",
-      "title": "Silver lining: Olyslagers' runner-up finish brings unexpected reward",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/silver-lining-olyslagers-runner-up-finish-brings-unexpected-reward-6380201",
-      "published": "2026-09-12 18:50"
     },
     {
       "category": "Traffic",
@@ -108,6 +108,13 @@
     },
     {
       "category": "Transport",
+      "title": "Ingebrigtsen pulls out of Ultimate Championship 1,500m, delaying Kerr showdown",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ingebrigtsen-pulls-out-ultimate-championship-1500m-delaying-kerr-showdown-6380501",
+      "published": "2026-09-13 00:15"
+    },
+    {
+      "category": "Transport",
       "title": "Six tembusu trees removed from MacRitchie Reservoir Park for public safety reasons: NParks",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/six-tembusu-trees-removed-from-macritchie-reservoir-park-for-public-safety-reasons-nparks",
@@ -126,6 +133,62 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/tech/skills-workflows-governance-what-businesses-need-to-make-ai-work-salesforce",
       "published": "2026-09-11 04:00"
+    },
+    {
+      "category": "General",
+      "title": "Liverpool and Chelsea held, wins for Forest and Ipswich",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/liverpool-and-chelsea-held-wins-forest-and-ipswich-6380541",
+      "published": "2026-09-13 00:59"
+    },
+    {
+      "category": "General",
+      "title": "Revolut confirms sensitive customer data breach, falling for fake government requests",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/revolut-confirms-sensitive-customer-data-breach-falling-fake-government-requests-6380536",
+      "published": "2026-09-13 00:58"
+    },
+    {
+      "category": "General",
+      "title": "Mas survives final test to all but secure Vuelta victory",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mas-survives-final-test-all-secure-vuelta-victory-6380496",
+      "published": "2026-09-12 23:51"
+    },
+    {
+      "category": "General",
+      "title": "Dortmund make it three wins from three with 3-0 victory over Paderborn",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/dortmund-make-it-three-wins-three-3-0-victory-over-paderborn-6380486",
+      "published": "2026-09-12 23:45"
+    },
+    {
+      "category": "General",
+      "title": "PM Wong warns economic frustrations can deepen social, racial divisions in Singapore",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/economic-frustration-deepen-race-religion-division-lawrence-wong-6380346",
+      "published": "2026-09-12 22:44"
+    },
+    {
+      "category": "General",
+      "title": "Anthropic CEO urges AI companies to slow model development amid fears over misuse",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/anthropic-ceo-urges-ai-companies-slow-model-development-amid-fears-over-misuse-6380436",
+      "published": "2026-09-12 22:22"
+    },
+    {
+      "category": "General",
+      "title": "Piastri still hoping to win races to set up 2027 title bid",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/piastri-still-hoping-win-races-set-up-2027-title-bid-6380416",
+      "published": "2026-09-12 22:17"
+    },
+    {
+      "category": "General",
+      "title": "Ruthless Marquez beats Bezzecchi to win San Marino sprint, cuts Martin's lead",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ruthless-marquez-beats-bezzecchi-win-san-marino-sprint-cuts-martins-lead-6380366",
+      "published": "2026-09-12 21:43"
     },
     {
       "category": "General",
@@ -161,76 +224,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/max-maeder-european-champs-open-win-6380281",
       "published": "2026-09-12 20:49"
-    },
-    {
-      "category": "General",
-      "title": "BRICS agrees to joint declaration in test of unity despite Mideast tensions",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/brics-india-china-russia-summit-test-unity-6380141",
-      "published": "2026-09-12 19:28"
-    },
-    {
-      "category": "General",
-      "title": "Zelenskyy says he is willing to meet Putin at G20 in Miami",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/ukraine-zelenskyy-willing-meet-russia-putin-g20-miami-6380171",
-      "published": "2026-09-12 18:19"
-    },
-    {
-      "category": "General",
-      "title": "Bezzecchi smashes San Marino lap record to take pole ahead of Marquez",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/bezzecchi-smashes-san-marino-lap-record-take-pole-ahead-marquez-6380166",
-      "published": "2026-09-12 18:08"
-    },
-    {
-      "category": "General",
-      "title": "Trump arrives in Ireland to meet leaders before attending golf tournament",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-arrives-in-ireland-meet-leaders-attending-golf-tournament-6380041",
-      "published": "2026-09-12 17:51"
-    },
-    {
-      "category": "General",
-      "title": "Is Singapore psychologically prepared for a terror attack?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/sgsecure-terrorism-psychology-isd-mha-home-team-6378676",
-      "published": "2026-09-12 17:08"
-    },
-    {
-      "category": "General",
-      "title": "North-South Corridor construction enters its 'most challenging phase': LTA",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/north-south-corridor-construction-completion-lta-6372156",
-      "published": "2026-09-12 17:07"
-    },
-    {
-      "category": "General",
-      "title": "Saudi Arabia shuts down pipeline as Houthis seize island, opening new front in Iran war",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/saudi-arabia-yemen-houthi-rebels-bab-el-mandeb-strait-iran-war-6379486",
-      "published": "2026-09-12 15:48"
-    },
-    {
-      "category": "General",
-      "title": "Malaysia’s Islamist party PAS criticised over latest proposal to reserve Cabinet roles for Muslims",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-pas-hadi-muslim-cabinet-roles-criticism-6380086",
-      "published": "2026-09-12 14:25"
-    },
-    {
-      "category": "General",
-      "title": "20 Team Singapore athletes to compete in nine sports at Asian Para Games in Japan",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/asian-para-games-team-singapore-athletes-japan-6380066",
-      "published": "2026-09-12 14:23"
-    },
-    {
-      "category": "General",
-      "title": "Shelton relishing challenge of first Grand Slam final against Zverev",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/shelton-relishing-challenge-first-grand-slam-final-against-zverev-6380056",
-      "published": "2026-09-12 13:20"
     },
     {
       "category": "General",
@@ -280,6 +273,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/sheng-siong-mother-wreaths-funeral/",
       "published": "2026-09-12 02:51"
+    },
+    {
+      "category": "General",
+      "title": "Hong Kong actor Simon Lui dies at 62 after cancer relapse",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/simon-lui-dies/",
+      "published": "2026-09-12 02:32"
     }
   ]
 }
