@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-09-13 03:19",
+  "last_updated": "2026-09-13 06:16",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Man gets nine years over robbery of Manchester City's Donnarumma",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/man-gets-nine-years-over-robbery-manchester-citys-donnarumma-6380516",
-      "published": "2026-09-13 00:42"
-    },
     {
       "category": "Crime",
       "title": "Police looking for driver who self-skidded into drain at Marsiling & fled the scene",
@@ -52,17 +45,17 @@
     },
     {
       "category": "Traffic",
+      "title": "Commentary: The old carmakers are running on empty",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/electric-vehicle-ev-carmaker-byd-tesla-6378601",
+      "published": "2026-09-13 06:00"
+    },
+    {
+      "category": "Traffic",
       "title": "Liverpool draw blank as Iraola's players struggle to click",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/liverpool-draw-blank-iraolas-players-struggle-click-6380581",
       "published": "2026-09-13 01:38"
-    },
-    {
-      "category": "Traffic",
-      "title": "Norris produces a masterpiece to take Spanish GP pole",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/norris-produces-masterpiece-take-spanish-gp-pole-6380456",
-      "published": "2026-09-12 23:07"
     },
     {
       "category": "Traffic",
@@ -87,13 +80,6 @@
     },
     {
       "category": "Transport",
-      "title": "Ingebrigtsen pulls out of Ultimate Championship 1,500m, delaying Kerr showdown",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ingebrigtsen-pulls-out-ultimate-championship-1500m-delaying-kerr-showdown-6380501",
-      "published": "2026-09-13 00:15"
-    },
-    {
-      "category": "Transport",
       "title": "Six tembusu trees removed from MacRitchie Reservoir Park for public safety reasons: NParks",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/six-tembusu-trees-removed-from-macritchie-reservoir-park-for-public-safety-reasons-nparks",
@@ -107,11 +93,74 @@
       "published": "2026-09-11 14:13"
     },
     {
-      "category": "Transport",
-      "title": "Skills, workflows and governance: What businesses need to make AI work",
+      "category": "Money",
+      "title": "Singapore PC prices surge as growing AI infrastructure competes for components",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/tech/skills-workflows-governance-what-businesses-need-to-make-ai-work-salesforce",
-      "published": "2026-09-11 04:00"
+      "url": "https://www.straitstimes.com/tech/singapore-pc-prices-surge-as-growing-ai-infrastructure-competes-for-components",
+      "published": "2026-09-13 05:00"
+    },
+    {
+      "category": "General",
+      "title": "China’s durian dream: Can Hainan nurture a homegrown industry for the king of fruits?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-hainan-durian-southeast-asia-6359326",
+      "published": "2026-09-13 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Virtual taekwondo heads to Asian Games as Singapore representative prepares for debut",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/virtual-taekwondo-asian-games-2026-darren-yap-6347576",
+      "published": "2026-09-13 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Missed chance for Paris FC, Lyon as they slip behind Ligue 1 leaders",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/missed-chance-paris-fc-lyon-they-slip-behind-ligue-1-leaders-6380801",
+      "published": "2026-09-13 05:40"
+    },
+    {
+      "category": "General",
+      "title": "Mbappe scores brace as Real Madrid get 4-1 victory over Rayo Vallecano",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mbappe-scores-brace-real-madrid-get-4-1-victory-over-rayo-vallecano-6380771",
+      "published": "2026-09-13 05:15"
+    },
+    {
+      "category": "General",
+      "title": "Arteta angry over penalty decision despite Arsenal win at Sunderland",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/arteta-angry-over-penalty-decision-despite-arsenal-win-sunderland-6380761",
+      "published": "2026-09-13 05:05"
+    },
+    {
+      "category": "General",
+      "title": "OpenAI IPO will not happen in 2026 amid AI safety fears, Altman says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openai-ipo-will-not-happen-in-2026-amid-ai-safety-fears-altman-says-6380731",
+      "published": "2026-09-13 04:38"
+    },
+    {
+      "category": "General",
+      "title": "Russian attacks kill six, injure dozens in Ukraine, Moscow says it hits ships, plants",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/russian-attacks-kill-six-injure-dozens-in-ukraine-moscow-says-it-hits-ships-plants-6380511",
+      "published": "2026-09-13 04:32"
+    },
+    {
+      "category": "General",
+      "title": "Holders US battle past Spain to reach women's World Cup final",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/holders-us-battle-past-spain-reach-womens-world-cup-final-6380716",
+      "published": "2026-09-13 04:22"
+    },
+    {
+      "category": "General",
+      "title": "Second crypto billionaire says donated record £36 million to Reform UK",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/second-crypto-billionaire-says-donated-record-ps36-million-reform-uk-6380681",
+      "published": "2026-09-13 03:46"
     },
     {
       "category": "General",
@@ -157,9 +206,9 @@
     },
     {
       "category": "General",
-      "title": "Milan substitutes come to the rescue as they draw at Lazio",
+      "title": "Milan substitutes come to the rescue as they draw at Lazio, Cagliari beat Atalanta",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/milan-substitutes-come-rescue-they-draw-lazio-6380621",
+      "url": "https://www.channelnewsasia.com/sport/milan-substitutes-come-rescue-they-draw-lazio-cagliari-beat-atalanta-6380621",
       "published": "2026-09-13 02:25"
     },
     {
@@ -178,52 +227,10 @@
     },
     {
       "category": "General",
-      "title": "Hull extend unbeaten start with 2-2 draw at Chelsea",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/hull-extend-unbeaten-start-2-2-draw-chelsea-6380566",
-      "published": "2026-09-13 01:09"
-    },
-    {
-      "category": "General",
-      "title": "Liverpool and Chelsea held, wins for Forest and Ipswich",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/liverpool-and-chelsea-held-wins-forest-and-ipswich-6380541",
-      "published": "2026-09-13 00:59"
-    },
-    {
-      "category": "General",
-      "title": "Revolut confirms sensitive customer data breach, falling for fake government requests",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/revolut-confirms-sensitive-customer-data-breach-falling-fake-government-requests-6380536",
-      "published": "2026-09-13 00:58"
-    },
-    {
-      "category": "General",
-      "title": "Mas survives final test to all but secure Vuelta victory",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mas-survives-final-test-all-secure-vuelta-victory-6380496",
-      "published": "2026-09-12 23:51"
-    },
-    {
-      "category": "General",
-      "title": "Dortmund make it three wins from three with 3-0 victory over Paderborn",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/dortmund-make-it-three-wins-three-3-0-victory-over-paderborn-6380486",
-      "published": "2026-09-12 23:45"
-    },
-    {
-      "category": "General",
-      "title": "PM Wong warns economic frustrations can deepen social, racial divisions in Singapore",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/economic-frustration-deepen-race-religion-division-lawrence-wong-6380346",
-      "published": "2026-09-12 22:44"
-    },
-    {
-      "category": "General",
-      "title": "Anthropic CEO urges AI companies to slow model development amid fears over misuse",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/anthropic-ceo-urges-ai-companies-slow-model-development-amid-fears-over-misuse-6380436",
-      "published": "2026-09-12 22:22"
+      "title": "Woman from Beijing found in rural village 26 years after going missing, father passed away but had asked son to continue looking for her",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/woman-in-china-missing-26-years/",
+      "published": "2026-09-12 21:07"
     },
     {
       "category": "General",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/sheng-siong-mother-wreaths-funeral/",
       "published": "2026-09-12 02:51"
-    },
-    {
-      "category": "General",
-      "title": "Hong Kong actor Simon Lui dies at 62 after cancer relapse",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/simon-lui-dies/",
-      "published": "2026-09-12 02:32"
     }
   ]
 }
