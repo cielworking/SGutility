@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-09-14 04:49",
+  "last_updated": "2026-09-14 07:09",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Police probe interior design firm Axion Design after complaints over stalled renovations, missing furniture",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/axion-design-renovation-interior-refund-police-6378646",
+      "published": "2026-09-14 06:00"
+    },
     {
       "category": "Crime",
       "title": "HK man, 36, buys lottery ticket with colleagues, wins S$4.84 million, allegedly refuses to share winnings, gets arrested",
@@ -31,10 +38,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Kane winner hands Bayern laborious 2-1 win at promoted Elversberg",
+      "title": "North Korea says it conducted 'firepower attack drill'",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/kane-winner-hands-bayern-laborious-2-1-win-promoted-elversberg-6381666",
-      "published": "2026-09-14 02:04"
+      "url": "https://www.channelnewsasia.com/east-asia/north-korea-says-it-conducted-firepower-attack-drill-6381906",
+      "published": "2026-09-14 06:52"
     },
     {
       "category": "Traffic",
@@ -42,6 +49,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/man-dies-jurong-port/",
       "published": "2026-09-13 03:31"
+    },
+    {
+      "category": "Traffic",
+      "title": "MCST sues developer, four others over alleged defects after concrete piece from condo balcony fell 20m",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/housing/concrete-fell-20m-from-condo-balcony-mcst-sues-developer-and-four-others-over-alleged-defects",
+      "published": "2026-09-14 05:00"
     },
     {
       "category": "Traffic",
@@ -101,24 +115,10 @@
     },
     {
       "category": "Transport",
-      "title": "Anthropic selects Nasdaq for IPO, Business Insider reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/anthropic-selects-nasdaq-ipo-business-insider-reports-6381551",
-      "published": "2026-09-14 00:23"
-    },
-    {
-      "category": "Transport",
       "title": "How businesses can prepare for cross-border disputes before they happen",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/how-businesses-can-prepare-for-cross-border-disputes-before-they-happen",
       "published": "2026-09-14 04:00"
-    },
-    {
-      "category": "Fire",
-      "title": "About 500 evacuated as wildfire rages on Croatian island of Brac",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/about-500-evacuated-wildfire-rages-croatian-island-brac-6381686",
-      "published": "2026-09-14 02:35"
     },
     {
       "category": "Fire",
@@ -129,10 +129,115 @@
     },
     {
       "category": "Money",
+      "title": "Oil prices jump more than $3 after new strikes on Saudi, Strait of Hormuz",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-prices-jump-more-3-after-new-strikes-saudi-strait-hormuz-6381966",
+      "published": "2026-09-14 06:22"
+    },
+    {
+      "category": "Money",
       "title": "Singapore PC prices surge as growing AI infrastructure competes for components",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/tech/singapore-pc-prices-surge-as-growing-ai-infrastructure-competes-for-components",
       "published": "2026-09-13 05:00"
+    },
+    {
+      "category": "General",
+      "title": "Zverev hails mother's belief after US Open triumph",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/zverev-hails-mothers-belief-after-us-open-triumph-6382001",
+      "published": "2026-09-14 06:57"
+    },
+    {
+      "category": "General",
+      "title": "Anthropic tells investors it will be profitable for second straight quarter, FT reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/anthropic-tells-investors-it-will-be-profitable-second-straight-quarter-ft-reports-6381996",
+      "published": "2026-09-14 06:54"
+    },
+    {
+      "category": "General",
+      "title": "Ahead of Fed meeting, Trump says US should have world's lowest interest rate",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-us-lowest-interest-rate-federal-reserve-meeting-6381521",
+      "published": "2026-09-14 06:41"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Ministers can be paid more, but link their salary to performance",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/singapore-ministers-salary-increase-link-performance-6380591",
+      "published": "2026-09-14 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: The perils of headphones in the office",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/best-headphones-noise-cancelling-work-music-white-noise-6381156",
+      "published": "2026-09-14 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Zverev holds off Shelton to win US Open title",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/zverev-holds-shelton-win-us-open-title-6381936",
+      "published": "2026-09-14 05:55"
+    },
+    {
+      "category": "General",
+      "title": "Sassuolo beat Juventus 3-2 after late drama, Napoli return to winning ways",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/sassuolo-beat-juventus-3-2-after-late-drama-napoli-return-winning-ways-6381911",
+      "published": "2026-09-14 05:42"
+    },
+    {
+      "category": "General",
+      "title": "Pregnant and planning a trip? What to know before you go",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/experiences/travelling-while-pregnant-6375016",
+      "published": "2026-09-14 05:39"
+    },
+    {
+      "category": "General",
+      "title": "Trump says he will consider request to release more 9/11 records",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-says-he-will-consider-request-release-more-911-records-6381901",
+      "published": "2026-09-14 05:35"
+    },
+    {
+      "category": "General",
+      "title": "Israeli minister calls to strip Gaza film directors of citizenship",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/israeli-minister-calls-strip-gaza-film-directors-citizenship-6381881",
+      "published": "2026-09-14 05:27"
+    },
+    {
+      "category": "General",
+      "title": "Trump says US could stay in Iran and keep oil, like Venezuela deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-says-us-could-stay-in-iran-and-keep-oil-venezuela-deal-6381856",
+      "published": "2026-09-14 05:21"
+    },
+    {
+      "category": "General",
+      "title": "Ferran Torres scores again as PSG earn first Ligue 1 win of the season",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ferran-torres-scores-again-psg-earn-first-ligue-1-win-season-6381851",
+      "published": "2026-09-14 05:14"
+    },
+    {
+      "category": "General",
+      "title": "VAR got goal award wrong in Manchester derby, says ref's body",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/var-got-goal-award-wrong-in-manchester-derby-says-refs-body-6381821",
+      "published": "2026-09-14 04:54"
+    },
+    {
+      "category": "General",
+      "title": "Manchester City hammer Aston Villa to go top of WSL",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/manchester-city-hammer-aston-villa-go-top-wsl-6381816",
+      "published": "2026-09-14 04:44"
     },
     {
       "category": "General",
@@ -157,104 +262,6 @@
     },
     {
       "category": "General",
-      "title": "No stopping Antonelli and Mercedes now, says Hamilton",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/no-stopping-antonelli-and-mercedes-now-says-hamilton-6381711",
-      "published": "2026-09-14 02:54"
-    },
-    {
-      "category": "General",
-      "title": "VAR in focus as Haaland goal gives Man City controversial derby win",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/var-in-focus-haaland-goal-gives-man-city-controversial-derby-win-6381696",
-      "published": "2026-09-14 02:42"
-    },
-    {
-      "category": "General",
-      "title": "Jefferson-Wooden, Bednarek complete Ultimate Championship sprint doubles",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/jefferson-wooden-bednarek-complete-ultimate-championship-sprint-doubles-6381701",
-      "published": "2026-09-14 02:42"
-    },
-    {
-      "category": "General",
-      "title": "Norris goes from Madring pole high to feeling 'insanely unlucky'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/norris-goes-madring-pole-high-feeling-insanely-unlucky-6381691",
-      "published": "2026-09-14 02:36"
-    },
-    {
-      "category": "General",
-      "title": "Lowry delights home fans and cheering Trump with Irish Open win",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lowry-delights-home-fans-and-cheering-trump-irish-open-win-6381681",
-      "published": "2026-09-14 02:32"
-    },
-    {
-      "category": "General",
-      "title": "Mas ends long wait for Grand Tour glory with home Vuelta win",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mas-ends-long-wait-grand-tour-glory-home-vuelta-win-6381641",
-      "published": "2026-09-14 01:51"
-    },
-    {
-      "category": "General",
-      "title": "Iran says Oman meeting aims to boost security cooperation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-says-oman-meeting-aims-boost-security-cooperation-6381626",
-      "published": "2026-09-14 01:49"
-    },
-    {
-      "category": "General",
-      "title": "Haaland strike gives 10-man Man City contentious 1-0 derby win over Man United",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/haaland-strike-gives-10-man-man-city-contentious-1-0-derby-win-over-man-united-6381611",
-      "published": "2026-09-14 01:37"
-    },
-    {
-      "category": "General",
-      "title": "Trump chastises Zelenskyy over Russian refinery strikes during Ireland visit",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-chastises-zelenskyy-over-russian-refinery-strikes-during-ireland-visit-6381601",
-      "published": "2026-09-14 01:35"
-    },
-    {
-      "category": "General",
-      "title": "Lamine Yamal double helps Barcelona beat Levante",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lamine-yamal-double-helps-barcelona-beat-levante-6381556",
-      "published": "2026-09-14 00:36"
-    },
-    {
-      "category": "General",
-      "title": "Trump says 'very negative forces' raising exaggerated concerns over AI",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-ai-concerns-negative-forces-6381456",
-      "published": "2026-09-13 23:42"
-    },
-    {
-      "category": "General",
-      "title": "Valencia sack CEO and manager Corberan after winless start to season",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/valencia-sack-ceo-and-manager-corberan-after-winless-start-season-6381486",
-      "published": "2026-09-13 23:01"
-    },
-    {
-      "category": "General",
-      "title": "No luck for Norris as Antonelli becomes Madring's first F1 winner",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/no-luck-norris-antonelli-becomes-madrings-first-f1-winner-6381481",
-      "published": "2026-09-13 22:56"
-    },
-    {
-      "category": "General",
-      "title": "Ronaldo calls for lifetime bans after 'Jota' chants aimed at Neves",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ronaldo-calls-lifetime-bans-after-jota-chants-aimed-neves-6381436",
-      "published": "2026-09-13 22:24"
-    },
-    {
-      "category": "General",
       "title": "S’pore bakery Baker’s Brew rebranded as BB Atelier & goes into liquidation, says 95% of customers refunded",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/baker-brew-liquidation-rebrand/",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/jb-massage-spa-singapore-woman-touched-inappropriately/",
       "published": "2026-09-13 02:15"
-    },
-    {
-      "category": "General",
-      "title": "S'pore True Fitness customer spent S$21,000 on lifetime membership for himself & 2 daughters, did not expect gym to close this abruptly",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/true-fitness-true-yoga-lifetime-membership-unused-packages/",
-      "published": "2026-09-13 01:37"
     }
   ]
 }
