@@ -1,12 +1,16 @@
 import json
 import pathlib
+import time
 from datetime import datetime, timezone
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import Error as PlaywrightError, sync_playwright
 
 SOURCE_NAME = "HDB Flat Portal"
 SOURCE_URL = "https://homes.hdb.gov.sg/"
 API_URL = "https://api.homes.hdb.gov.sg/flatback/public/v1/launch/getUpcomingProjects"
 OUTPUT_FILE = pathlib.Path("data/bto-projects.json")
+
+MAX_ATTEMPTS = 3
+BACKOFF_SECONDS = 5
 
 
 def format_exercise(ballot_qtr):
@@ -31,12 +35,12 @@ def clean_text(value):
     return str(value).strip()
 
 
-def main():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=True
-        )
+def fetch_upcoming_projects(playwright):
+    browser = playwright.chromium.launch(
+        headless=True
+    )
 
+    try:
         context = browser.new_context(
             user_agent=(
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -92,8 +96,42 @@ def main():
             """,
             xsrf_token
         )
-
+    finally:
         browser.close()
+
+    return result
+
+
+def fetch_with_retry(
+    playwright,
+    fetch=None,
+    sleep=None,
+    max_attempts=MAX_ATTEMPTS
+):
+    fetch = fetch or fetch_upcoming_projects
+    sleep = sleep or time.sleep
+
+    for attempt in range(1, max_attempts + 1):
+        try:
+            return fetch(playwright)
+        except PlaywrightError as error:
+            if attempt == max_attempts:
+                raise
+
+            delay = BACKOFF_SECONDS * (2 ** (attempt - 1))
+            print(
+                f"HDB BTO request failed on attempt "
+                f"{attempt}/{max_attempts}: {error}. "
+                f"Retrying in {delay}s."
+            )
+            sleep(delay)
+
+    raise RuntimeError("BTO retry loop ended unexpectedly")
+
+
+def main():
+    with sync_playwright() as p:
+        result = fetch_with_retry(p)
 
     if not isinstance(result, list):
         raise RuntimeError("Unexpected BTO API response format.")
