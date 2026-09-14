@@ -22,6 +22,53 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <link rel="stylesheet" href="style.css?v=5" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
+  <script src="/analytics.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "Latest COE Prices in Singapore",
+        "description": "Check the latest Singapore COE bidding results and quota premiums for Categories A, B, C, D and E.",
+        "url": "https://sgalerts.com/latest-coe-prices.html",
+        "isPartOf": { "@type": "WebSite", "name": "SG Alerts", "url": "https://sgalerts.com/" },
+        "inLanguage": "en-SG"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "SG Alerts", "item": "https://sgalerts.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Latest COE Prices", "item": "https://sgalerts.com/latest-coe-prices.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which COE categories are shown?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The table covers Categories A, B, C, D and E for cars, goods vehicles and buses, motorcycles, and the Open category." }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the latest COE price mean?",
+            "acceptedAnswer": { "@type": "Answer", "text": "It is the quota premium from the latest available COE bidding exercise. The page may also show the change from the previous exercise." }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I verify COE prices before buying a vehicle?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Always compare the displayed figures with official LTA or data.gov.sg results before making a purchase decision." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
@@ -63,6 +110,30 @@
 
       <div id="coeResult" class="result">
         <p>Loading latest COE bidding results.</p>
+      </div>
+    </section>
+
+    <section class="card seo-card wide-card">
+      <div class="card-header">
+        <div>
+          <h2>Singapore COE Price FAQ</h2>
+          <p>How to understand the latest bidding result.</p>
+        </div>
+      </div>
+
+      <div class="seo-grid">
+        <div>
+          <h3>Which categories are shown?</h3>
+          <p>The table covers Categories A, B, C, D and E, including the Open category.</p>
+        </div>
+        <div>
+          <h3>What is the latest COE price?</h3>
+          <p>It is the quota premium from the latest available bidding exercise, with previous-exercise movement when available.</p>
+        </div>
+        <div>
+          <h3>Where should I verify it?</h3>
+          <p>Use the official LTA or data.gov.sg source before making a vehicle purchase decision.</p>
+        </div>
       </div>
     </section>
   </main>
