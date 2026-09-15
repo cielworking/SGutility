@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-09-15 21:32",
+  "last_updated": "2026-09-16 02:11",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Uzbek mother-son duo arrested for allegedly stealing about S$5,000 worth of items from Changi Airport shops",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/uzbek-mother-son-shoplifting-changi-airport-6386476",
+      "published": "2026-09-15 22:41"
+    },
     {
       "category": "Crime",
       "title": "S'pore man, 39, exploited girl, 14, into threesomes with at least 6 other men, previously raped younger sister",
@@ -14,6 +21,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/malaysia-boy-acquitted-murder-heard-voices/",
       "published": "2026-09-15 19:34"
+    },
+    {
+      "category": "Crime",
+      "title": "Mother and son set to be charged over theft at Changi Airport",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/mother-and-son-set-to-be-charged-over-theft-at-changi-airport",
+      "published": "2026-09-15 22:53"
     },
     {
       "category": "Crime",
@@ -58,32 +72,25 @@
       "published": "2026-09-14 18:07"
     },
     {
-      "category": "Crime",
-      "title": "Whistle-blower coach sentenced to a week’s jail for role in falsifying race records",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/whistle-blower-coach-sentenced-to-a-weeks-jail-for-role-in-falsifying-race-records",
-      "published": "2026-09-14 14:55"
-    },
-    {
-      "category": "Crime",
-      "title": "6 jailed over $4.9m armed robbery, involving machetes, during poker game at King Albert Park GCB",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/6-convicted-over-4-9m-armed-robbery-involving-machetes-during-poker-game-at-king-albert-park-gcb",
-      "published": "2026-09-14 14:54"
-    },
-    {
-      "category": "Crime",
-      "title": "Jail, caning for man who raped 2 teen girls, sexually assaulted third female minor",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/jail-caning-for-man-who-raped-2-teen-girls-sexually-assaulted-third-female-minor",
-      "published": "2026-09-14 13:55"
+      "category": "Traffic",
+      "title": "Ex-England soccer player Sterling admits dangerous driving",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ex-england-soccer-player-sterling-admits-dangerous-driving-6386691",
+      "published": "2026-09-15 23:29"
     },
     {
       "category": "Traffic",
-      "title": "Millions affected as floods strike India's Bihar",
+      "title": "Study shows marvels of the Roman Empire's road network",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-east-bihar-state-flood-6386261",
-      "published": "2026-09-15 20:43"
+      "url": "https://www.channelnewsasia.com/business/study-shows-marvels-roman-empires-road-network-6386631",
+      "published": "2026-09-15 23:03"
+    },
+    {
+      "category": "Traffic",
+      "title": "PGA Tour not considering return program for LIV players",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pga-tour-not-considering-return-program-liv-players-6386576",
+      "published": "2026-09-15 22:37"
     },
     {
       "category": "Traffic",
@@ -115,10 +122,17 @@
     },
     {
       "category": "Transport",
-      "title": "WTO warns of 'most serious and sustained' trade disruptions",
+      "title": "NUS academics distance themselves from study on civil servants' home purchases near unannounced MRT stations",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/wto-trade-disruption-global-trading-order-6385801",
-      "published": "2026-09-15 20:22"
+      "url": "https://www.channelnewsasia.com/singapore/civil-servants-nus-professors-psd-housing-data-mrt-6386491",
+      "published": "2026-09-15 22:51"
+    },
+    {
+      "category": "Transport",
+      "title": "Commuters evacuated after smoke seen coming from train at Bukit Gombak MRT station, likely due to faulty brake",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/commuters-evacuated-smoke-bukit-gombak/",
+      "published": "2026-09-16 00:01"
     },
     {
       "category": "Transport",
@@ -126,6 +140,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/paper-civil-servants-mrt-homes-psd/",
       "published": "2026-09-15 19:57"
+    },
+    {
+      "category": "Transport",
+      "title": "Tower Transit looking to thank those who helped unresponsive bus driver in Hougang",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/tower-transit-looking-to-thank-those-who-helped-unresponsive-bus-driver-in-hougang",
+      "published": "2026-09-16 00:12"
     },
     {
       "category": "Transport",
@@ -150,7 +171,7 @@
     },
     {
       "category": "Fire",
-      "title": "‘Kampung spirit’ fuels Admiralty Grove residents in fire-fighting efforts at HDB corridor",
+      "title": "‘Kampung spirit’: Admiralty Grove residents band together to put out fire in HDB corridor",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/kampung-spirit-fuels-admiralty-grove-residents-in-fire-fighting-efforts-at-hdb-corridor",
       "published": "2026-09-15 19:16"
@@ -171,115 +192,94 @@
     },
     {
       "category": "General",
-      "title": "Pidcock to lead strong British team at worlds, eyeing double",
+      "title": "Rob Reiner son will not face death penalty, prosecutor says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pidcock-lead-strong-british-team-worlds-eyeing-double-6386431",
-      "published": "2026-09-15 21:23"
+      "url": "https://www.channelnewsasia.com/world/reiner-rob-nick-death-penalty-murder-6386911",
+      "published": "2026-09-16 01:56"
     },
     {
       "category": "General",
-      "title": "Silver Lake, Intel-backed Altera confidentially files for US IPO",
+      "title": "Pro Ref chief Webb says VAR 'tunnel vision' led to Manchester derby error",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/silver-lake-intel-backed-altera-confidentially-files-us-ipo-6386411",
-      "published": "2026-09-15 21:11"
+      "url": "https://www.channelnewsasia.com/sport/pro-ref-chief-webb-says-var-tunnel-vision-led-manchester-derby-error-6386896",
+      "published": "2026-09-16 01:22"
     },
     {
       "category": "General",
-      "title": "Delos Data, a chip startup founded by Intel veterans, raises $100 million for AI networks",
+      "title": "Saudi, Egypt demand open Red Sea, as Riyadh vows to hit back against Houthis",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/delos-data-chip-startup-founded-intel-veterans-raises-100-million-ai-networks-6386386",
-      "published": "2026-09-15 21:02"
+      "url": "https://www.channelnewsasia.com/world/saudi-egypt-demand-open-red-sea-riyadh-vows-hit-back-against-houthis-6386751",
+      "published": "2026-09-16 00:54"
     },
     {
       "category": "General",
-      "title": "Rodrigo Duterte suffering 'significant memory impairment': Defence",
+      "title": "Lens part ways with coach Toppmoeller",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/duterte-icc-memory-impairment-war-drugs-6386356",
-      "published": "2026-09-15 21:02"
+      "url": "https://www.channelnewsasia.com/sport/lens-part-ways-coach-toppmoeller-6386831",
+      "published": "2026-09-16 00:50"
     },
     {
       "category": "General",
-      "title": "Spanish scientists find first evidence of Diplodocus dinosaur in Europe",
+      "title": "Australia beat Zimbabwe in first ODI as Renshaw hits 109",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spanish-scientists-find-first-evidence-diplodocus-dinosaur-in-europe-6386266",
-      "published": "2026-09-15 20:38"
+      "url": "https://www.channelnewsasia.com/sport/australia-beat-zimbabwe-in-first-odi-renshaw-hits-109-6386771",
+      "published": "2026-09-16 00:13"
     },
     {
       "category": "General",
-      "title": "Bad weather hampers Indonesia ferry rescue, dozens still missing",
+      "title": "Morocco's Abde stands by Ceuta support gesture despite social media backlash",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-rescuers-search-passenger-ship-capsize-6386101",
-      "published": "2026-09-15 19:17"
+      "url": "https://www.channelnewsasia.com/sport/moroccos-abde-stands-ceuta-support-gesture-despite-social-media-backlash-6386711",
+      "published": "2026-09-15 23:48"
     },
     {
       "category": "General",
-      "title": "Grab takes majority stake in Atome Financial in US$1.49 billion deal",
+      "title": "Inter Miami announce arrival of new manager 'Kily' Gonzalez",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/grab-atome-us149-billion-deal-6386031",
-      "published": "2026-09-15 19:04"
+      "url": "https://www.channelnewsasia.com/sport/inter-miami-announce-arrival-new-manager-kily-gonzalez-6386686",
+      "published": "2026-09-15 23:25"
     },
     {
       "category": "General",
-      "title": "EU to propose curbing social media, online games for under 15s",
+      "title": "Spain manager Luis de la Fuente agrees contract extension until 2030 World Cup",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/eu-social-media-online-game-under-15-6386011",
-      "published": "2026-09-15 18:59"
+      "url": "https://www.channelnewsasia.com/sport/spain-manager-luis-de-la-fuente-agrees-contract-extension-until-2030-world-cup-6386676",
+      "published": "2026-09-15 23:19"
     },
     {
       "category": "General",
-      "title": "Amazon's AWS is unable to restore access to Bahrain, one UAE cloud data zone after war damage",
+      "title": "MUIS says human resource management system hit by cybersecurity incident",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amazons-aws-unable-restore-access-bahrain-one-uae-cloud-data-zone-after-war-damage-6385996",
-      "published": "2026-09-15 18:42"
+      "url": "https://www.channelnewsasia.com/singapore/muis-human-resource-payroll-management-system-cyberattack-6386546",
+      "published": "2026-09-15 23:15"
     },
     {
       "category": "General",
-      "title": "Creativity, confidence and a DSA edge: Why parents are investing in children’s art classes",
+      "title": "Hitachi Energy to invest $528 million in new transformer factory in Mississippi",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/art-enrichment-classes-parents-build-children-creativity-confidence-dsa-6385631",
-      "published": "2026-09-15 18:30"
+      "url": "https://www.channelnewsasia.com/business/hitachi-energy-invest-528-million-in-new-transformer-factory-in-mississippi-6386656",
+      "published": "2026-09-15 23:11"
     },
     {
       "category": "General",
-      "title": "Munich's Allianz Arena, Barcelona's Camp Nou to host Champions League finals",
+      "title": "Meta launches subscriptions with enhanced AI features",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/munichs-allianz-arena-barcelonas-camp-nou-host-champions-league-finals-6385931",
-      "published": "2026-09-15 18:24"
+      "url": "https://www.channelnewsasia.com/business/meta-launches-subscriptions-enhanced-ai-features-6386626",
+      "published": "2026-09-15 23:01"
     },
     {
       "category": "General",
-      "title": "Singapore gymnast Amanda Yap targets balance beam final on Asian Games debut",
+      "title": "OpenAI is working with Anthropic, Google on AI safety, Bloomberg News reports",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/gymnast-amanda-yap-asian-games-commonwealth-6385661",
-      "published": "2026-09-15 18:23"
+      "url": "https://www.channelnewsasia.com/business/openai-working-anthropic-google-ai-safety-bloomberg-news-reports-6386596",
+      "published": "2026-09-15 22:52"
     },
     {
       "category": "General",
-      "title": "Cambodia 'playing the victim', Thailand tells global mediators",
+      "title": "Italian NATO fighter jet shoots down stray drone over Lithuania",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/cambodia-thailand-mediators-playing-victim-6385906",
-      "published": "2026-09-15 18:22"
-    },
-    {
-      "category": "General",
-      "title": "Nairobi to host 2029 World Athletics Championships in African first",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/nairobi-host-2029-world-athletics-championships-in-african-first-6385901",
-      "published": "2026-09-15 18:13"
-    },
-    {
-      "category": "General",
-      "title": "US Senate to vote on advancing landmark crypto bill",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-senate-vote-advancing-landmark-crypto-bill-6385851",
-      "published": "2026-09-15 18:01"
-    },
-    {
-      "category": "General",
-      "title": "N95 masks, adjusted work arrangements: Companies step up haze precautions",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/haze-unhealthy-psi-flexible-work-construction-6385696",
-      "published": "2026-09-15 17:59"
+      "url": "https://www.channelnewsasia.com/world/italian-nato-fighter-jet-shoots-down-stray-drone-over-lithuania-6386291",
+      "published": "2026-09-15 22:44"
     }
   ]
 }
