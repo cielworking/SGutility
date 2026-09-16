@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-09-17 04:07",
+  "last_updated": "2026-09-17 06:55",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Commentary: Russian team ‘misused’ Claude AI to train a killer drone on scraped Ukrainian war footage",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/russia-ukraine-war-misuse-claude-ai-train-drone-6388841",
+      "published": "2026-09-17 05:58"
+    },
     {
       "category": "Crime",
       "title": "Ex-HDB group director, 58, charged for illegally accessing HDB database 161 times",
@@ -80,10 +87,10 @@
     },
     {
       "category": "Traffic",
-      "title": "UK PM Burnham to welcome Canada's Carney to Everton soccer game",
+      "title": "OpenAI plans regular reports on unexpected AI behavior",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/uk-pm-burnham-welcome-canadas-carney-everton-soccer-game-6389671",
-      "published": "2026-09-16 23:15"
+      "url": "https://www.channelnewsasia.com/business/openai-plans-regular-reports-unexpected-ai-behavior-6390381",
+      "published": "2026-09-17 06:13"
     },
     {
       "category": "Traffic",
@@ -91,6 +98,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/free-6-months-access-premium-ai-tools-singapore/",
       "published": "2026-09-16 20:16"
+    },
+    {
+      "category": "Traffic",
+      "title": "Instead of speculating if AI will end mankind, audit and govern the tech: Industry players",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/tech/instead-of-speculating-if-ai-will-end-mankind-audit-and-govern-the-tech-industry-players",
+      "published": "2026-09-17 05:00"
     },
     {
       "category": "Traffic",
@@ -170,15 +184,8 @@
       "published": "2026-09-15 19:16"
     },
     {
-      "category": "Money",
-      "title": "Retailers slash prices on drinks like beer, tea without Return Right logo",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/environment/half-priced-beers-and-discounted-tea-retailers-slash-prices-on-drinks-without-return-right-logo",
-      "published": "2026-09-15 15:35"
-    },
-    {
       "category": "Housing",
-      "title": "US Fed raises rates to battle inflation in move likely to rile Trump",
+      "title": "US Fed raises rates to tackle 'too high' inflation, irking Trump",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/us-fed-rate-decision-inflation-warsh-trump-6390046",
       "published": "2026-09-17 02:47"
@@ -192,94 +199,87 @@
     },
     {
       "category": "General",
-      "title": "Verstappen overtakes 100 go-karters in 35 minutes at Silverstone",
+      "title": "Commentary: Why is UMNO calling for an 'immediate' GE? Look at the maths",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/verstappen-overtakes-100-go-karters-in-35-minutes-silverstone-6390156",
-      "published": "2026-09-17 03:37"
+      "url": "https://www.channelnewsasia.com/commentary/commentary-why-umno-calling-immediate-ge-look-maths-6388966",
+      "published": "2026-09-17 06:00"
     },
     {
       "category": "General",
-      "title": "Explainer-Do AI companies have to disclose dangerous incidents?",
+      "title": "How super El Nino will put farmers, families and livelihoods under pressure, from Bali to Bangkok",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/explainer-do-ai-companies-have-disclose-dangerous-incidents-6390101",
-      "published": "2026-09-17 03:03"
+      "url": "https://www.channelnewsasia.com/cna-insider/super-el-nino-southeast-asia-heat-livelihoods-climate-phenomenon-6388436",
+      "published": "2026-09-17 06:00"
     },
     {
       "category": "General",
-      "title": "First Solar drops ITC patent case, shifts focus to lawsuits against rivals",
+      "title": "3 days on track, 362 days behind the scenes: Meet the team running the Singapore F1 race",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/first-solar-drops-itc-patent-case-shifts-focus-lawsuits-against-rivals-6390081",
-      "published": "2026-09-17 02:55"
+      "url": "https://www.channelnewsasia.com/singapore/f1-marina-bay-street-circuit-grand-prix-night-race-6383446",
+      "published": "2026-09-17 06:00"
     },
     {
       "category": "General",
-      "title": "Trump adviser Sacks says AI fears driven by 'fear-mongering playbook'",
+      "title": "Commentary: The main Trump-Xi summit achievement will be it happening at all",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-adviser-sacks-says-ai-fears-driven-fear-mongering-playbook-6390061",
-      "published": "2026-09-17 02:51"
+      "url": "https://www.channelnewsasia.com/commentary/trump-xi-summit-washington-us-china-rivalry-6388761",
+      "published": "2026-09-17 05:59"
     },
     {
       "category": "General",
-      "title": "BYD will eventually need three assembly plants, one battery factory in Europe, adviser says",
+      "title": "US House votes to hold billionaire Leon Black in contempt of Congress",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/byd-will-eventually-need-three-assembly-plants-one-battery-factory-in-europe-adviser-says-6390056",
-      "published": "2026-09-17 02:44"
+      "url": "https://www.channelnewsasia.com/world/leon-black-epstein-congress-vote-6390341",
+      "published": "2026-09-17 05:57"
     },
     {
       "category": "General",
-      "title": "UN chief sounds alarm on AI risk after Trump plays it down",
+      "title": "Google should relax ad tech rules, appoint antitrust monitor, US judge finds",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/ai-slowdown-un-chief-trump-6389951",
-      "published": "2026-09-17 02:22"
+      "url": "https://www.channelnewsasia.com/business/google-should-relax-ad-tech-rules-appoint-antitrust-monitor-us-judge-finds-6390351",
+      "published": "2026-09-17 05:57"
     },
     {
       "category": "General",
-      "title": "Doping-ITA completes 1,000-km drone test in Alaska",
+      "title": "Rolls-Royce Spectre Series II: What’s new in the electric luxury coupe",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/doping-ita-completes-1000-km-drone-test-in-alaska-6390001",
-      "published": "2026-09-17 02:18"
+      "url": "https://www.channelnewsasia.com/obsessions/rolls-royce-spectre-series-ii-6382331",
+      "published": "2026-09-17 05:57"
     },
     {
       "category": "General",
-      "title": "Revolut hackers demand $3 million ransom, FT reports",
+      "title": "Flick sets record as Barcelona breeze past Racing with Raphinha hat-trick",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/revolut-hackers-demand-3-million-ransom-ft-reports-6389996",
-      "published": "2026-09-17 02:10"
+      "url": "https://www.channelnewsasia.com/sport/flick-sets-record-barcelona-breeze-past-racing-raphinha-hat-trick-6390356",
+      "published": "2026-09-17 05:54"
     },
     {
       "category": "General",
-      "title": "Tooth study shows T. rex was warmblooded, with human-like temperature",
+      "title": "Ahead of Xi's US visit, Jimmy Lai's son urges release of media mogul",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/tooth-study-shows-t-rex-was-warmblooded-human-temperature-6389986",
-      "published": "2026-09-17 02:06"
+      "url": "https://www.channelnewsasia.com/world/jimmy-lai-son-release-jinping-visit-6390276",
+      "published": "2026-09-17 05:29"
     },
     {
       "category": "General",
-      "title": "UEFA on track to find credible challenger to Infantino, vice-president says",
+      "title": "Benfica earn win in Milan as Sunderland celebrate historic night",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/uefa-track-find-credible-challenger-infantino-vice-president-says-6389991",
-      "published": "2026-09-17 02:04"
+      "url": "https://www.channelnewsasia.com/sport/benfica-earn-win-in-milan-sunderland-celebrate-historic-night-6390306",
+      "published": "2026-09-17 05:27"
     },
     {
       "category": "General",
-      "title": "Almost 8,000 excess deaths in France's scorched summer: statistics",
+      "title": "Trading Day: Lift off!",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/france-heatwave-death-toll-summer-6389841",
-      "published": "2026-09-17 01:21"
+      "url": "https://www.channelnewsasia.com/business/trading-day-lift-6390266",
+      "published": "2026-09-17 05:06"
     },
     {
       "category": "General",
-      "title": "Satellite data shows major ice losses for Greenland and Antarctica",
+      "title": "Banks provide $22 billion chip loan to Blackstone, Alphabet AI cloud venture, source says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/satellite-data-shows-major-ice-losses-greenland-and-antarctica-6389896",
-      "published": "2026-09-17 01:11"
-    },
-    {
-      "category": "General",
-      "title": "India pick Kohli, Rohit for West Indies ODIs; Nigam joins Asian Games squad",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/india-pick-kohli-rohit-west-indies-odis-nigam-joins-asian-games-squad-6389856",
-      "published": "2026-09-17 00:48"
+      "url": "https://www.channelnewsasia.com/business/banks-provide-22-billion-chip-loan-blackstone-alphabet-ai-cloud-venture-source-says-6390211",
+      "published": "2026-09-17 04:33"
     }
   ]
 }
