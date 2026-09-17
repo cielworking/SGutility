@@ -735,6 +735,7 @@ svg {
 
 .bto-grid {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
   margin-top: 10px;
 }
@@ -1622,6 +1623,7 @@ svg {
   }
 
   .checkpoint-layout,
+  .bto-grid,
   .quick-grid,
   .pool-side-grid,
   .pool-number-section {
