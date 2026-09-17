@@ -8,6 +8,8 @@ let newsResults = {};
 let checkpointData = {};
 let isRolling = false;
 let selectedDiscountFuel = "ron95";
+let selectedNewsCategory = "All";
+let lastModalTrigger = null;
 let hideGambling = localStorage.getItem("hideGambling") === "true";
 
 async function loadData() {
@@ -61,6 +63,8 @@ async function loadData() {
     renderBtoProjects();
     renderPetrolPrices();
     renderQuickInfo();
+    renderSummary();
+    applyIcons();
 
   } catch (err) {
     console.error("Dashboard load failed:", err);
@@ -76,22 +80,20 @@ async function refreshCheckpointData() {
 
   if (btn) {
     btn.disabled = true;
-    btn.textContent = "Refreshing...";
+    btn.innerHTML = '<i data-lucide="loader-circle" aria-hidden="true"></i><span>Refreshing…</span>';
+    applyIcons();
   }
 
   try {
     const res = await fetch("https://api.data.gov.sg/v1/transport/traffic-images");
     const payload = await res.json();
-
     const cameras = payload.items[0].cameras;
-
     const woodlands = [];
     const tuas = [];
 
     cameras.forEach(cam => {
       const lat = cam.location.latitude;
       const lon = cam.location.longitude;
-
       const item = {
         camera_id: cam.camera_id,
         image: cam.image,
@@ -118,7 +120,6 @@ async function refreshCheckpointData() {
     };
 
     renderCheckpoints();
-
   } catch (err) {
     console.error("Live checkpoint refresh failed:", err);
 
@@ -132,8 +133,11 @@ async function refreshCheckpointData() {
 
   if (btn) {
     btn.disabled = false;
-    btn.textContent = "🔄 Refresh";
+    btn.innerHTML = '<i data-lucide="refresh-cw" aria-hidden="true"></i><span>Refresh</span>';
+    applyIcons();
   }
+
+  renderSummary();
 }
 
 function formatTimestamp(timestamp) {
@@ -151,8 +155,28 @@ function formatTimestamp(timestamp) {
 function money(value) {
   return new Intl.NumberFormat("en-SG", {
     style: "currency",
-    currency: "SGD"
+    currency: "SGD",
+    maximumFractionDigits: 0
   }).format(value || 0);
+}
+
+function applyIcons() {
+  if (window.lucide) {
+    window.lucide.createIcons({
+      attrs: {
+        "aria-hidden": "true"
+      }
+    });
+  }
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
 function renderSourceLinks() {
@@ -182,41 +206,77 @@ function renderNews() {
   if (!box) return;
 
   if (!newsResults.headlines || newsResults.headlines.length === 0) {
-    box.innerHTML = "No headlines available.";
+    box.innerHTML = '<p class="loading-state">No headlines are currently available.</p>';
     return;
   }
 
-  const topNews = newsResults.headlines.slice(0, 20);
+  const categories = ["All", ...new Set(newsResults.headlines.map(item => item.category).filter(Boolean))];
+  if (!categories.includes(selectedNewsCategory)) selectedNewsCategory = "All";
+
+  const filteredNews = selectedNewsCategory === "All"
+    ? newsResults.headlines
+    : newsResults.headlines.filter(item => item.category === selectedNewsCategory);
+  const topNews = filteredNews.slice(0, 20);
 
   box.innerHTML = `
     <div class="news-topbar">
-      <span>Last fetched: ${formatTimestamp(newsResults.last_updated)}</span>
-
-      <div class="news-controls">
-        <button type="button" onclick="scrollNews(-1)">‹</button>
-        <button type="button" onclick="scrollNews(1)">›</button>
+      <span class="news-meta">${topNews.length} stories · Updated ${formatTimestamp(newsResults.last_updated)}</span>
+      <div class="news-controls" aria-label="News carousel controls">
+        <button type="button" onclick="scrollNews(-1)" aria-label="Previous news stories">
+          <i data-lucide="chevron-left"></i>
+        </button>
+        <button type="button" onclick="scrollNews(1)" aria-label="Next news stories">
+          <i data-lucide="chevron-right"></i>
+        </button>
       </div>
     </div>
 
-    <div id="newsScroller" class="news-scroller">
-      ${topNews.map(item => `
-        <a class="news-card-item" href="${item.url}" target="_blank" rel="noopener noreferrer">
-          <span class="news-tag news-${item.category.toLowerCase()}">${item.category}</span>
-          <strong>${item.title}</strong>
-          <small>${item.source}${item.published ? " · " + item.published : ""}</small>
-        </a>
+    <div class="news-filters" role="group" aria-label="Filter news by category">
+      ${categories.map(category => `
+        <button type="button"
+                class="news-filter ${selectedNewsCategory === category ? "is-active" : ""}"
+                data-category="${escapeHtml(category)}"
+                aria-pressed="${selectedNewsCategory === category}">
+          ${escapeHtml(category)}
+        </button>
       `).join("")}
     </div>
+
+    <div id="newsScroller" class="news-scroller" tabindex="0" aria-label="Latest Singapore news">
+      ${topNews.map(item => {
+        const categoryClass = String(item.category || "general").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+        return `
+          <a class="news-card-item" href="${item.url}" target="_blank" rel="noopener noreferrer">
+            <span class="news-tag news-${categoryClass}">${escapeHtml(item.category)}</span>
+            <strong>${escapeHtml(item.title)}</strong>
+            <small>${escapeHtml(item.source)}${item.published ? " · " + escapeHtml(item.published) : ""}</small>
+          </a>
+        `;
+      }).join("")}
+    </div>
   `;
+
+  box.querySelectorAll(".news-filter").forEach(button => {
+    button.addEventListener("click", () => {
+      selectedNewsCategory = button.dataset.category || "All";
+      renderNews();
+    });
+  });
+
+  applyIcons();
 }
 
 function scrollNews(direction) {
   const scroller = document.getElementById("newsScroller");
   if (!scroller) return;
 
+  const firstCard = scroller.querySelector(".news-card-item");
+  const gap = 16;
+  const distance = firstCard ? firstCard.getBoundingClientRect().width + gap : 320;
+
   scroller.scrollBy({
-    left: direction * 320,
-    behavior: "smooth"
+    left: direction * distance,
+    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
   });
 }
 
@@ -241,11 +301,12 @@ function renderCheckpoints() {
           cameras.length
             ? `<div class="checkpoint-grid">
                 ${cameras.slice(0, 4).map(cam => `
-                  <div class="checkpoint-camera"
-                       onclick="openImageModal('${cam.image}', '${title} - Camera ${cam.camera_id}')">
-                    <img src="${cam.image}" alt="${title} traffic camera ${cam.camera_id}">
+                  <button class="checkpoint-camera" type="button"
+                          onclick="openImageModal('${cam.image}', '${title} - Camera ${cam.camera_id}', this)"
+                          aria-label="Enlarge ${title} traffic camera ${cam.camera_id}">
+                    <img src="${cam.image}" alt="${title} traffic camera ${cam.camera_id}" loading="lazy" decoding="async">
                     <span>Camera ${cam.camera_id}</span>
-                  </div>
+                  </button>
                 `).join("")}
               </div>`
             : `<p class="checkpoint-empty">No camera images found.</p>`
@@ -264,18 +325,24 @@ function renderCheckpoints() {
       Source: ${checkpointData.source_name}. Last fetched: ${formatTimestamp(checkpointData.last_updated)}.
     </div>
   `;
+
+  renderSummary();
 }
 
-function openImageModal(imageUrl, caption) {
+function openImageModal(imageUrl, caption, trigger) {
   const modal = document.getElementById("imageModal");
   const image = document.getElementById("modalImage");
   const text = document.getElementById("modalCaption");
 
   if (!modal || !image || !text) return;
 
+  lastModalTrigger = trigger || document.activeElement;
   image.src = imageUrl;
+  image.alt = caption;
   text.textContent = caption;
   modal.classList.add("show");
+  document.body.style.overflow = "hidden";
+  modal.querySelector(".image-modal-close")?.focus();
 }
 
 function closeImageModal() {
@@ -283,12 +350,20 @@ function closeImageModal() {
   if (!modal) return;
 
   modal.classList.remove("show");
+  document.body.style.overflow = "";
+  lastModalTrigger?.focus();
 }
 
 window.addEventListener("click", function(event) {
   const modal = document.getElementById("imageModal");
 
   if (event.target === modal) {
+    closeImageModal();
+  }
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.key === "Escape" && document.getElementById("imageModal")?.classList.contains("show")) {
     closeImageModal();
   }
 });
@@ -310,9 +385,11 @@ function applyGamblingVisibility() {
       </div>
     `;
     btn.textContent = "Show";
+    btn.setAttribute("aria-expanded", "false");
   } else {
     renderSgPoolsResults();
     btn.textContent = "Hide";
+    btn.setAttribute("aria-expanded", "true");
   }
 }
 
@@ -494,7 +571,7 @@ function renderSgPoolsResults() {
         </div>
 
         <div class="pool-panel lucky-box modern-lucky">
-          <h3>🎲 Lucky Pick</h3>
+          <h3>Lucky Pick</h3>
 
           <div class="lucky-actions">
             <button onclick="generateFourD()">Generate 4D</button>
@@ -874,7 +951,7 @@ function renderPetrolDiscounts() {
     <div class="petrol-extra-grid">
 
       <div class="petrol-discount-panel">
-        <h3>💳 Best Petrol Discounts</h3>
+        <h3>Best Petrol Discounts</h3>
 
         <div class="petrol-discount-cards">
           ${petrolDiscounts.discounts.map(item => {
@@ -899,7 +976,7 @@ function renderPetrolDiscounts() {
 
       <div class="petrol-effective-panel full-width">
         <div class="effective-title-row">
-          <h3>🏆 Effective Price After Discount</h3>
+          <h3>Effective Price After Discount</h3>
 
           <select
             class="fuel-selector"
@@ -964,6 +1041,70 @@ function renderPetrolDiscounts() {
   `;
 }
 /* =========================
+   AT-A-GLANCE SUMMARY
+   ========================= */
+
+function renderSummary() {
+  const setSummary = (valueId, metaId, value, meta) => {
+    const valueElement = document.getElementById(valueId);
+    const metaElement = document.getElementById(metaId);
+    if (valueElement) valueElement.textContent = value;
+    if (metaElement) metaElement.textContent = meta;
+  };
+
+  const cameraCount = (checkpointData.woodlands?.length || 0) + (checkpointData.tuas?.length || 0);
+  setSummary(
+    "summaryCheckpoint",
+    "summaryCheckpointMeta",
+    cameraCount ? "Live feeds online" : "Feed unavailable",
+    cameraCount ? `${cameraCount} checkpoint cameras available` : "Using the latest available data"
+  );
+
+  const parsePrice = value => {
+    if (!value || value === "N/A") return null;
+    const match = String(value).match(/(\d+\.\d+)/);
+    return match ? Number(match[1]) : null;
+  };
+
+  const ron95Offers = (petrolDiscounts.discounts || []).map(discount => {
+    const brand = (petrolPrices.brands || []).find(item => item.brand === discount.brand);
+    const pumpPrice = parsePrice(brand?.ron95);
+    if (pumpPrice === null) return null;
+
+    const effectivePrice = discount.effective_prices?.ron95
+      ? Number(discount.effective_prices.ron95)
+      : pumpPrice * (1 - Number(discount.discount_percent || 0) / 100);
+
+    return { brand: discount.brand, effectivePrice };
+  }).filter(Boolean).sort((a, b) => a.effectivePrice - b.effectivePrice);
+
+  const bestRon95 = ron95Offers[0];
+  setSummary(
+    "summaryPetrol",
+    "summaryPetrolMeta",
+    bestRon95 ? `${bestRon95.effectivePrice.toFixed(2)}/L` : "Unavailable",
+    bestRon95 ? `${bestRon95.brand} · estimated after discount` : "No current promotion data"
+  );
+
+  const catA = (coePrices.latest || []).find(item => item.category === "Category A");
+  const coeDirection = catA?.change > 0 ? "up" : catA?.change < 0 ? "down" : "unchanged";
+  setSummary(
+    "summaryCoe",
+    "summaryCoeMeta",
+    catA ? money(catA.premium) : "Unavailable",
+    catA ? `${coePrices.latest_bidding_label} · ${coeDirection} ${money(Math.abs(catA.change || 0))}` : "No current bidding data"
+  );
+
+  const holiday = (quickInfo.items || []).find(item => /public holiday/i.test(item.label));
+  setSummary(
+    "summaryHoliday",
+    "summaryHolidayMeta",
+    holiday?.value || "Unavailable",
+    holiday?.detail || "No holiday data available"
+  );
+}
+
+/* =========================
    QUICK INFO
    ========================= */
 
@@ -994,4 +1135,5 @@ function renderQuickInfo() {
   `;
 }
 
+applyIcons();
 loadData();
