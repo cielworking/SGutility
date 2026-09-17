@@ -3,57 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Contact SG Alerts</title>
-
+  <meta name="description" content="Contact SG Alerts with feedback, corrections, feature requests or partnership enquiries.">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=10" />
 </head>
-
 <body>
-  <header>
-    <h1>SG Alerts</h1>
-    <p>Singapore Traffic, Petrol, COE, BTO & Daily Alerts</p>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="SG Alerts home">
+        <span class="brand-mark" aria-hidden="true"><i data-lucide="bell-ring"></i></span>
+        <span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span>
+      </a>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="index.html#news">News</a>
+        <a href="index.html#checkpoints">Checkpoints</a>
+        <a href="index.html#petrol">Petrol</a>
+        <a href="index.html#coe">COE</a>
+        <a href="index.html#bto">BTO</a>
+        <a href="index.html#results">Results</a>
+        <a href="index.html#quick-info">Quick Info</a>
+      </nav>
+    </div>
   </header>
-
-  <main class="page-container">
-    <section class="page-card">
-      <h1>📧 Contact Us</h1>
-
-      <p>
-        For feedback, corrections, feature requests or partnership enquiries,
-        please contact us.
-      </p>
-
-      <p>
-        Email: <a href="mailto:support@sgalerts.com">support@sgalerts.com</a>
-      </p>
-
-      <p>
-        We aim to respond as soon as possible.
-      </p>
-
-      <a class="back-link" href="index.html">← Back to dashboard</a>
+  <main id="main-content" class="content-page">
+    <section class="page-hero">
+      <div class="page-hero-main">
+        <span class="page-hero-icon" aria-hidden="true"><i data-lucide="mail"></i></span>
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h1>Contact SG Alerts</h1>
+          <p>Send feedback, report inaccurate information, suggest a feature or ask about the dashboard.</p>
+        </div>
+      </div>
+      <a class="back-link" href="index.html"><i data-lucide="layout-dashboard"></i> Open dashboard</a>
     </section>
+
+    <div class="contact-grid">
+      <article class="contact-card">
+        <span class="contact-card-icon"><i data-lucide="at-sign"></i></span>
+        <h2>Email us</h2>
+        <p>For general feedback, corrections, feature requests or partnership enquiries:</p>
+        <a class="contact-email" href="mailto:support@sgalerts.com"><i data-lucide="mail"></i> support@sgalerts.com</a>
+        <div class="response-note"><i data-lucide="clock-3"></i><span>We aim to review messages as soon as reasonably possible. Response times may vary.</span></div>
+      </article>
+
+      <article class="document-card legal-document">
+        <section>
+          <h2>Reporting incorrect information</h2>
+          <p>Please include the page or section name, what appears incorrect and, if possible, a link to the official source showing the corrected information.</p>
+        </section>
+        <section>
+          <h2>Technical issues</h2>
+          <p>For display or loading problems, include your device type, browser and a short description of what happened. Do not send passwords or other sensitive information.</p>
+        </section>
+        <section>
+          <h2>Important or urgent matters</h2>
+          <p>SG Alerts is not an emergency service or government agency. For emergencies, contact the appropriate Singapore emergency service or authority directly.</p>
+        </section>
+      </article>
+    </div>
   </main>
-
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms.html">Terms</a>
-  </div>
-
-  <div class="footer-copy">
-    © 2026 SG Alerts • Independent Singapore Information Dashboard
-  </div>
-</footer>
-
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>SG Alerts</strong><span>Independent Singapore information dashboard</span></div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script>if (window.lucide) window.lucide.createIcons({ attrs: { "aria-hidden": "true" } });</script>
 </body>
 </html>
