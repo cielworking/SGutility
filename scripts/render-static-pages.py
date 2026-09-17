@@ -2,7 +2,7 @@ import html
 import json
 import pathlib
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -30,7 +30,7 @@ def timestamp(value):
         parsed = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
         if parsed.tzinfo is None:
             parsed = parsed.replace(tzinfo=timezone.utc)
-        return parsed.astimezone().strftime("%d %b %Y, %I:%M %p %Z")
+        singapore_time = timezone(timedelta(hours=8), name="SGT")\n        return parsed.astimezone(singapore_time).strftime("%d %b %Y, %I:%M %p %Z")
     except ValueError:
         return html.escape(str(value))
 
