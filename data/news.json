@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-17 06:55",
+  "last_updated": "2026-09-17 09:24",
   "headlines": [
     {
       "category": "Crime",
@@ -79,20 +79,6 @@
       "published": "2026-09-15 16:14"
     },
     {
-      "category": "Crime",
-      "title": "Woman is first person given jail for keeping animals in captivity for sale at unlicensed premises",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/woman-is-first-person-in-singapore-given-jail-for-keeping-animals-in-captivity-for-sale",
-      "published": "2026-09-15 15:48"
-    },
-    {
-      "category": "Traffic",
-      "title": "OpenAI plans regular reports on unexpected AI behavior",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-plans-regular-reports-unexpected-ai-behavior-6390381",
-      "published": "2026-09-17 06:13"
-    },
-    {
       "category": "Traffic",
       "title": "Free 6 months' access to premium AI tools for S'poreans who take selected courses from Sep. 16",
       "source": "Mothership",
@@ -150,6 +136,13 @@
     },
     {
       "category": "Transport",
+      "title": "Singapore's non-oil exports expand 46.2% in August, supported by robust AI-related demand",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/singapores-non-oil-exports-expand-462-in-august-supported-robust-ai-related-demand-6390566",
+      "published": "2026-09-17 08:57"
+    },
+    {
+      "category": "Transport",
       "title": "NUS professors thanked in study on civil servants' home purchases near unannounced MRT stations say they were not involved",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/nus-professors-civil-servants-mrt-homes-psd/",
@@ -184,11 +177,11 @@
       "published": "2026-09-15 19:16"
     },
     {
-      "category": "Housing",
-      "title": "US Fed raises rates to tackle 'too high' inflation, irking Trump",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-fed-rate-decision-inflation-warsh-trump-6390046",
-      "published": "2026-09-17 02:47"
+      "category": "Money",
+      "title": "Get $4 voucher for every $50 spent at FairPrice outlets from Sept 17 to 27",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/get-4-voucher-for-every-50-spent-at-fairprice-outlets-from-sept-17-to-27",
+      "published": "2026-09-17 08:28"
     },
     {
       "category": "Housing",
@@ -199,87 +192,94 @@
     },
     {
       "category": "General",
-      "title": "Commentary: Why is UMNO calling for an 'immediate' GE? Look at the maths",
+      "title": "Australia's Smith still has flashbacks to aftermath of ball-tampering scandal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/commentary-why-umno-calling-immediate-ge-look-maths-6388966",
+      "url": "https://www.channelnewsasia.com/sport/australias-smith-still-has-flashbacks-aftermath-ball-tampering-scandal-6390621",
+      "published": "2026-09-17 09:14"
+    },
+    {
+      "category": "General",
+      "title": "Australia to bar foreign students from bringing partners, children while they study",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/australia-bar-foreign-students-bring-partners-children-while-studying-6390571",
+      "published": "2026-09-17 08:51"
+    },
+    {
+      "category": "General",
+      "title": "The new iPhone 18 Pro range is here – but who is it for?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/living/apple-iphone-18-pro-or-iphone-duo-6388216",
+      "published": "2026-09-17 08:06"
+    },
+    {
+      "category": "General",
+      "title": "US Congress passes sweeping Russia sanctions Bill",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-congress-passes-sweeping-russia-sanctions-bill-6390501",
+      "published": "2026-09-17 07:59"
+    },
+    {
+      "category": "General",
+      "title": "Former Chelsea owners Boehly and Walter sell holdings to Clearlake",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/former-chelsea-owners-boehly-and-walter-sell-holdings-clearlake-6390526",
+      "published": "2026-09-17 07:56"
+    },
+    {
+      "category": "General",
+      "title": "Snap targets enterprises with Salesforce, Nvidia AI tools for augmented-reality glasses",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/snap-targets-enterprises-salesforce-nvidia-ai-tools-augmented-reality-glasses-6390506",
+      "published": "2026-09-17 07:45"
+    },
+    {
+      "category": "General",
+      "title": "Trump lashes out at Fed after Warsh backs rate hike; says rates should be '1% or less'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-lashes-out-federal-reserve-rate-hike-kevin-warsh-6390466",
+      "published": "2026-09-17 07:21"
+    },
+    {
+      "category": "General",
+      "title": "She failed arts and crafts in school. Now, she makes one-of-a-kind macrame bags while helping others",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/style-beauty/bound-designs-macrame-bags-6353516",
+      "published": "2026-09-17 07:10"
+    },
+    {
+      "category": "General",
+      "title": "Hong Kong Monetary Authority raises interest rates, tracking Fed move",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/hong-kong-monetary-authority-raises-interest-rates-tracking-fed-move-6390456",
+      "published": "2026-09-17 07:08"
+    },
+    {
+      "category": "General",
+      "title": "Man Utd out of League Cup after going 2-0 up at home and then losing 3-2 in 50-year first",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/man-utd-out-league-cup-after-going-2-0-up-home-and-then-losing-3-2-in-50-year-first-6390431",
+      "published": "2026-09-17 06:49"
+    },
+    {
+      "category": "General",
+      "title": "OpenAI to regularly disclose AI misbehavior, warns safety challenges remain",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openai-regularly-disclose-ai-misbehavior-warns-safety-challenges-remain-6390381",
+      "published": "2026-09-17 06:13"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: UMNO chief Zahid seems sure the political winds have shifted in his favour",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/commentary-umno-chief-zahid-seems-sure-political-winds-have-shifted-in-his-favour-6388966",
       "published": "2026-09-17 06:00"
     },
     {
       "category": "General",
-      "title": "How super El Nino will put farmers, families and livelihoods under pressure, from Bali to Bangkok",
+      "title": "Super El Nino could reshape daily life, threaten livelihoods in Southeast Asia with lingering heat",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/cna-insider/super-el-nino-southeast-asia-heat-livelihoods-climate-phenomenon-6388436",
       "published": "2026-09-17 06:00"
-    },
-    {
-      "category": "General",
-      "title": "3 days on track, 362 days behind the scenes: Meet the team running the Singapore F1 race",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/f1-marina-bay-street-circuit-grand-prix-night-race-6383446",
-      "published": "2026-09-17 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: The main Trump-Xi summit achievement will be it happening at all",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/trump-xi-summit-washington-us-china-rivalry-6388761",
-      "published": "2026-09-17 05:59"
-    },
-    {
-      "category": "General",
-      "title": "US House votes to hold billionaire Leon Black in contempt of Congress",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/leon-black-epstein-congress-vote-6390341",
-      "published": "2026-09-17 05:57"
-    },
-    {
-      "category": "General",
-      "title": "Google should relax ad tech rules, appoint antitrust monitor, US judge finds",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/google-should-relax-ad-tech-rules-appoint-antitrust-monitor-us-judge-finds-6390351",
-      "published": "2026-09-17 05:57"
-    },
-    {
-      "category": "General",
-      "title": "Rolls-Royce Spectre Series II: What’s new in the electric luxury coupe",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/rolls-royce-spectre-series-ii-6382331",
-      "published": "2026-09-17 05:57"
-    },
-    {
-      "category": "General",
-      "title": "Flick sets record as Barcelona breeze past Racing with Raphinha hat-trick",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/flick-sets-record-barcelona-breeze-past-racing-raphinha-hat-trick-6390356",
-      "published": "2026-09-17 05:54"
-    },
-    {
-      "category": "General",
-      "title": "Ahead of Xi's US visit, Jimmy Lai's son urges release of media mogul",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/jimmy-lai-son-release-jinping-visit-6390276",
-      "published": "2026-09-17 05:29"
-    },
-    {
-      "category": "General",
-      "title": "Benfica earn win in Milan as Sunderland celebrate historic night",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/benfica-earn-win-in-milan-sunderland-celebrate-historic-night-6390306",
-      "published": "2026-09-17 05:27"
-    },
-    {
-      "category": "General",
-      "title": "Trading Day: Lift off!",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trading-day-lift-6390266",
-      "published": "2026-09-17 05:06"
-    },
-    {
-      "category": "General",
-      "title": "Banks provide $22 billion chip loan to Blackstone, Alphabet AI cloud venture, source says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/banks-provide-22-billion-chip-loan-blackstone-alphabet-ai-cloud-venture-source-says-6390211",
-      "published": "2026-09-17 04:33"
     }
   ]
 }
