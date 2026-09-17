@@ -1082,7 +1082,7 @@ function renderSummary() {
   setSummary(
     "summaryPetrol",
     "summaryPetrolMeta",
-    bestRon95 ? `${bestRon95.effectivePrice.toFixed(2)}/L` : "Unavailable",
+    bestRon95 ? `${"$"}${bestRon95.effectivePrice.toFixed(2)}/L` : "Unavailable",
     bestRon95 ? `${bestRon95.brand} · estimated after discount` : "No current promotion data"
   );
 
