@@ -11,7 +11,7 @@
   <meta property="og:title" content="SG Alerts - Singapore Daily Dashboard">
   <meta property="og:description" content="Live checkpoint cameras, petrol prices, COE results, BTO launches and daily Singapore alerts.">
   <meta property="og:url" content="https://sgalerts.com">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="website">\n  <meta property="og:site_name" content="SG Alerts">
   <meta property="og:image" content="https://sgalerts.com/apple-touch-icon.png">
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -21,7 +21,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="stylesheet" href="style.css?v=9" />
+  <link rel="stylesheet" href="style.css?v=11" />
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
   <script>
@@ -29,6 +29,16 @@
     function gtag(){dataLayer.push(arguments);}
     gtag("js", new Date());
     gtag("config", "G-FXKD1E3N5Z");
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SG Alerts",
+    "alternateName": "SG Alerts Singapore Dashboard",
+    "url": "https://sgalerts.com/"
+  }
   </script>
 </head>
 
@@ -133,6 +143,10 @@
           </div>
 
           <div class="card-actions">
+            <div class="checkpoint-detail-links">
+              <a class="detail-link" href="/woodlands-checkpoint.html">Woodlands details <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+              <a class="detail-link" href="/tuas-checkpoint.html">Tuas details <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+            </div>
             <button onclick="refreshCheckpointData()" class="button button-secondary refresh-btn" type="button">
               <i data-lucide="refresh-cw" aria-hidden="true"></i><span>Refresh</span>
             </button>
@@ -158,9 +172,12 @@
               <h2>Petrol Prices</h2>
             </div>
           </div>
-          <a id="petrolSourceLink" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
-            Source <i data-lucide="external-link" aria-hidden="true"></i>
-          </a>
+          <div class="card-actions">
+            <a class="detail-link" href="/singapore-petrol-prices.html">View Singapore petrol prices <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+            <a id="petrolSourceLink" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
+              Source <i data-lucide="external-link" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
         <p class="section-note">Prices can change frequently. Cross-check with the station before pumping.</p>
         <div id="petrolResult" class="result" aria-live="polite">
@@ -178,9 +195,12 @@
                 <h2>COE Prices</h2>
               </div>
             </div>
-            <a id="coeSourceLink" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
-              Source <i data-lucide="external-link" aria-hidden="true"></i>
-            </a>
+            <div class="card-actions">
+              <a class="detail-link" href="/latest-coe-prices.html">View latest COE prices <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+              <a id="coeSourceLink" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
+                Source <i data-lucide="external-link" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
           <div id="coeResult" class="result" aria-live="polite">
             <p class="loading-state">Loading the latest COE result…</p>
@@ -196,9 +216,12 @@
                 <h2>Upcoming BTO Projects</h2>
               </div>
             </div>
-            <a id="btoSourceLink" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
-              Source <i data-lucide="external-link" aria-hidden="true"></i>
-            </a>
+            <div class="card-actions">
+              <a class="detail-link" href="/bto-launches.html">View upcoming BTO launches <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+              <a id="btoSourceLink" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
+                Source <i data-lucide="external-link" aria-hidden="true"></i>
+              </a>
+            </div>
           </div>
           <div id="btoResult" class="result" aria-live="polite">
             <p class="loading-state">Loading upcoming BTO projects…</p>
