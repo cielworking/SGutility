@@ -2116,3 +2116,145 @@ svg {
     width: 100%;
   }
 }
+
+
+/* Specialist data pages and crawlable detail links */
+
+.detail-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 7px 10px;
+  border: 1px solid #b8cdf7;
+  border-radius: 9px;
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+  font-size: 11px;
+  font-weight: 750;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.detail-link:hover {
+  border-color: #8eb0ee;
+  background: #e3edff;
+}
+
+.detail-link svg {
+  font-size: 13px;
+}
+
+.checkpoint-detail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.specialist-hero {
+  align-items: center;
+}
+
+.specialist-hero .page-hero-main {
+  max-width: 760px;
+}
+
+.specialist-hero-actions {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.specialist-layout {
+  display: grid;
+  gap: 20px;
+}
+
+.specialist-data-card {
+  padding: 26px;
+}
+
+.specialist-data-card .section-header {
+  margin-bottom: 18px;
+}
+
+.single-location {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.single-location .checkpoint-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.methodology-card {
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.methodology-card summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 750;
+  list-style: none;
+}
+
+.methodology-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.methodology-card[open] summary > svg {
+  transform: rotate(180deg);
+}
+
+.methodology-card div {
+  padding-top: 14px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.methodology-card p {
+  margin: 0;
+}
+
+.methodology-card p + p {
+  margin-top: 9px;
+}
+
+@media (max-width: 820px) {
+  .specialist-hero {
+    align-items: flex-start;
+  }
+
+  .specialist-hero-actions {
+    justify-content: flex-start;
+  }
+
+  .single-location .checkpoint-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .specialist-data-card {
+    padding: 17px;
+  }
+
+  .specialist-hero-actions,
+  .specialist-hero-actions .detail-link {
+    width: 100%;
+  }
+
+  .single-location .checkpoint-grid {
+    grid-template-columns: 1fr;
+  }
+}
