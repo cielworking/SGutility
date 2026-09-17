@@ -3,64 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>About SG Alerts</title>
-
+  <meta name="description" content="Learn about SG Alerts, an independent Singapore information dashboard.">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=10" />
 </head>
-
 <body>
-  <header>
-    <h1>SG Alerts</h1>
-    <p>Singapore Traffic, Petrol, COE, BTO & Daily Alerts</p>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="SG Alerts home">
+        <span class="brand-mark" aria-hidden="true"><i data-lucide="bell-ring"></i></span>
+        <span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span>
+      </a>
+      <nav class="primary-nav" aria-label="Main navigation">
+        <a href="index.html#news">News</a>
+        <a href="index.html#checkpoints">Checkpoints</a>
+        <a href="index.html#petrol">Petrol</a>
+        <a href="index.html#coe">COE</a>
+        <a href="index.html#bto">BTO</a>
+        <a href="index.html#results">Results</a>
+        <a href="index.html#quick-info">Quick Info</a>
+      </nav>
+    </div>
   </header>
+  <main id="main-content" class="content-page">
+    <section class="page-hero">
+      <div class="page-hero-main">
+        <span class="page-hero-icon" aria-hidden="true"><i data-lucide="circle-help"></i></span>
+        <div>
+          <p class="eyebrow">About the dashboard</p>
+          <h1>Useful Singapore information, in one place</h1>
+          <p>SG Alerts is an independent dashboard designed to make everyday public information faster to find and easier to understand.</p>
+        </div>
+      </div>
+      <a class="back-link" href="index.html"><i data-lucide="layout-dashboard"></i> Open dashboard</a>
+    </section>
 
-  <main class="page-container">
-    <section class="page-card">
-      <h1>ℹ️ About SG Alerts</h1>
+    <section class="info-grid" aria-label="What SG Alerts provides">
+      <article class="info-card">
+        <span class="info-card-icon"><i data-lucide="scan-search"></i></span>
+        <h2>Easy to scan</h2>
+        <p>Important traffic, motoring, housing and public information is organised into one clear dashboard.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-card-icon"><i data-lucide="database"></i></span>
+        <h2>Source-led</h2>
+        <p>Where available, information is drawn from official data feeds and linked back to its source for verification.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-card-icon"><i data-lucide="shield-check"></i></span>
+        <h2>Independent</h2>
+        <p>SG Alerts is independently operated and is not affiliated with or endorsed by any Singapore government agency.</p>
+      </article>
+    </section>
 
-      <p>
-        SG Alerts is an independent Singapore information dashboard providing
-        updates on checkpoint traffic, Singapore news, petrol prices, COE
-        results, BTO launches and other useful daily information.
-      </p>
-
-      <p>
-        Our goal is to make important Singapore information easily accessible
-        through a single platform.
-      </p>
-
-      <p>
-        Information displayed on this website is aggregated from publicly
-        available sources and official government data feeds where available.
-      </p>
-
-      <p>
-        SG Alerts is not affiliated with any Singapore government agency.
-      </p>
-
-      <a class="back-link" href="index.html">← Back to dashboard</a>
+    <section class="about-copy">
+      <article class="document-card legal-document">
+        <section>
+          <h2>What you can find here</h2>
+          <p>The dashboard currently brings together Singapore news alerts, live Woodlands and Tuas checkpoint cameras, petrol prices and discount estimates, COE bidding results, upcoming BTO information, Singapore Pools results and practical public reminders.</p>
+        </section>
+        <section>
+          <h2>How information is presented</h2>
+          <p>SG Alerts aims to show useful summaries without hiding the original source. Time-sensitive information includes source links or update timestamps so visitors can verify details before making a decision.</p>
+        </section>
+        <section>
+          <h2>Corrections and feedback</h2>
+          <p>If something appears inaccurate, outdated or unclear, please send the page and relevant details to <a href="mailto:support@sgalerts.com">support@sgalerts.com</a>. Corrections help keep the dashboard useful for everyone.</p>
+        </section>
+        <div class="document-actions">
+          <a class="back-link" href="index.html"><i data-lucide="arrow-left"></i> Back to dashboard</a>
+          <a class="contact-button" href="contact.html"><i data-lucide="message-circle"></i> Send feedback</a>
+        </div>
+      </article>
     </section>
   </main>
-
-<footer class="site-footer">
-  <div class="footer-links">
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="privacy-policy.html">Privacy Policy</a>
-    <a href="terms.html">Terms</a>
-  </div>
-
-  <div class="footer-copy">
-    © 2026 SG Alerts • Independent Singapore Information Dashboard
-  </div>
-</footer>
-
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>SG Alerts</strong><span>Independent Singapore information dashboard</span></div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script>if (window.lucide) window.lucide.createIcons({ attrs: { "aria-hidden": "true" } });</script>
 </body>
 </html>
