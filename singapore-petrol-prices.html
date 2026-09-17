@@ -1,86 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Singapore Petrol Prices Today | SG Alerts</title>
-  <meta name="description" content="Compare Singapore petrol prices for Shell, Esso, SPC, Caltex, Sinopec and Smart Energy, including pump prices and estimated prices after discounts.">
+  <meta name="description" content="Compare current Singapore petrol pump prices for Shell, Esso, SPC, Caltex, Sinopec and Smart Energy, with discount estimates and source timestamps.">
   <link rel="canonical" href="https://sgalerts.com/singapore-petrol-prices.html">
-
   <meta property="og:title" content="Singapore Petrol Prices Today | SG Alerts">
-  <meta property="og:description" content="Compare Singapore petrol pump prices and estimated fuel prices after selected discounts.">
+  <meta property="og:description" content="Compare current Singapore petrol pump prices for Shell, Esso, SPC, Caltex, Sinopec and Smart Energy, with discount estimates and source timestamps.">
   <meta property="og:url" content="https://sgalerts.com/singapore-petrol-prices.html">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SG Alerts">
   <meta property="og:image" content="https://sgalerts.com/apple-touch-icon.png">
-
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="shortcut icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/style.css?v=11">
 </head>
-
-<body>
-  <header>
-    <div class="site-title">SG Alerts</div>
-    <p>Singapore Traffic, Petrol, COE, BTO & Daily Alerts</p>
-  </header>
-
-  <main class="grid landing-grid">
-    <section class="card landing-card wide-card petrol-card">
-      <div class="eyebrow">Fuel prices</div>
-      <h1>Singapore Petrol Prices</h1>
-      <p>
-        Compare listed petrol pump prices in Singapore across major brands,
-        including Shell, Esso, SPC, Caltex, Sinopec and Smart Energy. Prices can
-        change quickly, so use this as a convenient snapshot before deciding
-        where to refuel.
-      </p>
-      <p>
-        The table separates pump prices from discount estimates. Final savings
-        may depend on card type, membership status, cashback caps, minimum spend,
-        and station-specific terms.
-      </p>
-
-      <div class="topic-links">
-        <a href="/">Back to dashboard</a>
-        <a href="/woodlands-checkpoint.html">Woodlands cameras</a>
-        <a href="/tuas-checkpoint.html">Tuas cameras</a>
-        <a href="/latest-coe-prices.html">COE prices</a>
-      </div>
-    </section>
-
-    <section class="card petrol-card wide-card">
-      <div class="card-header">
-        <h2>Latest Petrol Price</h2>
-        <a id="petrolSourceLink" href="#" target="_blank" rel="noopener noreferrer">Verify source</a>
-      </div>
-
-      <p>Petrol prices can change frequently. Cross-check before pumping.</p>
-
-      <div id="petrolResult" class="result">
-        <p>Loading latest Singapore petrol prices.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-links">
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms.html">Terms</a>
+<body><a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="SG Alerts home">
+        <span class="brand-mark" aria-hidden="true"><i data-lucide="bell-ring"></i></span>
+        <span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span>
+      </a>
+      <nav class="primary-nav" aria-label="Dashboard sections">
+        <a href="/#news">News</a><a href="/#checkpoints">Checkpoints</a><a href="/#petrol">Petrol</a>
+        <a href="/#coe">COE</a><a href="/#bto">BTO</a><a href="/#results">Results</a><a href="/#quick-info">Quick Info</a>
+      </nav>
     </div>
-
-    <div class="footer-copy">
-      &copy; 2026 SG Alerts &bull; Independent Singapore Information Dashboard
+  </header>
+<main id="main-content" class="content-page">
+  <section class="page-hero specialist-hero">
+    <div class="page-hero-main"><span class="page-hero-icon"><i data-lucide="fuel"></i></span><div><p class="eyebrow">Fuel prices</p><h1>Singapore Petrol Prices Today</h1><p>Compare current pump prices across major Singapore brands, then review available card promotions and estimated effective prices.</p></div></div>
+    <div class="specialist-hero-actions"><a class="detail-link" href="/"><i data-lucide="layout-dashboard"></i> Dashboard</a><a class="detail-link" href="/latest-coe-prices.html"><i data-lucide="car-front"></i> Latest COE prices</a></div>
+  </section>
+  <div class="specialist-layout">
+    <section class="surface-card specialist-data-card">
+      <div class="section-header section-header-row"><div class="section-title"><span class="section-icon"><i data-lucide="fuel"></i></span><div><p class="eyebrow">Pump prices & savings</p><h2>Latest petrol prices</h2></div></div><a id="petrolSourceLink" class="source-link" href="https://petrolprice.sg/" target="_blank" rel="noopener noreferrer">Source <i data-lucide="external-link"></i></a></div>
+      <p class="section-note">Prices can change frequently. Cross-check with the station before pumping.</p>
+      <div id="petrolResult" class="result" aria-live="polite"><!-- STATIC:PETROL:START -->
+<div class="petrol-table" aria-label="Current Singapore petrol pump prices"><div class="petrol-header"><span>Brand</span><span>92</span><span>95</span><span>98</span><span>Premium</span><span>Diesel</span></div><div class="petrol-row"><div class="brand-cell"><img src="./assets/petrol/esso.png" alt="Esso logo"><strong>Esso</strong></div><span class="">$3.46</span><span class="">$3.49</span><span class="">$4.01</span><span class="na">N/A</span><span class="">$4.07</span></div><div class="petrol-row"><div class="brand-cell"><img src="./assets/petrol/shell.png" alt="Shell logo"><strong>Shell</strong></div><span class="na">N/A</span><span class="">$3.49</span><span class="">$4.01</span><span class="">$4.23</span><span class="">$4.07</span></div><div class="petrol-row"><div class="brand-cell"><img src="./assets/petrol/spc.png" alt="SPC logo"><strong>SPC</strong></div><span class="cheapest">$3.34<small>Cheapest</small></span><span class="cheapest">$3.36<small>Cheapest</small></span><span class="cheapest">$3.88<small>Cheapest</small></span><span class="na">N/A</span><span class="">$3.89</span></div><div class="petrol-row"><div class="brand-cell"><img src="./assets/petrol/caltex.png" alt="Caltex logo"><strong>Caltex</strong></div><span class="">$3.46</span><span class="">$3.49</span><span class="na">N/A</span><span class="">$4.19</span><span class="">$4.07</span></div><div class="petrol-row"><div class="brand-cell"><img src="./assets/petrol/sinopec.png" alt="Sinopec logo"><strong>Sinopec</strong></div><span class="na">N/A</span><span class="">$3.45</span><span class="">$3.96</span><span class="cheapest">$4.09<small>Cheapest</small></span><span class="">$3.97</span></div><div class="petrol-row"><div class="brand-cell"><img src="./assets/petrol/smart-energy.png" alt="Smart Energy logo"><strong>Smart Energy</strong></div><span class="na">N/A</span><span class="">$3.50</span><span class="">$3.99</span><span class="na">N/A</span><span class="cheapest">$3.59<small>Cheapest</small></span></div></div>
+<div class="note">Source: PetrolPrice.sg. Last updated: 17 Sept 2026, 09:24 am SGT. Listed pump prices in SGD per litre.</div>
+<!-- STATIC:PETROL:END --></div>
+    </section>
+    <details class="methodology-card"><summary><span>How petrol prices and estimates work</span><i data-lucide="chevron-down"></i></summary><div><p>Pump prices are listed separately from promotion estimates. Final savings may depend on card eligibility, cashback caps, membership, minimum spend and current station terms.</p></div></details>
+  </div>
+</main><footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>SG Alerts</strong><span>Independent Singapore information dashboard</span></div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="/about.html">About</a><a href="/contact.html">Contact</a>
+        <a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a>
+      </nav>
     </div>
   </footer>
-
-  <script src="script.js?v=5"></script>
-</body>
-</html>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="/script.js?v=7"></script></body></html>
