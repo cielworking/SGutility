@@ -37,9 +37,10 @@ jobs:
           python scripts/update-news.py
           python scripts/update-checkpoints.py
           python scripts/update-petrol-discounts.py
+          python scripts/render-static-pages.py
 
       - name: Commit updated data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update dashboard data"
-          file_pattern: data/*.json
+          file_pattern: data/*.json *.html sitemap.xml
