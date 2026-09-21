@@ -1,6 +1,11 @@
 name: Update Dashboard Data
 
 on:
+  push:
+    branches: ["main"]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/SGutility-update-data.yml"
   schedule:
     - cron: "18 * * * *"
   workflow_dispatch:
