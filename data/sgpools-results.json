@@ -1,53 +1,53 @@
 {
   "source_name": "Singapore Pools",
   "source_url": "https://www.singaporepools.com.sg/en/product/pages/4d_results.aspx",
-  "last_updated": "2026-09-17T01:24:22.230085+00:00",
+  "last_updated": "2026-09-21T02:46:36.236782+00:00",
   "four_d": {
     "source_url": "https://www.singaporepools.com.sg/en/product/pages/4d_results.aspx",
     "data_url": "https://www.singaporepools.com.sg/DataFileArchive/Lottery/Output/fourd_result_top_draws_en.html",
-    "draw_date": "Wed, 16 Sep 2026",
-    "draw_no": "5536",
-    "first_prize": "9224",
-    "second_prize": "1136",
-    "third_prize": "8473",
+    "draw_date": "Sun, 20 Sep 2026",
+    "draw_no": "5538",
+    "first_prize": "9622",
+    "second_prize": "9248",
+    "third_prize": "6307",
     "starter": [
-      "0019",
-      "0660",
-      "0828",
-      "2713",
-      "4681",
-      "4765",
-      "6060",
-      "6475",
-      "6781",
-      "8236"
+      "0437",
+      "1751",
+      "3151",
+      "4105",
+      "4679",
+      "5367",
+      "7261",
+      "8939",
+      "9107",
+      "9493"
     ],
     "consolation": [
-      "2356",
-      "4848",
-      "5137",
-      "6791",
-      "7318",
-      "7410",
-      "7633",
-      "8951",
-      "9241",
-      "9710"
+      "0714",
+      "1197",
+      "1338",
+      "2411",
+      "2420",
+      "3093",
+      "3323",
+      "3415",
+      "7426",
+      "7892"
     ]
   },
   "toto": {
     "source_url": "https://www.singaporepools.com.sg/en/product/pages/toto_results.aspx",
     "data_url": "https://www.singaporepools.com.sg/DataFileArchive/Lottery/Output/toto_result_top_draws_en.html",
-    "draw_date": "Mon, 14 Sep 2026",
-    "draw_no": "4217",
+    "draw_date": "Thu, 17 Sep 2026",
+    "draw_no": "4218",
     "winning_numbers": [
-      "14",
-      "6",
-      "7",
-      "8",
-      "16",
-      "18"
+      "17",
+      "17",
+      "19",
+      "23",
+      "35",
+      "36"
     ],
-    "additional_number": "35"
+    "additional_number": "39"
   }
 }
