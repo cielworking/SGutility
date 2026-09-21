@@ -1,26 +1,19 @@
 {
-  "last_updated": "2026-09-22 01:02",
+  "last_updated": "2026-09-22 05:03",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "First charges brought in UK for Rwanda genocide",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/rwanda-genocide-man-charged-uk-6400576",
+      "published": "2026-09-22 04:20"
+    },
     {
       "category": "Crime",
       "title": "At least S$4.8 million lost to scams involving fake Harvey Norman staff since January",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/impersonation-scams-harvey-norman-mas-police-6400051",
       "published": "2026-09-21 23:41"
-    },
-    {
-      "category": "Crime",
-      "title": "Trump administration prepares sanctions against International Criminal Court, source says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-sanctions-international-criminal-court-icc-trump-6397981",
-      "published": "2026-09-21 21:22"
-    },
-    {
-      "category": "Crime",
-      "title": "South Africa makes arrests over one of nine women found murdered",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/south-africa-johannesburg-serial-murders-women-arrests-6399746",
-      "published": "2026-09-21 20:37"
     },
     {
       "category": "Crime",
@@ -80,6 +73,20 @@
     },
     {
       "category": "Traffic",
+      "title": "California governor signs broad data center oversight bill package",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/california-governor-signs-broad-data-center-oversight-bill-package-6400466",
+      "published": "2026-09-22 02:42"
+    },
+    {
+      "category": "Traffic",
+      "title": "AI could boost LatAm, Caribbean economy 5.1% over a decade but wages may fall, IDB says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ai-could-boost-latam-caribbean-economy-51-over-decade-wages-may-fall-idb-says-6400446",
+      "published": "2026-09-22 02:19"
+    },
+    {
+      "category": "Traffic",
       "title": "‘A bittersweet moment’: Baby, mother care firm Tollyjoy to wind down brand after 55 years",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/a-bittersweet-moment-baby-mother-care-firm-tollyjoy-to-wind-down-brand-after-55-years",
@@ -107,11 +114,18 @@
       "published": "2026-09-20 11:00"
     },
     {
-      "category": "Traffic",
-      "title": "Singapore-UAE team wins autonomous car race in Italy on third attempt",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/singapore-uae-team-wins-autonomous-car-race-in-italy-on-third-attempt",
-      "published": "2026-09-20 05:00"
+      "category": "Transport",
+      "title": "US halts flights at busy East Coast airports, says fiber line cut at construction site",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-airports-east-coast-flight-delays-6400521",
+      "published": "2026-09-22 03:37"
+    },
+    {
+      "category": "Transport",
+      "title": "FAA begins use of AI tool in bid to reduce flight delays",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/faa-begins-use-ai-tool-in-bid-reduce-flight-delays-6400506",
+      "published": "2026-09-22 02:58"
     },
     {
       "category": "Transport",
@@ -154,6 +168,34 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/residents-can-get-traditional-wet-market-experience-at-new-24-hour-fairprice-supermart-in-pasir-ris",
       "published": "2026-09-20 14:19"
+    },
+    {
+      "category": "General",
+      "title": "Infantino says he is open to talks over FIFA reform",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/infantino-says-he-open-talks-over-fifa-reform-6400511",
+      "published": "2026-09-22 03:07"
+    },
+    {
+      "category": "General",
+      "title": "Singing lemurs may use a soprano-like trick to project songs",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/singing-lemurs-may-use-soprano-trick-project-songs-6400496",
+      "published": "2026-09-22 02:57"
+    },
+    {
+      "category": "General",
+      "title": "India's NSE IPO draws over US$10 billion, traders eye modest listing pop",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/indias-nse-ipo-draws-over-us10-billion-traders-eye-modest-listing-pop-6400386",
+      "published": "2026-09-22 02:21"
+    },
+    {
+      "category": "General",
+      "title": "Renewables hit record in 2025, but world must move faster: report",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/renewable-energy-record-un-chief-6400261",
+      "published": "2026-09-22 01:42"
     },
     {
       "category": "General",
@@ -220,55 +262,6 @@
     },
     {
       "category": "General",
-      "title": "Hong Kong proposes easier rules for deals, spin-offs",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/hong-kong-easier-rules-deals-spin-offs-6399971",
-      "published": "2026-09-21 21:35"
-    },
-    {
-      "category": "General",
-      "title": "Being managed by Zidane for France is 'like a movie', says Mbappe",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/being-managed-zidane-france-movie-says-mbappe-6399926",
-      "published": "2026-09-21 21:28"
-    },
-    {
-      "category": "General",
-      "title": "US networks halt Trump coverage over White House ban",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-trump-media-outlets-boycott-white-house-ban-6399911",
-      "published": "2026-09-21 21:27"
-    },
-    {
-      "category": "General",
-      "title": "Yemen coach Ould Ali draws on 'emergency' experience as conflict clouds Gulf Cup",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/yemen-coach-ould-ali-draws-emergency-experience-conflict-clouds-gulf-cup-6399891",
-      "published": "2026-09-21 21:15"
-    },
-    {
-      "category": "General",
-      "title": "League-worst running numbers pile pressure on United",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/league-worst-running-numbers-pile-pressure-united-6399896",
-      "published": "2026-09-21 21:14"
-    },
-    {
-      "category": "General",
-      "title": "Pakistan says it killed 28 militants, Afghan Taliban and UN report three civilian deaths",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/pakistan-says-it-killed-28-militants-afghan-taliban-and-un-report-three-civilian-deaths-6399366",
-      "published": "2026-09-21 21:08"
-    },
-    {
-      "category": "General",
-      "title": "Putin's party secures record score in Russia election",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/putins-party-secures-record-score-in-russia-election-6399171",
-      "published": "2026-09-21 20:41"
-    },
-    {
-      "category": "General",
       "title": "Korean man in S'pore secretly filmed ex-girlfriend's nude video calls, discovered by new girlfriend",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/korean-man-filmed-ex-nude/",
@@ -280,6 +273,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/singapore-labour-market-growth-q2-2026/",
       "published": "2026-09-21 20:17"
+    },
+    {
+      "category": "General",
+      "title": "Japan worker, 19, dies after falling from tower, suicide note claims co-worker told him to 'just die'",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/alleged-suicide-note-japan-worker-19-workplace-bullying/",
+      "published": "2026-09-21 20:13"
     }
   ]
 }
