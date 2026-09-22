@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-22 22:52",
+  "last_updated": "2026-09-23 02:53",
   "headlines": [
     {
       "category": "Crime",
@@ -7,13 +7,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/law-society-audit-committee-report-police-6402356",
       "published": "2026-09-22 21:40"
-    },
-    {
-      "category": "Crime",
-      "title": "Dassault Aviation tests AI algorithms on Rafale fighter jet",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dassault-aviation-tests-ai-algorithms-rafale-fighter-jet-6402336",
-      "published": "2026-09-22 20:11"
     },
     {
       "category": "Crime",
@@ -28,6 +21,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/mercedes-driver-19-charged-pleads-not-guilty/",
       "published": "2026-09-22 19:39"
+    },
+    {
+      "category": "Crime",
+      "title": "Malaysian man who is alleged mastermind of scam syndicate operating in S’pore arrested",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/malaysian-man-who-is-alleged-mastermind-of-scam-syndicate-operating-in-spore-arrested",
+      "published": "2026-09-22 23:56"
     },
     {
       "category": "Crime",
@@ -66,7 +66,7 @@
     },
     {
       "category": "Crime",
-      "title": "10 days’ jail for contractor who damaged rivals’ ads at Toa Payoh, Ang Mo Kio BTO estates",
+      "title": "Jail for contractor who damaged, removed rivals’ ads at Toa Payoh, Ang Mo Kio BTO estates",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/10-days-jail-for-contractor-who-spray-painted-over-rivals-ads-at-toa-payoh-ang-mo-kio-bto-estates",
       "published": "2026-09-22 14:36"
@@ -121,18 +121,11 @@
       "published": "2026-09-22 16:15"
     },
     {
-      "category": "Traffic",
-      "title": "‘A bittersweet moment’: Baby, mother care firm Tollyjoy to wind down brand after 55 years",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/a-bittersweet-moment-baby-mother-care-firm-tollyjoy-to-wind-down-brand-after-55-years",
-      "published": "2026-09-21 13:01"
-    },
-    {
       "category": "Transport",
-      "title": "Exclusive-Snorkel AI valued at $3.5 billion amid surging demand for complex AI training data",
+      "title": "Mbappe misses France training with illness ahead of Nations League games",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-snorkel-ai-valued-35-billion-amid-surging-demand-complex-ai-training-data-6402476",
-      "published": "2026-09-22 21:01"
+      "url": "https://www.channelnewsasia.com/sport/mbappe-misses-france-training-illness-ahead-nations-league-games-6402966",
+      "published": "2026-09-23 00:33"
     },
     {
       "category": "Transport",
@@ -171,6 +164,97 @@
     },
     {
       "category": "General",
+      "title": "Iran 'toughened' conditions for ending war after US deal collapse: Guards spokesman",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-iran-war-toughened-conditions-6403086",
+      "published": "2026-09-23 02:13"
+    },
+    {
+      "category": "General",
+      "title": "OpenAI expands GPT-6 lineup with cheaper Sol and Luna models",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openai-expands-gpt-6-lineup-cheaper-sol-and-luna-models-6403136",
+      "published": "2026-09-23 02:01"
+    },
+    {
+      "category": "General",
+      "title": "ShinyHunters hackers say they breached FBI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/shinyhunters-hackers-say-they-breached-fbi-6403081",
+      "published": "2026-09-23 01:38"
+    },
+    {
+      "category": "General",
+      "title": "Ex-Google safety chief warns AI could harm children more than social media did",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ex-google-safety-chief-warns-ai-could-harm-children-more-social-media-did-6403061",
+      "published": "2026-09-23 01:32"
+    },
+    {
+      "category": "General",
+      "title": "Trump warns in UN speech he could 'annihilate' Iran without peace deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-us-un-trump-speech-peace-deal-6402951",
+      "published": "2026-09-23 01:00"
+    },
+    {
+      "category": "General",
+      "title": "Motivated De Bruyne wants to keep playing for Belgium",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/motivated-de-bruyne-wants-keep-playing-belgium-6403006",
+      "published": "2026-09-23 00:45"
+    },
+    {
+      "category": "General",
+      "title": "Anthropic unveils Claude Opus 5.5",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/anthropic-unveils-claude-opus-55-6402976",
+      "published": "2026-09-23 00:33"
+    },
+    {
+      "category": "General",
+      "title": "Real Madrid call for new LaLiga president following Tebas statements",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/real-madrid-call-new-laliga-president-following-tebas-statements-6402956",
+      "published": "2026-09-23 00:07"
+    },
+    {
+      "category": "General",
+      "title": "Exclusive-Meta testing a 'human concierge' for its new personal AI agent, Muse",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/exclusive-meta-testing-human-concierge-its-new-personal-ai-agent-muse-6402946",
+      "published": "2026-09-23 00:01"
+    },
+    {
+      "category": "General",
+      "title": "Nasdaq sets record high on AI optimism, oil drops below $100",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nasdaq-sets-record-high-ai-optimism-oil-drops-below-100-6401081",
+      "published": "2026-09-22 23:46"
+    },
+    {
+      "category": "General",
+      "title": "Trump renames AI \"super intelligence,\" rejects international oversight",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-ai-trump-super-intelligence-global-control-6402846",
+      "published": "2026-09-22 23:16"
+    },
+    {
+      "category": "General",
+      "title": "Tenacious hot springs amoeba sets heat-tolerance record",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/tenacious-hot-springs-amoeba-sets-heat-tolerance-record-6402811",
+      "published": "2026-09-22 23:01"
+    },
+    {
+      "category": "General",
+      "title": "Juventus fined after supporters interrupt minute's silence for Mazzola",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/juventus-fined-after-supporters-interrupt-minutes-silence-mazzola-6402796",
+      "published": "2026-09-22 22:54"
+    },
+    {
+      "category": "General",
       "title": "Houthis say Saudi Arabia conducts deadly strike on key port city",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/houthis-saudi-arabia-strike-yemen-key-port-city-6402761",
@@ -196,90 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/cup-nations-qualifiers-kick-decision-last-winners-awaited-6402671",
       "published": "2026-09-22 21:43"
-    },
-    {
-      "category": "General",
-      "title": "Palo Alto Networks unveils AI-powered cybersecurity service using Claude, GPT models",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/palo-alto-networks-unveils-ai-powered-cybersecurity-service-using-claude-gpt-models-6402646",
-      "published": "2026-09-22 21:36"
-    },
-    {
-      "category": "General",
-      "title": "Netanyahu says will 'tell the truth' on Israel's actions at United Nations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/netanyahu-israel-united-nations-truth-actions-6402451",
-      "published": "2026-09-22 21:34"
-    },
-    {
-      "category": "General",
-      "title": "Bundesliga strugglers Gladbach appoint Blessin as manager",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/bundesliga-strugglers-gladbach-appoint-blessin-manager-6402556",
-      "published": "2026-09-22 21:23"
-    },
-    {
-      "category": "General",
-      "title": "Arteta agrees new Arsenal contract, BBC reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/arteta-agrees-new-arsenal-contract-bbc-reports-6402386",
-      "published": "2026-09-22 20:37"
-    },
-    {
-      "category": "General",
-      "title": "Wall Street expects Meta's AI agent to shape into a new revenue engine",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/wall-street-expects-metas-ai-agent-shape-new-revenue-engine-6402361",
-      "published": "2026-09-22 20:25"
-    },
-    {
-      "category": "General",
-      "title": "ASEAN aims to bring upgraded goods trade pact into force by end-2026, ahead of schedule: Gan Kim Yong",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/gan-kim-yong-asean-atiga-trade-goods-agreement-2026-6401906",
-      "published": "2026-09-22 19:55"
-    },
-    {
-      "category": "General",
-      "title": "Binance buys $100 million stake in Circle, expands partnership",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/binance-buys-100-million-stake-in-circle-expands-partnership-6402246",
-      "published": "2026-09-22 19:43"
-    },
-    {
-      "category": "General",
-      "title": "South Africa's Miller says loss of contract changes nothing",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/south-africas-miller-says-loss-contract-changes-nothing-6402251",
-      "published": "2026-09-22 19:43"
-    },
-    {
-      "category": "General",
-      "title": "Holders Italy face South Korea in Davis Cup Final 8, Spain meet Austria",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/holders-italy-face-south-korea-in-davis-cup-final-8-spain-meet-austria-6402256",
-      "published": "2026-09-22 19:41"
-    },
-    {
-      "category": "General",
-      "title": "After karting fun, Verstappen looks to keep winning feeling going in Baku",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/after-karting-fun-verstappen-looks-keep-winning-feeling-going-in-baku-6402231",
-      "published": "2026-09-22 19:34"
-    },
-    {
-      "category": "General",
-      "title": "Springboks could try forward experiment against Australia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/springboks-could-try-forward-experiment-against-australia-6402196",
-      "published": "2026-09-22 19:06"
-    },
-    {
-      "category": "General",
-      "title": "Valverde has sprained ankle, say Real Madrid",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/valverde-has-sprained-ankle-say-real-madrid-6402186",
-      "published": "2026-09-22 19:00"
     }
   ]
 }
