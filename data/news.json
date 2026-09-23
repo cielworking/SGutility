@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23 06:08",
+  "last_updated": "2026-09-23 08:31",
   "headlines": [
     {
       "category": "Crime",
@@ -87,7 +87,7 @@
     },
     {
       "category": "Traffic",
-      "title": "Commentary: How concerned should Singapore be about food safety lapses abroad?",
+      "title": "Commentary: Food scares abroad are cause for concern in Singapore, not panic",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/commentary/food-safety-china-formaldehyde-cabbage-us-outbreak-6401936",
       "published": "2026-09-23 06:00"
@@ -96,7 +96,7 @@
       "category": "Traffic",
       "title": "Hayden Panettiere died from accidental overdose involving fentanyl, coroner says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/hayden-panettiere-fentanyl-death-actor-6402731",
+      "url": "https://www.channelnewsasia.com/entertainment/hayden-panettiere-fentanyl-death-actor-6402731",
       "published": "2026-09-23 04:47"
     },
     {
@@ -185,7 +185,49 @@
     },
     {
       "category": "General",
-      "title": "IN FOCUS: As Putrajaya and Bangkok warm up to Naypyidaw, Myanmar refugees fear being sent home",
+      "title": "Taylor Swift announces new song Patient Zero, her first since her wedding",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/taylor-swift-new-song-patient-zero-6403176",
+      "published": "2026-09-23 08:24"
+    },
+    {
+      "category": "General",
+      "title": "US warns Australia's social media algorithm reforms risk 'facilitating censorship'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-warns-australias-social-media-algorithm-reforms-risk-facilitating-censorship-6403646",
+      "published": "2026-09-23 07:50"
+    },
+    {
+      "category": "General",
+      "title": "At 74, she travels two hours to Changi Prison every week to counsel inmates: ‘I don’t want to give up on them’",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/choo-choy-lian-changi-prison-volunteer-6366666",
+      "published": "2026-09-23 07:19"
+    },
+    {
+      "category": "General",
+      "title": "WPP opens London hub in bid to produce faster, AI-assisted ads",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/wpp-opens-london-hub-in-bid-produce-faster-ai-assisted-ads-6403616",
+      "published": "2026-09-23 07:08"
+    },
+    {
+      "category": "General",
+      "title": "Trump, Greenland, Denmark sign deal in bid to end Arctic standoff",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-greenland-denmark-sign-deal-arctic-military-6403576",
+      "published": "2026-09-23 06:52"
+    },
+    {
+      "category": "General",
+      "title": "Nathan Yong’s new collection for British furniture brand Heal’s draws on Singapore memories",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/obsessions/nathan-yong-heals-singapore-furniture-designer-6399176",
+      "published": "2026-09-23 06:15"
+    },
+    {
+      "category": "General",
+      "title": "IN FOCUS: 'I cannot go back' - Myanmar refugees fear repatriation as country gets cosier with Malaysia, Thailand",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/myanmar-refugees-malaysia-thailand-repatriation-6401701",
       "published": "2026-09-23 06:00"
@@ -238,48 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/exclusive-microsoft-keep-shareholder-proposal-rights-through-2027-even-sec-reduces-oversight-6403291",
       "published": "2026-09-23 04:02"
-    },
-    {
-      "category": "General",
-      "title": "Jacks takes five and hits unbeaten 46 as England crush Sri Lanka",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/jacks-takes-five-and-hits-unbeaten-46-england-crush-sri-lanka-6403246",
-      "published": "2026-09-23 03:37"
-    },
-    {
-      "category": "General",
-      "title": "Trump bought and sold shares in Musk's SpaceX in July, financial disclosure shows",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-bought-and-sold-shares-in-musks-spacex-in-july-financial-disclosure-shows-6403201",
-      "published": "2026-09-23 02:48"
-    },
-    {
-      "category": "General",
-      "title": "Iran 'toughened' conditions for ending war after US deal collapse: Guards spokesman",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-iran-war-toughened-conditions-6403086",
-      "published": "2026-09-23 02:13"
-    },
-    {
-      "category": "General",
-      "title": "OpenAI expands GPT-6 lineup with cheaper Sol and Luna models",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-expands-gpt-6-lineup-cheaper-sol-and-luna-models-6403136",
-      "published": "2026-09-23 02:01"
-    },
-    {
-      "category": "General",
-      "title": "ShinyHunters hackers say they breached FBI, stole data on bureau employees",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/shinyhunters-hackers-say-they-breached-fbi-stole-data-bureau-employees-6403081",
-      "published": "2026-09-23 01:38"
-    },
-    {
-      "category": "General",
-      "title": "Ex-Google safety chief warns AI could harm children more than social media did",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ex-google-safety-chief-warns-ai-could-harm-children-more-social-media-did-6403061",
-      "published": "2026-09-23 01:32"
     }
   ]
 }
