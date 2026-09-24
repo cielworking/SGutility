@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-09-25 03:09",
+  "last_updated": "2026-09-25 06:23",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Zidane feels immense emotion before first match in charge of France",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zidane-feels-immense-emotion-first-match-in-charge-france-6409041",
-      "published": "2026-09-25 00:55"
-    },
     {
       "category": "Crime",
       "title": "Man in his 50s suffers cardiac arrest at Zouk, Good Samaritan steps in to perform CPR",
@@ -93,27 +86,6 @@
       "published": "2026-09-23 17:27"
     },
     {
-      "category": "Crime",
-      "title": "2 men charged with offences allegedly linked to ex-lawyer who took nearly $76m of clients’ money",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/2-men-charged-with-offences-allegedly-linked-to-ex-lawyer-who-took-nearly-76m-of-clients-money",
-      "published": "2026-09-23 13:32"
-    },
-    {
-      "category": "Crime",
-      "title": "Over 3 months’ jail for woman who gave more than $50k in bribes to then SJI facilities manager",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/over-3-months-jail-for-woman-who-gave-more-than-50k-in-bribes-to-then-sji-facilities-manager",
-      "published": "2026-09-23 12:46"
-    },
-    {
-      "category": "Traffic",
-      "title": "Female racer Chadwick gets first taste of driving F1 car",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/female-racer-chadwick-gets-first-taste-driving-f1-car-6408841",
-      "published": "2026-09-24 23:37"
-    },
-    {
       "category": "Traffic",
       "title": "Use Grab often? Here’s why the GXS Credit Card could be your simplest option.",
       "source": "Mothership",
@@ -128,11 +100,18 @@
       "published": "2026-09-24 20:11"
     },
     {
-      "category": "Traffic",
-      "title": "ComfortDelGro to waive commission for affected drivers over Sept 15 outage affecting taxis’ terminals",
+      "category": "Transport",
+      "title": "Working above an MRT tunnel to deliver flats: Why this S’pore builder earned accolades for its first BTO project",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/comfortdelgro-to-waive-commission-for-affected-drivers-over-sept-15-outage-affecting-taxis-terminals",
-      "published": "2026-09-23 13:10"
+      "url": "https://www.straitstimes.com/singapore/tampines-greenopal-hdb-bto-awards-vico-construction",
+      "published": "2026-09-25 04:00"
+    },
+    {
+      "category": "Transport",
+      "title": "MRT viaducts overhead, limited space below: How Garden Bloom @ Tengah earned its builder an HDB accolade",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/garden-bloom-tengah-hdb-bto-awards-chiu-teng-construction",
+      "published": "2026-09-25 04:00"
     },
     {
       "category": "Transport",
@@ -157,13 +136,6 @@
     },
     {
       "category": "Fire",
-      "title": "Scaffold netting outside buildings must be fire-retardant from March 2027",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/mom-building-scaffold-fire-safety-requirements-construction-6408551",
-      "published": "2026-09-24 22:26"
-    },
-    {
-      "category": "Fire",
       "title": "50 evacuated after fire breaks out in Pasir Ris HDB flat; no injuries reported",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/50-evacuated-after-fire-breaks-out-in-pasir-ris-hdb-flat-no-injuries-reported",
@@ -185,13 +157,6 @@
     },
     {
       "category": "Money",
-      "title": "Oil prices rise 2% as Houthi missiles add to supply fears",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-prices-rise-2-houthi-missiles-add-supply-fears-6408881",
-      "published": "2026-09-24 23:57"
-    },
-    {
-      "category": "Money",
       "title": "In poly or ITE? Complete a survey or activate your ST student account to earn vouchers",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/in-poly-or-ite-complete-a-survey-or-activate-your-st-student-account-to-earn-vouchers",
@@ -206,80 +171,115 @@
     },
     {
       "category": "Housing",
-      "title": "Yields elevated as inflation fears keep markets on edge",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/yields-elevated-inflation-fears-keep-markets-edge-6408651",
-      "published": "2026-09-24 23:55"
-    },
-    {
-      "category": "Housing",
       "title": "S'pore man, 37, abandons 71 cats in flat for nearly 2 years, leading to 9 deaths",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/man-abandons-71-cats-9-dead/",
       "published": "2026-09-24 21:33"
     },
     {
-      "category": "General",
-      "title": "Trump-Xi summit in Washington begins with great fanfare but low expectations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-xi-jinping-meeting-summit-iran-taiwan-ai-6409161",
-      "published": "2026-09-25 03:04"
+      "category": "Housing",
+      "title": "From English classes to painting robots: Behind an award-winning HDB BTO project",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/macpherson-weave-hdb-bto-awards-hi-tek-construction",
+      "published": "2026-09-25 04:00"
     },
     {
       "category": "General",
-      "title": "White House asks OpenAI, Anthropic to hold models from British testers, Politico reports",
+      "title": "At Milan Fashion Week, Fendi, Marni and Jil Sander loosen up their house codes",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/white-house-asks-openai-anthropic-hold-models-british-testers-politico-reports-6409141",
-      "published": "2026-09-25 01:46"
+      "url": "https://www.channelnewsasia.com/obsessions/milan-fashion-week-fendi-marni-jil-sander-6408991",
+      "published": "2026-09-25 06:15"
     },
     {
       "category": "General",
-      "title": "New US sanctions shut down Iranian flights",
+      "title": "Commentary: Could P1 registration changes be bolder? Focus first on public mandate of primary schools",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/new-us-sanctions-shut-down-iranian-flights-6409036",
-      "published": "2026-09-25 01:38"
+      "url": "https://www.channelnewsasia.com/commentary/p1-registration-phase-2c-changes-parents-6407966",
+      "published": "2026-09-25 06:00"
     },
     {
       "category": "General",
-      "title": "'Alvarez is in the past', says Deco as Barcelona embrace Raphinha reinvention",
+      "title": "CNA Explains: Smart glasses and the law in Singapore – when does filming a stranger cross the line?",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/alvarez-in-past-says-deco-barcelona-embrace-raphinha-reinvention-6409056",
-      "published": "2026-09-25 00:58"
+      "url": "https://www.channelnewsasia.com/singapore/smart-glasses-filming-public-legal-6407846",
+      "published": "2026-09-25 06:00"
     },
     {
       "category": "General",
-      "title": "CNN, MS NOW, Politico allowed back in White House after judge's order",
+      "title": "Commentary: A diesel export ban is a bad idea. Trump needs it anyway",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/cnn-ms-now-politico-allowed-back-in-white-house-after-judges-order-6409006",
-      "published": "2026-09-25 00:43"
+      "url": "https://www.channelnewsasia.com/commentary/us-diesel-export-ban-trump-iran-ukraie-6408081",
+      "published": "2026-09-25 05:59"
     },
     {
       "category": "General",
-      "title": "Haas to decide 2027 driver line-up within couple of weeks",
+      "title": "Commentary: An OpenAI agent hacked an Australian government health data portal. Will anyone be held responsible?",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/haas-decide-2027-driver-line-up-within-couple-weeks-6408961",
-      "published": "2026-09-25 00:17"
+      "url": "https://www.channelnewsasia.com/commentary/commentary-openai-agent-hacked-australian-government-health-data-portal-will-anyone-be-held-responsible-6408121",
+      "published": "2026-09-25 05:58"
     },
     {
       "category": "General",
-      "title": "Breetzke ton leads South Africa to 67-run win over Australia",
+      "title": "Israel's Netanyahu denounces enemies, allies in fiery UN speech",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/breetzke-ton-leads-south-africa-67-run-win-over-australia-6408941",
-      "published": "2026-09-25 00:08"
+      "url": "https://www.channelnewsasia.com/world/israel-netanyahu-un-speed-denounce-enemies-allies-6409471",
+      "published": "2026-09-25 05:47"
     },
     {
       "category": "General",
-      "title": "Study reveals evolutionary history of bats, dating back 65 million years",
+      "title": "Yellowface author RF Kuang shares 5 Taipei spots beyond the usual tourist trail",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/study-reveals-evolutionary-history-bats-dating-back-65-million-years-6408906",
-      "published": "2026-09-25 00:03"
+      "url": "https://www.channelnewsasia.com/experiences/rf-kuang-author-taipei-things-do-6403926",
+      "published": "2026-09-25 05:30"
     },
     {
       "category": "General",
-      "title": "BNP Paribas to keep sensitive data off public cloud despite Google deal",
+      "title": "Macklemore hits back with 'Free Palestine Tour' after Sheeran split",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/bnp-paribas-keep-sensitive-data-public-cloud-despite-google-deal-6408911",
-      "published": "2026-09-25 00:02"
+      "url": "https://www.channelnewsasia.com/world/macklemore-free-palestine-tour-ed-sheeran-6409411",
+      "published": "2026-09-25 05:23"
+    },
+    {
+      "category": "General",
+      "title": "Late Gakpo equaliser earns Dutch 1-1 draw against Germany to spoil Klopp's debut",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/late-gakpo-equaliser-earns-dutch-1-1-draw-against-germany-spoil-klopps-debut-6409426",
+      "published": "2026-09-25 05:14"
+    },
+    {
+      "category": "General",
+      "title": "Taliban govt says Pakistan strikes kill 4 civilians in Afghanistan",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/pakistan-afghanistan-strikes-four-killed-6409336",
+      "published": "2026-09-25 04:54"
+    },
+    {
+      "category": "General",
+      "title": "Israel's Abu Farchi sent off after gun gesture celebration",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/israels-abu-farchi-sent-after-gun-gesture-celebration-6409356",
+      "published": "2026-09-25 04:38"
+    },
+    {
+      "category": "General",
+      "title": "North Korea rejects call to halt nuclear tests",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/north-korea-nuclear-test-ban-reject-6409251",
+      "published": "2026-09-25 04:21"
+    },
+    {
+      "category": "General",
+      "title": "US government seeks to join Elon Musk in challenge against EU's fine on X",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-government-seeks-join-elon-musk-in-challenge-against-eus-fine-x-6409316",
+      "published": "2026-09-25 04:15"
+    },
+    {
+      "category": "General",
+      "title": "Anthropic signs $11.6 billion cloud deal with Akamai, gets warrant for up to 5% stake",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/anthropic-signs-116-billion-cloud-deal-akamai-gets-warrant-up-5-stake-6409301",
+      "published": "2026-09-25 04:11"
     }
   ]
 }
