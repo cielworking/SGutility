@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-09-26 06:19",
+  "last_updated": "2026-09-26 09:32",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Man to be charged after allegedly starting fire in front of mosque",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/spf-man-charged-allegedly-starting-fire-mosque-6412191",
+      "published": "2026-09-26 08:43"
+    },
     {
       "category": "Crime",
       "title": "Top court grants Trump bid to use federal database to verify voter rolls",
@@ -28,6 +35,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/woman-falun-gong-singapore-public-gathering/",
       "published": "2026-09-25 20:16"
+    },
+    {
+      "category": "Crime",
+      "title": "Man to be charged with allegedly starting a fire in front of mosque at UOB Plaza",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-to-be-charged-with-allegedly-starting-a-fire-in-front-of-mosque-at-uob-plaza",
+      "published": "2026-09-26 08:15"
     },
     {
       "category": "Crime",
@@ -80,20 +94,6 @@
     },
     {
       "category": "Traffic",
-      "title": "Meta misled users about Facebook data practices, New Mexico jury finds",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/meta-misled-users-about-facebook-data-practices-new-mexico-jury-finds-6411731",
-      "published": "2026-09-26 01:33"
-    },
-    {
-      "category": "Traffic",
-      "title": "Pietersen holds Ashes talks with England coach Fleming",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pietersen-holds-ashes-talks-england-coach-fleming-6411651",
-      "published": "2026-09-26 00:48"
-    },
-    {
-      "category": "Traffic",
       "title": "M'sia PM Anwar's brother, 83, passes away in his sleep",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/anwar-ibrahims-elder-brother-pass/",
@@ -136,13 +136,6 @@
     },
     {
       "category": "Transport",
-      "title": "Family business fights rising costs to keep nasi lemak at S$2, even with rent of S$10,000",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/two-dollar-nasi-lemak-rent-10000-yishun-hawker-family-6411106",
-      "published": "2026-09-26 06:00"
-    },
-    {
-      "category": "Transport",
       "title": "St Luke’s Hospital to raise $50m over five years to redevelop campus, expand services and train staff",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/health/st-lukes-hospital-to-raise-50m-over-five-years-to-redevelop-campus-expand-services-and-train-staff",
@@ -168,6 +161,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/50-evacuated-after-fire-breaks-out-in-pasir-ris-hdb-flat-no-injuries-reported",
       "published": "2026-09-24 21:58"
+    },
+    {
+      "category": "Money",
+      "title": "With rent of nearly S$10,000, can this Yishun family keep selling S$2 nasi lemak as costs rise?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/cna-insider/two-dollar-nasi-lemak-rent-10000-yishun-hawker-family-6411106",
+      "published": "2026-09-26 06:00"
     },
     {
       "category": "Money",
@@ -227,59 +227,59 @@
     },
     {
       "category": "General",
+      "title": "OpenAI's models accessed public US Census, SEC data, Bloomberg News reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openais-models-accessed-public-us-census-sec-data-bloomberg-news-reports-6412186",
+      "published": "2026-09-26 08:31"
+    },
+    {
+      "category": "General",
+      "title": "Why don’t I recover from workouts as quickly as I used to?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/workout-recovery-aging-exercise-6395081",
+      "published": "2026-09-26 08:09"
+    },
+    {
+      "category": "General",
+      "title": "How Stage 4 lung cancer changed this former nightlife boss: From 5 litres of beer a night to Everest Base Camp",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/living-stage-4-lung-cancer-michael-chuah-6382671",
+      "published": "2026-09-26 08:07"
+    },
+    {
+      "category": "General",
+      "title": "Internationals stun US with 5-0 sweep to take Presidents Cup lead",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/internationals-stun-us-5-0-sweep-take-presidents-cup-lead-6412131",
+      "published": "2026-09-26 07:16"
+    },
+    {
+      "category": "General",
+      "title": "Two Singapore chefs are putting homegrown flavours on the menu in Hong Kong",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/experiences/singapore-chefs-barry-quek-keith-teo-whey-hong-kong-6401426",
+      "published": "2026-09-26 06:58"
+    },
+    {
+      "category": "General",
+      "title": "Pochettino regrets limited role in Balogun appeal, says controversy changed US energy",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pochettino-regrets-limited-role-in-balogun-appeal-says-controversy-changed-us-energy-6412101",
+      "published": "2026-09-26 06:50"
+    },
+    {
+      "category": "General",
+      "title": "TikTok settles with Alabama ahead of first state trial over claims of teen harms",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/tiktok-settles-alabama-ahead-first-state-trial-over-claims-teen-harms-6412081",
+      "published": "2026-09-26 06:38"
+    },
+    {
+      "category": "General",
       "title": "Commentary: Anthony Loke resignation offer matters little to DAP’s fate",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/commentary/malaysia-najib-conditional-pardon-anthony-loke-resignation-offer-dap-6410446",
       "published": "2026-09-26 06:00"
-    },
-    {
-      "category": "General",
-      "title": "'Unwavering belief': The long-time coach pushing Singapore star swimmer Gan Ching Hwee to new heights",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/gan-ching-hwee-singapore-coach-eugene-chia-6408641",
-      "published": "2026-09-26 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Wall Street stocks rise, greeting optimism over possible US-Iran deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/wall-street-stocks-rise-greeting-optimism-over-possible-us-iran-deal-6412011",
-      "published": "2026-09-26 05:32"
-    },
-    {
-      "category": "General",
-      "title": "Zidane puts early stamp on France off the pitch before winning start",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zidane-puts-early-stamp-france-pitch-winning-start-6412016",
-      "published": "2026-09-26 05:08"
-    },
-    {
-      "category": "General",
-      "title": "Exclusive-OpenAI works to understand full scope of agent activity as user data leak emerges",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-openai-works-understand-full-scope-agent-activity-user-data-leak-emerges-6411996",
-      "published": "2026-09-26 04:37"
-    },
-    {
-      "category": "General",
-      "title": "France's Mbappe out of Nations League squad with knee injury",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/frances-mbappe-out-nations-league-squad-knee-injury-6411976",
-      "published": "2026-09-26 04:19"
-    },
-    {
-      "category": "General",
-      "title": "The White House network TV pool resumes operations after a dayslong ban of news outlets from grounds",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/cnn-ms-now-politico-ban-white-house-6411836",
-      "published": "2026-09-26 03:33"
-    },
-    {
-      "category": "General",
-      "title": "USOPC anticipating participation surge in US from LA28, 2034 Games",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/usopc-anticipating-participation-surge-in-us-la28-2034-games-6411916",
-      "published": "2026-09-26 03:21"
     }
   ]
 }
