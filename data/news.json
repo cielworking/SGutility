@@ -1,58 +1,51 @@
 {
-  "last_updated": "2026-09-29 16:28",
+  "last_updated": "2026-09-29 23:50",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Anthony Loke says will remain as Malaysia’s transport minister until Najib begins house arrest",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/malaysia-anthony-loke-remain-transport-minister-najib-house-arrest-6417846",
-      "published": "2026-09-29 15:46"
-    },
-    {
-      "category": "Crime",
-      "title": "Man charged over AI-generated image of crocodile that led to search operations at Pandan Reservoir",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ai-generated-crocodile-image-pandan-reservoir-man-charged-6417156",
-      "published": "2026-09-29 12:34"
-    },
-    {
-      "category": "Crime",
-      "title": "S'pore police confirm man, 24, died after Muay Thai tournament fight",
+      "title": "39 in S'pore, half aged below 30, arrested for alleged drug activities on Telegram channels",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/man-muay-thai-died/",
-      "published": "2026-09-29 09:25"
+      "url": "https://mothership.sg/2026/09/39-arrested-drugs-telegram/",
+      "published": "2026-09-29 23:53"
     },
     {
       "category": "Crime",
-      "title": "S’porean man invests S$368,000 in sports business with Bali woman over 7 months, fears he might have been scammed",
+      "title": "Myanmar man, 30, charged for sending AI-generated image of crocodile at Pandan Reservoir to colleague & deleting it after",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/sporean-man-padel-sports-gear-indonesia-allegedly-scammed/",
-      "published": "2026-09-29 02:41"
+      "url": "https://mothership.sg/2026/09/myanmar-man-charged-ai-generated-image-crocodile-pandan-reservoir/",
+      "published": "2026-09-29 20:10"
     },
     {
       "category": "Crime",
-      "title": "3 men & 1 woman arrested after fight in front of Geylang eatery",
+      "title": "Scammers now acting as children of S'pore parents on WhatsApp to ask for course funds, at least S$18,000 lost in a month",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/geylang-eatery-fight/",
-      "published": "2026-09-29 02:28"
+      "url": "https://mothership.sg/2026/09/whatsapp-scam-act-students-parents-funds/",
+      "published": "2026-09-29 19:59"
     },
     {
       "category": "Crime",
-      "title": "S'pore man, 30, allegedly used AI to create image of crocodile at Pandan Reservoir, to be charged",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/fake-crocodile-photo/",
-      "published": "2026-09-29 02:24"
+      "title": "More S’pore youth caught for offences in 2025, largely due to rise in cheating cases",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/community/more-spore-youth-caught-for-offences-in-2025-largely-due-to-rise-in-cheating-cases",
+      "published": "2026-09-29 18:00"
     },
     {
       "category": "Crime",
-      "title": "Bangladeshi man, 36, smashes taxi in Kallang, assaults man with stick at Merdeka Bridge, jailed & caned",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/bangladeshi-man-smash-taxi-window/",
-      "published": "2026-09-29 02:06"
+      "title": "Sexual crimes among top offences committed by youth in S’pore aged 10 to under 21: MSF report",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/community/sexual-crimes-among-top-offences-committed-by-youth-in-spore-aged-10-to-under-21-msf-report",
+      "published": "2026-09-29 18:00"
     },
     {
       "category": "Crime",
-      "title": "Woman, 76, and man, 40, handed multiple domestic worker abuse charges in unrelated cases",
+      "title": "Drug arrests at checkpoints surge by over 50% in 2025 as ICA, CNB ramp up operations",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/drug-arrests-at-checkpoints-surge-by-over-50-in-2025-as-ica-cnb-ramp-up-operations",
+      "published": "2026-09-29 18:00"
+    },
+    {
+      "category": "Crime",
+      "title": "Woman and man face multiple charges over abuse of domestic helper in unrelated cases",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/woman-76-and-man-40-handed-multiple-domestic-worker-abuse-charges-in-unrelated-cases",
       "published": "2026-09-29 14:59"
@@ -93,46 +86,32 @@
       "published": "2026-09-28 12:09"
     },
     {
-      "category": "Crime",
-      "title": "Six charged over participation in unlawful assemblies at Changi Prison, State Courts",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/six-charged-over-participation-in-unlawful-assemblies-at-changi-prison-state-courts",
-      "published": "2026-09-28 11:03"
-    },
-    {
-      "category": "Crime",
-      "title": "Over $1 million worth of drugs seized; 2 men arrested after smuggling attempt at Tuas Checkpoint",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/over-1-million-worth-of-drugs-seized-2-men-arrested-after-smuggling-attempt-at-tuas-checkpoint",
-      "published": "2026-09-28 10:35"
-    },
-    {
       "category": "Traffic",
-      "title": "US auto regulator closes airbag defect petition in about 807,000 Honda Odyssey cars",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-auto-regulator-closes-airbag-defect-petition-in-about-807000-honda-odyssey-cars-6417876",
-      "published": "2026-09-29 15:53"
-    },
-    {
-      "category": "Traffic",
-      "title": "Construction begins for Singapore’s long-delayed fourth egg farm",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-fourth-egg-farm-begins-construction-6416146",
-      "published": "2026-09-29 14:00"
-    },
-    {
-      "category": "Traffic",
-      "title": "Signal faults, communication problems caused Indonesia's April deadly train collision: Investigators",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/signal-faults-communication-problems-bekasi-train-crash-indonesia-6415666",
-      "published": "2026-09-29 12:32"
-    },
-    {
-      "category": "Traffic",
-      "title": "S'pore man, 69, convicted of breaching protection order by singing & banging cans outside neighbour's flat",
+      "title": "M'sian single mum, 32, suffers miscarriage in S'pore, funeral parlour arranges pro bono sea burial",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/man-sing-bang-can-convicted/",
-      "published": "2026-09-29 02:40"
+      "url": "https://mothership.sg/2026/09/malaysian-woman-miscarriage-funeral-guru-pro-bono-foetus/",
+      "published": "2026-09-30 00:21"
+    },
+    {
+      "category": "Traffic",
+      "title": "S'porean man, 26, dies in 3-vehicle crash in M'sia while returning home from ORD trip with friends",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/singaporean-man-dies-msian-accident-ord-trip/",
+      "published": "2026-09-29 23:58"
+    },
+    {
+      "category": "Traffic",
+      "title": "East Coast Road, Serangoon North View private housing sites launched for sale",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/housing/east-coast-road-serangoon-north-view-private-housing-sites-launched-for-sale",
+      "published": "2026-09-29 19:45"
+    },
+    {
+      "category": "Traffic",
+      "title": "MOE to engage S’poreans on PSLE, DSA and school choice, where pressure is highest: David Neo",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/parenting-education/moe-to-engage-sporeans-on-psle-dsa-and-school-choice-where-pressure-is-highest-david-neo",
+      "published": "2026-09-29 17:15"
     },
     {
       "category": "Traffic",
@@ -150,38 +129,24 @@
     },
     {
       "category": "Transport",
-      "title": "Australia's Codan jumps to record high on robust forecast",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/australias-codan-jumps-record-high-robust-forecast-6417546",
-      "published": "2026-09-29 12:33"
-    },
-    {
-      "category": "Transport",
-      "title": "I thought AI was too complex until I saw how easily it could sort emails & share business intelligence",
+      "title": "Japanese idol trainee, 8, dies of flu complication 5 days after performing",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/ai-small-businesses-emails/",
-      "published": "2026-09-29 02:00"
+      "url": "https://mothership.sg/2026/09/japanese-idol-trainee-eight-dies/",
+      "published": "2026-09-29 20:08"
     },
     {
       "category": "Transport",
-      "title": "S’pore’s fourth egg farm supplying Japanese eggs breaks ground after four-year delay",
+      "title": "Bus, train fares to rise by up to 13 cents for adults from Dec 26 due to higher energy prices",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/bus-train-fares-to-rise-by-up-to-13-cents-for-adults-from-dec-26-due-to-higher-energy-prices",
+      "published": "2026-09-29 17:00"
+    },
+    {
+      "category": "Transport",
+      "title": "S’pore’s fourth egg farm, set to produce Japanese eggs, breaks ground after four-year delay",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/spores-fourth-egg-farm-supplying-japanese-eggs-breaks-ground-after-four-year-delay",
       "published": "2026-09-29 14:00"
-    },
-    {
-      "category": "Transport",
-      "title": "Cabbies, PHV drivers can take up bus driver jobs by signing up for new training programme from Oct 1",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/cabbies-phv-drivers-can-take-up-bus-driver-jobs-by-signing-up-for-new-training-programme",
-      "published": "2026-09-28 11:00"
-    },
-    {
-      "category": "Fire",
-      "title": "SCDF fire engine gets stuck in wet grass at Anchorvale Crescent, takes a while to escape",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/scdf-fire-engine-stuck/",
-      "published": "2026-09-29 00:51"
     },
     {
       "category": "Fire",
@@ -192,94 +157,129 @@
     },
     {
       "category": "Money",
+      "title": "Traveller unhappy with S$3 voucher limit for duty free shop, not satisfied with S$30 goodwill voucher",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/09/shilla-duty-free-vouchers/",
+      "published": "2026-09-29 23:04"
+    },
+    {
+      "category": "Money",
+      "title": "Popular homegrown patisserie LUNA to close on Dec 31 due to rising costs",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/popular-homegrown-patisserie-luna-to-close-on-dec-31-due-to-rising-costs",
+      "published": "2026-09-29 22:25"
+    },
+    {
+      "category": "Money",
+      "title": "About 60,000 more households to qualify for public transport vouchers after income limits eased",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/about-60000-more-households-to-qualify-for-public-transport-vouchers-after-income-limits-eased",
+      "published": "2026-09-29 17:01"
+    },
+    {
+      "category": "Money",
       "title": "Don Don Donki and some online grocery stores to display unit prices under expanded pilot",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/don-don-donki-redmart-and-some-online-grocery-stores-to-display-unit-prices-under-expanded-pilot",
       "published": "2026-09-28 13:53"
     },
     {
-      "category": "Housing",
-      "title": "Worker, 22, dies after falling from height at Tanjong Rhu BTO construction site",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/09/worker-die-tanjong-rhu-bto-construction/",
-      "published": "2026-09-29 19:00"
+      "category": "General",
+      "title": "UK PM to set out 'options' for EU ties around 2026 summit",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/uk-pm-set-out-options-eu-ties-around-2026-summit-6419066",
+      "published": "2026-09-29 23:32"
     },
     {
       "category": "General",
-      "title": "Singapore's Loh Kean Yew set to face Thailand's Kunlavut in Asian Games badminton final",
+      "title": "'The emperor is naked': UEFA's Ceferin takes aim at FIFA boss Infantino",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/asian-games-badminton-loh-kean-yew-kunlavut-vitidsarn-mens-singles-final-live-6415651",
-      "published": "2026-09-29 16:24"
+      "url": "https://www.channelnewsasia.com/sport/emperor-naked-uefas-ceferin-takes-aim-fifa-boss-infantino-6419161",
+      "published": "2026-09-29 23:28"
     },
     {
       "category": "General",
-      "title": "North Korean DMZ landmine blasts 'violation of armistice': Seoul",
+      "title": "LA28 Games torch relay to travel through all 50 US states",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/north-korea-dmz-landmind-blasts-armistice-violation-south-korea-6417896",
-      "published": "2026-09-29 16:11"
+      "url": "https://www.channelnewsasia.com/sport/la28-games-torch-relay-travel-through-all-50-us-states-6419166",
+      "published": "2026-09-29 23:27"
     },
     {
       "category": "General",
-      "title": "Pochettino laments 'period of deception' if Man City breaches true",
+      "title": "Apple plans engineering-focused overhaul under Ternus, Bloomberg News reports",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pochettino-laments-period-deception-if-man-city-breaches-true-6417861",
-      "published": "2026-09-29 15:37"
+      "url": "https://www.channelnewsasia.com/business/apple-plans-engineering-focused-overhaul-under-ternus-bloomberg-news-reports-6419156",
+      "published": "2026-09-29 23:26"
     },
     {
       "category": "General",
-      "title": "Over 2,000 smaller retailers apply for more time to clear non-BCRS drinks stock",
+      "title": "Ferrari seek to quell speculation around Vasseur",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/nea-bcrs-smaller-retailers-stock-6417821",
-      "published": "2026-09-29 15:30"
+      "url": "https://www.channelnewsasia.com/sport/ferrari-seek-quell-speculation-around-vasseur-6419141",
+      "published": "2026-09-29 23:14"
     },
     {
       "category": "General",
-      "title": "For first time in 52 years, China fails to snag Asian Games badminton men’s singles medal",
+      "title": "Chip startup Efficient Computer raises $97 million at $650 million valuation",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/asian-games-2026-china-badminton-men-singles-medal-6417711",
-      "published": "2026-09-29 14:58"
+      "url": "https://www.channelnewsasia.com/business/chip-startup-efficient-computer-raises-97-million-650-million-valuation-6419071",
+      "published": "2026-09-29 23:03"
     },
     {
       "category": "General",
-      "title": "Johnny Hates Jazz, Avantgardey, Iman Fandi and Nathan Hartono to perform at President's Challenge Night 2026",
+      "title": "OpenAI's annual recurring revenue nears $70 billion, Axios reports",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/presidents-challenge-night-2026-avantgardey-johnny-hates-jazz-6417301",
-      "published": "2026-09-29 14:56"
+      "url": "https://www.channelnewsasia.com/business/openais-annual-recurring-revenue-nears-70-billion-axios-reports-6419076",
+      "published": "2026-09-29 23:02"
     },
     {
       "category": "General",
-      "title": "EU should use Google fines to cut member state contributions to budget, France says",
+      "title": "Trump to host Anthropic's Amodei, Nvidia's Huang, other AI execs, as fears mount",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/eu-should-use-google-fines-cut-member-state-contributions-budget-france-says-6417816",
-      "published": "2026-09-29 14:53"
+      "url": "https://www.channelnewsasia.com/world/trump-white-house-host-tech-executives-anthropic-nvidia-6418261",
+      "published": "2026-09-29 22:49"
     },
     {
       "category": "General",
-      "title": "US forces exit Iraq after two decades, leaving opening for Iran",
+      "title": "Visa joins growing alarm over AI-powered risks",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-forces-exit-iraq-after-two-decades-leaving-opening-iran-6417721",
-      "published": "2026-09-29 14:44"
+      "url": "https://www.channelnewsasia.com/business/visa-joins-growing-alarm-over-ai-powered-risks-6419006",
+      "published": "2026-09-29 22:47"
     },
     {
       "category": "General",
-      "title": "FIFA accuses UEFA of 'misinformation campaign' in response to filing",
+      "title": "Al-Khelaifi proposes global clubs body, takes veiled swipe at Infantino",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fifa-accuses-uefa-misinformation-campaign-in-response-filing-6417796",
-      "published": "2026-09-29 14:41"
+      "url": "https://www.channelnewsasia.com/sport/al-khelaifi-proposes-global-clubs-body-takes-veiled-swipe-infantino-6419011",
+      "published": "2026-09-29 22:46"
     },
     {
       "category": "General",
-      "title": "Thai Airways to clear 5,000 bags stranded at Bangkok airport, CEO says",
+      "title": "Netlist seeks US import ban on Micron chips used in Google, Nvidia AI computing",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/thai-airways-clear-5000-bags-stranded-bangkok-airport-ceo-says-6417666",
-      "published": "2026-09-29 13:21"
+      "url": "https://www.channelnewsasia.com/business/netlist-seeks-us-import-ban-micron-chips-used-in-google-nvidia-ai-computing-6418991",
+      "published": "2026-09-29 22:38"
     },
     {
       "category": "General",
-      "title": "Google challenges EU orders to open up to AI, search-engine rivals",
+      "title": "Spotify, Anthropic's Claude down for some US users, Downdetector shows",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/google-challenges-eu-orders-open-up-ai-search-engine-rivals-6417651",
-      "published": "2026-09-29 13:06"
+      "url": "https://www.channelnewsasia.com/business/spotify-claude-down-us-downdetector-6418981",
+      "published": "2026-09-29 22:33"
+    },
+    {
+      "category": "General",
+      "title": "Medvedev rides dominant serve past Rublev for Hangzhou crown",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/medvedev-rides-dominant-serve-past-rublev-hangzhou-crown-6418966",
+      "published": "2026-09-29 22:28"
+    },
+    {
+      "category": "General",
+      "title": "Rooney opposes stripping Man City's league titles over financial breaches",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/rooney-opposes-stripping-man-citys-league-titles-over-financial-breaches-6418971",
+      "published": "2026-09-29 22:24"
     }
   ]
 }
