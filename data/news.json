@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-09-30 04:46",
+  "last_updated": "2026-09-30 08:26",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "US appeals court upholds Thomson Reuters' landmark win in AI training lawsuit",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-appeals-court-upholds-thomson-reuters-landmark-win-in-ai-training-lawsuit-6419436",
-      "published": "2026-09-30 01:33"
-    },
-    {
-      "category": "Crime",
-      "title": "Man City found guilty of all charges of financial rule breaches, Premier League confirms",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/man-city-charged-guilty-financial-breaches-6419256",
-      "published": "2026-09-30 00:08"
-    },
     {
       "category": "Crime",
       "title": "39 in S'pore, half aged below 30, arrested for alleged drug activities on Telegram channels",
@@ -91,6 +77,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-to-be-charged-over-fake-photo-of-crocodile-sighting-at-pandan-reservoir",
       "published": "2026-09-28 18:14"
+    },
+    {
+      "category": "Traffic",
+      "title": "From cameras to cars, India’s chip startups chase an edge in AI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/cameras-cars-indias-chip-startups-chase-edge-in-ai-6415791",
+      "published": "2026-09-30 06:00"
     },
     {
       "category": "Traffic",
@@ -171,6 +164,13 @@
     },
     {
       "category": "Money",
+      "title": "Inside McDonald’s push to have AI price your Big Mac",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/inside-mcdonalds-push-have-ai-price-your-big-mac-6419791",
+      "published": "2026-09-30 04:59"
+    },
+    {
+      "category": "Money",
       "title": "Traveller unhappy with S$3 voucher limit for duty free shop, not satisfied with S$30 goodwill voucher",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/09/shilla-duty-free-vouchers/",
@@ -191,95 +191,95 @@
       "published": "2026-09-29 17:01"
     },
     {
-      "category": "Money",
-      "title": "Don Don Donki and some online grocery stores to display unit prices under expanded pilot",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/don-don-donki-redmart-and-some-online-grocery-stores-to-display-unit-prices-under-expanded-pilot",
-      "published": "2026-09-28 13:53"
-    },
-    {
-      "category": "Housing",
-      "title": "Spain aims to ban evictions until 2030 amid housing protests",
+      "category": "General",
+      "title": "Japan August factory output falls 1.7% month-on-month",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/spain-eviction-ban-housing-protests-madrid-6419546",
-      "published": "2026-09-30 02:56"
+      "url": "https://www.channelnewsasia.com/business/japan-august-factory-output-falls-17-month-month-6419986",
+      "published": "2026-09-30 07:54"
     },
     {
       "category": "General",
-      "title": "Explainer-What is a public benefit corporation, the Anthropic legal structure?",
+      "title": "AI infra firm Accelevation, shareholders raise $540 million in US IPO",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/explainer-what-public-benefit-corporation-anthropic-legal-structure-6419696",
-      "published": "2026-09-30 04:12"
+      "url": "https://www.channelnewsasia.com/business/ai-infra-firm-accelevation-shareholders-raise-540-million-in-us-ipo-6419971",
+      "published": "2026-09-30 07:35"
     },
     {
       "category": "General",
-      "title": "Sanchez, Swanson return to US squad for Spain friendlies",
+      "title": "I used to judge women for hiding their age – until my own age was used against me",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/sanchez-swanson-return-us-squad-spain-friendlies-6419691",
-      "published": "2026-09-30 04:05"
+      "url": "https://www.channelnewsasia.com/women/women-hide-age-judgement-6384921",
+      "published": "2026-09-30 07:34"
     },
     {
       "category": "General",
-      "title": "Trump, tech executives sign 'morally binding' AI document",
+      "title": "Jacob & Co’s new watch plays two melodies from The Godfather",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-tech-executives-sign-morally-binding-ai-document-6419686",
-      "published": "2026-09-30 04:04"
+      "url": "https://www.channelnewsasia.com/obsessions/jacob-co-godfather-ii-watch-6404696",
+      "published": "2026-09-30 07:21"
     },
     {
       "category": "General",
-      "title": "AI sector signed 'accord' with on technology standards, US House speaker says",
+      "title": "North Korea denies South's claim it was behind DMZ mine blasts",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-sector-signed-accord-technology-standards-us-house-speaker-says-6419651",
-      "published": "2026-09-30 03:51"
+      "url": "https://www.channelnewsasia.com/east-asia/south-korea-north-dmz-mine-blasts-armistice-6419956",
+      "published": "2026-09-30 07:17"
     },
     {
       "category": "General",
-      "title": "Australian regulator to review banking sector AI use and customer impacts",
+      "title": "Trump releases AI accord with tech executives",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/australian-regulator-review-banking-sector-ai-use-and-customer-impacts-6419576",
-      "published": "2026-09-30 03:00"
+      "url": "https://www.channelnewsasia.com/business/trump-releases-ai-accord-tech-executives-6419886",
+      "published": "2026-09-30 06:02"
     },
     {
       "category": "General",
-      "title": "Explainer-Five things to know about the college sports bill that passed the US Senate",
+      "title": "From serial collectors to reluctant recyclers: How Singapore’s beverage container return scheme is shifting habits",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/explainer-five-things-know-about-college-sports-bill-passed-us-senate-6419531",
-      "published": "2026-09-30 02:30"
+      "url": "https://www.channelnewsasia.com/singapore/beverage-container-return-scheme-changing-recycling-habits-6418401",
+      "published": "2026-09-30 06:00"
     },
     {
       "category": "General",
-      "title": "OpenAI targets $30 billion funding at $1.4 trillion valuation, Bloomberg News reports",
+      "title": "Commentary: Forget another big US-Iran deal. They need to start small",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-targets-30-billion-funding-14-trillion-valuation-bloomberg-news-reports-6419526",
-      "published": "2026-09-30 02:26"
+      "url": "https://www.channelnewsasia.com/commentary/iran-war-us-trump-deal-strait-hormuz-power-6418116",
+      "published": "2026-09-30 06:00"
     },
     {
       "category": "General",
-      "title": "Italy's Juventus to ask investors for up to €250 million",
+      "title": "‘Everything is clear now’: What Jokowi’s Indonesian Solidarity Party membership means for his family",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/italys-juventus-ask-investors-up-eu250-million-6419476",
-      "published": "2026-09-30 01:50"
+      "url": "https://www.channelnewsasia.com/asia/indonesia-jokowi-psi-politics-election-6415441",
+      "published": "2026-09-30 06:00"
     },
     {
       "category": "General",
-      "title": "Exclusive-Tiger Global, Dragoneer in talks to invest in Kalshi's new $1 billion fundraise, sources say",
+      "title": "Commentary: A meeting a day keeps the robots away",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-tiger-global-dragoneer-in-talks-invest-in-kalshis-new-1-billion-fundraise-sources-say-6419441",
-      "published": "2026-09-30 01:33"
+      "url": "https://www.channelnewsasia.com/commentary/ai-jobs-meeting-office-white-collar-role-6418136",
+      "published": "2026-09-30 05:59"
     },
     {
       "category": "General",
-      "title": "OpenAI takes on Meta with dots agent in enterprise AI push",
+      "title": "Oil down, but stocks lower as bond yields rise",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-takes-meta-dots-agent-in-enterprise-ai-push-6419386",
-      "published": "2026-09-30 01:17"
+      "url": "https://www.channelnewsasia.com/world/oil-down-stocks-lower-bond-yields-rise-6419856",
+      "published": "2026-09-30 05:47"
     },
     {
       "category": "General",
-      "title": "Israel kills senior Hamas commander in Gaza strike",
+      "title": "Saudi crown prince, UAE vice president meet in Riyadh: official media",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israel-gaza-hamas-commander-killed-strike-6419301",
-      "published": "2026-09-30 01:14"
+      "url": "https://www.channelnewsasia.com/world/saudi-crown-prince-uae-vice-president-meet-in-riyadh-official-media-6419821",
+      "published": "2026-09-30 05:33"
+    },
+    {
+      "category": "General",
+      "title": "Tesla lines up $30 billion credit lines as capex, AI push accelerate",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/tesla-lines-up-30-billion-credit-lines-capex-ai-push-accelerate-6419826",
+      "published": "2026-09-30 05:23"
     }
   ]
 }
