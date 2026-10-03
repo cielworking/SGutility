@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-10-03 20:32",
+  "last_updated": "2026-10-04 01:16",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Indian police detain several people in Gen Z-led protests against voter roll changes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-police-detain-gen-z-cockroach-janta-party-protesters-6429291",
+      "published": "2026-10-03 20:57"
+    },
     {
       "category": "Crime",
       "title": "Two Iranians appear in UK court over alleged plot to target Jews",
@@ -58,11 +65,11 @@
       "published": "2026-10-02 12:13"
     },
     {
-      "category": "Crime",
-      "title": "Director of car leasing firm jailed over $11m shortfall in duty, GST and registration fees",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/director-of-car-leasing-firm-jailed-over-11m-shortfall-in-duty-gst-and-registration-fees",
-      "published": "2026-10-01 21:54"
+      "category": "Traffic",
+      "title": "Protests over housing flare in Spain after relief measures rejected",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/protests-over-housing-flare-in-spain-after-relief-measures-rejected-6429581",
+      "published": "2026-10-04 00:37"
     },
     {
       "category": "Traffic",
@@ -77,13 +84,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/brisbane-2032-logos-accidentally-revealed-official-youtube-channel-6429031",
       "published": "2026-10-03 18:00"
-    },
-    {
-      "category": "Traffic",
-      "title": "Fast cars, slow queues: Malaysia hosts F1 race after 9 years, but some fans fume",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/f1-malaysia-sepang-shuttle-bus-queues-fans-complain-6428766",
-      "published": "2026-10-03 13:48"
     },
     {
       "category": "Traffic",
@@ -105,6 +105,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/rts-delay/",
       "published": "2026-10-03 01:25"
+    },
+    {
+      "category": "Traffic",
+      "title": "Over 5,000 turn up at Joo Chiat Road on Oct 3 as it closes to traffic to mark World Car-Free Day",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/community/over-5000-turn-up-at-joo-chiat-road-on-oct-3-as-it-closes-to-traffic-on-world-car-free-day",
+      "published": "2026-10-03 21:32"
     },
     {
       "category": "Traffic",
@@ -171,6 +178,13 @@
     },
     {
       "category": "Transport",
+      "title": "What I learnt from starting my first business at age 11",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/cna-insider/voices/first-business-age-11-young-entrepreneur-6418291",
+      "published": "2026-10-03 21:30"
+    },
+    {
+      "category": "Transport",
       "title": "Sengkang-Punggol LRT services to resume on Oct. 4, 2 weeks ahead of schedule",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/sengkang-lrt-oct-4/",
@@ -198,13 +212,6 @@
       "published": "2026-10-02 15:45"
     },
     {
-      "category": "Transport",
-      "title": "Good business publications must provide trust, judgment and perspective: Jeffrey Siow",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/good-business-publications-must-provide-trust-judgment-and-perspective-jeffrey-siow",
-      "published": "2026-10-01 21:45"
-    },
-    {
       "category": "Fire",
       "title": "Upgrades backfire as Wolff admits Mercedes going backwards",
       "source": "CNA",
@@ -227,59 +234,52 @@
     },
     {
       "category": "General",
-      "title": "Hallgrimsson hopes Irish bonds will be stronger after tough period",
+      "title": "Qatar and Abu Dhabi F1 Grand Prix to go ahead: F1 boss",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/hallgrimsson-hopes-irish-bonds-will-be-stronger-after-tough-period-6429176",
+      "url": "https://www.channelnewsasia.com/sport/qatar-and-abu-dhabi-f1-grand-prix-go-ahead-f1-boss-6429611",
+      "published": "2026-10-04 01:02"
+    },
+    {
+      "category": "General",
+      "title": "Brazil tame India in 4-0 friendly win",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/brazil-tame-india-in-4-0-friendly-win-6429591",
+      "published": "2026-10-04 00:18"
+    },
+    {
+      "category": "General",
+      "title": "Netherlands coach Xavi joins critics of new-look international window",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/netherlands-coach-xavi-joins-critics-new-look-international-window-6429556",
+      "published": "2026-10-03 23:42"
+    },
+    {
+      "category": "General",
+      "title": "Air quality back to moderate across Singapore after central region hits unhealthy range",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-moderate-air-quality-central-region-6429496",
+      "published": "2026-10-03 23:16"
+    },
+    {
+      "category": "General",
+      "title": "Singapore’s sailors conclude Asian Games campaign with three silvers, one bronze",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/singapore-sailing-asian-games-silver-bronze-6429336",
+      "published": "2026-10-03 21:50"
+    },
+    {
+      "category": "General",
+      "title": "Why Chronos Chan puts seaweed, soy sauce and Sichuan pepper in gelato – and what drives his unusual creations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/cna-insider/up-close/gelato-toms-palette-ice-cream-maker-chronos-chan-6419081",
+      "published": "2026-10-03 21:30"
+    },
+    {
+      "category": "General",
+      "title": "Ireland coach Hallgrimsson hopes squad bonds will be stronger after tough period",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ireland-coach-hallgrimsson-hopes-squad-bonds-will-be-stronger-after-tough-period-6429176",
       "published": "2026-10-03 19:35"
-    },
-    {
-      "category": "General",
-      "title": "Norris blames Sepang tarmac as McLaren struggle in Bahrain GP qualifying",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/norris-blames-sepang-tarmac-mclaren-struggle-in-bahrain-gp-qualifying-6429171",
-      "published": "2026-10-03 19:19"
-    },
-    {
-      "category": "General",
-      "title": "As public fears of AI grow, Trump digs in on voluntary safeguards",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/public-fears-ai-grow-trump-digs-in-voluntary-safeguards-6429041",
-      "published": "2026-10-03 18:05"
-    },
-    {
-      "category": "General",
-      "title": "South Africa hamstring 'epidemic' strikes again as De Zorzi ruled out of test",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/south-africa-hamstring-epidemic-strikes-again-de-zorzi-ruled-out-test-6429016",
-      "published": "2026-10-03 17:51"
-    },
-    {
-      "category": "General",
-      "title": "Verstappen claims first pole of season at Bahrain GP in Malaysia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/verstappen-claims-first-pole-season-bahrain-gp-in-malaysia-6429001",
-      "published": "2026-10-03 17:12"
-    },
-    {
-      "category": "General",
-      "title": "Philippines voices concern over Myanmar airstrike deaths, injuries",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/philippines-voices-concern-over-myanmar-airstrike-deaths-injuries-6428901",
-      "published": "2026-10-03 16:34"
-    },
-    {
-      "category": "General",
-      "title": "Games-Abhishek and Varma shine as India beat Pakistan to complete cricket double",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/games-abhishek-and-varma-shine-india-beat-pakistan-complete-cricket-double-6428951",
-      "published": "2026-10-03 16:28"
-    },
-    {
-      "category": "General",
-      "title": "Flydubai co-pilot attacked pilot with axe, attempted 'terrorist attack', UAE says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/flydubai-co-pilot-attempted-terrorist-attack-uae-6428876",
-      "published": "2026-10-03 16:12"
     }
   ]
 }
