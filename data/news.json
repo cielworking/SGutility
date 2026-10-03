@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-04 03:51",
+  "last_updated": "2026-10-04 07:02",
   "headlines": [
     {
       "category": "Crime",
@@ -7,13 +7,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/india-police-detain-gen-z-cockroach-janta-party-protesters-6429291",
       "published": "2026-10-03 20:57"
-    },
-    {
-      "category": "Crime",
-      "title": "Two Iranians appear in UK court over alleged plot to target Jews",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/two-iranians-appear-in-uk-court-over-alleged-plot-target-jews-6429186",
-      "published": "2026-10-03 20:26"
     },
     {
       "category": "Crime",
@@ -35,6 +28,20 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/man-assaults-films-friend/",
       "published": "2026-10-03 03:06"
+    },
+    {
+      "category": "Crime",
+      "title": "‘Why me? Did I cause it?’: Sex assault survivors on grappling with abuse by family members",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/why-me-did-i-cause-it-sex-assault-survivors-on-grappling-with-abuse-by-family-members",
+      "published": "2026-10-04 05:00"
+    },
+    {
+      "category": "Crime",
+      "title": "Authorities seize $39 million from sale of building linked to scam probe",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/authorities-seize-39-million-from-sale-of-building-linked-to-scam-probe",
+      "published": "2026-10-04 05:00"
     },
     {
       "category": "Crime",
@@ -70,20 +77,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/protests-over-housing-flare-in-spain-after-relief-measures-rejected-6429581",
       "published": "2026-10-04 00:37"
-    },
-    {
-      "category": "Traffic",
-      "title": "North Korea's Kim Yo Jong says intermediate-range missile test was conducted",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/north-koreas-kim-yo-jong-says-intermediate-range-missile-test-was-conducted-6429151",
-      "published": "2026-10-03 19:49"
-    },
-    {
-      "category": "Traffic",
-      "title": "Brisbane 2032 logos accidentally revealed by official YouTube channel",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/brisbane-2032-logos-accidentally-revealed-official-youtube-channel-6429031",
-      "published": "2026-10-03 18:00"
     },
     {
       "category": "Traffic",
@@ -213,13 +206,6 @@
     },
     {
       "category": "Fire",
-      "title": "Upgrades backfire as Wolff admits Mercedes going backwards",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/upgrades-backfire-wolff-admits-mercedes-going-backwards-6429061",
-      "published": "2026-10-03 18:24"
-    },
-    {
-      "category": "Fire",
       "title": "NTU satellite that uses AI to detect forest fires, oil spills launched by SpaceX rocket",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/ntu-satellite-that-can-use-ai-to-detect-forest-fires-oil-spills-launched-by-spacex-rocket",
@@ -234,52 +220,66 @@
     },
     {
       "category": "General",
+      "title": "Just four hours from Singapore, Sri Lanka offers two very different safari experiences",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/experiences/sri-lanka-safari-yala-gal-oya-6401341",
+      "published": "2026-10-04 06:57"
+    },
+    {
+      "category": "General",
+      "title": "There's a magic school at Orchard Towers and I tried being a magician for an hour – here's how it went",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/living/institute-illusions-magic-school-singapore-6413711",
+      "published": "2026-10-04 06:56"
+    },
+    {
+      "category": "General",
+      "title": "Meet a 25-year-old third-generation zookeeper whose family has worked at the zoo since it opened 53 years ago",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/third-generation-zookeeper-river-wonders-mandai-6395241",
+      "published": "2026-10-04 06:56"
+    },
+    {
+      "category": "General",
+      "title": "Jay Clayton to lead Trump's AI task force, deliver report in 120 days, WSJ reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/jay-clayton-lead-trumps-ai-task-force-deliver-report-in-120-days-wsj-reports-6430231",
+      "published": "2026-10-04 06:45"
+    },
+    {
+      "category": "General",
+      "title": "From ‘red ocean’ to ‘blue ocean’: Why Singaporean firms are exploring Nanning to enter China’s market",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/nanning-business-caexpo-singapore-china-6407501",
+      "published": "2026-10-04 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: AI can be more comforting than a person. Here's what humans can learn from it",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/ai-chatbot-friend-help-problems-comfort-6391616",
+      "published": "2026-10-04 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Houthis say Saudi Arabia launches dozens of strikes on Yemen capital",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/houthis-say-saudi-arabia-launches-dozens-strikes-yemen-capital-6429646",
+      "published": "2026-10-04 05:55"
+    },
+    {
+      "category": "General",
+      "title": "UAE beat Oman to reach Gulf Cup final against Saudi",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/uae-beat-oman-reach-gulf-cup-final-against-saudi-6430206",
+      "published": "2026-10-04 05:46"
+    },
+    {
+      "category": "General",
       "title": "Fernandes rejects talk of Portugal rift after Ronaldo's abrupt departure",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/fernandes-rejects-talk-portugal-rift-after-ronaldos-abrupt-departure-6430141",
       "published": "2026-10-04 03:00"
-    },
-    {
-      "category": "General",
-      "title": "OpenAI safety employee quits, says 'time for trial and error is over'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-safety-employee-quits-says-time-trial-and-error-over-6430136",
-      "published": "2026-10-04 03:00"
-    },
-    {
-      "category": "General",
-      "title": "Doubles from Kane and Saka power England to 7-0 rout of Croatia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/doubles-kane-and-saka-power-england-7-0-rout-croatia-6429971",
-      "published": "2026-10-04 02:06"
-    },
-    {
-      "category": "General",
-      "title": "Qatar and Abu Dhabi F1 Grand Prix to go ahead: F1 boss",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/qatar-and-abu-dhabi-f1-grand-prix-go-ahead-f1-boss-6429611",
-      "published": "2026-10-04 01:02"
-    },
-    {
-      "category": "General",
-      "title": "Brazil tame India in 4-0 friendly win",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/brazil-tame-india-in-4-0-friendly-win-6429591",
-      "published": "2026-10-04 00:18"
-    },
-    {
-      "category": "General",
-      "title": "Netherlands coach Xavi joins critics of new-look international window",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/netherlands-coach-xavi-joins-critics-new-look-international-window-6429556",
-      "published": "2026-10-03 23:42"
-    },
-    {
-      "category": "General",
-      "title": "Air quality back to moderate across Singapore after central region hits unhealthy range",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/haze-moderate-air-quality-central-region-6429496",
-      "published": "2026-10-03 23:16"
     }
   ]
 }
