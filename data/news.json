@@ -1,61 +1,40 @@
 {
-  "last_updated": "2026-10-07 13:57",
+  "last_updated": "2026-10-07 21:21",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Man to be charged over series of perfume thefts at Changi Airport",
+      "title": "Indonesian court hears 'negligence' complaint against state over fires, haze",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/changi-airport-perfume-thefts-6438376",
-      "published": "2026-10-07 13:32"
+      "url": "https://www.channelnewsasia.com/asia/indonesia-court-forest-fires-kalimantan-haze-6439121",
+      "published": "2026-10-07 18:28"
     },
     {
       "category": "Crime",
-      "title": "US forces face curfew, alcohol ban in Japan's Okinawa after murder case",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/united-states-forces-curfew-alcohol-ban-okinawa-murder-6438036",
-      "published": "2026-10-07 12:32"
-    },
-    {
-      "category": "Crime",
-      "title": "Activist Kokila Annamalai contests charge of allegedly defying POFMA order in first such trial",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/kokila-annamalai-pofma-correction-direction-trial-6438196",
-      "published": "2026-10-07 12:11"
-    },
-    {
-      "category": "Crime",
-      "title": "Indonesia's Constitutional Court dismisses petition to disqualify VP Gibran over education credentials",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-court-dismiss-gibran-vice-president-education-credentials-challenge-6437971",
-      "published": "2026-10-07 11:27"
-    },
-    {
-      "category": "Crime",
-      "title": "S'pore woman, 22, a childcare teacher, charged for shaking & hitting 7 toddlers, aged 2, with musical instruments",
+      "title": "Woman, 30, dies following accident with bus at Queen Street Bus Terminal in Bugis, driver, 32, arrested",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/childcare-teacher-charged-child-abuse-7-children/",
-      "published": "2026-10-07 02:52"
+      "url": "https://mothership.sg/2026/10/bus-accident-queen-street/",
+      "published": "2026-10-07 19:10"
     },
     {
       "category": "Crime",
-      "title": "S'pore police investigating 77 persons for illegal moneylending activities after 5-day operation",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/77-persons-illegal-moneylending/",
-      "published": "2026-10-07 02:08"
+      "title": "Promising young lawyers assist courts in novel cases with independent viewpoints",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/promising-young-lawyers-assist-courts-in-novel-cases-with-independent-viewpoints",
+      "published": "2026-10-07 20:25"
     },
     {
       "category": "Crime",
-      "title": "‘Don’t touch me’: Chinese policewoman praised for professionally handling tourist who puts arm around her for photo",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/dont-touch-me-shanghai-policewoman-professionally-handles-tourist-after-he-puts-arm-around-her-for-photo/",
-      "published": "2026-10-07 01:18"
+      "title": "When families cover up sexual abuse of a child, it can remain hidden for years: Shanmugam",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/when-families-cover-up-sexual-abuse-of-a-child-it-can-remain-hidden-for-years-shanmugam",
+      "published": "2026-10-07 17:05"
     },
     {
       "category": "Crime",
-      "title": "M'sia woman, 19, a student, dies after alleged dispute with boyfriend, 19, who then surrendered to police",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/college-student-murders-girlfriend-malaysia-turns-himself-in/",
-      "published": "2026-10-07 00:48"
+      "title": "Man gets jail, caning for human trafficking after Singaporean woman became sex worker in Dubai",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-gets-jail-caning-for-human-trafficking-after-singaporean-woman-became-sex-worker-in-dubai",
+      "published": "2026-10-07 15:29"
     },
     {
       "category": "Crime",
@@ -93,95 +72,60 @@
       "published": "2026-10-06 20:40"
     },
     {
-      "category": "Crime",
-      "title": "Jail for man who drove up to 221kmh in group joyride that ended in crash along Stamford Road",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/jail-for-man-who-drove-up-to-221kmh-in-group-joyride-that-ended-in-crash-along-stamford-road",
-      "published": "2026-10-06 18:25"
-    },
-    {
-      "category": "Crime",
-      "title": "7 weeks’ jail for man who paid for sexual services of teenager who claimed she was 21",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/7-weeks-jail-for-man-who-engaged-teenagers-sexual-services-girl-claimed-she-was-21",
-      "published": "2026-10-06 16:56"
-    },
-    {
-      "category": "Crime",
-      "title": "‘Not the time to go soft’: Shanmugam signals new laws to ensure deterrent sentences for all scam mules",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/not-the-time-to-go-soft-shanmugam-signals-tough-laws-for-young-scam-mules-after-high-court-ruling",
-      "published": "2026-10-06 16:55"
-    },
-    {
-      "category": "Crime",
-      "title": "8 public officers referred to police after review of property purchases near future MRT stations",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/8-public-officers-referred-to-police-after-review-of-property-purchases-near-future-mrt-stations",
-      "published": "2026-10-06 16:24"
-    },
-    {
-      "category": "Crime",
-      "title": "Telok Blangah murder: Clinic doctor rushed to help elderly man who was stabbed in the chest",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/telok-blangah-murder-clinic-doctor-rushed-to-help-murder-victim-before-he-died",
-      "published": "2026-10-06 14:22"
-    },
-    {
-      "category": "Crime",
-      "title": "Jail, caning for man caught at Changi Airport with knife inside shoe before flight to Indonesia",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/jail-caning-for-man-caught-at-changi-airport-with-knife-inside-shoe-before-flight-to-indonesia",
-      "published": "2026-10-06 14:10"
-    },
-    {
-      "category": "Crime",
-      "title": "Woman fined $5,000 for cheating by posing as Marriott associate’s sister to get hotel stay discounts",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/woman-fined-5k-for-cheating-by-posing-as-marriott-associates-sister-to-get-hotel-stay-discounts",
-      "published": "2026-10-06 11:37"
-    },
-    {
-      "category": "Crime",
-      "title": "1 dead, another injured in Telok Blangah; man arrested: Police",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/1-dead-another-injured-at-telok-blangah-man-arrested-police",
-      "published": "2026-10-05 23:11"
-    },
-    {
       "category": "Traffic",
-      "title": "Shares of Japan beer makers fall after raids over cartel suspicion",
+      "title": "Lineker laments Ronaldo's career finale compared to Messi's",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/shares-japan-beer-makers-fall-after-raids-over-cartel-suspicion-6438206",
-      "published": "2026-10-07 11:29"
+      "url": "https://www.channelnewsasia.com/sport/lineker-laments-ronaldos-career-finale-compared-messis-6439751",
+      "published": "2026-10-07 21:07"
     },
     {
       "category": "Traffic",
-      "title": "S'pore man claims neighbour's dog poops outside his Havelock Road home for 2 years, neighbour points to faulty door",
+      "title": "World Cup winner Pedro calls time on 20-year career",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/world-cup-winner-pedro-calls-time-20-year-career-6439496",
+      "published": "2026-10-07 20:19"
+    },
+    {
+      "category": "Traffic",
+      "title": "Girl, 7, who died after being hit by school bus might not have been visible to oncoming traffic: Coroner",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/girl-in-school-bus-collision-nivya-rameshwar-6439146",
+      "published": "2026-10-07 19:10"
+    },
+    {
+      "category": "Traffic",
+      "title": "Audit of Changi healthcare facility finds 2 patient falls in 6 weeks, says they were 'preventable'",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/man-complains-neighbour-dog-poops-havelock-road/",
-      "published": "2026-10-07 02:58"
+      "url": "https://mothership.sg/2026/10/tcf-east-audit-fall/",
+      "published": "2026-10-07 23:26"
     },
     {
       "category": "Traffic",
-      "title": "Thai care centre has elderly sleeping in caged beds, woman alleges on TV she was confined there for over 2 years",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/thai-care-centre-caged-beds/",
-      "published": "2026-10-07 01:34"
-    },
-    {
-      "category": "Traffic",
-      "title": "Aerial activities restricted over parts of Singapore during F1 Grand Prix weekend",
+      "title": "‘Juggernaut came by?’: Car crashes through wall in Jem mall’s basement carpark",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/temporary-no-fly-zone-to-be-enforced-during-f1-singapore-grand-prix-from-oct-8-12",
-      "published": "2026-10-06 11:24"
+      "url": "https://www.straitstimes.com/singapore/juggernaut-came-by-car-crashes-through-wall-in-jem-malls-basement-carpark",
+      "published": "2026-10-07 21:00"
     },
     {
       "category": "Traffic",
-      "title": "Traveller carrying undeclared $51k into Singapore among 67 caught during checks at checkpoints",
+      "title": "7-year-old girl’s death after minibus struck her ruled a road traffic-related accident",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/traveller-carrying-undeclared-51k-into-singapore-among-67-caught-at-checks-at-checkpoints",
-      "published": "2026-10-05 22:05"
+      "url": "https://www.straitstimes.com/singapore/courts-crime/7-year-old-girls-death-after-minibus-struck-her-ruled-a-road-traffic-related-accident",
+      "published": "2026-10-07 19:30"
+    },
+    {
+      "category": "Traffic",
+      "title": "9 taken to hospital after multi-vehicle crash on TPE sparks motorcycle fire",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/at-least-8-taken-to-hospital-after-multi-vehicle-crash-on-tpe-sparks-motorcycle-fire",
+      "published": "2026-10-07 18:02"
+    },
+    {
+      "category": "Transport",
+      "title": "Prosecution points to safety harness concerns, training gaps in trial over ACS(I) student's death",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/acsi-student-death-adventure-course-safety-camelot-general-manager-trial-6439126",
+      "published": "2026-10-07 19:06"
     },
     {
       "category": "Transport",
@@ -191,11 +135,32 @@
       "published": "2026-10-07 10:00"
     },
     {
-      "category": "Housing",
-      "title": "Say no to hoarding homes: PAP MPs call for inheritance tax, multiple residential property tax",
+      "category": "Money",
+      "title": "Hyrox Youngstars for children aged 8-15 happening in S'pore on Nov. 28 & 29",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/no-to-hoarding-homes/",
-      "published": "2026-10-06 23:55"
+      "url": "https://mothership.sg/2026/10/hyrox-youngstars-singapore/",
+      "published": "2026-10-07 20:17"
+    },
+    {
+      "category": "Money",
+      "title": "How the ‘high-functioning’ label masks ADHD at a high cost",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/how-the-high-functioning-label-masks-adhd-at-a-high-cost",
+      "published": "2026-10-07 18:00"
+    },
+    {
+      "category": "Money",
+      "title": "COE premiums fall in most categories, with Cat A ending at $130,001",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/coe-premiums-fall-across-most-categories-cat-a-ends-at-130001",
+      "published": "2026-10-07 16:30"
+    },
+    {
+      "category": "Housing",
+      "title": "P1 registration: 15% of Phase 2C students at 12 popular primary schools live in public housing",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/politics/p1-registration-15-of-phase-2c-students-at-12-popular-primary-schools-live-in-public-housing",
+      "published": "2026-10-07 15:39"
     },
     {
       "category": "Housing",
@@ -205,81 +170,116 @@
       "published": "2026-10-07 09:52"
     },
     {
-      "category": "Housing",
-      "title": "Resale flat transactions with ‘greater complexity’ should be handled by private lawyers: HDB",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/resale-flat-transactions-with-greater-complexity-should-be-handled-by-private-lawyers-hdb",
-      "published": "2026-10-06 18:10"
+      "category": "General",
+      "title": "US government, Google join Zuckerberg-backed Biohub in $1.8 billion push for AI biology data",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-government-google-join-zuckerberg-backed-biohub-in-18-billion-push-ai-biology-data-6439731",
+      "published": "2026-10-07 21:03"
     },
     {
       "category": "General",
-      "title": "Probation for motorcyclist, 21, who performed dangerous 'Superman' stunt while riding along ECP",
+      "title": "Core Stack, Green Arrow plan €1 billion Italian data centre project",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/motorcyclist-stunt-ecp-probation-superman-6438371",
-      "published": "2026-10-07 13:41"
+      "url": "https://www.channelnewsasia.com/business/core-stack-green-arrow-plan-eu1-billion-italian-data-centre-project-6439656",
+      "published": "2026-10-07 20:55"
     },
     {
       "category": "General",
-      "title": "Financial institutions remain accountable for third-party AI under new MAS guidelines",
+      "title": "All schools in Johor to close for two days amid worsening haze",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/financial-institutions-ai-guidelines-mas-third-party-tools-6438406",
-      "published": "2026-10-07 13:27"
+      "url": "https://www.channelnewsasia.com/asia/johor-all-schools-close-two-days-haze-6439396",
+      "published": "2026-10-07 20:53"
     },
     {
       "category": "General",
-      "title": "Brussels looks to capture Big Tech through tax on large corporations, FT reports",
+      "title": "MotoGP sprints to have their own qualifying sessions",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/brussels-looks-capture-big-tech-through-tax-large-corporations-ft-reports-6438476",
-      "published": "2026-10-07 13:17"
+      "url": "https://www.channelnewsasia.com/sport/motogp-sprints-have-their-own-qualifying-sessions-6439626",
+      "published": "2026-10-07 20:51"
     },
     {
       "category": "General",
-      "title": "Melaka to head to the polls on Nov 14 in another test of shifting political alliances in Malaysia",
+      "title": "Australia’s Head hits back at critics 'putting a bullet' through the team",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/melaka-elections-polls-barisan-nasional-anwar-6432636",
-      "published": "2026-10-07 13:10"
+      "url": "https://www.channelnewsasia.com/sport/australias-head-hits-back-critics-putting-bullet-through-team-6439576",
+      "published": "2026-10-07 20:41"
     },
     {
       "category": "General",
-      "title": "Blackstone-backed AirTrunk to invest $1 billion in Japan data centre campus",
+      "title": "Israel-Hamas war: 3 years on, Gaza peace remains elusive",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/blackstone-backed-airtrunk-invest-1-billion-in-japan-data-centre-campus-6438441",
-      "published": "2026-10-07 13:03"
+      "url": "https://www.channelnewsasia.com/world/israel-hamas-war-3-years-gaza-peace-remains-elusive-6439131",
+      "published": "2026-10-07 20:27"
     },
     {
       "category": "General",
-      "title": "Singapore to push for deeper ASEAN integration, wider partnerships as bloc chair in 2027: Vivian Balakrishnan",
+      "title": "Madring working on track changes after dull debut race",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna/vivian-balakrishnan-milken-asean-integration-chair-ai-agents-6437041",
-      "published": "2026-10-07 13:03"
+      "url": "https://www.channelnewsasia.com/sport/madring-working-track-changes-after-dull-debut-race-6439516",
+      "published": "2026-10-07 20:25"
     },
     {
       "category": "General",
-      "title": "Chinese fitness influencer apologises after being caught riding bicycle during Berlin Marathon",
+      "title": "Man City should accept punishment for rule breaches, says Lineker",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/wellness/abeeeer-chinese-fitness-influencer-cheating-berlin-marathon-6438256",
-      "published": "2026-10-07 12:57"
+      "url": "https://www.channelnewsasia.com/sport/man-city-should-accept-punishment-rule-breaches-says-lineker-6439446",
+      "published": "2026-10-07 20:06"
     },
     {
       "category": "General",
-      "title": "Singapore government running trials to understand how to implement AI agents responsibly: Tan Kiat How",
+      "title": "European shares, euro slide as energy shock, fiscal worries bite",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ai-agents-safety-mddi-tan-kiat-how-parliament-6438106",
-      "published": "2026-10-07 12:51"
+      "url": "https://www.channelnewsasia.com/business/european-shares-euro-slide-energy-shock-fiscal-worries-bite-6438121",
+      "published": "2026-10-07 20:00"
     },
     {
       "category": "General",
-      "title": "England have put World Cup disappointment behind them, says Tuchel",
+      "title": "CNA Explains: What are the grievances driving the expanding school protests in France?",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-have-put-world-cup-disappointment-behind-them-says-tuchel-6438396",
-      "published": "2026-10-07 12:42"
+      "url": "https://www.channelnewsasia.com/world/cna-explains-france-school-student-protest-unrest-demonstrations-6438771",
+      "published": "2026-10-07 19:34"
     },
     {
       "category": "General",
-      "title": "South Korea weighs cuts to military exemptions for athletes, artists following Asian Games controversy",
+      "title": "Life sciences firm Danaher to launch AI-powered autonomous research lab in 2027",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/south-korea-military-conscription-exemption-review-6438351",
-      "published": "2026-10-07 12:37"
+      "url": "https://www.channelnewsasia.com/business/life-sciences-firm-danaher-launch-ai-powered-autonomous-research-lab-in-2027-6439381",
+      "published": "2026-10-07 19:34"
+    },
+    {
+      "category": "General",
+      "title": "Arsenal manager Mikel Arteta extends contract until 2030",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/arsenal-manager-mikel-arteta-extends-contract-until-2030-6439326",
+      "published": "2026-10-07 19:14"
+    },
+    {
+      "category": "General",
+      "title": "India's 2036 Games bid fuels sporting superpower dreams but hurdles, heavyweight rivals remain",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/indias-2036-games-bid-fuels-sporting-superpower-dreams-hurdles-heavyweight-rivals-remain-6439166",
+      "published": "2026-10-07 18:25"
+    },
+    {
+      "category": "General",
+      "title": "‘Phenomenal’ amount of capital going into AI could be more spread out: Temasek CEO",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/temasek-invest-ai-chips-data-centre-6439061",
+      "published": "2026-10-07 18:22"
+    },
+    {
+      "category": "General",
+      "title": "Microsoft, Nvidia CEOs to unveil new AI laptop at San Francisco event",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/microsoft-nvidia-ceos-unveil-new-ai-laptop-san-francisco-event-6439101",
+      "published": "2026-10-07 18:08"
+    },
+    {
+      "category": "General",
+      "title": "US woman on death row who survived 2 lethal injections now conscious & speaking in 'unprecedented' recovery",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/woman-lethal-injection-conscious/",
+      "published": "2026-10-07 23:23"
     }
   ]
 }
