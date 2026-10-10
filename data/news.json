@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-10-11 01:51",
+  "last_updated": "2026-10-11 05:42",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Man dies after tiger attack at UK zoo: police",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/man-dies-after-tiger-attack-uk-zoo-police-6449651",
+      "published": "2026-10-11 02:36"
+    },
     {
       "category": "Crime",
       "title": "S'pore man, 27, acquitted of sexual assault of vulnerable person on staircase after court finds reasonable doubt",
@@ -58,11 +65,11 @@
       "published": "2026-10-09 18:40"
     },
     {
-      "category": "Crime",
-      "title": "Russian man and Singaporean woman charged over money laundering activities",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/russian-man-and-singaporean-woman-charged-over-money-laundering-activities",
-      "published": "2026-10-09 17:50"
+      "category": "Traffic",
+      "title": "Suspected Houthi attack on Riyadh airport kills two, wounds dozens: medical sources",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/suspected-houthi-attack-riyadh-airport-kills-two-wounds-dozens-medical-sources-6449071",
+      "published": "2026-10-11 01:33"
     },
     {
       "category": "Traffic",
@@ -70,27 +77,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/augsburg-score-fastest-bundesliga-goal-bayern-snatch-comeback-draw-6448946",
       "published": "2026-10-10 22:22"
-    },
-    {
-      "category": "Traffic",
-      "title": "3 parking lots, but only room for 2 – the squeeze at Singapore's older car parks",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/ground-up/bigger-cars-parking-lots-tight-squeeze-6437911",
-      "published": "2026-10-10 21:30"
-    },
-    {
-      "category": "Traffic",
-      "title": "Red Bull's Verstappen fastest in Singapore to claim 50th career pole",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/f1-singapore-grand-prix-sprint-verstappen-win-6448701",
-      "published": "2026-10-10 18:31"
-    },
-    {
-      "category": "Traffic",
-      "title": "MUIS to strengthen religious guidance, spiritual care and family support at mosques",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/zaqy-mohamad-muis-strengthen-religious-guidance-support-safeguards-6448491",
-      "published": "2026-10-10 16:10"
     },
     {
       "category": "Traffic",
@@ -128,18 +114,11 @@
       "published": "2026-10-09 19:20"
     },
     {
-      "category": "Transport",
-      "title": "'Full house every day': F1 crowds shrug off haze as businesses see little impact on demand",
+      "category": "Fire",
+      "title": "'They lie to us': One year on, Gazans don't believe in ceasefire",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/f1-haze-food-business-usual-6448571",
-      "published": "2026-10-10 17:25"
-    },
-    {
-      "category": "Transport",
-      "title": "MUIS working with CASE to help those yet to be refunded from The Meat Brothers’ korban disruption",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/muis-working-with-case-to-help-those-yet-to-be-refunded-from-the-meat-brothers-korban-disruption",
-      "published": "2026-10-09 18:28"
+      "url": "https://www.channelnewsasia.com/world/they-lie-us-one-year-gazans-dont-believe-in-ceasefire-6449696",
+      "published": "2026-10-11 03:36"
     },
     {
       "category": "Fire",
@@ -150,17 +129,73 @@
     },
     {
       "category": "General",
+      "title": "PSG beat Le Mans 3-1 as Monaco stay top despite draw",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/psg-beat-le-mans-3-1-monaco-stay-top-despite-draw-6449741",
+      "published": "2026-10-11 05:22"
+    },
+    {
+      "category": "General",
+      "title": "India detains thousands, locks down Delhi to foil election chief protest",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-detains-thousands-locks-down-delhi-foil-election-chief-protest-6449736",
+      "published": "2026-10-11 05:05"
+    },
+    {
+      "category": "General",
+      "title": "Spurs show fight as United's struggles deepen at Old Trafford",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/spurs-show-fight-uniteds-struggles-deepen-old-trafford-6449721",
+      "published": "2026-10-11 04:07"
+    },
+    {
+      "category": "General",
+      "title": "Isaias kills four, about 670,000 without power after landfall",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/isaias-kills-four-about-670000-without-power-after-landfall-6449701",
+      "published": "2026-10-11 04:04"
+    },
+    {
+      "category": "General",
+      "title": "Nvidia in talks to invest further in Reflection AI or buy it, FT reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nvidia-in-talks-invest-further-in-reflection-ai-or-buy-it-ft-reports-6449691",
+      "published": "2026-10-11 03:32"
+    },
+    {
+      "category": "General",
+      "title": "US lethal injection survivor returns to prison",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-lethal-injection-survivor-returns-prison-6449676",
+      "published": "2026-10-11 02:59"
+    },
+    {
+      "category": "General",
+      "title": "Barcelona cruise past Getafe to maintain perfect start",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/barcelona-cruise-past-getafe-maintain-perfect-start-6449681",
+      "published": "2026-10-11 02:48"
+    },
+    {
+      "category": "General",
+      "title": "Man United fans revive ticker taunt over Man City financial case",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/man-united-fans-revive-ticker-taunt-over-man-city-financial-case-6449646",
+      "published": "2026-10-11 02:14"
+    },
+    {
+      "category": "General",
+      "title": "Russian attack on Ukrainian city kills 20, a day after Trump eases diesel sanctions on Moscow",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/russian-attack-ukrainian-city-kills-20-day-after-trump-eases-diesel-sanctions-moscow-6449106",
+      "published": "2026-10-11 02:02"
+    },
+    {
+      "category": "General",
       "title": "Alonso hails Caicedo’s impact as Chelsea crush Bournemouth",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/alonso-hails-caicedos-impact-chelsea-crush-bournemouth-6449091",
       "published": "2026-10-11 01:36"
-    },
-    {
-      "category": "General",
-      "title": "Multiple people wounded in blast at Riyadh airport, say eyewitnesses",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/multiple-people-wounded-in-blast-riyadh-airport-say-eyewitnesses-6449071",
-      "published": "2026-10-11 01:33"
     },
     {
       "category": "General",
@@ -178,9 +213,9 @@
     },
     {
       "category": "General",
-      "title": "Rayo-Bilbao match abandoned after fans' protest against club owner",
+      "title": "Rayo-Athletic match abandoned after fans protest against club owner",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rayo-bilbao-match-abandoned-after-fans-protest-against-club-owner-6448951",
+      "url": "https://www.channelnewsasia.com/sport/rayo-athletic-match-abandoned-after-fans-protest-against-club-owner-6448951",
       "published": "2026-10-10 22:18"
     },
     {
@@ -203,55 +238,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/cna-insider/adulting/parenting-grandparents-childcare-advice-caregiving-boundaries-6441421",
       "published": "2026-10-10 21:30"
-    },
-    {
-      "category": "General",
-      "title": "'In that moment, nothing else matters' – the thrill of horseback archery for two Singaporean riders",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/in-pixels/thrill-horseback-archery-target-6438331",
-      "published": "2026-10-10 21:30"
-    },
-    {
-      "category": "General",
-      "title": "Palmer signs Chelsea contract until 2034",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/palmer-signs-chelsea-contract-until-2034-6448711",
-      "published": "2026-10-10 18:44"
-    },
-    {
-      "category": "General",
-      "title": "'Beyond the uniform': Singapore, Brunei officers share stories of lasting friendships as defence ties turn 50",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/brunei-singapore-officers-50-years-defence-ties-6448251",
-      "published": "2026-10-10 18:30"
-    },
-    {
-      "category": "General",
-      "title": "Record-breaking Renshaw puts Australia on top in Durban",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/record-breaking-renshaw-puts-australia-top-in-durban-6448676",
-      "published": "2026-10-10 17:58"
-    },
-    {
-      "category": "General",
-      "title": "People’s Association to launch bite-sized AI courses for seniors and homemakers unfamiliar with tech",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ai-courses-seniors-homemakers-community-club-pa-6448406",
-      "published": "2026-10-10 17:33"
-    },
-    {
-      "category": "General",
-      "title": "Supermarket ceiling collapse injures at least 38 in South Korea's Daegu city",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/supermarket-ceiling-collapse-injures-least-38-in-south-koreas-daegu-city-6448621",
-      "published": "2026-10-10 17:11"
-    },
-    {
-      "category": "General",
-      "title": "All Blacks crush Australia with second-half blitz to retain Bledisloe Cup",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/all-blacks-crush-australia-second-half-blitz-retain-bledisloe-cup-6448591",
-      "published": "2026-10-10 16:22"
     },
     {
       "category": "General",
@@ -280,6 +266,20 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/spore-politicians-attend-syed-saddiq-bella-astillahs-solemnisation/",
       "published": "2026-10-10 18:56"
+    },
+    {
+      "category": "General",
+      "title": "Donnie Yen's mother-in-law, 69, stuns netizens with youthful appearance in birthday video",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/donnie-yen-mother-in-law/",
+      "published": "2026-10-10 16:19"
+    },
+    {
+      "category": "General",
+      "title": "N95 masks will be distributed to vulnerable Singaporeans when PSI hits unhealthy range, Haze Task Force convened",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/haze-task-force-step-up-measures/",
+      "published": "2026-10-10 04:28"
     }
   ]
 }
