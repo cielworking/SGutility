@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11 05:42",
+  "last_updated": "2026-10-11 09:00",
   "headlines": [
     {
       "category": "Crime",
@@ -45,13 +45,6 @@
     },
     {
       "category": "Crime",
-      "title": "Retired police officer with distinguished career, including SQ117 hijack response, dies at 86",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/retired-police-officer-with-distinguished-career-including-sq117-hijack-response-dies-at-86",
-      "published": "2026-10-09 20:40"
-    },
-    {
-      "category": "Crime",
       "title": "Lorry driver arrested for driving without due care and attention after accident at Dunearn Road",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/lorry-driver-arrested-for-driving-without-due-care-and-attention-after-accident-at-dunearn-road",
@@ -59,24 +52,38 @@
     },
     {
       "category": "Crime",
-      "title": "Beware of scams impersonating travel platforms, $185,000 lost since January: Police",
+      "title": "Retired police officer with distinguished career, including SQ117 hijack response, dies at 86",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/beware-of-scams-impersonating-travel-platforms-185000-lost-since-january-police",
-      "published": "2026-10-09 18:40"
+      "url": "https://www.straitstimes.com/singapore/retired-police-officer-with-distinguished-career-including-sq117-hijack-response-dies-at-86",
+      "published": "2026-10-09 20:40"
     },
     {
       "category": "Traffic",
-      "title": "Suspected Houthi attack on Riyadh airport kills two, wounds dozens: medical sources",
+      "title": "Real's Vinicius apologises after red card for hair pull against Villarreal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/suspected-houthi-attack-riyadh-airport-kills-two-wounds-dozens-medical-sources-6449071",
-      "published": "2026-10-11 01:33"
+      "url": "https://www.channelnewsasia.com/sport/reals-vinicius-apologises-after-red-card-hair-pull-against-villarreal-6449791",
+      "published": "2026-10-11 07:48"
     },
     {
       "category": "Traffic",
-      "title": "Augsburg score fastest Bundesliga goal but Bayern snatch comeback draw",
+      "title": "US will learn from bruising friendly defeat by Spain, says Hayes",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/augsburg-score-fastest-bundesliga-goal-bayern-snatch-comeback-draw-6448946",
-      "published": "2026-10-10 22:22"
+      "url": "https://www.channelnewsasia.com/sport/us-will-learn-bruising-friendly-defeat-spain-says-hayes-6449776",
+      "published": "2026-10-11 06:58"
+    },
+    {
+      "category": "Traffic",
+      "title": "Commentary: What’s in the melting Russian permafrost may be scarier than plague",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/russia-siberia-plague-lab-researcher-death-permafrost-6445626",
+      "published": "2026-10-11 06:00"
+    },
+    {
+      "category": "Traffic",
+      "title": "Following a deadly train crash, Indonesia steps up safety reforms as experts push for long-term improvements",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/indonesia-bekasi-deadly-train-crash-knkt-railway-reforms-6445411",
+      "published": "2026-10-11 06:00"
     },
     {
       "category": "Traffic",
@@ -114,6 +121,13 @@
       "published": "2026-10-09 19:20"
     },
     {
+      "category": "Transport",
+      "title": "She turned her kids’ old clothes into keepsakes – now it’s a thriving home business",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/childrens-old-clothes-keepsakes-bears-quilts-6401706",
+      "published": "2026-10-11 06:54"
+    },
+    {
       "category": "Fire",
       "title": "'They lie to us': One year on, Gazans don't believe in ceasefire",
       "source": "CNA",
@@ -129,6 +143,27 @@
     },
     {
       "category": "General",
+      "title": "Air quality remains unhealthy across Singapore amid haze",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-persists-singapore-air-quality-6449771",
+      "published": "2026-10-11 07:12"
+    },
+    {
+      "category": "General",
+      "title": "Odette’s longtime wine director Vincent Tan is leaving after 10 years to join Park90",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/people/odette-wine-director-vincent-tan-park90-6441436",
+      "published": "2026-10-11 06:17"
+    },
+    {
+      "category": "General",
+      "title": "Inter rout Parma, De Bruyne double lifts Napoli",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/inter-rout-parma-de-bruyne-double-lifts-napoli-6449746",
+      "published": "2026-10-11 05:49"
+    },
+    {
+      "category": "General",
       "title": "PSG beat Le Mans 3-1 as Monaco stay top despite draw",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/psg-beat-le-mans-3-1-monaco-stay-top-despite-draw-6449741",
@@ -138,7 +173,7 @@
       "category": "General",
       "title": "India detains thousands, locks down Delhi to foil election chief protest",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-detains-thousands-locks-down-delhi-foil-election-chief-protest-6449736",
+      "url": "https://www.channelnewsasia.com/asia/india-detains-thousands-lockdown-delhi-protest-6449736",
       "published": "2026-10-11 05:05"
     },
     {
@@ -171,9 +206,9 @@
     },
     {
       "category": "General",
-      "title": "Barcelona cruise past Getafe to maintain perfect start",
+      "title": "Barcelona cruise past Getafe, Real Madrid stutter to win over Villarreal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/barcelona-cruise-past-getafe-maintain-perfect-start-6449681",
+      "url": "https://www.channelnewsasia.com/sport/barcelona-cruise-past-getafe-real-madrid-stutter-win-over-villarreal-6449681",
       "published": "2026-10-11 02:48"
     },
     {
@@ -196,48 +231,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/alonso-hails-caicedos-impact-chelsea-crush-bournemouth-6449091",
       "published": "2026-10-11 01:36"
-    },
-    {
-      "category": "General",
-      "title": "French prodigy Seixas wins Giro di Lombardia, his first Monument",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/french-prodigy-seixas-wins-giro-di-lombardia-his-first-monument-6449006",
-      "published": "2026-10-10 23:23"
-    },
-    {
-      "category": "General",
-      "title": "Singapore, Brunei mark 50 years of defence ties with joint military parade",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/lawrence-wong-brunei-50-years-defence-ties-joint-military-parade-6448936",
-      "published": "2026-10-10 22:49"
-    },
-    {
-      "category": "General",
-      "title": "Rayo-Athletic match abandoned after fans protest against club owner",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rayo-athletic-match-abandoned-after-fans-protest-against-club-owner-6448951",
-      "published": "2026-10-10 22:18"
-    },
-    {
-      "category": "General",
-      "title": "Ronaldo provisionally suspended after national team walkout, media reports say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ronaldo-provisionally-suspended-after-national-team-walkout-media-reports-say-6448901",
-      "published": "2026-10-10 21:35"
-    },
-    {
-      "category": "General",
-      "title": "Guimaraes grabs winner as Arsenal rally to beat Leeds",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/guimaraes-grabs-winner-arsenal-rally-beat-leeds-6448891",
-      "published": "2026-10-10 21:33"
-    },
-    {
-      "category": "General",
-      "title": "When grandma says 'yes' and mum says 'no', here's how to navigate the parenting tug-of-war",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/adulting/parenting-grandparents-childcare-advice-caregiving-boundaries-6441421",
-      "published": "2026-10-10 21:30"
     },
     {
       "category": "General",
@@ -280,6 +273,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/haze-task-force-step-up-measures/",
       "published": "2026-10-10 04:28"
+    },
+    {
+      "category": "General",
+      "title": "Missing: 41-year-old man last seen in Serangoon Avenue 1",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/missing-41-year-old-man-last-seen-in-serangoon-avenue-1",
+      "published": "2026-10-11 08:59"
     }
   ]
 }
