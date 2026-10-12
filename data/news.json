@@ -1,6 +1,55 @@
 {
-  "last_updated": "2026-10-12 10:23",
+  "last_updated": "2026-10-12 18:46",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Pakistan detains hundreds from ex-PM Khan's party in northern province: Police",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/pakistan-detains-hundreds-ex-pm-khans-party-in-northern-province-police-6452431",
+      "published": "2026-10-12 17:06"
+    },
+    {
+      "category": "Crime",
+      "title": "Woman to be charged over alleged theft of Swarovski bracelet at Changi Airport",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/woman-be-charged-over-alleged-theft-swarovski-bracelet-changi-airport-6452361",
+      "published": "2026-10-12 16:58"
+    },
+    {
+      "category": "Crime",
+      "title": "Man charged with trespassing into F1 Singapore Grand Prix event area",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/man-charged-trespass-f1-grand-prix-6452286",
+      "published": "2026-10-12 15:57"
+    },
+    {
+      "category": "Crime",
+      "title": "Borneo residents take Indonesian govt to court, claim negligence in handling of forest fires causing haze",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/borneo-residents-sue-government-haze/",
+      "published": "2026-10-12 00:31"
+    },
+    {
+      "category": "Crime",
+      "title": "SPF officer, 31, assisting in investigations after police car crashes into road divider in Geylang Bahru",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/police-officer-crash-mount-kerb/",
+      "published": "2026-10-11 22:19"
+    },
+    {
+      "category": "Crime",
+      "title": "Woman arrested for allegedly stealing Swarovski bracelet from Changi Airport store",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/woman-arrested-for-allegedly-stealing-swarovski-bracelet-from-changi-airport-store",
+      "published": "2026-10-12 16:48"
+    },
+    {
+      "category": "Crime",
+      "title": "Man charged after he allegedly trespassed into F1 Singapore Grand Prix event area",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-charged-after-he-allegedly-trespassed-into-f1-singapore-grand-prix-event-area",
+      "published": "2026-10-12 11:35"
+    },
     {
       "category": "Crime",
       "title": "Police car crashes into road divider; cop helping with investigations",
@@ -9,25 +58,60 @@
       "published": "2026-10-11 10:02"
     },
     {
-      "category": "Crime",
-      "title": "Cyclist dies after accident in Boon Lay; 72-year-old car driver arrested",
+      "category": "Traffic",
+      "title": "Singapore government worried AI may break 'bottom rung' of career ladder for young workers: PM Wong",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/lawrence-wong-ai-jobs-training-6452176",
+      "published": "2026-10-12 18:32"
+    },
+    {
+      "category": "Traffic",
+      "title": "MAS tightens financial roadshow guidelines, representatives must get consent before sales pitches",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/financial-roadshow-rules-sales-pitches-mas-6452236",
+      "published": "2026-10-12 16:54"
+    },
+    {
+      "category": "Traffic",
+      "title": "Delhi shuts metro stations, restricts traffic ahead of new protest against election chief",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-metro-stations-closed-protest-election-chief-6452086",
+      "published": "2026-10-12 15:29"
+    },
+    {
+      "category": "Traffic",
+      "title": "Student care centres & kindergarten care centres to remain open even if schools close due to haze: MOE",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/student-care-remain-open-haze/",
+      "published": "2026-10-12 00:16"
+    },
+    {
+      "category": "Traffic",
+      "title": "SIT launches new school for working adults to upgrade skills, switch careers",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/cyclist-51-dies-after-accident-in-boon-lay-72-year-old-car-driver-arrested",
-      "published": "2026-10-10 22:53"
+      "url": "https://www.straitstimes.com/singapore/parenting-education/sit-launches-new-school-for-working-adults-to-upgrade-skills-switch-careers",
+      "published": "2026-10-12 16:25"
     },
     {
       "category": "Traffic",
-      "title": "US judge orders halt to taxpayer-funded ads featuring Trump",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/judge-orders-halt-donald-trump-taxpayer-funded-election-ads-6451626",
-      "published": "2026-10-12 10:04"
+      "title": "‘You want the baby to die?’: Parents convicted of abusing their 8-month-old son to death",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/you-want-the-baby-to-die-parents-convicted-of-abusing-their-8-month-old-son-to-death",
+      "published": "2026-10-12 13:54"
     },
     {
       "category": "Traffic",
-      "title": "Amazon in talks to buy AI startup Decart for around $7 billion, WSJ reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amazon-in-talks-buy-ai-startup-decart-around-7-billion-wsj-reports-6451486",
-      "published": "2026-10-12 05:16"
+      "title": "Malaysia suspends sale of Chery Omoda 5 after viral incident; Singapore cars not affected",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/malaysia-suspends-sale-of-chery-omoda-5-after-viral-incident-singapore-cars-not-affected",
+      "published": "2026-10-12 13:45"
+    },
+    {
+      "category": "Traffic",
+      "title": "Mosques to remain open for daily, Friday prayers, with haze-related precautions in place: MUIS",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/mosques-to-remain-open-for-daily-friday-prayers-with-haze-related-precautions-in-place-muis",
+      "published": "2026-10-12 11:40"
     },
     {
       "category": "Traffic",
@@ -58,11 +142,18 @@
       "published": "2026-10-11 11:15"
     },
     {
-      "category": "Traffic",
-      "title": "Shrinking EV incentives, not proposed COE overhaul, drive car buyers to showrooms",
+      "category": "Transport",
+      "title": "N95 masks for public bus and rail workers, delivery riders amid haze",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/shrinking-ev-incentives-not-proposed-coe-overhaul-drive-car-buyers-to-showrooms",
-      "published": "2026-10-10 18:00"
+      "url": "https://www.straitstimes.com/singapore/n95-masks-for-public-bus-and-rail-workers-delivery-riders-amid-haze",
+      "published": "2026-10-12 16:31"
+    },
+    {
+      "category": "Transport",
+      "title": "New committee set up by SG Enable reviews quality of training for persons with disabilities",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/community/new-committee-set-up-by-sg-enable-reviews-quality-of-training-for-persons-with-disabilities",
+      "published": "2026-10-12 16:26"
     },
     {
       "category": "Transport",
@@ -73,24 +164,38 @@
     },
     {
       "category": "Fire",
-      "title": "North Korea fires multiple ballistic missiles into Sea of Japan: Seoul",
+      "title": "Oil falls on hopes Russia-Ukraine energy ceasefire will boost supplies",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/north-korea-fires-multiple-ballistic-missiles-seoul-6451791",
-      "published": "2026-10-12 10:10"
+      "url": "https://www.channelnewsasia.com/business/oil-falls-hopes-russia-ukraine-energy-ceasefire-will-boost-supplies-6451591",
+      "published": "2026-10-12 14:47"
     },
     {
       "category": "Fire",
-      "title": "UK PM Burnham says Russia interfered in 2016 Brexit vote",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/uk-andy-burham-russia-interfere-brexit-6450551",
-      "published": "2026-10-12 05:42"
+      "title": "Indonesian govt official says forest fires 'beyond human error' & their forests 'send oxygen' if there's no haze",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/indonesia-communications-head-when-no-smoke-send-oxygen/",
+      "published": "2026-10-12 01:44"
     },
     {
       "category": "Fire",
-      "title": "UK PM Burnham to release details of dealings with Manchester City",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/uk-pm-burnham-release-details-dealings-manchester-city-6451426",
-      "published": "2026-10-12 03:29"
+      "title": "Fire breaks out at Bukit Batok coffee shop, about 30 evacuated & 1 taken to hospital",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/hong-kah-coffee-shop-fire/",
+      "published": "2026-10-12 01:35"
+    },
+    {
+      "category": "Fire",
+      "title": "Malaysia’s Firefly extends Seletar-Subang flight cancellations till Oct 13 amid haze",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/malaysias-firefly-extends-seletar-subang-flight-cancellations-till-oct-13-amid-haze",
+      "published": "2026-10-12 15:05"
+    },
+    {
+      "category": "Fire",
+      "title": "50 people evacuated after fire in bedroom of HDB flat in Woodlands",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/50-people-evacuated-after-fire-in-bedroom-of-hdb-flat-in-woodlands",
+      "published": "2026-10-12 14:51"
     },
     {
       "category": "Fire",
@@ -100,186 +205,81 @@
       "published": "2026-10-11 15:32"
     },
     {
-      "category": "General",
-      "title": "Air quality unhealthy across Singapore amid sustained haze",
+      "category": "Housing",
+      "title": "Dollar firm near 18-month highs, as Gulf unrest, US inflation keep investors on edge",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/haze-air-quality-unhealthy-psi-pm25-6451716",
-      "published": "2026-10-12 09:59"
+      "url": "https://www.channelnewsasia.com/business/dollar-firm-near-18-month-highs-gulf-unrest-us-inflation-keep-investors-edge-6451731",
+      "published": "2026-10-12 16:57"
     },
     {
       "category": "General",
-      "title": "Poland holds suspect in alleged assassination plot against PM Tusk",
+      "title": "Australia stretch lead over South Africa to 280 runs",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/poland-suspect-alleged-assassination-plot-pm-donald-tusk-6451726",
-      "published": "2026-10-12 09:51"
+      "url": "https://www.channelnewsasia.com/sport/australia-stretch-lead-over-south-africa-280-runs-6452731",
+      "published": "2026-10-12 18:27"
     },
     {
       "category": "General",
-      "title": "Shares cautious in Asia as earnings loom, oil slips",
+      "title": "Malaysia urges citizens to postpone Umrah trips as Indonesia calls for vigilance after deadly Saudi airport attacks",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/shares-cautious-in-asia-earnings-loom-oil-slips-6451656",
-      "published": "2026-10-12 08:42"
+      "url": "https://www.channelnewsasia.com/asia/malaysia-indonesia-umrah-pilgrimage-riyadh-airport-houthi-attack-6452656",
+      "published": "2026-10-12 18:14"
     },
     {
       "category": "General",
-      "title": "One dead in new attack on Saudi airport, a day after Houthi strike kills 13",
+      "title": "Weekly flu activity highest since 2024; doctors say haze can worsen respiratory conditions",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/saudi-arabia-riyadh-airport-attack-houthis-6451631",
-      "published": "2026-10-12 08:26"
+      "url": "https://www.channelnewsasia.com/singapore/weekly-flu-activity-highest-2024-doctors-say-haze-can-worsen-respiratory-conditions-6452511",
+      "published": "2026-10-12 17:51"
     },
     {
       "category": "General",
-      "title": "US reverses course on Britain's testing of AI models, Telegraph says",
+      "title": "NEA tracking haze hotspots and sources as earlier investigations under Transboundary Haze Pollution Act continue",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-reverses-course-britains-testing-ai-models-telegraph-says-6451601",
-      "published": "2026-10-12 07:48"
+      "url": "https://www.channelnewsasia.com/singapore/singapore-haze-transboundary-haze-pollution-act-nea-6452196",
+      "published": "2026-10-12 17:37"
     },
     {
       "category": "General",
-      "title": "Electric shocks, tinnitus, frozen shoulder: Surprising perimenopause symptoms you may not know about",
+      "title": "Microsoft president says milk faces more regulation than AI",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/women/perimenopause-unusual-symptoms-6402551",
-      "published": "2026-10-12 07:33"
+      "url": "https://www.channelnewsasia.com/business/microsoft-president-says-milk-faces-more-regulation-ai-6452516",
+      "published": "2026-10-12 17:22"
     },
     {
       "category": "General",
-      "title": "Why investment-linked policy sales have surged even as complaints rise",
+      "title": "China condemns Houthi attacks on Saudi Arabia, warns of escalation",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ilp-investment-linked-policies-demand-complaint-6446421",
-      "published": "2026-10-12 06:00"
+      "url": "https://www.channelnewsasia.com/asia/china-condemns-houthi-attacks-saudi-arabia-6452441",
+      "published": "2026-10-12 17:01"
     },
     {
       "category": "General",
-      "title": "Commentary: Liquidity fix for small and mid-caps on SGX requires more to be done",
+      "title": "Riyadh airport extends suspension after weekend attacks",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/sgx-small-mid-caps-weak-liquidity-more-6446281",
-      "published": "2026-10-12 06:00"
+      "url": "https://www.channelnewsasia.com/world/riyadh-airport-cancel-flights-houthi-attacks-saudi-6452381",
+      "published": "2026-10-12 16:56"
     },
     {
       "category": "General",
-      "title": "Commentary: What if the HR department's AI prefers resumes written by AI?",
+      "title": "Man devised 'deliberate scheme' to rent home without paying through shell company, sued elderly landlords",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/jobs-apply-resume-ai-use-skills-hr-6450116",
-      "published": "2026-10-12 05:59"
+      "url": "https://www.channelnewsasia.com/singapore/anthony-price-deliberate-scheme-rent-home-free-6451681",
+      "published": "2026-10-12 16:40"
     },
     {
       "category": "General",
-      "title": "From pink to Paraiba: Why tourmaline is October’s most captivating birthstone",
+      "title": "EU top diplomat says will welcome Ukraine energy truce 'when it holds'",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/october-birthstone-tourmaline-jewellery-6433681",
-      "published": "2026-10-12 05:42"
+      "url": "https://www.channelnewsasia.com/world/eu-top-diplomat-says-will-welcome-ukraine-energy-truce-when-it-holds-6452396",
+      "published": "2026-10-12 16:29"
     },
     {
       "category": "General",
-      "title": "Who’s singing now? Maresca wants Man City to drown out noise",
+      "title": "NEA to pilot weekly ferry service for ashes scattering at sea from 2027",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/whos-singing-now-maresca-wants-man-city-drown-out-noise-6451421",
-      "published": "2026-10-12 03:26"
-    },
-    {
-      "category": "General",
-      "title": "Tens of thousands urge climate action at Brussels demo",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/tens-thousands-urge-climate-action-brussels-demo-6451371",
-      "published": "2026-10-12 03:14"
-    },
-    {
-      "category": "General",
-      "title": "Real Betis beat Osasuna to go third in LaLiga",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/real-betis-beat-osasuna-go-third-in-laliga-6451386",
-      "published": "2026-10-12 02:50"
-    },
-    {
-      "category": "General",
-      "title": "Lazio keep pace at the top, Juve, Milan and Roma all held",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lazio-keep-pace-top-juve-milan-and-roma-all-held-6451376",
-      "published": "2026-10-12 02:40"
-    },
-    {
-      "category": "General",
-      "title": "Djibouti boat wreck leaves 139 migrants dead, 84 missing: UN",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/djibouti-boat-wreck-139-dead-84-missing-6450621",
-      "published": "2026-10-12 02:17"
-    },
-    {
-      "category": "General",
-      "title": "Schools in Johor to remain closed till Oct. 16, 2026 due to ongoing haze",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/johor-schools-remain-closed-haze/",
-      "published": "2026-10-11 20:44"
-    },
-    {
-      "category": "General",
-      "title": "24-hour N95 haze mask vending machines to be rolled out for eligible S'poreans if PSI reading crosses 200",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/24-hour-mask-vending-machines-haze-200/",
-      "published": "2026-10-11 20:16"
-    },
-    {
-      "category": "General",
-      "title": "Strike on Riyadh airport leaves at least 12 dead & over 300 injured",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/riyadh-airport-strike/",
-      "published": "2026-10-11 20:08"
-    },
-    {
-      "category": "General",
-      "title": "Indonesia appreciates M'sia & S'pore's offer to help tackle haze: ST report",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/indonesia-appreciate-singapore-offer-haze/",
-      "published": "2026-10-11 19:36"
-    },
-    {
-      "category": "General",
-      "title": "Eligible S'poreans to get subsidies for haze-related conditions at polyclinics & some GP clinics from Oct. 12, 2026",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/haze-subsidies-clinics-2026/",
-      "published": "2026-10-11 18:45"
-    },
-    {
-      "category": "General",
-      "title": "With the US midterms less than a month away, what's at stake?",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/us-midterms-elections-2026/",
-      "published": "2026-10-11 04:34"
-    },
-    {
-      "category": "General",
-      "title": "Bella Astillah's children excited to call Syed Saddiq 'daddy' after couple gets married",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/bella-astillah-children-syed-saddiq-dad/",
-      "published": "2026-10-11 04:10"
-    },
-    {
-      "category": "General",
-      "title": "Gain City S'pore says air purifier sales up by 76% in Sep. 2026 due to haze",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/spore-air-purifier-sales-increase-haze/",
-      "published": "2026-10-11 03:50"
-    },
-    {
-      "category": "General",
-      "title": "MOE to consider closing schools & postponing exams if next-day PSI forecast exceeds 300: Desmond Lee",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/psi-exceed-300-moe-consider-closing-schools/",
-      "published": "2026-10-11 03:09"
-    },
-    {
-      "category": "General",
-      "title": "Actors from S'pore film, The Sandbox, tries to surprise moviegoers at screening, finds only 7 people in cinema",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/sandbox-movie-watch/",
-      "published": "2026-10-11 02:42"
-    },
-    {
-      "category": "General",
-      "title": "Sengkang MP Jamus Lim in hospital with pneumonia",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/sengkang-mp-jamus-lim-in-hospital-with-pneumonia",
-      "published": "2026-10-12 08:21"
+      "url": "https://www.channelnewsasia.com/singapore/ash-scattering-sea-cremated-remains-pilot-ferry-service-nea-6452241",
+      "published": "2026-10-12 15:33"
     }
   ]
 }
