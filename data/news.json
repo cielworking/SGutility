@@ -1,26 +1,19 @@
 {
-  "last_updated": "2026-10-14 06:43",
+  "last_updated": "2026-10-14 09:54",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "GovTech and Google DeepMind developing real-time detection of AI scams on devices",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/govtech-google-deepmind-ai-scam-quantum-sicw-6455621",
+      "published": "2026-10-14 09:32"
+    },
     {
       "category": "Crime",
       "title": "Cornell suspends frat parties after alleged gang rape",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/cornell-gang-rape-frat-parties-banned-6457251",
       "published": "2026-10-14 05:55"
-    },
-    {
-      "category": "Crime",
-      "title": "Ex-gang leader sentenced to minimum 40 years for Tupac murder",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/tupac-murder-sentence-keffe-d-40-years-prison-6457156",
-      "published": "2026-10-14 04:44"
-    },
-    {
-      "category": "Crime",
-      "title": "Saudi OpenAI engineer arrested by FBI for planting covert recording device, US DOJ says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/saudi-openai-engineer-arrested-fbi-planting-covert-recording-device-us-doj-says-6457126",
-      "published": "2026-10-14 04:02"
     },
     {
       "category": "Crime",
@@ -94,10 +87,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Tresoldi treble stuns Inter, Bayern held as Barcelona rally",
+      "title": "Isle of Wight fossil sheds light on enigmatic meat-eating dinosaurs",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tresoldi-treble-stuns-inter-bayern-held-barcelona-rally-6457261",
-      "published": "2026-10-14 05:45"
+      "url": "https://www.channelnewsasia.com/business/isle-wight-fossil-sheds-light-enigmatic-meat-eating-dinosaurs-6457326",
+      "published": "2026-10-14 07:07"
     },
     {
       "category": "Traffic",
@@ -163,13 +156,6 @@
       "published": "2026-10-13 16:33"
     },
     {
-      "category": "Transport",
-      "title": "Plan to test driverless buses on 2 SBST routes called off as LTA explores smaller-scale trials",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/plan-to-test-driverless-buses-on-2-sbst-routes-called-off-as-lta-explores-smaller-scale-trials",
-      "published": "2026-10-12 19:09"
-    },
-    {
       "category": "Fire",
       "title": "Man supposed to be on WFH in Sydney was in S'pore instead, gets fired but wins unfair dismissal case",
       "source": "Mothership",
@@ -182,6 +168,69 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/malaysias-firefly-extends-seletar-subang-flight-cancellations",
       "published": "2026-10-13 12:56"
+    },
+    {
+      "category": "Money",
+      "title": "Oil prices climb as traders weigh Saudi supply risk, Russian diesel flow",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-prices-climb-traders-weigh-saudi-supply-risk-russian-diesel-flow-6457466",
+      "published": "2026-10-14 09:27"
+    },
+    {
+      "category": "General",
+      "title": "Dollar languishes as focus turns to CPI, Fed speakers",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/dollar-languishes-focus-turns-cpi-fed-speakers-6457446",
+      "published": "2026-10-14 09:17"
+    },
+    {
+      "category": "General",
+      "title": "Anthropic seeks rehearing of case over Pentagon's security risk branding",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/anthropic-seeks-rehearing-case-over-pentagons-security-risk-branding-6457401",
+      "published": "2026-10-14 08:52"
+    },
+    {
+      "category": "General",
+      "title": "CBA chief Matt Comyn says Australia must retain economic value of AI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/cba-chief-matt-comyn-says-australia-must-retain-economic-value-ai-6457396",
+      "published": "2026-10-14 08:45"
+    },
+    {
+      "category": "General",
+      "title": "MAS keeps monetary policy on hold after tightening twice this year",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/mas-monetary-policy-inflation-economy-6454831",
+      "published": "2026-10-14 08:21"
+    },
+    {
+      "category": "General",
+      "title": "Singapore's economy grows 5.4% in Q3, down from 6.2% in previous quarter: Advance estimates",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/gdp-forecast-q3-growth-meti-6455581",
+      "published": "2026-10-14 08:00"
+    },
+    {
+      "category": "General",
+      "title": "‘Thinking of you’, ‘stay strong’: Why words like these can fail when a loved one is going through the worst",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/support-someone-cancer-grief-6423496",
+      "published": "2026-10-14 07:36"
+    },
+    {
+      "category": "General",
+      "title": "SoftBank junk bond sale raises stakes for CEO Son's all-in AI bet",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/softbank-junk-bond-sale-raises-stakes-ceo-sons-all-in-ai-bet-6457321",
+      "published": "2026-10-14 07:01"
+    },
+    {
+      "category": "General",
+      "title": "Martinez slams Man Utd hierarchy after Atletico defeat",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/martinez-slams-man-utd-hierarchy-after-atletico-defeat-6457311",
+      "published": "2026-10-14 06:44"
     },
     {
       "category": "General",
@@ -231,55 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/commentary/britain-reversal-brexit-european-union-andy-burnham-6455446",
       "published": "2026-10-14 05:58"
-    },
-    {
-      "category": "General",
-      "title": "LVMH’s luxury recovery falters as Louis Vuitton and Dior owner hit by China slowdown",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/lvmh-sales-fall-china-luxury-slowdown-6454711",
-      "published": "2026-10-14 05:56"
-    },
-    {
-      "category": "General",
-      "title": "Pope Leo diagnosed with cancer as doctors remove part of lung, Vatican says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/pope-leo-lung-cancer-operation-hospital-vatican-6457201",
-      "published": "2026-10-14 05:30"
-    },
-    {
-      "category": "General",
-      "title": "Apple's HomeView brings personalized Siri to smart home, takes on Amazon and Google",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apples-homeview-brings-personalized-siri-smart-home-takes-amazon-and-google-6457236",
-      "published": "2026-10-14 05:17"
-    },
-    {
-      "category": "General",
-      "title": "AT&T sells Mexico unit to Televisa, Fintech for $2 billion",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/att-sells-mexico-unit-televisa-fintech-2-billion-6457171",
-      "published": "2026-10-14 04:32"
-    },
-    {
-      "category": "General",
-      "title": "AI could 'change the stakes' on bioweapons: UK spy chief",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/uk-mi5-spy-chief-ai-bioweapons-cyberattacks-6457066",
-      "published": "2026-10-14 03:47"
-    },
-    {
-      "category": "General",
-      "title": "AI limiting European workers' bargaining power, ECB's Lane says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-limiting-european-workers-bargaining-power-ecbs-lane-says-6457061",
-      "published": "2026-10-14 02:35"
-    },
-    {
-      "category": "General",
-      "title": "Lawmakers ask FAA to pause use of new AI tool in DC-area flight management",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/lawmakers-ask-faa-pause-use-new-ai-tool-in-dc-area-flight-management-6457021",
-      "published": "2026-10-14 02:01"
     }
   ]
 }
