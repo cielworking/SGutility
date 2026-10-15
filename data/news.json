@@ -1,12 +1,19 @@
 {
-  "last_updated": "2026-10-15 19:26",
+  "last_updated": "2026-10-16 00:59",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Ex-inmate from Inside Maximum Security prison documentary gets jail after committing offences after release",
+      "title": "Manchester City march on with title charge clouded by financial case",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/graceson-ang-inside-maximum-security-prison-jailed-6461646",
-      "published": "2026-10-15 18:07"
+      "url": "https://www.channelnewsasia.com/sport/manchester-city-march-title-charge-clouded-financial-case-6462391",
+      "published": "2026-10-15 20:13"
+    },
+    {
+      "category": "Crime",
+      "title": "Quicker cross-border cooperation needed to disrupt scams and crimes: S’pore, international police",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/quicker-cross-border-cooperation-needed-to-disrupt-scams-and-crimes-spore-international-police",
+      "published": "2026-10-15 20:50"
     },
     {
       "category": "Crime",
@@ -23,46 +30,11 @@
       "published": "2026-10-15 08:45"
     },
     {
-      "category": "Crime",
-      "title": "2 men charged over stealing bank cards on same Singapore-bound flight",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/2-men-charged-with-allegedly-stealing-bank-cards-on-same-singapore-bound-flight",
-      "published": "2026-10-14 14:22"
-    },
-    {
-      "category": "Crime",
-      "title": "Google, GovTech developing first-of-its-kind AI model to flag scams in real time for Android users",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/tech/google-deepmind-govtech-developing-first-of-its-kind-scam-detection-ai-model-for-android-users",
-      "published": "2026-10-14 10:51"
-    },
-    {
       "category": "Traffic",
-      "title": "ATP eyes $350 million player compensation, welfare boost by 2028",
+      "title": "Microsoft president warns green-card curbs could hurt US tech, Politico reports",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/atp-eyes-350-million-player-compensation-welfare-boost-2028-6462231",
-      "published": "2026-10-15 19:03"
-    },
-    {
-      "category": "Traffic",
-      "title": "Six passengers injured after chain collision involving three public buses in Yishun",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/chain-collision-sbs-tower-transit-singapore-injured-yishun-6461836",
-      "published": "2026-10-15 17:27"
-    },
-    {
-      "category": "Traffic",
-      "title": "Skateboarding-On the road again: Spain's Poncelet sets world speed record",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/skateboarding-road-again-spains-poncelet-sets-world-speed-record-6461881",
-      "published": "2026-10-15 17:09"
-    },
-    {
-      "category": "Traffic",
-      "title": "Cohere moves to buy AI cybersecurity startup AISLE",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/cohere-moves-buy-ai-cybersecurity-startup-aisle-6461846",
-      "published": "2026-10-15 17:02"
+      "url": "https://www.channelnewsasia.com/business/microsoft-president-warns-green-card-curbs-could-hurt-us-tech-politico-reports-6462386",
+      "published": "2026-10-15 20:11"
     },
     {
       "category": "Traffic",
@@ -87,7 +59,7 @@
     },
     {
       "category": "Traffic",
-      "title": "Three taken to hospital after accident involving 3 public buses in Yishun",
+      "title": "5 injured after chain collision involving 3 public buses in Yishun; 3 of them taken to hospital",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/at-least-6-people-injured-after-accident-involving-three-public-buses-in-yishun",
       "published": "2026-10-15 16:44"
@@ -114,31 +86,10 @@
       "published": "2026-10-14 19:20"
     },
     {
-      "category": "Traffic",
-      "title": "Worker dies after tree-felling accident at private property in Katong",
+      "category": "Transport",
+      "title": "MRT reliability hits new all-time high after previous record in August",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/worker-dies-after-tree-felling-accident-at-private-property-in-katong",
-      "published": "2026-10-14 11:06"
-    },
-    {
-      "category": "Transport",
-      "title": "AI boom puts growing strain on electricity grids, says Hitachi Energy CEO",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-boom-strain-electricity-grids-hitachi-energy-ceo-6461951",
-      "published": "2026-10-15 18:37"
-    },
-    {
-      "category": "Transport",
-      "title": "Bukit Panjang LRT renewal on track for completion by year-end",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/bukit-panjang-lrt-disruption-upgrade-6461396",
-      "published": "2026-10-15 17:00"
-    },
-    {
-      "category": "Transport",
-      "title": "MRT reliability hits another record high in September",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/mrt-rail-reliability-report-september-record-high-6461346",
+      "url": "https://www.straitstimes.com/singapore/transport/mrt-reliability-hits-new-all-time-high-after-previous-record-in-august",
       "published": "2026-10-15 17:00"
     },
     {
@@ -149,18 +100,18 @@
       "published": "2026-10-15 17:00"
     },
     {
-      "category": "Transport",
-      "title": "MRT reliability hits new all-time high after previous record in August",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/mrt-reliability-hits-new-all-time-high-after-previous-record-in-august",
-      "published": "2026-10-15 17:00"
+      "category": "Fire",
+      "title": "Singapore looking into which companies responsible for haze-causing fires, may take legal action: PM Wong",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-singapore-indonesia-companies-fires-legal-action-pm-wong-6463101",
+      "published": "2026-10-15 23:18"
     },
     {
       "category": "Fire",
-      "title": "Two ships ablaze in Romanian Black Sea waters, 7 sailors missing",
+      "title": "Prabowo approves foreign help to tackle fires causing regional haze, says Indonesian foreign minister",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/two-ships-ablaze-in-romanian-black-sea-waters-7-sailors-missing-6461721",
-      "published": "2026-10-15 17:50"
+      "url": "https://www.channelnewsasia.com/asia/indonesia-haze-prabowo-approves-foreign-help-6462316",
+      "published": "2026-10-15 20:06"
     },
     {
       "category": "Fire",
@@ -168,6 +119,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/kalimantan-governor-mbs-haze/",
       "published": "2026-10-15 22:13"
+    },
+    {
+      "category": "Fire",
+      "title": "Singapore looking into which companies responsible for haze-causing fires: PM Wong",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/singapore-looking-into-which-companies-responsible-for-haze-causing-fires-pm-wong",
+      "published": "2026-10-15 22:58"
     },
     {
       "category": "Fire",
@@ -185,80 +143,115 @@
     },
     {
       "category": "General",
-      "title": "Fintech firm Ramp raises $1.85 billion at $60 billion valuation",
+      "title": "Nasdaq slides to near one-month low as AI rout deepens",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/fintech-firm-ramp-raises-185-billion-60-billion-valuation-6462271",
-      "published": "2026-10-15 19:14"
+      "url": "https://www.channelnewsasia.com/world/nasdaq-slides-near-one-month-low-ai-rout-deepens-6463166",
+      "published": "2026-10-16 00:49"
     },
     {
       "category": "General",
-      "title": "Asian Cup in Saudi Arabia could be postponed but 'no hurry' to decide: AFC",
+      "title": "Germany plans AI cooperation deal with Nvidia, Handelsblatt says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/saudi-arabia-asian-cup-postponed-houthi-attacks-6462196",
-      "published": "2026-10-15 19:02"
+      "url": "https://www.channelnewsasia.com/business/germany-plans-ai-cooperation-deal-nvidia-handelsblatt-says-6463176",
+      "published": "2026-10-16 00:29"
     },
     {
       "category": "General",
-      "title": "Saudi coalition says missile intercepted in Medina region",
+      "title": "Nvidia, Apple each gave $25 million for Trump's ballroom, Washington Post reports",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/saudi-arabia-medina-missile-intercepted-houthi-6462156",
-      "published": "2026-10-15 18:53"
+      "url": "https://www.channelnewsasia.com/business/nvidia-apple-each-gave-25-million-trumps-ballroom-washington-post-reports-6463121",
+      "published": "2026-10-15 23:41"
     },
     {
       "category": "General",
-      "title": "India's Wipro beats second-quarter revenue expectations, deal bookings drop",
+      "title": "Bones from Iraqi cave hint at violence and compassion in Neanderthals",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/indias-wipro-beats-second-quarter-revenue-expectations-deal-bookings-drop-6462151",
-      "published": "2026-10-15 18:26"
+      "url": "https://www.channelnewsasia.com/business/bones-iraqi-cave-hint-violence-and-compassion-in-neanderthals-6463086",
+      "published": "2026-10-15 23:01"
     },
     {
       "category": "General",
-      "title": "Midtjylland game at Egnatia moved due to civil unrest in Tirana",
+      "title": "Trump says military execution will not be livestreamed",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/midtjylland-game-egnatia-moved-due-civil-unrest-in-tirana-6462136",
-      "published": "2026-10-15 18:22"
+      "url": "https://www.channelnewsasia.com/world/trump-us-military-execution-not-livestream-6462851",
+      "published": "2026-10-15 22:53"
     },
     {
       "category": "General",
-      "title": "India retailers weigh impact of upcoming UPI transaction fees",
+      "title": "Spain includes Bernabeu, Camp Nou among venues in 2035 World Cup bid",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/upi-india-payment-charges-fees-digital-6462066",
-      "published": "2026-10-15 18:20"
+      "url": "https://www.channelnewsasia.com/sport/spain-includes-bernabeu-camp-nou-among-venues-in-2035-world-cup-bid-6462931",
+      "published": "2026-10-15 22:30"
     },
     {
       "category": "General",
-      "title": "AstraZeneca strikes $40 million AI drug discovery deal with insitro",
+      "title": "Alpine skiing-Fresh injury blow for Kilde as Norwegian skier ruptures Achilles",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/astrazeneca-strikes-40-million-ai-drug-discovery-deal-insitro-6462081",
-      "published": "2026-10-15 18:03"
+      "url": "https://www.channelnewsasia.com/sport/alpine-skiing-fresh-injury-blow-kilde-norwegian-skier-ruptures-achilles-6462881",
+      "published": "2026-10-15 22:27"
     },
     {
       "category": "General",
-      "title": "Pan Pacific CEO upbeat on Southeast Asian tourism as regional travel demand rebounds",
+      "title": "Bodo/Glimt's Arctic home continues to chill Europe’s elite",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/pan-pacific-ceo-choe-peng-sum-tourism-rebound-southeast-asia-affluent-travellers-6461901",
-      "published": "2026-10-15 18:01"
+      "url": "https://www.channelnewsasia.com/sport/bodoglimts-arctic-home-continues-chill-europes-elite-6462886",
+      "published": "2026-10-15 22:24"
     },
     {
       "category": "General",
-      "title": "Banks need 'bare metal' recovery in face of AI risks, says BoE's Breeden",
+      "title": "Brazilian Camara to replace Ocon at Haas F1 team next season",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/banks-need-bare-metal-recovery-in-face-ai-risks-says-boes-breeden-6461966",
-      "published": "2026-10-15 17:54"
+      "url": "https://www.channelnewsasia.com/sport/brazilian-camara-replace-ocon-haas-f1-team-next-season-6462796",
+      "published": "2026-10-15 22:02"
     },
     {
       "category": "General",
-      "title": "US FTC subpoenas OpenAI and Anthropic over consumer harms, Axios reports",
+      "title": "US chip stocks set to wipe out $2 trillion after latest selloff",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-ftc-subpoenas-openai-and-anthropic-over-consumer-harms-axios-reports-6461886",
-      "published": "2026-10-15 17:18"
+      "url": "https://www.channelnewsasia.com/business/us-chip-stocks-set-wipe-out-2-trillion-after-latest-selloff-6462771",
+      "published": "2026-10-15 21:54"
     },
     {
       "category": "General",
-      "title": "Indonesia disaster chief's brother among five suspects in alleged corruption case",
+      "title": "Japan tells G20 must watch FX moves with high sense of urgency",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-corruption-disaster-agency-funds-6461676",
-      "published": "2026-10-15 16:44"
+      "url": "https://www.channelnewsasia.com/business/japan-tells-g20-must-watch-fx-moves-high-sense-urgency-6462726",
+      "published": "2026-10-15 21:32"
+    },
+    {
+      "category": "General",
+      "title": "Super Micro appoints Mark Long as chief financial officer",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/super-micro-appoints-mark-long-chief-financial-officer-6462721",
+      "published": "2026-10-15 21:27"
+    },
+    {
+      "category": "General",
+      "title": "Scotland handed Graham boost as record try scorer makes early return",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/scotland-handed-graham-boost-record-try-scorer-makes-early-return-6462651",
+      "published": "2026-10-15 20:54"
+    },
+    {
+      "category": "General",
+      "title": "US Treasury pushes global partners to rename AI as 'super intelligence'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-treasury-pushes-global-partners-rename-ai-super-intelligence-6462536",
+      "published": "2026-10-15 20:34"
+    },
+    {
+      "category": "General",
+      "title": "Smooth for some, frustrating for others as N95 mask distribution gets underway amid haze in Singapore",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/n95-masks-distribution-vending-machines-community-clubs-haze-6462106",
+      "published": "2026-10-15 20:15"
+    },
+    {
+      "category": "General",
+      "title": "NYC Comptroller Levine urges Anthropic to pause US IPO",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nyc-comptroller-levine-urges-anthropic-pause-us-ipo-6462361",
+      "published": "2026-10-15 20:08"
     },
     {
       "category": "General",
@@ -280,6 +273,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/lee-hsien-loong-collects-n95-masks/",
       "published": "2026-10-15 19:16"
+    },
+    {
+      "category": "General",
+      "title": "S’pore owner allegedly planned to euthanise 1½-year-old goldendoodle 'cause nobody want him', says dog has since been rehomed",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/rehomed-euthanise-goldendoodle/",
+      "published": "2026-10-15 19:15"
     }
   ]
 }
