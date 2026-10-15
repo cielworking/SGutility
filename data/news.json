@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-10-16 00:59",
+  "last_updated": "2026-10-16 04:20",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Manchester City march on with title charge clouded by financial case",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/manchester-city-march-title-charge-clouded-financial-case-6462391",
-      "published": "2026-10-15 20:13"
-    },
     {
       "category": "Crime",
       "title": "Quicker cross-border cooperation needed to disrupt scams and crimes: S’pore, international police",
@@ -31,10 +24,17 @@
     },
     {
       "category": "Traffic",
-      "title": "Microsoft president warns green-card curbs could hurt US tech, Politico reports",
+      "title": "Martinez apologises for Man United criticism after Carrick talks",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/microsoft-president-warns-green-card-curbs-could-hurt-us-tech-politico-reports-6462386",
-      "published": "2026-10-15 20:11"
+      "url": "https://www.channelnewsasia.com/sport/martinez-apologises-man-united-criticism-after-carrick-talks-6463851",
+      "published": "2026-10-16 02:53"
+    },
+    {
+      "category": "Traffic",
+      "title": "Carlos Alcaraz accepts wild-card berth in Vienna",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/carlos-alcaraz-accepts-wild-card-berth-in-vienna-6463631",
+      "published": "2026-10-16 02:07"
     },
     {
       "category": "Traffic",
@@ -49,6 +49,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/aesthetic-doctor-three-times-dermal-fillers-pain/",
       "published": "2026-10-15 19:17"
+    },
+    {
+      "category": "Traffic",
+      "title": "From Gran Turismo 7 to a smartphone with a second screen: How Xiaomi is linking cars, homes and devices",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/tech/gran-turismo-7-smartphone-xiaomi-human-car-home-ecosystem",
+      "published": "2026-10-16 04:00"
     },
     {
       "category": "Traffic",
@@ -87,6 +94,13 @@
     },
     {
       "category": "Transport",
+      "title": "NFL-League pouring resources into flag football training, development ahead of LA28",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/nfl-league-pouring-resources-flag-football-training-development-ahead-la28-6463886",
+      "published": "2026-10-16 03:20"
+    },
+    {
+      "category": "Transport",
       "title": "MRT reliability hits new all-time high after previous record in August",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/mrt-reliability-hits-new-all-time-high-after-previous-record-in-august",
@@ -105,13 +119,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/haze-singapore-indonesia-companies-fires-legal-action-pm-wong-6463101",
       "published": "2026-10-15 23:18"
-    },
-    {
-      "category": "Fire",
-      "title": "Prabowo approves foreign help to tackle fires causing regional haze, says Indonesian foreign minister",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-haze-prabowo-approves-foreign-help-6462316",
-      "published": "2026-10-15 20:06"
     },
     {
       "category": "Fire",
@@ -143,6 +150,62 @@
     },
     {
       "category": "General",
+      "title": "Houthis launch deadly attack on presidential palace in Yemen's Aden",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/houthis-yemen-aden-presidential-palace-strikes-iran-6463881",
+      "published": "2026-10-16 04:10"
+    },
+    {
+      "category": "General",
+      "title": "Explainer-Why CoreWeave's troubles are rattling the AI boom",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/explainer-why-coreweaves-troubles-are-rattling-ai-boom-6463906",
+      "published": "2026-10-16 03:25"
+    },
+    {
+      "category": "General",
+      "title": "Germany warns against bringing Russia back into G20 fold",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/germany-russia-g20-us-bangkok-meeting-6463326",
+      "published": "2026-10-16 02:22"
+    },
+    {
+      "category": "General",
+      "title": "FIFA to amend Article 27 of disciplinary code after Balogun case",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/fifa-amend-article-27-disciplinary-code-after-balogun-case-6463341",
+      "published": "2026-10-16 01:49"
+    },
+    {
+      "category": "General",
+      "title": "Amazon launches two new portable AI listening devices",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/amazon-launches-two-new-portable-ai-listening-devices-6463321",
+      "published": "2026-10-16 01:43"
+    },
+    {
+      "category": "General",
+      "title": "Anthropic grants outside evaluator METR employee-level access in AI safety push",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/anthropic-grants-outside-evaluator-metr-employee-level-access-in-ai-safety-push-6463306",
+      "published": "2026-10-16 01:35"
+    },
+    {
+      "category": "General",
+      "title": "Infantino apology fails to sway England, Germany over FIFA future",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/infantino-apology-fails-sway-england-germany-over-fifa-future-6463251",
+      "published": "2026-10-16 01:08"
+    },
+    {
+      "category": "General",
+      "title": "CNN, Axios and other publishers join Google's AI news program",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/cnn-axios-and-other-publishers-join-googles-ai-news-program-6463246",
+      "published": "2026-10-16 01:06"
+    },
+    {
+      "category": "General",
       "title": "Nasdaq slides to near one-month low as AI rout deepens",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/nasdaq-slides-near-one-month-low-ai-rout-deepens-6463166",
@@ -171,7 +234,7 @@
     },
     {
       "category": "General",
-      "title": "Trump says military execution will not be livestreamed",
+      "title": "Trump shuts down Hegseth plan to livestream military execution",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/trump-us-military-execution-not-livestream-6462851",
       "published": "2026-10-15 22:53"
@@ -199,62 +262,6 @@
     },
     {
       "category": "General",
-      "title": "Brazilian Camara to replace Ocon at Haas F1 team next season",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/brazilian-camara-replace-ocon-haas-f1-team-next-season-6462796",
-      "published": "2026-10-15 22:02"
-    },
-    {
-      "category": "General",
-      "title": "US chip stocks set to wipe out $2 trillion after latest selloff",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-chip-stocks-set-wipe-out-2-trillion-after-latest-selloff-6462771",
-      "published": "2026-10-15 21:54"
-    },
-    {
-      "category": "General",
-      "title": "Japan tells G20 must watch FX moves with high sense of urgency",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japan-tells-g20-must-watch-fx-moves-high-sense-urgency-6462726",
-      "published": "2026-10-15 21:32"
-    },
-    {
-      "category": "General",
-      "title": "Super Micro appoints Mark Long as chief financial officer",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/super-micro-appoints-mark-long-chief-financial-officer-6462721",
-      "published": "2026-10-15 21:27"
-    },
-    {
-      "category": "General",
-      "title": "Scotland handed Graham boost as record try scorer makes early return",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/scotland-handed-graham-boost-record-try-scorer-makes-early-return-6462651",
-      "published": "2026-10-15 20:54"
-    },
-    {
-      "category": "General",
-      "title": "US Treasury pushes global partners to rename AI as 'super intelligence'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-treasury-pushes-global-partners-rename-ai-super-intelligence-6462536",
-      "published": "2026-10-15 20:34"
-    },
-    {
-      "category": "General",
-      "title": "Smooth for some, frustrating for others as N95 mask distribution gets underway amid haze in Singapore",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/n95-masks-distribution-vending-machines-community-clubs-haze-6462106",
-      "published": "2026-10-15 20:15"
-    },
-    {
-      "category": "General",
-      "title": "NYC Comptroller Levine urges Anthropic to pause US IPO",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nyc-comptroller-levine-urges-anthropic-pause-us-ipo-6462361",
-      "published": "2026-10-15 20:08"
-    },
-    {
-      "category": "General",
       "title": "S'porean man, 23, hit 44-year-old man's face with brick in Geylang after sex act",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/men-smashed-man-brick/",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/lee-hsien-loong-collects-n95-masks/",
       "published": "2026-10-15 19:16"
-    },
-    {
-      "category": "General",
-      "title": "S’pore owner allegedly planned to euthanise 1½-year-old goldendoodle 'cause nobody want him', says dog has since been rehomed",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/rehomed-euthanise-goldendoodle/",
-      "published": "2026-10-15 19:15"
     }
   ]
 }
