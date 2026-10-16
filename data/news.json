@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-17 02:48",
+  "last_updated": "2026-10-17 06:05",
   "headlines": [
     {
       "category": "Crime",
@@ -7,27 +7,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/indian-police-detain-cockroach-founder-student-leaders-ahead-delhi-rally-6466986",
       "published": "2026-10-17 01:31"
-    },
-    {
-      "category": "Crime",
-      "title": "US federal bankruptcy court operations disrupted by cybersecurity incident",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-federal-bankruptcy-court-operations-disrupted-cybersecurity-incident-6466751",
-      "published": "2026-10-16 23:17"
-    },
-    {
-      "category": "Crime",
-      "title": "Man City more united after Premier League charges verdict, says boss Maresca",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/man-city-more-united-after-premier-league-charges-verdict-says-boss-maresca-6466756",
-      "published": "2026-10-16 23:15"
-    },
-    {
-      "category": "Crime",
-      "title": "US's AI task force sets path for study and reviews, leader tells CNBC",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/uss-ai-task-force-sets-path-study-and-reviews-leader-tells-cnbc-6466351",
-      "published": "2026-10-16 21:47"
     },
     {
       "category": "Crime",
@@ -63,27 +42,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/analysiswhy-coreweave-in-crosshairs-ai-scare-6467006",
       "published": "2026-10-17 01:50"
-    },
-    {
-      "category": "Traffic",
-      "title": "Singapore-listed firm Kencana Agri facing inquiry by Indonesian authorities over suspected land clearing by burning",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/forest-fire-haze-sgx-listed-kencana-inquiry-indonesia-6466396",
-      "published": "2026-10-16 23:02"
-    },
-    {
-      "category": "Traffic",
-      "title": "France opens probe into creator platform Mym over suspected rule breaches",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/france-opens-probe-creator-platform-mym-over-suspected-rule-breaches-6466716",
-      "published": "2026-10-16 23:01"
-    },
-    {
-      "category": "Traffic",
-      "title": "Zubimendi close to Arsenal return, Hincapie still sidelined, says Arteta",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zubimendi-close-arsenal-return-hincapie-still-sidelined-says-arteta-6466671",
-      "published": "2026-10-16 22:52"
     },
     {
       "category": "Traffic",
@@ -156,13 +114,6 @@
       "published": "2026-10-15 16:44"
     },
     {
-      "category": "Traffic",
-      "title": "CTE exit to temporarily close on 4 days in Oct and Nov for new cycling link works",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/cte-exit-to-temporarily-close-on-4-days-in-oct-and-nov-for-new-cycling-link-works",
-      "published": "2026-10-15 12:20"
-    },
-    {
       "category": "Transport",
       "title": "Bukit Panjang LRT upgrades to be completed by end-2026; work to replace power rails 98% done",
       "source": "Straits Times",
@@ -213,7 +164,84 @@
     },
     {
       "category": "General",
-      "title": "Trump's new press secretary looks close to exit after just one week",
+      "title": "Snap Insight: Protecting Singapore’s outdoor workers from haze is easier said than done",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/haze-outdoor-worker-platform-mask-snap-insight-6466426",
+      "published": "2026-10-17 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Legal action by Singapore against haze-causing firms in Indonesia may come with diplomatic implications: Lawyers",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-indonesia-diplomatic-implications-legal-action-lawyers-6465511",
+      "published": "2026-10-17 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Some Singapore pilgrims press ahead with Umrah plans despite advisory, others face cancellations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/singapore-pilgrims-umrah-mfa-muis-advisory-saudi-arabia-6465391",
+      "published": "2026-10-17 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Farm work, tears and tough lessons: Inside China’s ‘hardship camps’ for children",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/china-hardship-camps-children-tough-lessons-6458131",
+      "published": "2026-10-17 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Haze chokes plants too - how air quality can be a food security issue",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/haze-impact-agriculture-food-security-issue-6465861",
+      "published": "2026-10-17 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Iran denies Saudi accusation of involvement in Houthi attacks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-denies-saudi-accusation-involvement-in-houthi-attacks-6467476",
+      "published": "2026-10-17 05:48"
+    },
+    {
+      "category": "General",
+      "title": "Trump says did not order curb to Starshield for Ukraine",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-starshield-ukraine-zelenskyy-musk-6467441",
+      "published": "2026-10-17 04:49"
+    },
+    {
+      "category": "General",
+      "title": "SoftBank weighs $18 billion acquisition of Allied Universal, source says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/softbank-weighs-18-billion-acquisition-allied-universal-source-says-6467431",
+      "published": "2026-10-17 04:06"
+    },
+    {
+      "category": "General",
+      "title": "Trump says armed bystander who killed US school shooter a 'great hero'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-great-hero-oregon-school-shooting-6467381",
+      "published": "2026-10-17 03:44"
+    },
+    {
+      "category": "General",
+      "title": "Wardley out for revenge in WBO heavyweight title rematch with Dubois",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/wardley-out-revenge-in-wbo-heavyweight-title-rematch-dubois-6467401",
+      "published": "2026-10-17 03:36"
+    },
+    {
+      "category": "General",
+      "title": "Avenue Capital emerges as frontrunner for stake in Serie A media rights venture, sources say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/avenue-capital-emerges-frontrunner-stake-in-serie-media-rights-venture-sources-say-6467386",
+      "published": "2026-10-17 03:21"
+    },
+    {
+      "category": "General",
+      "title": "Trump's new press secretary out after less than week",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/trump-zacharia-white-house-press-secretary-reconsider-job-6467331",
       "published": "2026-10-17 02:25"
@@ -252,34 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/judge-rejects-cftc-gemini-bid-vacate-5-million-settlement-6466846",
       "published": "2026-10-17 00:07"
-    },
-    {
-      "category": "General",
-      "title": "Real Madrid demand resignation of LaLiga chief after Nazi propaganda comparison",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/real-madrid-demand-resignation-laliga-chief-after-nazi-propaganda-comparison-6466851",
-      "published": "2026-10-17 00:06"
-    },
-    {
-      "category": "General",
-      "title": "Analysis:SpaceX's spectrum deal still leaves it far from rivaling telecom giants",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/analysisspacexs-spectrum-deal-still-leaves-it-far-rivaling-telecom-giants-6466791",
-      "published": "2026-10-16 23:43"
-    },
-    {
-      "category": "General",
-      "title": "US tells election officials to be on guard against AI-powered tricks ahead of midterms",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-tells-election-officials-be-guard-against-ai-powered-tricks-ahead-midterms-6466731",
-      "published": "2026-10-16 23:06"
-    },
-    {
-      "category": "General",
-      "title": "Euroleague expects rise in value of clubs, competition as NBA eyes Europe",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/euroleague-expects-rise-in-value-clubs-competition-nba-eyes-europe-6466466",
-      "published": "2026-10-16 22:18"
     }
   ]
 }
