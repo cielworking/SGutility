@@ -1,19 +1,33 @@
 {
-  "last_updated": "2026-10-16 22:50",
+  "last_updated": "2026-10-17 02:48",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Indian police detain 'cockroach' founder, student leaders ahead of Delhi rally",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/indian-police-detain-cockroach-founder-student-leaders-ahead-delhi-rally-6466986",
+      "published": "2026-10-17 01:31"
+    },
+    {
+      "category": "Crime",
+      "title": "US federal bankruptcy court operations disrupted by cybersecurity incident",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-federal-bankruptcy-court-operations-disrupted-cybersecurity-incident-6466751",
+      "published": "2026-10-16 23:17"
+    },
+    {
+      "category": "Crime",
+      "title": "Man City more united after Premier League charges verdict, says boss Maresca",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/man-city-more-united-after-premier-league-charges-verdict-says-boss-maresca-6466756",
+      "published": "2026-10-16 23:15"
+    },
     {
       "category": "Crime",
       "title": "US's AI task force sets path for study and reviews, leader tells CNBC",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/uss-ai-task-force-sets-path-study-and-reviews-leader-tells-cnbc-6466351",
       "published": "2026-10-16 21:47"
-    },
-    {
-      "category": "Crime",
-      "title": "South Africa look to re-establish test credentials after Australia mauling",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/south-africa-look-re-establish-test-credentials-after-australia-mauling-6466096",
-      "published": "2026-10-16 20:31"
     },
     {
       "category": "Crime",
@@ -45,10 +59,31 @@
     },
     {
       "category": "Traffic",
-      "title": "Martinez available for Leeds trip after Man United criticism, Carrick says",
+      "title": "Analysis:Why CoreWeave is in the crosshairs of the AI scare",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/martinez-available-leeds-trip-after-man-united-criticism-carrick-says-6466341",
-      "published": "2026-10-16 21:42"
+      "url": "https://www.channelnewsasia.com/business/analysiswhy-coreweave-in-crosshairs-ai-scare-6467006",
+      "published": "2026-10-17 01:50"
+    },
+    {
+      "category": "Traffic",
+      "title": "Singapore-listed firm Kencana Agri facing inquiry by Indonesian authorities over suspected land clearing by burning",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/forest-fire-haze-sgx-listed-kencana-inquiry-indonesia-6466396",
+      "published": "2026-10-16 23:02"
+    },
+    {
+      "category": "Traffic",
+      "title": "France opens probe into creator platform Mym over suspected rule breaches",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/france-opens-probe-creator-platform-mym-over-suspected-rule-breaches-6466716",
+      "published": "2026-10-16 23:01"
+    },
+    {
+      "category": "Traffic",
+      "title": "Zubimendi close to Arsenal return, Hincapie still sidelined, says Arteta",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/zubimendi-close-arsenal-return-hincapie-still-sidelined-says-arteta-6466671",
+      "published": "2026-10-16 22:52"
     },
     {
       "category": "Traffic",
@@ -143,13 +178,6 @@
     },
     {
       "category": "Fire",
-      "title": "Malaysia's palm oil industry steps up fire prevention efforts as 'Godzilla' El Nino fuels haze woes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/haze-malaysia-indonesia-palm-oil-plantation-fires-el-nino-6465896",
-      "published": "2026-10-16 20:10"
-    },
-    {
-      "category": "Fire",
       "title": "S'pore woman in HK, 36, suffers 2nd-degree burns after acid attack by teen",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/singapore-tourist-hk-acid-attack/",
@@ -185,101 +213,73 @@
     },
     {
       "category": "General",
+      "title": "Trump's new press secretary looks close to exit after just one week",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-zacharia-white-house-press-secretary-reconsider-job-6467331",
+      "published": "2026-10-17 02:25"
+    },
+    {
+      "category": "General",
+      "title": "Saudi-led coalition says intercepts missiles, drones over Riyadh, other areas",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/saudi-arabia-houthi-attacks-riyadh-missiles-6467001",
+      "published": "2026-10-17 02:14"
+    },
+    {
+      "category": "General",
+      "title": "CoreWeave's CEO sold nearly $1 billion of stock since IPO, filings show",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/coreweaves-ceo-sold-nearly-1-billion-stock-ipo-filings-show-6466916",
+      "published": "2026-10-17 00:48"
+    },
+    {
+      "category": "General",
+      "title": "Pant awaits fitness clearance as Bumrah returns for New Zealand tests",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pant-awaits-fitness-clearance-bumrah-returns-new-zealand-tests-6466901",
+      "published": "2026-10-17 00:36"
+    },
+    {
+      "category": "General",
+      "title": "Russian drones kill three in Ukraine, cut power to over a million",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/russia-ukraine-drone-attack-power-blackout-three-killed-6466786",
+      "published": "2026-10-17 00:12"
+    },
+    {
+      "category": "General",
+      "title": "Judge rejects CFTC, Gemini bid to vacate $5 million settlement",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/judge-rejects-cftc-gemini-bid-vacate-5-million-settlement-6466846",
+      "published": "2026-10-17 00:07"
+    },
+    {
+      "category": "General",
+      "title": "Real Madrid demand resignation of LaLiga chief after Nazi propaganda comparison",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/real-madrid-demand-resignation-laliga-chief-after-nazi-propaganda-comparison-6466851",
+      "published": "2026-10-17 00:06"
+    },
+    {
+      "category": "General",
+      "title": "Analysis:SpaceX's spectrum deal still leaves it far from rivaling telecom giants",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/analysisspacexs-spectrum-deal-still-leaves-it-far-rivaling-telecom-giants-6466791",
+      "published": "2026-10-16 23:43"
+    },
+    {
+      "category": "General",
+      "title": "US tells election officials to be on guard against AI-powered tricks ahead of midterms",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-tells-election-officials-be-guard-against-ai-powered-tricks-ahead-midterms-6466731",
+      "published": "2026-10-16 23:06"
+    },
+    {
+      "category": "General",
       "title": "Euroleague expects rise in value of clubs, competition as NBA eyes Europe",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/euroleague-expects-rise-in-value-clubs-competition-nba-eyes-europe-6466466",
       "published": "2026-10-16 22:18"
-    },
-    {
-      "category": "General",
-      "title": "For fishermen, Britain's climate-driven octopus boom is an opportunity, and a threat",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/fishermen-britains-climate-driven-octopus-boom-opportunity-and-threat-6466406",
-      "published": "2026-10-16 22:02"
-    },
-    {
-      "category": "General",
-      "title": "Great Eastern Women’s Run cancelled due to worsening haze",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/great-eastern-womens-run-cancelled-haze-air-quality-6466311",
-      "published": "2026-10-16 21:50"
-    },
-    {
-      "category": "General",
-      "title": "Central bankers eye higher rates as AI boom fuels scramble for cash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/central-bankers-eye-higher-rates-ai-boom-fuels-scramble-cash-6466336",
-      "published": "2026-10-16 21:33"
-    },
-    {
-      "category": "General",
-      "title": "No relief in sight – what's driving pricier taxi and ride-hailing fares",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/big-read/ride-hailing-taxi-private-hire-point-point-fares-rising-6461896",
-      "published": "2026-10-16 21:30"
-    },
-    {
-      "category": "General",
-      "title": "After separation and divorce, we kept raising our children under one roof. Here's what it's been like",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/voices/co-parenting-children-after-divorce-living-together-6455721",
-      "published": "2026-10-16 21:30"
-    },
-    {
-      "category": "General",
-      "title": "NBA-Knicks chase back-to-back banner in NBA built to stop dynasties",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/nba-knicks-chase-back-back-banner-in-nba-built-stop-dynasties-6466271",
-      "published": "2026-10-16 21:17"
-    },
-    {
-      "category": "General",
-      "title": "Singapore haze: 7 takeaways from press conference – from school contingency plans to mask supplies",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/haze-key-takeaways-psi-air-quality-6465711",
-      "published": "2026-10-16 21:10"
-    },
-    {
-      "category": "General",
-      "title": "IMF chief urges cooperation on AI and war risks, as US hails economic momentum",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/imf-chief-urges-cooperation-ai-and-war-risks-us-hails-economic-momentum-6466246",
-      "published": "2026-10-16 21:07"
-    },
-    {
-      "category": "General",
-      "title": "Supermarket operator Ahold's websites, app remain offline 5 days after cyber incident",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/supermarket-operator-aholds-websites-app-remain-offline-5-days-after-cyber-incident-6466181",
-      "published": "2026-10-16 20:45"
-    },
-    {
-      "category": "General",
-      "title": "Mother of bodybuilder, who died at 20 from effects of banned weight-loss substance, questions how he got illicit drug",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/bodybuilder-death-toxic-weight-loss-drug-dinitrophenol-6465906",
-      "published": "2026-10-16 20:42"
-    },
-    {
-      "category": "General",
-      "title": "Lions lock Andrews dies before Champions Cup fixture in France",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lions-lock-andrews-dies-champions-cup-fixture-in-france-6466161",
-      "published": "2026-10-16 20:39"
-    },
-    {
-      "category": "General",
-      "title": "Hazlewood says reverse swing may be a factor in South Africa test series",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/hazlewood-says-reverse-swing-may-be-factor-in-south-africa-test-series-6466116",
-      "published": "2026-10-16 20:37"
-    },
-    {
-      "category": "General",
-      "title": "Hedge funds bet Japan reforms have further to run at Sohn Tokyo",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/hedge-funds-bet-japan-reforms-have-further-run-sohn-tokyo-6466101",
-      "published": "2026-10-16 20:30"
     }
   ]
 }
