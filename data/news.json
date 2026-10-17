@@ -1,12 +1,19 @@
 {
-  "last_updated": "2026-10-17 13:35",
+  "last_updated": "2026-10-17 18:41",
   "headlines": [
     {
       "category": "Crime",
-      "title": "S'pore man, upset that married lover broke up with him, shares her intimate photos online, gets a year's jail",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/spore-man-upset-that-married-lover-broke-up-with-him-shares-her-intimate-photos-online-gets-a-years-jail/",
-      "published": "2026-10-16 23:58"
+      "title": "Pedestrian found dead on PIE was hit by minibus in Jurong West; driver arrested",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/pedestrian-whose-body-was-found-on-pie-had-been-hit-by-minibus-in-jurong-west-driver-arrested",
+      "published": "2026-10-17 16:50"
+    },
+    {
+      "category": "Crime",
+      "title": "Pedestrian dies after accident with car in Geylang; driver arrested",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/pedestrian-dies-after-accident-with-car-in-geylang-driver-arrested",
+      "published": "2026-10-17 16:36"
     },
     {
       "category": "Crime",
@@ -30,39 +37,11 @@
       "published": "2026-10-16 14:22"
     },
     {
-      "category": "Crime",
-      "title": "Quicker cross-border cooperation needed to disrupt scams and crimes: S’pore, international police",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/quicker-cross-border-cooperation-needed-to-disrupt-scams-and-crimes-spore-international-police",
-      "published": "2026-10-15 20:50"
-    },
-    {
-      "category": "Crime",
-      "title": "Man jailed for offering bribe to site manager to illegally dump 10 lorries of chicken compost in Tuas",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/man-jailed-for-offering-bribe-to-site-manager-to-illegally-dump-10-lorries-of-chicken-compost-in",
-      "published": "2026-10-15 18:07"
-    },
-    {
       "category": "Traffic",
       "title": "Carapaz joins NSN on three-year deal",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/carapaz-joins-nsn-three-year-deal-6467851",
       "published": "2026-10-17 11:46"
-    },
-    {
-      "category": "Traffic",
-      "title": "Ex-M’sian minister detained over suspected 'khalwat' with woman in Petaling Jaya",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/former-malaysian-minister-khalwat/",
-      "published": "2026-10-16 23:49"
-    },
-    {
-      "category": "Traffic",
-      "title": "Kim Lim's personal assistant pleads guilty to stealing Patek Philippe watch, misusing company credit card",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/kim-lim-pa-plead-guilty/",
-      "published": "2026-10-16 22:24"
     },
     {
       "category": "Traffic",
@@ -107,6 +86,13 @@
       "published": "2026-10-16 04:00"
     },
     {
+      "category": "Transport",
+      "title": "SMRT staff help cyclist with head & face injury outside Labrador Park MRT, pay for his Grab ride home",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/smrt-staff-help-injured-cyclist-labrador-park/",
+      "published": "2026-10-17 03:19"
+    },
+    {
       "category": "Fire",
       "title": "S'pore reveals names of 7 companies involved in haze-causing fires",
       "source": "Mothership",
@@ -133,6 +119,62 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/singapore-looking-into-which-companies-responsible-for-haze-causing-fires-pm-wong",
       "published": "2026-10-15 22:58"
+    },
+    {
+      "category": "General",
+      "title": "Pope Leo will leave hospital, return to Vatican on Oct 17: Holy See",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/pope-leo-will-leave-hospital-return-vatican-oct-17-holy-see-6468156",
+      "published": "2026-10-17 18:14"
+    },
+    {
+      "category": "General",
+      "title": "Sri Lanka suffers nationwide electricity blackout",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/sri-lanka-blackout-6468131",
+      "published": "2026-10-17 17:26"
+    },
+    {
+      "category": "General",
+      "title": "Anthropic's Clark says AI's impact accelerating quickly and could vastly boost US GDP",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/anthropics-clark-says-ais-impact-accelerating-quickly-and-could-vastly-boost-us-gdp-6468116",
+      "published": "2026-10-17 17:14"
+    },
+    {
+      "category": "General",
+      "title": "PM Wong to visit Qatar, UAE in first trip to Middle East since taking office",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/lawrence-wong-qatar-uae-middle-east-visit-6468046",
+      "published": "2026-10-17 17:00"
+    },
+    {
+      "category": "General",
+      "title": "Rennie promises All Blacks will stick to their guns at World Cup",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/rennie-promises-all-blacks-will-stick-their-guns-world-cup-6468106",
+      "published": "2026-10-17 16:37"
+    },
+    {
+      "category": "General",
+      "title": "All Blacks thump Wallabies in Sydney on the back of brilliant first half",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/all-blacks-thump-wallabies-in-sydney-back-brilliant-first-half-6468066",
+      "published": "2026-10-17 15:41"
+    },
+    {
+      "category": "General",
+      "title": "Jayawardene leaves role as Mumbai Indians head coach",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/jayawardene-leaves-role-mumbai-indians-head-coach-6468071",
+      "published": "2026-10-17 15:41"
+    },
+    {
+      "category": "General",
+      "title": "Japan retracts mistaken magnitude 9.9 quake alert",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/japan-retracts-mistaken-magnitude-99-quake-alert-6468016",
+      "published": "2026-10-17 14:13"
     },
     {
       "category": "General",
@@ -213,73 +255,31 @@
     },
     {
       "category": "General",
-      "title": "Checking Mount Bromo off the bucket list while also heading off the beaten path? Here's how",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/travel/mount-bromo-batu-malang-travel-6417286",
-      "published": "2026-10-17 07:23"
-    },
-    {
-      "category": "General",
-      "title": "Singapore haze: PM2.5 readings climb into high band in three regions",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-haze-psi-pm25-oct-17-6466816",
-      "published": "2026-10-17 07:09"
-    },
-    {
-      "category": "General",
-      "title": "Anthropic signs lease for first Canadian data center",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/anthropic-signs-lease-first-canadian-data-center-6467591",
-      "published": "2026-10-17 06:57"
-    },
-    {
-      "category": "General",
-      "title": "Anthropic quietly pitches its own AI safety bill to lawmakers, Politico reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/anthropic-quietly-pitches-its-own-ai-safety-bill-lawmakers-politico-reports-6467581",
-      "published": "2026-10-17 06:37"
-    },
-    {
-      "category": "General",
-      "title": "Shopping in Europe? Here's how to claim a VAT refund",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/experiences/vat-tax-refund-travel-shopping-6461511",
-      "published": "2026-10-17 06:07"
-    },
-    {
-      "category": "General",
-      "title": "Snap Insight: Protecting Singapore’s outdoor workers from haze is easier said than done",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/haze-outdoor-worker-platform-mask-snap-insight-6466426",
-      "published": "2026-10-17 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Legal action by Singapore against haze-causing firms in Indonesia may come with diplomatic implications: Lawyers",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/haze-indonesia-diplomatic-implications-legal-action-lawyers-6465511",
-      "published": "2026-10-17 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Some Singapore pilgrims press ahead with Umrah plans despite advisory, others face cancellations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-pilgrims-umrah-mfa-muis-advisory-saudi-arabia-6465391",
-      "published": "2026-10-17 06:00"
-    },
-    {
-      "category": "General",
-      "title": "S'pore may reschedule O-Level exams if haze reaches hazardous levels: Desmond Lee",
+      "title": "S'porean man, 32, seen parkouring over rooftops at RWS hotel, clarifies he was doing it legally",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/singapore-may-reschedule-national-examinations-haze/",
-      "published": "2026-10-17 01:35"
+      "url": "https://mothership.sg/2026/10/sporean-parkour-rws/",
+      "published": "2026-10-17 18:32"
     },
     {
       "category": "General",
-      "title": "S'pore schools taking precautionary measures based on hourly PM2.5, like avoiding outdoor activities & providing air purifiers",
+      "title": "Korean army officer leaves post 64 times in 10 months to 'feed his lizard', gets suspended",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/singapore-schools-precautionary-measures/",
-      "published": "2026-10-17 01:34"
+      "url": "https://mothership.sg/2026/10/korea-army-lizard-suspended/",
+      "published": "2026-10-17 18:14"
+    },
+    {
+      "category": "General",
+      "title": "Trump cancels livestream of Fort Hood shooter’s execution, victims’ families still can watch in person",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/trump-cancels-livestream-fort-hood-shooters-execution/",
+      "published": "2026-10-17 03:08"
+    },
+    {
+      "category": "General",
+      "title": "'Protecting workers from haze is not optional': Jasmin Lau encourages employers to let staff WFH where possible",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/protecting-workers-from-haze-jasmin-lau/",
+      "published": "2026-10-17 02:34"
     }
   ]
 }
