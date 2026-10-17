@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-10-17 06:05",
+  "last_updated": "2026-10-17 08:28",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Indian police detain 'cockroach' founder, student leaders ahead of Delhi rally",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/indian-police-detain-cockroach-founder-student-leaders-ahead-delhi-rally-6466986",
-      "published": "2026-10-17 01:31"
+      "title": "10 people charged in separate cases over false declarations involving CPF or salary contributions",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/10-people-charged-in-separate-cases-over-false-declarations-involving-cpf-or-salary-contributions",
+      "published": "2026-10-17 08:17"
     },
     {
       "category": "Crime",
@@ -35,13 +35,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/man-jailed-for-offering-bribe-to-site-manager-to-illegally-dump-10-lorries-of-chicken-compost-in",
       "published": "2026-10-15 18:07"
-    },
-    {
-      "category": "Traffic",
-      "title": "Analysis:Why CoreWeave is in the crosshairs of the AI scare",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/analysiswhy-coreweave-in-crosshairs-ai-scare-6467006",
-      "published": "2026-10-17 01:50"
     },
     {
       "category": "Traffic",
@@ -107,11 +100,11 @@
       "published": "2026-10-15 17:30"
     },
     {
-      "category": "Traffic",
-      "title": "5 injured after chain collision involving 3 public buses in Yishun; 3 of them taken to hospital",
+      "category": "Transport",
+      "title": "MRT reliability hits new all-time high after previous record in August",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/at-least-6-people-injured-after-accident-involving-three-public-buses-in-yishun",
-      "published": "2026-10-15 16:44"
+      "url": "https://www.straitstimes.com/singapore/transport/mrt-reliability-hits-new-all-time-high-after-previous-record-in-august",
+      "published": "2026-10-15 17:00"
     },
     {
       "category": "Transport",
@@ -121,11 +114,11 @@
       "published": "2026-10-15 17:00"
     },
     {
-      "category": "Transport",
-      "title": "MRT reliability hits new all-time high after previous record in August",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/mrt-reliability-hits-new-all-time-high-after-previous-record-in-august",
-      "published": "2026-10-15 17:00"
+      "category": "Fire",
+      "title": "White House press secretary Katie Zacharia fired in less than a week after facing criticism",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-press-secretary-katie-zacharia-fired-6467331",
+      "published": "2026-10-17 02:25"
     },
     {
       "category": "Fire",
@@ -161,6 +154,55 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/askst-how-can-home-owners-protect-themselves-when-tenants-use-shell-companies-to-rent-property",
       "published": "2026-10-15 17:20"
+    },
+    {
+      "category": "General",
+      "title": "New Mummy film gets official title and release date",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/mummy-book-dead-brendan-fraser-rachel-weisz-6467636",
+      "published": "2026-10-17 07:49"
+    },
+    {
+      "category": "General",
+      "title": "What if ADHD isn’t about attention at all? It might be more about motivation and staying engaged",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/adhd-attention-motivation-6439636",
+      "published": "2026-10-17 07:24"
+    },
+    {
+      "category": "General",
+      "title": "Checking Mount Bromo off the bucket list while also heading off the beaten path? Here's how",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/travel/mount-bromo-batu-malang-travel-6417286",
+      "published": "2026-10-17 07:23"
+    },
+    {
+      "category": "General",
+      "title": "Singapore haze eases overnight, but air quality remains unhealthy",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/singapore-haze-psi-pm25-oct-17-6466816",
+      "published": "2026-10-17 07:09"
+    },
+    {
+      "category": "General",
+      "title": "Anthropic signs lease for first Canadian data center",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/anthropic-signs-lease-first-canadian-data-center-6467591",
+      "published": "2026-10-17 06:57"
+    },
+    {
+      "category": "General",
+      "title": "Anthropic quietly pitches its own AI safety bill to lawmakers, Politico reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/anthropic-quietly-pitches-its-own-ai-safety-bill-lawmakers-politico-reports-6467581",
+      "published": "2026-10-17 06:37"
+    },
+    {
+      "category": "General",
+      "title": "Shopping in Europe? Here's how to claim a VAT refund",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/experiences/vat-tax-refund-travel-shopping-6461511",
+      "published": "2026-10-17 06:07"
     },
     {
       "category": "General",
@@ -201,7 +243,7 @@
       "category": "General",
       "title": "Iran denies Saudi accusation of involvement in Houthi attacks",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-denies-saudi-accusation-involvement-in-houthi-attacks-6467476",
+      "url": "https://www.channelnewsasia.com/world/iran-denies-houthi-attacks-saudi-arabia-6467476",
       "published": "2026-10-17 05:48"
     },
     {
@@ -238,48 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/avenue-capital-emerges-frontrunner-stake-in-serie-media-rights-venture-sources-say-6467386",
       "published": "2026-10-17 03:21"
-    },
-    {
-      "category": "General",
-      "title": "Trump's new press secretary out after less than week",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-zacharia-white-house-press-secretary-reconsider-job-6467331",
-      "published": "2026-10-17 02:25"
-    },
-    {
-      "category": "General",
-      "title": "Saudi-led coalition says intercepts missiles, drones over Riyadh, other areas",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/saudi-arabia-houthi-attacks-riyadh-missiles-6467001",
-      "published": "2026-10-17 02:14"
-    },
-    {
-      "category": "General",
-      "title": "CoreWeave's CEO sold nearly $1 billion of stock since IPO, filings show",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/coreweaves-ceo-sold-nearly-1-billion-stock-ipo-filings-show-6466916",
-      "published": "2026-10-17 00:48"
-    },
-    {
-      "category": "General",
-      "title": "Pant awaits fitness clearance as Bumrah returns for New Zealand tests",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pant-awaits-fitness-clearance-bumrah-returns-new-zealand-tests-6466901",
-      "published": "2026-10-17 00:36"
-    },
-    {
-      "category": "General",
-      "title": "Russian drones kill three in Ukraine, cut power to over a million",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/russia-ukraine-drone-attack-power-blackout-three-killed-6466786",
-      "published": "2026-10-17 00:12"
-    },
-    {
-      "category": "General",
-      "title": "Judge rejects CFTC, Gemini bid to vacate $5 million settlement",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/judge-rejects-cftc-gemini-bid-vacate-5-million-settlement-6466846",
-      "published": "2026-10-17 00:07"
     }
   ]
 }
