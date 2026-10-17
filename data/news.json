@@ -1,6 +1,20 @@
 {
-  "last_updated": "2026-10-17 18:41",
+  "last_updated": "2026-10-17 22:12",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "S'pore bodybuilder, 20, died after taking banned weight-loss drug, police found 34 types of medication in his home",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/bodybuilder-died-weight-loss-drug/",
+      "published": "2026-10-17 20:19"
+    },
+    {
+      "category": "Crime",
+      "title": "Woman arrested for drink driving after accident in Amoy Street; 2 people taken to hospital",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/woman-arrested-for-drink-driving-after-accident-in-amoy-street-2-people-taken-to-hospital",
+      "published": "2026-10-17 21:15"
+    },
     {
       "category": "Crime",
       "title": "Pedestrian found dead on PIE was hit by minibus in Jurong West; driver arrested",
@@ -45,6 +59,20 @@
     },
     {
       "category": "Traffic",
+      "title": "Cambodia govt official sees wife driving another man in car, gives chase & shoots at man, turns out to be his son",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/cambodia-official-cheating-wife-shoots-son/",
+      "published": "2026-10-17 19:33"
+    },
+    {
+      "category": "Traffic",
+      "title": "Buying masks or haze-related items on the secondary market? Be careful, says CASE",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/buying-masks-or-haze-related-items-on-the-secondary-market-be-careful-says-case",
+      "published": "2026-10-17 19:13"
+    },
+    {
+      "category": "Traffic",
       "title": "Singapore to accredit first five TCM providers under broader Chinese-Western medicine push",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/singapore-to-accredit-first-five-tcm-providers-under-broader-chinese-western-medicine-push",
@@ -79,18 +107,18 @@
       "published": "2026-10-16 10:00"
     },
     {
-      "category": "Traffic",
-      "title": "From Gran Turismo 7 to a smartphone with a second screen: How Xiaomi is linking cars, homes and devices",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/tech/gran-turismo-7-smartphone-xiaomi-human-car-home-ecosystem",
-      "published": "2026-10-16 04:00"
-    },
-    {
       "category": "Transport",
       "title": "SMRT staff help cyclist with head & face injury outside Labrador Park MRT, pay for his Grab ride home",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/smrt-staff-help-injured-cyclist-labrador-park/",
       "published": "2026-10-17 03:19"
+    },
+    {
+      "category": "Fire",
+      "title": "Neto double fires Chelsea past Everton but Martinez injury mars win",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/neto-double-fires-chelsea-past-everton-martinez-injury-mars-win-6468341",
+      "published": "2026-10-17 21:46"
     },
     {
       "category": "Fire",
@@ -101,24 +129,45 @@
     },
     {
       "category": "Fire",
-      "title": "2 S’pore-listed palm oil companies named in Greenpeace report on Indonesia plantation fires",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/two-singapore-listed-palm-oil-firms-greenpeace-report-indonesian-plantation-fires/",
-      "published": "2026-10-17 00:05"
-    },
-    {
-      "category": "Fire",
       "title": "S-E Asia experiencing one of the worst haze episodes due to fires in Indonesia: WMO director",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/se-asia-experiencing-one-of-the-worst-haze-episodes-due-to-fires-in-indonesia-wmo-director",
       "published": "2026-10-17 11:00"
     },
     {
-      "category": "Fire",
-      "title": "Singapore looking into which companies responsible for haze-causing fires: PM Wong",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/singapore-looking-into-which-companies-responsible-for-haze-causing-fires-pm-wong",
-      "published": "2026-10-15 22:58"
+      "category": "General",
+      "title": "She had to rebuild her life after losing her husband. Now this mother of 3 helps others find their footing",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/cna-insider/up-close/single-mother-children-charity-zarina-jaffar-6451711",
+      "published": "2026-10-17 21:30"
+    },
+    {
+      "category": "General",
+      "title": "Few use Singapore haze shelters, but visitors welcome respite from heat",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/singapore-haze-shelters-heat-visitors-community-centres-6468211",
+      "published": "2026-10-17 21:13"
+    },
+    {
+      "category": "General",
+      "title": "India's 'cockroach' movement founder released a day after detention",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-cockroach-movement-founder-released-abhijeet-dipke-6468291",
+      "published": "2026-10-17 20:52"
+    },
+    {
+      "category": "General",
+      "title": "South Africa still mulling over permutations for second test against Australia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/south-africa-still-mulling-over-permutations-second-test-against-australia-6468271",
+      "published": "2026-10-17 20:18"
+    },
+    {
+      "category": "General",
+      "title": "Consumers urged not to overbuy N95 masks; major retailers are 'actively replenishing' stocks: CASE",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/n95-masks-stock-shortage-haze-case-6468201",
+      "published": "2026-10-17 19:45"
     },
     {
       "category": "General",
@@ -136,9 +185,9 @@
     },
     {
       "category": "General",
-      "title": "Anthropic's Clark says AI's impact accelerating quickly and could vastly boost US GDP",
+      "title": "AI rapidly improving, could vastly boost US GDP, Anthropic's Clark tells policymakers",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/anthropics-clark-says-ais-impact-accelerating-quickly-and-could-vastly-boost-us-gdp-6468116",
+      "url": "https://www.channelnewsasia.com/business/ai-rapidly-improving-could-vastly-boost-us-gdp-anthropics-clark-tells-policymakers-6468116",
       "published": "2026-10-17 17:14"
     },
     {
@@ -213,45 +262,10 @@
     },
     {
       "category": "General",
-      "title": "TCM providers, practitioners can apply for accreditation from Oct 17; first 5 clinics granted status",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/tcm-accreditation-providers-practitioners-clinics-6466746",
-      "published": "2026-10-17 11:00"
-    },
-    {
-      "category": "General",
-      "title": "Singapore FA Cup final postponed due to haze as more outdoor events called off",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-haze-psi-fa-cup-final-postponed-events-6467816",
-      "published": "2026-10-17 10:59"
-    },
-    {
-      "category": "General",
-      "title": "North Korea says tested AI-assisted torpedo system",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/north-korea-ai-torpedo-system-6467791",
-      "published": "2026-10-17 10:11"
-    },
-    {
-      "category": "General",
-      "title": "Anthropic offers Blackstone double-digit yield in chip-financing deal, FT reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/anthropic-offers-blackstone-double-digit-yield-in-chip-financing-deal-ft-reports-6467711",
-      "published": "2026-10-17 09:02"
-    },
-    {
-      "category": "General",
-      "title": "New Mummy film gets official title and release date",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/mummy-book-dead-brendan-fraser-rachel-weisz-6467636",
-      "published": "2026-10-17 07:49"
-    },
-    {
-      "category": "General",
-      "title": "What if ADHD isn’t about attention at all? It might be more about motivation and staying engaged",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/wellness/adhd-attention-motivation-6439636",
-      "published": "2026-10-17 07:24"
+      "title": "S'pore company surprises migrant worker by flying his wife & children to S'pore, had not met in 4 years",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/company-surprise-migrant-family/",
+      "published": "2026-10-17 20:28"
     },
     {
       "category": "General",
@@ -266,20 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/korea-army-lizard-suspended/",
       "published": "2026-10-17 18:14"
-    },
-    {
-      "category": "General",
-      "title": "Trump cancels livestream of Fort Hood shooter’s execution, victims’ families still can watch in person",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/trump-cancels-livestream-fort-hood-shooters-execution/",
-      "published": "2026-10-17 03:08"
-    },
-    {
-      "category": "General",
-      "title": "'Protecting workers from haze is not optional': Jasmin Lau encourages employers to let staff WFH where possible",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/protecting-workers-from-haze-jasmin-lau/",
-      "published": "2026-10-17 02:34"
     }
   ]
 }
