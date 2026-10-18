@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18 17:36",
+  "last_updated": "2026-10-18 22:00",
   "headlines": [
     {
       "category": "Crime",
@@ -14,13 +14,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/minibus-driver-hit-and-run/",
       "published": "2026-10-17 21:00"
-    },
-    {
-      "category": "Crime",
-      "title": "S'pore bodybuilder, 20, died after taking banned weight-loss drug, police found 34 types of medication in his home",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/bodybuilder-died-weight-loss-drug/",
-      "published": "2026-10-17 20:19"
     },
     {
       "category": "Crime",
@@ -58,13 +51,6 @@
       "published": "2026-10-17 08:17"
     },
     {
-      "category": "Crime",
-      "title": "Pedestrian, 77, dies after being hit by minibus on PIE; driver arrested after fleeing scene",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/pedestrian-77-dies-after-being-hit-by-minibus-on-pie-driver-arrested-after-fleeing-scene",
-      "published": "2026-10-16 21:30"
-    },
-    {
       "category": "Traffic",
       "title": "Australia's Smith says head blow left him anxious in first test concussion scare",
       "source": "CNA",
@@ -73,24 +59,17 @@
     },
     {
       "category": "Traffic",
-      "title": "Saudi coalition says two pilots killed in chopper crash near Yemen",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/saudi-arabia-helicopter-crash-houthis-yemen-6469396",
-      "published": "2026-10-18 16:14"
-    },
-    {
-      "category": "Traffic",
-      "title": "I visited Salzburg's new Sound Of Music museum and cycled on a bike named Julie Andrews",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/travel/sound-music-museum-salzburg-austria-6441126",
-      "published": "2026-10-18 06:53"
-    },
-    {
-      "category": "Traffic",
-      "title": "Cambodia govt official sees wife driving another man in car, gives chase & shoots at man, turns out to be his son",
+      "title": "S'pore woman, 77, found dead on PIE, was hit in Jurong West over 2km away",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/cambodia-official-cheating-wife-shoots-son/",
-      "published": "2026-10-17 19:33"
+      "url": "https://mothership.sg/2026/10/woman-dead-pie-jurong-west/",
+      "published": "2026-10-18 03:23"
+    },
+    {
+      "category": "Traffic",
+      "title": "Car crashes into private home in Katong, knocking down part of wall",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/car-crashes-into-private-home-in-katong-knocking-down-part-of-wall",
+      "published": "2026-10-18 21:20"
     },
     {
       "category": "Traffic",
@@ -114,20 +93,6 @@
       "published": "2026-10-17 13:03"
     },
     {
-      "category": "Traffic",
-      "title": "30 construction firms expected to train with Boston Consulting to boost productivity: Chee Hong Tat",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/housing/30-construction-firms-expected-to-train-with-boston-consulting-to-boost-productivity-chee-hong-tat",
-      "published": "2026-10-16 20:00"
-    },
-    {
-      "category": "Traffic",
-      "title": "Wet, warm weather expected for rest of October; temperatures may exceed 35 deg C on a few days",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/singapore-set-for-wet-warm-weather-in-second-half-of-october",
-      "published": "2026-10-16 17:49"
-    },
-    {
       "category": "Transport",
       "title": "Haze disrupts daily routines, hits businesses in Singapore's west as PSI reaches very unhealthy level",
       "source": "CNA",
@@ -143,7 +108,7 @@
     },
     {
       "category": "Transport",
-      "title": "Haze in Singapore: Runners train in malls, families head for indoor playgrounds",
+      "title": "Haze in Singapore: Runners train in mall, families head for indoor playgrounds",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/haze-in-singapore-runners-train-in-malls-families-head-for-indoor-playgrounds",
       "published": "2026-10-18 13:45"
@@ -164,6 +129,20 @@
     },
     {
       "category": "Fire",
+      "title": "Personal mobility aid catches fire at Yishun HDB block, no injuries reported",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/personal-mobility-aid-catches-fire-at-yishun-hdb-block-no-injuries-reported",
+      "published": "2026-10-18 20:24"
+    },
+    {
+      "category": "Fire",
+      "title": "Malaysia’s Firefly cancels Seletar-Subang flights for 10th day due to haze",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/malaysias-firefly-cancels-seletar-subang-flights-for-10th-day-due-to-haze",
+      "published": "2026-10-18 19:58"
+    },
+    {
+      "category": "Fire",
       "title": "S-E Asia experiencing one of the worst haze episodes due to fires in Indonesia: WMO director",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/se-asia-experiencing-one-of-the-worst-haze-episodes-due-to-fires-in-indonesia-wmo-director",
@@ -171,10 +150,59 @@
     },
     {
       "category": "Money",
+      "title": "'Like we had a war': France counts cost of violent protests",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/france-paris-protest-violence-people-arrested-police-6469426",
+      "published": "2026-10-18 17:45"
+    },
+    {
+      "category": "Money",
       "title": "Malaysia’s Selangor investigating 7 petrol stations after contaminated RON95 complaints",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/malaysias-selangor-investigating-7-petrol-stations-after-contaminated-ron95-complaints-6469376",
       "published": "2026-10-18 15:23"
+    },
+    {
+      "category": "Housing",
+      "title": "HDB replies to YouTuber's complaints of 'tiny' Tengah BTO flat kitchen, says it's meant to be 'open-concept' & flexible",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/hdb-replies-to-youtubers-complaints-of-tiny-tengah-bto-flat-kitchen-says-its-meant-to-be-open-concept-flexible/",
+      "published": "2026-10-18 02:46"
+    },
+    {
+      "category": "General",
+      "title": "Samsung to use TSMC technology for Nvidia's next-generation memory chips, Seoul newspaper reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/samsung-use-tsmc-technology-nvidias-next-generation-memory-chips-seoul-newspaper-reports-6469576",
+      "published": "2026-10-18 20:08"
+    },
+    {
+      "category": "General",
+      "title": "Davidovich Fokina overcomes Jodar to claim Shanghai crown",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/davidovich-fokina-overcomes-jodar-claim-shanghai-crown-6469551",
+      "published": "2026-10-18 19:35"
+    },
+    {
+      "category": "General",
+      "title": "Pope Leo pledges gradual return to duties in first event since cancer surgery",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/pope-leo-gradually-resume-duties-vatican-cancer-surgery-6469501",
+      "published": "2026-10-18 19:20"
+    },
+    {
+      "category": "General",
+      "title": "Accenture looks to sell Chinese operations for up to $1.5 billion, FT reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/accenture-looks-sell-chinese-operations-up-15-billion-ft-reports-6469506",
+      "published": "2026-10-18 18:24"
+    },
+    {
+      "category": "General",
+      "title": "Microsoft pulls out of UK data center deal with Nscale, Telegraph reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/microsoft-pulls-out-uk-data-center-deal-nscale-telegraph-reports-6469486",
+      "published": "2026-10-18 18:01"
     },
     {
       "category": "General",
@@ -189,6 +217,20 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/out-control-truck-kills-13-hindu-festival-in-india-6469411",
       "published": "2026-10-18 16:43"
+    },
+    {
+      "category": "General",
+      "title": "Saudi landmark closes offices, chopper pilots killed near Yemen",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/saudi-arabia-helicopter-crash-houthis-yemen-6469396",
+      "published": "2026-10-18 16:14"
+    },
+    {
+      "category": "General",
+      "title": "Boland strikes twice as rain disrupts second test",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/boland-strikes-twice-rain-disrupts-second-test-6469401",
+      "published": "2026-10-18 16:06"
     },
     {
       "category": "General",
@@ -234,52 +276,10 @@
     },
     {
       "category": "General",
-      "title": "Johor schools, educational institutions to remain closed for 5 more days",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/johor-schools-educational-institutions-remain-closed-5-more-days-6469131",
-      "published": "2026-10-18 09:42"
-    },
-    {
-      "category": "General",
-      "title": "Singapore haze: Air quality remains very unhealthy in west, unhealthy in other regions",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/haze-oct-18-psi-west-remains-very-unhealthy-6468376",
-      "published": "2026-10-18 07:22"
-    },
-    {
-      "category": "General",
-      "title": "BigBang XX: Cosmos in Singapore – a triumphant return for the K-pop legends",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/bigbang-singapore-2026-concert-review-6468981",
-      "published": "2026-10-18 06:56"
-    },
-    {
-      "category": "General",
-      "title": "5 gastrointestinal symptoms you should never ignore, according to doctors",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/wellness/gastrointestinal-symptoms-gut-health-6436716",
-      "published": "2026-10-18 06:55"
-    },
-    {
-      "category": "General",
-      "title": "Rival ports 'fast catching up': SM Lee warns against complacency, says port workers must not face shift alone",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-port-workers-union-technology-lee-hsien-loong-6468356",
-      "published": "2026-10-18 06:48"
-    },
-    {
-      "category": "General",
-      "title": "Dubois defeats Wardley in short order to retain WBO heavyweight title",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/dubois-defeats-wardley-in-short-order-retain-wbo-heavyweight-title-6469061",
-      "published": "2026-10-18 06:08"
-    },
-    {
-      "category": "General",
-      "title": "Elderly Holland Village cobbler shows up for work despite haze, S'pore woman calls for support",
+      "title": "S'pore-listed palm oil producer faces inquiry by Indonesia govt, others deny involvement & cite El Niño",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/holland-village-cobbler/",
-      "published": "2026-10-17 23:19"
+      "url": "https://mothership.sg/2026/10/palm-oil-producer-indonesia/",
+      "published": "2026-10-18 02:00"
     }
   ]
 }
