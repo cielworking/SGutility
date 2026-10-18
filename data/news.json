@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-10-18 12:30",
+  "last_updated": "2026-10-18 17:36",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Company director, 67, bribes DSO staff over S$46 million project, gets jail",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/company-director-jailed-corruption-dso/",
+      "published": "2026-10-18 01:02"
+    },
     {
       "category": "Crime",
       "title": "Woman, 77, dies in PIE hit-and-run; minibus driver, 66, arrested",
@@ -14,6 +21,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/bodybuilder-died-weight-loss-drug/",
       "published": "2026-10-17 20:19"
+    },
+    {
+      "category": "Crime",
+      "title": "Beware of scammers impersonating investment personalities, financial gurus: Police",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/beware-of-scammers-impersonating-investment-personalities-financial-gurus-police",
+      "published": "2026-10-18 16:05"
     },
     {
       "category": "Crime",
@@ -52,6 +66,20 @@
     },
     {
       "category": "Traffic",
+      "title": "Australia's Smith says head blow left him anxious in first test concussion scare",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/australias-smith-says-head-blow-left-him-anxious-in-first-test-concussion-scare-6469461",
+      "published": "2026-10-18 17:27"
+    },
+    {
+      "category": "Traffic",
+      "title": "Saudi coalition says two pilots killed in chopper crash near Yemen",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/saudi-arabia-helicopter-crash-houthis-yemen-6469396",
+      "published": "2026-10-18 16:14"
+    },
+    {
+      "category": "Traffic",
       "title": "I visited Salzburg's new Sound Of Music museum and cycled on a bike named Julie Andrews",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/travel/sound-music-museum-salzburg-austria-6441126",
@@ -63,6 +91,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/cambodia-official-cheating-wife-shoots-son/",
       "published": "2026-10-17 19:33"
+    },
+    {
+      "category": "Traffic",
+      "title": "Car skids, crashes into wall at Tampines HDB block",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/car-skids-crashes-into-wall-at-tampines-hdb-block",
+      "published": "2026-10-18 16:45"
     },
     {
       "category": "Traffic",
@@ -94,10 +129,24 @@
     },
     {
       "category": "Transport",
-      "title": "SMRT staff help cyclist with head & face injury outside Labrador Park MRT, pay for his Grab ride home",
+      "title": "Haze disrupts daily routines, hits businesses in Singapore's west as PSI reaches very unhealthy level",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-western-region-daily-routines-psi-businesses-6469406",
+      "published": "2026-10-18 17:17"
+    },
+    {
+      "category": "Transport",
+      "title": "I just hope uncle will recover: Passengers, 18 & 40, who helped bus captain who collapsed at the wheel in Hougang, get appreciation awards",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/smrt-staff-help-injured-cyclist-labrador-park/",
-      "published": "2026-10-17 03:19"
+      "url": "https://mothership.sg/2026/10/passenger-helped-tower-transit-bus-captain-thanked/",
+      "published": "2026-10-17 23:47"
+    },
+    {
+      "category": "Transport",
+      "title": "Haze in Singapore: Runners train in malls, families head for indoor playgrounds",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/haze-in-singapore-runners-train-in-malls-families-head-for-indoor-playgrounds",
+      "published": "2026-10-18 13:45"
     },
     {
       "category": "Transport",
@@ -108,10 +157,59 @@
     },
     {
       "category": "Fire",
+      "title": "Dozens of orangutans saved from Indonesia blazes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/dozens-orangutans-saved-indonesia-blazes-6469306",
+      "published": "2026-10-18 13:07"
+    },
+    {
+      "category": "Fire",
       "title": "S-E Asia experiencing one of the worst haze episodes due to fires in Indonesia: WMO director",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/se-asia-experiencing-one-of-the-worst-haze-episodes-due-to-fires-in-indonesia-wmo-director",
       "published": "2026-10-17 11:00"
+    },
+    {
+      "category": "Money",
+      "title": "Malaysia’s Selangor investigating 7 petrol stations after contaminated RON95 complaints",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/malaysias-selangor-investigating-7-petrol-stations-after-contaminated-ron95-complaints-6469376",
+      "published": "2026-10-18 15:23"
+    },
+    {
+      "category": "General",
+      "title": "Japan to launch historic round-trip mission to Mars moon",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/japan-launch-historic-round-trip-mission-mars-moon-6469436",
+      "published": "2026-10-18 17:20"
+    },
+    {
+      "category": "General",
+      "title": "Out-of-control truck kills 13 at Hindu festival in India",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/out-control-truck-kills-13-hindu-festival-in-india-6469411",
+      "published": "2026-10-18 16:43"
+    },
+    {
+      "category": "General",
+      "title": "Vietnam signs free trade deal with four European nations",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/vietnam-signs-free-trade-deal-four-european-nations-6469346",
+      "published": "2026-10-18 14:18"
+    },
+    {
+      "category": "General",
+      "title": "Malaysia’s BN to announce candidates for Melaka polls on Oct 28: State chairman",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/malaysias-bn-announce-candidates-melaka-polls-oct-28-state-chairman-6469281",
+      "published": "2026-10-18 12:40"
+    },
+    {
+      "category": "General",
+      "title": "Figueroa withdraws from Kameda fight due to illness after losing WBA featherweight title",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/figueroa-withdraws-kameda-fight-due-illness-after-losing-wba-featherweight-title-6469291",
+      "published": "2026-10-18 12:35"
     },
     {
       "category": "General",
@@ -136,9 +234,9 @@
     },
     {
       "category": "General",
-      "title": "Johor schools, educational institutions to reman closed for 5 more days",
+      "title": "Johor schools, educational institutions to remain closed for 5 more days",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/johor-schools-educational-institutions-reman-closed-5-more-days-6469131",
+      "url": "https://www.channelnewsasia.com/asia/johor-schools-educational-institutions-remain-closed-5-more-days-6469131",
       "published": "2026-10-18 09:42"
     },
     {
@@ -178,108 +276,10 @@
     },
     {
       "category": "General",
-      "title": "Commentary: Fossil fuels are winning the battle for easy money",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/fossil-fuels-easy-money-international-islamic-trade-finance-corp-6465576",
-      "published": "2026-10-18 06:00"
-    },
-    {
-      "category": "General",
-      "title": "These marathon runners will give up their personal best to save a life",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/medic-runner-singapore-international-marathon-6388846",
-      "published": "2026-10-18 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Israeli settlers attack European diplomats, beat French mayor",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israeli-settlers-attack-european-diplomats-beat-french-mayor-6469036",
-      "published": "2026-10-18 05:37"
-    },
-    {
-      "category": "General",
-      "title": "From weekend markets to a matcha network: How Kevin Chee built Matchaya",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/people/matchaya-kevin-chee-singapore-matcha-6457691",
-      "published": "2026-10-18 05:34"
-    },
-    {
-      "category": "General",
-      "title": "Inter earn 3-1 comeback win at Bologna, Roma beat Genoa 2-0",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/inter-earn-3-1-comeback-win-bologna-roma-beat-genoa-2-0-6469041",
-      "published": "2026-10-18 05:25"
-    },
-    {
-      "category": "General",
-      "title": "Horse racing-Loughnane becomes Britain's youngest champion jockey since 1923",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/horse-racing-loughnane-becomes-britains-youngest-champion-jockey-1923-6469046",
-      "published": "2026-10-18 05:24"
-    },
-    {
-      "category": "General",
-      "title": "Dembele atones for penalty miss in PSG win at Strasbourg",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/dembele-atones-penalty-miss-in-psg-win-strasbourg-6469026",
-      "published": "2026-10-18 05:06"
-    },
-    {
-      "category": "General",
-      "title": "Kenya confirms four new Ebola cases, bringing total number to seven",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/kenya-confirms-four-new-ebola-cases-bringing-total-number-seven-6468456",
-      "published": "2026-10-18 04:52"
-    },
-    {
-      "category": "General",
-      "title": "Smiling pope returns to Vatican after cancer surgery",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/smiling-pope-returns-vatican-after-cancer-surgery-6468996",
-      "published": "2026-10-18 04:23"
-    },
-    {
-      "category": "General",
-      "title": "19 dead, 25 hurt in stampede at India religious gathering",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/19-dead-25-hurt-in-stampede-india-religious-gathering-6468991",
-      "published": "2026-10-18 03:59"
-    },
-    {
-      "category": "General",
-      "title": "3 of 7 companies served with haze enforcement notice had received similar notices in 2015",
+      "title": "Elderly Holland Village cobbler shows up for work despite haze, S'pore woman calls for support",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/companies-haze-enforcement/",
-      "published": "2026-10-17 20:55"
-    },
-    {
-      "category": "General",
-      "title": "S'pore company surprises migrant worker by flying his wife & children to S'pore, had not met in 4 years",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/company-surprise-migrant-family/",
-      "published": "2026-10-17 20:28"
-    },
-    {
-      "category": "General",
-      "title": "S'porean man, 32, seen parkouring over rooftops at RWS hotel, clarifies he was doing it legally",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/sporean-parkour-rws/",
-      "published": "2026-10-17 18:32"
-    },
-    {
-      "category": "General",
-      "title": "Korean army officer leaves post 64 times in 10 months to 'feed his lizard', gets suspended",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/korea-army-lizard-suspended/",
-      "published": "2026-10-17 18:14"
-    },
-    {
-      "category": "General",
-      "title": "Trump cancels livestream of Fort Hood shooter’s execution, victims’ families still can watch in person",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/trump-cancels-livestream-fort-hood-shooters-execution/",
-      "published": "2026-10-17 03:08"
+      "url": "https://mothership.sg/2026/10/holland-village-cobbler/",
+      "published": "2026-10-17 23:19"
     }
   ]
 }
