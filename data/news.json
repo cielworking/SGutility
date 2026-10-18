@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-10-18 08:04",
+  "last_updated": "2026-10-18 12:30",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Woman, 77, dies in PIE hit-and-run; minibus driver, 66, arrested",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/minibus-driver-hit-and-run/",
+      "published": "2026-10-17 21:00"
+    },
     {
       "category": "Crime",
       "title": "S'pore bodybuilder, 20, died after taking banned weight-loss drug, police found 34 types of medication in his home",
@@ -42,13 +49,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/pedestrian-77-dies-after-being-hit-by-minibus-on-pie-driver-arrested-after-fleeing-scene",
       "published": "2026-10-16 21:30"
-    },
-    {
-      "category": "Crime",
-      "title": "Company director jailed for role in corruption case involving DSO National Laboratories",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/company-director-jailed-for-role-in-corruption-case-involving-dso-national-laboratories",
-      "published": "2026-10-16 14:22"
     },
     {
       "category": "Traffic",
@@ -93,20 +93,6 @@
       "published": "2026-10-16 17:49"
     },
     {
-      "category": "Traffic",
-      "title": "Beyond trial and error: Tailoring drug therapies to patients’ DNA",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/beyond-trial-and-error-tailoring-drug-therapies-to-patients-dna",
-      "published": "2026-10-16 14:35"
-    },
-    {
-      "category": "Traffic",
-      "title": "Cross Island Line: Traffic to be diverted in Ang Mo Kio Ave 3 amid suspension of tunnelling works",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/cross-island-line-traffic-to-be-diverted-in-ang-mo-kio-ave-3-amid-suspension-of-tunnelling-works",
-      "published": "2026-10-16 10:00"
-    },
-    {
       "category": "Transport",
       "title": "SMRT staff help cyclist with head & face injury outside Labrador Park MRT, pay for his Grab ride home",
       "source": "Mothership",
@@ -114,11 +100,11 @@
       "published": "2026-10-17 03:19"
     },
     {
-      "category": "Fire",
-      "title": "S'pore reveals names of 7 companies involved in haze-causing fires",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/grace-fu-preventive-measures-notice-7-indonesian-companies-haze/",
-      "published": "2026-10-17 01:43"
+      "category": "Transport",
+      "title": "F&B businesses struggle as haze conditions worsen",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/fb-businesses-struggle-as-haze-conditions-worsen",
+      "published": "2026-10-18 12:00"
     },
     {
       "category": "Fire",
@@ -128,17 +114,38 @@
       "published": "2026-10-17 11:00"
     },
     {
-      "category": "Money",
-      "title": "City's flying start comes at a cost, with Haaland limping off",
+      "category": "General",
+      "title": "Western brands under pressure as 'pre-owned' luxury booms in China",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/citys-flying-start-comes-cost-haaland-limping-6468576",
-      "published": "2026-10-18 01:55"
+      "url": "https://www.channelnewsasia.com/east-asia/western-brands-under-pressure-pre-owned-luxury-booms-in-china-6469201",
+      "published": "2026-10-18 11:40"
+    },
+    {
+      "category": "General",
+      "title": "Walsh surprised by 50m freestyle short course world record",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/walsh-surprised-50m-freestyle-short-course-world-record-6469206",
+      "published": "2026-10-18 11:30"
+    },
+    {
+      "category": "General",
+      "title": "Indonesia drops 2.4 tonnes of dry ice over South Sumatra to tackle haze",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/indonesia-drops-24-tonnes-dry-ice-over-south-sumatra-tackle-haze-6469171",
+      "published": "2026-10-18 10:55"
+    },
+    {
+      "category": "General",
+      "title": "Johor schools, educational institutions to reman closed for 5 more days",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/johor-schools-educational-institutions-reman-closed-5-more-days-6469131",
+      "published": "2026-10-18 09:42"
     },
     {
       "category": "General",
       "title": "Singapore haze: Air quality remains very unhealthy in west, unhealthy in other regions",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-haze-air-quality-remains-very-unhealthy-in-west-unhealthy-in-other-regions-6468376",
+      "url": "https://www.channelnewsasia.com/singapore/haze-oct-18-psi-west-remains-very-unhealthy-6468376",
       "published": "2026-10-18 07:22"
     },
     {
@@ -234,31 +241,17 @@
     },
     {
       "category": "General",
-      "title": "Festival crush in Indian city of Kolkata kills at least 17, local media say",
+      "title": "19 dead, 25 hurt in stampede at India religious gathering",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/festival-crush-in-indian-city-kolkata-kills-least-17-local-media-say-6468991",
+      "url": "https://www.channelnewsasia.com/asia/19-dead-25-hurt-in-stampede-india-religious-gathering-6468991",
       "published": "2026-10-18 03:59"
     },
     {
       "category": "General",
-      "title": "Zelenskyy criticises Trump's waiver of sanctions on Russia as 'wrong'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/zelenskyy-criticises-trumps-waiver-sanctions-russia-wrong-6468946",
-      "published": "2026-10-18 03:30"
-    },
-    {
-      "category": "General",
-      "title": "Barcelona keep perfect LaLiga record with five-goal romp at Betis",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/barcelona-keep-perfect-laliga-record-five-goal-romp-betis-6468951",
-      "published": "2026-10-18 02:50"
-    },
-    {
-      "category": "General",
-      "title": "Mass protests in France spiral into worst riots in years",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/mass-protests-in-france-spiral-worst-riots-in-years-6468581",
-      "published": "2026-10-18 02:03"
+      "title": "3 of 7 companies served with haze enforcement notice had received similar notices in 2015",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/companies-haze-enforcement/",
+      "published": "2026-10-17 20:55"
     },
     {
       "category": "General",
@@ -280,6 +273,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/korea-army-lizard-suspended/",
       "published": "2026-10-17 18:14"
+    },
+    {
+      "category": "General",
+      "title": "Trump cancels livestream of Fort Hood shooter’s execution, victims’ families still can watch in person",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/trump-cancels-livestream-fort-hood-shooters-execution/",
+      "published": "2026-10-17 03:08"
     }
   ]
 }
