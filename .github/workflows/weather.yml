@@ -9,6 +9,7 @@ on:
       - scripts/update-weather.py
       - scripts/render-weather-pages.py
       - scripts/weather_layout.py
+      - scripts/air_quality_layout.py
       - .github/workflows/weather.yml
 permissions:
   contents: write
@@ -29,6 +30,7 @@ jobs:
           python-version: "3.11"
       - run: pip install requests
       - run: python -m unittest discover -s tests -v
+      - run: node tests/test-air-quality.cjs
       - run: python scripts/update-weather.py
       - run: python scripts/render-weather-pages.py
       - run: python scripts/render-static-pages.py

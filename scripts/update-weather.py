@@ -54,8 +54,20 @@ def singapore_outlook():
     return rows[0]
 
 
+def singapore_air_history(endpoint):
+    rows = []
+    today = datetime.now(SGT).date()
+    for day in [today - timedelta(days=1), today]:
+        payload = get(BASE_SG + endpoint, date=day.isoformat())
+        if payload.get("code") != 0 or not payload.get("data", {}).get("items"):
+            raise ValueError("Missing air-quality history")
+        rows.extend(payload["data"]["items"])
+    unique = {r["timestamp"]: r for r in rows if r.get("timestamp") and r.get("readings")}
+    return sorted(unique.values(), key=lambda r: r["timestamp"])[-24:]
+
+
 def malaysia_haze():
-    payload = get(APIMS, f="json", outFields="STATION_ID,DATETIME,API,CLASS,STATION_LOCATION,STATE_NAME,PARAM_SELECTED", returnGeometry="false", where="1=1")
+    payload = get(APIMS, f="json", outFields="STATION_ID,DATETIME,API,CLASS,STATION_LOCATION,STATE_NAME,PARAM_SELECTED,LATITUDE,LONGITUDE", returnGeometry="false", where="1=1")
     if not payload.get("features") or payload.get("exceededTransferLimit"):
         raise ValueError("Missing or truncated APIMS readings")
     result = []
@@ -66,7 +78,7 @@ def malaysia_haze():
         stamp = a.get("DATETIME")
         reported = datetime.fromtimestamp(stamp / 1000, timezone.utc).replace(tzinfo=SGT).isoformat() if stamp else None
         # Whitelist public display fields; never persist the upstream full attributes.
-        result.append({"id": a["STATION_ID"], "location": a["STATION_LOCATION"], "state": a["STATE_NAME"], "api": a.get("API"), "category": a.get("CLASS"), "dominant": a.get("PARAM_SELECTED"), "reported_at": reported})
+        result.append({"id": a["STATION_ID"], "location": a["STATION_LOCATION"], "state": a["STATE_NAME"], "api": a.get("API"), "category": a.get("CLASS"), "dominant": a.get("PARAM_SELECTED"), "reported_at": reported, "latitude": a.get("LATITUDE"), "longitude": a.get("LONGITUDE")})
     return sorted(result, key=lambda x: (x["state"], x["location"]))
 
 
@@ -78,6 +90,8 @@ def main():
         "sg_rain": lambda: sg("two-hr-forecast"),
         "sg_psi": lambda: sg("psi"),
         "sg_pm25": lambda: sg("pm25"),
+        "sg_psi_history": lambda: singapore_air_history("psi"),
+        "sg_pm25_history": lambda: singapore_air_history("pm25"),
         "my_rain": malaysia_rain,
         "my_warnings": lambda: get("https://api.data.gov.my/weather/warning", limit=1000),
         "my_haze": malaysia_haze,
@@ -94,6 +108,17 @@ def main():
         except (requests.RequestException, ValueError, KeyError, TypeError) as error:
             cache[key] = {**previous, "attempted_at": now, "ok": False}
             print(f"Warning: {key} unavailable ({type(error).__name__}); retaining last successful data")
+    haze = cache.get("my_haze", {})
+    history = cache.get("my_haze_history", {}).get("data", {})
+    cutoff = (datetime.now(SGT) - timedelta(hours=48)).isoformat()
+    for row in haze.get("data", []):
+        value, stamp = row.get("api"), row.get("reported_at")
+        if not stamp or not isinstance(value, (int, float)) or value < 0:
+            continue
+        readings = {r["timestamp"]: r for r in history.get(row["id"], []) if r["timestamp"] >= cutoff}
+        readings[stamp] = {"timestamp": stamp, "value": value}
+        history[row["id"]] = sorted(readings.values(), key=lambda r: r["timestamp"])[-49:]
+    cache["my_haze_history"] = {"ok": haze.get("ok", False), "fetched_at": haze.get("fetched_at"), "data": history}
     path.write_text(json.dumps(cache, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
 
 

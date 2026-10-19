@@ -19,9 +19,25 @@ def module(name, filename):
 update = module("update_weather", "update-weather.py")
 render = module("render_weather", "render-weather-pages.py")
 layout = module("weather_layout", "weather_layout.py")
+air_layout = module("air_quality_layout", "air_quality_layout.py")
 
 
 class WeatherTests(unittest.TestCase):
+    def test_air_snapshot_escapes_script_content_and_preserves_zero(self):
+        cache = {"sg_psi": {"data": {"readings": {"psi_twenty_four_hourly": {"north": 0}}}}, "my_haze": {"data": [{"location": "</script><script>alert(1)</script>"}]}}
+        content = air_layout.render_air_quality(cache)
+        self.assertIn('id="air-number">0</strong>', content)
+        self.assertNotIn('</script><script>alert(1)', content)
+        self.assertIn('\\u003c/script>', content)
+
+    def test_air_history_sorts_and_deduplicates_official_report_times(self):
+        first = {"timestamp": "2026-10-18T23:00:00+08:00", "readings": {"psi_twenty_four_hourly": {"north": 100}}}
+        second = {"timestamp": "2026-10-19T00:00:00+08:00", "readings": {"psi_twenty_four_hourly": {"north": 101}}}
+        with patch.object(update, 'get', side_effect=[{"code": 0,"data": {"items": [first]}}, {"code": 0,"data": {"items": [second, first]}}]):
+            rows=update.singapore_air_history('psi')
+        self.assertEqual(len(rows),2)
+        self.assertEqual(rows[0]['timestamp'],first['timestamp'])
+
     def test_regional_outlook_uses_official_regions_and_drops_expired_periods(self):
         now = layout.datetime.now(layout.TZ)
         old = {"timePeriod": {"start": (now-timedelta(hours=2)).isoformat(), "end": (now-timedelta(hours=1)).isoformat()}, "regions": {"north": {"text": "Old rain"}}}

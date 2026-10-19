@@ -2316,6 +2316,63 @@ svg {
 }
 /* Brand assets, fluid layouts, and official weather pages */
 /* Radar and combined weather */
+/* Homepage air-quality dashboard */
+.air-country-tabs, #air-metric-controls { display:flex; gap:6px; flex-wrap:wrap; }
+.air-country-tabs button, #air-metric-controls button, .air-region-list button { min-height:42px; padding:9px 14px; border:1px solid #cbd8e8; border-radius:8px; background:#fff; color:#34445a; font-weight:700; cursor:pointer; }
+.air-country-tabs [aria-selected="true"] { background:#133b70; color:white; border-color:#133b70; }
+#air-metric-controls [aria-pressed="true"] { background:#edf4ff; border-color:#155eef; color:#174ea6; }
+.air-options { margin:18px 0 12px; }
+#air-malaysia-controls { display:flex; flex-wrap:wrap; gap:12px; }
+#air-malaysia-controls label { display:grid; gap:5px; font-size:12px; font-weight:700; min-width:160px; max-width:100%; }
+#air-malaysia-controls select { max-width:100%; min-width:0; padding:9px; min-height:44px; border:1px solid #bdcde0; border-radius:8px; background:white; font-size:16px; }
+.air-visual-grid { display:grid; grid-template-columns:minmax(155px,.65fr) minmax(260px,1.3fr) minmax(290px,1.5fr); gap:24px; align-items:start; margin:22px 0; }
+.air-headline { display:flex; flex-direction:column; align-items:center; text-align:center; gap:9px; padding-top:10px; min-width:0; }
+#air-metric-label { font-size:12px; font-weight:700; color:#52617a; }
+.air-gauge { width:156px; height:156px; display:flex; flex-direction:column; justify-content:center; border-radius:50%; background:#f5bc00; margin:8px 0 4px; color:#172033; }
+.air-gauge strong { font-size:52px; font-weight:800; letter-spacing:-.05em; line-height:1.15; }
+.air-gauge small { font-size:13px; font-weight:650; }
+#air-category-label { font-size:18px; }
+#air-location-label { font-size:14px; font-weight:650; overflow-wrap:anywhere; }
+#air-reading-context { font-size:11px; color:#667085; margin:0; }
+#air-map { width:100%; height:310px; border-radius:12px; background:#edf0f4; z-index:0; border:1px solid #dde4ee; }
+.air-map-column, .air-trend-column { min-width:0; }
+#air-map .leaflet-tile-pane { filter:grayscale(1) contrast(.75) brightness(1.07); }
+.air-map-marker { display:flex; flex-direction:column; align-items:center; justify-content:center; width:64px; height:64px; border-radius:50%; border:2px solid white; box-shadow:0 2px 8px #142c4940; text-align:center; line-height:1.15; padding:4px; }
+.air-map-marker strong { font-size:16px; }
+.air-map-marker small { font-size:8px; font-weight:750; max-width:100%; overflow-wrap:anywhere; }
+.air-map-marker.is-selected { border:3px solid #172033; box-shadow:0 0 0 3px #ffffffc9; }
+.air-marker-wrap:focus-visible { outline:3px solid #155eef; border-radius:50%; }
+.air-region-list { display:flex; flex-wrap:wrap; gap:5px; margin-top:10px; }
+.air-region-list button { padding:6px 8px; font-size:11px; min-height:36px; }
+.air-region-list strong { margin-left:4px; }
+.air-region-list [aria-pressed="true"] { background:#edf4ff; outline:2px solid #153c70; outline-offset:-2px; }
+.air-trend-column h3 { margin:0 0 8px; font-size:15px; }
+.air-trend svg { display:block; width:100%; height:auto; min-height:170px; }
+.air-trend svg text { font-family:inherit; font-size:12px; fill:#667085; }
+.air-trend svg rect:hover, .air-trend svg rect:focus { stroke:#172033; stroke-width:2; }
+.air-empty-chart { min-height:175px; display:grid; place-items:center; background:#f7f9fc; border-radius:10px; padding:20px; color:#667085; font-size:13px; }
+.air-history-table summary { font-size:12px; color:#174ea6; cursor:pointer; min-height:30px; }
+.air-history-table table { width:100%; border-collapse:collapse; font-size:12px; }
+.air-history-table th, .air-history-table td { padding:7px 5px; border-bottom:1px solid #e0e7f0; text-align:left; }
+.air-legend { display:flex; flex-wrap:wrap; gap:10px 18px; padding:15px 0; border-top:1px solid #e0e7f0; }
+.air-legend > span { display:flex; align-items:center; gap:6px; font-size:11px; color:#52617a; }
+.air-legend i { width:15px; height:15px; border-radius:3px; flex:0 0 auto; }
+.air-legend strong { color:#34445a; }
+.air-detail-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:15px; }
+#air-source-stamp.is-stale { padding:8px 10px; border-left:3px solid #ad7200; background:#fff3d8; color:#775200; }
+@media(max-width:1100px) {
+  .air-visual-grid { grid-template-columns:minmax(150px,.65fr) minmax(0,1.5fr); }
+  .air-trend-column { grid-column:1/-1; }
+  .air-trend svg { max-height:260px; }
+}
+@media(max-width:700px) {
+  .air-visual-grid { grid-template-columns:minmax(0,1fr); gap:22px; }
+  .air-trend-column { grid-column:auto; }
+  #air-malaysia-controls label { width:100%; }
+  #air-map { height:310px; }
+  .air-dashboard .weather-toolbar { gap:12px; }
+  .air-trend svg { min-height:145px; }
+}
 .combined-weather { min-width: 0; }
 .weather-toolbar, .radar-heading { display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
 .weather-toolbar h2, .weather-toolbar h3, .radar-heading h3 { margin:0; }

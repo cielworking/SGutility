@@ -144,6 +144,7 @@ def render_content(country, kind, cache):
 def main():
     cache = json.loads((ROOT / "data/weather.json").read_text(encoding="utf-8"))
     combined = runpy.run_path(str(ROOT / "scripts/weather_layout.py"))["render_combined"](cache)
+    air_panel = runpy.run_path(str(ROOT / "scripts/air_quality_layout.py"))["render_air_quality"](cache)
     cards = []
     for country, kind, title, desc, key in PAGES:
         path = f"/{country}/{kind}/"
@@ -161,7 +162,7 @@ def main():
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(title)} | SG Alerts</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="https://sgalerts.com{path}">
 <meta property="og:title" content="{esc(title)} | SG Alerts"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="https://sgalerts.com{path}"><meta property="og:type" content="website"><meta property="og:image" content="https://sgalerts.com/android-chrome-512x512.png">
-<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="stylesheet" href="/style.css?v=14">
+<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="stylesheet" href="/style.css?v=15">
 <script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=2" defer></script></head>
 <body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark"><img src="/android-chrome-192x192.png" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a><nav class="primary-nav" aria-label="Dashboard sections"><a href="/">Dashboard</a><a href="/#checkpoints">Checkpoints</a><a href="/#rain">Rain Forecast</a><a href="/#haze">Haze</a></nav></div></header>
 <main id="main-content" class="content-page weather-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">SG Alerts</a> / {esc(title)}</nav><section class="page-hero"><div><p class="eyebrow">{country.title()} · Official data</p><h1>{esc(title)}</h1><p>{esc(desc)}</p></div></section>
@@ -209,6 +210,8 @@ def main():
     text = home.read_text(encoding="utf-8")
     for kind, marker in [("rain-forecast", "RAIN"), ("haze", "HAZE")]:
         rendered = combined + '<p><a class="detail-link" href="/weather/">Open full rain radar &amp; forecast →</a></p>' if kind == "rain-forecast" else '<div data-air-content><div class="weather-summary-grid">' + ''.join(card for k, card in cards if k == kind) + '</div></div><button class="button button-secondary" type="button" data-refresh-air>Refresh saved readings</button><p data-air-feedback class="refresh-feedback" role="status">Saved readings checked every 15 minutes.</p>'
+        if kind == "haze":
+            rendered = air_panel
         pattern = rf'<!-- STATIC:{marker}:START -->.*?<!-- STATIC:{marker}:END -->'
         text, count = re.subn(pattern, lambda _: f'<!-- STATIC:{marker}:START -->\n{rendered}\n<!-- STATIC:{marker}:END -->', text, flags=re.S)
         if count != 1:

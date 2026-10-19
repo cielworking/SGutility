@@ -2,6 +2,24 @@
 
 ## Weather and air quality
 
+The homepage Haze & Air Quality panel now has Singapore / Malaysia tabs, a selected
+reading gauge, clickable reporting-region or station markers, separate PSI and
+one-hour PM2.5 bands, source timestamps and accessible hourly trend values. The map
+uses the five NEA reporting-region label positions or public APIMS station coordinates.
+Malaysia defaults to Johor's Larkin station; it never presents one station as a
+national reading. SG official history is fetched for today and yesterday and displayed
+as 24 hourly reports with gaps preserved. Malaysia history is recorded from the first
+successful deployment onward, deduplicated by station/report time and retained for
+48 hours; the chart states how many readings exist while history builds.
+Manual refresh checks official feeds where browser access is available, retaining
+saved readings if a source fails. Automatic visible-panel checks run every five
+minutes, alongside the existing 15-minute saved-data workflow. Current complete SG
+history is reused until a newer reporting hour appears, reducing unnecessary requests.
+
+Air-panel validation: `node tests/test-air-quality.cjs` checks metric boundaries,
+missing readings, region isolation and gaps; Python tests also check snapshot escaping
+and official history ordering.
+
 The primary weather experience is now `/weather/` and the combined weather section
 on the homepage. Country rain URLs retain working entry points and canonicalise
 to `/weather/`. NEA radar playback offers the latest 13 available frames, a draggable
