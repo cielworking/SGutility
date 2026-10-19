@@ -1,33 +1,19 @@
 {
-  "last_updated": "2026-10-20T03:19:47.976302+08:00",
+  "last_updated": "2026-10-20T07:39:32.544257+08:00",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Brentford working with police after rugby ball launched towards stadium",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/brentford-working-police-after-rugby-ball-launched-towards-stadium-6473271",
-      "published": "2026-10-20 02:23"
-    },
-    {
-      "category": "Crime",
-      "title": "US Supreme Court denies bid by 9/11 mastermind to revive plea deal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/sep-11-attack-khalid-mohammed-court-reject-plea-6472846",
-      "published": "2026-10-20 00:53"
-    },
-    {
-      "category": "Crime",
-      "title": "Retailer Ahold Delhaize reports cybersecurity incident to Dutch police",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/retailer-ahold-delhaize-reports-cybersecurity-incident-dutch-police-6472706",
-      "published": "2026-10-19 23:33"
-    },
     {
       "category": "Crime",
       "title": "Man, 38, arrested for allegedly stealing money box with S$2,000 from wedding reception at Beach Road hotel",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/alleged-theft-wedding-money-box/",
       "published": "2026-10-19 18:50"
+    },
+    {
+      "category": "Crime",
+      "title": "Man arrested for allegedly using electronic device to illegally obtain bank card information",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-arrested-for-allegedly-using-electronic-device-to-illegally-obtain-bank-card-information",
+      "published": "2026-10-20 06:35"
     },
     {
       "category": "Crime",
@@ -94,6 +80,13 @@
     },
     {
       "category": "Transport",
+      "title": "How vocational training fits into Malaysia’s high-skilled ambitions — and the challenges ahead",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/malaysia-vocational-training-tvet-first-choice-economy-technical-6410396",
+      "published": "2026-10-20 06:00"
+    },
+    {
+      "category": "Transport",
       "title": "Haze in Singapore: Runners train in mall, families head for indoor playgrounds",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/haze-in-singapore-runners-train-in-malls-families-head-for-indoor-playgrounds",
@@ -105,6 +98,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/fb-businesses-struggle-as-haze-conditions-worsen",
       "published": "2026-10-18 12:00"
+    },
+    {
+      "category": "Fire",
+      "title": "Commentary: Liberty, equality, misery? Why France is burning",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/france-paris-safe-macron-why-protests-6471386",
+      "published": "2026-10-20 05:58"
     },
     {
       "category": "Fire",
@@ -136,122 +136,129 @@
     },
     {
       "category": "General",
-      "title": "Japan to launch world-first mission to moon of Mars",
+      "title": "Makeup for grey hair: 6 expert tips to brighten your complexion and look your best",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/style-beauty/best-makeup-tips-grey-hair-6435306",
+      "published": "2026-10-20 07:23"
+    },
+    {
+      "category": "General",
+      "title": "Exclusive-OpenAI seeks to accelerate fundraising ahead of Anthropic IPO, sources say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/exclusive-openai-seeks-accelerate-fundraising-ahead-anthropic-ipo-sources-say-6473766",
+      "published": "2026-10-20 07:22"
+    },
+    {
+      "category": "General",
+      "title": "PM2.5 elevated in three regions across Singapore; PSI unhealthy in two",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-psi-pm25-oct-20-6473696",
+      "published": "2026-10-20 07:22"
+    },
+    {
+      "category": "General",
+      "title": "3M expands Amazon data center partnership, shares gain",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/3m-expands-amazon-data-center-partnership-shares-gain-6473656",
+      "published": "2026-10-20 06:22"
+    },
+    {
+      "category": "General",
+      "title": "Former Google CEO Schmidt owns 1% stake in Anthropic, Bloomberg reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/former-google-ceo-schmidt-owns-1-stake-in-anthropic-bloomberg-reports-6473661",
+      "published": "2026-10-20 06:21"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: ASEAN’s quiet work before the next deadly disaster",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/exercise-disaster-response-asean-singapore-earthquake-tsunami-6471441",
+      "published": "2026-10-20 06:00"
+    },
+    {
+      "category": "General",
+      "title": "‘Customers won’t be happy’: Why cutting salt is a tough sell for Singapore’s hawkers",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/hawkers-food-public-health-salt-sodium-customers-6461566",
+      "published": "2026-10-20 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Think you can spot a fake? 5 ways online deception works in the age of AI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/interactive/ai-fake-videos-scam-quiz/%2E",
+      "published": "2026-10-20 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Across the Yalu, China pours concrete over North Korean sanctions",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/china-north-korea-yalu-bridge-russia-us-6471561",
+      "published": "2026-10-20 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Watchmaking terms explained: From chronographs to grand feu enamel",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/obsessions/watchmaking-terms-explained-6418561",
+      "published": "2026-10-20 05:55"
+    },
+    {
+      "category": "General",
+      "title": "Tottenham's agonising wait for a Premier League win ends with Coventry victory",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/tottenhams-agonising-wait-premier-league-win-ends-coventry-victory-6473626",
+      "published": "2026-10-20 05:49"
+    },
+    {
+      "category": "General",
+      "title": "UN agency slashes Gaza food 'lifeline' over funding shortfall",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/gaza-food-shortage-un-funding-cut-monthly-aid-6473591",
+      "published": "2026-10-20 05:48"
+    },
+    {
+      "category": "General",
+      "title": "Japan launches mission to return samples from Mars moon",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/japan-launches-mission-return-samples-mars-moon-6473511",
+      "published": "2026-10-20 04:39"
+    },
+    {
+      "category": "General",
+      "title": "Saudi flagship investment conference pushed to 2027 after Houthi attacks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/saudi-flagship-investment-conference-pushed-2027-after-houthi-attacks-6473421",
+      "published": "2026-10-20 04:35"
+    },
+    {
+      "category": "General",
+      "title": "FIFA suspends coach Hassan and forward Zico for three and five matches",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/fifa-suspends-coach-hassan-and-forward-zico-three-and-five-matches-6473456",
+      "published": "2026-10-20 04:12"
+    },
+    {
+      "category": "General",
+      "title": "Germany's Merz urges AI investment ahead of Nvidia deal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/germanys-merz-urges-ai-investment-ahead-nvidia-deal-6473446",
+      "published": "2026-10-20 04:07"
+    },
+    {
+      "category": "General",
+      "title": "Nvidia-backed Nscale, Anthropic in talks for new $45 billion AI cloud deal, source says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nvidia-backed-nscale-anthropic-in-talks-new-45-billion-ai-cloud-deal-source-says-6473376",
+      "published": "2026-10-20 03:37"
+    },
+    {
+      "category": "General",
+      "title": "Japan successfully launches probe in historic Mars moon mission",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/japan-mars-moon-mission-phobos-launch-rocket-space-6472976",
       "published": "2026-10-20 02:57"
-    },
-    {
-      "category": "General",
-      "title": "Famous Siberian cave yields remains of yak-like Ice Age mammal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/famous-siberian-cave-yields-remains-yak-ice-age-mammal-6473316",
-      "published": "2026-10-20 02:52"
-    },
-    {
-      "category": "General",
-      "title": "India’s Jio lures marquee investors to IPO anchor book, bids top $25 billion",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/indias-jio-lures-marquee-investors-ipo-anchor-book-bids-top-25-billion-6471756",
-      "published": "2026-10-20 02:15"
-    },
-    {
-      "category": "General",
-      "title": "Apple to host 'Pro and tell' event on October 28 in LA",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apple-host-pro-and-tell-event-october-28-in-la-6473261",
-      "published": "2026-10-20 02:07"
-    },
-    {
-      "category": "General",
-      "title": "Netflix film division boss to exit in second senior departure in a week",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/netflix-film-division-boss-exit-in-second-senior-departure-in-week-6473196",
-      "published": "2026-10-20 02:00"
-    },
-    {
-      "category": "General",
-      "title": "Lake Placid-NYC exploratory group meet with eye toward 2042",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lake-placid-nyc-exploratory-group-meet-eye-toward-2042-6473201",
-      "published": "2026-10-20 01:59"
-    },
-    {
-      "category": "General",
-      "title": "Nasdaq opens higher after last week's pullback",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/nasdaq-opens-higher-after-last-weeks-pullback-6472851",
-      "published": "2026-10-20 01:41"
-    },
-    {
-      "category": "General",
-      "title": "Ronaldo handed 30-day ban for leaving Portugal camp following coach Jesus rift",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ronaldo-handed-30-day-ban-leaving-portugal-camp-following-coach-jesus-rift-6472966",
-      "published": "2026-10-20 01:36"
-    },
-    {
-      "category": "General",
-      "title": "Woods not part of in initial Hero World Challenge field",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/woods-not-part-in-initial-hero-world-challenge-field-6472916",
-      "published": "2026-10-20 01:08"
-    },
-    {
-      "category": "General",
-      "title": "Euroleague CEO still open to NBA Europe deal, warns against market fragmentation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/euroleague-ceo-still-open-nba-europe-deal-warns-against-market-fragmentation-6472886",
-      "published": "2026-10-20 01:01"
-    },
-    {
-      "category": "General",
-      "title": "South Africa close on 97-5 as Australian paceman Boland strikes in second test",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/south-africa-close-97-5-australian-paceman-boland-strikes-in-second-test-6472891",
-      "published": "2026-10-20 01:00"
-    },
-    {
-      "category": "General",
-      "title": "Exclusive-DXC in advanced talks to sell insurance software unit for $2.4 billion, sources say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-dxc-in-advanced-talks-sell-insurance-software-unit-24-billion-sources-say-6472881",
-      "published": "2026-10-20 00:59"
-    },
-    {
-      "category": "General",
-      "title": "Flick clarifies Barcelona backline options before PSG and Real Madrid showdowns",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/flick-clarifies-barcelona-backline-options-psg-and-real-madrid-showdowns-6472856",
-      "published": "2026-10-20 00:54"
-    },
-    {
-      "category": "General",
-      "title": "Govt staff in Saudi capital told to work from home",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/govt-staff-in-saudi-capital-told-work-home-6472796",
-      "published": "2026-10-20 00:32"
-    },
-    {
-      "category": "General",
-      "title": "Top hyperscalers likely to have more AI-linked debt than now known, S&P Global warns",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-now-known-sp-global-warns-6472816",
-      "published": "2026-10-20 00:17"
-    },
-    {
-      "category": "General",
-      "title": "Singapore and Qatar renew energy pact to strengthen LNG cooperation, move towards strategic partnership",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-qatar-energy-pact-mou-6472451",
-      "published": "2026-10-19 23:17"
-    },
-    {
-      "category": "General",
-      "title": "Sailing-Black Jack 100 takes monohull line honours at Rolex Middle Sea Race",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/sailing-black-jack-100-takes-monohull-line-honours-rolex-middle-sea-race-6472601",
-      "published": "2026-10-19 22:52"
     },
     {
       "category": "General",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/jurong-hit-and-run-woman-died-dragged-son-great-pain/",
       "published": "2026-10-19 19:51"
-    },
-    {
-      "category": "General",
-      "title": "Mountbatten MP Gho Sze Kee visits cleaning supervisor’s family while they’re in S'pore, buys gifts for his daughter",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/mountbatten-mp-gho-sze-kee-visits-family-cleaning-supevisor/",
-      "published": "2026-10-19 19:43"
     }
   ]
 }
