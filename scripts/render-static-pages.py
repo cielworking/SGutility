@@ -220,6 +220,10 @@ def render_sitemap(dates):
         ("https://sgalerts.com/bto-launches.html", dates.get("bto")),
         ("https://sgalerts.com/4d-results.html", dates.get("pools")),
         ("https://sgalerts.com/toto-results.html", dates.get("pools")),
+        ("https://sgalerts.com/singapore/rain-forecast/", dates.get("weather")),
+        ("https://sgalerts.com/malaysia/rain-forecast/", dates.get("weather")),
+        ("https://sgalerts.com/singapore/haze/", dates.get("weather")),
+        ("https://sgalerts.com/malaysia/haze/", dates.get("weather")),
         ("https://sgalerts.com/about.html", "2026-09-17"),
         ("https://sgalerts.com/contact.html", "2026-09-17"),
         ("https://sgalerts.com/privacy-policy.html", "2026-09-17"),
@@ -278,6 +282,9 @@ def main():
         "bto": date_only(bto.get("last_updated")),
         "pools": date_only(optional["pools"].get("last_updated")),
     }
+    weather_path = DATA / "weather.json"
+    weather = json.loads(weather_path.read_text(encoding="utf-8")) if weather_path.exists() else {}
+    dynamic_dates["weather"] = max((date_only(feed.get("attempted_at")) for feed in weather.values() if feed.get("attempted_at")), default=None)
     home_dates = [
         *dynamic_dates.values(),
         date_only(optional["news"].get("last_updated")),

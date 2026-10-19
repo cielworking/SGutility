@@ -1,5 +1,40 @@
 # SG Utility Dashboard
 
+## Weather and air quality
+
+The homepage links to four static, indexable pages: `/singapore/rain-forecast/`,
+`/malaysia/rain-forecast/`, `/singapore/haze/`, and `/malaysia/haze/`.
+The existing SG Alerts name, tagline, and icon assets are retained.
+
+`scripts/update-weather.py` caches MSS / NEA data.gov.sg forecasts, PSI and PM2.5,
+MET Malaysia forecasts and warnings from data.gov.my, and DOE APIMS station API.
+Each feed fails independently and retains its previous successful snapshot.
+`scripts/render-weather-pages.py` renders data into HTML so it is readable without
+JavaScript. JavaScript adds location filters and checks for expired or delayed data.
+All reporting times are displayed in UTC+08. The legacy APIMS ArcGIS layer encodes
+Malaysia wall time as epoch milliseconds; normalization follows the official
+portal's legacy UTC-component display. Only public station display fields are cached.
+
+The weather workflow runs at minutes 7, 22, 37 and 52 each hour (GitHub schedules
+can be delayed). It explicitly requests a GitHub Pages rebuild after the bot commit
+because GITHUB_TOKEN commits do not trigger branch-based Pages publishing. The
+repository must retain its existing GitHub Pages branch publishing configuration.
+Both data workflows share a concurrency group to avoid overlapping bot pushes.
+The sitemap renderer preserves all four new URLs on existing dashboard refreshes.
+
+Run locally after installing `requests`:
+
+```text
+python scripts/update-weather.py
+python scripts/render-weather-pages.py
+python scripts/render-static-pages.py
+python -m unittest discover -s tests -v
+python -m http.server 8765
+```
+
+SEO verification after publishing: submit `https://sgalerts.com/sitemap.xml` in
+Google Search Console and inspect the four URLs. Indexing is Google's decision.
+
 A modern Singapore utility dashboard built using HTML, CSS, and JavaScript.
 
 This project combines useful Singapore daily information into a single clean dashboard interface.
