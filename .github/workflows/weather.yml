@@ -35,7 +35,7 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update weather and air-quality pages"
-          file_pattern: data/weather.json index.html weather/**/*.html singapore/**/*.html malaysia/**/*.html sitemap.xml
+          file_pattern: data/weather.json index.html weather/index.html singapore/**/*.html malaysia/**/*.html sitemap.xml
       # Commits made with GITHUB_TOKEN do not automatically trigger Pages builds.
       - name: Request GitHub Pages rebuild
         env:
