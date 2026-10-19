@@ -1,19 +1,26 @@
 {
-  "last_updated": "2026-10-19T21:11:09.089800+08:00",
+  "last_updated": "2026-10-20T03:19:47.976302+08:00",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Brother of convict in S$3 billion money laundering case jailed over receiving S$17.6 million",
+      "title": "Brentford working with police after rugby ball launched towards stadium",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/brother-convict-3-billion-money-laundering-jailed-million-6471501",
-      "published": "2026-10-19 18:04"
+      "url": "https://www.channelnewsasia.com/sport/brentford-working-police-after-rugby-ball-launched-towards-stadium-6473271",
+      "published": "2026-10-20 02:23"
     },
     {
       "category": "Crime",
-      "title": "Bollywood actor Tiger Shroff shot at in Mumbai, three suspects held: police",
+      "title": "US Supreme Court denies bid by 9/11 mastermind to revive plea deal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/bollywood-actor-tiger-shroff-shot-mumbai-police-6471511",
-      "published": "2026-10-19 17:53"
+      "url": "https://www.channelnewsasia.com/world/sep-11-attack-khalid-mohammed-court-reject-plea-6472846",
+      "published": "2026-10-20 00:53"
+    },
+    {
+      "category": "Crime",
+      "title": "Retailer Ahold Delhaize reports cybersecurity incident to Dutch police",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/retailer-ahold-delhaize-reports-cybersecurity-incident-dutch-police-6472706",
+      "published": "2026-10-19 23:33"
     },
     {
       "category": "Crime",
@@ -42,13 +49,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/beware-of-scammers-impersonating-investment-personalities-financial-gurus-police",
       "published": "2026-10-18 16:05"
-    },
-    {
-      "category": "Traffic",
-      "title": "What's driving Hong Kong's growing Pokemon card craze?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/hong-kong-pokemon-card-collecting-craze-bubble-6471411",
-      "published": "2026-10-19 18:47"
     },
     {
       "category": "Traffic",
@@ -94,13 +94,6 @@
     },
     {
       "category": "Transport",
-      "title": "India’s L&T Technology expects robust second half as deals ramp up; quarterly revenue rises",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/indias-lt-technology-expects-robust-second-half-deals-ramp-up-quarterly-revenue-rises-6471906",
-      "published": "2026-10-19 19:52"
-    },
-    {
-      "category": "Transport",
       "title": "Haze in Singapore: Runners train in mall, families head for indoor playgrounds",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/haze-in-singapore-runners-train-in-malls-families-head-for-indoor-playgrounds",
@@ -115,7 +108,14 @@
     },
     {
       "category": "Fire",
-      "title": "Two taken to hospital for smoke inhalation after fire breaks out in Queenstown flat; 25 evacuated",
+      "title": "Firefly plans to resume all Subang-Seletar flights on Oct 22 after haze cancellations",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/firefly-plans-oct-22-resumption-of-all-subang-seletar-flights-after-haze-cancellations",
+      "published": "2026-10-19 22:10"
+    },
+    {
+      "category": "Fire",
+      "title": "Two taken to hospital for smoke inhalation after fire breaks out in Queenstown flat; 25 others evacuated",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/two-taken-to-hospital-for-smoke-inhalation-after-fire-breaks-out-in-queenstown-flat-25-evacuated",
       "published": "2026-10-19 19:13"
@@ -136,115 +136,129 @@
     },
     {
       "category": "General",
-      "title": "French PM says could declare state of emergency over unrest 'if needed'",
+      "title": "Japan to launch world-first mission to moon of Mars",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/europe/france-protest-state-emergency-6472211",
-      "published": "2026-10-19 21:07"
+      "url": "https://www.channelnewsasia.com/world/japan-mars-moon-mission-phobos-launch-rocket-space-6472976",
+      "published": "2026-10-20 02:57"
     },
     {
       "category": "General",
-      "title": "Amazon says its AI chips will work with popular coding language, challenging Nvidia",
+      "title": "Famous Siberian cave yields remains of yak-like Ice Age mammal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amazon-says-its-ai-chips-will-work-popular-coding-language-challenging-nvidia-6472191",
-      "published": "2026-10-19 21:01"
+      "url": "https://www.channelnewsasia.com/business/famous-siberian-cave-yields-remains-yak-ice-age-mammal-6473316",
+      "published": "2026-10-20 02:52"
     },
     {
       "category": "General",
-      "title": "Norway targets 'harmful' social media, games with under-16 ban",
+      "title": "India’s Jio lures marquee investors to IPO anchor book, bids top $25 billion",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/norway-targets-harmful-social-media-games-under-16-ban-6472196",
-      "published": "2026-10-19 21:00"
+      "url": "https://www.channelnewsasia.com/business/indias-jio-lures-marquee-investors-ipo-anchor-book-bids-top-25-billion-6471756",
+      "published": "2026-10-20 02:15"
     },
     {
       "category": "General",
-      "title": "US chip stocks rise after steepest weekly selloff in months",
+      "title": "Apple to host 'Pro and tell' event on October 28 in LA",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-chip-stocks-rise-after-steepest-weekly-selloff-in-months-6472076",
-      "published": "2026-10-19 20:41"
+      "url": "https://www.channelnewsasia.com/business/apple-host-pro-and-tell-event-october-28-in-la-6473261",
+      "published": "2026-10-20 02:07"
     },
     {
       "category": "General",
-      "title": "CNA Explains: Why are AI stocks tumbling when demand is still booming?",
+      "title": "Netflix film division boss to exit in second senior departure in a week",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/ai-stocks-tumbling-tech-giants-investing-demand-why-cna-explains-6471256",
-      "published": "2026-10-19 20:08"
+      "url": "https://www.channelnewsasia.com/business/netflix-film-division-boss-exit-in-second-senior-departure-in-week-6473196",
+      "published": "2026-10-20 02:00"
     },
     {
       "category": "General",
-      "title": "City's Semenyo out for up to eight weeks, Haaland may be fit to face AEK",
+      "title": "Lake Placid-NYC exploratory group meet with eye toward 2042",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/citys-semenyo-out-up-eight-weeks-haaland-may-be-fit-face-aek-6471916",
-      "published": "2026-10-19 19:55"
+      "url": "https://www.channelnewsasia.com/sport/lake-placid-nyc-exploratory-group-meet-eye-toward-2042-6473201",
+      "published": "2026-10-20 01:59"
     },
     {
       "category": "General",
-      "title": "Svitolina announces end of marriage to Monfils as Ukrainian cites toll of war",
+      "title": "Nasdaq opens higher after last week's pullback",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/svitolina-announces-end-marriage-monfils-ukrainian-cites-toll-war-6471891",
-      "published": "2026-10-19 19:44"
+      "url": "https://www.channelnewsasia.com/world/nasdaq-opens-higher-after-last-weeks-pullback-6472851",
+      "published": "2026-10-20 01:41"
     },
     {
       "category": "General",
-      "title": "AI chip startup Tenstorrent more than doubles its valuation to $6.2 billion in funding round",
+      "title": "Ronaldo handed 30-day ban for leaving Portugal camp following coach Jesus rift",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-chip-startup-tenstorrent-more-doubles-its-valuation-62-billion-in-funding-round-6471861",
-      "published": "2026-10-19 19:42"
+      "url": "https://www.channelnewsasia.com/sport/ronaldo-handed-30-day-ban-leaving-portugal-camp-following-coach-jesus-rift-6472966",
+      "published": "2026-10-20 01:36"
     },
     {
       "category": "General",
-      "title": "Trump's Russia sanctions waiver eases India's energy woes, lifts trade deal chances",
+      "title": "Woods not part of in initial Hero World Challenge field",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trumps-russia-sanctions-waiver-eases-indias-energy-woes-lifts-trade-deal-chances-6471846",
-      "published": "2026-10-19 19:35"
+      "url": "https://www.channelnewsasia.com/sport/woods-not-part-in-initial-hero-world-challenge-field-6472916",
+      "published": "2026-10-20 01:08"
     },
     {
       "category": "General",
-      "title": "Gymnastics-Nassar judge says gymnastics still failing athletes despite reforms",
+      "title": "Euroleague CEO still open to NBA Europe deal, warns against market fragmentation",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/gymnastics-nassar-judge-says-gymnastics-still-failing-athletes-despite-reforms-6471781",
-      "published": "2026-10-19 19:23"
+      "url": "https://www.channelnewsasia.com/sport/euroleague-ceo-still-open-nba-europe-deal-warns-against-market-fragmentation-6472886",
+      "published": "2026-10-20 01:01"
     },
     {
       "category": "General",
-      "title": "Oil slips from five-month high with Hormuz transits in focus",
+      "title": "South Africa close on 97-5 as Australian paceman Boland strikes in second test",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-slips-five-month-high-hormuz-transits-in-focus-6470481",
-      "published": "2026-10-19 19:08"
+      "url": "https://www.channelnewsasia.com/sport/south-africa-close-97-5-australian-paceman-boland-strikes-in-second-test-6472891",
+      "published": "2026-10-20 01:00"
     },
     {
       "category": "General",
-      "title": "Singapore Environment Council restricts Indonesian firm APP's green certification over haze-linked suppliers",
+      "title": "Exclusive-DXC in advanced talks to sell insurance software unit for $2.4 billion, sources say",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/haze-asia-pulp-paper-environment-council-6471366",
-      "published": "2026-10-19 18:57"
+      "url": "https://www.channelnewsasia.com/business/exclusive-dxc-in-advanced-talks-sell-insurance-software-unit-24-billion-sources-say-6472881",
+      "published": "2026-10-20 00:59"
     },
     {
       "category": "General",
-      "title": "Marseille, Lille official club stores looted amid unrest in France",
+      "title": "Flick clarifies Barcelona backline options before PSG and Real Madrid showdowns",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/marseille-lille-official-club-stores-looted-amid-unrest-in-france-6471676",
-      "published": "2026-10-19 18:39"
+      "url": "https://www.channelnewsasia.com/sport/flick-clarifies-barcelona-backline-options-psg-and-real-madrid-showdowns-6472856",
+      "published": "2026-10-20 00:54"
     },
     {
       "category": "General",
-      "title": "Netflix faces questions on user engagement ahead of third-quarter report",
+      "title": "Govt staff in Saudi capital told to work from home",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/netflix-faces-questions-user-engagement-ahead-third-quarter-report-6471596",
-      "published": "2026-10-19 18:18"
+      "url": "https://www.channelnewsasia.com/world/govt-staff-in-saudi-capital-told-work-home-6472796",
+      "published": "2026-10-20 00:32"
     },
     {
       "category": "General",
-      "title": "England women's coach Wiegman extends contract to 2029",
+      "title": "Top hyperscalers likely to have more AI-linked debt than now known, S&P Global warns",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-womens-coach-wiegman-extends-contract-2029-6471586",
-      "published": "2026-10-19 18:06"
+      "url": "https://www.channelnewsasia.com/business/top-hyperscalers-likely-have-more-ai-linked-debt-now-known-sp-global-warns-6472816",
+      "published": "2026-10-20 00:17"
     },
     {
       "category": "General",
-      "title": "3,000 year-long internships to be offered to tertiary students as AI reshapes entry-level jobs",
+      "title": "Singapore and Qatar renew energy pact to strengthen LNG cooperation, move towards strategic partnership",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/tech-ai-internships-jobs-ite-polytechnic-university-students-6471296",
-      "published": "2026-10-19 17:59"
+      "url": "https://www.channelnewsasia.com/singapore/singapore-qatar-energy-pact-mou-6472451",
+      "published": "2026-10-19 23:17"
+    },
+    {
+      "category": "General",
+      "title": "Sailing-Black Jack 100 takes monohull line honours at Rolex Middle Sea Race",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/sailing-black-jack-100-takes-monohull-line-honours-rolex-middle-sea-race-6472601",
+      "published": "2026-10-19 22:52"
+    },
+    {
+      "category": "General",
+      "title": "National Wages Council recommends 6% to 8% pay raise for lower-wage workers, highest since 2021",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/national-wages-council-pay-raise/",
+      "published": "2026-10-19 22:21"
     },
     {
       "category": "General",
@@ -266,20 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/mountbatten-mp-gho-sze-kee-visits-family-cleaning-supevisor/",
       "published": "2026-10-19 19:43"
-    },
-    {
-      "category": "General",
-      "title": "M'sia student calls public donations to help Najib pay fine the 'stupidest thing' she's ever seen",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/malaysia-student-najib-donations-stupidest-thing/",
-      "published": "2026-10-19 01:02"
-    },
-    {
-      "category": "General",
-      "title": "Speaker Seah Kian Peng & WP's Pritam Singh in parliamentary delegation visiting Vatican City, Italy & France",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/seah-kian-peng-parliament-vatican-city-visit/",
-      "published": "2026-10-18 23:34"
     }
   ]
 }
