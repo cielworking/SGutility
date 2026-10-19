@@ -1155,7 +1155,15 @@ for (const [id, files, current, render] of sectionRefreshers) {
   const feedback=document.createElement('p');feedback.className='refresh-feedback';feedback.setAttribute('role','status');
   feedback.textContent='Saved data checked hourly. Refresh loads the latest published copy.';
   const controls=document.createElement('div');controls.className='saved-refresh-controls';controls.append(button,feedback);
-  box.before(controls);
+  if (id === 'news-result') {
+    const header=section.querySelector('.section-header');
+    header.classList.add('compact-news-header');
+    header.append(button);
+    feedback.textContent='';
+    box.before(feedback);
+  } else {
+    box.before(controls);
+  }
   button.addEventListener('click',async()=>{
     button.disabled=true;button.textContent='Refreshing…';feedback.textContent='Checking the latest saved data…';
     try {

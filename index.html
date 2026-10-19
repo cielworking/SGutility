@@ -22,7 +22,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="stylesheet" href="style.css?v=15" />
+  <link rel="stylesheet" href="style.css?v=16" />
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
   <script>
@@ -43,7 +43,7 @@
   </script>
 </head>
 
-<body>
+<body class="home-compact">
   <a class="skip-link" href="#main-content">Skip to dashboard</a>
 
   <header class="site-header">
@@ -70,14 +70,7 @@
   </header>
 
   <main id="main-content" class="dashboard">
-    <section class="intro" aria-labelledby="dashboard-title">
-      <div>
-        <p class="eyebrow">Live Singapore essentials</p>
-        <h1 id="dashboard-title">Singapore Traffic, Petrol Prices, COE & BTO Updates</h1>
-        <p>Current checkpoint traffic, motoring, housing and public information from trusted Singapore sources.</p>
-      </div>
-      <span class="live-badge"><span aria-hidden="true"></span> Updated automatically</span>
-    </section>
+    <h1 id="dashboard-title" class="visually-hidden">SG Alerts dashboard</h1>
 
     <section class="summary-grid" aria-label="At-a-glance summary">
       <article class="summary-item">
@@ -118,7 +111,7 @@
     </section>
 
     <div class="content-grid">
-      <section id="rain" class="surface-card wide-card"><div class="section-header"><div><p class="eyebrow">Plan your day</p><h2>Rain Forecast</h2></div><p>Official Singapore and Malaysia forecasts, with location and validity details.</p></div>
+      <section id="rain" class="surface-card wide-card" aria-label="Rain radar and outlook">
         <!-- STATIC:RAIN:START -->
 <div class="combined-weather" data-combined-weather>
 <div class="weather-toolbar"><div><p class="eyebrow">Singapore &amp; Malaysia</p><h2>Rain radar &amp; outlook</h2></div><button id="refresh-weather" class="button button-secondary" type="button">↻ Refresh weather</button></div>
@@ -163,11 +156,9 @@
           <div class="section-title">
             <span class="section-icon" aria-hidden="true"><i data-lucide="newspaper"></i></span>
             <div>
-              <p class="eyebrow">Latest updates</p>
-              <h2>Singapore Alerts</h2>
+              <h2>Singapore News</h2>
             </div>
           </div>
-          <p>Incidents, transport updates and public information.</p>
         </div>
         <div id="news-result" class="result" aria-live="polite">
           <p class="loading-state">Loading the latest Singapore headlines…</p>
@@ -370,7 +361,7 @@
   </footer>
 
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-  <script src="script.js?v=8"></script>
+  <script src="script.js?v=9"></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=2" defer></script><script src="/weather-dashboard.js?v=1" defer></script><script src="/air-quality.js?v=1" defer></script>
 </body>
 </html>

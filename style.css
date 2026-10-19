@@ -2315,6 +2315,10 @@ svg {
   border-top: 1px solid var(--border);
 }
 /* Brand assets, fluid layouts, and official weather pages */
+.visually-hidden { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.home-compact .dashboard { padding-top:20px; }
+.compact-news-header { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+#news > .refresh-feedback:empty { display:none; }
 /* Radar and combined weather */
 /* Homepage air-quality dashboard */
 .air-country-tabs, #air-metric-controls { display:flex; gap:6px; flex-wrap:wrap; }
