@@ -21,17 +21,44 @@ updateWeatherFreshness();
 setInterval(updateWeatherFreshness, 60000);
 
 for (const name of ["area", "state"]) {
-  const select = document.querySelector(`[data-${name}-filter]`);
-  select?.addEventListener("change", () => {
+  document.addEventListener("change", event => {
+    const select = event.target.closest(`[data-${name}-filter]`);
+    if (!select) return;
     document.querySelectorAll(`[data-${name}]`).forEach(tile => {
       tile.hidden = Boolean(select.value) && tile.dataset[name] !== select.value;
     });
   });
 }
 
+// Haze uses the latest published snapshot; never imply this triggers a new DOE/NEA reading.
+document.querySelectorAll('[data-refresh-air]').forEach(button => {
+  button.addEventListener('click', async () => {
+    const target = document.querySelector('[data-air-content]');
+    const feedback = document.querySelector('[data-air-feedback]');
+    if (!target || !feedback) return;
+    const state = target.querySelector('[data-state-filter]')?.value;
+    button.disabled = true;feedback.textContent = 'Checking the latest saved readings…';
+    try {
+      const response = await fetch(location.pathname,{cache:'no-store',signal:AbortSignal.timeout(15000)});
+      if (!response.ok) throw new Error('Unavailable');
+      const doc = new DOMParser().parseFromString(await response.text(),'text/html');
+      const next = doc.querySelector('[data-air-content]');
+      if (!next) throw new Error('Missing readings');
+      const same = target.innerHTML === next.innerHTML;
+      target.replaceChildren(...next.childNodes);
+      const select = target.querySelector('[data-state-filter]');
+      if (select && state !== undefined) {select.value=state;select.dispatchEvent(new Event('change',{bubbles:true}));}
+      updateWeatherFreshness();
+      feedback.textContent = same ? 'No newer saved readings available. Source reporting times are unchanged.' : 'Latest saved readings loaded. Check the source reporting times above.';
+    } catch {
+      feedback.textContent = 'Refresh failed — previous readings retained. Please try again.';
+    } finally {setTimeout(()=>{button.disabled=false;},5000);}
+  });
+});
+
 function weatherCondition(raw = "Unavailable") {
   const value = raw.toLowerCase();
-  const simple = {"tiada hujan": "No rain", "hujan": "Rain", "berjerebu": "Hazy", "ribut petir": "Thunderstorms"};
+  const simple = {"tiada hujan": "No rain", "hujan": "Rain", "berjerebu": "Hazy", "jerebu": "Hazy", "ribut petir": "Thunderstorms"};
   if (simple[value]) return simple[value];
   const tails = {"di beberapa tempat": "scattered", "di satu dua tempat": "isolated", "di satu dua tempat di kawasan pantai": "isolated, coastal areas", "di satu dua tempat di kawasan pedalaman": "isolated, inland areas", "di beberapa tempat di kawasan pedalaman": "scattered, inland areas"};
   for (const [key, label] of [["ribut petir", "Thunderstorms"], ["hujan", "Rain"]]) {

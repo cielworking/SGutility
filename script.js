@@ -305,7 +305,7 @@ function renderCheckpoints() {
                           onclick="openImageModal('${cam.image}', '${title} - Camera ${cam.camera_id}', this)"
                           aria-label="Enlarge ${title} traffic camera ${cam.camera_id}">
                     <img src="${cam.image}" alt="${title} traffic camera ${cam.camera_id}" loading="lazy" decoding="async">
-                    <span>Camera ${cam.camera_id}</span>
+                    <span>Camera ${cam.camera_id} · Image: ${formatTimestamp(cam.timestamp)}</span>
                   </button>
                 `).join("")}
               </div>`
@@ -1137,3 +1137,40 @@ function renderQuickInfo() {
 
 applyIcons();
 loadData();
+
+/* Per-section refresh reads the latest published files without changing source timestamps. */
+const sectionRefreshers = [
+  ['news-result', ['news.json'], () => [newsResults], values => {newsResults=values[0];renderNews();}],
+  ['petrolResult', ['petrol-prices.json','petrol-discounts.json'], () => [petrolPrices,petrolDiscounts], values => {petrolPrices=values[0];petrolDiscounts=values[1];renderPetrolPrices();}],
+  ['coeResult', ['coe-prices.json'], () => [coePrices], values => {coePrices=values[0];renderCoePrices();}],
+  ['btoResult', ['bto-projects.json'], () => [btoProjects], values => {btoProjects=values[0];renderBtoProjects();}],
+  ['sgpoolsResult', ['sgpools-results.json'], () => [sgpoolsResults], values => {sgpoolsResults=values[0];applyGamblingVisibility();}],
+  ['quickInfo', ['quick-info.json'], () => [quickInfo], values => {quickInfo=values[0];renderQuickInfo();}]
+];
+for (const [id, files, current, render] of sectionRefreshers) {
+  const box = document.getElementById(id), section = box?.closest('.surface-card');
+  if (!section) continue;
+  const button=document.createElement('button');button.type='button';button.className='button button-secondary saved-refresh';
+  button.textContent='↻ Refresh';button.setAttribute('aria-label','Refresh '+(section.querySelector('h1,h2')?.textContent || 'saved data'));
+  const feedback=document.createElement('p');feedback.className='refresh-feedback';feedback.setAttribute('role','status');
+  feedback.textContent='Saved data checked hourly. Refresh loads the latest published copy.';
+  const controls=document.createElement('div');controls.className='saved-refresh-controls';controls.append(button,feedback);
+  box.before(controls);
+  button.addEventListener('click',async()=>{
+    button.disabled=true;button.textContent='Refreshing…';feedback.textContent='Checking the latest saved data…';
+    try {
+      const before=JSON.stringify(current());
+      const values=await Promise.all(files.map(async file=>{
+        const response=await fetch('/data/'+file,{cache:'no-store',signal:AbortSignal.timeout(15000)});
+        if(!response.ok)throw new Error('Source unavailable');
+        return response.json();
+      }));
+      if(values.some(value=>!value||typeof value!=='object'))throw new Error('Invalid data');
+      render(values);renderSummary();applyIcons();
+      const same=before===JSON.stringify(values);
+      feedback.textContent=(same?'No newer saved information available. ':'Latest saved information loaded. ')+'Last checked: '+new Date().toLocaleTimeString('en-SG',{timeZone:'Asia/Singapore',hour:'numeric',minute:'2-digit'})+' SGT. Source dates remain shown below.';
+    } catch {
+      feedback.textContent='Refresh failed — previous information retained. Please try again.';
+    } finally {setTimeout(()=>{button.disabled=false;button.textContent='↻ Refresh';},5000);}
+  });
+}

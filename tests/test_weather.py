@@ -18,9 +18,27 @@ def module(name, filename):
 
 update = module("update_weather", "update-weather.py")
 render = module("render_weather", "render-weather-pages.py")
+layout = module("weather_layout", "weather_layout.py")
 
 
 class WeatherTests(unittest.TestCase):
+    def test_regional_outlook_uses_official_regions_and_drops_expired_periods(self):
+        now = layout.datetime.now(layout.TZ)
+        old = {"timePeriod": {"start": (now-timedelta(hours=2)).isoformat(), "end": (now-timedelta(hours=1)).isoformat()}, "regions": {"north": {"text": "Old rain"}}}
+        new = {"timePeriod": {"start": now.isoformat(), "end": (now+timedelta(hours=2)).isoformat()}, "regions": {"north": {"text": "Thundery Showers"}}}
+        content = layout.regional_cards({"periods": [old,new]})
+        self.assertEqual(content.count('class="region-card"'),5)
+        self.assertNotIn('Old rain',content)
+        self.assertIn('Thundery Showers',content)
+        self.assertIn('South',content)
+
+    def test_combined_page_does_not_render_all_neighbourhoods_as_cards(self):
+        cache = {"sg_rain": {"data": {"forecasts": [{"area": "Ang Mo Kio", "forecast": "Cloudy"}]}}}
+        content = layout.render_combined(cache)
+        self.assertIn('<option value="Ang Mo Kio">',content)
+        self.assertNotIn('<h3>Ang Mo Kio</h3>',content)
+        self.assertIn('id="radar-time"',content)
+        self.assertIn('id="radar-play"',content)
     def test_feed_failure_retains_previous_data_and_time(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

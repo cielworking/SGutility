@@ -2,6 +2,7 @@
 import html
 import json
 import re
+import runpy
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -142,26 +143,45 @@ def render_content(country, kind, cache):
 
 def main():
     cache = json.loads((ROOT / "data/weather.json").read_text(encoding="utf-8"))
+    combined = runpy.run_path(str(ROOT / "scripts/weather_layout.py"))["render_combined"](cache)
     cards = []
     for country, kind, title, desc, key in PAGES:
         path = f"/{country}/{kind}/"
         content, source, source_name, explanation = render_content(country, kind, cache)
+        if kind == "rain-forecast":
+            content = combined
+            explanation = "Explore Singapore and Malaysia together using observed rain radar, Singapore's official five-region forecast periods, and Malaysia location forecasts. Choose an individual Singapore area for the two-hour forecast. Radar playback shows recent observations; it does not predict exact rain arrival times."
         related = ''.join(f'<a class="detail-link" href="/{c}/{k}/" {"aria-current=page" if (c,k)==(country,kind) else ""}>{esc(t)}</a>' for c,k,t,_,_ in PAGES)
+        if kind == "rain-forecast":
+            related = '<a class="detail-link" href="/weather/">Combined rain radar &amp; forecast</a><a class="detail-link" href="/#haze">Haze &amp; air quality</a>'
+        else:
+            content = '<div data-air-content>' + content + '</div><button class="button button-secondary" type="button" data-refresh-air>↻ Refresh saved readings</button><p data-air-feedback class="refresh-feedback" role="status">Saved readings update on the 15-minute schedule.</p>'
         schema = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": "https://sgalerts.com" + path, "isPartOf": {"@type": "WebSite", "name": "SG Alerts", "url": "https://sgalerts.com/"}}
         document = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(title)} | SG Alerts</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="https://sgalerts.com{path}">
 <meta property="og:title" content="{esc(title)} | SG Alerts"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="https://sgalerts.com{path}"><meta property="og:type" content="website"><meta property="og:image" content="https://sgalerts.com/android-chrome-512x512.png">
-<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="stylesheet" href="/style.css?v=13">
-<script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=1" defer></script></head>
+<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="stylesheet" href="/style.css?v=14">
+<script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=2" defer></script></head>
 <body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark"><img src="/android-chrome-192x192.png" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a><nav class="primary-nav" aria-label="Dashboard sections"><a href="/">Dashboard</a><a href="/#checkpoints">Checkpoints</a><a href="/#rain">Rain Forecast</a><a href="/#haze">Haze</a></nav></div></header>
 <main id="main-content" class="content-page weather-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">SG Alerts</a> / {esc(title)}</nav><section class="page-hero"><div><p class="eyebrow">{country.title()} · Official data</p><h1>{esc(title)}</h1><p>{esc(desc)}</p></div></section>
-<nav class="weather-tabs" aria-label="Weather pages">{related}</nav><section class="surface-card specialist-data-card"><h2>{"Weather conditions" if kind == "rain-forecast" else "Air-quality readings"}</h2>{content}<p class="note">Source: <a href="{source}" target="_blank" rel="noopener noreferrer">{source_name}</a>. Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.</p></section>
+<nav class="weather-tabs" aria-label="Weather pages">{related}</nav><section class="surface-card specialist-data-card">{"" if kind == "rain-forecast" else "<h2>Air-quality readings</h2>"}{content}<p class="note">Source: <a href="{source}" target="_blank" rel="noopener noreferrer">{source_name}</a>. Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.</p></section>
 <section class="surface-card seo-guide"><h2>Understanding {esc(title.lower())}</h2><p>{esc(explanation)}</p><h3>How current is this information?</h3><p>Always check the forecast validity or reporting time. Older cached readings remain visible with a warning when a source is delayed or unavailable. Times use Singapore / Malaysia time (UTC+08).</p><h3>Where can I check official updates?</h3><p>Visit <a href="{source}">{source_name}</a> for the latest official information and advisories.</p><div class="seo-related">{related}</div></section></main>
 <footer class="site-footer"><div class="footer-inner"><strong>SG Alerts</strong><nav class="footer-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a></nav></div></footer></body></html>'''
         target = ROOT / country / kind / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(document + "\n", encoding="utf-8")
+        if kind == "rain-forecast":
+            document = document.replace('<script src="/weather.js?v=2" defer></script>', '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=2" defer></script><script src="/weather-dashboard.js?v=1" defer></script>')
+            document = document.replace(f'<link rel="canonical" href="https://sgalerts.com{path}">', '<link rel="canonical" href="https://sgalerts.com/weather/">')
+            target.write_text(document + "\n", encoding="utf-8")
+            if country == "singapore":
+                hub = document.replace(title, "Singapore &amp; Malaysia Rain Radar and Forecast").replace("https://sgalerts.com" + path, "https://sgalerts.com/weather/")
+                hub = hub.replace(esc(desc), "Watch recent rain movement, explore timed regional forecasts, and check Singapore and Malaysia weather together.")
+                hub = hub.replace("Singapore · Official data", "Singapore &amp; Malaysia · Official data")
+                hub_path = ROOT / "weather/index.html"
+                hub_path.parent.mkdir(parents=True, exist_ok=True)
+                hub_path.write_text(hub + "\n", encoding="utf-8")
         feed = cache.get(key, {})
         data = feed.get("data", {} if country == "singapore" else [])
         stamp, end, hours = None, None, 3
@@ -188,7 +208,7 @@ def main():
     home = ROOT / "index.html"
     text = home.read_text(encoding="utf-8")
     for kind, marker in [("rain-forecast", "RAIN"), ("haze", "HAZE")]:
-        rendered = '<div class="weather-summary-grid">' + ''.join(card for k, card in cards if k == kind) + '</div>'
+        rendered = combined + '<p><a class="detail-link" href="/weather/">Open full rain radar &amp; forecast →</a></p>' if kind == "rain-forecast" else '<div data-air-content><div class="weather-summary-grid">' + ''.join(card for k, card in cards if k == kind) + '</div></div><button class="button button-secondary" type="button" data-refresh-air>Refresh saved readings</button><p data-air-feedback class="refresh-feedback" role="status">Saved readings checked every 15 minutes.</p>'
         pattern = rf'<!-- STATIC:{marker}:START -->.*?<!-- STATIC:{marker}:END -->'
         text, count = re.subn(pattern, lambda _: f'<!-- STATIC:{marker}:START -->\n{rendered}\n<!-- STATIC:{marker}:END -->', text, flags=re.S)
         if count != 1:

@@ -46,6 +46,14 @@ def malaysia_rain():
     return rows
 
 
+def singapore_outlook():
+    payload = get(BASE_SG + "twenty-four-hr-forecast")
+    rows = payload.get("data", {}).get("records", [])
+    if payload.get("code") != 0 or not rows or not rows[0].get("periods"):
+        raise ValueError("Missing regional outlook")
+    return rows[0]
+
+
 def malaysia_haze():
     payload = get(APIMS, f="json", outFields="STATION_ID,DATETIME,API,CLASS,STATION_LOCATION,STATE_NAME,PARAM_SELECTED", returnGeometry="false", where="1=1")
     if not payload.get("features") or payload.get("exceededTransferLimit"):
@@ -66,6 +74,7 @@ def main():
     path = ROOT / "data/weather.json"
     cache = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
     sources = {
+        "sg_outlook": singapore_outlook,
         "sg_rain": lambda: sg("two-hr-forecast"),
         "sg_psi": lambda: sg("psi"),
         "sg_pm25": lambda: sg("pm25"),

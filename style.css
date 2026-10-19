@@ -2315,6 +2315,61 @@ svg {
   border-top: 1px solid var(--border);
 }
 /* Brand assets, fluid layouts, and official weather pages */
+/* Radar and combined weather */
+.combined-weather { min-width: 0; }
+.weather-toolbar, .radar-heading { display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
+.weather-toolbar h2, .weather-toolbar h3, .radar-heading h3 { margin:0; }
+.weather-toolbar .eyebrow { margin:0 0 5px; }
+.refresh-feedback { color:#52617a; font-size:13px; line-height:1.6; overflow-wrap:anywhere; }
+.radar-panel { border:1px solid #c7d8eb; border-radius:16px; padding:20px; background:#f5f9ff; margin:18px 0 26px; }
+.radar-heading { margin-bottom:16px; }
+.radar-heading p { margin:5px 0 0; color:#52617a; font-size:13px; }
+.radar-range-label { display:grid; gap:5px; font-size:12px; font-weight:700; }
+.radar-range-label select { min-height:44px; max-width:100%; padding:8px 10px; border:1px solid #b4c7df; border-radius:8px; color:var(--text); background:white; font-size:16px; }
+#rain-map { height:420px; width:100%; border-radius:12px; background:#dce9ef; z-index:0; border:1px solid #b8cce1; }
+.leaflet-container img { max-width:none; }
+.radar-playback { display:flex; align-items:center; gap:14px; margin-top:16px; }
+.radar-scrubber { display:grid; flex:1; min-width:0; gap:5px; font-size:12px; font-weight:700; }
+#radar-time { width:100%; min-height:36px; margin:0; accent-color:#155eef; cursor:ew-resize; }
+.radar-time-labels { display:flex; justify-content:space-between; gap:10px; font-size:11px; color:#52617a; margin:6px 0 12px; flex-wrap:wrap; }
+#radar-stamp { color:#123d74; font-weight:750; }
+.radar-legend { display:flex; align-items:center; gap:9px; max-width:400px; margin:14px 0 10px; font-size:12px; }
+.rain-intensity { flex:1; height:10px; border-radius:5px; background:linear-gradient(to right,#00ffff,#008d9b,#008d00,#00ed00,#ffff00,#ff9900,#ff0000,#a5007e,#ff00ff); }
+.outlook-section { margin-top:28px; }
+.outlook-section .weather-filter { margin:0; min-width:240px; max-width:100%; }
+.region-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px; margin-top:16px; }
+.region-card { padding:18px 16px; border:1px solid #d3e0ee; border-radius:12px; background:linear-gradient(150deg,#edf5ff,white); min-width:0; }
+.region-card h3 { margin:0 0 15px; font-size:18px; color:#184d85; }
+.outlook-timeline { list-style:none; margin:0; padding:0; }
+.outlook-timeline li { padding:12px 0; border-top:1px solid #dbe6f2; }
+.outlook-timeline li span { display:block; font-size:11px; line-height:1.7; color:#52617a; margin-bottom:7px; }
+.outlook-timeline li strong { font-size:14px; }
+.weather-explainer { padding:16px 18px; background:#f5f8fc; border:1px solid #dde5ef; border-radius:10px; margin-top:18px; font-size:13px; }
+.weather-explainer summary, .more-forecast summary { cursor:pointer; font-weight:700; min-height:30px; }
+.weather-explainer p { line-height:1.8; }
+.local-forecast { margin-top:15px; }
+.malaysia-day { padding:18px; border:1px solid #cce3da; background:#f3faf7; border-radius:12px; margin-top:12px; }
+.malaysia-day h4 { margin:0 0 14px; font-size:17px; }
+.day-periods { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:0; }
+.day-periods dt { font-size:12px; color:#52617a; margin-bottom:6px; }
+.day-periods dd { margin:0; font-weight:650; font-size:14px; }
+.more-forecast { margin-top:16px; }
+.saved-refresh-controls { display:flex; align-items:center; flex-wrap:wrap; gap:12px; margin:12px 0; }
+.saved-refresh-controls p { flex:1; min-width:170px; margin:0; }
+@media(max-width:1000px) { .region-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media(max-width:700px) {
+  .radar-panel { padding:12px; }
+  #rain-map { height:330px; }
+  .weather-toolbar, .radar-heading { align-items:stretch; }
+  .radar-range-label, .radar-range-label select, .outlook-section .weather-filter { width:100%; min-width:0; }
+  .radar-playback { gap:8px; }
+  .radar-playback button { padding:10px; min-width:0; font-size:12px; }
+  .region-grid { grid-template-columns:minmax(0,1fr); }
+  .outlook-timeline li { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:12px; align-items:center; }
+  .day-periods { grid-template-columns:minmax(0,1fr); }
+  .day-periods > div { display:grid; grid-template-columns:80px minmax(0,1fr); gap:10px; }
+  .day-periods dd { overflow-wrap:anywhere; }
+}
 html { -webkit-text-size-adjust: 100%; }
 .brand-mark { flex: 0 0 48px; width: 48px; height: 48px; overflow: hidden; }
 .brand-mark img { display: block; width: 100%; height: 100%; object-fit: contain; }

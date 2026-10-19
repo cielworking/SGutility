@@ -146,7 +146,7 @@ def main():
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
     data = {
-        "last_updated": datetime.now(ZoneInfo("Asia/Singapore")).strftime("%Y-%m-%d %H:%M"),
+        "last_updated": datetime.now(ZoneInfo("Asia/Singapore")).isoformat(),
         "headlines": fetch_news(),
     }
 

@@ -220,6 +220,7 @@ def render_sitemap(dates):
         ("https://sgalerts.com/bto-launches.html", dates.get("bto")),
         ("https://sgalerts.com/4d-results.html", dates.get("pools")),
         ("https://sgalerts.com/toto-results.html", dates.get("pools")),
+        ("https://sgalerts.com/weather/", dates.get("weather")),
         ("https://sgalerts.com/singapore/rain-forecast/", dates.get("weather")),
         ("https://sgalerts.com/malaysia/rain-forecast/", dates.get("weather")),
         ("https://sgalerts.com/singapore/haze/", dates.get("weather")),

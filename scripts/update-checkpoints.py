@@ -1,6 +1,6 @@
 import json
 import requests
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -63,7 +63,7 @@ def main():
     data = {
         "source_name": "LTA / data.gov.sg",
         "source_url": "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html",
-        "last_updated": datetime.now().isoformat(),
+        "last_updated": datetime.now(timezone.utc).isoformat(),
         "woodlands": woodlands,
         "tuas": tuas,
         "note": "Images are from official LTA traffic cameras. Jam level is visually estimated by users."

@@ -2,6 +2,26 @@
 
 ## Weather and air quality
 
+The primary weather experience is now `/weather/` and the combined weather section
+on the homepage. Country rain URLs retain working entry points and canonicalise
+to `/weather/`. NEA radar playback offers the latest 13 available frames, a draggable
+time slider, play/pause, latest-frame control and 70/240/480 km coverage selectors.
+Radar is observed rainfall, not future rain prediction. Leaflet displays the
+georeferenced transparent radar over OpenStreetMap with source attribution.
+Public image URLs expire, so the browser obtains fresh URLs directly from
+data.gov.sg; signed image URLs are not stored in the repository.
+
+The default Singapore outlook uses the official 24-hour feed's five regions and
+time periods, without manufacturing neighbourhood-to-region mappings. Individual
+areas use the two-hour forecast through a dropdown. Malaysia forecasts share the
+same experience, default to Johor Bahru, and expose later days in a disclosure.
+While weather is visible, radar and forecasts refresh every five minutes. Manual
+refresh checks official radar and SG/MY forecast APIs directly, independently
+retaining the previous usable data when a source fails. Malaysia warnings and haze
+use the published saved feed. News and other dashboard Refresh buttons re-read
+published JSON with browser caching bypassed; they do not trigger server scraping.
+Feedback distinguishes unchanged data from failures and keeps source dates intact.
+
 The homepage links to four static, indexable pages: `/singapore/rain-forecast/`,
 `/malaysia/rain-forecast/`, `/singapore/haze/`, and `/malaysia/haze/`.
 The existing SG Alerts name, tagline, and icon assets are retained.
