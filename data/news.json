@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-10-22T01:10:42.224304+08:00",
+  "last_updated": "2026-10-22T04:37:34.363342+08:00",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Police to deploy live facial recognition technology at Chelsea-Spurs game",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/police-deploy-live-facial-recognition-technology-chelsea-spurs-game-6479121",
-      "published": "2026-10-21 20:52"
-    },
     {
       "category": "Crime",
       "title": "Anytime Fitness member billed S$65 ‘tailgating’ charge after stranger followed him into gym in Tampines",
@@ -80,17 +73,24 @@
     },
     {
       "category": "Traffic",
+      "title": "Meta ordered to pay $25 billion to New Mexico after jury finds company misled consumers about data privacy",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/meta-ordered-pay-25-billion-new-mexico-after-jury-finds-company-misled-consumers-about-data-privacy-6479776",
+      "published": "2026-10-22 01:28"
+    },
+    {
+      "category": "Traffic",
+      "title": "Italy missing 12 players for next month's Nations Championship",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/italy-missing-12-players-next-months-nations-championship-6479771",
+      "published": "2026-10-22 01:21"
+    },
+    {
+      "category": "Traffic",
       "title": "Two uncapped players named in Ireland squad for Nations Championship",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/two-uncapped-players-named-in-ireland-squad-nations-championship-6479666",
       "published": "2026-10-21 23:59"
-    },
-    {
-      "category": "Traffic",
-      "title": "Players to face stricter anti-doping whereabouts rules from 2027",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/players-face-stricter-anti-doping-whereabouts-rules-2027-6479046",
-      "published": "2026-10-21 20:29"
     },
     {
       "category": "Traffic",
@@ -115,6 +115,13 @@
     },
     {
       "category": "Transport",
+      "title": "IBM raises annual software revenue outlook as deal delays ease",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ibm-raises-annual-software-revenue-outlook-deal-delays-ease-6480296",
+      "published": "2026-10-22 04:12"
+    },
+    {
+      "category": "Transport",
       "title": "Petition calling for end to crow culling backed by over 2,500 after officers seen shooting crows near Aljunied MRT",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/crow-culling-petition-end-aljunied/",
@@ -126,6 +133,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/transend-machines-money-exchange-mrt-ad/",
       "published": "2026-10-21 19:59"
+    },
+    {
+      "category": "Transport",
+      "title": "Baby abused to death by parents was not referred to child protection or social services: MSF",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/community/baby-abused-to-death-by-parents-was-not-referred-to-child-protection-or-social-services-msf",
+      "published": "2026-10-22 02:07"
     },
     {
       "category": "Transport",
@@ -154,13 +168,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/why-is-it-difficult-to-identify-companies-linked-to-fires-how-can-spores-haze-law-be-strengthened",
       "published": "2026-10-21 20:00"
-    },
-    {
-      "category": "Money",
-      "title": "Milan back fan boycott of Udinese match over away ticket prices",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/milan-back-fan-boycott-udinese-match-over-away-ticket-prices-6479551",
-      "published": "2026-10-21 22:59"
     },
     {
       "category": "Money",
@@ -199,87 +206,80 @@
     },
     {
       "category": "General",
-      "title": "Kremlin sees little 'substance' in Ukraine peace ideas",
+      "title": "Germany's SAP tops cloud demand forecasts, holds yearly operating profit outlook",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/russia-ukraine-peace-deal-us-witkoff-substance-6479671",
-      "published": "2026-10-22 01:01"
+      "url": "https://www.channelnewsasia.com/business/germanys-sap-tops-cloud-demand-forecasts-holds-yearly-operating-profit-outlook-6480306",
+      "published": "2026-10-22 04:22"
     },
     {
       "category": "General",
-      "title": "PETA urges Crystal Palace to retire bald eagle mascot Phoenix",
+      "title": "Anthropic unveils Claude Duet AI agent app",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/peta-urges-crystal-palace-retire-bald-eagle-mascot-phoenix-6479701",
-      "published": "2026-10-22 00:27"
+      "url": "https://www.channelnewsasia.com/business/anthropic-unveils-claude-duet-ai-agent-app-6480311",
+      "published": "2026-10-22 04:19"
     },
     {
       "category": "General",
-      "title": "World Aquatics names 2027 Swimming World Cup hosts",
+      "title": "Meta to issue new class of shares as it tightens AI spending forecast",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/world-aquatics-names-2027-swimming-world-cup-hosts-6479636",
-      "published": "2026-10-21 23:48"
+      "url": "https://www.channelnewsasia.com/business/meta-issue-new-class-shares-it-tightens-ai-spending-forecast-6480286",
+      "published": "2026-10-22 04:08"
     },
     {
       "category": "General",
-      "title": "Explainer-What is PHP and why did it take government websites offline?",
+      "title": "Smith injury adds to Australia woes as defeat looms in second test",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/explainer-what-php-and-why-did-it-take-government-websites-offline-6479621",
-      "published": "2026-10-21 23:48"
+      "url": "https://www.channelnewsasia.com/sport/smith-injury-adds-australia-woes-defeat-looms-in-second-test-6480251",
+      "published": "2026-10-22 03:53"
     },
     {
       "category": "General",
-      "title": "Europe's financial regulators query Google over cloud outage that hit banks",
+      "title": "OpenAI says its AI agents disabled their own safety monitors",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/europes-financial-regulators-query-google-over-cloud-outage-hit-banks-6479606",
-      "published": "2026-10-21 23:43"
+      "url": "https://www.channelnewsasia.com/world/openai-says-its-ai-agents-disabled-their-own-safety-monitors-6480206",
+      "published": "2026-10-22 03:51"
     },
     {
       "category": "General",
-      "title": "CNA wins two SIAS Investors' Choice Awards for financial journalism",
+      "title": "Jansen’s all-round heroics put South Africa on brink of series-levelling win",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/cna-money-mind-win-sias-awards-financial-journalism-6478921",
-      "published": "2026-10-21 23:41"
+      "url": "https://www.channelnewsasia.com/sport/jansens-all-round-heroics-put-south-africa-brink-series-levelling-win-6480166",
+      "published": "2026-10-22 03:17"
     },
     {
       "category": "General",
-      "title": "France name injury-hit 42-man squad for November's Nations Championship games",
+      "title": "Paz dazzles as Como thrash Manchester United 4-1",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/france-name-injury-hit-42-man-squad-novembers-nations-championship-games-6479526",
-      "published": "2026-10-21 22:54"
+      "url": "https://www.channelnewsasia.com/sport/paz-dazzles-como-thrash-manchester-united-4-1-6480151",
+      "published": "2026-10-22 03:01"
     },
     {
       "category": "General",
-      "title": "Fenerbahce duo Asensio and Ake suffer injuries",
+      "title": "EA to shutter BioWare studio, cut jobs as it narrows game slate",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fenerbahce-duo-asensio-and-ake-suffer-injuries-6479466",
-      "published": "2026-10-21 22:46"
+      "url": "https://www.channelnewsasia.com/business/ea-shutter-bioware-studio-cut-jobs-it-narrows-game-slate-6480136",
+      "published": "2026-10-22 02:47"
     },
     {
       "category": "General",
-      "title": "Singapore and the UAE to launch economic partnership negotiations to further trade, investment links",
+      "title": "Netanyahu says 'toppling' Iran government only way to end threat",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/uae-lawrence-wong-bilateral-agreement-6479141",
-      "published": "2026-10-21 22:27"
+      "url": "https://www.channelnewsasia.com/world/netanyahu-says-toppling-iran-government-only-way-end-threat-6480096",
+      "published": "2026-10-22 02:45"
     },
     {
       "category": "General",
-      "title": "Apple will have 'limited' iPhone Duo units available in stores on Friday",
+      "title": "PSG-Lyon match likely to be postponed amid unrest, say media reports",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apple-will-have-limited-iphone-duo-units-available-in-stores-friday-6479306",
-      "published": "2026-10-21 22:03"
+      "url": "https://www.channelnewsasia.com/sport/psg-lyon-match-likely-be-postponed-amid-unrest-say-media-reports-6480116",
+      "published": "2026-10-22 02:36"
     },
     {
       "category": "General",
-      "title": "Snooker-Allen reveals mental health clinic stay before return, considers retirement",
+      "title": "BlackRock adds robotics ETF to growing ranks of AI-themed products",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/snooker-allen-reveals-mental-health-clinic-stay-return-considers-retirement-6479266",
-      "published": "2026-10-21 21:44"
-    },
-    {
-      "category": "General",
-      "title": "Barca blow as Olmo out for four weeks",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/barca-blow-olmo-out-four-weeks-6479196",
-      "published": "2026-10-21 21:08"
+      "url": "https://www.channelnewsasia.com/business/blackrock-adds-robotics-etf-growing-ranks-ai-themed-products-6480086",
+      "published": "2026-10-22 02:16"
     }
   ]
 }
