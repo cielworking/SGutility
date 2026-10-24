@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-24T08:40:52.061113+08:00",
+  "last_updated": "2026-10-24T13:51:22.515595+08:00",
   "headlines": [
     {
       "category": "Crime",
@@ -10,10 +10,31 @@
     },
     {
       "category": "Crime",
-      "title": "M'sian man, 23, arrested for attempting to smuggle over 1,380 packets of duty-unpaid cigarettes in tyre rims via Woodlands Checkpoint",
+      "title": "S'porean man, 44, jailed 80 days for shoving boy, 7, twice at playground who hit his daughter",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/malaysian-man-tyre-rims-smuggle-cigarettes/",
-      "published": "2026-10-23 20:15"
+      "url": "https://mothership.sg/2026/10/singaporean-man-shoved-boy-indoor-playground/",
+      "published": "2026-10-24 02:51"
+    },
+    {
+      "category": "Crime",
+      "title": "Man, 40, emails intimate video of girlfriend to her colleagues & bosses after she cheated, gets jailed",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/man-emails-intimate-video-of-girlfriend-to-her-colleagues-bosses-after-she-cheated-gets-jailed/",
+      "published": "2026-10-24 02:16"
+    },
+    {
+      "category": "Crime",
+      "title": "S'porean man, 65, ran unlicensed massage parlour in Orchard Towers where wife offered sexual services, fined S$7,000",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/man-massage-parlour-orchard-towers-sexual-services/",
+      "published": "2026-10-23 23:54"
+    },
+    {
+      "category": "Crime",
+      "title": "Nudification, murder- and gambling-themed apps flagged in IMDA’s first app store audit",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/tech/nudification-murder-and-gambling-themed-apps-flagged-in-imdas-first-app-store-audit",
+      "published": "2026-10-24 12:40"
     },
     {
       "category": "Crime",
@@ -45,24 +66,31 @@
     },
     {
       "category": "Traffic",
+      "title": "Marquez shrugs off crash to take pole at wet Australian Grand Prix",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/marquez-shrugs-crash-take-pole-wet-australian-grand-prix-6488276",
+      "published": "2026-10-24 09:01"
+    },
+    {
+      "category": "Traffic",
+      "title": "Upper Bukit Timah more flood resilient after upgrading works, canal can carry 30% more stormwater",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/upper-bukit-timah-canal-upgrading-works-completed/",
+      "published": "2026-10-24 02:04"
+    },
+    {
+      "category": "Traffic",
+      "title": "S'pore to import biomethane, a low-carbon alternative to natural gas, with wider adoption from 2028",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/spore-biomethane-2028/",
+      "published": "2026-10-24 00:55"
+    },
+    {
+      "category": "Traffic",
       "title": "Motorcyclist, 30, dies after collision with lorry at West Coast",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/motorcyclist-killed-collision-lorry/",
       "published": "2026-10-23 23:07"
-    },
-    {
-      "category": "Traffic",
-      "title": "iPhone Duo going for up to S$8,888 on Carousell after launch in S'pore on Oct. 23",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/star-white-iphone-duo-8888-carousell/",
-      "published": "2026-10-23 23:05"
-    },
-    {
-      "category": "Traffic",
-      "title": "'How far can I go on my motorcycle?': S’porean man, 32, rides 27,166km from S’pore to Portugal in 100 days",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/100-day-bike-ride/",
-      "published": "2026-10-23 19:08"
     },
     {
       "category": "Traffic",
@@ -84,13 +112,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/dining/tan-ser-seng-turtle-soup-third-gen-owners-6485146",
       "published": "2026-10-24 07:25"
-    },
-    {
-      "category": "Transport",
-      "title": "OpenAI resumes frontier AI training with enhanced security, no internet access",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-resumes-frontier-ai-training-enhanced-security-no-internet-access-6487981",
-      "published": "2026-10-24 04:06"
     },
     {
       "category": "Transport",
@@ -119,6 +140,55 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/hdb-resale-prices-down-by-0-1-in-q3-more-units-sold-after-lifting-of-cooling-measure",
       "published": "2026-10-23 09:08"
+    },
+    {
+      "category": "General",
+      "title": "Israel launches West Bank operation after attack days before election",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/israel-launches-west-bank-operation-after-attack-days-election-6488581",
+      "published": "2026-10-24 13:31"
+    },
+    {
+      "category": "General",
+      "title": "Majority of parents and youths prefer tiered access to social media over outright ban: MDDI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/social-media-ban-teens-parents-access-6486036",
+      "published": "2026-10-24 12:40"
+    },
+    {
+      "category": "General",
+      "title": "65 harmful apps, 24 wrongly age-rated found in Singapore review of over 7,000 apps",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/imda-review-app-store-harmful-wrong-age-rated-6485906",
+      "published": "2026-10-24 12:40"
+    },
+    {
+      "category": "General",
+      "title": "Marquez wins thrilling Australian MotoGP sprint to retake championship lead",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/marquez-wins-thrilling-australian-motogp-sprint-retake-championship-lead-6488526",
+      "published": "2026-10-24 12:26"
+    },
+    {
+      "category": "General",
+      "title": "Taiwan counts 1 dead and 527 injured after Typhoon Champi sweeps past",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/taiwan-counts-1-dead-and-527-injured-after-typhoon-champi-sweeps-past-6488446",
+      "published": "2026-10-24 11:34"
+    },
+    {
+      "category": "General",
+      "title": "Pentagon designates China-funded Confucius Institutes as US national security threat",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/pentagon-designates-china-funded-confucius-institutes-us-national-security-threat-6488301",
+      "published": "2026-10-24 09:27"
+    },
+    {
+      "category": "General",
+      "title": "Iran has detailed plans to hit Gulf undersea cables if war resumes, officials say",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-war-gulf-undersea-cables-6487421",
+      "published": "2026-10-24 08:54"
     },
     {
       "category": "General",
@@ -192,94 +262,24 @@
     },
     {
       "category": "General",
-      "title": "Commentary: PHP vulnerabilities - why the good guys have notched a victory in AI-cybersecurity age",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/php-cybersecurity-flaw-ai-victory-good-guys-6485776",
-      "published": "2026-10-24 06:00"
-    },
-    {
-      "category": "General",
-      "title": "PHP Foundation 'under-funded' with one full-time staff member, director says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/php-foundation-under-funded-one-full-time-staff-member-director-says-6488116",
-      "published": "2026-10-24 05:57"
-    },
-    {
-      "category": "General",
-      "title": "Gunmen kill 7 at Jordan church, king vows retaliation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/gunmen-jordan-shooting-king-retaliation-seven-killed-6488111",
-      "published": "2026-10-24 05:54"
-    },
-    {
-      "category": "General",
-      "title": "Trump lifts some Canada tariffs ahead of midterms",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-canada-tariffs-midterms-6488081",
-      "published": "2026-10-24 05:31"
-    },
-    {
-      "category": "General",
-      "title": "African Champions League holders knocked out in second round",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/african-champions-league-holders-knocked-out-in-second-round-6487991",
-      "published": "2026-10-24 04:24"
-    },
-    {
-      "category": "General",
-      "title": "Trump says Canada 'working very hard' to make a deal with US",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-says-canada-working-very-hard-make-deal-us-6487936",
-      "published": "2026-10-24 03:45"
-    },
-    {
-      "category": "General",
-      "title": "After previous day's slump, trading is quieter among AI shares",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/after-previous-days-slump-trading-quieter-among-ai-shares-6487931",
-      "published": "2026-10-24 03:33"
-    },
-    {
-      "category": "General",
-      "title": "S’pore woman says boy waiting behind ‘publicly shamed’ her for returning 29 cans at BCRS machine",
+      "title": "My kiasu mum made us reach Changi Airport 3 hours early. Turns out, she was onto something",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/spore-woman-says-boy-waiting-behind-publicly-shamed-her-for-returning-29-cans-at-bcrs-machine/",
-      "published": "2026-10-23 23:19"
+      "url": "https://mothership.sg/2026/10/my-kiasu-mum-made-us-reach-changi-airport-3-hours-early-turns-out-she-was-onto-something/",
+      "published": "2026-10-24 03:00"
     },
     {
       "category": "General",
-      "title": "Migrant workers queue at Woodlands Recreation Centre for BCRS refunds, earn S$150 to S$160 per month",
+      "title": "'I have no one': M'sia student, 16, who livestreamed axe attack on teacher reportedly wrote about isolation online",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/migrant-workers-woodlands-bcrs-queue/",
-      "published": "2026-10-23 22:47"
+      "url": "https://mothership.sg/2026/10/malaysia-student-livestreams-teacher-attack-lonely-isolated/",
+      "published": "2026-10-24 00:48"
     },
     {
       "category": "General",
-      "title": "Man asks to see iPhone 17 Pro Max at Hougang phone store, snatches it & escapes",
+      "title": "Chinese actor Zhang Linghe unable to enter Taiwan after authorities reject his application",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/man-snatch-iphone-17/",
-      "published": "2026-10-23 20:24"
-    },
-    {
-      "category": "General",
-      "title": "North Korea releases Kim Jong Un looking at shoes & clothing photos following rumours of his death",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/kim-jong-un-death-rumours-2026/",
-      "published": "2026-10-23 19:45"
-    },
-    {
-      "category": "General",
-      "title": "Lee Biscuits, brand behind Marie biscuits, to cease production & close M'sia factory after 92 years",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/lee-biscuits-close/",
-      "published": "2026-10-23 19:21"
-    },
-    {
-      "category": "General",
-      "title": "iPhone Duo out: Vietnamese man, 30, admits it's his 15th year in S'pore to buy latest iPhone",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/iphone-duo-singapore-launch/",
-      "published": "2026-10-23 18:15"
+      "url": "https://mothership.sg/2026/10/zhang-linghe-denied-entry-to-taiwan-for-fanmeeting/",
+      "published": "2026-10-23 23:45"
     }
   ]
 }
