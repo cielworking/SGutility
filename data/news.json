@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-10-24T06:08:41.744766+08:00",
+  "last_updated": "2026-10-24T08:40:52.061113+08:00",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "France boosts police presence, hoping to prevent repeat of riots",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/france-protests-security-police-presence-6488186",
+      "published": "2026-10-24 07:16"
+    },
     {
       "category": "Crime",
       "title": "M'sian man, 23, arrested for attempting to smuggle over 1,380 packets of duty-unpaid cigarettes in tyre rims via Woodlands Checkpoint",
@@ -35,20 +42,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-arrested-for-allegedly-cheating-friend-of-at-least-186000",
       "published": "2026-10-22 22:35"
-    },
-    {
-      "category": "Traffic",
-      "title": "Indycar returns to Europe after 20 year absence with home race for Palou",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/indycar-returns-europe-after-20-year-absence-home-race-palou-6487926",
-      "published": "2026-10-24 03:15"
-    },
-    {
-      "category": "Traffic",
-      "title": "Apple's foldable iPhone hits stores with US$2,000 price tag and scarce supply",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iphone-duo-foldable-apple-launch-ternus-6487866",
-      "published": "2026-10-24 02:34"
     },
     {
       "category": "Traffic",
@@ -87,17 +80,17 @@
     },
     {
       "category": "Transport",
+      "title": "They didn’t want to inherit the family business. Now, Tan Ser Seng’s 3rd generation owners are fighting for its traditions",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/dining/tan-ser-seng-turtle-soup-third-gen-owners-6485146",
+      "published": "2026-10-24 07:25"
+    },
+    {
+      "category": "Transport",
       "title": "OpenAI resumes frontier AI training with enhanced security, no internet access",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/openai-resumes-frontier-ai-training-enhanced-security-no-internet-access-6487981",
       "published": "2026-10-24 04:06"
-    },
-    {
-      "category": "Transport",
-      "title": "Senator says planned Meta commercial terms update could harm US businesses",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/senator-says-planned-meta-commercial-terms-update-could-harm-us-businesses-6487861",
-      "published": "2026-10-24 02:09"
     },
     {
       "category": "Transport",
@@ -126,6 +119,69 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/hdb-resale-prices-down-by-0-1-in-q3-more-units-sold-after-lifting-of-cooling-measure",
       "published": "2026-10-23 09:08"
+    },
+    {
+      "category": "General",
+      "title": "US could strike Iran this weekend, envoy says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/iran-war-us-could-strike-soon-6488231",
+      "published": "2026-10-24 08:40"
+    },
+    {
+      "category": "General",
+      "title": "Sitting all day? This mobility routine can help you loosen up",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/mobility-routine-sitting-6456071",
+      "published": "2026-10-24 07:27"
+    },
+    {
+      "category": "General",
+      "title": "Michelin-starred Nae:um's team opens Italian restaurant Osteria Da Su, with pastas from S$22",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/dining/osteria-da-su-naeum-italian-food-korean-chef-6485231",
+      "published": "2026-10-24 07:26"
+    },
+    {
+      "category": "General",
+      "title": "Amazon cloud capacity sold out through 2027, CEO Jassy says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/amazon-cloud-capacity-sold-out-through-2027-ceo-jassy-says-6488181",
+      "published": "2026-10-24 07:06"
+    },
+    {
+      "category": "General",
+      "title": "UK government sets out $800 million of AI security funding",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/uk-government-sets-out-800-million-ai-security-funding-6488176",
+      "published": "2026-10-24 07:03"
+    },
+    {
+      "category": "General",
+      "title": "Ronaldinho to return to action with Italian club Ravenna",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/ronaldinho-return-action-italian-club-ravenna-6488156",
+      "published": "2026-10-24 06:35"
+    },
+    {
+      "category": "General",
+      "title": "Haze worsens overnight as air quality turns unhealthy across Singapore",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-psi-pm25-oct-24-6488141",
+      "published": "2026-10-24 06:31"
+    },
+    {
+      "category": "General",
+      "title": "Print isn’t dead: How a Singapore printer is keeping paper relevant in a digital world",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/people/allegro-print-singapore-creative-printing-6478201",
+      "published": "2026-10-24 06:14"
+    },
+    {
+      "category": "General",
+      "title": "Surfing-Reigning champion Picklum takes first win of the season in Portugal tubefest",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/surfing-reigning-champion-picklum-takes-first-win-season-in-portugal-tubefest-6488131",
+      "published": "2026-10-24 06:07"
     },
     {
       "category": "General",
@@ -159,7 +215,7 @@
       "category": "General",
       "title": "Trump lifts some Canada tariffs ahead of midterms",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-lifts-some-canada-tariffs-ahead-midterms-6488081",
+      "url": "https://www.channelnewsasia.com/world/trump-canada-tariffs-midterms-6488081",
       "published": "2026-10-24 05:31"
     },
     {
@@ -182,62 +238,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/after-previous-days-slump-trading-quieter-among-ai-shares-6487931",
       "published": "2026-10-24 03:33"
-    },
-    {
-      "category": "General",
-      "title": "Advantage Infantino as AFC backing puts FIFA president on track for fourth term",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/advantage-infantino-afc-backing-puts-fifa-president-track-fourth-term-6487901",
-      "published": "2026-10-24 03:03"
-    },
-    {
-      "category": "General",
-      "title": "Melania Trump announces truce in Ukrainian city 'on brink of disaster'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/melania-trumo-ukraine-russia-truce-oleshky-6487441",
-      "published": "2026-10-24 01:44"
-    },
-    {
-      "category": "General",
-      "title": "Macron condemns 'racist terrorist attack' after deadly shooting near Paris",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/paris-gun-shooting-kills-one-five-injured-trappes-6487371",
-      "published": "2026-10-24 01:05"
-    },
-    {
-      "category": "General",
-      "title": "Stocks fall, but tech shares steady after selloff; oil hits highest in nearly six months",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/stocks-fall-tech-shares-steady-after-selloff-oil-hits-highest-in-nearly-six-months-6485001",
-      "published": "2026-10-24 00:38"
-    },
-    {
-      "category": "General",
-      "title": "US telecom operators wobble after report SpaceX in talks for cell sites",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-telecom-operators-wobble-after-report-spacex-in-talks-cell-sites-6487406",
-      "published": "2026-10-24 00:36"
-    },
-    {
-      "category": "General",
-      "title": "PwC confirms cybersecurity incident involving employee learning records",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/pwc-confirms-cybersecurity-incident-involving-employee-learning-records-6487381",
-      "published": "2026-10-24 00:22"
-    },
-    {
-      "category": "General",
-      "title": "AT&T, T-Mobile tighten AI guardrails as autonomous networks remain years away",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/att-t-mobile-tighten-ai-guardrails-autonomous-networks-remain-years-away-6487386",
-      "published": "2026-10-24 00:18"
-    },
-    {
-      "category": "General",
-      "title": "Bank of Italy calls for digital asset investments by banks despite uncertainty",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/bank-italy-calls-digital-asset-investments-banks-despite-uncertainty-6487331",
-      "published": "2026-10-23 23:57"
     },
     {
       "category": "General",
