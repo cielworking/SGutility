@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-28T04:05:21.815094+08:00",
+  "last_updated": "2026-10-28T07:46:08.550700+08:00",
   "headlines": [
     {
       "category": "Crime",
@@ -42,6 +42,20 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-assisting-in-police-probe-after-toa-payoh-hdb-flat-fire",
       "published": "2026-10-26 16:05"
+    },
+    {
+      "category": "Traffic",
+      "title": "Does ethnicity affect the type of breast cancer you develop and how easily it's detected?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/breast-cancer-ethnicity-singapore-6474356",
+      "published": "2026-10-28 07:14"
+    },
+    {
+      "category": "Traffic",
+      "title": "Orange crush: Timepieces that make a bold statement",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/obsessions/orange-luxury-watches-hermes-omega-hublot-6485951",
+      "published": "2026-10-28 06:21"
     },
     {
       "category": "Traffic",
@@ -108,13 +122,6 @@
     },
     {
       "category": "Transport",
-      "title": "Pope Leo to meet survivors of abuse by clergy in Latin America, Vatican says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/pope-leo-south-america-trip-abuse-victims-6497376",
-      "published": "2026-10-28 00:29"
-    },
-    {
-      "category": "Transport",
       "title": "Young volunteers to be trained to give psychological first aid, boost community resilience in crises",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/during-crises-youths-will-provide-psychological-first-aid-help-communities-be-more-resilient",
@@ -136,136 +143,129 @@
     },
     {
       "category": "General",
-      "title": "Lazio move clear at the top in 6-2 win over 10-man Sassuolo",
+      "title": "From Formula One outsider to 300 starts: Perez marks milestone in Mexico",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lazio-move-clear-top-in-6-2-win-over-10-man-sassuolo-6497786",
+      "url": "https://www.channelnewsasia.com/sport/formula-one-outsider-300-starts-perez-marks-milestone-in-mexico-6498006",
+      "published": "2026-10-28 06:58"
+    },
+    {
+      "category": "General",
+      "title": "Fourth-tier Fleetwood stun Arsenal in League Cup shootout",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/fourth-tier-fleetwood-stun-arsenal-in-league-cup-shootout-6497986",
+      "published": "2026-10-28 06:40"
+    },
+    {
+      "category": "General",
+      "title": "Espanyol sack Gonzalez following shock Sestao defeat",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/espanyol-sack-gonzalez-following-shock-sestao-defeat-6497961",
+      "published": "2026-10-28 06:13"
+    },
+    {
+      "category": "General",
+      "title": "Too late, too far, too little choice: Why surplus food apps face challenges matching meals with takers",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/food-rescue-apps-surplus-food-discount-6495796",
+      "published": "2026-10-28 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Singapore’s next big technology bet cannot wait till we’ve figured out AI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/singapore-ai-quantum-tech-jobs-investment-6494781",
+      "published": "2026-10-28 06:00"
+    },
+    {
+      "category": "General",
+      "title": "‘My hands start itching’: Inside Indonesia’s online gambling addiction",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/my-hands-start-itching-inside-indonesias-online-gambling-addiction-6464871",
+      "published": "2026-10-28 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Anthropic’s record US$2 trillion stock market listing highlights growing risks for us all",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/anthropic-2-trillion-ipo-growing-risks-ai-6496021",
+      "published": "2026-10-28 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Smaller populations need not shrink China and India’s growth",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/china-india-fertility-productivity-jobs-growth-6495996",
+      "published": "2026-10-28 05:58"
+    },
+    {
+      "category": "General",
+      "title": "Flavio Bolsonaro headed to US after Brazil election defeat: US media",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/bolsonaro-brazil-election-defeat-lula-us-6497941",
+      "published": "2026-10-28 05:50"
+    },
+    {
+      "category": "General",
+      "title": "Dutch zookeeper dies after leopard mauling",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/zookeeper-leopards-killed-netherlands-dutch-zoo-6497931",
+      "published": "2026-10-28 05:40"
+    },
+    {
+      "category": "General",
+      "title": "Ukraine, Russia say US-brokered truce holding in ravaged city",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/ukraine-russia-us-brokered-truce-holding-6497861",
+      "published": "2026-10-28 05:16"
+    },
+    {
+      "category": "General",
+      "title": "Israeli exit polls show deadlock, setback for Netanyahu",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/israel-election-netanyahu-eisenkot-exit-polls-6497831",
+      "published": "2026-10-28 04:29"
+    },
+    {
+      "category": "General",
+      "title": "Robinhood profit misses estimates as crypto trading slows",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/robinhood-profit-misses-estimates-crypto-trading-slows-6497816",
+      "published": "2026-10-28 04:12"
+    },
+    {
+      "category": "General",
+      "title": "Visa results beat estimates as resilient customers keep up spending",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/visa-results-beat-estimates-resilient-customers-keep-up-spending-6497821",
+      "published": "2026-10-28 04:12"
+    },
+    {
+      "category": "General",
+      "title": "Logitech beats profit forecast as sales of gaming, conferencing products rise",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/logitech-beats-profit-forecast-sales-gaming-conferencing-products-rise-6497826",
+      "published": "2026-10-28 04:09"
+    },
+    {
+      "category": "General",
+      "title": "Barcelona handed €602 fine over Alvarez approach",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/barcelona-handed-eu602-fine-over-alvarez-approach-6497811",
+      "published": "2026-10-28 04:08"
+    },
+    {
+      "category": "General",
+      "title": "UPS CEO sees $15 billion annual revenue opportunity from data center boom",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/ups-ceo-sees-15-billion-annual-revenue-opportunity-data-center-boom-6497796",
+      "published": "2026-10-28 04:02"
+    },
+    {
+      "category": "General",
+      "title": "Lazio crush Sassuolo to go top, Roma and Como win late",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/lazio-crush-sassuolo-go-top-roma-and-como-win-late-6497786",
       "published": "2026-10-28 03:52"
-    },
-    {
-      "category": "General",
-      "title": "Norway, Finland leaders hold 'frank and substantive' talk with Putin",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/norway-finland-russia-putin-ukraine-war-6497676",
-      "published": "2026-10-28 03:01"
-    },
-    {
-      "category": "General",
-      "title": "Mercedes spent millions on nurturing Antonelli after Ferrari said no",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mercedes-spent-millions-nurturing-antonelli-after-ferrari-said-no-6497711",
-      "published": "2026-10-28 02:49"
-    },
-    {
-      "category": "General",
-      "title": "Hacking attempts against US Federal Election Commission system triggered outage, email shows",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/hacking-attempts-against-us-federal-election-commission-system-triggered-outage-email-shows-6497701",
-      "published": "2026-10-28 02:44"
-    },
-    {
-      "category": "General",
-      "title": "US agency approves Amazon Leo’s $11.5 billion acquisition of Globalstar",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-agency-approves-amazon-leos-115-billion-acquisition-globalstar-6497686",
-      "published": "2026-10-28 02:25"
-    },
-    {
-      "category": "General",
-      "title": "Trump says will respect US midterm results 'if they're honest'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-us-midterms-election-respect-honest-results-6497496",
-      "published": "2026-10-28 01:59"
-    },
-    {
-      "category": "General",
-      "title": "Smith’s absence a pain in the neck for Australia’s reshuffled top six batting",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/smiths-absence-pain-in-neck-australias-reshuffled-top-six-batting-6497571",
-      "published": "2026-10-28 01:55"
-    },
-    {
-      "category": "General",
-      "title": "ASM International expects Q4 sales above forecasts, to hit 2030 goal three years early",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/asm-international-expects-q4-sales-above-forecasts-hit-2030-goal-three-years-early-6497561",
-      "published": "2026-10-28 01:50"
-    },
-    {
-      "category": "General",
-      "title": "NFL-49ers' Kittle says sour taste from first loss will fuel team",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/nfl-49ers-kittle-says-sour-taste-first-loss-will-fuel-team-6497531",
-      "published": "2026-10-28 01:25"
-    },
-    {
-      "category": "General",
-      "title": "Exclusive-US agency is again probing if Polymarket broke 2022 settlement, sources says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-us-agency-again-probing-if-polymarket-broke-2022-settlement-sources-says-6497526",
-      "published": "2026-10-28 01:25"
-    },
-    {
-      "category": "General",
-      "title": "FIFA to visit potential 2030 World Cup host cities in November and December",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fifa-visit-potential-2030-world-cup-host-cities-in-november-and-december-6497501",
-      "published": "2026-10-28 01:16"
-    },
-    {
-      "category": "General",
-      "title": "Brazil's Bolsonaro has passports cancelled as whereabouts unclear",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/flavio-bolsonaro-passports-cancelled-brazil-election-6497431",
-      "published": "2026-10-28 01:06"
-    },
-    {
-      "category": "General",
-      "title": "US Justice Dept asks Washington state not to count ballots from possible noncitizens",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-justice-department-washington-us-midterms-noncitizen-vote-6497396",
-      "published": "2026-10-28 00:47"
-    },
-    {
-      "category": "General",
-      "title": "Robinhood CEO's AI startup Harmonic expands into software, chip design verification",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/robinhood-ceos-ai-startup-harmonic-expands-software-chip-design-verification-6497386",
-      "published": "2026-10-28 00:32"
-    },
-    {
-      "category": "General",
-      "title": "Trump says he will ban term artificial intelligence",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-says-he-will-ban-term-artificial-intelligence-6497381",
-      "published": "2026-10-28 00:25"
-    },
-    {
-      "category": "General",
-      "title": "GSK to nearly double cancer medicines in clinical trials next year",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/gsk-nearly-double-cancer-medicines-in-clinical-trials-next-year-6497336",
-      "published": "2026-10-28 00:12"
-    },
-    {
-      "category": "General",
-      "title": "Xhaka and Embolo to return to international duty after Covid test investigation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/xhaka-and-embolo-return-international-duty-after-covid-test-investigation-6497356",
-      "published": "2026-10-28 00:03"
-    },
-    {
-      "category": "General",
-      "title": "Oracle expands chip supply deal with Nvidia, adds Google and Cerebras offerings",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oracle-expands-chip-supply-deal-nvidia-adds-google-and-cerebras-offerings-6497341",
-      "published": "2026-10-28 00:01"
-    },
-    {
-      "category": "General",
-      "title": "Chelsea's Joao Pedro out for 'a few weeks', says Alonso",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/chelseas-joao-pedro-out-few-weeks-says-alonso-6497206",
-      "published": "2026-10-27 23:06"
     },
     {
       "category": "General",
