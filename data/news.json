@@ -1,19 +1,40 @@
 {
-  "last_updated": "2026-10-27T10:04:37.406605+08:00",
+  "last_updated": "2026-10-27T15:50:31.087288+08:00",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Police NSF, 23, allegedly trespasses into female toilet at Police Training Command, jumps from building to evade arrest",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/police-nsf-trespass-female-toilet-arrest/",
-      "published": "2026-10-26 20:46"
+      "title": "6 members of Singapore syndicate hawking vapes from Malaysia get jail, fines",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/6-members-vape-syndicate-malaysia-jail-6495656",
+      "published": "2026-10-27 15:34"
     },
     {
       "category": "Crime",
-      "title": "No new faces in PAP's top leadership signals party's preference for stability & continuity: Analysts",
+      "title": "Crystal Jade Fine Dining CEO appears in court to face company's tax charge",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/crystal-jade-ceo-court-tax-charge-6495211",
+      "published": "2026-10-27 11:45"
+    },
+    {
+      "category": "Crime",
+      "title": "Man, 24, uses knife to injure 2 people at Prinsep street before fleeing",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/pap-cec-2026-status-quo-stability/",
-      "published": "2026-10-26 04:21"
+      "url": "https://mothership.sg/2026/10/man-knife-injure-two-people-prinsep-street/",
+      "published": "2026-10-27 02:18"
+    },
+    {
+      "category": "Crime",
+      "title": "Marina Bay high-speed chase: Man handed 6 charges after allegedly hurting another driver",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/marina-bay-high-speed-chase-man-handed-6-charges-after-allegedly-hurting-another-driver",
+      "published": "2026-10-27 15:17"
+    },
+    {
+      "category": "Crime",
+      "title": "Man charged over Prinsep Street knife attack that left two injured",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/man-charged-over-prinsep-street-knife-attack-that-left-two-injured",
+      "published": "2026-10-27 11:08"
     },
     {
       "category": "Crime",
@@ -38,13 +59,6 @@
     },
     {
       "category": "Crime",
-      "title": "ST Live: Israel election, Harry Kane wins, James Comey charged",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/st-live-news-as-it-happens6",
-      "published": "2026-10-26 07:41"
-    },
-    {
-      "category": "Crime",
       "title": "NSF arrested after sneaking into women’s toilet and jumping from building to evade officers",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/nsf-arrested-after-sneaking-into-female-toilet-and-jumping-from-building-to-evade-officers",
@@ -52,24 +66,52 @@
     },
     {
       "category": "Traffic",
-      "title": "South Korea's economy grows faster than expected in third quarter",
+      "title": "Thailand's September car production drops 6.08% on year",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/south-korea-economic-growth-third-quarter-2026-estimates-6494601",
-      "published": "2026-10-27 08:43"
+      "url": "https://www.channelnewsasia.com/business/thailands-september-car-production-drops-608-year-6495676",
+      "published": "2026-10-27 14:49"
     },
     {
       "category": "Traffic",
-      "title": "Eric Bauza, modern voice of Looney Tunes characters, dies at 46",
+      "title": "Top doubles players call on ATP to rethink proposed changes",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/eric-bauza-voice-actor-looney-tunes-dead-6493591",
-      "published": "2026-10-27 07:49"
+      "url": "https://www.channelnewsasia.com/sport/top-doubles-players-call-atp-rethink-proposed-changes-6495381",
+      "published": "2026-10-27 12:18"
     },
     {
       "category": "Traffic",
-      "title": "England and Bayern forward Harry Kane wins men's Ballon d'Or",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-harry-kane-ballon-dor-win-bayern-munich-6494586",
-      "published": "2026-10-27 07:19"
+      "title": "Telok Ayer 3-car drink driving accident: Woman, 25, hit while seated outside bar, dies 6 days later",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/cross-street-accident-woman-dies/",
+      "published": "2026-10-27 18:08"
+    },
+    {
+      "category": "Traffic",
+      "title": "S'pore badminton player Yeo Jia Min gets surgery for bone deformity in her feet",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/yeo-jia-min-surgery-bone-deformity-feet/",
+      "published": "2026-10-27 02:48"
+    },
+    {
+      "category": "Traffic",
+      "title": "S'pore woman who suffered brain injuries after 2016 e-scooter collision dies at 64",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/woman-2016-e-scooter-collison-dies/",
+      "published": "2026-10-27 01:39"
+    },
+    {
+      "category": "Traffic",
+      "title": "One dead after accident on KJE near Woodlands exit",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/one-dead-after-accident-on-kje-near-woodlands-exit-on-oct-27",
+      "published": "2026-10-27 13:11"
+    },
+    {
+      "category": "Traffic",
+      "title": "Selected public train, bus services to end later on eve of Deepavali",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/selected-public-train-bus-services-to-end-later-on-eve-of-deepavali",
+      "published": "2026-10-27 12:14"
     },
     {
       "category": "Traffic",
@@ -93,25 +135,18 @@
       "published": "2026-10-26 18:14"
     },
     {
-      "category": "Traffic",
-      "title": "Nursing home staff to be trained in end-of-life care under Dover Park Hospice, NTUC Health tie-up",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/nursing-home-staff-to-be-trained-in-end-of-life-care-under-dover-park-hospice-ntuc-health-tie-up",
-      "published": "2026-10-25 20:00"
-    },
-    {
       "category": "Transport",
-      "title": "India's IT firms face a new dilemma: How to train tomorrow's engineers in the age of AI",
+      "title": "Indonesia sends oxygen bus to aid residents choking on forest fire haze",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-it-ai-reshapes-entry-level-jobs-6485426",
-      "published": "2026-10-27 06:00"
+      "url": "https://www.channelnewsasia.com/asia/indonesia-oxygen-bus-residents-forest-fire-haze-6495621",
+      "published": "2026-10-27 15:06"
     },
     {
       "category": "Transport",
-      "title": "S'pore woman, 35, admits to helping dispose of Megan Khung's body & not stopping abuse by mother & boyfriend",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/megan-khung-nouvelle-chua-dispose-body/",
-      "published": "2026-10-26 21:11"
+      "title": "HSBC quarterly profit jumps but shares slide after flat revenue for wealth business",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/hsbc-quarterly-profit-jumps-shares-slide-after-flat-revenue-wealth-business-6495431",
+      "published": "2026-10-27 12:50"
     },
     {
       "category": "Transport",
@@ -119,27 +154,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/training-public-officers-at-global-firms-part-of-new-initiatives-to-grow-spore-nuclear-talent",
       "published": "2026-10-26 12:08"
-    },
-    {
-      "category": "Transport",
-      "title": "Pre-school teacher who overcame childhood abuse among 11 awarded President’s Challenge fellowships",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/parenting-education/preschool-teacher-who-overcame-childhood-abuse-among-11-awarded-presidents-challenge-fellowships",
-      "published": "2026-10-25 20:30"
-    },
-    {
-      "category": "Fire",
-      "title": "After 11 years, Asia Pulp & Paper has been named again over links to haze fires. What is it & what's the S'pore connection?",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/asia-pulp-paper-haze-who-what/",
-      "published": "2026-10-26 05:19"
-    },
-    {
-      "category": "Money",
-      "title": "Japan's September corporate services prices rise 3.7% yr/yr",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/japans-september-corporate-services-prices-rise-37-yryr-6494756",
-      "published": "2026-10-27 08:27"
     },
     {
       "category": "Money",
@@ -150,136 +164,122 @@
     },
     {
       "category": "Money",
-      "title": "Indonesia’s gas supply cuts unlikely to affect electricity prices that much: Tan See Leng",
+      "title": "ST Live: Sheng Siong, FairPrice engaging suppliers linked to haze notices, Mbappe’s China woes",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/politics/gas-supply-may-pursue-remedies-if-contract-breached-following-indonesias-export-cuts-tan-see-leng",
-      "published": "2026-10-25 13:40"
+      "url": "https://www.straitstimes.com/singapore/st-live-news-as-it-happens6",
+      "published": "2026-10-26 07:41"
     },
     {
       "category": "General",
-      "title": "Netanyahu's political survival on the line as Israel votes",
+      "title": "Competitive eater Zermatt Neo opens first restaurant Over at Tras Street, comes with 8kg food challenge",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israel-election-prime-minister-netanyahu-6494976",
-      "published": "2026-10-27 09:50"
+      "url": "https://www.channelnewsasia.com/dining/zermatt-neo-over-restaurant-tras-street-8kg-food-challenge-6495576",
+      "published": "2026-10-27 15:42"
     },
     {
       "category": "General",
-      "title": "JYP Entertainment soars 10% on reports of tender offer plan to buy up to half of firm",
+      "title": "Tripling renewable energy capacity by 2030 may still not be enough to meet climate goals: IRENA chief",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/jyp-entertainment-soars-10-reports-tender-offer-plan-buy-up-half-firm-6494796",
-      "published": "2026-10-27 08:52"
+      "url": "https://www.channelnewsasia.com/world/irena-chief-renewable-energy-target-2030-may-not-be-enough-climate-goals-6492991",
+      "published": "2026-10-27 15:34"
     },
     {
       "category": "General",
-      "title": "US rapper Macklemore launches 'Free Palestine Tour' after Ed Sheeran fallout",
+      "title": "Veteran stars Alan Tam, Jackie Chan, Eric Tsang, George Lam and Sally Yeh reunite for dinner gathering",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/entertainment/macklemore-free-palestine-tour-6494741",
-      "published": "2026-10-27 08:47"
+      "url": "https://www.channelnewsasia.com/entertainment/alan-tam-jackie-chan-eric-tsang-george-lam-sally-yeh-dinner-6495216",
+      "published": "2026-10-27 15:08"
     },
     {
       "category": "General",
-      "title": "Oil eases on Middle East diplomacy hopes, Saudi attacks keep supply worries alive",
+      "title": "Could everyday products be linked to haze? Why sustainable sourcing remains a challenge",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-eases-middle-east-diplomacy-hopes-saudi-attacks-keep-supply-worries-alive-6494771",
-      "published": "2026-10-27 08:37"
+      "url": "https://www.channelnewsasia.com/singapore/haze-sustainable-sourcing-indonesia-palm-oil-pulp-paper-products-6495426",
+      "published": "2026-10-27 15:07"
     },
     {
       "category": "General",
-      "title": "Air quality remains in good-to-moderate range; NEA says low likelihood of haze on Tuesday",
+      "title": "North Korean artillery pointed south stirs concern at border observatory",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/haze-singapore-pm25-psi-oct-27-nea-6494531",
-      "published": "2026-10-27 07:25"
+      "url": "https://www.channelnewsasia.com/east-asia/north-korea-points-artillery-south-dmz-border-6495571",
+      "published": "2026-10-27 14:38"
     },
     {
       "category": "General",
-      "title": "Why do we keep buying black clothes – even when we want to wear more colour?",
+      "title": "World's climate pledges would cut emissions a tenth of what's needed: UN",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/style-beauty/why-people-keep-buying-black-clothes-6438161",
-      "published": "2026-10-27 07:18"
+      "url": "https://www.channelnewsasia.com/sustainability/worlds-climate-pledges-would-cut-emissions-tenth-whats-needed-un-6495581",
+      "published": "2026-10-27 14:11"
     },
     {
       "category": "General",
-      "title": "England forward Kane crowned Ballon d'Or winner, Putellas wins women's award",
+      "title": "Nvidia, Meta deepen AI ties with $3 billion investment deal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-forward-kane-crowned-ballon-dor-winner-putellas-wins-womens-award-6494571",
-      "published": "2026-10-27 07:01"
+      "url": "https://www.channelnewsasia.com/business/nvidia-meta-deepen-ai-ties-3-billion-investment-deal-6495591",
+      "published": "2026-10-27 14:07"
     },
     {
       "category": "General",
-      "title": "Putellas wins 2026 Ballon d'Or Feminin award",
+      "title": "Thousands evacuate India's eastern coast ahead of Cyclone Arnab",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/putellas-wins-2026-ballon-dor-feminin-award-6494541",
-      "published": "2026-10-27 06:42"
+      "url": "https://www.channelnewsasia.com/asia/india-thousands-evacuated-cyclone-arnab-6495481",
+      "published": "2026-10-27 13:41"
     },
     {
       "category": "General",
-      "title": "Spain relaxes initial proposal for data-center rules",
+      "title": "China's Unitree Robotics shares surge over 60% in less than two weeks despite industry risks warning",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/spain-relaxes-initial-proposal-data-center-rules-6494486",
-      "published": "2026-10-27 06:03"
+      "url": "https://www.channelnewsasia.com/business/china-unitree-robotics-shares-jp-morgan-6495071",
+      "published": "2026-10-27 13:25"
     },
     {
       "category": "General",
-      "title": "Singapore must keep minority safeguards like GRC system, as 'racial undercurrents' persist: Jayakumar",
+      "title": "China's industrial profit growth picks up amid deepening economic divergence",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/grc-race-religion-minority-jayakumar-6485786",
-      "published": "2026-10-27 06:00"
+      "url": "https://www.channelnewsasia.com/business/chinas-industrial-profit-growth-picks-up-amid-deepening-economic-divergence-6495031",
+      "published": "2026-10-27 13:07"
     },
     {
       "category": "General",
-      "title": "Commentary: Singapore is doing more heritage studies – but does it have enough experts?",
+      "title": "Japan stands ready to take decisive action in currency market, finance minister says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/heritage-study-housing-development-are-there-enough-experts-6466361",
-      "published": "2026-10-27 06:00"
+      "url": "https://www.channelnewsasia.com/business/japan-stands-ready-take-decisive-action-in-currency-market-finance-minister-says-6495416",
+      "published": "2026-10-27 12:48"
     },
     {
       "category": "General",
-      "title": "Commentary: Middle powers need the US – when it comes to China exports",
+      "title": "Moody's sees positive shift in Japan's growth, resilience remains key test",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/trump-china-tariffs-partners-action-overcapacity-6490791",
-      "published": "2026-10-27 05:59"
+      "url": "https://www.channelnewsasia.com/business/moodys-sees-positive-shift-in-japans-growth-resilience-remains-key-test-6495406",
+      "published": "2026-10-27 12:33"
     },
     {
       "category": "General",
-      "title": "Commentary: Ukraine’s drone strikes on Russian data centres may change how we see disinformation",
+      "title": "Singapore, Germany to expand industrial AI cooperation as part of updated 5-pillar work plan",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/ukraine-drone-strikes-russia-data-centres-disinformation-6492666",
-      "published": "2026-10-27 05:58"
+      "url": "https://www.channelnewsasia.com/singapore/singapore-germany-ai-cooperation-lawrence-wong-friedrich-merz-6493021",
+      "published": "2026-10-27 12:31"
     },
     {
       "category": "General",
-      "title": "Iran holds 'very good' talks with Mecca pact nations on region's security",
+      "title": "Mbappe dropped by Chinese brands for 'offending national sentiments'",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/mecca-iran-talks-middle-east-6494456",
-      "published": "2026-10-27 05:43"
+      "url": "https://www.channelnewsasia.com/sport/kylian-mbappe-dropped-china-brands-offending-national-sentiments-6495391",
+      "published": "2026-10-27 12:30"
     },
     {
       "category": "General",
-      "title": "Mayulu, Godts send PSG top with win over Olympique Lyonnais",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mayulu-godts-send-psg-top-win-over-olympique-lyonnais-6494451",
-      "published": "2026-10-27 05:33"
-    },
-    {
-      "category": "General",
-      "title": "Jamus Lim responds to PM Wong's criticisms that WP 'shifts with the political winds', Petir responds in turn",
+      "title": "Halloween 2026: Investigate what escaped the lab at Science Centre S'pore after dark from Oct. 27-31",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/jamus-lim-replies-pm-wong/",
-      "published": "2026-10-26 21:20"
+      "url": "https://mothership.sg/2026/10/science-centre-spookology-halloween/",
+      "published": "2026-10-27 18:02"
     },
     {
       "category": "General",
-      "title": "'S'poreans should never feel obliged to watch a made in S'pore film': 'I Not Stupid' film producer",
+      "title": "Woman in Jurong West holding umbrella & rummaging for cans in rain sparks debate",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/support-singapore-films-daniel-yun/",
-      "published": "2026-10-26 20:56"
-    },
-    {
-      "category": "General",
-      "title": "5 new power plants & Saudi oil storage at Jurong Rock Caverns: Tan See Leng outlines plans to enhance S'pore's energy security",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/tan-see-leng-energy-plans/",
-      "published": "2026-10-26 20:11"
+      "url": "https://mothership.sg/2026/10/woman-look-for-cans/",
+      "published": "2026-10-27 03:32"
     }
   ]
 }
