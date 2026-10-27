@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-27T07:09:53.503194+08:00",
+  "last_updated": "2026-10-27T10:04:37.406605+08:00",
   "headlines": [
     {
       "category": "Crime",
@@ -38,6 +38,13 @@
     },
     {
       "category": "Crime",
+      "title": "ST Live: Israel election, Harry Kane wins, James Comey charged",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/st-live-news-as-it-happens6",
+      "published": "2026-10-26 07:41"
+    },
+    {
+      "category": "Crime",
       "title": "NSF arrested after sneaking into women’s toilet and jumping from building to evade officers",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/nsf-arrested-after-sneaking-into-female-toilet-and-jumping-from-building-to-evade-officers",
@@ -45,17 +52,24 @@
     },
     {
       "category": "Traffic",
-      "title": "England and Bayern forward Kane crowned 2026 Ballon d'Or winner",
+      "title": "South Korea's economy grows faster than expected in third quarter",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-and-bayern-forward-kane-crowned-2026-ballon-dor-winner-6494571",
-      "published": "2026-10-27 07:01"
+      "url": "https://www.channelnewsasia.com/east-asia/south-korea-economic-growth-third-quarter-2026-estimates-6494601",
+      "published": "2026-10-27 08:43"
     },
     {
       "category": "Traffic",
-      "title": "Wall St banks, Blackstone line up $63 billion to finance Broadcom AI chips for Anthropic",
+      "title": "Eric Bauza, modern voice of Looney Tunes characters, dies at 46",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/wall-st-banks-blackstone-line-up-63-billion-finance-broadcom-ai-chips-anthropic-6494381",
-      "published": "2026-10-27 04:31"
+      "url": "https://www.channelnewsasia.com/entertainment/eric-bauza-voice-actor-looney-tunes-dead-6493591",
+      "published": "2026-10-27 07:49"
+    },
+    {
+      "category": "Traffic",
+      "title": "England and Bayern forward Harry Kane wins men's Ballon d'Or",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/england-harry-kane-ballon-dor-win-bayern-munich-6494586",
+      "published": "2026-10-27 07:19"
     },
     {
       "category": "Traffic",
@@ -87,6 +101,13 @@
     },
     {
       "category": "Transport",
+      "title": "India's IT firms face a new dilemma: How to train tomorrow's engineers in the age of AI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-it-ai-reshapes-entry-level-jobs-6485426",
+      "published": "2026-10-27 06:00"
+    },
+    {
+      "category": "Transport",
       "title": "S'pore woman, 35, admits to helping dispose of Megan Khung's body & not stopping abuse by mother & boyfriend",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/megan-khung-nouvelle-chua-dispose-body/",
@@ -108,13 +129,6 @@
     },
     {
       "category": "Fire",
-      "title": "UN-commissioned experts say Gaza ceasefire has not stopped Israel from committing genocide",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/un-expert-gaza-israel-alleged-genocide-6494281",
-      "published": "2026-10-27 04:29"
-    },
-    {
-      "category": "Fire",
       "title": "After 11 years, Asia Pulp & Paper has been named again over links to haze fires. What is it & what's the S'pore connection?",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/asia-pulp-paper-haze-who-what/",
@@ -122,10 +136,10 @@
     },
     {
       "category": "Money",
-      "title": "Skydance offers buyouts to some employees to cut costs after Warner Bros merger",
+      "title": "Japan's September corporate services prices rise 3.7% yr/yr",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/skydance-offers-buyouts-some-employees-cut-costs-after-warner-bros-merger-6494286",
-      "published": "2026-10-27 03:29"
+      "url": "https://www.channelnewsasia.com/business/japans-september-corporate-services-prices-rise-37-yryr-6494756",
+      "published": "2026-10-27 08:27"
     },
     {
       "category": "Money",
@@ -140,6 +154,55 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/gas-supply-may-pursue-remedies-if-contract-breached-following-indonesias-export-cuts-tan-see-leng",
       "published": "2026-10-25 13:40"
+    },
+    {
+      "category": "General",
+      "title": "Netanyahu's political survival on the line as Israel votes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/israel-election-prime-minister-netanyahu-6494976",
+      "published": "2026-10-27 09:50"
+    },
+    {
+      "category": "General",
+      "title": "JYP Entertainment soars 10% on reports of tender offer plan to buy up to half of firm",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/jyp-entertainment-soars-10-reports-tender-offer-plan-buy-up-half-firm-6494796",
+      "published": "2026-10-27 08:52"
+    },
+    {
+      "category": "General",
+      "title": "US rapper Macklemore launches 'Free Palestine Tour' after Ed Sheeran fallout",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/entertainment/macklemore-free-palestine-tour-6494741",
+      "published": "2026-10-27 08:47"
+    },
+    {
+      "category": "General",
+      "title": "Oil eases on Middle East diplomacy hopes, Saudi attacks keep supply worries alive",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-eases-middle-east-diplomacy-hopes-saudi-attacks-keep-supply-worries-alive-6494771",
+      "published": "2026-10-27 08:37"
+    },
+    {
+      "category": "General",
+      "title": "Air quality remains in good-to-moderate range; NEA says low likelihood of haze on Tuesday",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-singapore-pm25-psi-oct-27-nea-6494531",
+      "published": "2026-10-27 07:25"
+    },
+    {
+      "category": "General",
+      "title": "Why do we keep buying black clothes – even when we want to wear more colour?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/style-beauty/why-people-keep-buying-black-clothes-6438161",
+      "published": "2026-10-27 07:18"
+    },
+    {
+      "category": "General",
+      "title": "England forward Kane crowned Ballon d'Or winner, Putellas wins women's award",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/england-forward-kane-crowned-ballon-dor-winner-putellas-wins-womens-award-6494571",
+      "published": "2026-10-27 07:01"
     },
     {
       "category": "General",
@@ -164,13 +227,6 @@
     },
     {
       "category": "General",
-      "title": "As AI reshapes entry-level jobs, India's IT industry grapples with developing future talent",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-it-ai-reshapes-entry-level-jobs-6485426",
-      "published": "2026-10-27 06:00"
-    },
-    {
-      "category": "General",
       "title": "Commentary: Singapore is doing more heritage studies – but does it have enough experts?",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/commentary/heritage-study-housing-development-are-there-enough-experts-6466361",
@@ -178,7 +234,7 @@
     },
     {
       "category": "General",
-      "title": "Commentary: Trump needs partners when it comes to China’s overcapacity",
+      "title": "Commentary: Middle powers need the US – when it comes to China exports",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/commentary/trump-china-tariffs-partners-action-overcapacity-6490791",
       "published": "2026-10-27 05:59"
@@ -206,55 +262,6 @@
     },
     {
       "category": "General",
-      "title": "Chinese shoppers are spending less on luxury. The world’s biggest fashion houses are feeling the pinch",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/luxury-brands-china-demand-slowdown-6491896",
-      "published": "2026-10-27 05:27"
-    },
-    {
-      "category": "General",
-      "title": "US judge says firing of daughter of former FBI director unlawful",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/maurene-comey-james-fbi-director-fbi-director-6494416",
-      "published": "2026-10-27 05:15"
-    },
-    {
-      "category": "General",
-      "title": "Applied Materials to raise BESI stake to about 20%",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/applied-materials-raise-besi-stake-about-20-6494426",
-      "published": "2026-10-27 05:04"
-    },
-    {
-      "category": "General",
-      "title": "Apple says it will replace iPhone Duo units showing screen problems",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apple-says-it-will-replace-iphone-duo-units-showing-screen-problems-6494391",
-      "published": "2026-10-27 04:43"
-    },
-    {
-      "category": "General",
-      "title": "Leinster's Furlong cited over alleged genital grabbing",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/leinsters-furlong-cited-over-alleged-genital-grabbing-6494351",
-      "published": "2026-10-27 04:13"
-    },
-    {
-      "category": "General",
-      "title": "LIV Golf appoints former TaylorMade CEO Mark King as senior adviser",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/liv-golf-appoints-former-taylormade-ceo-mark-king-senior-adviser-6494246",
-      "published": "2026-10-27 03:02"
-    },
-    {
-      "category": "General",
-      "title": "Machado ready to meet Venezuela leader after shock return",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/machado-rodriguez-venezuela-return-exile-talks-eu-6494226",
-      "published": "2026-10-27 02:58"
-    },
-    {
-      "category": "General",
       "title": "Jamus Lim responds to PM Wong's criticisms that WP 'shifts with the political winds', Petir responds in turn",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/jamus-lim-replies-pm-wong/",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/tan-see-leng-energy-plans/",
       "published": "2026-10-26 20:11"
-    },
-    {
-      "category": "General",
-      "title": "Retired M'sia doctor, 73, dies after being buried alive in landslide after heavy rain in Penang",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/landslide-penang-buries-doctor-dies/",
-      "published": "2026-10-26 20:05"
     }
   ]
 }
