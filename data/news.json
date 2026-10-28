@@ -1,12 +1,26 @@
 {
-  "last_updated": "2026-10-29T02:51:34.574546+08:00",
+  "last_updated": "2026-10-29T07:13:27.939891+08:00",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Anthropic tells California governor courts should be able to block risky AI models",
+      "title": "Ong Teng Cheong 'stress-tested' EP scheme, showed that establishment figure can act independently: Jayakumar",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/anthropic-tells-california-governor-courts-should-be-able-block-risky-ai-models-6500671",
-      "published": "2026-10-29 00:08"
+      "url": "https://www.channelnewsasia.com/singapore/elected-presidency-ong-teng-cheong-jayakumar-6486206",
+      "published": "2026-10-29 06:00"
+    },
+    {
+      "category": "Crime",
+      "title": "Bayern coach Kompany discharged from hospital, says club",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/bayern-coach-kompany-discharged-hospital-says-club-6501291",
+      "published": "2026-10-29 04:59"
+    },
+    {
+      "category": "Crime",
+      "title": "UK comedian Brand tells rape trial 'consent is fundamental'",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/russell-brand-uk-comedian-rape-trial-pleads-not-guilty-6501171",
+      "published": "2026-10-29 03:42"
     },
     {
       "category": "Crime",
@@ -14,6 +28,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/admiralty-park-gang-rape/",
       "published": "2026-10-28 22:02"
+    },
+    {
+      "category": "Crime",
+      "title": "Inferno at sea: Injured engineer sues tanker operators in $1.3m High Court claim",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/inferno-at-sea-injured-engineer-sues-tanker-operators-in-1-3m-high-court-claim",
+      "published": "2026-10-29 05:00"
     },
     {
       "category": "Crime",
@@ -52,24 +73,31 @@
     },
     {
       "category": "Traffic",
-      "title": "Google launches Gemini 4 Carbon AI model with cybersecurity focus",
+      "title": "Bayern crush Magdeburg in German Cup with fresh Ballon d'Or winner Kane on the bench",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/google-launches-gemini-4-carbon-ai-model-cybersecurity-focus-6501056",
-      "published": "2026-10-29 02:08"
+      "url": "https://www.channelnewsasia.com/sport/bayern-crush-magdeburg-in-german-cup-fresh-ballon-dor-winner-kane-bench-6501416",
+      "published": "2026-10-29 06:46"
     },
     {
       "category": "Traffic",
-      "title": "US Fed expected to hold rates steady ahead of key midterm elections",
+      "title": "Polish league bans player for six months over post-red card attack",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-fed-expected-hold-rates-steady-ahead-key-midterm-elections-6500656",
-      "published": "2026-10-29 00:23"
+      "url": "https://www.channelnewsasia.com/sport/polish-league-bans-player-six-months-over-post-red-card-attack-6501341",
+      "published": "2026-10-29 05:33"
     },
     {
       "category": "Traffic",
-      "title": "Motor racing-Antonelli following in the footsteps of Farina and Ascari",
+      "title": "Inter win at Venezia to stay level with Lazio, Milan crash against Bologna",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/motor-racing-antonelli-following-in-footsteps-farina-and-ascari-6500436",
-      "published": "2026-10-28 22:58"
+      "url": "https://www.channelnewsasia.com/sport/inter-win-venezia-stay-level-lazio-milan-crash-against-bologna-6501256",
+      "published": "2026-10-29 04:43"
+    },
+    {
+      "category": "Traffic",
+      "title": "Celestini appointed Burnley head coach after Hayen's departure",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/celestini-appointed-burnley-head-coach-after-hayens-departure-6501141",
+      "published": "2026-10-29 03:08"
     },
     {
       "category": "Traffic",
@@ -93,32 +121,18 @@
       "published": "2026-10-28 16:09"
     },
     {
-      "category": "Traffic",
-      "title": "St Luke’s Hospital, Lien Foundation pioneer early palliative care through GPs",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/st-lukes-hospital-lien-foundation-pioneer-early-palliative-care-through-gps",
-      "published": "2026-10-27 22:10"
-    },
-    {
-      "category": "Traffic",
-      "title": "10 car brands in S’pore register fewer than 1 car a month; 4 dominate Jan-Sept sales",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/transport/10-car-brands-in-spore-register-fewer-than-1-car-a-month-4-dominate-jan-sept-sales",
-      "published": "2026-10-27 20:42"
-    },
-    {
-      "category": "Transport",
-      "title": "Meta delays indefinitely its rollout of new commercial terms after publishers' concerns",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/meta-delays-indefinitely-its-rollout-new-commercial-terms-after-publishers-concerns-6501111",
-      "published": "2026-10-29 02:39"
-    },
-    {
       "category": "Transport",
       "title": "Uncertainties in approvals and laws can significantly delay subsea cables for ASEAN Power Grid",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/environment/uncertainties-in-approvals-and-laws-can-significantly-delay-subsea-cables-for-asean-power-grid",
       "published": "2026-10-28 21:10"
+    },
+    {
+      "category": "Fire",
+      "title": "Alphabet shares fall after revenue miss, cash burn worsens",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/alphabet-shares-fall-after-revenue-miss-cash-burn-worsens-6501196",
+      "published": "2026-10-29 04:07"
     },
     {
       "category": "Fire",
@@ -135,18 +149,81 @@
       "published": "2026-10-28 15:33"
     },
     {
-      "category": "Money",
-      "title": "SKH, NUH save over $1.1m in annual energy costs with innovations in operating theatres",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/health/skh-nuh-save-more-1-1m-in-annual-energy-costs-with-innovations-in-operating-theatres",
-      "published": "2026-10-27 21:00"
+      "category": "General",
+      "title": "Cyberattack concealed political spending by big donors before US midterm elections",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/cyberattack-concealed-political-spending-big-donors-us-midterm-elections-6501396",
+      "published": "2026-10-29 06:42"
     },
     {
-      "category": "Housing",
-      "title": "Two Tiong Bahru HDB blocks to proceed with HIP upgrading after successful re-poll",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/housing/two-tiong-bahru-hdb-blocks-to-proceed-with-hip-upgrading-after-successful-re-poll",
-      "published": "2026-10-28 11:10"
+      "category": "General",
+      "title": "Five years on, Julien Royer’s Claudine is having its best year yet. What’s behind its success?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/experiences/julien-royer-claudine-singapore-fifth-anniversary-6498606",
+      "published": "2026-10-29 06:13"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Why staying indoors may not be enough when haze hits",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/haze-stay-indoors-psi-health-advisory-6496071",
+      "published": "2026-10-29 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Polish fourth-tier club emulate Fleetwood in Cup upset of league champions",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/polish-fourth-tier-club-emulate-fleetwood-in-cup-upset-league-champions-6501366",
+      "published": "2026-10-29 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Indecisive election reveals the deeper fault lines in Israel politics",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/israel-election-results-benjamin-netanyahu-divided-6499566",
+      "published": "2026-10-29 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: Election win by Brazil's Lula limits Trump’s Latin American ambition",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/brazil-election-luiz-inacio-lula-da-silva-win-6499461",
+      "published": "2026-10-29 05:58"
+    },
+    {
+      "category": "General",
+      "title": "US stocks eye big tech earnings as Fed holds rates steady",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-stocks-big-tech-fed-6501351",
+      "published": "2026-10-29 05:52"
+    },
+    {
+      "category": "General",
+      "title": "Putin salutes Musk's genius as Russia plays catch-up with Starlink",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/putin-elon-musk-russia-starlink-6501276",
+      "published": "2026-10-29 05:28"
+    },
+    {
+      "category": "General",
+      "title": "Gen Digital raises annual revenue forecast on strong cybersecurity demand",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/gen-digital-raises-annual-revenue-forecast-strong-cybersecurity-demand-6501211",
+      "published": "2026-10-29 04:09"
+    },
+    {
+      "category": "General",
+      "title": "Microsoft's cloud growth, cash flow offer respite from AI spending fears",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/microsofts-cloud-growth-cash-flow-offer-respite-ai-spending-fears-6501191",
+      "published": "2026-10-29 04:08"
+    },
+    {
+      "category": "General",
+      "title": "T-Mobile raises annual free cash flow forecast as premium plans gain traction",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/t-mobile-raises-annual-free-cash-flow-forecast-premium-plans-gain-traction-6501201",
+      "published": "2026-10-29 04:06"
     },
     {
       "category": "General",
@@ -154,104 +231,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/former-lucasfilm-head-kathleen-kennedy-produce-2028-olympics-ceremonies-6501116",
       "published": "2026-10-29 02:43"
-    },
-    {
-      "category": "General",
-      "title": "Oracle expects to turn cash flow positive in second half of fiscal 2028",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oracle-expects-turn-cash-flow-positive-in-second-half-fiscal-2028-6501096",
-      "published": "2026-10-29 02:36"
-    },
-    {
-      "category": "General",
-      "title": "Espanyol appoint former Barcelona assistant Sarabia as new manager",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/espanyol-appoint-former-barcelona-assistant-sarabia-new-manager-6501101",
-      "published": "2026-10-29 02:34"
-    },
-    {
-      "category": "General",
-      "title": "Neymar handed two-game suspension for covering mouth during argument",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/neymar-handed-two-game-suspension-covering-mouth-during-argument-6501061",
-      "published": "2026-10-29 02:09"
-    },
-    {
-      "category": "General",
-      "title": "UK budget lifts bank tax to offset surging energy bills",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/uk-budget-lifts-bank-tax-offset-surging-energy-bills-6500746",
-      "published": "2026-10-29 01:34"
-    },
-    {
-      "category": "General",
-      "title": "Israel president urges against new vote despite inconclusive result",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israel-election-netanyahu-eisenkot-herzog-votes-6500701",
-      "published": "2026-10-29 00:59"
-    },
-    {
-      "category": "General",
-      "title": "Possible new dwarf planet identified orbiting beyond Pluto",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/possible-new-dwarf-planet-identified-orbiting-beyond-pluto-6500716",
-      "published": "2026-10-29 00:43"
-    },
-    {
-      "category": "General",
-      "title": "German startup NVision shows new path to quantum computing chips in Nature paper",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/german-startup-nvision-shows-new-path-quantum-computing-chips-in-nature-paper-6500686",
-      "published": "2026-10-29 00:26"
-    },
-    {
-      "category": "General",
-      "title": "Quesada blames crowded calendar as Italy injury list grows",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/quesada-blames-crowded-calendar-italy-injury-list-grows-6500651",
-      "published": "2026-10-28 23:59"
-    },
-    {
-      "category": "General",
-      "title": "Horse racing-Ex-balloon worker buoyed up for Tiffany's Breeders' Cup swansong",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/horse-racing-ex-balloon-worker-buoyed-up-tiffanys-breeders-cup-swansong-6500586",
-      "published": "2026-10-28 23:39"
-    },
-    {
-      "category": "General",
-      "title": "Perez extends Cadillac contract until 2029",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/perez-extends-cadillac-contract-until-2029-6500576",
-      "published": "2026-10-28 23:36"
-    },
-    {
-      "category": "General",
-      "title": "Prediction market bets set the tone for Anthropic's much-awaited IPO",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/prediction-market-bets-set-tone-anthropics-much-awaited-ipo-6500531",
-      "published": "2026-10-28 23:20"
-    },
-    {
-      "category": "General",
-      "title": "Amazon cuts more jobs, in devices unit, after flurry of product rollouts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/amazon-cuts-more-jobs-in-devices-unit-after-flurry-product-rollouts-6500491",
-      "published": "2026-10-28 23:06"
-    },
-    {
-      "category": "General",
-      "title": "Antonelli ready for final push to become F1's youngest champion",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/antonelli-ready-final-push-become-f1s-youngest-champion-6500406",
-      "published": "2026-10-28 22:50"
-    },
-    {
-      "category": "General",
-      "title": "Interested parties, countries can come together to launch AI incident reporting pilot: PM Wong",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/pilot-ai-incident-report-safety-governance-pm-wong-6500216",
-      "published": "2026-10-28 22:46"
     },
     {
       "category": "General",
@@ -280,6 +259,27 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/ex-convict-turned-hawker-appeals-to-reconnect-with-estranged-children/",
       "published": "2026-10-29 00:06"
+    },
+    {
+      "category": "General",
+      "title": "MOE to pilot full-day model at 2 kindergartens in 2027, roll out to all MOE kindergartens by 2030",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/moe-to-pilot-full-day-model-at-2-kindergartens-in-2027-roll-out-to-all-moe-kindergartens-by-2030/",
+      "published": "2026-10-28 22:52"
+    },
+    {
+      "category": "General",
+      "title": "S’porean woman, 40, says she suffered complications after S$120 fillings in Johor, says it's not worth it",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/sporean-woman-johor-dental-fillings-complications/",
+      "published": "2026-10-28 22:40"
+    },
+    {
+      "category": "General",
+      "title": "Indonesia urges Umrah pilgrims to avoid transiting through S'pore & M'sia to support local economy",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/indonesia-pilgrims-avoid-transit-singapore-malaysia/",
+      "published": "2026-10-28 22:34"
     }
   ]
 }
