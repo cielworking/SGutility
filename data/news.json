@@ -1,19 +1,12 @@
 {
-  "last_updated": "2026-10-28T20:51:34.900449+08:00",
+  "last_updated": "2026-10-29T02:51:34.574546+08:00",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Coinbase adds Ripple's stablecoin to its exchange",
+      "title": "Anthropic tells California governor courts should be able to block risky AI models",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/coinbase-adds-ripples-stablecoin-its-exchange-6499821",
-      "published": "2026-10-28 20:02"
-    },
-    {
-      "category": "Crime",
-      "title": "Jail for man who sexually abused 6 boys, confessed voluntarily and underwent chemical castration",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/man-sexual-abuse-6-boys-confess-chemical-castration-6499481",
-      "published": "2026-10-28 18:40"
+      "url": "https://www.channelnewsasia.com/business/anthropic-tells-california-governor-courts-should-be-able-block-risky-ai-models-6500671",
+      "published": "2026-10-29 00:08"
     },
     {
       "category": "Crime",
@@ -58,32 +51,25 @@
       "published": "2026-10-28 14:00"
     },
     {
-      "category": "Crime",
-      "title": "Jail, caning for account mule who vandalised police toilet with vulgarity and anti-police slogan",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/jail-caning-for-account-mule-who-vandalised-police-toilet-with-vulgarity-and-anti-police-slogan",
-      "published": "2026-10-27 16:28"
+      "category": "Traffic",
+      "title": "Google launches Gemini 4 Carbon AI model with cybersecurity focus",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/google-launches-gemini-4-carbon-ai-model-cybersecurity-focus-6501056",
+      "published": "2026-10-29 02:08"
     },
     {
       "category": "Traffic",
-      "title": "Copa del Rey fixtures postponed following train crash",
+      "title": "US Fed expected to hold rates steady ahead of key midterm elections",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/copa-del-rey-fixtures-postponed-following-train-crash-6499866",
-      "published": "2026-10-28 20:15"
+      "url": "https://www.channelnewsasia.com/world/us-fed-expected-hold-rates-steady-ahead-key-midterm-elections-6500656",
+      "published": "2026-10-29 00:23"
     },
     {
       "category": "Traffic",
-      "title": "Ballon d'Or title will help keep Kane at Bayern, says Matthaeus",
+      "title": "Motor racing-Antonelli following in the footsteps of Farina and Ascari",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ballon-dor-title-will-help-keep-kane-bayern-says-matthaeus-6499756",
-      "published": "2026-10-28 19:32"
-    },
-    {
-      "category": "Traffic",
-      "title": "Apple expected to show first touchscreen laptops amid product blitz",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/apple-expected-show-first-touchscreen-laptops-amid-product-blitz-6499711",
-      "published": "2026-10-28 19:07"
+      "url": "https://www.channelnewsasia.com/sport/motor-racing-antonelli-following-in-footsteps-farina-and-ascari-6500436",
+      "published": "2026-10-28 22:58"
     },
     {
       "category": "Traffic",
@@ -122,38 +108,17 @@
     },
     {
       "category": "Transport",
-      "title": "Scale AI rejects claims it illegally surveils AI-training workers",
+      "title": "Meta delays indefinitely its rollout of new commercial terms after publishers' concerns",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/scale-ai-rejects-claims-it-illegally-surveils-ai-training-workers-6499796",
-      "published": "2026-10-28 19:47"
+      "url": "https://www.channelnewsasia.com/business/meta-delays-indefinitely-its-rollout-new-commercial-terms-after-publishers-concerns-6501111",
+      "published": "2026-10-29 02:39"
     },
     {
       "category": "Transport",
-      "title": "From lab breakthroughs to new businesses: How AI is accelerating innovation in Singapore",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ai-lab-breakthroughs-new-businesses-innovation-singapore-6499511",
-      "published": "2026-10-28 18:55"
-    },
-    {
-      "category": "Transport",
-      "title": "At least 30 people killed in Spain when two high-speed trains collide",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/two-high-speed-trains-collide-spain-many-dead-6499336",
-      "published": "2026-10-28 18:35"
-    },
-    {
-      "category": "Transport",
-      "title": "Young volunteers to be trained to give psychological first aid, boost community resilience in crises",
+      "title": "Uncertainties in approvals and laws can significantly delay subsea cables for ASEAN Power Grid",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/during-crises-youths-will-provide-psychological-first-aid-help-communities-be-more-resilient",
-      "published": "2026-10-27 16:45"
-    },
-    {
-      "category": "Fire",
-      "title": "Indonesian students protest rising prices, government’s handling of forest fires",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-jakarta-student-protest-prices-forest-fires-6499771",
-      "published": "2026-10-28 19:48"
+      "url": "https://www.straitstimes.com/singapore/environment/uncertainties-in-approvals-and-laws-can-significantly-delay-subsea-cables-for-asean-power-grid",
+      "published": "2026-10-28 21:10"
     },
     {
       "category": "Fire",
@@ -178,13 +143,6 @@
     },
     {
       "category": "Housing",
-      "title": "Nature groups welcome revised Maju Forest and Gillman Barracks housing plans, but maintain need for safeguards",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/nature-groups-gillman-barracks-maju-forest-home-plans-hdb-6496281",
-      "published": "2026-10-28 18:59"
-    },
-    {
-      "category": "Housing",
       "title": "Two Tiong Bahru HDB blocks to proceed with HIP upgrading after successful re-poll",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/two-tiong-bahru-hdb-blocks-to-proceed-with-hip-upgrading-after-successful-re-poll",
@@ -192,73 +150,115 @@
     },
     {
       "category": "General",
-      "title": "RC Lens ban own fans from attending Lille match",
+      "title": "Former Lucasfilm head Kathleen Kennedy to produce 2028 Olympics ceremonies",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rc-lens-ban-own-fans-attending-lille-match-6499936",
-      "published": "2026-10-28 20:30"
+      "url": "https://www.channelnewsasia.com/sport/former-lucasfilm-head-kathleen-kennedy-produce-2028-olympics-ceremonies-6501116",
+      "published": "2026-10-29 02:43"
     },
     {
       "category": "General",
-      "title": "Puerto Rico's Serrano to hang up gloves in hometown farewell",
+      "title": "Oracle expects to turn cash flow positive in second half of fiscal 2028",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/puerto-ricos-serrano-hang-up-gloves-in-hometown-farewell-6499831",
-      "published": "2026-10-28 20:06"
+      "url": "https://www.channelnewsasia.com/business/oracle-expects-turn-cash-flow-positive-in-second-half-fiscal-2028-6501096",
+      "published": "2026-10-29 02:36"
     },
     {
       "category": "General",
-      "title": "PM Wong, Prabowo committed to ‘do what is necessary’ to tackle bilateral issues, including haze: Vivian Balakrishnan",
+      "title": "Espanyol appoint former Barcelona assistant Sarabia as new manager",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/vivian-balakrishnan-indonesia-high-level-talks-haze-commitment-6496126",
-      "published": "2026-10-28 19:53"
+      "url": "https://www.channelnewsasia.com/sport/espanyol-appoint-former-barcelona-assistant-sarabia-new-manager-6501101",
+      "published": "2026-10-29 02:34"
     },
     {
       "category": "General",
-      "title": "Former Japan coach Okada quits JFA vice-president role over FIFA concerns",
+      "title": "Neymar handed two-game suspension for covering mouth during argument",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/former-japan-coach-okada-quits-jfa-vice-president-role-over-fifa-concerns-6499761",
-      "published": "2026-10-28 19:30"
+      "url": "https://www.channelnewsasia.com/sport/neymar-handed-two-game-suspension-covering-mouth-during-argument-6501061",
+      "published": "2026-10-29 02:09"
     },
     {
       "category": "General",
-      "title": "China's former Vice Premier Liu Yandong has died, Xinhua says",
+      "title": "UK budget lifts bank tax to offset surging energy bills",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-former-vice-prime-minister-liu-yandong-dies-6499546",
-      "published": "2026-10-28 19:15"
+      "url": "https://www.channelnewsasia.com/world/uk-budget-lifts-bank-tax-offset-surging-energy-bills-6500746",
+      "published": "2026-10-29 01:34"
     },
     {
       "category": "General",
-      "title": "Analysis:As Iran war drags on, airlines pull back on fuel hedges and warn on fares",
+      "title": "Israel president urges against new vote despite inconclusive result",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/analysisas-iran-war-drags-airlines-pull-back-fuel-hedges-and-warn-fares-6499631",
-      "published": "2026-10-28 18:54"
+      "url": "https://www.channelnewsasia.com/world/israel-election-netanyahu-eisenkot-herzog-votes-6500701",
+      "published": "2026-10-29 00:59"
     },
     {
       "category": "General",
-      "title": "South Korea media commission fines Google and Apple over app payment systems",
+      "title": "Possible new dwarf planet identified orbiting beyond Pluto",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/south-korea-media-commission-fines-google-and-apple-over-app-payment-systems-6499616",
-      "published": "2026-10-28 18:46"
+      "url": "https://www.channelnewsasia.com/business/possible-new-dwarf-planet-identified-orbiting-beyond-pluto-6500716",
+      "published": "2026-10-29 00:43"
     },
     {
       "category": "General",
-      "title": "Australia reach 90-2 in reply to South Africa's 329",
+      "title": "German startup NVision shows new path to quantum computing chips in Nature paper",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/australia-reach-90-2-in-reply-south-africas-329-6499606",
-      "published": "2026-10-28 18:43"
+      "url": "https://www.channelnewsasia.com/business/german-startup-nvision-shows-new-path-quantum-computing-chips-in-nature-paper-6500686",
+      "published": "2026-10-29 00:26"
     },
     {
       "category": "General",
-      "title": "Dollar steady ahead of Fed decision; focus on UK budget",
+      "title": "Quesada blames crowded calendar as Italy injury list grows",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dollar-steady-ahead-fed-decision-focus-uk-budget-6498961",
-      "published": "2026-10-28 18:35"
+      "url": "https://www.channelnewsasia.com/sport/quesada-blames-crowded-calendar-italy-injury-list-grows-6500651",
+      "published": "2026-10-28 23:59"
     },
     {
       "category": "General",
-      "title": "Logitech sheds $2 billion in market cap as margin concerns overshadow profit beat",
+      "title": "Horse racing-Ex-balloon worker buoyed up for Tiffany's Breeders' Cup swansong",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/logitech-sheds-2-billion-in-market-cap-margin-concerns-overshadow-profit-beat-6499586",
-      "published": "2026-10-28 18:33"
+      "url": "https://www.channelnewsasia.com/sport/horse-racing-ex-balloon-worker-buoyed-up-tiffanys-breeders-cup-swansong-6500586",
+      "published": "2026-10-28 23:39"
+    },
+    {
+      "category": "General",
+      "title": "Perez extends Cadillac contract until 2029",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/perez-extends-cadillac-contract-until-2029-6500576",
+      "published": "2026-10-28 23:36"
+    },
+    {
+      "category": "General",
+      "title": "Prediction market bets set the tone for Anthropic's much-awaited IPO",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/prediction-market-bets-set-tone-anthropics-much-awaited-ipo-6500531",
+      "published": "2026-10-28 23:20"
+    },
+    {
+      "category": "General",
+      "title": "Amazon cuts more jobs, in devices unit, after flurry of product rollouts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/amazon-cuts-more-jobs-in-devices-unit-after-flurry-product-rollouts-6500491",
+      "published": "2026-10-28 23:06"
+    },
+    {
+      "category": "General",
+      "title": "Antonelli ready for final push to become F1's youngest champion",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/antonelli-ready-final-push-become-f1s-youngest-champion-6500406",
+      "published": "2026-10-28 22:50"
+    },
+    {
+      "category": "General",
+      "title": "Interested parties, countries can come together to launch AI incident reporting pilot: PM Wong",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/pilot-ai-incident-report-safety-governance-pm-wong-6500216",
+      "published": "2026-10-28 22:46"
+    },
+    {
+      "category": "General",
+      "title": "IN FULL: Shanmugam's talking points to 10 haze-linked companies in closed-door meeting",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/10/shanmugam-haze-companies-full-talking-points/",
+      "published": "2026-10-29 01:13"
     },
     {
       "category": "General",
