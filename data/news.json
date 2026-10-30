@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-30T23:55:41.893126+08:00",
+  "last_updated": "2026-10-31T04:47:19.032291+08:00",
   "headlines": [
     {
       "category": "Crime",
@@ -7,6 +7,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/hong-kong-housing-fire-secretary-resigns/",
       "published": "2026-10-30 21:10"
+    },
+    {
+      "category": "Crime",
+      "title": "Police arrest driver, passenger who fled from Tampines crash that killed motorcyclist, pregnant wife",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/police-arrest-driver-passenger-who-fled-from-tampines-crash-that-killed-motorcyclist-pregnant-wife",
+      "published": "2026-10-31 02:18"
     },
     {
       "category": "Crime",
@@ -44,39 +51,18 @@
       "published": "2026-10-29 16:25"
     },
     {
-      "category": "Crime",
-      "title": "At least $1.3m lost in October to scammers posing as Simba staff and government officials",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/at-least-1-3m-lost-in-october-to-scammers-posing-as-simba-staff-and-government-officials",
-      "published": "2026-10-29 15:08"
+      "category": "Traffic",
+      "title": "Spanish minister refuses to resign over second major train crash on his watch",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/spain-transport-minister-resign-train-crash-6507826",
+      "published": "2026-10-31 01:00"
     },
     {
       "category": "Traffic",
-      "title": "French sports institute expels five teenage players",
+      "title": "McClean set to trade boots for boxing gloves in late career turn",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/french-sports-institute-expels-five-teenage-players-6507376",
-      "published": "2026-10-30 21:46"
-    },
-    {
-      "category": "Traffic",
-      "title": "More carbs, fattier meals? What's changing in hawker dishes as food costs rise",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/big-read/hawker-food-rising-costs-nutrition-health-salt-6502136",
-      "published": "2026-10-30 21:30"
-    },
-    {
-      "category": "Traffic",
-      "title": "CNA Explains: Will new loan limits for private-hire cars mean less COE demand or higher ride-hailing prices?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/private-hire-car-loan-limits-coe-6507131",
-      "published": "2026-10-30 21:06"
-    },
-    {
-      "category": "Traffic",
-      "title": "Six feared dead in helicopter crash in Indian Himalayan state",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/six-feared-dead-in-helicopter-crash-in-indian-himalayan-state-6507091",
-      "published": "2026-10-30 20:15"
+      "url": "https://www.channelnewsasia.com/sport/mcclean-set-trade-boots-boxing-gloves-in-late-career-turn-6507856",
+      "published": "2026-10-31 00:29"
     },
     {
       "category": "Traffic",
@@ -177,109 +163,123 @@
       "published": "2026-10-29 18:00"
     },
     {
+      "category": "Fire",
+      "title": "Stocks fall on AI cash burn worries while bonds rally with oil",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/stocks-fall-ai-cash-burn-worries-while-bonds-rally-oil-6505761",
+      "published": "2026-10-31 00:46"
+    },
+    {
+      "category": "Money",
+      "title": "Oil prices set for fourth straight monthly gains as tanker attack highlights supply risks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/oil-prices-set-fourth-straight-monthly-gains-tanker-attack-highlights-supply-risks-6508426",
+      "published": "2026-10-31 02:43"
+    },
+    {
+      "category": "General",
+      "title": "October ends with a thud for Intel, Reddit, AI stalwarts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/october-ends-thud-intel-reddit-ai-stalwarts-6508591",
+      "published": "2026-10-31 04:34"
+    },
+    {
+      "category": "General",
+      "title": "Leclerc fastest in Mexico practice, Antonelli returns from sickness",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/leclerc-fastest-in-mexico-practice-antonelli-returns-sickness-6508576",
+      "published": "2026-10-31 04:28"
+    },
+    {
+      "category": "General",
+      "title": "Oil jumps 2%, settles at 6-month highs on fears of escalation in Iran",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-jumps-2-settles-6-month-highs-fears-escalation-in-iran-6505721",
+      "published": "2026-10-31 03:26"
+    },
+    {
+      "category": "General",
+      "title": "Norris says he never blames equipment if a teammate beats him",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/norris-says-he-never-blames-equipment-if-teammate-beats-him-6508411",
+      "published": "2026-10-31 02:21"
+    },
+    {
+      "category": "General",
+      "title": "China says stealth attack drone makes first takeoff, landing on amphibious ship",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/china-says-stealth-attack-drone-makes-first-takeoff-landing-amphibious-ship-6507981",
+      "published": "2026-10-31 02:16"
+    },
+    {
+      "category": "General",
+      "title": "Alliant targets 1 GW of new data-center contracts in six months as power demand surges",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/alliant-targets-1-gw-new-data-center-contracts-in-six-months-power-demand-surges-6507986",
+      "published": "2026-10-31 01:55"
+    },
+    {
+      "category": "General",
+      "title": "US SEC's top cop says agency is monitoring AI corporate disclosures",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-secs-top-cop-says-agency-monitoring-ai-corporate-disclosures-6507991",
+      "published": "2026-10-31 01:55"
+    },
+    {
+      "category": "General",
+      "title": "Man City's Maresca rejects criticism of discipline in his time at Chelsea",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/man-citys-maresca-rejects-criticism-discipline-in-his-time-chelsea-6507971",
+      "published": "2026-10-31 01:50"
+    },
+    {
+      "category": "General",
+      "title": "OpenAI to limit weapons information for teens on ChatGPT in violence-prevention push",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openai-limit-weapons-information-teens-chatgpt-in-violence-prevention-push-6507941",
+      "published": "2026-10-31 01:30"
+    },
+    {
+      "category": "General",
+      "title": "Tottenham's Maddison available for Palace match, says De Zerbi",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/tottenhams-maddison-available-palace-match-says-de-zerbi-6507871",
+      "published": "2026-10-31 00:39"
+    },
+    {
+      "category": "General",
+      "title": "Arteta tells Dowman Premier League is 'not Disneyland' after ban upheld",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/arteta-tells-dowman-premier-league-not-disneyland-after-ban-upheld-6507811",
+      "published": "2026-10-31 00:11"
+    },
+    {
+      "category": "General",
+      "title": "Iraola says too soon for title talk as in-form Liverpool welcome Arsenal",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/iraola-says-too-soon-title-talk-in-form-liverpool-welcome-arsenal-6507806",
+      "published": "2026-10-31 00:05"
+    },
+    {
+      "category": "General",
+      "title": "LNG traded by Singapore-based firms usually does not physically pass through Singapore, says METI",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/lng-singapore-indonesia-ship-export-6507706",
+      "published": "2026-10-30 23:55"
+    },
+    {
+      "category": "General",
+      "title": "Meta settles with teen during trial testing claims social media caused depression, eating disorders",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/meta-settles-teen-during-trial-testing-claims-social-media-caused-depression-eating-disorders-6507796",
+      "published": "2026-10-30 23:53"
+    },
+    {
       "category": "General",
       "title": "Medvedev clinches ATP Finals berth by reaching Vienna semi-finals",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/medvedev-clinches-atp-finals-berth-reaching-vienna-semi-finals-6507786",
       "published": "2026-10-30 23:48"
-    },
-    {
-      "category": "General",
-      "title": "Big Tech returns smallest share of cash to shareholders in 15 years, given AI spending",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/big-tech-returns-smallest-share-cash-shareholders-in-15-years-given-ai-spending-6507756",
-      "published": "2026-10-30 23:35"
-    },
-    {
-      "category": "General",
-      "title": "Pulisic extends contract with AC Milan",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pulisic-extends-contract-ac-milan-6507696",
-      "published": "2026-10-30 23:20"
-    },
-    {
-      "category": "General",
-      "title": "Nasdaq faces $2 trillion wipeout in October as AI spending fears deepen",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nasdaq-faces-2-trillion-wipeout-in-october-ai-spending-fears-deepen-6507681",
-      "published": "2026-10-30 23:11"
-    },
-    {
-      "category": "General",
-      "title": "Chelsea's Alonso backs Estevao for bigger role ahead of Man United clash",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/chelseas-alonso-backs-estevao-bigger-role-ahead-man-united-clash-6507656",
-      "published": "2026-10-30 23:07"
-    },
-    {
-      "category": "General",
-      "title": "Fenerbahce appoint Dutchman Kuyt as interim coach",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fenerbahce-appoint-dutchman-kuyt-interim-coach-6507531",
-      "published": "2026-10-30 22:27"
-    },
-    {
-      "category": "General",
-      "title": "Strange beaked 'hell chicken' is the first fruit-eating dinosaur",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/strange-beaked-hell-chicken-first-fruit-eating-dinosaur-6507511",
-      "published": "2026-10-30 22:22"
-    },
-    {
-      "category": "General",
-      "title": "Kuaishou's Kling AI unit completes a near $3 billion funding round",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/kuaishous-kling-ai-unit-completes-near-3-billion-funding-round-6507461",
-      "published": "2026-10-30 22:10"
-    },
-    {
-      "category": "General",
-      "title": "We thought my daughter had dengue. She ended up needing heart surgery",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/voices/daughter-heart-surgery-endocarditis-bacterial-infection-6481356",
-      "published": "2026-10-30 21:30"
-    },
-    {
-      "category": "General",
-      "title": "Lancashire exit came as shock, says Anderson",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/lancashire-exit-came-shock-says-anderson-6507331",
-      "published": "2026-10-30 21:25"
-    },
-    {
-      "category": "General",
-      "title": "Rybakina withdraws from Tokyo quarter-finals with neck injury",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rybakina-withdraws-tokyo-quarter-finals-neck-injury-6507321",
-      "published": "2026-10-30 21:19"
-    },
-    {
-      "category": "General",
-      "title": "Ice hockey-CAS rules that Russia can compete in world championships",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ice-hockey-cas-rules-russia-can-compete-in-world-championships-6507311",
-      "published": "2026-10-30 21:08"
-    },
-    {
-      "category": "General",
-      "title": "Zverev finally takes his place at the summit",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zverev-finally-takes-his-place-summit-6507281",
-      "published": "2026-10-30 21:06"
-    },
-    {
-      "category": "General",
-      "title": "India orders top drugmaker to halt eye medicine production at plant over quality lapses",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/india-orders-top-drugmaker-halt-eye-medicine-production-plant-over-quality-lapses-6507226",
-      "published": "2026-10-30 20:55"
-    },
-    {
-      "category": "General",
-      "title": "Gone in 20 minutes: How the biggest heist in crypto history unfolded",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/binance-cryptocurrency-heist-biggest-20-minutes-explainer-6506676",
-      "published": "2026-10-30 20:18"
     }
   ]
 }
