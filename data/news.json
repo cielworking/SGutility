@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-10-31T04:47:19.032291+08:00",
+  "last_updated": "2026-10-31T08:46:41.667178+08:00",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Two arrested over fatal hit-and-run Tampines accident; man, 30, to be charged for dangerous driving",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/tampines-accident-man-be-charged-6508686",
+      "published": "2026-10-31 06:31"
+    },
     {
       "category": "Crime",
       "title": "HK housing secretary resigns over Wang Fuk Court fire that killed 168, officials bow in public apology",
@@ -42,27 +49,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/psychiatrist-to-be-questioned-over-mental-state-of-man-who-stabbed-landlord-in-yishun",
       "published": "2026-10-29 17:28"
-    },
-    {
-      "category": "Crime",
-      "title": "Singapore, Cambodia police and OCBC help S’pore firm recover US$12.8 million from scammers",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/singapore-cambodia-police-and-ocbc-help-singapore-company-recover-us12-8-million-from-scammers",
-      "published": "2026-10-29 16:25"
-    },
-    {
-      "category": "Traffic",
-      "title": "Spanish minister refuses to resign over second major train crash on his watch",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/spain-transport-minister-resign-train-crash-6507826",
-      "published": "2026-10-31 01:00"
-    },
-    {
-      "category": "Traffic",
-      "title": "McClean set to trade boots for boxing gloves in late career turn",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/mcclean-set-trade-boots-boxing-gloves-in-late-career-turn-6507856",
-      "published": "2026-10-31 00:29"
     },
     {
       "category": "Traffic",
@@ -136,6 +122,13 @@
     },
     {
       "category": "Transport",
+      "title": "From Singapore’s heartlands to luxury footwear: How Mashizan Masjum built a business on his own terms",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/people/mashizan-masjum-singapore-luxury-shoe-designer-6495626",
+      "published": "2026-10-31 05:18"
+    },
+    {
+      "category": "Transport",
       "title": "Make room for next generation while tapping elders’ experience: PM Wong to Chinese business leaders",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/make-room-for-next-generation-while-tapping-elders-experience-pm-wong-to-chinese-business-leaders",
@@ -163,18 +156,102 @@
       "published": "2026-10-29 18:00"
     },
     {
-      "category": "Fire",
-      "title": "Stocks fall on AI cash burn worries while bonds rally with oil",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/stocks-fall-ai-cash-burn-worries-while-bonds-rally-oil-6505761",
-      "published": "2026-10-31 00:46"
-    },
-    {
       "category": "Money",
       "title": "Oil prices set for fourth straight monthly gains as tanker attack highlights supply risks",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/oil-prices-set-fourth-straight-monthly-gains-tanker-attack-highlights-supply-risks-6508426",
       "published": "2026-10-31 02:43"
+    },
+    {
+      "category": "Housing",
+      "title": "What it takes to turn a 5-room HDB flat into a private dining pizzeria",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/cna-insider/insider/hustle-hdb-flat-home-based-business-pizza-dining-pizzeria-6505991",
+      "published": "2026-10-31 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Crypto exchanges call for quick moves to bolster defenses after Binance heist",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/crypto-exchanges-call-quick-moves-bolster-defenses-after-binance-heist-6508836",
+      "published": "2026-10-31 08:26"
+    },
+    {
+      "category": "General",
+      "title": "OpenAI cuts funding target by $10 billion, FT reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openai-cuts-funding-target-10-billion-ft-reports-6508816",
+      "published": "2026-10-31 08:17"
+    },
+    {
+      "category": "General",
+      "title": "Haas boss Komatsu lashes out at 'nonsense' Bearman salary rumours",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/haas-boss-komatsu-lashes-out-nonsense-bearman-salary-rumours-6508781",
+      "published": "2026-10-31 07:49"
+    },
+    {
+      "category": "General",
+      "title": "Singapore's air quality remains in good-to-moderate range as haze eases",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/haze-singapore-pm25-psi-oct-31-nea-6508766",
+      "published": "2026-10-31 07:45"
+    },
+    {
+      "category": "General",
+      "title": "Hakimi hat-trick leads PSG to 5-1 win at Le Havre",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/hakimi-hat-trick-leads-psg-5-1-win-le-havre-6508751",
+      "published": "2026-10-31 07:33"
+    },
+    {
+      "category": "General",
+      "title": "'Making history is a huge honour': Singapore's first WWE wrestler Dante Chen on his journey and what comes next",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/dante-chen-singapore-wwe-wrestler-japan-6502211",
+      "published": "2026-10-31 06:00"
+    },
+    {
+      "category": "General",
+      "title": "End of an era: Tracing Lee Biscuits' 92-year journey from Singapore to Johor",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/malaysia-lee-biscuits-marie-workers-close-6498911",
+      "published": "2026-10-31 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: What would happen if the internet went down?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/ai-cybersecurity-attack-php-6506261",
+      "published": "2026-10-31 05:59"
+    },
+    {
+      "category": "General",
+      "title": "Pope Leo makes history with US midterm vote",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/pope-leo-makes-history-us-midterm-vote-6508626",
+      "published": "2026-10-31 05:41"
+    },
+    {
+      "category": "General",
+      "title": "S&P Global revises Meta's outlook to 'negative' on AI spending, cash flow worries",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/sp-global-revises-metas-outlook-negative-ai-spending-cash-flow-worries-6508631",
+      "published": "2026-10-31 05:14"
+    },
+    {
+      "category": "General",
+      "title": "Coaches see red as Bodo/Glimt edge Viking in fiery Norwegian thriller",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/coaches-see-red-bodoglimt-edge-viking-in-fiery-norwegian-thriller-6508621",
+      "published": "2026-10-31 05:09"
+    },
+    {
+      "category": "General",
+      "title": "Botched execution survivor Christa Pike says she's in constant pain",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/christa-pike-survived-botched-execution-constant-pain-6508571",
+      "published": "2026-10-31 05:06"
     },
     {
       "category": "General",
@@ -185,9 +262,9 @@
     },
     {
       "category": "General",
-      "title": "Leclerc fastest in Mexico practice, Antonelli returns from sickness",
+      "title": "Ferrari's Leclerc fastest in both Mexico practice sessions",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/leclerc-fastest-in-mexico-practice-antonelli-returns-sickness-6508576",
+      "url": "https://www.channelnewsasia.com/sport/ferraris-leclerc-fastest-in-both-mexico-practice-sessions-6508576",
       "published": "2026-10-31 04:28"
     },
     {
@@ -203,83 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/norris-says-he-never-blames-equipment-if-teammate-beats-him-6508411",
       "published": "2026-10-31 02:21"
-    },
-    {
-      "category": "General",
-      "title": "China says stealth attack drone makes first takeoff, landing on amphibious ship",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/china-says-stealth-attack-drone-makes-first-takeoff-landing-amphibious-ship-6507981",
-      "published": "2026-10-31 02:16"
-    },
-    {
-      "category": "General",
-      "title": "Alliant targets 1 GW of new data-center contracts in six months as power demand surges",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/alliant-targets-1-gw-new-data-center-contracts-in-six-months-power-demand-surges-6507986",
-      "published": "2026-10-31 01:55"
-    },
-    {
-      "category": "General",
-      "title": "US SEC's top cop says agency is monitoring AI corporate disclosures",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-secs-top-cop-says-agency-monitoring-ai-corporate-disclosures-6507991",
-      "published": "2026-10-31 01:55"
-    },
-    {
-      "category": "General",
-      "title": "Man City's Maresca rejects criticism of discipline in his time at Chelsea",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/man-citys-maresca-rejects-criticism-discipline-in-his-time-chelsea-6507971",
-      "published": "2026-10-31 01:50"
-    },
-    {
-      "category": "General",
-      "title": "OpenAI to limit weapons information for teens on ChatGPT in violence-prevention push",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/openai-limit-weapons-information-teens-chatgpt-in-violence-prevention-push-6507941",
-      "published": "2026-10-31 01:30"
-    },
-    {
-      "category": "General",
-      "title": "Tottenham's Maddison available for Palace match, says De Zerbi",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/tottenhams-maddison-available-palace-match-says-de-zerbi-6507871",
-      "published": "2026-10-31 00:39"
-    },
-    {
-      "category": "General",
-      "title": "Arteta tells Dowman Premier League is 'not Disneyland' after ban upheld",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/arteta-tells-dowman-premier-league-not-disneyland-after-ban-upheld-6507811",
-      "published": "2026-10-31 00:11"
-    },
-    {
-      "category": "General",
-      "title": "Iraola says too soon for title talk as in-form Liverpool welcome Arsenal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/iraola-says-too-soon-title-talk-in-form-liverpool-welcome-arsenal-6507806",
-      "published": "2026-10-31 00:05"
-    },
-    {
-      "category": "General",
-      "title": "LNG traded by Singapore-based firms usually does not physically pass through Singapore, says METI",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/lng-singapore-indonesia-ship-export-6507706",
-      "published": "2026-10-30 23:55"
-    },
-    {
-      "category": "General",
-      "title": "Meta settles with teen during trial testing claims social media caused depression, eating disorders",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/meta-settles-teen-during-trial-testing-claims-social-media-caused-depression-eating-disorders-6507796",
-      "published": "2026-10-30 23:53"
-    },
-    {
-      "category": "General",
-      "title": "Medvedev clinches ATP Finals berth by reaching Vienna semi-finals",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/medvedev-clinches-atp-finals-berth-reaching-vienna-semi-finals-6507786",
-      "published": "2026-10-30 23:48"
     }
   ]
 }
