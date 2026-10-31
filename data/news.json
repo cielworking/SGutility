@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01T02:33:09.823437+08:00",
+  "last_updated": "2026-11-01T06:28:47.119498+08:00",
   "headlines": [
     {
       "category": "Crime",
@@ -45,24 +45,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Alcaraz beats Medvedev to reach Vienna final",
+      "title": "Alcaraz reaches first Vienna final, De Minaur upsets Zverev",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/alcaraz-beats-medvedev-reach-vienna-final-6509821",
+      "url": "https://www.channelnewsasia.com/sport/alcaraz-reaches-first-vienna-final-de-minaur-upsets-zverev-6509821",
       "published": "2026-11-01 00:31"
-    },
-    {
-      "category": "Traffic",
-      "title": "Spanish village gathers for memorial Mass for train crash victims",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/spain-train-crash-victim-memorial-mass-6509721",
-      "published": "2026-10-31 23:13"
-    },
-    {
-      "category": "Traffic",
-      "title": "Pressure piles on Man United's Carrick after 2-0 defeat at Chelsea",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pressure-piles-man-uniteds-carrick-after-2-0-defeat-chelsea-6509726",
-      "published": "2026-10-31 22:49"
     },
     {
       "category": "Traffic",
@@ -122,6 +108,13 @@
     },
     {
       "category": "Transport",
+      "title": "Elderly woman granted protection order against husband after 50 years of physical, verbal abuse",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/elderly-woman-granted-protection-order-against-husband-after-50-years-of-physical-verbal-abuse",
+      "published": "2026-11-01 05:00"
+    },
+    {
+      "category": "Transport",
       "title": "Make room for next generation while tapping elders’ experience: PM Wong to Chinese business leaders",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/politics/make-room-for-next-generation-while-tapping-elders-experience-pm-wong-to-chinese-business-leaders",
@@ -136,10 +129,101 @@
     },
     {
       "category": "Housing",
+      "title": "Rare, roomy and pricey? Inside Singapore's niche jumbo HDB flat market",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/jumbo-hdb-flat-singapore-rare-housing-market-6506081",
+      "published": "2026-11-01 06:00"
+    },
+    {
+      "category": "Housing",
       "title": "Queenstown 5-room HDB flat with 94 years left on lease sold for record S$1.818 million",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/skyparc-dawson-5-room-hdb-sell-record/",
       "published": "2026-10-31 22:18"
+    },
+    {
+      "category": "General",
+      "title": "Milan earn 3-1 derby win over Inter, Roma thump Udinese 5-2",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/milan-earn-3-1-derby-win-over-inter-roma-thump-udinese-5-2-6510341",
+      "published": "2026-11-01 06:07"
+    },
+    {
+      "category": "General",
+      "title": "Barcelona bounce back with big win over Alaves",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/barcelona-bounce-back-big-win-over-alaves-6510346",
+      "published": "2026-11-01 06:06"
+    },
+    {
+      "category": "General",
+      "title": "Commentary: The invisible workforce helping Singapore age well",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/commentary/singapore-ageing-health-community-care-career-6506566",
+      "published": "2026-11-01 06:00"
+    },
+    {
+      "category": "General",
+      "title": "Malaysia wants to move away from Waze. Will drivers make the switch?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/waze-tuju-navigation-app-anwar-ibrahim-malaysia-6502896",
+      "published": "2026-11-01 06:00"
+    },
+    {
+      "category": "General",
+      "title": "India opposition parties hold mock impeachment of poll chief",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/india-opposition-parties-hold-mock-impeachment-poll-chief-6510301",
+      "published": "2026-11-01 05:51"
+    },
+    {
+      "category": "General",
+      "title": "Binance says has covered 90% of US$6.3 billion hack losses",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/binance-says-has-covered-90-us63-billion-hack-losses-6510271",
+      "published": "2026-11-01 05:01"
+    },
+    {
+      "category": "General",
+      "title": "No more compromises: Glasner ready for drastic changes at Forest",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/no-more-compromises-glasner-ready-drastic-changes-forest-6510281",
+      "published": "2026-11-01 04:47"
+    },
+    {
+      "category": "General",
+      "title": "Vintage watches, coffee and cake: Meet the couple behind Singapore’s Reference Room",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/people/reference-room-singapore-vintage-watch-cafe-6499261",
+      "published": "2026-11-01 04:39"
+    },
+    {
+      "category": "General",
+      "title": "Real Madrid defender Militao's house burgled during Clasico",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/real-madrid-defender-militaos-house-burgled-during-clasico-6510256",
+      "published": "2026-11-01 04:31"
+    },
+    {
+      "category": "General",
+      "title": "Clashes break out as hundreds of thousands protest in France",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/clashes-break-out-hundreds-thousands-protest-in-france-6510226",
+      "published": "2026-11-01 04:18"
+    },
+    {
+      "category": "General",
+      "title": "Kane misses penalty, hits post as Dortmund snatch draw",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/kane-misses-penalty-hits-post-dortmund-snatch-draw-6510211",
+      "published": "2026-11-01 03:43"
+    },
+    {
+      "category": "General",
+      "title": "Norris fastest in Mexico City practice ahead of Antonelli",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/norris-fastest-in-mexico-city-practice-ahead-antonelli-6510171",
+      "published": "2026-11-01 02:47"
     },
     {
       "category": "General",
@@ -171,9 +255,9 @@
     },
     {
       "category": "General",
-      "title": "Dark day for Man United and City after Halloween defeats",
+      "title": "Dark day for Manchester United and City after Halloween defeats",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/dark-day-man-united-and-city-after-halloween-defeats-6509831",
+      "url": "https://www.channelnewsasia.com/sport/dark-day-manchester-united-and-city-after-halloween-defeats-6509831",
       "published": "2026-11-01 01:09"
     },
     {
@@ -182,83 +266,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/meta-builds-humanoid-robot-chinese-startup-fourier-information-says-6509811",
       "published": "2026-11-01 00:13"
-    },
-    {
-      "category": "General",
-      "title": "Reserve driver Hirakawa replaces Ocon for F1 race debut with Haas",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/reserve-driver-hirakawa-replaces-ocon-f1-race-debut-haas-6509791",
-      "published": "2026-10-31 23:15"
-    },
-    {
-      "category": "General",
-      "title": "Binance says it has covered 90% of losses from $6.3 billion hack so far",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/binance-says-it-has-covered-90-losses-63-billion-hack-so-far-6509761",
-      "published": "2026-10-31 22:59"
-    },
-    {
-      "category": "General",
-      "title": "Haze probe: Five Singapore-registered companies agree to engage assessors",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/haze-probe-companies-agree-engage-assessors-6509691",
-      "published": "2026-10-31 22:27"
-    },
-    {
-      "category": "General",
-      "title": "Iran's supreme leader warns US, Israel against new attacks",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-supreme-leader-warn-us-israel-new-attacks-6509621",
-      "published": "2026-10-31 22:09"
-    },
-    {
-      "category": "General",
-      "title": "Manchester United captain Fernandes returns to starting lineup at Chelsea",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/manchester-united-captain-fernandes-returns-starting-lineup-chelsea-6509501",
-      "published": "2026-10-31 20:05"
-    },
-    {
-      "category": "General",
-      "title": "US campaign for control of Congress enters final weekend",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-midterm-election-campaign-congress-final-weekend-6509386",
-      "published": "2026-10-31 19:13"
-    },
-    {
-      "category": "General",
-      "title": "Harmer, Rabada steer South Africa to series win over Australia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/harmer-rabada-steer-south-africa-series-win-over-australia-6509451",
-      "published": "2026-10-31 18:59"
-    },
-    {
-      "category": "General",
-      "title": "Power bills and data centers cast rare spotlight on utilities in US midterms",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/power-bills-and-data-centers-cast-rare-spotlight-utilities-in-us-midterms-6509406",
-      "published": "2026-10-31 18:08"
-    },
-    {
-      "category": "General",
-      "title": "Residents of Russian-controlled Ukrainian town arrive in Belarus",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/residents-russian-controlled-ukrainian-town-arrive-in-belarus-6509371",
-      "published": "2026-10-31 17:59"
-    },
-    {
-      "category": "General",
-      "title": "Shooting at California Halloween store kills one, wounds six",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/shooting-california-halloween-store-kills-one-wounds-six-6509311",
-      "published": "2026-10-31 17:02"
-    },
-    {
-      "category": "General",
-      "title": "Pakistan military 'cautiously optimistic' on Iran-US mediation",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/pakistan-military-cautiously-optimistic-iran-us-mediation-6509251",
-      "published": "2026-10-31 16:02"
     },
     {
       "category": "General",
@@ -273,13 +280,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/10/pope-leo-votes/",
       "published": "2026-10-31 21:01"
-    },
-    {
-      "category": "General",
-      "title": "S'pore dorm operator brings 158 migrant workers to experience Halloween Horror Nights",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/10/westlite-accommodation-158-migrant-workers-halloween-horror-nights/",
-      "published": "2026-10-31 20:53"
     }
   ]
 }
