@@ -1,7 +1,7 @@
 {
   "source_name": "Singapore Pools",
   "source_url": "https://www.singaporepools.com.sg/en/product/pages/4d_results.aspx",
-  "last_updated": "2026-11-02T07:40:20.482814+00:00",
+  "last_updated": "2026-11-02T18:20:10.612001+00:00",
   "four_d": {
     "source_url": "https://www.singaporepools.com.sg/en/product/pages/4d_results.aspx",
     "data_url": "https://www.singaporepools.com.sg/DataFileArchive/Lottery/Output/fourd_result_top_draws_en.html",
@@ -38,15 +38,15 @@
   "toto": {
     "source_url": "https://www.singaporepools.com.sg/en/product/pages/toto_results.aspx",
     "data_url": "https://www.singaporepools.com.sg/DataFileArchive/Lottery/Output/toto_result_top_draws_en.html",
-    "draw_date": "Thu, 29 Oct 2026",
-    "draw_no": "4230",
+    "draw_date": "Mon, 02 Nov 2026",
+    "draw_no": "4231",
     "winning_numbers": [
-      "29",
-      "5",
-      "9",
+      "02",
+      "8",
+      "10",
       "19",
-      "31",
-      "41"
+      "37",
+      "40"
     ],
     "additional_number": "48"
   }
