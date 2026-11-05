@@ -21,8 +21,8 @@ missing readings, region isolation and gaps; Python tests also check snapshot es
 and official history ordering.
 
 The primary weather experience is now `/weather/` and the combined weather section
-on the homepage. Country rain URLs retain working entry points and canonicalise
-to `/weather/`. NEA radar playback offers the latest 13 available frames, a draggable
+on the homepage. Country rain and haze URLs are separate pages and each one
+uses its own canonical URL. `/weather/` keeps a self-referencing canonical. NEA radar playback offers the latest 13 available frames, a draggable
 time slider, play/pause, latest-frame control and 70/240/480 km coverage selectors.
 Radar is observed rainfall, not future rain prediction. Leaflet displays the
 georeferenced transparent radar over OpenStreetMap with source attribution.
