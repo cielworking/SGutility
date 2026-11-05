@@ -56,7 +56,7 @@
       if (!window.L) throw new Error('Map unavailable');
       if (!map) {
         map = L.map('rain-map',{scrollWheelZoom:false}).setView([1.45,103.82],10);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:15,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors · Rain: NEA / data.gov.sg'}).addTo(map);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:15,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors · Rain: NEA / data.gov.sg'}).addTo(map);
         new ResizeObserver(()=>map.invalidateSize()).observe(byId('rain-map'));
       }
       let data = (await json(`${sgBase}weather-radar-images/${selectedRange}?date=${dateInSG()}`)).data;
@@ -144,14 +144,14 @@
     }
     regional();malaysia();warnings();
   }
-  async function refreshForecasts() {
+  async function refreshForecasts(manual=false) {
     if (weatherBusy) return {same:true};
     weatherBusy = true;
     const failures = [];
     try {
       // Saved data also supplies Malaysia locations and warnings if a live source fails.
       try {
-        const saved = await json('/data/weather.json');
+        const saved = await window.loadSavedWeather(manual);
         for (const [key,feed] of Object.entries(saved)) {
           if (!cache[key] || Date.parse(feed.fetched_at)>Date.parse(cache[key].fetched_at)) cache[key] = feed;
         }
@@ -181,7 +181,7 @@
     refresh.disabled = true;refresh.textContent='Refreshing…';
     byId('weather-refresh-status').textContent='Checking official radar and forecast sources…';
     try {
-      const results = await Promise.allSettled([refreshRadar(),refreshForecasts()]);
+      const results = await Promise.allSettled([refreshRadar(),refreshForecasts(manual)]);
       const failed = results.some(r=>r.status==='rejected'||r.value.failed);
       const same = results.every(r=>r.status==='fulfilled'&&r.value.same);
       byId('weather-refresh-status').textContent=(failed?'Some sources could not refresh; previous available data is retained. ':same?'No newer radar or forecast information available. ':'Latest available radar and forecasts loaded. ')+'Last checked: '+format(new Date().toISOString())+' UTC+08';

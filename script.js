@@ -80,13 +80,20 @@ async function refreshCheckpointData() {
 
   if (btn) {
     btn.disabled = true;
-    btn.innerHTML = '<i data-lucide="loader-circle" aria-hidden="true"></i><span>Refreshing…</span>';
-    applyIcons();
+    btn.innerHTML = iconSvg("loader-circle") + "<span>Refreshing…</span>";
   }
 
   try {
-    const res = await fetch("https://api.data.gov.sg/v1/transport/traffic-images");
-    const payload = await res.json();
+    let payload;
+    if (window.__checkpointImages) {
+      const pending = window.__checkpointImages;
+      window.__checkpointImages = null;
+      payload = await pending;
+    } else {
+      const res = await fetch("https://api.data.gov.sg/v1/transport/traffic-images");
+      if (!res.ok) throw new Error("checkpoint");
+      payload = await res.json();
+    }
     const cameras = payload.items[0].cameras;
     const woodlands = [];
     const tuas = [];
@@ -133,8 +140,7 @@ async function refreshCheckpointData() {
 
   if (btn) {
     btn.disabled = false;
-    btn.innerHTML = '<i data-lucide="refresh-cw" aria-hidden="true"></i><span>Refresh</span>';
-    applyIcons();
+    btn.innerHTML = iconSvg("refresh-cw") + "<span>Refresh</span>";
   }
 
   renderSummary();
@@ -160,14 +166,23 @@ function money(value) {
   }).format(value || 0);
 }
 
+function iconSvg(name) {
+  const paths = {
+    "chevron-left": '<path d="m15 18-6-6 6-6"/>',
+    "chevron-right": '<path d="m9 18 6-6-6-6"/>',
+    "loader-circle": '<path d="M21 12a9 9 0 1 1-6.219-8.56"/>',
+    "refresh-cw": '<path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/>'
+  };
+  const body = paths[name];
+  if (!body) return "";
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-${name}">${body}</svg>`;
+}
+
 function applyIcons() {
-  if (window.lucide) {
-    window.lucide.createIcons({
-      attrs: {
-        "aria-hidden": "true"
-      }
-    });
-  }
+  document.querySelectorAll("i[data-lucide]").forEach(node => {
+    const markup = iconSvg(node.getAttribute("data-lucide"));
+    if (markup) node.outerHTML = markup;
+  });
 }
 
 function escapeHtml(value) {
@@ -223,10 +238,10 @@ function renderNews() {
       <span class="news-meta">${topNews.length} stories · Updated ${formatTimestamp(newsResults.last_updated)}</span>
       <div class="news-controls" aria-label="News carousel controls">
         <button type="button" onclick="scrollNews(-1)" aria-label="Previous news stories">
-          <i data-lucide="chevron-left"></i>
+          ${iconSvg("chevron-left")}
         </button>
         <button type="button" onclick="scrollNews(1)" aria-label="Next news stories">
-          <i data-lucide="chevron-right"></i>
+          ${iconSvg("chevron-right")}
         </button>
       </div>
     </div>
@@ -284,6 +299,54 @@ function scrollNews(direction) {
    CHECKPOINT CAMERAS
    ========================= */
 
+function cameraMarkup(cam, title, prioritize) {
+  const cameraId = escapeHtml(cam.camera_id);
+  const imageUrl = escapeHtml(cam.image);
+  const caption = escapeHtml(`${title} - Camera ${cam.camera_id}`);
+  const stamp = escapeHtml(cam.timestamp || "");
+  const priority = prioritize ? 'fetchpriority="high"' : 'loading="lazy"';
+  return `
+    <button class="checkpoint-camera" type="button" data-camera-id="${cameraId}"
+            onclick="openImageModal('${imageUrl}', '${caption}', this)"
+            aria-label="Enlarge ${escapeHtml(title)} traffic camera ${cameraId}">
+      <img src="${imageUrl}" alt="${escapeHtml(title)} traffic camera ${cameraId}" width="1920" height="1069" data-timestamp="${stamp}" ${priority} decoding="async">
+      <span>Camera ${cameraId} · Image: ${formatTimestamp(cam.timestamp)}</span>
+    </button>
+  `;
+}
+
+function syncCamera(button, cam, title) {
+  const img = button.querySelector("img");
+  if (!img || !cam.image) return;
+  const nextUrl = String(cam.image);
+  const nextTime = Date.parse(cam.timestamp) || 0;
+  const currentTime = Date.parse(img.dataset.timestamp || "") || 0;
+  const currentUrl = img.getAttribute("src") || "";
+  const fallback = img.dataset.src || "";
+  if (!currentUrl) {
+    const chosen = nextUrl && nextTime >= currentTime ? nextUrl : (fallback || nextUrl);
+    if (chosen) {
+      if (img.getAttribute("fetchpriority") === "high") img.fetchPriority = "high";
+      img.src = chosen;
+      if (chosen === nextUrl && cam.timestamp) img.dataset.timestamp = cam.timestamp;
+    }
+  } else if (nextUrl !== currentUrl && nextTime > currentTime) {
+    img.src = nextUrl;
+    img.dataset.timestamp = cam.timestamp || "";
+  } else if (nextUrl === currentUrl && cam.timestamp && !img.dataset.timestamp) {
+    img.dataset.timestamp = cam.timestamp;
+  }
+  const shownUrl = img.getAttribute("src") || nextUrl;
+  const caption = `${title} - Camera ${cam.camera_id}`;
+  const safeUrl = String(shownUrl).replaceAll("\\", "\\\\").replaceAll("'", "\\'");
+  const safeCaption = caption.replaceAll("\\", "\\\\").replaceAll("'", "\\'");
+  button.dataset.cameraId = String(cam.camera_id);
+  button.setAttribute("onclick", `openImageModal('${safeUrl}', '${safeCaption}', this)`);
+  button.setAttribute("aria-label", `Enlarge ${title} traffic camera ${cam.camera_id}`);
+  const span = button.querySelector("span");
+  if (span) span.textContent = `Camera ${cam.camera_id} · Image: ${formatTimestamp(cam.timestamp)}`;
+}
+
 function renderCheckpoints() {
   const box = document.getElementById("checkpointResult");
   if (!box) return;
@@ -291,24 +354,49 @@ function renderCheckpoints() {
   const woodlands = checkpointData.woodlands || [];
   const tuas = checkpointData.tuas || [];
   const filter = box.dataset.checkpointFilter || "all";
+  const groups = [];
+  if (filter !== "tuas") groups.push(["Woodlands Checkpoint", woodlands.slice(0, 4)]);
+  if (filter !== "woodlands") groups.push(["Tuas Checkpoint", tuas.slice(0, 4)]);
+
+  const existingGroups = [...box.querySelectorAll(".checkpoint-group")];
+  const canUpdate = existingGroups.length === groups.length && groups.every(([, cameras], index) => {
+    const buttons = [...existingGroups[index].querySelectorAll(".checkpoint-camera")];
+    if (buttons.length !== cameras.length || !cameras.length) return false;
+    const ids = new Set(cameras.map(cam => String(cam.camera_id)));
+    return buttons.every(button => ids.has(button.dataset.cameraId));
+  });
+
+  if (canUpdate) {
+    groups.forEach(([title, cameras], index) => {
+      const buttons = [...existingGroups[index].querySelectorAll(".checkpoint-camera")];
+      cameras.forEach(cam => {
+        const button = buttons.find(node => node.dataset.cameraId === String(cam.camera_id));
+        if (button) syncCamera(button, cam, title);
+      });
+    });
+    const note = box.querySelector(".note");
+    if (note) {
+      note.textContent = `Source: ${checkpointData.source_name}. Last fetched: ${formatTimestamp(checkpointData.last_updated)}.`;
+    }
+    renderSummary();
+    return;
+  }
+
+  let imageIndex = 0;
+  const prioritizeFirst = filter === "woodlands" || filter === "tuas";
 
   function cameraGroup(title, cameras) {
+    const cards = cameras.map(cam => {
+      const markup = cameraMarkup(cam, title, prioritizeFirst && imageIndex === 0);
+      imageIndex += 1;
+      return markup;
+    }).join("");
     return `
       <div class="checkpoint-group">
         <h3>${title}</h3>
-
         ${
           cameras.length
-            ? `<div class="checkpoint-grid">
-                ${cameras.slice(0, 4).map(cam => `
-                  <button class="checkpoint-camera" type="button"
-                          onclick="openImageModal('${cam.image}', '${title} - Camera ${cam.camera_id}', this)"
-                          aria-label="Enlarge ${title} traffic camera ${cam.camera_id}">
-                    <img src="${cam.image}" alt="${title} traffic camera ${cam.camera_id}" loading="lazy" decoding="async">
-                    <span>Camera ${cam.camera_id} · Image: ${formatTimestamp(cam.timestamp)}</span>
-                  </button>
-                `).join("")}
-              </div>`
+            ? `<div class="checkpoint-grid">${cards}</div>`
             : `<p class="checkpoint-empty">No camera images found.</p>`
         }
       </div>
@@ -316,11 +404,9 @@ function renderCheckpoints() {
   }
 
   box.innerHTML = `
-    <div class="checkpoint-layout">
-      ${filter !== "tuas" ? cameraGroup("Woodlands Checkpoint", woodlands) : ""}
-      ${filter !== "woodlands" ? cameraGroup("Tuas Checkpoint", tuas) : ""}
+    <div class="checkpoint-layout${filter === "all" ? "" : " single-location"}">
+      ${groups.map(([title, cameras]) => cameraGroup(title, cameras)).join("")}
     </div>
-
     <div class="note">
       Source: ${checkpointData.source_name}. Last fetched: ${formatTimestamp(checkpointData.last_updated)}.
     </div>

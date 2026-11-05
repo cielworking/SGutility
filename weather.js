@@ -122,3 +122,21 @@ if (locationSelect) {
     }
   });
 }
+
+// One shared weather.json request for the page. Manual refresh bypasses the HTTP cache.
+window.loadSavedWeather = function loadSavedWeather(manual = false) {
+  if (!manual && window.__weatherJSON) return window.__weatherJSON;
+  const init = {signal: AbortSignal.timeout(20000)};
+  if (manual) init.cache = "no-store";
+  const pending = fetch("/data/weather.json", init).then(response => {
+    if (!response.ok) throw new Error("Source returned " + response.status);
+    return response.json();
+  });
+  if (!manual) {
+    window.__weatherJSON = pending;
+    pending.catch(() => {
+      if (window.__weatherJSON === pending) window.__weatherJSON = null;
+    });
+  }
+  return pending;
+};

@@ -107,7 +107,7 @@ if (typeof document !== 'undefined') (() => {
     if(!map) {
       $('air-map').replaceChildren();
       map=L.map('air-map',{scrollWheelZoom:false,zoomSnap:.25});
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:14,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:14,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
       markers=L.layerGroup().addTo(map);
       new ResizeObserver(()=>{
         map.invalidateSize();
@@ -173,7 +173,7 @@ if (typeof document !== 'undefined') (() => {
     const requested=country;let failures=0;
     try {
       try {
-        const saved=await json('/data/weather.json');
+        const saved=await window.loadSavedWeather(manual);
         for(const key of ['sg_psi','sg_pm25','sg_psi_history','sg_pm25_history','my_haze','my_haze_history'])if(saved[key]&&(!cache[key]||Date.parse(saved[key].fetched_at)>Date.parse(cache[key].fetched_at)))cache[key]=saved[key];
       } catch {failures++;}
       if(requested==='sg') {

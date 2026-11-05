@@ -64,19 +64,32 @@ def render_checkpoint(data, location_key, title):
     cameras = data.get(location_key, [])[:4]
     if cameras:
         cards = []
-        for camera in cameras:
+        fallback = []
+        for index, camera in enumerate(cameras):
             camera_id = html.escape(str(camera.get("camera_id", "")))
             image_url = html.escape(str(camera.get("image", "")), quote=True)
             caption = html.escape(f"{title} - Camera {camera_id}", quote=True)
+            stamp = html.escape(str(camera.get("timestamp", "")), quote=True)
+            priority = ' fetchpriority="high"' if index == 0 else ' loading="lazy"'
             cards.append(
-                f"""<button class="checkpoint-camera" type="button"
+                f"""<button class="checkpoint-camera" type="button" data-camera-id="{camera_id}"
                            onclick="openImageModal('{image_url}', '{caption}', this)"
                            aria-label="Enlarge {html.escape(title)} traffic camera {camera_id}">
-                    <img src="{image_url}" alt="{html.escape(title)} traffic camera {camera_id}" loading="lazy" decoding="async">
+                    <img data-src="{image_url}" alt="{html.escape(title)} traffic camera {camera_id}" width="1920" height="1069" data-timestamp="{stamp}"{priority} decoding="async">
                     <span>Camera {camera_id}</span>
                   </button>"""
             )
-        content = f'<div class="checkpoint-grid">{"".join(cards)}</div>'
+            fallback.append(
+                f"""<button class="checkpoint-camera" type="button">
+                    <img src="{image_url}" alt="{html.escape(title)} traffic camera {camera_id}" width="1920" height="1069">
+                    <span>Camera {camera_id}</span>
+                  </button>"""
+            )
+        content = (
+            f'<div class="checkpoint-grid checkpoint-live">{"".join(cards)}</div>'
+            f'<noscript><style>.checkpoint-live{{display:none}}</style>'
+            f'<div class="checkpoint-grid">{"".join(fallback)}</div></noscript>'
+        )
     else:
         content = '<p class="checkpoint-empty">No camera images are currently available.</p>'
 

@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-checkpoint="tuas">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>window.__checkpointImages=fetch("https://api.data.gov.sg/v1/transport/traffic-images").then(r=>{if(!r.ok)throw new Error("checkpoint");return r.json();}).then(payload=>{const filter=document.documentElement.getAttribute("data-checkpoint");const cameras=(payload.items&&payload.items[0]&&payload.items[0].cameras)||[];const match=cameras.filter(cam=>{const lat=cam.location.latitude,lon=cam.location.longitude;if(filter==="woodlands")return lat>=1.42&&lat<=1.48&&lon>=103.74&&lon<=103.80;if(filter==="tuas")return lat>=1.30&&lat<=1.37&&lon>=103.62&&lon<=103.68;return false;});if(match[0]&&match[0].image){const link=document.createElement("link");link.rel="preload";link.as="image";link.href=match[0].image;link.fetchPriority="high";document.head.appendChild(link);}return payload;});</script>
   <title>Tuas Checkpoint Traffic Cameras | SG Alerts</title>
   <meta name="description" content="View current Tuas Checkpoint traffic camera images and update timestamps before using the Second Link between Singapore and Malaysia.">
   <link rel="canonical" href="https://sgalerts.com/tuas-checkpoint.html">
@@ -19,7 +20,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/style.css?v=15">
+  <link rel="stylesheet" href="/style.css?v=17">
   <script type="application/ld+json" data-seo-page="tuas-checkpoint.html">
 {
   "@context": "https://schema.org",
@@ -96,7 +97,7 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="/" aria-label="SG Alerts home">
-        <span class="brand-mark" aria-hidden="true"><img src="/android-chrome-192x192.png" alt="" width="48" height="48"></span>
+        <span class="brand-mark" aria-hidden="true"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span>
         <span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span>
       </a>
       <nav class="primary-nav" aria-label="Dashboard sections">
@@ -108,21 +109,21 @@
   <main id="main-content" class="content-page">
     <section class="page-hero specialist-hero">
       <div class="page-hero-main">
-        <span class="page-hero-icon" aria-hidden="true"><i data-lucide="camera"></i></span>
+        <span class="page-hero-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-camera"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /> <circle cx="12" cy="13" r="3" /></svg></span>
         <div><p class="eyebrow">Checkpoint traffic</p><h1>Tuas Checkpoint Traffic Cameras</h1><p>Check current Tuas traffic-camera images before using the Second Link between Singapore and Malaysia. Images are visual snapshots, not exact waiting-time estimates.</p></div>
       </div>
       <div class="specialist-hero-actions">
-        <a class="detail-link" href="/"><i data-lucide="layout-dashboard"></i> Dashboard</a>
-        <a class="detail-link" href="/woodlands-checkpoint.html"><i data-lucide="arrow-left-right"></i> Woodlands cameras</a>
+        <a class="detail-link" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-layout-dashboard"><rect width="7" height="9" x="3" y="3" rx="1" /> <rect width="7" height="5" x="14" y="3" rx="1" /> <rect width="7" height="9" x="14" y="12" rx="1" /> <rect width="7" height="5" x="3" y="16" rx="1" /></svg> Dashboard</a>
+        <a class="detail-link" href="/woodlands-checkpoint.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-left-right"><path d="M8 3 4 7l4 4" /> <path d="M4 7h16" /> <path d="m16 21 4-4-4-4" /> <path d="M20 17H4" /></svg> Woodlands cameras</a>
       </div>
     </section>
     <div class="specialist-layout">
       <section class="surface-card specialist-data-card">
         <div class="section-header section-header-row">
-          <div class="section-title"><span class="section-icon"><i data-lucide="camera"></i></span><div><p class="eyebrow">Official LTA feeds</p><h2>Latest camera images</h2></div></div>
+          <div class="section-title"><span class="section-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-camera"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /> <circle cx="12" cy="13" r="3" /></svg></span><div><p class="eyebrow">Official LTA feeds</p><h2>Latest camera images</h2></div></div>
           <div class="card-actions">
-            <button onclick="refreshCheckpointData()" class="button button-secondary refresh-btn" type="button"><i data-lucide="refresh-cw"></i><span>Refresh</span></button>
-            <a class="source-link" href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/tuas.html" target="_blank" rel="noopener noreferrer">Source <i data-lucide="external-link"></i></a>
+            <button onclick="refreshCheckpointData()" class="button button-secondary refresh-btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-refresh-cw"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /> <path d="M21 3v5h-5" /> <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /> <path d="M8 16H3v5" /></svg><span>Refresh</span></button>
+            <a class="source-link" href="https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/tuas.html" target="_blank" rel="noopener noreferrer">Source <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-external-link"><path d="M15 3h6v6" /> <path d="M10 14 21 3" /> <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /></svg></a>
           </div>
         </div>
         <div id="checkpointResult" class="result" data-checkpoint-filter="tuas" aria-live="polite">
@@ -130,22 +131,31 @@
 <div class="checkpoint-layout single-location">
       <div class="checkpoint-group">
         <h3>Tuas Checkpoint</h3>
-        <div class="checkpoint-grid"><button class="checkpoint-camera" type="button"
+        <div class="checkpoint-grid checkpoint-live"><button class="checkpoint-camera" type="button" data-camera-id="4703"
                            onclick="openImageModal('https://images.data.gov.sg/api/traffic-images/2026/11/87365454-6694-40ef-a10f-2de8eeec9c3c.jpg', 'Tuas Checkpoint - Camera 4703', this)"
                            aria-label="Enlarge Tuas Checkpoint traffic camera 4703">
-                    <img src="https://images.data.gov.sg/api/traffic-images/2026/11/87365454-6694-40ef-a10f-2de8eeec9c3c.jpg" alt="Tuas Checkpoint traffic camera 4703" loading="lazy" decoding="async">
+                    <img data-src="https://images.data.gov.sg/api/traffic-images/2026/11/87365454-6694-40ef-a10f-2de8eeec9c3c.jpg" alt="Tuas Checkpoint traffic camera 4703" width="1920" height="1069" data-timestamp="2026-11-06T01:55:54+08:00" fetchpriority="high" decoding="async">
                     <span>Camera 4703</span>
-                  </button><button class="checkpoint-camera" type="button"
+                  </button><button class="checkpoint-camera" type="button" data-camera-id="4712"
                            onclick="openImageModal('https://images.data.gov.sg/api/traffic-images/2026/11/967f91cd-880e-4143-b7b4-9ce673a2d518.jpg', 'Tuas Checkpoint - Camera 4712', this)"
                            aria-label="Enlarge Tuas Checkpoint traffic camera 4712">
-                    <img src="https://images.data.gov.sg/api/traffic-images/2026/11/967f91cd-880e-4143-b7b4-9ce673a2d518.jpg" alt="Tuas Checkpoint traffic camera 4712" loading="lazy" decoding="async">
+                    <img data-src="https://images.data.gov.sg/api/traffic-images/2026/11/967f91cd-880e-4143-b7b4-9ce673a2d518.jpg" alt="Tuas Checkpoint traffic camera 4712" width="1920" height="1069" data-timestamp="2026-11-06T01:55:54+08:00" loading="lazy" decoding="async">
                     <span>Camera 4712</span>
-                  </button><button class="checkpoint-camera" type="button"
+                  </button><button class="checkpoint-camera" type="button" data-camera-id="4713"
                            onclick="openImageModal('https://images.data.gov.sg/api/traffic-images/2026/11/ab94f307-287b-4ce5-8fa5-79aa4c8d4002.jpg', 'Tuas Checkpoint - Camera 4713', this)"
                            aria-label="Enlarge Tuas Checkpoint traffic camera 4713">
-                    <img src="https://images.data.gov.sg/api/traffic-images/2026/11/ab94f307-287b-4ce5-8fa5-79aa4c8d4002.jpg" alt="Tuas Checkpoint traffic camera 4713" loading="lazy" decoding="async">
+                    <img data-src="https://images.data.gov.sg/api/traffic-images/2026/11/ab94f307-287b-4ce5-8fa5-79aa4c8d4002.jpg" alt="Tuas Checkpoint traffic camera 4713" width="1920" height="1069" data-timestamp="2026-11-06T01:55:54+08:00" loading="lazy" decoding="async">
                     <span>Camera 4713</span>
-                  </button></div>
+                  </button></div><noscript><style>.checkpoint-live{display:none}</style><div class="checkpoint-grid"><button class="checkpoint-camera" type="button">
+                    <img src="https://images.data.gov.sg/api/traffic-images/2026/11/87365454-6694-40ef-a10f-2de8eeec9c3c.jpg" alt="Tuas Checkpoint traffic camera 4703" width="1920" height="1069">
+                    <span>Camera 4703</span>
+                  </button><button class="checkpoint-camera" type="button">
+                    <img src="https://images.data.gov.sg/api/traffic-images/2026/11/967f91cd-880e-4143-b7b4-9ce673a2d518.jpg" alt="Tuas Checkpoint traffic camera 4712" width="1920" height="1069">
+                    <span>Camera 4712</span>
+                  </button><button class="checkpoint-camera" type="button">
+                    <img src="https://images.data.gov.sg/api/traffic-images/2026/11/ab94f307-287b-4ce5-8fa5-79aa4c8d4002.jpg" alt="Tuas Checkpoint traffic camera 4713" width="1920" height="1069">
+                    <span>Camera 4713</span>
+                  </button></div></noscript>
       </div>
     </div>
     <div class="note">Source: LTA / data.gov.sg. Last updated: 06 Nov 2026, 01:56 AM SGT.</div>
@@ -168,13 +178,13 @@
       </section>
 
       <details class="methodology-card">
-        <summary><span>How to use these checkpoint images</span><i data-lucide="chevron-down"></i></summary>
+        <summary><span>How to use these checkpoint images</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg></summary>
         <div><p>Camera images provide a visual snapshot of lane build-up, weather and nearby road conditions. They do not provide an exact waiting time and may be delayed or temporarily unavailable.</p><p>Check the timestamp and verify urgent travel decisions with the official source.</p></div>
       </details>
     </div>
   </main>
   <div id="imageModal" class="image-modal" role="dialog" aria-modal="true" aria-label="Traffic camera image">
-    <button class="image-modal-close" type="button" onclick="closeImageModal()" aria-label="Close image preview"><i data-lucide="x"></i></button>
+    <button class="image-modal-close" type="button" onclick="closeImageModal()" aria-label="Close image preview"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-x"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></svg></button>
     <img id="modalImage" class="image-modal-content" alt=""><div id="modalCaption" class="image-modal-caption"></div>
   </div>
   <footer class="site-footer">
@@ -187,6 +197,5 @@
       </nav>
     </div>
   </footer>
-  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-  <script src="/script.js?v=8"></script>
+  <script src="/script.js?v=10" defer></script>
 </body></html>

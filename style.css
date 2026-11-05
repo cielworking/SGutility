@@ -654,9 +654,14 @@ svg {
 .checkpoint-camera img {
   width: 100%;
   height: 100%;
+  aspect-ratio: 1920 / 1069;
   display: block;
   object-fit: cover;
   transition: transform 0.2s ease;
+}
+
+.checkpoint-camera img:not([src]) {
+  visibility: hidden;
 }
 
 .checkpoint-camera:hover img {
@@ -2387,7 +2392,10 @@ svg {
 .radar-heading p { margin:5px 0 0; color:#52617a; font-size:13px; }
 .radar-range-label { display:grid; gap:5px; font-size:12px; font-weight:700; }
 .radar-range-label select { min-height:44px; max-width:100%; padding:8px 10px; border:1px solid #b4c7df; border-radius:8px; color:var(--text); background:white; font-size:16px; }
-#rain-map { height:420px; width:100%; border-radius:12px; background:#dce9ef; z-index:0; border:1px solid #b8cce1; }
+#rain-map { position:relative; overflow:hidden; height:420px; width:100%; border-radius:12px; background:#dce9ef; z-index:0; border:1px solid #b8cce1; }
+#rain-map .rain-map-poster { position:absolute; inset:0; z-index:0; width:100%; height:100%; max-width:none; object-fit:cover; pointer-events:none; }
+#refresh-weather { flex:0 0 auto; min-width:11.75rem; white-space:nowrap; }
+#weather-refresh-status { min-height:2lh; }
 .leaflet-container img { max-width:none; }
 .radar-playback { display:flex; align-items:center; gap:14px; margin-top:16px; }
 .radar-scrubber { display:grid; flex:1; min-width:0; gap:5px; font-size:12px; font-weight:700; }
@@ -2421,6 +2429,7 @@ svg {
 @media(max-width:700px) {
   .radar-panel { padding:12px; }
   #rain-map { height:330px; }
+  #refresh-weather { flex:1 1 100%; }
   .weather-toolbar, .radar-heading { align-items:stretch; }
   .radar-range-label, .radar-range-label select, .outlook-section .weather-filter { width:100%; min-width:0; }
   .radar-playback { gap:8px; }
