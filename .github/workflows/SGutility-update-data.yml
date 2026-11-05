@@ -39,6 +39,9 @@ jobs:
       - name: Install Playwright Chromium
         run: python -m playwright install chromium
 
+      - name: Check Python scripts parse
+        run: python -m py_compile scripts/*.py
+
       - name: Run update scripts
         run: |
           python scripts/update-coe.py

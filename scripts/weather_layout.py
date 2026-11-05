@@ -81,6 +81,14 @@ def render_combined(cache, heading="Rain radar & outlook", compact=False):
     rows = sorted([r for r in cache.get("my_rain", {}).get("data", []) if r["location"]["location_id"] == chosen and r["date"] >= datetime.now(TZ).date().isoformat()], key=lambda r: r["date"])
     today = rows[0] if rows else {}
     period_text = ''.join(f'<div><dt>{label}</dt><dd>{esc(describe(today.get(field)))}</dd></div>' for label, field in [("Morning", "morning_forecast"), ("Afternoon", "afternoon_forecast"), ("Night", "night_forecast")])
+    # Built outside the parent f-string so Python 3.11 can parse it. Nested
+    # f-strings that reuse the same quotes need 3.12.
+    if compact:
+        malaysia_html = '<p class="section-note"><a class="detail-link" href="/malaysia/rain-forecast/">Johor and Malaysia outlook</a></p>'
+    else:
+        malaysia_html = f'''<section id="malaysia-outlook" class="outlook-section"><div class="weather-toolbar"><div><p class="eyebrow">Across the border</p><h3>Malaysia outlook</h3></div><label class="weather-filter">Malaysia location<select id="my-weather-location">{my_options}</select></label></div>
+<p class="note">Daily general forecast · morning, afternoon and night. Location types: Ds district, Tn town, St state, Dv division, Rc recreation centre.</p>
+<div id="my-outlook-result"><article class="malaysia-day"><h4>Johor Bahru · {esc(today.get("date"))}</h4><dl class="day-periods">{period_text}</dl></article></div><p id="my-source-time" class="note">Last source check: {short_time(cache.get("my_rain", {}).get("fetched_at"))} UTC+08</p></section>'''
     return f'''<div class="combined-weather" data-combined-weather>
 <div class="weather-toolbar"><div><p class="eyebrow">Singapore &amp; Malaysia</p><h2>{esc(heading)}</h2></div><button id="refresh-weather" class="button button-secondary" type="button">↻ Refresh weather</button></div>
 <p id="weather-refresh-status" class="refresh-feedback" role="status">Saved forecast shown below. Checking official sources…</p>
@@ -96,8 +104,6 @@ def render_combined(cache, heading="Rain radar & outlook", compact=False):
 <p id="outlook-source-time" class="note">Source issued: {short_time(outlook.get("timestamp"))} UTC+08. Official regional forecast periods are shown below.</p>
 <div id="sg-outlook-result">{regional_cards(outlook)}</div>
 <details class="weather-explainer"><summary>What do these conditions mean?</summary><p><strong>Cloudy:</strong> cloud-covered skies are forecast; the word alone does not specify rain. <strong>Showers:</strong> rain is expected within the stated area and period. <strong>Thundery showers:</strong> showers with thunder are forecast. These are period forecasts, not exact rain-start times at your address.</p></details></section>
-{'''<p class="section-note"><a class="detail-link" href="/malaysia/rain-forecast/">Johor and Malaysia outlook</a></p>''' if compact else f'''<section id="malaysia-outlook" class="outlook-section"><div class="weather-toolbar"><div><p class="eyebrow">Across the border</p><h3>Malaysia outlook</h3></div><label class="weather-filter">Malaysia location<select id="my-weather-location">{my_options}</select></label></div>
-<p class="note">Daily general forecast · morning, afternoon and night. Location types: Ds district, Tn town, St state, Dv division, Rc recreation centre.</p>
-<div id="my-outlook-result"><article class="malaysia-day"><h4>Johor Bahru · {esc(today.get("date"))}</h4><dl class="day-periods">{period_text}</dl></article></div><p id="my-source-time" class="note">Last source check: {short_time(cache.get("my_rain", {}).get("fetched_at"))} UTC+08</p></section>'''}
+{malaysia_html}
 <details class="weather-explainer"><summary>Official warnings and data timing</summary><div id="combined-warnings"><p>Check <a href="https://www.weather.gov.sg/">MSS Singapore</a> and <a href="https://www.met.gov.my/">MET Malaysia</a> for official warnings. Cached Malaysia warnings load with the forecasts.</p></div><p>Radar and forecasts check for updates every five minutes while this page is visible. Weather and haze also have a scheduled 15-minute saved-data refresh. Malaysia's general forecast is published daily. A successful refresh does not mean the source has issued new information.</p></details>
 </div>'''
