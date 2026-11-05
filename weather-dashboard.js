@@ -104,24 +104,33 @@
 
   function regional() {
     const select = byId('sg-area'), area = select.value, forecast = cache.sg_rain?.data || {};
+    const box = byId('sg-outlook-result');
+    if (!box) return;
     if (area) {
       const row = forecast.forecasts?.find(r=>r.area === area), window = forecast.valid_period || {};
-      byId('sg-outlook-result').innerHTML = `<article class="region-card local-forecast"><h3>${escapeText(area)} · next two hours</h3><p>${escapeText(format(window.start))} – ${escapeText(format(window.end))} UTC+08</p><strong>${escapeText(row?.forecast)}</strong><p>${Date.parse(window.end)<Date.now() ? 'This forecast has expired. Refresh for the latest available period.' : 'Conditions expected within this forecast period; exact rain-start times are not provided.'}</p></article>`;
+      box.innerHTML = `<div class="region-tabs"><div class="region-panel" role="tabpanel"><article class="region-card local-forecast"><h3>${escapeText(area)} · next two hours</h3><p>${escapeText(format(window.start))} – ${escapeText(format(window.end))} UTC+08</p><strong>${escapeText(row?.forecast || '—')}</strong><p>${row?.forecast ? (Date.parse(window.end)<Date.now() ? 'This forecast has expired. Refresh for the latest available period.' : 'Conditions expected within this forecast period; exact rain-start times are not provided.') : 'Check live'}</p></article></div></div>`;
       byId('outlook-source-time').textContent = 'Source issued: ' + format(forecast.timestamp) + ' UTC+08';
       return;
     }
     const outlook = cache.sg_outlook?.data;
     if (!outlook) return;
+    const selected = box.querySelector('[role="tab"][aria-selected="true"]')?.textContent?.trim().toLowerCase() || 'north';
     byId('outlook-source-time').textContent = 'Source issued: ' + format(outlook.timestamp) + ' UTC+08 · Last checked: ' + format(cache.sg_outlook.fetched_at) + ' UTC+08';
-    byId('sg-outlook-result').innerHTML = '<div class="region-grid">' + ['north','south','east','west','central'].map(region=>{
+    const regions = ['north','south','east','west','central'];
+    box.innerHTML = '<div class="region-tabs" data-region-tabs><div class="region-tablist" role="tablist" aria-label="Singapore forecast region">' + regions.map(region=>{
+      const on = region === selected;
+      return `<button type="button" role="tab" id="region-tab-${region}" aria-controls="region-panel-${region}" aria-selected="${on}" tabindex="${on?0:-1}">${region[0].toUpperCase()+region.slice(1)}</button>`;
+    }).join('') + '</div>' + regions.map(region=>{
       const periods = (outlook.periods||[]).filter(p=>Date.parse(p.timePeriod?.end)>Date.now());
-      const items = periods.map(p=>`<li data-period-end="${escapeText(p.timePeriod.end)}"><span>${escapeText(format(p.timePeriod.start))} – ${escapeText(format(p.timePeriod.end))}</span><strong>${escapeText(p.regions?.[region]?.text)}</strong></li>`).join('');
-      return `<article class="region-card"><h3>${region[0].toUpperCase()+region.slice(1)}</h3><ol class="outlook-timeline">${items || '<li>Forecast expired or unavailable. Refresh for the latest outlook.</li>'}</ol></article>`;
+      const items = periods.map(p=>`<li data-period-end="${escapeText(p.timePeriod.end)}"><span>${escapeText(format(p.timePeriod.start))} – ${escapeText(format(p.timePeriod.end))}</span><strong>${escapeText(p.regions?.[region]?.text || '—')}</strong></li>`).join('');
+      const on = region === selected;
+      return `<div role="tabpanel" class="region-panel" id="region-panel-${region}" aria-labelledby="region-tab-${region}"${on?'':' hidden'}><article class="region-card"><h3>${region[0].toUpperCase()+region.slice(1)}</h3><ol class="outlook-timeline">${items || '<li>— Check live</li>'}</ol></article></div>`;
     }).join('') + '</div>';
   }
   function malaysia() {
+    const select = byId('my-weather-location');
     const feed = cache.my_rain;
-    if (!feed?.data) return;
+    if (!select || !feed?.data) return;
     const rows = feed.data.filter(r=>r.location.location_id === byId('my-weather-location').value && r.date >= dateInSG()).sort((a,b)=>a.date.localeCompare(b.date));
     const tile = row => `<article class="malaysia-day"><h4>${escapeText(row.location.location_name)} · ${escapeText(row.date)}</h4><dl class="day-periods">${[['Morning','morning_forecast'],['Afternoon','afternoon_forecast'],['Night','night_forecast']].map(([label,key])=>`<div><dt>${label}</dt><dd>${escapeText(weatherCondition(row[key]))}</dd></div>`).join('')}</dl><p>${escapeText(row.min_temp)}–${escapeText(row.max_temp)} °C</p></article>`;
     byId('my-outlook-result').innerHTML = rows.length ? tile(rows[0]) + `<details class="more-forecast"><summary>View the next ${rows.length-1} days</summary>${rows.slice(1).map(tile).join('')}</details>` : '<p>No current forecast available for this location. Try Refresh.</p>';
@@ -129,7 +138,7 @@
   }
   function warnings() {
     const feed = cache.my_warnings;
-    if (!feed) return;
+    if (!feed || !byId('combined-warnings')) return;
     const active = (feed.data||[]).filter(r=>{
       const local = t=>t ? Date.parse(/[Zz]|[+-]\d\d:\d\d$/.test(t) ? t : t+'+08:00') : NaN;
       return local(r.valid_from)<=Date.now() && local(r.valid_to)>Date.now();

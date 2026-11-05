@@ -39,11 +39,39 @@ def regional_cards(outlook):
                 continue
             text = period.get("regions", {}).get(region, {}).get("text", "Unavailable")
             items.append(f'<li data-period-end="{esc(window.get("end"))}"><span>{short_time(window.get("start"))} – {short_time(window.get("end"))}</span><strong>{esc(text)}</strong></li>')
-        cards.append(f'<article class="region-card"><h3>{region.title()}</h3><ol class="outlook-timeline">{"".join(items) or "<li>Forecast unavailable or expired. Refresh for the latest outlook.</li>"}</ol></article>')
-    return '<div class="region-grid">' + ''.join(cards) + '</div>'
+        cards.append((region, f'<article class="region-card"><h3>{region.title()}</h3><ol class="outlook-timeline">{"".join(items) or "<li>Forecast unavailable or expired. Refresh for the latest outlook.</li>"}</ol></article>'))
+    tabs = []
+    panels = []
+    for index, (region, card) in enumerate(cards):
+        selected = index == 0
+        tabs.append(
+            f'<button type="button" role="tab" id="region-tab-{region}" aria-controls="region-panel-{region}" aria-selected="{str(selected).lower()}" tabindex="{"0" if selected else "-1"}">{region.title()}</button>'
+        )
+        panels.append(
+            f'<div role="tabpanel" class="region-panel" id="region-panel-{region}" aria-labelledby="region-tab-{region}"{"" if selected else " hidden"}>{card}</div>'
+        )
+    return '<div class="region-tabs" data-region-tabs><div class="region-tablist" role="tablist" aria-label="Singapore forecast region">' + ''.join(tabs) + '</div>' + ''.join(panels) + '</div>'
 
 
-def render_combined(cache, heading="Rain radar & outlook"):
+def homepage_psi(cache):
+    data = (cache.get("sg_psi") or {}).get("data") or {}
+    readings = (data.get("readings") or {}).get("psi_twenty_four_hourly") or {}
+    values = [readings.get(name) for name in ("north", "south", "east", "west", "central") if isinstance(readings.get(name), (int, float))]
+    west = readings.get("west")
+    if west is None and not values:
+        number, detail = "—", "Check live"
+    else:
+        number = esc(west if isinstance(west, (int, float)) else min(values))
+        detail = f"Regions {min(values)}–{max(values)}" if values else "Check live"
+    return (
+        f'<a class="psi-tile" href="/singapore/haze/"><span>24-hour PSI · West</span><strong id="air-number">{number}</strong>'
+        f'<span class="glance-check">{esc(detail)}</span></a>'
+        '<p class="section-note"><a href="/malaysia/haze/">Malaysia stations</a> · '
+        '<a href="/guides/singapore-psi-haze-what-to-do.html">What PSI and PM2.5 mean</a></p>'
+    )
+
+
+def render_combined(cache, heading="Rain radar & outlook", compact=False):
     outlook = cache.get("sg_outlook", {}).get("data", {})
     rain = cache.get("sg_rain", {}).get("data", {})
     places = {r["location"]["location_id"]: r["location"]["location_name"] for r in cache.get("my_rain", {}).get("data", [])}
@@ -68,8 +96,8 @@ def render_combined(cache, heading="Rain radar & outlook"):
 <p id="outlook-source-time" class="note">Source issued: {short_time(outlook.get("timestamp"))} UTC+08. Official regional forecast periods are shown below.</p>
 <div id="sg-outlook-result">{regional_cards(outlook)}</div>
 <details class="weather-explainer"><summary>What do these conditions mean?</summary><p><strong>Cloudy:</strong> cloud-covered skies are forecast; the word alone does not specify rain. <strong>Showers:</strong> rain is expected within the stated area and period. <strong>Thundery showers:</strong> showers with thunder are forecast. These are period forecasts, not exact rain-start times at your address.</p></details></section>
-<section id="malaysia-outlook" class="outlook-section"><div class="weather-toolbar"><div><p class="eyebrow">Across the border</p><h3>Malaysia outlook</h3></div><label class="weather-filter">Malaysia location<select id="my-weather-location">{my_options}</select></label></div>
+{'''<p class="section-note"><a class="detail-link" href="/malaysia/rain-forecast/">Johor and Malaysia outlook</a></p>''' if compact else f'''<section id="malaysia-outlook" class="outlook-section"><div class="weather-toolbar"><div><p class="eyebrow">Across the border</p><h3>Malaysia outlook</h3></div><label class="weather-filter">Malaysia location<select id="my-weather-location">{my_options}</select></label></div>
 <p class="note">Daily general forecast · morning, afternoon and night. Location types: Ds district, Tn town, St state, Dv division, Rc recreation centre.</p>
-<div id="my-outlook-result"><article class="malaysia-day"><h4>Johor Bahru · {esc(today.get("date"))}</h4><dl class="day-periods">{period_text}</dl></article></div><p id="my-source-time" class="note">Last source check: {short_time(cache.get("my_rain", {}).get("fetched_at"))} UTC+08</p></section>
+<div id="my-outlook-result"><article class="malaysia-day"><h4>Johor Bahru · {esc(today.get("date"))}</h4><dl class="day-periods">{period_text}</dl></article></div><p id="my-source-time" class="note">Last source check: {short_time(cache.get("my_rain", {}).get("fetched_at"))} UTC+08</p></section>'''}
 <details class="weather-explainer"><summary>Official warnings and data timing</summary><div id="combined-warnings"><p>Check <a href="https://www.weather.gov.sg/">MSS Singapore</a> and <a href="https://www.met.gov.my/">MET Malaysia</a> for official warnings. Cached Malaysia warnings load with the forecasts.</p></div><p>Radar and forecasts check for updates every five minutes while this page is visible. Weather and haze also have a scheduled 15-minute saved-data refresh. Malaysia's general forecast is published daily. A successful refresh does not mean the source has issued new information.</p></details>
 </div>'''

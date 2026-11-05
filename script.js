@@ -367,9 +367,42 @@ function syncCamera(button, cam, title) {
   bindCamera(button, cam, title, img.getAttribute("src") || nextUrl);
 }
 
+function renderCheckpointTeaser(box) {
+  const groups = [
+    ["#cp-panel-woodlands", "Woodlands Checkpoint", (checkpointData.woodlands || []).slice(0, 2)],
+    ["#cp-panel-tuas", "Tuas Checkpoint", (checkpointData.tuas || []).slice(0, 2)]
+  ];
+  groups.forEach(([selector, title, cameras]) => {
+    const panel = box.querySelector(selector);
+    const grid = panel?.querySelector(".checkpoint-grid");
+    if (!grid) return;
+    if (!cameras.length) {
+      if (!grid.querySelector(".checkpoint-camera")) {
+        grid.innerHTML = '<p class="glance-metric">—</p><p class="glance-check">Check live</p>';
+      }
+      return;
+    }
+    const buttons = [...grid.querySelectorAll(".checkpoint-camera")];
+    const same = buttons.length === cameras.length && cameras.every(cam => buttons.some(button => button.dataset.cameraId === String(cam.camera_id)));
+    if (same) {
+      cameras.forEach(cam => {
+        const button = buttons.find(node => node.dataset.cameraId === String(cam.camera_id));
+        if (button) syncCamera(button, cam, title);
+      });
+      return;
+    }
+    grid.innerHTML = cameras.map((cam, index) => cameraMarkup(cam, title, title.startsWith("Woodlands") && index === 0)).join("");
+  });
+  renderSummary();
+}
+
 function renderCheckpoints() {
   const box = document.getElementById("checkpointResult");
   if (!box) return;
+  if (box.dataset.checkpointTeaser === "tabs") {
+    renderCheckpointTeaser(box);
+    return;
+  }
 
   const woodlands = checkpointData.woodlands || [];
   const tuas = checkpointData.tuas || [];
@@ -800,6 +833,20 @@ function renderCoePrices() {
   const box = document.getElementById("coeResult");
   if (!box) return;
 
+  if (box.dataset.coeMode === "summary") {
+    const latest = coePrices.latest || [];
+    if (!latest.length) {
+      box.innerHTML = '<p class="glance-metric">—</p><p class="glance-check">Check live</p>';
+      return;
+    }
+    box.innerHTML = `<div class="petrol-cheapest">${latest.map(item => {
+      const label = String(item.category || "—").replace("Category ", "Cat ");
+      const premium = item.premium == null || item.premium === "" ? "—" : "$" + Number(item.premium).toLocaleString("en-SG");
+      return `<div><span>${label}</span><strong>${premium}</strong><small>${premium === "—" ? "Check live" : "Premium"}</small></div>`;
+    }).join("")}</div>`;
+    return;
+  }
+
   const categoryNames = {
     "Category A": "Cat A - Cars up to 1600cc / 130bhp",
     "Category B": "Cat B - Cars above 1600cc / 130bhp",
@@ -848,6 +895,17 @@ function renderCoePrices() {
 function renderBtoProjects() {
   const box = document.getElementById("btoResult");
   if (!box) return;
+
+  if (box.dataset.btoMode === "summary") {
+    const projects = btoProjects.projects || [];
+    if (!projects.length) {
+      box.innerHTML = '<p class="glance-metric">—</p><p class="glance-check">Check live</p>';
+      return;
+    }
+    const next = projects[0];
+    box.innerHTML = `<div class="row"><span>Next listed launch</span><strong>${next.town || "—"} · ${next.stage || "Check live"}</strong></div><p class="note">${projects.length} upcoming project entries.</p>`;
+    return;
+  }
 
   const grouped = {};
 
@@ -914,14 +972,24 @@ function renderPetrolPrices() {
 
   const fuelKeys = ["ron92", "ron95", "ron98", "premium", "diesel"];
   const cheapest = {};
+  const brands = petrolPrices.brands || [];
 
   fuelKeys.forEach(key => {
-    const prices = petrolPrices.brands
+    const prices = brands
       .map(item => priceNumber(item[key]))
       .filter(value => value !== null);
 
     cheapest[key] = prices.length ? Math.min(...prices) : null;
   });
+
+  if (box.dataset.petrolMode === "cheapest") {
+    const labels = { ron92: "92", ron95: "95", ron98: "98", premium: "Premium", diesel: "Diesel" };
+    box.innerHTML = `<div class="petrol-cheapest">${fuelKeys.map(key => {
+      const price = cheapest[key];
+      return `<div><span>${labels[key]}</span><strong>${price === null ? "—" : "$" + price.toFixed(2)}</strong><small>${price === null ? "Check live" : "Cheapest"}</small></div>`;
+    }).join("")}</div>`;
+    return;
+  }
 
   function petrolCell(item, key) {
     const value = item[key];
@@ -977,7 +1045,7 @@ function renderPetrolPrices() {
         <span>Diesel</span>
       </div>
 
-      ${petrolPrices.brands.map(item => `
+      ${brands.map(item => `
         <div class="petrol-row">
           <div class="brand-cell">
             <img src="${item.logo}" alt="${item.brand} logo" />
@@ -1371,9 +1439,43 @@ function initGlancePsi() {
   new MutationObserver(update).observe(psi, { childList: true, characterData: true, subtree: true });
 }
 
+function initRegionTabs() {
+  const activate = (tab) => {
+    const root = tab.closest("[data-region-tabs]");
+    if (!root) return;
+    root.querySelectorAll('[role="tab"]').forEach((item) => {
+      const on = item === tab;
+      item.setAttribute("aria-selected", on ? "true" : "false");
+      item.tabIndex = on ? 0 : -1;
+      const panel = root.querySelector("#" + CSS.escape(item.getAttribute("aria-controls") || ""));
+      if (panel) panel.hidden = !on;
+    });
+  };
+  document.addEventListener("click", (event) => {
+    const tab = event.target.closest("[data-region-tabs] [role='tab']");
+    if (tab) activate(tab);
+  });
+  document.addEventListener("keydown", (event) => {
+    const tab = event.target.closest("[data-region-tabs] [role='tab']");
+    if (!tab) return;
+    const tabs = [...tab.parentElement.querySelectorAll('[role="tab"]')];
+    const index = tabs.indexOf(tab);
+    let next = null;
+    if (event.key === "ArrowRight") next = tabs[(index + 1) % tabs.length];
+    if (event.key === "ArrowLeft") next = tabs[(index - 1 + tabs.length) % tabs.length];
+    if (event.key === "Home") next = tabs[0];
+    if (event.key === "End") next = tabs[tabs.length - 1];
+    if (!next) return;
+    event.preventDefault();
+    activate(next);
+    next.focus();
+  });
+}
+
 initGuideFilters();
 initShareBars();
 initGlancePsi();
+initRegionTabs();
 
 /* Per-section refresh reads the latest published files without changing source timestamps. */
 const sectionRefreshers = [

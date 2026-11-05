@@ -2519,6 +2519,66 @@ html { -webkit-text-size-adjust: 100%; }
   width: 100%;
   justify-content: flex-start;
 }
+.region-tablist { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 10px; }
+.region-tablist [role="tab"] {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 700;
+}
+.region-tablist [role="tab"][aria-selected="true"] {
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+  border-color: transparent;
+}
+.region-panel { min-height: 22rem; }
+#rain .radar-panel > .note { display: none; }
+.checkpoint-teaser .region-panel { min-height: 12.5rem; }
+.checkpoint-teaser .teaser-grid { grid-template-columns: 1fr 1fr; }
+.psi-tile {
+  display: grid;
+  gap: 2px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+}
+.psi-tile strong { font-size: 32px; line-height: 1.1; }
+.psi-tile span { color: var(--muted); }
+.petrol-cheapest { display: flex; gap: 6px; }
+.petrol-cheapest > div {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 8px 2px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+}
+.petrol-cheapest strong, .petrol-cheapest span, .petrol-cheapest small { display: block; }
+.petrol-cheapest strong { font-size: 14px; }
+.petrol-cheapest span, .petrol-cheapest small { color: var(--muted); font-size: 11px; }
+.sga-collapse {
+  margin-top: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+}
+.sga-collapse > summary {
+  min-height: 44px;
+  padding: 10px 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.sga-collapse > summary h3 { margin: 0; font-size: 16px; }
+.sga-collapse > .seo-faq, .sga-collapse > p { margin: 0; padding: 0 14px 14px; }
 .freshness-chip {
   display: flex;
   flex-wrap: wrap;
@@ -2658,6 +2718,6 @@ html { -webkit-text-size-adjust: 100%; }
   .primary-nav > .nav-menu > summary { flex: 1; }
   .primary-nav > a,
   .primary-nav summary { justify-content: center; }
-  .glance-row { grid-template-columns: minmax(0, 1fr); }
+  .glance-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pools-tagline { width: min(100% - 24px, var(--content)); }
 }
