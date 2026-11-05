@@ -203,7 +203,7 @@ def main():
             explanation = "Explore Singapore and Malaysia together using observed rain radar, Singapore's official five-region forecast periods, and Malaysia location forecasts. Choose an individual Singapore area for the two-hour forecast. Radar playback shows recent observations; it does not predict exact rain arrival times."
             if country == "singapore":
                 meta_desc = "Two-hour Singapore rain forecasts by area, with official validity times. Check before you head out on SG Alerts."
-                guide_links = '<a class="detail-link" href="/weather/">Open full rain radar</a><a class="detail-link" href="/singapore/haze/">Air quality / PSI</a>'
+                guide_links = '<a class="detail-link" href="/weather/">Open full rain radar</a><a class="detail-link" href="/singapore/haze/">Air quality / PSI</a><a class="detail-link" href="/guides/northeast-monsoon-singapore-flash-floods.html">Northeast monsoon and flash floods</a>'
             else:
                 meta_desc = "Malaysia rain forecasts by location, including Johor Bahru morning, afternoon and night outlooks on SG Alerts."
                 guide_links = '<a class="detail-link" href="/weather/">Singapore–Johor rain radar</a><a class="detail-link" href="/woodlands-checkpoint.html">Woodlands cameras before you cross</a><a class="detail-link" href="/guides/causeway-year-end-school-holidays.html">Holiday Causeway planning</a>'
@@ -273,7 +273,7 @@ def main():
                 hub = hub.replace('"name": "Singapore Rain Forecast"', '"name": "Singapore & Malaysia Rain Radar and Forecast"')
                 hub = hub.replace(
                     guide_links,
-                    '<a class="detail-link" href="/singapore/haze/">Check PSI and haze</a><a class="detail-link" href="/guides/singapore-psi-haze-what-to-do.html">What to do when PSI rises</a><a class="detail-link" href="/singapore/rain-forecast/">Singapore area rain forecast</a><a class="detail-link" href="/malaysia/rain-forecast/">Johor &amp; Malaysia outlook</a>',
+                    '<a class="detail-link" href="/singapore/haze/">Check PSI and haze</a><a class="detail-link" href="/guides/singapore-psi-haze-what-to-do.html">What to do when PSI rises</a><a class="detail-link" href="/singapore/rain-forecast/">Singapore area rain forecast</a><a class="detail-link" href="/malaysia/rain-forecast/">Johor &amp; Malaysia outlook</a><a class="detail-link" href="/guides/northeast-monsoon-singapore-flash-floods.html">Northeast monsoon and flash floods</a>',
                 )
                 hub_path = ROOT / "weather/index.html"
                 hub_path.parent.mkdir(parents=True, exist_ok=True)
