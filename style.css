@@ -2519,7 +2519,6 @@ html { -webkit-text-size-adjust: 100%; }
   width: 100%;
   justify-content: flex-start;
 }
-.nav-more a[href="/#results"] { color: var(--muted); font-weight: 600; }
 .freshness-chip {
   display: flex;
   flex-wrap: wrap;

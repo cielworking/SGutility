@@ -41,7 +41,7 @@ def primary_nav(current):
         return f'<a href="{href}"{current_attr}>{label}</a>'
 
     live = ' aria-current="true"' if current in {"rain", "haze", "haze-my", "woodlands", "tuas"} else ""
-    more = ' aria-current="true"' if current in {"about", "contact", "results"} else ""
+    more = ' aria-current="true"' if current in {"about", "contact"} else ""
     return (
         '<nav class="primary-nav" aria-label="Primary">'
         f'<details class="nav-menu"><summary aria-expanded="false"{live}>Live</summary><div class="nav-panel">'
@@ -54,7 +54,7 @@ def primary_nav(current):
         f'{item("/guides/", "Guides", "guides")}'
         f'<details class="nav-menu nav-more"><summary aria-expanded="false"{more}>More</summary><div class="nav-panel">'
         f'{item("/#news", "News", "news")}{item("/#quick-info", "Quick Info", "quick")}'
-        f'{item("/#results", "Results", "results")}{item("/about.html", "About", "about")}{item("/contact.html", "Contact", "contact")}'
+        f'{item("/about.html", "About", "about")}{item("/contact.html", "Contact", "contact")}'
         "</div></details></nav>"
     )
 
@@ -244,7 +244,7 @@ def main():
 <main id="main-content" class="content-page weather-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">SG Alerts</a> / {esc(title)}</nav><section class="page-hero"><div><p class="eyebrow">{country.title()} · Official data</p><h1>{esc(title)}</h1><p>{esc(desc)}</p></div></section>
 <nav class="weather-tabs" aria-label="Weather pages">{related}</nav><section class="surface-card specialist-data-card">{chip}{"" if kind == "rain-forecast" else "<h2>Air-quality readings</h2>"}{content}<p class="note">Source: <a href="{source}" target="_blank" rel="noopener noreferrer">{source_name}</a>. Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.</p></section>
 <section class="surface-card seo-guide"><h2>Understanding {esc(title.lower())}</h2><p>{esc(explanation)}</p><h3>How current is this information?</h3><p>Always check the forecast validity or reporting time. Older cached readings remain visible with a warning when a source is delayed or unavailable. Times use Singapore / Malaysia time (UTC+08).</p><h3>Where can I check official updates?</h3><p>Visit <a href="{source}">{source_name}</a> for the latest official information and advisories.</p><div class="seo-related">{related}{guide_links}</div></section></main>
-<footer class="site-footer"><div class="footer-inner"><strong>SG Alerts</strong><nav class="footer-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/guides/">Guides</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a></nav></div></footer></body></html>'''
+<footer class="site-footer"><div class="footer-inner"><strong>SG Alerts</strong><nav class="footer-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/guides/">Guides</a><a href="/4d-results.html">4D Results</a><a href="/toto-results.html">TOTO Results</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a></nav></div></footer></body></html>'''
         target = ROOT / country / kind / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(document + "\n", encoding="utf-8")
