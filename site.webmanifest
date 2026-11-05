@@ -1,6 +1,13 @@
 {
   "name": "SG Alerts",
   "short_name": "SG Alerts",
+  "description": "Singapore checkpoints, petrol, COE, BTO, weather and haze",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "lang": "en-SG",
+  "theme_color": "#0c2554",
+  "background_color": "#eef4fc",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -11,11 +18,12 @@
       "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
-  ],
-  "theme_color": "#0c2554",
-  "background_color": "#eef4fc",
-  "display": "standalone",
-  "start_url": "/",
-  "scope": "/"
+  ]
 }

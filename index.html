@@ -24,11 +24,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0c2554">
   <link rel="manifest" href="/site.webmanifest">
 
   <link rel="preconnect" href="https://unpkg.com" crossorigin>
   <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin>
-  <link rel="stylesheet" href="style.css?v=17" />
+  <link rel="stylesheet" href="style.css?v=18" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
@@ -63,17 +64,7 @@
         </span>
       </a>
 
-      <nav class="primary-nav" aria-label="Dashboard sections">
-        <a href="#rain">Rain</a><a href="#haze">Haze</a>
-        <a href="#news">News</a>
-        <a href="#checkpoints">Checkpoints</a>
-        <a href="#petrol">Petrol</a>
-        <a href="#coe">COE</a>
-        <a href="#bto">BTO</a>
-        <a href="#results">Results</a>
-        <a href="/guides/">Guides</a>
-        <a href="#quick-info">Quick Info</a>
-      </nav>
+      <nav class="primary-nav" aria-label="Primary"><details class="nav-menu"><summary aria-expanded="false">Live</summary><div class="nav-panel"><a href="/weather/">Rain</a><a href="/singapore/haze/">Haze</a><a href="/woodlands-checkpoint.html">Woodlands</a><a href="/tuas-checkpoint.html">Tuas</a></div></details><a href="/singapore-petrol-prices.html">Petrol</a><a href="/latest-coe-prices.html">COE</a><a href="/bto-launches.html">BTO</a><a href="/guides/">Guides</a><details class="nav-menu nav-more"><summary aria-expanded="false">More</summary><div class="nav-panel"><a href="/#news">News</a><a href="/#quick-info">Quick Info</a><a href="/#results">Results</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></details></nav>
     </div>
   </header>
 
@@ -82,6 +73,7 @@
 
     <div class="content-grid">
       <section id="rain" class="surface-card wide-card" aria-label="Rain radar and outlook">
+        <p class="freshness-chip" id="weather-freshness"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span class="freshness-time">Updated 5 Nov, 11:32 pm UTC+08</span><a href="https://www.weather.gov.sg/" target="_blank" rel="noopener noreferrer">Source</a></p>
         <!-- STATIC:RAIN:START -->
 <div class="combined-weather" data-combined-weather>
 <div class="weather-toolbar"><div><p class="eyebrow">Singapore &amp; Malaysia</p><h2>Rain radar &amp; outlook</h2></div><button id="refresh-weather" class="button button-secondary" type="button">↻ Refresh weather</button></div>
@@ -331,7 +323,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=10" defer></script>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=3" defer></script><script src="/weather-dashboard.js?v=2" defer></script><script src="/air-quality.js?v=2" defer></script>
+  <script src="script.js?v=11" defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=3" defer></script><script src="/weather-dashboard.js?v=3" defer></script><script src="/air-quality.js?v=2" defer></script>
 </body>
 </html>

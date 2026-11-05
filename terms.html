@@ -20,8 +20,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0c2554">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="style.css?v=17" />
+  <link rel="stylesheet" href="style.css?v=18" />
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -31,16 +32,7 @@
         <span class="brand-mark" aria-hidden="true"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span>
         <span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span>
       </a>
-      <nav class="primary-nav" aria-label="Main navigation">
-        <a href="index.html#news">News</a>
-        <a href="index.html#checkpoints">Checkpoints</a>
-        <a href="index.html#petrol">Petrol</a>
-        <a href="index.html#coe">COE</a>
-        <a href="index.html#bto">BTO</a>
-        <a href="index.html#results">Results</a>
-        <a href="/guides/">Guides</a>
-        <a href="index.html#quick-info">Quick Info</a>
-      </nav>
+      <nav class="primary-nav" aria-label="Primary"><details class="nav-menu"><summary aria-expanded="false">Live</summary><div class="nav-panel"><a href="/weather/">Rain</a><a href="/singapore/haze/">Haze</a><a href="/woodlands-checkpoint.html">Woodlands</a><a href="/tuas-checkpoint.html">Tuas</a></div></details><a href="/singapore-petrol-prices.html">Petrol</a><a href="/latest-coe-prices.html">COE</a><a href="/bto-launches.html">BTO</a><a href="/guides/">Guides</a><details class="nav-menu nav-more"><summary aria-expanded="false">More</summary><div class="nav-panel"><a href="/#news">News</a><a href="/#quick-info">Quick Info</a><a href="/#results">Results</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></details></nav>
     </div>
   </header>
   <main id="main-content" class="content-page">
@@ -147,5 +139,5 @@
       </nav>
     </div>
   </footer>
-</body>
+<script src="/script.js?v=11" defer></script></body>
 </html>

@@ -184,7 +184,10 @@
       const results = await Promise.allSettled([refreshRadar(),refreshForecasts(manual)]);
       const failed = results.some(r=>r.status==='rejected'||r.value.failed);
       const same = results.every(r=>r.status==='fulfilled'&&r.value.same);
-      byId('weather-refresh-status').textContent=(failed?'Some sources could not refresh; previous available data is retained. ':same?'No newer radar or forecast information available. ':'Latest available radar and forecasts loaded. ')+'Last checked: '+format(new Date().toISOString())+' UTC+08';
+      const checked = format(new Date().toISOString());
+      byId('weather-refresh-status').textContent=(failed?'Some sources could not refresh; previous available data is retained. ':same?'No newer radar or forecast information available. ':'Latest available radar and forecasts loaded. ')+'Last checked: '+checked+' UTC+08';
+      const freshnessTime = document.querySelector('#weather-freshness .freshness-time');
+      if (freshnessTime) freshnessTime.textContent = 'Updated ' + checked.replace(/\s?(am|pm)$/i, (part) => ' ' + part.trim().toLowerCase()) + ' UTC+08';
     } finally {
       const unlock=()=>{refresh.disabled=false;refresh.textContent='↻ Refresh weather';};
       if(manual)setTimeout(unlock,5000);else unlock();

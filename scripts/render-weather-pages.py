@@ -17,6 +17,48 @@ PAGES = [
 ]
 
 
+def updated_label(value):
+    try:
+        parsed = parse(value).astimezone(SGT)
+        hour = int(parsed.strftime("%I"))
+        return f"Updated {parsed.day} {parsed.strftime('%b')}, {hour}:{parsed.strftime('%M')} {parsed.strftime('%p').lower()} UTC+08"
+    except (ValueError, TypeError, AttributeError):
+        return "Updated —"
+
+
+def freshness_chip(value, href):
+    return (
+        '<p class="freshness-chip" id="weather-freshness">'
+        '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>'
+        f'<span class="freshness-time">{esc(updated_label(value))}</span>'
+        f'<a href="{esc(href)}" target="_blank" rel="noopener noreferrer">Source</a></p>'
+    )
+
+
+def primary_nav(current):
+    def item(href, label, key):
+        current_attr = ' aria-current="page"' if current == key else ""
+        return f'<a href="{href}"{current_attr}>{label}</a>'
+
+    live = ' aria-current="true"' if current in {"rain", "haze", "haze-my", "woodlands", "tuas"} else ""
+    more = ' aria-current="true"' if current in {"about", "contact", "results"} else ""
+    return (
+        '<nav class="primary-nav" aria-label="Primary">'
+        f'<details class="nav-menu"><summary aria-expanded="false"{live}>Live</summary><div class="nav-panel">'
+        f'{item("/weather/", "Rain", "rain")}{item("/singapore/haze/", "Haze", "haze")}'
+        f'{item("/woodlands-checkpoint.html", "Woodlands", "woodlands")}{item("/tuas-checkpoint.html", "Tuas", "tuas")}'
+        "</div></details>"
+        f'{item("/singapore-petrol-prices.html", "Petrol", "petrol")}'
+        f'{item("/latest-coe-prices.html", "COE", "coe")}'
+        f'{item("/bto-launches.html", "BTO", "bto")}'
+        f'{item("/guides/", "Guides", "guides")}'
+        f'<details class="nav-menu nav-more"><summary aria-expanded="false"{more}>More</summary><div class="nav-panel">'
+        f'{item("/#news", "News", "news")}{item("/#quick-info", "Quick Info", "quick")}'
+        f'{item("/#results", "Results", "results")}{item("/about.html", "About", "about")}{item("/contact.html", "Contact", "contact")}'
+        "</div></details></nav>"
+    )
+
+
 def esc(value):
     return html.escape(str(value if value is not None else "Unavailable"), quote=True)
 
@@ -155,25 +197,45 @@ def main():
         related = ''.join(f'<a class="detail-link" href="/{c}/{k}/" {"aria-current=page" if (c,k)==(country,kind) else ""}>{esc(t)}</a>' for c,k,t,_,_ in PAGES)
         if kind == "rain-forecast":
             related = '<a class="detail-link" href="/weather/">Combined rain radar &amp; forecast</a><a class="detail-link" href="/#haze">Haze &amp; air quality</a>'
-        else:
+            nav_current = "rain"
+            chip_source = "https://www.weather.gov.sg/"
+            outlook = cache.get("sg_outlook") or {}
+            chip_stamp = (outlook.get("data") or {}).get("timestamp") or outlook.get("fetched_at")
+            head_extra = '<link rel="preconnect" href="https://unpkg.com" crossorigin><link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin>'
+        elif country == "singapore":
+            nav_current = "haze"
+            chip_source = "https://www.haze.gov.sg/"
+            psi = cache.get("sg_psi") or {}
+            chip_stamp = (psi.get("data") or {}).get("timestamp") or psi.get("fetched_at")
+            head_extra = ""
             content = '<div data-air-content>' + content + '</div><button class="button button-secondary" type="button" data-refresh-air>↻ Refresh saved readings</button><p data-air-feedback class="refresh-feedback" role="status">Saved readings update on the 15-minute schedule.</p>'
+        else:
+            nav_current = "haze-my"
+            chip_source = "https://eqms.doe.gov.my/APIMS/main"
+            haze = cache.get("my_haze") or {}
+            rows = haze.get("data") if isinstance(haze.get("data"), list) else []
+            chip_stamp = min((row.get("reported_at") for row in rows if isinstance(row, dict) and row.get("reported_at")), default=None) or haze.get("fetched_at")
+            head_extra = ""
+            content = '<div data-air-content>' + content + '</div><button class="button button-secondary" type="button" data-refresh-air>↻ Refresh saved readings</button><p data-air-feedback class="refresh-feedback" role="status">Saved readings update on the 15-minute schedule.</p>'
+        chip = freshness_chip(chip_stamp, chip_source)
+        nav = primary_nav(nav_current)
         schema = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": "https://sgalerts.com" + path, "isPartOf": {"@type": "WebSite", "name": "SG Alerts", "url": "https://sgalerts.com/"}}
         document = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(title)} | SG Alerts</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="https://sgalerts.com{path}">
 <meta property="og:title" content="{esc(title)} | SG Alerts"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="https://sgalerts.com{path}"><meta property="og:type" content="website"><meta property="og:image" content="https://sgalerts.com/assets/og-share.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)} | SG Alerts"><meta name="twitter:description" content="{esc(desc)}"><meta name="twitter:image" content="https://sgalerts.com/assets/og-share.png">
-<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="stylesheet" href="/style.css?v=15">
-<script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=2" defer></script></head>
-<body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark"><img src="/android-chrome-192x192.png" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a><nav class="primary-nav" aria-label="Dashboard sections"><a href="/">Dashboard</a><a href="/#checkpoints">Checkpoints</a><a href="/#rain">Rain Forecast</a><a href="/#haze">Haze</a><a href="/guides/">Guides</a></nav></div></header>
+<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0c2554"><link rel="manifest" href="/site.webmanifest">{head_extra}<link rel="stylesheet" href="/style.css?v=18">
+<script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=3" defer></script><script src="/script.js?v=11" defer></script></head>
+<body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a>{nav}</div></header>
 <main id="main-content" class="content-page weather-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">SG Alerts</a> / {esc(title)}</nav><section class="page-hero"><div><p class="eyebrow">{country.title()} · Official data</p><h1>{esc(title)}</h1><p>{esc(desc)}</p></div></section>
-<nav class="weather-tabs" aria-label="Weather pages">{related}</nav><section class="surface-card specialist-data-card">{"" if kind == "rain-forecast" else "<h2>Air-quality readings</h2>"}{content}<p class="note">Source: <a href="{source}" target="_blank" rel="noopener noreferrer">{source_name}</a>. Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.</p></section>
+<nav class="weather-tabs" aria-label="Weather pages">{related}</nav><section class="surface-card specialist-data-card">{chip}{"" if kind == "rain-forecast" else "<h2>Air-quality readings</h2>"}{content}<p class="note">Source: <a href="{source}" target="_blank" rel="noopener noreferrer">{source_name}</a>. Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.</p></section>
 <section class="surface-card seo-guide"><h2>Understanding {esc(title.lower())}</h2><p>{esc(explanation)}</p><h3>How current is this information?</h3><p>Always check the forecast validity or reporting time. Older cached readings remain visible with a warning when a source is delayed or unavailable. Times use Singapore / Malaysia time (UTC+08).</p><h3>Where can I check official updates?</h3><p>Visit <a href="{source}">{source_name}</a> for the latest official information and advisories.</p><div class="seo-related">{related}</div></section></main>
 <footer class="site-footer"><div class="footer-inner"><strong>SG Alerts</strong><nav class="footer-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/guides/">Guides</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a></nav></div></footer></body></html>'''
         target = ROOT / country / kind / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(document + "\n", encoding="utf-8")
         if kind == "rain-forecast":
-            document = document.replace('<script src="/weather.js?v=2" defer></script>', '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=2" defer></script><script src="/weather-dashboard.js?v=1" defer></script>')
+            document = document.replace('<script src="/weather.js?v=3" defer></script>', '<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=3" defer></script><script src="/weather-dashboard.js?v=3" defer></script>')
             target.write_text(document + "\n", encoding="utf-8")
             if country == "singapore":
                 hub = document.replace(title, "Singapore &amp; Malaysia Rain Radar and Forecast").replace("https://sgalerts.com" + path, "https://sgalerts.com/weather/")

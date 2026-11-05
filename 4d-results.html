@@ -23,8 +23,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0c2554">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="style.css?v=17" />
+  <link rel="stylesheet" href="style.css?v=18" />
 
   <script type="application/ld+json">
   {
@@ -43,10 +44,8 @@
 </head>
 
 <body>
-  <header>
-    <div class="site-title">SG Alerts</div>
-    <p>Singapore Traffic, Petrol, COE, BTO & Daily Alerts</p>
-  </header>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark" aria-hidden="true"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a><nav class="primary-nav" aria-label="Primary"><details class="nav-menu"><summary aria-expanded="false">Live</summary><div class="nav-panel"><a href="/weather/">Rain</a><a href="/singapore/haze/">Haze</a><a href="/woodlands-checkpoint.html">Woodlands</a><a href="/tuas-checkpoint.html">Tuas</a></div></details><a href="/singapore-petrol-prices.html">Petrol</a><a href="/latest-coe-prices.html">COE</a><a href="/bto-launches.html">BTO</a><a href="/guides/">Guides</a><details class="nav-menu nav-more"><summary aria-expanded="false" aria-current="true">More</summary><div class="nav-panel"><a href="/#news">News</a><a href="/#quick-info">Quick Info</a><a href="/#results" aria-current="page">Results</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></details></nav></div></header>
+  <p class="pools-tagline">Singapore Traffic, Petrol, COE, BTO & Daily Alerts</p>
 
   <main class="grid landing-grid">
     <section class="card landing-card wide-card sgpools-card">
@@ -125,6 +124,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=10" defer></script>
+  <script src="script.js?v=11" defer></script>
 </body>
 </html>

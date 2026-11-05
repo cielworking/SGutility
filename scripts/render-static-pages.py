@@ -23,6 +23,32 @@ def money(value):
     return f"{chr(36)}{int(value):,}"
 
 
+def updated_label(value):
+    if not value:
+        return "Updated —"
+    try:
+        parsed = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        singapore_time = timezone(timedelta(hours=8))
+        parsed = parsed.astimezone(singapore_time)
+        hour = int(parsed.strftime("%I"))
+        return f"Updated {parsed.day} {parsed.strftime('%b')}, {hour}:{parsed.strftime('%M')} {parsed.strftime('%p').lower()} UTC+08"
+    except ValueError:
+        return "Updated —"
+
+
+def freshness_chip(value, href):
+    safe_href = html.escape(href, quote=True)
+    return (
+        '<p class="freshness-chip">'
+        '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>'
+        f'<span class="freshness-time">{html.escape(updated_label(value))}</span>'
+        f'<a href="{safe_href}" target="_blank" rel="noopener noreferrer">Source</a>'
+        "</p>"
+    )
+
+
 def timestamp(value):
     if not value:
         return "Unknown"
@@ -60,7 +86,7 @@ def replace_static_block(filename, key, rendered):
     path.write_text(updated, encoding="utf-8")
 
 
-def render_checkpoint(data, location_key, title):
+def render_checkpoint(data, location_key, title, source_url=None):
     cameras = data.get(location_key, [])[:4]
     if cameras:
         cards = []
@@ -93,7 +119,8 @@ def render_checkpoint(data, location_key, title):
     else:
         content = '<p class="checkpoint-empty">No camera images are currently available.</p>'
 
-    return f"""<div class="checkpoint-layout single-location">
+    href = source_url or data.get("source_url") or "https://datamall.lta.gov.sg/content/datamall/en.html"
+    return freshness_chip(data.get("last_updated"), href) + f"""<div class="checkpoint-layout single-location">
       <div class="checkpoint-group">
         <h3>{html.escape(title)}</h3>
         {content}
@@ -136,7 +163,7 @@ def render_petrol(prices):
         </div>"""
         )
 
-    return f"""<div class="petrol-table" aria-label="Current Singapore petrol pump prices">
+    return freshness_chip(prices.get("last_updated"), prices.get("source_url") or "https://petrolprice.sg/") + f"""<div class="petrol-table" aria-label="Current Singapore petrol pump prices">
       <div class="petrol-header">
         <span>Brand</span><span>92</span><span>95</span><span>98</span><span>Premium</span><span>Diesel</span>
       </div>
@@ -154,6 +181,7 @@ def render_coe(data):
         "Category E": "Cat E - Open Category",
     }
     rows = [
+        freshness_chip(data.get("last_updated"), data.get("source_url") or "https://data.gov.sg/"),
         f"""<div class="row">
       <span>Latest bidding</span>
       <strong>{html.escape(str(data.get("latest_month", "")))} - {html.escape(str(data.get("latest_bidding_label", "")))}</strong>
@@ -274,12 +302,22 @@ def main():
     replace_static_block(
         "woodlands-checkpoint.html",
         "WOODLANDS",
-        render_checkpoint(checkpoints, "woodlands", "Woodlands Checkpoint"),
+        render_checkpoint(
+            checkpoints,
+            "woodlands",
+            "Woodlands Checkpoint",
+            "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html",
+        ),
     )
     replace_static_block(
         "tuas-checkpoint.html",
         "TUAS",
-        render_checkpoint(checkpoints, "tuas", "Tuas Checkpoint"),
+        render_checkpoint(
+            checkpoints,
+            "tuas",
+            "Tuas Checkpoint",
+            "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/tuas.html",
+        ),
     )
     replace_static_block("singapore-petrol-prices.html", "PETROL", render_petrol(petrol))
     replace_static_block("latest-coe-prices.html", "COE", render_coe(coe))

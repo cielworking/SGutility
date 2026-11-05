@@ -20,8 +20,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0c2554">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="stylesheet" href="/style.css?v=15">
+  <link rel="stylesheet" href="/style.css?v=18">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -44,32 +45,23 @@
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="/" aria-label="SG Alerts home">
-        <span class="brand-mark" aria-hidden="true"><img src="/android-chrome-192x192.png" alt="" width="48" height="48"></span>
+        <span class="brand-mark" aria-hidden="true"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span>
         <span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span>
       </a>
-      <nav class="primary-nav" aria-label="Main navigation">
-        <a href="/#news">News</a>
-        <a href="/#checkpoints">Checkpoints</a>
-        <a href="/#petrol">Petrol</a>
-        <a href="/#coe">COE</a>
-        <a href="/#bto">BTO</a>
-        <a href="/#results">Results</a>
-        <a href="/guides/">Guides</a>
-        <a href="/#quick-info">Quick Info</a>
-      </nav>
+      <nav class="primary-nav" aria-label="Primary"><details class="nav-menu"><summary aria-expanded="false">Live</summary><div class="nav-panel"><a href="/weather/">Rain</a><a href="/singapore/haze/">Haze</a><a href="/woodlands-checkpoint.html">Woodlands</a><a href="/tuas-checkpoint.html">Tuas</a></div></details><a href="/singapore-petrol-prices.html">Petrol</a><a href="/latest-coe-prices.html">COE</a><a href="/bto-launches.html">BTO</a><a href="/guides/" aria-current="page">Guides</a><details class="nav-menu nav-more"><summary aria-expanded="false">More</summary><div class="nav-panel"><a href="/#news">News</a><a href="/#quick-info">Quick Info</a><a href="/#results">Results</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></details></nav>
     </div>
   </header>
   <main id="main-content" class="content-page">
     <section class="page-hero">
       <div class="page-hero-main">
-        <span class="page-hero-icon" aria-hidden="true"><i data-lucide="book-open"></i></span>
+        <span class="page-hero-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></span>
         <div>
           <p class="eyebrow">Motoring costs</p>
           <h1>COE Cat A vs Cat B Explained: How Bidding Works and What Results Mean</h1>
           <p>Learn how LTA defines COE Category A and B, how open bidding and reserve prices work, and how to read quota premiums on OneMotoring.</p>
         </div>
       </div>
-      <span class="page-updated"><i data-lucide="calendar-days"></i> Updated 6 November 2026</span>
+      <span class="page-updated"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg> Updated 6 November 2026</span>
     </section>
     <article class="document-card legal-document" style="max-width:48rem;margin:1.5rem auto 2rem;padding:1.5rem 1.75rem;">
 
@@ -138,8 +130,8 @@
         <a href="/guides/">All guides</a>
       </nav>
       <div class="document-actions">
-        <a class="back-link" href="/guides/"><i data-lucide="arrow-left"></i> All guides</a>
-        <a class="contact-button" href="/"><i data-lucide="layout-dashboard"></i> Dashboard</a>
+        <a class="back-link" href="/guides/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg> All guides</a>
+        <a class="contact-button" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg> Dashboard</a>
       </div>
     </article>
   </main>
@@ -155,7 +147,5 @@
       </nav>
     </div>
   </footer>
-  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-  <script>if (window.lucide) window.lucide.createIcons({ attrs: { "aria-hidden": "true" } });</script>
-</body>
+<script src="/script.js?v=11" defer></script></body>
 </html>

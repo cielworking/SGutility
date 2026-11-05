@@ -1224,6 +1224,39 @@ function renderQuickInfo() {
 applyIcons();
 loadData();
 
+function initNavMenus() {
+  const menus = Array.from(document.querySelectorAll(".primary-nav .nav-menu"));
+  if (!menus.length) return;
+  const sync = (menu) => {
+    const summary = menu.querySelector("summary");
+    if (summary) summary.setAttribute("aria-expanded", menu.open ? "true" : "false");
+  };
+  menus.forEach((menu) => {
+    sync(menu);
+    menu.addEventListener("toggle", () => {
+      sync(menu);
+      if (!menu.open) return;
+      menus.forEach((other) => {
+        if (other !== menu && other.open) other.open = false;
+      });
+    });
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    menus.forEach((menu) => {
+      if (menu.open) menu.open = false;
+    });
+  });
+  document.addEventListener("pointerdown", (event) => {
+    if (event.target.closest(".primary-nav")) return;
+    menus.forEach((menu) => {
+      if (menu.open) menu.open = false;
+    });
+  });
+}
+
+initNavMenus();
+
 /* Per-section refresh reads the latest published files without changing source timestamps. */
 const sectionRefreshers = [
   ['news-result', ['news.json'], () => [newsResults], values => {newsResults=values[0];renderNews();}],
