@@ -52,7 +52,115 @@ jobs:
           python scripts/render-static-pages.py
 
       - name: Commit updated data
-        uses: stefanzweifel/git-auto-commit-action@v5
+        id: auto-commit
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Update dashboard data"
           file_pattern: data/*.json *.html sitemap.xml
+          # v7 keeps v5's commit behavior and adds skip_push. skip_fetch avoids
+          # `git fetch --depth=1`, which shallows the clone before the rebase.
+          skip_fetch: true
+          skip_push: true
+
+      - name: Rebase onto main and push
+        if: steps.auto-commit.outputs.changes_detected == 'true'
+        run: |
+          set -euo pipefail
+          export GIT_TERMINAL_PROMPT=0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Files this job just generated. During rebase, --theirs is that commit.
+          # Case globs treat * as matching slashes, so nested paths are excluded.
+          is_generated() {
+            case "$1" in
+              sitemap.xml)
+                return 0
+                ;;
+              data/*.json)
+                [[ "$1" != data/*/* ]]
+                return
+                ;;
+              *.html)
+                [[ "$1" != */* ]]
+                return
+                ;;
+            esac
+            return 1
+          }
+
+          in_rebase() {
+            [[ -d "$(git rev-parse --git-path rebase-merge)" || -d "$(git rev-parse --git-path rebase-apply)" ]]
+          }
+
+          prefer_generated() {
+            local round f
+            for round in 1 2 3 4 5 6 7 8 9 10; do
+              if ! in_rebase; then
+                echo "Rebase is not in progress."
+                return 1
+              fi
+              local -a unmerged=()
+              mapfile -t unmerged < <(git diff --name-only --diff-filter=U)
+              if [[ ${#unmerged[@]} -eq 0 ]]; then
+                if git diff --cached --quiet && git diff --quiet; then
+                  echo "Generated commit is empty on the updated main; skipping it."
+                  GIT_EDITOR=true git rebase --skip
+                  if in_rebase; then
+                    continue
+                  fi
+                  return 0
+                fi
+                echo "Rebase stopped with no conflicts to resolve."
+                git rebase --abort
+                return 1
+              fi
+              for f in "${unmerged[@]}"; do
+                if is_generated "$f"; then
+                  echo "Prefer freshly generated file: $f"
+                  git checkout --theirs -- "$f"
+                  git add -- "$f"
+                else
+                  echo "Rebase conflict in non-generated file: $f"
+                  git rebase --abort
+                  return 1
+                fi
+              done
+              if GIT_EDITOR=true git rebase --continue; then
+                return 0
+              fi
+            done
+            echo "Gave up resolving rebase conflicts."
+            if in_rebase; then
+              git rebase --abort
+            fi
+            return 1
+          }
+
+          # "fetch first" is current git's rejection when main moved after our fetch.
+          is_rejected_non_ff() {
+            grep -Eq 'non-fast-forward|fetch first|tip of your current branch is behind|remote contains work that you do' <<<"$1"
+          }
+
+          for attempt in 1 2 3; do
+            echo "Fetch, rebase, and push (attempt ${attempt}/3)"
+            git fetch origin main
+            if ! git pull --rebase origin main; then
+              prefer_generated || exit 1
+            fi
+            if push_out=$(git push 2>&1); then
+              printf '%s\n' "$push_out"
+              echo "Push succeeded."
+              exit 0
+            fi
+            printf '%s\n' "$push_out"
+            if ! is_rejected_non_ff "$push_out"; then
+              echo "Push failed for a reason other than non-fast-forward."
+              exit 1
+            fi
+            if [[ "$attempt" -eq 3 ]]; then
+              echo "Push rejected as non-fast-forward after 3 attempts."
+              exit 1
+            fi
+            sleep $((attempt * 5))
+          done
