@@ -271,7 +271,55 @@ def sitemap_entry(url, lastmod=None):
   </url>"""
 
 
-def render_sitemap(dates):
+def page_is_noindex(text):
+    for tag in re.findall(r"<meta\b[^>]*>", text, flags=re.I):
+        if re.search(r"\bname\s*=\s*['\"]robots['\"]", tag, flags=re.I) and re.search(r"noindex", tag, flags=re.I):
+            return True
+    return False
+
+
+def guide_page_url(path):
+    if path.name == "index.html":
+        return "https://sgalerts.com/guides/"
+    return f"https://sgalerts.com/guides/{path.name}"
+
+
+def existing_sitemap_lastmods(path=None):
+    sitemap = path or (ROOT / "sitemap.xml")
+    if not sitemap.exists():
+        return {}
+    found = {}
+    for block in re.findall(r"<url>(.*?)</url>", sitemap.read_text(encoding="utf-8"), flags=re.S):
+        loc = re.search(r"<loc>\s*(.*?)\s*</loc>", block)
+        lastmod = re.search(r"<lastmod>\s*(.*?)\s*</lastmod>", block)
+        if loc:
+            found[loc.group(1)] = lastmod.group(1) if lastmod else None
+    return found
+
+
+def guide_sitemap_urls(preserved=None):
+    """Every indexable guides/*.html page. lastmod stays with the page."""
+    preserved = existing_sitemap_lastmods() if preserved is None else preserved
+    pages = []
+    index = ROOT / "guides" / "index.html"
+    if index.exists():
+        pages.append(index)
+    pages.extend(path for path in sorted((ROOT / "guides").glob("*.html")) if path.name != "index.html")
+    urls = []
+    for path in pages:
+        text = path.read_text(encoding="utf-8")
+        if page_is_noindex(text):
+            continue
+        url = guide_page_url(path)
+        lastmod = preserved.get(url)
+        if not lastmod:
+            match = re.search(r'"dateModified"\s*:\s*["\'](\d{4}-\d{2}-\d{2})', text)
+            lastmod = match.group(1) if match else None
+        urls.append((url, lastmod))
+    return urls
+
+
+def render_sitemap(dates, preserved=None):
     urls = [
         ("https://sgalerts.com/", dates.get("home")),
         ("https://sgalerts.com/woodlands-checkpoint.html", dates.get("checkpoints")),
@@ -286,19 +334,7 @@ def render_sitemap(dates):
         ("https://sgalerts.com/malaysia/rain-forecast/", dates.get("weather")),
         ("https://sgalerts.com/singapore/haze/", dates.get("weather")),
         ("https://sgalerts.com/malaysia/haze/", dates.get("weather")),
-        ("https://sgalerts.com/guides/", "2026-11-06"),
-        ("https://sgalerts.com/guides/woodlands-vs-tuas-checkpoint.html", "2026-11-06"),
-        ("https://sgalerts.com/guides/coe-cat-a-vs-cat-b.html", "2026-11-06"),
-        ("https://sgalerts.com/guides/pay-less-petrol-singapore.html", "2026-11-06"),
-        ("https://sgalerts.com/guides/myica-qr-clearance-land-checkpoints.html", "2026-11-05"),
-        ("https://sgalerts.com/guides/when-is-next-coe-bidding.html", "2026-11-05"),
-        ("https://sgalerts.com/guides/causeway-year-end-school-holidays.html", "2026-11-05"),
-        ("https://sgalerts.com/guides/coe-results-nov-2026-2nd-bidding.html", "2026-11-06"),
-        ("https://sgalerts.com/guides/feb-2027-bto-hfe-letter-deadline.html", "2026-11-06"),
-        ("https://sgalerts.com/guides/school-holiday-jb-petrol-causeway-tips.html", "2026-11-06"),
-        ("https://sgalerts.com/guides/singapore-psi-haze-what-to-do.html", "2026-11-06"),
-        ("https://sgalerts.com/guides/how-to-read-bto-application-rates.html", "2026-11-06"),
-        ("https://sgalerts.com/guides/how-to-check-singapore-petrol-prices.html", "2026-11-06"),
+        *guide_sitemap_urls(preserved),
         ("https://sgalerts.com/about.html", "2026-09-17"),
         ("https://sgalerts.com/contact.html", "2026-09-17"),
         ("https://sgalerts.com/privacy-policy.html", "2026-11-06"),
@@ -379,7 +415,8 @@ def main():
         date_only(optional["quick"].get("last_updated")),
     ]
     dynamic_dates["home"] = max((date for date in home_dates if date), default=None)
-    (ROOT / "sitemap.xml").write_text(render_sitemap(dynamic_dates), encoding="utf-8")
+    # Read lastmods before overwriting so guide dates are not reset on each data run.
+    (ROOT / "sitemap.xml").write_text(render_sitemap(dynamic_dates, existing_sitemap_lastmods()), encoding="utf-8")
     print("Rendered specialist HTML pages and sitemap.")
 
 

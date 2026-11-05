@@ -11,7 +11,7 @@
 <p id="weather-refresh-status" class="refresh-feedback" role="status">Saved forecast shown below. Checking official sources…</p>
 <section class="radar-panel" aria-label="Rain movement radar">
  <div class="radar-heading"><div><h3>Watch the rain move</h3><p>Recent observed rainfall · drag the timeline or press Play</p></div><label class="radar-range-label">Radar coverage<select id="radar-range"><option value="70km">Singapore &amp; Johor · 70 km</option><option value="240km">Wider region · 240 km</option><option value="480km">Wider region · 480 km</option></select></label></div>
- <div id="rain-map" role="region" aria-label="Rain radar map of Singapore and surrounding Malaysia"></div>
+ <div id="rain-map" role="region" aria-label="Rain radar map of Singapore and surrounding Malaysia"><img class="rain-map-poster" src="/assets/rain-map-poster.webp" alt="" width="1200" height="800"></div>
  <div class="radar-playback"><button id="radar-play" class="button button-secondary" type="button" disabled>▶ Play</button><label class="radar-scrubber">Radar time<input id="radar-time" type="range" min="0" max="0" value="0" step="1" disabled aria-label="Radar time"></label><button id="radar-latest" class="button button-secondary" type="button" disabled>Latest</button></div>
  <div class="radar-time-labels"><span id="radar-start">—</span><output id="radar-stamp" for="radar-time">Loading radar…</output><span id="radar-end">—</span></div>
  <div class="radar-legend"><span>Light</span><span class="rain-intensity" aria-label="Rain intensity from light cyan through green, yellow, red to heavy purple"></span><span>Heavy</span></div>
