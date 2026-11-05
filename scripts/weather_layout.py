@@ -43,7 +43,7 @@ def regional_cards(outlook):
     return '<div class="region-grid">' + ''.join(cards) + '</div>'
 
 
-def render_combined(cache):
+def render_combined(cache, heading="Rain radar & outlook"):
     outlook = cache.get("sg_outlook", {}).get("data", {})
     rain = cache.get("sg_rain", {}).get("data", {})
     places = {r["location"]["location_id"]: r["location"]["location_name"] for r in cache.get("my_rain", {}).get("data", [])}
@@ -54,7 +54,7 @@ def render_combined(cache):
     today = rows[0] if rows else {}
     period_text = ''.join(f'<div><dt>{label}</dt><dd>{esc(describe(today.get(field)))}</dd></div>' for label, field in [("Morning", "morning_forecast"), ("Afternoon", "afternoon_forecast"), ("Night", "night_forecast")])
     return f'''<div class="combined-weather" data-combined-weather>
-<div class="weather-toolbar"><div><p class="eyebrow">Singapore &amp; Malaysia</p><h2>Rain radar &amp; outlook</h2></div><button id="refresh-weather" class="button button-secondary" type="button">↻ Refresh weather</button></div>
+<div class="weather-toolbar"><div><p class="eyebrow">Singapore &amp; Malaysia</p><h2>{esc(heading)}</h2></div><button id="refresh-weather" class="button button-secondary" type="button">↻ Refresh weather</button></div>
 <p id="weather-refresh-status" class="refresh-feedback" role="status">Saved forecast shown below. Checking official sources…</p>
 <section class="radar-panel" aria-label="Rain movement radar">
  <div class="radar-heading"><div><h3>Watch the rain move</h3><p>Recent observed rainfall · drag the timeline or press Play</p></div><label class="radar-range-label">Radar coverage<select id="radar-range"><option value="70km">Singapore &amp; Johor · 70 km</option><option value="240km">Wider region · 240 km</option><option value="480km">Wider region · 480 km</option></select></label></div>

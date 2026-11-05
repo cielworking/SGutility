@@ -191,9 +191,23 @@ def main():
     for country, kind, title, desc, key in PAGES:
         path = f"/{country}/{kind}/"
         content, source, source_name, explanation = render_content(country, kind, cache)
+        doc_title, meta_desc = title, desc
+        forecast_heading = "Rain radar & outlook"
+        guide_links = ""
         if kind == "rain-forecast":
-            content = combined
+            forecast_heading = "Singapore area rain forecast" if country == "singapore" else "Malaysia area rain forecast"
+            content = runpy.run_path(str(ROOT / "scripts/weather_layout.py"))["render_combined"](cache, forecast_heading)
             explanation = "Explore Singapore and Malaysia together using observed rain radar, Singapore's official five-region forecast periods, and Malaysia location forecasts. Choose an individual Singapore area for the two-hour forecast. Radar playback shows recent observations; it does not predict exact rain arrival times."
+            if country == "singapore":
+                meta_desc = "Two-hour Singapore rain forecasts by area, with official validity times. Check before you head out on SG Alerts."
+                guide_links = '<a class="detail-link" href="/weather/">Open full rain radar</a><a class="detail-link" href="/singapore/haze/">Air quality / PSI</a>'
+            else:
+                meta_desc = "Malaysia rain forecasts by location, including Johor Bahru morning, afternoon and night outlooks on SG Alerts."
+                guide_links = '<a class="detail-link" href="/weather/">Singapore–Johor rain radar</a><a class="detail-link" href="/woodlands-checkpoint.html">Woodlands cameras before you cross</a><a class="detail-link" href="/guides/causeway-year-end-school-holidays.html">Holiday Causeway planning</a>'
+        elif country == "singapore" and kind == "haze":
+            doc_title = "Singapore PSI Now & Haze"
+            meta_desc = "Check Singapore regional 24-hour PSI and 1-hour PM2.5 readings with update times and air-quality categories."
+            guide_links = '<a class="detail-link" href="/guides/singapore-psi-haze-what-to-do.html">What PSI bands mean and what to do</a><a class="detail-link" href="/weather/">Rain radar</a><a class="detail-link" href="/malaysia/haze/">Malaysia air quality</a>'
         related = ''.join(f'<a class="detail-link" href="/{c}/{k}/" {"aria-current=page" if (c,k)==(country,kind) else ""}>{esc(t)}</a>' for c,k,t,_,_ in PAGES)
         if kind == "rain-forecast":
             related = '<a class="detail-link" href="/weather/">Combined rain radar &amp; forecast</a><a class="detail-link" href="/#haze">Haze &amp; air quality</a>'
@@ -219,17 +233,17 @@ def main():
             content = '<div data-air-content>' + content + '</div><button class="button button-secondary" type="button" data-refresh-air>↻ Refresh saved readings</button><p data-air-feedback class="refresh-feedback" role="status">Saved readings update on the 15-minute schedule.</p>'
         chip = freshness_chip(chip_stamp, chip_source)
         nav = primary_nav(nav_current)
-        schema = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": "https://sgalerts.com" + path, "isPartOf": {"@type": "WebSite", "name": "SG Alerts", "url": "https://sgalerts.com/"}}
+        schema = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": meta_desc, "url": "https://sgalerts.com" + path, "isPartOf": {"@type": "WebSite", "name": "SG Alerts", "url": "https://sgalerts.com/"}}
         document = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{esc(title)} | SG Alerts</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="https://sgalerts.com{path}">
-<meta property="og:title" content="{esc(title)} | SG Alerts"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="https://sgalerts.com{path}"><meta property="og:type" content="website"><meta property="og:image" content="https://sgalerts.com/assets/og-share.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)} | SG Alerts"><meta name="twitter:description" content="{esc(desc)}"><meta name="twitter:image" content="https://sgalerts.com/assets/og-share.png">
+<title>{esc(doc_title)} | SG Alerts</title><meta name="description" content="{esc(meta_desc)}"><link rel="canonical" href="https://sgalerts.com{path}">
+<meta property="og:title" content="{esc(doc_title)} | SG Alerts"><meta property="og:description" content="{esc(meta_desc)}"><meta property="og:url" content="https://sgalerts.com{path}"><meta property="og:type" content="website"><meta property="og:image" content="https://sgalerts.com/assets/og-share.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(doc_title)} | SG Alerts"><meta name="twitter:description" content="{esc(meta_desc)}"><meta name="twitter:image" content="https://sgalerts.com/assets/og-share.png">
 <link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0c2554"><link rel="manifest" href="/site.webmanifest">{head_extra}<link rel="stylesheet" href="/style.css?v=19">
 <script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=3" defer></script><script src="/script.js?v=13" defer></script></head>
 <body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a>{nav}</div></header>
 <main id="main-content" class="content-page weather-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">SG Alerts</a> / {esc(title)}</nav><section class="page-hero"><div><p class="eyebrow">{country.title()} · Official data</p><h1>{esc(title)}</h1><p>{esc(desc)}</p></div></section>
 <nav class="weather-tabs" aria-label="Weather pages">{related}</nav><section class="surface-card specialist-data-card">{chip}{"" if kind == "rain-forecast" else "<h2>Air-quality readings</h2>"}{content}<p class="note">Source: <a href="{source}" target="_blank" rel="noopener noreferrer">{source_name}</a>. Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.</p></section>
-<section class="surface-card seo-guide"><h2>Understanding {esc(title.lower())}</h2><p>{esc(explanation)}</p><h3>How current is this information?</h3><p>Always check the forecast validity or reporting time. Older cached readings remain visible with a warning when a source is delayed or unavailable. Times use Singapore / Malaysia time (UTC+08).</p><h3>Where can I check official updates?</h3><p>Visit <a href="{source}">{source_name}</a> for the latest official information and advisories.</p><div class="seo-related">{related}</div></section></main>
+<section class="surface-card seo-guide"><h2>Understanding {esc(title.lower())}</h2><p>{esc(explanation)}</p><h3>How current is this information?</h3><p>Always check the forecast validity or reporting time. Older cached readings remain visible with a warning when a source is delayed or unavailable. Times use Singapore / Malaysia time (UTC+08).</p><h3>Where can I check official updates?</h3><p>Visit <a href="{source}">{source_name}</a> for the latest official information and advisories.</p><div class="seo-related">{related}{guide_links}</div></section></main>
 <footer class="site-footer"><div class="footer-inner"><strong>SG Alerts</strong><nav class="footer-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/guides/">Guides</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a></nav></div></footer></body></html>'''
         target = ROOT / country / kind / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
@@ -238,9 +252,22 @@ def main():
             document = document.replace('<script src="/weather.js?v=3" defer></script>', '<link rel="stylesheet" href="/assets/leaflet/leaflet.css" media="print" onload="this.media=\'all\'"><noscript><link rel="stylesheet" href="/assets/leaflet/leaflet.css"></noscript><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=3" defer></script><script src="/weather-dashboard.js?v=3" defer></script>')
             target.write_text(document + "\n", encoding="utf-8")
             if country == "singapore":
-                hub = document.replace(title, "Singapore &amp; Malaysia Rain Radar and Forecast").replace("https://sgalerts.com" + path, "https://sgalerts.com/weather/")
-                hub = hub.replace(esc(desc), "Watch recent rain movement, explore timed regional forecasts, and check Singapore and Malaysia weather together.")
+                hub = document.replace("https://sgalerts.com" + path, "https://sgalerts.com/weather/")
+                hub = hub.replace("<title>Singapore Rain Forecast | SG Alerts</title>", "<title>Singapore Rain Radar Live | SG Alerts</title>")
+                hub = hub.replace("Singapore Rain Forecast | SG Alerts", "Singapore Rain Radar Live | SG Alerts")
+                hub = hub.replace(
+                    "Two-hour Singapore rain forecasts by area, with official validity times. Check before you head out on SG Alerts.",
+                    "Watch Singapore and Johor rain radar movement, then check timed regional forecasts. Live weather on SG Alerts.",
+                )
+                hub = hub.replace("<h1>Singapore Rain Forecast</h1>", "<h1>Singapore &amp; Malaysia Rain Radar and Forecast</h1>")
+                hub = hub.replace(" / Singapore Rain Forecast</nav>", " / Singapore &amp; Malaysia Rain Radar and Forecast</nav>")
+                hub = hub.replace("<h2>Singapore area rain forecast</h2>", "<h2>Rain radar &amp; outlook</h2>")
                 hub = hub.replace("Singapore · Official data", "Singapore &amp; Malaysia · Official data")
+                hub = hub.replace('"name": "Singapore Rain Forecast"', '"name": "Singapore & Malaysia Rain Radar and Forecast"')
+                hub = hub.replace(
+                    guide_links,
+                    '<a class="detail-link" href="/singapore/haze/">Check PSI and haze</a><a class="detail-link" href="/guides/singapore-psi-haze-what-to-do.html">What to do when PSI rises</a><a class="detail-link" href="/singapore/rain-forecast/">Singapore area rain forecast</a><a class="detail-link" href="/malaysia/rain-forecast/">Johor &amp; Malaysia outlook</a>',
+                )
                 hub_path = ROOT / "weather/index.html"
                 hub_path.parent.mkdir(parents=True, exist_ok=True)
                 hub_path.write_text(hub + "\n", encoding="utf-8")
