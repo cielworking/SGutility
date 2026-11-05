@@ -142,14 +142,49 @@ jobs:
             grep -Eq 'non-fast-forward|fetch first|tip of your current branch is behind|remote contains work that you do' <<<"$1"
           }
 
+          # Render steps can dirty files outside file_pattern. git pull --rebase
+          # refuses that tree ("cannot pull with rebase: You have unstaged changes").
+          # Park every leftover, then drop it after a successful push. Those pages
+          # are regenerated on a later run and must not ride along on this commit.
+          drop_workflow_leftover_stashes() {
+            local line ref
+            while true; do
+              line=""
+              while IFS= read -r line; do
+                case "$line" in
+                  *workflow-leftovers-before-rebase*)
+                    break
+                    ;;
+                esac
+                line=""
+              done < <(git stash list)
+              [[ -n "$line" ]] || return 0
+              ref="${line%%:*}"
+              echo "Dropping leftover stash ${ref} after successful push."
+              git stash drop "$ref"
+            done
+          }
+
           for attempt in 1 2 3; do
             echo "Fetch, rebase, and push (attempt ${attempt}/3)"
+            echo "Working tree before fetch/rebase:"
+            git status --porcelain
+            if [[ -n "$(git status --porcelain)" ]]; then
+              echo "Stashing uncommitted leftovers before rebase."
+              git stash push -u -m "workflow-leftovers-before-rebase"
+              if [[ -n "$(git status --porcelain)" ]]; then
+                echo "Working tree still dirty after stashing leftovers; refusing to rebase."
+                git status --porcelain
+                exit 1
+              fi
+            fi
             git fetch origin main
             if ! git pull --rebase origin main; then
               prefer_generated || exit 1
             fi
-            if push_out=$(git push 2>&1); then
+            if push_out=$(git push origin HEAD:main 2>&1); then
               printf '%s\n' "$push_out"
+              drop_workflow_leftover_stashes
               echo "Push succeeded."
               exit 0
             fi
