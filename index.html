@@ -27,10 +27,11 @@
   <meta name="theme-color" content="#0c2554">
   <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="preload" as="image" href="/assets/rain-map-poster.webp" fetchpriority="high">
   <link rel="preconnect" href="https://tile.openstreetmap.org" crossorigin>
   <link rel="stylesheet" href="style.css?v=19" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="/assets/leaflet/leaflet.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/assets/leaflet/leaflet.css"></noscript>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
   <script>
@@ -324,7 +325,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=12" defer></script>
+  <script src="script.js?v=13" defer></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=3" defer></script><script src="/weather-dashboard.js?v=3" defer></script><script src="/air-quality.js?v=2" defer></script>
 </body>
 </html>

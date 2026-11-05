@@ -315,28 +315,7 @@ function cameraMarkup(cam, title, prioritize) {
   `;
 }
 
-function syncCamera(button, cam, title) {
-  const img = button.querySelector("img");
-  if (!img || !cam.image) return;
-  const nextUrl = String(cam.image);
-  const nextTime = Date.parse(cam.timestamp) || 0;
-  const currentTime = Date.parse(img.dataset.timestamp || "") || 0;
-  const currentUrl = img.getAttribute("src") || "";
-  const fallback = img.dataset.src || "";
-  if (!currentUrl) {
-    const chosen = nextUrl && nextTime >= currentTime ? nextUrl : (fallback || nextUrl);
-    if (chosen) {
-      if (img.getAttribute("fetchpriority") === "high") img.fetchPriority = "high";
-      img.src = chosen;
-      if (chosen === nextUrl && cam.timestamp) img.dataset.timestamp = cam.timestamp;
-    }
-  } else if (nextUrl !== currentUrl && nextTime > currentTime) {
-    img.src = nextUrl;
-    img.dataset.timestamp = cam.timestamp || "";
-  } else if (nextUrl === currentUrl && cam.timestamp && !img.dataset.timestamp) {
-    img.dataset.timestamp = cam.timestamp;
-  }
-  const shownUrl = img.getAttribute("src") || nextUrl;
+function bindCamera(button, cam, title, shownUrl) {
   const caption = `${title} - Camera ${cam.camera_id}`;
   const safeUrl = String(shownUrl).replaceAll("\\", "\\\\").replaceAll("'", "\\'");
   const safeCaption = caption.replaceAll("\\", "\\\\").replaceAll("'", "\\'");
@@ -345,6 +324,47 @@ function syncCamera(button, cam, title) {
   button.setAttribute("aria-label", `Enlarge ${title} traffic camera ${cam.camera_id}`);
   const span = button.querySelector("span");
   if (span) span.textContent = `Camera ${cam.camera_id} · Image: ${formatTimestamp(cam.timestamp)}`;
+}
+
+function syncCamera(button, cam, title) {
+  const img = button.querySelector("img");
+  if (!img || !cam.image) return;
+  const nextUrl = String(cam.image);
+  const nextTime = Date.parse(cam.timestamp) || 0;
+  const currentTime = Date.parse(img.dataset.timestamp || "") || 0;
+  const currentUrl = img.getAttribute("src") || "";
+  const fallback = img.dataset.src || "";
+  const paintUrl = (url, stamp) => {
+    if (img.getAttribute("fetchpriority") === "high") img.fetchPriority = "high";
+    img.src = url;
+    if (stamp) img.dataset.timestamp = stamp;
+    bindCamera(button, cam, title, url);
+  };
+  if (!currentUrl) {
+    const chosen = nextUrl && nextTime >= currentTime ? nextUrl : (fallback || nextUrl);
+    if (chosen) paintUrl(chosen, chosen === nextUrl ? cam.timestamp : "");
+    return;
+  }
+  if (nextUrl !== currentUrl && nextTime > currentTime) {
+    const upgrade = () => {
+      if (img.getAttribute("src") === nextUrl) return;
+      paintUrl(nextUrl, cam.timestamp || "");
+    };
+    if (img.complete && img.naturalWidth > 0) upgrade();
+    else if (img.dataset.upgradeSrc !== nextUrl) {
+      img.dataset.upgradeSrc = nextUrl;
+      const once = () => {
+        img.removeEventListener("load", once);
+        img.removeEventListener("error", once);
+        upgrade();
+      };
+      img.addEventListener("load", once);
+      img.addEventListener("error", once);
+    }
+  } else if (nextUrl === currentUrl && cam.timestamp && !img.dataset.timestamp) {
+    img.dataset.timestamp = cam.timestamp;
+  }
+  bindCamera(button, cam, title, img.getAttribute("src") || nextUrl);
 }
 
 function renderCheckpoints() {

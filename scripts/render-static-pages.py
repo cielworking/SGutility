@@ -72,6 +72,26 @@ def date_only(value):
         return match.group(0) if match else None
 
 
+def set_camera_preload(filename, image_url):
+    path = ROOT / filename
+    text = path.read_text(encoding="utf-8")
+    if image_url:
+        link = f'<link rel="preload" as="image" href="{html.escape(image_url, quote=True)}" fetchpriority="high">'
+        block = f"<!-- CAM-PRELOAD:START -->{link}<!-- CAM-PRELOAD:END -->"
+    else:
+        block = "<!-- CAM-PRELOAD:START --><!-- CAM-PRELOAD:END -->"
+    pattern = re.compile(r"<!-- CAM-PRELOAD:START -->.*?<!-- CAM-PRELOAD:END -->", re.DOTALL)
+    if pattern.search(text):
+        text = pattern.sub(block, text, count=1)
+    else:
+        text = text.replace(
+            '<link rel="stylesheet" href="/style.css',
+            block + '\n  <link rel="stylesheet" href="/style.css',
+            1,
+        )
+    path.write_text(text, encoding="utf-8")
+
+
 def replace_static_block(filename, key, rendered):
     path = ROOT / filename
     source = path.read_text(encoding="utf-8")
@@ -101,7 +121,7 @@ def render_checkpoint(data, location_key, title, source_url=None):
                 f"""<button class="checkpoint-camera" type="button" data-camera-id="{camera_id}"
                            onclick="openImageModal('{image_url}', '{caption}', this)"
                            aria-label="Enlarge {html.escape(title)} traffic camera {camera_id}">
-                    <img data-src="{image_url}" alt="{html.escape(title)} traffic camera {camera_id}" width="1920" height="1069" data-timestamp="{stamp}"{priority} decoding="async">
+                    <img src="{image_url}" data-src="{image_url}" alt="{html.escape(title)} traffic camera {camera_id}" width="1920" height="1069" data-timestamp="{stamp}"{priority} decoding="async">
                     <span>Camera {camera_id}</span>
                   </button>"""
             )
@@ -322,6 +342,9 @@ def main():
             "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/tuas.html",
         ),
     )
+    for filename, location_key in (("woodlands-checkpoint.html", "woodlands"), ("tuas-checkpoint.html", "tuas")):
+        cameras = checkpoints.get(location_key) or []
+        set_camera_preload(filename, cameras[0].get("image") if cameras else "")
     replace_static_block("singapore-petrol-prices.html", "PETROL", render_petrol(petrol))
     replace_static_block("latest-coe-prices.html", "COE", render_coe(coe))
     replace_static_block("bto-launches.html", "BTO", render_bto(bto))
