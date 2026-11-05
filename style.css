@@ -2619,6 +2619,7 @@ html { -webkit-text-size-adjust: 100%; }
   color: var(--brand-strong);
   border-color: transparent;
 }
+.guide-card.is-filtered-out { display: none; }
 .pools-tagline {
   width: min(var(--content), calc(100% - 40px));
   margin: 16px auto 0;

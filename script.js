@@ -1188,6 +1188,33 @@ function renderSummary() {
     holiday?.value || "Unavailable",
     holiday?.detail || "No holiday data available"
   );
+  renderGlance();
+}
+
+function setGlance(name, value) {
+  const node = document.querySelector(`[data-glance="${name}"]`);
+  if (!node) return;
+  node.textContent = value && String(value).trim() ? value : "—";
+}
+
+function renderGlance() {
+  if (!document.querySelector("[data-glance]")) return;
+  const woodlands = checkpointData.woodlands?.length || 0;
+  const tuas = checkpointData.tuas?.length || 0;
+  setGlance("woodlands", woodlands ? `${woodlands} cams live` : "—");
+  setGlance("tuas", tuas ? `${tuas} cams live` : "—");
+
+  const ron95 = (petrolPrices.brands || []).map(brand => {
+    const match = String(brand.ron95 || "").match(/(\d+\.\d+)/);
+    return match ? Number(match[1]) : null;
+  }).filter(value => value !== null);
+  setGlance("petrol", ron95.length ? `95 $${Math.min(...ron95).toFixed(2)}` : "—");
+
+  const catA = (coePrices.latest || []).find(item => item.category === "Category A");
+  setGlance("coe", catA ? `Cat A $${Number(catA.premium).toLocaleString("en-SG")}` : "—");
+
+  const psi = document.getElementById("air-number");
+  setGlance("psi", psi && psi.textContent.trim() ? `PSI ${psi.textContent.trim()}` : "—");
 }
 
 /* =========================
@@ -1256,6 +1283,77 @@ function initNavMenus() {
 }
 
 initNavMenus();
+
+function initGuideFilters() {
+  const bar = document.querySelector(".guide-filters");
+  if (!bar) return;
+  const cards = Array.from(document.querySelectorAll(".guide-card"));
+  bar.addEventListener("click", (event) => {
+    const button = event.target.closest("button[data-guide-filter]");
+    if (!button || !bar.contains(button)) return;
+    const filter = button.getAttribute("data-guide-filter");
+    bar.querySelectorAll("button[data-guide-filter]").forEach((item) => {
+      item.setAttribute("aria-pressed", item === button ? "true" : "false");
+    });
+    cards.forEach((card) => {
+      const show = filter === "all" || card.getAttribute("data-guide") === filter;
+      card.hidden = !show;
+    });
+  });
+}
+
+function initShareBars() {
+  document.querySelectorAll("[data-share-bar]").forEach((bar) => {
+    const canonical = document.querySelector('link[rel="canonical"]')?.href || location.href;
+    const title = (document.querySelector("h1")?.textContent || document.title).replace(/\s+/g, " ").trim();
+    const message = `${title} ${canonical}`;
+    const whatsapp = bar.querySelector('[data-share="whatsapp"]');
+    if (whatsapp) whatsapp.href = `https://wa.me/?text=${encodeURIComponent(message)}`;
+    const copyButton = bar.querySelector('[data-share="copy"]');
+    const shareButton = bar.querySelector('[data-share="native"]');
+    const copyLink = async (button) => {
+      const label = button?.querySelector("span");
+      try {
+        await navigator.clipboard.writeText(canonical);
+        if (label) {
+          const original = label.dataset.label || label.textContent;
+          label.dataset.label = original;
+          label.textContent = "Copied";
+          window.setTimeout(() => { label.textContent = original; }, 1600);
+        }
+      } catch (error) {
+        if (label) label.textContent = label.dataset.label || "Copy link";
+      }
+    };
+    copyButton?.addEventListener("click", () => copyLink(copyButton));
+    shareButton?.addEventListener("click", async () => {
+      if (navigator.share) {
+        try {
+          await navigator.share({ title, text: title, url: canonical });
+        } catch (error) {
+          /* The visitor dismissed the share sheet. */
+        }
+        return;
+      }
+      copyLink(copyButton || shareButton);
+    });
+  });
+}
+
+function initGlancePsi() {
+  const psi = document.getElementById("air-number");
+  const tile = document.querySelector('[data-glance="psi"]');
+  if (!psi || !tile) return;
+  const update = () => {
+    tile.textContent = psi.textContent.trim() ? `PSI ${psi.textContent.trim()}` : "—";
+  };
+  update();
+  new MutationObserver(update).observe(psi, { childList: true, characterData: true, subtree: true });
+}
+
+initGuideFilters();
+initShareBars();
+initGlancePsi();
 
 /* Per-section refresh reads the latest published files without changing source timestamps. */
 const sectionRefreshers = [
