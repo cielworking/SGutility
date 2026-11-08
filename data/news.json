@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-11-09T00:42:48.656913+08:00",
+  "last_updated": "2026-11-09T05:09:31.313888+08:00",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Riyadh financial district targeted, Aramco skyscraper damaged",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/saudi-arabia-houthis-riyadh-financial-district-aramco-tower-6534071",
-      "published": "2026-11-08 17:14"
-    },
     {
       "category": "Crime",
       "title": "S'porean man, 41, charged in court for allegedly facilitating vice activities, among 195 arrested",
@@ -45,6 +38,20 @@
     },
     {
       "category": "Traffic",
+      "title": "Train collision in Egypt kills at least 7, injures dozens, health ministry says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/train-collision-in-egypt-kills-least-7-injures-dozens-health-ministry-says-6534371",
+      "published": "2026-11-09 03:47"
+    },
+    {
+      "category": "Traffic",
+      "title": "Pressure still on Man United boss Carrick despite dramatic Villa draw",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pressure-still-man-united-boss-carrick-despite-dramatic-villa-draw-6534576",
+      "published": "2026-11-09 03:46"
+    },
+    {
+      "category": "Traffic",
       "title": "Alcaraz beats error-prone Shelton to win Paris Masters",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/alcaraz-beats-error-prone-shelton-win-paris-masters-6534421",
@@ -52,24 +59,17 @@
     },
     {
       "category": "Traffic",
-      "title": "Bayern keeper Neuer suffers partial foot tendon tear",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/bayern-keeper-neuer-suffers-partial-foot-tendon-tear-6534301",
-      "published": "2026-11-08 21:44"
-    },
-    {
-      "category": "Traffic",
-      "title": "Crash of Indonesian water-bombing helicopter kills crew member",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesian-water-bombing-helicopter-crashes-crew-missing-6534066",
-      "published": "2026-11-08 17:06"
-    },
-    {
-      "category": "Traffic",
       "title": "Car crashes into bollard at Katong bus stop: Driver, a woman, 81, & passenger, 42, injured",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/car-crash-bollard-katong/",
       "published": "2026-11-08 02:36"
+    },
+    {
+      "category": "Traffic",
+      "title": "Singaporean of the Year finalists: SG Assist founders’ struggles led them to support other caregivers",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/singaporean-of-the-year-finalists-sg-assist-founders-struggles-led-them-to-support-other-caregivers",
+      "published": "2026-11-09 05:00"
     },
     {
       "category": "Traffic",
@@ -115,13 +115,6 @@
     },
     {
       "category": "Transport",
-      "title": "Khawaja denies throwing 'anyone under the bus' with comments about ball-tampering scandal",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/khawaja-denies-throwing-anyone-under-bus-comments-about-ball-tampering-scandal-6533946",
-      "published": "2026-11-08 13:01"
-    },
-    {
-      "category": "Transport",
       "title": "Man seen threatening to punch bus driver in Ang Mo Kio for not opening door immediately to let him board",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/man-threaten-to-punch-bus-driver/",
@@ -147,6 +140,13 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/life-after-a-new-leash-on-life-for-former-prison-officer-turned-dog-agility-trainer",
       "published": "2026-11-07 08:00"
+    },
+    {
+      "category": "Fire",
+      "title": "Russo fires Arsenal to WSL win over Liverpool, London City thrash Birmingham",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/russo-fires-arsenal-wsl-win-over-liverpool-london-city-thrash-birmingham-6534471",
+      "published": "2026-11-09 00:54"
     },
     {
       "category": "Fire",
@@ -178,9 +178,93 @@
     },
     {
       "category": "General",
-      "title": "Brighton move second with victory over 10-man Brentford",
+      "title": "DeChambeau reflects on uncertain days ahead after LIV liquidation announcement",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/brighton-move-second-victory-over-10-man-brentford-6534431",
+      "url": "https://www.channelnewsasia.com/sport/dechambeau-reflects-uncertain-days-ahead-after-liv-liquidation-announcement-6534641",
+      "published": "2026-11-09 04:53"
+    },
+    {
+      "category": "General",
+      "title": "Trump vows comeback as bitter showdown with Congress looms",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/trump-vows-comeback-bitter-showdown-congress-looms-6534601",
+      "published": "2026-11-09 04:37"
+    },
+    {
+      "category": "General",
+      "title": "Nvidia opens probe after report that CEO Huang was target of foreign intelligence",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nvidia-opens-probe-after-report-ceo-huang-was-target-foreign-intelligence-6534611",
+      "published": "2026-11-09 04:16"
+    },
+    {
+      "category": "General",
+      "title": "Mercedes complete F1 title double in Brazil",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/mercedes-complete-f1-title-double-in-brazil-6534606",
+      "published": "2026-11-09 04:06"
+    },
+    {
+      "category": "General",
+      "title": "Leaders Lazio held by Napoli as Inter move within a point at the top",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/leaders-lazio-held-napoli-inter-move-within-point-top-6534581",
+      "published": "2026-11-09 03:49"
+    },
+    {
+      "category": "General",
+      "title": "Pollock reckons playing on the wing is easy, says Borthwick",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pollock-reckons-playing-wing-easy-says-borthwick-6534556",
+      "published": "2026-11-09 02:58"
+    },
+    {
+      "category": "General",
+      "title": "Norris wins in wet Brazil as Mercedes take constructors' title",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/norris-wins-in-wet-brazil-mercedes-take-constructors-title-6534546",
+      "published": "2026-11-09 02:51"
+    },
+    {
+      "category": "General",
+      "title": "Poland in shock as mass shooting shatters sense of security",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/poland-in-shock-mass-shooting-shatters-sense-security-6534516",
+      "published": "2026-11-09 02:08"
+    },
+    {
+      "category": "General",
+      "title": "Gross plays down Brighton's title credentials despite move to second",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/gross-plays-down-brightons-title-credentials-despite-move-second-6534526",
+      "published": "2026-11-09 02:03"
+    },
+    {
+      "category": "General",
+      "title": "Pollock double as England rack up record win over Australia",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/pollock-double-england-rack-up-record-win-over-australia-6534496",
+      "published": "2026-11-09 01:11"
+    },
+    {
+      "category": "General",
+      "title": "Liverpool return to winning ways and send Palace bottom",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/liverpool-return-winning-ways-and-send-palace-bottom-6534486",
+      "published": "2026-11-09 01:03"
+    },
+    {
+      "category": "General",
+      "title": "Bezzecchi dominates Qatar Grand Prix as Marquez made to wait for MotoGP crown",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/bezzecchi-dominates-qatar-grand-prix-marquez-made-wait-motogp-crown-6534466",
+      "published": "2026-11-09 00:56"
+    },
+    {
+      "category": "General",
+      "title": "Man Utd fight back to snatch chaotic 4-4 draw, Brighton move second",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/man-utd-fight-back-snatch-chaotic-4-4-draw-brighton-move-second-6534431",
       "published": "2026-11-09 00:33"
     },
     {
@@ -196,90 +280,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/bc-partners-seeks-control-liv-golf-saudi-wealth-fund-ft-reports-6534396",
       "published": "2026-11-08 23:57"
-    },
-    {
-      "category": "General",
-      "title": "Fan hospitalised after falling through stand during Tromso - Bodo/Glimt game",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/fan-hospitalised-after-falling-through-stand-during-tromso-bodoglimt-game-6534381",
-      "published": "2026-11-08 23:30"
-    },
-    {
-      "category": "General",
-      "title": "Rahm marks DP World Tour return with victory in Abu Dhabi",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rahm-marks-dp-world-tour-return-victory-in-abu-dhabi-6534311",
-      "published": "2026-11-08 21:54"
-    },
-    {
-      "category": "General",
-      "title": "Europe will be represented at US-mediated Ukraine talks in Abu Dhabi: France",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/europe-us-mediated-ukraine-russia-talks-abu-dhabi-6534261",
-      "published": "2026-11-08 21:13"
-    },
-    {
-      "category": "General",
-      "title": "Anthropic secures $3.4 billion generator deal for AI data centers, FT reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/anthropic-secures-34-billion-generator-deal-ai-data-centers-ft-reports-6534256",
-      "published": "2026-11-08 20:53"
-    },
-    {
-      "category": "General",
-      "title": "US launches task force to disrupt land transit routes into Iran",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-task-force-land-transit-routes-iran-6534181",
-      "published": "2026-11-08 20:13"
-    },
-    {
-      "category": "General",
-      "title": "Philippines rebukes officials over public comments about China",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/philippines-china-rebukes-public-comments-6534176",
-      "published": "2026-11-08 19:46"
-    },
-    {
-      "category": "General",
-      "title": "Rugby league-Australia thrash Samoa to set up World Cup final against NZ",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/rugby-league-australia-thrash-samoa-set-up-world-cup-final-against-nz-6534171",
-      "published": "2026-11-08 19:29"
-    },
-    {
-      "category": "General",
-      "title": "Japan's Tashima rates FIFA election chances at 20%-30% in challenge to Infantino",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/japans-tashima-rates-fifa-election-chances-20-30-in-challenge-infantino-6534166",
-      "published": "2026-11-08 19:26"
-    },
-    {
-      "category": "General",
-      "title": "Youth Olympic Games: How Singapore has fared so far and what’s ahead in coming days",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/youth-olympic-games-team-singapore-medals-6534116",
-      "published": "2026-11-08 18:54"
-    },
-    {
-      "category": "General",
-      "title": "Former world number three Ferrer to join Ruud's coaching set-up",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/former-world-number-three-ferrer-join-ruuds-coaching-set-up-6534091",
-      "published": "2026-11-08 17:34"
-    },
-    {
-      "category": "General",
-      "title": "Van Assche's Paris run comes to an end, but Frenchman leaves with bolstered belief",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/van-assches-paris-run-comes-end-frenchman-leaves-bolstered-belief-6534006",
-      "published": "2026-11-08 14:36"
-    },
-    {
-      "category": "General",
-      "title": "France call up seven for Springboks clash as Ntamack ruled out",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/france-call-up-seven-springboks-clash-ntamack-ruled-out-6533996",
-      "published": "2026-11-08 14:01"
     }
   ]
 }
