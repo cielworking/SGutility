@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-11-11T07:18:07.703817+08:00",
+  "last_updated": "2026-11-11T10:50:33.552746+08:00",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "CFTC warns prediction market Kalshi of imminent charges, source says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/cftc-warns-prediction-market-kalshi-imminent-charges-source-says-6540756",
-      "published": "2026-11-11 05:52"
-    },
-    {
-      "category": "Crime",
-      "title": "UK children's author David Walliams accused of sex assault, grooming teens",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/david-walliams-sexual-assault-uk-comedian-author-6540531",
-      "published": "2026-11-11 03:38"
-    },
     {
       "category": "Crime",
       "title": "Race Course Road collision: S'porean man, 33, charged with assault & hurting 3 people by dangerous driving",
@@ -73,6 +59,27 @@
     },
     {
       "category": "Traffic",
+      "title": "Fullerton Health server supporting migrant worker care programme hit by cybersecurity incident",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/fullerton-health-migrant-worker-care-plan-cybersecurity-incident-6541451",
+      "published": "2026-11-11 10:39"
+    },
+    {
+      "category": "Traffic",
+      "title": "Nine seriously injured in South Korea bus crash involving 32 vehicles",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/south-korea-bus-crash-bundang-6541546",
+      "published": "2026-11-11 10:38"
+    },
+    {
+      "category": "Traffic",
+      "title": "From first steps to active ageing: How PCF is rethinking care for Singapore",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/brand-studio/first-steps-active-ageing-how-pcf-rethinking-care-singapore-6523476",
+      "published": "2026-11-11 09:56"
+    },
+    {
+      "category": "Traffic",
       "title": "As Chinese EVs reshape Thailand's car industry, higher taxes bring new uncertainty",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/thailand-ev-prices-chinese-imports-6538306",
@@ -115,6 +122,13 @@
     },
     {
       "category": "Traffic",
+      "title": "ST Live: Bus in South Korea crashes into 32 vehicles, Hegseth escapes impeachment threat",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/st-live-news-as-it-happens8",
+      "published": "2026-11-10 07:41"
+    },
+    {
+      "category": "Traffic",
       "title": "Sambar deer found next to BKE treated and released",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/sambar-deer-found-next-to-bke-treated-and-released",
@@ -126,13 +140,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/motorists-advised-to-avoid-two-areas-in-singapore-over-risk-of-flash-floods",
       "published": "2026-11-09 12:28"
-    },
-    {
-      "category": "Transport",
-      "title": "Nvidia-backed AI cloud firm Nscale considers delaying $35 billion listing, the Telegraph reports",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-backed-ai-cloud-firm-nscale-considers-delaying-35-billion-listing-telegraph-reports-6540571",
-      "published": "2026-11-11 03:28"
     },
     {
       "category": "Transport",
@@ -178,13 +185,6 @@
     },
     {
       "category": "Housing",
-      "title": "US stocks fall on hot inflation report as Nvidia tumbles again",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/stocks-wall-street-inflation-nvidia-anthropic-6540751",
-      "published": "2026-11-11 05:54"
-    },
-    {
-      "category": "Housing",
       "title": "Partially forested area next to Marsiling Park slated for new Woodlands housing estate",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/partially-forested-area-next-to-marsiling-park-slated-for-new-woodlands-housing-estate",
@@ -192,94 +192,94 @@
     },
     {
       "category": "General",
+      "title": "US attempts new peace push at first Russia-Ukraine talks in nine months",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/united-states-peace-talks-russia-ukraine-abu-dhabi-6541471",
+      "published": "2026-11-11 10:34"
+    },
+    {
+      "category": "General",
+      "title": "Pope Leo draws million-strong crowd at Argentine vigil, urges youth not to chase clicks",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/pope-leo-argentine-vigil-south-america-6541501",
+      "published": "2026-11-11 10:29"
+    },
+    {
+      "category": "General",
+      "title": "US judge says Trump’s US$10 billion BBC defamation case can proceed",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-judge-trump-bbc-defamation-case-jan-6-6541491",
+      "published": "2026-11-11 10:22"
+    },
+    {
+      "category": "General",
+      "title": "Thune, Jordan emerge as Republican minority leaders for next US Congress",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/republican-minority-leaders-us-congress-house-senate-thune-jordan-6541476",
+      "published": "2026-11-11 10:13"
+    },
+    {
+      "category": "General",
+      "title": "Oil rises from two-month low as Hormuz shipping attacks offset Iran truce hopes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-rises-two-month-low-hormuz-shipping-attacks-offset-iran-truce-hopes-6541486",
+      "published": "2026-11-11 10:09"
+    },
+    {
+      "category": "General",
+      "title": "Firms explore more fractional work for seniors to retain expertise, ease manpower shortages",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/fractional-work-seniors-retain-expertise-ease-manpower-shortages-6538741",
+      "published": "2026-11-11 09:52"
+    },
+    {
+      "category": "General",
+      "title": "AI can give students answers. But how do we help them learn?",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/advertorial/ai-can-give-students-answers-how-do-we-help-them-learn-6497801",
+      "published": "2026-11-11 09:19"
+    },
+    {
+      "category": "General",
+      "title": "New Thai food hall to open at The Centrepoint with stalls curated by chef behind Bangkok’s Michelin-starred Le Du",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/dining/thai-food-centrepoint-le-du-michelin-6537726",
+      "published": "2026-11-11 08:53"
+    },
+    {
+      "category": "General",
+      "title": "Conway, Ravindra in New Zealand squad for India test series",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/conway-ravindra-in-new-zealand-squad-india-test-series-6541091",
+      "published": "2026-11-11 08:23"
+    },
+    {
+      "category": "General",
+      "title": "OpenAI posts steep losses even as quarterly revenue rises to $10 billion, WSJ reports",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/openai-posts-steep-losses-even-quarterly-revenue-rises-10-billion-wsj-reports-6541011",
+      "published": "2026-11-11 07:53"
+    },
+    {
+      "category": "General",
+      "title": "US House blocks path to impeach Defense Secretary Pete Hegseth",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-house-representatives-block-path-impeach-defense-secretary-pete-hegseth-6540901",
+      "published": "2026-11-11 07:29"
+    },
+    {
+      "category": "General",
+      "title": "Vaginal dryness, painful sex, recurring UTIs: The menopause changes women think they have to endure",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/women/menopause-genitourinary-syndrome-symptoms-6495281",
+      "published": "2026-11-11 07:22"
+    },
+    {
+      "category": "General",
       "title": "Japan manufacturers' mood hits more than 5-year high on chip demand: Reuters poll",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/japan-manufacturers-mood-hits-more-5-year-high-chip-demand-reuters-poll-6540871",
       "published": "2026-11-11 07:04"
-    },
-    {
-      "category": "General",
-      "title": "Pegula keeps WTA Finals hopes alive, Kostyuk eliminated",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pegula-keeps-wta-finals-hopes-alive-kostyuk-eliminated-6540826",
-      "published": "2026-11-11 06:28"
-    },
-    {
-      "category": "General",
-      "title": "US SEC seeks to close Musk, Tesla settlement fund",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-sec-seeks-close-musk-tesla-settlement-fund-6540771",
-      "published": "2026-11-11 06:06"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: ASEAN must hold the line on Five-Point Consensus for Myanmar’s reintegration",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/myanmar-asean-summit-reintegration-malaysia-visit-6538936",
-      "published": "2026-11-11 06:00"
-    },
-    {
-      "category": "General",
-      "title": "CNA Explains: Why Singapore is a prime target for disinformation campaigns",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/cna-explains-cna-verify-disinformation-campaigns-influence-operations-6538141",
-      "published": "2026-11-11 06:00"
-    },
-    {
-      "category": "General",
-      "title": "Commentary: Everything Jensen Huang said about China is out the window",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/commentary/nvidia-ceo-jensen-huang-alice-china-ai-chips-6539051",
-      "published": "2026-11-11 05:59"
-    },
-    {
-      "category": "General",
-      "title": "Thomas Markle, father of Meghan, cut off his ankle monitor, DOJ says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/thomas-markle-meghan-sexual-abuse-ankle-monitor-6540731",
-      "published": "2026-11-11 05:36"
-    },
-    {
-      "category": "General",
-      "title": "BMW iX3: What makes this new-generation electric SUV different?",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/bmw-ix3-review-2026-electric-suv-6533741",
-      "published": "2026-11-11 05:29"
-    },
-    {
-      "category": "General",
-      "title": "CoreWeave raises revenue forecast as AI demand defies growing doubts",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/coreweave-raises-revenue-forecast-ai-demand-defies-growing-doubts-6540696",
-      "published": "2026-11-11 05:13"
-    },
-    {
-      "category": "General",
-      "title": "Horse racing-AI, wearable tech and lifetime tracking to improve lives of racehorses",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/horse-racing-ai-wearable-tech-and-lifetime-tracking-improve-lives-racehorses-6540656",
-      "published": "2026-11-11 05:02"
-    },
-    {
-      "category": "General",
-      "title": "Israel's parliament sworn in as Eisenkot tries to forge a government",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/israel-parliament-sworn-in-eisenkot-netanyahu-6540601",
-      "published": "2026-11-11 04:48"
-    },
-    {
-      "category": "General",
-      "title": "Nvidia selloff deepens, adding to AI jitters",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-selloff-deepens-adding-ai-jitters-6540636",
-      "published": "2026-11-11 04:46"
-    },
-    {
-      "category": "General",
-      "title": "New Zealand's Jordan suffers hamstring tear",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/new-zealands-jordan-suffers-hamstring-tear-6540631",
-      "published": "2026-11-11 04:43"
     }
   ]
 }
