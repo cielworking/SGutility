@@ -2721,3 +2721,389 @@ html { -webkit-text-size-adjust: 100%; }
   .glance-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pools-tagline { width: min(100% - 24px, var(--content)); }
 }
+
+/* ---------------------------------------------------------------------------
+   Phase 3: mobile-first refresh
+   Compact one-row mobile header, fixed bottom tab bar, 44px touch targets,
+   overflow guards and contrast fixes. Appended last so it wins over the
+   earlier breakpoints (which are kept for tablet and desktop).
+   --------------------------------------------------------------------------- */
+
+:root {
+  --ink: #172033;
+  --tabbar-height: 60px;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+.content-grid > *,
+.section-pair > *,
+.glance-row > *,
+.weather-grid > *,
+.checkpoint-grid > *,
+.bto-grid > *,
+.quick-grid > *,
+.pool-side-grid > *,
+.pool-number-section > *,
+.specialist-layout > *,
+.specialist-hero-actions > *,
+.petrol-cheapest > *,
+.summary-grid > * {
+  min-width: 0;
+}
+
+.petrol-table,
+.effective-table,
+.table-scroll {
+  max-width: 100%;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Every interactive control reaches 44px (WCAG 2.5.5 target size). */
+
+.button,
+.detail-link,
+.source-link,
+.image-modal-close {
+  min-height: 44px;
+}
+
+.skip-link {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.brand {
+  min-height: 44px;
+}
+
+.leaflet-control-zoom a,
+.leaflet-bar a {
+  width: 44px !important;
+  height: 44px !important;
+  line-height: 44px !important;
+}
+
+.news-filter {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 12px;
+}
+
+.fuel-selector,
+select.fuel-selector,
+.back-link,
+.contact-button {
+  min-height: 44px;
+}
+
+.freshness-chip a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.news-controls button {
+  width: 44px;
+  height: 44px;
+}
+
+.air-country-tabs button,
+#air-metric-controls button,
+.air-region-list button {
+  min-height: 44px;
+}
+
+.air-region-list button {
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+.air-history-table summary,
+.weather-explainer summary,
+.more-forecast summary,
+.about-panel summary,
+.sga-collapse > summary,
+.methodology-card summary {
+  min-height: 44px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#radar-time {
+  min-height: 44px;
+}
+
+.footer-links a {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+  font-size: 12px;
+}
+
+.image-modal-close {
+  width: 44px;
+  height: 44px;
+}
+
+/* Bottom tab bar: hidden on desktop, five 48px+ targets on phones. */
+
+.mobile-tabbar {
+  display: none;
+}
+
+.tabbar-sheet {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  :root {
+    --header-height: 64px;
+  }
+
+  body {
+    padding-bottom: calc(var(--tabbar-height) + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* One-row sticky header: logo + menu (the tab bar is the menu). */
+
+  .site-header {
+    min-height: var(--header-height);
+  }
+
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: var(--header-height);
+    padding: 7px 0;
+    width: min(100% - 24px, var(--content));
+  }
+
+  .primary-nav {
+    display: none;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .brand-mark {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .brand small {
+    display: none;
+  }
+
+  .brand strong {
+    font-size: 18px;
+  }
+
+  .brand > span:last-child {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .brand > span:last-child strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .mobile-tabbar {
+    position: fixed;
+    z-index: 140;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    align-items: stretch;
+    padding: 4px 4px calc(4px + env(safe-area-inset-bottom, 0px));
+    border-top: 1px solid var(--border);
+    background: #fff;
+    box-shadow: 0 -6px 18px rgba(20, 53, 100, 0.07);
+  }
+
+  .tabbar-item {
+    min-width: 0;
+    min-height: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 6px 2px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: #475467;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .tabbar-item svg {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+  }
+
+  .tabbar-item[aria-current="page"] {
+    background: var(--brand-soft);
+    color: var(--brand-strong);
+  }
+
+  .tabbar-more {
+    position: relative;
+    min-width: 0;
+  }
+
+  .tabbar-more > summary {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+  }
+
+  .tabbar-more > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .tabbar-more > summary::after {
+    display: none;
+  }
+
+  .tabbar-sheet {
+    position: fixed;
+    z-index: 139;
+    right: 0;
+    bottom: calc(var(--tabbar-height) + env(safe-area-inset-bottom, 0px));
+    left: 0;
+    display: block;
+    max-height: min(78vh, 560px);
+    overflow-y: auto;
+    padding: 16px 14px 18px;
+    border-top: 1px solid var(--border);
+    border-radius: 18px 18px 0 0;
+    background: #fff;
+    box-shadow: 0 -18px 40px rgba(12, 37, 84, 0.18);
+    overscroll-behavior: contain;
+  }
+
+  .tabbar-sheet::before {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 4px;
+    margin: -6px auto 12px;
+    border-radius: 999px;
+    background: #cbd5e1;
+  }
+
+  .tabbar-more[open]::before {
+    content: "";
+    position: fixed;
+    z-index: 138;
+    top: 0;
+    right: 0;
+    bottom: calc(var(--tabbar-height) + env(safe-area-inset-bottom, 0px));
+    left: 0;
+    background: rgba(12, 37, 84, 0.3);
+  }
+
+  .tabbar-more:not([open]) > .tabbar-sheet {
+    display: none;
+  }
+
+  .tabbar-more[open] > summary {
+    background: var(--brand-soft);
+    color: var(--brand-strong);
+  }
+
+  .tabbar-sheet-title {
+    margin: 0 0 10px;
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .tabbar-sheet-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .tabbar-sheet-links a {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface-subtle);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 650;
+    text-decoration: none;
+  }
+
+  .tabbar-sheet-links a[aria-current="page"] {
+    border-color: #b8cdf7;
+    background: var(--brand-soft);
+    color: var(--brand-strong);
+  }
+
+  /* Slightly larger supporting copy on phones, still at >=4.5:1. */
+
+  .section-header > p,
+  .section-note,
+  .note,
+  .freshness-chip,
+  .refresh-feedback {
+    font-size: 13px;
+  }
+
+  .freshness-chip {
+    min-height: 0;
+    align-items: center;
+  }
+
+  .freshness-time {
+    min-width: 0;
+  }
+
+  .dashboard,
+  .content-page {
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .glance-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tabbar-sheet-links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+}

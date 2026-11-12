@@ -1,0 +1,1338 @@
+[
+  {
+    "name": "index-360",
+    "url": "/index.html",
+    "viewport": 360,
+    "docScrollWidth": 360,
+    "bodyScrollWidth": 360,
+    "hOverflow": 0,
+    "overflow": [
+      {
+        "el": "img.leaflet-image-layer.leaflet-zoom-animated",
+        "right": 728,
+        "width": 917
+      },
+      {
+        "el": "button.news-filter \"Money\"",
+        "right": 403,
+        "width": 62
+      },
+      {
+        "el": "button.news-filter \"Housing\"",
+        "right": 479,
+        "width": 69
+      },
+      {
+        "el": "button.news-filter \"General\"",
+        "right": 552,
+        "width": 66
+      },
+      {
+        "el": "a.news-card-item \"Crime Najib barred from politics under h\"",
+        "right": 571,
+        "width": 268
+      },
+      {
+        "el": "span.news-tag.news-crime \"Crime\"",
+        "right": 378,
+        "width": 57
+      },
+      {
+        "el": "strong \"Najib barred from politics under house a\"",
+        "right": 553,
+        "width": 232
+      },
+      {
+        "el": "small \"CNA · 2026-11-12 14:44\"",
+        "right": 448,
+        "width": 126
+      },
+      {
+        "el": "a.news-card-item \"Crime S'porean man, 24, sexually assault\"",
+        "right": 849,
+        "width": 268
+      },
+      {
+        "el": "span.news-tag.news-crime \"Crime\"",
+        "right": 656,
+        "width": 57
+      }
+    ],
+    "controlsUnder44": [
+      {
+        "el": "a \"Leaflet\"",
+        "w": 51,
+        "h": 14
+      },
+      {
+        "el": "a \"OpenStreetMap\"",
+        "w": 85,
+        "h": 14
+      },
+      {
+        "el": "a \"MET Malaysia warnings\"",
+        "w": 133,
+        "h": 17
+      },
+      {
+        "el": "a \"Singapore MSS warnings\"",
+        "w": 231,
+        "h": 40
+      },
+      {
+        "el": "a \"Malaysia stations\"",
+        "w": 98,
+        "h": 17
+      },
+      {
+        "el": "a \"What PSI and PM2.5 mean\"",
+        "w": 152,
+        "h": 17
+      },
+      {
+        "el": "a \"All Woodlands cameras\"",
+        "w": 134,
+        "h": 17
+      },
+      {
+        "el": "a \"Woodlands vs Tuas: which crossing to use\"",
+        "w": 239,
+        "h": 17
+      },
+      {
+        "el": "a \"How to check petrol prices today\"",
+        "w": 189,
+        "h": 17
+      },
+      {
+        "el": "a \"How to check ERP rates\"",
+        "w": 302,
+        "h": 37
+      }
+    ],
+    "controlsUnder44Count": 10,
+    "contrastFailures": [],
+    "contrastFailureCount": 0,
+    "tabbar": {
+      "display": "grid",
+      "rect": {
+        "x": 0,
+        "y": 739,
+        "width": 360,
+        "height": 61,
+        "top": 739,
+        "right": 360,
+        "bottom": 800,
+        "left": 0
+      },
+      "items": [
+        {
+          "label": "Home",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Live",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Prices",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Guides",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "More",
+          "w": 70,
+          "h": 52
+        }
+      ]
+    },
+    "headerHeight": 65,
+    "navDisplay": "none"
+  },
+  {
+    "name": "index-390",
+    "url": "/index.html",
+    "viewport": 390,
+    "docScrollWidth": 390,
+    "bodyScrollWidth": 390,
+    "hOverflow": 0,
+    "overflow": [
+      {
+        "el": "img.leaflet-image-layer.leaflet-zoom-animated",
+        "right": 743,
+        "width": 917
+      },
+      {
+        "el": "button.news-filter \"Money\"",
+        "right": 403,
+        "width": 62
+      },
+      {
+        "el": "button.news-filter \"Housing\"",
+        "right": 479,
+        "width": 69
+      },
+      {
+        "el": "button.news-filter \"General\"",
+        "right": 552,
+        "width": 66
+      },
+      {
+        "el": "a.news-card-item \"Crime Najib barred from politics under h\"",
+        "right": 624,
+        "width": 294
+      },
+      {
+        "el": "span.news-tag.news-crime \"Crime\"",
+        "right": 405,
+        "width": 57
+      },
+      {
+        "el": "strong \"Najib barred from politics under house a\"",
+        "right": 606,
+        "width": 258
+      },
+      {
+        "el": "small \"CNA · 2026-11-12 14:44\"",
+        "right": 474,
+        "width": 126
+      },
+      {
+        "el": "a.news-card-item \"Crime S'porean man, 24, sexually assault\"",
+        "right": 928,
+        "width": 294
+      },
+      {
+        "el": "span.news-tag.news-crime \"Crime\"",
+        "right": 709,
+        "width": 57
+      }
+    ],
+    "controlsUnder44": [
+      {
+        "el": "a \"Leaflet\"",
+        "w": 51,
+        "h": 14
+      },
+      {
+        "el": "a \"OpenStreetMap\"",
+        "w": 85,
+        "h": 14
+      },
+      {
+        "el": "a \"MET Malaysia warnings\"",
+        "w": 133,
+        "h": 17
+      },
+      {
+        "el": "a \"Singapore MSS warnings\"",
+        "w": 142,
+        "h": 17
+      },
+      {
+        "el": "a \"Malaysia stations\"",
+        "w": 98,
+        "h": 17
+      },
+      {
+        "el": "a \"What PSI and PM2.5 mean\"",
+        "w": 152,
+        "h": 17
+      },
+      {
+        "el": "a \"All Woodlands cameras\"",
+        "w": 134,
+        "h": 17
+      },
+      {
+        "el": "a \"Woodlands vs Tuas: which crossing to use\"",
+        "w": 239,
+        "h": 17
+      },
+      {
+        "el": "a \"How to check petrol prices today\"",
+        "w": 189,
+        "h": 17
+      },
+      {
+        "el": "a \"How to check ERP rates\"",
+        "w": 135,
+        "h": 17
+      }
+    ],
+    "controlsUnder44Count": 10,
+    "contrastFailures": [],
+    "contrastFailureCount": 0,
+    "tabbar": {
+      "display": "grid",
+      "rect": {
+        "x": 0,
+        "y": 783,
+        "width": 390,
+        "height": 61,
+        "top": 783,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "items": [
+        {
+          "label": "Home",
+          "w": 76,
+          "h": 52
+        },
+        {
+          "label": "Live",
+          "w": 76,
+          "h": 52
+        },
+        {
+          "label": "Prices",
+          "w": 76,
+          "h": 52
+        },
+        {
+          "label": "Guides",
+          "w": 76,
+          "h": 52
+        },
+        {
+          "label": "More",
+          "w": 76,
+          "h": 52
+        }
+      ]
+    },
+    "headerHeight": 65,
+    "navDisplay": "none"
+  },
+  {
+    "name": "index-768",
+    "url": "/index.html",
+    "viewport": 768,
+    "docScrollWidth": 768,
+    "bodyScrollWidth": 768,
+    "hOverflow": 0,
+    "overflow": [
+      {
+        "el": "img.leaflet-tile.leaflet-tile-loaded",
+        "right": 817,
+        "width": 256
+      },
+      {
+        "el": "img.leaflet-tile.leaflet-tile-loaded",
+        "right": 817,
+        "width": 256
+      },
+      {
+        "el": "a.news-card-item \"Crime S'porean man, 24, sexually assault\"",
+        "right": 1064,
+        "width": 329
+      },
+      {
+        "el": "span.news-tag.news-crime \"Crime\"",
+        "right": 810,
+        "width": 57
+      },
+      {
+        "el": "strong \"S'porean man, 24, sexually assaults youn\"",
+        "right": 1046,
+        "width": 293
+      },
+      {
+        "el": "small \"Mothership · 2026-11-12 20:07\"",
+        "right": 916,
+        "width": 163
+      },
+      {
+        "el": "a.news-card-item \"Crime Man fined $4,000 for molesting stu\"",
+        "right": 1409,
+        "width": 329
+      },
+      {
+        "el": "span.news-tag.news-crime \"Crime\"",
+        "right": 1155,
+        "width": 57
+      },
+      {
+        "el": "strong \"Man fined $4,000 for molesting student n\"",
+        "right": 1391,
+        "width": 293
+      },
+      {
+        "el": "small \"Straits Times · 2026-11-12 17:23\"",
+        "right": 1267,
+        "width": 169
+      }
+    ],
+    "controlsUnder44": [
+      {
+        "el": "a \"Leaflet\"",
+        "w": 51,
+        "h": 14
+      },
+      {
+        "el": "a \"OpenStreetMap\"",
+        "w": 85,
+        "h": 14
+      },
+      {
+        "el": "a \"MET Malaysia warnings\"",
+        "w": 133,
+        "h": 17
+      },
+      {
+        "el": "a \"Singapore MSS warnings\"",
+        "w": 142,
+        "h": 17
+      },
+      {
+        "el": "a \"Malaysia stations\"",
+        "w": 98,
+        "h": 17
+      },
+      {
+        "el": "a \"What PSI and PM2.5 mean\"",
+        "w": 152,
+        "h": 17
+      },
+      {
+        "el": "a \"All Woodlands cameras\"",
+        "w": 134,
+        "h": 17
+      },
+      {
+        "el": "a \"Woodlands vs Tuas: which crossing to use\"",
+        "w": 239,
+        "h": 17
+      },
+      {
+        "el": "a \"How to check petrol prices today\"",
+        "w": 189,
+        "h": 17
+      },
+      {
+        "el": "a \"How to check ERP rates\"",
+        "w": 135,
+        "h": 17
+      }
+    ],
+    "controlsUnder44Count": 10,
+    "contrastFailures": [],
+    "contrastFailureCount": 0,
+    "tabbar": {
+      "display": "none",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "items": [
+        {
+          "label": "Home",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Live",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Prices",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Guides",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "More",
+          "w": 0,
+          "h": 0
+        }
+      ]
+    },
+    "headerHeight": 89,
+    "navDisplay": "flex"
+  },
+  {
+    "name": "index-1280",
+    "url": "/index.html",
+    "viewport": 1280,
+    "docScrollWidth": 1280,
+    "bodyScrollWidth": 1280,
+    "hOverflow": 0,
+    "overflow": [
+      {
+        "el": "img.leaflet-tile.leaflet-tile-loaded",
+        "right": 1329,
+        "width": 256
+      },
+      {
+        "el": "img.leaflet-tile.leaflet-tile-loaded",
+        "right": 1329,
+        "width": 256
+      },
+      {
+        "el": "a.news-card-item \"Crime Man fined $4,000 for molesting stu\"",
+        "right": 1598,
+        "width": 371
+      },
+      {
+        "el": "span.news-tag.news-crime \"Crime\"",
+        "right": 1302,
+        "width": 57
+      },
+      {
+        "el": "strong \"Man fined $4,000 for molesting student n\"",
+        "right": 1580,
+        "width": 335
+      },
+      {
+        "el": "small \"Straits Times · 2026-11-12 17:23\"",
+        "right": 1414,
+        "width": 169
+      },
+      {
+        "el": "a.news-card-item \"Crime Two accidents involving cyclists, \"",
+        "right": 1986,
+        "width": 371
+      },
+      {
+        "el": "span.news-tag.news-crime \"Crime\"",
+        "right": 1689,
+        "width": 57
+      },
+      {
+        "el": "strong \"Two accidents involving cyclists, one of\"",
+        "right": 1968,
+        "width": 335
+      },
+      {
+        "el": "small \"Straits Times · 2026-11-11 21:46\"",
+        "right": 1801,
+        "width": 169
+      }
+    ],
+    "controlsUnder44": [
+      {
+        "el": "a \"Leaflet\"",
+        "w": 51,
+        "h": 14
+      },
+      {
+        "el": "a \"OpenStreetMap\"",
+        "w": 85,
+        "h": 14
+      },
+      {
+        "el": "a \"MET Malaysia warnings\"",
+        "w": 133,
+        "h": 17
+      },
+      {
+        "el": "a \"Singapore MSS warnings\"",
+        "w": 142,
+        "h": 17
+      },
+      {
+        "el": "a \"Malaysia stations\"",
+        "w": 98,
+        "h": 17
+      },
+      {
+        "el": "a \"What PSI and PM2.5 mean\"",
+        "w": 152,
+        "h": 17
+      },
+      {
+        "el": "a \"All Woodlands cameras\"",
+        "w": 134,
+        "h": 17
+      },
+      {
+        "el": "a \"Woodlands vs Tuas: which crossing to use\"",
+        "w": 239,
+        "h": 17
+      },
+      {
+        "el": "a \"How to check petrol prices today\"",
+        "w": 189,
+        "h": 17
+      },
+      {
+        "el": "a \"How to check ERP rates\"",
+        "w": 135,
+        "h": 17
+      }
+    ],
+    "controlsUnder44Count": 10,
+    "contrastFailures": [],
+    "contrastFailureCount": 0,
+    "tabbar": {
+      "display": "none",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "items": [
+        {
+          "label": "Home",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Live",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Prices",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Guides",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "More",
+          "w": 0,
+          "h": 0
+        }
+      ]
+    },
+    "headerHeight": 89,
+    "navDisplay": "flex"
+  },
+  {
+    "name": "coe-360",
+    "url": "/latest-coe-prices.html",
+    "viewport": 360,
+    "docScrollWidth": 360,
+    "bodyScrollWidth": 360,
+    "hOverflow": 0,
+    "overflow": [],
+    "controlsUnder44": [
+      {
+        "el": "a \"Singapore petrol prices\"",
+        "w": 154,
+        "h": 26
+      },
+      {
+        "el": "a \"Singapore daily dashboard\"",
+        "w": 177,
+        "h": 26
+      },
+      {
+        "el": "a \"How to read this round’s COE results\"",
+        "w": 242,
+        "h": 26
+      },
+      {
+        "el": "a \"When is the next COE bidding?\"",
+        "w": 205,
+        "h": 26
+      },
+      {
+        "el": "a \"Cat A vs Cat B explained\"",
+        "w": 160,
+        "h": 26
+      },
+      {
+        "el": "a \"What is COE PQP?\"",
+        "w": 120,
+        "h": 26
+      }
+    ],
+    "controlsUnder44Count": 6,
+    "contrastFailures": [],
+    "contrastFailureCount": 0,
+    "tabbar": {
+      "display": "grid",
+      "rect": {
+        "x": 0,
+        "y": 739,
+        "width": 360,
+        "height": 61,
+        "top": 739,
+        "right": 360,
+        "bottom": 800,
+        "left": 0
+      },
+      "items": [
+        {
+          "label": "Home",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Live",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Prices",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Guides",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "More",
+          "w": 70,
+          "h": 52
+        }
+      ]
+    },
+    "headerHeight": 65,
+    "navDisplay": "none"
+  },
+  {
+    "name": "guide-360",
+    "url": "/guides/what-is-coe-pqp.html",
+    "viewport": 360,
+    "docScrollWidth": 360,
+    "bodyScrollWidth": 360,
+    "hOverflow": 0,
+    "overflow": [],
+    "controlsUnder44": [
+      {
+        "el": "a \"SG Alerts latest COE\"",
+        "w": 272,
+        "h": 39
+      },
+      {
+        "el": "a \"OneMotoring — COE Open Bidding\"",
+        "w": 216,
+        "h": 17
+      },
+      {
+        "el": "a \"OneMotoring — COE Renewal\"",
+        "w": 183,
+        "h": 17
+      },
+      {
+        "el": "a \"Cat A vs Cat B\"",
+        "w": 85,
+        "h": 17
+      },
+      {
+        "el": "a \"When is the next COE bidding?\"",
+        "w": 188,
+        "h": 17
+      },
+      {
+        "el": "a \"How to read a COE results round\"",
+        "w": 199,
+        "h": 17
+      },
+      {
+        "el": "a \"Latest COE prices\"",
+        "w": 104,
+        "h": 17
+      },
+      {
+        "el": "a \"OneMotoring — COE Renewal\"",
+        "w": 183,
+        "h": 17
+      },
+      {
+        "el": "a \"Latest COE prices\"",
+        "w": 120,
+        "h": 23
+      },
+      {
+        "el": "a \"COE Cat A vs Cat B\"",
+        "w": 131,
+        "h": 23
+      },
+      {
+        "el": "a \"Next COE bidding\"",
+        "w": 126,
+        "h": 23
+      },
+      {
+        "el": "a \"How to read COE results\"",
+        "w": 170,
+        "h": 23
+      },
+      {
+        "el": "a \"All guides\"",
+        "w": 70,
+        "h": 23
+      }
+    ],
+    "controlsUnder44Count": 13,
+    "contrastFailures": [],
+    "contrastFailureCount": 0,
+    "tabbar": {
+      "display": "grid",
+      "rect": {
+        "x": 0,
+        "y": 739,
+        "width": 360,
+        "height": 61,
+        "top": 739,
+        "right": 360,
+        "bottom": 800,
+        "left": 0
+      },
+      "items": [
+        {
+          "label": "Home",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Live",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Prices",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Guides",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "More",
+          "w": 70,
+          "h": 52
+        }
+      ]
+    },
+    "headerHeight": 65,
+    "navDisplay": "none"
+  },
+  {
+    "name": "guide-1280",
+    "url": "/guides/what-is-coe-pqp.html",
+    "viewport": 1280,
+    "docScrollWidth": 1280,
+    "bodyScrollWidth": 1280,
+    "hOverflow": 0,
+    "overflow": [],
+    "controlsUnder44": [
+      {
+        "el": "a \"SG Alerts latest COE\"",
+        "w": 122,
+        "h": 17
+      },
+      {
+        "el": "a \"OneMotoring — COE Open Bidding\"",
+        "w": 216,
+        "h": 17
+      },
+      {
+        "el": "a \"OneMotoring — COE Renewal\"",
+        "w": 691,
+        "h": 39
+      },
+      {
+        "el": "a \"Cat A vs Cat B\"",
+        "w": 85,
+        "h": 17
+      },
+      {
+        "el": "a \"When is the next COE bidding?\"",
+        "w": 188,
+        "h": 17
+      },
+      {
+        "el": "a \"How to read a COE results round\"",
+        "w": 199,
+        "h": 17
+      },
+      {
+        "el": "a \"Latest COE prices\"",
+        "w": 104,
+        "h": 17
+      },
+      {
+        "el": "a \"OneMotoring — COE Renewal\"",
+        "w": 183,
+        "h": 17
+      },
+      {
+        "el": "a \"Latest COE prices\"",
+        "w": 120,
+        "h": 23
+      },
+      {
+        "el": "a \"COE Cat A vs Cat B\"",
+        "w": 131,
+        "h": 23
+      },
+      {
+        "el": "a \"Next COE bidding\"",
+        "w": 126,
+        "h": 23
+      },
+      {
+        "el": "a \"How to read COE results\"",
+        "w": 170,
+        "h": 23
+      },
+      {
+        "el": "a \"All guides\"",
+        "w": 70,
+        "h": 23
+      }
+    ],
+    "controlsUnder44Count": 13,
+    "contrastFailures": [],
+    "contrastFailureCount": 0,
+    "tabbar": {
+      "display": "none",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "items": [
+        {
+          "label": "Home",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Live",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Prices",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Guides",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "More",
+          "w": 0,
+          "h": 0
+        }
+      ]
+    },
+    "headerHeight": 89,
+    "navDisplay": "flex"
+  },
+  {
+    "name": "petrol-390",
+    "url": "/singapore-petrol-prices.html",
+    "viewport": 390,
+    "docScrollWidth": 390,
+    "bodyScrollWidth": 390,
+    "hOverflow": 0,
+    "overflow": [
+      {
+        "el": "div.petrol-header \"Brand 92 95 98 Premium Diesel\"",
+        "right": 849,
+        "width": 820
+      },
+      {
+        "el": "span \"95\"",
+        "right": 455,
+        "width": 131
+      },
+      {
+        "el": "span \"98\"",
+        "right": 587,
+        "width": 131
+      },
+      {
+        "el": "span \"Premium\"",
+        "right": 718,
+        "width": 131
+      },
+      {
+        "el": "span \"Diesel\"",
+        "right": 849,
+        "width": 131
+      },
+      {
+        "el": "div.petrol-row \"Esso $3.57 — No change $3.60 — No change\"",
+        "right": 849,
+        "width": 820
+      },
+      {
+        "el": "span \"$3.60 — No change\"",
+        "right": 455,
+        "width": 131
+      },
+      {
+        "el": "small.petrol-movement.petrol-flat \"— No change\"",
+        "right": 443,
+        "width": 106
+      },
+      {
+        "el": "span \"$4.12 — No change\"",
+        "right": 587,
+        "width": 131
+      },
+      {
+        "el": "small.petrol-movement.petrol-flat \"— No change\"",
+        "right": 575,
+        "width": 106
+      }
+    ],
+    "controlsUnder44": [
+      {
+        "el": "a \"How to read pump prices\"",
+        "w": 146,
+        "h": 17
+      },
+      {
+        "el": "a \"How to pay less with cards and membershi\"",
+        "w": 298,
+        "h": 26
+      },
+      {
+        "el": "a \"How to check ERP rates\"",
+        "w": 155,
+        "h": 26
+      },
+      {
+        "el": "a \"Filling up before JB\"",
+        "w": 126,
+        "h": 26
+      },
+      {
+        "el": "a \"Latest COE prices\"",
+        "w": 114,
+        "h": 26
+      },
+      {
+        "el": "a \"Woodlands traffic cameras\"",
+        "w": 175,
+        "h": 26
+      },
+      {
+        "el": "a \"Tuas traffic cameras\"",
+        "w": 131,
+        "h": 26
+      }
+    ],
+    "controlsUnder44Count": 7,
+    "contrastFailures": [],
+    "contrastFailureCount": 0,
+    "tabbar": {
+      "display": "grid",
+      "rect": {
+        "x": 0,
+        "y": 783,
+        "width": 390,
+        "height": 61,
+        "top": 783,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "items": [
+        {
+          "label": "Home",
+          "w": 76,
+          "h": 52
+        },
+        {
+          "label": "Live",
+          "w": 76,
+          "h": 52
+        },
+        {
+          "label": "Prices",
+          "w": 76,
+          "h": 52
+        },
+        {
+          "label": "Guides",
+          "w": 76,
+          "h": 52
+        },
+        {
+          "label": "More",
+          "w": 76,
+          "h": 52
+        }
+      ]
+    },
+    "headerHeight": 65,
+    "navDisplay": "none"
+  },
+  {
+    "name": "bto-768",
+    "url": "/bto-launches.html",
+    "viewport": 768,
+    "docScrollWidth": 768,
+    "bodyScrollWidth": 768,
+    "hOverflow": 0,
+    "overflow": [],
+    "controlsUnder44": [
+      {
+        "el": "a \"How to read HDB application rates\"",
+        "w": 229,
+        "h": 26
+      },
+      {
+        "el": "a \"February 2027 BTO and HFE deadline\"",
+        "w": 244,
+        "h": 26
+      },
+      {
+        "el": "a \"Latest COE prices\"",
+        "w": 114,
+        "h": 26
+      },
+      {
+        "el": "a \"Singapore petrol prices\"",
+        "w": 154,
+        "h": 26
+      },
+      {
+        "el": "a \"Singapore daily dashboard\"",
+        "w": 177,
+        "h": 26
+      }
+    ],
+    "controlsUnder44Count": 5,
+    "contrastFailures": [],
+    "contrastFailureCount": 0,
+    "tabbar": {
+      "display": "none",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "items": [
+        {
+          "label": "Home",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Live",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Prices",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "Guides",
+          "w": 0,
+          "h": 0
+        },
+        {
+          "label": "More",
+          "w": 0,
+          "h": 0
+        }
+      ]
+    },
+    "headerHeight": 89,
+    "navDisplay": "flex"
+  },
+  {
+    "name": "index-360-more",
+    "url": "/index.html",
+    "viewport": 360,
+    "docScrollWidth": 360,
+    "bodyScrollWidth": 360,
+    "hOverflow": 0,
+    "overflow": [
+      {
+        "el": "img.leaflet-image-layer.leaflet-zoom-animated",
+        "right": 728,
+        "width": 917
+      },
+      {
+        "el": "button.news-filter \"Money\"",
+        "right": 403,
+        "width": 62
+      },
+      {
+        "el": "button.news-filter \"Housing\"",
+        "right": 479,
+        "width": 69
+      },
+      {
+        "el": "button.news-filter \"General\"",
+        "right": 552,
+        "width": 66
+      },
+      {
+        "el": "a.news-card-item \"Crime Najib barred from politics under h\"",
+        "right": 571,
+        "width": 268
+      },
+      {
+        "el": "span.news-tag.news-crime \"Crime\"",
+        "right": 378,
+        "width": 57
+      },
+      {
+        "el": "strong \"Najib barred from politics under house a\"",
+        "right": 553,
+        "width": 232
+      },
+      {
+        "el": "small \"CNA · 2026-11-12 14:44\"",
+        "right": 448,
+        "width": 126
+      },
+      {
+        "el": "a.news-card-item \"Crime S'porean man, 24, sexually assault\"",
+        "right": 849,
+        "width": 268
+      },
+      {
+        "el": "span.news-tag.news-crime \"Crime\"",
+        "right": 656,
+        "width": 57
+      }
+    ],
+    "controlsUnder44": [
+      {
+        "el": "a \"Leaflet\"",
+        "w": 51,
+        "h": 14
+      },
+      {
+        "el": "a \"OpenStreetMap\"",
+        "w": 85,
+        "h": 14
+      },
+      {
+        "el": "a \"MET Malaysia warnings\"",
+        "w": 133,
+        "h": 17
+      },
+      {
+        "el": "a \"Singapore MSS warnings\"",
+        "w": 231,
+        "h": 40
+      },
+      {
+        "el": "a \"Malaysia stations\"",
+        "w": 98,
+        "h": 17
+      },
+      {
+        "el": "a \"What PSI and PM2.5 mean\"",
+        "w": 152,
+        "h": 17
+      },
+      {
+        "el": "a \"All Woodlands cameras\"",
+        "w": 134,
+        "h": 17
+      },
+      {
+        "el": "a \"Woodlands vs Tuas: which crossing to use\"",
+        "w": 239,
+        "h": 17
+      },
+      {
+        "el": "a \"How to check petrol prices today\"",
+        "w": 189,
+        "h": 17
+      },
+      {
+        "el": "a \"How to check ERP rates\"",
+        "w": 302,
+        "h": 37
+      }
+    ],
+    "controlsUnder44Count": 10,
+    "contrastFailures": [],
+    "contrastFailureCount": 0,
+    "tabbar": {
+      "display": "grid",
+      "rect": {
+        "x": 0,
+        "y": 739,
+        "width": 360,
+        "height": 61,
+        "top": 739,
+        "right": 360,
+        "bottom": 800,
+        "left": 0
+      },
+      "items": [
+        {
+          "label": "Home",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Live",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Prices",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "Guides",
+          "w": 70,
+          "h": 52
+        },
+        {
+          "label": "More",
+          "w": 70,
+          "h": 52
+        }
+      ]
+    },
+    "headerHeight": 65,
+    "navDisplay": "none"
+  }
+]
