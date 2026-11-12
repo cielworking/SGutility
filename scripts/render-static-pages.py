@@ -311,10 +311,15 @@ def guide_sitemap_urls(preserved=None):
         if page_is_noindex(text):
             continue
         url = guide_page_url(path)
-        lastmod = preserved.get(url)
-        if not lastmod:
-            match = re.search(r'"dateModified"\s*:\s*["\'](\d{4}-\d{2}-\d{2})', text)
-            lastmod = match.group(1) if match else None
+        stored = preserved.get(url)
+        match = re.search(r'"dateModified"\s*:\s*["\'](\d{4}-\d{2}-\d{2})', text)
+        page_date = match.group(1) if match else None
+        # Keep an existing lastmod unless the page's dateModified is newer,
+        # so a content refresh survives the next hourly sitemap rewrite.
+        if page_date and stored:
+            lastmod = max(page_date, stored)
+        else:
+            lastmod = page_date or stored
         urls.append((url, lastmod))
     return urls
 

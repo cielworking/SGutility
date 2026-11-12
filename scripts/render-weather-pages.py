@@ -207,6 +207,7 @@ def main():
         doc_title, meta_desc = title, desc
         forecast_heading = "Rain radar & outlook"
         guide_links = ""
+        travel_note = ""
         if kind == "rain-forecast":
             forecast_heading = "Singapore area rain forecast" if country == "singapore" else "Malaysia area rain forecast"
             content = runpy.run_path(str(ROOT / "scripts/weather_layout.py"))["render_combined"](cache, forecast_heading)
@@ -214,13 +215,16 @@ def main():
             if country == "singapore":
                 meta_desc = "Two-hour Singapore rain forecasts by area, with official validity times. Check before you head out on SG Alerts."
                 guide_links = '<a class="detail-link" href="/weather/">Open full rain radar</a><a class="detail-link" href="/singapore/haze/">Air quality / PSI</a><a class="detail-link" href="/guides/northeast-monsoon-singapore-flash-floods.html">Northeast monsoon and flash floods</a>'
+                travel_note = '<p>Planning a year-end crossing? See <a href="/guides/causeway-year-end-school-holidays.html">Year-end school holidays and Causeway timing</a>.</p>'
             else:
                 meta_desc = "Malaysia rain forecasts by location, including Johor Bahru morning, afternoon and night outlooks on SG Alerts."
-                guide_links = '<a class="detail-link" href="/weather/">Singapore–Johor rain radar</a><a class="detail-link" href="/woodlands-checkpoint.html">Woodlands cameras before you cross</a><a class="detail-link" href="/guides/causeway-year-end-school-holidays.html">Holiday Causeway planning</a>'
+                guide_links = '<a class="detail-link" href="/weather/">Singapore–Johor rain radar</a><a class="detail-link" href="/woodlands-checkpoint.html">Woodlands cameras before you cross</a><a class="detail-link" href="/tuas-checkpoint.html">Tuas traffic cameras</a><a class="detail-link" href="/guides/woodlands-vs-tuas-checkpoint.html">Woodlands vs Tuas Checkpoint</a><a class="detail-link" href="/guides/causeway-year-end-school-holidays.html">Holiday Causeway planning</a><a class="detail-link" href="/guides/school-holiday-jb-petrol-causeway-tips.html">School-holiday JB: petrol, VEP, Causeway</a><a class="detail-link" href="/guides/northeast-monsoon-singapore-flash-floods.html">Northeast monsoon and flash floods</a>'
         elif country == "singapore" and kind == "haze":
             doc_title = "Singapore PSI Now & Haze"
             meta_desc = "Check Singapore regional 24-hour PSI and 1-hour PM2.5 readings with update times and air-quality categories."
             guide_links = '<a class="detail-link" href="/guides/singapore-psi-haze-what-to-do.html">What PSI bands mean and what to do</a><a class="detail-link" href="/weather/">Rain radar</a><a class="detail-link" href="/malaysia/haze/">Malaysia air quality</a>'
+        elif country == "malaysia" and kind == "haze":
+            guide_links = '<a class="detail-link" href="/guides/singapore-psi-haze-what-to-do.html">PSI and haze today: what to do</a>'
         related = ''.join(f'<a class="detail-link" href="/{c}/{k}/" {"aria-current=page" if (c,k)==(country,kind) else ""}>{esc(t)}</a>' for c,k,t,_,_ in PAGES)
         if kind == "rain-forecast":
             related = '<a class="detail-link" href="/weather/">Combined rain radar &amp; forecast</a><a class="detail-link" href="/#haze">Haze &amp; air quality</a>'
@@ -256,7 +260,7 @@ def main():
 <body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a>{nav}</div></header>
 <main id="main-content" class="content-page weather-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">SG Alerts</a> / {esc(title)}</nav><section class="page-hero"><div><p class="eyebrow">{country.title()} · Official data</p><h1>{esc(title)}</h1><p>{esc(desc)}</p></div></section>
 <nav class="weather-tabs" aria-label="Weather pages">{related}</nav><section class="surface-card specialist-data-card">{chip}{"" if kind == "rain-forecast" else "<h2>Air-quality readings</h2>"}{content}<p class="note">Source: <a href="{source}" target="_blank" rel="noopener noreferrer">{source_name}</a>. Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.</p></section>
-<section class="surface-card seo-guide"><h2>Understanding {esc(title.lower())}</h2><p>{esc(explanation)}</p><details class="sga-collapse"><summary><h3>How current is this information?</h3></summary><p>Always check the forecast validity or reporting time. Older cached readings remain visible with a warning when a source is delayed or unavailable. Times use Singapore / Malaysia time (UTC+08).</p></details><details class="sga-collapse"><summary><h3>Where can I check official updates?</h3></summary><p>Visit <a href="{source}">{source_name}</a> for the latest official information and advisories.</p></details><div class="seo-related">{related}{guide_links}</div></section></main>
+<section class="surface-card seo-guide"><h2>Understanding {esc(title.lower())}</h2><p>{esc(explanation)}</p>{travel_note}<details class="sga-collapse"><summary><h3>How current is this information?</h3></summary><p>Always check the forecast validity or reporting time. Older cached readings remain visible with a warning when a source is delayed or unavailable. Times use Singapore / Malaysia time (UTC+08).</p></details><details class="sga-collapse"><summary><h3>Where can I check official updates?</h3></summary><p>Visit <a href="{source}">{source_name}</a> for the latest official information and advisories.</p></details><div class="seo-related">{related}{guide_links}</div></section></main>
 <footer class="site-footer"><div class="footer-inner"><strong>SG Alerts</strong><nav class="footer-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/guides/">Guides</a><a href="/guides/">Quick Info</a><a href="/4d-results.html">4D Results</a><a href="/toto-results.html">TOTO Results</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a></nav></div></footer></body></html>'''
         target = ROOT / country / kind / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
