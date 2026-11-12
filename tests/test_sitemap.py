@@ -32,6 +32,12 @@ class SitemapTests(unittest.TestCase):
         xml = renderer.render_sitemap({}, {url: "2026-11-06"})
         self.assertIn(f"<loc>{url}</loc>\n    <lastmod>2026-11-06</lastmod>", xml)
 
+    def test_newer_date_modified_updates_lastmod(self):
+        renderer = load_renderer()
+        url = "https://sgalerts.com/guides/causeway-year-end-school-holidays.html"
+        xml = renderer.render_sitemap({}, {url: "2026-11-06"})
+        self.assertIn(f"<loc>{url}</loc>\n    <lastmod>2026-11-12</lastmod>", xml)
+
     def test_weather_renderer_does_not_write_a_sitemap(self):
         text = (ROOT / "scripts" / "render-weather-pages.py").read_text(encoding="utf-8")
         self.assertNotIn("sitemap.xml", text)

@@ -67,7 +67,8 @@ def homepage_psi(cache):
         f'<a class="psi-tile" href="/singapore/haze/"><span>24-hour PSI · West</span><strong id="air-number">{number}</strong>'
         f'<span class="glance-check">{esc(detail)}</span></a>'
         '<p class="section-note"><a href="/malaysia/haze/">Malaysia stations</a> · '
-        '<a href="/guides/singapore-psi-haze-what-to-do.html">What PSI and PM2.5 mean</a></p>'
+        '<a href="/guides/singapore-psi-haze-what-to-do.html">What PSI and PM2.5 mean</a> · '
+        '<a href="/guides/northeast-monsoon-singapore-flash-floods.html">Northeast monsoon and flash floods</a></p>'
     )
 
 
