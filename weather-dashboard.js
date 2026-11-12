@@ -116,6 +116,7 @@
     if (!outlook) return;
     const selected = box.querySelector('[role="tab"][aria-selected="true"]')?.textContent?.trim().toLowerCase() || 'north';
     byId('outlook-source-time').textContent = 'Source issued: ' + format(outlook.timestamp) + ' UTC+08 · Last checked: ' + format(cache.sg_outlook.fetched_at) + ' UTC+08';
+    window.applyForecastIssueChip?.({sg_outlook: cache.sg_outlook});
     const regions = ['north','south','east','west','central'];
     box.innerHTML = '<div class="region-tabs" data-region-tabs><div class="region-tablist" role="tablist" aria-label="Singapore forecast region">' + regions.map(region=>{
       const on = region === selected;
@@ -183,7 +184,7 @@
     } finally {weatherBusy=false;}
   }
   byId('sg-area').addEventListener('change',regional);
-  byId('my-weather-location').addEventListener('change',malaysia);
+  byId('my-weather-location')?.addEventListener('change',malaysia);
   const refresh = byId('refresh-weather');
   async function refreshAll(manual=false) {
     if (refresh.disabled) return;
@@ -195,8 +196,7 @@
       const same = results.every(r=>r.status==='fulfilled'&&r.value.same);
       const checked = format(new Date().toISOString());
       byId('weather-refresh-status').textContent=(failed?'Some sources could not refresh; previous available data is retained. ':same?'No newer radar or forecast information available. ':'Latest available radar and forecasts loaded. ')+'Last checked: '+checked+' UTC+08';
-      const freshnessTime = document.querySelector('#weather-freshness .freshness-time');
-      if (freshnessTime) freshnessTime.textContent = 'Updated ' + checked.replace(/\s?(am|pm)$/i, (part) => ' ' + part.trim().toLowerCase()) + ' UTC+08';
+      window.applyForecastIssueChip?.({sg_outlook: cache.sg_outlook});
     } finally {
       const unlock=()=>{refresh.disabled=false;refresh.textContent='↻ Refresh weather';};
       if(manual)setTimeout(unlock,5000);else unlock();

@@ -81,6 +81,23 @@ class WeatherTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 update.sg("two-hr-forecast")
 
+    def test_homepage_rain_chip_uses_forecast_issue_time(self):
+        stamp = "2026-11-12T05:33:00+08:00"
+        cache = {"sg_outlook": {"data": {"timestamp": stamp}, "fetched_at": "2026-11-12T08:15:00+08:00"}}
+        html = render.homepage_rain_markup(cache, '<div class="combined-weather"></div>')
+        self.assertTrue(html.startswith('<p class="freshness-chip" id="weather-freshness">'))
+        self.assertIn("Updated 12 Nov, 5:33 am UTC+08", html)
+        self.assertLess(html.find("freshness-time"), html.find("combined-weather"))
+        saved = json.loads((ROOT / "data" / "weather.json").read_text())
+        label = render.updated_label(render.homepage_rain_stamp(saved))
+        page = (ROOT / "index.html").read_text()
+        start = page.index("<!-- STATIC:RAIN:START -->")
+        end = page.index("<!-- STATIC:RAIN:END -->")
+        block = page[start:end]
+        self.assertIn(label, block)
+        self.assertIn('id="weather-freshness"', block)
+        self.assertNotIn('id="weather-freshness"', page[:start])
+
     def test_stale_expired_future_and_missing_feeds_are_flagged(self):
         current = render.NOW.isoformat()
         self.assertNotIn('class="feed-status is-stale"', render.freshness({"ok": True, "fetched_at": current}))

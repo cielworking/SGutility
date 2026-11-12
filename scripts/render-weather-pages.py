@@ -35,6 +35,16 @@ def freshness_chip(value, href):
     )
 
 
+def homepage_rain_stamp(cache):
+    outlook = cache.get("sg_outlook") or {}
+    return (outlook.get("data") or {}).get("timestamp") or outlook.get("fetched_at")
+
+
+def homepage_rain_markup(cache, forecast_html):
+    """Chip sits inside the homepage rain block so each weather run rewrites it."""
+    return freshness_chip(homepage_rain_stamp(cache), "https://www.weather.gov.sg/") + forecast_html
+
+
 def primary_nav(current):
     def item(href, label, key):
         current_attr = ' aria-current="page"' if current == key else ""
@@ -242,7 +252,7 @@ def main():
 <title>{esc(doc_title)} | SG Alerts</title><meta name="description" content="{esc(meta_desc)}"><link rel="canonical" href="https://sgalerts.com{path}">
 <meta property="og:title" content="{esc(doc_title)} | SG Alerts"><meta property="og:description" content="{esc(meta_desc)}"><meta property="og:url" content="https://sgalerts.com{path}"><meta property="og:type" content="website"><meta property="og:image" content="https://sgalerts.com/assets/og-share.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(doc_title)} | SG Alerts"><meta name="twitter:description" content="{esc(meta_desc)}"><meta name="twitter:image" content="https://sgalerts.com/assets/og-share.png">
 <link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0c2554"><link rel="manifest" href="/site.webmanifest">{head_extra}<link rel="stylesheet" href="/style.css?v=20">
-<script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=3" defer></script><script src="/script.js?v=14" defer></script></head>
+<script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=4" defer></script><script src="/script.js?v=14" defer></script></head>
 <body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a>{nav}</div></header>
 <main id="main-content" class="content-page weather-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">SG Alerts</a> / {esc(title)}</nav><section class="page-hero"><div><p class="eyebrow">{country.title()} · Official data</p><h1>{esc(title)}</h1><p>{esc(desc)}</p></div></section>
 <nav class="weather-tabs" aria-label="Weather pages">{related}</nav><section class="surface-card specialist-data-card">{chip}{"" if kind == "rain-forecast" else "<h2>Air-quality readings</h2>"}{content}<p class="note">Source: <a href="{source}" target="_blank" rel="noopener noreferrer">{source_name}</a>. Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.</p></section>
@@ -252,7 +262,7 @@ def main():
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(document + "\n", encoding="utf-8")
         if kind == "rain-forecast":
-            document = document.replace('<script src="/weather.js?v=3" defer></script>', '<link rel="stylesheet" href="/assets/leaflet/leaflet.css" media="print" onload="this.media=\'all\'"><noscript><link rel="stylesheet" href="/assets/leaflet/leaflet.css"></noscript><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=3" defer></script><script src="/weather-dashboard.js?v=4" defer></script>')
+            document = document.replace('<script src="/weather.js?v=4" defer></script>', '<link rel="stylesheet" href="/assets/leaflet/leaflet.css" media="print" onload="this.media=\'all\'"><noscript><link rel="stylesheet" href="/assets/leaflet/leaflet.css"></noscript><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=4" defer></script><script src="/weather-dashboard.js?v=5" defer></script>')
             target.write_text(document + "\n", encoding="utf-8")
             if country == "singapore":
                 hub = document.replace("https://sgalerts.com" + path, "https://sgalerts.com/weather/")
@@ -304,7 +314,7 @@ def main():
     home = ROOT / "index.html"
     text = home.read_text(encoding="utf-8")
     for kind, marker in [("rain-forecast", "RAIN"), ("haze", "HAZE")]:
-        rendered = home_rain + '<p><a class="detail-link" href="/weather/">Open full rain radar &amp; forecast →</a></p>' if kind == "rain-forecast" else home_psi
+        rendered = homepage_rain_markup(cache, home_rain) + '<p><a class="detail-link" href="/weather/">Open full rain radar &amp; forecast →</a></p>' if kind == "rain-forecast" else home_psi
         if kind == "haze":
             rendered = home_psi
         pattern = rf'<!-- STATIC:{marker}:START -->.*?<!-- STATIC:{marker}:END -->'

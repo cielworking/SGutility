@@ -20,6 +20,34 @@ function updateWeatherFreshness() {
 updateWeatherFreshness();
 setInterval(updateWeatherFreshness, 60000);
 
+function forecastIssueLabel(value) {
+  const parsed = new Date(value);
+  if (!Number.isFinite(parsed.getTime())) return null;
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Asia/Singapore",
+    day: "numeric",
+    month: "short",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true
+  }).formatToParts(parsed);
+  const part = type => parts.find(item => item.type === type)?.value || "";
+  const hour = String(Number(part("hour")));
+  const minute = part("minute");
+  const dayPeriod = part("dayPeriod").toLowerCase();
+  if (!part("day") || !part("month") || !hour || !minute || !dayPeriod) return null;
+  return `Updated ${part("day")} ${part("month")}, ${hour}:${minute} ${dayPeriod} UTC+08`;
+}
+
+window.applyForecastIssueChip = function applyForecastIssueChip(saved) {
+  if (!document.querySelector("[data-combined-weather]")) return;
+  const node = document.querySelector("#weather-freshness .freshness-time");
+  const outlook = saved?.sg_outlook || {};
+  const stamp = outlook.data?.timestamp || outlook.fetched_at;
+  const label = forecastIssueLabel(stamp);
+  if (node && label) node.textContent = label;
+};
+
 for (const name of ["area", "state"]) {
   document.addEventListener("change", event => {
     const select = event.target.closest(`[data-${name}-filter]`);
@@ -131,6 +159,9 @@ window.loadSavedWeather = function loadSavedWeather(manual = false) {
   const pending = fetch("/data/weather.json", init).then(response => {
     if (!response.ok) throw new Error("Source returned " + response.status);
     return response.json();
+  }).then(data => {
+    window.applyForecastIssueChip(data);
+    return data;
   });
   if (!manual) {
     window.__weatherJSON = pending;
