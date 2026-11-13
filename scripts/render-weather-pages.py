@@ -73,6 +73,49 @@ def esc(value):
     return html.escape(str(value if value is not None else "Unavailable"), quote=True)
 
 
+TAB_ICONS = {
+    "home": '<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',
+    "live": '<path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/>',
+    "prices": '<line x1="3" x2="15" y1="22" y2="22"/><line x1="4" x2="14" y1="9" y2="9"/><path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2 2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5"/>',
+    "guides": '<path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>',
+    "more": '<line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/>',
+}
+
+
+def mobile_tabbar(current):
+    """Fixed bottom tab bar shared with the static pages (<=700px only)."""
+    groups = {
+        "home": {"home"},
+        "live": {"rain", "haze", "haze-my", "woodlands", "tuas"},
+        "prices": {"petrol", "coe", "bto"},
+        "guides": {"guides"},
+    }
+    svg = ('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" '
+           'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
+           'stroke-linejoin="round" aria-hidden="true">{}</svg>')
+
+    def tab(href, label, key):
+        cur = ' aria-current="page"' if current in groups[key] else ""
+        return f'<a class="tabbar-item" href="{href}"{cur}>{svg.format(TAB_ICONS[key])}<span>{label}</span></a>'
+
+    links = (
+        '<a href="/latest-coe-prices.html">COE prices</a><a href="/bto-launches.html">BTO launches</a>'
+        '<a href="/singapore/haze/">Haze &amp; PSI</a><a href="/woodlands-checkpoint.html">Checkpoints</a>'
+        '<a href="/4d-results.html">4D results</a><a href="/toto-results.html">TOTO results</a>'
+        '<a href="/about.html">About</a><a href="/contact.html">Contact</a>'
+    )
+    return (
+        '<nav class="mobile-tabbar" aria-label="Mobile quick navigation">'
+        + tab("/", "Home", "home")
+        + tab("/weather/", "Live", "live")
+        + tab("/singapore-petrol-prices.html", "Prices", "prices")
+        + tab("/guides/", "Guides", "guides")
+        + f'<details class="tabbar-more"><summary class="tabbar-item">{svg.format(TAB_ICONS["more"])}<span>More</span></summary>'
+          '<div class="tabbar-sheet" id="tabbar-more-sheet"><p class="tabbar-sheet-title">More on SG Alerts</p>'
+          f'<div class="tabbar-sheet-links">{links}</div></div></details></nav>'
+    )
+
+
 def parse(value):
     if not isinstance(value, str):
         raise ValueError("Missing timestamp")
@@ -251,13 +294,13 @@ def main():
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(doc_title)} | SG Alerts</title><meta name="description" content="{esc(meta_desc)}"><link rel="canonical" href="https://sgalerts.com{path}">
 <meta property="og:title" content="{esc(doc_title)} | SG Alerts"><meta property="og:description" content="{esc(meta_desc)}"><meta property="og:url" content="https://sgalerts.com{path}"><meta property="og:type" content="website"><meta property="og:image" content="https://sgalerts.com/assets/og-share.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(doc_title)} | SG Alerts"><meta name="twitter:description" content="{esc(meta_desc)}"><meta name="twitter:image" content="https://sgalerts.com/assets/og-share.png">
-<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0c2554"><link rel="manifest" href="/site.webmanifest">{head_extra}<link rel="stylesheet" href="/style.css?v=20">
+<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0c2554" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)"><link rel="manifest" href="/site.webmanifest">{head_extra}<link rel="stylesheet" href="/style.css?v=22">
 <script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=4" defer></script><script src="/script.js?v=14" defer></script></head>
 <body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a>{nav}</div></header>
 <main id="main-content" class="content-page weather-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">SG Alerts</a> / {esc(title)}</nav><section class="page-hero"><div><p class="eyebrow">{country.title()} · Official data</p><h1>{esc(title)}</h1><p>{esc(desc)}</p></div></section>
 <nav class="weather-tabs" aria-label="Weather pages">{related}</nav><section class="surface-card specialist-data-card">{chip}{"" if kind == "rain-forecast" else "<h2>Air-quality readings</h2>"}{content}<p class="note">Source: <a href="{source}" target="_blank" rel="noopener noreferrer">{source_name}</a>. Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.</p></section>
 <section class="surface-card seo-guide"><h2>Understanding {esc(title.lower())}</h2><p>{esc(explanation)}</p><details class="sga-collapse"><summary><h3>How current is this information?</h3></summary><p>Always check the forecast validity or reporting time. Older cached readings remain visible with a warning when a source is delayed or unavailable. Times use Singapore / Malaysia time (UTC+08).</p></details><details class="sga-collapse"><summary><h3>Where can I check official updates?</h3></summary><p>Visit <a href="{source}">{source_name}</a> for the latest official information and advisories.</p></details><div class="seo-related">{related}{guide_links}</div></section></main>
-<footer class="site-footer"><div class="footer-inner"><strong>SG Alerts</strong><nav class="footer-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/guides/">Guides</a><a href="/guides/">Quick Info</a><a href="/4d-results.html">4D Results</a><a href="/toto-results.html">TOTO Results</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a></nav></div></footer></body></html>'''
+<footer class="site-footer"><div class="footer-inner"><strong>SG Alerts</strong><nav class="footer-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/guides/">Guides</a><a href="/guides/">Quick Info</a><a href="/4d-results.html">4D Results</a><a href="/toto-results.html">TOTO Results</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a></nav></div></footer>{mobile_tabbar(nav_current)}</body></html>'''
         target = ROOT / country / kind / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
         target.write_text(document + "\n", encoding="utf-8")

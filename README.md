@@ -1,5 +1,13 @@
 # SG Utility Dashboard
 
+## Theme
+
+The interface follows the visitor's light or dark system preference automatically,
+including a preference change while the page is open. Theme colours are CSS custom
+properties in `style.css`; a `prefers-color-scheme: dark` block overrides the tokens
+and the few component surfaces that still need explicit values. There is no toggle
+and no stored override.
+
 ## Weather and air quality
 
 The homepage Haze & Air Quality panel now has Singapore / Malaysia tabs, a selected
@@ -195,7 +203,6 @@ git push
 - Live API integration
 - MRT service alerts
 - Weather information
-- Dark mode
 - UI/UX improvements
 - Accessibility enhancements
 
