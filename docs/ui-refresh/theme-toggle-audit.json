@@ -1,0 +1,135 @@
+{
+ "testedOn": "2026-11-13",
+ "baseCommit": "c0fe9c7f",
+ "method": "Headless Chrome 157. Functional checks load the page in a same-origin iframe with a controlled matchMedia harness so System mode can receive live light/dark changes; layout checks use normal page loads at exact 360/390/768/1024/1280 viewports. Contrast samples visible text (WCAG 1.4.3).",
+ "checks": 57,
+ "passed": 57,
+ "failed": 0,
+ "failures": [],
+ "layouts": [
+  {
+   "width": 360,
+   "mode": "light",
+   "theme": "light",
+   "viewport": 360,
+   "scrollWidth": 360,
+   "overflow": [],
+   "contrastFailures": [],
+   "smallButtons": [],
+   "headerHeight": 67
+  },
+  {
+   "width": 360,
+   "mode": "dark",
+   "theme": "dark",
+   "viewport": 360,
+   "scrollWidth": 360,
+   "overflow": [],
+   "contrastFailures": [],
+   "smallButtons": [],
+   "headerHeight": 67
+  },
+  {
+   "width": 390,
+   "mode": "light",
+   "theme": "light",
+   "viewport": 390,
+   "scrollWidth": 390,
+   "overflow": [],
+   "contrastFailures": [],
+   "smallButtons": [],
+   "headerHeight": 67
+  },
+  {
+   "width": 390,
+   "mode": "dark",
+   "theme": "dark",
+   "viewport": 390,
+   "scrollWidth": 390,
+   "overflow": [],
+   "contrastFailures": [],
+   "smallButtons": [],
+   "headerHeight": 67
+  },
+  {
+   "width": 768,
+   "mode": "light",
+   "theme": "light",
+   "viewport": 768,
+   "scrollWidth": 768,
+   "overflow": [],
+   "contrastFailures": [],
+   "smallButtons": [],
+   "headerHeight": 89
+  },
+  {
+   "width": 768,
+   "mode": "dark",
+   "theme": "dark",
+   "viewport": 768,
+   "scrollWidth": 768,
+   "overflow": [],
+   "contrastFailures": [],
+   "smallButtons": [],
+   "headerHeight": 89
+  },
+  {
+   "width": 1024,
+   "mode": "light",
+   "theme": "light",
+   "viewport": 1024,
+   "scrollWidth": 1024,
+   "overflow": [],
+   "contrastFailures": [],
+   "smallButtons": [],
+   "headerHeight": 89
+  },
+  {
+   "width": 1024,
+   "mode": "dark",
+   "theme": "dark",
+   "viewport": 1024,
+   "scrollWidth": 1024,
+   "overflow": [],
+   "contrastFailures": [],
+   "smallButtons": [],
+   "headerHeight": 89
+  },
+  {
+   "width": 1280,
+   "mode": "light",
+   "theme": "light",
+   "viewport": 1280,
+   "scrollWidth": 1280,
+   "overflow": [],
+   "contrastFailures": [],
+   "smallButtons": [],
+   "headerHeight": 89
+  },
+  {
+   "width": 1280,
+   "mode": "dark",
+   "theme": "dark",
+   "viewport": 1280,
+   "scrollWidth": 1280,
+   "overflow": [],
+   "contrastFailures": [],
+   "smallButtons": [],
+   "headerHeight": 89
+  }
+ ],
+ "screenshots": [
+  "theme-dark-360.png",
+  "theme-light-360.png",
+  "system-dark-360.png",
+  "system-light-360.png",
+  "theme-dark-1280.png",
+  "theme-light-1280.png"
+ ],
+ "notes": [
+  "Default with no stored value is System.",
+  "Explicit Light/Dark settings are stored in localStorage under sga-theme-mode.",
+  "The inline head script runs before the stylesheet link; theme.js handles the controls and system changes.",
+  "System-change coverage uses a controlled matchMedia harness, not an OS theme switch."
+ ]
+}

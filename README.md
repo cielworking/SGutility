@@ -2,11 +2,14 @@
 
 ## Theme
 
-The interface follows the visitor's light or dark system preference automatically,
-including a preference change while the page is open. Theme colours are CSS custom
-properties in `style.css`; a `prefers-color-scheme: dark` block overrides the tokens
-and the few component surfaces that still need explicit values. There is no toggle
-and no stored override.
+The interface offers System, Light and Dark choices from the header control. System
+is the default and follows the visitor's device preference, including a change while
+the page is open. An explicit Light or Dark choice is stored in `localStorage` and
+overrides the system preference until the visitor chooses System again. A small inline
+head script applies the stored choice before first paint to avoid a wrong-theme flash;
+`theme.js` handles the control, persists the choice and listens for system changes.
+Theme colours are CSS custom properties in `style.css`, with dark rules scoped to
+`html[data-theme="dark"]`.
 
 ## Weather and air quality
 
