@@ -1,6 +1,8 @@
 {
  "testedOn": "2026-11-13",
- "method": "Headless Chrome 157 at exact viewports; prefers-color-scheme forced with preferredColorScheme=1 (light) and --force-dark-mode (dark). Each case checks document horizontal overflow and samples visible text contrast (WCAG 1.4.3).",
+ "verifiedAgainstMain": "465b51d9",
+ "mergeBase": "0b4f9d6",
+ "method": "Headless Chrome 157 at exact viewports on the merged tree; prefers-color-scheme forced with preferredColorScheme=1 (light) and --force-dark-mode (dark). Each case checks document horizontal overflow and samples visible text contrast (WCAG 1.4.3).",
  "schemes": [
   "light",
   "dark"
@@ -78,7 +80,7 @@
     ]
    },
    "title": "About SG Alerts",
-   "checkedAt": "2026-11-13T00:23:42.223Z",
+   "checkedAt": "2026-11-13T00:36:04.056Z",
    "scheme": "light"
   },
   {
@@ -111,7 +113,7 @@
     ]
    },
    "title": "Latest COE Results Singapore | SG Alerts",
-   "checkedAt": "2026-11-13T00:23:42.943Z",
+   "checkedAt": "2026-11-13T00:36:04.776Z",
    "scheme": "light"
   },
   {
@@ -144,7 +146,7 @@
     ]
    },
    "title": "Singapore How-To Guides | SG Alerts",
-   "checkedAt": "2026-11-13T00:23:41.503Z",
+   "checkedAt": "2026-11-13T00:36:03.336Z",
    "scheme": "light"
   },
   {
@@ -177,7 +179,7 @@
     ]
    },
    "title": "Singapore How-To Guides | SG Alerts",
-   "checkedAt": "2026-11-13T00:23:40.783Z",
+   "checkedAt": "2026-11-13T00:36:02.616Z",
    "scheme": "light"
   },
   {
@@ -192,7 +194,7 @@
    "horizontalOverflow": 0,
    "overflow": [],
    "overflowCount": 0,
-   "textSamples": 248,
+   "textSamples": 254,
    "contrastFailures": [],
    "contrastFailureCount": 0,
    "theme": {
@@ -210,7 +212,7 @@
     ]
    },
    "title": "Woodlands & Tuas Cams, Petrol, COE | SG Alerts",
-   "checkedAt": "2026-11-13T00:23:37.113Z",
+   "checkedAt": "2026-11-13T00:35:58.966Z",
    "scheme": "light"
   },
   {
@@ -225,7 +227,7 @@
    "horizontalOverflow": 0,
    "overflow": [],
    "overflowCount": 0,
-   "textSamples": 239,
+   "textSamples": 245,
    "contrastFailures": [],
    "contrastFailureCount": 0,
    "theme": {
@@ -243,7 +245,7 @@
     ]
    },
    "title": "Woodlands & Tuas Cams, Petrol, COE | SG Alerts",
-   "checkedAt": "2026-11-13T00:23:35.593Z",
+   "checkedAt": "2026-11-13T00:35:57.476Z",
    "scheme": "light"
   },
   {
@@ -258,7 +260,7 @@
    "horizontalOverflow": 0,
    "overflow": [],
    "overflowCount": 0,
-   "textSamples": 239,
+   "textSamples": 245,
    "contrastFailures": [],
    "contrastFailureCount": 0,
    "theme": {
@@ -276,7 +278,7 @@
     ]
    },
    "title": "Woodlands & Tuas Cams, Petrol, COE | SG Alerts",
-   "checkedAt": "2026-11-13T00:23:36.323Z",
+   "checkedAt": "2026-11-13T00:35:58.206Z",
    "scheme": "light"
   },
   {
@@ -309,7 +311,7 @@
     ]
    },
    "title": "Singapore Petrol Prices Today | SG Alerts",
-   "checkedAt": "2026-11-13T00:23:38.563Z",
+   "checkedAt": "2026-11-13T00:36:00.416Z",
    "scheme": "light"
   },
   {
@@ -342,7 +344,7 @@
     ]
    },
    "title": "Singapore Petrol Prices Today | SG Alerts",
-   "checkedAt": "2026-11-13T00:23:37.843Z",
+   "checkedAt": "2026-11-13T00:35:59.696Z",
    "scheme": "light"
   },
   {
@@ -357,7 +359,7 @@
    "horizontalOverflow": 0,
    "overflow": [],
    "overflowCount": 0,
-   "textSamples": 146,
+   "textSamples": 157,
    "contrastFailures": [],
    "contrastFailureCount": 0,
    "theme": {
@@ -375,7 +377,7 @@
     ]
    },
    "title": "Singapore Rain Radar Live | SG Alerts",
-   "checkedAt": "2026-11-13T00:23:40.063Z",
+   "checkedAt": "2026-11-13T00:36:01.896Z",
    "scheme": "light"
   },
   {
@@ -390,7 +392,7 @@
    "horizontalOverflow": 0,
    "overflow": [],
    "overflowCount": 0,
-   "textSamples": 137,
+   "textSamples": 148,
    "contrastFailures": [],
    "contrastFailureCount": 0,
    "theme": {
@@ -408,7 +410,7 @@
     ]
    },
    "title": "Singapore Rain Radar Live | SG Alerts",
-   "checkedAt": "2026-11-13T00:23:39.313Z",
+   "checkedAt": "2026-11-13T00:36:01.156Z",
    "scheme": "light"
   },
   {
@@ -441,7 +443,7 @@
     ]
    },
    "title": "About SG Alerts",
-   "checkedAt": "2026-11-13T00:24:51.482Z",
+   "checkedAt": "2026-11-13T00:35:58.237Z",
    "scheme": "dark"
   },
   {
@@ -474,7 +476,7 @@
     ]
    },
    "title": "Latest COE Results Singapore | SG Alerts",
-   "checkedAt": "2026-11-13T00:24:52.202Z",
+   "checkedAt": "2026-11-13T00:35:58.957Z",
    "scheme": "dark"
   },
   {
@@ -507,7 +509,7 @@
     ]
    },
    "title": "Singapore How-To Guides | SG Alerts",
-   "checkedAt": "2026-11-13T00:24:50.762Z",
+   "checkedAt": "2026-11-13T00:35:57.517Z",
    "scheme": "dark"
   },
   {
@@ -540,7 +542,7 @@
     ]
    },
    "title": "Singapore How-To Guides | SG Alerts",
-   "checkedAt": "2026-11-13T00:24:50.042Z",
+   "checkedAt": "2026-11-13T00:35:56.797Z",
    "scheme": "dark"
   },
   {
@@ -555,7 +557,7 @@
    "horizontalOverflow": 0,
    "overflow": [],
    "overflowCount": 0,
-   "textSamples": 248,
+   "textSamples": 254,
    "contrastFailures": [],
    "contrastFailureCount": 0,
    "theme": {
@@ -573,7 +575,7 @@
     ]
    },
    "title": "Woodlands & Tuas Cams, Petrol, COE | SG Alerts",
-   "checkedAt": "2026-11-13T00:24:46.402Z",
+   "checkedAt": "2026-11-13T00:35:53.157Z",
    "scheme": "dark"
   },
   {
@@ -588,7 +590,7 @@
    "horizontalOverflow": 0,
    "overflow": [],
    "overflowCount": 0,
-   "textSamples": 241,
+   "textSamples": 245,
    "contrastFailures": [],
    "contrastFailureCount": 0,
    "theme": {
@@ -606,7 +608,7 @@
     ]
    },
    "title": "Woodlands & Tuas Cams, Petrol, COE | SG Alerts",
-   "checkedAt": "2026-11-13T00:24:44.922Z",
+   "checkedAt": "2026-11-13T00:35:51.627Z",
    "scheme": "dark"
   },
   {
@@ -621,7 +623,7 @@
    "horizontalOverflow": 0,
    "overflow": [],
    "overflowCount": 0,
-   "textSamples": 241,
+   "textSamples": 245,
    "contrastFailures": [],
    "contrastFailureCount": 0,
    "theme": {
@@ -639,7 +641,7 @@
     ]
    },
    "title": "Woodlands & Tuas Cams, Petrol, COE | SG Alerts",
-   "checkedAt": "2026-11-13T00:24:45.652Z",
+   "checkedAt": "2026-11-13T00:35:52.357Z",
    "scheme": "dark"
   },
   {
@@ -672,7 +674,7 @@
     ]
    },
    "title": "Singapore Petrol Prices Today | SG Alerts",
-   "checkedAt": "2026-11-13T00:24:47.852Z",
+   "checkedAt": "2026-11-13T00:35:54.607Z",
    "scheme": "dark"
   },
   {
@@ -705,7 +707,7 @@
     ]
    },
    "title": "Singapore Petrol Prices Today | SG Alerts",
-   "checkedAt": "2026-11-13T00:24:47.132Z",
+   "checkedAt": "2026-11-13T00:35:53.887Z",
    "scheme": "dark"
   },
   {
@@ -720,7 +722,7 @@
    "horizontalOverflow": 0,
    "overflow": [],
    "overflowCount": 0,
-   "textSamples": 144,
+   "textSamples": 157,
    "contrastFailures": [],
    "contrastFailureCount": 0,
    "theme": {
@@ -738,7 +740,7 @@
     ]
    },
    "title": "Singapore Rain Radar Live | SG Alerts",
-   "checkedAt": "2026-11-13T00:24:49.322Z",
+   "checkedAt": "2026-11-13T00:35:56.077Z",
    "scheme": "dark"
   },
   {
@@ -753,7 +755,7 @@
    "horizontalOverflow": 0,
    "overflow": [],
    "overflowCount": 0,
-   "textSamples": 143,
+   "textSamples": 148,
    "contrastFailures": [],
    "contrastFailureCount": 0,
    "theme": {
@@ -771,7 +773,7 @@
     ]
    },
    "title": "Singapore Rain Radar Live | SG Alerts",
-   "checkedAt": "2026-11-13T00:24:48.582Z",
+   "checkedAt": "2026-11-13T00:35:55.337Z",
    "scheme": "dark"
   }
  ]
