@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-11-13T23:23:19.629829+08:00",
+  "last_updated": "2026-11-14T05:58:39.173979+08:00",
   "headlines": [
-    {
-      "category": "Crime",
-      "title": "Pochettino to leave US team and take charge of struggling Man United",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pochettino-manchester-united-us-football-6549436",
-      "published": "2026-11-13 20:11"
-    },
     {
       "category": "Crime",
       "title": "S'porean man, 60, molests student nurse, 20, gets S$4,000 fine, ordered to pay S$1,000 to victim",
@@ -101,6 +94,13 @@
     },
     {
       "category": "Traffic",
+      "title": "US air force responds to suspected drone activity over UK airbase",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-air-force-responds-suspected-drone-activity-over-uk-airbase-6550596",
+      "published": "2026-11-14 05:35"
+    },
+    {
+      "category": "Traffic",
       "title": "'I'm a piece of sh*t': Jensen Huang reportedly said he doesn't care what happens to him, main concern is wife & women linked to him",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/jensen-huang-care/",
@@ -112,6 +112,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/katong-cyclist-pick-child-school/",
       "published": "2026-11-13 19:53"
+    },
+    {
+      "category": "Traffic",
+      "title": "New smart video system on roads can help identify cause of traffic accidents, detect illegal parking",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/new-smart-video-system-on-roads-can-help-identify-cause-of-traffic-accidents-detect-illegal-parking",
+      "published": "2026-11-14 05:00"
     },
     {
       "category": "Traffic",
@@ -157,6 +164,13 @@
     },
     {
       "category": "Transport",
+      "title": "Faxes, phones and Bluetooth: Microsoft outage forces businesses to find fixes",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/microsoft-outage-businesses-fixes-fax-6550041",
+      "published": "2026-11-13 23:17"
+    },
+    {
+      "category": "Transport",
       "title": "Home Team officers developed correctional programme for etomidate abusers in a few months",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/home-team-officers-developed-correctional-programme-for-etomidate-abusers-in-a-few-months",
@@ -185,101 +199,87 @@
     },
     {
       "category": "General",
-      "title": "Gordon returns for Australia two months after leg break",
+      "title": "Stocks fall but Wall Street notches a winning week after several turbulent days",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/gordon-returns-australia-two-months-after-leg-break-6550046",
-      "published": "2026-11-13 22:56"
+      "url": "https://www.channelnewsasia.com/world/stocks-fall-wall-street-notches-winning-week-after-several-turbulent-days-6550656",
+      "published": "2026-11-14 05:54"
     },
     {
       "category": "General",
-      "title": "Gambhir concerned by India's batting collapses ahead of ODI World Cup",
+      "title": "Tanker hits river cruise ship near New Orleans port",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/gambhir-concerned-indias-batting-collapses-ahead-odi-world-cup-6549991",
-      "published": "2026-11-13 22:41"
+      "url": "https://www.channelnewsasia.com/world/tanker-hits-river-cruise-ship-near-new-orleans-port-6550576",
+      "published": "2026-11-14 05:09"
     },
     {
       "category": "General",
-      "title": "RedBird launches Milan sports holding company, names Brett Yormark CEO",
+      "title": "AI rockets to top of worries about financial system in latest Fed survey",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/redbird-launches-milan-sports-holding-company-names-brett-yormark-ceo-6549976",
-      "published": "2026-11-13 22:37"
+      "url": "https://www.channelnewsasia.com/business/ai-rockets-top-worries-about-financial-system-in-latest-fed-survey-6550586",
+      "published": "2026-11-14 05:02"
     },
     {
       "category": "General",
-      "title": "Scotland tweak team with two changes to face Australia",
+      "title": "Meta employees test prediction-market app, WSJ reports",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/scotland-tweak-team-two-changes-face-australia-6549901",
-      "published": "2026-11-13 22:18"
+      "url": "https://www.channelnewsasia.com/business/meta-employees-test-prediction-market-app-wsj-reports-6550526",
+      "published": "2026-11-14 04:28"
     },
     {
       "category": "General",
-      "title": "Singapore lose 4-1 to Paraguay in opening fixture of friendly tournament",
+      "title": "Europe chooses team for Ukraine talks",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/singapore-paraguay-friendly-tournament-mizuho-blue-challenge-6548866",
-      "published": "2026-11-13 22:04"
+      "url": "https://www.channelnewsasia.com/world/europe-ukraine-russia-talks-putin-us-envoys-6550496",
+      "published": "2026-11-14 04:25"
     },
     {
       "category": "General",
-      "title": "South Africa will not ease off against Bangladesh, Rabada warns",
+      "title": "Microsoft 'deeply sorry' as outage triggers global chaos",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/south-africa-will-not-ease-against-bangladesh-rabada-warns-6549821",
-      "published": "2026-11-13 21:46"
+      "url": "https://www.channelnewsasia.com/world/microsoft-outage-recovery-deeply-sorry-outlook-teams-6550421",
+      "published": "2026-11-14 03:18"
     },
     {
       "category": "General",
-      "title": "Russia says Europeans can join Ukraine peace talks if they show 'readiness to contribute'",
+      "title": "Nvidia's Huang turns to Paul Weiss, law firm that inked deal with Trump",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/russia-kremlin-ukraine-eu-talks-negotiations-6549796",
-      "published": "2026-11-13 21:39"
+      "url": "https://www.channelnewsasia.com/business/nvidias-huang-turns-paul-weiss-law-firm-inked-deal-trump-6550426",
+      "published": "2026-11-14 03:03"
     },
     {
       "category": "General",
-      "title": "Germany's Merz asks Trump for 'no surprises' from Putin talks",
+      "title": "From Bollywood to Clippy: Nvidia scandal, Outlook glitch fuel meme storm",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/germany-friedrich-merz-eu-russia-ukraine-war-putin-talks-6549776",
-      "published": "2026-11-13 21:35"
+      "url": "https://www.channelnewsasia.com/business/bollywood-clippy-nvidia-scandal-outlook-glitch-fuel-meme-storm-6550411",
+      "published": "2026-11-14 02:55"
     },
     {
       "category": "General",
-      "title": "My breast reduction surgery made me realise I should have got it done earlier",
+      "title": "Ronaldinho poised for Ravenna start and, perhaps, one last goal",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/voices/breast-reduction-surgery-endure-pain-6545596",
-      "published": "2026-11-13 21:30"
+      "url": "https://www.channelnewsasia.com/sport/ronaldinho-poised-ravenna-start-and-perhaps-one-last-goal-6550376",
+      "published": "2026-11-14 02:10"
     },
     {
       "category": "General",
-      "title": "Forrest Li has given Singapore football a lift, but can he build a legacy that lasts?",
+      "title": "Pope returns to 'beloved' Peruvian hometown",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/cna-insider/big-read/forrest-li-football-future-fas-asian-cup-premier-league-6545356",
-      "published": "2026-11-13 21:30"
+      "url": "https://www.channelnewsasia.com/world/pope-leo-peru-visit-south-america-tour-6550281",
+      "published": "2026-11-14 01:46"
     },
     {
       "category": "General",
-      "title": "Tabletop games' popularity holds up as people seek off-screen connections, Asmodee CEO says",
+      "title": "Pochettino wants to end tenure as US coach on high note",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/tabletop-games-popularity-holds-up-people-seek-screen-connections-asmodee-ceo-says-6549716",
-      "published": "2026-11-13 21:01"
+      "url": "https://www.channelnewsasia.com/sport/pochettino-wants-end-tenure-us-coach-high-note-6550301",
+      "published": "2026-11-14 01:14"
     },
     {
       "category": "General",
-      "title": "COVID-era Wuhan party boss under investigation, says China's anti-graft watchdog",
+      "title": "Nvidia approached Arm CEO Haas to succeed Huang, FT reports",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/covid-era-wuhan-party-boss-under-investigation-says-chinas-anti-graft-watchdog-6549631",
-      "published": "2026-11-13 20:57"
-    },
-    {
-      "category": "General",
-      "title": "Exiled Cambodian politician denounces Francophonie summit, citing repression",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/sam-rainsy-exile-cambodia-government-denounces-francophonie-summit-6549581",
-      "published": "2026-11-13 20:47"
-    },
-    {
-      "category": "General",
-      "title": "Barcelona finalise €300 million bond issue to complete Camp Nou renovations",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/barcelona-finalise-eu300-million-bond-issue-complete-camp-nou-renovations-6549591",
-      "published": "2026-11-13 20:47"
+      "url": "https://www.channelnewsasia.com/business/nvidia-approached-arm-ceo-haas-succeed-huang-ft-reports-6550286",
+      "published": "2026-11-14 01:08"
     }
   ]
 }
