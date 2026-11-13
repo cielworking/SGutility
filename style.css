@@ -1511,8 +1511,8 @@ svg {
 
 @media (max-width: 700px) {
   :root {
-    --header-height: 112px;
-    --radius: 14px;
+  --header-height: 112px;
+  --radius: 14px;
   }
 
   .header-inner,
@@ -2867,7 +2867,7 @@ select.fuel-selector,
 
 @media (max-width: 700px) {
   :root {
-    --header-height: 64px;
+  --header-height: 64px;
   }
 
   body {
@@ -3108,420 +3108,471 @@ select.fuel-selector,
   }
 }
 
-/* ---------------------------------------------------------------------------
-   Phase 4: system light/dark theme
-   Follows the operating system / browser preference through
-   prefers-color-scheme. There is no toggle and no stored override, so a
-   preference change applies live without a reload. Light stays the default.
-   --------------------------------------------------------------------------- */
+
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --chart-grid: #dce4ef;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --page: #0b1220;
-    --surface: #111b2e;
-    --surface-subtle: #0e1728;
-    --text: #e8eef8;
-    --muted: #a9b7cc;
-    --border: #26344b;
-    --border-strong: #3f5474;
-    --brand: #79a7ff;
-    --brand-strong: #a9c8ff;
-    --brand-soft: #17264a;
-    --green: #6fdc9f;
-    --green-soft: #12291f;
-    --red: #ff9d9d;
-    --red-soft: #2e1719;
-    --amber: #f3c969;
-    --amber-soft: #2b2210;
-    --ink: #e8eef8;
-    --shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
-    --chart-grid: #2a3a52;
+/* Manual Light / Dark / System control. The head script applies the stored
+   choice before first paint; this keeps the control compact and tappable. */
+
+.primary-nav {
+  margin-left: auto;
+}
+
+.theme-control {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-subtle);
+}
+
+.theme-choice {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.theme-choice svg {
+  width: 18px;
+  height: 18px;
+}
+
+.theme-choice:hover {
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+}
+
+.theme-choice:focus-visible {
+  outline: 3px solid rgba(21, 94, 239, 0.35);
+  outline-offset: 2px;
+}
+
+.theme-choice[aria-pressed="true"],
+:root[data-theme-mode="system"] .theme-choice[data-theme-choice="system"],
+:root[data-theme-mode="light"] .theme-choice[data-theme-choice="light"],
+:root[data-theme-mode="dark"] .theme-choice[data-theme-choice="dark"] {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+}
+
+@media (max-width: 700px) {
+  .theme-choice {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
   }
-
-  body {
-    background: radial-gradient(ellipse at 8% 0%, #142846 0%, transparent 44rem),
-      radial-gradient(ellipse at 100% 32rem, #102b2a 0%, transparent 48rem), #0b1220;
-  }
-
-  .site-header {
-    border-bottom-color: rgba(38, 52, 75, 0.9);
-    background: rgba(11, 18, 32, 0.92);
-  }
-
-  .site-footer,
-  .mobile-tabbar,
-  .tabbar-sheet {
-    background: var(--surface);
-  }
-
-  .mobile-tabbar {
-    box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.42);
-  }
-
-  .tabbar-sheet {
-    box-shadow: 0 -18px 40px rgba(0, 0, 0, 0.55);
-  }
-
-  .tabbar-sheet::before {
-    background: var(--border-strong);
-  }
-
-  .tabbar-more[open]::before {
-    background: rgba(2, 6, 14, 0.62);
-  }
-
-  /* Controls and small surfaces that were hard-coded white. */
-
-  .news-controls button,
-  .news-filter,
-  .nav-panel,
-  .region-tablist [role="tab"],
-  .psi-tile,
-  .petrol-cheapest > div,
-  .sga-collapse,
-  .share-bar button,
-  .share-bar a,
-  .guide-filters button,
-  .petrol-discount-card,
-  .petrol-table,
-  .effective-table,
-  .fuel-selector,
-  .back-link,
-  .pool-summary-strip span,
-  .sgpools-prize,
-  .number-grid span,
-  .lucky-result,
-  .air-country-tabs button,
-  #air-metric-controls button,
-  .air-region-list button,
-  .weather-filter select,
-  .radar-range-label select,
-  #air-malaysia-controls select {
-    background: var(--surface);
-    color: var(--text);
-  }
-
-  .news-controls button,
-  .news-filter,
-  .fuel-selector,
-  .back-link,
-  .air-country-tabs button,
-  #air-metric-controls button,
-  .air-region-list button,
-  .weather-filter select,
-  .radar-range-label select,
-  #air-malaysia-controls select {
-    border-color: var(--border-strong);
-  }
-
-  .button-ghost:hover {
-    background: #18253c;
-    color: var(--text);
-  }
-
-  .news-card-item:hover {
-    border-color: var(--border-strong);
-    background: #16243a;
-  }
-
-  .checkpoint-camera {
-    background: #16233a;
-  }
-
-  .air-empty-chart {
-    background: var(--surface-subtle);
-    color: var(--muted);
-  }
-
-  /* Tables */
-
-  .petrol-header,
-  .effective-header {
-    background: #18253c;
-    color: var(--muted);
-  }
-
-  .petrol-row {
-    border-top-color: var(--border);
-  }
-
-  .petrol-row:nth-child(odd) {
-    background: #0e1828;
-  }
-
-  .petrol-row > span {
-    border-left-color: var(--border);
-    color: var(--text);
-  }
-
-  .effective-table-row {
-    border-top-color: var(--border);
-  }
-
-  .row {
-    border-bottom-color: var(--border);
-  }
-
-  /* Cards, gradients and map placeholders */
-
-  .intro {
-    border-color: var(--border);
-    background: linear-gradient(120deg, #121e33, #0f1a2c);
-  }
-
-  .page-hero {
-    background: radial-gradient(circle at 92% 8%, rgba(121, 167, 255, 0.12), transparent 35%),
-      var(--surface);
-  }
-
-  .radar-panel {
-    border-color: var(--border);
-    background: var(--surface-subtle);
-  }
-
-  .region-card {
-    border-color: var(--border);
-    background: linear-gradient(150deg, #132743, #111b2e);
-  }
-
-  .weather-explainer {
-    border-color: var(--border);
-    background: var(--surface-subtle);
-  }
-
-  .malaysia-day {
-    border-color: #24503f;
-    background: #10251f;
-  }
-
-  .weather-summary {
-    border-color: var(--border);
-    background: linear-gradient(145deg, #14243d, #111b2e);
-  }
-
-  #haze .weather-summary {
-    border-color: #24503f;
-    background: linear-gradient(145deg, #102a25, #111b2e);
-  }
-
-  .weather-tile {
-    background: var(--surface-subtle);
-  }
-
-  #air-map,
-  #rain-map {
-    border-color: var(--border);
-    background: #16233a;
-  }
-
-  /* Status, freshness and air-quality bands */
-
-  .live-badge {
-    border-color: rgba(111, 220, 159, 0.35);
-  }
-
-  .live-badge > span {
-    background: var(--green);
-  }
-
-  .freshness-chip {
-    color: var(--muted);
-  }
-
-  #air-source-stamp.is-stale,
-  .feed-status.is-stale {
-    border-left-color: var(--amber);
-    background: var(--amber-soft);
-    color: var(--amber);
-  }
-
-  .air-category {
-    background: #1b2940;
-    color: var(--text);
-  }
-
-  .air-category.good {
-    background: #123024;
-    color: var(--green);
-  }
-
-  .air-category.moderate {
-    background: #2a2110;
-    color: var(--amber);
-  }
-
-  .air-category.unhealthy {
-    background: var(--red-soft);
-    color: var(--red);
-  }
-
-  .air-history-table summary {
-    color: var(--brand-strong);
-  }
-
-  .air-history-table th,
-  .air-history-table td,
-  .air-legend,
-  .outlook-timeline li,
-  .weather-explainer,
-  .site-header,
-  .tabbar-sheet-links a[aria-current="page"] {
-    border-color: var(--border);
-  }
-
-  .detail-link,
-  .toto-numbers span,
-  .toto-lucky span {
-    border-color: var(--border-strong);
-  }
-
-  .detail-link:hover,
-  .button-secondary:hover,
-  .news-controls button:hover,
-  .news-filter:hover,
-  .news-filter.is-active,
-  .petrol-discount-card:hover,
-  .back-link:hover {
-    border-color: var(--border-strong);
-  }
-
-  /* Text that was tuned for a light background */
-
-  .primary-nav a,
-  .primary-nav summary,
-  .button-secondary,
-  .button-ghost,
-  .news-controls button,
-  .news-filter,
-  .news-tag,
-  .row > span,
-  .bto-tile p,
-  .petrol-row > span,
-  .effective-header,
-  .quick-tile p,
-  .document-nav a,
-  .legal-intro,
-  .legal-document p,
-  .legal-document li,
-  .back-link,
-  .response-note,
-  .air-country-tabs button,
-  #air-metric-controls button,
-  .air-region-list button,
-  .air-legend strong {
-    color: var(--text);
-  }
-
-  .news-traffic,
-  .news-transport {
-    color: var(--amber);
-  }
-
-  .news-crime {
-    color: var(--red);
-  }
-
-  .section-note,
-  .note,
-  .news-meta,
-  .source-link,
-  .freshness-chip,
-  .glance-label,
-  .pools-tagline,
-  .breadcrumbs,
-  .weather-summary p,
-  .weather-periods dt,
-  .air-reading small,
-  .feed-status,
-  .radar-heading p,
-  .radar-time-labels,
-  .refresh-feedback,
-  .outlook-timeline li span,
-  .day-periods dt,
-  .air-legend > span,
-  #air-metric-label,
-  #air-reading-context,
-  .tabbar-item {
-    color: var(--muted);
-  }
-
-  #radar-stamp,
-  .region-card h3,
-  .weather-condition {
-    color: var(--brand-strong);
-  }
-
-  /* Primary actions sit on the lighter dark-mode brand colour. */
-
-  .skip-link {
-    background: var(--brand);
-    color: #07101f;
-  }
-
-  .contact-button {
-    color: #07101f !important;
-  }
-
-  .lucky-actions button {
-    color: #07101f;
-  }
-
-  .air-country-tabs [aria-selected="true"] {
-    border-color: var(--brand);
-    background: var(--brand);
-    color: #07101f;
-  }
-
-  .weather-tabs [aria-current="page"] {
-    background: var(--brand);
-    color: #07101f;
-  }
-
-  .air-region-list [aria-pressed="true"] {
-    background: var(--brand-soft);
-    outline-color: var(--brand);
-  }
-
-  /* The maps keep their light tiles; keep their controls readable on them. */
-
-  .leaflet-container .leaflet-control-attribution {
-    background: rgba(255, 255, 255, 0.9);
-    color: #344054;
-  }
-
-  .leaflet-container .leaflet-control-attribution a {
-    color: #0b5aa0;
-  }
-
-  .air-trend svg text {
-    fill: var(--muted);
-  }
-
-  .air-trend svg line {
-    stroke: var(--chart-grid);
-  }
-
-  .air-trend svg rect:hover,
-  .air-trend svg rect:focus {
-    stroke: var(--text);
-  }
-
-  :focus-visible {
-    outline-color: rgba(121, 167, 255, 0.6);
-  }
-
-  .air-marker-wrap:focus-visible {
-    outline-color: var(--brand);
-  }
-
-  ::selection {
-    background: rgba(121, 167, 255, 0.35);
-    color: var(--text);
-  }
+}
+
+/* Phase 4: manual light / dark / system theme
+   The inline head script resolves System/Light/Dark before first paint and
+   sets data-theme on <html>; theme.js updates it when the choice or system
+   preference changes. Dark rules are scoped to the attribute so an explicit
+   choice always wins over the OS preference. */
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0b1220;
+  --surface: #111b2e;
+  --surface-subtle: #0e1728;
+  --text: #e8eef8;
+  --muted: #a9b7cc;
+  --border: #26344b;
+  --border-strong: #3f5474;
+  --brand: #79a7ff;
+  --brand-strong: #a9c8ff;
+  --brand-soft: #17264a;
+  --green: #6fdc9f;
+  --green-soft: #12291f;
+  --red: #ff9d9d;
+  --red-soft: #2e1719;
+  --amber: #f3c969;
+  --amber-soft: #2b2210;
+  --ink: #e8eef8;
+  --shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+  --chart-grid: #2a3a52;
+}
+
+:root[data-theme="dark"] body {
+  background: radial-gradient(ellipse at 8% 0%, #142846 0%, transparent 44rem),
+  radial-gradient(ellipse at 100% 32rem, #102b2a 0%, transparent 48rem), #0b1220;
+}
+
+:root[data-theme="dark"] .site-header {
+  border-bottom-color: rgba(38, 52, 75, 0.9);
+  background: rgba(11, 18, 32, 0.92);
+}
+
+:root[data-theme="dark"] .site-footer,
+:root[data-theme="dark"] .mobile-tabbar,
+:root[data-theme="dark"] .tabbar-sheet {
+  background: var(--surface);
+}
+
+:root[data-theme="dark"] .mobile-tabbar {
+  box-shadow: 0 -6px 18px rgba(0, 0, 0, 0.42);
+}
+
+:root[data-theme="dark"] .tabbar-sheet {
+  box-shadow: 0 -18px 40px rgba(0, 0, 0, 0.55);
+}
+
+:root[data-theme="dark"] .tabbar-sheet::before {
+  background: var(--border-strong);
+}
+
+:root[data-theme="dark"] .tabbar-more[open]::before {
+  background: rgba(2, 6, 14, 0.62);
+}
+
+:root[data-theme="dark"] .news-controls button,
+:root[data-theme="dark"] .news-filter,
+:root[data-theme="dark"] .nav-panel,
+:root[data-theme="dark"] .region-tablist [role="tab"],
+:root[data-theme="dark"] .psi-tile,
+:root[data-theme="dark"] .petrol-cheapest > div,
+:root[data-theme="dark"] .sga-collapse,
+:root[data-theme="dark"] .share-bar button,
+:root[data-theme="dark"] .share-bar a,
+:root[data-theme="dark"] .guide-filters button,
+:root[data-theme="dark"] .petrol-discount-card,
+:root[data-theme="dark"] .petrol-table,
+:root[data-theme="dark"] .effective-table,
+:root[data-theme="dark"] .fuel-selector,
+:root[data-theme="dark"] .back-link,
+:root[data-theme="dark"] .pool-summary-strip span,
+:root[data-theme="dark"] .sgpools-prize,
+:root[data-theme="dark"] .number-grid span,
+:root[data-theme="dark"] .lucky-result,
+:root[data-theme="dark"] .air-country-tabs button,
+:root[data-theme="dark"] #air-metric-controls button,
+:root[data-theme="dark"] .air-region-list button,
+:root[data-theme="dark"] .weather-filter select,
+:root[data-theme="dark"] .radar-range-label select,
+:root[data-theme="dark"] #air-malaysia-controls select {
+  background: var(--surface);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .news-controls button,
+:root[data-theme="dark"] .news-filter,
+:root[data-theme="dark"] .fuel-selector,
+:root[data-theme="dark"] .back-link,
+:root[data-theme="dark"] .air-country-tabs button,
+:root[data-theme="dark"] #air-metric-controls button,
+:root[data-theme="dark"] .air-region-list button,
+:root[data-theme="dark"] .weather-filter select,
+:root[data-theme="dark"] .radar-range-label select,
+:root[data-theme="dark"] #air-malaysia-controls select {
+  border-color: var(--border-strong);
+}
+
+:root[data-theme="dark"] .button-ghost:hover {
+  background: #18253c;
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .news-card-item:hover {
+  border-color: var(--border-strong);
+  background: #16243a;
+}
+
+:root[data-theme="dark"] .checkpoint-camera {
+  background: #16233a;
+}
+
+:root[data-theme="dark"] .air-empty-chart {
+  background: var(--surface-subtle);
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .petrol-header,
+:root[data-theme="dark"] .effective-header {
+  background: #18253c;
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] .petrol-row {
+  border-top-color: var(--border);
+}
+
+:root[data-theme="dark"] .petrol-row:nth-child(odd) {
+  background: #0e1828;
+}
+
+:root[data-theme="dark"] .petrol-row > span {
+  border-left-color: var(--border);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .effective-table-row {
+  border-top-color: var(--border);
+}
+
+:root[data-theme="dark"] .row {
+  border-bottom-color: var(--border);
+}
+
+:root[data-theme="dark"] .intro {
+  border-color: var(--border);
+  background: linear-gradient(120deg, #121e33, #0f1a2c);
+}
+
+:root[data-theme="dark"] .page-hero {
+  background: radial-gradient(circle at 92% 8%, rgba(121, 167, 255, 0.12), transparent 35%),
+  var(--surface);
+}
+
+:root[data-theme="dark"] .radar-panel {
+  border-color: var(--border);
+  background: var(--surface-subtle);
+}
+
+:root[data-theme="dark"] .region-card {
+  border-color: var(--border);
+  background: linear-gradient(150deg, #132743, #111b2e);
+}
+
+:root[data-theme="dark"] .weather-explainer {
+  border-color: var(--border);
+  background: var(--surface-subtle);
+}
+
+:root[data-theme="dark"] .malaysia-day {
+  border-color: #24503f;
+  background: #10251f;
+}
+
+:root[data-theme="dark"] .weather-summary {
+  border-color: var(--border);
+  background: linear-gradient(145deg, #14243d, #111b2e);
+}
+
+:root[data-theme="dark"] #haze .weather-summary {
+  border-color: #24503f;
+  background: linear-gradient(145deg, #102a25, #111b2e);
+}
+
+:root[data-theme="dark"] .weather-tile {
+  background: var(--surface-subtle);
+}
+
+:root[data-theme="dark"] #air-map,
+:root[data-theme="dark"] #rain-map {
+  border-color: var(--border);
+  background: #16233a;
+}
+
+:root[data-theme="dark"] .live-badge {
+  border-color: rgba(111, 220, 159, 0.35);
+}
+
+:root[data-theme="dark"] .live-badge > span {
+  background: var(--green);
+}
+
+:root[data-theme="dark"] .freshness-chip {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] #air-source-stamp.is-stale,
+:root[data-theme="dark"] .feed-status.is-stale {
+  border-left-color: var(--amber);
+  background: var(--amber-soft);
+  color: var(--amber);
+}
+
+:root[data-theme="dark"] .air-category {
+  background: #1b2940;
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .air-category.good {
+  background: #123024;
+  color: var(--green);
+}
+
+:root[data-theme="dark"] .air-category.moderate {
+  background: #2a2110;
+  color: var(--amber);
+}
+
+:root[data-theme="dark"] .air-category.unhealthy {
+  background: var(--red-soft);
+  color: var(--red);
+}
+
+:root[data-theme="dark"] .air-history-table summary {
+  color: var(--brand-strong);
+}
+
+:root[data-theme="dark"] .air-history-table th,
+:root[data-theme="dark"] .air-history-table td,
+:root[data-theme="dark"] .air-legend,
+:root[data-theme="dark"] .outlook-timeline li,
+:root[data-theme="dark"] .weather-explainer,
+:root[data-theme="dark"] .site-header,
+:root[data-theme="dark"] .tabbar-sheet-links a[aria-current="page"] {
+  border-color: var(--border);
+}
+
+:root[data-theme="dark"] .detail-link,
+:root[data-theme="dark"] .toto-numbers span,
+:root[data-theme="dark"] .toto-lucky span {
+  border-color: var(--border-strong);
+}
+
+:root[data-theme="dark"] .detail-link:hover,
+:root[data-theme="dark"] .button-secondary:hover,
+:root[data-theme="dark"] .news-controls button:hover,
+:root[data-theme="dark"] .news-filter:hover,
+:root[data-theme="dark"] .news-filter.is-active,
+:root[data-theme="dark"] .petrol-discount-card:hover,
+:root[data-theme="dark"] .back-link:hover {
+  border-color: var(--border-strong);
+}
+
+:root[data-theme="dark"] .primary-nav a,
+:root[data-theme="dark"] .primary-nav summary,
+:root[data-theme="dark"] .button-secondary,
+:root[data-theme="dark"] .button-ghost,
+:root[data-theme="dark"] .news-controls button,
+:root[data-theme="dark"] .news-filter,
+:root[data-theme="dark"] .news-tag,
+:root[data-theme="dark"] .row > span,
+:root[data-theme="dark"] .bto-tile p,
+:root[data-theme="dark"] .petrol-row > span,
+:root[data-theme="dark"] .effective-header,
+:root[data-theme="dark"] .quick-tile p,
+:root[data-theme="dark"] .document-nav a,
+:root[data-theme="dark"] .legal-intro,
+:root[data-theme="dark"] .legal-document p,
+:root[data-theme="dark"] .legal-document li,
+:root[data-theme="dark"] .back-link,
+:root[data-theme="dark"] .response-note,
+:root[data-theme="dark"] .air-country-tabs button,
+:root[data-theme="dark"] #air-metric-controls button,
+:root[data-theme="dark"] .air-region-list button,
+:root[data-theme="dark"] .air-legend strong {
+  color: var(--text);
+}
+
+:root[data-theme="dark"] .news-traffic,
+:root[data-theme="dark"] .news-transport {
+  color: var(--amber);
+}
+
+:root[data-theme="dark"] .news-crime {
+  color: var(--red);
+}
+
+:root[data-theme="dark"] .section-note,
+:root[data-theme="dark"] .note,
+:root[data-theme="dark"] .news-meta,
+:root[data-theme="dark"] .source-link,
+:root[data-theme="dark"] .freshness-chip,
+:root[data-theme="dark"] .glance-label,
+:root[data-theme="dark"] .pools-tagline,
+:root[data-theme="dark"] .breadcrumbs,
+:root[data-theme="dark"] .weather-summary p,
+:root[data-theme="dark"] .weather-periods dt,
+:root[data-theme="dark"] .air-reading small,
+:root[data-theme="dark"] .feed-status,
+:root[data-theme="dark"] .radar-heading p,
+:root[data-theme="dark"] .radar-time-labels,
+:root[data-theme="dark"] .refresh-feedback,
+:root[data-theme="dark"] .outlook-timeline li span,
+:root[data-theme="dark"] .day-periods dt,
+:root[data-theme="dark"] .air-legend > span,
+:root[data-theme="dark"] #air-metric-label,
+:root[data-theme="dark"] #air-reading-context,
+:root[data-theme="dark"] .tabbar-item {
+  color: var(--muted);
+}
+
+:root[data-theme="dark"] #radar-stamp,
+:root[data-theme="dark"] .region-card h3,
+:root[data-theme="dark"] .weather-condition {
+  color: var(--brand-strong);
+}
+
+:root[data-theme="dark"] .skip-link {
+  background: var(--brand);
+  color: #07101f;
+}
+
+:root[data-theme="dark"] .contact-button {
+  color: #07101f !important;
+}
+
+:root[data-theme="dark"] .lucky-actions button {
+  color: #07101f;
+}
+
+:root[data-theme="dark"] .air-country-tabs [aria-selected="true"] {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: #07101f;
+}
+
+:root[data-theme="dark"] .weather-tabs [aria-current="page"] {
+  background: var(--brand);
+  color: #07101f;
+}
+
+:root[data-theme="dark"] .air-region-list [aria-pressed="true"] {
+  background: var(--brand-soft);
+  outline-color: var(--brand);
+}
+
+:root[data-theme="dark"] .leaflet-container .leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.9);
+  color: #344054;
+}
+
+:root[data-theme="dark"] .leaflet-container .leaflet-control-attribution a {
+  color: #0b5aa0;
+}
+
+:root[data-theme="dark"] .air-trend svg text {
+  fill: var(--muted);
+}
+
+:root[data-theme="dark"] .air-trend svg line {
+  stroke: var(--chart-grid);
+}
+
+:root[data-theme="dark"] .air-trend svg rect:hover,
+:root[data-theme="dark"] .air-trend svg rect:focus {
+  stroke: var(--text);
+}
+
+:root[data-theme="dark"] :focus-visible {
+  outline-color: rgba(121, 167, 255, 0.6);
+}
+
+:root[data-theme="dark"] .air-marker-wrap:focus-visible {
+  outline-color: var(--brand);
+}
+
+:root[data-theme="dark"] ::selection {
+  background: rgba(121, 167, 255, 0.35);
+  color: var(--text);
 }
