@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-14T18:23:21.674499+08:00",
+  "last_updated": "2026-11-15T01:05:36.230543+08:00",
   "headlines": [
     {
       "category": "Crime",
@@ -14,13 +14,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/us-air-force-captain-arrested-in-japans-okinawa-alleged-drunk-driving-6551551",
       "published": "2026-11-14 17:33"
-    },
-    {
-      "category": "Crime",
-      "title": "Modi's office summons telecom secretary over use of fake court orders, officials say",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/modis-office-summons-telecom-secretary-over-use-fake-court-orders-officials-say-6551491",
-      "published": "2026-11-14 16:02"
     },
     {
       "category": "Crime",
@@ -94,17 +87,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Canada PM Carney touts Philippine trade deal on Asia tour",
+      "title": "Japan avenge World Cup loss with 3-2 win over Brazil amid late red-card drama in Singapore",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/canada-philippines-carney-trade-deal-negotiations-6551536",
-      "published": "2026-11-14 17:08"
-    },
-    {
-      "category": "Traffic",
-      "title": "Singapore authorises carbon credit project to improve safe drinking water access in Rwanda",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/carbon-credit-project-safe-drinking-water-rwanda-6551446",
-      "published": "2026-11-14 16:00"
+      "url": "https://www.channelnewsasia.com/sport/japan-brazil-friendly-mizuho-blue-challenge-6551566",
+      "published": "2026-11-14 20:36"
     },
     {
       "category": "Traffic",
@@ -119,6 +105,13 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/woman-allegedly-steal-pokemon-cards/",
       "published": "2026-11-14 00:47"
+    },
+    {
+      "category": "Traffic",
+      "title": "Motorcyclist, 31, dies after accident in Jurong West; fourth road fatality in four days",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/motorcyclist-31-dies-after-accident-in-jurong-west-fourth-road-fatality-in-four-days",
+      "published": "2026-11-14 18:42"
     },
     {
       "category": "Traffic",
@@ -150,6 +143,13 @@
     },
     {
       "category": "Transport",
+      "title": "Where have all the hipsters gone? Once bustling, Tiong Bahru's streets are now quiet",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/cna-insider/ground-up/tiong-bahru-quiet-cultural-heritage-residents-shops-6534296",
+      "published": "2026-11-14 21:30"
+    },
+    {
+      "category": "Transport",
       "title": "Home Team officers developed correctional programme for etomidate abusers in a few months",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/home-team-officers-developed-correctional-programme-for-etomidate-abusers-in-a-few-months",
@@ -163,11 +163,109 @@
       "published": "2026-11-13 18:01"
     },
     {
-      "category": "Transport",
-      "title": "From training judgment to fostering creativity: How AI is helping staff from these SMEs grow on the job",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/training-judgment-creativity-imda-sbf-sme-ai-impact-awards-2026",
-      "published": "2026-11-13 04:00"
+      "category": "General",
+      "title": "Inspired Wales beat New Zealand for first time in 73 years",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/inspired-wales-beat-new-zealand-first-time-in-73-years-6552006",
+      "published": "2026-11-15 00:16"
+    },
+    {
+      "category": "General",
+      "title": "Italy left frustrated after missed opportunity against Argentina",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/italy-left-frustrated-after-missed-opportunity-against-argentina-6551986",
+      "published": "2026-11-15 00:03"
+    },
+    {
+      "category": "General",
+      "title": "Chelsea hand champions Man City first WSL defeat this season to go top",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/chelsea-hand-champions-man-city-first-wsl-defeat-season-go-top-6551981",
+      "published": "2026-11-14 23:58"
+    },
+    {
+      "category": "General",
+      "title": "De Jong to miss yet another match for the Netherlands",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/de-jong-miss-yet-another-match-netherlands-6551946",
+      "published": "2026-11-14 22:59"
+    },
+    {
+      "category": "General",
+      "title": "Musk says Nvidia will lose 'critical' deals without Jensen Huang",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/musk-says-nvidia-will-lose-critical-deals-without-jensen-huang-6551936",
+      "published": "2026-11-14 22:53"
+    },
+    {
+      "category": "General",
+      "title": "Argentina hand Italy another Nations Championship defeat",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/argentina-hand-italy-another-nations-championship-defeat-6551856",
+      "published": "2026-11-14 22:02"
+    },
+    {
+      "category": "General",
+      "title": "Skiing-Germany's Aicher powers to first World Cup slalom victory in Levi",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/skiing-germanys-aicher-powers-first-world-cup-slalom-victory-in-levi-6551841",
+      "published": "2026-11-14 21:44"
+    },
+    {
+      "category": "General",
+      "title": "BN-PN alliance scores landslide victory in Melaka polls, dealing another setback to PM Anwar",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/melaka-election-2026-bn-landslide-anwar-ph-pn-6551571",
+      "published": "2026-11-14 21:27"
+    },
+    {
+      "category": "General",
+      "title": "'Waiting so long': Fans gather for Eurovision's first Asia show",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/waiting-so-long-fans-gather-eurovisions-first-asia-show-6551791",
+      "published": "2026-11-14 21:11"
+    },
+    {
+      "category": "General",
+      "title": "Italy fines Meta $887 million over Android users' data access",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/italy-fines-meta-887-million-over-android-users-data-access-6551816",
+      "published": "2026-11-14 21:07"
+    },
+    {
+      "category": "General",
+      "title": "ASEAN not easing Myanmar approach, bloc's special envoy says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/asean-not-easing-myanmar-approach-blocs-special-envoy-says-6551711",
+      "published": "2026-11-14 20:35"
+    },
+    {
+      "category": "General",
+      "title": "Myanmar airstrike on displaced persons camp kills 12",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/asia/myanmar-airstrike-displaced-persons-camp-6551681",
+      "published": "2026-11-14 19:49"
+    },
+    {
+      "category": "General",
+      "title": "US proposes Ukraine cede territory in exchange for joining NATO: Zelenskyy",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-proposes-ukraine-cede-territory-in-exchange-joining-nato-zelenskyy-6551616",
+      "published": "2026-11-14 19:11"
+    },
+    {
+      "category": "General",
+      "title": "NASA's Voyager 1 probe poised to achieve mega-distance milestone",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/nasas-voyager-1-probe-poised-achieve-mega-distance-milestone-6551636",
+      "published": "2026-11-14 19:02"
+    },
+    {
+      "category": "General",
+      "title": "Records of about 140,000 migrant workers exposed in Fullerton Health's recent data breach",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/fullerton-health-cybersecurity-data-incident-work-pass-holder-records-6551586",
+      "published": "2026-11-14 18:47"
     },
     {
       "category": "General",
@@ -178,108 +276,10 @@
     },
     {
       "category": "General",
-      "title": "'Stinks of a cover-up': Warner blasts Cricket Australia probe",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/stinks-cover-up-warner-blasts-cricket-australia-probe-6551556",
-      "published": "2026-11-14 17:25"
-    },
-    {
-      "category": "General",
-      "title": "New awards show celebrates AI music and its creators",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/new-awards-show-celebrates-ai-music-and-its-creators-6551541",
-      "published": "2026-11-14 17:04"
-    },
-    {
-      "category": "General",
-      "title": "ASEAN countries sign world's first region-wide digital economy pact, laying foundation for collaboration",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/asean-digital-economy-framework-agreement-6551526",
-      "published": "2026-11-14 17:00"
-    },
-    {
-      "category": "General",
-      "title": "Binance targets full reopening of withdrawals by next week",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/binance-targets-full-reopening-withdrawals-next-week-6551521",
-      "published": "2026-11-14 16:43"
-    },
-    {
-      "category": "General",
-      "title": "China, US discuss tariffs, farm trade at first trade council meeting",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/china-us-tariffs-trade-council-meeting-6551456",
-      "published": "2026-11-14 16:34"
-    },
-    {
-      "category": "General",
-      "title": "Tesla invites select customers to buy Cybercab for personal use",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/tesla-invites-select-customers-buy-cybercab-personal-use-6551496",
-      "published": "2026-11-14 16:01"
-    },
-    {
-      "category": "General",
-      "title": "Microsoft restores service to Outlook and Teams after global outage",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/microsoft-restore-full-service-outlook-teams-global-outage-6551486",
-      "published": "2026-11-14 15:56"
-    },
-    {
-      "category": "General",
-      "title": "France faces fifth weekend of protests as new grievances take centre stage",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/france-protests-police-powers-child-protections-6551461",
-      "published": "2026-11-14 15:18"
-    },
-    {
-      "category": "General",
-      "title": "India's Sooryavanshi becomes youngest captain in men's T20 history",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/indias-sooryavanshi-becomes-youngest-captain-in-mens-t20-history-6551466",
-      "published": "2026-11-14 15:16"
-    },
-    {
-      "category": "General",
-      "title": "New Singapore network aims to strengthen last-mile delivery of aid into Gaza with 'reliable partners'",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/network-aid-groups-singapore-last-mile-delivery-gaza-6543376",
-      "published": "2026-11-14 15:00"
-    },
-    {
-      "category": "General",
-      "title": "Figure skating-Malinin leads Skate America short program in season debut",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/figure-skating-malinin-leads-skate-america-short-program-in-season-debut-6551436",
-      "published": "2026-11-14 14:29"
-    },
-    {
-      "category": "General",
-      "title": "SpaceX's Starship enters Earth's orbit, but booster catch aborted",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/spacex-starship-launch-booster-recovery-aborted-6551391",
-      "published": "2026-11-14 13:46"
-    },
-    {
-      "category": "General",
-      "title": "Microsoft says consumer products services recovered; still monitoring enterprise services",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/microsoft-says-consumer-products-services-recovered-still-monitoring-enterprise-services-6551386",
-      "published": "2026-11-14 13:40"
-    },
-    {
-      "category": "General",
-      "title": "India add Brar to test squad for New Zealand series, release Kuldeep",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/india-add-brar-test-squad-new-zealand-series-release-kuldeep-6551356",
-      "published": "2026-11-14 13:19"
-    },
-    {
-      "category": "General",
-      "title": "S'pore family pays extra S$1,800 for new flight to China after original Trip.com booking not found at Changi Airport",
+      "title": "Alice Huang’s husband reportedly accepted wife’s relationship with Jensen Huang",
       "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/trip-booking-not-found/",
-      "published": "2026-11-14 02:46"
+      "url": "https://mothership.sg/2026/11/alice-husband-jensen-huang-nvidia-relationship/",
+      "published": "2026-11-14 04:19"
     }
   ]
 }
