@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-14T05:58:39.173979+08:00",
+  "last_updated": "2026-11-14T10:25:50.115475+08:00",
   "headlines": [
     {
       "category": "Crime",
@@ -17,10 +17,17 @@
     },
     {
       "category": "Crime",
-      "title": "S'porean woman, 36, who helped dispose of Megan Khung's body & filmed abuse, gets 13 years' jail",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/nouvelle-chua-sentencing-megan-khung-abuse/",
-      "published": "2026-11-13 19:03"
+      "title": "Man arrested for causing hurt, drug offences after knife incident in Yishun",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-arrested-for-causing-hurt-drug-offences-after-knife-incident-in-yishun",
+      "published": "2026-11-14 10:15"
+    },
+    {
+      "category": "Crime",
+      "title": "Cool, friendly, evasive: CAD investigator on suspect arrested in $3b money laundering probe",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/courts-crime/cool-friendly-evasive-cad-investigator-on-suspect-arrested-in-3b-money-laundering-probe",
+      "published": "2026-11-14 10:00"
     },
     {
       "category": "Crime",
@@ -86,20 +93,6 @@
       "published": "2026-11-12 17:53"
     },
     {
-      "category": "Crime",
-      "title": "Man fined $4,000 for molesting student nurse at health facility",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/wheelchair-user-fined-4000-for-molesting-student-nurse-at-health-facility",
-      "published": "2026-11-12 17:23"
-    },
-    {
-      "category": "Traffic",
-      "title": "US air force responds to suspected drone activity over UK airbase",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-air-force-responds-suspected-drone-activity-over-uk-airbase-6550596",
-      "published": "2026-11-14 05:35"
-    },
-    {
       "category": "Traffic",
       "title": "'I'm a piece of sh*t': Jensen Huang reportedly said he doesn't care what happens to him, main concern is wife & women linked to him",
       "source": "Mothership",
@@ -156,20 +149,6 @@
       "published": "2026-11-12 18:08"
     },
     {
-      "category": "Traffic",
-      "title": "Cyclist, 24, dies after tipper truck crash in Changi; second fatal cycling accident this week",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/cyclist-24-dies-after-tipper-truck-crash-in-changi-second-fatal-cycling-accident-this-week",
-      "published": "2026-11-12 15:35"
-    },
-    {
-      "category": "Transport",
-      "title": "Faxes, phones and Bluetooth: Microsoft outage forces businesses to find fixes",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/microsoft-outage-businesses-fixes-fax-6550041",
-      "published": "2026-11-13 23:17"
-    },
-    {
       "category": "Transport",
       "title": "Home Team officers developed correctional programme for etomidate abusers in a few months",
       "source": "Straits Times",
@@ -199,87 +178,108 @@
     },
     {
       "category": "General",
-      "title": "Stocks fall but Wall Street notches a winning week after several turbulent days",
+      "title": "US lifts nationwide ground stop, allowing flights to resume after hours of travel chaos",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/stocks-fall-wall-street-notches-winning-week-after-several-turbulent-days-6550656",
-      "published": "2026-11-14 05:54"
+      "url": "https://www.channelnewsasia.com/world/us-lift-nationwide-ground-stop-flights-travel-chaos-6551041",
+      "published": "2026-11-14 09:40"
     },
     {
       "category": "General",
-      "title": "Tanker hits river cruise ship near New Orleans port",
+      "title": "Andreeva says she is learning to move on faster from defeats after WTA Finals sweep",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/tanker-hits-river-cruise-ship-near-new-orleans-port-6550576",
-      "published": "2026-11-14 05:09"
+      "url": "https://www.channelnewsasia.com/sport/andreeva-says-she-learning-move-faster-defeats-after-wta-finals-sweep-6551031",
+      "published": "2026-11-14 09:24"
     },
     {
       "category": "General",
-      "title": "AI rockets to top of worries about financial system in latest Fed survey",
+      "title": "Trump, Xi, Putin to hold historic meeting in China: White House",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/ai-rockets-top-worries-about-financial-system-in-latest-fed-survey-6550586",
-      "published": "2026-11-14 05:02"
+      "url": "https://www.channelnewsasia.com/east-asia/trump-xi-putin-trilateral-summit-apec-6551001",
+      "published": "2026-11-14 09:16"
     },
     {
       "category": "General",
-      "title": "Meta employees test prediction-market app, WSJ reports",
+      "title": "South Africa's Nations Championship hopes over after France loss, Erasmus says",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/meta-employees-test-prediction-market-app-wsj-reports-6550526",
-      "published": "2026-11-14 04:28"
+      "url": "https://www.channelnewsasia.com/sport/south-africas-nations-championship-hopes-over-after-france-loss-erasmus-says-6550996",
+      "published": "2026-11-14 09:12"
     },
     {
       "category": "General",
-      "title": "Europe chooses team for Ukraine talks",
+      "title": "Nvidia-Megaspeed saga could squeeze Singapore's room in chips space, slow things for firms: Analysts",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/europe-ukraine-russia-talks-putin-us-envoys-6550496",
-      "published": "2026-11-14 04:25"
+      "url": "https://www.channelnewsasia.com/singapore/nvidia-megaspeed-ai-chips-semiconductor-6549036",
+      "published": "2026-11-14 08:41"
     },
     {
       "category": "General",
-      "title": "Microsoft 'deeply sorry' as outage triggers global chaos",
+      "title": "Svitolina stuns Sabalenka to reach WTA Finals semis",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/microsoft-outage-recovery-deeply-sorry-outlook-teams-6550421",
-      "published": "2026-11-14 03:18"
+      "url": "https://www.channelnewsasia.com/sport/svitolina-stuns-sabalenka-reach-wta-finals-semis-6550941",
+      "published": "2026-11-14 08:30"
     },
     {
       "category": "General",
-      "title": "Nvidia's Huang turns to Paul Weiss, law firm that inked deal with Trump",
+      "title": "Ice hockey-IIHF files challenge with CAS over decision to reinstate Russia, media reports say",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidias-huang-turns-paul-weiss-law-firm-inked-deal-trump-6550426",
-      "published": "2026-11-14 03:03"
+      "url": "https://www.channelnewsasia.com/sport/ice-hockey-iihf-files-challenge-cas-over-decision-reinstate-russia-media-reports-say-6550931",
+      "published": "2026-11-14 08:28"
     },
     {
       "category": "General",
-      "title": "From Bollywood to Clippy: Nvidia scandal, Outlook glitch fuel meme storm",
+      "title": "Ramen Keisuke's Tori King at 100AM mall closing after 14 years, last day on Nov 29",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/bollywood-clippy-nvidia-scandal-outlook-glitch-fuel-meme-storm-6550411",
-      "published": "2026-11-14 02:55"
+      "url": "https://www.channelnewsasia.com/dining/ramen-keisuke-tori-king-100am-mall-6550861",
+      "published": "2026-11-14 08:21"
     },
     {
       "category": "General",
-      "title": "Ronaldinho poised for Ravenna start and, perhaps, one last goal",
+      "title": "Singapore ends Youth Olympics campaign with 3 medals; SNOC hails athletes' 'hunger' against world's best",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ronaldinho-poised-ravenna-start-and-perhaps-one-last-goal-6550376",
-      "published": "2026-11-14 02:10"
+      "url": "https://www.channelnewsasia.com/singapore/youth-olympic-games-team-singapore-medals-sports-6550241",
+      "published": "2026-11-14 08:12"
     },
     {
       "category": "General",
-      "title": "Pope returns to 'beloved' Peruvian hometown",
+      "title": "New York sued over law requiring social media 'warning label'",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/pope-leo-peru-visit-south-america-tour-6550281",
-      "published": "2026-11-14 01:46"
+      "url": "https://www.channelnewsasia.com/business/new-york-sued-over-law-requiring-social-media-warning-label-6550881",
+      "published": "2026-11-14 08:09"
     },
     {
       "category": "General",
-      "title": "Pochettino wants to end tenure as US coach on high note",
+      "title": "Pop-punk princess Avril Lavigne welcomes first child, a baby girl, at 42",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pochettino-wants-end-tenure-us-coach-high-note-6550301",
-      "published": "2026-11-14 01:14"
+      "url": "https://www.channelnewsasia.com/entertainment/avril-lavigne-6550841",
+      "published": "2026-11-14 07:42"
     },
     {
       "category": "General",
-      "title": "Nvidia approached Arm CEO Haas to succeed Huang, FT reports",
+      "title": "Soros Fund ramps up Intel stake to over $340 million in third quarter",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-approached-arm-ceo-haas-succeed-huang-ft-reports-6550286",
-      "published": "2026-11-14 01:08"
+      "url": "https://www.channelnewsasia.com/business/soros-fund-ramps-up-intel-stake-over-340-million-in-third-quarter-6550831",
+      "published": "2026-11-14 07:38"
+    },
+    {
+      "category": "General",
+      "title": "Salah breaks Egypt scoring record as Tunisia lose to Libya",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/salah-breaks-egypt-scoring-record-tunisia-lose-libya-6550811",
+      "published": "2026-11-14 07:24"
+    },
+    {
+      "category": "General",
+      "title": "How to keep your anger in check: 3 tips from experts",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/tips-manage-anger-experts-psychologists-6542021",
+      "published": "2026-11-14 06:53"
+    },
+    {
+      "category": "General",
+      "title": "Are you losing muscle without knowing it? These tests can detect sarcopenia as you age",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/wellness/sarcopenia-muscle-loss-tests-dexa-handgrip-strength-ageing-6542351",
+      "published": "2026-11-14 06:52"
     }
   ]
 }
