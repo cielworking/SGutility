@@ -264,6 +264,83 @@ def render_bto(data):
     <div class="note">Source: {html.escape(data.get("source_name", ""))}. Last updated: {timestamp(data.get("last_updated"))}. {html.escape(data.get("note", ""))}</div>"""
 
 
+def draw_day(value):
+    try:
+        return datetime.strptime(str(value), "%a, %d %b %Y").date()
+    except (ValueError, TypeError):
+        return None
+
+
+def set_date_modified(filename, value):
+    path = ROOT / filename
+    text = path.read_text(encoding="utf-8")
+    pattern = re.compile(r'("dateModified":\s*")[0-9]{4}-[0-9]{2}-[0-9]{2}(")')
+    updated, count = pattern.subn(rf"\g<1>{value}\g<2>", text, count=1)
+    if count:
+        path.write_text(updated, encoding="utf-8")
+
+
+def render_sgpools(data, kind):
+    entry = data.get(kind) or {}
+    draw_date = entry.get("draw_date")
+    draw_no = entry.get("draw_no")
+    day = draw_day(draw_date)
+    source = html.escape(str(data.get("source_name") or "Singapore Pools"))
+
+    updated = ""
+    if day:
+        updated = (
+            '<p class="note pool-updated">Last updated: '
+            f'<time datetime="{day.isoformat()}">{day.day} {day.strftime("%b %Y")}</time></p>'
+        )
+
+    if not draw_date or not draw_no:
+        return updated + '\n<p class="note">Results are unavailable right now. Check the official Singapore Pools result.</p>'
+
+    heading = "Latest 4D Result" if kind == "four_d" else "Latest TOTO Result"
+    title = f"<h3>{heading}</h3><span>{html.escape(str(draw_date))} · Draw {html.escape(str(draw_no))}</span>"
+
+    if kind == "four_d":
+        starter = [html.escape(str(value)) for value in entry.get("starter") or []]
+        consolation = [html.escape(str(value)) for value in entry.get("consolation") or []]
+        prizes = []
+        for css, label, value in (
+            (" first", "1st Prize", entry.get("first_prize")),
+            ("", "2nd Prize", entry.get("second_prize")),
+            ("", "3rd Prize", entry.get("third_prize")),
+        ):
+            if value is None:
+                continue
+            prizes.append(
+                f'<div class="sgpools-prize{css}"><span>{label}</span>'
+                f"<strong>{html.escape(str(value))}</strong></div>"
+            )
+        panel = f"""<div class="pool-panel pool-panel-main">
+  <div class="pool-panel-title">{title}</div>
+  <div class="pool-summary-strip">
+    <span>Top prize: <strong>{html.escape(str(entry.get("first_prize", "")))}</strong></span>
+    <span>Starter: <strong>{len(starter)}</strong></span>
+    <span>Consolation: <strong>{len(consolation)}</strong></span>
+  </div>
+  <div class="sgpools-prizes">{"".join(prizes)}</div>
+  <div class="pool-number-section">
+    <div><h4>Starter Prizes</h4><div class="number-grid">{"".join(f"<span>{number}</span>" for number in starter)}</div></div>
+    <div><h4>Consolation Prizes</h4><div class="number-grid">{"".join(f"<span>{number}</span>" for number in consolation)}</div></div>
+  </div>
+</div>"""
+    else:
+        numbers = [html.escape(str(value)) for value in entry.get("winning_numbers") or []]
+        panel = f"""<div class="pool-panel">
+  <div class="pool-panel-title">{title}</div>
+  <div class="toto-numbers">{"".join(f"<span>{number}</span>" for number in numbers)}</div>
+  <div class="toto-additional compact"><span>Additional Number</span><strong>{html.escape(str(entry.get("additional_number", "")))}</strong></div>
+</div>"""
+
+    return f"""{updated}
+{panel}
+<div class="note">Source: {source}.</div>"""
+
+
 def sitemap_entry(url, lastmod=None):
     lastmod_line = f"\n    <lastmod>{lastmod}</lastmod>" if lastmod else ""
     return f"""  <url>
@@ -398,6 +475,17 @@ def main():
             optional[key] = load_json(filename)
         except FileNotFoundError:
             optional[key] = {}
+
+    pools = optional["pools"]
+    if pools:
+        for filename, kind, marker in (
+            ("4d-results.html", "four_d", "FOURD"),
+            ("toto-results.html", "toto", "TOTO"),
+        ):
+            replace_static_block(filename, marker, render_sgpools(pools, kind))
+            day = draw_day((pools.get(kind) or {}).get("draw_date"))
+            if day:
+                set_date_modified(filename, day.isoformat())
 
     dynamic_dates = {
         "checkpoints": date_only(checkpoints.get("last_updated")),
