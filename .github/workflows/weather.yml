@@ -28,7 +28,10 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
-      - run: pip install requests
+      # requests powers the update scripts; beautifulsoup4 is imported by the
+      # TOTO parser tests in tests/test_sgpools.py, which run below.
+      - name: Install Python dependencies
+        run: pip install requests beautifulsoup4
       - name: Check Python scripts parse
         run: python -m py_compile scripts/*.py
       - run: python -m unittest discover -s tests -v
