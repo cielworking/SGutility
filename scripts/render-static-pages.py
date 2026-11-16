@@ -192,15 +192,18 @@ def render_news_static(news_data):
         h_slug = re.sub(r"[^a-z0-9]+", "-", h_cat.lower()).strip("-") or "general"
         h_pub = f" · {html.escape(str(hero.get('published')))}" if hero.get("published") else ""
         h_sum = f'<p>{html.escape(hero.get("summary") or "")}</p>' if hero.get("summary") else ""
-        hero_html = f"""<a class="news-hero-card" href="{html.escape(str(hero.get("url", "#")), quote=True)}" target="_blank" rel="noopener noreferrer">
-          <div class="news-hero-media"><img src="{html.escape(str(hero.get("image", "")), quote=True)}" alt="" fetchpriority="high" decoding="async"></div>
+        hero_url = html.escape(str(hero.get("url", "#")), quote=True)
+        hero_html = f"""<article class="news-hero-card">
+          <a class="news-hero-media" href="{hero_url}" target="_blank" rel="noopener noreferrer"><img src="{html.escape(str(hero.get("image", "")), quote=True)}" alt="" fetchpriority="high" decoding="async"></a>
           <div class="news-hero-body">
-            <div><span class="news-tag news-{h_slug}">{html.escape(h_cat)}</span></div>
-            <h2>{html.escape(str(hero.get("title", "")))}</h2>
-            {h_sum}
-            <small>{html.escape(str(hero.get("source", "")))}{h_pub}</small>
+            <a class="news-card-link" href="{hero_url}" target="_blank" rel="noopener noreferrer">
+              <div><span class="news-tag news-{h_slug}">{html.escape(h_cat)}</span></div>
+              <h2>{html.escape(str(hero.get("title", "")))}</h2>
+              {h_sum}
+            </a>
+            <div class="news-card-footer"><small>{html.escape(str(hero.get("source", "")))}{h_pub}</small></div>
           </div>
-        </a>"""
+        </article>"""
 
     cards = []
     for idx, item in enumerate(items[:36]):
@@ -218,14 +221,17 @@ def render_news_static(news_data):
         summary = item.get("summary") or ""
         summary_html = f'<p class="news-summary">{html.escape(summary)}</p>' if summary else ""
         published = f" · {html.escape(str(item.get('published')))}" if item.get("published") else ""
+        item_url = html.escape(str(item.get("url", "#")), quote=True)
         cards.append(
-            f"""<a class="news-card-item{cls_extra}" href="{html.escape(str(item.get("url", "#")), quote=True)}" target="_blank" rel="noopener noreferrer">
-          {img_html}
-          <span class="news-tag news-{slug}">{html.escape(cat)}</span>
-          <strong>{html.escape(str(item.get("title", "")))}</strong>
-          {summary_html}
-          <small>{html.escape(str(item.get("source", "")))}{published}</small>
-        </a>"""
+            f"""<article class="news-card-item{cls_extra}">
+          <a class="news-card-link" href="{item_url}" target="_blank" rel="noopener noreferrer">
+            {img_html}
+            <span class="news-tag news-{slug}">{html.escape(cat)}</span>
+            <strong>{html.escape(str(item.get("title", "")))}</strong>
+            {summary_html}
+          </a>
+          <div class="news-card-footer"><small>{html.escape(str(item.get("source", "")))}{published}</small></div>
+        </article>"""
         )
     return (
         f'<div class="news-topbar"><span class="news-meta">{len(items)} curated stories · {html.escape(updated_label(news_data.get("last_updated")))}</span></div>'
