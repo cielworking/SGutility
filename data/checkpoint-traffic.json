@@ -4,9 +4,9 @@
   "last_updated": "2026-11-16T17:29:38.005874+00:00",
   "note": "AI counts visible vehicles on public LTA approach cameras. Actual immigration counter queues inside the complex may differ.",
   "woodlands": {
-    "status": "Moderate",
-    "towards_jb_status": "Moderate",
-    "towards_sg_status": "Moderate",
+    "status": "Smooth",
+    "towards_jb_status": "Smooth",
+    "towards_sg_status": "Smooth",
     "total_vehicles": 15,
     "weighted_load": 17.0,
     "towards_jb": 9,

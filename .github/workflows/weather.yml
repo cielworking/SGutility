@@ -44,7 +44,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Update weather and air-quality pages"
-          file_pattern: data/weather.json index.html weather/index.html singapore/**/*.html malaysia/**/*.html sitemap.xml
+          file_pattern: data/weather.json index.html travel.html weather/index.html singapore/**/*.html malaysia/**/*.html sitemap.xml
           # v7 keeps v5's commit behavior and adds skip_push. skip_fetch avoids
           # `git fetch --depth=1`, which shallows the clone before the rebase.
           skip_fetch: true
@@ -60,7 +60,7 @@ jobs:
           # Files this job just generated. During rebase, --theirs is that commit.
           is_generated() {
             case "$1" in
-              data/weather.json|index.html|weather/index.html|sitemap.xml|singapore/*.html|malaysia/*.html)
+              data/weather.json|index.html|travel.html|weather/index.html|sitemap.xml|singapore/*.html|malaysia/*.html)
                 return 0
                 ;;
             esac

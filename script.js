@@ -1471,7 +1471,69 @@ function setGlance(name, value) {
   node.textContent = value && String(value).trim() ? value : "—";
 }
 
+function shortClockSgt(iso) {
+  if (!iso) return "";
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return "";
+  return d.toLocaleTimeString("en-SG", {
+    timeZone: "Asia/Singapore",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  }).toLowerCase();
+}
+
+function updateTravelBriefing() {
+  if (!document.querySelector("[data-travel-briefing]")) return;
+
+  [
+    ["woodlands", "Woodlands", "the BKE approach & Causeway", "https://www.google.com/maps/@1.4485,103.769,15z/data=!5m1!1e1"],
+    ["tuas", "Tuas", "the AYE approach & Second Link", "https://www.google.com/maps/@1.3475,103.6365,14z/data=!5m1!1e1"],
+  ].forEach(([key, label, road, gmapsUrl]) => {
+    const cams = checkpointData?.[key] || [];
+    const camEl = document.querySelector(`[data-briefing-cam="${key}"]`);
+    if (camEl && cams[0]?.timestamp) {
+      const clock = shortClockSgt(cams[0].timestamp);
+      if (clock) camEl.textContent = `Both ${label} cameras were last captured at ${clock}.`;
+    }
+
+    const loc = checkpointTraffic?.[key];
+    const roadEl = document.querySelector(`[data-briefing-road="${key}"]`);
+    if (roadEl && loc) {
+      const total = Number(loc.total_vehicles || 0);
+      const status = escapeHtml(loc.status || "Smooth");
+      const toJb = Number(loc.towards_jb || 0);
+      const toSg = Number(loc.towards_sg || 0);
+      const jbSt = escapeHtml(loc.towards_jb_status || "Smooth");
+      const sgSt = escapeHtml(loc.towards_sg_status || "Smooth");
+      roadEl.innerHTML = `YOLOX AI detects <strong>${total} vehicles</strong> (${status}) across ${escapeHtml(road)} — ${toJb} towards JB (${jbSt}) and ${toSg} into Singapore (${sgSt}). Road camera density only, not customs queue. <a href="${gmapsUrl}" target="_blank" rel="noopener noreferrer">Google Maps Live Traffic →</a>`;
+    }
+  });
+
+  if (!window.__travelRainFetched) {
+    window.__travelRainFetched = true;
+    fetch("https://api-open.data.gov.sg/v2/real-time/api/rainfall")
+      .then(r => (r.ok ? r.json() : null))
+      .then(payload => {
+        const readings = payload?.data?.readings?.[0]?.data || [];
+        const byId = Object.fromEntries(readings.map(item => [item.stationId, Number(item.value || 0)]));
+        const wMm = Math.max(byId.S211 ?? 0, byId.S104 ?? 0, byId.S66 ?? 0);
+        const tMm = Math.max(byId.S115 ?? 0, byId.S132 ?? 0, byId.S180 ?? 0);
+        const wGauge = document.querySelector('[data-rain-gauge="woodlands"]');
+        const tGauge = document.querySelector('[data-rain-gauge="tuas"]');
+        if (wGauge) {
+          wGauge.textContent = wMm > 0 ? `${wMm.toFixed(1)} mm on the nearest gauge now` : "no rain on the nearest gauge now";
+        }
+        if (tGauge) {
+          tGauge.textContent = tMm > 0 ? `${tMm.toFixed(1)} mm on the nearest gauge now` : "no rain on the nearest gauge now";
+        }
+      })
+      .catch(() => {});
+  }
+}
+
 function renderTravelAdvisor() {
+  updateTravelBriefing();
   const advisor = document.querySelector("[data-travel-advisor]");
   if (!advisor || !checkpointTraffic) return;
   const w = checkpointTraffic.woodlands;

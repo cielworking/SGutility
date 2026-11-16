@@ -142,6 +142,140 @@ def render_checkpoint_ai(traffic, location_key):
     </div>"""
 
 
+def short_clock_sgt(value):
+    if not value:
+        return "recently"
+    try:
+        parsed = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        singapore_time = timezone(timedelta(hours=8))
+        parsed = parsed.astimezone(singapore_time)
+        hour = int(parsed.strftime("%I"))
+        return f"{hour}:{parsed.strftime('%M')} {parsed.strftime('%p').lower()}"
+    except ValueError:
+        return "recently"
+
+
+def psi_band(val):
+    if not isinstance(val, (int, float)):
+        return "—"
+    if val <= 50:
+        return "Good"
+    if val <= 100:
+        return "Moderate"
+    if val <= 200:
+        return "Unhealthy"
+    return "Very Unhealthy"
+
+
+def pm25_band(val):
+    if not isinstance(val, (int, float)):
+        return "—"
+    if val <= 55:
+        return "Normal"
+    if val <= 150:
+        return "Elevated"
+    return "High"
+
+
+def render_travel_briefing(checkpoints, traffic, weather):
+    sg_rain = ((weather or {}).get("sg_rain") or {}).get("data") or {}
+    forecasts = {
+        str(r.get("area") or ""): str(r.get("forecast") or "Cloudy").lower()
+        for r in (sg_rain.get("forecasts") or [])
+    }
+    sg_psi = (((weather or {}).get("sg_psi") or {}).get("data") or {})
+    psi_readings = (sg_psi.get("readings") or {}).get("psi_twenty_four_hourly") or {}
+    sg_pm25 = (((weather or {}).get("sg_pm25") or {}).get("data") or {})
+    pm25_readings = (sg_pm25.get("readings") or {}).get("pm25_one_hourly") or {}
+    air_time = short_clock_sgt(sg_psi.get("timestamp") or sg_pm25.get("timestamp"))
+
+    now_sgt = datetime.now(timezone(timedelta(hours=8)))
+    if now_sgt.date().isoformat() <= "2026-12-31":
+        holiday_html = (
+            "Year-end school holidays, Sat 21 Nov – Thu 31 Dec 2026: typically busiest towards JB "
+            "Friday afternoons as the holidays begin, and coming back Sunday evenings throughout the holidays. "
+            '<a href="/guides/causeway-year-end-school-holidays.html">Holiday peaks →</a>'
+        )
+    else:
+        holiday_html = (
+            "New Year &amp; Chinese New Year 2027 peak crossings: plan around Friday evenings outbound to JB "
+            "and Sunday / public-holiday return waves into Singapore. "
+            '<a href="/guides/cny-2027-causeway-jb-traffic.html">Holiday peaks →</a>'
+        )
+
+    def build_card(loc_key, title, approach_road, area_name, air_region, air_label, gmaps_url, extra_label, extra_html):
+        cams = (checkpoints or {}).get(loc_key) or []
+        cam_time = short_clock_sgt(cams[0].get("timestamp") if cams else (checkpoints or {}).get("last_updated"))
+        loc_t = (traffic or {}).get(loc_key) or {}
+        to_jb = int(loc_t.get("towards_jb") or 0)
+        to_sg = int(loc_t.get("towards_sg") or 0)
+        total = int(loc_t.get("total_vehicles") or 0)
+        status = html.escape(str(loc_t.get("status") or "Smooth"))
+        jb_st = html.escape(str(loc_t.get("towards_jb_status") or "Smooth"))
+        sg_st = html.escape(str(loc_t.get("towards_sg_status") or "Smooth"))
+        fc = html.escape(forecasts.get(area_name, "partly cloudy"))
+        psi_val = psi_readings.get(air_region)
+        pm25_val = pm25_readings.get(air_region)
+        psi_str = f"{psi_val} ({psi_band(psi_val)})" if isinstance(psi_val, (int, float)) else "—"
+        pm25_str = f"{pm25_val} µg/m³ ({pm25_band(pm25_val)})" if isinstance(pm25_val, (int, float)) else "—"
+
+        return f"""<article class="cp-briefing-card" data-briefing-card="{loc_key}">
+          <h3>{html.escape(title)}</h3>
+          <ul class="cp-briefing-list">
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Cameras</span>
+              <p class="cp-briefing-val" data-briefing-cam="{loc_key}">Both {html.escape(area_name)} cameras were last captured at {html.escape(cam_time)}.</p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Expressway &amp; AI Traffic</span>
+              <p class="cp-briefing-val" data-briefing-road="{loc_key}">YOLOX AI detects <strong>{total} vehicles</strong> ({status}) across {html.escape(approach_road)} — {to_jb} towards JB ({jb_st}) and {to_sg} into Singapore ({sg_st}). Road camera density only, not customs queue. <a href="{html.escape(gmaps_url, quote=True)}" target="_blank" rel="noopener noreferrer">Google Maps Live Traffic →</a></p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Rain</span>
+              <p class="cp-briefing-val" data-briefing-rain="{loc_key}">{html.escape(area_name)}: <span data-rain-gauge="{loc_key}">no rain on the nearest gauge now</span>; next two hours {fc}. <a href="/weather/">Rain map →</a></p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Air</span>
+              <p class="cp-briefing-val" data-briefing-air="{loc_key}">{html.escape(air_label)}: 24-hour PSI {html.escape(psi_str)}; 1-hour PM2.5 {html.escape(pm25_str)}, NEA at {html.escape(air_time)}. <a href="/singapore/haze/">PSI by region →</a></p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Holiday</span>
+              <p class="cp-briefing-val">{holiday_html}</p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">{html.escape(extra_label)}</span>
+              <p class="cp-briefing-val">{extra_html}</p>
+            </li>
+          </ul>
+        </article>"""
+
+    w_card = build_card(
+        "woodlands",
+        "Woodlands Checkpoint · Causeway",
+        " the BKE approach & Causeway",
+        "Woodlands",
+        "north",
+        "North Singapore",
+        "https://www.google.com/maps/@1.4485,103.769,15z/data=!5m1!1e1",
+        "RTS Link & Checklist",
+        'RTS Link, Woodlands North to Bukit Chagar: target passenger service end-2026. <a href="/guides/jb-causeway-vep-autopass-tng-checklist.html">VEP &amp; QR checklist →</a>',
+    )
+    t_card = build_card(
+        "tuas",
+        "Tuas Checkpoint · Second Link",
+        " the AYE approach & Second Link",
+        "Tuas",
+        "west",
+        "West Singapore",
+        "https://www.google.com/maps/@1.3475,103.6365,14z/data=!5m1!1e1",
+        "Route Comparison",
+        'Tuas Second Link connects AYE directly to Gelang Patah CIQ, Iskandar Puteri &amp; Bukit Indah. <a href="/guides/woodlands-vs-tuas-checkpoint.html">Woodlands vs Tuas →</a>',
+    )
+    return f'<div class="cp-briefing-grid">{w_card}{t_card}</div>'
+
+
 def render_travel_advisor(traffic):
     if not traffic or "woodlands" not in traffic or "tuas" not in traffic:
         return '<p class="loading-state">Comparing Woodlands &amp; Tuas traffic…</p>'
@@ -647,6 +781,7 @@ def main():
     }
     weather_path = DATA / "weather.json"
     weather = json.loads(weather_path.read_text(encoding="utf-8")) if weather_path.exists() else {}
+    replace_static_block("travel.html", "TRAVEL-BRIEFING", render_travel_briefing(checkpoints, traffic, weather))
     dynamic_dates["weather"] = max((date_only(feed.get("attempted_at")) for feed in weather.values() if feed.get("attempted_at")), default=None)
     home_dates = [
         *dynamic_dates.values(),

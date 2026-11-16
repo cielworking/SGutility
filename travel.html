@@ -24,7 +24,7 @@
   <script>
 (function(){try{var m=localStorage.getItem("sga-theme-mode");if(m!=="light"&&m!=="dark"&&m!=="system")m="system";var d=m==="dark"||(m==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches);var r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-mode",m);}catch(e){var d=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",d?"dark":"light");document.documentElement.setAttribute("data-theme-mode","system");}})();
 </script>
-  <link rel="stylesheet" href="/style.css?v=26">
+  <link rel="stylesheet" href="/style.css?v=27">
   <script type="application/ld+json" data-seo-page="travel.html">
 {
   "@context": "https://schema.org",
@@ -165,8 +165,8 @@
     <div class="travel-advisor-grid">
       <div class="travel-route-box">
         <strong>Woodlands Causeway (Cam 2701 &amp; 2702)</strong>
-        <span>Status: <strong>Moderate</strong> (15 vehicles detected)</span>
-        <span>Towards JB: 9 (Moderate) · Towards SG: 6 (Moderate)</span>
+        <span>Status: <strong>Smooth</strong> (15 vehicles detected)</span>
+        <span>Towards JB: 9 (Smooth) · Towards SG: 6 (Smooth)</span>
         <a class="detail-link" href="/woodlands-checkpoint.html">All Woodlands cameras →</a>
       </div>
       <div class="travel-route-box is-recommended">
@@ -178,6 +178,78 @@
     </div>
     <p class="ai-traffic-disclaimer">Comparison uses live YOLOX road-camera vehicle density. Indoor immigration hall queues and JB CIQ counters can still vary independently.</p>
 <!-- STATIC:TRAVEL-ADVISOR:END -->
+        </div>
+      </section>
+
+      <section class="surface-card specialist-data-card" aria-label="Woodlands and Tuas live conditions briefing">
+        <div class="section-header">
+          <div class="section-title">
+            <div>
+              <p class="eyebrow">Live Crossing Conditions</p>
+              <h2>Checkpoint Traffic, Rain, Air Quality &amp; Holiday Briefing</h2>
+            </div>
+          </div>
+        </div>
+        <div data-travel-briefing>
+          <!-- STATIC:TRAVEL-BRIEFING:START -->
+<div class="cp-briefing-grid"><article class="cp-briefing-card" data-briefing-card="woodlands">
+          <h3>Woodlands Checkpoint · Causeway</h3>
+          <ul class="cp-briefing-list">
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Cameras</span>
+              <p class="cp-briefing-val" data-briefing-cam="woodlands">Both Woodlands cameras were last captured at 1:25 am.</p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Expressway &amp; AI Traffic</span>
+              <p class="cp-briefing-val" data-briefing-road="woodlands">YOLOX AI detects <strong>15 vehicles</strong> (Smooth) across  the BKE approach &amp; Causeway — 9 towards JB (Smooth) and 6 into Singapore (Smooth). Road camera density only, not customs queue. <a href="https://www.google.com/maps/@1.4485,103.769,15z/data=!5m1!1e1" target="_blank" rel="noopener noreferrer">Google Maps Live Traffic →</a></p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Rain</span>
+              <p class="cp-briefing-val" data-briefing-rain="woodlands">Woodlands: <span data-rain-gauge="woodlands">no rain on the nearest gauge now</span>; next two hours cloudy. <a href="/weather/">Rain map →</a></p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Air</span>
+              <p class="cp-briefing-val" data-briefing-air="woodlands">North Singapore: 24-hour PSI 45 (Good); 1-hour PM2.5 16 µg/m³ (Normal), NEA at 1:00 am. <a href="/singapore/haze/">PSI by region →</a></p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Holiday</span>
+              <p class="cp-briefing-val">Year-end school holidays, Sat 21 Nov – Thu 31 Dec 2026: typically busiest towards JB Friday afternoons as the holidays begin, and coming back Sunday evenings throughout the holidays. <a href="/guides/causeway-year-end-school-holidays.html">Holiday peaks →</a></p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">RTS Link &amp; Checklist</span>
+              <p class="cp-briefing-val">RTS Link, Woodlands North to Bukit Chagar: target passenger service end-2026. <a href="/guides/jb-causeway-vep-autopass-tng-checklist.html">VEP &amp; QR checklist →</a></p>
+            </li>
+          </ul>
+        </article><article class="cp-briefing-card" data-briefing-card="tuas">
+          <h3>Tuas Checkpoint · Second Link</h3>
+          <ul class="cp-briefing-list">
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Cameras</span>
+              <p class="cp-briefing-val" data-briefing-cam="tuas">Both Tuas cameras were last captured at 1:25 am.</p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Expressway &amp; AI Traffic</span>
+              <p class="cp-briefing-val" data-briefing-road="tuas">YOLOX AI detects <strong>2 vehicles</strong> (Smooth) across  the AYE approach &amp; Second Link — 2 towards JB (Smooth) and 0 into Singapore (Smooth). Road camera density only, not customs queue. <a href="https://www.google.com/maps/@1.3475,103.6365,14z/data=!5m1!1e1" target="_blank" rel="noopener noreferrer">Google Maps Live Traffic →</a></p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Rain</span>
+              <p class="cp-briefing-val" data-briefing-rain="tuas">Tuas: <span data-rain-gauge="tuas">no rain on the nearest gauge now</span>; next two hours cloudy. <a href="/weather/">Rain map →</a></p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Air</span>
+              <p class="cp-briefing-val" data-briefing-air="tuas">West Singapore: 24-hour PSI 42 (Good); 1-hour PM2.5 8 µg/m³ (Normal), NEA at 1:00 am. <a href="/singapore/haze/">PSI by region →</a></p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Holiday</span>
+              <p class="cp-briefing-val">Year-end school holidays, Sat 21 Nov – Thu 31 Dec 2026: typically busiest towards JB Friday afternoons as the holidays begin, and coming back Sunday evenings throughout the holidays. <a href="/guides/causeway-year-end-school-holidays.html">Holiday peaks →</a></p>
+            </li>
+            <li class="cp-briefing-row">
+              <span class="cp-briefing-label">Route Comparison</span>
+              <p class="cp-briefing-val">Tuas Second Link connects AYE directly to Gelang Patah CIQ, Iskandar Puteri &amp; Bukit Indah. <a href="/guides/woodlands-vs-tuas-checkpoint.html">Woodlands vs Tuas →</a></p>
+            </li>
+          </ul>
+        </article></div>
+<!-- STATIC:TRAVEL-BRIEFING:END -->
         </div>
       </section>
 
@@ -197,14 +269,14 @@
       <div class="ai-traffic-head">
         <div>
           <span class="ai-traffic-kicker">AI traffic density (Cam 2701 &amp; 2702)</span>
-          <strong>Moderate</strong>
+          <strong>Smooth</strong>
           <span class="ai-traffic-time"> · Updated 17 Nov, 1:29 am UTC+08</span>
         </div>
-        <span class="ai-status-pill is-moderate">Moderate (15 detected)</span>
+        <span class="ai-status-pill is-smooth">Smooth (15 detected)</span>
       </div>
       <div class="ai-traffic-stats">
-        <span><strong>Towards JB:</strong> 9 (Moderate)</span>
-        <span><strong>Towards SG:</strong> 6 (Moderate)</span>
+        <span><strong>Towards JB:</strong> 9 (Smooth)</span>
+        <span><strong>Towards SG:</strong> 6 (Smooth)</span>
         <span><strong>Mix:</strong> 13 cars · 0 bikes · 2 buses/trucks</span>
       </div>
       <p class="ai-traffic-disclaimer">Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ.</p>
@@ -317,7 +389,7 @@
       </nav>
     </div>
   </footer>
-  <script src="/script.js?v=15" defer></script>
+  <script src="/script.js?v=20" defer></script>
   <nav class="mobile-tabbar" aria-label="Mobile quick navigation"><a class="tabbar-item" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></a><a class="tabbar-item" href="/travel.html" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg><span>Travel</span></a><a class="tabbar-item" href="/housing.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/></svg><span>Housing</span></a><a class="tabbar-item" href="/weather/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg><span>Weather</span></a><details class="tabbar-more"><summary class="tabbar-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg><span>More</span></summary><div class="tabbar-sheet" id="tabbar-more-sheet"><p class="tabbar-sheet-title">More on SG Alerts</p><div class="tabbar-sheet-links"><a href="/singapore-petrol-prices.html">Petrol prices</a><a href="/latest-coe-prices.html">COE prices</a><a href="/bto-launches.html">BTO launches</a><a href="/singapore/haze/">Haze &amp; PSI</a><a href="/woodlands-checkpoint.html">Checkpoints</a><a href="/guides/">All Guides</a><a href="/4d-results.html">4D results</a><a href="/toto-results.html">TOTO results</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></div></details></nav>
 </body>
 </html>

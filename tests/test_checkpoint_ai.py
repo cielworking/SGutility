@@ -17,10 +17,11 @@ class CheckpointAiTests(unittest.TestCase):
     def test_load_level_thresholds(self):
         mod = load_analyzer()
         self.assertEqual(mod.load_level(0), "Smooth")
-        self.assertEqual(mod.load_level(10), "Smooth")
-        self.assertEqual(mod.load_level(11), "Moderate")
-        self.assertEqual(mod.load_level(22), "Moderate")
-        self.assertEqual(mod.load_level(23), "Heavy")
+        self.assertEqual(mod.load_level(18), "Smooth")
+        self.assertEqual(mod.load_level(25), "Smooth")
+        self.assertEqual(mod.load_level(26), "Moderate")
+        self.assertEqual(mod.load_level(45), "Moderate")
+        self.assertEqual(mod.load_level(46), "Heavy")
 
     def test_dashboard_camera_selection_uses_two_cameras_each(self):
         mod = load_analyzer()
