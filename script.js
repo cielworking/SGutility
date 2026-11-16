@@ -10,6 +10,7 @@ let checkpointTraffic = {};
 let isRolling = false;
 let selectedDiscountFuel = "ron95";
 let selectedNewsCategory = "All";
+let selectedNewsQuery = "";
 let lastModalTrigger = null;
 let hideGambling = localStorage.getItem("hideGambling") === "true";
 
@@ -244,19 +245,52 @@ function renderNews() {
   const categories = ["All", ...new Set(newsResults.headlines.map(item => item.category).filter(Boolean))];
   if (!categories.includes(selectedNewsCategory)) selectedNewsCategory = "All";
 
-  const filteredNews = selectedNewsCategory === "All"
+  const q = selectedNewsQuery.trim().toLowerCase();
+  const filteredByCategory = selectedNewsCategory === "All"
     ? newsResults.headlines
     : newsResults.headlines.filter(item => item.category === selectedNewsCategory);
+  const filteredNews = q
+    ? filteredByCategory.filter(item =>
+        `${item.title || ""} ${item.summary || ""} ${item.source || ""}`.toLowerCase().includes(q)
+      )
+    : filteredByCategory;
   const limit = mode === "full" ? 64 : mode === "teaser" ? 6 : 20;
   const topNews = filteredNews.slice(0, limit);
 
+  const heroIndex = mode === "full" ? topNews.findIndex(item => typeof item.image === "string" && /^https?:\/\//i.test(item.image)) : -1;
+  const heroItem = heroIndex >= 0 ? topNews[heroIndex] : null;
+  const gridItems = heroItem ? topNews.filter((_, idx) => idx !== heroIndex) : topNews;
+
+  const heroMarkup = item => {
+    const categoryClass = String(item.category || "general").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    return `
+      <a class="news-hero-card" href="${item.url}" target="_blank" rel="noopener noreferrer">
+        <div class="news-hero-media">
+          <img src="${escapeHtml(item.image)}" alt="" fetchpriority="high" decoding="async" onerror="this.closest('.news-hero-media').remove()">
+        </div>
+        <div class="news-hero-body">
+          <div><span class="news-tag news-${categoryClass}">${escapeHtml(item.category)}</span></div>
+          <h2>${escapeHtml(item.title)}</h2>
+          ${item.summary ? `<p>${escapeHtml(item.summary)}</p>` : ""}
+          <small>${escapeHtml(item.source)}${item.published ? " · " + escapeHtml(item.published) : ""}</small>
+        </div>
+      </a>
+    `;
+  };
+
   const cardMarkup = item => {
     const categoryClass = String(item.category || "general").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    const imgUrl = typeof item.image === "string" && /^https?:\/\//i.test(item.image) ? item.image : "";
+    const imgHtml = imgUrl && mode === "full"
+      ? `<div class="news-thumb-wrap"><img class="news-thumb" src="${escapeHtml(imgUrl)}" alt="" loading="lazy" decoding="async" onerror="this.closest('.news-thumb-wrap').remove()"></div>`
+      : "";
+    const textOnlyClass = mode === "full" && !imgUrl ? " news-card-textonly" : "";
     const summaryHtml = item.summary && mode === "full"
       ? `<p class="news-summary">${escapeHtml(item.summary)}</p>`
       : "";
     return `
-      <a class="news-card-item" href="${item.url}" target="_blank" rel="noopener noreferrer">
+      <a class="news-card-item${textOnlyClass}" href="${item.url}" target="_blank" rel="noopener noreferrer">
+        ${imgHtml}
         <span class="news-tag news-${categoryClass}">${escapeHtml(item.category)}</span>
         <strong>${escapeHtml(item.title)}</strong>
         ${summaryHtml}
@@ -265,7 +299,7 @@ function renderNews() {
     `;
   };
 
-  box.innerHTML = `
+  const feedBodyHtml = `
     <div class="news-topbar">
       <span class="news-meta">${topNews.length} stories · Updated ${formatTimestamp(newsResults.last_updated)}</span>
       ${mode === "full" ? "" : mode === "teaser" ? '<a class="detail-link" href="/news.html">Open full News Hub →</a>' : `
@@ -279,21 +313,36 @@ function renderNews() {
         </div>
       `}
     </div>
+    ${heroItem ? heroMarkup(heroItem) : ""}
+    ${gridItems.length ? `
+      <div id="${mode === "full" || mode === "teaser" ? "newsGrid" : "newsScroller"}" class="${mode === "full" || mode === "teaser" ? "news-grid" : "news-scroller"}" tabindex="0" aria-label="Latest Singapore news">
+        ${gridItems.map(cardMarkup).join("")}
+      </div>
+    ` : '<p class="loading-state">No matching headlines found for that filter.</p>'}
+  `;
 
-    <div class="news-filters" role="group" aria-label="Filter news by category">
-      ${categories.map(category => `
-        <button type="button"
-                class="news-filter ${selectedNewsCategory === category ? "is-active" : ""}"
-                data-category="${escapeHtml(category)}"
-                aria-pressed="${selectedNewsCategory === category}">
-          ${escapeHtml(category)}
-        </button>
-      `).join("")}
-    </div>
+  const existingFeed = box.querySelector("#newsFeedBody");
+  const searchActive = document.activeElement?.id === "newsSearchInput";
+  if (existingFeed && mode === "full" && searchActive) {
+    existingFeed.innerHTML = feedBodyHtml;
+    return;
+  }
 
-    <div id="${mode === "full" || mode === "teaser" ? "newsGrid" : "newsScroller"}" class="${mode === "full" || mode === "teaser" ? "news-grid" : "news-scroller"}" tabindex="0" aria-label="Latest Singapore news">
-      ${topNews.map(cardMarkup).join("")}
+  box.innerHTML = `
+    <div class="news-toolbar-row">
+      <div class="news-filters" role="group" aria-label="Filter news by category">
+        ${categories.map(category => `
+          <button type="button"
+                  class="news-filter ${selectedNewsCategory === category ? "is-active" : ""}"
+                  data-category="${escapeHtml(category)}"
+                  aria-pressed="${selectedNewsCategory === category}">
+            ${escapeHtml(category)}
+          </button>
+        `).join("")}
+      </div>
+      ${mode === "full" ? `<input id="newsSearchInput" class="news-search-input" type="search" placeholder="Search headlines (e.g. ERP, iPhone, CPF)…" value="${escapeHtml(selectedNewsQuery)}" aria-label="Filter headlines by keyword">` : ""}
     </div>
+    <div id="newsFeedBody">${feedBodyHtml}</div>
   `;
 
   box.querySelectorAll(".news-filter").forEach(button => {
@@ -302,6 +351,14 @@ function renderNews() {
       renderNews();
     });
   });
+
+  const searchInput = box.querySelector("#newsSearchInput");
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      selectedNewsQuery = searchInput.value;
+      renderNews();
+    });
+  }
 
   applyIcons();
 }

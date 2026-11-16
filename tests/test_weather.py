@@ -90,13 +90,9 @@ class WeatherTests(unittest.TestCase):
         self.assertLess(html.find("freshness-time"), html.find("combined-weather"))
         saved = json.loads((ROOT / "data" / "weather.json").read_text())
         label = render.updated_label(render.homepage_rain_stamp(saved))
-        page = (ROOT / "index.html").read_text()
-        start = page.index("<!-- STATIC:RAIN:START -->")
-        end = page.index("<!-- STATIC:RAIN:END -->")
-        block = page[start:end]
-        self.assertIn(label, block)
-        self.assertIn('id="weather-freshness"', block)
-        self.assertNotIn('id="weather-freshness"', page[:start])
+        weather_page = (ROOT / "weather" / "index.html").read_text(encoding="utf-8")
+        self.assertIn('id="weather-freshness"', weather_page)
+        self.assertIn(label, weather_page)
 
     def test_stale_expired_future_and_missing_feeds_are_flagged(self):
         current = render.NOW.isoformat()

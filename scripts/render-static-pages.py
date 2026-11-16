@@ -181,15 +181,46 @@ def render_news_static(news_data):
     items = (news_data or {}).get("headlines") or []
     if not items:
         return '<p class="loading-state">No headlines are currently available.</p>'
+    hero_idx = next(
+        (i for i, item in enumerate(items[:36]) if str(item.get("image") or "").startswith(("https://", "http://"))),
+        -1,
+    )
+    hero_html = ""
+    if hero_idx >= 0:
+        hero = items[hero_idx]
+        h_cat = str(hero.get("category") or "General")
+        h_slug = re.sub(r"[^a-z0-9]+", "-", h_cat.lower()).strip("-") or "general"
+        h_pub = f" · {html.escape(str(hero.get('published')))}" if hero.get("published") else ""
+        h_sum = f'<p>{html.escape(hero.get("summary") or "")}</p>' if hero.get("summary") else ""
+        hero_html = f"""<a class="news-hero-card" href="{html.escape(str(hero.get("url", "#")), quote=True)}" target="_blank" rel="noopener noreferrer">
+          <div class="news-hero-media"><img src="{html.escape(str(hero.get("image", "")), quote=True)}" alt="" fetchpriority="high" decoding="async"></div>
+          <div class="news-hero-body">
+            <div><span class="news-tag news-{h_slug}">{html.escape(h_cat)}</span></div>
+            <h2>{html.escape(str(hero.get("title", "")))}</h2>
+            {h_sum}
+            <small>{html.escape(str(hero.get("source", "")))}{h_pub}</small>
+          </div>
+        </a>"""
+
     cards = []
-    for item in items[:36]:
+    for idx, item in enumerate(items[:36]):
+        if idx == hero_idx:
+            continue
         cat = str(item.get("category") or "General")
         slug = re.sub(r"[^a-z0-9]+", "-", cat.lower()).strip("-") or "general"
+        img_url = str(item.get("image") or "")
+        img_html = (
+            f'<div class="news-thumb-wrap"><img class="news-thumb" src="{html.escape(img_url, quote=True)}" alt="" loading="lazy" decoding="async"></div>'
+            if img_url.startswith(("https://", "http://"))
+            else ""
+        )
+        cls_extra = "" if img_url.startswith(("https://", "http://")) else " news-card-textonly"
         summary = item.get("summary") or ""
         summary_html = f'<p class="news-summary">{html.escape(summary)}</p>' if summary else ""
         published = f" · {html.escape(str(item.get('published')))}" if item.get("published") else ""
         cards.append(
-            f"""<a class="news-card-item" href="{html.escape(str(item.get("url", "#")), quote=True)}" target="_blank" rel="noopener noreferrer">
+            f"""<a class="news-card-item{cls_extra}" href="{html.escape(str(item.get("url", "#")), quote=True)}" target="_blank" rel="noopener noreferrer">
+          {img_html}
           <span class="news-tag news-{slug}">{html.escape(cat)}</span>
           <strong>{html.escape(str(item.get("title", "")))}</strong>
           {summary_html}
@@ -198,7 +229,8 @@ def render_news_static(news_data):
         )
     return (
         f'<div class="news-topbar"><span class="news-meta">{len(items)} curated stories · {html.escape(updated_label(news_data.get("last_updated")))}</span></div>'
-        f'<div class="news-grid">{"".join(cards)}</div>'
+        + hero_html
+        + f'<div class="news-grid">{"".join(cards)}</div>'
     )
 
 

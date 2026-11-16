@@ -15,24 +15,38 @@ except ImportError:
 
 SGT = ZoneInfo("Asia/Singapore")
 OUTPUT_FILE = Path("data/news.json")
-USER_AGENT = "SGAlertsBot/1.0 (+https://sgalerts.com/news.html)"
+USER_AGENT = "SGAlertsBot/1.0 (+https://sgalerts.com/)"
 
 NEWS_FEEDS = [
     {
         "source": "CNA Singapore",
         "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=10416",
-    },
-    {
-        "source": "CNA",
-        "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml",
-    },
-    {
-        "source": "Mothership",
-        "url": "https://mothership.sg/feed/",
+        "default_category": "Singapore",
     },
     {
         "source": "Straits Times",
         "url": "https://www.straitstimes.com/news/singapore/rss.xml",
+        "default_category": "Singapore",
+    },
+    {
+        "source": "Mothership",
+        "url": "https://mothership.sg/feed/",
+        "default_category": "Singapore",
+    },
+    {
+        "source": "CNA Business",
+        "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6936",
+        "default_category": "Finance",
+    },
+    {
+        "source": "Straits Times Business",
+        "url": "https://www.straitstimes.com/news/business/rss.xml",
+        "default_category": "Finance",
+    },
+    {
+        "source": "DollarsAndSense",
+        "url": "https://dollarsandsense.sg/feed/",
+        "default_category": "Finance",
     },
     {
         "source": "Vulcan Post",
@@ -72,6 +86,13 @@ KEYWORDS = {
         "anthropic", "ai", "smartphone", "camera", "tech", "software", "app",
         "fintech", "ev", "tesla", "byd",
     ],
+    "Finance": [
+        "coe", "petrol", "gst", "voucher", "cost", "price", "inflation",
+        "cpf", "mas", "bank", "sgd", "myr", "interest rate", "cdc",
+        "t-bill", "t-bills", "ssb", "fixed deposit", "stocks", "reit", "sti",
+        "economy", "gdp", "dividend", "investment", "credit card", "salary",
+        "tax", "budget", "earnings", "profit", "fed", "tariff",
+    ],
     "Transport": [
         "mrt", "train", "bus", "smrt", "sbs", "lrt", "delay", "disruption",
         "lta", "causeway", "checkpoint", "woodlands", "tuas", "rts link",
@@ -79,7 +100,7 @@ KEYWORDS = {
     "Traffic": [
         "accident", "crash", "collision", "expressway", "pie", "cte",
         "aye", "sle", "tpe", "bke", "mce", "traffic", "lorry",
-        "motorcycle", "Motorcyclist", "erp",
+        "motorcycle", "motorcyclist", "erp",
     ],
     "Fire": [
         "fire", "scdf", "burn", "smoke", "evacuated", "blaze",
@@ -87,10 +108,6 @@ KEYWORDS = {
     "Housing": [
         "bto", "hdb", "flat", "resale", "property", "housing", "condo",
         "mortgage", "hfe", "cov",
-    ],
-    "Money": [
-        "coe", "petrol", "gst", "voucher", "cost", "price", "inflation",
-        "cpf", "mas", "bank", "sgd", "myr", "interest rate", "cdc",
     ],
 }
 
@@ -117,14 +134,58 @@ def trim_summary(text, limit=180):
     return f"{cut}..."
 
 
-def classify(title, summary="", default_category="General"):
+def classify(title, summary="", default_category="Singapore"):
     text = f"{title} {summary}".lower()
     for category, patterns in CATEGORY_PATTERNS.items():
         if default_category == "IT & Gadgets" and category in {"Traffic", "Transport", "Housing"}:
             continue
+        if default_category == "Finance" and category in {"Traffic", "Transport", "Fire"}:
+            continue
         if any(pattern.search(text) for pattern in patterns):
             return category
     return default_category
+
+
+def valid_image_url(url):
+    if not url or not isinstance(url, str):
+        return ""
+    url = html.unescape(url.strip())
+    if not url.startswith(("https://", "http://")):
+        return ""
+    lower = url.lower()
+    if any(bad in lower for bad in ("favicon", "cropped-", "s.w.org/images", "pixel", "1x1", "gravatar", "avatar", "/114/114/")):
+        return ""
+    return url
+
+
+def extract_image(entry):
+    for key in ("media_thumbnail", "media_content", "enclosures"):
+        items = getattr(entry, key, None) or []
+        if isinstance(items, list):
+            for media in items:
+                if isinstance(media, dict):
+                    candidate = valid_image_url(media.get("url") or media.get("href"))
+                    if candidate:
+                        return candidate
+    if getattr(entry, "image", None):
+        candidate = valid_image_url(entry.image)
+        if candidate:
+            return candidate
+    # Check HTML blocks (content, summary, description) for <img> src
+    blobs = []
+    for item in getattr(entry, "content", None) or []:
+        if isinstance(item, dict) and item.get("value"):
+            blobs.append(item["value"])
+    for attr in ("summary", "description"):
+        val = getattr(entry, attr, None)
+        if val:
+            blobs.append(val)
+    for blob in blobs:
+        for match in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', str(blob), re.I):
+            candidate = valid_image_url(match.group(1))
+            if candidate:
+                return candidate
+    return ""
 
 
 def format_sgt(dt):
@@ -152,13 +213,17 @@ def get_published_time(entry):
 def parse_xml_fallback(url):
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req, timeout=12) as resp:
-        raw = resp.read(500_000).decode("utf-8", errors="replace")
-    # Strip invalid XML control characters so WordPress/quirky feeds parse cleanly.
+        raw = resp.read(750_000).decode("utf-8", errors="replace")
     raw = re.sub(r"[\x00-\x08\x0b\x0c\x0e-\x1f]", "", raw)
+    raw = re.sub(r"&(?!(?:[a-zA-Z]+|#\d+|#x[0-9a-fA-F]+);)", "&amp;", raw)
     root = ET.fromstring(raw)
 
     class SimpleEntry:
         pass
+
+    media_ns = "{http://search.yahoo.com/mrss/}"
+    content_ns = "{http://purl.org/rss/1.0/modules/content/}"
+    atom_ns = "{http://www.w3.org/2005/Atom}"
 
     entries = []
     rss_items = root.findall(".//item")
@@ -167,23 +232,38 @@ def parse_xml_fallback(url):
             e = SimpleEntry()
             e.title = item.findtext("title", "")
             e.link = item.findtext("link", "")
-            e.summary = item.findtext("description", "")
+            encoded = item.findtext(f"{content_ns}encoded", "")
+            desc = item.findtext("description", "")
+            e.summary = desc or encoded
+            e.content = [{"value": encoded}] if encoded else []
             e.published = item.findtext("pubDate", "")
             e.published_parsed = None
             e.updated_parsed = None
+            thumb = item.find(f"{media_ns}thumbnail")
+            mcontent = item.find(f"{media_ns}content")
+            enclosure = item.find("enclosure")
+            img_url = ""
+            for el in (thumb, mcontent, enclosure):
+                if el is not None and el.attrib.get("url"):
+                    img_url = el.attrib["url"]
+                    break
+            e.image = img_url
             entries.append(e)
         return entries
 
-    atom_ns = "{http://www.w3.org/2005/Atom}"
     for item in root.findall(f".//{atom_ns}entry")[:40]:
         e = SimpleEntry()
         e.title = item.findtext(f"{atom_ns}title", "")
         link_el = item.find(f"{atom_ns}link")
         e.link = link_el.attrib.get("href", "") if link_el is not None else ""
-        e.summary = item.findtext(f"{atom_ns}summary", "") or item.findtext(f"{atom_ns}content", "")
+        content_txt = item.findtext(f"{atom_ns}content", "")
+        summary_txt = item.findtext(f"{atom_ns}summary", "")
+        e.summary = summary_txt or content_txt
+        e.content = [{"value": content_txt}] if content_txt else []
         e.published = item.findtext(f"{atom_ns}updated", "") or item.findtext(f"{atom_ns}published", "")
         e.published_parsed = None
         e.updated_parsed = None
+        e.image = ""
         entries.append(e)
     return entries
 
@@ -204,7 +284,7 @@ def fetch_news():
     for feed_info in NEWS_FEEDS:
         source = feed_info["source"]
         url = feed_info["url"]
-        default_category = feed_info.get("default_category", "General")
+        default_category = feed_info.get("default_category", "Singapore")
 
         try:
             entries = read_feed_entries(url)
@@ -229,36 +309,36 @@ def fetch_news():
             seen_titles.add(title_key)
 
             category = classify(title, summary, default_category=default_category)
+            image_url = extract_image(entry)
             headlines.append({
                 "category": category,
                 "title": title,
                 "summary": "" if summary.lower() == title_key else summary,
+                "image": image_url,
                 "source": source,
                 "url": link,
                 "published": get_published_time(entry),
             })
 
-    # Keep categories balanced and fresh so Crime, IT & Gadgets, and SG news are all represented.
     priority = {
-        "Crime": 1,
-        "IT & Gadgets": 2,
-        "Transport": 3,
-        "Traffic": 4,
-        "Housing": 5,
-        "Money": 6,
-        "Fire": 7,
-        "General": 8,
+        "Singapore": 1,
+        "Crime": 2,
+        "IT & Gadgets": 3,
+        "Finance": 4,
+        "Transport": 5,
+        "Traffic": 6,
+        "Housing": 7,
+        "Fire": 8,
+        "General": 9,
     }
-    headlines.sort(key=lambda x: (priority.get(x["category"], 99), x.get("published") or ""), reverse=False)
-    # Within each category, sort newest first.
     grouped = {}
     for item in headlines:
         grouped.setdefault(item["category"], []).append(item)
 
     ordered = []
     for cat in sorted(grouped.keys(), key=lambda c: priority.get(c, 99)):
-        items = sorted(grouped[cat], key=lambda x: x.get("published") or "", reverse=True)
-        ordered.extend(items[:12])
+        items = sorted(grouped[cat], key=lambda x: (1 if x.get("image") else 0, x.get("published") or ""), reverse=True)
+        ordered.extend(items[:10])
 
     return ordered[:64]
 

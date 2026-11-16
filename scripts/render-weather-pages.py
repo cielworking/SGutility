@@ -392,18 +392,7 @@ def main():
             stamp = min((r["reported_at"] for r in data if r.get("reported_at")), default=None)
         status = freshness(feed, stamp, end, hours)
         cards.append((kind, f'<a class="weather-summary" href="{path}"><span class="eyebrow">{country.title()}</span><h3>{esc(title)}</h3><p><strong>{esc(summary)}</strong></p><p>{esc(desc)}</p>{status}<span class="detail-link">View {"forecast" if kind == "rain-forecast" else "air quality"} →</span></a>'))
-    home = ROOT / "index.html"
-    text = home.read_text(encoding="utf-8")
-    for kind, marker in [("rain-forecast", "RAIN"), ("haze", "HAZE")]:
-        rendered = homepage_rain_markup(cache, home_rain) + '<p><a class="detail-link" href="/weather/">Open full rain radar &amp; forecast →</a></p>' if kind == "rain-forecast" else home_psi
-        if kind == "haze":
-            rendered = home_psi
-        pattern = rf'<!-- STATIC:{marker}:START -->.*?<!-- STATIC:{marker}:END -->'
-        text, count = re.subn(pattern, lambda _: f'<!-- STATIC:{marker}:START -->\n{rendered}\n<!-- STATIC:{marker}:END -->', text, flags=re.S)
-        if count != 1:
-            raise RuntimeError(f"Missing homepage {marker} marker")
-    home.write_text(text, encoding="utf-8")
-    print("Rendered four weather pages and homepage links")
+    print("Rendered dedicated weather and air-quality pages.")
 
 
 if __name__ == "__main__":

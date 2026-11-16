@@ -1,10 +1,101 @@
 {
-  "last_updated": "2026-11-17T01:14:26.840684+08:00",
+  "last_updated": "2026-11-17T01:16:18.183963+08:00",
   "headlines": [
+    {
+      "category": "Singapore",
+      "title": "Chinatown to get new cinema at Oriental Plaza",
+      "summary": "What should it screen?",
+      "image": "https://static.mothership.sg/1/2026/11/oriental-plaza.jpg",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/chinatown-singapore-cinema/",
+      "published": "2026-11-17 01:19"
+    },
+    {
+      "category": "Singapore",
+      "title": "Debt collectors chase over S$2 million in claims from firms linked to Lao Huo Tang",
+      "summary": "The amounts claimed have not been independently established as debts owed by the founder personally.",
+      "image": "https://static.mothership.sg/1/2026/11/cover-pic-1-3.png",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/lao-huo-tang-debt-collector/",
+      "published": "2026-11-17 00:37"
+    },
+    {
+      "category": "Singapore",
+      "title": "Young man seen rescuing chicken from canal at Whampoa Park Connector",
+      "summary": "He put it in a plastic bag before climbing out of the canal.",
+      "image": "https://static.mothership.sg/1/2026/11/Article-Cover-Pic-2000-x-1050-66.jpg",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/man-rescuing-chicken-whampoa-park-connector/",
+      "published": "2026-11-17 00:10"
+    },
+    {
+      "category": "Singapore",
+      "title": "Travellers at Beijing airport accused of using wheelchairs to skip queues",
+      "summary": "Some passengers were reportedly seen walking without assistance after arriving at their destinations in Canada.",
+      "image": "https://static.mothership.sg/1/2026/11/Untitled-Design-25-1.png",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/free-wheelchair-service-beijing-airport/",
+      "published": "2026-11-16 23:20"
+    },
+    {
+      "category": "Singapore",
+      "title": "S’pore is looking at age-based access to social media. Here’s what it means for teens & why it’s not simply a blanket ban.",
+      "summary": "A safer online experience for teens.",
+      "image": "https://static.mothership.sg/1/2026/11/mddi-digital-parenting-cover.png",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/age-based-access-mddi-digital-parenting/",
+      "published": "2026-11-16 23:03"
+    },
+    {
+      "category": "Singapore",
+      "title": "Singapore's first Zero Waste Hub opens in Nee Soon South, 7 more planned by 2028",
+      "summary": "The hub in Yishun has separate recycling bins for plastic, paper, metal and glass, collection points for secondhand clothes and electronic waste, and a station for residents to...",
+      "image": "https://dam.mediacorp.sg/image/upload/s--iM3fY--G--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/yishun_nee_soon_zero_waste_hub.png?itok=GQ3j9nfR",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/singapore/zero-waste-hub-yishun-nee-soon-south-recycling-6554836",
+      "published": "2026-11-16 21:42"
+    },
+    {
+      "category": "Singapore",
+      "title": "Lions won't be intimidated by Brazil, will focus on what's within control: Gavin Lee",
+      "summary": "Singapore will take on football powerhouse Brazil at 6pm on Tuesday at the National Stadium, with the match up between Japan and Paraguay taking place shortly after at 9.10pm.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--ultzNbbt--/c_crop,h_1125,w_2000,x_0,y_125/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/wal_4064_1_1.jpg?itok=ZGCl55H9",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/singapore/singapore-brazil-football-mizuho-blue-challenge-carlo-ancelotti-vinicius-junior-gavin-lee-6555221",
+      "published": "2026-11-16 19:29"
+    },
+    {
+      "category": "Singapore",
+      "title": "Safer, smoother, more fun: Joo Chiat's Shibuya-style crossing gets warm welcome from pedestrians, businesses",
+      "summary": "Residents and pedestrians are celebrating a faster, easier walk at the busy Joo Chiat Road junction, but some motorists are bemoaning longer waits and detours.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--8LfLfWRw--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/ayt_1097.jpg?itok=bmty16K6",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/singapore/joo-chiat-scramble-crossing-trial-businesses-pedestrians-6555216",
+      "published": "2026-11-16 19:04"
+    },
+    {
+      "category": "Singapore",
+      "title": "MSC Cruises to launch Singapore-based sailings from 2028, with voyages across Southeast Asia",
+      "summary": "Under a three-year partnership with the Singapore Tourism Board, MSC Orchestra will begin operating eight- to 12-night cruises from Singapore in late 2028, with stops in...",
+      "image": "https://dam.mediacorp.sg/image/upload/s--wTw9_vCs--/c_crop,h_1125,w_2000,x_0,y_63/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/msc_cruises_-_singapore_homeport_caa16nov.jpeg?itok=3aYe0NDw",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/travel/msc-cruises-singapore-homeport-2028-southeast-asia-voyages-6555101",
+      "published": "2026-11-16 18:32"
+    },
+    {
+      "category": "Singapore",
+      "title": "SFA lifts suspension of Deli Hub Catering after gastroenteritis cases at two MOE kindergartens",
+      "summary": "The caterer has complied with measures stipulated by the Singapore Food Agency, including cleaning and sanitising its premises and having food workers undergo food safety...",
+      "image": "https://dam.mediacorp.sg/image/upload/s--VkZzFkpK--/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/10/27/screenshot-2026-10-27-225151.png?itok=_vq6DeS9",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/singapore/deli-hub-catering-sfa-lifts-suspension-gastroenteritis-moe-kindergarten-6555011",
+      "published": "2026-11-16 18:00"
+    },
     {
       "category": "Crime",
       "title": "S'porean man, 22, jailed after hitting pregnant ex-girlfriend & her boyfriend, causing head & hand injuries",
       "summary": "He was also fined S$800, and had his driver's licence suspended for two years.",
+      "image": "https://static.mothership.sg/1/2026/11/hit-pregnant-ex-go-jail.jpg",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/sporean-man-slaps-pregnant-ex-girlfriend-jail/",
       "published": "2026-11-17 01:35"
@@ -13,6 +104,7 @@
       "category": "Crime",
       "title": "Pakistani teen, 19, mauled to death by lioness in video shoot for influencer",
       "summary": "The influencer and the farm owner lied to local police that it was a dog attack.",
+      "image": "https://static.mothership.sg/1/2026/11/photo_2026-11-16_17-06-45.jpg",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/mauled-lioness-influencer/",
       "published": "2026-11-17 01:18"
@@ -21,30 +113,16 @@
       "category": "Crime",
       "title": "S'porean man, 41, let late lawyer M Ravi consume meth at his flat, gets 2 years & 5 months' jail",
       "summary": "They took drugs together on Dec. 24, 2025.",
+      "image": "https://static.mothership.sg/1/2026/11/guy-let-m-ravi-take-drugs-jail.jpg",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/singaporean-man-let-late-lawyer-m-ravi-consume-meth-jail/",
       "published": "2026-11-16 20:24"
     },
     {
       "category": "Crime",
-      "title": "Man arrested for stealing earbuds from shop in Changi Airport transit area",
-      "summary": "He will be charged with theft in dwelling on Nov 17.",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/man-arrested-for-stealing-earbuds-from-shop-in-changi-airport-transit-area",
-      "published": "2026-11-16 19:37"
-    },
-    {
-      "category": "Crime",
-      "title": "Ex-employee of HDB co-owned firm gets over 8 months’ jail for taking $50k bribe",
-      "summary": "He committed the offence in exchange for advancing the business interests of another company.",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/ex-employee-of-hdb-co-owned-firm-gets-over-8-months-jail-for-accepting-50k-bribe",
-      "published": "2026-11-16 19:35"
-    },
-    {
-      "category": "Crime",
       "title": "Jail for man who flew to Cambodia for 'customer service' job but found scam syndicate targeting Singaporeans",
       "summary": "The syndicate offered the young man a 5 per cent commission and gave him a script, an iPhone and a list containing Singaporeans' personal details.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--vIrXL9tB--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/jia_4419.jpg?itok=2t6XS_cg",
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/singapore/cambodia-job-scam-syndicate-singaporean-6555016",
       "published": "2026-11-16 19:18"
@@ -53,6 +131,7 @@
       "category": "Crime",
       "title": "Malaysia wants 30,000 EV charge points by 2030, but MITI is relying on “encouragement”",
       "summary": "Malaysia wants 30,000 public EV charging points by 2030. That sounds ambitious on paper, but how does the government actually plan to achieve it? During today’s Parliament...",
+      "image": "https://soyacincau.com/wp-content/uploads/2026/11/261116-MITI-deputy-parliament-sim-tze-tzin.jpg",
       "source": "SoyaCincau",
       "url": "https://soyacincau.com/2026/11/16/malaysia-wants-30000-ev-charge-points-2030-but-miti-relying-on-encouragement/",
       "published": "2026-11-16 18:31"
@@ -61,30 +140,16 @@
       "category": "Crime",
       "title": "Former project manager handling West Coast Town Council tenders gets jail for taking S$50,000 bribe",
       "summary": "He accepted S$50,000 in cash from a contractor, whose firm later won a S$3.3 million project covering 41 blocks in Teban Gardens, Pandan Gardens, West Coast Drive and Jurong West.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--hi2M1Qwi--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/img_4642.jpg?itok=3cCC-Nzt",
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/singapore/west-coast-town-council-tender-bribe-project-manager-6554866",
       "published": "2026-11-16 17:34"
     },
     {
       "category": "Crime",
-      "title": "SPF website down for three hours due to technical issues: Police",
-      "summary": "The police said they can now receive police reports via the e-services portal.",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/spf-website-down-for-three-hours-due-to-technical-issues-police",
-      "published": "2026-11-16 16:50"
-    },
-    {
-      "category": "Crime",
-      "title": "Man jailed for letting ex-lawyer M. Ravi consume meth in his flat, flushing drugs down toilet bowl",
-      "summary": "Shawn Loo pleaded guilty to drug consumption, allowing his premises to be used for drug consumption and obstructing the course of justice.",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/man-jailed-for-letting-lawyer-m-ravi-consume-meth-in-his-flat-flushing-drugs-down-toilet-bowl",
-      "published": "2026-11-16 16:00"
-    },
-    {
-      "category": "Crime",
       "title": "Landlord sues company director over S$76,500 in unpaid rent; counterclaim alleges property defects",
       "summary": "The police are investigating Mr Anthony Thomas Price for alleged cheating, after an earlier court judgment found that he had used a shell company in a \"deliberate scheme\" to live...",
+      "image": "https://dam.mediacorp.sg/image/upload/s--xZUvBWZh--/c_crop,h_608,w_1082,x_0,y_89/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/anthony_thomas_price_rent_houses_shell_company_jia_4981.jpg?itok=0_q5bmsF",
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/singapore/landlord-sue-anthony-price-unpaid-rent-siglap-6554391",
       "published": "2026-11-16 15:12"
@@ -93,22 +158,61 @@
       "category": "Crime",
       "title": "Man gets jail for letting lawyer M Ravi consume meth at his flat",
       "summary": "The late lawyer M Ravi died aged 56 of drug toxicity after the incident.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--sfdaPW3g--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/jia_4355.jpg?itok=aQap8chs",
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/singapore/shawn-loo-jail-let-m-ravi-take-drugs-6553916",
       "published": "2026-11-16 10:39"
     },
     {
+      "category": "Crime",
+      "title": "Malaysia mulls stricter WhatsApp verification to combat scam and impersonation calls",
+      "summary": "The Malaysian government is considering stricter WhatsApp account verification requirements to combat scams and impersonation calls, particularly those involving scammers posing...",
+      "image": "https://soyacincau.com/wp-content/uploads/2025/06/250603-whatsapp.jpg",
+      "source": "SoyaCincau",
+      "url": "https://soyacincau.com/2026/11/15/whatsapp-stricter-verification-mcmc-scam-calls-impersonation/",
+      "published": "2026-11-15 17:38"
+    },
+    {
+      "category": "Crime",
+      "title": "Man arrested for stealing earbuds from shop in Changi Airport transit area",
+      "summary": "He will be charged with theft in dwelling on Nov 17.",
+      "image": "",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/man-arrested-for-stealing-earbuds-from-shop-in-changi-airport-transit-area",
+      "published": "2026-11-16 19:37"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "The Nvidia scandal isn’t slowing down",
+      "summary": "For years, Jensen Huang has had an almost unprecedented power to shape AI's advancement as Nvidia's CEO, cofounder, and president. As The Verge wrote last week, Nvidia's chips...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STKP210_JENSEN_HUANG_D.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down",
+      "published": "2026-11-17 01:05"
+    },
+    {
       "category": "IT & Gadgets",
       "title": "S'pore-based billionaire Leo KoGuan pledges to stop Nvidia investments without 'supreme creator' Jensen Huang",
       "summary": "KoGuan called Huang \"the supreme creator\", praising him for creating the \"SI (super intelligence) global economy and its ecosystem\".",
+      "image": "https://static.mothership.sg/1/2026/11/leo.jpg",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/leo-koguan-jensen-huang-petition/",
       "published": "2026-11-17 00:52"
     },
     {
       "category": "IT & Gadgets",
+      "title": "Audible is trying to make it easier to find audiobooks you’ll actually like",
+      "summary": "Audible is introducing an AI-assisted synopsis feature that's designed to help users determine whether they'll enjoy an audiobook before they jump in and start listening to it...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Audible-audio-discovery-hero-.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability",
+      "published": "2026-11-17 00:45"
+    },
+    {
+      "category": "IT & Gadgets",
       "title": "Trump says it ‘certainly isn’t a bad idea’ for Jensen Huang to return to Nvidia",
       "summary": "Following Jensen Huang's resignation as Nvidia's CEO last week, Trump told reporters on Monday that he's open to seeing Huang return and that he's not certain that the woman...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2250207971.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
       "url": "https://www.theverge.com/tech/1034355/trump-jensen-huang-nvidia-return",
       "published": "2026-11-17 00:39"
@@ -117,86 +221,151 @@
       "category": "IT & Gadgets",
       "title": "Why NJ’s governor thinks Republicans are trapped in an X bubble",
       "summary": "Today I’m talking with Mikie Sherrill, who’s been New Jersey governor for just a little under a year, and you’ll hear her say her election was a preview of the huge Democratic...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DCD_20261116_Sherrill.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
       "url": "https://www.theverge.com/podcast/1034141/nj-midterm-sherill-democrats-musk-x-ai",
-      "published": "2026-11-17 00:00"
+      "published": "2026-11-17 00:27"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "America’s air traffic control system couldn’t handle a single bad router",
+      "summary": "Thirty minutes outside Atlanta, the pilot got on the intercom to announce that something was wrong. A communications issue with the Federal Aviation Administration was cascading...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2304497345.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/1034039/faa-aviation-glitch-meltdown-ground-stop",
+      "published": "2026-11-17 00:17"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Robert Pattinson is Amazon’s first James Bond",
+      "summary": "Robert Pattinson will take on the role of James Bond in Amazon MGM's first film in the 007 franchise. The next James Bond film will be directed by Denis Villeneuve using a script...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/bond.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1034192/robert-pattinson-james-bond",
+      "published": "2026-11-17 00:10"
     },
     {
       "category": "IT & Gadgets",
       "title": "New Denza D9 with Flash Charging to launch in Malaysia on 19 Nov",
       "summary": "BYD Malaysia has recently confirmed 19 November as the launch date of the New Denza D9 in our market. The date is aligned with the official launch of Flash Charging technology in...",
+      "image": "https://soyacincau.com/wp-content/uploads/2026/11/261116-new-denza-d9-my01.jpg",
       "source": "SoyaCincau",
       "url": "https://soyacincau.com/2026/11/16/new-denza-d9-with-flash-charging-malaysia-launch-date/",
       "published": "2026-11-16 23:35"
     },
     {
       "category": "IT & Gadgets",
-      "title": "Robert Pattinson is Amazon’s first James Bond",
-      "summary": "Robert Pattinson will take on the role of James Bond in Amazon MGM's first film in the 007 franchise. The next James Bond film will be directed by Denis Villeneuve using a script...",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1034192/robert-pattinson-james-bond",
-      "published": "2026-11-16 23:19"
-    },
-    {
-      "category": "IT & Gadgets",
       "title": "Apple TV is getting video podcasts you can watch for free",
       "summary": "Apple's streaming service will soon have a video podcasts section, the New York Times reports. It will start testing the feature in a developer release today, so expect a new...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/11/STK069_APPLE_TV_C.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
       "url": "https://www.theverge.com/entertainment/1034168/apple-tv-video-podcasts",
       "published": "2026-11-16 22:45"
     },
     {
       "category": "IT & Gadgets",
-      "title": "America’s air traffic control system couldn’t handle a single bad router",
-      "summary": "Thirty minutes outside Atlanta, the pilot got on the intercom to announce that something was wrong. A communications issue with the Federal Aviation Administration was cascading...",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/transportation/1034039/faa-aviation-glitch-meltdown-ground-stop",
-      "published": "2026-11-16 22:43"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Audible is trying to make it easier to find audiobooks you’ll actually like",
-      "summary": "Audible is introducing an AI-assisted synopsis feature that's designed to help users determine whether they'll enjoy an audiobook before they jump in and start listening to it...",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability",
-      "published": "2026-11-16 22:00"
-    },
-    {
-      "category": "IT & Gadgets",
       "title": "Google Maps can now create trip itineraries for you",
       "summary": "Google is launching a new AI trip-planning feature for Maps that allows the app to create custom itineraries for you and provide real-time details about each stop. The update...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25472454/STK270_GOOGLE_MAPS_D.png?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
       "url": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
-      "published": "2026-11-16 22:00"
+      "published": "2026-11-16 22:06"
     },
     {
-      "category": "IT & Gadgets",
-      "title": "Silicon Valley leaders back call for Jensen Huang's return to Nvidia",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/silicon-valley-leaders-back-call-jensen-huangs-return-nvidia-6555861",
-      "published": "2026-11-16 21:46"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "The Nvidia scandal isn’t slowing down",
-      "summary": "For years, Jensen Huang has had an almost unprecedented power to shape AI's advancement as Nvidia's CEO, cofounder, and president. As The Verge wrote last week, Nvidia's chips...",
+      "category": "Finance",
+      "title": "Sony’s PlayStation 5 accessories are cheaper ahead of Black Friday",
+      "summary": "Several retailers are offering discounts on PlayStation 5 games, including deep price cuts on recent console-exclusive hits like Marvel’s Wolverine, Ghost of Yotei, Saros, and...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24374429/236487_Sony_DualSense_Edge_AKrales_0032.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down",
-      "published": "2026-11-16 21:00"
+      "url": "https://www.theverge.com/gadgets/1034178/sony-playstation-5-ps5-accessories-monitor-dualsense-headset-deal-sale",
+      "published": "2026-11-17 01:07"
     },
     {
-      "category": "IT & Gadgets",
-      "title": "Razer Soma Pro: A RM4.5k gaming chair with haptic motors, THX speakers, and RGB lights",
-      "summary": "Following its global debut earlier this month, Razer has revealed the official pricing of the Razer Soma Pro gaming chair for Malaysia. The new model unites three of Razer’s...",
-      "source": "SoyaCincau",
-      "url": "https://soyacincau.com/2026/11/16/razer-soma-pro-gaming-chair-malaysia-price/",
-      "published": "2026-11-16 20:40"
+      "category": "Finance",
+      "title": "Fed's Warsh says emerging technologies will have 'significant impact,' but risks need to be watched",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--XjO2CuP3--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T170642Z_3_LYNXNPEMAF1N4_RTROPTP_3_USA-FED-AI.JPG?itok=_GHCaC5d",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/feds-warsh-says-emerging-technologies-will-have-significant-impact-risks-need-be-watched-6556426",
+      "published": "2026-11-17 01:02"
+    },
+    {
+      "category": "Finance",
+      "title": "The Verge’s guide to the best gifts under $100",
+      "summary": "Even in an era of inflation like the one we're living through now, $100 can still buy a lot… if you know where to look. In fact, it's enough to get something useful and...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268757_2026_gift_guides_UNDER_25_CVirginia_UNDER-100.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/gadgets/1028004/best-gifts-under-100-2026",
+      "published": "2026-11-17 01:00"
+    },
+    {
+      "category": "Finance",
+      "title": "Trump Media faces possible $1 billion debt repayment as stock nears record lows",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--wG3WrjHt--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T164649Z_1_LYNXNPEMAF1ME_RTROPTP_3_USA-STOCKS-TRUMP.JPG?itok=YrH2cOyy",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/trump-media-faces-possible-1-billion-debt-repayment-stock-nears-record-lows-6556401",
+      "published": "2026-11-17 00:46"
+    },
+    {
+      "category": "Finance",
+      "title": "US hyperscale data centers emit as much as Denmark, report says",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--krH1eL91--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T164102Z_2_LYNXNPEMAF1JS_RTROPTP_3_USA-CONGRESS-PERMITTING-ENERGY.JPG?itok=bFgkOz8U",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/us-hyperscale-data-centers-emit-much-denmark-report-says-6556336",
+      "published": "2026-11-17 00:03"
+    },
+    {
+      "category": "Finance",
+      "title": "Interest in Trump’s meme coin dinner fades as $TRUMP sinks to record lows",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--J829o-Yp--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T151704Z_2_LYNXNPEMAF1FJ_RTROPTP_3_TRUMP-CRYPTO-DINNER.JPG?itok=1hojcHVC",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/interest-in-trumps-meme-coin-dinner-fades-trump-sinks-record-lows-6556211",
+      "published": "2026-11-16 23:17"
+    },
+    {
+      "category": "Finance",
+      "title": "Pakistan inflation to ease to 5% to 7% target range during 2027 financial year, says central bank",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--WwfGfziF--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T114924Z_1_LYNXNPEMAF132_RTROPTP_3_PAKISTAN-INFLATION.JPG?itok=1ZrvnQ68",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/pakistan-inflation-ease-5-7-target-range-during-2027-financial-year-says-central-bank-6555536",
+      "published": "2026-11-16 19:49"
+    },
+    {
+      "category": "Finance",
+      "title": "US opens probe into more than 1 million Honda vehicles over auto stop-start failures",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--PCh6kDkB--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T110056Z_2_LYNXNPEMAF0VH_RTROPTP_3_HONDA-RESULTS.JPG?itok=D1h13loW",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/us-opens-probe-more-1-million-honda-vehicles-over-auto-stop-start-failures-6555416",
+      "published": "2026-11-16 19:03"
+    },
+    {
+      "category": "Finance",
+      "title": "Dollar hits highest since April 2025 as Fed rate bets lend support",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--AL2WbE-n--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T103948Z_1_LYNXNPEMAF0X7_RTROPTP_3_GLOBAL-FOREX.JPG?itok=vXSRP8Fh",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/dollar-hits-highest-april-2025-fed-rate-bets-lend-support-6553776",
+      "published": "2026-11-16 18:36"
+    },
+    {
+      "category": "Finance",
+      "title": "Thai central bank pushes back against proposed legal changes",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--o1HF-J4T--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T095302Z_1_LYNXNPEMAF0TL_RTROPTP_3_THAILAND-ECONOMY-CENBANK.JPG?itok=xWVuhI-p",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/thai-central-bank-pushes-back-against-proposed-legal-changes-6555146",
+      "published": "2026-11-16 17:53"
     },
     {
       "category": "Transport",
       "title": "ERP rates to rise at two locations from Jan 4; Saturday charges at Orchard Road may return",
       "summary": "LTA is also considering introducing ERP charges at two new locations along the CTE and KPE if congestion persists.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--abRHn8_t--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/08/31/_wal9873_01.jpg?itok=DHZhey1B",
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/singapore/erp-rate-school-holiday-orchard-road-lta-6554446",
       "published": "2026-11-16 14:30"
@@ -205,6 +374,7 @@
       "category": "Transport",
       "title": "Heavy traffic expected at Woodlands, Tuas checkpoints during year-end school holidays",
       "summary": "Motorists are encouraged to travel during off-peak hours, such as in the early mornings and late evenings.",
+      "image": "",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/heavy-traffic-expected-at-checkpoints-during-year-end-school-holidays",
       "published": "2026-11-16 13:10"
@@ -213,6 +383,7 @@
       "category": "Transport",
       "title": "No aviation background needed: Inside S’pore’s push to train 200 more air traffic controllers",
       "summary": "The search for air traffic controllers is ramping up ahead of the opening of Changi Airport Terminal 5.",
+      "image": "",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/behind-every-flight-why-people-still-matter-most-in-air-traffic-control",
       "published": "2026-11-16 10:00"
@@ -221,169 +392,64 @@
       "category": "Traffic",
       "title": "ERP up S$1 at some PIE & CTE locations, could return to Orchard on Saturdays",
       "summary": "Motorists are encouraged to plan their journeys and consider alternative routes.",
+      "image": "https://static.mothership.sg/1/2026/11/Article-Cover-Pic-2000-x-1050-65.jpg",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/erp-rates-cuts-pie-cte/",
       "published": "2026-11-16 23:23"
     },
     {
       "category": "Traffic",
-      "title": "Still using a NETS CashCard? Switch before Jan 1, 2027, for ERP and parking payments",
-      "summary": "Drivers should switch to the NETS Motoring Card or NETS FlashPay Card before Jan 1, 2027.",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/still-using-a-nets-cashcard-switch-before-jan-1-2027-for-erp-and-parking-payments",
-      "published": "2026-11-16 21:35"
-    },
-    {
-      "category": "Traffic",
       "title": "Ang Mo Kio residents face longer walks, route disruptions from traffic changes around AMK Hub",
       "summary": "Area residents told CNA on Monday (Nov 16) that the new pedestrian routes were confusing or more tiring, while motorists dealt with longer waiting times and unexpected detours.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--wPVCx76b--/c_crop,h_847,w_1507,x_1,y_45/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/134081.jpg?itok=uiuKnjbY",
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/singapore/ang-mo-kio-amk-hub-traffic-changes-6553631",
       "published": "2026-11-16 19:20"
     },
     {
       "category": "Traffic",
-      "title": "ERP rates at PIE, CTE stretches to rise by $1 from Jan 4, 2027, after year-end discounts",
-      "summary": "ERP charges at 12 locations will be temporarily reduced by $1.",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/erp-rates-at-pie-cta-stretches-to-rise-by-1-from-jan-4-2027-after-year-end-discounts",
-      "published": "2026-11-16 15:09"
-    },
-    {
-      "category": "Traffic",
       "title": "Heavy traffic expected at Singapore-Malaysia land checkpoints during year-end school holidays",
       "summary": "The Immigration and Checkpoints Authority (ICA) encourages travellers to consider travelling during non-peak hours, such as early morning and late evenings.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--LsOyZr7t--/c_crop,h_900,w_1600,x_0,y_0/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2025/05/30/sya_0602.jpeg?itok=VozaiwX7",
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/singapore/heavy-traffic-woodlands-tuas-checkpoints-malaysia-year-end-school-holidays-6554001",
       "published": "2026-11-16 11:44"
     },
     {
-      "category": "Money",
-      "title": "Sony’s PlayStation 5 accessories are cheaper ahead of Black Friday",
-      "summary": "Several retailers are offering discounts on PlayStation 5 games, including deep price cuts on recent console-exclusive hits like Marvel’s Wolverine, Ghost of Yotei, Saros, and...",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/gadgets/1034178/sony-playstation-5-ps5-accessories-monitor-dualsense-headset-deal-sale",
-      "published": "2026-11-17 00:48"
-    },
-    {
-      "category": "Money",
-      "title": "The Verge’s guide to the best gifts under $100",
-      "summary": "Even in an era of inflation like the one we're living through now, $100 can still buy a lot… if you know where to look. In fact, it's enough to get something useful and...",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/gadgets/1028004/best-gifts-under-100-2026",
-      "published": "2026-11-17 00:00"
-    },
-    {
-      "category": "Fire",
-      "title": "1 taken to hospital, 140 evacuated after fire breaks out in Boon Keng flat",
-      "summary": "The fire broke out in the bedroom of a 23rd-floor unit.",
+      "category": "Traffic",
+      "title": "Still using a NETS CashCard? Switch before Jan 1, 2027, for ERP and parking payments",
+      "summary": "Drivers should switch to the NETS Motoring Card or NETS FlashPay Card before Jan 1, 2027.",
+      "image": "",
       "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/1-taken-to-hospital-140-evacuated-after-boon-keng-hdb-flat-fire",
-      "published": "2026-11-16 22:10"
+      "url": "https://www.straitstimes.com/singapore/still-using-a-nets-cashcard-switch-before-jan-1-2027-for-erp-and-parking-payments",
+      "published": "2026-11-16 21:35"
+    },
+    {
+      "category": "Traffic",
+      "title": "ERP rates at PIE, CTE stretches to rise by $1 from Jan 4, 2027, after year-end discounts",
+      "summary": "ERP charges at 12 locations will be temporarily reduced by $1.",
+      "image": "",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/erp-rates-at-pie-cta-stretches-to-rise-by-1-from-jan-4-2027-after-year-end-discounts",
+      "published": "2026-11-16 15:09"
     },
     {
       "category": "Fire",
       "title": "Actor Shaun Chen says Grab rider made rude gesture at him in carpark incident, later urges company not to fire him",
       "summary": "The actor tells 8days.sg that Grab has since contacted him, but he hopes the rider won't be fired.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--2RXDsnTb--/c_crop,h_1125,w_2000,x_0,y_90/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/img_7561.jpeg?itok=7OrzXGT1",
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/entertainment/shaun-chen-grab-driver-middle-finger-6553996",
       "published": "2026-11-16 14:28"
     },
     {
-      "category": "General",
-      "title": "Chinatown to get new cinema at Oriental Plaza",
-      "summary": "What should it screen?",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/chinatown-singapore-cinema/",
-      "published": "2026-11-17 01:19"
-    },
-    {
-      "category": "General",
-      "title": "Fed's Warsh says emerging technologies will have 'significant impact,' but risks need to be watched",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/feds-warsh-says-emerging-technologies-will-have-significant-impact-risks-need-be-watched-6556426",
-      "published": "2026-11-17 01:02"
-    },
-    {
-      "category": "General",
-      "title": "Saudi Arabia dismisses commander of anti-Houthi coalition: state media",
-      "summary": "Saudi authorities named chief of staff General Fayyad bin Hamed bin Ruqad al-Ruwaili as the coalition's new commander.",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/saudi-arabia-anti-houthi-coalition-leader-6556351",
-      "published": "2026-11-17 01:00"
-    },
-    {
-      "category": "General",
-      "title": "Trump Media faces possible $1 billion debt repayment as stock nears record lows",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/trump-media-faces-possible-1-billion-debt-repayment-stock-nears-record-lows-6556401",
-      "published": "2026-11-17 00:46"
-    },
-    {
-      "category": "General",
-      "title": "Debt collectors chase over S$2 million in claims from firms linked to Lao Huo Tang",
-      "summary": "The amounts claimed have not been independently established as debts owed by the founder personally.",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/lao-huo-tang-debt-collector/",
-      "published": "2026-11-17 00:37"
-    },
-    {
-      "category": "General",
-      "title": "Erasmus defends late changes to Springbok team",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/erasmus-defends-late-changes-springbok-team-6556376",
-      "published": "2026-11-17 00:32"
-    },
-    {
-      "category": "General",
-      "title": "Pochettino prepares for quick switch from US to United",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/pochettino-prepares-quick-switch-us-united-6556381",
-      "published": "2026-11-17 00:29"
-    },
-    {
-      "category": "General",
-      "title": "Trump says he might meet with North Korea's Kim Jong Un in China",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/trump-says-he-might-meet-north-koreas-kim-jong-un-in-china-6556341",
-      "published": "2026-11-17 00:26"
-    },
-    {
-      "category": "General",
-      "title": "Diallo’s narrow European base leaves him a long shot to topple Infantino",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/diallos-narrow-european-base-leaves-him-long-shot-topple-infantino-6556346",
-      "published": "2026-11-17 00:23"
-    },
-    {
-      "category": "General",
-      "title": "US air travel largely returns to normal as funding flight brews",
-      "summary": "As of Monday (Nov 16) there were just 300 flight cancellations and 1,500 delays, down from more than 2,300 cancelled and 11,000 delayed Sunday, according to FlightAware.",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-flights-delays-cancellations-normal-airport-6556301",
-      "published": "2026-11-17 00:15"
-    },
-    {
-      "category": "General",
-      "title": "Young man seen rescuing chicken from canal at Whampoa Park Connector",
-      "summary": "He put it in a plastic bag before climbing out of the canal.",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/man-rescuing-chicken-whampoa-park-connector/",
-      "published": "2026-11-17 00:10"
-    },
-    {
-      "category": "General",
-      "title": "US hyperscale data centers emit as much as Denmark, report says",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-hyperscale-data-centers-emit-much-denmark-report-says-6556336",
-      "published": "2026-11-17 00:03"
+      "category": "Fire",
+      "title": "1 taken to hospital, 140 evacuated after fire breaks out in Boon Keng flat",
+      "summary": "The fire broke out in the bedroom of a 23rd-floor unit.",
+      "image": "",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/1-taken-to-hospital-140-evacuated-after-boon-keng-hdb-flat-fire",
+      "published": "2026-11-16 22:10"
     }
   ]
 }
