@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T22:18:46.756148+08:00",
+  "last_updated": "2026-11-17T00:34:11.756805+08:00",
   "headlines": [
     {
       "category": "Crime",
@@ -14,13 +14,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/asia/vietnam-court-jails-over-180-in-investment-fraud-case-6555491",
       "published": "2026-11-16 19:54"
-    },
-    {
-      "category": "Crime",
-      "title": "Jail for man who flew to Cambodia for 'customer service' job but found scam syndicate targeting Singaporeans",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/cambodia-job-scam-syndicate-singaporean-6555016",
-      "published": "2026-11-16 19:18"
     },
     {
       "category": "Crime",
@@ -73,7 +66,7 @@
     },
     {
       "category": "Crime",
-      "title": "Man jailed for letting lawyer M. Ravi consume meth in his flat, flushing drugs down toilet bowl",
+      "title": "Man jailed for letting ex-lawyer M. Ravi consume meth in his flat, flushing drugs down toilet bowl",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/courts-crime/man-jailed-for-letting-lawyer-m-ravi-consume-meth-in-his-flat-flushing-drugs-down-toilet-bowl",
       "published": "2026-11-16 16:00"
@@ -101,10 +94,10 @@
     },
     {
       "category": "Traffic",
-      "title": "Ang Mo Kio residents face longer walks, route disruptions from traffic changes around AMK Hub",
+      "title": "Alcaraz outclasses Tiafoe at ATP Finals to stretch winning run",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/ang-mo-kio-amk-hub-traffic-changes-6553631",
-      "published": "2026-11-16 19:20"
+      "url": "https://www.channelnewsasia.com/sport/alcaraz-outclasses-tiafoe-atp-finals-stretch-winning-run-6556061",
+      "published": "2026-11-16 22:35"
     },
     {
       "category": "Traffic",
@@ -149,15 +142,8 @@
       "published": "2026-11-16 10:00"
     },
     {
-      "category": "Transport",
-      "title": "Safer, smoother, more fun: Joo Chiat's Shibuya-style crossing gets warm welcome from pedestrians, businesses",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/joo-chiat-scramble-crossing-trial-businesses-pedestrians-6555216",
-      "published": "2026-11-16 19:04"
-    },
-    {
       "category": "Fire",
-      "title": "1 taken to hospital, 140 evacuated after Boon Keng HDB flat fire",
+      "title": "1 taken to hospital, 140 evacuated after fire breaks out in Boon Keng flat",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/1-taken-to-hospital-140-evacuated-after-boon-keng-hdb-flat-fire",
       "published": "2026-11-16 22:10"
@@ -168,6 +154,69 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/pakistan-inflation-ease-5-7-target-range-during-2027-financial-year-says-central-bank-6555536",
       "published": "2026-11-16 19:49"
+    },
+    {
+      "category": "General",
+      "title": "Diallo’s narrow European base leaves him a long shot to topple Infantino",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/diallos-narrow-european-base-leaves-him-long-shot-topple-infantino-6556346",
+      "published": "2026-11-17 00:23"
+    },
+    {
+      "category": "General",
+      "title": "US air travel largely returns to normal as funding flight brews",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-flights-delays-cancellations-normal-airport-6556301",
+      "published": "2026-11-17 00:15"
+    },
+    {
+      "category": "General",
+      "title": "US hyperscale data centers emit as much as Denmark, report says",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/us-hyperscale-data-centers-emit-much-denmark-report-says-6556336",
+      "published": "2026-11-17 00:03"
+    },
+    {
+      "category": "General",
+      "title": "Greenway appointed ECB's head of women's game strategy",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/greenway-appointed-ecbs-head-womens-game-strategy-6556286",
+      "published": "2026-11-16 23:52"
+    },
+    {
+      "category": "General",
+      "title": "Springboks recall Etzebeth for crunch clash with Ireland in Dublin",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/springboks-recall-etzebeth-crunch-clash-ireland-in-dublin-6556256",
+      "published": "2026-11-16 23:42"
+    },
+    {
+      "category": "General",
+      "title": "British actor Robert Pattinson named new James Bond",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/james-bond-new-actor-robert-pattinson-6556216",
+      "published": "2026-11-16 23:39"
+    },
+    {
+      "category": "General",
+      "title": "French football chief Diallo to challenge Infantino for FIFA presidency",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/french-football-chief-diallo-challenge-infantino-fifa-presidency-6556261",
+      "published": "2026-11-16 23:38"
+    },
+    {
+      "category": "General",
+      "title": "Interest in Trump’s meme coin dinner fades as $TRUMP sinks to record lows",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/interest-in-trumps-meme-coin-dinner-fades-trump-sinks-record-lows-6556211",
+      "published": "2026-11-16 23:17"
+    },
+    {
+      "category": "General",
+      "title": "Sailing-Ineos and Athena Racing settle lawsuit over Britain's America's Cup yacht",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/sailing-ineos-and-athena-racing-settle-lawsuit-over-britains-americas-cup-yacht-6556066",
+      "published": "2026-11-16 22:34"
     },
     {
       "category": "General",
@@ -217,55 +266,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/lecuona-replace-injured-bagnaia-portuguese-gp-6555531",
       "published": "2026-11-16 19:49"
-    },
-    {
-      "category": "General",
-      "title": "Lions won't be intimidated by Brazil, will focus on what's within control: Gavin Lee",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/singapore-brazil-football-mizuho-blue-challenge-carlo-ancelotti-vinicius-junior-gavin-lee-6555221",
-      "published": "2026-11-16 19:29"
-    },
-    {
-      "category": "General",
-      "title": "Union of European Clubs file competition complaint against UEFA, EFC with EU",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/union-european-clubs-file-competition-complaint-against-uefa-efc-eu-6555436",
-      "published": "2026-11-16 19:06"
-    },
-    {
-      "category": "General",
-      "title": "Papa John's turns to AI to check pizzas from customers' photos",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/papa-johns-turns-ai-check-pizzas-customers-photos-6555431",
-      "published": "2026-11-16 19:05"
-    },
-    {
-      "category": "General",
-      "title": "US opens probe into more than 1 million Honda vehicles over auto stop-start failures",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-opens-probe-more-1-million-honda-vehicles-over-auto-stop-start-failures-6555416",
-      "published": "2026-11-16 19:03"
-    },
-    {
-      "category": "General",
-      "title": "Analysis:AI selloff has investors scrambling to measure their true exposure",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/analysisai-selloff-has-investors-scrambling-measure-their-true-exposure-6555406",
-      "published": "2026-11-16 19:03"
-    },
-    {
-      "category": "General",
-      "title": "India's Fractal in talks with up to 25 AI startups for acquisitions, CEO says",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/indias-fractal-in-talks-up-25-ai-startups-acquisitions-ceo-says-6555411",
-      "published": "2026-11-16 19:01"
-    },
-    {
-      "category": "General",
-      "title": "Belgium's record scorer Lukaku, 33, retires from internationals",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/belgiums-record-scorer-lukaku-33-retires-internationals-6555376",
-      "published": "2026-11-16 18:49"
     },
     {
       "category": "General",
