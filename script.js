@@ -1310,10 +1310,12 @@ function renderCheckpointAi() {
     const slug = status.toLowerCase().replace(/[^a-z]+/g, "-") || "unknown";
     const counts = loc.counts || {};
     const heavy = Number(counts.bus || 0) + Number(counts.truck || 0);
+    const camIds = (loc.cameras || []).map(c => c.camera_id).filter(Boolean).join(" & ");
+    const camLabel = camIds ? ` (Cam ${escapeHtml(camIds)})` : "";
     panel.innerHTML = `
       <div class="ai-traffic-head">
         <div>
-          <span class="ai-traffic-kicker">AI road-approach density</span>
+          <span class="ai-traffic-kicker">AI traffic density${camLabel}</span>
           <strong>${escapeHtml(status)}</strong>
           <span class="ai-traffic-time"> · Updated ${escapeHtml(formatTimestamp(checkpointTraffic.last_updated))}</span>
         </div>

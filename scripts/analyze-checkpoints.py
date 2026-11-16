@@ -23,8 +23,12 @@ MODEL_URL = "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1
 SGT = timezone(timedelta(hours=8), name="SGT")
 VEHICLE_CLASSES = {2: "car", 3: "motorcycle", 5: "bus", 7: "truck"}
 MAX_HISTORY_ENTRIES = 720  # ~7.5 days at 15-minute cadence
+DASHBOARD_CAMERA_IDS = {
+    "woodlands": ["2701", "2702"],
+    "tuas": ["4703", "4712"],
+}
 
-# Direction polygons in 1920x1069 camera pixel space.
+# Direction polygons in 1920x1069 camera pixel space for the 2 dashboard cameras per checkpoint.
 # Detections outside all road polygons (trees, sea reflections, distant buildings) are ignored.
 CAMERA_ZONES = {
     "2701": {
@@ -37,15 +41,8 @@ CAMERA_ZONES = {
     "2702": {
         "name": "Woodlands Checkpoint / BKE",
         "zones": {
-            "towards_jb": [(560, 260), (1920, 560), (1920, 1069), (620, 1069)],
+            "towards_jb": [(540, 220), (1920, 400), (1920, 1069), (600, 1069)],
             "towards_sg": [(260, 0), (580, 0), (570, 1069), (260, 1069)],
-        },
-    },
-    "2704": {
-        "name": "Woodlands Ave 3 / Checkpoint",
-        "zones": {
-            "towards_jb": [(640, 0), (1050, 0), (1680, 1069), (680, 1069)],
-            "towards_sg": [(1050, 0), (1920, 400), (1920, 1069), (1680, 1069)],
         },
     },
     "4703": {
@@ -60,13 +57,6 @@ CAMERA_ZONES = {
         "zones": {
             "towards_jb": [(250, 0), (720, 0), (1100, 1069), (240, 1069)],
             "towards_sg": [(720, 0), (1920, 0), (1920, 1069), (1100, 1069)],
-        },
-    },
-    "4713": {
-        "name": "Tuas West Road",
-        "zones": {
-            "towards_jb": [(960, 0), (1920, 0), (1920, 820), (960, 820)],
-            "towards_sg": [(0, 200), (960, 200), (960, 820), (0, 820)],
         },
     },
 }
@@ -98,7 +88,7 @@ def classify_direction(camera_id: str, cx: float, cy: float, width: int, height:
     return "ignored"
 
 
-def load_level(weighted_score: float, smooth_max: float = 14.0, moderate_max: float = 32.0) -> str:
+def load_level(weighted_score: float, smooth_max: float = 10.0, moderate_max: float = 22.0) -> str:
     if weighted_score <= smooth_max:
         return "Smooth"
     if weighted_score <= moderate_max:
@@ -275,9 +265,9 @@ def analyze_checkpoint_group(sess, cameras: list[dict]) -> dict:
 
     weighted_total = totals["car"] + 0.5 * totals["motorcycle"] + 2.0 * (totals["bus"] + totals["truck"])
     return {
-        "status": load_level(weighted_total),
-        "towards_jb_status": load_level(weighted_jb, smooth_max=7.0, moderate_max=16.0),
-        "towards_sg_status": load_level(weighted_sg, smooth_max=7.0, moderate_max=16.0),
+        "status": load_level(weighted_total, smooth_max=10.0, moderate_max=22.0),
+        "towards_jb_status": load_level(weighted_jb, smooth_max=5.0, moderate_max=12.0),
+        "towards_sg_status": load_level(weighted_sg, smooth_max=5.0, moderate_max=12.0),
         "total_vehicles": sum(totals.values()),
         "weighted_load": round(weighted_total, 1),
         "towards_jb": directions["towards_jb"],
@@ -357,6 +347,13 @@ def update_history(traffic: dict) -> dict:
     return history
 
 
+def select_dashboard_cameras(cameras: list[dict], location_key: str) -> list[dict]:
+    wanted = DASHBOARD_CAMERA_IDS.get(location_key, [])
+    by_id = {str(cam.get("camera_id", "")): cam for cam in cameras}
+    selected = [by_id[cid] for cid in wanted if cid in by_id]
+    return selected if selected else cameras[:2]
+
+
 def main() -> None:
     import onnxruntime as ort
 
@@ -368,8 +365,8 @@ def main() -> None:
     sess = ort.InferenceSession(str(model_path), providers=["CPUExecutionProvider"])
 
     now_utc = datetime.now(timezone.utc)
-    woodlands = analyze_checkpoint_group(sess, checkpoints.get("woodlands", []))
-    tuas = analyze_checkpoint_group(sess, checkpoints.get("tuas", []))
+    woodlands = analyze_checkpoint_group(sess, select_dashboard_cameras(checkpoints.get("woodlands", []), "woodlands"))
+    tuas = analyze_checkpoint_group(sess, select_dashboard_cameras(checkpoints.get("tuas", []), "tuas"))
 
     traffic = {
         "model": "YOLOX-S ONNX (COCO vehicles in calibrated road polygons)",

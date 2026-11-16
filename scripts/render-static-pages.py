@@ -121,11 +121,13 @@ def render_checkpoint_ai(traffic, location_key):
     jb_status = html.escape(str(loc.get("towards_jb_status") or "—"))
     sg_status = html.escape(str(loc.get("towards_sg_status") or "—"))
     total = int(loc.get("total_vehicles") or 0)
+    cam_ids = " &amp; ".join(str(c.get("camera_id")) for c in (loc.get("cameras") or []) if c.get("camera_id"))
+    cam_label = f" (Cam {cam_ids})" if cam_ids else ""
     checked = html.escape(updated_label(traffic.get("last_updated")))
     return f"""<div class="ai-traffic-panel" data-checkpoint-ai="{html.escape(location_key, quote=True)}">
       <div class="ai-traffic-head">
         <div>
-          <span class="ai-traffic-kicker">AI road-approach density</span>
+          <span class="ai-traffic-kicker">AI traffic density{cam_label}</span>
           <strong>{html.escape(status)}</strong>
           <span class="ai-traffic-time"> · {checked}</span>
         </div>
@@ -499,6 +501,9 @@ def main():
     for filename, location_key in (("woodlands-checkpoint.html", "woodlands"), ("tuas-checkpoint.html", "tuas")):
         cameras = checkpoints.get(location_key) or []
         set_camera_preload(filename, cameras[0].get("image") if cameras else "")
+    if traffic:
+        replace_static_block("index.html", "AI-WOODLANDS", render_checkpoint_ai(traffic, "woodlands"))
+        replace_static_block("index.html", "AI-TUAS", render_checkpoint_ai(traffic, "tuas"))
     replace_static_block("singapore-petrol-prices.html", "PETROL", render_petrol(petrol))
     replace_static_block("latest-coe-prices.html", "COE", render_coe(coe))
     replace_static_block("bto-launches.html", "BTO", render_bto(bto))
