@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-11-16T05:47:25.859390+08:00",
+  "last_updated": "2026-11-16T10:03:53.482224+08:00",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Tuchel savours best result since taking charge of England",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/tuchel-savours-best-result-taking-charge-england-6553626",
+      "published": "2026-11-16 07:43"
+    },
     {
       "category": "Crime",
       "title": "Man who sexually assaulted oldest stepdaughter gets nearly 12 years’ jail, caning",
@@ -51,18 +58,32 @@
       "published": "2026-11-14 10:15"
     },
     {
-      "category": "Crime",
-      "title": "‘Cool, friendly, evasive’: CAD investigator on suspect arrested in $3b money laundering probe",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/cool-friendly-evasive-cad-investigator-on-suspect-arrested-in-3b-money-laundering-probe",
-      "published": "2026-11-14 10:00"
+      "category": "Traffic",
+      "title": "Japan's economy unexpectedly shrinks as inflation squeezes households",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/east-asia/japan-economy-shrinks-inflation-households-living-costs-6553696",
+      "published": "2026-11-16 08:12"
     },
     {
       "category": "Traffic",
-      "title": "Golden hues and brilliant blues: November's birthstones topaz and citrine glow on these jewellery pieces",
+      "title": "US airports expected to return to normal after three days of disruption",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/obsessions/november-birthstones-topaz-and-citrine-jewellery-6517121",
-      "published": "2026-11-16 04:17"
+      "url": "https://www.channelnewsasia.com/world/us-airports-expected-return-normal-after-three-days-disruption-6553621",
+      "published": "2026-11-16 07:47"
+    },
+    {
+      "category": "Traffic",
+      "title": "Steering problem on tanker in New Orleans caused ship collision",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/world/us-new-orleans-tanker-cruise-ship-collision-6553551",
+      "published": "2026-11-16 06:55"
+    },
+    {
+      "category": "Traffic",
+      "title": "England end Spain's long unbeaten run, Italy crash out of Nations League",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/england-end-spains-long-unbeaten-run-italy-crash-out-nations-league-6553496",
+      "published": "2026-11-16 06:07"
     },
     {
       "category": "Traffic",
@@ -94,6 +115,13 @@
     },
     {
       "category": "Traffic",
+      "title": "Behind every flight: Why people still matter most in air traffic control",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/transport/behind-every-flight-why-people-still-matter-most-in-air-traffic-control",
+      "published": "2026-11-16 10:00"
+    },
+    {
+      "category": "Traffic",
       "title": "Homecoming of sorts: Meeting the housing and care needs of Singaporeans as they age",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/homecoming-of-sorts-meeting-the-housing-and-care-needs-of-singaporeans-as-they-age",
@@ -121,137 +149,109 @@
       "published": "2026-11-15 05:00"
     },
     {
-      "category": "General",
-      "title": "Ice hockey-United States and Canada set up another women's world championship final",
+      "category": "Money",
+      "title": "Running out of space at home? How self-storage works and what it costs",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ice-hockey-united-states-and-canada-set-up-another-womens-world-championship-final-6553446",
-      "published": "2026-11-16 05:27"
+      "url": "https://www.channelnewsasia.com/advertorial/running-out-space-home-how-self-storage-works-and-what-it-costs-6512431",
+      "published": "2026-11-16 09:13"
     },
     {
       "category": "General",
-      "title": "US Treasury chief wants answers soon from Nvidia",
+      "title": "Surfing-Australians Zoric, Ewing take world surfing games gold",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-treasury-chief-wants-answers-soon-nvidia-6553411",
-      "published": "2026-11-16 05:19"
+      "url": "https://www.channelnewsasia.com/sport/surfing-australians-zoric-ewing-take-world-surfing-games-gold-6553836",
+      "published": "2026-11-16 09:36"
     },
     {
       "category": "General",
-      "title": "Rocket from Boeing-Lockheed firm fails mid-flight, destroys payload of Amazon satellites",
+      "title": "Asian shares fall before Nvidia earnings, Anthropic IPO test tech rally",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/rocket-boeing-lockheed-firm-fails-mid-flight-destroys-payload-amazon-satellites-6553386",
-      "published": "2026-11-16 04:25"
+      "url": "https://www.channelnewsasia.com/business/asian-shares-fall-nvidia-earnings-anthropic-ipo-test-tech-rally-6553841",
+      "published": "2026-11-16 09:35"
     },
     {
       "category": "General",
-      "title": "Klopp says FIFA worse under Infantino than Blatter",
+      "title": "China confirms first Xi-Trump-Putin summit on Thursday",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/klopp-says-fifa-worse-under-infantino-blatter-6553361",
-      "published": "2026-11-16 03:54"
+      "url": "https://www.channelnewsasia.com/asia/donald-trump-xi-jinping-vladimir-putin-china-meeting-6553826",
+      "published": "2026-11-16 09:32"
     },
     {
       "category": "General",
-      "title": "Jensen Huang discusses comeback as Nvidia CEO with allies, FT reports",
+      "title": "Power of positive thinking helps Andreeva to WTA Finals title",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/jensen-huang-discusses-comeback-nvidia-ceo-allies-ft-reports-6553346",
-      "published": "2026-11-16 03:26"
+      "url": "https://www.channelnewsasia.com/sport/power-positive-thinking-helps-andreeva-wta-finals-title-6553796",
+      "published": "2026-11-16 09:19"
     },
     {
       "category": "General",
-      "title": "Goodwin strikes, Earps saves as London City hold Arsenal to stay third",
+      "title": "Johnny Depp film Ebenezer gets actor first No 1 opening in 8 years",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/goodwin-strikes-earps-saves-london-city-hold-arsenal-stay-third-6553351",
-      "published": "2026-11-16 03:24"
+      "url": "https://www.channelnewsasia.com/entertainment/ebenezer-johnny-depp-6553271",
+      "published": "2026-11-16 09:09"
     },
     {
       "category": "General",
-      "title": "Ronaldinho returns at 46 to play first competitive match in 11 years",
+      "title": "CNA Now: ASEAN leaders meet in Manila, plus other news as it happens",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ronaldinho-returns-46-play-first-competitive-match-in-11-years-6553326",
-      "published": "2026-11-16 02:58"
+      "url": "https://www.channelnewsasia.com/singapore/cna-now-asean-leaders-live-6552901",
+      "published": "2026-11-16 09:01"
     },
     {
       "category": "General",
-      "title": "Ice hockey-Russia to miss World Juniors over Canada restrictions, IIHF confirms",
+      "title": "Svitolina to return to Ukraine, vows continued support for war-hit homeland",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/ice-hockey-russia-miss-world-juniors-over-canada-restrictions-iihf-confirms-6553316",
-      "published": "2026-11-16 02:37"
+      "url": "https://www.channelnewsasia.com/sport/svitolina-return-ukraine-vows-continued-support-war-hit-homeland-6553716",
+      "published": "2026-11-16 08:27"
     },
     {
       "category": "General",
-      "title": "England have injured trio back for All Blacks clash",
+      "title": "SK Hynix to spend $1 billion over five years to support chip suppliers",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-have-injured-trio-back-all-blacks-clash-6553311",
-      "published": "2026-11-16 02:26"
+      "url": "https://www.channelnewsasia.com/business/sk-hynix-spend-1-billion-over-five-years-support-chip-suppliers-6553691",
+      "published": "2026-11-16 08:09"
     },
     {
       "category": "General",
-      "title": "Golf-crazy Trump to appeal ruling keeping Washington park open",
+      "title": "Japan's economy contracts annualised 0.1% in July-September",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/golf-crazy-trump-appeal-ruling-keeping-washington-park-open-6553276",
-      "published": "2026-11-16 02:18"
+      "url": "https://www.channelnewsasia.com/business/japans-economy-contracts-annualised-01-in-july-september-6553646",
+      "published": "2026-11-16 07:58"
     },
     {
       "category": "General",
-      "title": "WTA chair is fully confident of financial recovery in 2027",
+      "title": "A positive HPV test does not mean you have cervical cancer. Here's what to know",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/wta-chair-fully-confident-financial-recovery-in-2027-6553296",
-      "published": "2026-11-16 02:02"
+      "url": "https://www.channelnewsasia.com/women/positive-hpv-test-cervical-cancer-risk-6527016",
+      "published": "2026-11-16 07:29"
     },
     {
       "category": "General",
-      "title": "Pope visits high Andes, testing cancer recovery",
+      "title": "Jensen Huang discusses comeback as Nvidia CEO with allies: Report",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/pope-visits-high-andes-testing-cancer-recovery-6553246",
-      "published": "2026-11-16 01:28"
+      "url": "https://www.channelnewsasia.com/world/jensen-huang-discusses-comback-nvidia-6553591",
+      "published": "2026-11-16 07:25"
     },
     {
       "category": "General",
-      "title": "Scotland deepen Australia gloom with 15-12 Nations Championship victory",
+      "title": "Intel sued by shareholders following 29% stock plunge",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/scotland-deepen-australia-gloom-15-12-nations-championship-victory-6553266",
-      "published": "2026-11-16 01:22"
+      "url": "https://www.channelnewsasia.com/business/intel-sued-shareholders-following-29-stock-plunge-6553566",
+      "published": "2026-11-16 07:04"
     },
     {
       "category": "General",
-      "title": "Czechs stage huge rally against public-media funding overhaul",
+      "title": "Coles probes cyber security incident, says no evidence customer data compromised",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/czechs-stage-huge-rally-against-public-media-funding-overhaul-6553231",
-      "published": "2026-11-16 00:46"
+      "url": "https://www.channelnewsasia.com/business/coles-probes-cyber-security-incident-says-no-evidence-customer-data-compromised-6553541",
+      "published": "2026-11-16 06:30"
     },
     {
       "category": "General",
-      "title": "Bessent says Nvidia must 'go outside the company' to find new CEO",
+      "title": "Unbeaten Andreeva captures WTA Finals crown on debut",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/bessent-says-nvidia-must-go-outside-company-find-new-ceo-6553196",
-      "published": "2026-11-15 23:50"
-    },
-    {
-      "category": "General",
-      "title": "Trump administration warns air travellers of another messy day",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-air-travel-disruption-faa-trump-flight-shutdown-6553191",
-      "published": "2026-11-15 23:42"
-    },
-    {
-      "category": "General",
-      "title": "Indonesia President Prabowo apologises to Singapore, Malaysia over transboundary haze",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/indonesia-prabowo-apology-haze-6553166",
-      "published": "2026-11-15 23:32"
-    },
-    {
-      "category": "General",
-      "title": "Zverev cruises past debutant Jodar for ATP Finals opening win",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/zverev-cruises-past-debutant-jodar-atp-finals-opening-win-6553176",
-      "published": "2026-11-15 23:15"
-    },
-    {
-      "category": "General",
-      "title": "Iran says supertanker with 2 million barrels of oil sank in Gulf",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iran-hormuz-supertanker-2-million-oil-barrels-sink-mine-6553161",
-      "published": "2026-11-15 23:11"
+      "url": "https://www.channelnewsasia.com/sport/unbeaten-andreeva-captures-wta-finals-crown-debut-6553501",
+      "published": "2026-11-16 06:09"
     },
     {
       "category": "General",
