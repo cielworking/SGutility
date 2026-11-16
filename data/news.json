@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-17T02:13:57.832729+08:00",
+  "last_updated": "2026-11-17T04:28:02.657903+08:00",
   "headlines": [
     {
       "category": "Singapore",
@@ -93,6 +93,15 @@
     },
     {
       "category": "Crime",
+      "title": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
+      "summary": "OpenAI is announcing a tool that it says will help child sexual abuse investigators cut through the noise to find harmful material they can act on quickly. At a Monday press...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK155_OPEN_AI_CVirginia_C-1.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
+      "published": "2026-11-17 03:23"
+    },
+    {
+      "category": "Crime",
       "title": "S'porean man, 22, jailed after hitting pregnant ex-girlfriend & her boyfriend, causing head & hand injuries",
       "summary": "He was also fined S$800, and had his driver's licence suspended for two years.",
       "image": "https://static.mothership.sg/1/2026/11/hit-pregnant-ex-go-jail.jpg",
@@ -173,13 +182,58 @@
       "published": "2026-11-15 17:38"
     },
     {
-      "category": "Crime",
-      "title": "Man arrested for stealing earbuds from shop in Changi Airport transit area",
-      "summary": "He will be charged with theft in dwelling on Nov 17.",
-      "image": "",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/man-arrested-for-stealing-earbuds-from-shop-in-changi-airport-transit-area",
-      "published": "2026-11-16 19:37"
+      "category": "IT & Gadgets",
+      "title": "The Apple Watch Series 12 is cheaper than ever ahead of Black Friday",
+      "summary": "If you’re still sporting an Apple Watch that launched five or so years ago, now is a good time to upgrade. Apple’s latest smartwatch, the 42mm Apple Watch Series 12 with Wi-Fi...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/268738_Apple_Watch_Series_12_AKrales_0280.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/gadgets/1034512/apple-watch-series-12-black-friday-deal-sale",
+      "published": "2026-11-17 03:50"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Mercedes-Benz takes on Tesla FSD with new point-to-point city driving assist",
+      "summary": "Mercedes-Benz is tossing its hat into the partial autonomy ring with the launch of two new features next year: hands-free highway driving and a point-to-point city navigation...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/26-c0354-015.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/1034321/mercedes-benz-mb-drive-assist-pro-hands-free-highway-assist-2027",
+      "published": "2026-11-17 03:49"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
+      "summary": "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Siri AI and Apple...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/siri-ai.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
+      "published": "2026-11-17 03:24"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Apple is adding face unlock to the iPhone Duo — without new hardware",
+      "summary": "Apple is working on a face unlock feature for the iPhone Duo that uses the front-facing camera for authentication, and it's already testing it with the new iOS 27.3 beta released...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268762_iPhone_Duo_AKrales_0082.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1034590/apple-iphone-duo-face-unlock-ios-27-3-beta",
+      "published": "2026-11-17 02:44"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Nvidia’s board is reportedly ‘not considering’ hiring Jensen Huang back",
+      "summary": "Nvidia's board of directors \"isn't considering\" having Jensen Huang return as CEO, according to a report from CNBC. A source tells the outlet the board \"is focused on an...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25835739/STKP210_JENSEN_HUANG_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1034501/nvidia-board-jensen-huang-not-bringing-back",
+      "published": "2026-11-17 02:43"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "15 hotel guests were injured by chlorine poisoning due to Microsoft’s global email outage",
+      "summary": "Microsoft's worldwide 365 and Outlook outage had real-world consequences after it cut off email alerts for a German hotel's pool safety system. The German outlet Westdeutscher...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK153_MICROSOFT_OUTLOOK_A_332561.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1034538/microsoft-365-outlook-outage-hotel-chlorine-poisoning",
+      "published": "2026-11-17 02:29"
     },
     {
       "category": "IT & Gadgets",
@@ -201,15 +255,6 @@
     },
     {
       "category": "IT & Gadgets",
-      "title": "Why NJ’s governor thinks Republicans are trapped in an X bubble",
-      "summary": "Today I’m talking with Mikie Sherrill, who’s been New Jersey governor for just a little under a year, and you’ll hear her say her election was a preview of the huge Democratic...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DCD_20261116_Sherrill.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/podcast/1034141/nj-midterm-sherill-democrats-musk-x-ai",
-      "published": "2026-11-17 00:00"
-    },
-    {
-      "category": "IT & Gadgets",
       "title": "New Denza D9 with Flash Charging to launch in Malaysia on 19 Nov",
       "summary": "BYD Malaysia has recently confirmed 19 November as the launch date of the New Denza D9 in our market. The date is aligned with the official launch of Flash Charging technology in...",
       "image": "https://soyacincau.com/wp-content/uploads/2026/11/261116-new-denza-d9-my01-150x150.jpg",
@@ -219,65 +264,20 @@
     },
     {
       "category": "IT & Gadgets",
-      "title": "Robert Pattinson is Amazon’s first James Bond",
-      "summary": "Robert Pattinson will take on the role of James Bond in Amazon MGM's first film in the 007 franchise. The next James Bond film will be directed by Denis Villeneuve using a script...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/bond.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1034192/robert-pattinson-james-bond",
-      "published": "2026-11-16 23:19"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Apple TV is getting video podcasts you can watch for free",
-      "summary": "Apple's streaming service will soon have a video podcasts section, the New York Times reports. It will start testing the feature in a developer release today, so expect a new...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/11/STK069_APPLE_TV_C.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/entertainment/1034168/apple-tv-video-podcasts",
-      "published": "2026-11-16 22:45"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "America’s air traffic control system couldn’t handle a single bad router",
-      "summary": "Thirty minutes outside Atlanta, the pilot got on the intercom to announce that something was wrong. A communications issue with the Federal Aviation Administration was cascading...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2304497345.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/transportation/1034039/faa-aviation-glitch-meltdown-ground-stop",
-      "published": "2026-11-16 22:43"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Audible is trying to make it easier to find audiobooks you’ll actually like",
-      "summary": "Audible is introducing an AI-assisted synopsis feature that's designed to help users determine whether they'll enjoy an audiobook before they jump in and start listening to it...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Audible-audio-discovery-hero-.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability",
-      "published": "2026-11-16 22:00"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Google Maps can now create trip itineraries for you",
-      "summary": "Google is launching a new AI trip-planning feature for Maps that allows the app to create custom itineraries for you and provide real-time details about each stop. The update...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25472454/STK270_GOOGLE_MAPS_D.png?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
-      "published": "2026-11-16 22:00"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "The Nvidia scandal isn’t slowing down",
-      "summary": "For years, Jensen Huang has had an almost unprecedented power to shape AI's advancement as Nvidia's CEO, cofounder, and president. As The Verge wrote last week, Nvidia's chips...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STKP210_JENSEN_HUANG_D.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down",
-      "published": "2026-11-16 21:00"
+      "title": "Senator accuses US Commerce Department of failing to stem flow of AI chips to China",
+      "summary": "This follows remarks by United States Treasury Secretary Scott Bessent that the Treasury, the Pentagon, the State Department and the US Trade Representative's Office had been in...",
+      "image": "https://dam.mediacorp.sg/image/upload/s--89GmQA5P--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2023-11:afp_watermark_14112023,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/063_2297605826.jpg?itok=f_kipnEf",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/senator-accuses-us-commerce-department-failing-stem-flow-ai-chips-china-6555286",
+      "published": "2026-11-16 20:57"
     },
     {
       "category": "Finance",
-      "title": "Fed's Warsh says emerging technologies will have 'significant impact,' but risks need to be watched",
+      "title": "Fed's Warsh says emerging technologies to have 'significant impact,' but there are risks",
       "summary": "",
       "image": "https://dam.mediacorp.sg/image/upload/s--XjO2CuP3--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T170642Z_3_LYNXNPEMAF1N4_RTROPTP_3_USA-FED-AI.JPG?itok=_GHCaC5d",
       "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/feds-warsh-says-emerging-technologies-will-have-significant-impact-risks-need-be-watched-6556426",
+      "url": "https://www.channelnewsasia.com/business/feds-warsh-says-emerging-technologies-have-significant-impact-there-are-risks-6556426",
       "published": "2026-11-17 01:02"
     },
     {
@@ -293,7 +293,7 @@
       "category": "Finance",
       "title": "Trump Media faces possible $1 billion debt repayment as stock nears record lows",
       "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--wG3WrjHt--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T164649Z_1_LYNXNPEMAF1ME_RTROPTP_3_USA-STOCKS-TRUMP.JPG?itok=YrH2cOyy",
+      "image": "https://dam.mediacorp.sg/image/upload/s--ai8slIUZ--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T191505Z_2_LYNXNPEMAF1ME_RTROPTP_3_USA-STOCKS-TRUMP.JPG?itok=O5LrFByZ",
       "source": "CNA Business",
       "url": "https://www.channelnewsasia.com/business/trump-media-faces-possible-1-billion-debt-repayment-stock-nears-record-lows-6556401",
       "published": "2026-11-17 00:46"
@@ -336,11 +336,11 @@
     },
     {
       "category": "Finance",
-      "title": "US opens probe into more than 1 million Honda vehicles over auto stop-start failures",
+      "title": "Honda faces new US investigation over stop-start failures",
       "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--PCh6kDkB--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T110056Z_2_LYNXNPEMAF0VH_RTROPTP_3_HONDA-RESULTS.JPG?itok=D1h13loW",
+      "image": "https://dam.mediacorp.sg/image/upload/s--5caRnmHn--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T190332Z_3_LYNXNPEMAF0VH_RTROPTP_3_HONDA-RESULTS.JPG?itok=fJ4gPFUM",
       "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/us-opens-probe-more-1-million-honda-vehicles-over-auto-stop-start-failures-6555416",
+      "url": "https://www.channelnewsasia.com/business/honda-faces-new-us-investigation-over-stop-start-failures-6555416",
       "published": "2026-11-16 19:03"
     },
     {
