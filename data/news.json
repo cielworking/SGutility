@@ -1,23 +1,26 @@
 {
-  "last_updated": "2026-11-17T00:38:50.360186+08:00",
+  "last_updated": "2026-11-17T00:56:51.168529+08:00",
   "headlines": [
     {
       "category": "Crime",
-      "title": "Sri Lanka gets FBI help to crack down on online scammers",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/asia/sri-lanka-gets-fbi-help-crack-down-online-scammers-6555786",
-      "published": "2026-11-16 21:24"
-    },
-    {
-      "category": "Crime",
       "title": "S'porean man, 22, jailed after hitting pregnant ex-girlfriend & her boyfriend, causing head & hand injuries",
+      "summary": "He was also fined S$800, and had his driver's licence suspended for two years.",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/sporean-man-slaps-pregnant-ex-girlfriend-jail/",
       "published": "2026-11-17 01:35"
     },
     {
       "category": "Crime",
+      "title": "Pakistani teen, 19, mauled to death by lioness in video shoot for influencer",
+      "summary": "The influencer and the farm owner lied to local police that it was a dog attack.",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/mauled-lioness-influencer/",
+      "published": "2026-11-17 01:18"
+    },
+    {
+      "category": "Crime",
       "title": "S'porean man, 41, let late lawyer M Ravi consume meth at his flat, gets 2 years & 5 months' jail",
+      "summary": "They took drugs together on Dec. 24, 2025.",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/singaporean-man-let-late-lawyer-m-ravi-consume-meth-jail/",
       "published": "2026-11-16 20:24"
@@ -95,44 +98,12 @@
       "published": "2026-11-16 10:39"
     },
     {
-      "category": "Crime",
-      "title": "Man who sexually assaulted oldest stepdaughter gets nearly 12 years’ jail, caning",
-      "summary": "The man made his stepdaughters shower together before separating the victim from her sisters.",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/man-who-sexually-assaulted-oldest-stepdaughter-gets-nearly-12-years-jail-caning",
-      "published": "2026-11-16 05:00"
-    },
-    {
-      "category": "Crime",
-      "title": "14 people arrested over illegal online gambling activities following police raids",
-      "summary": "Twenty-three people, aged 23 to 75, are under investigation.",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/14-people-arrested-over-illegal-online-gambling-activities-following-police-raids",
-      "published": "2026-11-15 22:54"
-    },
-    {
-      "category": "Crime",
-      "title": "Malaysia mulls stricter WhatsApp verification to combat scam and impersonation calls",
-      "summary": "The Malaysian government is considering stricter WhatsApp account verification requirements to combat scams and impersonation calls, particularly those involving scammers posing...",
-      "source": "SoyaCincau",
-      "url": "https://soyacincau.com/2026/11/15/whatsapp-stricter-verification-mcmc-scam-calls-impersonation/",
-      "published": "2026-11-15 17:38"
-    },
-    {
       "category": "IT & Gadgets",
-      "title": "The Nvidia scandal isn’t slowing down",
-      "summary": "For years, Jensen Huang has had an almost unprecedented power to shape AI's advancement as Nvidia's CEO, cofounder, and president. As The Verge wrote last week, Nvidia's chips...",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down",
-      "published": "2026-11-17 00:50"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Audible is trying to make it easier to find audiobooks you’ll actually like",
-      "summary": "Audible is introducing an AI-assisted synopsis feature that's designed to help users determine whether they'll enjoy an audiobook before they jump in and start listening to it...",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability",
-      "published": "2026-11-17 00:45"
+      "title": "S'pore-based billionaire Leo KoGuan pledges to stop Nvidia investments without 'supreme creator' Jensen Huang",
+      "summary": "KoGuan called Huang \"the supreme creator\", praising him for creating the \"SI (super intelligence) global economy and its ecosystem\".",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/leo-koguan-jensen-huang-petition/",
+      "published": "2026-11-17 00:52"
     },
     {
       "category": "IT & Gadgets",
@@ -148,23 +119,7 @@
       "summary": "Today I’m talking with Mikie Sherrill, who’s been New Jersey governor for just a little under a year, and you’ll hear her say her election was a preview of the huge Democratic...",
       "source": "The Verge",
       "url": "https://www.theverge.com/podcast/1034141/nj-midterm-sherill-democrats-musk-x-ai",
-      "published": "2026-11-17 00:27"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "America’s air traffic control system couldn’t handle a single bad router",
-      "summary": "Thirty minutes outside Atlanta, the pilot got on the intercom to announce that something was wrong. A communications issue with the Federal Aviation Administration was cascading...",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/transportation/1034039/faa-aviation-glitch-meltdown-ground-stop",
-      "published": "2026-11-17 00:17"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Robert Pattinson is Amazon’s first James Bond",
-      "summary": "Robert Pattinson will take on the role of James Bond in Amazon MGM's first film in the 007 franchise. The next James Bond film will be directed by Denis Villeneuve using a script...",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1034192/robert-pattinson-james-bond",
-      "published": "2026-11-17 00:10"
+      "published": "2026-11-17 00:00"
     },
     {
       "category": "IT & Gadgets",
@@ -176,6 +131,14 @@
     },
     {
       "category": "IT & Gadgets",
+      "title": "Robert Pattinson is Amazon’s first James Bond",
+      "summary": "Robert Pattinson will take on the role of James Bond in Amazon MGM's first film in the 007 franchise. The next James Bond film will be directed by Denis Villeneuve using a script...",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1034192/robert-pattinson-james-bond",
+      "published": "2026-11-16 23:19"
+    },
+    {
+      "category": "IT & Gadgets",
       "title": "Apple TV is getting video podcasts you can watch for free",
       "summary": "Apple's streaming service will soon have a video podcasts section, the New York Times reports. It will start testing the feature in a developer release today, so expect a new...",
       "source": "The Verge",
@@ -184,11 +147,27 @@
     },
     {
       "category": "IT & Gadgets",
+      "title": "America’s air traffic control system couldn’t handle a single bad router",
+      "summary": "Thirty minutes outside Atlanta, the pilot got on the intercom to announce that something was wrong. A communications issue with the Federal Aviation Administration was cascading...",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/transportation/1034039/faa-aviation-glitch-meltdown-ground-stop",
+      "published": "2026-11-16 22:43"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Audible is trying to make it easier to find audiobooks you’ll actually like",
+      "summary": "Audible is introducing an AI-assisted synopsis feature that's designed to help users determine whether they'll enjoy an audiobook before they jump in and start listening to it...",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1034083/audible-audio-discovery-ai-feature-availability",
+      "published": "2026-11-16 22:00"
+    },
+    {
+      "category": "IT & Gadgets",
       "title": "Google Maps can now create trip itineraries for you",
       "summary": "Google is launching a new AI trip-planning feature for Maps that allows the app to create custom itineraries for you and provide real-time details about each stop. The update...",
       "source": "The Verge",
       "url": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
-      "published": "2026-11-16 22:06"
+      "published": "2026-11-16 22:00"
     },
     {
       "category": "IT & Gadgets",
@@ -200,19 +179,19 @@
     },
     {
       "category": "IT & Gadgets",
+      "title": "The Nvidia scandal isn’t slowing down",
+      "summary": "For years, Jensen Huang has had an almost unprecedented power to shape AI's advancement as Nvidia's CEO, cofounder, and president. As The Verge wrote last week, Nvidia's chips...",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031740/jensen-huang-nvidia-scandal-isnt-slowing-down",
+      "published": "2026-11-16 21:00"
+    },
+    {
+      "category": "IT & Gadgets",
       "title": "Senator accuses US Commerce Department of failing to stem flow of AI chips to China",
       "summary": "This follows remarks by United States Treasury Secretary Scott Bessent that the Treasury, the Pentagon, the State Department and the US Trade Representative's Office had been in...",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/senator-accuses-us-commerce-department-failing-stem-flow-ai-chips-china-6555286",
       "published": "2026-11-16 20:57"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Razer Soma Pro: A RM4.5k gaming chair with haptic motors, THX speakers, and RGB lights",
-      "summary": "Following its global debut earlier this month, Razer has revealed the official pricing of the Razer Soma Pro gaming chair for Malaysia. The new model unites three of Razer’s...",
-      "source": "SoyaCincau",
-      "url": "https://soyacincau.com/2026/11/16/razer-soma-pro-gaming-chair-malaysia-price/",
-      "published": "2026-11-16 20:40"
     },
     {
       "category": "Transport",
@@ -237,6 +216,14 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/transport/behind-every-flight-why-people-still-matter-most-in-air-traffic-control",
       "published": "2026-11-16 10:00"
+    },
+    {
+      "category": "Traffic",
+      "title": "ERP up S$1 at some PIE & CTE locations, could return to Orchard on Saturdays",
+      "summary": "Motorists are encouraged to plan their journeys and consider alternative routes.",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/erp-rates-cuts-pie-cte/",
+      "published": "2026-11-16 23:23"
     },
     {
       "category": "Traffic",
@@ -284,7 +271,7 @@
       "summary": "Several retailers are offering discounts on PlayStation 5 games, including deep price cuts on recent console-exclusive hits like Marvel’s Wolverine, Ghost of Yotei, Saros, and...",
       "source": "The Verge",
       "url": "https://www.theverge.com/gadgets/1034178/sony-playstation-5-ps5-accessories-monitor-dualsense-headset-deal-sale",
-      "published": "2026-11-17 00:50"
+      "published": "2026-11-17 00:48"
     },
     {
       "category": "Money",
@@ -292,7 +279,7 @@
       "summary": "Even in an era of inflation like the one we're living through now, $100 can still buy a lot… if you know where to look. In fact, it's enough to get something useful and...",
       "source": "The Verge",
       "url": "https://www.theverge.com/gadgets/1028004/best-gifts-under-100-2026",
-      "published": "2026-11-17 00:43"
+      "published": "2026-11-17 00:00"
     },
     {
       "category": "Fire",
@@ -303,8 +290,41 @@
       "published": "2026-11-16 22:10"
     },
     {
+      "category": "Fire",
+      "title": "Actor Shaun Chen says Grab rider made rude gesture at him in carpark incident, later urges company not to fire him",
+      "summary": "The actor tells 8days.sg that Grab has since contacted him, but he hopes the rider won't be fired.",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/entertainment/shaun-chen-grab-driver-middle-finger-6553996",
+      "published": "2026-11-16 14:28"
+    },
+    {
+      "category": "General",
+      "title": "Chinatown to get new cinema at Oriental Plaza",
+      "summary": "What should it screen?",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/chinatown-singapore-cinema/",
+      "published": "2026-11-17 01:19"
+    },
+    {
+      "category": "General",
+      "title": "Trump Media faces possible $1 billion debt repayment as stock nears record lows",
+      "summary": "",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/trump-media-faces-possible-1-billion-debt-repayment-stock-nears-record-lows-6556401",
+      "published": "2026-11-17 00:46"
+    },
+    {
+      "category": "General",
+      "title": "Debt collectors chase over S$2 million in claims from firms linked to Lao Huo Tang",
+      "summary": "The amounts claimed have not been independently established as debts owed by the founder personally.",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/lao-huo-tang-debt-collector/",
+      "published": "2026-11-17 00:37"
+    },
+    {
       "category": "General",
       "title": "Erasmus defends late changes to Springbok team",
+      "summary": "",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/erasmus-defends-late-changes-springbok-team-6556376",
       "published": "2026-11-17 00:32"
@@ -312,6 +332,7 @@
     {
       "category": "General",
       "title": "Pochettino prepares for quick switch from US to United",
+      "summary": "",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/pochettino-prepares-quick-switch-us-united-6556381",
       "published": "2026-11-17 00:29"
@@ -319,6 +340,7 @@
     {
       "category": "General",
       "title": "Trump says he might meet with North Korea's Kim Jong Un in China",
+      "summary": "",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/trump-says-he-might-meet-north-koreas-kim-jong-un-in-china-6556341",
       "published": "2026-11-17 00:26"
@@ -338,6 +360,14 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/us-flights-delays-cancellations-normal-airport-6556301",
       "published": "2026-11-17 00:15"
+    },
+    {
+      "category": "General",
+      "title": "Young man seen rescuing chicken from canal at Whampoa Park Connector",
+      "summary": "He put it in a plastic bag before climbing out of the canal.",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/man-rescuing-chicken-whampoa-park-connector/",
+      "published": "2026-11-17 00:10"
     },
     {
       "category": "General",
@@ -362,94 +392,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/springboks-recall-etzebeth-crunch-clash-ireland-in-dublin-6556256",
       "published": "2026-11-16 23:42"
-    },
-    {
-      "category": "General",
-      "title": "British actor Robert Pattinson named new James Bond",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/james-bond-new-actor-robert-pattinson-6556216",
-      "published": "2026-11-16 23:39"
-    },
-    {
-      "category": "General",
-      "title": "French football chief Diallo to challenge Infantino for FIFA presidency",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/french-football-chief-diallo-challenge-infantino-fifa-presidency-6556261",
-      "published": "2026-11-16 23:38"
-    },
-    {
-      "category": "General",
-      "title": "Interest in Trump’s meme coin dinner fades as $TRUMP sinks to record lows",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/interest-in-trumps-meme-coin-dinner-fades-trump-sinks-record-lows-6556211",
-      "published": "2026-11-16 23:17"
-    },
-    {
-      "category": "General",
-      "title": "Alcaraz outclasses Tiafoe at ATP Finals to stretch winning run",
-      "summary": "",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/sailing-ineos-and-athena-racing-settle-lawsuit-over-britains-americas-cup-yacht-6556066",
-      "published": "2026-11-16 22:34"
-    },
-    {
-      "category": "General",
-      "title": "Silicon Valley leaders back call for Jensen Huang's return to Nvidia",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/silicon-valley-leaders-back-call-jensen-huangs-return-nvidia-6555861",
-      "published": "2026-11-16 21:46"
-    },
-    {
-      "category": "General",
-      "title": "Iraq orders army to enter stronghold of Iran-backed group",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/iraq-orders-army-enter-stronghold-iran-backed-group-6555841",
-      "published": "2026-11-16 21:44"
-    },
-    {
-      "category": "General",
-      "title": "Singapore's first Zero Waste Hub opens in Nee Soon South, 7 more planned by 2028",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/singapore/zero-waste-hub-yishun-nee-soon-south-recycling-6554836",
-      "published": "2026-11-16 21:42"
-    },
-    {
-      "category": "General",
-      "title": "Senator accuses US Commerce Department of failing to stem flow of AI chips to China",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/senator-accuses-us-commerce-department-failing-stem-flow-ai-chips-china-6555286",
-      "published": "2026-11-16 20:57"
-    },
-    {
-      "category": "General",
-      "title": "Nike replaces Adidas as UEFA men's club competitions ball supplier from 2027-31",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/nike-replaces-adidas-uefa-mens-club-competitions-ball-supplier-2027-31-6555636",
-      "published": "2026-11-16 20:21"
-    },
-    {
-      "category": "General",
-      "title": "Nvidia set to deliver first life-after-Huang briefing",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/nvidia-set-deliver-first-life-after-huang-briefing-6555546",
-      "published": "2026-11-16 19:54"
-    },
-    {
-      "category": "General",
-      "title": "Chinatown to get new cinema at Oriental Plaza",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/chinatown-singapore-cinema/",
-      "published": "2026-11-17 01:19"
-    },
-    {
-      "category": "General",
-      "title": "Pakistani teen, 19, mauled to death by lioness in video shoot for influencer",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/mauled-lioness-influencer/",
-      "published": "2026-11-17 01:18"
     }
   ]
 }
