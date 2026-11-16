@@ -1,12 +1,26 @@
 {
-  "last_updated": "2026-11-16T10:03:53.482224+08:00",
+  "last_updated": "2026-11-16T10:55:19.425106+08:00",
   "headlines": [
+    {
+      "category": "Crime",
+      "title": "Man gets jail for letting lawyer M Ravi consume meth at his flat",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/singapore/shawn-loo-jail-let-m-ravi-take-drugs-6553916",
+      "published": "2026-11-16 10:39"
+    },
     {
       "category": "Crime",
       "title": "Tuchel savours best result since taking charge of England",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/sport/tuchel-savours-best-result-taking-charge-england-6553626",
       "published": "2026-11-16 07:43"
+    },
+    {
+      "category": "Crime",
+      "title": "ST Live: Jail for man who took drugs with late lawyer M. Ravi, latest on Nvidia and Jensen Huang",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/st-live-news-as-it-happens9",
+      "published": "2026-11-16 07:48"
     },
     {
       "category": "Crime",
@@ -51,17 +65,17 @@
       "published": "2026-11-14 12:30"
     },
     {
-      "category": "Crime",
-      "title": "Man arrested for causing hurt, drug offences after knife incident in Yishun",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/man-arrested-for-causing-hurt-drug-offences-after-knife-incident-in-yishun",
-      "published": "2026-11-14 10:15"
+      "category": "Traffic",
+      "title": "F1 must push harder, move faster to open up motorsport careers, says Hamilton",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/sport/f1-must-push-harder-move-faster-open-up-motorsport-careers-says-hamilton-6553971",
+      "published": "2026-11-16 10:44"
     },
     {
       "category": "Traffic",
       "title": "Japan's economy unexpectedly shrinks as inflation squeezes households",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/east-asia/japan-economy-shrinks-inflation-households-living-costs-6553696",
+      "url": "https://www.channelnewsasia.com/business/japan-economy-shrinks-inflation-households-living-costs-6553696",
       "published": "2026-11-16 08:12"
     },
     {
@@ -70,20 +84,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/world/us-airports-expected-return-normal-after-three-days-disruption-6553621",
       "published": "2026-11-16 07:47"
-    },
-    {
-      "category": "Traffic",
-      "title": "Steering problem on tanker in New Orleans caused ship collision",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/world/us-new-orleans-tanker-cruise-ship-collision-6553551",
-      "published": "2026-11-16 06:55"
-    },
-    {
-      "category": "Traffic",
-      "title": "England end Spain's long unbeaten run, Italy crash out of Nations League",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/england-end-spains-long-unbeaten-run-italy-crash-out-nations-league-6553496",
-      "published": "2026-11-16 06:07"
     },
     {
       "category": "Traffic",
@@ -150,10 +150,24 @@
     },
     {
       "category": "Money",
+      "title": "Oil prices fall on expectations of coming supply surplus",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/business/oil-prices-fall-expectations-coming-supply-surplus-6553886",
+      "published": "2026-11-16 10:00"
+    },
+    {
+      "category": "Money",
       "title": "Running out of space at home? How self-storage works and what it costs",
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/advertorial/running-out-space-home-how-self-storage-works-and-what-it-costs-6512431",
       "published": "2026-11-16 09:13"
+    },
+    {
+      "category": "General",
+      "title": "The gift of time: Four Tudor watches for the festive season",
+      "source": "CNA",
+      "url": "https://www.channelnewsasia.com/advertorial/gift-time-four-tudor-watches-festive-season-6525886",
+      "published": "2026-11-16 10:25"
     },
     {
       "category": "General",
@@ -206,9 +220,9 @@
     },
     {
       "category": "General",
-      "title": "SK Hynix to spend $1 billion over five years to support chip suppliers",
+      "title": "SK Hynix to spend US$1 billion over five years to support chip suppliers",
       "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/sk-hynix-spend-1-billion-over-five-years-support-chip-suppliers-6553691",
+      "url": "https://www.channelnewsasia.com/business/sk-hynix-1-billion-five-years-support-chip-suppliers-6553691",
       "published": "2026-11-16 08:09"
     },
     {
@@ -238,20 +252,6 @@
       "source": "CNA",
       "url": "https://www.channelnewsasia.com/business/intel-sued-shareholders-following-29-stock-plunge-6553566",
       "published": "2026-11-16 07:04"
-    },
-    {
-      "category": "General",
-      "title": "Coles probes cyber security incident, says no evidence customer data compromised",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/business/coles-probes-cyber-security-incident-says-no-evidence-customer-data-compromised-6553541",
-      "published": "2026-11-16 06:30"
-    },
-    {
-      "category": "General",
-      "title": "Unbeaten Andreeva captures WTA Finals crown on debut",
-      "source": "CNA",
-      "url": "https://www.channelnewsasia.com/sport/unbeaten-andreeva-captures-wta-finals-crown-debut-6553501",
-      "published": "2026-11-16 06:09"
     },
     {
       "category": "General",
