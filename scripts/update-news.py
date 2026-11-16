@@ -120,6 +120,8 @@ def trim_summary(text, limit=180):
 def classify(title, summary="", default_category="General"):
     text = f"{title} {summary}".lower()
     for category, patterns in CATEGORY_PATTERNS.items():
+        if default_category == "IT & Gadgets" and category in {"Traffic", "Transport", "Housing"}:
+            continue
         if any(pattern.search(text) for pattern in patterns):
             return category
     return default_category

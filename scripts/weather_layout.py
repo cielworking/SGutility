@@ -86,7 +86,10 @@ def render_combined(cache, heading="Rain radar & outlook", compact=False):
     if compact:
         city = next((r.get("forecast") for r in rain.get("forecasts", []) if r.get("area") == "City"), None)
         jb_summary = describe(today.get("summary_forecast")) if today else "Check Johor outlook"
-        gen_forecast = (outlook.get("general") or {}).get("forecast") or (
+        raw_gen = (outlook.get("general") or {}).get("forecast")
+        if isinstance(raw_gen, dict):
+            raw_gen = raw_gen.get("text")
+        gen_forecast = raw_gen or (
             next(iter((outlook.get("periods") or [{}])[0].get("regions", {}).values()), {}).get("text")
         ) or "Check regional outlook"
         return (
