@@ -92,12 +92,38 @@ def fetch_4d():
     }
 
 
+def toto_number(value):
+    text = clean(value)
+    if not re.fullmatch(r"\d{1,2}", text):
+        raise RuntimeError("Unexpected TOTO number token")
+    number = int(text)
+    if number < 1 or number > 49:
+        raise RuntimeError(f"TOTO number out of range: {text}")
+    return text
+
+
+def parse_toto_block(block):
+    winning_numbers = [
+        toto_number(td.get_text())
+        for td in block.select("td.win1, td.win2, td.win3, td.win4, td.win5, td.win6")
+    ]
+    additional_tag = block.select_one("td.additional")
+    if additional_tag is None:
+        raise RuntimeError("Unexpected TOTO layout: missing additional number")
+    additional_number = toto_number(additional_tag.get_text())
+
+    if len(winning_numbers) != 6 or len(set(winning_numbers)) != 6:
+        raise RuntimeError("Unexpected TOTO layout: expected six distinct winning numbers")
+    if additional_number in winning_numbers:
+        raise RuntimeError("Unexpected TOTO layout: additional number repeats a winning number")
+
+    return winning_numbers, additional_number
+
+
 def fetch_toto():
     block = get_first_li(TOTO_DATA_URL)
 
     text = clean(block.get_text(" ", strip=True))
-
-    all_numbers = re.findall(r"\b\d{1,2}\b", text)
 
     date_match = re.search(
         r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s+\d{1,2}\s+\w+\s+\d{4}",
@@ -110,9 +136,7 @@ def fetch_toto():
         re.IGNORECASE
     )
 
-    # TOTO winning numbers are usually 6 numbers + 1 additional number
-    winning_numbers = all_numbers[:6]
-    additional_number = all_numbers[6] if len(all_numbers) >= 7 else "TBC"
+    winning_numbers, additional_number = parse_toto_block(block)
 
     return {
         "source_url": TOTO_SOURCE_URL,

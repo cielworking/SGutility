@@ -1,0 +1,31 @@
+{
+ "testedOn": "2026-11-16",
+ "source": "https://www.singaporepools.com.sg/DataFileArchive/Lottery/Output/toto_result_top_draws_en.html",
+ "draw": {
+  "draw_no": "4234",
+  "draw_date": "Thu, 12 Nov 2026",
+  "winning": [
+   "17",
+   "24",
+   "30",
+   "31",
+   "44",
+   "49"
+  ],
+  "additional": "32"
+ },
+ "old_parser_result": {
+  "winning": [
+   "12",
+   "17",
+   "24",
+   "30",
+   "31",
+   "44"
+  ],
+  "additional": "49",
+  "cause": "date day 12 was consumed as a number"
+ },
+ "tests": "python -m unittest tests.test_sgpools -v: 5/5 pass (date-day, single-digit, duplicate winning, additional collision, out-of-range)",
+ "page": "toto-results.html static TOTO block now renders 17 24 30 31 44 49 + 32"
+}

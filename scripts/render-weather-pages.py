@@ -140,13 +140,14 @@ def time(value):
         return "Unavailable"
 
 
-def freshness(feed, stamp=None, end=None, hours=3):
+def freshness(feed, stamp=None, end=None, hours=3, metric=None):
     stamp = stamp or feed.get("fetched_at")
     try:
         stale = not feed.get("ok") or NOW - parse(stamp) > timedelta(hours=hours) or (end and NOW > parse(end)) or parse(stamp) > NOW + timedelta(minutes=15)
     except (ValueError, TypeError, AttributeError):
         stale = True
-    return f'<p class="feed-status {"is-stale" if stale else ""}" data-freshness data-ok="{str(bool(feed.get("ok"))).lower()}" data-stamp="{esc(stamp or "")}" data-end="{esc(end or "")}" data-hours="{hours}">{"Older or unavailable data — check the official source." if stale else "Latest cached official data"}</p>'
+    marker = f' data-air-status="{metric}"' if metric else ""
+    return f'<p class="feed-status {"is-stale" if stale else ""}"{marker} data-freshness data-ok="{str(bool(feed.get("ok"))).lower()}" data-stamp="{esc(stamp or "")}" data-end="{esc(end or "")}" data-hours="{hours}">{"Older or unavailable data — check the official source." if stale else "Latest cached official data"}</p>'
 
 
 def condition(value):
@@ -229,11 +230,11 @@ def render_content(country, kind, cache):
         pm = pmfeed.get("data", {})
         psi = data.get("readings", {}).get("psi_twenty_four_hourly", {})
         fine = pm.get("readings", {}).get("pm25_one_hourly", {})
-        content = '<p>24-hour PSI</p>' + freshness(feed, data.get("timestamp")) + f'<p>PSI reported: {time(data.get("timestamp"))}</p>'
-        content += '<p>One-hour PM2.5</p>' + freshness(pmfeed, pm.get("timestamp")) + f'<p>PM2.5 reported: {time(pm.get("timestamp"))}</p><div class="weather-grid">'
+        content = '<p>24-hour PSI</p>' + freshness(feed, data.get("timestamp"), metric="psi") + f'<p id="psi-reported" data-air-reported="psi">PSI reported: <span data-air-reported-time>{time(data.get("timestamp"))}</span></p>'
+        content += '<p>One-hour PM2.5</p>' + freshness(pmfeed, pm.get("timestamp"), metric="pm25") + f'<p id="pm25-reported" data-air-reported="pm25">PM2.5 reported: <span data-air-reported-time>{time(pm.get("timestamp"))}</span></p><div class="weather-grid" data-air-readings>'
         for region in ["north", "south", "east", "west", "central"]:
             label, tone = category(psi.get(region))
-            content += f'<article class="weather-tile"><h3>{region.title()}</h3><p class="air-reading">{esc(psi.get(region))} <small>24-hour PSI</small></p><span class="air-category {tone}">{label}</span><p>One-hour PM2.5: <strong>{esc(fine.get(region))} µg/m³</strong></p></article>'
+            content += f'<article class="weather-tile" data-air-region="{region}"><h3>{region.title()}</h3><p class="air-reading"><span data-air-psi-value>{esc(psi.get(region))}</span> <small>24-hour PSI</small></p><span class="air-category {tone}" data-air-category>{label}</span><p>One-hour PM2.5: <strong data-air-pm25-value>{esc(fine.get(region))}</strong> µg/m³</p></article>'
         content += '</div>'
         return content, "https://www.haze.gov.sg/", "NEA / data.gov.sg", "The 24-hour Pollutant Standards Index (PSI) and one-hour PM2.5 concentration have different averaging periods and units. PM2.5 is shown in micrograms per cubic metre, not as an index. Air-quality readings alone do not establish the cause of pollution. See NEA for current advisories."
     feed = cache.get("my_haze", {})
@@ -289,7 +290,7 @@ def main():
             psi = cache.get("sg_psi") or {}
             chip_stamp = (psi.get("data") or {}).get("timestamp") or psi.get("fetched_at")
             head_extra = ""
-            content = '<div data-air-content>' + content + '</div><button class="button button-secondary" type="button" data-refresh-air>↻ Refresh saved readings</button><p data-air-feedback class="refresh-feedback" role="status">Saved readings update on the 15-minute schedule.</p>'
+            content = '<div data-air-content data-air-live>' + content + '</div><button class="button button-secondary" type="button" data-refresh-air>↻ Refresh live air quality</button><p data-air-feedback class="refresh-feedback" role="status">Saved readings shown; checking live NEA readings…</p>'
         else:
             nav_current = "haze-my"
             chip_source = "https://eqms.doe.gov.my/APIMS/main"
@@ -306,7 +307,7 @@ def main():
 <title>{esc(doc_title)} | SG Alerts</title><meta name="description" content="{esc(meta_desc)}"><link rel="canonical" href="https://sgalerts.com{path}">
 <meta property="og:title" content="{esc(doc_title)} | SG Alerts"><meta property="og:description" content="{esc(meta_desc)}"><meta property="og:url" content="https://sgalerts.com{path}"><meta property="og:type" content="website"><meta property="og:image" content="https://sgalerts.com/assets/og-share.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(doc_title)} | SG Alerts"><meta name="twitter:description" content="{esc(meta_desc)}"><meta name="twitter:image" content="https://sgalerts.com/assets/og-share.png">
 <link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0c2554" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)"><link rel="manifest" href="/site.webmanifest">{head_extra}{THEME_INIT}<link rel="stylesheet" href="/style.css?v=23"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script><script src="/analytics.js"></script><script src="/theme.js?v=1" defer></script>
-<script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=4" defer></script><script src="/script.js?v=14" defer></script></head>
+<script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=5" defer></script><script src="/script.js?v=14" defer></script></head>
 <body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a>{nav}{THEME_CONTROL}</div></header>
 <main id="main-content" class="content-page weather-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">SG Alerts</a> / {esc(title)}</nav><section class="page-hero"><div><p class="eyebrow">{country.title()} · Official data</p><h1>{esc(title)}</h1><p>{esc(desc)}</p></div></section>
 <nav class="weather-tabs" aria-label="Weather pages">{related}</nav><section class="surface-card specialist-data-card">{chip}{"" if kind == "rain-forecast" else "<h2>Air-quality readings</h2>"}{content}<p class="note">Source: <a href="{source}" target="_blank" rel="noopener noreferrer">{source_name}</a>. Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.</p></section>
@@ -314,9 +315,18 @@ def main():
 <footer class="site-footer"><div class="footer-inner"><strong>SG Alerts</strong><nav class="footer-links" aria-label="Footer"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/guides/">Guides</a><a href="/guides/">Quick Info</a><a href="/4d-results.html">4D Results</a><a href="/toto-results.html">TOTO Results</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a></nav></div></footer>{mobile_tabbar(nav_current)}</body></html>'''
         target = ROOT / country / kind / "index.html"
         target.parent.mkdir(parents=True, exist_ok=True)
+        if country == "singapore" and kind == "haze":
+            document = document.replace(
+                '<script src="/weather.js?v=5" defer></script>',
+                '<script src="/weather.js?v=5" defer></script><script src="/air-live.js?v=1" defer></script>',
+            )
+            document = document.replace(
+                "Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.",
+                "Live NEA readings refresh on each page view; the saved fallback updates when the scheduled workflow runs, which may be delayed.",
+            )
         target.write_text(document + "\n", encoding="utf-8")
         if kind == "rain-forecast":
-            document = document.replace('<script src="/weather.js?v=4" defer></script>', '<link rel="stylesheet" href="/assets/leaflet/leaflet.css" media="print" onload="this.media=\'all\'"><noscript><link rel="stylesheet" href="/assets/leaflet/leaflet.css"></noscript><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=4" defer></script><script src="/weather-dashboard.js?v=5" defer></script>')
+            document = document.replace('<script src="/weather.js?v=5" defer></script>', '<link rel="stylesheet" href="/assets/leaflet/leaflet.css" media="print" onload="this.media=\'all\'"><noscript><link rel="stylesheet" href="/assets/leaflet/leaflet.css"></noscript><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script><script src="/weather.js?v=5" defer></script><script src="/weather-dashboard.js?v=5" defer></script>')
             target.write_text(document + "\n", encoding="utf-8")
             if country == "singapore":
                 hub = document.replace("https://sgalerts.com" + path, "https://sgalerts.com/weather/")

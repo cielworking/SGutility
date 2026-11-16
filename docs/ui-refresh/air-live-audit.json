@@ -1,0 +1,175 @@
+{
+ "testedOn": "2026-11-16",
+ "source": "https://api-open.data.gov.sg/v2/real-time/api/psi and /pm25",
+ "normal": {
+  "psiReported": "16 Nov, 10:00 am UTC+08",
+  "pm25Reported": "16 Nov, 10:00 am UTC+08",
+  "feedback": "Live PSI and PM2.5 loaded from NEA. Checked 16 Nov, 10:50 am UTC+08.",
+  "chip": "Updated 16 Nov, 10:00 am UTC+08",
+  "statuses": [
+   {
+    "metric": "psi",
+    "text": "Latest live official reading",
+    "stamp": "2026-11-16T10:00:00+08:00",
+    "live": "true"
+   },
+   {
+    "metric": "pm25",
+    "text": "Latest live official reading",
+    "stamp": "2026-11-16T10:00:00+08:00",
+    "live": "true"
+   }
+  ],
+  "regions": [
+   {
+    "region": "north",
+    "psi": "47",
+    "pm25": "18",
+    "category": "Good"
+   },
+   {
+    "region": "south",
+    "psi": "49",
+    "pm25": "9",
+    "category": "Good"
+   },
+   {
+    "region": "east",
+    "psi": "42",
+    "pm25": "12",
+    "category": "Good"
+   },
+   {
+    "region": "west",
+    "psi": "54",
+    "pm25": "11",
+    "category": "Moderate"
+   },
+   {
+    "region": "central",
+    "psi": "53",
+    "pm25": "15",
+    "category": "Moderate"
+   }
+  ],
+  "hasScript": true
+ },
+ "partial": {
+  "psiReported": "16 Nov, 10:00 am UTC+08",
+  "pm25Reported": "16 Nov 2026, 07:00 AM UTC+08",
+  "feedback": "Live PSI loaded; PM2.5 could not refresh. The saved PM2.5 reading remains visible.",
+  "chip": "Updated 16 Nov, 10:00 am UTC+08",
+  "statuses": [
+   {
+    "metric": "psi",
+    "text": "Latest live official reading",
+    "stamp": "2026-11-16T10:00:00+08:00",
+    "live": "true"
+   },
+   {
+    "metric": "pm25",
+    "text": "Older or unavailable data \u2014 check the official source.",
+    "stamp": "2026-11-16T07:00:00+08:00",
+    "live": null
+   }
+  ],
+  "regions": [
+   {
+    "region": "north",
+    "psi": "47",
+    "pm25": "17",
+    "category": "Good"
+   },
+   {
+    "region": "south",
+    "psi": "49",
+    "pm25": "8",
+    "category": "Good"
+   },
+   {
+    "region": "east",
+    "psi": "42",
+    "pm25": "9",
+    "category": "Good"
+   },
+   {
+    "region": "west",
+    "psi": "54",
+    "pm25": "18",
+    "category": "Moderate"
+   },
+   {
+    "region": "central",
+    "psi": "53",
+    "pm25": "13",
+    "category": "Moderate"
+   }
+  ],
+  "hasScript": true
+ },
+ "fallback": {
+  "psiReported": "16 Nov 2026, 07:00 AM UTC+08",
+  "pm25Reported": "16 Nov 2026, 07:00 AM UTC+08",
+  "feedback": "Live NEA check failed \u2014 saved readings remain visible. Check the official source for the latest.",
+  "chip": "Updated 16 Nov, 7:00 am UTC+08",
+  "statuses": [
+   {
+    "metric": "psi",
+    "text": "Older or unavailable data \u2014 check the official source.",
+    "stamp": "2026-11-16T07:00:00+08:00",
+    "live": null
+   },
+   {
+    "metric": "pm25",
+    "text": "Older or unavailable data \u2014 check the official source.",
+    "stamp": "2026-11-16T07:00:00+08:00",
+    "live": null
+   }
+  ],
+  "regions": [
+   {
+    "region": "north",
+    "psi": "42",
+    "pm25": "17",
+    "category": "Good"
+   },
+   {
+    "region": "south",
+    "psi": "51",
+    "pm25": "8",
+    "category": "Moderate"
+   },
+   {
+    "region": "east",
+    "psi": "41",
+    "pm25": "9",
+    "category": "Good"
+   },
+   {
+    "region": "west",
+    "psi": "53",
+    "pm25": "18",
+    "category": "Moderate"
+   },
+   {
+    "region": "central",
+    "psi": "51",
+    "pm25": "13",
+    "category": "Moderate"
+   }
+  ],
+  "hasScript": true
+ },
+ "errors": [],
+ "checks": [
+  "Normal load replaces saved 07:00 values with live 10:00 PSI and PM2.5 and labels them Latest live official reading.",
+  "Blocking only PM2.5 keeps live PSI and the saved PM2.5 value, with an explicit partial-failure message.",
+  "Blocking both APIs keeps the saved 07:00 values and shows the saved-readings failure message.",
+  "Values and timestamps are validated; each API is requested separately with a 9s timeout."
+ ],
+ "screenshots": [
+  "haze-live-dark-500.png",
+  "haze-live-dark-1280.png",
+  "haze-live-light-1280.png"
+ ]
+}
