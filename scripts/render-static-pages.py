@@ -142,6 +142,66 @@ def render_checkpoint_ai(traffic, location_key):
     </div>"""
 
 
+def render_travel_advisor(traffic):
+    if not traffic or "woodlands" not in traffic or "tuas" not in traffic:
+        return '<p class="loading-state">Comparing Woodlands &amp; Tuas traffic…</p>'
+    w = traffic["woodlands"]
+    t = traffic["tuas"]
+    w_jb = int(w.get("towards_jb") or 0)
+    t_jb = int(t.get("towards_jb") or 0)
+    rec = "Tuas Second Link" if t_jb < w_jb else "Woodlands Causeway" if w_jb < t_jb else "Tie — check both cameras"
+    w_cls = " is-recommended" if w_jb <= t_jb else ""
+    t_cls = " is-recommended" if t_jb < w_jb else ""
+    checked = html.escape(updated_label(traffic.get("last_updated")))
+    return f"""<div class="ai-traffic-head">
+      <div>
+        <span class="ai-traffic-kicker">AI Crossing Advisor · Towards JB &amp; Return</span>
+        <strong>Lighter SG → JB approach now: {html.escape(rec)}</strong>
+      </div>
+      <span class="ai-traffic-time">{checked}</span>
+    </div>
+    <div class="travel-advisor-grid">
+      <div class="travel-route-box{w_cls}">
+        <strong>Woodlands Causeway (Cam 2701 &amp; 2702)</strong>
+        <span>Status: <strong>{html.escape(str(w.get("status") or "—"))}</strong> ({int(w.get("total_vehicles") or 0)} vehicles detected)</span>
+        <span>Towards JB: {w_jb} ({html.escape(str(w.get("towards_jb_status") or "—"))}) · Towards SG: {int(w.get("towards_sg") or 0)} ({html.escape(str(w.get("towards_sg_status") or "—"))})</span>
+        <a class="detail-link" href="/woodlands-checkpoint.html">All Woodlands cameras →</a>
+      </div>
+      <div class="travel-route-box{t_cls}">
+        <strong>Tuas Second Link (Cam 4703 &amp; 4712)</strong>
+        <span>Status: <strong>{html.escape(str(t.get("status") or "—"))}</strong> ({int(t.get("total_vehicles") or 0)} vehicles detected)</span>
+        <span>Towards JB: {t_jb} ({html.escape(str(t.get("towards_jb_status") or "—"))}) · Towards SG: {int(t.get("towards_sg") or 0)} ({html.escape(str(t.get("towards_sg_status") or "—"))})</span>
+        <a class="detail-link" href="/tuas-checkpoint.html">All Tuas cameras →</a>
+      </div>
+    </div>
+    <p class="ai-traffic-disclaimer">Comparison uses live YOLOX road-camera vehicle density. Indoor immigration hall queues and JB CIQ counters can still vary independently.</p>"""
+
+
+def render_news_static(news_data):
+    items = (news_data or {}).get("headlines") or []
+    if not items:
+        return '<p class="loading-state">No headlines are currently available.</p>'
+    cards = []
+    for item in items[:36]:
+        cat = str(item.get("category") or "General")
+        slug = re.sub(r"[^a-z0-9]+", "-", cat.lower()).strip("-") or "general"
+        summary = item.get("summary") or ""
+        summary_html = f'<p class="news-summary">{html.escape(summary)}</p>' if summary else ""
+        published = f" · {html.escape(str(item.get('published')))}" if item.get("published") else ""
+        cards.append(
+            f"""<a class="news-card-item" href="{html.escape(str(item.get("url", "#")), quote=True)}" target="_blank" rel="noopener noreferrer">
+          <span class="news-tag news-{slug}">{html.escape(cat)}</span>
+          <strong>{html.escape(str(item.get("title", "")))}</strong>
+          {summary_html}
+          <small>{html.escape(str(item.get("source", "")))}{published}</small>
+        </a>"""
+        )
+    return (
+        f'<div class="news-topbar"><span class="news-meta">{len(items)} curated stories · {html.escape(updated_label(news_data.get("last_updated")))}</span></div>'
+        f'<div class="news-grid">{"".join(cards)}</div>'
+    )
+
+
 def render_checkpoint(data, location_key, title, source_url=None, traffic=None):
     cameras = data.get(location_key, [])[:4]
     if cameras:
@@ -436,14 +496,17 @@ def guide_sitemap_urls(preserved=None):
 def render_sitemap(dates, preserved=None):
     urls = [
         ("https://sgalerts.com/", dates.get("home")),
+        ("https://sgalerts.com/travel.html", dates.get("checkpoints")),
         ("https://sgalerts.com/woodlands-checkpoint.html", dates.get("checkpoints")),
         ("https://sgalerts.com/tuas-checkpoint.html", dates.get("checkpoints")),
+        ("https://sgalerts.com/housing.html", dates.get("bto")),
+        ("https://sgalerts.com/bto-launches.html", dates.get("bto")),
+        ("https://sgalerts.com/bto-mortgage-calculator.html", dates.get("bto")),
+        ("https://sgalerts.com/news.html", dates.get("news")),
         ("https://sgalerts.com/singapore-petrol-prices.html", dates.get("petrol")),
         ("https://sgalerts.com/petrol-discount-calculator.html", dates.get("petrol")),
         ("https://sgalerts.com/latest-coe-prices.html", dates.get("coe")),
         ("https://sgalerts.com/coe-calculator.html", dates.get("coe")),
-        ("https://sgalerts.com/bto-launches.html", dates.get("bto")),
-        ("https://sgalerts.com/bto-mortgage-calculator.html", dates.get("bto")),
         ("https://sgalerts.com/4d-results.html", dates.get("pools")),
         ("https://sgalerts.com/toto-results.html", dates.get("pools")),
         ("https://sgalerts.com/weather/", dates.get("weather")),
@@ -504,9 +567,13 @@ def main():
     if traffic:
         replace_static_block("index.html", "AI-WOODLANDS", render_checkpoint_ai(traffic, "woodlands"))
         replace_static_block("index.html", "AI-TUAS", render_checkpoint_ai(traffic, "tuas"))
+        replace_static_block("travel.html", "AI-WOODLANDS", render_checkpoint_ai(traffic, "woodlands"))
+        replace_static_block("travel.html", "AI-TUAS", render_checkpoint_ai(traffic, "tuas"))
+        replace_static_block("travel.html", "TRAVEL-ADVISOR", render_travel_advisor(traffic))
     replace_static_block("singapore-petrol-prices.html", "PETROL", render_petrol(petrol))
     replace_static_block("latest-coe-prices.html", "COE", render_coe(coe))
     replace_static_block("bto-launches.html", "BTO", render_bto(bto))
+    replace_static_block("housing.html", "BTO", render_bto(bto))
 
     optional = {}
     for key, filename in {
@@ -518,6 +585,9 @@ def main():
             optional[key] = load_json(filename)
         except FileNotFoundError:
             optional[key] = {}
+
+    if optional.get("news"):
+        replace_static_block("news.html", "NEWS", render_news_static(optional["news"]))
 
     pools = optional["pools"]
     if pools:
@@ -535,6 +605,7 @@ def main():
         "petrol": date_only(petrol.get("last_updated")),
         "coe": date_only(coe.get("last_updated")),
         "bto": date_only(bto.get("last_updated")),
+        "news": date_only(optional["news"].get("last_updated")),
         "pools": date_only(optional["pools"].get("last_updated")),
     }
     weather_path = DATA / "weather.json"

@@ -3651,3 +3651,272 @@ select.fuel-selector,
   font-size: 0.8rem;
   color: var(--muted);
 }
+
+/* Category Hub Launcher, Travel Advisor, News Grid & Housing Hub */
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.hub-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface-subtle);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.16s ease, transform 0.16s ease, background-color 0.16s ease;
+}
+
+.hub-card:hover {
+  border-color: var(--brand);
+  transform: translateY(-1px);
+  background: var(--surface);
+}
+
+.hub-card .eyebrow {
+  margin: 0;
+}
+
+.hub-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.hub-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.hub-card-link {
+  margin-top: 6px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--brand);
+}
+
+/* Dedicated News Hub Grid & Category Pills */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.news-grid .news-card-item {
+  min-height: 170px;
+}
+
+.news-summary {
+  margin: 8px 0 0;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.news-it-gadgets {
+  background: rgba(37, 99, 235, 0.12);
+  color: #1d4ed8;
+}
+
+.news-housing {
+  background: rgba(22, 163, 74, 0.12);
+  color: #15803d;
+}
+
+.news-money {
+  background: rgba(124, 58, 237, 0.12);
+  color: #6d28d9;
+}
+
+.news-fire {
+  background: var(--red-soft);
+  color: var(--red);
+}
+
+:root[data-theme="dark"] .news-it-gadgets {
+  background: rgba(96, 165, 250, 0.18);
+  color: #93c5fd;
+}
+
+:root[data-theme="dark"] .news-housing {
+  background: rgba(74, 222, 128, 0.16);
+  color: #86efac;
+}
+
+:root[data-theme="dark"] .news-money {
+  background: rgba(167, 139, 250, 0.18);
+  color: #c4b5fd;
+}
+
+:root[data-theme="dark"] .news-fire {
+  background: rgba(248, 113, 113, 0.18);
+  color: #fca5a5;
+}
+
+/* Travel Hub Alert Banner, Crossing Advisor & Lane Callouts */
+.travel-alert-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(217, 119, 6, 0.35);
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--text);
+}
+
+.travel-alert-banner strong {
+  color: var(--amber);
+}
+
+.travel-advisor-card {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+}
+
+.travel-advisor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.travel-route-box {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  display: grid;
+  gap: 6px;
+}
+
+.travel-route-box.is-recommended {
+  border-color: #16a34a;
+}
+
+.lane-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.lane-guide-item {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.lane-guide-item strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+/* Shared Calculator & Housing Table Styles */
+.calc-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.calc-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.calc-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.calc-field select,
+.calc-field input {
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-subtle);
+  color: var(--text);
+  font-size: 0.96rem;
+}
+
+.calc-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+  margin: 18px 0;
+}
+
+.calc-stat {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+}
+
+.calc-stat-label {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.calc-stat-value {
+  font-size: 1.45rem;
+  font-weight: 750;
+  color: var(--brand);
+}
+
+.calc-stat-sub {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.calc-table-wrap {
+  overflow-x: auto;
+}
+
+.calc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+}
+
+.calc-table th,
+.calc-table td {
+  padding: 11px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.calc-table th {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  white-space: nowrap;
+}

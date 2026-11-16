@@ -57,7 +57,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "Update checkpoint AI traffic data"
-          file_pattern: data/checkpoints.json data/checkpoint-traffic.json data/checkpoint-history.json woodlands-checkpoint.html tuas-checkpoint.html index.html sitemap.xml
+          file_pattern: data/checkpoints.json data/checkpoint-traffic.json data/checkpoint-history.json woodlands-checkpoint.html tuas-checkpoint.html travel.html index.html sitemap.xml
           skip_fetch: true
           skip_push: true
 
@@ -71,7 +71,7 @@ jobs:
 
           is_generated() {
             case "$1" in
-              sitemap.xml|index.html|data/checkpoints.json|data/checkpoint-traffic.json|data/checkpoint-history.json|woodlands-checkpoint.html|tuas-checkpoint.html)
+              sitemap.xml|index.html|travel.html|data/checkpoints.json|data/checkpoint-traffic.json|data/checkpoint-history.json|woodlands-checkpoint.html|tuas-checkpoint.html)
                 return 0
                 ;;
             esac

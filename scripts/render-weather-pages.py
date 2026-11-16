@@ -61,20 +61,37 @@ def primary_nav(current):
         current_attr = ' aria-current="page"' if current == key else ""
         return f'<a href="{href}"{current_attr}>{label}</a>'
 
-    live = ' aria-current="true"' if current in {"rain", "haze", "haze-my", "woodlands", "tuas"} else ""
-    more = ' aria-current="true"' if current in {"about", "contact"} else ""
+    travel = ' aria-current="true"' if current in {"travel", "woodlands", "tuas"} else ""
+    weather = ' aria-current="true"' if current in {"rain", "rain-sg", "rain-my", "haze", "haze-my"} else ""
+    housing = ' aria-current="true"' if current in {"housing", "bto", "housing-qa"} else ""
+    more = ' aria-current="true"' if current in {"guides", "4d", "toto", "about", "contact"} else ""
     return (
         '<nav class="primary-nav" aria-label="Primary">'
-        f'<details class="nav-menu"><summary aria-expanded="false"{live}>Live</summary><div class="nav-panel">'
-        f'{item("/weather/", "Rain", "rain")}{item("/singapore/haze/", "Haze", "haze")}'
-        f'{item("/woodlands-checkpoint.html", "Woodlands", "woodlands")}{item("/tuas-checkpoint.html", "Tuas", "tuas")}'
+        f'<details class="nav-menu"><summary aria-expanded="false"{travel}>Travel</summary><div class="nav-panel">'
+        f'{item("/travel.html", "Travel &amp; Customs Hub", "travel")}'
+        f'{item("/woodlands-checkpoint.html", "Woodlands Checkpoint", "woodlands")}'
+        f'{item("/tuas-checkpoint.html", "Tuas Checkpoint", "tuas")}'
+        f'{item("/guides/woodlands-vs-tuas-checkpoint.html", "Woodlands vs Tuas", "guides")}'
+        "</div></details>"
+        f'<details class="nav-menu"><summary aria-expanded="false"{weather}>Weather</summary><div class="nav-panel">'
+        f'{item("/weather/", "Rain Radar &amp; Outlook", "rain")}'
+        f'{item("/singapore/rain-forecast/", "SG Rain Forecast", "rain-sg")}'
+        f'{item("/malaysia/rain-forecast/", "MY Rain Forecast", "rain-my")}'
+        f'{item("/singapore/haze/", "SG Haze &amp; PSI", "haze")}'
+        f'{item("/malaysia/haze/", "MY Haze &amp; API", "haze-my")}'
+        "</div></details>"
+        f'<details class="nav-menu"><summary aria-expanded="false"{housing}>Housing</summary><div class="nav-panel">'
+        f'{item("/housing.html", "Housing Hub (BTO &amp; Resale)", "housing")}'
+        f'{item("/bto-launches.html", "Upcoming BTO Launches", "bto")}'
+        f'{item("/bto-mortgage-calculator.html", "Mortgage &amp; MSR Calc", "housing-calc")}'
+        f'{item("/housing.html#housing-qa", "Resale &amp; BTO Q&amp;A", "housing-qa")}'
         "</div></details>"
         f'{item("/singapore-petrol-prices.html", "Petrol", "petrol")}'
         f'{item("/latest-coe-prices.html", "COE", "coe")}'
-        f'{item("/bto-launches.html", "BTO", "bto")}'
-        f'{item("/guides/", "Guides", "guides")}'
+        f'{item("/news.html", "News", "news")}'
         f'<details class="nav-menu nav-more"><summary aria-expanded="false"{more}>More</summary><div class="nav-panel">'
-        f'{item("/#news", "News", "news")}'
+        f'{item("/guides/", "All Guides", "guides")}'
+        f'{item("/4d-results.html", "4D Results", "4d")}{item("/toto-results.html", "TOTO Results", "toto")}'
         f'{item("/about.html", "About", "about")}{item("/contact.html", "Contact", "contact")}'
         "</div></details></nav>"
     )
@@ -86,9 +103,9 @@ def esc(value):
 
 TAB_ICONS = {
     "home": '<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',
-    "live": '<path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/>',
-    "prices": '<line x1="3" x2="15" y1="22" y2="22"/><line x1="4" x2="14" y1="9" y2="9"/><path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2 2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5"/>',
-    "guides": '<path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>',
+    "travel": '<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/>',
+    "housing": '<path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/>',
+    "news": '<path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/>',
     "more": '<line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/>',
 }
 
@@ -97,9 +114,9 @@ def mobile_tabbar(current):
     """Fixed bottom tab bar shared with the static pages (<=700px only)."""
     groups = {
         "home": {"home"},
-        "live": {"rain", "haze", "haze-my", "woodlands", "tuas"},
-        "prices": {"petrol", "coe", "bto"},
-        "guides": {"guides"},
+        "travel": {"travel", "woodlands", "tuas"},
+        "housing": {"housing", "bto", "housing-qa"},
+        "news": {"news"},
     }
     svg = ('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" '
            'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
@@ -110,17 +127,18 @@ def mobile_tabbar(current):
         return f'<a class="tabbar-item" href="{href}"{cur}>{svg.format(TAB_ICONS[key])}<span>{label}</span></a>'
 
     links = (
-        '<a href="/latest-coe-prices.html">COE prices</a><a href="/bto-launches.html">BTO launches</a>'
-        '<a href="/singapore/haze/">Haze &amp; PSI</a><a href="/woodlands-checkpoint.html">Checkpoints</a>'
+        '<a href="/weather/">Weather &amp; Radar</a><a href="/singapore/haze/">Haze &amp; PSI</a>'
+        '<a href="/singapore-petrol-prices.html">Petrol prices</a><a href="/latest-coe-prices.html">COE prices</a>'
+        '<a href="/bto-launches.html">BTO launches</a><a href="/guides/">All Guides</a>'
         '<a href="/4d-results.html">4D results</a><a href="/toto-results.html">TOTO results</a>'
         '<a href="/about.html">About</a><a href="/contact.html">Contact</a>'
     )
     return (
         '<nav class="mobile-tabbar" aria-label="Mobile quick navigation">'
         + tab("/", "Home", "home")
-        + tab("/weather/", "Live", "live")
-        + tab("/singapore-petrol-prices.html", "Prices", "prices")
-        + tab("/guides/", "Guides", "guides")
+        + tab("/travel.html", "Travel", "travel")
+        + tab("/housing.html", "Housing", "housing")
+        + tab("/news.html", "News", "news")
         + f'<details class="tabbar-more"><summary class="tabbar-item">{svg.format(TAB_ICONS["more"])}<span>More</span></summary>'
           '<div class="tabbar-sheet" id="tabbar-more-sheet"><p class="tabbar-sheet-title">More on SG Alerts</p>'
           f'<div class="tabbar-sheet-links">{links}</div></div></details></nav>'

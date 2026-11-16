@@ -44,7 +44,7 @@ async function loadData() {
       newsResults = await fetch("./data/news.json").then(r => r.json());
     }
 
-    if (needsCheckpoint || document.querySelector("[data-glance]")) {
+    if (needsCheckpoint || document.querySelector("[data-glance]") || document.querySelector("[data-checkpoint-ai]") || document.querySelector("[data-travel-advisor]")) {
       fetch("./data/checkpoint-traffic.json")
         .then(r => (r.ok ? r.json() : {}))
         .then(data => {
@@ -237,25 +237,44 @@ function renderNews() {
     return;
   }
 
+  const mode = box.dataset.newsMode || "carousel";
   const categories = ["All", ...new Set(newsResults.headlines.map(item => item.category).filter(Boolean))];
   if (!categories.includes(selectedNewsCategory)) selectedNewsCategory = "All";
 
   const filteredNews = selectedNewsCategory === "All"
     ? newsResults.headlines
     : newsResults.headlines.filter(item => item.category === selectedNewsCategory);
-  const topNews = filteredNews.slice(0, 20);
+  const limit = mode === "full" ? 64 : mode === "teaser" ? 6 : 20;
+  const topNews = filteredNews.slice(0, limit);
+
+  const cardMarkup = item => {
+    const categoryClass = String(item.category || "general").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+    const summaryHtml = item.summary && mode === "full"
+      ? `<p class="news-summary">${escapeHtml(item.summary)}</p>`
+      : "";
+    return `
+      <a class="news-card-item" href="${item.url}" target="_blank" rel="noopener noreferrer">
+        <span class="news-tag news-${categoryClass}">${escapeHtml(item.category)}</span>
+        <strong>${escapeHtml(item.title)}</strong>
+        ${summaryHtml}
+        <small>${escapeHtml(item.source)}${item.published ? " · " + escapeHtml(item.published) : ""}</small>
+      </a>
+    `;
+  };
 
   box.innerHTML = `
     <div class="news-topbar">
       <span class="news-meta">${topNews.length} stories · Updated ${formatTimestamp(newsResults.last_updated)}</span>
-      <div class="news-controls" aria-label="News carousel controls">
-        <button type="button" onclick="scrollNews(-1)" aria-label="Previous news stories">
-          ${iconSvg("chevron-left")}
-        </button>
-        <button type="button" onclick="scrollNews(1)" aria-label="Next news stories">
-          ${iconSvg("chevron-right")}
-        </button>
-      </div>
+      ${mode === "full" || mode === "teaser" ? '<a class="detail-link" href="/news.html">Open full News Hub →</a>' : `
+        <div class="news-controls" aria-label="News carousel controls">
+          <button type="button" onclick="scrollNews(-1)" aria-label="Previous news stories">
+            ${iconSvg("chevron-left")}
+          </button>
+          <button type="button" onclick="scrollNews(1)" aria-label="Next news stories">
+            ${iconSvg("chevron-right")}
+          </button>
+        </div>
+      `}
     </div>
 
     <div class="news-filters" role="group" aria-label="Filter news by category">
@@ -269,17 +288,8 @@ function renderNews() {
       `).join("")}
     </div>
 
-    <div id="newsScroller" class="news-scroller" tabindex="0" aria-label="Latest Singapore news">
-      ${topNews.map(item => {
-        const categoryClass = String(item.category || "general").toLowerCase().replace(/[^a-z0-9]+/g, "-");
-        return `
-          <a class="news-card-item" href="${item.url}" target="_blank" rel="noopener noreferrer">
-            <span class="news-tag news-${categoryClass}">${escapeHtml(item.category)}</span>
-            <strong>${escapeHtml(item.title)}</strong>
-            <small>${escapeHtml(item.source)}${item.published ? " · " + escapeHtml(item.published) : ""}</small>
-          </a>
-        `;
-      }).join("")}
+    <div id="${mode === "full" || mode === "teaser" ? "newsGrid" : "newsScroller"}" class="${mode === "full" || mode === "teaser" ? "news-grid" : "news-scroller"}" tabindex="0" aria-label="Latest Singapore news">
+      ${topNews.map(cardMarkup).join("")}
     </div>
   `;
 
@@ -411,7 +421,7 @@ function renderCheckpointTeaser(box) {
 function renderCheckpoints() {
   const box = document.getElementById("checkpointResult");
   if (!box) return;
-  if (box.dataset.checkpointTeaser === "tabs") {
+  if (box.dataset.checkpointTeaser === "tabs" || box.dataset.checkpointTeaser === "dual") {
     renderCheckpointTeaser(box);
     return;
   }
@@ -1300,6 +1310,47 @@ function setGlance(name, value) {
   node.textContent = value && String(value).trim() ? value : "—";
 }
 
+function renderTravelAdvisor() {
+  const advisor = document.querySelector("[data-travel-advisor]");
+  if (!advisor || !checkpointTraffic) return;
+  const w = checkpointTraffic.woodlands;
+  const t = checkpointTraffic.tuas;
+  if (!w || !t) return;
+
+  const wJb = Number(w.towards_jb || 0);
+  const tJb = Number(t.towards_jb || 0);
+  const wTotal = Number(w.total_vehicles || 0);
+  const tTotal = Number(t.total_vehicles || 0);
+  const jbRec = tJb < wJb ? "Tuas Second Link" : wJb < tJb ? "Woodlands Causeway" : "Tie — check both cameras";
+  const wClass = wJb <= tJb ? " is-recommended" : "";
+  const tClass = tJb < wJb ? " is-recommended" : "";
+
+  advisor.innerHTML = `
+    <div class="ai-traffic-head">
+      <div>
+        <span class="ai-traffic-kicker">AI Crossing Advisor · Towards JB &amp; Return</span>
+        <strong>Lighter SG → JB approach now: ${escapeHtml(jbRec)}</strong>
+      </div>
+      <span class="ai-traffic-time">Updated ${escapeHtml(formatTimestamp(checkpointTraffic.last_updated))}</span>
+    </div>
+    <div class="travel-advisor-grid">
+      <div class="travel-route-box${wClass}">
+        <strong>Woodlands Causeway (Cam 2701 &amp; 2702)</strong>
+        <span>Status: <strong>${escapeHtml(w.status || "—")}</strong> (${wTotal} vehicles detected)</span>
+        <span>Towards JB: ${wJb} (${escapeHtml(w.towards_jb_status || "—")}) · Towards SG: ${Number(w.towards_sg || 0)} (${escapeHtml(w.towards_sg_status || "—")})</span>
+        <a class="detail-link" href="/woodlands-checkpoint.html">All Woodlands cameras →</a>
+      </div>
+      <div class="travel-route-box${tClass}">
+        <strong>Tuas Second Link (Cam 4703 &amp; 4712)</strong>
+        <span>Status: <strong>${escapeHtml(t.status || "—")}</strong> (${tTotal} vehicles detected)</span>
+        <span>Towards JB: ${tJb} (${escapeHtml(t.towards_jb_status || "—")}) · Towards SG: ${Number(t.towards_sg || 0)} (${escapeHtml(t.towards_sg_status || "—")})</span>
+        <a class="detail-link" href="/tuas-checkpoint.html">All Tuas cameras →</a>
+      </div>
+    </div>
+    <p class="ai-traffic-disclaimer">Comparison uses live YOLOX road-camera vehicle density. Indoor immigration hall queues and JB CIQ counters can still vary independently.</p>
+  `;
+}
+
 function renderCheckpointAi() {
   const panels = document.querySelectorAll("[data-checkpoint-ai]");
   panels.forEach(panel => {
@@ -1329,6 +1380,7 @@ function renderCheckpointAi() {
       <p class="ai-traffic-disclaimer">Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ.</p>
     `;
   });
+  renderTravelAdvisor();
 }
 
 function renderGlance() {
