@@ -4285,3 +4285,157 @@ select.fuel-selector,
 :root[data-theme="dark"] .cp-briefing-val a {
   color: #38bdf8;
 }
+
+/* Travel Time Patterns (Historical 4-Week & Prediction Chart) */
+.tp-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.tp-select {
+  min-height: 40px;
+  padding: 0 32px 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-subtle);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+:root[data-theme="dark"] .tp-select {
+  background: #131f33;
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.tp-viewing-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 6px 0 14px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.tp-viewing-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.tp-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--surface-subtle);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.tp-best-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: rgba(16, 185, 129, 0.14);
+  color: #047857;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+:root[data-theme="dark"] .tp-best-pill {
+  background: rgba(52, 211, 153, 0.18);
+  color: #6ee7b7;
+}
+
+.tp-chart-wrap {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.tp-svg {
+  width: 100%;
+  min-width: 680px;
+  height: auto;
+  display: block;
+  user-select: none;
+}
+
+.tp-grid-line {
+  stroke: var(--border);
+  stroke-dasharray: 3 4;
+  stroke-width: 1;
+}
+
+.tp-axis-text {
+  fill: var(--muted);
+  font-size: 11px;
+  font-family: inherit;
+}
+
+.tp-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px 20px;
+  margin-top: 12px;
+  padding-top: 10px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.tp-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.tp-legend-swatch {
+  width: 16px;
+  height: 3px;
+  border-radius: 99px;
+  position: relative;
+  display: inline-block;
+}
+
+.tp-legend-swatch::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: inherit;
+  transform: translate(-50%, -50%);
+}
+
+.tp-tooltip {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  pointer-events: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
+  z-index: 4;
+}

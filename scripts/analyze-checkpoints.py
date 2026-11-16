@@ -22,7 +22,7 @@ MODEL_URL = "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1
 
 SGT = timezone(timedelta(hours=8), name="SGT")
 VEHICLE_CLASSES = {2: "car", 3: "motorcycle", 5: "bus", 7: "truck"}
-MAX_HISTORY_ENTRIES = 720  # ~7.5 days at 15-minute cadence
+MAX_HISTORY_ENTRIES = 2880  # ~30 days (4 weeks) at 15-minute cadence
 DASHBOARD_CAMERA_IDS = {
     "woodlands": ["2701", "2702"],
     "tuas": ["4703", "4712"],

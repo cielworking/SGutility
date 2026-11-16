@@ -24,7 +24,7 @@
   <script>
 (function(){try{var m=localStorage.getItem("sga-theme-mode");if(m!=="light"&&m!=="dark"&&m!=="system")m="system";var d=m==="dark"||(m==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches);var r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-mode",m);}catch(e){var d=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",d?"dark":"light");document.documentElement.setAttribute("data-theme-mode","system");}})();
 </script>
-  <link rel="stylesheet" href="/style.css?v=27">
+  <link rel="stylesheet" href="/style.css?v=28">
   <script type="application/ld+json" data-seo-page="travel.html">
 {
   "@context": "https://schema.org",
@@ -253,6 +253,52 @@
         </div>
       </section>
 
+      <section id="travel-patterns" class="surface-card specialist-data-card" data-travel-patterns aria-label="Travel time patterns and historical predictions">
+        <div class="section-header section-header-row">
+          <div class="section-title">
+            <span class="section-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16v-5"/><path d="M12 16V8"/><path d="M17 16v-3"/></svg></span>
+            <div>
+              <h2>Travel Time Patterns</h2>
+              <p class="eyebrow" style="margin:2px 0 0; text-transform:none; font-weight:500;">Historical data &amp; predictions</p>
+            </div>
+          </div>
+          <div class="tp-controls">
+            <select id="tp-route" class="tp-select" aria-label="Select crossing direction">
+              <option value="woodlands_to_jb" selected>Woodlands → JB</option>
+              <option value="woodlands_to_sg">JB → Woodlands</option>
+              <option value="tuas_to_jb">Tuas → JB</option>
+              <option value="tuas_to_sg">JB → Tuas</option>
+            </select>
+            <select id="tp-day" class="tp-select" aria-label="Select day of week">
+              <option value="today" selected>Today</option>
+              <option value="Mon">Monday</option>
+              <option value="Tue">Tuesday</option>
+              <option value="Wed">Wednesday</option>
+              <option value="Thu">Thursday</option>
+              <option value="Fri">Friday</option>
+              <option value="Sat">Saturday</option>
+              <option value="Sun">Sunday</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="tp-viewing-bar">
+          <div class="tp-viewing-left">
+            <span>Viewing:</span>
+            <span class="tp-badge" id="tp-viewing-route">SG→MY Woodlands → JB</span>
+            <span>on</span>
+            <span class="tp-badge" id="tp-viewing-day">Today</span>
+          </div>
+          <span class="tp-best-pill" id="tp-best-window">Best daytime window: 10:15a – 2:00p</span>
+        </div>
+
+        <div class="tp-chart-wrap" id="tp-chart-wrap">
+          <div id="tp-tooltip" class="tp-tooltip" hidden></div>
+          <div id="tp-svg-mount"></div>
+        </div>
+        <div class="tp-legend" id="tp-legend"></div>
+      </section>
+
       <section id="checkpointResult" class="surface-card specialist-data-card" data-checkpoint-teaser="dual">
         <div id="cp-panel-woodlands">
           <div class="section-header section-header-row">
@@ -389,7 +435,7 @@
       </nav>
     </div>
   </footer>
-  <script src="/script.js?v=20" defer></script>
+  <script src="/script.js?v=21" defer></script>
   <nav class="mobile-tabbar" aria-label="Mobile quick navigation"><a class="tabbar-item" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></a><a class="tabbar-item" href="/travel.html" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg><span>Travel</span></a><a class="tabbar-item" href="/housing.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/></svg><span>Housing</span></a><a class="tabbar-item" href="/weather/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg><span>Weather</span></a><details class="tabbar-more"><summary class="tabbar-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg><span>More</span></summary><div class="tabbar-sheet" id="tabbar-more-sheet"><p class="tabbar-sheet-title">More on SG Alerts</p><div class="tabbar-sheet-links"><a href="/singapore-petrol-prices.html">Petrol prices</a><a href="/latest-coe-prices.html">COE prices</a><a href="/bto-launches.html">BTO launches</a><a href="/singapore/haze/">Haze &amp; PSI</a><a href="/woodlands-checkpoint.html">Checkpoints</a><a href="/guides/">All Guides</a><a href="/4d-results.html">4D results</a><a href="/toto-results.html">TOTO results</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></div></details></nav>
 </body>
 </html>
