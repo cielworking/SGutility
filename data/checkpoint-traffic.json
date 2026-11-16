@@ -1,7 +1,7 @@
 {
   "model": "YOLOX-S ONNX (COCO vehicles in calibrated road polygons)",
   "source_name": "LTA / data.gov.sg",
-  "last_updated": "2026-11-16T16:36:59.088841+00:00",
+  "last_updated": "2026-11-16T16:37:41.014820+00:00",
   "note": "AI counts visible vehicles on public LTA approach cameras. Actual immigration counter queues inside the complex may differ.",
   "woodlands": {
     "status": "Heavy",
