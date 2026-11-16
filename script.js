@@ -151,13 +151,23 @@ async function refreshCheckpointData() {
       tuas
     };
 
+    try {
+      const tRes = await fetch("./data/checkpoint-traffic.json", { cache: "no-store" });
+      if (tRes.ok) {
+        checkpointTraffic = (await tRes.json()) || checkpointTraffic;
+        renderCheckpointAi();
+      }
+    } catch {}
+
     renderCheckpoints();
+    updateTravelBriefing(true);
   } catch (err) {
     console.error("Live checkpoint refresh failed:", err);
 
     try {
       checkpointData = await fetch("./data/checkpoints.json").then(r => r.json());
       renderCheckpoints();
+      updateTravelBriefing(true);
     } catch (fallbackErr) {
       console.error("Cached checkpoint data failed:", fallbackErr);
     }
@@ -1483,8 +1493,43 @@ function shortClockSgt(iso) {
   }).toLowerCase();
 }
 
-function updateTravelBriefing() {
+function psiBandLabel(v) {
+  if (typeof v !== "number" || Number.isNaN(v)) return "—";
+  if (v <= 50) return "Good";
+  if (v <= 100) return "Moderate";
+  if (v <= 200) return "Unhealthy";
+  return "Very Unhealthy";
+}
+
+function pm25BandLabel(v) {
+  if (typeof v !== "number" || Number.isNaN(v)) return "—";
+  if (v <= 55) return "Normal";
+  if (v <= 150) return "Elevated";
+  return "High";
+}
+
+function currentHolidayBriefingHtml() {
+  const todaySgt = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" });
+  const windows = [
+    ["2026-12-31", 'Year-end school holidays, Sat 21 Nov – Thu 31 Dec 2026: typically busiest towards JB Friday afternoons as the holidays begin, and coming back Sunday evenings throughout the holidays. <a href="/guides/causeway-year-end-school-holidays.html">Holiday peaks →</a>'],
+    ["2027-02-15", 'New Year &amp; Chinese New Year 2027 (6–9 Feb 2027 long weekend): heavy outbound queues towards JB expected Thu/Fri before CNY and return surges Sun/Mon into Singapore. <a href="/guides/cny-2027-causeway-jb-traffic.html">CNY 2027 peaks →</a>'],
+    ["2027-03-22", 'March school holidays &amp; Hari Raya Puasa (13–21 Mar 2027): expect heavy SG → JB queues on Friday 12 March and return congestion Sunday evenings. <a href="/guides/singapore-public-holidays-2027-long-weekends.html">2027 holiday calendar →</a>'],
+    ["2027-05-03", 'Good Friday (26 Mar) &amp; Labour Day (1 May 2027) long weekends: cross before 6:30 am or after 10:30 pm on long-weekend Fridays to avoid peak Causeway queues. <a href="/guides/singapore-public-holidays-2027-long-weekends.html">Long weekends →</a>'],
+    ["2027-06-28", 'Vesak Day &amp; June school holidays (29 May – 27 Jun 2027): family road trips peak Friday afternoons and Saturday mornings towards JB, returning Sunday evenings. <a href="/guides/singapore-public-holidays-2027-long-weekends.html">Holiday peaks →</a>'],
+    ["2027-09-13", 'National Day (9 Aug) &amp; September school holidays (4–12 Sep 2027): expect elevated weekend and school-break queues at both Woodlands and Tuas. <a href="/guides/singapore-public-holidays-2027-long-weekends.html">Holiday peaks →</a>'],
+    ["2027-12-31", 'Deepavali &amp; Year-end school holidays (Nov – Dec 2027): heaviest outbound traffic Friday afternoons and Saturday mornings, returning Sunday evenings. <a href="/guides/causeway-year-end-school-holidays.html">Holiday peaks →</a>'],
+  ];
+  const match = windows.find(([until]) => todaySgt <= until) || windows[windows.length - 1];
+  return match[1];
+}
+
+function updateTravelBriefing(force = false) {
   if (!document.querySelector("[data-travel-briefing]")) return;
+
+  const holidayHtml = currentHolidayBriefingHtml();
+  document.querySelectorAll("[data-briefing-holiday]").forEach(el => {
+    el.innerHTML = holidayHtml;
+  });
 
   [
     ["woodlands", "Woodlands", "the BKE approach & Causeway", "https://www.google.com/maps/@1.4485,103.769,15z/data=!5m1!1e1"],
@@ -1510,25 +1555,60 @@ function updateTravelBriefing() {
     }
   });
 
-  if (!window.__travelRainFetched) {
+  if (force || !window.__travelRainFetched) {
     window.__travelRainFetched = true;
-    fetch("https://api-open.data.gov.sg/v2/real-time/api/rainfall")
-      .then(r => (r.ok ? r.json() : null))
-      .then(payload => {
-        const readings = payload?.data?.readings?.[0]?.data || [];
-        const byId = Object.fromEntries(readings.map(item => [item.stationId, Number(item.value || 0)]));
-        const wMm = Math.max(byId.S211 ?? 0, byId.S104 ?? 0, byId.S66 ?? 0);
-        const tMm = Math.max(byId.S115 ?? 0, byId.S132 ?? 0, byId.S180 ?? 0);
-        const wGauge = document.querySelector('[data-rain-gauge="woodlands"]');
-        const tGauge = document.querySelector('[data-rain-gauge="tuas"]');
-        if (wGauge) {
-          wGauge.textContent = wMm > 0 ? `${wMm.toFixed(1)} mm on the nearest gauge now` : "no rain on the nearest gauge now";
+    Promise.allSettled([
+      fetch("https://api-open.data.gov.sg/v2/real-time/api/rainfall").then(r => (r.ok ? r.json() : null)),
+      fetch("https://api-open.data.gov.sg/v2/real-time/api/two-hr-forecast").then(r => (r.ok ? r.json() : null)),
+      fetch("https://api-open.data.gov.sg/v2/real-time/api/psi").then(r => (r.ok ? r.json() : null)),
+      fetch("https://api-open.data.gov.sg/v2/real-time/api/pm25").then(r => (r.ok ? r.json() : null)),
+    ]).then(([rainRes, fcRes, psiRes, pm25Res]) => {
+      const rainPayload = rainRes.status === "fulfilled" ? rainRes.value : null;
+      const fcPayload = fcRes.status === "fulfilled" ? fcRes.value : null;
+      const psiPayload = psiRes.status === "fulfilled" ? psiRes.value : null;
+      const pm25Payload = pm25Res.status === "fulfilled" ? pm25Res.value : null;
+
+      const readings = rainPayload?.data?.readings?.[0]?.data || [];
+      const byId = Object.fromEntries(readings.map(item => [item.stationId, Number(item.value || 0)]));
+      const wMm = Math.max(byId.S211 ?? 0, byId.S104 ?? 0, byId.S66 ?? 0);
+      const tMm = Math.max(byId.S115 ?? 0, byId.S132 ?? 0, byId.S180 ?? 0);
+
+      const forecasts = fcPayload?.data?.items?.[0]?.forecasts || [];
+      const wFc = (forecasts.find(f => f.area === "Woodlands")?.forecast || "").toLowerCase();
+      const tFc = (forecasts.find(f => f.area === "Tuas")?.forecast || "").toLowerCase();
+
+      const wRainEl = document.querySelector('[data-briefing-rain="woodlands"]');
+      if (wRainEl && (readings.length || wFc)) {
+        const gTxt = wMm > 0 ? `${wMm.toFixed(1)} mm on the nearest gauge now` : "no rain on the nearest gauge now";
+        const fTxt = escapeHtml(wFc || "cloudy");
+        wRainEl.innerHTML = `Woodlands: <span data-rain-gauge="woodlands">${escapeHtml(gTxt)}</span>; next two hours ${fTxt}. <a href="/weather/">Rain map →</a>`;
+      }
+
+      const tRainEl = document.querySelector('[data-briefing-rain="tuas"]');
+      if (tRainEl && (readings.length || tFc)) {
+        const gTxt = tMm > 0 ? `${tMm.toFixed(1)} mm on the nearest gauge now` : "no rain on the nearest gauge now";
+        const fTxt = escapeHtml(tFc || "cloudy");
+        tRainEl.innerHTML = `Tuas: <span data-rain-gauge="tuas">${escapeHtml(gTxt)}</span>; next two hours ${fTxt}. <a href="/weather/">Rain map →</a>`;
+      }
+
+      const psiItem = psiPayload?.data?.items?.[0];
+      const pm25Item = pm25Payload?.data?.items?.[0];
+      const psiMap = psiItem?.readings?.psi_twenty_four_hourly || {};
+      const pm25Map = pm25Item?.readings?.pm25_one_hourly || {};
+      const airClock = shortClockSgt(psiItem?.timestamp || pm25Item?.timestamp);
+
+      [
+        ["woodlands", "north", "North Singapore"],
+        ["tuas", "west", "West Singapore"],
+      ].forEach(([locKey, regKey, regLabel]) => {
+        const airEl = document.querySelector(`[data-briefing-air="${locKey}"]`);
+        const pVal = psiMap[regKey];
+        const mVal = pm25Map[regKey];
+        if (airEl && typeof pVal === "number" && typeof mVal === "number") {
+          airEl.innerHTML = `${regLabel}: 24-hour PSI ${pVal} (${psiBandLabel(pVal)}); 1-hour PM2.5 ${mVal} µg/m³ (${pm25BandLabel(mVal)}), NEA at ${escapeHtml(airClock || "recently")}. <a href="/singapore/haze/">PSI by region →</a>`;
         }
-        if (tGauge) {
-          tGauge.textContent = tMm > 0 ? `${tMm.toFixed(1)} mm on the nearest gauge now` : "no rain on the nearest gauge now";
-        }
-      })
-      .catch(() => {});
+      });
+    });
   }
 }
 

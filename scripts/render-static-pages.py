@@ -191,19 +191,17 @@ def render_travel_briefing(checkpoints, traffic, weather):
     pm25_readings = (sg_pm25.get("readings") or {}).get("pm25_one_hourly") or {}
     air_time = short_clock_sgt(sg_psi.get("timestamp") or sg_pm25.get("timestamp"))
 
-    now_sgt = datetime.now(timezone(timedelta(hours=8)))
-    if now_sgt.date().isoformat() <= "2026-12-31":
-        holiday_html = (
-            "Year-end school holidays, Sat 21 Nov – Thu 31 Dec 2026: typically busiest towards JB "
-            "Friday afternoons as the holidays begin, and coming back Sunday evenings throughout the holidays. "
-            '<a href="/guides/causeway-year-end-school-holidays.html">Holiday peaks →</a>'
-        )
-    else:
-        holiday_html = (
-            "New Year &amp; Chinese New Year 2027 peak crossings: plan around Friday evenings outbound to JB "
-            "and Sunday / public-holiday return waves into Singapore. "
-            '<a href="/guides/cny-2027-causeway-jb-traffic.html">Holiday peaks →</a>'
-        )
+    now_sgt = datetime.now(timezone(timedelta(hours=8))).date().isoformat()
+    holiday_windows = [
+        ("2026-12-31", 'Year-end school holidays, Sat 21 Nov – Thu 31 Dec 2026: typically busiest towards JB Friday afternoons as the holidays begin, and coming back Sunday evenings throughout the holidays. <a href="/guides/causeway-year-end-school-holidays.html">Holiday peaks →</a>'),
+        ("2027-02-15", 'New Year &amp; Chinese New Year 2027 (6–9 Feb 2027 long weekend): heavy outbound queues towards JB expected Thu/Fri before CNY and return surges Sun/Mon into Singapore. <a href="/guides/cny-2027-causeway-jb-traffic.html">CNY 2027 peaks →</a>'),
+        ("2027-03-22", 'March school holidays &amp; Hari Raya Puasa (13–21 Mar 2027): expect heavy SG → JB queues on Friday 12 March and return congestion Sunday evenings. <a href="/guides/singapore-public-holidays-2027-long-weekends.html">2027 holiday calendar →</a>'),
+        ("2027-05-03", 'Good Friday (26 Mar) &amp; Labour Day (1 May 2027) long weekends: cross before 6:30 am or after 10:30 pm on long-weekend Fridays to avoid peak Causeway queues. <a href="/guides/singapore-public-holidays-2027-long-weekends.html">Long weekends →</a>'),
+        ("2027-06-28", 'Vesak Day &amp; June school holidays (29 May – 27 Jun 2027): family road trips peak Friday afternoons and Saturday mornings towards JB, returning Sunday evenings. <a href="/guides/singapore-public-holidays-2027-long-weekends.html">Holiday peaks →</a>'),
+        ("2027-09-13", 'National Day (9 Aug) &amp; September school holidays (4–12 Sep 2027): expect elevated weekend and school-break queues at both Woodlands and Tuas. <a href="/guides/singapore-public-holidays-2027-long-weekends.html">Holiday peaks →</a>'),
+        ("2027-12-31", 'Deepavali &amp; Year-end school holidays (Nov – Dec 2027): heaviest outbound traffic Friday afternoons and Saturday mornings, returning Sunday evenings. <a href="/guides/causeway-year-end-school-holidays.html">Holiday peaks →</a>'),
+    ]
+    holiday_html = next((html_str for until, html_str in holiday_windows if now_sgt <= until), holiday_windows[-1][1])
 
     def build_card(loc_key, title, approach_road, area_name, air_region, air_label, gmaps_url, extra_label, extra_html):
         cams = (checkpoints or {}).get(loc_key) or []
@@ -242,7 +240,7 @@ def render_travel_briefing(checkpoints, traffic, weather):
             </li>
             <li class="cp-briefing-row">
               <span class="cp-briefing-label">Holiday</span>
-              <p class="cp-briefing-val">{holiday_html}</p>
+              <p class="cp-briefing-val" data-briefing-holiday>{holiday_html}</p>
             </li>
             <li class="cp-briefing-row">
               <span class="cp-briefing-label">{html.escape(extra_label)}</span>
