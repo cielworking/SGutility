@@ -84,7 +84,20 @@ def render_combined(cache, heading="Rain radar & outlook", compact=False):
     # Built outside the parent f-string so Python 3.11 can parse it. Nested
     # f-strings that reuse the same quotes need 3.12.
     if compact:
-        malaysia_html = '<p class="section-note"><a class="detail-link" href="/malaysia/rain-forecast/">Johor and Malaysia outlook</a></p>'
+        city = next((r.get("forecast") for r in rain.get("forecasts", []) if r.get("area") == "City"), None)
+        jb_summary = describe(today.get("summary_forecast")) if today else "Check Johor outlook"
+        gen_forecast = (outlook.get("general") or {}).get("forecast") or (
+            next(iter((outlook.get("periods") or [{}])[0].get("regions", {}).values()), {}).get("text")
+        ) or "Check regional outlook"
+        return (
+            f'<div class="weather-compact-summary">'
+            f'<p><strong>City (2-hr):</strong> {esc(city or "Unavailable")} · '
+            f'<strong>SG Outlook:</strong> {esc(gen_forecast)} · '
+            f'<strong>Johor Bahru:</strong> {esc(jb_summary)}</p>'
+            f'<p class="section-note"><a href="/singapore/rain-forecast/">SG area forecast</a> · '
+            f'<a href="/malaysia/rain-forecast/">Johor &amp; Malaysia outlook</a></p>'
+            f'</div>'
+        )
     else:
         malaysia_html = f'''<section id="malaysia-outlook" class="outlook-section"><div class="weather-toolbar"><div><p class="eyebrow">Across the border</p><h3>Malaysia outlook</h3></div><label class="weather-filter">Malaysia location<select id="my-weather-location">{my_options}</select></label></div>
 <p class="note">Daily general forecast · morning, afternoon and night. Location types: Ds district, Tn town, St state, Dv division, Rc recreation centre.</p>

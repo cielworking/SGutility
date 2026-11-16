@@ -502,7 +502,6 @@ def render_sitemap(dates, preserved=None):
         ("https://sgalerts.com/housing.html", dates.get("bto")),
         ("https://sgalerts.com/bto-launches.html", dates.get("bto")),
         ("https://sgalerts.com/bto-mortgage-calculator.html", dates.get("bto")),
-        ("https://sgalerts.com/news.html", dates.get("news")),
         ("https://sgalerts.com/singapore-petrol-prices.html", dates.get("petrol")),
         ("https://sgalerts.com/petrol-discount-calculator.html", dates.get("petrol")),
         ("https://sgalerts.com/latest-coe-prices.html", dates.get("coe")),
@@ -565,8 +564,6 @@ def main():
         cameras = checkpoints.get(location_key) or []
         set_camera_preload(filename, cameras[0].get("image") if cameras else "")
     if traffic:
-        replace_static_block("index.html", "AI-WOODLANDS", render_checkpoint_ai(traffic, "woodlands"))
-        replace_static_block("index.html", "AI-TUAS", render_checkpoint_ai(traffic, "tuas"))
         replace_static_block("travel.html", "AI-WOODLANDS", render_checkpoint_ai(traffic, "woodlands"))
         replace_static_block("travel.html", "AI-TUAS", render_checkpoint_ai(traffic, "tuas"))
         replace_static_block("travel.html", "TRAVEL-ADVISOR", render_travel_advisor(traffic))
@@ -587,7 +584,9 @@ def main():
             optional[key] = {}
 
     if optional.get("news"):
-        replace_static_block("news.html", "NEWS", render_news_static(optional["news"]))
+        news_html = render_news_static(optional["news"])
+        replace_static_block("news.html", "NEWS", news_html)
+        replace_static_block("index.html", "NEWS", news_html)
 
     pools = optional["pools"]
     if pools:

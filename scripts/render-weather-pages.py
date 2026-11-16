@@ -88,7 +88,6 @@ def primary_nav(current):
         "</div></details>"
         f'{item("/singapore-petrol-prices.html", "Petrol", "petrol")}'
         f'{item("/latest-coe-prices.html", "COE", "coe")}'
-        f'{item("/news.html", "News", "news")}'
         f'<details class="nav-menu nav-more"><summary aria-expanded="false"{more}>More</summary><div class="nav-panel">'
         f'{item("/guides/", "All Guides", "guides")}'
         f'{item("/4d-results.html", "4D Results", "4d")}{item("/toto-results.html", "TOTO Results", "toto")}'
@@ -105,7 +104,7 @@ TAB_ICONS = {
     "home": '<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',
     "travel": '<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/>',
     "housing": '<path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/>',
-    "news": '<path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/>',
+    "weather": '<path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/>',
     "more": '<line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/>',
 }
 
@@ -113,10 +112,10 @@ TAB_ICONS = {
 def mobile_tabbar(current):
     """Fixed bottom tab bar shared with the static pages (<=700px only)."""
     groups = {
-        "home": {"home"},
+        "home": {"home", "news"},
         "travel": {"travel", "woodlands", "tuas"},
-        "housing": {"housing", "bto", "housing-qa"},
-        "news": {"news"},
+        "housing": {"housing", "bto", "housing-calc", "housing-qa"},
+        "weather": {"rain", "rain-sg", "rain-my", "haze", "haze-my"},
     }
     svg = ('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" '
            'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
@@ -127,9 +126,9 @@ def mobile_tabbar(current):
         return f'<a class="tabbar-item" href="{href}"{cur}>{svg.format(TAB_ICONS[key])}<span>{label}</span></a>'
 
     links = (
-        '<a href="/weather/">Weather &amp; Radar</a><a href="/singapore/haze/">Haze &amp; PSI</a>'
         '<a href="/singapore-petrol-prices.html">Petrol prices</a><a href="/latest-coe-prices.html">COE prices</a>'
-        '<a href="/bto-launches.html">BTO launches</a><a href="/guides/">All Guides</a>'
+        '<a href="/bto-launches.html">BTO launches</a><a href="/singapore/haze/">Haze &amp; PSI</a>'
+        '<a href="/woodlands-checkpoint.html">Checkpoints</a><a href="/guides/">All Guides</a>'
         '<a href="/4d-results.html">4D results</a><a href="/toto-results.html">TOTO results</a>'
         '<a href="/about.html">About</a><a href="/contact.html">Contact</a>'
     )
@@ -138,7 +137,7 @@ def mobile_tabbar(current):
         + tab("/", "Home", "home")
         + tab("/travel.html", "Travel", "travel")
         + tab("/housing.html", "Housing", "housing")
-        + tab("/news.html", "News", "news")
+        + tab("/weather/", "Weather", "weather")
         + f'<details class="tabbar-more"><summary class="tabbar-item">{svg.format(TAB_ICONS["more"])}<span>More</span></summary>'
           '<div class="tabbar-sheet" id="tabbar-more-sheet"><p class="tabbar-sheet-title">More on SG Alerts</p>'
           f'<div class="tabbar-sheet-links">{links}</div></div></details></nav>'

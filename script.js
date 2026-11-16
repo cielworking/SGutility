@@ -15,10 +15,11 @@ let hideGambling = localStorage.getItem("hideGambling") === "true";
 
 async function loadData() {
   try {
+    const hasGlance = Boolean(document.querySelector("[data-glance]"));
     const needsNews = hasElement("news-result");
     const needsCheckpoint = hasElement("checkpointResult");
-    const needsPetrol = hasElement("petrolResult");
-    const needsCoe = hasElement("coeResult");
+    const needsPetrol = hasElement("petrolResult") || hasGlance;
+    const needsCoe = hasElement("coeResult") || hasGlance;
     const needsBto = hasElement("btoResult");
     const needsQuickInfo = hasElement("quickInfo");
     const needsSgPools = hasElement("sgpoolsResult");
@@ -33,7 +34,9 @@ async function loadData() {
 
     if (needsPetrol) {
       petrolPrices = await fetch("./data/petrol-prices.json").then(r => r.json());
-      petrolDiscounts = await fetch("./data/petrol-discounts.json").then(r => r.json());
+      if (hasElement("petrolResult")) {
+        petrolDiscounts = await fetch("./data/petrol-discounts.json").then(r => r.json());
+      }
     }
 
     if (needsQuickInfo) {
@@ -265,7 +268,7 @@ function renderNews() {
   box.innerHTML = `
     <div class="news-topbar">
       <span class="news-meta">${topNews.length} stories · Updated ${formatTimestamp(newsResults.last_updated)}</span>
-      ${mode === "full" || mode === "teaser" ? '<a class="detail-link" href="/news.html">Open full News Hub →</a>' : `
+      ${mode === "full" ? "" : mode === "teaser" ? '<a class="detail-link" href="/news.html">Open full News Hub →</a>' : `
         <div class="news-controls" aria-label="News carousel controls">
           <button type="button" onclick="scrollNews(-1)" aria-label="Previous news stories">
             ${iconSvg("chevron-left")}
@@ -1387,10 +1390,16 @@ function renderGlance() {
   if (!document.querySelector("[data-glance]")) return;
   const woodlands = checkpointData.woodlands?.length || 0;
   const tuas = checkpointData.tuas?.length || 0;
-  const wStatus = checkpointTraffic?.woodlands?.status;
-  const tStatus = checkpointTraffic?.tuas?.status;
-  setGlance("woodlands", woodlands ? (wStatus ? `${woodlands} cams · ${wStatus}` : `${woodlands} cams live`) : "—");
-  setGlance("tuas", tuas ? (tStatus ? `${tuas} cams · ${tStatus}` : `${tuas} cams live`) : "—");
+  const wLoc = checkpointTraffic?.woodlands;
+  const tLoc = checkpointTraffic?.tuas;
+  const wLabel = woodlands
+    ? (wLoc?.status ? `${woodlands} cams · ${wLoc.status}` : `${woodlands} cams live`)
+    : (wLoc?.status ? `${wLoc.status} (${Number(wLoc.total_vehicles || 0)} vehicles)` : "Check live");
+  const tLabel = tuas
+    ? (tLoc?.status ? `${tuas} cams · ${tLoc.status}` : `${tuas} cams live`)
+    : (tLoc?.status ? `${tLoc.status} (${Number(tLoc.total_vehicles || 0)} vehicles)` : "Check live");
+  setGlance("woodlands", wLabel);
+  setGlance("tuas", tLabel);
 
   const ron95 = (petrolPrices.brands || []).map(brand => {
     const match = String(brand.ron95 || "").match(/(\d+\.\d+)/);
