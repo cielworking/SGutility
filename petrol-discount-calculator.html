@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singapore Petrol Card &amp; Net Price Calculator | SG Alerts</title>
+  <meta name="description" content="Calculate the cheapest net petrol price in Singapore after Shell, Esso, Caltex, SPC and Sinopec credit card discounts live.">
+  <link rel="canonical" href="https://sgalerts.com/petrol-discount-calculator.html">
+  <meta property="og:title" content="Singapore Petrol Card &amp; Net Price Calculator | SG Alerts">
+  <meta property="og:description" content="Calculate your net petrol price per litre after bank card and loyalty discounts across Shell, Esso, Caltex, SPC, Sinopec and Smart Energy.">
+  <meta property="og:url" content="https://sgalerts.com/petrol-discount-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SG Alerts">
+  <meta property="og:image" content="https://sgalerts.com/assets/og-share.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Singapore Petrol Card &amp; Net Price Calculator | SG Alerts">
+  <meta name="twitter:description" content="Find the cheapest effective petrol price in Singapore after credit card discounts.">
+  <meta name="twitter:image" content="https://sgalerts.com/assets/og-share.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0c2554" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="/site.webmanifest">
+  <script>
+(function(){try{var m=localStorage.getItem("sga-theme-mode");if(m!=="light"&&m!=="dark"&&m!=="system")m="system";var d=m==="dark"||(m==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches);var r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-mode",m);}catch(e){var d=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",d?"dark":"light");document.documentElement.setAttribute("data-theme-mode","system");}})();
+</script>
+<link rel="stylesheet" href="/style.css?v=23">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://sgalerts.com/petrol-discount-calculator.html#app",
+      "name": "Singapore Petrol Card & Net Price Calculator",
+      "url": "https://sgalerts.com/petrol-discount-calculator.html",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "en-SG",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "SGD"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "SG Alerts", "item": "https://sgalerts.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Singapore Petrol Prices", "item": "https://sgalerts.com/singapore-petrol-prices.html" },
+        { "@type": "ListItem", "position": 3, "name": "Petrol Discount Calculator", "item": "https://sgalerts.com/petrol-discount-calculator.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How are net Singapore petrol prices calculated in this calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The calculator reads today's published pump prices and applies each station's listed bank credit card or loyalty discount percentage (or direct nett price for fixed-rate stations) to show your estimated net price per litre, per-tank cost, and annual savings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which petrol grade should most Singapore cars use: RON 92, 95 or 98?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most passenger cars in Singapore are tuned for RON 95, while some standard models accept RON 92. High-compression or performance turbocharged engines may require RON 98. Check your fuel cap or owner's manual before switching grades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why can effective savings vary from the headline bank discount percentage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Headline bank savings often combine upfront station site discounts with statement cashback that requires meeting a minimum monthly card spend. Always verify minimum spend tiers and cashback caps on the bank's official promotion page."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+<script src="/theme.js?v=1" defer></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
+  <script src="/analytics.js"></script>
+  <style>
+    .calc-controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; align-items: end; }
+    .calc-field { display: flex; flex-direction: column; gap: 0.4rem; }
+    .calc-field label { font-size: 0.875rem; font-weight: 600; }
+    .calc-field select, .calc-field input {
+      width: 100%; padding: 0.6rem 0.75rem; border-radius: 10px;
+      border: 1px solid var(--border, rgba(148, 163, 184, 0.35));
+      background: var(--surface, transparent); color: inherit; font: inherit;
+    }
+    .calc-summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 0.9rem; margin: 1rem 0; }
+    .calc-stat { border: 1px solid var(--border, rgba(148, 163, 184, 0.25)); border-radius: 12px; padding: 0.9rem 1rem; }
+    .calc-stat-label { font-size: 0.8rem; opacity: 0.8; margin-bottom: 0.25rem; }
+    .calc-stat-value { font-size: 1.35rem; font-weight: 700; line-height: 1.2; }
+    .calc-stat-sub { font-size: 0.8rem; opacity: 0.85; margin-top: 0.25rem; }
+    .calc-table-wrap { overflow-x: auto; }
+    .calc-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+    .calc-table th, .calc-table td { padding: 0.75rem 0.65rem; text-align: left; border-bottom: 1px solid var(--border, rgba(148, 163, 184, 0.2)); vertical-align: top; }
+    .calc-table th { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em; opacity: 0.8; white-space: nowrap; }
+    .calc-badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 999px; font-size: 0.75rem; font-weight: 600; border: 1px solid currentColor; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="SG Alerts home">
+        <span class="brand-mark" aria-hidden="true"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span>
+        <span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary"><details class="nav-menu"><summary aria-expanded="false">Live</summary><div class="nav-panel"><a href="/weather/">Rain</a><a href="/singapore/haze/">Haze</a><a href="/woodlands-checkpoint.html">Woodlands</a><a href="/tuas-checkpoint.html">Tuas</a></div></details><a href="/singapore-petrol-prices.html" aria-current="page">Petrol</a><a href="/latest-coe-prices.html">COE</a><a href="/bto-launches.html">BTO</a><a href="/guides/">Guides</a><details class="nav-menu nav-more"><summary aria-expanded="false">More</summary><div class="nav-panel"><a href="/#news">News</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></details></nav>
+      <div class="theme-control" role="group" aria-label="Color theme">
+        <button type="button" class="theme-choice" data-theme-choice="system" aria-pressed="true" aria-label="System theme" title="System theme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></button>
+        <button type="button" class="theme-choice" data-theme-choice="light" aria-pressed="false" aria-label="Light theme" title="Light theme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></button>
+        <button type="button" class="theme-choice" data-theme-choice="dark" aria-pressed="false" aria-label="Dark theme" title="Dark theme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="content-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/singapore-petrol-prices.html">Singapore Petrol Prices</a> / <span aria-current="page">Petrol Discount Calculator</span></nav>
+    <section class="page-hero">
+      <div class="page-hero-main">
+        <div>
+          <p class="eyebrow">Fuel savings tool</p>
+          <h1>Singapore Petrol Card &amp; Net Price Calculator</h1>
+          <p>Calculate your actual net price per litre, per-tank cost, and annual fuel savings across Shell, Esso, Caltex, SPC, Sinopec, and Smart Energy using today's live pump prices.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="specialist-layout">
+      <section class="surface-card" aria-label="Petrol Discount Calculator">
+        <div class="calc-controls">
+          <div class="calc-field">
+            <label for="calc-grade">Fuel Grade</label>
+            <select id="calc-grade">
+              <option value="ron95" selected>RON 95 (Most Cars)</option>
+              <option value="ron92">RON 92</option>
+              <option value="ron98">RON 98</option>
+              <option value="premium">Premium</option>
+              <option value="diesel">Diesel</option>
+            </select>
+          </div>
+          <div class="calc-field">
+            <label for="calc-litres">Litres per Pump</label>
+            <input id="calc-litres" type="number" min="1" max="200" step="1" value="45">
+          </div>
+          <div class="calc-field">
+            <label for="calc-pumps-month">Fill-ups per Month</label>
+            <input id="calc-pumps-month" type="number" min="1" max="31" step="1" value="4">
+          </div>
+          <div class="calc-field">
+            <label for="calc-brand-filter">Station Filter</label>
+            <select id="calc-brand-filter">
+              <option value="all" selected>All Petrol Stations</option>
+            </select>
+          </div>
+        </div>
+        <p class="note" id="calc-updated">Loading live Singapore pump prices and card discounts…</p>
+
+        <div class="calc-summary-grid" aria-live="polite">
+          <div class="calc-stat">
+            <div class="calc-stat-label">Cheapest Net Price</div>
+            <div class="calc-stat-value" id="stat-best-price">—</div>
+            <div class="calc-stat-sub" id="stat-best-combo">Waiting for live data…</div>
+          </div>
+          <div class="calc-stat">
+            <div class="calc-stat-label">Cost per Fill-up</div>
+            <div class="calc-stat-value" id="stat-tank-cost">—</div>
+            <div class="calc-stat-sub" id="stat-tank-savings">—</div>
+          </div>
+          <div class="calc-stat">
+            <div class="calc-stat-label">Estimated Annual Savings</div>
+            <div class="calc-stat-value" id="stat-year-savings">—</div>
+            <div class="calc-stat-sub" id="stat-year-spend">—</div>
+          </div>
+        </div>
+
+        <div class="calc-table-wrap">
+          <h2>Ranked Cheapest Petrol &amp; Card Combinations Today</h2>
+          <table class="calc-table">
+            <thead>
+              <tr>
+                <th>Rank</th><th>Station</th><th>Card / Promo</th><th>Pump Price</th><th>Discount</th><th>Net $/L</th><th>Per Pump</th><th>Monthly Net</th>
+              </tr>
+            </thead>
+            <tbody id="calc-results-body">
+              <tr><td colspan="8">Calculating latest net pump prices…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="surface-card seo-guide" aria-labelledby="calc-guide-title">
+        <p class="eyebrow">Fuel savings guide</p>
+        <h2 id="calc-guide-title">How to get the lowest net petrol price in Singapore</h2>
+        <p>Headline pump prices at major retailers often sit within a few cents of each other, so card discounts and loyalty stacking drive most of your actual fuel savings. Compare station discounts carefully against monthly minimum spend rules.</p>
+        <p>Fixed-rate stations such as Smart Energy publish direct nett pump prices without requiring minimum credit card spend, which can beat bank headline percentages for lower-mileage drivers.</p>
+        <details class="sga-collapse"><summary><h3>Petrol calculator questions</h3></summary><dl class="seo-faq">
+          <dt>How are net Singapore petrol prices calculated in this calculator?</dt><dd>The calculator reads today's published pump prices and applies each station's listed bank credit card or loyalty discount percentage (or direct nett price) to estimate net $/L, per-tank cost, and annual savings.</dd>
+          <dt>Which petrol grade should most Singapore cars use: RON 92, 95 or 98?</dt><dd>Most cars in Singapore run on RON 95, while some standard engines accept RON 92 and high-compression engines may require RON 98. Check your fuel cap or owner's manual.</dd>
+          <dt>Why can effective savings vary from the headline bank discount percentage?</dt><dd>Bank promotions often combine upfront station rebates with statement cashback subject to monthly minimum spend and cashback caps.</dd>
+        </dl></details>
+        <nav class="seo-related" aria-label="Related guides"><strong>Related guides:</strong> <a href="/guides/pay-less-petrol-singapore.html">How to pay less for petrol</a><a href="/guides/how-to-check-singapore-petrol-prices.html">How to check petrol prices today</a><a href="/guides/jb-causeway-vep-autopass-tng-checklist.html">SG to JB driving checklist</a></nav>
+        <nav class="seo-related" aria-label="Related pages"><strong>Related:</strong> <a href="/singapore-petrol-prices.html">Full petrol price table</a><a href="/coe-calculator.html">COE &amp; car loan calculator</a><a href="/woodlands-checkpoint.html">Woodlands cameras</a></nav>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>SG Alerts</strong><span>Independent Singapore information dashboard</span></div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/guides/">Guides</a><a href="/4d-results.html">4D Results</a><a href="/toto-results.html">TOTO Results</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/script.js?v=14" defer></script>
+  <nav class="mobile-tabbar" aria-label="Mobile quick navigation"><a class="tabbar-item" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></a><a class="tabbar-item" href="/weather/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg><span>Live</span></a><a class="tabbar-item" href="/singapore-petrol-prices.html" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" x2="15" y1="22" y2="22"/><line x1="4" x2="14" y1="9" y2="9"/><path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2 2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5"/></svg><span>Prices</span></a><a class="tabbar-item" href="/guides/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg><span>Guides</span></a><details class="tabbar-more"><summary class="tabbar-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg><span>More</span></summary><div class="tabbar-sheet" id="tabbar-more-sheet"><p class="tabbar-sheet-title">More on SG Alerts</p><div class="tabbar-sheet-links"><a href="/latest-coe-prices.html">COE prices</a><a href="/bto-launches.html">BTO launches</a><a href="/singapore/haze/">Haze &amp; PSI</a><a href="/woodlands-checkpoint.html">Checkpoints</a><a href="/4d-results.html">4D results</a><a href="/toto-results.html">TOTO results</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></div></details></nav>
+
+  <script>
+    (function () {
+      const gradeEl = document.getElementById('calc-grade');
+      const litresEl = document.getElementById('calc-litres');
+      const pumpsEl = document.getElementById('calc-pumps-month');
+      const brandEl = document.getElementById('calc-brand-filter');
+      const updatedEl = document.getElementById('calc-updated');
+      const tbodyEl = document.getElementById('calc-results-body');
+      const bestPriceEl = document.getElementById('stat-best-price');
+      const bestComboEl = document.getElementById('stat-best-combo');
+      const tankCostEl = document.getElementById('stat-tank-cost');
+      const tankSavingsEl = document.getElementById('stat-tank-savings');
+      const yearSavingsEl = document.getElementById('stat-year-savings');
+      const yearSpendEl = document.getElementById('stat-year-spend');
+      let pricesData = null;
+      let discountsData = null;
+
+      function parsePrice(val) {
+        if (typeof val === 'number' && Number.isFinite(val)) return val;
+        if (!val || typeof val !== 'string') return null;
+        const num = parseFloat(val.replace(/[^0-9.]/g, ''));
+        return Number.isFinite(num) ? num : null;
+      }
+      function fmtMoney(val, digits) { return '$' + val.toFixed(digits === undefined ? 2 : digits); }
+
+      function buildRows() {
+        if (!pricesData || !Array.isArray(pricesData.brands)) return;
+        const grade = gradeEl.value;
+        const litres = Math.max(1, parseFloat(litresEl.value) || 45);
+        const pumpsPerMonth = Math.max(1, parseFloat(pumpsEl.value) || 4);
+        const brandFilter = brandEl.value;
+
+        const brandMap = new Map();
+        pricesData.brands.forEach((b) => { if (b && b.brand) brandMap.set(b.brand.trim().toLowerCase(), b); });
+
+        const rows = [];
+        const discounts = (discountsData && Array.isArray(discountsData.discounts)) ? discountsData.discounts : [];
+        discounts.forEach((d) => {
+          if (!d || !d.brand) return;
+          const key = d.brand.trim().toLowerCase();
+          if (brandFilter !== 'all' && key !== brandFilter) return;
+          const station = brandMap.get(key);
+          const pumpPrice = station ? parsePrice(station[grade]) : null;
+          const directNet = d.effective_prices && parsePrice(d.effective_prices[grade]);
+          if (pumpPrice === null && directNet === null) return;
+
+          let netPrice = null;
+          let discountLabel = '—';
+          const effectivePump = pumpPrice !== null ? pumpPrice : directNet;
+          if (directNet !== null) {
+            netPrice = directNet;
+            discountLabel = (pumpPrice !== null && pumpPrice > 0 && directNet < pumpPrice)
+              ? (((pumpPrice - directNet) / pumpPrice) * 100).toFixed(1) + '% nett' : 'Nett rate';
+          } else if (typeof d.discount_percent === 'number' && pumpPrice !== null) {
+            netPrice = pumpPrice * (1 - d.discount_percent / 100);
+            discountLabel = d.discount_percent.toFixed(2).replace(/\.00$/, '') + '%';
+          } else if (pumpPrice !== null) {
+            netPrice = pumpPrice;
+          }
+          if (netPrice === null) return;
+          rows.push({
+            brand: d.brand, card: d.card || 'Standard promo',
+            promoUrl: d.promo_url || (station && station.url) || '',
+            pumpPrice: effectivePump, discountLabel, netPrice,
+            savingsPerLitre: Math.max(0, effectivePump - netPrice),
+          });
+        });
+
+        pricesData.brands.forEach((b) => {
+          if (!b || !b.brand) return;
+          const key = b.brand.trim().toLowerCase();
+          if (brandFilter !== 'all' && key !== brandFilter) return;
+          const pumpPrice = parsePrice(b[grade]);
+          if (pumpPrice === null) return;
+          if (!rows.some((r) => r.brand.trim().toLowerCase() === key)) {
+            rows.push({
+              brand: b.brand, card: 'No card discount (pump rate)', promoUrl: b.url || '',
+              pumpPrice, discountLabel: '0%', netPrice: pumpPrice, savingsPerLitre: 0,
+            });
+          }
+        });
+
+        rows.sort((a, b) => a.netPrice - b.netPrice);
+        tbodyEl.textContent = '';
+        if (!rows.length) {
+          const tr = document.createElement('tr');
+          const td = document.createElement('td');
+          td.colSpan = 8;
+          td.textContent = 'No pricing entries available for the selected fuel grade and station.';
+          tr.appendChild(td);
+          tbodyEl.appendChild(tr);
+          bestPriceEl.textContent = '—'; bestComboEl.textContent = 'No matching data';
+          tankCostEl.textContent = '—'; tankSavingsEl.textContent = '—';
+          yearSavingsEl.textContent = '—'; yearSpendEl.textContent = '—';
+          return;
+        }
+
+        const best = rows[0];
+        const perTankNet = best.netPrice * litres;
+        const perTankSave = best.savingsPerLitre * litres;
+        const annualNet = perTankNet * pumpsPerMonth * 12;
+        const annualSave = perTankSave * pumpsPerMonth * 12;
+
+        bestPriceEl.textContent = fmtMoney(best.netPrice, 2) + '/L';
+        bestComboEl.textContent = best.brand + ' (' + best.card + ')';
+        tankCostEl.textContent = fmtMoney(perTankNet, 2);
+        tankSavingsEl.textContent = 'Saves ' + fmtMoney(perTankSave, 2) + ' vs pump (' + fmtMoney(best.pumpPrice, 2) + '/L)';
+        yearSavingsEl.textContent = fmtMoney(annualSave, 0) + '/yr';
+        yearSpendEl.textContent = 'Est. yearly net spend: ' + fmtMoney(annualNet, 0);
+
+        rows.forEach((row, idx) => {
+          const tr = document.createElement('tr');
+          const perPump = row.netPrice * litres;
+          const monthly = perPump * pumpsPerMonth;
+          [String(idx + 1), row.brand, row.card, fmtMoney(row.pumpPrice, 2), row.discountLabel, fmtMoney(row.netPrice, 2), fmtMoney(perPump, 2), fmtMoney(monthly, 2)].forEach((text, colIdx) => {
+            const td = document.createElement('td');
+            if (colIdx === 0 && idx === 0) {
+              const badge = document.createElement('span'); badge.className = 'calc-badge'; badge.textContent = '#1 Best'; td.appendChild(badge);
+            } else if (colIdx === 2 && row.promoUrl) {
+              const a = document.createElement('a'); a.href = row.promoUrl; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = text; td.appendChild(a);
+            } else if (colIdx === 5) {
+              const strong = document.createElement('strong'); strong.textContent = text; td.appendChild(strong);
+            } else { td.textContent = text; }
+            tr.appendChild(td);
+          });
+          tbodyEl.appendChild(tr);
+        });
+      }
+
+      async function init() {
+        try {
+          const [pricesRes, discountsRes] = await Promise.all([fetch('/data/petrol-prices.json'), fetch('/data/petrol-discounts.json')]);
+          if (!pricesRes.ok) throw new Error('Failed to load petrol prices');
+          pricesData = await pricesRes.json();
+          discountsData = discountsRes.ok ? await discountsRes.json() : { discounts: [] };
+          if (Array.isArray(pricesData.brands)) {
+            pricesData.brands.forEach((b) => {
+              if (!b || !b.brand) return;
+              const opt = document.createElement('option'); opt.value = b.brand.trim().toLowerCase(); opt.textContent = b.brand; brandEl.appendChild(opt);
+            });
+          }
+          updatedEl.textContent = 'Live SG Alerts data updated: ' + (pricesData.last_updated || 'today') + '.';
+          buildRows();
+        } catch (err) {
+          updatedEl.textContent = 'Unable to load live /data/petrol-prices.json.';
+        }
+      }
+
+      [gradeEl, litresEl, pumpsEl, brandEl].forEach((el) => { el.addEventListener('input', buildRows); el.addEventListener('change', buildRows); });
+      init();
+    })();
+  </script>
+</body>
+</html>

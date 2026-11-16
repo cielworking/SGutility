@@ -168,7 +168,7 @@
  <div id="rain-map" role="region" aria-label="Rain radar map of Singapore and surrounding Malaysia"><img class="rain-map-poster" src="/assets/rain-map-poster.webp" alt="" width="1200" height="800"></div>
  <div class="radar-playback"><button id="radar-play" class="button button-secondary" type="button" disabled>▶ Play</button><label class="radar-scrubber">Radar time<input id="radar-time" type="range" min="0" max="0" value="0" step="1" disabled aria-label="Radar time"></label><button id="radar-latest" class="button button-secondary" type="button" disabled>Latest</button></div>
  <div class="radar-time-labels"><span id="radar-start">—</span><output id="radar-stamp" for="radar-time">Loading radar…</output><span id="radar-end">—</span></div>
- <div class="radar-legend"><span>Light</span><span class="rain-intensity" aria-label="Rain intensity from light cyan through green, yellow, red to heavy purple"></span><span>Heavy</span></div>
+ <div class="radar-legend"><span>Light</span><span class="rain-intensity" role="img" aria-label="Rain intensity from light cyan through green, yellow, red to heavy purple"></span><span>Heavy</span></div>
  <p id="radar-status" class="refresh-feedback" role="status">Fetching official NEA radar frames…</p><p class="note">Radar shows past observations, not a prediction of where rain will go next. Regional coverage is centred on Singapore and does not cover all Malaysia. <a href="https://www.nea.gov.sg/weather/rain-areas" target="_blank" rel="noopener noreferrer">Official NEA rain areas</a></p>
 </section>
 <section id="regional-outlook" class="outlook-section"><div class="weather-toolbar"><div><p class="eyebrow">What to expect · UTC+08</p><h3>Singapore regional outlook</h3></div><label class="weather-filter">Detailed area<select id="sg-area"><option value="">All areas · five-region overview</option><option value="Ang Mo Kio">Ang Mo Kio</option><option value="Bedok">Bedok</option><option value="Bishan">Bishan</option><option value="Boon Lay">Boon Lay</option><option value="Bukit Batok">Bukit Batok</option><option value="Bukit Merah">Bukit Merah</option><option value="Bukit Panjang">Bukit Panjang</option><option value="Bukit Timah">Bukit Timah</option><option value="Central Water Catchment">Central Water Catchment</option><option value="Changi">Changi</option><option value="Choa Chu Kang">Choa Chu Kang</option><option value="City">City</option><option value="Clementi">Clementi</option><option value="Geylang">Geylang</option><option value="Hougang">Hougang</option><option value="Jalan Bahar">Jalan Bahar</option><option value="Jurong East">Jurong East</option><option value="Jurong Island">Jurong Island</option><option value="Jurong West">Jurong West</option><option value="Kallang">Kallang</option><option value="Lim Chu Kang">Lim Chu Kang</option><option value="Mandai">Mandai</option><option value="Marine Parade">Marine Parade</option><option value="Novena">Novena</option><option value="Pasir Ris">Pasir Ris</option><option value="Paya Lebar">Paya Lebar</option><option value="Pioneer">Pioneer</option><option value="Pulau Tekong">Pulau Tekong</option><option value="Pulau Ubin">Pulau Ubin</option><option value="Punggol">Punggol</option><option value="Queenstown">Queenstown</option><option value="Seletar">Seletar</option><option value="Sembawang">Sembawang</option><option value="Sengkang">Sengkang</option><option value="Sentosa">Sentosa</option><option value="Serangoon">Serangoon</option><option value="Southern Islands">Southern Islands</option><option value="Sungei Kadut">Sungei Kadut</option><option value="Tampines">Tampines</option><option value="Tanglin">Tanglin</option><option value="Tengah">Tengah</option><option value="Toa Payoh">Toa Payoh</option><option value="Tuas">Tuas</option><option value="Western Islands">Western Islands</option><option value="Western Water Catchment">Western Water Catchment</option><option value="Woodlands">Woodlands</option><option value="Yishun">Yishun</option></select></label></div>
@@ -247,7 +247,7 @@
         </div>
         <p class="section-note">Prices can change frequently. Cross-check with the station before pumping.</p>
         <p class="freshness-chip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span class="freshness-time">Check source for the price update time</span><a href="https://petrolprice.sg/" target="_blank" rel="noopener noreferrer">Source</a></p><div id="petrolResult" class="result" data-petrol-mode="cheapest" aria-live="polite"><div class="petrol-cheapest"><div><span>92</span><strong>$3.54</strong><small>Cheapest</small></div><div><span>95</span><strong>$3.50</strong><small>Cheapest</small></div><div><span>98</span><strong>$3.99</strong><small>Cheapest</small></div><div><span>Premium</span><strong>$4.24</strong><small>Cheapest</small></div><div><span>Diesel</span><strong>$3.59</strong><small>Cheapest</small></div></div></div>
-        <p class="section-note"><a href="/guides/how-to-check-singapore-petrol-prices.html">How to check petrol prices today</a> · <a href="/guides/how-to-check-erp-rates-singapore.html">How to check ERP rates</a></p>
+        <p class="section-note"><a href="/guides/how-to-check-singapore-petrol-prices.html">How to check petrol prices today</a> · <a href="/guides/how-to-check-erp-rates-singapore.html">How to check ERP rates</a> · <a href="/petrol-discount-calculator.html">Petrol discount calculator</a></p>
       </section>
 
       <div class="section-pair wide-card">
@@ -270,6 +270,7 @@
           <p class="freshness-chip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span class="freshness-time">Check source for the latest result date</span><a href="https://data.gov.sg/datasets/d_69b3380ad7e51aff3a7dcc84eba52b8a/view" target="_blank" rel="noopener noreferrer">Source</a></p><div id="coeResult" class="result" data-coe-mode="summary" aria-live="polite">
             <p class="loading-state">Loading the latest COE result…</p>
           </div>
+          <p class="section-note"><a href="/coe-calculator.html">COE PQP &amp; car loan calculator</a> · <a href="/guides/coe-cat-a-vs-cat-b.html">Cat A vs Cat B</a></p>
         </section>
 
         <section id="bto" class="surface-card">
@@ -291,8 +292,37 @@
           <p class="freshness-chip"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span class="freshness-time">Check source for the latest launch data</span><a href="https://homes.hdb.gov.sg/" target="_blank" rel="noopener noreferrer">Source</a></p><div id="btoResult" class="result" data-bto-mode="summary" aria-live="polite">
             <p class="loading-state">Loading upcoming BTO projects…</p>
           </div>
+          <p class="section-note"><a href="/bto-mortgage-calculator.html">BTO mortgage &amp; MSR calculator</a> · <a href="/guides/how-to-read-bto-application-rates.html">How to read BTO rates</a></p>
         </section>
       </div>
+
+      <section id="calculators-guides" class="surface-card wide-card" aria-labelledby="calculators-guides-title">
+        <div class="section-header section-header-row">
+          <div class="section-title">
+            <div>
+              <p class="eyebrow">Tools &amp; practical explainers</p>
+              <h2 id="calculators-guides-title">Calculators &amp; Singapore Guides</h2>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a class="detail-link" href="/guides/">All Singapore guides <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-arrow-right"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+          </div>
+        </div>
+        <div class="seo-grid">
+          <div>
+            <h3>Motoring &amp; Fuel Tools</h3>
+            <p><a href="/petrol-discount-calculator.html">Petrol Card Discount Calculator</a> · <a href="/coe-calculator.html">COE PQP &amp; Car Loan Calculator</a> · <a href="/guides/pay-less-petrol-singapore.html">Pay less for petrol</a> · <a href="/guides/what-is-coe-pqp.html">What is COE PQP?</a></p>
+          </div>
+          <div>
+            <h3>JB &amp; Land Checkpoints</h3>
+            <p><a href="/guides/woodlands-vs-tuas-checkpoint.html">Woodlands vs Tuas Checkpoint</a> · <a href="/guides/myica-qr-clearance-land-checkpoints.html">MyICA QR clearance</a> · <a href="/guides/jb-causeway-vep-autopass-tng-checklist.html">SG to JB VEP &amp; 3/4-tank checklist</a></p>
+          </div>
+          <div>
+            <h3>BTO, Weather &amp; Results</h3>
+            <p><a href="/bto-mortgage-calculator.html">BTO Mortgage &amp; MSR Calculator</a> · <a href="/guides/feb-2027-bto-hfe-letter-deadline.html">Feb 2027 BTO &amp; HFE deadline</a> · <a href="/4d-results.html">4D Results</a> · <a href="/toto-results.html">TOTO Results</a></p>
+          </div>
+        </div>
+      </section>
 
       <details class="surface-card about-panel wide-card">
         <summary>

@@ -402,8 +402,11 @@ def render_sitemap(dates, preserved=None):
         ("https://sgalerts.com/woodlands-checkpoint.html", dates.get("checkpoints")),
         ("https://sgalerts.com/tuas-checkpoint.html", dates.get("checkpoints")),
         ("https://sgalerts.com/singapore-petrol-prices.html", dates.get("petrol")),
+        ("https://sgalerts.com/petrol-discount-calculator.html", dates.get("petrol")),
         ("https://sgalerts.com/latest-coe-prices.html", dates.get("coe")),
+        ("https://sgalerts.com/coe-calculator.html", dates.get("coe")),
         ("https://sgalerts.com/bto-launches.html", dates.get("bto")),
+        ("https://sgalerts.com/bto-mortgage-calculator.html", dates.get("bto")),
         ("https://sgalerts.com/4d-results.html", dates.get("pools")),
         ("https://sgalerts.com/toto-results.html", dates.get("pools")),
         ("https://sgalerts.com/weather/", dates.get("weather")),
@@ -416,13 +419,6 @@ def render_sitemap(dates, preserved=None):
         ("https://sgalerts.com/contact.html", "2026-09-17"),
         ("https://sgalerts.com/privacy-policy.html", "2026-11-06"),
         ("https://sgalerts.com/terms.html", "2026-09-17"),
-        ("https://sgalerts.com/telex/", None),
-        ("https://sgalerts.com/telex/download.html", None),
-        ("https://sgalerts.com/telex/api-guide.html", None),
-        ("https://sgalerts.com/telex/faq.html", None),
-        ("https://sgalerts.com/telex/support.html", None),
-        ("https://sgalerts.com/telex/privacy.html", None),
-        ("https://sgalerts.com/telex/terms.html", None),
     ]
     body = "\n\n".join(sitemap_entry(url, lastmod) for url, lastmod in urls)
     return f"""<?xml version="1.0" encoding="UTF-8"?>

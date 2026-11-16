@@ -1153,6 +1153,9 @@ function renderPetrolDiscounts() {
           <h3>Effective Price After Discount</h3>
 
           <select
+            id="fuel-selector"
+            name="fuel_grade"
+            aria-label="Select fuel grade"
             class="fuel-selector"
             onchange="selectedDiscountFuel = this.value; renderPetrolPrices();"
           >

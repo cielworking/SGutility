@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Singapore COE PQP &amp; Car Loan Calculator | SG Alerts</title>
+  <meta name="description" content="Calculate Singapore COE annual depreciation, 5-year vs 10-year PQP renewal cost, and monthly car loan installments using live LTA COE bidding results.">
+  <link rel="canonical" href="https://sgalerts.com/coe-calculator.html">
+  <meta property="og:title" content="Singapore COE PQP &amp; Car Loan Calculator | SG Alerts">
+  <meta property="og:description" content="Estimate COE depreciation, 5-year vs 10-year PQP renewal, and monthly Singapore car loan payments from today's live COE results.">
+  <meta property="og:url" content="https://sgalerts.com/coe-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SG Alerts">
+  <meta property="og:image" content="https://sgalerts.com/assets/og-share.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Singapore COE PQP &amp; Car Loan Calculator | SG Alerts">
+  <meta name="twitter:description" content="Live COE depreciation, PQP renewal &amp; monthly car loan calculator for Singapore drivers.">
+  <meta name="twitter:image" content="https://sgalerts.com/assets/og-share.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0c2554" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="/site.webmanifest">
+  <script>
+(function(){try{var m=localStorage.getItem("sga-theme-mode");if(m!=="light"&&m!=="dark"&&m!=="system")m="system";var d=m==="dark"||(m==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches);var r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-mode",m);}catch(e){var d=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",d?"dark":"light");document.documentElement.setAttribute("data-theme-mode","system");}})();
+</script>
+<link rel="stylesheet" href="/style.css?v=23">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://sgalerts.com/coe-calculator.html#app",
+      "name": "Singapore COE PQP & Car Loan Calculator",
+      "url": "https://sgalerts.com/coe-calculator.html",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "en-SG",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "SGD" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "SG Alerts", "item": "https://sgalerts.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Latest COE Prices", "item": "https://sgalerts.com/latest-coe-prices.html" },
+        { "@type": "ListItem", "position": 3, "name": "COE & Car Loan Calculator", "item": "https://sgalerts.com/coe-calculator.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is Singapore car loan monthly installment calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Singapore car loans use simple flat-rate interest: Total Interest = Loan Amount × Flat Rate × Loan Tenure (years). Monthly installment equals (Loan Amount + Total Interest) divided by total months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between 5-year and 10-year COE PQP renewal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 10-year PQP renewal costs 100% of the Prevailing Quota Premium and allows further renewals afterwards. A 5-year PQP renewal costs 50% of the PQP, but the vehicle must be deregistered at the end of 5 years with no further renewal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the maximum car loan LTV limit in Singapore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under MAS rules, buyers can borrow up to 70% of the purchase price if Open Market Value (OMV) is $20,000 or less, and up to 60% if OMV exceeds $20,000, with a maximum tenure of 7 years."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+<script src="/theme.js?v=1" defer></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
+  <script src="/analytics.js"></script>
+  <style>
+    .calc-controls { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; align-items: end; }
+    .calc-field { display: flex; flex-direction: column; gap: 0.4rem; }
+    .calc-field label { font-size: 0.875rem; font-weight: 600; }
+    .calc-field select, .calc-field input {
+      width: 100%; padding: 0.6rem 0.75rem; border-radius: 10px;
+      border: 1px solid var(--border, rgba(148, 163, 184, 0.35));
+      background: var(--surface, transparent); color: inherit; font: inherit;
+    }
+    .calc-summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(185px, 1fr)); gap: 0.9rem; margin: 1rem 0; }
+    .calc-stat { border: 1px solid var(--border, rgba(148, 163, 184, 0.25)); border-radius: 12px; padding: 0.9rem 1rem; }
+    .calc-stat-label { font-size: 0.8rem; opacity: 0.8; margin-bottom: 0.25rem; }
+    .calc-stat-value { font-size: 1.35rem; font-weight: 700; line-height: 1.2; }
+    .calc-stat-sub { font-size: 0.8rem; opacity: 0.85; margin-top: 0.25rem; }
+    .calc-table-wrap { overflow-x: auto; }
+    .calc-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+    .calc-table th, .calc-table td { padding: 0.75rem 0.65rem; text-align: left; border-bottom: 1px solid var(--border, rgba(148, 163, 184, 0.2)); }
+    .calc-table th { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.03em; opacity: 0.8; white-space: nowrap; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="SG Alerts home">
+        <span class="brand-mark" aria-hidden="true"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span>
+        <span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary"><details class="nav-menu"><summary aria-expanded="false">Live</summary><div class="nav-panel"><a href="/weather/">Rain</a><a href="/singapore/haze/">Haze</a><a href="/woodlands-checkpoint.html">Woodlands</a><a href="/tuas-checkpoint.html">Tuas</a></div></details><a href="/singapore-petrol-prices.html">Petrol</a><a href="/latest-coe-prices.html" aria-current="page">COE</a><a href="/bto-launches.html">BTO</a><a href="/guides/">Guides</a><details class="nav-menu nav-more"><summary aria-expanded="false">More</summary><div class="nav-panel"><a href="/#news">News</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></details></nav>
+      <div class="theme-control" role="group" aria-label="Color theme">
+        <button type="button" class="theme-choice" data-theme-choice="system" aria-pressed="true" aria-label="System theme" title="System theme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></button>
+        <button type="button" class="theme-choice" data-theme-choice="light" aria-pressed="false" aria-label="Light theme" title="Light theme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></button>
+        <button type="button" class="theme-choice" data-theme-choice="dark" aria-pressed="false" aria-label="Dark theme" title="Dark theme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="content-page">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/latest-coe-prices.html">Latest COE Prices</a> / <span aria-current="page">COE &amp; Car Loan Calculator</span></nav>
+    <section class="page-hero">
+      <div class="page-hero-main">
+        <div>
+          <p class="eyebrow">COE &amp; motoring finance</p>
+          <h1>Singapore COE PQP &amp; Car Loan Calculator</h1>
+          <p>See annual COE depreciation, 5-year vs. 10-year PQP renewal outlay, and monthly Singapore car loan payments powered by live LTA COE bidding data.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="specialist-layout">
+      <section class="surface-card" aria-label="COE and Car Loan Calculator">
+        <div class="calc-controls">
+          <div class="calc-field">
+            <label for="coe-category">COE Category</label>
+            <select id="coe-category">
+              <option value="Category A">Category A (&le;1600cc / 130bhp)</option>
+              <option value="Category B">Category B (&gt;1600cc / 130bhp)</option>
+              <option value="Category C">Category C (Goods / Bus)</option>
+              <option value="Category D">Category D (Motorcycles)</option>
+              <option value="Category E">Category E (Open)</option>
+            </select>
+          </div>
+          <div class="calc-field">
+            <label for="coe-premium">COE / PQP Amount (SGD)</label>
+            <input id="coe-premium" type="number" min="1000" step="500" value="139001">
+          </div>
+          <div class="calc-field">
+            <label for="car-price">Total Car Price incl. COE (SGD)</label>
+            <input id="car-price" type="number" min="5000" step="1000" value="185000">
+          </div>
+          <div class="calc-field">
+            <label for="downpayment-pct">Downpayment (%)</label>
+            <input id="downpayment-pct" type="number" min="0" max="90" step="5" value="40">
+          </div>
+          <div class="calc-field">
+            <label for="loan-years">Loan Tenure (Years, max 7)</label>
+            <input id="loan-years" type="number" min="1" max="7" step="1" value="7">
+          </div>
+          <div class="calc-field">
+            <label for="interest-rate">Flat Interest Rate (% p.a.)</label>
+            <input id="interest-rate" type="number" min="0" max="15" step="0.08" value="2.78">
+          </div>
+        </div>
+        <p class="note" id="coe-updated">Loading latest LTA COE bidding exercise…</p>
+
+        <div class="calc-summary-grid" aria-live="polite">
+          <div class="calc-stat">
+            <div class="calc-stat-label">Annual COE Depreciation</div>
+            <div class="calc-stat-value" id="stat-coe-depre">—</div>
+            <div class="calc-stat-sub" id="stat-coe-pqp5">5-yr PQP (50%): —</div>
+          </div>
+          <div class="calc-stat">
+            <div class="calc-stat-label">Monthly Car Installment</div>
+            <div class="calc-stat-value" id="stat-monthly">—</div>
+            <div class="calc-stat-sub" id="stat-loan-amt">Loan: —</div>
+          </div>
+          <div class="calc-stat">
+            <div class="calc-stat-label">Downpayment Required</div>
+            <div class="calc-stat-value" id="stat-downpayment">—</div>
+            <div class="calc-stat-sub" id="stat-total-interest">Total interest: —</div>
+          </div>
+        </div>
+
+        <div class="calc-table-wrap">
+          <h2>Latest COE Bidding Demand &amp; Depreciation Snapshot</h2>
+          <table class="calc-table">
+            <thead>
+              <tr><th>Category</th><th>Latest Premium</th><th>Change</th><th>Quota</th><th>Bids</th><th>Demand Ratio</th><th>10-Yr/yr</th><th>5-Yr PQP</th></tr>
+            </thead>
+            <tbody id="coe-table-body">
+              <tr><td colspan="8">Loading COE categories…</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="surface-card seo-guide" aria-labelledby="coe-calc-guide-title">
+        <p class="eyebrow">COE finance guide</p>
+        <h2 id="coe-calc-guide-title">Understanding MAS Car Loan Limits &amp; COE PQP Renewal</h2>
+        <p>Under MAS car financing rules, buyers can finance up to 70% if OMV is $20,000 or below (30% downpayment), or up to 60% if OMV exceeds $20,000 (40% downpayment), over a maximum 7-year loan tenure.</p>
+        <p>When renewing an existing car at year 10, a 5-year PQP renewal costs 50% of the Prevailing Quota Premium but requires deregistration at year 15, while a 10-year renewal keeps future renewal flexibility.</p>
+        <details class="sga-collapse"><summary><h3>COE &amp; car loan questions</h3></summary><dl class="seo-faq">
+          <dt>How is Singapore car loan monthly installment calculated?</dt><dd>Singapore car loans use simple flat-rate interest: Total Interest = Loan Amount × Flat Rate × Tenure (years), divided across total monthly installments.</dd>
+          <dt>What is the difference between 5-year and 10-year COE PQP renewal?</dt><dd>10-year PQP costs 100% and can be renewed again later; 5-year PQP costs 50% and cannot be renewed once the 5 years end.</dd>
+          <dt>What is the maximum car loan LTV limit in Singapore?</dt><dd>70% for cars with OMV ≤ $20,000, and 60% for cars with OMV &gt; $20,000, capped at 7 years.</dd>
+        </dl></details>
+        <nav class="seo-related" aria-label="Related guides"><strong>Related guides:</strong> <a href="/guides/coe-cat-a-vs-cat-b.html">COE Cat A vs Cat B</a><a href="/guides/what-is-coe-pqp.html">What is COE PQP?</a><a href="/guides/when-is-next-coe-bidding.html">Next COE bidding dates</a></nav>
+        <nav class="seo-related" aria-label="Related pages"><strong>Related:</strong> <a href="/latest-coe-prices.html">Latest COE results</a><a href="/petrol-discount-calculator.html">Petrol discount calculator</a><a href="/bto-mortgage-calculator.html">BTO mortgage calculator</a></nav>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>SG Alerts</strong><span>Independent Singapore information dashboard</span></div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/guides/">Guides</a><a href="/4d-results.html">4D Results</a><a href="/toto-results.html">TOTO Results</a><a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/script.js?v=14" defer></script>
+  <nav class="mobile-tabbar" aria-label="Mobile quick navigation"><a class="tabbar-item" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></a><a class="tabbar-item" href="/weather/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg><span>Live</span></a><a class="tabbar-item" href="/singapore-petrol-prices.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" x2="15" y1="22" y2="22"/><line x1="4" x2="14" y1="9" y2="9"/><path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18"/><path d="M14 13h2a2 2 0 0 1 2 2v2a2 2 0 0 0 2 2 2 2 0 0 0 2-2V9.83a2 2 0 0 0-.59-1.42L18 5"/></svg><span>Prices</span></a><a class="tabbar-item" href="/guides/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg><span>Guides</span></a><details class="tabbar-more"><summary class="tabbar-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg><span>More</span></summary><div class="tabbar-sheet" id="tabbar-more-sheet"><p class="tabbar-sheet-title">More on SG Alerts</p><div class="tabbar-sheet-links"><a href="/latest-coe-prices.html">COE prices</a><a href="/bto-launches.html">BTO launches</a><a href="/singapore/haze/">Haze &amp; PSI</a><a href="/woodlands-checkpoint.html">Checkpoints</a><a href="/4d-results.html">4D results</a><a href="/toto-results.html">TOTO results</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></div></details></nav>
+
+  <script>
+    (function () {
+      const catEl = document.getElementById('coe-category');
+      const coeEl = document.getElementById('coe-premium');
+      const priceEl = document.getElementById('car-price');
+      const downEl = document.getElementById('downpayment-pct');
+      const yearsEl = document.getElementById('loan-years');
+      const rateEl = document.getElementById('interest-rate');
+      const updatedEl = document.getElementById('coe-updated');
+      const tbodyEl = document.getElementById('coe-table-body');
+      const depreEl = document.getElementById('stat-coe-depre');
+      const pqp5El = document.getElementById('stat-coe-pqp5');
+      const monthlyEl = document.getElementById('stat-monthly');
+      const loanAmtEl = document.getElementById('stat-loan-amt');
+      const downAmtEl = document.getElementById('stat-downpayment');
+      const totalIntEl = document.getElementById('stat-total-interest');
+      let latestRows = [];
+
+      function sgd(n) { return '$' + Math.round(n).toLocaleString('en-SG'); }
+
+      function compute() {
+        const coe = Math.max(0, parseFloat(coeEl.value) || 0);
+        const carPrice = Math.max(0, parseFloat(priceEl.value) || 0);
+        const downPct = Math.min(95, Math.max(0, parseFloat(downEl.value) || 0));
+        const years = Math.min(7, Math.max(1, parseFloat(yearsEl.value) || 7));
+        const rate = Math.max(0, parseFloat(rateEl.value) || 0) / 100;
+        const downAmt = carPrice * (downPct / 100);
+        const loanAmt = Math.max(0, carPrice - downAmt);
+        const totalInterest = loanAmt * rate * years;
+        const monthly = (loanAmt + totalInterest) / (years * 12);
+
+        depreEl.textContent = sgd(coe / 10) + ' / yr';
+        pqp5El.textContent = '5-yr PQP (50%): ' + sgd(coe * 0.5) + ' (' + sgd((coe * 0.5) / 5) + '/yr)';
+        monthlyEl.textContent = sgd(monthly) + ' / mth';
+        loanAmtEl.textContent = 'Loan: ' + sgd(loanAmt) + ' over ' + years + ' yrs';
+        downAmtEl.textContent = sgd(downAmt);
+        totalIntEl.textContent = 'Total flat interest: ' + sgd(totalInterest);
+      }
+
+      function syncCategoryToInput() {
+        const selected = latestRows.find((r) => r.category === catEl.value);
+        if (selected && typeof selected.premium === 'number') {
+          coeEl.value = selected.premium;
+          compute();
+        }
+      }
+
+      function renderTable(rows) {
+        tbodyEl.textContent = '';
+        rows.forEach((r) => {
+          const tr = document.createElement('tr');
+          const ratio = r.quota > 0 ? (r.bids_received / r.quota).toFixed(2) + 'x' : '—';
+          const changeSign = r.change > 0 ? '+' : '';
+          [r.category_label || r.category, sgd(r.premium), changeSign + sgd(r.change) + ' (' + (r.change_percent || 0).toFixed(2) + '%)', String(r.quota || 0), String(r.bids_received || 0), ratio, sgd((r.premium || 0) / 10), sgd((r.premium || 0) * 0.5)].forEach((txt, idx) => {
+            const td = document.createElement('td');
+            if (idx === 1) { const strong = document.createElement('strong'); strong.textContent = txt; td.appendChild(strong); }
+            else { td.textContent = txt; }
+            tr.appendChild(td);
+          });
+          tbodyEl.appendChild(tr);
+        });
+      }
+
+      async function init() {
+        try {
+          const res = await fetch('/data/coe-prices.json');
+          if (!res.ok) throw new Error('COE fetch failed');
+          const data = await res.json();
+          latestRows = Array.isArray(data.latest) ? data.latest : [];
+          if (latestRows.length) {
+            renderTable(latestRows);
+            syncCategoryToInput();
+            updatedEl.textContent = 'Live LTA COE data: ' + ([data.latest_month, data.latest_bidding_label].filter(Boolean).join(' • ') || data.last_updated || 'latest exercise') + '.';
+          }
+        } catch (err) {
+          updatedEl.textContent = 'Unable to load live /data/coe-prices.json.';
+        }
+        compute();
+      }
+
+      catEl.addEventListener('change', syncCategoryToInput);
+      [coeEl, priceEl, downEl, yearsEl, rateEl].forEach((el) => { el.addEventListener('input', compute); el.addEventListener('change', compute); });
+      init();
+    })();
+  </script>
+</body>
+</html>
