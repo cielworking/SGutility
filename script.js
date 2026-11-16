@@ -5,6 +5,7 @@ let petrolDiscounts = {};
 let quickInfo = {};
 let sgpoolsResults = {};
 let newsResults = {};
+let sharedNewsReactions = {};
 let checkpointData = {};
 let checkpointTraffic = {};
 let isRolling = false;
@@ -45,6 +46,15 @@ async function loadData() {
 
     if (needsNews) {
       newsResults = await fetch("./data/news.json").then(r => r.json());
+      fetch("/api/reactions")
+        .then(r => (r.ok ? r.json() : {}))
+        .then(data => {
+          if (data && data.items && typeof data.items === "object") {
+            sharedNewsReactions = data.items;
+            renderNews();
+          }
+        })
+        .catch(() => {});
     }
 
     if (needsCheckpoint || document.querySelector("[data-glance]") || document.querySelector("[data-checkpoint-ai]") || document.querySelector("[data-travel-advisor]")) {
@@ -256,10 +266,13 @@ function storyKey(item) {
 function newsActionsHtml(item, prefs) {
   const key = storyKey(item);
   const reaction = prefs.reactions[key] || "";
+  const shared = sharedNewsReactions[key] || {};
+  const upCount = Math.max(Number(shared.up || 0), reaction === "up" ? 1 : 0);
+  const downCount = Math.max(Number(shared.down || 0), reaction === "down" ? 1 : 0);
   const upPressed = reaction === "up" ? "true" : "false";
   const downPressed = reaction === "down" ? "true" : "false";
-  const upLabel = reaction === "up" ? "👍 1" : "👍";
-  const downLabel = reaction === "down" ? "👎 1" : "👎";
+  const upLabel = upCount > 0 ? `👍 ${upCount}` : "👍";
+  const downLabel = downCount > 0 ? `👎 ${downCount}` : "👎";
   const safeKey = escapeHtml(key);
   const safeTitle = escapeHtml(item.title || "");
   return `
@@ -403,10 +416,31 @@ function renderNews() {
         const key = reactBtn.dataset.newsId;
         const kind = reactBtn.dataset.newsReact;
         const current = getNewsPrefs();
-        current.reactions[key] = current.reactions[key] === kind ? "" : kind;
-        if (!current.reactions[key]) delete current.reactions[key];
+        const prev = current.reactions[key] || "";
+        const next = prev === kind ? "" : kind;
+        if (next) current.reactions[key] = next;
+        else delete current.reactions[key];
         saveNewsPrefs(current);
+
+        const shared = { ...(sharedNewsReactions[key] || { up: 0, down: 0 }) };
+        if (prev) shared[prev] = Math.max(0, Number(shared[prev] || 0) - 1);
+        if (next) shared[next] = Math.max(0, Number(shared[next] || 0) + 1);
+        sharedNewsReactions[key] = shared;
         renderNews();
+
+        fetch("/api/reactions", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ id: key, add: next, remove: prev }),
+        })
+          .then(r => (r.ok ? r.json() : null))
+          .then(data => {
+            if (data && data.items && typeof data.items === "object") {
+              sharedNewsReactions = data.items;
+              renderNews();
+            }
+          })
+          .catch(() => {});
         return;
       }
 
