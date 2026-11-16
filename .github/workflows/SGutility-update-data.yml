@@ -32,6 +32,13 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: "3.11"
+          cache: "pip"
+
+      - name: Cache YOLOX ONNX model
+        uses: actions/cache@v4
+        with:
+          path: .cache/models
+          key: yolox-s-onnx-v1
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
@@ -51,6 +58,7 @@ jobs:
           python scripts/update-bto.py
           python scripts/update-news.py
           python scripts/update-checkpoints.py
+          python scripts/analyze-checkpoints.py
           python scripts/update-petrol-discounts.py
           python scripts/render-static-pages.py
 

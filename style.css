@@ -3576,3 +3576,78 @@ select.fuel-selector,
   background: rgba(121, 167, 255, 0.35);
   color: var(--text);
 }
+
+/* AI Checkpoint Traffic Density Panel */
+.ai-traffic-panel {
+  border: 1px solid var(--border, #d8e1ee);
+  background: var(--surface-alt, rgba(12, 37, 84, 0.04));
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin: 0.75rem 0 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.ai-traffic-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ai-traffic-kicker {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-right: 0.45rem;
+}
+
+.ai-traffic-time {
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.ai-status-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.22rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.ai-status-pill.is-smooth {
+  background: rgba(22, 163, 74, 0.14);
+  color: #15803d;
+}
+
+.ai-status-pill.is-moderate {
+  background: rgba(217, 119, 6, 0.16);
+  color: #b45309;
+}
+
+.ai-status-pill.is-heavy {
+  background: rgba(220, 38, 38, 0.16);
+  color: #b91c1c;
+}
+
+:root[data-theme="dark"] .ai-status-pill.is-smooth { color: #86efac; }
+:root[data-theme="dark"] .ai-status-pill.is-moderate { color: #fcd34d; }
+:root[data-theme="dark"] .ai-status-pill.is-heavy { color: #fca5a5; }
+
+.ai-traffic-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+.ai-traffic-disclaimer {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}

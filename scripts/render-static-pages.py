@@ -106,7 +106,41 @@ def replace_static_block(filename, key, rendered):
     path.write_text(updated, encoding="utf-8")
 
 
-def render_checkpoint(data, location_key, title, source_url=None):
+def render_checkpoint_ai(traffic, location_key):
+    if not traffic or location_key not in traffic:
+        return ""
+    loc = traffic.get(location_key) or {}
+    status = str(loc.get("status") or "Unknown")
+    status_slug = re.sub(r"[^a-z]+", "-", status.lower()).strip("-") or "unknown"
+    counts = loc.get("counts") or {}
+    cars = int(counts.get("car") or 0)
+    motos = int(counts.get("motorcycle") or 0)
+    heavy = int(counts.get("bus") or 0) + int(counts.get("truck") or 0)
+    to_jb = int(loc.get("towards_jb") or 0)
+    to_sg = int(loc.get("towards_sg") or 0)
+    jb_status = html.escape(str(loc.get("towards_jb_status") or "—"))
+    sg_status = html.escape(str(loc.get("towards_sg_status") or "—"))
+    total = int(loc.get("total_vehicles") or 0)
+    checked = html.escape(updated_label(traffic.get("last_updated")))
+    return f"""<div class="ai-traffic-panel" data-checkpoint-ai="{html.escape(location_key, quote=True)}">
+      <div class="ai-traffic-head">
+        <div>
+          <span class="ai-traffic-kicker">AI road-approach density</span>
+          <strong>{html.escape(status)}</strong>
+          <span class="ai-traffic-time"> · {checked}</span>
+        </div>
+        <span class="ai-status-pill is-{status_slug}">{html.escape(status)} ({total} detected)</span>
+      </div>
+      <div class="ai-traffic-stats">
+        <span><strong>Towards JB:</strong> {to_jb} ({jb_status})</span>
+        <span><strong>Towards SG:</strong> {to_sg} ({sg_status})</span>
+        <span><strong>Mix:</strong> {cars} cars · {motos} bikes · {heavy} buses/trucks</span>
+      </div>
+      <p class="ai-traffic-disclaimer">Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ.</p>
+    </div>"""
+
+
+def render_checkpoint(data, location_key, title, source_url=None, traffic=None):
     cameras = data.get(location_key, [])[:4]
     if cameras:
         cards = []
@@ -140,7 +174,8 @@ def render_checkpoint(data, location_key, title, source_url=None):
         content = '<p class="checkpoint-empty">No camera images are currently available.</p>'
 
     href = source_url or data.get("source_url") or "https://datamall.lta.gov.sg/content/datamall/en.html"
-    return freshness_chip(data.get("last_updated"), href) + f"""<div class="checkpoint-layout single-location">
+    ai_panel = render_checkpoint_ai(traffic, location_key)
+    return freshness_chip(data.get("last_updated"), href) + ai_panel + f"""<div class="checkpoint-layout single-location">
       <div class="checkpoint-group">
         <h3>{html.escape(title)}</h3>
         {content}
@@ -434,6 +469,11 @@ def main():
     coe = load_json("coe-prices.json")
     bto = load_json("bto-projects.json")
 
+    try:
+        traffic = load_json("checkpoint-traffic.json")
+    except FileNotFoundError:
+        traffic = None
+
     replace_static_block(
         "woodlands-checkpoint.html",
         "WOODLANDS",
@@ -442,6 +482,7 @@ def main():
             "woodlands",
             "Woodlands Checkpoint",
             "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/woodlands.html",
+            traffic=traffic,
         ),
     )
     replace_static_block(
@@ -452,6 +493,7 @@ def main():
             "tuas",
             "Tuas Checkpoint",
             "https://onemotoring.lta.gov.sg/content/onemotoring/home/driving/traffic_information/traffic-cameras/tuas.html",
+            traffic=traffic,
         ),
     )
     for filename, location_key in (("woodlands-checkpoint.html", "woodlands"), ("tuas-checkpoint.html", "tuas")):

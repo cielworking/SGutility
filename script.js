@@ -6,6 +6,7 @@ let quickInfo = {};
 let sgpoolsResults = {};
 let newsResults = {};
 let checkpointData = {};
+let checkpointTraffic = {};
 let isRolling = false;
 let selectedDiscountFuel = "ron95";
 let selectedNewsCategory = "All";
@@ -41,6 +42,17 @@ async function loadData() {
 
     if (needsNews) {
       newsResults = await fetch("./data/news.json").then(r => r.json());
+    }
+
+    if (needsCheckpoint || document.querySelector("[data-glance]")) {
+      fetch("./data/checkpoint-traffic.json")
+        .then(r => (r.ok ? r.json() : {}))
+        .then(data => {
+          checkpointTraffic = data || {};
+          renderCheckpointAi();
+          renderGlance();
+        })
+        .catch(() => {});
     }
 
     if (needsCheckpoint) {
@@ -1288,12 +1300,43 @@ function setGlance(name, value) {
   node.textContent = value && String(value).trim() ? value : "—";
 }
 
+function renderCheckpointAi() {
+  const panels = document.querySelectorAll("[data-checkpoint-ai]");
+  panels.forEach(panel => {
+    const key = panel.dataset.checkpointAi;
+    const loc = checkpointTraffic?.[key];
+    if (!loc) return;
+    const status = String(loc.status || "Unknown");
+    const slug = status.toLowerCase().replace(/[^a-z]+/g, "-") || "unknown";
+    const counts = loc.counts || {};
+    const heavy = Number(counts.bus || 0) + Number(counts.truck || 0);
+    panel.innerHTML = `
+      <div class="ai-traffic-head">
+        <div>
+          <span class="ai-traffic-kicker">AI road-approach density</span>
+          <strong>${escapeHtml(status)}</strong>
+          <span class="ai-traffic-time"> · Updated ${escapeHtml(formatTimestamp(checkpointTraffic.last_updated))}</span>
+        </div>
+        <span class="ai-status-pill is-${escapeHtml(slug)}">${escapeHtml(status)} (${Number(loc.total_vehicles || 0)} detected)</span>
+      </div>
+      <div class="ai-traffic-stats">
+        <span><strong>Towards JB:</strong> ${Number(loc.towards_jb || 0)} (${escapeHtml(loc.towards_jb_status || "—")})</span>
+        <span><strong>Towards SG:</strong> ${Number(loc.towards_sg || 0)} (${escapeHtml(loc.towards_sg_status || "—")})</span>
+        <span><strong>Mix:</strong> ${Number(counts.car || 0)} cars · ${Number(counts.motorcycle || 0)} bikes · ${heavy} buses/trucks</span>
+      </div>
+      <p class="ai-traffic-disclaimer">Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ.</p>
+    `;
+  });
+}
+
 function renderGlance() {
   if (!document.querySelector("[data-glance]")) return;
   const woodlands = checkpointData.woodlands?.length || 0;
   const tuas = checkpointData.tuas?.length || 0;
-  setGlance("woodlands", woodlands ? `${woodlands} cams live` : "—");
-  setGlance("tuas", tuas ? `${tuas} cams live` : "—");
+  const wStatus = checkpointTraffic?.woodlands?.status;
+  const tStatus = checkpointTraffic?.tuas?.status;
+  setGlance("woodlands", woodlands ? (wStatus ? `${woodlands} cams · ${wStatus}` : `${woodlands} cams live`) : "—");
+  setGlance("tuas", tuas ? (tStatus ? `${tuas} cams · ${tStatus}` : `${tuas} cams live`) : "—");
 
   const ron95 = (petrolPrices.brands || []).map(brand => {
     const match = String(brand.ron95 || "").match(/(\d+\.\d+)/);

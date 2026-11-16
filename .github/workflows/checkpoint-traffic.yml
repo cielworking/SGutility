@@ -1,0 +1,157 @@
+name: Update Checkpoint AI Traffic
+
+on:
+  schedule:
+    - cron: "5,20,35,50 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dashboard-data
+  cancel-in-progress: false
+
+jobs:
+  checkpoint-traffic:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Cache YOLOX ONNX model
+        uses: actions/cache@v4
+        with:
+          path: .cache/models
+          key: yolox-s-onnx-v1
+
+      - name: Install Python dependencies
+        run: pip install requests beautifulsoup4 onnxruntime pillow numpy
+
+      - name: Check Python scripts parse
+        run: python -m py_compile scripts/*.py
+
+      - name: Update checkpoint cameras and run AI detection
+        run: |
+          python scripts/update-checkpoints.py
+          python scripts/analyze-checkpoints.py
+          python scripts/render-static-pages.py
+
+      - name: Run unit tests
+        run: |
+          python -m unittest discover -s tests
+          node tests/test-air-quality.cjs
+
+      - name: Commit updated checkpoint AI data
+        id: auto-commit
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "Update checkpoint AI traffic data"
+          file_pattern: data/checkpoints.json data/checkpoint-traffic.json data/checkpoint-history.json woodlands-checkpoint.html tuas-checkpoint.html sitemap.xml
+          skip_fetch: true
+          skip_push: true
+
+      - name: Rebase onto main and push
+        if: steps.auto-commit.outputs.changes_detected == 'true'
+        run: |
+          set -euo pipefail
+          export GIT_TERMINAL_PROMPT=0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          is_generated() {
+            case "$1" in
+              sitemap.xml|data/checkpoints.json|data/checkpoint-traffic.json|data/checkpoint-history.json|woodlands-checkpoint.html|tuas-checkpoint.html)
+                return 0
+                ;;
+            esac
+            return 1
+          }
+
+          in_rebase() {
+            [[ -d "$(git rev-parse --git-path rebase-merge)" || -d "$(git rev-parse --git-path rebase-apply)" ]]
+          }
+
+          prefer_generated() {
+            local round f
+            for round in 1 2 3 4 5 6 7 8 9 10; do
+              if ! in_rebase; then
+                return 1
+              fi
+              local -a unmerged=()
+              mapfile -t unmerged < <(git diff --name-only --diff-filter=U)
+              if [[ ${#unmerged[@]} -eq 0 ]]; then
+                if git diff --cached --quiet && git diff --quiet; then
+                  GIT_EDITOR=true git rebase --skip
+                  if in_rebase; then continue; fi
+                  return 0
+                fi
+                git rebase --abort
+                return 1
+              fi
+              for f in "${unmerged[@]}"; do
+                if is_generated "$f"; then
+                  git checkout --theirs -- "$f"
+                  git add -- "$f"
+                else
+                  git rebase --abort
+                  return 1
+                fi
+              done
+              if GIT_EDITOR=true git rebase --continue; then
+                return 0
+              fi
+            done
+            if in_rebase; then git rebase --abort; fi
+            return 1
+          }
+
+          is_rejected_non_ff() {
+            grep -Eq 'non-fast-forward|fetch first|tip of your current branch is behind|remote contains work that you do' <<<"$1"
+          }
+
+          drop_workflow_leftover_stashes() {
+            local line ref
+            while true; do
+              line=""
+              while IFS= read -r line; do
+                case "$line" in
+                  *workflow-leftovers-before-rebase*) break ;;
+                esac
+                line=""
+              done < <(git stash list)
+              [[ -n "$line" ]] || return 0
+              ref="${line%%:*}"
+              git stash drop "$ref"
+            done
+          }
+
+          for attempt in 1 2 3; do
+            if [[ -n "$(git status --porcelain)" ]]; then
+              git stash push -u -m "workflow-leftovers-before-rebase"
+            fi
+            git fetch origin main
+            if ! git pull --rebase origin main; then
+              prefer_generated || exit 1
+            fi
+            if push_out=$(git push origin HEAD:main 2>&1); then
+              printf '%s\n' "$push_out"
+              drop_workflow_leftover_stashes
+              exit 0
+            fi
+            printf '%s\n' "$push_out"
+            if ! is_rejected_non_ff "$push_out" || [[ "$attempt" -eq 3 ]]; then
+              exit 1
+            fi
+            sleep $((attempt * 5))
+          done
