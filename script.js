@@ -237,10 +237,9 @@ function getNewsPrefs() {
     const parsed = raw ? JSON.parse(raw) : {};
     return {
       reactions: parsed.reactions && typeof parsed.reactions === "object" ? parsed.reactions : {},
-      saved: parsed.saved && typeof parsed.saved === "object" ? parsed.saved : {},
     };
   } catch {
-    return { reactions: {}, saved: {} };
+    return { reactions: {} };
   }
 }
 
@@ -257,10 +256,8 @@ function storyKey(item) {
 function newsActionsHtml(item, prefs) {
   const key = storyKey(item);
   const reaction = prefs.reactions[key] || "";
-  const isSaved = Boolean(prefs.saved[key]);
   const upPressed = reaction === "up" ? "true" : "false";
   const downPressed = reaction === "down" ? "true" : "false";
-  const savePressed = isSaved ? "true" : "false";
   const upLabel = reaction === "up" ? "👍 1" : "👍";
   const downLabel = reaction === "down" ? "👎 1" : "👎";
   const safeKey = escapeHtml(key);
@@ -269,7 +266,6 @@ function newsActionsHtml(item, prefs) {
     <div class="news-actions">
       <button type="button" class="news-act-btn" data-news-react="up" data-news-id="${safeKey}" aria-pressed="${upPressed}" aria-label="Like story">${upLabel}</button>
       <button type="button" class="news-act-btn" data-news-react="down" data-news-id="${safeKey}" aria-pressed="${downPressed}" aria-label="Dislike story">${downLabel}</button>
-      <button type="button" class="news-act-btn" data-news-save="${safeKey}" aria-pressed="${savePressed}" aria-label="Bookmark story">${isSaved ? "Saved" : "Save"}</button>
       <button type="button" class="news-act-btn" data-news-share="${safeKey}" data-news-title="${safeTitle}" aria-label="Share story">Share</button>
     </div>
   `;
@@ -286,16 +282,12 @@ function renderNews() {
 
   const prefs = getNewsPrefs();
   const mode = box.dataset.newsMode || "carousel";
-  const savedCount = newsResults.headlines.filter(item => prefs.saved[storyKey(item)]).length;
-  const baseCategories = ["All", ...new Set(newsResults.headlines.map(item => item.category).filter(Boolean))];
-  const categories = mode === "full" ? [...baseCategories, "Saved"] : baseCategories;
+  const categories = ["All", ...new Set(newsResults.headlines.map(item => item.category).filter(Boolean))];
   if (!categories.includes(selectedNewsCategory)) selectedNewsCategory = "All";
 
   const filteredNews = selectedNewsCategory === "All"
     ? newsResults.headlines
-    : selectedNewsCategory === "Saved"
-      ? newsResults.headlines.filter(item => prefs.saved[storyKey(item)])
-      : newsResults.headlines.filter(item => item.category === selectedNewsCategory);
+    : newsResults.headlines.filter(item => item.category === selectedNewsCategory);
   const limit = mode === "full" ? 64 : mode === "teaser" ? 6 : 20;
   const topNews = filteredNews.slice(0, limit);
 
@@ -379,22 +371,19 @@ function renderNews() {
       <div id="${mode === "full" || mode === "teaser" ? "newsGrid" : "newsScroller"}" class="${mode === "full" || mode === "teaser" ? "news-grid" : "news-scroller"}" tabindex="0" aria-label="Latest Singapore news">
         ${gridItems.map(cardMarkup).join("")}
       </div>
-    ` : `<p class="loading-state">${selectedNewsCategory === "Saved" ? "No bookmarked stories yet — click Save on any article card." : "No matching headlines found for that filter."}</p>`}
+    ` : '<p class="loading-state">No matching headlines found for that filter.</p>'}
   `;
 
   box.innerHTML = `
     <div class="news-filters" role="group" aria-label="Filter news by category">
-      ${categories.map(category => {
-        const label = category === "Saved" && savedCount > 0 ? `Saved (${savedCount})` : category;
-        return `
-          <button type="button"
-                  class="news-filter ${selectedNewsCategory === category ? "is-active" : ""}"
-                  data-category="${escapeHtml(category)}"
-                  aria-pressed="${selectedNewsCategory === category}">
-            ${escapeHtml(label)}
-          </button>
-        `;
-      }).join("")}
+      ${categories.map(category => `
+        <button type="button"
+                class="news-filter ${selectedNewsCategory === category ? "is-active" : ""}"
+                data-category="${escapeHtml(category)}"
+                aria-pressed="${selectedNewsCategory === category}">
+          ${escapeHtml(category)}
+        </button>
+      `).join("")}
     </div>
     <div id="newsFeedBody">${feedBodyHtml}</div>
   `;
@@ -416,17 +405,6 @@ function renderNews() {
         const current = getNewsPrefs();
         current.reactions[key] = current.reactions[key] === kind ? "" : kind;
         if (!current.reactions[key]) delete current.reactions[key];
-        saveNewsPrefs(current);
-        renderNews();
-        return;
-      }
-
-      const saveBtn = event.target.closest("[data-news-save]");
-      if (saveBtn) {
-        const key = saveBtn.dataset.newsSave;
-        const current = getNewsPrefs();
-        if (current.saved[key]) delete current.saved[key];
-        else current.saved[key] = true;
         saveNewsPrefs(current);
         renderNews();
         return;
