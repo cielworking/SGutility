@@ -9,7 +9,11 @@ function updateWeatherFreshness() {
     const stale = node.dataset.ok !== "true" || !Number.isFinite(stamp) ||
       now - stamp > Number(node.dataset.hours) * 3600000 || stamp > now + 900000 || now > end;
     node.classList.toggle("is-stale", stale);
-    node.textContent = stale ? "Older or unavailable data — check the official source." : "Latest cached official data";
+    node.textContent = stale
+      ? "Older or unavailable data — check the official source."
+      : node.dataset.live === "true"
+        ? "Latest live official reading"
+        : "Latest cached official data";
   });
   document.querySelectorAll("[data-warning-end]").forEach(node => {
     const raw = node.dataset.warningEnd;
@@ -64,6 +68,10 @@ document.querySelectorAll('[data-refresh-air]').forEach(button => {
     const target = document.querySelector('[data-air-content]');
     const feedback = document.querySelector('[data-air-feedback]');
     if (!target || !feedback) return;
+    if (window.SGAlertsAirLive && target.hasAttribute('data-air-live')) {
+      window.SGAlertsAirLive.refresh(true);
+      return;
+    }
     const state = target.querySelector('[data-state-filter]')?.value;
     button.disabled = true;feedback.textContent = 'Checking the latest saved readings…';
     try {

@@ -31,6 +31,13 @@ Air-panel validation: `node tests/test-air-quality.cjs` checks metric boundaries
 missing readings, region isolation and gaps; Python tests also check snapshot escaping
 and official history ordering.
 
+The Singapore haze detail page fetches live PSI and PM2.5 from data.gov.sg on load
+and on its Refresh button, validating values and timestamps independently. If either
+request fails or times out, the saved reading for that metric remains visible with an
+explicit failure or age label; the server-rendered snapshot is the no-JavaScript and
+SEO fallback. Malaysia APIMS readings remain saved-snapshot based because there is no
+equivalent public live endpoint.
+
 The primary weather experience is now `/weather/` and the combined weather section
 on the homepage. Country rain and haze URLs are separate pages and each one
 uses its own canonical URL. `/weather/` keeps a self-referencing canonical. NEA radar playback offers the latest 13 available frames, a draggable
