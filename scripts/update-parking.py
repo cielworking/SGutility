@@ -11,6 +11,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "carparks.json"
+COMMERCIAL_CACHE = ROOT / "data" / "commercial-carparks-cache.json"
 HDB_RESOURCE = "d_23f946fa557947f93a8043bbef41dd09"
 HDB_INFO_URL = "https://data.gov.sg/api/action/datastore_search"
 AVAILABILITY_URL = "https://api.data.gov.sg/v1/transport/carpark-availability"
@@ -364,7 +365,7 @@ def build_dataset() -> dict:
                 "sheltered": sheltered,
                 "gantry_height": gantry_h,
                 "area_tier": area_tier,
-                "bike_rate": "$0.65 / session (Free Sun & PH 7am–10:30pm)" if free_sun_ph else "$0.65 / day or night session",
+                "bike_rate": "$0.10 / 30 min ($0.65 cap/session · Free Sun & PH 7am–10:30pm)" if free_sun_ph else "$0.10 / 30 min ($0.65 cap/day or night session)",
                 "car_rate": "$1.20 / 30m (Mon–Sat 7am–5pm), $0.60 / 30m off-peak" if area_tier == "central" else "$0.60 / 30m ($5 night cap 10:30pm–7am)",
                 "has_car_live": has_car_live,
                 "has_bike_live": has_bike_live,
@@ -372,6 +373,51 @@ def build_dataset() -> dict:
                 "source_type": "HDB / data.gov.sg",
             }
         )
+
+    if COMMERCIAL_CACHE.exists():
+        commercial = json.loads(COMMERCIAL_CACHE.read_text(encoding="utf-8"))
+        for idx, (name, info) in enumerate(sorted(commercial.items()), start=1):
+            lat = info.get("lat")
+            lng = info.get("lng")
+            if not (lat and lng):
+                continue
+            addr = str(info.get("address") or name)
+            sun_rate = str(info.get("sunday_publicholiday_rate") or "-")
+            sat_rate = str(info.get("saturday_rate") or "-")
+            wk1 = str(info.get("weekdays_rate_1") or "-")
+            wk2 = str(info.get("weekdays_rate_2") or "-")
+            sun_free = "free" in sun_rate.lower()
+            area_tier = "central" if ("central" in str(info.get("category") or "").lower() and any(k.upper() in addr.upper() for k in CENTRAL_AREA_KEYWORDS)) else "standard"
+            carparks.append(
+                {
+                    "id": f"MALL-{idx}",
+                    "name": name,
+                    "address": addr,
+                    "postal": str(info.get("postal") or ""),
+                    "lat": lat,
+                    "lng": lng,
+                    "type": "COMMERCIAL / SHOPPING MALL",
+                    "system": "ELECTRONIC PARKING",
+                    "short_term": "COMMERCIAL SCHEDULE",
+                    "free_parking_raw": "COMMERCIAL SUN FREE" if sun_free else "COMMERCIAL",
+                    "free_sun_ph": sun_free,
+                    "free_bike": False,
+                    "night_parking": True,
+                    "sheltered": True,
+                    "gantry_height": 2.1,
+                    "area_tier": area_tier,
+                    "weekday_rate": wk1,
+                    "weekday_rate_2": wk2,
+                    "saturday_rate": sat_rate,
+                    "sunday_rate": sun_rate,
+                    "bike_rate": "Commercial gantry rate (check mall signage)",
+                    "car_rate": wk1,
+                    "has_car_live": False,
+                    "has_bike_live": False,
+                    "live": {},
+                    "source_type": "LTA Commercial Rates",
+                }
+            )
 
     for spot in CURATED_SPOTS:
         carparks.append(

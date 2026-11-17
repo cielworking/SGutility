@@ -1,5 +1,6 @@
 (function () {
   const AVAILABILITY_URL = "https://api.data.gov.sg/v1/transport/carpark-availability";
+  const ONEMAP_SEARCH_URL = "https://www.onemap.gov.sg/api/common/elastic/search";
   const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[c]));
 
   let dataset = null;
@@ -8,6 +9,9 @@
   let vehicleMode = "motorcycle"; // "motorcycle" | "car"
   let activeFilters = new Set();
   let userLocation = null;
+  let searchedLocation = null; // OneMap resolved point from postal code / address / landmark
+  let searchDebounce = null;
+  let lastGeocodedQuery = "";
   let map = null;
   let tileLayer = null;
   let markerLayer = null;
@@ -25,20 +29,20 @@
     return 2 * R * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   }
 
-  function tileUrlForTheme() {
-    return "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
-  }
-
   function initMap() {
     const el = document.getElementById("parkingMap");
     if (!el || typeof window.L === "undefined" || map) return;
     map = L.map(el, { preferCanvas: true }).setView([1.3521, 103.8198], 12);
     canvasRenderer = L.canvas({ padding: 0.4 });
-    tileLayer = L.tileLayer(tileUrlForTheme(), {
+    tileLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
       attribution: "&copy; OpenStreetMap contributors",
     }).addTo(map);
     markerLayer = L.layerGroup().addTo(map);
+  }
+
+  function activeAnchor() {
+    return searchedLocation || userLocation;
   }
 
   function estimateCost(cp) {
@@ -50,11 +54,17 @@
     if (vehicleMode === "motorcycle") {
       if (cp.free_bike) return "Free / Grace check";
       if (day === "sun_ph" && cp.free_sun_ph) return "Free (Sun & PH 7am–10:30pm)";
-      if (cp.source_type === "Commercial reference") return cp.bike_rate;
-      return hours >= 10 ? "$0.65 day + $0.65 night" : "$0.65 / session";
+      if (cp.source_type === "LTA Commercial Rates" || cp.source_type === "Commercial reference") {
+        return cp.bike_rate || "Commercial / Mall rate";
+      }
+      return hours >= 10 ? "$0.65 day + $0.65 night cap" : "$0.10/30m ($0.65 cap/session)";
     }
 
     if (day === "sun_ph" && cp.free_sun_ph) return "Free (Sun & PH 7am–10:30pm)";
+    if (cp.source_type === "LTA Commercial Rates") {
+      if (day === "sun_ph" && cp.sunday_rate && cp.sunday_rate !== "-") return `Sun/PH: ${cp.sunday_rate}`;
+      return cp.weekday_rate || cp.car_rate;
+    }
     if (cp.source_type === "Commercial reference") return cp.car_rate;
     if (hours === 10) return cp.night_parking ? "$5.00 max overnight cap" : "No overnight parking";
     const halfHours = Math.max(1, Math.ceil(hours * 2));
@@ -78,7 +88,10 @@
       return '<span class="lot-pill is-free is-plenty">Free / Rider Spot</span>';
     }
     if (!lotInfo) {
-      return `<span class="lot-pill is-ref">${cp.free_sun_ph ? "Free Sun/PH" : esc(cp.source_type === "Commercial reference" ? "Mall / Hub" : "HDB")}</span>`;
+      if (cp.source_type === "LTA Commercial Rates") {
+        return '<span class="lot-pill is-ref">Commercial Mall</span>';
+      }
+      return `<span class="lot-pill is-ref">${cp.free_sun_ph ? "Free Sun/PH" : esc(cp.system === "COUPON PARKING" ? "Coupon" : "HDB")}</span>`;
     }
     if (lotInfo.type === "C_fallback") {
       return `<span class="lot-pill is-ref">${lotInfo.avail} Car lots</span>`;
@@ -90,11 +103,16 @@
 
   function filterCarparks() {
     if (!dataset) return [];
-    const q = (document.getElementById("parkingSearch")?.value || "").trim().toLowerCase();
+    const rawQ = (document.getElementById("parkingSearch")?.value || "").trim();
+    const q = rawQ.toLowerCase();
+    const anchor = activeAnchor();
+
     const list = dataset.carparks.filter((cp) => {
       if (q) {
-        const hay = `${cp.id} ${cp.name} ${cp.address} ${cp.type}`.toLowerCase();
-        if (!hay.includes(q)) return false;
+        const hay = `${cp.id} ${cp.name} ${cp.address} ${cp.type} ${cp.postal || ""}`.toLowerCase();
+        const textMatch = hay.includes(q);
+        const nearResolved = searchedLocation && haversineKm(searchedLocation.lat, searchedLocation.lng, cp.lat, cp.lng) <= 2.5;
+        if (!textMatch && !nearResolved) return false;
       }
       if (activeFilters.has("free")) {
         if (!(cp.free_sun_ph || cp.free_bike)) return false;
@@ -108,17 +126,18 @@
       if (activeFilters.has("central") && cp.area_tier !== "central") return false;
       if (activeFilters.has("night") && !cp.night_parking) return false;
       if (activeFilters.has("high_gantry") && (!cp.gantry_height || cp.gantry_height < 2.1)) return false;
+      if (activeFilters.has("commercial") && cp.source_type !== "LTA Commercial Rates" && cp.source_type !== "Commercial reference") return false;
       return true;
     });
 
     const enriched = list.map((cp) => {
       const lotInfo = getLotInfo(cp);
-      const dist = userLocation ? haversineKm(userLocation.lat, userLocation.lng, cp.lat, cp.lng) : null;
+      const dist = anchor ? haversineKm(anchor.lat, anchor.lng, cp.lat, cp.lng) : null;
       return { cp, lotInfo, dist };
     });
 
     enriched.sort((a, b) => {
-      if (userLocation && a.dist !== null && b.dist !== null) return a.dist - b.dist;
+      if (anchor && a.dist !== null && b.dist !== null) return a.dist - b.dist;
       if (vehicleMode === "motorcycle") {
         const aScore = (a.cp.free_bike ? 3 : 0) + (a.lotInfo?.type === "Y" ? 2 : 0) + (a.cp.free_sun_ph ? 1 : 0);
         const bScore = (b.cp.free_bike ? 3 : 0) + (b.lotInfo?.type === "Y" ? 2 : 0) + (b.cp.free_sun_ph ? 1 : 0);
@@ -126,9 +145,6 @@
       } else {
         const aAvail = a.lotInfo ? a.lotInfo.avail : -1;
         const bAvail = b.lotInfo ? b.lotInfo.avail : -1;
-        if ((b.cp.source_type === "Commercial reference") !== (a.cp.source_type === "Commercial reference") && !a.lotInfo && !b.lotInfo) {
-          return a.cp.source_type === "Commercial reference" ? -1 : 1;
-        }
         if (bAvail !== aAvail) return bAvail - aAvail;
       }
       return a.cp.name.localeCompare(b.cp.name);
@@ -164,6 +180,26 @@
     `;
   }
 
+  function renderSearchBadge() {
+    const el = document.getElementById("parkingSearchBadge");
+    if (!el) return;
+    if (!searchedLocation) {
+      el.style.display = "none";
+      el.innerHTML = "";
+      return;
+    }
+    el.style.display = "block";
+    el.innerHTML = `Near <strong>${esc(searchedLocation.address)}</strong> (within 2.5 km, sorted nearest first) · <button type="button" id="clearGeoSearchBtn" style="background:none;border:0;color:var(--brand-strong);font-weight:700;cursor:pointer;padding:0;">Clear location</button>`;
+    document.getElementById("clearGeoSearchBtn")?.addEventListener("click", () => {
+      searchedLocation = null;
+      lastGeocodedQuery = "";
+      const input = document.getElementById("parkingSearch");
+      if (input) input.value = "";
+      if (map) map.setView([1.3521, 103.8198], 12);
+      renderAll();
+    });
+  }
+
   function renderFilterChips() {
     const wrap = document.getElementById("parkingFilterChips");
     if (!wrap) return;
@@ -177,6 +213,7 @@
       : [
           ["free", "Free Sun & PH"],
           ["live", "Live Car Lots Available"],
+          ["commercial", "Malls & Commercial Rates"],
           ["sheltered", "Sheltered MSCP / Basement"],
           ["night", "Overnight ($5 Cap)"],
           ["high_gantry", "High Gantry (>=2.1m)"],
@@ -208,6 +245,8 @@
         color = lotInfo.avail >= 25 ? "#10b981" : lotInfo.avail >= 5 ? "#f59e0b" : "#ef4444";
       } else if (cp.free_sun_ph) {
         color = "#14b8a6";
+      } else if (cp.source_type === "LTA Commercial Rates") {
+        color = "#a855f7";
       }
       const m = L.circleMarker([cp.lat, cp.lng], {
         renderer: canvasRenderer,
@@ -221,21 +260,35 @@
       m.bindPopup(`
         <strong>${esc(cp.name)}</strong> (${esc(cp.id)})<br>
         <span>${lotText}</span><br>
-        <span>Est: ${esc(estimateCost(cp))}</span><br>
+        <span>${esc(estimateCost(cp))}</span><br>
         <a href="https://www.google.com/maps/search/?api=1&query=${cp.lat},${cp.lng}" target="_blank" rel="noopener noreferrer">Open in Google Maps →</a>
       `);
       m.addTo(markerLayer);
     }
-    if (userLocation) {
-      L.circleMarker([userLocation.lat, userLocation.lng], {
+
+    const anchor = activeAnchor();
+    if (anchor) {
+      L.circleMarker([anchor.lat, anchor.lng], {
         renderer: canvasRenderer,
-        radius: 8,
+        radius: 9,
         color: "#ffffff",
-        weight: 2,
+        weight: 2.5,
         fillColor: "#2563eb",
         fillOpacity: 1,
-      }).bindPopup("Your current location").addTo(markerLayer);
+      }).bindPopup(searchedLocation ? `Search: ${esc(searchedLocation.address)}` : "Your current location").addTo(markerLayer);
     }
+  }
+
+  function rateDetailsHtml(cp) {
+    if (cp.source_type === "LTA Commercial Rates" && vehicleMode === "car") {
+      const parts = [];
+      if (cp.weekday_rate && cp.weekday_rate !== "-") parts.push(`Wkday: ${esc(cp.weekday_rate)}`);
+      if (cp.weekday_rate_2 && cp.weekday_rate_2 !== "-") parts.push(esc(cp.weekday_rate_2));
+      if (cp.saturday_rate && cp.saturday_rate !== "-") parts.push(`Sat: ${esc(cp.saturday_rate)}`);
+      if (cp.sunday_rate && cp.sunday_rate !== "-") parts.push(`Sun/PH: ${esc(cp.sunday_rate)}`);
+      return parts.join(" · ");
+    }
+    return esc(vehicleMode === "motorcycle" ? cp.bike_rate : cp.car_rate);
   }
 
   function renderCards(items) {
@@ -247,14 +300,14 @@
     if (countNote) {
       countNote.textContent = items.length
         ? `Showing ${shown.length} of ${items.length.toLocaleString()} matching carparks (top ${Math.min(items.length, 320)} plotted on map).`
-        : "No carparks match those filters. Try clearing a filter or broadening your search.";
+        : "No carparks match those filters. Try clearing a filter or searching a Singapore postal code (e.g. 460401) or area.";
     }
 
     grid.innerHTML = shown.map(({ cp, lotInfo, dist }) => `
       <article class="parking-card">
         <div class="parking-card-top">
           <div>
-            <span class="parking-code">${esc(cp.id)} · ${esc(cp.area_tier === "central" ? "Central Area" : "Heartlands / Islandwide")}</span>
+            <span class="parking-code">${esc(cp.id)} · ${esc(cp.source_type === "LTA Commercial Rates" ? "Commercial Mall" : cp.area_tier === "central" ? "Central Area" : "Heartlands / Islandwide")}</span>
             <h3 class="parking-card-title">${esc(cp.name)}</h3>
           </div>
           ${lotPillHtml(cp, lotInfo)}
@@ -262,12 +315,13 @@
         <div class="parking-meta-tags">
           ${cp.free_sun_ph ? '<span class="parking-tag is-free">Free Sun &amp; PH</span>' : ""}
           ${cp.free_bike ? '<span class="parking-tag is-free">Free / Grace Bike</span>' : ""}
+          ${cp.system === "COUPON PARKING" ? '<span class="parking-tag">Coupon / Parking.sg</span>' : ""}
           ${cp.sheltered ? '<span class="parking-tag">Sheltered</span>' : '<span class="parking-tag">Open / Surface</span>'}
           ${cp.night_parking ? '<span class="parking-tag">Night Parking</span>' : ""}
           ${cp.gantry_height > 0 ? `<span class="parking-tag">Gantry ${cp.gantry_height}m</span>` : ""}
-          ${dist !== null ? `<span class="parking-tag">${dist.toFixed(1)} km away</span>` : ""}
+          ${dist !== null ? `<span class="parking-tag">${dist.toFixed(2)} km away</span>` : ""}
         </div>
-        <div style="font-size:0.84rem;color:var(--muted);">${esc(vehicleMode === "motorcycle" ? cp.bike_rate : cp.car_rate)}</div>
+        <div style="font-size:0.84rem;color:var(--muted);">${rateDetailsHtml(cp)}</div>
         <div class="parking-card-footer">
           <strong>${esc(estimateCost(cp))}</strong>
           <span class="parking-card-actions">
@@ -290,11 +344,38 @@
   }
 
   function renderAll() {
+    renderSearchBadge();
     renderFilterChips();
     const filtered = filterCarparks();
     renderSummary(filtered);
     updateMapMarkers(filtered);
     renderCards(filtered);
+  }
+
+  async function geocodeWithOneMap(query) {
+    if (!query || query.length < 3 || query === lastGeocodedQuery) return;
+    lastGeocodedQuery = query;
+    try {
+      const url = `${ONEMAP_SEARCH_URL}?searchVal=${encodeURIComponent(query)}&returnGeom=Y&getAddrDetails=Y&pageNum=1`;
+      const res = await fetch(url);
+      if (!res.ok) return;
+      const json = await res.json();
+      const first = json?.results?.[0];
+      if (!first) return;
+      const lat = Number(first.LATITUDE);
+      const lng = Number(first.LONGITUDE);
+      if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
+      // Ignore stale responses if the user changed the query
+      const currentVal = (document.getElementById("parkingSearch")?.value || "").trim();
+      if (currentVal !== query) return;
+      searchedLocation = {
+        lat,
+        lng,
+        address: first.ADDRESS || first.SEARCHVAL || query,
+      };
+      if (map) map.setView([lat, lng], 15, { animate: true });
+      renderAll();
+    } catch {}
   }
 
   async function refreshLiveLots() {
@@ -333,8 +414,22 @@
       });
     });
 
-    ["parkingSearch", "parkingDayType", "parkingDuration"].forEach((id) => {
-      document.getElementById(id)?.addEventListener("input", renderAll);
+    const searchInput = document.getElementById("parkingSearch");
+    searchInput?.addEventListener("input", () => {
+      const val = searchInput.value.trim();
+      clearTimeout(searchDebounce);
+      if (!val) {
+        searchedLocation = null;
+        lastGeocodedQuery = "";
+        renderAll();
+        return;
+      }
+      renderAll();
+      const delay = /^\d{6}$/.test(val) ? 120 : 350;
+      searchDebounce = setTimeout(() => geocodeWithOneMap(val), delay);
+    });
+
+    ["parkingDayType", "parkingDuration"].forEach((id) => {
       document.getElementById(id)?.addEventListener("change", renderAll);
     });
 
@@ -354,7 +449,7 @@
     initMap();
     wireControls();
     try {
-      dataset = await fetch("./data/carparks.json?v=2", { cache: "no-store" }).then((r) => r.json());
+      dataset = await fetch("./data/carparks.json?v=3", { cache: "no-store" }).then((r) => r.json());
       liveTimestamp = dataset.last_updated || "";
       renderAll();
       refreshLiveLots();
