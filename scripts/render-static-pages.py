@@ -125,7 +125,7 @@ def render_checkpoint_ai(traffic, location_key):
     cam_label = f" (Cam {cam_ids})" if cam_ids else ""
     checked = html.escape(updated_label(traffic.get("last_updated")))
     note = (
-        "Automated YOLOX vehicle count on Cam 4703 only (Cam 4712 excluded); indoor immigration hall queues may differ."
+        "Automated AI count: Cam 4713 (Towards JB) + Cam 4703 (Towards SG); indoor immigration hall queues may differ."
         if location_key == "tuas"
         else "Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ."
     )

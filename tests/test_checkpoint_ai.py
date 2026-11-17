@@ -26,7 +26,7 @@ class CheckpointAiTests(unittest.TestCase):
     def test_dashboard_camera_selection_uses_two_cameras_each(self):
         mod = load_analyzer()
         self.assertEqual(mod.DASHBOARD_CAMERA_IDS["woodlands"], ["2701", "2702"])
-        self.assertEqual(mod.DASHBOARD_CAMERA_IDS["tuas"], ["4703"])
+        self.assertEqual(mod.DASHBOARD_CAMERA_IDS["tuas"], ["4703", "4713"])
 
     def test_direction_zones_for_woodlands_2701(self):
         mod = load_analyzer()
@@ -37,11 +37,16 @@ class CheckpointAiTests(unittest.TestCase):
 
     def test_direction_zones_for_tuas_4703(self):
         mod = load_analyzer()
-        # Upper-right queue above divider (red arrow) is towards SG; lower-left viaduct (yellow arrow) is towards JB
+        # 4703 covers towards_sg (upper-right carriageway); lower viaduct ignored (4713 covers towards_jb)
         self.assertEqual(mod.classify_direction("4703", 1250, 220, 1920, 1069), "towards_sg")
-        self.assertEqual(mod.classify_direction("4703", 820, 450, 1920, 1069), "towards_jb")
-        self.assertEqual(mod.classify_direction("4703", 600, 760, 1920, 1069), "towards_jb")
+        self.assertEqual(mod.classify_direction("4703", 820, 450, 1920, 1069), "ignored")
         self.assertEqual(mod.classify_direction("4703", 200, 400, 1920, 1069), "ignored")
+
+    def test_direction_zones_for_tuas_4713(self):
+        mod = load_analyzer()
+        # 4713 right-hand JOHOR queue is towards_jb; left AYE carriageway is ignored (4703 covers towards_sg)
+        self.assertEqual(mod.classify_direction("4713", 1450, 350, 1920, 1069), "towards_jb")
+        self.assertEqual(mod.classify_direction("4713", 600, 420, 1920, 1069), "ignored")
 
     def test_hourly_averages_grouping(self):
         mod = load_analyzer()

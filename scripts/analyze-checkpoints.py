@@ -25,7 +25,7 @@ VEHICLE_CLASSES = {2: "car", 3: "motorcycle", 5: "bus", 7: "truck"}
 MAX_HISTORY_ENTRIES = 2880  # ~30 days (4 weeks) at 15-minute cadence
 DASHBOARD_CAMERA_IDS = {
     "woodlands": ["2701", "2702"],
-    "tuas": ["4703"],
+    "tuas": ["4703", "4713"],
 }
 
 # Direction polygons in 1920x1069 camera pixel space for the 2 dashboard cameras per checkpoint.
@@ -48,14 +48,15 @@ CAMERA_ZONES = {
     "4703": {
         "name": "Tuas Second Link",
         "zones": {
-            # Above/right of central divider (red arrow): traffic heading into Singapore
+            # Above/right of central divider: traffic heading into Singapore (JB-bound handled by 4713)
             "towards_sg": [(185, 0), (1200, 0), (1920, 320), (1920, 650), (1320, 420), (700, 175)],
-            # Below/left of central divider (yellow arrow) + curved approach ramp: towards Johor
-            "towards_jb": [
-                (0, 40), (185, 0), (700, 175), (1320, 420), (1920, 650),
-                (1920, 840), (1050, 880), (100, 880), (80, 620), (650, 560),
-                (450, 260), (0, 140),
-            ],
+        },
+    },
+    "4713": {
+        "name": "Tuas Checkpoint (Outbound to Johor)",
+        "zones": {
+            # Right-hand viaduct heading towards Johor (SG-bound handled by 4703)
+            "towards_jb": [(1220, 40), (1760, 40), (1920, 480), (1920, 720), (1240, 560)],
         },
     },
     "4712": {

@@ -587,9 +587,13 @@ function syncCamera(button, cam, title) {
 }
 
 function renderCheckpointTeaser(box) {
+  const tuasWanted = ["4703", "4713"];
+  const tuasPicked = tuasWanted
+    .map(id => (checkpointData.tuas || []).find(c => String(c.camera_id) === id))
+    .filter(Boolean);
   const groups = [
     ["#cp-panel-woodlands", "Woodlands Checkpoint", (checkpointData.woodlands || []).slice(0, 2)],
-    ["#cp-panel-tuas", "Tuas Checkpoint", (checkpointData.tuas || []).slice(0, 2)]
+    ["#cp-panel-tuas", "Tuas Checkpoint", tuasPicked.length ? tuasPicked : (checkpointData.tuas || []).slice(0, 2)]
   ];
   groups.forEach(([selector, title, cameras]) => {
     const panel = box.querySelector(selector);
@@ -1706,7 +1710,7 @@ function renderCheckpointAi() {
         <span><strong>Towards SG:</strong> ${Number(loc.towards_sg || 0)} (${escapeHtml(loc.towards_sg_status || "—")})</span>
         <span><strong>Mix:</strong> ${Number(counts.car || 0)} cars · ${Number(counts.motorcycle || 0)} bikes · ${heavy} buses/trucks</span>
       </div>
-      <p class="ai-traffic-disclaimer">${key === "tuas" ? "Automated YOLOX vehicle count on Cam 4703 only (Cam 4712 excluded); indoor immigration hall queues may differ." : "Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ."}</p>
+      <p class="ai-traffic-disclaimer">${key === "tuas" ? "Automated AI count: Cam 4713 (Towards JB) + Cam 4703 (Towards SG); indoor immigration hall queues may differ." : "Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ."}</p>
     `;
   });
   renderTravelAdvisor();
