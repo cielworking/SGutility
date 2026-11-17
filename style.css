@@ -1445,6 +1445,24 @@ svg {
   display: grid;
 }
 
+.footer-inner .footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-brand img {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.footer-brand > div {
+  display: grid;
+  gap: 2px;
+}
+
 .footer-inner strong {
   font-size: 14px;
 }
