@@ -49,15 +49,15 @@
     ]
   },
   "tuas": {
-    "status": "Moderate",
+    "status": "Smooth",
     "towards_jb_status": "Smooth",
-    "towards_sg_status": "Moderate",
-    "total_vehicles": 20,
-    "weighted_load": 26.0,
-    "towards_jb": 5,
-    "towards_sg": 15,
+    "towards_sg_status": "Smooth",
+    "total_vehicles": 12,
+    "weighted_load": 18.0,
+    "towards_jb": 0,
+    "towards_sg": 12,
     "counts": {
-      "car": 14,
+      "car": 6,
       "motorcycle": 0,
       "bus": 2,
       "truck": 4
@@ -75,20 +75,6 @@
           "motorcycle": 0,
           "bus": 2,
           "truck": 4
-        }
-      },
-      {
-        "camera_id": "4712",
-        "label": "AYE / Tuas Checkpoint",
-        "timestamp": "2026-11-17T09:41:14+08:00",
-        "total_vehicles": 8,
-        "towards_jb": 5,
-        "towards_sg": 3,
-        "counts": {
-          "car": 8,
-          "motorcycle": 0,
-          "bus": 0,
-          "truck": 0
         }
       }
     ]

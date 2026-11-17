@@ -26,7 +26,7 @@ class CheckpointAiTests(unittest.TestCase):
     def test_dashboard_camera_selection_uses_two_cameras_each(self):
         mod = load_analyzer()
         self.assertEqual(mod.DASHBOARD_CAMERA_IDS["woodlands"], ["2701", "2702"])
-        self.assertEqual(mod.DASHBOARD_CAMERA_IDS["tuas"], ["4703", "4712"])
+        self.assertEqual(mod.DASHBOARD_CAMERA_IDS["tuas"], ["4703"])
 
     def test_direction_zones_for_woodlands_2701(self):
         mod = load_analyzer()

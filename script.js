@@ -1680,7 +1680,7 @@ function renderCheckpointAi() {
         <span><strong>Towards SG:</strong> ${Number(loc.towards_sg || 0)} (${escapeHtml(loc.towards_sg_status || "—")})</span>
         <span><strong>Mix:</strong> ${Number(counts.car || 0)} cars · ${Number(counts.motorcycle || 0)} bikes · ${heavy} buses/trucks</span>
       </div>
-      <p class="ai-traffic-disclaimer">Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ.</p>
+      <p class="ai-traffic-disclaimer">${key === "tuas" ? "Automated YOLOX vehicle count on Cam 4703 only (Cam 4712 excluded); indoor immigration hall queues may differ." : "Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ."}</p>
     `;
   });
   renderTravelAdvisor();

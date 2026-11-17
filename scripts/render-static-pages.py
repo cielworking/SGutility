@@ -124,6 +124,11 @@ def render_checkpoint_ai(traffic, location_key):
     cam_ids = " &amp; ".join(str(c.get("camera_id")) for c in (loc.get("cameras") or []) if c.get("camera_id"))
     cam_label = f" (Cam {cam_ids})" if cam_ids else ""
     checked = html.escape(updated_label(traffic.get("last_updated")))
+    note = (
+        "Automated YOLOX vehicle count on Cam 4703 only (Cam 4712 excluded); indoor immigration hall queues may differ."
+        if location_key == "tuas"
+        else "Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ."
+    )
     return f"""<div class="ai-traffic-panel" data-checkpoint-ai="{html.escape(location_key, quote=True)}">
       <div class="ai-traffic-head">
         <div>
@@ -138,7 +143,7 @@ def render_checkpoint_ai(traffic, location_key):
         <span><strong>Towards SG:</strong> {to_sg} ({sg_status})</span>
         <span><strong>Mix:</strong> {cars} cars · {motos} bikes · {heavy} buses/trucks</span>
       </div>
-      <p class="ai-traffic-disclaimer">Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ.</p>
+      <p class="ai-traffic-disclaimer">{note}</p>
     </div>"""
 
 

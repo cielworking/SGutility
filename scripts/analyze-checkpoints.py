@@ -25,7 +25,7 @@ VEHICLE_CLASSES = {2: "car", 3: "motorcycle", 5: "bus", 7: "truck"}
 MAX_HISTORY_ENTRIES = 2880  # ~30 days (4 weeks) at 15-minute cadence
 DASHBOARD_CAMERA_IDS = {
     "woodlands": ["2701", "2702"],
-    "tuas": ["4703", "4712"],
+    "tuas": ["4703"],
 }
 
 # Direction polygons in 1920x1069 camera pixel space for the 2 dashboard cameras per checkpoint.
