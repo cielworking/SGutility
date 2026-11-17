@@ -46,7 +46,8 @@ const CAMERA_ZONES = {
 const NIGHT_PROMPTS = {
   "2701": 'Nighttime Singapore LTA traffic cam 2701 (Woodlands Causeway). Upper-left lanes marked JOHOR go towards JB. Lower-right lanes marked WOODLANDS come towards SG. Count visible vehicles accurately (0-3 if empty; count glowing headlight/taillight queues carefully when congested). Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car":0,"motorcycle":0,"heavy":0}}',
   "2702": 'Nighttime Singapore LTA traffic cam 2702 (Woodlands Checkpoint/BKE). Left elevated ramp labeled BKE goes towards SG. Right elevated curved flyover and lower lanes labeled CAUSEWAY queue towards JB. Note: an unbroken bright ribbon of headlights on the curved flyover means 60-120 cars; if sparse/empty count exact vehicles. Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car":0,"motorcycle":0,"heavy":0}}',
-  "4703": 'Nighttime Singapore LTA traffic cam 4703 (Tuas Second Link). Upper-right lanes above central divider go towards SG. Left/lower viaduct & curved ramp go towards JB (include all motorcycles and cars/trucks). Count visible vehicles accurately (0 if empty). Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car":0,"motorcycle":0,"heavy":0}}',
+  // Cam 4703 is floodlit 24/7 and Vision LLMs confuse the left JOHOR label with the upper-right towards_sg lanes,
+  // so omit it here to use DETR + calibrated CAMERA_ZONES["4703"] polygons at night as well.
   "4713": 'Nighttime Singapore LTA traffic cam 4713 (Tuas Outbound to Johor). Right-hand viaduct and adjacent motorcycle lane labeled JOHOR go towards JB (count all visible queuing cars, buses, and motorcycles on the right side). Ignore the left AYE ramp (keep towards_sg 0). Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0}}',
 };
 
