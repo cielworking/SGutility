@@ -35,6 +35,14 @@ class CheckpointAiTests(unittest.TestCase):
         self.assertEqual(mod.classify_direction("2701", 1150, 740, 1920, 1069), "towards_sg")
         self.assertEqual(mod.classify_direction("2701", 200, 150, 1920, 1069), "ignored")
 
+    def test_direction_zones_for_tuas_4703(self):
+        mod = load_analyzer()
+        # Upper-right queue above divider (red arrow) is towards SG; lower-left viaduct (yellow arrow) is towards JB
+        self.assertEqual(mod.classify_direction("4703", 1250, 220, 1920, 1069), "towards_sg")
+        self.assertEqual(mod.classify_direction("4703", 820, 450, 1920, 1069), "towards_jb")
+        self.assertEqual(mod.classify_direction("4703", 600, 760, 1920, 1069), "towards_jb")
+        self.assertEqual(mod.classify_direction("4703", 200, 400, 1920, 1069), "ignored")
+
     def test_hourly_averages_grouping(self):
         mod = load_analyzer()
         res = mod.compute_hourly_averages([

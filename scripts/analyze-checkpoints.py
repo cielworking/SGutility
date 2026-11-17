@@ -48,8 +48,14 @@ CAMERA_ZONES = {
     "4703": {
         "name": "Tuas Second Link",
         "zones": {
-            "towards_jb": [(0, 0), (1920, 0), (1920, 520), (750, 420)],
-            "towards_sg": [(0, 420), (1920, 520), (1920, 1069), (0, 1069)],
+            # Above/right of central divider (red arrow): traffic heading into Singapore
+            "towards_sg": [(185, 0), (1200, 0), (1920, 320), (1920, 650), (1320, 420), (700, 175)],
+            # Below/left of central divider (yellow arrow) + curved approach ramp: towards Johor
+            "towards_jb": [
+                (0, 40), (185, 0), (700, 175), (1320, 420), (1920, 650),
+                (1920, 840), (1050, 880), (100, 880), (80, 620), (650, 560),
+                (450, 260), (0, 140),
+            ],
         },
     },
     "4712": {
