@@ -1,0 +1,48 @@
+name: Submit URLs to IndexNow
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "sitemap.xml"
+      - "*.html"
+      - "guides/*.html"
+      - "weather/*.html"
+      - ".github/workflows/indexnow.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Submit sitemap URLs to IndexNow
+        run: |
+          python3 - <<'PY'
+          import json
+          import urllib.request
+          import xml.etree.ElementTree as ET
+
+          tree = ET.parse("sitemap.xml")
+          ns = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+          urls = [el.text.strip() for el in tree.findall(".//s:loc", ns) if el.text and el.text.strip()]
+          payload = {
+              "host": "sgalerts.com",
+              "key": "9d4bf338071e0780508ef81ce5f5baf2",
+              "keyLocation": "https://sgalerts.com/9d4bf338071e0780508ef81ce5f5baf2.txt",
+              "urlList": urls,
+          }
+          req = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=json.dumps(payload).encode("utf-8"),
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST",
+          )
+          with urllib.request.urlopen(req, timeout=30) as resp:
+              print("IndexNow status:", resp.status, "submitted:", len(urls))
+          PY
