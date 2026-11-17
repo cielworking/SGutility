@@ -67,7 +67,7 @@ async function loadData() {
             renderGlance();
           }
           const ageMs = data?.last_updated ? (Date.now() - new Date(data.last_updated).getTime()) : Infinity;
-          if (!Number.isFinite(ageMs) || ageMs > 15 * 60 * 1000) {
+          if (!Number.isFinite(ageMs) || ageMs > 60 * 60 * 1000) {
             fetch("/api/checkpoint-ai")
               .then(r => (r.ok ? r.json() : null))
               .then(live => {
@@ -170,7 +170,7 @@ async function refreshCheckpointData() {
       const tRes = await fetch("./data/checkpoint-traffic.json", { cache: "no-store" });
       const yolox = tRes.ok ? await tRes.json() : null;
       const ageMs = yolox?.last_updated ? (Date.now() - new Date(yolox.last_updated).getTime()) : Infinity;
-      if (yolox && yolox.woodlands && Number.isFinite(ageMs) && ageMs <= 15 * 60 * 1000) {
+      if (yolox && yolox.woodlands && Number.isFinite(ageMs) && ageMs <= 60 * 60 * 1000) {
         checkpointTraffic = yolox;
         renderCheckpointAi();
       } else {
