@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-11-18T04:15:21.713771+08:00",
+  "last_updated": "2026-11-18T06:20:51.225555+08:00",
   "headlines": [
+    {
+      "category": "Singapore",
+      "title": "Commentary: Why information resilience matters more than ever for Singapore’s national security",
+      "summary": "Recent disinformation campaigns that sought to portray Singapore’s hand in Indonesia’s affairs highlight the growing and evolving threat of foreign information manipulation and...",
+      "image": "https://dam.mediacorp.sg/image/upload/s--g9tIVYq4--/c_crop,h_1125,w_2000,x_0,y_104/fl_relative,g_south_east,l_mediacorp:cna:watermark:2023-11:afp_watermark_14112023,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/10/28/000_d4jw4kf.jpg?itok=g89EPfhx",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/commentary/disinformation-campaign-haze-singapore-information-resilience-6558396",
+      "published": "2026-11-18 06:00"
+    },
     {
       "category": "Singapore",
       "title": "Agency working for Fedex sends S'pore man, 30, debt collection notice after S$1.07 error",
@@ -81,15 +90,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/project-manager-bribe-west-coast-town-council/",
       "published": "2026-11-17 19:59"
-    },
-    {
-      "category": "Singapore",
-      "title": "US tightens semiconductor exports to S'pore & 4 other countries, govt studying new licensing rule",
-      "summary": "The other countries affected are Indonesia, Malaysia, Thailand and Brazil.",
-      "image": "https://static.mothership.sg/1/2026/11/Untitled-Design-2026-11-17T111607.279.png",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/us-semiconductor-exports-spore-licence/",
-      "published": "2026-11-17 19:26"
     },
     {
       "category": "Crime",
@@ -174,101 +174,110 @@
     },
     {
       "category": "IT & Gadgets",
-      "title": "Framework’s better couch keyboard is now available for preorder",
-      "summary": "Framework announced its Wireless Touchpad Keyboard earlier this year with the goal of delivering a better couch keyboarding experience than the Logitech K400. According to The...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/framework1.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Nvidia says it does not intend to reinstate Jensen Huang as CEO",
+      "summary": "Starting Nvidia's quarterly earnings call on Tuesday, new board chair Harvey Jones said that when former CEO Jensen Huang resigned, \"the Nvidia board unanimously accepted his...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Nvidia_Jensen_huang_02.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1035805/framework-wireless-touchpad-keyboard-preorder-open",
-      "published": "2026-11-18 03:38"
+      "url": "https://www.theverge.com/report/1035465/nvidia-says-it-will-not-reinstate-jensen-huang-as-ceo",
+      "published": "2026-11-18 06:05"
     },
     {
       "category": "IT & Gadgets",
-      "title": "California just banned Waymo from all state freeways",
-      "summary": "California has pulled the plug on Waymo's driverless freeway rides across the entire state, citing potential safety hazards. In a statement, the California Department of Motor...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25211546/Waymo_One_I_PACE_on_Freeway_.png?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/transportation/1035789/california-dmv-bans-waymo-freeways-construction-zone-safety",
-      "published": "2026-11-18 03:38"
+      "title": "US chip export curbs test Southeast Asia’s AI ambitions, but offer chance to toughen regulatory oversight",
+      "summary": "The new restrictions on advanced chips could bring reputational risks and dampen the region’s AI ambitions, experts say.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--wS3fAcji--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-02-09T163015Z_1_LYNXMPEM1813B_RTROPTP_3_ASMI-RESULTS.JPG?itok=AEJlhaoz",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/singapore/us-ai-chip-export-control-southeast-asia-singapore-6558276",
+      "published": "2026-11-18 06:00"
     },
     {
       "category": "IT & Gadgets",
-      "title": "JBL’s headphones that are great for in-flight entertainment are 67 percent off",
-      "summary": "If you’re looking to upgrade your headphones before the big wave of Black Friday deals arrives, you can buy JBL’s Tour One M3 for a new low price of $149 ($300 off) at Amazon...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25819374/jbl2.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "The MacBook Neo is receiving a rare $50 discount ahead of Black Friday",
+      "summary": "If you’re looking for a new laptop or a gift for the student in your life, you can save $50 on the MacBook Neo at several retailers, in both storage sizes and all four colors...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268387_Apple_MacBook_Neo_AKrales_0543.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
-      "url": "https://www.theverge.com/gadgets/1035085/jbl-tour-one-m3-deal-sale-black-friday-2026",
-      "published": "2026-11-18 03:19"
+      "url": "https://www.theverge.com/gadgets/1035932/apple-macbook-neo-black-friday-2026-deal-sale",
+      "published": "2026-11-18 05:46"
     },
     {
       "category": "IT & Gadgets",
-      "title": "Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free",
-      "summary": "Google is rebranding its Spark AI agent as \"Tasks\" and making it free to use. The feature, which is powered by Google's new Gemini 4 Hydrogen AI model, can do things like create...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Tasks-in-Gemini.png?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Nvidia’s Q3 earnings hit the mark, without mentioning the whole Jensen Huang thing",
+      "summary": "Interim Nvidia CEO Colette Kress announced the company's Q3 earnings on Tuesday, without initially mentioning former CEO Jensen Huang or the details of his departure, or possible...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25835739/STKP210_JENSEN_HUANG_B.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
-      "published": "2026-11-18 02:58"
+      "url": "https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang",
+      "published": "2026-11-18 05:40"
     },
     {
       "category": "IT & Gadgets",
-      "title": "Meta is testing a new standalone messaging app called Direct",
-      "summary": "Meta announced Direct, a new messaging app from Instagram that it's currently testing in Turkey and Thailand on iOS and Android. Direct is essentially Instagram's direct...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/meta-instagram-direct-app-screenshots.jpeg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Nike’s new air sole technology can mix soft and firm cushioning",
+      "summary": "In 2024, Nike announced its Air Max 1000 that were manufactured using a 3D-printing process resulting in a shoe that had a uniform silhouette but varying areas of support and...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/nike1.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1035740/meta-instagram-direct-messaging-app",
-      "published": "2026-11-18 02:33"
+      "url": "https://www.theverge.com/tech/1035911/nike-shoes-tuned-air-sole-printing-variable-cushioning",
+      "published": "2026-11-18 05:38"
     },
     {
       "category": "IT & Gadgets",
-      "title": "Amflow’s new urban e-bike series is deliciously overpowered for flat city streets",
-      "summary": "DJI spinoff Amflow has spent the last couple of years shaking up the electric mountain bike (eMTB) market with ridiculously high-torque, lightweight models. Today, it's bringing...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/UE-Pro-Beauty-Shots_UE-pro_01.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/transportation/1035318/amflow-ue-carbon-pro-commuter-ebike-dji-avinox-price-specs",
-      "published": "2026-11-18 02:30"
+      "title": "Nvidia facing SEC probe after Huang's resignation, WSJ reports",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--udD-RqlC--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-17T211704Z_2_LYNXNPEMAG1YN_RTROPTP_3_NVIDIA-CEO.JPG?itok=kxc9JT0r",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/nvidia-facing-sec-probe-after-huangs-resignation-wsj-reports-6560406",
+      "published": "2026-11-18 05:10"
     },
     {
       "category": "IT & Gadgets",
-      "title": "YouTube found a new way to inflate view counts",
-      "summary": "YouTube's view counts will now include the number of people that it estimates are watching a video together on TV. In an update on Monday, the platform says it's bringing...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/acastro_STK092_04.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Not even Sam Altman is safe from AI deepfakes on Instagram",
+      "summary": "Instagram is filled with people posting deepfaked content - including, as of late, from one of Meta's most prominent executives. Earlier in November, Alexandr Wang, Meta's chief...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2297785644.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
-      "url": "https://www.theverge.com/streaming/1035683/youtube-co-views-count",
-      "published": "2026-11-18 01:50"
+      "url": "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
+      "published": "2026-11-18 05:00"
     },
     {
       "category": "IT & Gadgets",
-      "title": "The iPhone Duo feels far more intuitive with Apple’s new face unlock",
-      "summary": "Apple is testing adding face unlock to the iPhone Duo - not true Face ID, but something a little simpler and less secure. So far, it works great, and even with a few...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/iphone-duo-face-unlock-2.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Instagram is helping creators crack down on copycat videos",
+      "summary": "Instagram is beginning to roll out a \"content protection\" feature that lets creators see and review copies of their videos posted to the platform. \"For eligible creators who...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23932741/acastro_STK070__03.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1035437/iphone-duo-face-unlock-front-camera-hands-on",
-      "published": "2026-11-18 01:41"
+      "url": "https://www.theverge.com/tech/1035943/instagram-creators-crack-down-copycat-videos",
+      "published": "2026-11-18 04:46"
     },
     {
       "category": "IT & Gadgets",
-      "title": "Inside Microsoft’s giant Outlook outage",
-      "summary": "At 9AM last Thursday, everything seemed normal. Microsoft employees were arriving on campus, ready for a regular day of emails and meetings. But barely an hour later, one of...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK153_MICROSOFT_OUTLOOK_D.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1035364/microsoft-outlook-outage-notepad",
-      "published": "2026-11-18 01:00"
+      "title": "Apple works to restore services after outage caused by internal update",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--ot5xDKPy--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-17T204323Z_2_LYNXNPEMAG1Y1_RTROPTP_3_APPLE-OUTAGES.JPG?itok=iOO7DSZf",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/apple-works-restore-services-after-outage-caused-internal-update-6560366",
+      "published": "2026-11-18 04:43"
     },
     {
       "category": "IT & Gadgets",
-      "title": "The DOJ says it’s investigating Megaspeed",
-      "summary": "The Justice and Commerce Departments said that they are investigating Megaspeed, the Singapore-based data center company intertwined with the resignation of Nvidia CEO Jensen...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25461724/STK432_Government__CVirginia_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Democrats try to figure out how not to get swept away by the blue wave",
+      "summary": "On a harried Saturday afternoon at Denver International Airport, I had the good fortune of sitting just a few feet from Minneapolis Mayor Jacob Frey. It shouldn't have come as a...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2304463879.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
-      "url": "https://www.theverge.com/policy/1035410/doj-megaspeed-nvidia-investigation-update",
-      "published": "2026-11-18 00:19"
+      "url": "https://www.theverge.com/policy/1035869/whats-next-majority-democrats-conference-denver-jeffries",
+      "published": "2026-11-18 04:30"
     },
     {
       "category": "Finance",
-      "title": "Equinor detects ongoing cyberattack, output unaffected",
+      "title": "Exclusive-AppLovin among firms in talks to acquire Criteo, sources say",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--vkibqB-F--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-17T202133Z_3_LYNXNPEMAG1XS_RTROPTP_3_CRITEO-RESULTS.JPG?itok=OM6waJ4R",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/exclusive-applovin-among-firms-in-talks-acquire-criteo-sources-say-6560346",
+      "published": "2026-11-18 04:21"
+    },
+    {
+      "category": "Finance",
+      "title": "Norway's Equinor detects ongoing cyberattack, oil and gas output unaffected",
       "summary": "",
       "image": "https://dam.mediacorp.sg/image/upload/s--2WNbg40P--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-17T182715Z_2_LYNXNPEMAG1SZ_RTROPTP_3_GLOBAL-GAS-GASTECH.JPG?itok=_c6-Nc6V",
       "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/equinor-detects-ongoing-cyberattack-output-unaffected-6560121",
+      "url": "https://www.channelnewsasia.com/business/norways-equinor-detects-ongoing-cyberattack-oil-and-gas-output-unaffected-6560121",
       "published": "2026-11-18 02:16"
     },
     {
@@ -279,15 +288,6 @@
       "source": "CNA Business",
       "url": "https://www.channelnewsasia.com/business/equinor-detects-cyberattack-against-some-it-systems-6560096",
       "published": "2026-11-18 02:06"
-    },
-    {
-      "category": "Finance",
-      "title": "Highly classified US national security communications network is down, CNN reports",
-      "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--t_5F7VO4--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-17T154536Z_2_LYNXNPEMAG1JJ_RTROPTP_3_USA-TRUMP.JPG?itok=lnDumO0R",
-      "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/highly-classified-us-national-security-communications-network-down-cnn-reports-6559891",
-      "published": "2026-11-17 23:42"
     },
     {
       "category": "Finance",
@@ -327,30 +327,30 @@
     },
     {
       "category": "Finance",
-      "title": "Exclusive-GM plans 20% boost in robotics as factory costs rise",
-      "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--oWWYuRml--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-17T111844Z_1_LYNXNPEMAG0Z9_RTROPTP_3_GM-BRIGHTDROP-CANADA.JPG?itok=br0LrCGQ",
-      "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/exclusive-gm-plans-20-boost-in-robotics-factory-costs-rise-6558871",
-      "published": "2026-11-17 19:13"
-    },
-    {
-      "category": "Finance",
-      "title": "EU charges Temu for not doing enough to stop illegal product sales on its platforms",
-      "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--8x8UkBru--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-17T112214Z_3_LYNXNPEMAG0Y0_RTROPTP_3_USA-TRUMP-TARIFFS-ECOMMERCE.JPG?itok=ZIYmuopZ",
-      "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/eu-charges-temu-not-doing-enough-stop-illegal-product-sales-its-platforms-6558886",
-      "published": "2026-11-17 19:10"
-    },
-    {
-      "category": "Finance",
       "title": "7 Ways The Johor Bahru–Singapore Rail Transit System (RTS) May Benefit Singapore’s Economy And People",
       "summary": "A mutually beneficial project. The post 7 Ways The Johor Bahru–Singapore Rail Transit System (RTS) May Benefit Singapore’s Economy And People appeared first on DollarsAndSense.sg .",
       "image": "https://dollarsandsense.sg/wp-content/uploads/2020/08/RTS-Link-300x200.jpg",
       "source": "DollarsAndSense",
       "url": "https://dollarsandsense.sg/ways-the-johor-bahru-singapore-rail-transit-system-rts-benefit-singapores-economy-and-people/",
       "published": "2026-11-17 15:26"
+    },
+    {
+      "category": "Finance",
+      "title": "GST Increased From 7% To 9%: How Much Did Singaporeans Get Back Through The Assurance Package",
+      "summary": "The final Assurance Package Cash payout is coming up in December 2026. The post GST Increased From 7% To 9%: How Much Did Singaporeans Get Back Through The Assurance Package...",
+      "image": "https://dollarsandsense.sg/wp-content/uploads/2026/11/iStock-2264568440-300x200.jpg",
+      "source": "DollarsAndSense",
+      "url": "https://dollarsandsense.sg/gst-increased-from-7-to-9-how-much-did-singaporeans-get-back-through-the-assurance-package/",
+      "published": "2026-11-17 10:56"
+    },
+    {
+      "category": "Finance",
+      "title": "Already Investing In T-Bills, SSBs And Fixed Deposits? How BigFundr Could Help You Earn Higher Returns",
+      "summary": "The chance to earn more depends on how much you can set aside, for how long and how much risk you’re comfortable taking. The post Already Investing In T-Bills, SSBs And Fixed...",
+      "image": "https://dollarsandsense.sg/wp-content/uploads/2026/11/BigFundr-Article-Cover-300x200.png",
+      "source": "DollarsAndSense",
+      "url": "https://dollarsandsense.sg/already-investing-in-t-bills-ssbs-and-fixed-deposits-how-bigfundr-could-help-you-earn-higher-returns/",
+      "published": "2026-11-17 06:30"
     },
     {
       "category": "Traffic",
