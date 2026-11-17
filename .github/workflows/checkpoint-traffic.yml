@@ -2,7 +2,7 @@ name: Update Checkpoint AI Traffic
 
 on:
   schedule:
-    - cron: "5,20,35,50 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:

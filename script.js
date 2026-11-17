@@ -61,9 +61,22 @@ async function loadData() {
       fetch("./data/checkpoint-traffic.json")
         .then(r => (r.ok ? r.json() : {}))
         .then(data => {
-          checkpointTraffic = data || {};
-          renderCheckpointAi();
-          renderGlance();
+          if (data && data.woodlands) {
+            checkpointTraffic = data;
+            renderCheckpointAi();
+            renderGlance();
+          }
+        })
+        .catch(() => {});
+
+      fetch("/api/checkpoint-ai")
+        .then(r => (r.ok ? r.json() : null))
+        .then(data => {
+          if (data && data.ok && data.woodlands && data.tuas) {
+            checkpointTraffic = data;
+            renderCheckpointAi();
+            renderGlance();
+          }
         })
         .catch(() => {});
     }
@@ -152,12 +165,25 @@ async function refreshCheckpointData() {
     };
 
     try {
-      const tRes = await fetch("./data/checkpoint-traffic.json", { cache: "no-store" });
-      if (tRes.ok) {
-        checkpointTraffic = (await tRes.json()) || checkpointTraffic;
-        renderCheckpointAi();
+      const liveAiRes = await fetch("/api/checkpoint-ai?refresh=1", { cache: "no-store" });
+      if (liveAiRes.ok) {
+        const liveAi = await liveAiRes.json();
+        if (liveAi && liveAi.ok && liveAi.woodlands && liveAi.tuas) {
+          checkpointTraffic = liveAi;
+          renderCheckpointAi();
+        }
+      } else {
+        throw new Error("live-ai-fallback");
       }
-    } catch {}
+    } catch {
+      try {
+        const tRes = await fetch("./data/checkpoint-traffic.json", { cache: "no-store" });
+        if (tRes.ok) {
+          checkpointTraffic = (await tRes.json()) || checkpointTraffic;
+          renderCheckpointAi();
+        }
+      } catch {}
+    }
 
     renderCheckpoints();
     updateTravelBriefing(true);
