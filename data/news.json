@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-11-17T09:51:49.488574+08:00",
+  "last_updated": "2026-11-17T11:10:47.892051+08:00",
   "headlines": [
+    {
+      "category": "Singapore",
+      "title": "Singapore’s non-oil exports surge 79.8% in October, driven by pharmaceuticals and ship structures",
+      "summary": "Singapore’s non-oil exports to the United States and China recorded triple-digit growth in October, accelerating sharply from the previous month.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--o7tyby7q--/c_crop,h_539,w_958,x_0,y_1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/singapore-port-trade-economy-container---746918_0.png?itok=aI9F8uUR",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/singapore/nodx-october-electronics-pharmaceuticals-us-china-6557476",
+      "published": "2026-11-17 10:35"
+    },
     {
       "category": "Singapore",
       "title": "CNA Now: Simba faces possible licence suspension, plus other news as it happens",
@@ -81,15 +90,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/free-wheelchair-service-beijing-airport/",
       "published": "2026-11-16 23:20"
-    },
-    {
-      "category": "Singapore",
-      "title": "S’pore is looking at age-based access to social media. Here’s what it means for teens & why it’s not simply a blanket ban.",
-      "summary": "A safer online experience for teens.",
-      "image": "https://static.mothership.sg/1/2026/11/mddi-digital-parenting-cover.png",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/age-based-access-mddi-digital-parenting/",
-      "published": "2026-11-16 23:03"
     },
     {
       "category": "Crime",
@@ -183,6 +183,24 @@
     },
     {
       "category": "IT & Gadgets",
+      "title": "Nvidia earnings to test AI boom after Huang's exit",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--WzCa9U-Y--/c_crop,h_449,w_799,x_1,y_84/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-17T012906Z_3_LYNXNPEMAG02F_RTROPTP_3_NVIDIA-AI-FINANCING.JPG?itok=uV0NM-WC",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/nvidia-earnings-test-ai-boom-after-huangs-exit-6557521",
+      "published": "2026-11-17 10:44"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Singapore graduates earn a median of S$9,250 after 35. How much should you make at your age?",
+      "summary": "Disclaimer: Unless otherwise stated, any opinions expressed below belong solely to the author. All figures sourced from the Ministry of Manpower. As we all know, the national...",
+      "image": "https://vulcanpost.com/wp-content/uploads/2026/11/image-4-1024x763.png",
+      "source": "Vulcan Post",
+      "url": "https://vulcanpost.com/914440/singapore-graduates-earn-median-of-9250-after-35/",
+      "published": "2026-11-17 08:30"
+    },
+    {
+      "category": "IT & Gadgets",
       "title": "Hacker behind 2022 GTA VI leaks pleads guilty",
       "summary": "Arion Kurtaj, a member of the Lapsus$ cybercrime group who leaked 90 videos of Grand Theft Auto VI in 2022 and hacked other big companies, pleaded guilty on Monday, according to...",
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/ULTIMATE_EDITION_01_de9b57.jpg?quality=90&strip=all&crop=0,0,100,100",
@@ -252,24 +270,6 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
       "published": "2026-11-17 04:46"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Sam Altman says he wants everyone ‘to have a lot of RAM’",
-      "summary": "OpenAI CEO Sam Altman is once again addressing his controversial comments on PC RAM purchases. \"I want to be clear, I want people to have a lot of RAM, I think everybody should...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/gettyimages-1778705436.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor",
-      "published": "2026-11-17 04:41"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Shareholders sue Intel, its CEO, and CFO after stock drops 28.6 percent in one day",
-      "summary": "The PC sales slump \"more than offset” AI boom gains, shareholders say.",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/11/GettyImages-2231573847-500x500.jpg",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/tech-policy/2026/11/shareholders-sue-intel-its-ceo-and-cfo-after-stock-drops-28-6-percent-in-one-day/",
-      "published": "2026-11-17 04:37"
     },
     {
       "category": "Finance",
@@ -345,21 +345,21 @@
     },
     {
       "category": "Finance",
-      "title": "Pakistan inflation to ease to 5% to 7% target range during 2027 financial year, says central bank",
-      "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--WwfGfziF--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-16T114924Z_1_LYNXNPEMAF132_RTROPTP_3_PAKISTAN-INFLATION.JPG?itok=1ZrvnQ68",
-      "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/pakistan-inflation-ease-5-7-target-range-during-2027-financial-year-says-central-bank-6555536",
-      "published": "2026-11-16 19:49"
-    },
-    {
-      "category": "Finance",
       "title": "6 Investments In Singapore That Provide Guaranteed Principal And Returns",
       "summary": "If guaranteed principal and returns sound good, here are 6 types of investments that you should check out. The post 6 Investments In Singapore That Provide Guaranteed Principal...",
       "image": "https://dollarsandsense.sg/wp-content/uploads/2021/02/6-investments-with-guaranteed-capital-and-returns-300x200.jpg",
       "source": "DollarsAndSense",
       "url": "https://dollarsandsense.sg/6-investments-singapore-provide-guaranteed-principal-returns/",
       "published": "2026-11-16 15:28"
+    },
+    {
+      "category": "Finance",
+      "title": "5 Questions To Ask Before Dropping Your Integrated Shield Plan Rider",
+      "summary": "Five questions to consider before cancelling your Integrated Shield Plan rider, from existing benefits to future healthcare costs. The post 5 Questions To Ask Before Dropping...",
+      "image": "https://dollarsandsense.sg/wp-content/uploads/2026/11/iStock-1390738625-1-300x200.jpg",
+      "source": "DollarsAndSense",
+      "url": "https://dollarsandsense.sg/questions-before-dropping-integrated-shield-plan-rider/",
+      "published": "2026-11-16 14:35"
     },
     {
       "category": "Transport",
