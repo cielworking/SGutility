@@ -354,7 +354,7 @@
     initMap();
     wireControls();
     try {
-      dataset = await fetch("./data/carparks.json").then((r) => r.json());
+      dataset = await fetch("./data/carparks.json?v=2", { cache: "no-store" }).then((r) => r.json());
       liveTimestamp = dataset.last_updated || "";
       renderAll();
       refreshLiveLots();

@@ -140,7 +140,7 @@
     });
 
     try {
-      const json = await fetch("./data/speed-cameras.json").then((r) => r.json());
+      const json = await fetch("./data/speed-cameras.json?v=2", { cache: "no-store" }).then((r) => r.json());
       cameras = json.cameras || [];
       const stampEl = document.getElementById("cameraSourceUpdated");
       if (stampEl && json.source_updated_at) stampEl.textContent = `Updated ${json.source_updated_at}`;
