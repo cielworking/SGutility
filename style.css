@@ -4578,6 +4578,10 @@ select.fuel-selector,
   margin-bottom: 14px;
 }
 
+:root[data-theme="dark"] .geo-map-frame .leaflet-tile-pane {
+  filter: invert(100%) hue-rotate(180deg) brightness(92%) contrast(92%);
+}
+
 .parking-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));

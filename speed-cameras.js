@@ -17,27 +17,16 @@
     return 2 * R * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   }
 
-  function tileUrlForTheme() {
-    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-    return isDark
-      ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-      : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
-  }
-
   function initMap() {
     const el = document.getElementById("speedCameraMap");
     if (!el || typeof window.L === "undefined" || map) return;
     map = L.map(el, { preferCanvas: true }).setView([1.3521, 103.8198], 12);
     canvasRenderer = L.canvas({ padding: 0.4 });
-    tileLayer = L.tileLayer(tileUrlForTheme(), {
+    tileLayer = L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
-      attribution: "&copy; OpenStreetMap &copy; CARTO",
+      attribution: "&copy; OpenStreetMap contributors",
     }).addTo(map);
     markerLayer = L.layerGroup().addTo(map);
-
-    new MutationObserver(() => {
-      if (tileLayer) tileLayer.setUrl(tileUrlForTheme());
-    }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
   }
 
   function renderChips() {

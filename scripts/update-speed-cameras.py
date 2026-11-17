@@ -37,12 +37,24 @@ def classify_road_group(location: str) -> str:
     return "Arterial"
 
 
+def normalize_location_text(text: str) -> str:
+    cleaned = re.sub(r"\s+", " ", text).strip(" |-")
+    if cleaned.isupper():
+        cleaned = cleaned.title()
+        for abbr in ("Pie", "Aye", "Cte", "Ecp", "Bke", "Sle", "Kje", "Tpe", "Mce", "L/P"):
+            cleaned = re.sub(rf"\b{re.escape(abbr)}\b", abbr.upper(), cleaned)
+    return cleaned
+
+
 def parse_cameras(html_text: str, updated_at: str | None = None) -> list[dict]:
     soup = BeautifulSoup(html_text, "html.parser")
     stamp = updated_at or date.today().isoformat()
     cameras: list[dict] = []
     seen: set[tuple[str, str, str, str]] = set()
     category = "Speed enforcement camera"
+    rowspan_loc = ""
+    rowspan_left = 0
+    pending_loc = ""
 
     for element in soup.find_all(["h2", "h3", "h4", "tr"]):
         if element.name != "tr":
@@ -55,16 +67,68 @@ def parse_cameras(html_text: str, updated_at: str | None = None) -> list[dict]:
                 category = "Average speed camera"
             elif "laser camera" in heading:
                 category = "Police speed laser camera"
+            pending_loc = ""
+            rowspan_left = 0
             continue
 
-        row = element.get_text(" ", strip=True)
-        coordinates = COORDINATE.findall(row)
-        if not coordinates:
+        cells = element.find_all(["th", "td"])
+        if not cells or all(c.name == "th" for c in cells):
             continue
-        location = COORDINATE.sub("", row).strip(" |-") or "Published camera location"
+        cell_texts = [c.get_text(" ", strip=True) for c in cells]
+        row_text = " ".join(cell_texts)
+        coordinates = COORDINATE.findall(row_text)
+
+        # Check for rowspan parent location (e.g., Tanah Merah Coast Road Average Speed Zones)
+        for c in cells:
+            rs = c.get("rowspan")
+            if rs and str(rs).isdigit() and int(rs) > 1:
+                txt = c.get_text(" ", strip=True)
+                if not COORDINATE.search(txt) and not txt.isdigit():
+                    rowspan_loc = txt
+                    rowspan_left = int(rs)
+                    break
+
+        if not coordinates:
+            # Handle header/descriptor row right above coordinate pairs (e.g., MCE Camera A / Camera B)
+            desc_parts = [t for t in cell_texts if t and not t.isdigit() and t.lower() not in {"no.", "location", "coordinates", "gps coordinates", "camera a", "camera b"}]
+            if desc_parts:
+                pending_loc = max(desc_parts, key=len)
+            continue
+
+        # Extract human road name cleanly from non-coordinate cells
+        location = ""
+        sub_index = ""
+        if rowspan_left > 0 and rowspan_loc:
+            location = rowspan_loc
+            for t in cell_texts:
+                if t.isdigit():
+                    sub_index = t
+                    break
+            rowspan_left -= 1
+        else:
+            candidates = []
+            for t in cell_texts:
+                stripped = COORDINATE.sub("", t).strip(" |-")
+                if not stripped or stripped.isdigit():
+                    continue
+                candidates.append(stripped)
+            if candidates:
+                location = max(candidates, key=len)
+            elif pending_loc:
+                location = pending_loc
+                pending_loc = ""
+
+        location = normalize_location_text(location or "Published camera location")
         road_group = classify_road_group(location)
-        for latitude, longitude in coordinates:
-            key = (category, location, latitude, longitude)
+
+        for idx, (latitude, longitude) in enumerate(coordinates, start=1):
+            label = location
+            if sub_index:
+                label = f"{location} (Zone {sub_index})"
+            elif len(coordinates) > 1:
+                label = f"{location} (Camera {'AB'[idx - 1] if idx <= 2 else idx})"
+
+            key = (category, label, latitude, longitude)
             if key in seen:
                 continue
             seen.add(key)
@@ -73,7 +137,7 @@ def parse_cameras(html_text: str, updated_at: str | None = None) -> list[dict]:
                     "id": f"{category.lower().replace(' ', '-')}-{len(cameras) + 1}",
                     "category": category,
                     "road_group": road_group,
-                    "location": location,
+                    "location": label,
                     "latitude": float(latitude),
                     "longitude": float(longitude),
                     "source": SOURCE,

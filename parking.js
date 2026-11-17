@@ -26,10 +26,7 @@
   }
 
   function tileUrlForTheme() {
-    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-    return isDark
-      ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-      : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
+    return "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
   }
 
   function initMap() {
@@ -39,13 +36,9 @@
     canvasRenderer = L.canvas({ padding: 0.4 });
     tileLayer = L.tileLayer(tileUrlForTheme(), {
       maxZoom: 19,
-      attribution: "&copy; OpenStreetMap &copy; CARTO",
+      attribution: "&copy; OpenStreetMap contributors",
     }).addTo(map);
     markerLayer = L.layerGroup().addTo(map);
-
-    new MutationObserver(() => {
-      if (tileLayer) tileLayer.setUrl(tileUrlForTheme());
-    }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
   }
 
   function estimateCost(cp) {
