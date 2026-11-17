@@ -50,8 +50,8 @@
   },
   "tuas": {
     "status": "Moderate",
-    "towards_jb_status": "Moderate",
-    "towards_sg_status": "Moderate",
+    "towards_jb_status": "Smooth",
+    "towards_sg_status": "Smooth",
     "total_vehicles": 29,
     "weighted_load": 38.5,
     "towards_jb": 13,

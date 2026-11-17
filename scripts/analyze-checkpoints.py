@@ -272,8 +272,8 @@ def analyze_checkpoint_group(sess, cameras: list[dict]) -> dict:
     weighted_total = totals["car"] + 0.5 * totals["motorcycle"] + 2.0 * (totals["bus"] + totals["truck"])
     return {
         "status": load_level(weighted_total, smooth_max=25.0, moderate_max=45.0),
-        "towards_jb_status": load_level(weighted_jb, smooth_max=14.0, moderate_max=26.0),
-        "towards_sg_status": load_level(weighted_sg, smooth_max=14.0, moderate_max=26.0),
+        "towards_jb_status": load_level(weighted_jb, smooth_max=20.0, moderate_max=36.0),
+        "towards_sg_status": load_level(weighted_sg, smooth_max=20.0, moderate_max=36.0),
         "total_vehicles": sum(totals.values()),
         "weighted_load": round(weighted_total, 1),
         "towards_jb": directions["towards_jb"],
