@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-11-17T18:21:03.670837+08:00",
+  "last_updated": "2026-11-17T18:47:45.293766+08:00",
   "headlines": [
+    {
+      "category": "Singapore",
+      "title": "M'sian matriarch dies at 104, obituary lists 51 great-grandchildren & 39 family members as doctors",
+      "summary": "More than 120 family members across several generations flew back to Malaysia to pay their respects.",
+      "image": "https://static.mothership.sg/1/2026/11/muar.jpg",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/malaysian-matriarch-104-leaves-behind-61-doctors/",
+      "published": "2026-11-17 20:17"
+    },
     {
       "category": "Singapore",
       "title": "Fewer social media features for teens, S'pore plans tiered access by law: Ong Ye Kung",
@@ -48,6 +57,15 @@
     },
     {
       "category": "Singapore",
+      "title": "Singapore to push for single ASEAN market, closer energy and digital links as 2027 chair: PM Wong",
+      "summary": "Prime Minister Lawrence Wong received the ceremonial gavel from the Philippines at the close of the 49th summit, and also reviewed the bloc’s progress over the past year.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--Qcc4rTXS--/c_crop,h_1026,w_1825,x_41,y_1/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/17/screenshot-2026-11-17-181920.png?itok=tY9oGTdG",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/singapore/asean-chairmanship-lawrence-wong-philippines-6556511",
+      "published": "2026-11-17 18:29"
+    },
+    {
+      "category": "Singapore",
       "title": "PM Wong to meet Chinese President Xi Jinping, Premier Li Qiang after attending APEC meeting in China",
       "summary": "The Prime Minister will attend the Asia-Pacific Economic Cooperation (APEC) Economic Leaders’ Meeting in Shenzhen from Wednesday (Nov 18) before travelling to Beijing.",
       "image": "https://dam.mediacorp.sg/image/upload/s--x1L0hj6x--/c_crop,h_562,w_1000,x_0,y_90/fl_relative,g_south_east,l_one-cms:core:watermark:ap_data-1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/china_singapore_41627.jpg?itok=2A2I_8Oq",
@@ -72,24 +90,6 @@
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/business/us-megaspeed-probe-jensen-huang-nvidia-2024-6557971",
       "published": "2026-11-17 13:56"
-    },
-    {
-      "category": "Singapore",
-      "title": "ASEAN families undergoing major demographic change, but ties remain strong: MSF-coordinated report",
-      "summary": "Coordinated by Singapore’s Ministry of Social and Family Development, the first-ever report on ASEAN families found that people across the region are marrying later, having fewer...",
-      "image": "https://dam.mediacorp.sg/image/upload/s--ITaMB7Do--/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/17/istock-993354548.jpg?itok=Owk8kAnF",
-      "source": "CNA Singapore",
-      "url": "https://www.channelnewsasia.com/singapore/asean-families-demographic-change-msf-6557601",
-      "published": "2026-11-17 12:38"
-    },
-    {
-      "category": "Singapore",
-      "title": "PSLE results to be released on Nov 24",
-      "summary": "Secondary 1 school choices and options can be submitted through the online portal from 11.30am on Nov 24 to 4.30pm on Nov 30.",
-      "image": "https://dam.mediacorp.sg/image/upload/s--Lsjf_Wle--/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/tdy-migration/20190805_psle_raj_0.jpg?itok=Z3QfbPjZ",
-      "source": "CNA Singapore",
-      "url": "https://www.channelnewsasia.com/singapore/psle-results-release-nov-24-moe-seab-6557596",
-      "published": "2026-11-17 11:33"
     },
     {
       "category": "Crime",
@@ -192,6 +192,24 @@
     },
     {
       "category": "IT & Gadgets",
+      "title": "AI advances coincide with sharp rise in cyber incidents, Marsh data shows",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--1mlZm6tP--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-17T102626Z_2_LYNXNPEMAG0TM_RTROPTP_3_AI-DATA-CENTER-FUNDS.JPG?itok=n23O7755",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/ai-advances-coincide-sharp-rise-in-cyber-incidents-marsh-data-shows-6558721",
+      "published": "2026-11-17 18:26"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Nvidia board forms committee for national security and export control oversight",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--py5CVqPX--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-17T102208Z_1_LYNXNPEMAG0TF_RTROPTP_3_NVIDIA-AI-FINANCING.JPG?itok=pW5LI06B",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/nvidia-board-forms-committee-national-security-and-export-control-oversight-6558711",
+      "published": "2026-11-17 18:22"
+    },
+    {
+      "category": "IT & Gadgets",
       "title": "India says Xiaomi, Flextronics hid royalty deals in tariff fight",
       "summary": "",
       "image": "https://dam.mediacorp.sg/image/upload/s--bz7u6KfH--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-17T101045Z_1_LYNXNPEMAG0SD_RTROPTP_3_XIAOMI-INDIA.JPG?itok=VYkM6rYr",
@@ -243,24 +261,6 @@
       "source": "SoyaCincau",
       "url": "https://soyacincau.com/2026/11/17/public-bank-now-supports-apple-pay/",
       "published": "2026-11-17 15:10"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Snap Insight: New US chip rules put pressure on Southeast Asian companies to choose sides",
-      "summary": "Companies in Singapore and Malaysia have tried to be part of both the US and Chinese tech ecosystems. That balancing act is getting more difficult, say Steven Okun and Noemie...",
-      "image": "https://dam.mediacorp.sg/image/upload/s--goq9jWAU--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2025-11-05T090709Z_2_LYNXMPELA40DL_RTROPTP_3_CHINA-CHIPS.JPG?itok=So96F-Va",
-      "source": "CNA Singapore",
-      "url": "https://www.channelnewsasia.com/commentary/us-china-chips-singapore-malaysia-licence-nvidia-rules-snap-insight-6558086",
-      "published": "2026-11-17 14:59"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Singapore seeks to ensure 'trusted access' to AI infrastructure under US restrictions: Josephine Teo",
-      "summary": "The new rules require companies in Singapore and four other countries to apply for US export licences covering advanced computing chips.",
-      "image": "https://dam.mediacorp.sg/image/upload/s--yJxnQDRj--/c_crop,h_1125,w_2000,x_0,y_208/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/17/minister_josephine_teo_speaking_at_semafor_silicon_valley_the_world_on_16_nov_pst.jpg?itok=1FEx86o3",
-      "source": "CNA Singapore",
-      "url": "https://www.channelnewsasia.com/singapore/us-ai-infrastructure-chips-restrictions-josephine-teo-6557771",
-      "published": "2026-11-17 14:35"
     },
     {
       "category": "Finance",
