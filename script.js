@@ -58,27 +58,26 @@ async function loadData() {
     }
 
     if (needsCheckpoint || document.querySelector("[data-glance]") || document.querySelector("[data-checkpoint-ai]") || document.querySelector("[data-travel-advisor]")) {
+      const applyTrafficIfFresher = (candidate) => {
+        if (!candidate || !candidate.woodlands || !candidate.tuas) return;
+        const nextTs = candidate.last_updated ? new Date(candidate.last_updated).getTime() : 0;
+        const currTs = checkpointTraffic?.last_updated ? new Date(checkpointTraffic.last_updated).getTime() : 0;
+        if (!checkpointTraffic || nextTs >= currTs) {
+          checkpointTraffic = candidate;
+          renderCheckpointAi();
+          renderGlance();
+        }
+      };
+
       fetch("./data/checkpoint-traffic.json", { cache: "no-store" })
         .then(r => (r.ok ? r.json() : {}))
-        .then(data => {
-          if (data && data.woodlands) {
-            checkpointTraffic = data;
-            renderCheckpointAi();
-            renderGlance();
-          }
-          const ageMs = data?.last_updated ? (Date.now() - new Date(data.last_updated).getTime()) : Infinity;
-          if (!Number.isFinite(ageMs) || ageMs > 60 * 60 * 1000) {
-            fetch("/api/checkpoint-ai")
-              .then(r => (r.ok ? r.json() : null))
-              .then(live => {
-                if (live && live.ok && live.woodlands && live.tuas) {
-                  checkpointTraffic = live;
-                  renderCheckpointAi();
-                  renderGlance();
-                }
-              })
-              .catch(() => {});
-          }
+        .then(applyTrafficIfFresher)
+        .catch(() => {});
+
+      fetch("/api/checkpoint-ai", { cache: "no-store" })
+        .then(r => (r.ok ? r.json() : null))
+        .then(live => {
+          if (live && live.ok) applyTrafficIfFresher(live);
         })
         .catch(() => {});
     }
@@ -167,21 +166,17 @@ async function refreshCheckpointData() {
     };
 
     try {
-      const tRes = await fetch("./data/checkpoint-traffic.json", { cache: "no-store" });
-      const yolox = tRes.ok ? await tRes.json() : null;
-      const ageMs = yolox?.last_updated ? (Date.now() - new Date(yolox.last_updated).getTime()) : Infinity;
-      if (yolox && yolox.woodlands && Number.isFinite(ageMs) && ageMs <= 60 * 60 * 1000) {
-        checkpointTraffic = yolox;
-        renderCheckpointAi();
+      const liveAiRes = await fetch("/api/checkpoint-ai?refresh=1", { cache: "no-store" });
+      if (liveAiRes.ok) {
+        const liveAi = await liveAiRes.json();
+        if (liveAi && liveAi.ok && liveAi.woodlands && liveAi.tuas) {
+          checkpointTraffic = liveAi;
+          renderCheckpointAi();
+        }
       } else {
-        const liveAiRes = await fetch("/api/checkpoint-ai?refresh=1", { cache: "no-store" });
-        if (liveAiRes.ok) {
-          const liveAi = await liveAiRes.json();
-          if (liveAi && liveAi.ok && liveAi.woodlands && liveAi.tuas) {
-            checkpointTraffic = liveAi;
-            renderCheckpointAi();
-          }
-        } else if (yolox && yolox.woodlands) {
+        const tRes = await fetch("./data/checkpoint-traffic.json", { cache: "no-store" });
+        const yolox = tRes.ok ? await tRes.json() : null;
+        if (yolox && yolox.woodlands) {
           checkpointTraffic = yolox;
           renderCheckpointAi();
         }
@@ -1713,7 +1708,7 @@ function renderCheckpointAi() {
         <span><strong>Towards SG:</strong> ${Number(loc.towards_sg || 0)} (${escapeHtml(loc.towards_sg_status || "—")})</span>
         <span><strong>Mix:</strong> ${Number(counts.car || 0)} cars · ${Number(counts.motorcycle || 0)} bikes · ${heavy} buses/trucks</span>
       </div>
-      <p class="ai-traffic-disclaimer">${key === "tuas" ? "Automated AI count: Cam 4713 (Towards JB) + Cam 4703 (Towards SG); indoor immigration hall queues may differ." : "Automated YOLOX vehicle count on public LTA road cameras; indoor immigration hall queues may differ."}</p>
+      <p class="ai-traffic-disclaimer">${key === "tuas" ? "Live AI count: Cam 4713 (JOHOR queue) + Cam 4703 (JB ramp/bikes & SG lanes); indoor immigration hall queues may differ." : "Live AI vehicle count on public LTA road cameras; indoor immigration hall queues may differ."}</p>
     `;
   });
   renderTravelAdvisor();

@@ -48,15 +48,17 @@ CAMERA_ZONES = {
     "4703": {
         "name": "Tuas Second Link",
         "zones": {
-            # Above/right of central divider: traffic heading into Singapore (JB-bound handled by 4713)
+            # Above/right of central divider: traffic heading into Singapore
             "towards_sg": [(185, 0), (1200, 0), (1920, 320), (1920, 650), (1320, 420), (700, 175)],
+            # Lower/left viaduct & curved ramp (hugging deck, excluding sea/piers): bikes & vehicles towards JB
+            "towards_jb": [(0, 0), (185, 0), (700, 175), (1320, 420), (1760, 580), (1720, 880), (1160, 950), (1050, 740), (780, 720), (200, 880), (0, 880), (0, 680), (650, 480), (680, 350), (0, 130)],
         },
     },
     "4713": {
         "name": "Tuas Checkpoint (Outbound to Johor)",
         "zones": {
             # Right-hand viaduct heading towards Johor (SG-bound handled by 4703)
-            "towards_jb": [(1220, 40), (1760, 40), (1920, 480), (1920, 720), (1240, 560)],
+            "towards_jb": [(1180, 20), (1860, 20), (1920, 480), (1920, 740), (1200, 580)],
         },
     },
     "4712": {

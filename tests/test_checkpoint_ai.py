@@ -37,9 +37,9 @@ class CheckpointAiTests(unittest.TestCase):
 
     def test_direction_zones_for_tuas_4703(self):
         mod = load_analyzer()
-        # 4703 covers towards_sg (upper-right carriageway); lower viaduct ignored (4713 covers towards_jb)
+        # 4703 covers towards_sg (upper-right carriageway) and towards_jb (lower curved viaduct & bike ramp); sea is ignored
         self.assertEqual(mod.classify_direction("4703", 1250, 220, 1920, 1069), "towards_sg")
-        self.assertEqual(mod.classify_direction("4703", 820, 450, 1920, 1069), "ignored")
+        self.assertEqual(mod.classify_direction("4703", 820, 450, 1920, 1069), "towards_jb")
         self.assertEqual(mod.classify_direction("4703", 200, 400, 1920, 1069), "ignored")
 
     def test_direction_zones_for_tuas_4713(self):
