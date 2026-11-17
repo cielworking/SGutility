@@ -61,7 +61,7 @@ def primary_nav(current):
         current_attr = ' aria-current="page"' if current == key else ""
         return f'<a href="{href}"{current_attr}>{label}</a>'
 
-    travel = ' aria-current="true"' if current in {"travel", "woodlands", "tuas"} else ""
+    travel = ' aria-current="true"' if current in {"travel", "woodlands", "tuas", "speed-cameras"} else ""
     weather = ' aria-current="true"' if current in {"rain", "rain-sg", "rain-my", "haze", "haze-my"} else ""
     housing = ' aria-current="true"' if current in {"housing", "bto", "housing-qa"} else ""
     more = ' aria-current="true"' if current in {"guides", "4d", "toto", "about", "contact"} else ""
@@ -71,6 +71,7 @@ def primary_nav(current):
         f'{item("/travel.html", "Travel &amp; Customs Hub", "travel")}'
         f'{item("/woodlands-checkpoint.html", "Woodlands Checkpoint", "woodlands")}'
         f'{item("/tuas-checkpoint.html", "Tuas Checkpoint", "tuas")}'
+        f'{item("/speed-cameras.html", "Speed Camera Map", "speed-cameras")}'
         f'{item("/guides/woodlands-vs-tuas-checkpoint.html", "Woodlands vs Tuas", "guides")}'
         "</div></details>"
         f'<details class="nav-menu"><summary aria-expanded="false"{weather}>Weather</summary><div class="nav-panel">'
@@ -88,7 +89,9 @@ def primary_nav(current):
         "</div></details>"
         f'{item("/singapore-petrol-prices.html", "Petrol", "petrol")}'
         f'{item("/latest-coe-prices.html", "COE", "coe")}'
+        f'{item("/parking.html", "SG Parking", "parking")}'
         f'<details class="nav-menu nav-more"><summary aria-expanded="false"{more}>More</summary><div class="nav-panel">'
+        f'{item("/speed-cameras.html", "Speed Camera Map", "speed-cameras")}'
         f'{item("/guides/", "All Guides", "guides")}'
         f'{item("/4d-results.html", "4D Results", "4d")}{item("/toto-results.html", "TOTO Results", "toto")}'
         f'{item("/about.html", "About", "about")}{item("/contact.html", "Contact", "contact")}'
@@ -126,6 +129,7 @@ def mobile_tabbar(current):
         return f'<a class="tabbar-item" href="{href}"{cur}>{svg.format(TAB_ICONS[key])}<span>{label}</span></a>'
 
     links = (
+        '<a href="/parking.html">SG Parking</a><a href="/speed-cameras.html">Speed Cameras</a>'
         '<a href="/singapore-petrol-prices.html">Petrol prices</a><a href="/latest-coe-prices.html">COE prices</a>'
         '<a href="/bto-launches.html">BTO launches</a><a href="/singapore/haze/">Haze &amp; PSI</a>'
         '<a href="/woodlands-checkpoint.html">Checkpoints</a><a href="/guides/">All Guides</a>'
@@ -323,7 +327,7 @@ def main():
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(doc_title)} | SG Alerts</title><meta name="description" content="{esc(meta_desc)}"><link rel="canonical" href="https://sgalerts.com{path}">
 <meta property="og:title" content="{esc(doc_title)} | SG Alerts"><meta property="og:description" content="{esc(meta_desc)}"><meta property="og:url" content="https://sgalerts.com{path}"><meta property="og:type" content="website"><meta property="og:image" content="https://sgalerts.com/assets/og-share.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(doc_title)} | SG Alerts"><meta name="twitter:description" content="{esc(meta_desc)}"><meta name="twitter:image" content="https://sgalerts.com/assets/og-share.png">
-<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0c2554" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)"><link rel="manifest" href="/site.webmanifest">{head_extra}{THEME_INIT}<link rel="stylesheet" href="/style.css?v=28"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script><script src="/analytics.js"></script><script src="/theme.js?v=1" defer></script>
+<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0c2554" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)"><link rel="manifest" href="/site.webmanifest">{head_extra}{THEME_INIT}<link rel="stylesheet" href="/style.css?v=29"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script><script src="/analytics.js"></script><script src="/theme.js?v=1" defer></script>
 <script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=5" defer></script><script src="/script.js?v=14" defer></script></head>
 <body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a>{nav}{THEME_CONTROL}</div></header>
 <main id="main-content" class="content-page weather-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">SG Alerts</a> / {esc(title)}</nav><section class="page-hero"><div><p class="eyebrow">{country.title()} · Official data</p><h1>{esc(title)}</h1><p>{esc(desc)}</p></div></section>

@@ -682,6 +682,8 @@ def render_sitemap(dates, preserved=None):
         ("https://sgalerts.com/petrol-discount-calculator.html", dates.get("petrol")),
         ("https://sgalerts.com/latest-coe-prices.html", dates.get("coe")),
         ("https://sgalerts.com/coe-calculator.html", dates.get("coe")),
+        ("https://sgalerts.com/parking.html", dates.get("home")),
+        ("https://sgalerts.com/speed-cameras.html", dates.get("home")),
         ("https://sgalerts.com/4d-results.html", dates.get("pools")),
         ("https://sgalerts.com/toto-results.html", dates.get("pools")),
         ("https://sgalerts.com/weather/", dates.get("weather")),

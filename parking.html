@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SG Parking: Live Motorcycle &amp; Car Lots, Free Sunday Parking &amp; Rates | SG Alerts</title>
+  <meta name="description" content="Find live Singapore carpark availability, free Sunday &amp; PH parking, motorcycle bays, sheltered MSCPs, gantry heights and HDB parking rate estimates on SG Alerts.">
+  <link rel="canonical" href="https://sgalerts.com/parking.html">
+  <meta property="og:title" content="SG Parking: Live Motorcycle &amp; Car Lots, Free Sunday Parking &amp; Rates | SG Alerts">
+  <meta property="og:description" content="Compare Singapore motorcycle and car parking with live HDB/LTA lot counts, interactive map, free Sunday &amp; PH filter, and rate calculator.">
+  <meta property="og:url" content="https://sgalerts.com/parking.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SG Alerts">
+  <meta property="og:image" content="https://sgalerts.com/assets/og-share.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SG Parking: Live Motorcycle &amp; Car Lots | SG Alerts">
+  <meta name="twitter:description" content="Interactive Singapore parking finder with separate Motorcycle &amp; Car tabs, live lots, free Sun/PH filter, and rate estimator.">
+  <meta name="twitter:image" content="https://sgalerts.com/assets/og-share.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0c2554" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="/site.webmanifest">
+  <script>
+(function(){try{var m=localStorage.getItem("sga-theme-mode");if(m!=="light"&&m!=="dark"&&m!=="system")m="system";var d=m==="dark"||(m==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches);var r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-mode",m);}catch(e){var d=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",d?"dark":"light");document.documentElement.setAttribute("data-theme-mode","system");}})();
+</script>
+  <link rel="stylesheet" href="/style.css?v=29">
+  <link rel="stylesheet" href="/assets/leaflet/leaflet.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
+  <script src="/analytics.js"></script>
+  <script src="/theme.js?v=1" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "SG Parking: Live Motorcycle & Car Lots, Free Sunday Parking & Rates",
+        "url": "https://sgalerts.com/parking.html",
+        "description": "Find live Singapore carpark availability, free Sunday & PH parking, motorcycle bays, sheltered MSCPs and rate estimates on SG Alerts.",
+        "isPartOf": { "@type": "WebSite", "name": "SG Alerts", "url": "https://sgalerts.com/" },
+        "inLanguage": "en-SG"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "SG Alerts", "item": "https://sgalerts.com/" },
+          { "@type": "ListItem", "position": 2, "name": "SG Parking", "item": "https://sgalerts.com/parking.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much is motorcycle parking at HDB carparks in Singapore?",
+            "acceptedAnswer": { "@type": "Answer", "text": "HDB motorcycle parking is generally $0.65 per daytime or overnight session, and many HDB carparks offer free Sunday and Public Holiday parking from 7:00 am to 10:30 pm." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which carparks have live availability numbers?",
+            "acceptedAnswer": { "@type": "Answer", "text": "SG Alerts integrates the official LTA and HDB Carpark Availability API covering roughly 2,000 live car feeds and over 200 live motorcycle lot feeds across Singapore." }
+          },
+          {
+            "@type": "Question",
+            "name": "What are standard HDB car parking rates?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Standard HDB carparks outside the Central Area cost $0.60 per half-hour, while Central Area carparks cost $1.20 per half-hour on Mondays to Saturdays (7:00 am to 5:00 pm). Most carparks cap overnight parking (10:30 pm to 7:00 am) at $5.00." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to SG Parking</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="SG Alerts home">
+        <span class="brand-mark" aria-hidden="true"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span>
+        <span>
+          <strong>SG Alerts</strong>
+          <small>Singapore news &amp; daily utilities</small>
+        </span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary"><details class="nav-menu"><summary aria-expanded="false">Travel</summary><div class="nav-panel"><a href="/travel.html">Travel &amp; Customs Hub</a><a href="/woodlands-checkpoint.html">Woodlands Checkpoint</a><a href="/tuas-checkpoint.html">Tuas Checkpoint</a><a href="/speed-cameras.html">Speed Camera Map</a><a href="/guides/woodlands-vs-tuas-checkpoint.html">Woodlands vs Tuas</a></div></details><details class="nav-menu"><summary aria-expanded="false">Weather</summary><div class="nav-panel"><a href="/weather/">Rain Radar &amp; Outlook</a><a href="/singapore/rain-forecast/">SG Rain Forecast</a><a href="/malaysia/rain-forecast/">MY Rain Forecast</a><a href="/singapore/haze/">SG Haze &amp; PSI</a><a href="/malaysia/haze/">MY Haze &amp; API</a></div></details><details class="nav-menu"><summary aria-expanded="false">Housing</summary><div class="nav-panel"><a href="/housing.html">Housing Hub (BTO &amp; Resale)</a><a href="/bto-launches.html">Upcoming BTO Launches</a><a href="/bto-mortgage-calculator.html">Mortgage &amp; MSR Calc</a><a href="/housing.html#housing-qa">Resale &amp; BTO Q&amp;A</a></div></details><a href="/singapore-petrol-prices.html">Petrol</a><a href="/latest-coe-prices.html">COE</a><a href="/parking.html" aria-current="page">SG Parking</a><details class="nav-menu nav-more"><summary aria-expanded="false">More</summary><div class="nav-panel"><a href="/speed-cameras.html">Speed Camera Map</a><a href="/guides/">All Guides</a><a href="/4d-results.html">4D Results</a><a href="/toto-results.html">TOTO Results</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></details></nav>
+      <div class="theme-control" role="group" aria-label="Color theme">
+        <button type="button" class="theme-choice" data-theme-choice="system" aria-pressed="true" aria-label="System theme" title="System theme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></button>
+        <button type="button" class="theme-choice" data-theme-choice="light" aria-pressed="false" aria-label="Light theme" title="Light theme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg></button>
+        <button type="button" class="theme-choice" data-theme-choice="dark" aria-pressed="false" aria-label="Dark theme" title="Dark theme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="content-page">
+    <section class="page-hero specialist-hero">
+      <div class="page-hero-main">
+        <span class="page-hero-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></svg></span>
+        <div>
+          <p class="eyebrow">Live Singapore Parking Finder</p>
+          <h1>SG Parking — Motorcycles &amp; Cars</h1>
+          <p>Search 2,200+ islandwide carparks with live LTA lot counts, free Sunday &amp; PH filter, sheltered bays, and quick cost estimates.</p>
+        </div>
+      </div>
+      <div class="specialist-hero-actions">
+        <a class="detail-link" href="/speed-cameras.html">Speed Camera Map →</a>
+        <a class="detail-link" href="/singapore-petrol-prices.html">Petrol Prices →</a>
+      </div>
+    </section>
+
+    <div class="specialist-layout">
+      <section class="surface-card">
+        <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;">
+          <div class="parking-tabs" role="tablist" aria-label="Vehicle mode">
+            <button type="button" class="parking-tab" role="tab" data-mode="motorcycle" aria-selected="true">Motorcycles</button>
+            <button type="button" class="parking-tab" role="tab" data-mode="car" aria-selected="false">Cars</button>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <button type="button" id="parkingGeoBtn" class="button-secondary">Near Me</button>
+            <button type="button" id="parkingRefreshBtn" class="button-secondary">Refresh Live Lots</button>
+          </div>
+        </div>
+
+        <div id="parkingSummary" class="parking-summary-grid"></div>
+
+        <div class="parking-toolbar">
+          <div class="parking-search-row">
+            <input id="parkingSearch" class="parking-search-input" type="search" placeholder="Search area, street, block or code (e.g. Orchard, Jurong, Tampines, ACB)..." aria-label="Search Singapore carparks">
+            <select id="parkingDayType" class="parking-select" aria-label="Day type for rate estimate">
+              <option value="weekday">Mon–Sat Rate</option>
+              <option value="sun_ph">Sun &amp; Public Holiday</option>
+            </select>
+            <select id="parkingDuration" class="parking-select" aria-label="Stay duration for rate estimate">
+              <option value="1">1 hr stay</option>
+              <option value="2" selected>2 hr stay</option>
+              <option value="4">4 hr stay</option>
+              <option value="10">Overnight (10:30pm–7am)</option>
+            </select>
+          </div>
+          <div id="parkingFilterChips" class="parking-filter-chips"></div>
+        </div>
+
+        <div id="parkingMap" class="geo-map-frame" aria-label="Interactive Singapore parking map"></div>
+        <p id="parkingResultNote" class="section-note">Loading carparks and live availability...</p>
+        <div id="parkingResults" class="parking-cards-grid"></div>
+      </section>
+
+      <section class="surface-card seo-guide">
+        <p class="eyebrow">Singapore Parking Rules &amp; Savings</p>
+        <h2>How SG Parking Estimates Work</h2>
+        <p>Live lot counts come straight from <strong>LTA &amp; HDB Carpark Availability (data.gov.sg)</strong>, covering car (<code>C</code>) and motorcycle (<code>Y</code>) bays islandwide, combined with HDB carpark gantry heights, night-parking eligibility, and free Sunday/Public Holiday rules.</p>
+        <ul>
+          <li><strong>Motorcycles:</strong> HDB bike bays cost <strong>$0.65 per session</strong> (day 7am–10:30pm or overnight 10:30pm–7am), and 1,600+ carparks offer <strong>free Sunday &amp; PH parking</strong>.</li>
+          <li><strong>Cars:</strong> Standard HDB carparks charge <strong>$0.60 / 30 min</strong> (or $1.20 / 30 min in Central Area Mon–Sat 7am–5pm) with a <strong>$5 overnight cap</strong> where night parking is enabled.</li>
+          <li><strong>Road Safety:</strong> Check the <a href="/speed-cameras.html">Singapore Speed Enforcement Camera Map</a> before your ride or drive.</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>SG Alerts</strong><span>Independent Singapore information dashboard</span></div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/guides/">Guides</a>
+        <a href="/4d-results.html">4D Results</a><a href="/toto-results.html">TOTO Results</a>
+        <a href="/privacy-policy.html">Privacy</a><a href="/terms.html">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="/parking.js?v=1" defer></script>
+  <nav class="mobile-tabbar" aria-label="Mobile quick navigation"><a class="tabbar-item" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></a><a class="tabbar-item" href="/travel.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg><span>Travel</span></a><a class="tabbar-item" href="/housing.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/></svg><span>Housing</span></a><a class="tabbar-item" href="/weather/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg><span>Weather</span></a><details class="tabbar-more"><summary class="tabbar-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg><span>More</span></summary><div class="tabbar-sheet" id="tabbar-more-sheet"><p class="tabbar-sheet-title">More on SG Alerts</p><div class="tabbar-sheet-links"><a href="/parking.html">SG Parking</a><a href="/speed-cameras.html">Speed Cameras</a><a href="/singapore-petrol-prices.html">Petrol prices</a><a href="/latest-coe-prices.html">COE prices</a><a href="/bto-launches.html">BTO launches</a><a href="/singapore/haze/">Haze &amp; PSI</a><a href="/woodlands-checkpoint.html">Checkpoints</a><a href="/guides/">All Guides</a><a href="/4d-results.html">4D results</a><a href="/toto-results.html">TOTO results</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></div></details></nav>
+</body>
+</html>

@@ -60,6 +60,8 @@ jobs:
           python scripts/update-checkpoints.py
           python scripts/analyze-checkpoints.py
           python scripts/update-petrol-discounts.py
+          python scripts/update-speed-cameras.py
+          python scripts/update-parking.py
           python scripts/render-static-pages.py
 
       - name: Commit updated data

@@ -4439,3 +4439,267 @@ select.fuel-selector,
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22);
   z-index: 4;
 }
+
+
+/* SG Parking & Speed Camera Map */
+.parking-tabs {
+  display: inline-flex;
+  gap: 8px;
+  padding: 5px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface-alt, rgba(12, 37, 84, 0.04));
+  margin-bottom: 14px;
+}
+
+.parking-tab {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.92rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.parking-tab[aria-selected="true"] {
+  background: var(--brand);
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .parking-tab[aria-selected="true"] {
+  color: #07101f;
+}
+
+.parking-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.parking-stat {
+  border: 1px solid var(--border);
+  background: var(--surface-alt, rgba(12, 37, 84, 0.03));
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.parking-stat small {
+  display: block;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.parking-stat strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.parking-toolbar {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.parking-search-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.parking-search-input {
+  flex: 1 1 240px;
+  min-height: 42px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.94rem;
+}
+
+.parking-select {
+  min-height: 42px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.88rem;
+}
+
+.parking-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.filter-pill {
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-pill[aria-pressed="true"] {
+  background: var(--brand-soft);
+  border-color: var(--brand);
+  color: var(--brand-strong);
+}
+
+.geo-map-frame {
+  width: 100%;
+  height: 390px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: var(--surface-alt, #0d1626);
+  margin-bottom: 14px;
+}
+
+.parking-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 12px;
+}
+
+.parking-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  background: var(--surface);
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+
+.parking-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.parking-card-title {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.3;
+}
+
+.parking-code {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+
+.lot-pill {
+  flex: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.lot-pill.is-plenty {
+  background: rgba(16, 185, 129, 0.16);
+  color: #047857;
+}
+
+.lot-pill.is-limited {
+  background: rgba(245, 158, 11, 0.18);
+  color: #b45309;
+}
+
+.lot-pill.is-full {
+  background: rgba(239, 68, 68, 0.16);
+  color: #b91c1c;
+}
+
+.lot-pill.is-ref {
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+}
+
+:root[data-theme="dark"] .lot-pill.is-plenty { color: #34d399; }
+:root[data-theme="dark"] .lot-pill.is-limited { color: #fbbf24; }
+:root[data-theme="dark"] .lot-pill.is-full { color: #f87171; }
+
+.parking-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.parking-tag {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.parking-tag.is-free {
+  border-color: rgba(16, 185, 129, 0.45);
+  background: rgba(16, 185, 129, 0.12);
+  color: #047857;
+  font-weight: 700;
+}
+
+:root[data-theme="dark"] .parking-tag.is-free {
+  color: #34d399;
+}
+
+.parking-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+  font-size: 0.82rem;
+}
+
+.parking-card-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.parking-card-actions button {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: var(--brand-strong);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .geo-map-frame {
+    height: 310px;
+  }
+}
