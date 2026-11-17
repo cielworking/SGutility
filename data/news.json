@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-11-17T11:10:47.892051+08:00",
+  "last_updated": "2026-11-17T11:37:08.878473+08:00",
   "headlines": [
+    {
+      "category": "Singapore",
+      "title": "PSLE results to be released on Nov 24",
+      "summary": "Secondary 1 school choices and options can be submitted through the online portal from 11.30am on Nov 24 to 4.30pm on Nov 30.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--Lsjf_Wle--/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/tdy-migration/20190805_psle_raj_0.jpg?itok=Z3QfbPjZ",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/singapore/psle-results-release-nov-24-moe-seab-6557596",
+      "published": "2026-11-17 11:33"
+    },
     {
       "category": "Singapore",
       "title": "Singapore’s non-oil exports surge 79.8% in October, driven by pharmaceuticals and ship structures",
@@ -57,39 +66,30 @@
     },
     {
       "category": "Singapore",
+      "title": "Only about 1 in 6 ComLink+ families have enough savings to cover 3 months of expenses: MSF",
+      "summary": "The report also provided updates on the progress of ComLink+ families towards achieving stability, self-reliance and social mobility.",
+      "image": "https://static.mothership.sg/1/2026/11/MSF.jpg",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/lower-income-household-savings-msf/",
+      "published": "2026-11-17 02:00"
+    },
+    {
+      "category": "Singapore",
+      "title": "S'pore single mum earns S$300 a month, rations daughter's milk to make ends meet",
+      "summary": "The mother of four received S$495 in additional financial assistance from MUIS, allowing her to buy more milk for her children.",
+      "image": "https://static.mothership.sg/1/2026/11/Untitled-Design-26.png",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/single-mum-ration-milk/",
+      "published": "2026-11-17 01:58"
+    },
+    {
+      "category": "Singapore",
       "title": "Chinatown to get new cinema at Oriental Plaza",
       "summary": "What should it screen?",
       "image": "https://static.mothership.sg/1/2026/11/oriental-plaza.jpg",
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/chinatown-singapore-cinema/",
       "published": "2026-11-17 01:19"
-    },
-    {
-      "category": "Singapore",
-      "title": "Debt collectors chase over S$2 million in claims from firms linked to Lao Huo Tang",
-      "summary": "The amounts claimed have not been independently established as debts owed by the founder personally.",
-      "image": "https://static.mothership.sg/1/2026/11/cover-pic-1-3.png",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/lao-huo-tang-debt-collector/",
-      "published": "2026-11-17 00:37"
-    },
-    {
-      "category": "Singapore",
-      "title": "Young man seen rescuing chicken from canal at Whampoa Park Connector",
-      "summary": "He put it in a plastic bag before climbing out of the canal.",
-      "image": "https://static.mothership.sg/1/2026/11/Article-Cover-Pic-2000-x-1050-66.jpg",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/man-rescuing-chicken-whampoa-park-connector/",
-      "published": "2026-11-17 00:10"
-    },
-    {
-      "category": "Singapore",
-      "title": "Travellers at Beijing airport accused of using wheelchairs to skip queues",
-      "summary": "Some passengers were reportedly seen walking without assistance after arriving at their destinations in Canada.",
-      "image": "https://static.mothership.sg/1/2026/11/Untitled-Design-25-1.png",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/free-wheelchair-service-beijing-airport/",
-      "published": "2026-11-16 23:20"
     },
     {
       "category": "Crime",
@@ -108,15 +108,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/mauled-lioness-influencer/",
       "published": "2026-11-17 01:18"
-    },
-    {
-      "category": "Crime",
-      "title": "S'porean man, 41, let late lawyer M Ravi consume meth at his flat, gets 2 years & 5 months' jail",
-      "summary": "They took drugs together on Dec. 24, 2025.",
-      "image": "https://static.mothership.sg/1/2026/11/guy-let-m-ravi-take-drugs-jail.jpg",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/singaporean-man-let-late-lawyer-m-ravi-consume-meth-jail/",
-      "published": "2026-11-16 20:24"
     },
     {
       "category": "Crime",
@@ -165,6 +156,15 @@
     },
     {
       "category": "Crime",
+      "title": "Police warn against unregulated loan consultancies amid cheating probe",
+      "summary": "One operator is currently under investigation for suspected cheating offences.",
+      "image": "",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/police-warn-against-unregulated-loan-consultancies-amid-cheating-probe",
+      "published": "2026-11-17 11:18"
+    },
+    {
+      "category": "Crime",
       "title": "California consumer watchdog chief says AI companies that violate state rules will be taken to court",
       "summary": "",
       "image": "",
@@ -180,6 +180,15 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/man-arrested-for-stealing-earbuds-from-shop-in-changi-airport-transit-area",
       "published": "2026-11-16 19:37"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Malaysia smartphone shipments plunge over 30% in Q3 2026, Xiaomi leads while Honor overtakes Samsung",
+      "summary": "Southeast Asia’s smartphone market has taken a significant hit in Q3 2026, as memory supply shortages and rising component costs continue to affect smartphone manufacturers...",
+      "image": "https://soyacincau.com/wp-content/uploads/2026/11/261117-samsung-galaxy-z-fold-8-iphone-duo-xiaomi-18-pro-150x150.jpg",
+      "source": "SoyaCincau",
+      "url": "https://soyacincau.com/2026/11/17/omdia-southeast-asia-shipment-q3-2026-xiaomi-number-1-malaysia/",
+      "published": "2026-11-17 11:22"
     },
     {
       "category": "IT & Gadgets",
@@ -263,13 +272,13 @@
       "published": "2026-11-17 04:52"
     },
     {
-      "category": "IT & Gadgets",
-      "title": "California sues OpenAI over rogue AI hacking incidents",
-      "summary": "California is suing OpenAI after its AI agents broke out of their testing environment and hacked other companies, including Hugging Face. In a lawsuit filed Monday, Attorney...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK155_OPEN_AI_4_CVirginia_D.png?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
-      "published": "2026-11-17 04:46"
+      "category": "Finance",
+      "title": "GST Increased From 7% To 9%: How Much Did Singaporeans Get Back Through The Assurance Package",
+      "summary": "The final Assurance Package Cash payout is coming up in December 2026. The post GST Increased From 7% To 9%: How Much Did Singaporeans Get Back Through The Assurance Package...",
+      "image": "https://dollarsandsense.sg/wp-content/uploads/2026/11/iStock-2264568440-300x200.jpg",
+      "source": "DollarsAndSense",
+      "url": "https://dollarsandsense.sg/gst-increased-from-7-to-9-how-much-did-singaporeans-get-back-through-the-assurance-package/",
+      "published": "2026-11-17 10:56"
     },
     {
       "category": "Finance",
@@ -353,15 +362,6 @@
       "published": "2026-11-16 15:28"
     },
     {
-      "category": "Finance",
-      "title": "5 Questions To Ask Before Dropping Your Integrated Shield Plan Rider",
-      "summary": "Five questions to consider before cancelling your Integrated Shield Plan rider, from existing benefits to future healthcare costs. The post 5 Questions To Ask Before Dropping...",
-      "image": "https://dollarsandsense.sg/wp-content/uploads/2026/11/iStock-1390738625-1-300x200.jpg",
-      "source": "DollarsAndSense",
-      "url": "https://dollarsandsense.sg/questions-before-dropping-integrated-shield-plan-rider/",
-      "published": "2026-11-16 14:35"
-    },
-    {
       "category": "Transport",
       "title": "ERP rates to rise at two locations from Jan 4; Saturday charges at Orchard Road may return",
       "summary": "LTA is also considering introducing ERP charges at two new locations along the CTE and KPE if congestion persists.",
@@ -432,15 +432,6 @@
       "source": "The Verge",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
       "published": "2026-11-17 04:27"
-    },
-    {
-      "category": "Fire",
-      "title": "Actor Shaun Chen says Grab rider made rude gesture at him in carpark incident, later urges company not to fire him",
-      "summary": "The actor tells 8days.sg that Grab has since contacted him, but he hopes the rider won't be fired.",
-      "image": "https://dam.mediacorp.sg/image/upload/s--2RXDsnTb--/c_crop,h_1125,w_2000,x_0,y_90/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/16/img_7561.jpeg?itok=7OrzXGT1",
-      "source": "CNA Singapore",
-      "url": "https://www.channelnewsasia.com/entertainment/shaun-chen-grab-driver-middle-finger-6553996",
-      "published": "2026-11-16 14:28"
     },
     {
       "category": "Fire",
