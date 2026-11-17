@@ -58,7 +58,7 @@ async function loadData() {
     }
 
     if (needsCheckpoint || document.querySelector("[data-glance]") || document.querySelector("[data-checkpoint-ai]") || document.querySelector("[data-travel-advisor]")) {
-      fetch("./data/checkpoint-traffic.json")
+      fetch("./data/checkpoint-traffic.json", { cache: "no-store" })
         .then(r => (r.ok ? r.json() : {}))
         .then(data => {
           if (data && data.woodlands) {
@@ -66,16 +66,18 @@ async function loadData() {
             renderCheckpointAi();
             renderGlance();
           }
-        })
-        .catch(() => {});
-
-      fetch("/api/checkpoint-ai")
-        .then(r => (r.ok ? r.json() : null))
-        .then(data => {
-          if (data && data.ok && data.woodlands && data.tuas) {
-            checkpointTraffic = data;
-            renderCheckpointAi();
-            renderGlance();
+          const ageMs = data?.last_updated ? (Date.now() - new Date(data.last_updated).getTime()) : Infinity;
+          if (!Number.isFinite(ageMs) || ageMs > 15 * 60 * 1000) {
+            fetch("/api/checkpoint-ai")
+              .then(r => (r.ok ? r.json() : null))
+              .then(live => {
+                if (live && live.ok && live.woodlands && live.tuas) {
+                  checkpointTraffic = live;
+                  renderCheckpointAi();
+                  renderGlance();
+                }
+              })
+              .catch(() => {});
           }
         })
         .catch(() => {});
@@ -165,25 +167,26 @@ async function refreshCheckpointData() {
     };
 
     try {
-      const liveAiRes = await fetch("/api/checkpoint-ai?refresh=1", { cache: "no-store" });
-      if (liveAiRes.ok) {
-        const liveAi = await liveAiRes.json();
-        if (liveAi && liveAi.ok && liveAi.woodlands && liveAi.tuas) {
-          checkpointTraffic = liveAi;
-          renderCheckpointAi();
-        }
+      const tRes = await fetch("./data/checkpoint-traffic.json", { cache: "no-store" });
+      const yolox = tRes.ok ? await tRes.json() : null;
+      const ageMs = yolox?.last_updated ? (Date.now() - new Date(yolox.last_updated).getTime()) : Infinity;
+      if (yolox && yolox.woodlands && Number.isFinite(ageMs) && ageMs <= 15 * 60 * 1000) {
+        checkpointTraffic = yolox;
+        renderCheckpointAi();
       } else {
-        throw new Error("live-ai-fallback");
-      }
-    } catch {
-      try {
-        const tRes = await fetch("./data/checkpoint-traffic.json", { cache: "no-store" });
-        if (tRes.ok) {
-          checkpointTraffic = (await tRes.json()) || checkpointTraffic;
+        const liveAiRes = await fetch("/api/checkpoint-ai?refresh=1", { cache: "no-store" });
+        if (liveAiRes.ok) {
+          const liveAi = await liveAiRes.json();
+          if (liveAi && liveAi.ok && liveAi.woodlands && liveAi.tuas) {
+            checkpointTraffic = liveAi;
+            renderCheckpointAi();
+          }
+        } else if (yolox && yolox.woodlands) {
+          checkpointTraffic = yolox;
           renderCheckpointAi();
         }
-      } catch {}
-    }
+      }
+    } catch {}
 
     renderCheckpoints();
     updateTravelBriefing(true);
