@@ -1678,7 +1678,7 @@ function renderTravelAdvisor() {
         <a class="detail-link" href="/tuas-checkpoint.html">All Tuas cameras →</a>
       </div>
     </div>
-    <p class="ai-traffic-disclaimer">Comparison uses live YOLOX road-camera vehicle density. Indoor immigration hall queues and JB CIQ counters can still vary independently.</p>
+    <p class="ai-traffic-disclaimer">For reference only — not 100% accurate. Public LTA CCTV images are compressed, so small or distant vehicles (especially bikes) may be undercounted; indoor immigration hall queues may also differ.</p>
   `;
 }
 
@@ -1708,7 +1708,7 @@ function renderCheckpointAi() {
         <span><strong>Towards SG:</strong> ${Number(loc.towards_sg || 0)} (${escapeHtml(loc.towards_sg_status || "—")})</span>
         <span><strong>Mix:</strong> ${Number(counts.car || 0)} cars · ${Number(counts.motorcycle || 0)} bikes · ${heavy} buses/trucks</span>
       </div>
-      <p class="ai-traffic-disclaimer">${key === "tuas" ? "Live AI count: Cam 4713 (JOHOR queue) + Cam 4703 (JB ramp/bikes & SG lanes); indoor immigration hall queues may differ." : "Live AI vehicle count on public LTA road cameras; indoor immigration hall queues may differ."}</p>
+      <p class="ai-traffic-disclaimer">For reference only — not 100% accurate. Public LTA CCTV images are compressed, so small or distant vehicles (especially bikes) may be undercounted; indoor immigration hall queues may also differ.</p>
     `;
   });
   renderTravelAdvisor();
