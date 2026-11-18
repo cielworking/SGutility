@@ -34,6 +34,11 @@ const CAMERA_ZONES = {
       towards_sg: [[185, 0], [1200, 0], [1920, 320], [1920, 650], [1320, 420], [700, 175]],
       towards_jb: [[0, 0], [185, 0], [700, 175], [1320, 420], [1760, 580], [1720, 880], [1160, 950], [1050, 740], [780, 720], [200, 880], [0, 880], [0, 680], [650, 480], [680, 350], [0, 130]],
     },
+    // Weekday morning contraflow (05:00–10:00 SGT): orange cones split the viaduct so outer/middle lanes carry JB->SG traffic
+    contraflow_zones: {
+      towards_sg: [[185, 0], [1920, 0], [1920, 860], [1760, 840], [1620, 725], [1320, 555], [1020, 415], [720, 285], [460, 185], [185, 65]],
+      towards_jb: [[0, 0], [185, 0], [185, 65], [460, 185], [720, 285], [1020, 415], [1320, 555], [1620, 725], [1760, 840], [1720, 880], [1160, 950], [1050, 740], [780, 720], [200, 880], [0, 880], [0, 680], [650, 480], [680, 350], [0, 130]],
+    },
   },
   "4713": {
     name: "Tuas Checkpoint (Outbound to Johor)",
@@ -55,6 +60,14 @@ function isSgtNight(isoTs) {
   const d = isoTs ? new Date(isoTs) : new Date();
   const sgtHour = (d.getUTCHours() + 8 + d.getUTCMinutes() / 60) % 24;
   return sgtHour >= 19.0 || sgtHour < 6.75;
+}
+
+function isTuasContraflow(isoTs) {
+  const d = isoTs ? new Date(isoTs) : new Date();
+  const sgt = new Date(d.getTime() + 8 * 3600 * 1000);
+  const day = sgt.getUTCDay(); // 1=Mon .. 5=Fri
+  const hour = sgt.getUTCHours() + sgt.getUTCMinutes() / 60;
+  return day >= 1 && day <= 5 && hour >= 5.0 && hour < 10.0;
 }
 
 function toB64(buf) {
@@ -90,10 +103,11 @@ function pointInPoly(x, y, poly) {
   return inside;
 }
 
-function classifyDirection(camId, cx, cy) {
+function classifyDirection(camId, cx, cy, isoTs) {
   const cfg = CAMERA_ZONES[camId];
   if (!cfg) return "other";
-  for (const [dir, poly] of Object.entries(cfg.zones)) {
+  const zones = (cfg.contraflow_zones && isTuasContraflow(isoTs)) ? cfg.contraflow_zones : cfg.zones;
+  for (const [dir, poly] of Object.entries(zones)) {
     if (pointInPoly(cx, cy, poly)) return dir;
   }
   return "ignored";
@@ -158,7 +172,7 @@ async function detectCameraDetr(env, cam, buf) {
   for (const det of kept) {
     const cx = (det.box.xmin + det.box.xmax) / 2;
     const cy = (det.box.ymin + det.box.ymax) / 2;
-    const d = classifyDirection(cam.camera_id, cx, cy);
+    const d = classifyDirection(cam.camera_id, cx, cy, cam.timestamp);
     if (d !== "towards_jb" && d !== "towards_sg") continue;
 
     counts[det.label] += 1;

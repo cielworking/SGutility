@@ -53,6 +53,11 @@ CAMERA_ZONES = {
             # Lower/left viaduct & curved ramp (hugging deck, excluding sea/piers): bikes & vehicles towards JB
             "towards_jb": [(0, 0), (185, 0), (700, 175), (1320, 420), (1760, 580), (1720, 880), (1160, 950), (1050, 740), (780, 720), (200, 880), (0, 880), (0, 680), (650, 480), (680, 350), (0, 130)],
         },
+        # Weekday morning contraflow (05:00-10:00 SGT): orange cones split the viaduct so outer/middle lanes carry JB->SG traffic
+        "contraflow_zones": {
+            "towards_sg": [(185, 0), (1920, 0), (1920, 860), (1760, 840), (1620, 725), (1320, 555), (1020, 415), (720, 285), (460, 185), (185, 65)],
+            "towards_jb": [(0, 0), (185, 0), (185, 65), (460, 185), (720, 285), (1020, 415), (1320, 555), (1620, 725), (1760, 840), (1720, 880), (1160, 950), (1050, 740), (780, 720), (200, 880), (0, 880), (0, 680), (650, 480), (680, 350), (0, 130)],
+        },
     },
     "4713": {
         "name": "Tuas Checkpoint (Outbound to Johor)",
@@ -84,14 +89,25 @@ def point_in_polygon(x: float, y: float, polygon: list[tuple[int, int]]) -> bool
     return inside
 
 
-def classify_direction(camera_id: str, cx: float, cy: float, width: int, height: int) -> str:
+def is_tuas_contraflow(iso_ts: str | None) -> bool:
+    try:
+        dt = datetime.fromisoformat(iso_ts) if iso_ts else datetime.now(SGT)
+        dt_sgt = dt.astimezone(SGT)
+    except Exception:
+        dt_sgt = datetime.now(SGT)
+    hour = dt_sgt.hour + dt_sgt.minute / 60.0
+    return dt_sgt.weekday() < 5 and 5.0 <= hour < 10.0
+
+
+def classify_direction(camera_id: str, cx: float, cy: float, width: int, height: int, iso_ts: str | None = None) -> str:
     # Normalize coordinates to 1920x1069 reference frame
     nx = cx * (1920.0 / max(1, width))
     ny = cy * (1069.0 / max(1, height))
     cam_cfg = CAMERA_ZONES.get(str(camera_id))
     if not cam_cfg:
         return "other"
-    for direction, poly in cam_cfg["zones"].items():
+    zones = cam_cfg["contraflow_zones"] if ("contraflow_zones" in cam_cfg and is_tuas_contraflow(iso_ts)) else cam_cfg["zones"]
+    for direction, poly in zones.items():
         if point_in_polygon(nx, ny, poly):
             return direction
     return "ignored"
@@ -247,7 +263,7 @@ def analyze_checkpoint_group(sess, cameras: list[dict]) -> dict:
         for box, cls_id in zip(boxes, clss):
             cx = float((box[0] + box[2]) / 2.0)
             cy = float((box[1] + box[3]) / 2.0)
-            direction = classify_direction(cid, cx, cy, W, H)
+            direction = classify_direction(cid, cx, cy, W, H, cam.get("timestamp"))
             if direction == "ignored":
                 continue
             label = VEHICLE_CLASSES[int(cls_id)]
