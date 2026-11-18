@@ -43,7 +43,8 @@ const CAMERA_ZONES = {
   "4713": {
     name: "Tuas Checkpoint (Outbound to Johor)",
     zones: {
-      towards_jb: [[1180, 20], [1860, 20], [1920, 480], [1920, 740], [1200, 580]],
+      // Right-hand JOHOR viaduct + bottom horizontal motorcycle approach lane (excludes left AYE ramp)
+      towards_jb: [[1180, 20], [1860, 20], [1920, 480], [1920, 910], [0, 910], [0, 760], [1250, 760], [1200, 580]],
     },
   },
 };
@@ -54,7 +55,8 @@ const NIGHT_PROMPTS = {
   "2702": 'Singapore LTA traffic cam 2702 (Woodlands Checkpoint/BKE, day or night). Left elevated ramp labeled BKE goes towards SG. On the right side: the narrow upper elevated curved flyover is the MOTORCYCLE lane towards JB (if packed bumper-to-bumper with bikes, estimate 120-220 motorcycles; if moderate queue, 30-90; if sparse/empty, count exact bikes); the lower lanes labeled CAUSEWAY carry cars/buses/trucks towards JB. Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car":0,"motorcycle":0,"heavy":0}}',
   // Cam 4703 is floodlit 24/7 and Vision LLMs confuse the left JOHOR label with the upper-right towards_sg lanes,
   // so omit it here to use DETR + calibrated CAMERA_ZONES["4703"] polygons at night as well.
-  "4713": 'Nighttime Singapore LTA traffic cam 4713 (Tuas Outbound to Johor). Right-hand viaduct and adjacent motorcycle lane labeled JOHOR go towards JB (count all visible queuing cars, buses, and motorcycles on the right side). Ignore the left AYE ramp (keep towards_sg 0). Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0}}',
+  // Cam 4713 uses Vision 24/7 to count dense JOHOR viaduct queues + the bottom motorcycle approach lane.
+  "4713": 'Singapore LTA traffic cam 4713 (Tuas Outbound to Johor, day or night). Count ALL vehicles heading towards JB: (1) cars, buses, and motorcycles queuing on the right-hand viaduct labeled JOHOR (estimate 60-130 if backed up to the top), AND (2) motorcycles riding along the bottom horizontal lane at the bottom of the frame. Ignore the left AYE ramp (keep towards_sg 0). Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0}}',
 };
 
 function isSgtNight(isoTs) {
@@ -249,7 +251,7 @@ async function detectCamera(env, cam, nightMode) {
   const imgRes = await fetch(cam.image);
   if (!imgRes.ok) throw new Error("Failed image " + cam.camera_id);
   const buf = await imgRes.arrayBuffer();
-  return (nightMode || cam.camera_id === "2702") ? detectCameraNightVision(env, cam, buf) : detectCameraDetr(env, cam, buf);
+  return (nightMode || cam.camera_id === "2702" || cam.camera_id === "4713") ? detectCameraNightVision(env, cam, buf) : detectCameraDetr(env, cam, buf);
 }
 
 function summarizeGroup(camResults) {

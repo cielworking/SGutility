@@ -62,8 +62,8 @@ CAMERA_ZONES = {
     "4713": {
         "name": "Tuas Checkpoint (Outbound to Johor)",
         "zones": {
-            # Right-hand viaduct heading towards Johor (SG-bound handled by 4703)
-            "towards_jb": [(1180, 20), (1860, 20), (1920, 480), (1920, 740), (1200, 580)],
+            # Right-hand viaduct heading towards Johor + bottom horizontal motorcycle approach lane (SG-bound handled by 4703)
+            "towards_jb": [(1180, 20), (1860, 20), (1920, 480), (1920, 910), (0, 910), (0, 760), (1250, 760), (1200, 580)],
         },
     },
     "4712": {
