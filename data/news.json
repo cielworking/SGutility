@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19T20:47:52.043034+08:00",
+  "last_updated": "2026-11-19T21:01:51.919761+08:00",
   "headlines": [
     {
       "category": "Singapore",
@@ -183,6 +183,24 @@
     },
     {
       "category": "IT & Gadgets",
+      "title": "I let Apple’s always-listening AI summarize my life for two weeks",
+      "summary": "Was it worth it? I've been asking myself this quite a bit over the last month or so while testing both the Amazon Bee Frontier and Siri Recap on the Apple Watch Ultra 4. Both...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268874_siri_recaps_AKrales_0070.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
+      "published": "2026-11-19 21:00"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Dollar dips as investors pause on Anthropic debut",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--c7drhLWe--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T020111Z_2_LYNXNPEMAI059_RTROPTP_3_USA-MARKETS-SAFEHAVENS.JPG?itok=2SYdwIzq",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/dollar-dips-investors-pause-anthropic-debut-6564386",
+      "published": "2026-11-19 20:48"
+    },
+    {
+      "category": "IT & Gadgets",
       "title": "Canva adds an AI ‘off’ button",
       "summary": "Canva will now allow you to turn off its generative AI features. With this change, you can disable the graphic design platform's array of AI tools, such as its AI photo-extending...",
       "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25355957/STK263_CANVA_D.png?quality=90&strip=all&crop=0,0,100,100",
@@ -252,24 +270,6 @@
       "source": "DollarsAndSense",
       "url": "https://dollarsandsense.sg/how-much-cost-own-byd/",
       "published": "2026-11-19 16:29"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "South Korea becomes fourth country globally to hit US$1 trillion exports on AI chip boom",
-      "summary": "This surpassed last year's record of US$709 billion, the country's trade ministry said.",
-      "image": "https://dam.mediacorp.sg/image/upload/s--YFmQCaxP--/c_crop,h_449,w_799,x_1,y_42/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T063131Z_3_LYNXNPEMAI0FL_RTROPTP_3_USA-TRUMP-TARIFFS-SOUTHKOREA.JPG?itok=IsSe2wjf",
-      "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/east-asia/south-korea-fourth-country-1-trillion-exports-ai-chip-boom-6565061",
-      "published": "2026-11-19 15:03"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "BYD Flash Charging officially in Malaysia: EV charging experience that rivals petrol refuelling",
-      "summary": "BYD Flash Charging technology is now officially in Malaysia. Three Flash Charging stations are readily accessible starting today at three Denza showrooms in Klang Valley...",
-      "image": "https://soyacincau.com/wp-content/uploads/2026/11/261119-byd-flash-charging-launch01-150x150.jpg",
-      "source": "SoyaCincau",
-      "url": "https://soyacincau.com/2026/11/19/byd-flash-charging-official-launch-malaysia/",
-      "published": "2026-11-19 14:08"
     },
     {
       "category": "Finance",
@@ -354,12 +354,12 @@
     },
     {
       "category": "Finance",
-      "title": "Palo Alto raises annual forecast, signs $4.5 billion deal for Applied Compute",
-      "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--WKU5UqYM--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-18T212548Z_2_LYNXNPEMAH23R_RTROPTP_3_PALO-ALTO-NETWORKS-RESULTS.JPG?itok=JebcpMeR",
-      "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/palo-alto-raises-annual-forecast-signs-45-billion-deal-applied-compute-6563836",
-      "published": "2026-11-19 05:20"
+      "title": "Sony’s impressive Bravia 8 II OLED hits a new low price ahead of Black Friday",
+      "summary": "Black Friday is a great time to save on a new OLED television for your winter movie nights. Though, it turns out that you can already get a great deal on the 65-inch Sony Bravia...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/12/258218_Sony_Bravia_8_II_TV_JHiggins_0015.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/gadgets/1036693/sony-bravia-8-ii-oled-black-friday-2026-deal-sale",
+      "published": "2026-11-19 03:30"
     },
     {
       "category": "Transport",
@@ -390,7 +390,7 @@
     },
     {
       "category": "Transport",
-      "title": "MRT reliability remains above 3m train-km between delays despite slight dip in Oct",
+      "title": "MRT reliability stays above 3 million train-km between delays in Oct despite slight dip",
       "summary": "Trains clocked an average of 3.14m train-km between delays lasting over five minutes.",
       "image": "",
       "source": "Straits Times",
