@@ -60,9 +60,11 @@ async function loadData() {
     if (needsCheckpoint || document.querySelector("[data-glance]") || document.querySelector("[data-checkpoint-ai]") || document.querySelector("[data-travel-advisor]")) {
       const applyTrafficIfFresher = (candidate) => {
         if (!candidate || !candidate.woodlands || !candidate.tuas) return;
+        // Never let static GitHub YOLOX JSON overwrite a live /api/checkpoint-ai Vision response
+        if (checkpointTraffic?.ok && !candidate.ok) return;
         const nextTs = candidate.last_updated ? new Date(candidate.last_updated).getTime() : 0;
         const currTs = checkpointTraffic?.last_updated ? new Date(checkpointTraffic.last_updated).getTime() : 0;
-        if (!checkpointTraffic || nextTs >= currTs) {
+        if (!checkpointTraffic || candidate.ok || nextTs >= currTs) {
           checkpointTraffic = candidate;
           renderCheckpointAi();
           renderGlance();
