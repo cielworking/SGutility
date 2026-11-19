@@ -351,9 +351,9 @@ def render_news_static(news_data):
         h_sum = f'<p>{html.escape(hero.get("summary") or "")}</p>' if hero.get("summary") else ""
         hero_url = html.escape(str(hero.get("url", "#")), quote=True)
         hero_html = f"""<article class="news-hero-card">
-          <a class="news-hero-media" href="{hero_url}" target="_blank" rel="noopener noreferrer"><img src="{html.escape(str(hero.get("image", "")), quote=True)}" alt="" fetchpriority="high" decoding="async"></a>
+          <a class="news-hero-media" href="{hero_url}" target="_blank" rel="noopener noreferrer nofollow"><img src="{html.escape(str(hero.get("image", "")), quote=True)}" alt="" fetchpriority="high" decoding="async"></a>
           <div class="news-hero-body">
-            <a class="news-card-link" href="{hero_url}" target="_blank" rel="noopener noreferrer">
+            <a class="news-card-link" href="{hero_url}" target="_blank" rel="noopener noreferrer nofollow">
               <div><span class="news-tag news-{h_slug}">{html.escape(h_cat)}</span></div>
               <h2>{html.escape(str(hero.get("title", "")))}</h2>
               {h_sum}
@@ -381,7 +381,7 @@ def render_news_static(news_data):
         item_url = html.escape(str(item.get("url", "#")), quote=True)
         cards.append(
             f"""<article class="news-card-item{cls_extra}">
-          <a class="news-card-link" href="{item_url}" target="_blank" rel="noopener noreferrer">
+          <a class="news-card-link" href="{item_url}" target="_blank" rel="noopener noreferrer nofollow">
             {img_html}
             <span class="news-tag news-{slug}">{html.escape(cat)}</span>
             <strong>{html.escape(str(item.get("title", "")))}</strong>
@@ -395,6 +395,263 @@ def render_news_static(news_data):
         + hero_html
         + f'<div class="news-grid">{"".join(cards)}</div>'
     )
+
+
+def render_news_teaser(news_data, limit=6):
+    items = (news_data or {}).get("headlines") or []
+    if not items:
+        return '<p class="loading-state">No headlines are currently available.</p>'
+    cards = []
+    for item in items[:limit]:
+        cat = str(item.get("category") or "General")
+        slug = re.sub(r"[^a-z0-9]+", "-", cat.lower()).strip("-") or "general"
+        summary = item.get("summary") or ""
+        summary_html = f'<p class="news-summary">{html.escape(summary)}</p>' if summary else ""
+        published = f" · {html.escape(str(item.get('published')))}" if item.get("published") else ""
+        item_url = html.escape(str(item.get("url", "#")), quote=True)
+        cards.append(
+            f"""<article class="news-card-item news-card-textonly">
+          <a class="news-card-link" href="{item_url}" target="_blank" rel="noopener noreferrer nofollow">
+            <span class="news-tag news-{slug}">{html.escape(cat)}</span>
+            <strong>{html.escape(str(item.get("title", "")))}</strong>
+            {summary_html}
+          </a>
+          <div class="news-card-footer"><small>{html.escape(str(item.get("source", "")))}{published}</small></div>
+        </article>"""
+        )
+    return (
+        f'<div class="news-topbar"><span class="news-meta">Latest {min(limit, len(items))} of {len(items)} Singapore headlines · {html.escape(updated_label(news_data.get("last_updated")))}</span>'
+        f'<a class="detail-link" href="/news.html">View all {len(items)} stories →</a></div>'
+        + f'<div class="news-grid">{"".join(cards)}</div>'
+    )
+
+
+def render_petrol_discounts_static(prices, discounts):
+    brands_by_name = {
+        str(item.get("brand", "")).strip().lower(): item
+        for item in (prices or {}).get("brands", [])
+    }
+    rows = []
+    for entry in (discounts or {}).get("discounts", []):
+        brand = str(entry.get("brand") or "").strip()
+        card = str(entry.get("card") or "").strip()
+        pct = entry.get("discount_percent")
+        eff_map = entry.get("effective_prices") or {}
+        pump = brands_by_name.get(brand.lower(), {})
+
+        def calc(grade):
+            if grade in eff_map and eff_map[grade] is not None:
+                return float(eff_map[grade])
+            base = parse_number(pump.get(grade))
+            if base is None or pct is None:
+                return None
+            return round(base * (1.0 - float(pct) / 100.0), 2)
+
+        n95 = calc("ron95")
+        n98 = calc("ron98")
+        ndiesel = calc("diesel")
+        promo_url = html.escape(str(entry.get("promo_url") or ""), quote=True)
+        disc_label = f"Up to {pct:g}%" if pct is not None else "Member Nett"
+        rows.append((
+            n95 if n95 is not None else 999.0,
+            brand,
+            card,
+            disc_label,
+            pump.get("ron95", "N/A"),
+            n95,
+            n98,
+            ndiesel,
+            promo_url,
+        ))
+    rows.sort(key=lambda r: r[0])
+    if not rows:
+        return ""
+    best_95 = rows[0][5]
+    trs = []
+    for _, brand, card, disc_label, p95, n95, n98, ndiesel, promo_url in rows:
+        def fmt(val, highlight=False):
+            if val is None:
+                return '<td class="na">N/A</td>'
+            badge = ' <span class="seo-badge-best">Lowest</span>' if highlight else ""
+            return f"<td><strong>${val:.2f}</strong>{badge}</td>"
+
+        card_html = f'<a href="{promo_url}" target="_blank" rel="noopener noreferrer nofollow">{html.escape(card)}</a>' if promo_url else html.escape(card)
+        trs.append(
+            f"<tr><td><strong>{html.escape(brand)}</strong></td>"
+            f"<td>{card_html}</td>"
+            f"<td>{html.escape(disc_label)}</td>"
+            f"<td>{html.escape(str(p95))}</td>"
+            f"{fmt(n95, n95 is not None and n95 == best_95)}"
+            f"{fmt(n98)}"
+            f"{fmt(ndiesel)}</tr>"
+        )
+    return f"""<div class="seo-table-wrap">
+      <table class="seo-data-table" aria-label="Estimated Singapore net petrol prices after credit card discounts">
+        <thead>
+          <tr><th>Brand</th><th>Top Card / Tier</th><th>Discount</th><th>95 Pump</th><th>Est. 95 Nett</th><th>Est. 98 Nett</th><th>Est. Diesel Nett</th></tr>
+        </thead>
+        <tbody>{"".join(trs)}</tbody>
+      </table>
+    </div>
+    <p class="note">Estimated nett SGD/L computed from today’s listed pump prices and maximum headline station + card rebates. Verify minimum spend and monthly caps in our <a href="/petrol-discount-calculator.html">Petrol Discount Calculator</a> or <a href="/guides/best-credit-cards-for-petrol-singapore.html">Best Petrol Credit Cards Singapore guide</a>.</p>"""
+
+
+def render_speed_cameras_directory(cameras_data):
+    cameras = (cameras_data or {}).get("cameras") or []
+    if not cameras:
+        return ""
+    grouped = {}
+    for cam in cameras:
+        grp = str(cam.get("road_group") or "Other").strip()
+        grouped.setdefault(grp, []).append(cam)
+    order = ["PIE", "AYE", "CTE", "ECP", "BKE", "SLE", "KJE", "TPE", "MCE", "Arterial"]
+    ordered_keys = [k for k in order if k in grouped] + sorted(k for k in grouped if k not in order)
+    sections = []
+    for grp in ordered_keys:
+        items = grouped[grp]
+        unique_locs = []
+        seen = set()
+        for c in items:
+            loc = str(c.get("location") or "").strip()
+            if loc and loc not in seen:
+                seen.add(loc)
+                unique_locs.append(loc)
+        li_html = "".join(f"<li>{html.escape(loc)}</li>" for loc in unique_locs)
+        sections.append(
+            f'<div class="seo-road-group"><h3>{html.escape(grp)} ({len(items)} cameras)</h3><ul>{li_html}</ul></div>'
+        )
+    updated = html.escape(str((cameras_data or {}).get("source_updated_at") or ""))
+    return (
+        f'<p class="section-note">Full crawlable directory of all <strong>{len(cameras)} official Singapore Police Force (SPF) speed enforcement camera locations</strong> (source dataset updated {updated}), grouped by expressway and arterial road:</p>'
+        f'<div class="seo-road-grid">{"".join(sections)}</div>'
+    )
+
+
+def render_home_snapshot(traffic, petrol, coe, bto, weather, pools, cameras_count=100):
+    w = (traffic or {}).get("woodlands") or {}
+    t = (traffic or {}).get("tuas") or {}
+    w_status = html.escape(str(w.get("status") or "Live"))
+    t_status = html.escape(str(t.get("status") or "Live"))
+    w_jb = int(w.get("towards_jb") or 0)
+    t_jb = int(t.get("towards_jb") or 0)
+
+    # Cheapest petrol 95 & 92 & diesel
+    cheapest_95 = None
+    cheapest_95_brand = ""
+    cheapest_98 = None
+    for b in (petrol or {}).get("brands", []):
+        v95 = parse_number(b.get("ron95"))
+        if v95 is not None and (cheapest_95 is None or v95 < cheapest_95):
+            cheapest_95 = v95
+            cheapest_95_brand = str(b.get("brand") or "")
+        v98 = parse_number(b.get("ron98"))
+        if v98 is not None and (cheapest_98 is None or v98 < cheapest_98):
+            cheapest_98 = v98
+    petrol_line = (
+        f"RON 95 from <strong>${cheapest_95:.2f}/L</strong> ({html.escape(cheapest_95_brand)})"
+        + (f" · RON 98 from <strong>${cheapest_98:.2f}/L</strong>" if cheapest_98 is not None else "")
+        if cheapest_95 is not None
+        else "Live Shell, Esso, SPC, Caltex, Sinopec &amp; Smart Energy rates"
+    )
+
+    # Latest COE Cat A & B
+    coe_latest = {item.get("category"): item for item in (coe or {}).get("latest", [])}
+    cat_a = coe_latest.get("Category A") or {}
+    cat_b = coe_latest.get("Category B") or {}
+    cat_d = coe_latest.get("Category D") or {}
+    coe_line = (
+        f"Cat A <strong>{money(cat_a.get('premium', 0))}</strong> · Cat B <strong>{money(cat_b.get('premium', 0))}</strong> · Cat D <strong>{money(cat_d.get('premium', 0))}</strong>"
+        if cat_a and cat_b
+        else "Latest LTA COE Cat A–E bidding premiums"
+    )
+    coe_round = html.escape(f"{(coe or {}).get('latest_month', '')} {(coe or {}).get('latest_bidding_label', '')}".strip())
+
+    # BTO towns
+    towns = sorted({str(p.get("town") or "") for p in (bto or {}).get("projects", []) if p.get("town")})
+    bto_count = len((bto or {}).get("projects", []))
+    bto_line = (
+        f"<strong>{bto_count} upcoming projects</strong> across {html.escape(', '.join(towns))}"
+        if towns
+        else "Track upcoming HDB BTO launches and mortgage eligibility"
+    )
+
+    # Weather PSI
+    sg_psi = (((weather or {}).get("sg_psi") or {}).get("data") or {}).get("readings", {}).get("psi_twenty_four_hourly") or {}
+    psi_vals = [v for v in sg_psi.values() if isinstance(v, (int, float))]
+    psi_summary = f"24-hr PSI <strong>{min(psi_vals)}–{max(psi_vals)}</strong> ({psi_band(max(psi_vals))})" if psi_vals else "Live NEA rain radar &amp; 24-hr PSI"
+
+    # 4D / TOTO
+    four_d = (pools or {}).get("four_d") or {}
+    toto = (pools or {}).get("toto") or {}
+    pools_line = (
+        f"4D 1st: <strong>{html.escape(str(four_d.get('first_prize', '—')))}</strong>"
+        + (f" ({html.escape(str(four_d.get('draw_date', '')))})" if four_d.get("draw_date") else "")
+        + (f" · TOTO Draw {html.escape(str(toto.get('draw_no', '')))}" if toto.get("draw_no") else "")
+    )
+
+    return f"""<div class="home-utility-grid">
+      <article class="home-utility-card">
+        <span class="home-utility-kicker">Checkpoints · Live AI Cameras</span>
+        <h2><a href="/travel.html">Woodlands &amp; Tuas Checkpoint Traffic</a></h2>
+        <p>Woodlands: <strong>{w_status}</strong> ({w_jb} towards JB) · Tuas: <strong>{t_status}</strong> ({t_jb} towards JB). View official LTA road cameras and AI vehicle counts before crossing to JB.</p>
+        <div class="home-utility-links">
+          <a href="/woodlands-checkpoint.html">Woodlands Cams</a>
+          <a href="/tuas-checkpoint.html">Tuas Cams</a>
+          <a href="/guides/woodlands-vs-tuas-checkpoint.html">Woodlands vs Tuas</a>
+        </div>
+      </article>
+      <article class="home-utility-card">
+        <span class="home-utility-kicker">Fuel · Updated Hourly</span>
+        <h2><a href="/singapore-petrol-prices.html">Singapore Petrol Prices Today</a></h2>
+        <p>{petrol_line}. Compare Shell, Esso, SPC, Caltex, Sinopec &amp; Smart Energy pump prices and net rates after credit card rebates.</p>
+        <div class="home-utility-links">
+          <a href="/singapore-petrol-prices.html">Live Pump Prices</a>
+          <a href="/petrol-discount-calculator.html">Card Discount Calculator</a>
+          <a href="/guides/best-credit-cards-for-petrol-singapore.html">Best Petrol Cards</a>
+        </div>
+      </article>
+      <article class="home-utility-card">
+        <span class="home-utility-kicker">Motoring · {coe_round or "Latest Bidding"}</span>
+        <h2><a href="/latest-coe-prices.html">Latest COE Prices &amp; PQP</a></h2>
+        <p>{coe_line}. Track LTA bidding results, quota movements, COE renewal PQP, and monthly car loan repayments.</p>
+        <div class="home-utility-links">
+          <a href="/latest-coe-prices.html">COE Results</a>
+          <a href="/coe-calculator.html">COE &amp; Loan Calculator</a>
+          <a href="/guides/when-is-next-coe-bidding.html">Next Bidding Dates</a>
+        </div>
+      </article>
+      <article class="home-utility-card">
+        <span class="home-utility-kicker">Housing · HDB Flat Portal</span>
+        <h2><a href="/housing.html">Upcoming HDB BTO Launches</a></h2>
+        <p>{bto_line}. Plan your HFE letter deadline, application rates, and monthly MSR mortgage budget in one hub.</p>
+        <div class="home-utility-links">
+          <a href="/bto-launches.html">BTO Projects</a>
+          <a href="/bto-mortgage-calculator.html">Mortgage &amp; MSR Calc</a>
+          <a href="/guides/feb-2027-bto-hfe-letter-deadline.html">Feb 2027 HFE Guide</a>
+        </div>
+      </article>
+      <article class="home-utility-card">
+        <span class="home-utility-kicker">Driving · Islandwide Maps</span>
+        <h2><a href="/parking.html">SG Parking &amp; Speed Cameras</a></h2>
+        <p>Search <strong>2,200+ HDB/LTA carparks</strong> with live motorcycle &amp; car lots and free Sunday/PH filters, plus all <strong>{cameras_count} official SPF speed cameras</strong>.</p>
+        <div class="home-utility-links">
+          <a href="/parking.html">Live SG Parking</a>
+          <a href="/speed-cameras.html">SPF Speed Camera Map</a>
+          <a href="/guides/how-to-check-erp-rates-singapore.html">ERP Rates Guide</a>
+        </div>
+      </article>
+      <article class="home-utility-card">
+        <span class="home-utility-kicker">Weather &amp; Daily Results</span>
+        <h2><a href="/weather/">Rain Radar, PSI Haze &amp; 4D/TOTO</a></h2>
+        <p>{psi_summary} across Singapore, live 2-hour rain forecasts for SG &amp; Malaysia, plus latest Singapore Pools draws ({pools_line}).</p>
+        <div class="home-utility-links">
+          <a href="/weather/">SG Rain Radar</a>
+          <a href="/singapore/haze/">SG Haze &amp; PSI</a>
+          <a href="/4d-results.html">4D Results</a>
+          <a href="/toto-results.html">TOTO Results</a>
+        </div>
+      </article>
+    </div>"""
 
 
 def render_checkpoint(data, location_key, title, source_url=None, traffic=None):
@@ -777,16 +1034,30 @@ def main():
         "news": "news.json",
         "quick": "quick-info.json",
         "pools": "sgpools-results.json",
+        "petrol_discounts": "petrol-discounts.json",
+        "speed_cameras": "speed-cameras.json",
     }.items():
         try:
             optional[key] = load_json(filename)
         except FileNotFoundError:
             optional[key] = {}
 
+    if optional.get("petrol_discounts"):
+        replace_static_block(
+            "singapore-petrol-prices.html",
+            "PETROL-DISCOUNTS",
+            render_petrol_discounts_static(petrol, optional["petrol_discounts"]),
+        )
+    if optional.get("speed_cameras"):
+        replace_static_block(
+            "speed-cameras.html",
+            "SPEED-CAMERAS",
+            render_speed_cameras_directory(optional["speed_cameras"]),
+        )
+
     if optional.get("news"):
-        news_html = render_news_static(optional["news"])
-        replace_static_block("news.html", "NEWS", news_html)
-        replace_static_block("index.html", "NEWS", news_html)
+        replace_static_block("news.html", "NEWS", render_news_static(optional["news"]))
+        replace_static_block("index.html", "NEWS", render_news_teaser(optional["news"], limit=6))
 
     pools = optional["pools"]
     if pools:
@@ -810,6 +1081,21 @@ def main():
     weather_path = DATA / "weather.json"
     weather = json.loads(weather_path.read_text(encoding="utf-8")) if weather_path.exists() else {}
     replace_static_block("travel.html", "TRAVEL-BRIEFING", render_travel_briefing(checkpoints, traffic, weather))
+    cameras_count = int((optional.get("speed_cameras") or {}).get("count") or len((optional.get("speed_cameras") or {}).get("cameras") or []) or 100)
+    replace_static_block(
+        "index.html",
+        "HOME-SNAPSHOT",
+        render_home_snapshot(traffic, petrol, coe, bto, weather, pools, cameras_count=cameras_count),
+    )
+    for fname, dkey in (
+        ("singapore-petrol-prices.html", "petrol"),
+        ("latest-coe-prices.html", "coe"),
+        ("bto-launches.html", "bto"),
+        ("woodlands-checkpoint.html", "checkpoints"),
+        ("tuas-checkpoint.html", "checkpoints"),
+    ):
+        if dynamic_dates.get(dkey):
+            set_date_modified(fname, dynamic_dates[dkey])
     dynamic_dates["weather"] = max((date_only(feed.get("attempted_at")) for feed in weather.values() if feed.get("attempted_at")), default=None)
     home_dates = [
         *dynamic_dates.values(),
