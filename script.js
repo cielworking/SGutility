@@ -1689,12 +1689,13 @@ function renderCheckpointAi() {
     const heavy = Number(counts.bus || 0) + Number(counts.truck || 0);
     const camIds = (loc.cameras || []).map(c => c.camera_id).filter(Boolean).join(" & ");
     const camLabel = camIds ? ` (Cam ${escapeHtml(camIds)})` : "";
+    const camTs = (loc.cameras || []).find(c => c.timestamp)?.timestamp || checkpointTraffic.last_updated;
     panel.innerHTML = `
       <div class="ai-traffic-head">
         <div>
           <span class="ai-traffic-kicker">AI traffic density${camLabel}</span>
           <strong>${escapeHtml(status)}</strong>
-          <span class="ai-traffic-time"> · Updated ${escapeHtml(formatTimestamp(checkpointTraffic.last_updated))}</span>
+          <span class="ai-traffic-time"> · Updated ${escapeHtml(formatTimestamp(camTs))}</span>
         </div>
         <span class="ai-status-pill is-${escapeHtml(slug)}">${escapeHtml(status)} (${Number(loc.total_vehicles || 0)} detected)</span>
       </div>

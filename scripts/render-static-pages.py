@@ -123,7 +123,8 @@ def render_checkpoint_ai(traffic, location_key):
     total = int(loc.get("total_vehicles") or 0)
     cam_ids = " &amp; ".join(str(c.get("camera_id")) for c in (loc.get("cameras") or []) if c.get("camera_id"))
     cam_label = f" (Cam {cam_ids})" if cam_ids else ""
-    checked = html.escape(updated_label(traffic.get("last_updated")))
+    cam_ts = next((c.get("timestamp") for c in (loc.get("cameras") or []) if c.get("timestamp")), None) or traffic.get("last_updated")
+    checked = html.escape(updated_label(cam_ts))
     note = (
         "Live AI count: Cam 4713 (JOHOR queue) + Cam 4703 (JB ramp/bikes & SG lanes); indoor immigration hall queues may differ."
         if location_key == "tuas"
