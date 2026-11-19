@@ -101,16 +101,23 @@
     return `<span class="lot-pill ${cls}">${lotInfo.avail} / ${lotInfo.total} ${label}</span>`;
   }
 
+  function normText(v) {
+    return String(v || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  }
+
   function filterCarparks() {
     if (!dataset) return [];
     const rawQ = (document.getElementById("parkingSearch")?.value || "").trim();
     const q = rawQ.toLowerCase();
+    const qNorm = normText(rawQ);
+    const qTokens = qNorm ? qNorm.split(/\s+/) : [];
     const anchor = activeAnchor();
 
     const list = dataset.carparks.filter((cp) => {
       if (q) {
-        const hay = `${cp.id} ${cp.name} ${cp.address} ${cp.type} ${cp.postal || ""}`.toLowerCase();
-        const textMatch = hay.includes(q);
+        const hayRaw = `${cp.id} ${cp.name} ${cp.address} ${cp.type} ${cp.postal || ""}`.toLowerCase();
+        const hayNorm = normText(hayRaw);
+        const textMatch = hayRaw.includes(q) || (qTokens.length > 0 && qTokens.every((tok) => hayNorm.includes(tok)));
         const nearResolved = searchedLocation && haversineKm(searchedLocation.lat, searchedLocation.lng, cp.lat, cp.lng) <= 2.5;
         if (!textMatch && !nearResolved) return false;
       }
@@ -126,7 +133,7 @@
       if (activeFilters.has("central") && cp.area_tier !== "central") return false;
       if (activeFilters.has("night") && !cp.night_parking) return false;
       if (activeFilters.has("high_gantry") && (!cp.gantry_height || cp.gantry_height < 2.1)) return false;
-      if (activeFilters.has("commercial") && cp.source_type !== "LTA Commercial Rates" && cp.source_type !== "Commercial reference") return false;
+      if (activeFilters.has("commercial") && cp.source_type !== "LTA Commercial Rates" && cp.source_type !== "Commercial reference" && cp.source_type !== "SG Commercial Directory") return false;
       return true;
     });
 
