@@ -956,6 +956,9 @@ def guide_sitemap_urls(preserved=None):
 def render_sitemap(dates, preserved=None):
     urls = [
         ("https://sgalerts.com/", dates.get("home")),
+        ("https://sgalerts.com/visit-singapore.html", dates.get("home")),
+        ("https://sgalerts.com/sgd-currency-converter.html", dates.get("home")),
+        ("https://sgalerts.com/singapore-gst-refund-calculator.html", dates.get("home")),
         ("https://sgalerts.com/news.html", dates.get("home")),
         ("https://sgalerts.com/travel.html", dates.get("checkpoints")),
         ("https://sgalerts.com/woodlands-checkpoint.html", dates.get("checkpoints")),

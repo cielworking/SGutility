@@ -1,0 +1,40 @@
+{
+  "source_name": "Monetary Authority of Singapore & Open Exchange Rates",
+  "source_url": "https://eservices.mas.gov.sg/statistics/dir/exchangerates.aspx",
+  "last_updated": "2026-11-19T22:00:00+08:00",
+  "base": "SGD",
+  "rates": {
+    "USD": 0.742,
+    "MYR": 3.325,
+    "AUD": 1.148,
+    "GBP": 0.588,
+    "EUR": 0.704,
+    "JPY": 114.50,
+    "KRW": 1032.0,
+    "THB": 25.80,
+    "IDR": 12150.0,
+    "CNY": 5.38,
+    "HKD": 5.80,
+    "TWD": 24.10,
+    "PHP": 43.50,
+    "INR": 62.80,
+    "NZD": 1.285
+  },
+  "names": {
+    "USD": "US Dollar ($)",
+    "MYR": "Malaysian Ringgit (RM)",
+    "AUD": "Australian Dollar (A$)",
+    "GBP": "British Pound (£)",
+    "EUR": "Euro (€)",
+    "JPY": "Japanese Yen (¥)",
+    "KRW": "South Korean Won (₩)",
+    "THB": "Thai Baht (฿)",
+    "IDR": "Indonesian Rupiah (Rp)",
+    "CNY": "Chinese Yuan (¥)",
+    "HKD": "Hong Kong Dollar (HK$)",
+    "TWD": "New Taiwan Dollar (NT$)",
+    "PHP": "Philippine Peso (₱)",
+    "INR": "Indian Rupee (₹)",
+    "NZD": "New Zealand Dollar (NZ$)"
+  }
+}
