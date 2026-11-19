@@ -405,13 +405,21 @@ def render_news_teaser(news_data, limit=6):
     for item in items[:limit]:
         cat = str(item.get("category") or "General")
         slug = re.sub(r"[^a-z0-9]+", "-", cat.lower()).strip("-") or "general"
+        img_url = str(item.get("image") or "")
+        img_html = (
+            f'<div class="news-thumb-wrap"><img class="news-thumb" src="{html.escape(img_url, quote=True)}" alt="" loading="lazy" decoding="async"></div>'
+            if img_url.startswith(("https://", "http://"))
+            else ""
+        )
+        cls_extra = "" if img_url.startswith(("https://", "http://")) else " news-card-textonly"
         summary = item.get("summary") or ""
         summary_html = f'<p class="news-summary">{html.escape(summary)}</p>' if summary else ""
         published = f" · {html.escape(str(item.get('published')))}" if item.get("published") else ""
         item_url = html.escape(str(item.get("url", "#")), quote=True)
         cards.append(
-            f"""<article class="news-card-item news-card-textonly">
+            f"""<article class="news-card-item{cls_extra}">
           <a class="news-card-link" href="{item_url}" target="_blank" rel="noopener noreferrer nofollow">
+            {img_html}
             <span class="news-tag news-{slug}">{html.escape(cat)}</span>
             <strong>{html.escape(str(item.get("title", "")))}</strong>
             {summary_html}

@@ -4754,33 +4754,75 @@ select.fuel-selector,
 /* SEO utility hub, data tables & road directory */
 .home-utility-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 14px;
-  margin-top: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+@media (max-width: 1020px) {
+  .home-utility-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 660px) {
+  .home-utility-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .home-utility-card {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 16px;
+  gap: 10px;
+  padding: 18px 20px;
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 16px;
   background: var(--surface-subtle);
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.home-utility-card:hover {
+  border-color: var(--brand);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+:root[data-theme="dark"] .home-utility-card {
+  background: rgba(15, 23, 42, 0.58);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+:root[data-theme="dark"] .home-utility-card:hover {
+  border-color: rgba(96, 165, 250, 0.65);
+  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.45);
 }
 
 .home-utility-kicker {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--brand-soft);
   font-size: 11px;
   font-weight: 750;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--brand);
+  color: var(--brand-strong);
+}
+
+:root[data-theme="dark"] .home-utility-kicker {
+  background: rgba(59, 130, 246, 0.16);
+  color: #93c5fd;
 }
 
 .home-utility-card h2 {
   margin: 0;
-  font-size: 1.08rem;
+  font-size: 1.1rem;
+  font-weight: 750;
   line-height: 1.3;
+  letter-spacing: -0.01em;
 }
 
 .home-utility-card h2 a {
@@ -4789,8 +4831,7 @@ select.fuel-selector,
 }
 
 .home-utility-card h2 a:hover {
-  color: var(--brand-strong);
-  text-decoration: underline;
+  color: var(--brand);
 }
 
 .home-utility-card p {
@@ -4800,58 +4841,110 @@ select.fuel-selector,
   color: var(--muted);
 }
 
+.home-utility-card p strong {
+  color: var(--text);
+}
+
 .home-utility-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px 10px;
+  gap: 8px;
   margin-top: auto;
-  padding-top: 8px;
+  padding-top: 12px;
   border-top: 1px solid var(--border);
-  font-size: 0.84rem;
-  font-weight: 650;
 }
 
 .home-utility-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
   color: var(--brand-strong);
+  font-size: 0.8rem;
+  font-weight: 650;
   text-decoration: none;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .home-utility-links a:hover {
-  text-decoration: underline;
+  background: var(--brand-soft);
+  border-color: var(--brand);
+}
+
+:root[data-theme="dark"] .home-utility-links a {
+  background: rgba(30, 41, 59, 0.72);
+  border-color: rgba(148, 163, 184, 0.24);
+  color: #93c5fd;
+}
+
+:root[data-theme="dark"] .home-utility-links a:hover {
+  background: rgba(59, 130, 246, 0.22);
+  border-color: rgba(96, 165, 250, 0.65);
+  color: #dbeafe;
 }
 
 .home-guides-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 10px;
-  margin-top: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+@media (max-width: 1020px) {
+  .home-guides-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 660px) {
+  .home-guides-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .home-guide-link {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding: 12px 14px;
+  gap: 5px;
+  padding: 14px 16px;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 14px;
   background: var(--surface-subtle);
   text-decoration: none;
   color: var(--text);
+  transition: border-color 0.16s ease, transform 0.16s ease;
 }
 
 .home-guide-link:hover {
   border-color: var(--brand);
+  transform: translateY(-1px);
+}
+
+:root[data-theme="dark"] .home-guide-link {
+  background: rgba(15, 23, 42, 0.52);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+:root[data-theme="dark"] .home-guide-link:hover {
+  border-color: rgba(96, 165, 250, 0.65);
 }
 
 .home-guide-link strong {
-  font-size: 0.92rem;
+  font-size: 0.93rem;
   color: var(--brand-strong);
+  line-height: 1.35;
+}
+
+:root[data-theme="dark"] .home-guide-link strong {
+  color: #93c5fd;
 }
 
 .home-guide-link span {
   font-size: 0.82rem;
   color: var(--muted);
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 .seo-table-wrap {
