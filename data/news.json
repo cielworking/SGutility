@@ -1,6 +1,15 @@
 {
-  "last_updated": "2026-11-20T01:00:05.215874+08:00",
+  "last_updated": "2026-11-20T05:31:02.573650+08:00",
   "headlines": [
+    {
+      "category": "Singapore",
+      "title": "Fann Wong & Christopher Lee receive award at son's school for being parent volunteers",
+      "summary": "Their 12-year-old son attends Maha Bodhi School.",
+      "image": "https://static.mothership.sg/1/2026/11/Untitled-Design-11-2.png",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/fann-wong-christopher-lee-receive-award-son-school/",
+      "published": "2026-11-20 00:42"
+    },
     {
       "category": "Singapore",
       "title": "S'pore woman, 44, left with 'uneven smile' after Johor clinic botox injection, clinic says it takes concerns seriously",
@@ -48,15 +57,6 @@
     },
     {
       "category": "Singapore",
-      "title": "Domestic worker, 24, who slapped, shook & bit employer's baby, pleads guilty to abuse",
-      "summary": "She committed no fewer than 11 incidents of physical abuse on the five to six month old.",
-      "image": "https://static.mothership.sg/1/2026/11/baby.jpg",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/domestic-worker-abuse-baby-charge/",
-      "published": "2026-11-19 19:21"
-    },
-    {
-      "category": "Singapore",
       "title": "CNA Explains: When does location aggravate a molestation offence, and what else affects sentencing?",
       "summary": "A prosecutor recently cited a nightclub setting as an aggravating factor in a molestation case. Why does the location matter, and what other factors do judges consider in...",
       "image": "https://dam.mediacorp.sg/image/upload/s--b6tQxz_x--/f_auto,q_auto/c_fill,g_auto,h_468,w_830/molest-01-crime-singapore---file-photo-data_0.jpg?itok=oIogUpFc",
@@ -68,7 +68,7 @@
       "category": "Singapore",
       "title": "Binance says Asia expansion plans remain on track after US$6.3 billion hack",
       "summary": "Three of five planned Asian licences are nearing approval, Binance's Asia-Pacific head told CNA’s Elizabeth Neo.",
-      "image": "https://dam.mediacorp.sg/image/upload/s--3g5wIMd2--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-18T210529Z_3_LYNXNPEMAH1WS_RTROPTP_3_FINTECH-CRYPTO-CRYPTO-CYBERSECURITY.JPG?itok=9W8d3V6o",
+      "image": "https://dam.mediacorp.sg/image/upload/s--k2FOcx56--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-18T205255Z_2_LYNXNPEMAH1WS_RTROPTP_3_FINTECH-CRYPTO-CRYPTO-CYBERSECURITY.JPG?itok=njermDVq",
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/business/binance-crypto-hack-usdc-expansion-asia-6565311",
       "published": "2026-11-19 16:43"
@@ -183,93 +183,138 @@
     },
     {
       "category": "IT & Gadgets",
-      "title": "Anthropic starts trading on Wall Street",
-      "summary": "Anthropic has officially gone public. It began trading on the Nasdaq under the ticker symbol \"ANT\" at $111.50 per share, up from its initial $83 per share price that put...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2305334560.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "title": "Meta now sells 3D movies on Quest VR headsets",
+      "summary": "Meta now offers more than 150 3D movies that you can buy or rent to watch in VR on its Quest 3 and 3S headsets, the company announced today. The movies are available in Meta's TV...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24951506/236805_Quest_3_and_Ray_Ban_meta_glasses_BFarsace_0016.jpg?quality=90&strip=all&crop=0,0,100,100",
       "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
-      "published": "2026-11-20 00:52"
+      "url": "https://www.theverge.com/tech/1038157/meta-quest-vr-3d-movies-tv-app",
+      "published": "2026-11-20 05:12"
     },
     {
       "category": "IT & Gadgets",
-      "title": "Stocks wobble with focus on Anthropic debut; oil prices rise",
+      "title": "Fed's Goolsbee says AI surge could strain US capacity, overheat economy",
       "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--kN2Ae7Sf--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T015110Z_1_LYNXNPEMAI04P_RTROPTP_3_GLOBAL-MARKETS.JPG?itok=0ybI5LyB",
+      "image": "https://dam.mediacorp.sg/image/upload/s--nnI4Doww--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T203711Z_1_LYNXNPEMAI2CM_RTROPTP_3_USA-FED-GOOLSBEE-PANEL.JPG?itok=8IachDlA",
       "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/stocks-wobble-focus-anthropic-debut-oil-prices-rise-6564336",
-      "published": "2026-11-20 00:36"
+      "url": "https://www.channelnewsasia.com/business/feds-goolsbee-says-ai-surge-could-strain-us-capacity-overheat-economy-6567271",
+      "published": "2026-11-20 04:37"
     },
     {
       "category": "IT & Gadgets",
-      "title": "Anthropic draws bullish Wall Street calls ahead of Nasdaq debut",
+      "title": "Man hired by Russia spied on Silicon Valley tech and defense company, feds say",
+      "summary": "25-year-old accused of stalking employees at coffee shop and in an \"aggressive\" car pursuit.",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/05/getty-digital-gavel-500x500-1753478304.jpg",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/security/2026/11/man-charged-with-spying-on-silicon-valley-tech-and-defense-company-for-russia/",
+      "published": "2026-11-20 04:29"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Meta’s Muse Charm might cost $300",
+      "summary": "Meta is planning to price the Muse Charm, a little gadget with a screen that lets you chat with your Muse AI agent, at $300, according to The Information. CEO Mark Zuckerberg...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/lcimg-3879511d-dd3d-430c-8072-616e2dfb3484.jpeg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
+      "published": "2026-11-20 04:22"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Google is putting AI chats right on the homepage",
+      "summary": "Google is updating its homepage to include AI searches. In a post on X, Google's vice president of product, Robby Stein, shows how you can now open a collapsible sidebar to view...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK093_GOOGLE_D.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
+      "published": "2026-11-20 04:05"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "FCC greenlights rule allowing prisons to jam cellphone signals",
+      "summary": "The Federal Communications Commission voted unanimously to allow state and local prisons to jam cellphones. In an announcement on Thursday, the FCC argues the rule will help...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STKS513_FCC_B.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/policy/1037987/fcc-prison-cellphone-signal-jamming",
+      "published": "2026-11-20 03:40"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Sony’s WH-1000XM5 are cheaper than ever for Black Friday",
+      "summary": "Back in my day, the only “Doorbuster” sales were at physical retail stores. But now, you can get ultra-low prices before Black Friday whether you want to shop in-store or online...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/04/DSCF7932.webp?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/gadgets/1037790/sony-wh-1000xm5-black-friday-deal-sale",
+      "published": "2026-11-20 03:35"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "You can now buy a Steam Machine without getting on a waitlist",
+      "summary": "Valve announced some updates about Steam Machine availability today, including good news if you want to buy one right now and potential bad news about future supply due to...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268581_Steam_Machine_AKrales_0372.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/games/1038010/valve-steam-machine-waitlist-supply",
+      "published": "2026-11-20 03:33"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Some creators are skeptical of Instagram’s new affiliate program",
+      "summary": "For years, influencers have come up with workarounds on social media to figure out how to share affiliate links with followers. A new integration between Instagram and Amazon was...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK070_INSTAGRAM__A.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/news/1037951/instagram-amazon-affiliate-links-influencers-ads",
+      "published": "2026-11-20 03:12"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Sonos is taking up to 30 percent off speakers and soundbars right now",
+      "summary": "Sonos speakers and soundbars aren’t exactly cheap, but thankfully the company’s Black Friday sale has already begun, making everything a little easier to afford through November...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/03/268417_Sonos_Play_speaker_JHiggins_0001.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/gadgets/1037042/sonos-black-friday-2026-speaker-soundbar-deals-sale",
+      "published": "2026-11-20 02:33"
+    },
+    {
+      "category": "Finance",
+      "title": "Intuit to sell Mailchimp to Bending Spoons for $3.68 billion",
       "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--gcdQAAnW--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T163028Z_1_LYNXNPEMAI1Y8_RTROPTP_3_GLOBAL-MARKETS.JPG?itok=nloKTg4Z",
+      "image": "https://dam.mediacorp.sg/image/upload/s--UbvEH3Uy--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T210719Z_2_LYNXNPEMAI2DO_RTROPTP_3_BENDING-SPOONS-IPO.JPG?itok=sL70S7x1",
       "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/anthropic-draws-bullish-wall-street-calls-ahead-nasdaq-debut-6566741",
-      "published": "2026-11-20 00:30"
+      "url": "https://www.channelnewsasia.com/business/intuit-sell-mailchimp-bending-spoons-368-billion-6567301",
+      "published": "2026-11-20 05:07"
     },
     {
-      "category": "IT & Gadgets",
-      "title": "Microsoft is killing its great tasks app in favor of its worse tasks app",
-      "summary": "In 2015 Microsoft acquired a to-do list app called Wunderlist, for a price rumored to be as high as $200 million. Wunderlist fans were worried that Microsoft would make their...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Microsoft-To-Do.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1037558/microsoft-to-do-shutdown-planner",
-      "published": "2026-11-20 00:28"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "You can grab two months of Paramount Plus for just $2.99 for Black Friday",
-      "summary": "Ahead of Black Friday, you can subscribe to Paramount Plus for just $2.99 per month for the first two months. After the introductory period, you can cancel your subscription or...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23617470/SNW_Ep104_MG__010746_RT.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/gadgets/1036229/paramount-plus-black-friday-deal-2026-sale",
-      "published": "2026-11-20 00:15"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "JPMorgan Chase reveals data breach, but says it’s unrelated to this week’s banking outage",
-      "summary": "JPMorgan Chase says its third-party vendors suffered a cyberattack, exposing marketing data like customer names and email addresses. The confirmation follows a report from...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gettyimages-2305014881.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1037695/jpmorgan-chase-cyberattack",
-      "published": "2026-11-20 00:14"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "The Verge’s 2026 fitness and wellness gift guide",
-      "summary": "We could all use a hand when it comes to being more mindful about our health and fitness. The holidays provide plenty of reasons to focus on wellness in body and mind, and a good...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268757_2026_gift_guides_UNDER_25_CVirginia_FITNESS.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/gadgets/1021241/best-fitness-wellness-gifts-2026",
-      "published": "2026-11-20 00:00"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Palo Alto's raised sales forecast powers rally in cybersecurity stocks",
+      "category": "Finance",
+      "title": "US was warned of telecom security risks years before Salt Typhoon",
       "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--3q_zAL5h--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T122230Z_2_LYNXNPEMAI1A7_RTROPTP_3_CYBERSECURITY-STOCKS.JPG?itok=m-OjF3Em",
+      "image": "https://dam.mediacorp.sg/image/upload/s--LHID0Cw5--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T183359Z_1_LYNXNPEMAI26K_RTROPTP_3_FRANCE-CYBER.JPG?itok=_WE-Q7lL",
       "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/palo-altos-raised-sales-forecast-powers-rally-in-cybersecurity-stocks-6566576",
-      "published": "2026-11-19 23:16"
+      "url": "https://www.channelnewsasia.com/business/us-was-warned-telecom-security-risks-years-salt-typhoon-6567076",
+      "published": "2026-11-20 02:33"
     },
     {
-      "category": "IT & Gadgets",
-      "title": "ChatGPT can transcribe as you speak now with Live Dictation",
-      "summary": "ChatGPT can receive audio prompts from your microphone faster now with a Live Dictation feature that transcribes as you speak, rather than waiting until you finish recording...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/chatgpt-live-dictation-promo-screenshot.jpeg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
-      "published": "2026-11-19 23:16"
+      "category": "Finance",
+      "title": "Amazon warns NYC delivery bill could add up to $5 per order",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--ARMmjUlK--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T180612Z_2_LYNXNPEMAI1IM_RTROPTP_3_AI-ENERGY.JPG?itok=HmFVRXjj",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/amazon-warns-nyc-delivery-bill-could-add-up-5-order-6567031",
+      "published": "2026-11-20 02:06"
     },
     {
-      "category": "IT & Gadgets",
-      "title": "How Silicon Valley lost the public, with Crooked Media’s Jon Favreau",
-      "summary": "Today, I’m talking with Jon Favreau, a political commentator and cofounder of Crooked Media. You probably know Jon best from a little show called Pod Save America, which Jon...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/DCD-Jon-Favreau.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/podcast/1036484/jon-favreau-pod-save-america-offline-crooked-media-trump-big-tech-ai-2028-election",
-      "published": "2026-11-19 23:00"
+      "category": "Finance",
+      "title": "Ubisoft expects third-quarter net bookings at around €250 million",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--4aF6Fslp--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T170902Z_1_LYNXNPEMAI21E_RTROPTP_3_FRANCE-VIDEOGAMES-PARIS-FAIR.JPG?itok=pPE-XESv",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/ubisoft-expects-third-quarter-net-bookings-around-eu250-million-6566821",
+      "published": "2026-11-20 01:09"
+    },
+    {
+      "category": "Finance",
+      "title": "Musk's SpaceXSI denies liability in UK lawmaker's lawsuit over Grok images",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--LyDG8MpC--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T183535Z_4_LYNXNPEMAI1ZO_RTROPTP_3_XAI-AI.JPG?itok=qULiBdXE",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/musks-spacexsi-denies-liability-in-uk-lawmakers-lawsuit-over-grok-images-6566771",
+      "published": "2026-11-20 00:55"
     },
     {
       "category": "Finance",
@@ -282,39 +327,30 @@
     },
     {
       "category": "Finance",
-      "title": "NASA confirms Voyager 1 probe's 'light-day' distance milestone",
+      "title": "NASA probe achieves light-day milestone and is 'not done yet'",
       "summary": "",
       "image": "https://dam.mediacorp.sg/image/upload/s--xmxRhtqX--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T152101Z_2_LYNXNPEMAI1SR_RTROPTP_3_SPACE-VOYAGER.JPG?itok=YOaXEk-M",
       "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/nasa-confirms-voyager-1-probes-light-day-distance-milestone-6566581",
+      "url": "https://www.channelnewsasia.com/business/nasa-probe-achieves-light-day-milestone-and-not-done-yet-6566581",
       "published": "2026-11-19 23:16"
     },
     {
       "category": "Finance",
-      "title": "Accenture launches plan to cut 950 Meta-linked jobs in Portugal",
+      "title": "Dollar extends rally as risk appetite fades",
       "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--vrVOdFNX--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T151807Z_3_LYNXNPEMAI15O_RTROPTP_3_CANADA-DIGITAL.JPG?itok=XQI2zmpE",
+      "image": "https://dam.mediacorp.sg/image/upload/s--c7drhLWe--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T020111Z_2_LYNXNPEMAI059_RTROPTP_3_USA-MARKETS-SAFEHAVENS.JPG?itok=2SYdwIzq",
       "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/accenture-launches-plan-cut-950-meta-linked-jobs-in-portugal-6565761",
-      "published": "2026-11-19 19:23"
+      "url": "https://www.channelnewsasia.com/business/dollar-extends-rally-risk-appetite-fades-6564386",
+      "published": "2026-11-19 20:48"
     },
     {
       "category": "Finance",
-      "title": "Ant group quarterly profit rises 26.6% on year",
+      "title": "Equinor says cyberattack still ongoing but output unaffected",
       "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--WgLSenOJ--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T102803Z_1_LYNXNPEMAI10M_RTROPTP_3_CHINA-TRADE-EXPO.JPG?itok=rcpks7lU",
+      "image": "https://dam.mediacorp.sg/image/upload/s--XeY7zpn3--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T114342Z_1_LYNXNPEMAI15U_RTROPTP_3_EQUINOR-CYBERATTACK.JPG?itok=-AsLkL3w",
       "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/ant-group-quarterly-profit-rises-266-year-6565646",
-      "published": "2026-11-19 18:28"
-    },
-    {
-      "category": "Finance",
-      "title": "Osaka Gas to expand US, India business despite global geopolitical risks",
-      "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--mqM2bbkV--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-19T081553Z_1_LYNXNPEMAI0PS_RTROPTP_3_JAPAN-OSAKA-GAS-CO-LNG.JPG?itok=-00BfCx4",
-      "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/osaka-gas-expand-us-india-business-despite-global-geopolitical-risks-6565331",
-      "published": "2026-11-19 16:15"
+      "url": "https://www.channelnewsasia.com/business/equinor-says-cyberattack-still-ongoing-output-unaffected-6567016",
+      "published": "2026-11-19 19:43"
     },
     {
       "category": "Finance",
@@ -324,42 +360,6 @@
       "source": "DollarsAndSense",
       "url": "https://dollarsandsense.sg/neighbourhood-estate-guide-chencharu-yishun/",
       "published": "2026-11-19 09:00"
-    },
-    {
-      "category": "Finance",
-      "title": "7 Ways PayNow Gen2 Will Be Different And Better Than Before",
-      "summary": "Soon you won't need to worry whether a merchant accepts PayNow QR or NETS QR. The post 7 Ways PayNow Gen2 Will Be Different And Better Than Before appeared first on...",
-      "image": "https://dollarsandsense.sg/wp-content/uploads/2026/11/PayNowGen2-300x200.jpg",
-      "source": "DollarsAndSense",
-      "url": "https://dollarsandsense.sg/paynow-gen2-will-be-different-and-better-than-before/",
-      "published": "2026-11-19 08:53"
-    },
-    {
-      "category": "Finance",
-      "title": "CPF Top-Ups VS SRS Top-Ups: Which Should You Choose?",
-      "summary": "7 things to consider when deciding to make top-ups to the two. The post CPF Top-Ups VS SRS Top-Ups: Which Should You Choose? appeared first on DollarsAndSense.sg .",
-      "image": "https://dollarsandsense.sg/wp-content/uploads/2020/12/CPF-vs-SRS-300x200.jpg",
-      "source": "DollarsAndSense",
-      "url": "https://dollarsandsense.sg/cpf-top-ups-vs-srs-top-ups-choose/",
-      "published": "2026-11-18 15:04"
-    },
-    {
-      "category": "Finance",
-      "title": "Price Guide To Chinese Enrichment Classes In Singapore",
-      "summary": "Getting your child speaking Mandarin comes with different price tags. The post Price Guide To Chinese Enrichment Classes In Singapore appeared first on DollarsAndSense.sg .",
-      "image": "https://dollarsandsense.sg/wp-content/uploads/2026/11/iStock-2201804185-300x200.jpg",
-      "source": "DollarsAndSense",
-      "url": "https://dollarsandsense.sg/chinese-enrichment-classes-singapore-price-guide/",
-      "published": "2026-11-18 09:30"
-    },
-    {
-      "category": "Finance",
-      "title": "7 Ways The Johor Bahru–Singapore Rail Transit System (RTS) May Benefit Singapore’s Economy And People",
-      "summary": "A mutually beneficial project. The post 7 Ways The Johor Bahru–Singapore Rail Transit System (RTS) May Benefit Singapore’s Economy And People appeared first on DollarsAndSense.sg .",
-      "image": "https://dollarsandsense.sg/wp-content/uploads/2020/08/RTS-Link-300x200.jpg",
-      "source": "DollarsAndSense",
-      "url": "https://dollarsandsense.sg/ways-the-johor-bahru-singapore-rail-transit-system-rts-benefit-singapores-economy-and-people/",
-      "published": "2026-11-17 15:26"
     },
     {
       "category": "Transport",
