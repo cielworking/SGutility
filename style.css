@@ -5023,3 +5023,75 @@ select.fuel-selector,
   line-height: 1.55;
   color: var(--muted);
 }
+
+/* Teaser 6-card balanced 3x2 grid, quick-link pills, and table link polish */
+[data-news-mode="teaser"] .news-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 960px) {
+  [data-news-mode="teaser"] .news-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  [data-news-mode="teaser"] .news-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.hub-links .chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 6px 13px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-subtle);
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.hub-links .chip:hover {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+  color: var(--brand-strong);
+}
+
+:root[data-theme="dark"] .hub-links .chip {
+  background: rgba(30, 41, 59, 0.72);
+  border-color: rgba(148, 163, 184, 0.24);
+  color: #e2e8f0;
+}
+
+:root[data-theme="dark"] .hub-links .chip:hover {
+  border-color: rgba(96, 165, 250, 0.7);
+  background: rgba(59, 130, 246, 0.22);
+  color: #dbeafe;
+}
+
+.seo-data-table td {
+  font-variant-numeric: tabular-nums;
+}
+
+.seo-data-table a {
+  color: var(--brand-strong);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.seo-data-table a:hover {
+  text-decoration: underline;
+}
+
+:root[data-theme="dark"] .seo-data-table a {
+  color: #93c5fd;
+}
+
+.theme-control {
+  width: fit-content;
+}

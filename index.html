@@ -30,7 +30,7 @@
   <script>
 (function(){try{var m=localStorage.getItem("sga-theme-mode");if(m!=="light"&&m!=="dark"&&m!=="system")m="system";var d=m==="dark"||(m==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches);var r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-mode",m);}catch(e){var d=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",d?"dark":"light");document.documentElement.setAttribute("data-theme-mode","system");}})();
 </script>
-  <link rel="stylesheet" href="style.css?v=30" />
+  <link rel="stylesheet" href="style.css?v=31" />
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
   <script src="/analytics.js"></script>
@@ -104,7 +104,7 @@
             <div>
               <p class="eyebrow">Live Singapore Utility Dashboard</p>
               <h1 id="dashboard-title" style="margin:0; font-size: clamp(1.35rem, 2.2vw, 1.85rem);">Live Singapore Checkpoints, Petrol, COE, Parking &amp; Weather</h1>
-              <p style="margin:6px 0 0; color:var(--muted); font-size:0.95rem;">Real-time public data from LTA, HDB, NEA, SPF and fuel retailers — updated hourly with free calculators and practical Singapore guides.</p>
+              <p style="margin:6px 0 0; color:var(--muted); font-size:0.95rem;">Real-time public data from LTA, HDB, NEA, SPF &amp; fuel retailers — updated hourly with free calculators and guides.</p>
             </div>
           </div>
           <div class="card-actions">
@@ -242,7 +242,7 @@
       </section>
 
       <section id="news" class="surface-card wide-card">
-        <div class="section-header section-header-row">
+        <div class="section-header">
           <div class="section-title">
             <span class="section-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class="lucide lucide-newspaper"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" /> <path d="M18 14h-8" /> <path d="M15 18h-5" /> <path d="M10 6h8v4h-8V6Z" /></svg></span>
             <div>
@@ -250,7 +250,6 @@
               <h2 style="margin:0; font-size: clamp(1.15rem, 1.8vw, 1.45rem);">Latest Singapore &amp; Tech Headlines</h2>
             </div>
           </div>
-          <a class="detail-link" href="/news.html">Full News Feed →</a>
         </div>
         <div id="news-result" class="result" data-news-mode="teaser" aria-live="polite">
 <!-- STATIC:NEWS:START -->
