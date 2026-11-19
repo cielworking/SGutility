@@ -55,7 +55,7 @@ const NIGHT_PROMPTS = {
   "2702": 'Singapore LTA traffic cam 2702 (Woodlands Checkpoint/BKE, day or night). Left elevated ramp labeled BKE goes towards SG. On the right side: the narrow upper elevated curved flyover is the MOTORCYCLE lane towards JB (if packed bumper-to-bumper with bikes, estimate 120-220 motorcycles; if moderate queue, 30-90; if sparse/empty, count exact bikes); the lower lanes labeled CAUSEWAY carry cars/buses/trucks towards JB. Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car":0,"motorcycle":0,"heavy":0}}',
   // Cam 4703 uses Vision 24/7 to count dense SG-bound cars + far-right motorcycles above the diagonal divider.
   "4703": 'Singapore LTA traffic cam 4703 (Tuas Second Link, day or night). A diagonal central concrete divider runs from top-left down to middle-right. Everything ABOVE/RIGHT of this divider goes towards SG (count ALL queuing cars, trucks/buses, AND motorcycles in the far-right lane; estimate 60-140 total if backed up). Everything BELOW/LEFT of this divider (the curved viaduct/ramp under the JOHOR label) goes towards JB (count all motorcycles, cars, and trucks). Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car":0,"motorcycle":0,"heavy":0}}',
-  "4703_contraflow": 'Singapore LTA traffic cam 4703 during morning contraflow (Tuas Second Link). Orange cones split the lower viaduct: count ALL vehicles above/right of the orange cones (upper-right lanes + outer/middle contraflow lanes heading into Singapore) as towards_sg. Only count vehicles on the inner-left curved lane below the orange cones as towards_jb. Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car":0,"motorcycle":0,"heavy":0}}',
+  "4703_contraflow": 'Singapore LTA traffic cam 4703 during weekday morning contraflow (Tuas Second Link). Orange cones split the lower viaduct. Count ALL vehicles heading into Singapore (towards_sg): (1) the massive upper-right & middle motorcycle queue plus the bottom-right motorcycle lane around the guardhouse (if packed shoulder-to-shoulder with a sea of bikes, estimate 150-250 motorcycles; if moderate queue, 40-100; if sparse, count exact bikes), (2) cars queuing along the orange-cone contraflow lane (15-45 if lined up along the cones), and (3) lorries/buses on the far upper-right viaduct. Only count vehicles on the inner-left curved lane (below/left of the orange cones under JOHOR) as towards_jb. Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car":0,"motorcycle":0,"heavy":0}}',
   // Cam 4713 uses Vision 24/7 to count dense JOHOR viaduct queues + the bottom motorcycle approach lane.
   "4713": 'Singapore LTA traffic cam 4713 (Tuas Outbound to Johor, day or night). Count ALL vehicles heading towards JB: (1) cars, buses, and motorcycles queuing on the right-hand viaduct labeled JOHOR (estimate 60-130 if backed up to the top), AND (2) motorcycles riding along the bottom horizontal lane at the bottom of the frame. Ignore the left AYE ramp (keep towards_sg 0). Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0}}',
 };
@@ -335,7 +335,7 @@ export default {
 
       const payload = {
         ok: true,
-        model: nightMode ? "Workers AI Llama-4-Scout Vision (night live)" : "Workers AI DETR-ResNet-50 (day live)",
+        model: nightMode ? "Workers AI Llama-4-Scout Vision (night live)" : "Workers AI Vision + DETR (day live)",
         last_updated: latestTs,
         woodlands,
         tuas,
