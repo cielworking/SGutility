@@ -279,6 +279,26 @@ def render_travel_briefing(checkpoints, traffic, weather):
     return f'<div class="cp-briefing-grid">{w_card}{t_card}</div>'
 
 
+def render_travel_teaser_cams(checkpoints, location_key, title, target_ids):
+    cams = [c for c in (checkpoints.get(location_key) or []) if str(c.get("camera_id")) in target_ids]
+    order = {cid: idx for idx, cid in enumerate(target_ids)}
+    cams.sort(key=lambda c: order.get(str(c.get("camera_id")), 99))
+    if not cams:
+        return ""
+    cards = []
+    for idx, cam in enumerate(cams):
+        cid = html.escape(str(cam.get("camera_id", "")))
+        img = html.escape(str(cam.get("image", "")), quote=True)
+        ts = html.escape(timestamp(cam.get("timestamp")))
+        fetch_attr = ' fetchpriority="high"' if (location_key == "woodlands" and idx == 0) else ""
+        cards.append(
+            f'<button class="checkpoint-camera" type="button" onclick="openImageModal(\'{img}\', \'{html.escape(title)} - Camera {cid}\')">'
+            f'<img src="{img}" alt="{html.escape(title)} traffic camera {cid}" width="1920" height="1069"{fetch_attr} decoding="async">'
+            f'<span>Camera {cid} · Image: {ts}</span></button>'
+        )
+    return "".join(cards)
+
+
 def render_travel_advisor(traffic):
     if not traffic or "woodlands" not in traffic or "tuas" not in traffic:
         return '<p class="loading-state">Comparing Woodlands &amp; Tuas traffic…</p>'
@@ -305,7 +325,7 @@ def render_travel_advisor(traffic):
         <a class="detail-link" href="/woodlands-checkpoint.html">All Woodlands cameras →</a>
       </div>
       <div class="travel-route-box{t_cls}">
-        <strong>Tuas Second Link (Cam 4703 &amp; 4712)</strong>
+        <strong>Tuas Second Link (Cam 4703 &amp; 4713)</strong>
         <span>Status: <strong>{html.escape(str(t.get("status") or "—"))}</strong> ({int(t.get("total_vehicles") or 0)} vehicles detected)</span>
         <span>Towards JB: {t_jb} ({html.escape(str(t.get("towards_jb_status") or "—"))}) · Towards SG: {int(t.get("towards_sg") or 0)} ({html.escape(str(t.get("towards_sg_status") or "—"))})</span>
         <a class="detail-link" href="/tuas-checkpoint.html">All Tuas cameras →</a>
@@ -745,6 +765,8 @@ def main():
         replace_static_block("travel.html", "AI-WOODLANDS", render_checkpoint_ai(traffic, "woodlands"))
         replace_static_block("travel.html", "AI-TUAS", render_checkpoint_ai(traffic, "tuas"))
         replace_static_block("travel.html", "TRAVEL-ADVISOR", render_travel_advisor(traffic))
+    replace_static_block("travel.html", "TRAVEL-WOODLANDS-CAMS", render_travel_teaser_cams(checkpoints, "woodlands", "Woodlands Checkpoint", ["2701", "2702"]))
+    replace_static_block("travel.html", "TRAVEL-TUAS-CAMS", render_travel_teaser_cams(checkpoints, "tuas", "Tuas Checkpoint", ["4703", "4713"]))
     replace_static_block("singapore-petrol-prices.html", "PETROL", render_petrol(petrol))
     replace_static_block("latest-coe-prices.html", "COE", render_coe(coe))
     replace_static_block("bto-launches.html", "BTO", render_bto(bto))

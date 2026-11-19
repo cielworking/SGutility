@@ -74,16 +74,18 @@ async function loadData() {
         .then(applyTrafficIfFresher)
         .catch(() => {});
 
-      fetch("/api/checkpoint-ai", { cache: "no-store" })
-        .then(r => (r.ok ? r.json() : null))
-        .then(live => {
-          if (live && live.ok) applyTrafficIfFresher(live);
-        })
-        .catch(() => {});
+      if (!needsCheckpoint) {
+        fetch("/api/checkpoint-ai", { cache: "no-store" })
+          .then(r => (r.ok ? r.json() : null))
+          .then(live => {
+            if (live && live.ok) applyTrafficIfFresher(live);
+          })
+          .catch(() => {});
+      }
     }
 
     if (needsCheckpoint) {
-      await refreshCheckpointData();
+      await refreshCheckpointData(false);
     }
 
     if (needsSgPools) {
@@ -114,7 +116,7 @@ function hasElement(id) {
   return Boolean(document.getElementById(id));
 }
 
-async function refreshCheckpointData() {
+async function refreshCheckpointData(forceAi = false) {
   const btn = document.querySelector(".refresh-btn");
 
   if (btn) {
@@ -124,16 +126,16 @@ async function refreshCheckpointData() {
 
   try {
     let payload;
-    if (window.__checkpointImages) {
+    if (!forceAi && window.__checkpointImages) {
       const pending = window.__checkpointImages;
       window.__checkpointImages = null;
       payload = await pending;
     } else {
-      const res = await fetch("https://api.data.gov.sg/v1/transport/traffic-images");
+      const res = await fetch("https://api.data.gov.sg/v1/transport/traffic-images", { cache: "no-store" });
       if (!res.ok) throw new Error("checkpoint");
       payload = await res.json();
     }
-    const cameras = payload.items[0].cameras;
+    const cameras = payload?.items?.[0]?.cameras || [];
     const woodlands = [];
     const tuas = [];
 
@@ -157,34 +159,42 @@ async function refreshCheckpointData() {
       }
     });
 
-    checkpointData = {
-      source_name: "LTA / data.gov.sg live API",
-      source_url: "https://api.data.gov.sg/v1/transport/traffic-images",
-      last_updated: new Date().toISOString(),
-      woodlands,
-      tuas
-    };
+    if (!woodlands.length || !tuas.length) {
+      const fallback = await fetch("./data/checkpoints.json").then(r => r.json());
+      checkpointData = {
+        source_name: fallback.source_name || "LTA / data.gov.sg",
+        source_url: fallback.source_url || "https://api.data.gov.sg/v1/transport/traffic-images",
+        last_updated: new Date().toISOString(),
+        woodlands: woodlands.length ? woodlands : (fallback.woodlands || []),
+        tuas: tuas.length ? tuas : (fallback.tuas || [])
+      };
+    } else {
+      checkpointData = {
+        source_name: "LTA / data.gov.sg live API",
+        source_url: "https://api.data.gov.sg/v1/transport/traffic-images",
+        last_updated: new Date().toISOString(),
+        woodlands,
+        tuas
+      };
+    }
 
-    try {
-      const liveAiRes = await fetch("/api/checkpoint-ai?refresh=1", { cache: "no-store" });
-      if (liveAiRes.ok) {
-        const liveAi = await liveAiRes.json();
+    // Render camera photos immediately without waiting for AI inference
+    renderCheckpoints();
+    updateTravelBriefing(true);
+
+    // Update AI vehicle counts asynchronously in the background
+    const aiUrl = forceAi ? "/api/checkpoint-ai?refresh=1" : "/api/checkpoint-ai";
+    fetch(aiUrl, { cache: "no-store" })
+      .then(r => (r.ok ? r.json() : null))
+      .then(liveAi => {
         if (liveAi && liveAi.ok && liveAi.woodlands && liveAi.tuas) {
           checkpointTraffic = liveAi;
           renderCheckpointAi();
+          renderGlance();
+          updateTravelBriefing(true);
         }
-      } else {
-        const tRes = await fetch("./data/checkpoint-traffic.json", { cache: "no-store" });
-        const yolox = tRes.ok ? await tRes.json() : null;
-        if (yolox && yolox.woodlands) {
-          checkpointTraffic = yolox;
-          renderCheckpointAi();
-        }
-      }
-    } catch {}
-
-    renderCheckpoints();
-    updateTravelBriefing(true);
+      })
+      .catch(() => {});
   } catch (err) {
     console.error("Live checkpoint refresh failed:", err);
 

@@ -150,7 +150,7 @@
             </div>
           </div>
           <div class="card-actions">
-            <button onclick="refreshCheckpointData()" class="button button-secondary refresh-btn" type="button">↻ Refresh cams</button>
+            <button onclick="refreshCheckpointData(true)" class="button button-secondary refresh-btn" type="button">↻ Refresh cams</button>
           </div>
         </div>
         <div class="travel-advisor-card" data-travel-advisor>
@@ -170,7 +170,7 @@
         <a class="detail-link" href="/woodlands-checkpoint.html">All Woodlands cameras →</a>
       </div>
       <div class="travel-route-box">
-        <strong>Tuas Second Link (Cam 4703 &amp; 4712)</strong>
+        <strong>Tuas Second Link (Cam 4703 &amp; 4713)</strong>
         <span>Status: <strong>Heavy</strong> (89 vehicles detected)</span>
         <span>Towards JB: 59 (Heavy) · Towards SG: 30 (Heavy)</span>
         <a class="detail-link" href="/tuas-checkpoint.html">All Tuas cameras →</a>
@@ -328,7 +328,9 @@
       <p class="ai-traffic-disclaimer">Live AI vehicle count on public LTA road cameras; indoor immigration hall queues may differ.</p>
     </div>
 <!-- STATIC:AI-WOODLANDS:END -->
-          <div class="checkpoint-grid teaser-grid"></div>
+          <div class="checkpoint-grid teaser-grid"><!-- STATIC:TRAVEL-WOODLANDS-CAMS:START -->
+<button class="checkpoint-camera" type="button" onclick="openImageModal('https://images.data.gov.sg/api/traffic-images/2026/11/478dacb7-00cd-4a5a-b76a-00a1f98193c9.jpg', 'Woodlands Checkpoint - Camera 2701')"><img src="https://images.data.gov.sg/api/traffic-images/2026/11/478dacb7-00cd-4a5a-b76a-00a1f98193c9.jpg" alt="Woodlands Checkpoint traffic camera 2701" width="1920" height="1069" fetchpriority="high" decoding="async"><span>Camera 2701 · Image: 19 Nov 2026, 03:56 PM SGT</span></button><button class="checkpoint-camera" type="button" onclick="openImageModal('https://images.data.gov.sg/api/traffic-images/2026/11/7f6e1a6c-4157-40c8-96b6-27165e242a70.jpg', 'Woodlands Checkpoint - Camera 2702')"><img src="https://images.data.gov.sg/api/traffic-images/2026/11/7f6e1a6c-4157-40c8-96b6-27165e242a70.jpg" alt="Woodlands Checkpoint traffic camera 2702" width="1920" height="1069" decoding="async"><span>Camera 2702 · Image: 19 Nov 2026, 03:56 PM SGT</span></button>
+<!-- STATIC:TRAVEL-WOODLANDS-CAMS:END --></div>
           <div class="lane-guide-grid">
             <div class="lane-guide-item">
               <strong>Camera 2701 (Woodlands Causeway)</strong>
@@ -371,7 +373,9 @@
       <p class="ai-traffic-disclaimer">Live AI count: Cam 4713 (JOHOR queue) + Cam 4703 (JB ramp/bikes & SG lanes); indoor immigration hall queues may differ.</p>
     </div>
 <!-- STATIC:AI-TUAS:END -->
-          <div class="checkpoint-grid teaser-grid"></div>
+          <div class="checkpoint-grid teaser-grid"><!-- STATIC:TRAVEL-TUAS-CAMS:START -->
+<button class="checkpoint-camera" type="button" onclick="openImageModal('https://images.data.gov.sg/api/traffic-images/2026/11/b5fc4a45-caf9-4f5f-aa5a-47b76150d442.jpg', 'Tuas Checkpoint - Camera 4703')"><img src="https://images.data.gov.sg/api/traffic-images/2026/11/b5fc4a45-caf9-4f5f-aa5a-47b76150d442.jpg" alt="Tuas Checkpoint traffic camera 4703" width="1920" height="1069" decoding="async"><span>Camera 4703 · Image: 19 Nov 2026, 03:56 PM SGT</span></button><button class="checkpoint-camera" type="button" onclick="openImageModal('https://images.data.gov.sg/api/traffic-images/2026/11/6c8b7513-689a-4839-87dc-29291cf28881.jpg', 'Tuas Checkpoint - Camera 4713')"><img src="https://images.data.gov.sg/api/traffic-images/2026/11/6c8b7513-689a-4839-87dc-29291cf28881.jpg" alt="Tuas Checkpoint traffic camera 4713" width="1920" height="1069" decoding="async"><span>Camera 4713 · Image: 19 Nov 2026, 03:56 PM SGT</span></button>
+<!-- STATIC:TRAVEL-TUAS-CAMS:END --></div>
           <div class="lane-guide-grid">
             <div class="lane-guide-item">
               <strong>Camera 4703 (Tuas Second Link — Towards SG)</strong>
@@ -456,7 +460,7 @@
       </nav>
     </div>
   </footer>
-  <script src="/script.js?v=28" defer></script>
+  <script src="/script.js?v=29" defer></script>
   <nav class="mobile-tabbar" aria-label="Mobile quick navigation"><a class="tabbar-item" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span>Home</span></a><a class="tabbar-item" href="/travel.html" aria-current="page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg><span>Travel</span></a><a class="tabbar-item" href="/housing.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/></svg><span>Housing</span></a><a class="tabbar-item" href="/weather/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/></svg><span>Weather</span></a><details class="tabbar-more"><summary class="tabbar-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg><span>More</span></summary><div class="tabbar-sheet" id="tabbar-more-sheet"><p class="tabbar-sheet-title">More on SG Alerts</p><div class="tabbar-sheet-links"><a href="/parking.html">SG Parking</a><a href="/speed-cameras.html">Speed Cameras</a><a href="/singapore-petrol-prices.html">Petrol prices</a><a href="/latest-coe-prices.html">COE prices</a><a href="/bto-launches.html">BTO launches</a><a href="/singapore/haze/">Haze &amp; PSI</a><a href="/woodlands-checkpoint.html">Checkpoints</a><a href="/speed-cameras.html">Speed Camera Map</a><a href="/guides/">All Guides</a><a href="/4d-results.html">4D results</a><a href="/toto-results.html">TOTO results</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></div></div></details></nav>
 </body>
 </html>
