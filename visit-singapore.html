@@ -88,14 +88,18 @@
     .tool-pill-card strong { display: block; font-size: 0.95rem; }
     .tool-pill-card span { font-size: 0.8rem; opacity: 0.75; }
 
-    .sights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
-    .sight-card { border: 1px solid var(--border, rgba(148, 163, 184, 0.25)); border-radius: 14px; padding: 1.25rem; background: var(--surface, rgba(15, 23, 42, 0.5)); display: flex; flex-direction: column; justify-content: space-between; }
-    .sight-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.75rem; }
-    .sight-header h3 { font-size: 1.1rem; margin: 0; }
-    .sight-badge { font-size: 0.75rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 999px; background: rgba(16, 185, 129, 0.15); color: #34d399; }
-    .sight-badge.paid { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
-    .sight-meta { display: grid; grid-template-columns: auto 1fr; gap: 0.4rem 0.75rem; font-size: 0.85rem; margin: 0.75rem 0; background: rgba(0, 0, 0, 0.2); padding: 0.65rem 0.75rem; border-radius: 8px; }
-    .sight-meta strong { opacity: 0.75; }
+    .sights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(295px, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
+    .sight-card { border: 1px solid var(--border, rgba(148, 163, 184, 0.25)); border-radius: 14px; padding: 1.25rem; background: var(--surface, rgba(15, 23, 42, 0.5)); display: flex; flex-direction: column; justify-content: space-between; gap: 0.85rem; }
+    .sight-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.45rem 0.65rem; margin-bottom: 0.65rem; }
+    .sight-header h3 { font-size: 1.08rem; line-height: 1.3; margin: 0; }
+    .sight-badge { display: inline-flex; align-items: center; white-space: nowrap; flex-shrink: 0; font-size: 0.74rem; font-weight: 700; line-height: 1.2; padding: 0.24rem 0.65rem; border-radius: 999px; border: 1px solid rgba(52, 211, 153, 0.35); background: rgba(16, 185, 129, 0.14); color: #34d399; }
+    .sight-badge.paid { border-color: rgba(96, 165, 250, 0.35); background: rgba(59, 130, 246, 0.14); color: #60a5fa; }
+    .sight-card p { margin: 0; font-size: 0.9rem; line-height: 1.55; }
+    .sight-meta { display: grid; grid-template-columns: 92px 1fr; gap: 0.4rem 0.65rem; font-size: 0.84rem; line-height: 1.45; background: rgba(15, 23, 42, 0.35); border: 1px solid var(--border, rgba(148, 163, 184, 0.15)); padding: 0.7rem 0.85rem; border-radius: 10px; align-items: baseline; }
+    :root[data-theme="light"] .sight-meta { background: rgba(241, 245, 249, 0.85); }
+    :root[data-theme="light"] .sight-badge { background: rgba(16, 185, 129, 0.12); color: #047857; border-color: rgba(4, 120, 87, 0.3); }
+    :root[data-theme="light"] .sight-badge.paid { background: rgba(37, 99, 235, 0.1); color: #1d4ed8; border-color: rgba(29, 78, 216, 0.3); }
+    .sight-meta strong { opacity: 0.8; white-space: nowrap; }
 
     .stay-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 1rem 0; }
     .stay-table th, .stay-table td { padding: 0.75rem 0.65rem; border-bottom: 1px solid var(--border, rgba(148, 163, 184, 0.2)); text-align: left; vertical-align: top; }
@@ -247,9 +251,9 @@
             <div>
               <div class="sight-header">
                 <h3>Gardens by the Bay</h3>
-                <span class="sight-badge">Free Grounds / Paid Domes</span>
+                <span class="sight-badge">Free Grounds</span>
               </div>
-              <p>Futuristic Supertree Grove with free nightly light shows (7:45pm &amp; 8:45pm), plus climate-controlled Flower Dome and Cloud Forest waterfall.</p>
+              <p>Futuristic Supertree Grove with free nightly light shows (7:45pm &amp; 8:45pm), plus ticketed Flower Dome and Cloud Forest indoor waterfall.</p>
             </div>
             <div class="sight-meta">
               <strong>Nearest MRT:</strong> <span>Gardens by the Bay (TE22) / Bayfront (DT16/CE1)</span>
@@ -317,9 +321,9 @@
             <div>
               <div class="sight-header">
                 <h3>Sentosa Island &amp; Beaches</h3>
-                <span class="sight-badge paid">Free Entry / Paid Attractions</span>
+                <span class="sight-badge paid">Free Beaches</span>
               </div>
-              <p>Island resort home to Universal Studios Singapore (USS), S.E.A. Aquarium, Siloso &amp; Palawan sandy beach clubs, and cable car rides.</p>
+              <p>Island resort with free Siloso &amp; Palawan sandy beaches, plus ticketed Universal Studios Singapore (USS), S.E.A. Aquarium, and cable car rides.</p>
             </div>
             <div class="sight-meta">
               <strong>Nearest MRT:</strong> <span>HarbourFront (NE1/CC29) + Sentosa Express</span>

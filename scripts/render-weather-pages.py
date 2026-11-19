@@ -67,6 +67,7 @@ def primary_nav(current):
     more = ' aria-current="true"' if current in {"guides", "4d", "toto", "about", "contact"} else ""
     return (
         '<nav class="primary-nav" aria-label="Primary">'
+        f'{item("/visit-singapore.html", "Visit SG", "visit")}'
         f'<details class="nav-menu"><summary aria-expanded="false"{travel}>Travel</summary><div class="nav-panel">'
         f'{item("/travel.html", "Travel &amp; Customs Hub", "travel")}'
         f'{item("/woodlands-checkpoint.html", "Woodlands Checkpoint", "woodlands")}'
@@ -91,6 +92,9 @@ def primary_nav(current):
         f'{item("/latest-coe-prices.html", "COE", "coe")}'
         f'{item("/parking.html", "SG Parking", "parking")}'
         f'<details class="nav-menu nav-more"><summary aria-expanded="false"{more}>More</summary><div class="nav-panel">'
+        f'{item("/visit-singapore.html", "Visit Singapore Hub", "visit")}'
+        f'{item("/sgd-currency-converter.html", "SGD Currency Converter", "currency")}'
+        f'{item("/singapore-gst-refund-calculator.html", "GST Refund Calculator", "gst")}'
         f'{item("/speed-cameras.html", "Speed Camera Map", "speed-cameras")}'
         f'{item("/guides/", "All Guides", "guides")}'
         f'{item("/4d-results.html", "4D Results", "4d")}{item("/toto-results.html", "TOTO Results", "toto")}'
@@ -129,6 +133,8 @@ def mobile_tabbar(current):
         return f'<a class="tabbar-item" href="{href}"{cur}>{svg.format(TAB_ICONS[key])}<span>{label}</span></a>'
 
     links = (
+        '<a href="/visit-singapore.html">Visit Singapore</a><a href="/sgd-currency-converter.html">SGD Currency Converter</a>'
+        '<a href="/singapore-gst-refund-calculator.html">GST Refund Calculator</a>'
         '<a href="/parking.html">SG Parking</a><a href="/speed-cameras.html">Speed Cameras</a>'
         '<a href="/singapore-petrol-prices.html">Petrol prices</a><a href="/latest-coe-prices.html">COE prices</a>'
         '<a href="/bto-launches.html">BTO launches</a><a href="/singapore/haze/">Haze &amp; PSI</a>'
