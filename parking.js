@@ -1,6 +1,6 @@
 (function () {
   const AVAILABILITY_URL = "https://api.data.gov.sg/v1/transport/carpark-availability";
-  const ONEMAP_SEARCH_URL = "https://www.onemap.gov.sg/api/common/elastic/search";
+  const NOMINATIM_SEARCH_URL = "https://nominatim.openstreetmap.org/search";
   const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[c]));
 
   let dataset = null;
@@ -252,7 +252,7 @@
         color = lotInfo.avail >= 25 ? "#10b981" : lotInfo.avail >= 5 ? "#f59e0b" : "#ef4444";
       } else if (cp.free_sun_ph) {
         color = "#14b8a6";
-      } else if (cp.source_type === "LTA Commercial Rates") {
+      } else if (cp.source_type === "LTA Commercial Rates" || cp.source_type === "SG Commercial Directory" || cp.source_type === "Commercial reference") {
         color = "#a855f7";
       }
       const m = L.circleMarker([cp.lat, cp.lng], {
@@ -277,11 +277,11 @@
     if (anchor) {
       L.circleMarker([anchor.lat, anchor.lng], {
         renderer: canvasRenderer,
-        radius: 9,
-        color: "#ffffff",
+        radius: 11,
+        color: "#60a5fa",
         weight: 2.5,
         fillColor: "#2563eb",
-        fillOpacity: 1,
+        fillOpacity: 0.18,
       }).bindPopup(searchedLocation ? `Search: ${esc(searchedLocation.address)}` : "Your current location").addTo(markerLayer);
     }
   }
@@ -363,14 +363,14 @@
     if (!query || query.length < 3 || query === lastGeocodedQuery) return;
     lastGeocodedQuery = query;
     try {
-      const url = `${ONEMAP_SEARCH_URL}?searchVal=${encodeURIComponent(query)}&returnGeom=Y&getAddrDetails=Y&pageNum=1`;
+      const url = `${NOMINATIM_SEARCH_URL}?format=json&countrycodes=sg&limit=1&q=${encodeURIComponent(query)}`;
       const res = await fetch(url);
       if (!res.ok) return;
       const json = await res.json();
-      const first = json?.results?.[0];
+      const first = Array.isArray(json) ? json[0] : null;
       if (!first) return;
-      const lat = Number(first.LATITUDE);
-      const lng = Number(first.LONGITUDE);
+      const lat = Number(first.lat);
+      const lng = Number(first.lon);
       if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
       // Ignore stale responses if the user changed the query
       const currentVal = (document.getElementById("parkingSearch")?.value || "").trim();
@@ -378,7 +378,7 @@
       searchedLocation = {
         lat,
         lng,
-        address: first.ADDRESS || first.SEARCHVAL || query,
+        address: first.display_name || first.name || query,
       };
       if (map) map.setView([lat, lng], 15, { animate: true });
       renderAll();
