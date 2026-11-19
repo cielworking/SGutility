@@ -2564,6 +2564,14 @@ html { -webkit-text-size-adjust: 100%; }
   background: #fff;
   box-shadow: var(--shadow);
 }
+.nav-panel::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+}
 .nav-more .nav-panel { left: auto; right: 0; }
 .primary-nav .nav-panel a {
   width: 100%;

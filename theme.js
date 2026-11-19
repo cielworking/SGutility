@@ -79,6 +79,94 @@
     window.addEventListener("storage", function (event) {
       if (event.key === STORAGE_KEY) paint(readMode());
     });
+    initNavHoverMenus();
+  }
+
+  function initNavHoverMenus() {
+    var nav = document.querySelector(".primary-nav");
+    if (!nav || nav.getAttribute("data-nav-wired") === "1") return;
+    nav.setAttribute("data-nav-wired", "1");
+    var menus = Array.prototype.slice.call(nav.querySelectorAll(".nav-menu"));
+    if (!menus.length) return;
+    var timers = new Map();
+
+    function sync(menu) {
+      var summary = menu.querySelector("summary");
+      if (summary) summary.setAttribute("aria-expanded", menu.open ? "true" : "false");
+    }
+
+    function clearTimer(menu) {
+      var t = timers.get(menu);
+      if (t) {
+        clearTimeout(t);
+        timers.delete(menu);
+      }
+    }
+
+    menus.forEach(function (menu) {
+      sync(menu);
+      menu.addEventListener("toggle", function () {
+        sync(menu);
+        if (!menu.open) return;
+        menus.forEach(function (other) {
+          if (other !== menu && other.open) {
+            clearTimer(other);
+            other.open = false;
+            sync(other);
+          }
+        });
+      });
+
+      menu.addEventListener("pointerenter", function (e) {
+        if (e.pointerType && e.pointerType !== "mouse") return;
+        clearTimer(menu);
+        menus.forEach(function (other) {
+          if (other !== menu && other.open) {
+            clearTimer(other);
+            other.open = false;
+            sync(other);
+          }
+        });
+        if (!menu.open) {
+          menu.open = true;
+          sync(menu);
+        }
+      });
+
+      menu.addEventListener("pointerleave", function (e) {
+        if (e.pointerType && e.pointerType !== "mouse") return;
+        clearTimer(menu);
+        var t = setTimeout(function () {
+          if (menu.open) {
+            menu.open = false;
+            sync(menu);
+          }
+        }, 120);
+        timers.set(menu, t);
+      });
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key !== "Escape") return;
+      menus.forEach(function (menu) {
+        if (menu.open) {
+          clearTimer(menu);
+          menu.open = false;
+          sync(menu);
+        }
+      });
+    });
+
+    document.addEventListener("pointerdown", function (event) {
+      if (event.target.closest && event.target.closest(".primary-nav")) return;
+      menus.forEach(function (menu) {
+        if (menu.open) {
+          clearTimer(menu);
+          menu.open = false;
+          sync(menu);
+        }
+      });
+    });
   }
 
   if (document.readyState === "loading") {

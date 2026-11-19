@@ -1789,6 +1789,8 @@ applyIcons();
 loadData();
 
 function initNavMenus() {
+  const nav = document.querySelector(".primary-nav");
+  if (!nav || nav.getAttribute("data-nav-wired") === "1") return;
   const menus = Array.from(document.querySelectorAll(".primary-nav .nav-menu"));
   if (!menus.length) return;
   const sync = (menu) => {
