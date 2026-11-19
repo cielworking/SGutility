@@ -50,42 +50,33 @@ const CAMERA_ZONES = {
 };
 
 const NIGHT_PROMPTS = {
-  // All 4 cameras use Vision 24/7 returning BOTH raw vehicle counts AND lane fill tiers ("empty"|"sparse"|"moderate"|"heavy"|"packed")
-  // so dense queues never undercount while empty/sparse roads stay exact.
-  "2701": 'Singapore LTA traffic cam 2701 (Woodlands Causeway). Landmarks: 3 thick WHITE WATER PIPES on lower-right = TOWARDS SG (WOODLANDS); outermost lanes closest to OPEN SEA on upper-left = TOWARDS JB (JOHOR). For each direction give raw counts AND lane fill tier ("empty"|"sparse"|"moderate"|"heavy"|"packed"): car_fill and bike_fill (packed = continuous solid bumper-to-bumper queue stretching across the bridge; heavy = long queue >50% of bridge; moderate = noticeable cluster; sparse = few scattered vehicles; empty = 0-2). Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0,"car_fill":"sparse","bike_fill":"sparse"},"towards_sg":{"car":0,"motorcycle":0,"heavy":0,"car_fill":"sparse","bike_fill":"sparse"}}',
-  "2702": 'Singapore LTA traffic cam 2702 (Woodlands Checkpoint/BKE). THREE zones: (1) Left elevated ramp (BKE) = TOWARDS SG. (2) Upper-right narrow curved elevated viaduct = STRICTLY MOTORCYCLES TOWARDS JB (never count as cars; if solid wall of bikes along the curve set bike_fill="packed"). (3) Lower wide lanes (CAUSEWAY) = cars/buses/trucks TOWARDS JB (set car_fill="packed" if backed up solid). Use fill tiers "empty"|"sparse"|"moderate"|"heavy"|"packed". Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0,"car_fill":"sparse","bike_fill":"sparse"},"towards_sg":{"car":0,"motorcycle":0,"heavy":0,"car_fill":"sparse","bike_fill":"sparse"}}',
-  "4703": 'Singapore LTA traffic cam 4703 (Tuas Second Link). Diagonal concrete divider splits the frame: (1) ABOVE/RIGHT of divider = TOWARDS SG: cars/trucks plus far-right motorcycle lane (set car_fill="packed" if cars queue to top-left; set bike_fill="packed" if far-right lane has a dense mass of bikes). (2) BELOW/LEFT of divider (curved ramp under JOHOR + lower barrier lane) = TOWARDS JB: count motorcycles and vehicles on curved ramp/bottom lane (set bike_fill="heavy" or "packed" if steady stream of 20+ bikes). Fill tiers: "empty"|"sparse"|"moderate"|"heavy"|"packed". Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0,"car_fill":"sparse","bike_fill":"sparse"},"towards_sg":{"car":0,"motorcycle":0,"heavy":0,"car_fill":"sparse","bike_fill":"sparse"}}',
-  "4703_contraflow": 'Singapore LTA traffic cam 4703 during weekday morning contraflow (Tuas Second Link). Orange cones split the lower viaduct. TOWARDS SG = upper-right & middle motorcycle sea + bottom-right guardhouse bike lane + cars along orange-cone contraflow lane + far-right lorries/buses (set bike_fill="packed" if massive sea of bikes; car_fill="heavy"/"packed" if lined up along cones). TOWARDS JB = only vehicles on inner-left lane below orange cones under JOHOR. Fill tiers: "empty"|"sparse"|"moderate"|"heavy"|"packed". Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0,"car_fill":"sparse","bike_fill":"sparse"},"towards_sg":{"car":0,"motorcycle":0,"heavy":0,"car_fill":"sparse","bike_fill":"sparse"}}',
-  "4713": 'Singapore LTA traffic cam 4713 (Tuas Outbound to Johor). Right-hand viaduct labeled JOHOR + bottom horizontal bike lane = TOWARDS JB (ignore left AYE ramp). Look closely at TWO separate lanes on the right viaduct: (1) Left 2 lanes of JOHOR viaduct = CARS (set car_fill="packed" if 2 solid lines of cars stretch all the way up the bridge; "heavy" if halfway). (2) Right edge of JOHOR viaduct directly under yellow JOHOR label + bottom foreground lane = MOTORCYCLES (set bike_fill="packed" if thick solid stream of bikes stretches up past JOHOR label; "heavy" if long queue). Fill tiers: "empty"|"sparse"|"moderate"|"heavy"|"packed". Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0,"car_fill":"sparse","bike_fill":"sparse"}}',
+  // All 4 cameras use high-res Vision 24/7 returning BOTH lane fill percentage (0-100) FIRST and raw vehicle counts.
+  // Empty/light lanes (<30% full) use exact raw counts; congested lanes (>=30% full) calibrate against physical lane capacity.
+  "2701": 'Singapore LTA traffic cam 2701 (Woodlands Causeway). Two directions on the diagonal bridge: (1) towards_jb = upper-left lanes labeled JOHOR closest to the open water; (2) towards_sg = lower-right lanes labeled WOODLANDS directly beside the 3 thick white water pipes. Do NOT count empty bridge deck or reflections. If clear gaps of empty road appear between vehicles, car_pct MUST be 25 or less; only use 60-100 if vehicles form a solid bumper-to-bumper queue. Separate buses/trucks into heavy (not car). Reply ONLY compact JSON: {"towards_jb":{"car_pct":0,"bike_pct":0,"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car_pct":0,"bike_pct":0,"car":0,"motorcycle":0,"heavy":0}}',
+  "2702": 'Singapore LTA traffic cam 2702 (Woodlands Checkpoint/BKE). Map EXACTLY to these two JSON keys: (1) towards_jb = BOTH the lower-right wide lanes labeled CAUSEWAY (cars/buses/trucks) AND the upper-right narrow curved elevated viaduct carrying ONLY MOTORCYCLES (this curved right-side motorcycle viaduct is ALWAYS towards_jb.bike_pct and towards_jb.motorcycle, NEVER towards_sg!). (2) towards_sg = ONLY the straight far-left elevated ramp labeled BKE (typically light/moderate traffic; do NOT put right-side viaduct bikes here). Estimate car_pct and bike_pct (0-100) FIRST, then counts. Reply ONLY compact JSON: {"towards_jb":{"car_pct":0,"bike_pct":0,"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car_pct":0,"bike_pct":0,"car":0,"motorcycle":0,"heavy":0}}',
+  "4703": 'Singapore LTA traffic cam 4703 (Tuas Second Link). Diagonal concrete divider splits the frame into two JSON keys: (1) towards_jb = BELOW/LEFT of the divider (curved ramp under yellow JOHOR label + bottom foreground barrier lane): count cars, motorcycles, and large lorries/buses on that curved ramp. (2) towards_sg = ABOVE/RIGHT of the divider: cars/trucks queueing toward top-left PLUS the far-right motorcycle lane at the right edge of the frame (check the far-right edge carefully for clustered SG-bound motorcycles; do NOT count guardhouses/booths as trucks). Estimate car_pct and bike_pct (0-100) FIRST, then counts. Reply ONLY compact JSON: {"towards_jb":{"car_pct":0,"bike_pct":0,"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car_pct":0,"bike_pct":0,"car":0,"motorcycle":0,"heavy":0}}',
+  "4703_contraflow": 'Singapore LTA traffic cam 4703 during weekday morning contraflow (Tuas Second Link). Orange cones split the lower viaduct. towards_jb = ONLY vehicles on the inner-left lane below the orange cones under JOHOR. towards_sg = upper-right & middle motorcycle sea + bottom-right guardhouse bike lane + cars along orange-cone contraflow lane + far-right lorries/buses. Estimate car_pct and bike_pct (0-100) FIRST, then counts. Reply ONLY compact JSON: {"towards_jb":{"car_pct":0,"bike_pct":0,"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car_pct":0,"bike_pct":0,"car":0,"motorcycle":0,"heavy":0}}',
+  "4713": 'Singapore LTA traffic cam 4713 (Tuas Outbound to Johor). IGNORE the empty left AYE road and trees completely! Look ONLY at the right-side viaduct labeled JOHOR + bottom horizontal foreground bike lane (all towards_jb): (1) Car lanes on the left side of the JOHOR viaduct — if lines of cars stretch past the yellow JOHOR sign to the top gantry, car_pct is 85-100. (2) Motorcycle lane on the right edge directly under the yellow JOHOR sign plus bikes on the bottom horizontal foreground lane — if a busy queue of bikes fills that right lane past the sign, bike_pct is 60-100. (3) Count buses/trucks on the far-right lower lane as heavy. Estimate car_pct and bike_pct (0-100) FIRST, then counts. Reply ONLY compact JSON: {"towards_jb":{"car_pct":0,"bike_pct":0,"car":0,"motorcycle":0,"heavy":0}}',
 };
 
-const FILL_FLOORS = {
-  "2701": {
-    jb: { car: { moderate: 10, heavy: 25, packed: 50 }, bike: { moderate: 15, heavy: 40, packed: 90 } },
-    sg: { car: { moderate: 12, heavy: 28, packed: 55 }, bike: { moderate: 20, heavy: 50, packed: 110 } },
-  },
-  "2702": {
-    jb: { car: { moderate: 15, heavy: 35, packed: 65 }, bike: { moderate: 30, heavy: 80, packed: 150 } },
-    sg: { car: { moderate: 8, heavy: 18, packed: 35 }, bike: { moderate: 8, heavy: 20, packed: 45 } },
-  },
-  "4703": {
-    jb: { car: { moderate: 8, heavy: 18, packed: 35 }, bike: { moderate: 12, heavy: 28, packed: 50 } },
-    sg: { car: { moderate: 12, heavy: 26, packed: 45 }, bike: { moderate: 15, heavy: 38, packed: 70 } },
-  },
-  "4703_contraflow": {
-    jb: { car: { moderate: 6, heavy: 14, packed: 28 }, bike: { moderate: 10, heavy: 24, packed: 45 } },
-    sg: { car: { moderate: 12, heavy: 26, packed: 45 }, bike: { moderate: 35, heavy: 80, packed: 150 } },
-  },
-  "4713": {
-    jb: { car: { moderate: 16, heavy: 38, packed: 68 }, bike: { moderate: 20, heavy: 50, packed: 95 } },
-    sg: { car: {}, bike: {} },
-  },
+const MODEL_VERSION = "v6-mistral-calibrated";
+
+// Physical visible lane capacities (vehicles visible in frame when 100% packed end-to-end)
+const LANE_MAX_CAP = {
+  "2701": { jb: { car: 55, bike: 90 }, sg: { car: 60, bike: 110 } },
+  "2702": { jb: { car: 72, bike: 165 }, sg: { car: 35, bike: 45 } },
+  "4703": { jb: { car: 35, bike: 55 }, sg: { car: 48, bike: 75 } },
+  "4703_contraflow": { jb: { car: 28, bike: 45 }, sg: { car: 48, bike: 160 } },
+  "4713": { jb: { car: 70, bike: 95 }, sg: { car: 0, bike: 0 } },
 };
 
-function applyFillFloor(rawVal, tier, table) {
-  const key = String(tier || "").toLowerCase().trim();
-  const floor = (table && table[key]) ? table[key] : 0;
-  return Math.max(rawVal, floor);
+function applyPctFloor(rawVal, pctVal, maxCap) {
+  const pct = Math.max(0, Math.min(100, Number(pctVal) || 0));
+  if (!maxCap) return rawVal;
+  if (pct < 30) return Math.min(rawVal, Math.round(maxCap * 0.45));
+  const pctEst = Math.round((pct / 100) * maxCap);
+  const ceiling = Math.round(maxCap * 1.15);
+  return Math.min(Math.max(rawVal, pctEst), ceiling);
 }
 
 function isSgtNight(isoTs) {
@@ -232,27 +223,43 @@ async function detectCameraNightVision(env, cam, buf) {
   const prompt = NIGHT_PROMPTS[promptKey];
   if (!prompt) return detectCameraDetr(env, cam, buf);
   try {
-    const res = await env.AI.run("@cf/meta/llama-4-scout-17b-16e-instruct", {
-      messages: [{ role: "user", content: [
+    const messages = [
+      { role: "system", content: "You are a traffic camera counter. Output ONLY one compact valid JSON object matching the schema. No markdown fences, no commentary." },
+      { role: "user", content: [
         { type: "text", text: prompt },
         { type: "image_url", image_url: { url: "data:image/jpeg;base64," + toB64(buf) } }
-      ]}],
-      max_tokens: 200,
-      temperature: 0.1,
-    });
-    const parsed = parseJsonObject(res?.choices?.[0]?.message?.content || res?.response || res);
+      ]}
+    ];
+    let res;
+    try {
+      res = await env.AI.run("@cf/mistralai/mistral-small-3.1-24b-instruct", {
+        messages,
+        response_format: { type: "json_object" },
+        max_tokens: 220,
+        temperature: 0.1,
+      });
+    } catch {
+      res = await env.AI.run("@cf/meta/llama-4-scout-17b-16e-instruct", {
+        messages,
+        response_format: { type: "json_object" },
+        max_tokens: 220,
+        temperature: 0.1,
+      });
+    }
+    const rawText = res?.choices?.[0]?.message?.content ?? res?.response ?? res;
+    const parsed = parseJsonObject(rawText);
     if (!parsed || !parsed.towards_jb) return detectCameraDetr(env, cam, buf);
 
     const clamp = (n) => Math.max(0, Math.min(250, Math.round(Number(n) || 0)));
     const jb = parsed.towards_jb || {};
     const sg = cam.camera_id === "4713" ? {} : (parsed.towards_sg || {});
-    const floors = FILL_FLOORS[promptKey] || { jb: { car: {}, bike: {} }, sg: { car: {}, bike: {} } };
+    const caps = LANE_MAX_CAP[promptKey] || { jb: { car: 0, bike: 0 }, sg: { car: 0, bike: 0 } };
 
-    const jbCar = applyFillFloor(clamp(jb.car), jb.car_fill, floors.jb.car);
-    const jbMoto = applyFillFloor(clamp(jb.motorcycle), jb.bike_fill, floors.jb.bike);
+    const jbCar = applyPctFloor(clamp(jb.car), jb.car_pct, caps.jb.car);
+    const jbMoto = applyPctFloor(clamp(jb.motorcycle), jb.bike_pct, caps.jb.bike);
     const jbHeavy = clamp(jb.heavy);
-    const sgCar = applyFillFloor(clamp(sg.car), sg.car_fill, floors.sg.car);
-    const sgMoto = applyFillFloor(clamp(sg.motorcycle), sg.bike_fill, floors.sg.bike);
+    const sgCar = applyPctFloor(clamp(sg.car), sg.car_pct, caps.sg.car);
+    const sgMoto = applyPctFloor(clamp(sg.motorcycle), sg.bike_pct, caps.sg.bike);
     const sgHeavy = clamp(sg.heavy);
 
     const counts = {
@@ -332,7 +339,7 @@ export default {
     }
 
     // Standard loads always use up to 120s shared edge cache (0 AI Neurons spent)
-    if (!force && cachedResp) {
+    if (!force && cachedResp && cachedData?.model_version === MODEL_VERSION) {
       return cachedResp;
     }
 
@@ -347,8 +354,8 @@ export default {
       const picked = targetIds.map(id => byId[id]).filter(Boolean);
       const latestTs = picked.map(c => c.timestamp).filter(Boolean).sort().pop() || new Date().toISOString();
 
-      // Free-tier guard: even with ?refresh=1, never re-run AI if LTA's photo timestamp hasn't changed
-      if (cachedData && cachedData.ok && cachedData.last_updated === latestTs) {
+      // Free-tier guard: even with ?refresh=1, never re-run AI if LTA's photo timestamp & model version haven't changed
+      if (cachedData && cachedData.ok && cachedData.last_updated === latestTs && cachedData.model_version === MODEL_VERSION) {
         return new Response(JSON.stringify(cachedData), {
           status: 200,
           headers: {
@@ -368,7 +375,8 @@ export default {
 
       const payload = {
         ok: true,
-        model: nightMode ? "Workers AI Llama-4-Scout Vision (night live)" : "Workers AI Vision + DETR (day live)",
+        model_version: MODEL_VERSION,
+        model: "Workers AI Mistral-3.1 Vision (live)",
         last_updated: latestTs,
         woodlands,
         tuas,
