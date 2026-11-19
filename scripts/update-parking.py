@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import math
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -12,6 +13,8 @@ import requests
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "carparks.json"
 COMMERCIAL_CACHE = ROOT / "data" / "commercial-carparks-cache.json"
+DIRECTORY_CACHE = ROOT / "data" / "commercial-directory-cache.json"
+DIRECTORY_URL = "https://www.sgcarmart.com/news/carpark_index.php?TYP=carpark&LOC=all"
 HDB_RESOURCE = "d_23f946fa557947f93a8043bbef41dd09"
 HDB_INFO_URL = "https://data.gov.sg/api/action/datastore_search"
 AVAILABILITY_URL = "https://api.data.gov.sg/v1/transport/carpark-availability"
@@ -171,6 +174,26 @@ CURATED_SPOTS = [
         "note": "Compare mall rate against nearby HDB surface/MSCP lots before parking.",
         "source_type": "Commercial reference",
     },
+    {
+        "id": "CUR-AZ-PAYA-LEBAR",
+        "name": "AZ @ Paya Lebar",
+        "address": "140 Paya Lebar Road, Singapore 409015",
+        "lat": 1.326015,
+        "lng": 103.891512,
+        "type": "COMMERCIAL / MULTI-STOREY CARPARK",
+        "system": "ELECTRONIC PARKING",
+        "area_tier": "standard",
+        "sheltered": True,
+        "night_parking": True,
+        "gantry_height": 2.1,
+        "free_sun_ph": False,
+        "free_bike": False,
+        "bike_friendly": True,
+        "bike_rate": "Check gantry signage (nearby HDB bike lots at Blk 76A Circuit Rd)",
+        "car_rate": "Commercial gantry rate (Levels 1–4; season parking Levels 2–3)",
+        "note": "Multi-storey commercial carpark opposite MacPherson MRT near PIE.",
+        "source_type": "Commercial reference",
+    },
 ]
 
 
@@ -316,6 +339,28 @@ def fetch_live_availability() -> tuple[str, dict[str, dict]]:
     return ts, by_no
 
 
+def fetch_commercial_directory() -> list[dict]:
+    """Fetch 1,100+ Singapore commercial/mall/office/industrial carparks and cache locally."""
+    try:
+        resp = requests.get(DIRECTORY_URL, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
+        resp.raise_for_status()
+        m = re.search(r'(\[\{"id":\d+,"name":.*?\}\])', resp.text, re.S)
+        if m:
+            records = json.loads(m.group(1))
+            if isinstance(records, list) and len(records) >= 500:
+                DIRECTORY_CACHE.write_text(json.dumps(records, separators=(",", ":")), encoding="utf-8")
+                return records
+    except Exception as exc:
+        print(f"Warning: commercial directory fetch failed ({exc}); using cached copy.")
+
+    if DIRECTORY_CACHE.exists():
+        try:
+            return json.loads(DIRECTORY_CACHE.read_text(encoding="utf-8"))
+        except Exception:
+            return []
+    return []
+
+
 def build_dataset() -> dict:
     hdb_rows = fetch_all_hdb_carparks()
     live_ts, live_map = fetch_live_availability()
@@ -447,8 +492,53 @@ def build_dataset() -> dict:
             }
         )
 
+    existing_names = {re.sub(r"[^a-z0-9]", "", str(c.get("name") or "").lower()) for c in carparks}
+    for entry in fetch_commercial_directory():
+        name = str(entry.get("name") or "").strip()
+        if not name:
+            continue
+        norm = re.sub(r"[^a-z0-9]", "", name.lower())
+        if not norm or norm in existing_names:
+            continue
+        try:
+            lat = round(float(entry["latitude"]), 6)
+            lng = round(float(entry["longitude"]), 6)
+        except (KeyError, TypeError, ValueError):
+            continue
+        if not (1.15 <= lat <= 1.50 and 103.58 <= lng <= 104.10):
+            continue
+        existing_names.add(norm)
+        road = str(entry.get("road") or "").strip()
+        addr = f"{name}, {road}" if road and road.lower() not in name.lower() else name
+        area_tier = "central" if any(k.upper() in addr.upper() for k in CENTRAL_AREA_KEYWORDS) else "standard"
+        carparks.append(
+            {
+                "id": f"SGCM-{entry.get('id')}",
+                "name": name,
+                "address": addr,
+                "lat": lat,
+                "lng": lng,
+                "type": "COMMERCIAL / BUILDING",
+                "system": "ELECTRONIC PARKING",
+                "short_term": "COMMERCIAL SCHEDULE",
+                "free_parking_raw": "COMMERCIAL",
+                "free_sun_ph": False,
+                "free_bike": False,
+                "night_parking": True,
+                "sheltered": True,
+                "gantry_height": 2.1,
+                "area_tier": area_tier,
+                "bike_rate": "Commercial gantry rate (check building signage)",
+                "car_rate": "Commercial gantry rate (check building signage)",
+                "has_car_live": False,
+                "has_bike_live": False,
+                "live": {},
+                "source_type": "SG Commercial Directory",
+            }
+        )
+
     return {
-        "source_name": "HDB & LTA via data.gov.sg",
+        "source_name": "HDB, LTA & SG Commercial Directory",
         "last_updated": live_ts,
         "counts": {
             "total": len(carparks),
