@@ -4657,6 +4657,18 @@ select.fuel-selector,
   box-shadow: 0 4px 14px rgba(15, 23, 42, 0.16);
 }
 
+.parking-card.is-selected {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--brand) 32%, transparent), 0 6px 18px rgba(15, 23, 42, 0.22);
+}
+
+.sga-anchor-pin svg,
+.sga-carpark-pin svg {
+  width: 44px !important;
+  height: 54px !important;
+  display: block;
+}
+
 .parking-card-top {
   display: flex;
   justify-content: space-between;

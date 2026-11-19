@@ -17,6 +17,7 @@
   let markerLayer = null;
   let canvasRenderer = null;
   let markersById = {};
+  let selectedCarparkId = null;
 
   const params = new URLSearchParams(window.location.search);
   if (params.get("mode") === "car") vehicleMode = "car";
@@ -201,6 +202,7 @@
     document.getElementById("clearGeoSearchBtn")?.addEventListener("click", () => {
       searchedLocation = null;
       lastGeocodedQuery = "";
+      selectedCarparkId = null;
       const input = document.getElementById("parkingSearch");
       if (input) input.value = "";
       if (map) map.setView([1.3521, 103.8198], 12);
@@ -246,26 +248,39 @@
     if (!map || !markerLayer) return;
     markerLayer.clearLayers();
     markersById = {};
-    const subset = items.slice(0, 320);
-    for (const { cp, lotInfo } of subset) {
-      let color = "#3b82f6";
-      if (vehicleMode === "motorcycle" && cp.free_bike) color = "#10b981";
+
+    const anchor = activeAnchor();
+    const selectedItem = items.find((i) => i.cp.id === selectedCarparkId) || (items.length === 1 ? items[0] : null);
+
+    if (anchor && selectedItem) {
+      L.polyline([[anchor.lat, anchor.lng], [selectedItem.cp.lat, selectedItem.cp.lng]], {
+        color: "#2563eb",
+        weight: 3,
+        dashArray: "6, 7",
+        opacity: 0.8,
+      }).addTo(markerLayer);
+    }
+
+    if (selectedItem) {
+      const { cp, lotInfo } = selectedItem;
+      let color = "#2563eb";
+      if (vehicleMode === "motorcycle" && cp.free_bike) color = "#059669";
       else if (lotInfo && (vehicleMode === "car" || lotInfo.type === "Y")) {
-        color = lotInfo.avail >= 25 ? "#10b981" : lotInfo.avail >= 5 ? "#f59e0b" : "#ef4444";
+        color = lotInfo.avail >= 25 ? "#059669" : lotInfo.avail >= 5 ? "#d97706" : "#dc2626";
       } else if (cp.free_sun_ph) {
-        color = "#14b8a6";
+        color = "#0d9488";
       } else if (cp.source_type === "LTA Commercial Rates" || cp.source_type === "SG Commercial Directory" || cp.source_type === "Commercial reference") {
-        color = "#a855f7";
+        color = "#7c3aed";
       }
-      const m = L.circleMarker([cp.lat, cp.lng], {
-        renderer: canvasRenderer,
-        radius: 7,
-        color: "#ffffff",
-        weight: 1.5,
-        fillColor: color,
-        fillOpacity: 0.92,
+      const cpIcon = L.divIcon({
+        className: "sga-carpark-pin",
+        html: `<svg xmlns="http://www.w3.org/2000/svg" width="44" height="54" viewBox="0 0 44 54" style="width:44px !important;height:54px !important;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.45));display:block;"><path d="M22 2C11.5 2 3 10.5 3 21c0 14.2 19 31 19 31s19-16.8 19-31C41 10.5 32.5 2 22 2z" fill="${color}" stroke="#ffffff" stroke-width="3"/><circle cx="22" cy="20" r="11" fill="#ffffff"/><text x="22" y="25" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="800" fill="${color}">P</text></svg>`,
+        iconSize: [44, 54],
+        iconAnchor: [22, 52],
+        popupAnchor: [0, -48],
       });
       const lotText = lotInfo ? `${lotInfo.avail} / ${lotInfo.total} ${lotInfo.type === "Y" ? "bike" : "car"} lots` : esc(cp.type);
+      const m = L.marker([cp.lat, cp.lng], { icon: cpIcon, zIndexOffset: 1000 });
       m.bindPopup(`
         <strong>${esc(cp.name)}</strong> (${esc(cp.id)})<br>
         <span>${lotText}</span><br>
@@ -276,17 +291,16 @@
       markersById[cp.id] = m;
     }
 
-    const anchor = activeAnchor();
     if (anchor) {
       const pinIcon = L.divIcon({
         className: "sga-anchor-pin",
-        html: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" style="filter:drop-shadow(0 3px 6px rgba(0,0,0,0.45));display:block;"><path d="M16 1C8.27 1 2 7.27 2 15c0 10.5 14 23 14 23s14-12.5 14-23C30 7.27 23.73 1 16 1z" fill="#ef4444" stroke="#ffffff" stroke-width="2.5"/><circle cx="16" cy="15" r="5.5" fill="#ffffff"/></svg>`,
-        iconSize: [32, 40],
-        iconAnchor: [16, 38],
-        popupAnchor: [0, -34],
+        html: `<svg xmlns="http://www.w3.org/2000/svg" width="44" height="54" viewBox="0 0 44 54" style="width:44px !important;height:54px !important;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.45));display:block;"><path d="M22 2C11.5 2 3 10.5 3 21c0 14.2 19 31 19 31s19-16.8 19-31C41 10.5 32.5 2 22 2z" fill="#ef4444" stroke="#ffffff" stroke-width="3"/><circle cx="22" cy="20" r="7.5" fill="#ffffff"/></svg>`,
+        iconSize: [44, 54],
+        iconAnchor: [22, 52],
+        popupAnchor: [0, -48],
       });
       L.marker([anchor.lat, anchor.lng], { icon: pinIcon, zIndexOffset: 900 })
-        .bindPopup(searchedLocation ? `<strong>Search:</strong> ${esc(searchedLocation.address)}` : "<strong>Your current location</strong>")
+        .bindPopup(searchedLocation ? `<strong>Searched Location:</strong><br>${esc(searchedLocation.address)}` : "<strong>Your current location</strong>")
         .addTo(markerLayer);
     }
   }
@@ -311,12 +325,12 @@
     const shown = items.slice(0, 60);
     if (countNote) {
       countNote.textContent = items.length
-        ? `Showing ${shown.length} of ${items.length.toLocaleString()} matching carparks (top ${Math.min(items.length, 320)} plotted on map).`
+        ? `Showing ${shown.length} of ${items.length.toLocaleString()} matching carparks — click any carpark card below to pin and zoom it on the map.`
         : "No carparks match those filters. Try clearing a filter or searching a Singapore postal code (e.g. 460401) or area.";
     }
 
     grid.innerHTML = shown.map(({ cp, lotInfo, dist }) => `
-      <article class="parking-card" data-card-id="${esc(cp.id)}" data-focus-lat="${cp.lat}" data-focus-lng="${cp.lng}">
+      <article class="parking-card${cp.id === selectedCarparkId ? " is-selected" : ""}" data-card-id="${esc(cp.id)}" data-focus-lat="${cp.lat}" data-focus-lng="${cp.lng}">
         <div class="parking-card-top">
           <div>
             <span class="parking-code">${esc(cp.id)} · ${esc(cp.source_type === "LTA Commercial Rates" || cp.source_type === "SG Commercial Directory" ? "Commercial / Building" : cp.source_type === "Commercial reference" ? "Commercial Reference" : cp.area_tier === "central" ? "Central Area" : "Heartlands / Islandwide")}</span>
@@ -345,8 +359,20 @@
     `).join("");
 
     function focusCarpark(id, lat, lng) {
+      selectedCarparkId = id;
+      renderAll();
       if (!map) return;
-      map.setView([lat, lng], 17, { animate: true });
+      const anchor = activeAnchor();
+      if (anchor) {
+        const dKm = haversineKm(anchor.lat, anchor.lng, lat, lng);
+        if (dKm >= 0.04 && dKm <= 1.2) {
+          map.fitBounds([[anchor.lat, anchor.lng], [lat, lng]], { maxZoom: 18, padding: [70, 70], animate: true });
+        } else {
+          map.setView([lat, lng], 18, { animate: true });
+        }
+      } else {
+        map.setView([lat, lng], 18, { animate: true });
+      }
       const marker = markersById[id];
       if (marker) marker.openPopup();
       document.getElementById("parkingMap")?.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -393,7 +419,7 @@
         lng,
         address: first.display_name || first.name || query,
       };
-      if (map) map.setView([lat, lng], 15, { animate: true });
+      if (map) map.setView([lat, lng], 18, { animate: true });
       renderAll();
     } catch {}
   }
@@ -438,6 +464,7 @@
     searchInput?.addEventListener("input", () => {
       const val = searchInput.value.trim();
       clearTimeout(searchDebounce);
+      selectedCarparkId = null;
       if (!val) {
         searchedLocation = null;
         lastGeocodedQuery = "";
@@ -459,7 +486,7 @@
       if (!navigator.geolocation) return;
       navigator.geolocation.getCurrentPosition((pos) => {
         userLocation = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-        if (map) map.setView([userLocation.lat, userLocation.lng], 15);
+        if (map) map.setView([userLocation.lat, userLocation.lng], 18);
         renderAll();
       });
     });
