@@ -61,20 +61,28 @@ def primary_nav(current):
         current_attr = ' aria-current="page"' if current == key else ""
         return f'<a href="{href}"{current_attr}>{label}</a>'
 
-    travel = ' aria-current="true"' if current in {"travel", "woodlands", "tuas", "speed-cameras"} else ""
+    visit = ' aria-current="true"' if current in {"visit", "currency", "gst", "sgac"} else ""
+    travel = ' aria-current="true"' if current in {"travel", "woodlands", "tuas"} else ""
     weather = ' aria-current="true"' if current in {"rain", "rain-sg", "rain-my", "haze", "haze-my"} else ""
-    housing = ' aria-current="true"' if current in {"housing", "bto", "housing-qa"} else ""
-    more = ' aria-current="true"' if current in {"guides", "4d", "toto", "about", "contact"} else ""
+    housing = ' aria-current="true"' if current in {"housing", "bto", "housing-calc", "housing-qa"} else ""
+    petrol = ' aria-current="true"' if current in {"petrol", "petrol-calc"} else ""
+    coe = ' aria-current="true"' if current in {"coe", "coe-calc"} else ""
+    parking = ' aria-current="true"' if current in {"parking", "speed-cameras"} else ""
+    more = ' aria-current="true"' if current in {"guides", "news", "4d", "toto", "about", "contact"} else ""
     return (
         '<nav class="primary-nav" aria-label="Primary">'
-        f'{item("/visit-singapore.html", "Visit SG", "visit")}'
-        f'<details class="nav-menu"><summary aria-expanded="false"{travel}>Travel</summary><div class="nav-panel">'
-        f'{item("/visit-singapore.html", "Visit Singapore Hub", "visit")}'
-        f'{item("/travel.html", "Travel &amp; Customs Hub", "travel")}'
+        f'<details class="nav-menu"><summary aria-expanded="false"{visit}>Visit SG</summary><div class="nav-panel">'
+        f'{item("/visit-singapore.html", "Visit Singapore Guide", "visit")}'
+        f'{item("/sgd-currency-converter.html", "SGD Currency Converter", "currency")}'
+        f'{item("/singapore-gst-refund-calculator.html", "GST Refund Calculator", "gst")}'
+        f'{item("/guides/sg-arrival-card-entry-guide.html", "SG Arrival Card Guide", "sgac")}'
+        "</div></details>"
+        f'<details class="nav-menu"><summary aria-expanded="false"{travel}>Checkpoints</summary><div class="nav-panel">'
+        f'{item("/travel.html", "SG–JB Checkpoints Hub", "travel")}'
         f'{item("/woodlands-checkpoint.html", "Woodlands Checkpoint", "woodlands")}'
         f'{item("/tuas-checkpoint.html", "Tuas Checkpoint", "tuas")}'
-        f'{item("/speed-cameras.html", "Speed Camera Map", "speed-cameras")}'
-        f'{item("/guides/woodlands-vs-tuas-checkpoint.html", "Woodlands vs Tuas", "guides")}'
+        f'{item("/guides/woodlands-vs-tuas-checkpoint.html", "Woodlands vs Tuas", "woodlands-vs-tuas")}'
+        f'{item("/guides/jb-causeway-vep-autopass-tng-checklist.html", "VEP &amp; TnG Checklist", "vep-checklist")}'
         "</div></details>"
         f'<details class="nav-menu"><summary aria-expanded="false"{weather}>Weather</summary><div class="nav-panel">'
         f'{item("/weather/", "Rain Radar &amp; Outlook", "rain")}'
@@ -87,17 +95,28 @@ def primary_nav(current):
         f'{item("/housing.html", "Housing Hub (BTO &amp; Resale)", "housing")}'
         f'{item("/bto-launches.html", "Upcoming BTO Launches", "bto")}'
         f'{item("/bto-mortgage-calculator.html", "Mortgage &amp; MSR Calc", "housing-calc")}'
-        f'{item("/housing.html#housing-qa", "Resale &amp; BTO Q&amp;A", "housing-qa")}'
+        f'{item("/guides/feb-2027-bto-hfe-letter-deadline.html", "BTO &amp; HFE Deadline Guide", "hfe-guide")}'
         "</div></details>"
-        f'{item("/singapore-petrol-prices.html", "Petrol", "petrol")}'
-        f'{item("/latest-coe-prices.html", "COE", "coe")}'
-        f'{item("/parking.html", "SG Parking", "parking")}'
+        f'<details class="nav-menu"><summary aria-expanded="false"{petrol}>Petrol</summary><div class="nav-panel">'
+        f'{item("/singapore-petrol-prices.html", "Live Petrol Prices", "petrol")}'
+        f'{item("/petrol-discount-calculator.html", "Petrol Card Calculator", "petrol-calc")}'
+        f'{item("/guides/best-credit-cards-for-petrol-singapore.html", "Best Petrol Credit Cards", "petrol-cards")}'
+        f'{item("/guides/singapore-jb-three-quarter-tank-rule-petrol-guide.html", "3/4-Tank Rule Guide", "tank-rule")}'
+        "</div></details>"
+        f'<details class="nav-menu"><summary aria-expanded="false"{coe}>COE</summary><div class="nav-panel">'
+        f'{item("/latest-coe-prices.html", "Latest COE Prices", "coe")}'
+        f'{item("/coe-calculator.html", "COE &amp; Loan Calculator", "coe-calc")}'
+        f'{item("/guides/when-is-next-coe-bidding.html", "Next COE Bidding Dates", "coe-dates")}'
+        f'{item("/guides/what-is-coe-pqp.html", "What Is COE PQP?", "coe-pqp")}'
+        "</div></details>"
+        f'<details class="nav-menu"><summary aria-expanded="false"{parking}>Parking</summary><div class="nav-panel">'
+        f'{item("/parking.html", "SG Parking Finder", "parking")}'
+        f'{item("/speed-cameras.html", "SPF Speed Camera Map", "speed-cameras")}'
+        f'{item("/guides/how-to-check-erp-rates-singapore.html", "ERP Rates Guide", "erp-guide")}'
+        "</div></details>"
         f'<details class="nav-menu nav-more"><summary aria-expanded="false"{more}>More</summary><div class="nav-panel">'
-        f'{item("/visit-singapore.html", "Visit Singapore Hub", "visit")}'
-        f'{item("/sgd-currency-converter.html", "SGD Currency Converter", "currency")}'
-        f'{item("/singapore-gst-refund-calculator.html", "GST Refund Calculator", "gst")}'
-        f'{item("/speed-cameras.html", "Speed Camera Map", "speed-cameras")}'
         f'{item("/guides/", "All Guides", "guides")}'
+        f'{item("/news.html", "Singapore News", "news")}'
         f'{item("/4d-results.html", "4D Results", "4d")}{item("/toto-results.html", "TOTO Results", "toto")}'
         f'{item("/about.html", "About", "about")}{item("/contact.html", "Contact", "contact")}'
         "</div></details></nav>"
@@ -334,17 +353,13 @@ def main():
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(doc_title)} | SG Alerts</title><meta name="description" content="{esc(meta_desc)}"><link rel="canonical" href="https://sgalerts.com{path}">
 <meta property="og:title" content="{esc(doc_title)} | SG Alerts"><meta property="og:description" content="{esc(meta_desc)}"><meta property="og:url" content="https://sgalerts.com{path}"><meta property="og:type" content="website"><meta property="og:image" content="https://sgalerts.com/assets/og-share.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(doc_title)} | SG Alerts"><meta name="twitter:description" content="{esc(meta_desc)}"><meta name="twitter:image" content="https://sgalerts.com/assets/og-share.png">
-<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0c2554" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)"><link rel="manifest" href="/site.webmanifest">{head_extra}{THEME_INIT}<link rel="stylesheet" href="/style.css?v=32"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script><script src="/analytics.js"></script><script src="/theme.js?v=1" defer></script>
+<link rel="icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0c2554" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)"><link rel="manifest" href="/site.webmanifest">{head_extra}{THEME_INIT}<link rel="stylesheet" href="/style.css?v=33"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script><script src="/analytics.js"></script><script src="/theme.js?v=1" defer></script>
 <script type="application/ld+json">{json.dumps(schema).replace('<', chr(92)+'u003c')}</script><script src="/weather.js?v=5" defer></script><script src="/script.js?v=14" defer></script></head>
 <body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="header-inner"><a class="brand" href="/" aria-label="SG Alerts home"><span class="brand-mark"><img src="/assets/logo-96.webp" alt="" width="48" height="48"></span><span><strong>SG Alerts</strong><small>Singapore daily utility dashboard</small></span></a>{nav}{THEME_CONTROL}</div></header>
 <main id="main-content" class="content-page weather-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">SG Alerts</a> / {esc(title)}</nav><section class="page-hero"><div><p class="eyebrow">{country.title()} · Official data</p><h1>{esc(title)}</h1><p>{esc(desc)}</p></div></section>
 <nav class="weather-tabs" aria-label="Weather pages">{related}</nav><section class="surface-card specialist-data-card">{chip}{"" if kind == "rain-forecast" else "<h2>Air-quality readings</h2>"}{content}<p class="note">Source: <a href="{source}" target="_blank" rel="noopener noreferrer">{source_name}</a>. Scheduled refresh every 15 minutes; upstream publication and GitHub scheduling can be delayed.</p></section>
 <section class="surface-card seo-guide"><h2>Understanding {esc(title.lower())}</h2><p>{esc(explanation)}</p><details class="sga-collapse"><summary><h3>How current is this information?</h3></summary><p>Always check the forecast validity or reporting time. Older cached readings remain visible with a warning when a source is delayed or unavailable. Times use Singapore / Malaysia time (UTC+08).</p></details><details class="sga-collapse"><summary><h3>Where can I check official updates?</h3></summary><p>Visit <a href="{source}">{source_name}</a> for the latest official information and advisories.</p></details><div class="seo-related">{related}{guide_links}</div></section></main>
 <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><img src="/assets/logo-96.webp" alt="" width="32" height="32" loading="lazy" decoding="async"><div><strong>SG Alerts&trade;</strong><span>&copy; 2026 SG Alerts&trade; &middot; Independent Singapore news &amp; utility platform. Trademarks &amp; data belong to their respective owners.</span></div></div><nav class="footer-links" aria-label="Footer links">
-        <a href="/guides/">Guides</a>
-        <a href="/petrol-discount-calculator.html">Petrol Calc</a>
-        <a href="/coe-calculator.html">COE Calc</a>
-        <a href="/bto-mortgage-calculator.html">BTO Calc</a>
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
         <a href="/privacy-policy.html">Privacy</a>
