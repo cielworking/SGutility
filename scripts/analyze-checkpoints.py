@@ -186,7 +186,7 @@ def nms(boxes, scores, iou_thresh: float = 0.40) -> list[int]:
     return keep
 
 
-def detect_vehicles(sess, img, conf_thresh: float = 0.20):
+def detect_vehicles(sess, img, conf_thresh: float = 0.28):
     import numpy as np
 
     inp_name = sess.get_inputs()[0].name
@@ -289,10 +289,12 @@ def analyze_checkpoint_group(sess, cameras: list[dict]) -> dict:
         })
 
     weighted_total = totals["car"] + 0.5 * totals["motorcycle"] + 2.0 * (totals["bus"] + totals["truck"])
+    jb_status = load_level(weighted_jb, smooth_max=20.0, moderate_max=36.0)
+    sg_status = load_level(weighted_sg, smooth_max=20.0, moderate_max=36.0)
     return {
-        "status": load_level(weighted_total, smooth_max=25.0, moderate_max=45.0),
-        "towards_jb_status": load_level(weighted_jb, smooth_max=20.0, moderate_max=36.0),
-        "towards_sg_status": load_level(weighted_sg, smooth_max=20.0, moderate_max=36.0),
+        "status": load_level(max(weighted_jb, weighted_sg), smooth_max=20.0, moderate_max=36.0),
+        "towards_jb_status": jb_status,
+        "towards_sg_status": sg_status,
         "total_vehicles": sum(totals.values()),
         "weighted_load": round(weighted_total, 1),
         "towards_jb": directions["towards_jb"],

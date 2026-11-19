@@ -58,32 +58,16 @@ async function loadData() {
     }
 
     if (needsCheckpoint || document.querySelector("[data-glance]") || document.querySelector("[data-checkpoint-ai]") || document.querySelector("[data-travel-advisor]")) {
-      const applyTrafficIfFresher = (candidate) => {
-        if (!candidate || !candidate.woodlands || !candidate.tuas) return;
-        // Never let static GitHub YOLOX JSON overwrite a live /api/checkpoint-ai Vision response
-        if (checkpointTraffic?.ok && !candidate.ok) return;
-        const nextTs = candidate.last_updated ? new Date(candidate.last_updated).getTime() : 0;
-        const currTs = checkpointTraffic?.last_updated ? new Date(checkpointTraffic.last_updated).getTime() : 0;
-        if (!checkpointTraffic || candidate.ok || nextTs >= currTs) {
-          checkpointTraffic = candidate;
-          renderCheckpointAi();
-          renderGlance();
-        }
-      };
-
       fetch("./data/checkpoint-traffic.json", { cache: "no-store" })
         .then(r => (r.ok ? r.json() : {}))
-        .then(applyTrafficIfFresher)
+        .then(candidate => {
+          if (candidate && candidate.woodlands && candidate.tuas) {
+            checkpointTraffic = candidate;
+            renderCheckpointAi();
+            renderGlance();
+          }
+        })
         .catch(() => {});
-
-      if (!needsCheckpoint) {
-        fetch("/api/checkpoint-ai", { cache: "no-store" })
-          .then(r => (r.ok ? r.json() : null))
-          .then(live => {
-            if (live && live.ok) applyTrafficIfFresher(live);
-          })
-          .catch(() => {});
-      }
     }
 
     if (needsCheckpoint) {
@@ -185,11 +169,10 @@ async function refreshCheckpointData(forceAi = false) {
     updateTravelBriefing(true);
 
     // Update AI vehicle counts asynchronously in the background
-    const aiUrl = forceAi ? "/api/checkpoint-ai?refresh=1" : "/api/checkpoint-ai";
-    fetch(aiUrl, { cache: "no-store" })
+    fetch("./data/checkpoint-traffic.json", { cache: "no-store" })
       .then(r => (r.ok ? r.json() : null))
       .then(liveAi => {
-        if (liveAi && liveAi.ok && liveAi.woodlands && liveAi.tuas) {
+        if (liveAi && liveAi.woodlands && liveAi.tuas) {
           checkpointTraffic = liveAi;
           renderCheckpointAi();
           renderGlance();
