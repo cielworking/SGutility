@@ -50,7 +50,8 @@ const CAMERA_ZONES = {
 };
 
 const NIGHT_PROMPTS = {
-  "2701": 'Nighttime Singapore LTA traffic cam 2701 (Woodlands Causeway). Upper-left lanes marked JOHOR go towards JB. Lower-right lanes marked WOODLANDS come towards SG. Count visible vehicles accurately (0-3 if empty; count glowing headlight/taillight queues carefully when congested). Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car":0,"motorcycle":0,"heavy":0}}',
+  // All 4 cameras use Vision 24/7 with density cues so packed motorcycle & Causeway queues are estimated accurately (DETR fallback on error).
+  "2701": 'Singapore LTA traffic cam 2701 (Woodlands Causeway, day or night). Upper-left lanes marked JOHOR go towards JB; lower-right lanes marked WOODLANDS come towards SG. Count visible cars, motorcycles, and buses/trucks on each side accurately (0-3 if empty; if a direction is backed up bumper-to-bumper along the Causeway, estimate 50-120 vehicles plus any visible motorcycle stream). Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car":0,"motorcycle":0,"heavy":0}}',
   // Cam 2702 uses Vision 24/7 so dense motorcycle queues on the upper curved flyover are counted accurately (DETR misses tiny packed bikes).
   "2702": 'Singapore LTA traffic cam 2702 (Woodlands Checkpoint/BKE, day or night). Left elevated ramp labeled BKE goes towards SG. On the right side: the narrow upper elevated curved flyover is the MOTORCYCLE lane towards JB (if packed bumper-to-bumper with bikes, estimate 120-220 motorcycles; if moderate queue, 30-90; if sparse/empty, count exact bikes); the lower lanes labeled CAUSEWAY carry cars/buses/trucks towards JB. Reply ONLY valid JSON: {"towards_jb":{"car":0,"motorcycle":0,"heavy":0},"towards_sg":{"car":0,"motorcycle":0,"heavy":0}}',
   // Cam 4703 uses Vision 24/7 to count dense SG-bound cars + far-right motorcycles above the diagonal divider.
@@ -253,7 +254,7 @@ async function detectCamera(env, cam, nightMode) {
   const imgRes = await fetch(cam.image);
   if (!imgRes.ok) throw new Error("Failed image " + cam.camera_id);
   const buf = await imgRes.arrayBuffer();
-  return (nightMode || cam.camera_id === "2702" || cam.camera_id === "4703" || cam.camera_id === "4713") ? detectCameraNightVision(env, cam, buf) : detectCameraDetr(env, cam, buf);
+  return detectCameraNightVision(env, cam, buf);
 }
 
 function summarizeGroup(camResults) {
