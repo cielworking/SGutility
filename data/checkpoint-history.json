@@ -1,7 +1,7 @@
 {
   "model": "YOLOX-S ONNX (road-zone vehicle detection)",
-  "last_updated": "2026-11-19T07:57:52.234138+00:00",
-  "snapshot_count": 43,
+  "last_updated": "2026-11-19T10:43:09.326520+00:00",
+  "snapshot_count": 44,
   "snapshots": [
     {
       "timestamp_sgt": "2026-11-17T00:30:35.852913+08:00",
@@ -561,6 +561,19 @@
       "tuas_load": 106.0,
       "tuas_to_jb": 59,
       "tuas_to_sg": 30
+    },
+    {
+      "timestamp_sgt": "2026-11-19T18:43:12.872196+08:00",
+      "woodlands_status": "Heavy",
+      "woodlands_vehicles": 99,
+      "woodlands_load": 118.0,
+      "woodlands_to_jb": 75,
+      "woodlands_to_sg": 24,
+      "tuas_status": "Heavy",
+      "tuas_vehicles": 113,
+      "tuas_load": 112.5,
+      "tuas_to_jb": 78,
+      "tuas_to_sg": 35
     }
   ],
   "by_day_hour": [
@@ -724,6 +737,13 @@
       "samples": 1,
       "woodlands_avg_load": 159.0,
       "tuas_avg_load": 106.0
+    },
+    {
+      "day": "Thu",
+      "hour": 18,
+      "samples": 1,
+      "woodlands_avg_load": 118.0,
+      "tuas_avg_load": 112.5
     }
   ]
 }
