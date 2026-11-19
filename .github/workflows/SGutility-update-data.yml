@@ -62,6 +62,8 @@ jobs:
           python scripts/update-petrol-discounts.py
           python scripts/update-speed-cameras.py
           python scripts/update-parking.py
+          python scripts/update-currency.py
+          python scripts/update-events.py
           python scripts/render-static-pages.py
 
       - name: Commit updated data

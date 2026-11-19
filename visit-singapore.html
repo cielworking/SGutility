@@ -105,6 +105,31 @@
     .itin-day { border: 1px solid var(--border, rgba(148, 163, 184, 0.25)); border-radius: 12px; padding: 1.25rem; background: var(--surface, rgba(15, 23, 42, 0.6)); }
     .itin-day h3 { font-size: 1rem; margin: 0 0 0.75rem 0; color: #38bdf8; }
     .itin-day ul { margin: 0; padding-left: 1.2rem; font-size: 0.875rem; line-height: 1.6; }
+
+    .live-visit-strip { margin-bottom: 1.75rem; }
+    .live-visit-chip { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.82rem; margin-bottom: 0.75rem; opacity: 0.9; }
+    .live-dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; display: inline-block; }
+    .live-visit-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.85rem; }
+    .live-visit-card { display: flex; flex-direction: column; gap: 0.25rem; padding: 0.9rem 1rem; border-radius: 12px; border: 1px solid var(--border, rgba(148, 163, 184, 0.25)); background: var(--surface, rgba(15, 23, 42, 0.55)); text-decoration: none; color: inherit; transition: border-color 0.15s; }
+    .live-visit-card:hover { border-color: #3b82f6; }
+    .live-visit-card small { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.03em; opacity: 0.75; }
+    .live-visit-card strong { font-size: 0.95rem; line-height: 1.3; }
+    .live-visit-card span { font-size: 0.8rem; color: #60a5fa; margin-top: 0.15rem; }
+
+    .events-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1rem; margin-top: 1rem; }
+    .events-cat-card { border: 1px solid var(--border, rgba(148, 163, 184, 0.25)); border-radius: 12px; padding: 1.1rem; background: var(--surface, rgba(15, 23, 42, 0.55)); }
+    .events-cat-card h3 { font-size: 1rem; margin: 0 0 0.75rem 0; color: #38bdf8; }
+    .events-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.7rem; }
+    .events-list li { border-bottom: 1px solid var(--border, rgba(148, 163, 184, 0.14)); padding-bottom: 0.6rem; }
+    .events-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .events-list a { font-size: 0.9rem; font-weight: 600; text-decoration: none; color: inherit; display: block; line-height: 1.35; }
+    .events-list a:hover { color: #60a5fa; text-decoration: underline; }
+    .event-meta { display: block; font-size: 0.76rem; opacity: 0.72; margin-top: 0.2rem; }
+
+    .essentials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1rem 0; }
+    .essential-card { border-left: 3px solid #3b82f6; padding: 0.75rem 1rem; background: var(--surface, rgba(15, 23, 42, 0.45)); border-radius: 0 10px 10px 0; }
+    .essential-card strong { display: block; margin-bottom: 0.25rem; font-size: 0.95rem; }
+    .essential-card p { margin: 0; font-size: 0.85rem; line-height: 1.45; opacity: 0.9; }
   </style>
 </head>
 <body>
@@ -169,6 +194,46 @@
             </div>
           </a>
         </div>
+      </section>
+
+      <!-- Live Visitor Snapshot (Auto-Updated) -->
+      <section aria-label="Live Singapore Visitor Snapshot">
+        <!-- STATIC:VISIT-LIVE:START -->
+<div class="live-visit-strip">
+  <div class="live-visit-chip"><span class="live-dot"></span><strong>Live SG Conditions</strong><span>Updated 19 Nov, 11:17 pm UTC+08</span></div>
+  <div class="live-visit-cards">
+    <a class="live-visit-card" href="/weather/">
+      <small>Weather &amp; Air</small>
+      <strong>Live NEA Weather & PSI</strong>
+      <span>Tap for live rain radar →</span>
+    </a>
+    <a class="live-visit-card" href="/sgd-currency-converter.html">
+      <small>1 SGD Today</small>
+      <strong>US$0.78 · RM3.19 · A$1.15 · £0.59</strong>
+      <span>Open currency converter →</span>
+    </a>
+    <a class="live-visit-card" href="/guides/singapore-public-holidays-2027-long-weekends.html">
+      <small>Next Public Holiday</small>
+      <strong>Christmas Day (25 Dec 2026, Friday)</strong>
+      <span>Expect busier malls &amp; zoos</span>
+    </a>
+    <a class="live-visit-card" href="/woodlands-checkpoint.html">
+      <small>JB Day Trip Traffic</small>
+      <strong>Woodlands: Heavy · Tuas: Smooth</strong>
+      <span>View live border cameras →</span>
+    </a>
+  </div>
+</div>
+<!-- STATIC:VISIT-LIVE:END -->
+      </section>
+
+      <!-- What's On in Singapore (Auto-Updated) -->
+      <section class="surface-card" aria-labelledby="whats-on-title">
+        <p class="eyebrow">Live Event &amp; Deal Radar</p>
+        <h2 id="whats-on-title">What's On in Singapore: Concerts, Events &amp; Sales</h2>
+        <!-- STATIC:VISIT-EVENTS:START -->
+<p class="section-note">Auto-updated hourly from official Singapore event, concert, and retail feeds · Updated 19 Nov, 11:17 pm UTC+08</p><div class="events-grid"><div class="events-cat-card"><h3>Concerts &amp; Shows</h3><ul class="events-list"><li><a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdHRXRm1nNVJuT2dfczZ1ODhBOWlDcDVxQ0pzZUhjY3ZyVFJVQWNiYnUxQ1ZWQ1VfQmpzUm5EUUVxS3JjMWdwN3NkQWVHWUlBV05ZVHRZcDE0UUxtaXB4Zkctc0x6cXBaRkVqb3pCc05rZmFpVHU4T25FYlB5LWV1NXBySlVWT3VJdGNid0VwMTZoVUVfQkg1ckZsZWgySU5VbjFlUHVRRDBJVVFUdUswcEJlYk1HYjRxWklJQ05KU3N3Q3Utc055T0p3bVdxaUVieTZOdG11Zw?oc=5" target="_blank" rel="noopener noreferrer nofollow">Presale for tickets to &quot;The Hayley Williams Show&quot; in Manila will start on November 18 and 19, with general onsale opening on November 20. Hayley is set to hold her concert on February 24, 2027, at the Smart Araneta Coliseum. (Courtesy: Ovation Production</a><span class="event-meta">Facebook · 17 Nov 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxORkxEczdORmVfMGlLb2tuTUx6UE42eURkR1pRT0JSSGlmdEh1eGVXTGlYRTNFZDVhNFkyeUNMWTBuTVJRNVZoaFRnQmJwWFQ3SlFaN245RXNxYnFxaHkxRmU2aU1TdnRNSXFMR00waUh5TXFQN1VpUWc2eVBDX3dyVVQ3QzZuRnJXYVJFekVDN1VYX0hlMzRGeGVXZE10UVhQX2ZadUxoRVFVTk9JQ0VVTjRWdDZmUQ?oc=5" target="_blank" rel="noopener noreferrer nofollow">Hayley Williams announces venues &amp; ticketing details for 2027 Asia tour in Singapore, Manila, Seoul &amp; Tokyo</a><span class="event-meta">Bandwagon · 17 Nov 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxNbk15bGxsWkFxQ0NFSEhXTi1WZ0JIdXZVTThCSEo1RXZJd0VOT0NreGZuVlFYcXoxeUxaYUV6VnY0VS05S3l1ZXNzemFaZ1JmR1VwWmwwekZoVzE4REhEUGtGeXlVQi0tVjJGSzhrR1VmVkZJTlE4REJ1bXpxLTVtdDZFWGF4OUI2TGJDakpOakNCLVlyczhUaEtkc1VGNHRwUjdlVUh2cExrMTE5?oc=5" target="_blank" rel="noopener noreferrer nofollow">Upcoming Concerts And Festivals In Singapore: Dates, Venues And Tickets</a><span class="event-meta">Harper&#x27;s Bazaar Singapore · 15 Nov 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE1VYWMzRGppV243b29ZaUQyWW03RG1Kc0hOWkhsazctT3duelJuZldqbXJZWTZ2aE42YU5RUHF6djhuNkR4bUJNWW15ZUFBM0RSOFhwa1JSZm56cDdRaFgyTnE4VUtOQXRXTVlmQjN2ZG9BUF9NWmlGajBJODNqdw?oc=5" target="_blank" rel="noopener noreferrer nofollow">Malcolm Todd: Do That Again Tour in Singapore</a><span class="event-meta">www.thestar.sg · 02 Nov 2026</span></li></ul></div><div class="events-cat-card"><h3>Events &amp; Festivals</h3><ul class="events-list"><li><a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE9ESGw2WDJNcTNpZDdHRkZveW42Ml9UT1luY1BSNzkzZWNvdjVYcE9jVjJVdEg1SnlxZnltYzYtVmY5anV4N1h3NHYzMWo5enlLTjAteEc1N0hYQmUzSlpXYkdTNnBIdmdxemltXw?oc=5" target="_blank" rel="noopener noreferrer nofollow">Things To Do In Singapore This Weekend: 20 To 22 November</a><span class="event-meta">Harper&#x27;s Bazaar Singapore · 18 Nov 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE9KUXZta19HcEV6WE41TjFWOFN3TDFXQTQ1c2R4QUFWNGFTQWxVbUR0dzltd0RBMDJZNmM3LURud2MzaUYwbU5QTnM1QW9zalkxaTFTaVMzYTZWemVxQmhaUHNwdFVyMjNtcFdMRFkteU4?oc=5" target="_blank" rel="noopener noreferrer nofollow">Things To Do In Singapore For The Culturally Curious</a><span class="event-meta">FZINE Singapore · 16 Nov 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTE5CV1BfTTU3RDZiNDBmaF9qX29mSl8td1RlWVMtQlF6S2I2ZWJVcUg4cGc4cHU5R3ByY1c4b0RHSFc2R3BYYmthMzF3SG02UVVSOVluemFfNlI5Q2ZZTFk5b2R6dEt4WFFkUkxDcG9BRGZfVzZw?oc=5" target="_blank" rel="noopener noreferrer nofollow">Things to do in Singapore this week: 16 to 22 November</a><span class="event-meta">Her World Singapore · 16 Nov 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQUkRPc3ozSE1sY29nelZWbTFwZmZoNkFjMVZ3OUZJVXlMSWpyaFVuSF9kb0xtdzltRHZCX3gySXpQZE1GZ05fUHdraURDVi02NWdOVjdRT3pNRFhTaHBaRFZfeGI4Z0tDaFR6UXpjalJRYVptdEpJV3AxODhsUVRaMjV3?oc=5" target="_blank" rel="noopener noreferrer nofollow">20 Best Things To Do This Weekend In Singapore (20 – 22 Nov 2026)</a><span class="event-meta">Sassy Mama Singapore · 16 Nov 2026</span></li></ul></div><div class="events-cat-card"><h3>Sales &amp; Deals</h3><ul class="events-list"><li><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSF8yV1NRSDBJeVhzMFhyOXVLVjBONG1TMzU1THVBcS1IS2ptQTdmYzVXU1VrOFJfc2V3a3JoUFJfeC05N1pFX0I0TkpDeGtrVFBhZlR0Snd1TDJEYUNhczJYVlFwY0NrbE1lcHpsU2xEWmxpX2pLak9FUEluQ0pFNlZkWDJ6VEFK?oc=5" target="_blank" rel="noopener noreferrer nofollow">Amazon Black Friday Singapore 2026: Best deals in tech, electronics, and more</a><span class="event-meta">HardwareZone Singapore · 19 Nov 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9YX25qenhlQmU3U0QxdkdkS0w0VFpTTXBzNVAzRmdNbXFQX2xJNHFIeEZrQ2dVN0Jsc3hCU1ZuQTR4SEV3UjRfWEEzNVJJSnlWNUl4RXY4NWRzeEpDX1AyRF80TURiZEZSNlVvNVhEcUx4RkthU2dISg?oc=5" target="_blank" rel="noopener noreferrer nofollow">Amazon Black Friday sale 2026 in Singapore: Best deals in home essentials, tech, toys and more</a><span class="event-meta">The Straits Times · 19 Nov 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiaEFVX3lxTE9jTFN4d0dfX1ktTm52OUtDY1B2bEliUHBpbzE0b0NrSnJmRmdwd1VNM21TQXZWRGk0WmtJZmwtcTNvOW4yMHFmbTRYU2stLXRwNzVneGo5ZVQxbFgyeFFjZ2gyaVhhY0JU0gFuQVVfeXFMT1NzVGFkRHlMUm5tRk9HY3BKNG5KN29wNEU3QkhhQTk5MGFkb0VPbFVmUWJvNE5lWmY0dUl4bHF0VmtHcl9xT0JMZDI3X2hsakRJNVF6clZtd0dLUjI4b3JZYy1nUGw4MHFXcXpqQnc?oc=5" target="_blank" rel="noopener noreferrer nofollow">14 Best Deals In Singapore This Week – 16th-22nd November 2026</a><span class="event-meta">TheSmartLocal · 16 Nov 2026</span></li><li><a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxONTZNZ0R4UFBXVXl4aUY5UHFhdGR3Z2FJM0diZGpkUnZ4RkxvTmtHSTBNUjh1cmpIVGJKMVo0SE5OcENrN2NvU28tNTd6R29LdTVGY2I2MG1heWMtdzhKajM1SDhVZVRRN0lLdGZMVndhWFVhU1FxS2thYVJZZW5Jd3Z3?oc=5" target="_blank" rel="noopener noreferrer nofollow">When are the Black Friday 2026 sales? What to expect</a><span class="event-meta">HardwareZone Singapore · 12 Nov 2026</span></li></ul></div></div>
+<!-- STATIC:VISIT-EVENTS:END -->
       </section>
 
       <!-- Top Sights -->
@@ -317,6 +382,79 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <!-- Hawker Food Cheat Sheet -->
+      <section class="surface-card" aria-labelledby="hawker-title">
+        <p class="eyebrow">Local Food Guide</p>
+        <h2 id="hawker-title">Must-Try Singapore Hawker Dishes &amp; Prices</h2>
+        <div style="overflow-x:auto;">
+          <table class="stay-table">
+            <thead>
+              <tr>
+                <th>Dish</th>
+                <th>Typical Price</th>
+                <th>Top Hawker Centre &amp; Nearest MRT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Hainanese Chicken Rice</strong></td>
+                <td>S$4.50 – S$6.50</td>
+                <td>Maxwell Food Centre (Maxwell TE18 / Chinatown)</td>
+              </tr>
+              <tr>
+                <td><strong>Laksa (Spicy Coconut Noodles)</strong></td>
+                <td>S$5.00 – S$7.50</td>
+                <td>328 Katong Laksa / Sungei Road Laksa (Jalan Besar DT22)</td>
+              </tr>
+              <tr>
+                <td><strong>Satay &amp; Peanut Sauce</strong></td>
+                <td>S$0.80 – S$1.00 / stick</td>
+                <td>Lau Pa Sat Satay Street after 7 PM (Telok Ayer DT18 / Downtown)</td>
+              </tr>
+              <tr>
+                <td><strong>Char Kway Teow</strong></td>
+                <td>S$5.00 – S$7.00</td>
+                <td>Hong Lim Food Centre / Zion Riverside (Great World TE15)</td>
+              </tr>
+              <tr>
+                <td><strong>Kaya Toast &amp; Kopi Set</strong></td>
+                <td>S$4.50 – S$6.50</td>
+                <td>Ya Kun Kaya Toast / Toast Box (Islandwide malls &amp; Chinatown)</td>
+              </tr>
+              <tr>
+                <td><strong>Chilli Crab (Sharing)</strong></td>
+                <td>S$60 – S$110 / crab</td>
+                <td>Newton Food Centre (Newton NS21/DT11) or East Coast Lagoon</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 10-Second Tourist Essentials -->
+      <section class="surface-card" aria-labelledby="essentials-title">
+        <p class="eyebrow">Good to Know</p>
+        <h2 id="essentials-title">10-Second Singapore Tourist Essentials</h2>
+        <div class="essentials-grid">
+          <div class="essential-card">
+            <strong>No Tipping Required</strong>
+            <p>Restaurants already add a 10% service charge + 9% GST ("++"). Hawker centres and taxis do not expect tips.</p>
+          </div>
+          <div class="essential-card">
+            <strong>Tap Water Is Drinkable</strong>
+            <p>Singapore tap water meets WHO standards and is safe to drink directly from the tap — bring a refillable bottle.</p>
+          </div>
+          <div class="essential-card">
+            <strong>Power Plugs: Type G (230V)</strong>
+            <p>UK-style 3-rectangular-pin plugs. Most modern hotels also include USB-A/USB-C ports bedside.</p>
+          </div>
+          <div class="essential-card">
+            <strong>SIM / eSIM &amp; Free Wi-Fi</strong>
+            <p>Pick up a 100GB tourist SIM (~S$12) at Changi or use an eSIM. Free <code>#WiFi@Changi</code> &amp; <code>Wireless@SGx</code> cover airports and malls.</p>
+          </div>
         </div>
       </section>
 

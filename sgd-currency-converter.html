@@ -286,6 +286,7 @@
       const swapBtn = document.getElementById('swap-btn');
       const rateTextEl = document.getElementById('rate-text');
       const rateInverseEl = document.getElementById('rate-inverse');
+      const rateUpdatedEl = document.getElementById('rate-updated');
       const cheatWrapEl = document.getElementById('cheat-sheets-wrap');
 
       function getRate(from, to) {
@@ -353,6 +354,11 @@
         .then(function (data) {
           if (data && data.rates) {
             ratesData = data.rates;
+            if (rateUpdatedEl && data.last_updated) {
+              const dt = new Date(data.last_updated);
+              const label = isNaN(dt.getTime()) ? data.last_updated : dt.toLocaleString('en-SG', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Singapore' }) + ' SGT';
+              rateUpdatedEl.textContent = (data.source_name || 'Live benchmark') + ' · Updated ' + label;
+            }
             updateCalculation();
             renderCheatSheets();
           }

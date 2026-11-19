@@ -662,6 +662,99 @@ def render_home_snapshot(traffic, petrol, coe, bto, weather, pools, cameras_coun
     </div>"""
 
 
+def render_visit_live(weather, quick, currency, traffic):
+    # Weather & PSI
+    psi = ((weather or {}).get("sg_psi") or {}).get("data") or {}
+    psi_range = psi.get("range") or {}
+    if psi_range.get("min") is not None and psi_range.get("max") is not None:
+        psi_val = f"PSI {int(psi_range['min'])}–{int(psi_range['max'])} ({html.escape(str(psi.get('band') or 'Good'))})"
+    else:
+        psi_val = "Live NEA Weather & PSI"
+
+    # Next Public Holiday
+    holiday_item = next((i for i in (quick or {}).get("items", []) if "Holiday" in str(i.get("label") or "")), None)
+    if holiday_item:
+        holiday_val = f"{html.escape(str(holiday_item.get('value') or ''))} ({html.escape(str(holiday_item.get('detail') or ''))})"
+    else:
+        holiday_val = "Check MOM Holiday Calendar"
+
+    # Live Currency Snapshot
+    rates = (currency or {}).get("rates") or {}
+    usd = rates.get("USD")
+    myr = rates.get("MYR")
+    aud = rates.get("AUD")
+    gbp = rates.get("GBP")
+    rate_parts = []
+    if usd:
+        rate_parts.append(f"US${usd:.2f}")
+    if myr:
+        rate_parts.append(f"RM{myr:.2f}")
+    if aud:
+        rate_parts.append(f"A${aud:.2f}")
+    if gbp:
+        rate_parts.append(f"£{gbp:.2f}")
+    rate_line = " · ".join(rate_parts) if rate_parts else "Live 15+ currency rates"
+
+    # Checkpoint status for JB Day Trips
+    w_status = html.escape(str(((traffic or {}).get("woodlands") or {}).get("status") or "Live"))
+    t_status = html.escape(str(((traffic or {}).get("tuas") or {}).get("status") or "Live"))
+
+    updated = html.escape(updated_label((currency or {}).get("last_updated") or (quick or {}).get("last_updated")))
+    return f"""<div class="live-visit-strip">
+  <div class="live-visit-chip"><span class="live-dot"></span><strong>Live SG Conditions</strong><span>{updated}</span></div>
+  <div class="live-visit-cards">
+    <a class="live-visit-card" href="/weather/">
+      <small>Weather &amp; Air</small>
+      <strong>{psi_val}</strong>
+      <span>Tap for live rain radar →</span>
+    </a>
+    <a class="live-visit-card" href="/sgd-currency-converter.html">
+      <small>1 SGD Today</small>
+      <strong>{rate_line}</strong>
+      <span>Open currency converter →</span>
+    </a>
+    <a class="live-visit-card" href="/guides/singapore-public-holidays-2027-long-weekends.html">
+      <small>Next Public Holiday</small>
+      <strong>{holiday_val}</strong>
+      <span>Expect busier malls &amp; zoos</span>
+    </a>
+    <a class="live-visit-card" href="/woodlands-checkpoint.html">
+      <small>JB Day Trip Traffic</small>
+      <strong>Woodlands: {w_status} · Tuas: {t_status}</strong>
+      <span>View live border cameras →</span>
+    </a>
+  </div>
+</div>"""
+
+
+def render_visit_events(events):
+    items = (events or {}).get("items") or []
+    if not items:
+        return "<p class=\"section-note\">Upcoming Singapore concerts, events, and deals refresh daily.</p>"
+    updated = html.escape(updated_label(events.get("last_updated")))
+    grouped = {}
+    for item in items:
+        grouped.setdefault(item.get("category") or "Events", []).append(item)
+
+    sections = []
+    for cat, cat_items in grouped.items():
+        rows = []
+        for item in cat_items[:4]:
+            title = html.escape(str(item.get("title") or ""))
+            url = html.escape(str(item.get("url") or "#"), quote=True)
+            source = html.escape(str(item.get("source") or ""))
+            date_lbl = html.escape(str(item.get("date_label") or ""))
+            meta = f"{source} · {date_lbl}".strip(" ·")
+            rows.append(
+                f'<li><a href="{url}" target="_blank" rel="noopener noreferrer nofollow">{title}</a>'
+                f'<span class="event-meta">{meta}</span></li>'
+            )
+        sections.append(
+            f'<div class="events-cat-card"><h3>{html.escape(cat)}</h3><ul class="events-list">{"".join(rows)}</ul></div>'
+        )
+    return f'<p class="section-note">Auto-updated hourly from official Singapore event, concert, and retail feeds · {updated}</p><div class="events-grid">{"".join(sections)}</div>'
+
+
 def render_checkpoint(data, location_key, title, source_url=None, traffic=None):
     cameras = data.get(location_key, [])[:4]
     if cameras:
@@ -956,8 +1049,8 @@ def guide_sitemap_urls(preserved=None):
 def render_sitemap(dates, preserved=None):
     urls = [
         ("https://sgalerts.com/", dates.get("home")),
-        ("https://sgalerts.com/visit-singapore.html", dates.get("home")),
-        ("https://sgalerts.com/sgd-currency-converter.html", dates.get("home")),
+        ("https://sgalerts.com/visit-singapore.html", dates.get("visit") or dates.get("home")),
+        ("https://sgalerts.com/sgd-currency-converter.html", dates.get("currency") or dates.get("home")),
         ("https://sgalerts.com/singapore-gst-refund-calculator.html", dates.get("home")),
         ("https://sgalerts.com/news.html", dates.get("home")),
         ("https://sgalerts.com/travel.html", dates.get("checkpoints")),
@@ -1047,6 +1140,8 @@ def main():
         "pools": "sgpools-results.json",
         "petrol_discounts": "petrol-discounts.json",
         "speed_cameras": "speed-cameras.json",
+        "currency": "currency-rates.json",
+        "events": "sg-events.json",
     }.items():
         try:
             optional[key] = load_json(filename)
@@ -1097,6 +1192,22 @@ def main():
         "index.html",
         "HOME-SNAPSHOT",
         render_home_snapshot(traffic, petrol, coe, bto, weather, pools, cameras_count=cameras_count),
+    )
+    if (ROOT / "visit-singapore.html").exists():
+        replace_static_block(
+            "visit-singapore.html",
+            "VISIT-LIVE",
+            render_visit_live(weather, optional.get("quick"), optional.get("currency"), traffic),
+        )
+        replace_static_block(
+            "visit-singapore.html",
+            "VISIT-EVENTS",
+            render_visit_events(optional.get("events")),
+        )
+    dynamic_dates["currency"] = date_only((optional.get("currency") or {}).get("last_updated"))
+    dynamic_dates["visit"] = max(
+        (d for d in (dynamic_dates["currency"], date_only((optional.get("events") or {}).get("last_updated")), dynamic_dates.get("checkpoints")) if d),
+        default=None,
     )
     for fname, dkey in (
         ("singapore-petrol-prices.html", "petrol"),
