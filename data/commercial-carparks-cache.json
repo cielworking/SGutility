@@ -275,10 +275,10 @@
     "sunday_publicholiday_rate": "Same as wkdays"
   },
   "The Verge": {
-    "lat": 1.316693,
-    "lng": 103.914141,
-    "address": "118 LORONG H TELOK KURAU THE VERTE SINGAPORE 426146",
-    "postal": "426146",
+    "lat": 1.306944,
+    "lng": 103.852778,
+    "address": "Tekka Place (2 Serangoon Road, Singapore 218227)",
+    "postal": "218227",
     "category": "Central, North & North East",
     "weekdays_rate_1": "7am-5pm: $1.60 per hr",
     "weekdays_rate_2": "5pm-12am: $2.50 per entry; Aft 12am: $1.30 per hr",
@@ -528,9 +528,9 @@
     "sunday_publicholiday_rate": "7am-12am: $3 per entry; 12am-7am $1.60 for 1st hr, $1.00 for next sub \u00bd hr ."
   },
   "Tampines 1": {
-    "lat": 1.352228,
-    "lng": 103.952437,
-    "address": "203 TAMPINES STREET 21 PCF TAMPINES EAST 3-IN-1 FAMILY CENTRE (STUDENT CARE) SINGAPORE 520203",
+    "lat": 1.354169,
+    "lng": 103.945358,
+    "address": "Tampines 1, Tampines Central 1",
     "postal": "520203",
     "category": "East",
     "weekdays_rate_1": "1st hr $1.07; 2nd hr $0.55 per \u00bd hr; Aft 2hrs: $0.35 per 15 mins",
@@ -1232,10 +1232,10 @@
     "sunday_publicholiday_rate": "$3.50 per entry"
   },
   "Tangs": {
-    "lat": 1.308422,
-    "lng": 103.86218,
-    "address": "809 FRENCH ROAD BEIJING TONG REN TANG KITCHENER COMPLEX SINGAPORE 200809",
-    "postal": "200809",
+    "lat": 1.304898,
+    "lng": 103.833099,
+    "address": "Tang Plaza, 310 Orchard Road, Singapore 238864",
+    "postal": "238864",
     "category": "Orchard Area",
     "weekdays_rate_1": "6am-6pm: $3 for 1st hr, $0.05/min",
     "weekdays_rate_2": "6pm-6am the following day: $6 Per entry",
@@ -1320,9 +1320,9 @@
     "sunday_publicholiday_rate": "-"
   },
   "Chinese Garden": {
-    "lat": 1.342353,
-    "lng": 103.732597,
-    "address": "151 BOON LAY WAY CHINESE GARDEN MRT STATION (EW25) SINGAPORE 609959",
+    "lat": 1.338795,
+    "lng": 103.729866,
+    "address": "Chinese Garden, Chinese Garden Road",
     "postal": "609959",
     "category": "Singapore Attractions",
     "weekdays_rate_1": "6am-6pm: Free 1st hr; $0.50 for sub. \u00bd hr",
@@ -1331,9 +1331,9 @@
     "sunday_publicholiday_rate": "Same as wkdays"
   },
   "Haw Par Villa": {
-    "lat": 1.41032,
-    "lng": 103.922384,
-    "address": "HAW PAR BEACH VILLA",
+    "lat": 1.285004,
+    "lng": 103.782982,
+    "address": "Haw Par Villa, Pasir Panjang Road",
     "postal": "NIL",
     "category": "Singapore Attractions",
     "weekdays_rate_1": "Daily(9am-7pm): $5 per entry (Car park closed after 7pm)",
@@ -1386,9 +1386,9 @@
     "sunday_publicholiday_rate": "-"
   },
   "Singapore Botanic Gardens": {
-    "lat": 1.310387,
-    "lng": 103.81632,
-    "address": "1 CLUNY ROAD SINGAPORE BOTANIC GARDENS (BANDSTAND GAZEBO) SINGAPORE 259569",
+    "lat": 1.314979,
+    "lng": 103.816391,
+    "address": "Singapore Botanic Gardens, Cluny Road",
     "postal": "259569",
     "category": "Singapore Attractions",
     "weekdays_rate_1": "7am-10.30pm: $0.02 per min (8am-9am: $1 peak hr charge for all passing vehicles that enter from Kheam Hock Road and exit at Evans/Cluny Road) - Closed from 12am-5am daily",
@@ -1419,9 +1419,9 @@
     "sunday_publicholiday_rate": "-"
   },
   "Sungei Buloh Wetland Reserve": {
-    "lat": 1.445351,
-    "lng": 103.732143,
-    "address": "301 NEO TIEW CRESCENT SUNGEI BULOH WETLAND RESERVE SINGAPORE 718925",
+    "lat": 1.444656,
+    "lng": 103.729958,
+    "address": "Sungei Buloh Wetland Reserve, Neo Tiew Crescent",
     "postal": "718925",
     "category": "Singapore Attractions",
     "weekdays_rate_1": "Daily free: 7am-7pm",
@@ -1551,9 +1551,9 @@
     "sunday_publicholiday_rate": "$3.20 per entry"
   },
   "Central Mall": {
-    "lat": 1.372862,
-    "lng": 103.847645,
-    "address": "5 ANG MO KIO CENTRAL 2 DJIT SUN MALL SINGAPORE 569663",
+    "lat": 1.288605,
+    "lng": 103.842308,
+    "address": "Central Mall, Magazine Road",
     "postal": "569663",
     "category": "South & CBD",
     "weekdays_rate_1": "6am-5pm: $2.00 for 1st hr; $1.00 for sub. \u00bd hr",
@@ -1749,10 +1749,10 @@
     "sunday_publicholiday_rate": "$3 per entry"
   },
   "Iluma": {
-    "lat": 1.296799,
-    "lng": 103.834597,
-    "address": "6 RIVER VALLEY GROVE LUMA SINGAPORE 238403",
-    "postal": "238403",
+    "lat": 1.299639,
+    "lng": 103.854333,
+    "address": "Bugis+ (201 Victoria Street, Singapore 188067)",
+    "postal": "188067",
     "category": "South & CBD",
     "weekdays_rate_1": "8am-5pm: $1.07 for 1st hr; $0.37 for sub. 10 mins",
     "weekdays_rate_2": "Mon-Thu: Aft 5pm: $2.50 per entry; Fri: $2.50 for 1st 2hrs; $0.25 for sub. 10 mins",
@@ -1826,9 +1826,9 @@
     "sunday_publicholiday_rate": "Same as Saturday"
   },
   "Neil Road Off-Street": {
-    "lat": 1.277577,
-    "lng": 103.838465,
-    "address": "NEIL ROAD",
+    "lat": 1.28005,
+    "lng": 103.842918,
+    "address": "Neil Road, Neil Road",
     "postal": "NIL",
     "category": "South & CBD",
     "weekdays_rate_1": "$1.00 per 30 mins (Per Minute Charging)",
@@ -1848,9 +1848,9 @@
     "sunday_publicholiday_rate": "$3 per entry"
   },
   "OCBC centre": {
-    "lat": 1.313685,
-    "lng": 103.810664,
-    "address": "5 GALLOP ROAD FOREST DISCOVERY CENTRE @ OCBC ARBORETUM SINGAPORE 258960",
+    "lat": 1.285024,
+    "lng": 103.849068,
+    "address": "OCBC Centre, Chulia Street",
     "postal": "258960",
     "category": "South & CBD",
     "weekdays_rate_1": "7am-6pm: $4 per hr",
@@ -2211,10 +2211,10 @@
     "sunday_publicholiday_rate": "-"
   },
   "JCube": {
-    "lat": 1.298141,
-    "lng": 103.855635,
-    "address": "470 NORTH BRIDGE ROAD BUGIS CUBE SINGAPORE 188735",
-    "postal": "188735",
+    "lat": 1.3335,
+    "lng": 103.740089,
+    "address": "J'den / Former JCube Site (2 Jurong East Central 1)",
+    "postal": "609731",
     "category": "West",
     "weekdays_rate_1": "3.30am-5.59pm: $1.30 for 1st hr; sub 15 mins or part thereof: $0.30. *Free 2 Hour Parking from 12 - 2pm daily (Monday - Friday) from now to 15 Oct 2015.",
     "weekdays_rate_2": "6pm-3.29am: $2.50 per entry",
@@ -2233,9 +2233,9 @@
     "sunday_publicholiday_rate": "Same as wkdays"
   },
   "Jurong Point Shopping Centre": {
-    "lat": 1.334845,
-    "lng": 103.720462,
-    "address": "399 YUNG SHENG ROAD FAMILY POINT CLINIC AND SURGERY TAMAN JURONG SHOPPING CENTRE SINGAPORE 610399",
+    "lat": 1.340269,
+    "lng": 103.706261,
+    "address": "Jurong Point Shopping Centre, Jurong West Central 2",
     "postal": "610399",
     "category": "West",
     "weekdays_rate_1": "7am-5pm: $1.07 for 1st 2hrs; $1.07 for sub. hr (Free parking from 12pm-2pm on Monday-Thursday)",
@@ -2244,9 +2244,9 @@
     "sunday_publicholiday_rate": "Same as Saturday"
   },
   "Jurong Theatre": {
-    "lat": 1.334527,
-    "lng": 103.73545,
-    "address": "21 JURONG TOWN HALL ROAD OMNI-THEATRE SINGAPORE 609433",
+    "lat": 1.3346,
+    "lng": 103.721474,
+    "address": "Jurong Theatre, Yung Sheng Road",
     "postal": "609433",
     "category": "West",
     "weekdays_rate_1": "8am-8.59pm: $1.60 per hr",
@@ -2343,9 +2343,9 @@
     "sunday_publicholiday_rate": "7am-6pm:$1.50 per hr; Aft 6pm: $3.60 per entry"
   },
   "Valley Point": {
-    "lat": 1.293801,
-    "lng": 103.842145,
-    "address": "233 RIVER VALLEY ROAD RV POINT SINGAPORE 238291",
+    "lat": 1.292854,
+    "lng": 103.826439,
+    "address": "Valley Point, River Valley Road",
     "postal": "238291",
     "category": "West",
     "weekdays_rate_1": "Daily: $1.50 for 1st hr; $0.80 for sub. \u00bd hr",
@@ -2385,5 +2385,357 @@
     "weekdays_rate_2": "-",
     "saturday_rate": "-",
     "sunday_publicholiday_rate": "-"
+  },
+  "United Square Shopping Mall": {
+    "lat": 1.317168,
+    "lng": 103.843636,
+    "address": "United Square Shopping Mall, Thomson Road",
+    "postal": "",
+    "category": "Central, North & North East",
+    "weekdays_rate_1": "7pm-6pm: $2.20 for 1st hr; $1.10 for sub. hr",
+    "weekdays_rate_2": "Aft 6pm: $2 per entry",
+    "saturday_rate": "7am-6pm: $2.20 for 1st 2hrs; $1.10 for sub. hr; Aft 6pm: $2 per entry",
+    "sunday_publicholiday_rate": "Same as Saturday"
+  },
+  "Changi Airport - South Car Park (between T2 and JetQuay)": {
+    "lat": 1.351761,
+    "lng": 103.987068,
+    "address": "Changi Airport South Carpark, Airport Boulevard",
+    "postal": "",
+    "category": "East",
+    "weekdays_rate_1": "$0.035 per min. Capped at $35 per 24hrs. (Limited parking spaces and on a first-come, first-served basis)",
+    "weekdays_rate_2": "$0.035 per min. Capped at $35 per 24hrs.",
+    "saturday_rate": "$0.035 per min. Capped at $35 per 24hrs.",
+    "sunday_publicholiday_rate": "Same as Saturday"
+  },
+  "Telepark": {
+    "lat": 1.353497,
+    "lng": 103.942062,
+    "address": "TelePark, Tampines Central 6",
+    "postal": "",
+    "category": "East",
+    "weekdays_rate_1": "Daily: 7am-10pm: $0.70 per \u00bd hr (An additional surcharge of $22 per exit after 10pm)",
+    "weekdays_rate_2": "-",
+    "saturday_rate": "-",
+    "sunday_publicholiday_rate": "-"
+  },
+  "Amara Hotel": {
+    "lat": 1.274364,
+    "lng": 103.843452,
+    "address": "Amara Hotel, Tanjong Pagar Road",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "8am-4.59pm: $2 per \u00bd hr",
+    "weekdays_rate_2": "5pm-7.59am (the following day) : $3 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "$3 per entry"
+  },
+  "Berjaya Hotel": {
+    "lat": 1.278659,
+    "lng": 103.843056,
+    "address": "Berjaya Hotel, Duxton Road",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "8.30am-5pm: $1 per \u00bd hr",
+    "weekdays_rate_2": "5pm-10pm: $1 per hr; Aft 10pm: Free",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "8.30am-10pm: $1 per hr. Aft 10pm: Free"
+  },
+  "Copthorne Orchid Hotel": {
+    "lat": 1.322376,
+    "lng": 103.82328,
+    "address": "Copthorne Orchid Hotel, Dunearn Road",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "8am-5pm: $1.50 for 1st hr; $1 for sub. hr, per day $20)",
+    "weekdays_rate_2": "Aft 5pm: $3 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "Same as wkdays"
+  },
+  "Landmark Village Hotel (Formally Golden Landmark Hotel)": {
+    "lat": 1.302232,
+    "lng": 103.857712,
+    "address": "Landmark Village Hotel, Victoria Street",
+    "postal": "",
+    "category": "Hotels",
+    "weekdays_rate_1": "8am-5pm: $1.90 for 1st hr; $1.07 for sub. \u00bd hr",
+    "weekdays_rate_2": "Aft 5pm: $2.14 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "$2.14 per entry"
+  },
+  "Regent Hotel": {
+    "lat": 1.304581,
+    "lng": 103.824066,
+    "address": "Regent Hotel (Cuscaden Parking), Cuscaden Road",
+    "postal": "",
+    "category": "Orchard Area",
+    "weekdays_rate_1": "7am-6pm: $5 for 1st hr; $2.50 for sub. \u00bd hr",
+    "weekdays_rate_2": "Aft 6pm: $6 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "Same as wkdays"
+  },
+  "Shangri-la Hotel": {
+    "lat": 1.311164,
+    "lng": 103.826782,
+    "address": "Shangri-La Hotel, Orange Grove Road",
+    "postal": "",
+    "category": "Orchard Area",
+    "weekdays_rate_1": "7am-5pm: $6 for 1st hr; $2 for sub. \u00bd hr",
+    "weekdays_rate_2": "Aft 5pm: $8 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "Same as wkdays"
+  },
+  "Swissotel Merchant Court Hotel": {
+    "lat": 1.288243,
+    "lng": 103.845863,
+    "address": "Swissotel Merchant Court Hotel, Merchant Road",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "Daily: $4.50 for 1st hr; $3 for sub. hr",
+    "weekdays_rate_2": "-",
+    "saturday_rate": "-",
+    "sunday_publicholiday_rate": "-"
+  },
+  "Tanglin Shopping Centre": {
+    "lat": 1.306299,
+    "lng": 103.826958,
+    "address": "Tanglin Shopping Centre, Tanglin Road",
+    "postal": "",
+    "category": "Orchard Area",
+    "weekdays_rate_1": "8am-5.59pm: $3 for 1st hr; $1.75 for sub. \u00bd hr",
+    "weekdays_rate_2": "Aft 6pm: $3.60 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "$3.60 per entry"
+  },
+  "Changi Chapel and Museum (The Changi Museum)": {
+    "lat": 1.362219,
+    "lng": 103.973801,
+    "address": "Changi Chapel and Museum (The Changi Museum), Upper Changi Road North",
+    "postal": "",
+    "category": "Singapore Attractions",
+    "weekdays_rate_1": "Free daily",
+    "weekdays_rate_2": "-",
+    "saturday_rate": "-",
+    "sunday_publicholiday_rate": "-"
+  },
+  "Jurong Bird Park": {
+    "lat": 1.3182,
+    "lng": 103.706696,
+    "address": "Jurong Bird Park, Jurong Hill",
+    "postal": "",
+    "category": "Singapore Attractions",
+    "weekdays_rate_1": "Daily(8am-5pm): $2 per entry",
+    "weekdays_rate_2": "-",
+    "saturday_rate": "-",
+    "sunday_publicholiday_rate": "-"
+  },
+  "Mandai Orchid Garden": {
+    "lat": 1.406554,
+    "lng": 103.783226,
+    "address": "Mandai Orchid Garden, Mandai Lake Road",
+    "postal": "",
+    "category": "Singapore Attractions",
+    "weekdays_rate_1": "Free daily",
+    "weekdays_rate_2": "-",
+    "saturday_rate": "-",
+    "sunday_publicholiday_rate": "-"
+  },
+  "Royal Selangor Pewter Museum ( Park at Clarke Quay)": {
+    "lat": 1.302131,
+    "lng": 103.750206,
+    "address": "Royal Selangor Pewter Museum, Pandan Road",
+    "postal": "",
+    "category": "Singapore Attractions",
+    "weekdays_rate_1": "$2.20 for 1st hr; $1.10 for sub. \u00bd hr (Car park at Clarke Quay)",
+    "weekdays_rate_2": "Aft 5pm: $2.50 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "$2.50 per entry"
+  },
+  "Singapore Turf Club (STC)": {
+    "lat": 1.422694,
+    "lng": 103.762505,
+    "address": "Singapore Turf Club (STC), Turf Club Avenue",
+    "postal": "",
+    "category": "Singapore Attractions",
+    "weekdays_rate_1": "Daily: $5 per entry",
+    "weekdays_rate_2": "-",
+    "saturday_rate": "-",
+    "sunday_publicholiday_rate": "-"
+  },
+  "Clifford Centre": {
+    "lat": 1.283812,
+    "lng": 103.852104,
+    "address": "Clifford Centre, Raffles Place",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "6am-5pm: $5 per hr  (Car park closed at 11pm daily from Mon-Sat)",
+    "weekdays_rate_2": "5pm-11pm: $3 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "Same as wkdays"
+  },
+  "Conrad Centennial Singapore": {
+    "lat": 1.293324,
+    "lng": 103.85891,
+    "address": "Conrad Centennial Singapore (Basement Car Park), Temasek Boulevard",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "7am-6pm: $3.30 for 1st hr; $1.10 for sub.\u00bd hr",
+    "weekdays_rate_2": "Aft 6pm: $2.20 per entry",
+    "saturday_rate": "$2.20 for 1st 2hrs; $1.10 for sub. hr",
+    "sunday_publicholiday_rate": "Same as Saturday"
+  },
+  "Golden Mile Complex": {
+    "lat": 1.302737,
+    "lng": 103.865219,
+    "address": "Golden Mile Complex, Beach Road",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "7am-6pm: $2 for 1st hr; $1 for sub. \u00bd hr",
+    "weekdays_rate_2": "Aft 6pm: $2.20 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "$2.20 per entry"
+  },
+  "Inter-continental Singapore Hotel": {
+    "lat": 1.298279,
+    "lng": 103.854912,
+    "address": "InterContinental Singapore Hotel, Middle Road",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "8am-5pm: $1.07 for 1st hr; $0.37 for sub. 10mins",
+    "weekdays_rate_2": "Mon-Thu: Aft 5pm: $2.50 per entry. Fri: $2.50 for 1st 2hrs; $0.25 for sub. 10 mins",
+    "saturday_rate": "$2.50 for 1st 2hrs; $0.25 for sub. 10 mins",
+    "sunday_publicholiday_rate": "Same as Saturday"
+  },
+  "Landmark Village Hotel": {
+    "lat": 1.302232,
+    "lng": 103.857712,
+    "address": "Landmark Village Hotel, Victoria Street",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "8am-5pm: $1.90 for 1st hr; $1.07 for sub. \u00bd hr",
+    "weekdays_rate_2": "Aft 5pm: $2.14 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "$2.14 per entry"
+  },
+  "Millenia Walk (Basement Car Park)": {
+    "lat": 1.293216,
+    "lng": 103.859558,
+    "address": "Millenia Walk (Surface Car Park), Raffles Boulevard",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "7am-6pm: $3.30 for 1st hr; $1.10 for sub.\u00bd hr",
+    "weekdays_rate_2": "Aft 6pm: $2.20 per entry",
+    "saturday_rate": "$2.20 for 1st 2hrs; $1.10 for sub. hr",
+    "sunday_publicholiday_rate": "Same as Saturday"
+  },
+  "Millenia Walk (Surface parking @ L1)": {
+    "lat": 1.293216,
+    "lng": 103.859558,
+    "address": "Millenia Walk (Surface Car Park), Raffles Boulevard",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "7am-6pm: $4.28 for 1st hr; $1.605 for sub. \u00bd hr",
+    "weekdays_rate_2": "Aft 6pm: $4.28 for 1st 2hrs; $1.605 for sub. hr",
+    "saturday_rate": "$4.28 for 1st 2hrs; $1.605 for sub. hr",
+    "sunday_publicholiday_rate": "Same as Saturday"
+  },
+  "OUE Bayfront (Formerly Overseas Union House)": {
+    "lat": 1.283082,
+    "lng": 103.85302,
+    "address": "OUE Bayfront",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "7am-5.59pm: $0.86 per 10mins block",
+    "weekdays_rate_2": "Aft 6pm: $3.21 per entry",
+    "saturday_rate": "7am-2.59pm: $0.86 per 10mins block. 3pm-11.59am $3.21 per entry",
+    "sunday_publicholiday_rate": "$3.21 per entry"
+  },
+  "Pearl's Centre": {
+    "lat": 1.281272,
+    "lng": 103.840431,
+    "address": "Pearl's Centre, Eu Tong Sen Street",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "8.30am-5pm: $1.20 per \u00bd hr (max $22.90)",
+    "weekdays_rate_2": "Aft 5pm: $2.50 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "$2.50 per entry"
+  },
+  "Robinson 77 (Formerly SIA Building)": {
+    "lat": 1.27756,
+    "lng": 103.848351,
+    "address": "Robinson 77, Robinson Road",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "7am-5pm: $2.4 per \u00bd hr",
+    "weekdays_rate_2": "5pm-11pm: $2.4 per entry",
+    "saturday_rate": "Charges same as wkdays, but $2.4 per entry after 2pm",
+    "sunday_publicholiday_rate": "$2.4 per entry"
+  },
+  "School of the Arts, Singapore (SOTA)": {
+    "lat": 1.29962,
+    "lng": 103.848679,
+    "address": "School of the Arts Singapore, Zubir Said Drive",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "7.00am-5.59pm: $2.50 per hr",
+    "weekdays_rate_2": "6pm-2am (the next day): $5 per entry. 2.01am-6.59am: $5 (additional flat fee for overnight parking)",
+    "saturday_rate": "7am-5.59pm: $2.50 per hr. 6pm-2am (the next day): $5 per entry. 2.01am-6.59am: $5 (additional flat fee for overnight parking)",
+    "sunday_publicholiday_rate": "Same as Saturday"
+  },
+  "Singapore General Hospital (Carpark C, E, G & I)": {
+    "lat": 1.279789,
+    "lng": 103.835602,
+    "address": "Singapore General Hospital (SGH), Hospital Drive",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "7am-9.59pm: $0.036 per min/$2.16 per hr",
+    "weekdays_rate_2": "10pm-6.59am: $2.14 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "7am-9.59pm: $0.018 per min/$1.08 per hr; Aft 10pm: $2.14 per entry"
+  },
+  "Singapore General Hospital (Multi-Storey Carpark H)": {
+    "lat": 1.279789,
+    "lng": 103.835602,
+    "address": "Singapore General Hospital (SGH), Hospital Drive",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "7am-9.59pm: $0.018 per min/$1.08 per hr",
+    "weekdays_rate_2": "10pm-6.59am: $2.14 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "$2.14 per entry"
+  },
+  "Swissotel The Stamford Hotel": {
+    "lat": 1.293532,
+    "lng": 103.853165,
+    "address": "Swissotel The Stamford Hotel, Stamford Road",
+    "postal": "",
+    "category": "South & CBD",
+    "weekdays_rate_1": "8am-5pm: $2 for 1st hr; $0.50 for sub. 15mins (Car park at Raffles City Shopping Centre)",
+    "weekdays_rate_2": "Aft 5pm: $2.50 per entry",
+    "saturday_rate": "$2 for 1st 2hrs; $0.30 for sub. 15mins",
+    "sunday_publicholiday_rate": "Same as Saturday"
+  },
+  "Bukit Timah Plaza (Multi-Storey Car Park)": {
+    "lat": 1.338596,
+    "lng": 103.778534,
+    "address": "Bukit Timah Plaza (Multi-Storey Car Park), Jalan Anak Bukit",
+    "postal": "",
+    "category": "West",
+    "weekdays_rate_1": "7.30am-5pm: $1.28 per hr",
+    "weekdays_rate_2": "5pm-12am: $2.25 per entry. Aft 12am: $2.25 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "Same as wkdays"
+  },
+  "Savoy Theatre": {
+    "lat": 1.347367,
+    "lng": 103.711952,
+    "address": "Savoy Theatre, Boon Lay Place",
+    "postal": "",
+    "category": "West",
+    "weekdays_rate_1": "8am-5pm: $1.20 per hr",
+    "weekdays_rate_2": "Aft 5pm: $3.00 per entry",
+    "saturday_rate": "Same as wkdays",
+    "sunday_publicholiday_rate": "$3.00 per entry"
   }
 }

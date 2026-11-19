@@ -90,8 +90,8 @@
       return '<span class="lot-pill is-free is-plenty">Free / Rider Spot</span>';
     }
     if (!lotInfo) {
-      if (cp.source_type === "LTA Commercial Rates") {
-        return '<span class="lot-pill is-ref">Commercial Mall</span>';
+      if (cp.source_type === "LTA Commercial Rates" || cp.source_type === "SG Commercial Directory" || cp.source_type === "Commercial reference") {
+        return '<span class="lot-pill is-ref">Commercial</span>';
       }
       return `<span class="lot-pill is-ref">${cp.free_sun_ph ? "Free Sun/PH" : esc(cp.system === "COUPON PARKING" ? "Coupon" : "HDB")}</span>`;
     }
@@ -292,6 +292,11 @@
     }
 
     if (anchor) {
+      let aLat = anchor.lat;
+      let aLng = anchor.lng;
+      if (selectedItem && haversineKm(aLat, aLng, selectedItem.cp.lat, selectedItem.cp.lng) < 0.025) {
+        aLng -= 0.00014;
+      }
       const pinIcon = L.divIcon({
         className: "sga-anchor-pin",
         html: `<svg xmlns="http://www.w3.org/2000/svg" width="44" height="54" viewBox="0 0 44 54" style="width:44px !important;height:54px !important;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.45));display:block;"><path d="M22 2C11.5 2 3 10.5 3 21c0 14.2 19 31 19 31s19-16.8 19-31C41 10.5 32.5 2 22 2z" fill="#ef4444" stroke="#ffffff" stroke-width="3"/><circle cx="22" cy="20" r="7.5" fill="#ffffff"/></svg>`,
@@ -299,7 +304,7 @@
         iconAnchor: [22, 52],
         popupAnchor: [0, -48],
       });
-      L.marker([anchor.lat, anchor.lng], { icon: pinIcon, zIndexOffset: 900 })
+      L.marker([aLat, aLng], { icon: pinIcon, zIndexOffset: 900 })
         .bindPopup(searchedLocation ? `<strong>Searched Location:</strong><br>${esc(searchedLocation.address)}` : "<strong>Your current location</strong>")
         .addTo(markerLayer);
     }
