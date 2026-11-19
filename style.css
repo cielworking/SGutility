@@ -4552,26 +4552,34 @@ select.fuel-selector,
 
 .parking-search-input {
   flex: 1 1 240px;
-  height: 42px;
-  padding: 0 12px;
+  height: 44px;
+  padding: 0 14px;
   border-radius: 10px;
-  border: 1.5px solid var(--border-strong);
-  background: var(--surface-subtle);
+  border: 1.5px solid color-mix(in srgb, var(--brand) 42%, var(--border-strong));
+  background: color-mix(in srgb, var(--surface) 82%, #ffffff 18%);
   color: var(--text);
   font: inherit;
-  font-size: 0.94rem;
+  font-size: 0.95rem;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.14), 0 1px 4px rgba(15, 23, 42, 0.12);
   transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
 }
 
+.parking-search-input::placeholder {
+  color: color-mix(in srgb, var(--text) 55%, transparent);
+}
+
 .parking-select {
-  min-height: 42px;
-  padding: 9px 10px;
+  min-height: 44px;
+  padding: 9px 12px;
   border-radius: 10px;
-  border: 1.5px solid var(--border-strong);
-  background: var(--surface-subtle);
+  border: 1.5px solid color-mix(in srgb, var(--brand) 42%, var(--border-strong));
+  background: color-mix(in srgb, var(--surface) 82%, #ffffff 18%);
   color: var(--text);
   font: inherit;
   font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.12);
   transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
 }
 
@@ -4632,13 +4640,21 @@ select.fuel-selector,
 }
 
 .parking-card {
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-strong);
   border-radius: 12px;
   padding: 12px 14px;
   background: var(--surface);
   display: grid;
   gap: 8px;
   align-content: start;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.parking-card:hover {
+  border-color: var(--brand);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.16);
 }
 
 .parking-card-top {
@@ -4733,6 +4749,8 @@ select.fuel-selector,
   display: flex;
   gap: 10px;
   align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .parking-card-actions button {

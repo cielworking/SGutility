@@ -16,6 +16,7 @@
   let tileLayer = null;
   let markerLayer = null;
   let canvasRenderer = null;
+  let markersById = {};
 
   const params = new URLSearchParams(window.location.search);
   if (params.get("mode") === "car") vehicleMode = "car";
@@ -244,6 +245,7 @@
   function updateMapMarkers(items) {
     if (!map || !markerLayer) return;
     markerLayer.clearLayers();
+    markersById = {};
     const subset = items.slice(0, 320);
     for (const { cp, lotInfo } of subset) {
       let color = "#3b82f6";
@@ -257,11 +259,11 @@
       }
       const m = L.circleMarker([cp.lat, cp.lng], {
         renderer: canvasRenderer,
-        radius: 6,
-        color,
+        radius: 7,
+        color: "#ffffff",
         weight: 1.5,
         fillColor: color,
-        fillOpacity: 0.78,
+        fillOpacity: 0.92,
       });
       const lotText = lotInfo ? `${lotInfo.avail} / ${lotInfo.total} ${lotInfo.type === "Y" ? "bike" : "car"} lots` : esc(cp.type);
       m.bindPopup(`
@@ -271,18 +273,21 @@
         <a href="https://www.google.com/maps/search/?api=1&query=${cp.lat},${cp.lng}" target="_blank" rel="noopener noreferrer">Open in Google Maps →</a>
       `);
       m.addTo(markerLayer);
+      markersById[cp.id] = m;
     }
 
     const anchor = activeAnchor();
     if (anchor) {
-      L.circleMarker([anchor.lat, anchor.lng], {
-        renderer: canvasRenderer,
-        radius: 11,
-        color: "#60a5fa",
-        weight: 2.5,
-        fillColor: "#2563eb",
-        fillOpacity: 0.18,
-      }).bindPopup(searchedLocation ? `Search: ${esc(searchedLocation.address)}` : "Your current location").addTo(markerLayer);
+      const pinIcon = L.divIcon({
+        className: "sga-anchor-pin",
+        html: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40" style="filter:drop-shadow(0 3px 6px rgba(0,0,0,0.45));display:block;"><path d="M16 1C8.27 1 2 7.27 2 15c0 10.5 14 23 14 23s14-12.5 14-23C30 7.27 23.73 1 16 1z" fill="#ef4444" stroke="#ffffff" stroke-width="2.5"/><circle cx="16" cy="15" r="5.5" fill="#ffffff"/></svg>`,
+        iconSize: [32, 40],
+        iconAnchor: [16, 38],
+        popupAnchor: [0, -34],
+      });
+      L.marker([anchor.lat, anchor.lng], { icon: pinIcon, zIndexOffset: 900 })
+        .bindPopup(searchedLocation ? `<strong>Search:</strong> ${esc(searchedLocation.address)}` : "<strong>Your current location</strong>")
+        .addTo(markerLayer);
     }
   }
 
@@ -311,10 +316,10 @@
     }
 
     grid.innerHTML = shown.map(({ cp, lotInfo, dist }) => `
-      <article class="parking-card">
+      <article class="parking-card" data-card-id="${esc(cp.id)}" data-focus-lat="${cp.lat}" data-focus-lng="${cp.lng}">
         <div class="parking-card-top">
           <div>
-            <span class="parking-code">${esc(cp.id)} · ${esc(cp.source_type === "LTA Commercial Rates" ? "Commercial Mall" : cp.area_tier === "central" ? "Central Area" : "Heartlands / Islandwide")}</span>
+            <span class="parking-code">${esc(cp.id)} · ${esc(cp.source_type === "LTA Commercial Rates" || cp.source_type === "SG Commercial Directory" ? "Commercial / Building" : cp.source_type === "Commercial reference" ? "Commercial Reference" : cp.area_tier === "central" ? "Central Area" : "Heartlands / Islandwide")}</span>
             <h3 class="parking-card-title">${esc(cp.name)}</h3>
           </div>
           ${lotPillHtml(cp, lotInfo)}
@@ -332,20 +337,28 @@
         <div class="parking-card-footer">
           <strong>${esc(estimateCost(cp))}</strong>
           <span class="parking-card-actions">
-            <button type="button" data-focus-lat="${cp.lat}" data-focus-lng="${cp.lng}">Map</button>
+            <button type="button" data-card-id="${esc(cp.id)}" data-focus-lat="${cp.lat}" data-focus-lng="${cp.lng}">Zoom Map</button>
             <a href="https://www.google.com/maps/search/?api=1&query=${cp.lat},${cp.lng}" target="_blank" rel="noopener noreferrer">Navigate →</a>
           </span>
         </div>
       </article>
     `).join("");
 
-    grid.querySelectorAll("button[data-focus-lat]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        if (!map) return;
-        const lat = Number(btn.getAttribute("data-focus-lat"));
-        const lng = Number(btn.getAttribute("data-focus-lng"));
-        map.setView([lat, lng], 17, { animate: true });
-        document.getElementById("parkingMap")?.scrollIntoView({ behavior: "smooth", block: "center" });
+    function focusCarpark(id, lat, lng) {
+      if (!map) return;
+      map.setView([lat, lng], 17, { animate: true });
+      const marker = markersById[id];
+      if (marker) marker.openPopup();
+      document.getElementById("parkingMap")?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+
+    grid.querySelectorAll("article.parking-card[data-focus-lat]").forEach((card) => {
+      card.addEventListener("click", (e) => {
+        if (e.target.closest("a")) return;
+        const id = card.getAttribute("data-card-id");
+        const lat = Number(card.getAttribute("data-focus-lat"));
+        const lng = Number(card.getAttribute("data-focus-lng"));
+        focusCarpark(id, lat, lng);
       });
     });
   }
