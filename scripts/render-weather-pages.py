@@ -69,6 +69,7 @@ def primary_nav(current):
         '<nav class="primary-nav" aria-label="Primary">'
         f'{item("/visit-singapore.html", "Visit SG", "visit")}'
         f'<details class="nav-menu"><summary aria-expanded="false"{travel}>Travel</summary><div class="nav-panel">'
+        f'{item("/visit-singapore.html", "Visit Singapore Hub", "visit")}'
         f'{item("/travel.html", "Travel &amp; Customs Hub", "travel")}'
         f'{item("/woodlands-checkpoint.html", "Woodlands Checkpoint", "woodlands")}'
         f'{item("/tuas-checkpoint.html", "Tuas Checkpoint", "tuas")}'
