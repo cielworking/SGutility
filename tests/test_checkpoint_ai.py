@@ -30,9 +30,9 @@ class CheckpointAiTests(unittest.TestCase):
 
     def test_direction_zones_for_woodlands_2701(self):
         mod = load_analyzer()
-        # Point in upper-left Johor-bound carriageway vs ignored water
-        self.assertEqual(mod.classify_direction("2701", 1050, 620, 1920, 1069), "towards_jb")
-        self.assertEqual(mod.classify_direction("2701", 1150, 740, 1920, 1069), "towards_sg")
+        # Point in upper-left Johor-bound carriageway vs lower-right Woodlands carriageway vs ignored water
+        self.assertEqual(mod.classify_direction("2701", 1150, 650, 1920, 1069), "towards_jb")
+        self.assertEqual(mod.classify_direction("2701", 1150, 775, 1920, 1069), "towards_sg")
         self.assertEqual(mod.classify_direction("2701", 200, 150, 1920, 1069), "ignored")
 
     def test_direction_zones_for_tuas_4703(self):

@@ -58,16 +58,25 @@ async function loadData() {
     }
 
     if (needsCheckpoint || document.querySelector("[data-glance]") || document.querySelector("[data-checkpoint-ai]") || document.querySelector("[data-travel-advisor]")) {
-      fetch("./data/checkpoint-traffic.json", { cache: "no-store" })
-        .then(r => (r.ok ? r.json() : {}))
-        .then(candidate => {
-          if (candidate && candidate.woodlands && candidate.tuas) {
-            checkpointTraffic = candidate;
-            renderCheckpointAi();
-            renderGlance();
-          }
-        })
-        .catch(() => {});
+      Promise.allSettled([
+        fetch("./data/checkpoint-traffic.json", { cache: "no-store" }).then(r => (r.ok ? r.json() : null)),
+        fetch("/api/checkpoint-ai", { cache: "no-store" }).then(r => (r.ok ? r.json() : null)),
+      ]).then(([ghRes, apiRes]) => {
+        const ghAi = ghRes.status === "fulfilled" ? ghRes.value : null;
+        const apiAi = apiRes.status === "fulfilled" ? apiRes.value : null;
+        const tsOf = d => {
+          if (!d || !d.woodlands || !d.tuas) return 0;
+          const cams = [...(d.woodlands.cameras || []), ...(d.tuas.cameras || [])];
+          const latest = cams.map(c => c.timestamp).filter(Boolean).sort().pop() || d.last_updated || "";
+          return Date.parse(latest) || 0;
+        };
+        const candidate = tsOf(apiAi) > tsOf(ghAi) ? apiAi : ghAi;
+        if (candidate && candidate.woodlands && candidate.tuas) {
+          checkpointTraffic = candidate;
+          renderCheckpointAi();
+          renderGlance();
+        }
+      });
     }
 
     if (needsCheckpoint) {
@@ -168,18 +177,30 @@ async function refreshCheckpointData(forceAi = false) {
     renderCheckpoints();
     updateTravelBriefing(true);
 
-    // Update AI vehicle counts asynchronously in the background
-    fetch("./data/checkpoint-traffic.json", { cache: "no-store" })
-      .then(r => (r.ok ? r.json() : null))
-      .then(liveAi => {
-        if (liveAi && liveAi.woodlands && liveAi.tuas) {
-          checkpointTraffic = liveAi;
-          renderCheckpointAi();
-          renderGlance();
-          updateTravelBriefing(true);
-        }
-      })
-      .catch(() => {});
+    // Update AI vehicle counts asynchronously in the background (check GitHub YOLOX + Cloudflare DETR live fallback)
+    const pickFresherAi = (a, b) => {
+      const tsOf = d => {
+        if (!d || !d.woodlands || !d.tuas) return 0;
+        const cams = [...(d.woodlands.cameras || []), ...(d.tuas.cameras || [])];
+        const latest = cams.map(c => c.timestamp).filter(Boolean).sort().pop() || d.last_updated || "";
+        return Date.parse(latest) || 0;
+      };
+      return tsOf(b) > tsOf(a) ? b : a;
+    };
+    Promise.allSettled([
+      fetch("./data/checkpoint-traffic.json", { cache: "no-store" }).then(r => (r.ok ? r.json() : null)),
+      fetch("/api/checkpoint-ai" + (forceAi ? "?refresh=1" : ""), { cache: "no-store" }).then(r => (r.ok ? r.json() : null)),
+    ]).then(([ghRes, apiRes]) => {
+      const ghAi = ghRes.status === "fulfilled" ? ghRes.value : null;
+      const apiAi = apiRes.status === "fulfilled" ? apiRes.value : null;
+      const best = pickFresherAi(ghAi, apiAi);
+      if (best && best.woodlands && best.tuas) {
+        checkpointTraffic = best;
+        renderCheckpointAi();
+        renderGlance();
+        updateTravelBriefing(true);
+      }
+    });
   } catch (err) {
     console.error("Live checkpoint refresh failed:", err);
 

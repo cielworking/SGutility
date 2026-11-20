@@ -34,15 +34,17 @@ CAMERA_ZONES = {
     "2701": {
         "name": "Woodlands Causeway",
         "zones": {
-            "towards_jb": [(220, 920), (1920, 140), (1920, 275), (420, 1020)],
-            "towards_sg": [(420, 1020), (1920, 275), (1920, 420), (680, 1069)],
+            # Upper-left carriageway of the Causeway deck: outbound traffic heading to Johor Bahru
+            "towards_jb": [(330, 940), (1920, 235), (1920, 340), (560, 1045)],
+            # Lower-right carriageway & motorcycle lane beside the 3 white water pipes: inbound traffic to Woodlands
+            "towards_sg": [(560, 1045), (1920, 340), (1920, 430), (680, 1069)],
         },
     },
     "2702": {
         "name": "Woodlands Checkpoint / BKE",
         "zones": {
-            "towards_jb": [(540, 220), (1920, 400), (1920, 1069), (600, 1069)],
-            "towards_sg": [(260, 0), (580, 0), (570, 1069), (260, 1069)],
+            "towards_jb": [(520, 220), (1920, 400), (1920, 1069), (545, 1069)],
+            "towards_sg": [(300, 0), (510, 0), (535, 1069), (300, 1069)],
         },
     },
     "4703": {
@@ -51,19 +53,19 @@ CAMERA_ZONES = {
             # Above/right of central divider: traffic heading into Singapore
             "towards_sg": [(185, 0), (1200, 0), (1920, 320), (1920, 650), (1320, 420), (700, 175)],
             # Lower/left viaduct & curved ramp (hugging deck, excluding sea/piers): bikes & vehicles towards JB
-            "towards_jb": [(0, 0), (185, 0), (700, 175), (1320, 420), (1760, 580), (1720, 880), (1160, 950), (1050, 740), (780, 720), (200, 880), (0, 880), (0, 680), (650, 480), (680, 350), (0, 130)],
+            "towards_jb": [(0, 0), (185, 0), (700, 175), (1320, 420), (1760, 580), (1720, 880), (1160, 950), (750, 920), (200, 1040), (0, 1040), (0, 680), (650, 480), (680, 350), (0, 130)],
         },
         # Weekday morning contraflow (05:00-10:00 SGT): orange cones split the viaduct so outer/middle lanes carry JB->SG traffic
         "contraflow_zones": {
             "towards_sg": [(185, 0), (1920, 0), (1920, 860), (1760, 840), (1620, 725), (1320, 555), (1020, 415), (720, 285), (460, 185), (185, 65)],
-            "towards_jb": [(0, 0), (185, 0), (185, 65), (460, 185), (720, 285), (1020, 415), (1320, 555), (1620, 725), (1760, 840), (1720, 880), (1160, 950), (1050, 740), (780, 720), (200, 880), (0, 880), (0, 680), (650, 480), (680, 350), (0, 130)],
+            "towards_jb": [(0, 0), (185, 0), (185, 65), (460, 185), (720, 285), (1020, 415), (1320, 555), (1620, 725), (1760, 840), (1720, 880), (1160, 950), (750, 920), (200, 1040), (0, 1040), (0, 680), (650, 480), (680, 350), (0, 130)],
         },
     },
     "4713": {
         "name": "Tuas Checkpoint (Outbound to Johor)",
         "zones": {
-            # Right-hand viaduct heading towards Johor + bottom horizontal motorcycle approach lane (SG-bound handled by 4703)
-            "towards_jb": [(1180, 20), (1860, 20), (1920, 480), (1920, 910), (0, 910), (0, 760), (1250, 760), (1200, 580)],
+            # Right-hand viaduct heading towards Johor + bottom horizontal motorcycle approach lane (excludes median barrier block)
+            "towards_jb": [(1180, 20), (1860, 20), (1920, 480), (1920, 910), (0, 910), (0, 770), (1380, 770), (1200, 560)],
         },
     },
     "4712": {
@@ -186,7 +188,7 @@ def nms(boxes, scores, iou_thresh: float = 0.40) -> list[int]:
     return keep
 
 
-def detect_vehicles(sess, img, conf_thresh: float = 0.28):
+def detect_vehicles(sess, img, conf_thresh: float = 0.26, bike_conf_thresh: float = 0.16):
     import numpy as np
 
     inp_name = sess.get_inputs()[0].name
@@ -199,6 +201,14 @@ def detect_vehicles(sess, img, conf_thresh: float = 0.28):
         for y in ys:
             for x in xs:
                 regions.append((x, y, x + 640, y + 640))
+        # High-resolution zoom tiles for dense distant queues (4713 JOHOR curve, 2701 Causeway, 4703/2702 middle decks)
+        sx, sy = W / 1920.0, H / 1069.0
+        for zx1, zy1, zx2, zy2 in (
+            (1160, 80, 1740, 620),
+            (480, 100, 1180, 720),
+            (1080, 180, 1900, 780),
+        ):
+            regions.append((int(zx1 * sx), int(zy1 * sy), int(zx2 * sx), int(zy2 * sy)))
 
     all_boxes, all_scores, all_cls = [], [], []
     for rx1, ry1, rx2, ry2 in regions:
@@ -209,7 +219,10 @@ def detect_vehicles(sess, img, conf_thresh: float = 0.28):
         cls_scores = preds[:, 5:] * preds[:, 4:5]
         cls_ids = cls_scores.argmax(axis=1)
         conf = cls_scores.max(axis=1)
-        mask = (conf >= conf_thresh) & np.isin(cls_ids, list(VEHICLE_CLASSES.keys()))
+        is_veh = np.isin(cls_ids, list(VEHICLE_CLASSES.keys()))
+        is_bike = (cls_ids == 3) & (conf >= bike_conf_thresh)
+        is_other = (cls_ids != 3) & is_veh & (conf >= conf_thresh)
+        mask = is_bike | is_other
         filt = preds[mask]
         if not len(filt):
             continue
@@ -289,10 +302,10 @@ def analyze_checkpoint_group(sess, cameras: list[dict]) -> dict:
         })
 
     weighted_total = totals["car"] + 0.5 * totals["motorcycle"] + 2.0 * (totals["bus"] + totals["truck"])
-    jb_status = load_level(weighted_jb, smooth_max=20.0, moderate_max=36.0)
-    sg_status = load_level(weighted_sg, smooth_max=20.0, moderate_max=36.0)
+    jb_status = load_level(weighted_jb, smooth_max=15.0, moderate_max=27.0)
+    sg_status = load_level(weighted_sg, smooth_max=15.0, moderate_max=27.0)
     return {
-        "status": load_level(max(weighted_jb, weighted_sg), smooth_max=20.0, moderate_max=36.0),
+        "status": load_level(max(weighted_jb, weighted_sg), smooth_max=15.0, moderate_max=27.0),
         "towards_jb_status": jb_status,
         "towards_sg_status": sg_status,
         "total_vehicles": sum(totals.values()),

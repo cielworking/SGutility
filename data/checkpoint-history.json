@@ -1,7 +1,7 @@
 {
   "model": "YOLOX-S ONNX (road-zone vehicle detection)",
-  "last_updated": "2026-11-19T23:25:52.262774+00:00",
-  "snapshot_count": 61,
+  "last_updated": "2026-11-20T00:59:40.088396+00:00",
+  "snapshot_count": 59,
   "snapshots": [
     {
       "timestamp_sgt": "2026-11-17T00:30:35.852913+08:00",
@@ -745,56 +745,30 @@
       "tuas_to_sg": 0
     },
     {
-      "timestamp_sgt": "2026-11-20T01:00:14.067962+08:00",
-      "woodlands_status": "Smooth",
-      "woodlands_vehicles": 20,
-      "woodlands_load": 20.0,
-      "woodlands_to_jb": 12,
-      "woodlands_to_sg": 8,
-      "tuas_status": "Smooth",
-      "tuas_vehicles": 5,
-      "tuas_load": 5.0,
-      "tuas_to_jb": 5,
-      "tuas_to_sg": 0
-    },
-    {
-      "timestamp_sgt": "2026-11-20T01:00:54.876967+08:00",
-      "woodlands_status": "Smooth",
-      "woodlands_vehicles": 20,
-      "woodlands_load": 20.0,
-      "woodlands_to_jb": 12,
-      "woodlands_to_sg": 8,
-      "tuas_status": "Smooth",
-      "tuas_vehicles": 5,
-      "tuas_load": 5.0,
-      "tuas_to_jb": 5,
-      "tuas_to_sg": 0
-    },
-    {
-      "timestamp_sgt": "2026-11-20T05:31:12.654901+08:00",
-      "woodlands_status": "Moderate",
-      "woodlands_vehicles": 33,
-      "woodlands_load": 42.0,
-      "woodlands_to_jb": 11,
-      "woodlands_to_sg": 22,
-      "tuas_status": "Smooth",
-      "tuas_vehicles": 7,
-      "tuas_load": 6.5,
-      "tuas_to_jb": 0,
-      "tuas_to_sg": 7
-    },
-    {
-      "timestamp_sgt": "2026-11-20T07:25:57.169599+08:00",
+      "timestamp_sgt": "2026-11-20T08:48:20.295572+08:00",
       "woodlands_status": "Heavy",
-      "woodlands_vehicles": 72,
-      "woodlands_load": 94.0,
-      "woodlands_to_jb": 27,
-      "woodlands_to_sg": 45,
+      "woodlands_vehicles": 56,
+      "woodlands_load": 79.5,
+      "woodlands_to_jb": 21,
+      "woodlands_to_sg": 35,
       "tuas_status": "Heavy",
-      "tuas_vehicles": 46,
-      "tuas_load": 54.5,
-      "tuas_to_jb": 10,
-      "tuas_to_sg": 36
+      "tuas_vehicles": 99,
+      "tuas_load": 117.5,
+      "tuas_to_jb": 32,
+      "tuas_to_sg": 67
+    },
+    {
+      "timestamp_sgt": "2026-11-20T08:59:47.419139+08:00",
+      "woodlands_status": "Heavy",
+      "woodlands_vehicles": 71,
+      "woodlands_load": 96.5,
+      "woodlands_to_jb": 46,
+      "woodlands_to_sg": 25,
+      "tuas_status": "Heavy",
+      "tuas_vehicles": 93,
+      "tuas_load": 106.5,
+      "tuas_to_jb": 36,
+      "tuas_to_sg": 57
     }
   ],
   "by_day_hour": [
@@ -1003,24 +977,10 @@
     },
     {
       "day": "Fri",
-      "hour": 1,
+      "hour": 8,
       "samples": 2,
-      "woodlands_avg_load": 20.0,
-      "tuas_avg_load": 5.0
-    },
-    {
-      "day": "Fri",
-      "hour": 5,
-      "samples": 1,
-      "woodlands_avg_load": 42.0,
-      "tuas_avg_load": 6.5
-    },
-    {
-      "day": "Fri",
-      "hour": 7,
-      "samples": 1,
-      "woodlands_avg_load": 94.0,
-      "tuas_avg_load": 54.5
+      "woodlands_avg_load": 88.0,
+      "tuas_avg_load": 112.0
     }
   ]
 }
