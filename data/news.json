@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-22T01:29:53.787511+08:00",
+  "last_updated": "2026-11-22T07:13:59.659532+08:00",
   "headlines": [
     {
       "category": "Singapore",
@@ -93,6 +93,15 @@
     },
     {
       "category": "Crime",
+      "title": "HK man, 32, gets life in prison for murdering ex-girlfriend after finding out she had terminated pregnancies with other man",
+      "summary": "She was found dead with over 40 stab wounds.",
+      "image": "https://static.mothership.sg/1/2026/11/Article-Cover-Pic-2000-x-1050-94.jpg",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/aqua-chow-murder-ex-boyfriend-guilty-life-imprisonment/",
+      "published": "2026-11-21 20:52"
+    },
+    {
+      "category": "Crime",
       "title": "S'pore woman questions care of father, 52, who died after cardiac arrest at KTPH, hospital denies any lapse",
       "summary": "The hospital emphasised that there was no lapse in care during the patient's stay.",
       "image": "https://static.mothership.sg/1/2026/11/Cover-Photos-6.png",
@@ -117,6 +126,15 @@
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/singapore/preschool-teacher-gets-jail-slapping-5-year-old-who-had-autism-6568966",
       "published": "2026-11-20 18:40"
+    },
+    {
+      "category": "Crime",
+      "title": "Helping, not snitching: How primary school pupils in Sengkang are learning to stand up for others",
+      "summary": "The GUARD programme was launched in partnership with the Sengkang Neighbourhood Police Centre.",
+      "image": "",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/parenting-education/helping-not-snitching-how-primary-school-pupils-in-sengkang-are-learning-to-stand-up-for-others",
+      "published": "2026-11-22 05:00"
     },
     {
       "category": "Crime",
@@ -164,13 +182,49 @@
       "published": "2026-11-20 16:20"
     },
     {
-      "category": "Crime",
-      "title": "Man accused of hurting woman in robbery attempt with nail clipper ‘knife’ charged",
-      "summary": "Toa Sim Ho is said to have committed the offence in Woodlands on Nov 18.",
-      "image": "",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/courts-crime/man-accused-of-hurting-woman-in-robbery-attempt-with-nail-clipper-knife-charged",
-      "published": "2026-11-20 11:42"
+      "category": "IT & Gadgets",
+      "title": "Fullerton Health data breach: Migrant workers face risks of employment scams, impersonation",
+      "summary": "Worker groups say leaked names, addresses and phone numbers could make fake work permit and job messages harder to spot.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--exbfVRmU--/c_crop,h_664,w_1181,x_1,y_7/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2024/11/08/20241106_raj_br_clinics_fullerton.jpg?itok=MzhUGsd7",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/singapore/fullerton-health-data-breach-migrant-workers-6565521",
+      "published": "2026-11-22 06:00"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Amazon is complaining about NYC Council on shipping labels, too",
+      "summary": "Amazon is leaving no venue unexplored in its fight against the New York City Council and the Delivery Protection Act. The company is now putting labels on shipments claiming that...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/PXL_20261121_204528314.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1039564/amazon-nyc-council-packages-shipping-label",
+      "published": "2026-11-22 05:59"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "The UN fails to agree on rules regulating ‘killer robots’",
+      "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\"...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13611631/503831564.jpg.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+      "published": "2026-11-22 04:03"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "The FBI and USDA were reportedly hacked",
+      "summary": "Friday, it was reported that both the US Department of Agriculture (USDA) and the FBI were hacked. In reporting on the FBI hack, CNN noted that this is the second such attack on...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23318430/akrales_220309_4977_0038.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1039543/fbi-usda-hacked",
+      "published": "2026-11-22 01:42"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Xiaomi 18 Pro Series: How That Back Display Transforms Notifications, GenAI Mini-Apps, and Mobile Photography",
+      "summary": "This post is brought to you by Xiaomi. Smartphone flagships have reached a point where bumping processor clock speeds and tuning sensor megapixels often yield incremental gains...",
+      "image": "https://soyacincau.com/wp-content/uploads/2026/11/261122-Xiaomi-18-Pro-advertorial-11-150x150.jpg",
+      "source": "SoyaCincau",
+      "url": "https://soyacincau.com/2026/11/22/xiaomi-18-pro-malaysia-back-display-features/",
+      "published": "2026-11-22 01:40"
     },
     {
       "category": "IT & Gadgets",
@@ -218,51 +272,6 @@
       "published": "2026-11-21 22:00"
     },
     {
-      "category": "IT & Gadgets",
-      "title": "The Xiaomi 18 Pro proves two screens aren’t better than one",
-      "summary": "Xiaomi introduced a second screen to its flagship phones with last year's 17 Pros, but didn't release them outside China. That means the new 18 Pro and Pro Max are the first...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/xiaomi-18-pro-max-11.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1038562/xiaomi-18-pro-max-review",
-      "published": "2026-11-21 21:00"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "The game of the year is finally here",
-      "summary": "Hi, friends! Welcome to Installer No. 153, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, thank you for tearing yourself away from GTA to...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Installer-153.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1039433/gta-vi-alfred-6-clockwisetv-installer",
-      "published": "2026-11-21 21:00"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "YMCA’s Youth For Causes portal, associated database hit by cybersecurity breach; more than 13,000 may be affected",
-      "summary": "A subsequent investigation could neither establish nor rule out whether personal data had been accessed, copied or extracted.",
-      "image": "https://dam.mediacorp.sg/image/upload/s--1qyE3igh--/c_crop,h_456,w_812,x_0,y_0/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/21/screenshot_2026-11-21_182503.png?itok=ALPRD0KW",
-      "source": "CNA Singapore",
-      "url": "https://www.channelnewsasia.com/singapore/ymca-youth-causes-cybersecurity-data-breach-6571441",
-      "published": "2026-11-21 19:34"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "South Korea's Lee says speed is vital in AI race on data centre visit",
-      "summary": "Data centres are a major source of chip demand, and South Korean President Lee Jae-myung said he hoped the success of the project would draw further investment from global AI...",
-      "image": "https://dam.mediacorp.sg/image/upload/s--dKb41qLY--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-21T053426Z_1_LYNXNPEMAK03Y_RTROPTP_3_APEC-SUMMIT.JPG?itok=llgHQg5P",
-      "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/east-asia/south-korea-ai-race-lee-jae-myung-6571286",
-      "published": "2026-11-21 13:34"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Zeekr opens 24/7 owners’ lounge at X Park Sunway Serene, with 480kW DC charging from RM1.20/kWh",
-      "summary": "Zeekr owners in Malaysia now have an exclusive lounge where they can chill and relax while charging their EVs. Zeekr Sunway has officially opened its new Zeekr Lounge at X Park...",
-      "image": "https://soyacincau.com/wp-content/uploads/2026/11/261121-zeekr-lounge-sunway-xpark-sunway-serene-01-150x150.jpg",
-      "source": "SoyaCincau",
-      "url": "https://soyacincau.com/2026/11/21/zeekr-owner-lounge-ev-charging-hub-sunway-serene-xpark/",
-      "published": "2026-11-21 12:03"
-    },
-    {
       "category": "Finance",
       "title": "Bitcoin rises over 2% to more than $60,000",
       "summary": "",
@@ -270,15 +279,6 @@
       "source": "CNA Business",
       "url": "https://www.channelnewsasia.com/business/bitcoin-rises-over-2-more-60000-6571851",
       "published": "2026-11-21 23:24"
-    },
-    {
-      "category": "Finance",
-      "title": "Harbinger is building the unsexy EVs that keep the economy moving",
-      "summary": "While legacy automakers tap the brakes on electric vehicles, one startup is hitting the accelerator. Earlier this month, electric truck maker Harbinger raised $240 million in a...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/gang-shot-7.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/transportation/1038448/harbinger-ev-startup-240m-series-d-fedex-army-trucks",
-      "published": "2026-11-21 20:00"
     },
     {
       "category": "Finance",
@@ -351,6 +351,15 @@
       "source": "CNA Business",
       "url": "https://www.channelnewsasia.com/business/ford-honda-stellantis-vw-sue-new-jersey-block-extortionate-vehicle-repair-law-6570506",
       "published": "2026-11-21 04:00"
+    },
+    {
+      "category": "Finance",
+      "title": "YouTube nears $3 billion settlement with US school districts over addiction claims, Bloomberg News reports",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--nGnEhZEs--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-20T192714Z_3_LYNXNPEMAJ1UD_RTROPTP_3_GOOGLE-RESULTS.JPG?itok=twixpR6z",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/youtube-nears-3-billion-settlement-us-school-districts-over-addiction-claims-bloomberg-news-reports-6570456",
+      "published": "2026-11-21 03:27"
     },
     {
       "category": "Transport",
@@ -426,6 +435,15 @@
     },
     {
       "category": "Housing",
+      "title": "A pink bedroom, blue walls and bold art: A creative director’s colourful HDB home in Singapore",
+      "summary": "After years of living with neutral interiors, creative director Tony Law embraced bold colours, eclectic furnishings and treasured possessions to create a surprisingly calming...",
+      "image": "https://dam.mediacorp.sg/image/upload/s--tdEtgOEl--/c_crop,h_613,w_1091,x_1,y_141/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/12/h1_colourful-hdb-flat-marine-parade-interior-design.jpg?itok=Kqe52TxT",
+      "source": "CNA Singapore",
+      "url": "https://www.channelnewsasia.com/obsessions/colourful-hdb-flat-marine-parade-interior-design-6538716",
+      "published": "2026-11-22 06:04"
+    },
+    {
+      "category": "Housing",
       "title": "Marcus Tang’s Journey From Army Officer To Millionaire Property Agent And Buying Back Time",
       "summary": "From army officer to millionaire property agent, Marcus Tang shares the financial lessons he learnt along the way. The post Marcus Tang’s Journey From Army Officer To Millionaire...",
       "image": "https://dollarsandsense.sg/wp-content/uploads/2026/11/Marcus-Tang-Cover-Image-300x169.jpeg",
@@ -468,15 +486,6 @@
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/20-evacuated-after-fire-breaks-out-in-choa-chu-kang-hdb-flat",
       "published": "2026-11-20 19:13"
-    },
-    {
-      "category": "Fire",
-      "title": "3 taken to hospital, 30 evacuated after kitchen fire in Jalan Bukit Merah flat",
-      "summary": "The fire involved contents in two cooking pots.",
-      "image": "",
-      "source": "Straits Times",
-      "url": "https://www.straitstimes.com/singapore/3-taken-to-hospital-30-evacuated-after-kitchen-fire-in-jalan-bukit-merah-flat",
-      "published": "2026-11-20 09:10"
     }
   ]
 }
