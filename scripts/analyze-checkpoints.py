@@ -202,7 +202,17 @@ def build_camera_tiles(camera_id: str | None, width: int, height: int) -> list[t
     return regions
 
 
-def preprocess_crop(img, input_size=(640, 640)):
+YOLO11_4CLASS_TO_COCO = {0: 2, 1: 3, 2: 5, 3: 7}
+
+
+def is_yolo11_session(sess) -> bool:
+    shape = sess.get_outputs()[0].shape
+    if len(shape) == 3 and isinstance(shape[1], int) and isinstance(shape[2], int):
+        return shape[1] < shape[2]
+    return False
+
+
+def preprocess_crop(img, input_size=(640, 640), normalize_rgb: bool = False):
     import numpy as np
     from PIL import Image
 
@@ -212,8 +222,27 @@ def preprocess_crop(img, input_size=(640, 640)):
     resized = img.resize((nw, nh), Image.BILINEAR)
     padded = Image.new("RGB", (input_size[1], input_size[0]), (114, 114, 114))
     padded.paste(resized, (0, 0))
-    arr = np.asarray(padded, dtype=np.float32)[:, :, ::-1].transpose(2, 0, 1)[None, ...]
+    arr = np.asarray(padded, dtype=np.float32)
+    if normalize_rgb:
+        arr = (arr / 255.0).transpose(2, 0, 1)[None, ...]
+    else:
+        arr = arr[:, :, ::-1].transpose(2, 0, 1)[None, ...]
     return arr, scale
+
+
+def decode_yolo11_outputs(outputs):
+    import numpy as np
+
+    # Ultralytics ONNX output shape: (1, 4 + num_classes, num_anchors) -> (num_anchors, 4 + num_classes)
+    preds = outputs[0][0].T
+    cls_scores = preds[:, 4:]
+    raw_ids = cls_scores.argmax(axis=1)
+    conf = cls_scores.max(axis=1)
+    if cls_scores.shape[1] == 4:
+        cls_ids = np.vectorize(lambda c: YOLO11_4CLASS_TO_COCO.get(int(c), -1))(raw_ids)
+    else:
+        cls_ids = raw_ids
+    return preds[:, :4], cls_ids, conf
 
 
 def decode_outputs(outputs, img_size=(640, 640)):
@@ -264,23 +293,28 @@ def detect_vehicles(sess, img, camera_id: str | None = None, conf_thresh: float 
 
     inp_name = sess.get_inputs()[0].name
     out_name = sess.get_outputs()[0].name
+    yolo11_mode = is_yolo11_session(sess)
     W, H = img.size
     regions = build_camera_tiles(camera_id, W, H)
 
     all_boxes, all_scores, all_cls = [], [], []
     for rx1, ry1, rx2, ry2 in regions:
         crop = img.crop((rx1, ry1, rx2, ry2))
-        blob, scale = preprocess_crop(crop)
+        blob, scale = preprocess_crop(crop, normalize_rgb=yolo11_mode)
         raw = sess.run([out_name], {inp_name: blob})
-        preds = decode_outputs(raw)
-        cls_scores = preds[:, 5:] * preds[:, 4:5]
-        cls_ids = cls_scores.argmax(axis=1)
-        conf = cls_scores.max(axis=1)
+        if yolo11_mode:
+            xywh, cls_ids, conf = decode_yolo11_outputs(raw)
+        else:
+            preds = decode_outputs(raw)
+            cls_scores = preds[:, 5:] * preds[:, 4:5]
+            cls_ids = cls_scores.argmax(axis=1)
+            conf = cls_scores.max(axis=1)
+            xywh = preds[:, :4]
         is_veh = np.isin(cls_ids, list(VEHICLE_CLASSES.keys()))
         is_bike = (cls_ids == 3) & (conf >= bike_conf_thresh)
         is_other = (cls_ids != 3) & is_veh & (conf >= conf_thresh)
         mask = is_bike | is_other
-        filt = preds[mask]
+        filt = xywh[mask]
         if not len(filt):
             continue
         cx, cy, bw, bh = filt[:, 0], filt[:, 1], filt[:, 2], filt[:, 3]

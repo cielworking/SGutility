@@ -76,6 +76,24 @@ class CheckpointAiTests(unittest.TestCase):
                 self.assertLess(x1, x2)
                 self.assertLess(y1, y2)
 
+    def test_yolo11_4class_decoder_maps_to_coco_vehicle_ids(self):
+        import numpy as np
+
+        mod = load_analyzer()
+        # Synthetic YOLO11 4-class ONNX output: shape (1, 8, 2) -> 2 anchors
+        # Anchor 0: class 0 (car -> COCO 2), Anchor 1: class 1 (motorcycle -> COCO 3)
+        raw = [np.zeros((1, 8, 2), dtype=np.float32)]
+        raw[0][0, :4, 0] = [100.0, 200.0, 40.0, 30.0]
+        raw[0][0, 4, 0] = 0.85
+        raw[0][0, :4, 1] = [300.0, 400.0, 15.0, 20.0]
+        raw[0][0, 5, 1] = 0.72
+
+        xywh, cls_ids, conf = mod.decode_yolo11_outputs(raw)
+        self.assertEqual(xywh.shape, (2, 4))
+        self.assertEqual(list(cls_ids), [2, 3])
+        self.assertAlmostEqual(float(conf[0]), 0.85, places=5)
+        self.assertAlmostEqual(float(conf[1]), 0.72, places=5)
+
     def test_generated_traffic_json_schema(self):
         traffic_path = ROOT / "data" / "checkpoint-traffic.json"
         self.assertTrue(traffic_path.exists())
