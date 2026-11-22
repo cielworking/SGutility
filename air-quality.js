@@ -98,8 +98,10 @@ if (typeof document !== 'undefined') (() => {
     const bars=shown.map(p=>`<rect x="${x(p.time)}" y="${y(p.value)}" width="17" height="${Math.max(1,202-y(p.value))}" fill="${AirQuality.band(p.value,activeMetric).color}" tabindex="0" role="img" aria-label="${escape(time(new Date(p.time).toISOString()))}: ${p.value} ${escape(label)}"><title>${escape(time(new Date(p.time).toISOString()))}: ${p.value} ${escape(label)}</title></rect>`).join('');
     const ticks=[0,6,12,18,23].map(n=>`<text x="${x(start+n*3600000)+8}" y="225" text-anchor="middle">${escape(hour(start+n*3600000))}</text>`).join('');
     $('air-trend').innerHTML=`<svg viewBox="0 0 640 240" role="img" aria-label="${escape(label)} hourly history for ${escape(current().location)}. ${shown.length} available readings; gaps mean unavailable data.">${grid}${bars}${ticks}</svg>`;
+    const histFeed=country==='sg'?cache[metric==='psi'?'sg_psi_history':'sg_pm25_history']:cache.my_haze_history;
+    const histFailed=country==='sg'&&histFeed&&histFeed.ok===false;
     const short=shown.length<24;
-    $('air-history-note').textContent=(country==='my'?'Official station readings recorded by SG Alerts. ':'Official NEA hourly reports. ')+(short?`${shown.length} reading${shown.length===1?'':'s'} available; history is building. `:'Latest 24 available hourly readings. ')+'Times use UTC+08. Empty periods are not interpolated.';
+    $('air-history-note').textContent=(country==='my'?'Official station readings recorded by SG Alerts. ':'Official NEA hourly reports. ')+(short?`${shown.length} reading${shown.length===1?'':'s'} available; ${histFailed?'earlier hourly history is currently unavailable from the source':'history is building'}. `:'Latest 24 available hourly readings. ')+'Times use UTC+08. Empty periods are not interpolated.';
     $('air-history-values').innerHTML=`<table><thead><tr><th scope="col">Reported time (UTC+08)</th><th scope="col">${escape(label)}</th></tr></thead><tbody>${shown.map(p=>`<tr><td>${escape(time(new Date(p.time).toISOString()))}</td><td>${p.value}</td></tr>`).join('')}</tbody></table>`;
   }
   function drawMap() {
