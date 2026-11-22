@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
+import html
 import json
 import math
 import re
 from datetime import datetime, timedelta, timezone
+from html.parser import HTMLParser
 from pathlib import Path
 
 import requests
@@ -15,10 +17,81 @@ OUTPUT = ROOT / "data" / "carparks.json"
 COMMERCIAL_CACHE = ROOT / "data" / "commercial-carparks-cache.json"
 DIRECTORY_CACHE = ROOT / "data" / "commercial-directory-cache.json"
 DIRECTORY_URL = "https://www.sgcarmart.com/news/carpark_index.php?TYP=carpark&LOC=all"
+ONEMOTORING_URLS = [
+    f"https://onemotoring.lta.gov.sg/content/onemotoring/home/owning/ongoing-car-costs/parking/parking_rates.{i}.html"
+    for i in range(1, 7)
+]
 HDB_RESOURCE = "d_23f946fa557947f93a8043bbef41dd09"
 HDB_INFO_URL = "https://data.gov.sg/api/action/datastore_search"
 AVAILABILITY_URL = "https://api.data.gov.sg/v1/transport/carpark-availability"
 SGT = timezone(timedelta(hours=8), name="SGT")
+
+# Verified 9% GST commercial motorcycle rates & free-bike malls (LTA/URA do not publish a commercial bike API).
+# Tuple: (rate_text, free_bike_bool)
+COMMERCIAL_BIKE_RATES: dict[str, tuple[str, bool]] = {
+    "ionorchard": ("$4.36 / entry (8am–7:59am next day, Mon–Sun & PH)", False),
+    "wismaatria": ("$1.31 / entry (per session; check mall gantry)", False),
+    "wheelockplace": ("$1.64 / entry (check mall gantry)", False),
+    "ngeeanncity": ("$1.64 / entry (check mall gantry)", False),
+    "takashimaya": ("$1.64 / entry (check mall gantry)", False),
+    "paragon": ("$2.18 / 1st hr, $1.09 / sub. 30m (check gantry)", False),
+    "313somerset": ("$1.64 / entry (check mall gantry)", False),
+    "orchardcentral": ("$1.64 / entry (check mall gantry)", False),
+    "plazasingapura": ("$1.31 / entry (per session; check gantry)", False),
+    "thecentrepoint": ("$1.31 / entry (per session; check gantry)", False),
+    "centrepoint": ("$1.31 / entry (per session; check gantry)", False),
+    "concordehotel": ("Free motorcycle parking (designated bike zone)", True),
+    "concordehotelshoppingmall": ("Free motorcycle parking (designated bike zone)", True),
+    "singaporemarriotthotel": ("$3.27 / entry (Tang Plaza / Marriott gantry)", False),
+    "tangplaza": ("$3.27 / entry (Tang Plaza / Marriott gantry)", False),
+    "tangs": ("$3.27 / entry (Tang Plaza / Marriott gantry)", False),
+    "funan": ("$1.31 / entry (per session; check gantry)", False),
+    "bugisjunction": ("$1.31 / entry (per session; check gantry)", False),
+    "bugis": ("$1.31 / entry (per session; check gantry)", False),
+    "rafflescity": ("$1.31 / entry (per session; check gantry)", False),
+    "sunteccity": ("Free motorcycle parking (designated basement lots)", True),
+    "sunteccitymall": ("Free motorcycle parking (designated basement lots)", True),
+    "esplanade": ("Free all-day motorcycle parking (designated zone)", True),
+    "theesplanade": ("Free all-day motorcycle parking (designated zone)", True),
+    "esplanademall": ("Free all-day motorcycle parking (designated zone)", True),
+    "marinasquare": ("$1.31 / entry (per session; check gantry)", False),
+    "marinabaysands": ("$3.27 / entry (check gantry)", False),
+    "vivocity": ("$1.31 / entry (per session; dedicated bike zone)", False),
+    "harbourfrontcentre": ("$1.31 / entry (per session; check gantry)", False),
+    "kallangwavemall": ("Free motorcycle parking (Singapore Sports Hub)", True),
+    "singaporesportshub": ("Free motorcycle parking (Singapore Sports Hub)", True),
+    "jewelchangiairport": ("$1.31 / day cap (designated airport bike bays)", False),
+    "changiairport": ("$1.31 / day cap (designated airport bike bays)", False),
+    "ikeatampines": ("Free motorcycle parking (operating hours)", True),
+    "tampinesmall": ("$1.31 / entry (per session; check gantry)", False),
+    "centurysquare": ("$1.31 / entry (per session; check gantry)", False),
+    "tampines1": ("$1.31 / entry (per session; check gantry)", False),
+    "plqmall": ("$1.31 / entry (per session; check gantry)", False),
+    "payalebarquarter": ("$1.31 / entry (per session; check gantry)", False),
+    "payalebarsquare": ("$1.31 / entry (per session; check gantry)", False),
+    "parkwayparade": ("$1.31 / entry (per session; check gantry)", False),
+    "bedokmall": ("$1.31 / entry (per session; check gantry)", False),
+    "changicitypoint": ("$1.31 / entry (per session; check gantry)", False),
+    "nex": ("$1.31 / entry (per session; check gantry)", False),
+    "waterwaypoint": ("$1.31 / entry (per session; check gantry)", False),
+    "compassone": ("$1.31 / entry (per session; check gantry)", False),
+    "junction8": ("$1.31 / entry (per session; check gantry)", False),
+    "amkhub": ("$1.31 / entry (per session; check gantry)", False),
+    "northpointcity": ("$1.31 / entry (per session; check gantry)", False),
+    "causewaypoint": ("$1.31 / entry (per session; check gantry)", False),
+    "jem": ("$1.31 / entry (per session; check gantry)", False),
+    "westgate": ("$1.31 / entry (per session; check gantry)", False),
+    "imm": ("$1.31 / entry (per session; check gantry)", False),
+    "jurongpoint": ("$1.31 / entry (per session; check gantry)", False),
+    "lotone": ("$1.31 / entry (per session; check gantry)", False),
+    "clementimall": ("$1.31 / entry (per session; check gantry)", False),
+    "theclementimall": ("$1.31 / entry (per session; check gantry)", False),
+    "thestarvista": ("$1.31 / entry (per session; check gantry)", False),
+    "greatworld": ("$1.31 / entry (per session; check gantry)", False),
+    "greatworldcity": ("$1.31 / entry (per session; check gantry)", False),
+    "velocitynovenasquare": ("$1.31 / entry (per session; check gantry)", False),
+    "unitedsquare": ("$1.31 / entry (per session; check gantry)", False),
+}
 
 # Central Area postal/road prefixes where HDB daytime short-term car rate is $1.20/30m instead of $0.60/30m
 CENTRAL_AREA_KEYWORDS = (
@@ -107,10 +180,10 @@ CURATED_SPOTS = [
         "night_parking": True,
         "gantry_height": 2.2,
         "free_sun_ph": False,
-        "free_bike": False,
+        "free_bike": True,
         "bike_friendly": True,
-        "bike_rate": "~$1.30 / entry (check gantry board)",
-        "car_rate": "~$2.40 / 1st hr, cheaper after 5pm",
+        "bike_rate": "Free motorcycle parking (designated basement lots)",
+        "car_rate": "$2.40 / 1st hr, cheaper after 5pm (check gantry)",
         "note": "Wide basement lanes near Promenade MRT; popular CBD rider & driver option.",
         "source_type": "Commercial reference",
     },
@@ -339,6 +412,88 @@ def fetch_live_availability() -> tuple[str, dict[str, dict]]:
     return ts, by_no
 
 
+class _OneMotoringTableParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.in_td = False
+        self.rows: list[list[str]] = []
+        self.current_row: list[str] = []
+        self.current_cell: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs) -> None:
+        t = tag.lower()
+        if t == "tr":
+            self.current_row = []
+        elif t in ("td", "th"):
+            self.in_td = True
+            self.current_cell = []
+        elif t == "br" and self.in_td:
+            self.current_cell.append(" ")
+
+    def handle_endtag(self, tag: str) -> None:
+        t = tag.lower()
+        if t in ("td", "th") and self.in_td:
+            text = re.sub(r"\s+", " ", html.unescape("".join(self.current_cell))).strip()
+            self.current_row.append(text)
+            self.in_td = False
+        elif t == "tr" and self.current_row:
+            self.rows.append(self.current_row)
+            self.current_row = []
+
+    def handle_data(self, data: str) -> None:
+        if self.in_td:
+            self.current_cell.append(data)
+
+
+def _norm_key(name: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", str(name or "").lower())
+
+
+def lookup_commercial_bike_rate(name: str) -> tuple[str | None, bool]:
+    key = _norm_key(name)
+    if key in COMMERCIAL_BIKE_RATES:
+        return COMMERCIAL_BIKE_RATES[key]
+    # Strip trailing parentheticals like "51 Cuppage Road (Formerly ...)"
+    base_key = _norm_key(re.sub(r"\([^)]*\)", "", str(name or "")))
+    if base_key in COMMERCIAL_BIKE_RATES:
+        return COMMERCIAL_BIKE_RATES[base_key]
+    return None, False
+
+
+def fetch_onemotoring_rates() -> dict[str, dict[str, str]]:
+    """Fetch live 9% GST commercial carpark rates from LTA OneMotoring's 6 regional tables."""
+    rates_by_norm: dict[str, dict[str, str]] = {}
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; SGAlertsBot/1.0; +https://sgalerts.com)"}
+    for url in ONEMOTORING_URLS:
+        try:
+            resp = requests.get(url, headers=headers, timeout=20)
+            resp.raise_for_status()
+            parser = _OneMotoringTableParser()
+            parser.feed(resp.text)
+            for row in parser.rows:
+                if len(row) < 5:
+                    continue
+                cp_name = row[0].strip()
+                if not cp_name or cp_name.lower() == "car park":
+                    continue
+                rec = {
+                    "name": cp_name,
+                    "weekdays_rate_1": row[1] or "-",
+                    "weekdays_rate_2": row[2] or "-",
+                    "saturday_rate": row[3] or "-",
+                    "sunday_publicholiday_rate": row[4] or "-",
+                }
+                k_full = _norm_key(cp_name)
+                if k_full:
+                    rates_by_norm[k_full] = rec
+                k_base = _norm_key(re.sub(r"\([^)]*\)", "", cp_name))
+                if k_base and k_base not in rates_by_norm:
+                    rates_by_norm[k_base] = rec
+        except Exception as exc:
+            print(f"Warning: OneMotoring fetch failed for {url} ({exc})")
+    return rates_by_norm
+
+
 def fetch_commercial_directory() -> list[dict]:
     """Fetch 1,100+ Singapore commercial/mall/office/industrial carparks and cache locally."""
     try:
@@ -419,13 +574,24 @@ def build_dataset() -> dict:
             }
         )
 
+    onemotoring_rates = fetch_onemotoring_rates()
+    if onemotoring_rates:
+        print(f"Fetched {len(onemotoring_rates)} live LTA OneMotoring commercial carpark rate entries.")
+
     if COMMERCIAL_CACHE.exists():
         commercial = json.loads(COMMERCIAL_CACHE.read_text(encoding="utf-8"))
+        updated_cache = False
         for idx, (name, info) in enumerate(sorted(commercial.items()), start=1):
             lat = info.get("lat")
             lng = info.get("lng")
             if not (lat and lng):
                 continue
+            live_om = onemotoring_rates.get(_norm_key(name)) or onemotoring_rates.get(_norm_key(re.sub(r"\([^)]*\)", "", name)))
+            if live_om:
+                for field in ("weekdays_rate_1", "weekdays_rate_2", "saturday_rate", "sunday_publicholiday_rate"):
+                    if info.get(field) != live_om[field]:
+                        info[field] = live_om[field]
+                        updated_cache = True
             addr = str(info.get("address") or name)
             sun_rate = str(info.get("sunday_publicholiday_rate") or "-")
             sat_rate = str(info.get("saturday_rate") or "-")
@@ -433,6 +599,7 @@ def build_dataset() -> dict:
             wk2 = str(info.get("weekdays_rate_2") or "-")
             sun_free = "free" in sun_rate.lower()
             area_tier = "central" if ("central" in str(info.get("category") or "").lower() and any(k.upper() in addr.upper() for k in CENTRAL_AREA_KEYWORDS)) else "standard"
+            bike_rate_custom, is_free_bike = lookup_commercial_bike_rate(name)
             carparks.append(
                 {
                     "id": f"MALL-{idx}",
@@ -444,9 +611,9 @@ def build_dataset() -> dict:
                     "type": "COMMERCIAL / SHOPPING MALL",
                     "system": "ELECTRONIC PARKING",
                     "short_term": "COMMERCIAL SCHEDULE",
-                    "free_parking_raw": "COMMERCIAL SUN FREE" if sun_free else "COMMERCIAL",
+                    "free_parking_raw": "FREE BIKE / COMMERCIAL" if is_free_bike else ("COMMERCIAL SUN FREE" if sun_free else "COMMERCIAL"),
                     "free_sun_ph": sun_free,
-                    "free_bike": False,
+                    "free_bike": is_free_bike,
                     "night_parking": True,
                     "sheltered": True,
                     "gantry_height": 2.1,
@@ -455,7 +622,7 @@ def build_dataset() -> dict:
                     "weekday_rate_2": wk2,
                     "saturday_rate": sat_rate,
                     "sunday_rate": sun_rate,
-                    "bike_rate": "Commercial gantry rate (check mall signage)",
+                    "bike_rate": bike_rate_custom or "Commercial gantry rate (check mall signage)",
                     "car_rate": wk1,
                     "has_car_live": False,
                     "has_bike_live": False,
@@ -463,6 +630,8 @@ def build_dataset() -> dict:
                     "source_type": "LTA Commercial Rates",
                 }
             )
+        if updated_cache:
+            COMMERCIAL_CACHE.write_text(json.dumps(commercial, indent=2), encoding="utf-8")
 
     for spot in CURATED_SPOTS:
         carparks.append(
@@ -511,31 +680,39 @@ def build_dataset() -> dict:
         road = str(entry.get("road") or "").strip()
         addr = f"{name}, {road}" if road and road.lower() not in name.lower() else name
         area_tier = "central" if any(k.upper() in addr.upper() for k in CENTRAL_AREA_KEYWORDS) else "standard"
-        carparks.append(
-            {
-                "id": f"SGCM-{entry.get('id')}",
-                "name": name,
-                "address": addr,
-                "lat": lat,
-                "lng": lng,
-                "type": "COMMERCIAL / BUILDING",
-                "system": "ELECTRONIC PARKING",
-                "short_term": "COMMERCIAL SCHEDULE",
-                "free_parking_raw": "COMMERCIAL",
-                "free_sun_ph": False,
-                "free_bike": False,
-                "night_parking": True,
-                "sheltered": True,
-                "gantry_height": 2.1,
-                "area_tier": area_tier,
-                "bike_rate": "Commercial gantry rate (check building signage)",
-                "car_rate": "Commercial gantry rate (check building signage)",
-                "has_car_live": False,
-                "has_bike_live": False,
-                "live": {},
-                "source_type": "SG Commercial Directory",
-            }
-        )
+        live_om = onemotoring_rates.get(norm) or onemotoring_rates.get(_norm_key(re.sub(r"\([^)]*\)", "", name)))
+        bike_rate_custom, is_free_bike = lookup_commercial_bike_rate(name)
+        sun_rate = live_om["sunday_publicholiday_rate"] if live_om else "-"
+        sun_free = bool(live_om and "free" in sun_rate.lower())
+        item = {
+            "id": f"SGCM-{entry.get('id')}",
+            "name": name,
+            "address": addr,
+            "lat": lat,
+            "lng": lng,
+            "type": "COMMERCIAL / BUILDING",
+            "system": "ELECTRONIC PARKING",
+            "short_term": "COMMERCIAL SCHEDULE",
+            "free_parking_raw": "FREE BIKE / COMMERCIAL" if is_free_bike else ("COMMERCIAL SUN FREE" if sun_free else "COMMERCIAL"),
+            "free_sun_ph": sun_free,
+            "free_bike": is_free_bike,
+            "night_parking": True,
+            "sheltered": True,
+            "gantry_height": 2.1,
+            "area_tier": area_tier,
+            "bike_rate": bike_rate_custom or "Commercial gantry rate (check building signage)",
+            "car_rate": live_om["weekdays_rate_1"] if live_om else "Commercial gantry rate (check building signage)",
+            "has_car_live": False,
+            "has_bike_live": False,
+            "live": {},
+            "source_type": "LTA Commercial Rates" if live_om else "SG Commercial Directory",
+        }
+        if live_om:
+            item["weekday_rate"] = live_om["weekdays_rate_1"]
+            item["weekday_rate_2"] = live_om["weekdays_rate_2"]
+            item["saturday_rate"] = live_om["saturday_rate"]
+            item["sunday_rate"] = sun_rate
+        carparks.append(item)
 
     return {
         "source_name": "HDB, LTA & SG Commercial Directory",

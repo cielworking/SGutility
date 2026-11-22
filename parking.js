@@ -54,10 +54,10 @@
     const hours = Number(hrsEl ? hrsEl.value : 2);
 
     if (vehicleMode === "motorcycle") {
-      if (cp.free_bike) return "Free / Grace check";
+      if (cp.free_bike) return cp.bike_rate || "Free motorcycle parking";
       if (day === "sun_ph" && cp.free_sun_ph) return "Free (Sun & PH 7am–10:30pm)";
-      if (cp.source_type === "LTA Commercial Rates" || cp.source_type === "Commercial reference") {
-        return cp.bike_rate || "Commercial / Mall rate";
+      if (cp.source_type === "LTA Commercial Rates" || cp.source_type === "SG Commercial Directory" || cp.source_type === "Commercial reference") {
+        return cp.bike_rate || "Commercial gantry rate";
       }
       return hours >= 10 ? "$0.65 day + $0.65 night cap" : "$0.10/30m ($0.65 cap/session)";
     }
@@ -67,7 +67,9 @@
       if (day === "sun_ph" && cp.sunday_rate && cp.sunday_rate !== "-") return `Sun/PH: ${cp.sunday_rate}`;
       return cp.weekday_rate || cp.car_rate;
     }
-    if (cp.source_type === "Commercial reference") return cp.car_rate;
+    if (cp.source_type === "SG Commercial Directory" || cp.source_type === "Commercial reference") {
+      return cp.car_rate || "Commercial gantry rate";
+    }
     if (hours === 10) return cp.night_parking ? "$5.00 max overnight cap" : "No overnight parking";
     const halfHours = Math.max(1, Math.ceil(hours * 2));
     const unit = cp.area_tier === "central" ? 1.2 : 0.6;
