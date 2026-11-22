@@ -435,6 +435,59 @@ def render_news_teaser(news_data, limit=6):
     )
 
 
+def render_parking_malls_static(carparks_data):
+    carparks = (carparks_data or {}).get("carparks") or []
+    if not carparks:
+        return ""
+    by_name = {str(c.get("name") or "").lower(): c for c in carparks}
+    featured_names = [
+        "ION Orchard", "Wisma Atria", "Wheelock Place", "Plaza Singapura",
+        "Tang Plaza", "111 Somerset", "Suntec City", "Vivocity",
+        "Kallang Wave Mall", "Bugis Junction", "Funan", "Great World",
+        "Jewel Changi Airport", "Tampines Mall", "Causeway Point", "JEM",
+        "NEX", "City Square Mall", "AMK Hub", "Bedok Mall",
+    ]
+    rows = []
+    for target in featured_names:
+        cp = by_name.get(target.lower()) or next(
+            (c for k, c in by_name.items() if target.lower() in k and c.get("source_type") != "HDB / data.gov.sg"),
+            None,
+        )
+        if not cp:
+            continue
+        car_r = str(cp.get("car_rate") or "-")
+        if len(car_r) > 95:
+            car_r = car_r[:92].rsplit(" ", 1)[0] + "…"
+        bike_r = str(cp.get("bike_rate") or "Private gantry")
+        if cp.get("free_bike"):
+            bike_r = "<strong>Free</strong>"
+        elif cp.get("no_moto"):
+            bike_r = "No public motorcycle parking"
+        else:
+            bike_r = html.escape(bike_r)
+        rows.append(
+            f"<tr><td><strong>{html.escape(str(cp.get('name') or target))}</strong></td>"
+            f"<td>{html.escape(car_r)}</td><td>{bike_r}</td></tr>"
+        )
+
+    free_malls = sorted({str(c.get("name")) for c in carparks if c.get("free_bike") and c.get("source_type") != "HDB / data.gov.sg"})[:16]
+    no_moto_malls = sorted({str(c.get("name")) for c in carparks if c.get("no_moto")})[:20]
+
+    free_html = f'<p><strong>Shopping malls &amp; attractions with free motorcycle parking:</strong> {", ".join(html.escape(n) for n in free_malls)}.</p>' if free_malls else ""
+    no_moto_html = f'<p><strong>Malls with no public motorcycle parking (use the interactive map above for closest $0.65 HDB bike lots):</strong> {", ".join(html.escape(n) for n in no_moto_malls)}.</p>' if no_moto_malls else ""
+
+    return f"""<h3>Popular Singapore Shopping Mall Car &amp; Motorcycle Parking Rates (2026)</h3>
+<p>Commercial mall rates below combine live <strong>LTA OneMotoring</strong>, <strong>Motorist.sg (9% GST)</strong>, and <strong>SG Bike Parking</strong> directories inside our 3,498-carpark database. Use the search bar above for all 1,225 commercial buildings.</p>
+<div class="seo-table-wrap">
+  <table class="seo-data-table" aria-label="Popular Singapore shopping mall car and motorcycle parking rates">
+    <thead><tr><th>Mall / Building</th><th>Weekday Car Rate</th><th>Motorcycle Rate</th></tr></thead>
+    <tbody>{"".join(rows)}</tbody>
+  </table>
+</div>
+{free_html}
+{no_moto_html}"""
+
+
 def render_petrol_discounts_static(prices, discounts):
     brands_by_name = {
         str(item.get("brand", "")).strip().lower(): item
@@ -642,7 +695,7 @@ def render_home_snapshot(traffic, petrol, coe, bto, weather, pools, cameras_coun
       <article class="home-utility-card">
         <span class="home-utility-kicker">Driving · Islandwide Maps</span>
         <h2><a href="/parking.html">SG Parking &amp; Speed Cameras</a></h2>
-        <p>Search <strong>2,200+ HDB/LTA carparks</strong> with live motorcycle &amp; car lots and free Sunday/PH filters, plus all <strong>{cameras_count} official SPF speed cameras</strong>.</p>
+        <p>Search <strong>3,490+ HDB &amp; mall carparks</strong> with live car &amp; bike lots, 9% GST commercial rates, and all <strong>{cameras_count} official SPF speed cameras</strong>.</p>
         <div class="home-utility-links">
           <a href="/parking.html">Live SG Parking</a>
           <a href="/speed-cameras.html">SPF Speed Camera Map</a>
@@ -1143,6 +1196,7 @@ def main():
         "speed_cameras": "speed-cameras.json",
         "currency": "currency-rates.json",
         "events": "sg-events.json",
+        "carparks": "carparks.json",
     }.items():
         try:
             optional[key] = load_json(filename)
@@ -1160,6 +1214,12 @@ def main():
             "speed-cameras.html",
             "SPEED-CAMERAS",
             render_speed_cameras_directory(optional["speed_cameras"]),
+        )
+    if optional.get("carparks") and (ROOT / "parking.html").exists():
+        replace_static_block(
+            "parking.html",
+            "PARKING-MALLS",
+            render_parking_malls_static(optional["carparks"]),
         )
 
     if optional.get("news"):

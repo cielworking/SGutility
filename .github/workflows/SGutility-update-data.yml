@@ -200,6 +200,7 @@ jobs:
             if push_out=$(git push origin HEAD:main 2>&1); then
               printf '%s\n' "$push_out"
               drop_workflow_leftover_stashes
+              python scripts/ping-indexnow.py || true
               echo "Push succeeded."
               exit 0
             fi
