@@ -30,7 +30,7 @@ class ThemeTests(unittest.TestCase):
                 "theme control": text.count('class="theme-control"'),
                 "theme script": text.count("theme.js?v=1"),
                 "prepaint initializer": text.count("sga-theme-mode"),
-                "css v31": text.count("style.css?v=33"),
+                "css v31": text.count("style.css?v=34"),
             }
             if any(value != 1 for value in checks.values()):
                 failures.append((str(path.relative_to(ROOT)), checks))

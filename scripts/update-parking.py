@@ -6,6 +6,7 @@ import html
 import json
 import math
 import re
+import subprocess
 from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -16,6 +17,8 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "carparks.json"
 COMMERCIAL_CACHE = ROOT / "data" / "commercial-carparks-cache.json"
 DIRECTORY_CACHE = ROOT / "data" / "commercial-directory-cache.json"
+MOTORIST_CACHE = ROOT / "data" / "motorist-rates-cache.json"
+BIKEPARKING_CACHE = ROOT / "data" / "bikeparking-cache.json"
 DIRECTORY_URL = "https://www.sgcarmart.com/news/carpark_index.php?TYP=carpark&LOC=all"
 ONEMOTORING_URLS = [
     f"https://onemotoring.lta.gov.sg/content/onemotoring/home/owning/ongoing-car-costs/parking/parking_rates.{i}.html"
@@ -26,71 +29,53 @@ HDB_INFO_URL = "https://data.gov.sg/api/action/datastore_search"
 AVAILABILITY_URL = "https://api.data.gov.sg/v1/transport/carpark-availability"
 SGT = timezone(timedelta(hours=8), name="SGT")
 
-# Verified 9% GST commercial motorcycle rates & free-bike malls (LTA/URA do not publish a commercial bike API).
+# Verified 9% GST overrides & malls where community directories lag GST updates.
 # Tuple: (rate_text, free_bike_bool)
 COMMERCIAL_BIKE_RATES: dict[str, tuple[str, bool]] = {
     "ionorchard": ("$4.36 / entry (8am–7:59am next day, Mon–Sun & PH)", False),
-    "wismaatria": ("$1.31 / entry (per session; check mall gantry)", False),
-    "wheelockplace": ("$1.64 / entry (check mall gantry)", False),
-    "ngeeanncity": ("$1.64 / entry (check mall gantry)", False),
-    "takashimaya": ("$1.64 / entry (check mall gantry)", False),
-    "paragon": ("$2.18 / 1st hr, $1.09 / sub. 30m (check gantry)", False),
-    "313somerset": ("$1.64 / entry (check mall gantry)", False),
-    "orchardcentral": ("$1.64 / entry (check mall gantry)", False),
-    "plazasingapura": ("$1.31 / entry (per session; check gantry)", False),
-    "thecentrepoint": ("$1.31 / entry (per session; check gantry)", False),
-    "centrepoint": ("$1.31 / entry (per session; check gantry)", False),
-    "concordehotel": ("Free motorcycle parking (designated bike zone)", True),
-    "concordehotelshoppingmall": ("Free motorcycle parking (designated bike zone)", True),
-    "singaporemarriotthotel": ("$3.27 / entry (Tang Plaza / Marriott gantry)", False),
-    "tangplaza": ("$3.27 / entry (Tang Plaza / Marriott gantry)", False),
-    "tangs": ("$3.27 / entry (Tang Plaza / Marriott gantry)", False),
-    "funan": ("$1.31 / entry (per session; check gantry)", False),
-    "bugisjunction": ("$1.31 / entry (per session; check gantry)", False),
-    "bugis": ("$1.31 / entry (per session; check gantry)", False),
-    "rafflescity": ("$1.31 / entry (per session; check gantry)", False),
+    "citysquaremall": ("$2.18 / entry (20 mins grace)", False),
+    "theadelphi": ("$1.02 / entry (6am–6am next day, 10m grace)", False),
     "sunteccity": ("Free motorcycle parking (designated basement lots)", True),
     "sunteccitymall": ("Free motorcycle parking (designated basement lots)", True),
     "esplanade": ("Free all-day motorcycle parking (designated zone)", True),
     "theesplanade": ("Free all-day motorcycle parking (designated zone)", True),
     "esplanademall": ("Free all-day motorcycle parking (designated zone)", True),
-    "marinasquare": ("$1.31 / entry (per session; check gantry)", False),
-    "marinabaysands": ("$3.27 / entry (check gantry)", False),
-    "vivocity": ("$1.31 / entry (per session; dedicated bike zone)", False),
-    "harbourfrontcentre": ("$1.31 / entry (per session; check gantry)", False),
+    "concordehotel": ("Free motorcycle parking (designated bike zone)", True),
+    "concordehotelshoppingmall": ("Free motorcycle parking (designated bike zone)", True),
     "kallangwavemall": ("Free motorcycle parking (Singapore Sports Hub)", True),
     "singaporesportshub": ("Free motorcycle parking (Singapore Sports Hub)", True),
+    "ikeatampines": ("Free motorcycle parking (7am–11pm)", True),
+    "ikeaalexandra": ("Free motorcycle parking (operating hours)", True),
+    "singaporeexpo": ("Free motorcycle parking", True),
+    "kinex": ("Free motorcycle parking", True),
+    "ehubdowntowneast": ("Free motorcycle parking", True),
+    "queenswayshoppingcentre": ("Free motorcycle parking", True),
+    "vivocity": ("$1.31 / entry (dedicated bike zone)", False),
+    "plazasingapura": ("$1.31 / entry (15 mins grace)", False),
+    "ngeeanncity": ("$1.64 / entry", False),
+    "singaporemarriotthotel": ("$3.27 / entry (Tang Plaza / Marriott gantry)", False),
+    "tangs": ("$3.27 / entry (Tang Plaza / Marriott gantry)", False),
     "jewelchangiairport": ("$1.31 / day cap (designated airport bike bays)", False),
     "changiairport": ("$1.31 / day cap (designated airport bike bays)", False),
-    "ikeatampines": ("Free motorcycle parking (operating hours)", True),
-    "tampinesmall": ("$1.31 / entry (per session; check gantry)", False),
-    "centurysquare": ("$1.31 / entry (per session; check gantry)", False),
-    "tampines1": ("$1.31 / entry (per session; check gantry)", False),
-    "plqmall": ("$1.31 / entry (per session; check gantry)", False),
-    "payalebarquarter": ("$1.31 / entry (per session; check gantry)", False),
-    "payalebarsquare": ("$1.31 / entry (per session; check gantry)", False),
-    "parkwayparade": ("$1.31 / entry (per session; check gantry)", False),
-    "bedokmall": ("$1.31 / entry (per session; check gantry)", False),
-    "changicitypoint": ("$1.31 / entry (per session; check gantry)", False),
-    "nex": ("$1.31 / entry (per session; check gantry)", False),
-    "waterwaypoint": ("$1.31 / entry (per session; check gantry)", False),
-    "compassone": ("$1.31 / entry (per session; check gantry)", False),
-    "junction8": ("$1.31 / entry (per session; check gantry)", False),
-    "amkhub": ("$1.31 / entry (per session; check gantry)", False),
-    "northpointcity": ("$1.31 / entry (per session; check gantry)", False),
-    "causewaypoint": ("$1.31 / entry (per session; check gantry)", False),
-    "jem": ("$1.31 / entry (per session; check gantry)", False),
-    "westgate": ("$1.31 / entry (per session; check gantry)", False),
-    "imm": ("$1.31 / entry (per session; check gantry)", False),
-    "jurongpoint": ("$1.31 / entry (per session; check gantry)", False),
-    "lotone": ("$1.31 / entry (per session; check gantry)", False),
-    "clementimall": ("$1.31 / entry (per session; check gantry)", False),
-    "theclementimall": ("$1.31 / entry (per session; check gantry)", False),
-    "thestarvista": ("$1.31 / entry (per session; check gantry)", False),
-    "greatworld": ("$1.31 / entry (per session; check gantry)", False),
-    "greatworldcity": ("$1.31 / entry (per session; check gantry)", False),
-    "velocitynovenasquare": ("$1.31 / entry (per session; check gantry)", False),
-    "unitedsquare": ("$1.31 / entry (per session; check gantry)", False),
+}
+
+NAME_ALIASES = {
+    "111somerset": "tripleonesomerset",
+    "tripleonesomerset": "111somerset",
+    "aperiamall": "aperia",
+    "aperia": "aperiamall",
+    "funanmall": "funan",
+    "funan": "funanmall",
+    "greatworldcity": "greatworld",
+    "greatworld": "greatworldcity",
+    "bugisplus": "bugis",
+    "plqmall": "payalebarquarterplq1",
+    "payalebarquarter": "payalebarquarterplq1",
+    "ehub": "ehubdowntowneast",
+    "theesplanade": "esplanade",
+    "marinasquare": "marinasquares",
+    "takashimayangeeanncity": "ngeeanncity",
+    "sportsg": "singaporesportshub",
 }
 
 # Central Area postal/road prefixes where HDB daytime short-term car rate is $1.20/30m instead of $0.60/30m
@@ -449,15 +434,298 @@ def _norm_key(name: str) -> str:
     return re.sub(r"[^a-z0-9]", "", str(name or "").lower())
 
 
-def lookup_commercial_bike_rate(name: str) -> tuple[str | None, bool]:
-    key = _norm_key(name)
-    if key in COMMERCIAL_BIKE_RATES:
-        return COMMERCIAL_BIKE_RATES[key]
-    # Strip trailing parentheticals like "51 Cuppage Road (Formerly ...)"
-    base_key = _norm_key(re.sub(r"\([^)]*\)", "", str(name or "")))
-    if base_key in COMMERCIAL_BIKE_RATES:
-        return COMMERCIAL_BIKE_RATES[base_key]
-    return None, False
+def _tok_key(name: str) -> str:
+    return "".join(sorted(re.findall(r"[a-z0-9]+", str(name or "").lower())))
+
+
+def _candidate_keys(name: str) -> list[str]:
+    clean = str(name or "").strip()
+    no_paren = re.sub(r"\([^)]*\)", "", clean).strip()
+    k1 = _norm_key(clean)
+    k2 = _norm_key(no_paren)
+    keys = []
+    for k in (k1, k2, NAME_ALIASES.get(k1, ""), NAME_ALIASES.get(k2, "")):
+        if k and k not in keys:
+            keys.append(k)
+    return keys
+
+
+def fetch_sgbikeparking_rates() -> dict[str, dict]:
+    """Fetch commercial motorcycle parking rates & no-motorcycle lists from sgbikeparking.com WP REST API via curl."""
+    try:
+        from bs4 import BeautifulSoup
+        all_pages = []
+        for page_num in (1, 2, 3):
+            res = subprocess.run(
+                [
+                    "curl", "-s", "-L", "--max-time", "20",
+                    "-A", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                    f"https://www.sgbikeparking.com/wp-json/wp/v2/pages?per_page=100&page={page_num}&_fields=id,slug,title,modified,content",
+                ],
+                capture_output=True, text=True, encoding="utf-8", errors="ignore",
+            )
+            if res.stdout.strip().startswith("["):
+                all_pages.extend(json.loads(res.stdout))
+
+        if len(all_pages) >= 50:
+            entries: dict[str, dict] = {}
+            free_list, no_list = [], []
+            for p in all_pages:
+                slug = p.get("slug", "")
+                soup = BeautifulSoup(p["content"]["rendered"], "html.parser")
+                if slug == "free-motorcycle-parking-in-singapore":
+                    free_list = [re.sub(r"\s+", " ", td.get_text(" ", strip=True)) for td in soup.find_all("td") if td.get_text(strip=True)]
+                    continue
+                if slug == "no-motorcycle-parking-in-singapore":
+                    no_list = [re.sub(r"\s+", " ", td.get_text(" ", strip=True)) for td in soup.find_all("td") if td.get_text(strip=True)]
+                    continue
+                if not slug.endswith("-motorcycle-parking"):
+                    continue
+                raw_title = re.sub(r"\s*Motorcycle Parking.*$", "", soup.find("h1").get_text(" ", strip=True) if soup.find("h1") else p["title"]["rendered"], flags=re.I)
+                name = re.sub(r"\s*\([^)]*\)$", "", raw_title).strip()
+                rows = []
+                for tr in soup.find_all("tr"):
+                    cells = [re.sub(r"\s+", " ", c.get_text(" ", strip=True)) for c in tr.find_all(["th", "td"])]
+                    if cells and not any("motorcycle parking rate" in c.lower() for c in cells):
+                        rows.append(cells)
+                full_txt = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
+                is_no = "no motorcycle parking" in full_txt.lower()
+                is_free = (not is_no) and ("free motorcycle parking" in full_txt.lower())
+                entries[_norm_key(name)] = {
+                    "name": name,
+                    "slug": slug,
+                    "modified": p.get("modified", "")[:10],
+                    "no_moto": is_no,
+                    "free_bike": is_free,
+                    "rows": rows,
+                }
+            for n in free_list:
+                clean_n = re.sub(r"\s*\([^)]*\)", "", n).strip()
+                k = _norm_key(clean_n)
+                if k not in entries:
+                    entries[k] = {"name": clean_n, "slug": "", "modified": "2025-05-28", "no_moto": False, "free_bike": True, "rows": [["All Days", "Free Motorcycle Parking"]]}
+                else:
+                    entries[k]["free_bike"] = True
+            for n in no_list:
+                clean_n = re.sub(r"\s*\([^)]*\)", "", n).strip()
+                k = _norm_key(clean_n)
+                if k not in entries:
+                    entries[k] = {"name": clean_n, "slug": "", "modified": "2025-05-28", "no_moto": True, "free_bike": False, "rows": [["Status", "No Motorcycle Parking"]]}
+                else:
+                    entries[k]["no_moto"] = True
+            BIKEPARKING_CACHE.write_text(json.dumps({"entries": entries}, separators=(",", ":")), encoding="utf-8")
+            print(f"Refreshed {len(entries)} live sgbikeparking.com entries.")
+            return entries
+    except Exception as exc:
+        print(f"Warning: sgbikeparking live fetch skipped ({exc}); using cache.")
+
+    if BIKEPARKING_CACHE.exists():
+        try:
+            return json.loads(BIKEPARKING_CACHE.read_text(encoding="utf-8")).get("entries") or {}
+        except Exception:
+            return {}
+    return {}
+
+
+def _format_bikeparking_rows(entry: dict) -> str:
+    rows = entry.get("rows") or []
+    parts = []
+    skip_next_remark = False
+    for r in rows:
+        txt = " · ".join(r).strip()
+        low = txt.lower()
+        if not txt:
+            continue
+        if low == "remarks":
+            skip_next_remark = True
+            continue
+        if skip_next_remark:
+            if "grace" in low:
+                m_g = re.search(r"grace period:\s*([^\n]+)", txt, re.I)
+                if m_g:
+                    parts.append(f"Grace: {m_g.group(1).strip()}")
+            skip_next_remark = False
+            continue
+        if any(k in low for k in ("s$", "$", "free", "hdb", "no motorcycle", "entry", "hour", "min")):
+            clean = re.sub(r"\bS\$", "$", txt).replace("Mondays – Sundays & Public Holidays", "").replace("Monday – Sunday & Public Holiday", "").strip(" ·")
+            if clean:
+                parts.append(clean)
+    return " · ".join(parts[:2]) or "Commercial bike rate (check signage)"
+
+
+def lookup_bike_info(name: str, bike_entries: dict[str, dict], mot_entry: dict | None) -> tuple[str | None, bool, bool]:
+    """Return (bike_rate_str, is_free_bike, no_moto_parking)."""
+    keys = _candidate_keys(name)
+    for k in keys:
+        if k in COMMERCIAL_BIKE_RATES:
+            rate, is_free = COMMERCIAL_BIKE_RATES[k]
+            return rate, is_free, False
+
+    for k in keys:
+        if k in bike_entries:
+            ent = bike_entries[k]
+            if ent.get("no_moto"):
+                return "No Motorcycle Parking (try nearby HDB/URA lots)", False, True
+            if ent.get("free_bike"):
+                return "Free Motorcycle Parking", True, False
+            return _format_bikeparking_rows(ent), False, False
+
+    if mot_entry and mot_entry.get("moto_rows"):
+        formatted = _format_motorist_rows(mot_entry["moto_rows"])
+        if formatted.get("weekdays_rate_1") and formatted["weekdays_rate_1"] != "-":
+            r = formatted["weekdays_rate_1"]
+            is_free = "free" in r.lower() and "$" not in r
+            return r, is_free, False
+
+    return None, False, False
+
+
+def _format_motorist_rows(rows: list[list[str]]) -> dict[str, str]:
+    """Convert Motorist [day, rate] rows into clean structured schedule fields."""
+    wk_parts, sat_parts, sun_parts = [], [], []
+    for day, rate in rows:
+        d_low = day.lower()
+        clean_r = re.sub(r"\b(\d+)\s*mins?\s*grace period;\s*", r"\1m grace · ", rate, flags=re.I)
+        clean_r = re.sub(r"\b(\d+)\s*hours?\s*grace period;\s*", r"\1h grace · ", clean_r, flags=re.I)
+        clean_r = re.sub(r"(?:^|;\s*)(?:mins?|hours?|hr)\s*grace period;\s*", "", clean_r, flags=re.I)
+        clean_r = (
+            clean_r.replace("12:00 AM - 12:00 AM ", "24h: ")
+            .replace("07:00 AM - 06:59 AM ", "24h: ")
+            .replace("First hour", "1st hr")
+            .replace("First 30 mins", "1st 30m")
+            .replace("Subsequent", "Sub.")
+            .replace("per 30 mins", "/ 30m")
+            .replace("Per 30 mins", "/ 30m")
+            .replace("per hour", "/ hr")
+            .replace("Per hour", "/ hr")
+            .replace("per entry", "/ entry")
+            .replace("Per entry", "/ entry")
+            .replace("per min", "/ min")
+            .replace("Per min", "/ min")
+        )
+        entry = f"{day}: {clean_r}" if any(x in d_low for x in ("mon - thu", "mon - fri", "fri - sun")) else clean_r
+        if "mon - sun" in d_low or "daily" in d_low:
+            if len(wk_parts) < 3:
+                wk_parts.append(entry)
+        elif "sat" in d_low and "mon" not in d_low:
+            if len(sat_parts) < 2:
+                sat_parts.append(entry)
+        elif "sun" in d_low or "ph" in d_low:
+            if len(sun_parts) < 2:
+                sun_parts.append(entry)
+        else:
+            if len(wk_parts) < 3:
+                wk_parts.append(entry)
+
+    all_daily = any("mon - sun" in d.lower() or "fri - sun" in d.lower() for d, _ in rows)
+    wk1 = "; ".join(wk_parts) if wk_parts else "-"
+    sat = "; ".join(sat_parts) if sat_parts else ("Same as weekdays" if (all_daily or not sat_parts and wk_parts) else "-")
+    sun = "; ".join(sun_parts) if sun_parts else ("Same as weekdays" if all_daily else ("Same as Saturday" if sat_parts else "-"))
+    return {
+        "weekdays_rate_1": wk1,
+        "weekdays_rate_2": "-",
+        "saturday_rate": sat,
+        "sunday_publicholiday_rate": sun,
+    }
+
+
+def fetch_motorist_rates(refresh_budget: int = 25) -> tuple[dict[str, dict], dict[str, dict], dict[str, dict]]:
+    """Load Motorist.sg 9% GST commercial rates cache & gently refresh oldest entries."""
+    items: dict[str, dict] = {}
+    if MOTORIST_CACHE.exists():
+        try:
+            items = json.loads(MOTORIST_CACHE.read_text(encoding="utf-8")).get("items") or {}
+        except Exception:
+            items = {}
+
+    # Refresh a small rolling slice on live runs if bs4 is available
+    if refresh_budget > 0:
+        try:
+            from bs4 import BeautifulSoup
+            h = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+            sess = requests.Session()
+            sess.headers.update(h)
+            stale_cutoff = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat()
+            oldest = [v for v in sorted(items.values(), key=lambda x: x.get("fetched_at", "")) if v.get("fetched_at", "") < stale_cutoff][:refresh_budget]
+            refreshed = 0
+            for ent in oldest:
+                url = ent.get("url")
+                if not url:
+                    continue
+                resp = sess.get(url, timeout=10)
+                if resp.status_code != 200:
+                    continue
+                sp = BeautifulSoup(resp.text, "html.parser")
+                cur_sec = "car"
+                saw_moto = False
+                car_rows, moto_rows = [], []
+                for el in sp.find_all(["h2", "h3", "table"]):
+                    if el.name in ("h2", "h3"):
+                        ht = el.get_text(" ", strip=True).lower()
+                        if "motorcycle" in ht:
+                            cur_sec = "motorcycle"
+                        elif ht == "car":
+                            cur_sec = "car"
+                        else:
+                            cur_sec = "other"
+                    elif el.name == "table":
+                        ths = [c.get_text(" ", strip=True) for c in el.find_all("th")]
+                        if "Day" not in ths and "Rates" not in ths:
+                            continue
+                        cur_d, parsed = "", []
+                        for tr in el.find_all("tr"):
+                            cells = [re.sub(r"\s+", " ", c.get_text(" ", strip=True)) for c in tr.find_all("td")]
+                            if len(cells) >= 2:
+                                cur_d = cells[0]
+                                parsed.append([cur_d, cells[1]])
+                            elif len(cells) == 1 and cur_d:
+                                parsed.append([cur_d, cells[0]])
+                        if parsed and cur_sec == "car":
+                            car_rows.extend(parsed)
+                            cur_sec = "other"
+                        elif parsed and cur_sec == "motorcycle" and not saw_moto:
+                            moto_rows.extend(parsed)
+                            saw_moto = True
+                            cur_sec = "other"
+                if car_rows:
+                    ent["car_rows"] = car_rows
+                if moto_rows:
+                    ent["moto_rows"] = moto_rows
+                ent["fetched_at"] = datetime.now(timezone.utc).isoformat()
+                refreshed += 1
+            if refreshed:
+                MOTORIST_CACHE.write_text(json.dumps({"fetched_at": datetime.now(timezone.utc).isoformat(), "items": items}, separators=(",", ":")), encoding="utf-8")
+        except Exception as exc:
+            print(f"Warning: Motorist incremental refresh skipped ({exc}).")
+
+    by_norm: dict[str, dict] = {}
+    by_tok: dict[str, dict] = {}
+    by_postal: dict[str, dict] = {}
+    for ent in items.values():
+        n = ent.get("name") or ""
+        nk = _norm_key(n)
+        if nk:
+            by_norm[nk] = ent
+        tk = _tok_key(n)
+        if tk and tk not in by_tok:
+            by_tok[tk] = ent
+        p = str(ent.get("postal") or "").strip()
+        if p and p not in by_postal:
+            by_postal[p] = ent
+    return by_norm, by_tok, by_postal
+
+
+def lookup_motorist_entry(name: str, postal: str, by_norm: dict, by_tok: dict, by_postal: dict) -> dict | None:
+    p = str(postal or "").strip()
+    if p and p in by_postal:
+        return by_postal[p]
+    for k in _candidate_keys(name):
+        if k in by_norm:
+            return by_norm[k]
+    tk = _tok_key(re.sub(r"\([^)]*\)", "", str(name or "")))
+    if tk and tk in by_tok:
+        return by_tok[tk]
+    return None
 
 
 def fetch_onemotoring_rates() -> dict[str, dict[str, str]]:
@@ -577,6 +845,10 @@ def build_dataset() -> dict:
     onemotoring_rates = fetch_onemotoring_rates()
     if onemotoring_rates:
         print(f"Fetched {len(onemotoring_rates)} live LTA OneMotoring commercial carpark rate entries.")
+    mot_by_norm, mot_by_tok, mot_by_postal = fetch_motorist_rates(refresh_budget=25)
+    print(f"Loaded {len(mot_by_norm)} Motorist.sg 9% GST commercial rate entries.")
+    bike_entries = fetch_sgbikeparking_rates()
+    print(f"Loaded {len(bike_entries)} sgbikeparking.com motorcycle rate entries.")
 
     if COMMERCIAL_CACHE.exists():
         commercial = json.loads(COMMERCIAL_CACHE.read_text(encoding="utf-8"))
@@ -586,26 +858,36 @@ def build_dataset() -> dict:
             lng = info.get("lng")
             if not (lat and lng):
                 continue
+            postal = str(info.get("postal") or "")
             live_om = onemotoring_rates.get(_norm_key(name)) or onemotoring_rates.get(_norm_key(re.sub(r"\([^)]*\)", "", name)))
+            mot_ent = lookup_motorist_entry(name, postal, mot_by_norm, mot_by_tok, mot_by_postal)
             if live_om:
                 for field in ("weekdays_rate_1", "weekdays_rate_2", "saturday_rate", "sunday_publicholiday_rate"):
                     if info.get(field) != live_om[field]:
                         info[field] = live_om[field]
                         updated_cache = True
+            elif mot_ent and mot_ent.get("car_rows"):
+                # Prefer Motorist 9% GST schedule over aging 7% GST data.gov.sg strings when LTA OneMotoring had no exact row match
+                mot_sched = _format_motorist_rows(mot_ent["car_rows"])
+                wk1 = mot_sched["weekdays_rate_1"]
+                wk2 = mot_sched["weekdays_rate_2"]
+                sat_rate = mot_sched["saturday_rate"]
+                sun_rate = mot_sched["sunday_publicholiday_rate"]
+            if live_om or not (mot_ent and mot_ent.get("car_rows")):
+                sun_rate = str(info.get("sunday_publicholiday_rate") or "-")
+                sat_rate = str(info.get("saturday_rate") or "-")
+                wk1 = str(info.get("weekdays_rate_1") or "-")
+                wk2 = str(info.get("weekdays_rate_2") or "-")
             addr = str(info.get("address") or name)
-            sun_rate = str(info.get("sunday_publicholiday_rate") or "-")
-            sat_rate = str(info.get("saturday_rate") or "-")
-            wk1 = str(info.get("weekdays_rate_1") or "-")
-            wk2 = str(info.get("weekdays_rate_2") or "-")
             sun_free = "free" in sun_rate.lower()
             area_tier = "central" if ("central" in str(info.get("category") or "").lower() and any(k.upper() in addr.upper() for k in CENTRAL_AREA_KEYWORDS)) else "standard"
-            bike_rate_custom, is_free_bike = lookup_commercial_bike_rate(name)
+            bike_rate_custom, is_free_bike, no_moto = lookup_bike_info(name, bike_entries, mot_ent)
             carparks.append(
                 {
                     "id": f"MALL-{idx}",
                     "name": name,
                     "address": addr,
-                    "postal": str(info.get("postal") or ""),
+                    "postal": postal,
                     "lat": lat,
                     "lng": lng,
                     "type": "COMMERCIAL / SHOPPING MALL",
@@ -614,6 +896,7 @@ def build_dataset() -> dict:
                     "free_parking_raw": "FREE BIKE / COMMERCIAL" if is_free_bike else ("COMMERCIAL SUN FREE" if sun_free else "COMMERCIAL"),
                     "free_sun_ph": sun_free,
                     "free_bike": is_free_bike,
+                    "no_moto": no_moto,
                     "night_parking": True,
                     "sheltered": True,
                     "gantry_height": 2.1,
@@ -647,6 +930,7 @@ def build_dataset() -> dict:
                 "free_parking_raw": "FREE BIKE / COMMERCIAL" if spot["free_bike"] else "COMMERCIAL",
                 "free_sun_ph": spot["free_sun_ph"],
                 "free_bike": spot["free_bike"],
+                "no_moto": False,
                 "night_parking": spot["night_parking"],
                 "sheltered": spot["sheltered"],
                 "gantry_height": spot["gantry_height"],
@@ -681,13 +965,20 @@ def build_dataset() -> dict:
         addr = f"{name}, {road}" if road and road.lower() not in name.lower() else name
         area_tier = "central" if any(k.upper() in addr.upper() for k in CENTRAL_AREA_KEYWORDS) else "standard"
         live_om = onemotoring_rates.get(norm) or onemotoring_rates.get(_norm_key(re.sub(r"\([^)]*\)", "", name)))
-        bike_rate_custom, is_free_bike = lookup_commercial_bike_rate(name)
-        sun_rate = live_om["sunday_publicholiday_rate"] if live_om else "-"
-        sun_free = bool(live_om and "free" in sun_rate.lower())
+        mot_ent = lookup_motorist_entry(name, "", mot_by_norm, mot_by_tok, mot_by_postal)
+        car_sched = None
+        if live_om:
+            car_sched = live_om
+        elif mot_ent and mot_ent.get("car_rows"):
+            car_sched = _format_motorist_rows(mot_ent["car_rows"])
+        bike_rate_custom, is_free_bike, no_moto = lookup_bike_info(name, bike_entries, mot_ent)
+        sun_rate = car_sched["sunday_publicholiday_rate"] if car_sched else "-"
+        sun_free = bool(car_sched and "free" in sun_rate.lower())
         item = {
             "id": f"SGCM-{entry.get('id')}",
             "name": name,
             "address": addr,
+            "postal": mot_ent.get("postal", "") if mot_ent else "",
             "lat": lat,
             "lng": lng,
             "type": "COMMERCIAL / BUILDING",
@@ -696,21 +987,22 @@ def build_dataset() -> dict:
             "free_parking_raw": "FREE BIKE / COMMERCIAL" if is_free_bike else ("COMMERCIAL SUN FREE" if sun_free else "COMMERCIAL"),
             "free_sun_ph": sun_free,
             "free_bike": is_free_bike,
+            "no_moto": no_moto,
             "night_parking": True,
             "sheltered": True,
             "gantry_height": 2.1,
             "area_tier": area_tier,
             "bike_rate": bike_rate_custom or "Commercial gantry rate (check building signage)",
-            "car_rate": live_om["weekdays_rate_1"] if live_om else "Commercial gantry rate (check building signage)",
+            "car_rate": car_sched["weekdays_rate_1"] if car_sched else "Commercial gantry rate (check building signage)",
             "has_car_live": False,
             "has_bike_live": False,
             "live": {},
-            "source_type": "LTA Commercial Rates" if live_om else "SG Commercial Directory",
+            "source_type": "LTA Commercial Rates" if car_sched else "SG Commercial Directory",
         }
-        if live_om:
-            item["weekday_rate"] = live_om["weekdays_rate_1"]
-            item["weekday_rate_2"] = live_om["weekdays_rate_2"]
-            item["saturday_rate"] = live_om["saturday_rate"]
+        if car_sched:
+            item["weekday_rate"] = car_sched["weekdays_rate_1"]
+            item["weekday_rate_2"] = car_sched["weekdays_rate_2"]
+            item["saturday_rate"] = car_sched["saturday_rate"]
             item["sunday_rate"] = sun_rate
         carparks.append(item)
 

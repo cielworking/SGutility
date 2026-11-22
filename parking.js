@@ -51,12 +51,24 @@
     return String(raw || "")
       .replace(/\s+/g, " ")
       .replace(/\bor part thereof\.?/gi, "")
-      .replace(/Monday to Thursday/gi, "Mon–Thu")
-      .replace(/Monday to Friday/gi, "Mon–Fri")
-      .replace(/Monday to Saturday/gi, "Mon–Sat")
-      .replace(/Friday to Sunday and Public Holidays?/gi, "Fri–Sun & PH")
-      .replace(/Saturday, Sunday and Public Holidays?/gi, "Sat, Sun & PH")
-      .replace(/Sundays? and Public Holidays?/gi, "Sun & PH")
+      .replace(/\bMonday to Thursday\b/gi, "Mon–Thu")
+      .replace(/\bMonday to Friday\b/gi, "Mon–Fri")
+      .replace(/\bMonday to Saturday\b/gi, "Mon–Sat")
+      .replace(/\bFriday to Sunday and Public Holidays?\b/gi, "Fri–Sun & PH")
+      .replace(/\bSaturday, Sunday and Public Holidays?\b/gi, "Sat, Sun & PH")
+      .replace(/\bSundays? and Public Holidays?\b/gi, "Sun & PH")
+      .replace(/\bFirst (\d+ )?hours?\b/gi, (_, n) => (n ? `1st ${n.trim()}hr` : "1st hr"))
+      .replace(/\bFirst 30 mins\b/gi, "1st 30m")
+      .replace(/\bSubsequent\b/gi, "Sub.")
+      .replace(/\bsub\.\s*30\s*min(?:s|utes)?\b/gi, "sub. 30m")
+      .replace(/\bsub\.\s*15\s*min(?:s|utes)?\b/gi, "sub. 15m")
+      .replace(/\bper 30 mins?\b/gi, "/ 30m")
+      .replace(/\bper (?:hour|hr)\b/gi, "/ hr")
+      .replace(/\bper entry\b/gi, "/ entry")
+      .replace(/\bper min(?:ute)?\b/gi, "/ min")
+      .replace(/\b(?:hrs?|mins?) grace period[;:\s]*/gi, "")
+      .replace(/\b12:00 AM - 12:00 AM\s*/gi, "All day: ")
+      .replace(/\b0?7\.00am\s*-\s*0?7\.00am\b/gi, "24h")
       .replace(/\.00(am|pm)/gi, "$1")
       .replace(/\s+([;,])/g, "$1")
       .replace(/\.\s*$/g, "")
@@ -66,11 +78,12 @@
   function extractShortPrice(text, fallback) {
     const t = cleanRateText(text);
     if (!t || /^commercial gantry/i.test(t) || t === "-") return fallback;
+    if (/^no motorcycle parking/i.test(t)) return "No bike parking";
     if (/^free\b/i.test(t)) return "Free";
-    const m = t.match(/\$\d+(?:\.\d{2})?\s*(?:\/\s*(?:1st\s*hr|hr|hour|30\s*m(?:in)?|15\s*m(?:in)?|min|entry|day|session)|for\s+1st\s+\d*\s*hrs?|per\s+(?:entry|hr|hour|min|30\s*min|day))?/i);
+    const m = t.match(/\$\d+(?:\.\d{2})?\s*(?:\/\s*(?:1st\s*\d*\s*hrs?|hr|hour|30\s*m(?:in)?|15\s*m(?:in)?|min|entry|day|session)|for\s+1st\s+\d*\s*hrs?|per\s+(?:entry|hr|hour|min|30\s*min|day))?/i);
     if (m) {
       return m[0]
-        .replace(/\bfor 1st hr\b/i, "/ 1st hr")
+        .replace(/\bfor 1st (\d*)\s*hrs?\b/i, (_, n) => `/ 1st ${n ? n + " " : ""}hr`)
         .replace(/\bper entry\b/i, "/ entry")
         .replace(/\bper hr\b|\bper hour\b/i, "/ hr")
         .replace(/\bper min\b/i, "/ min")
@@ -80,6 +93,30 @@
     return t.length > 26 ? t.slice(0, 24).trim() + "…" : t;
   }
 
+  function findNearestBikeFallback(cp) {
+    if (!dataset?.carparks?.length || cp.source_type === "HDB / data.gov.sg") return null;
+    let best = null;
+    let bestDist = 0.85;
+    for (const cand of dataset.carparks) {
+      if (cand.id === cp.id || cand.no_moto) continue;
+      const isHdb = cand.source_type === "HDB / data.gov.sg";
+      if (!isHdb && !cand.free_bike) continue;
+      const d = haversineKm(cp.lat, cp.lng, cand.lat, cand.lng);
+      if (d < bestDist) {
+        bestDist = d;
+        best = { name: cand.name, dist: d, free: Boolean(cand.free_bike) };
+      }
+    }
+    return best;
+  }
+
+  function formatRateLines(val) {
+    // Split semicolon-separated time tiers onto clean lines (max 3 lines per row)
+    const parts = String(val || "").split(/\s*;\s*(?=(?:\d|Mon|Tue|Wed|Thu|Fri|Sat|Sun|Aft|Same))/).filter(Boolean);
+    if (parts.length <= 1) return `<span class="parking-rate-val">${esc(val)}</span>`;
+    return `<span class="parking-rate-val">${parts.slice(0, 3).map((p) => `<span class="parking-rate-line">${esc(p)}</span>`).join("")}</span>`;
+  }
+
   function estimateCost(cp) {
     const dayEl = document.getElementById("parkingDayType");
     const hrsEl = document.getElementById("parkingDuration");
@@ -87,10 +124,11 @@
     const hours = Number(hrsEl ? hrsEl.value : 2);
 
     if (vehicleMode === "motorcycle") {
+      if (cp.no_moto) return "No public bike lots";
       if (cp.free_bike) return "Free bike parking";
       if (day === "sun_ph" && cp.free_sun_ph) return "Free (Sun & PH)";
       if (cp.source_type === "LTA Commercial Rates" || cp.source_type === "SG Commercial Directory" || cp.source_type === "Commercial reference") {
-        return extractShortPrice(cp.bike_rate, "Check signage");
+        return extractShortPrice(cp.bike_rate, "Private gantry rate");
       }
       return hours >= 10 ? "$0.65 day + $0.65 night" : "$0.65 cap / session";
     }
@@ -121,6 +159,9 @@
   }
 
   function lotPillHtml(cp, lotInfo) {
+    if (vehicleMode === "motorcycle" && cp.no_moto) {
+      return '<span class="lot-pill is-limited">No Bike Lots</span>';
+    }
     if (vehicleMode === "motorcycle" && cp.free_bike) {
       return '<span class="lot-pill is-free is-plenty">Free / Rider Spot</span>';
     }
@@ -346,9 +387,6 @@
   }
 
   function rateDetailsHtml(cp) {
-    const searchQuery = encodeURIComponent(`${cp.name} Singapore ${vehicleMode === "motorcycle" ? "motorcycle" : "car"} parking rates`);
-    const liveSearchLink = `<a class="parking-rate-search" href="https://www.google.com/search?q=${searchQuery}" target="_blank" rel="noopener noreferrer">Check live rate ↗</a>`;
-
     if (cp.source_type === "LTA Commercial Rates" && vehicleMode === "car") {
       const rows = [];
       const wk1 = cleanRateText(cp.weekday_rate);
@@ -376,17 +414,26 @@
       }
 
       if (rows.length) {
-        return `<div class="parking-rate-rows">${rows.map(([k, v]) => `<div class="parking-rate-row"><span class="parking-rate-label">${esc(k)}</span><span class="parking-rate-val">${esc(v)}</span></div>`).join("")}</div>`;
+        return `<div class="parking-rate-rows">${rows.map(([k, v]) => `<div class="parking-rate-row"><span class="parking-rate-label">${esc(k)}</span>${formatRateLines(v)}</div>`).join("")}</div>`;
       }
+    }
+
+    if (vehicleMode === "motorcycle" && cp.no_moto) {
+      const alt = findNearestBikeFallback(cp);
+      return `<div class="parking-rate-rows"><div class="parking-rate-row"><span class="parking-rate-label is-warn">Bike</span><span class="parking-rate-val">No public motorcycle parking inside</span></div>${alt ? `<div class="parking-rate-row"><span class="parking-rate-label is-free">${alt.free ? "Free Alt" : "HDB $0.65"}</span><span class="parking-rate-val">${esc(alt.name)} (${alt.dist.toFixed(2)} km)</span></div>` : ""}</div>`;
     }
 
     const raw = vehicleMode === "motorcycle" ? cp.bike_rate : cp.car_rate;
     const cleaned = cleanRateText(raw);
     if (!cleaned || /^commercial gantry rate/i.test(cleaned)) {
-      return `<div class="parking-rate-empty"><span>Gantry rate — check signage on arrival</span>${liveSearchLink}</div>`;
+      if (vehicleMode === "motorcycle") {
+        const alt = findNearestBikeFallback(cp);
+        return `<div class="parking-rate-rows"><div class="parking-rate-row"><span class="parking-rate-label">Gantry</span><span class="parking-rate-val">Private gantry (rate not published online)</span></div>${alt ? `<div class="parking-rate-row"><span class="parking-rate-label is-free">${alt.free ? "Free Alt" : "HDB $0.65"}</span><span class="parking-rate-val">${esc(alt.name)} (${alt.dist.toFixed(2)} km)</span></div>` : ""}</div>`;
+      }
+      return `<div class="parking-rate-empty"><span>Private gantry — rate follows on-site signage</span></div>`;
     }
     const label = vehicleMode === "motorcycle" ? (cp.free_bike ? "Free" : "Bike") : (cp.source_type === "HDB / data.gov.sg" ? "HDB" : "Rate");
-    return `<div class="parking-rate-rows"><div class="parking-rate-row"><span class="parking-rate-label${cp.free_bike && vehicleMode === "motorcycle" ? " is-free" : ""}">${label}</span><span class="parking-rate-val">${esc(cleaned)}</span></div></div>`;
+    return `<div class="parking-rate-rows"><div class="parking-rate-row"><span class="parking-rate-label${cp.free_bike && vehicleMode === "motorcycle" ? " is-free" : ""}">${label}</span>${formatRateLines(cleaned)}</div></div>`;
   }
 
   function renderCards(items) {

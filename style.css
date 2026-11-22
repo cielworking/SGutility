@@ -4838,12 +4838,26 @@ select.fuel-selector,
   color: #059669;
 }
 
+.parking-rate-label.is-warn {
+  color: #d97706;
+}
+
 :root[data-theme="dark"] .parking-rate-label.is-free {
   color: #34d399;
 }
 
+:root[data-theme="dark"] .parking-rate-label.is-warn {
+  color: #fbbf24;
+}
+
 .parking-rate-val {
   color: var(--text);
+  display: grid;
+  gap: 2px;
+}
+
+.parking-rate-line {
+  display: block;
 }
 
 .parking-rate-empty {
