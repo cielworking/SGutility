@@ -10,6 +10,8 @@ on:
       - scripts/render-weather-pages.py
       - scripts/weather_layout.py
       - scripts/air_quality_layout.py
+      - requirements.txt
+      - tests/**
       - .github/workflows/weather.yml
 permissions:
   contents: write
@@ -28,10 +30,11 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
-      # requests powers the update scripts; beautifulsoup4 is imported by the
-      # TOTO parser tests in tests/test_sgpools.py, which run below.
+          cache: "pip"
+      # Install from requirements.txt so shared unit tests (e.g. bs4, numpy,
+      # pillow) never fail due to workflow dependency drift.
       - name: Install Python dependencies
-        run: pip install requests beautifulsoup4
+        run: pip install -r requirements.txt
       - name: Check Python scripts parse
         run: python -m py_compile scripts/*.py
       - run: python -m unittest discover -s tests -v

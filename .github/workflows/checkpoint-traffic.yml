@@ -36,7 +36,7 @@ jobs:
           key: yolox-m-onnx-v1
 
       - name: Install Python dependencies
-        run: pip install requests beautifulsoup4 onnxruntime pillow numpy
+        run: pip install -r requirements.txt
 
       - name: Check Python scripts parse
         run: python -m py_compile scripts/*.py
