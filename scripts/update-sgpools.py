@@ -15,6 +15,7 @@ FOUR_D_DATA_URL = "https://www.singaporepools.com.sg/DataFileArchive/Lottery/Out
 
 TOTO_SOURCE_URL = "https://www.singaporepools.com.sg/en/product/pages/toto_results.aspx"
 TOTO_DATA_URL = "https://www.singaporepools.com.sg/DataFileArchive/Lottery/Output/toto_result_top_draws_en.html"
+TOTO_NEXT_URL = "https://www.singaporepools.com.sg/DataFileArchive/Lottery/Output/toto_next_draw_estimate_en.html"
 
 OUTPUT_FILE = pathlib.Path("data/sgpools-results.json")
 
@@ -120,6 +121,28 @@ def parse_toto_block(block):
     return winning_numbers, additional_number
 
 
+def fetch_toto_next_draw():
+    try:
+        resp = requests.get(TOTO_NEXT_URL, headers=HEADERS, timeout=20, verify=False)
+        resp.raise_for_status()
+        txt = clean(BeautifulSoup(resp.text, "html.parser").get_text(" ", strip=True))
+        m_jackpot = re.search(r"Next Jackpot\s*(\$[0-9,]+(?:\s*est)?)", txt, re.I)
+        m_date = re.search(r"Next Draw\s*((?:Mon|Tue|Wed|Thu|Fri|Sat|Sun),?\s+\d{1,2}\s+\w+\s+\d{4}[^<]*)", txt, re.I)
+        jackpot_str = clean(m_jackpot.group(1)) if m_jackpot else ""
+        digits = re.sub(r"[^0-9]", "", jackpot_str)
+        jackpot_num = int(digits) if digits else 0
+        next_date = clean(m_date.group(1)).replace(" , ", ", ") if m_date else ""
+        return {
+            "next_jackpot": jackpot_str,
+            "next_jackpot_amount": jackpot_num,
+            "next_draw_date": next_date,
+            "is_snowball": jackpot_num >= 1_500_000,
+        }
+    except Exception as exc:
+        print(f"Warning: TOTO next draw fetch failed ({exc})")
+        return {}
+
+
 def fetch_toto():
     block = get_first_li(TOTO_DATA_URL)
 
@@ -138,14 +161,22 @@ def fetch_toto():
 
     winning_numbers, additional_number = parse_toto_block(block)
 
-    return {
+    g1_prize_match = re.search(r"Group 1 Prize\s*(\$[0-9,]+|-)", text, re.I)
+    g1_share_match = re.search(r"Group 1\s+\$[0-9,]+\s+(\d+|-)", text, re.I)
+    next_info = fetch_toto_next_draw()
+
+    result = {
         "source_url": TOTO_SOURCE_URL,
         "data_url": TOTO_DATA_URL,
         "draw_date": date_match.group(0) if date_match else "TBC",
         "draw_no": draw_no_match.group(1) if draw_no_match else "TBC",
         "winning_numbers": winning_numbers,
-        "additional_number": additional_number
+        "additional_number": additional_number,
+        "group1_prize": g1_prize_match.group(1) if g1_prize_match else "",
+        "group1_winners": g1_share_match.group(1) if g1_share_match else "",
     }
+    result.update(next_info)
+    return result
 
 
 def main():

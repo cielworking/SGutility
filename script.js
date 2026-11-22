@@ -849,6 +849,19 @@ function renderSgPoolsResults() {
   }
 
   if (filter === "toto") {
+    const nextJackpot = toto.next_jackpot ? escapeHtml(toto.next_jackpot) : "";
+    const nextDate = toto.next_draw_date ? escapeHtml(toto.next_draw_date) : "";
+    const snowballBadge = toto.is_snowball ? ' <span class="lot-pill is-limited" style="margin-left:6px;">Snowball</span>' : "";
+    const g1Text = toto.group1_prize
+      ? `Last Group 1: <strong>${escapeHtml(toto.group1_prize)}</strong>${toto.group1_winners && toto.group1_winners !== "-" ? ` (${escapeHtml(toto.group1_winners)} winning share${toto.group1_winners === "1" ? "" : "s"})` : " (Unclaimed — rolls over)"}`
+      : "";
+    const nextStrip = nextJackpot
+      ? `<div class="pool-summary-strip" style="margin-top:12px;">
+           <span>Next Jackpot: <strong>${nextJackpot}</strong>${snowballBadge}</span>
+           ${nextDate ? `<span>Next Draw: <strong>${nextDate}</strong></span>` : ""}
+           ${g1Text ? `<span>${g1Text}</span>` : ""}
+         </div>`
+      : "";
     box.innerHTML = `
       <div class="pool-panel">
         <div class="pool-panel-title">
@@ -864,6 +877,7 @@ function renderSgPoolsResults() {
           <span>Additional Number</span>
           <strong>${toto.additional_number}</strong>
         </div>
+        ${nextStrip}
       </div>
 
       <div class="pool-panel lucky-box modern-lucky">

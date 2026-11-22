@@ -1,0 +1,164 @@
+{
+  "source_name": "Monetary Authority of Singapore (MAS) & Singapore Bank Boards",
+  "source_url": "https://www.mas.gov.sg/bonds-and-bills",
+  "last_updated": "2026-11-22T04:33:19.296418+00:00",
+  "ssb": {
+    "issue_code": "GX26120A",
+    "savings_bond_code": "SBDEC26",
+    "last_day_to_apply": "25 Nov 2026",
+    "issue_date": "01 Dec 2026",
+    "year1_return": 1.83,
+    "year5_return": 2.16,
+    "year10_return": 2.39,
+    "url": "https://www.mas.gov.sg/bonds-and-bills/auctions-and-issuance-calendar/issuance-singapore-savings-bond?issue_code=GX26120A&issue_date=2026-12-01"
+  },
+  "tbills": {
+    "latest": {
+      "issue_code": "BS26123A",
+      "tenor": "6-Month T-Bill",
+      "auction_date": "19 Nov 2026",
+      "issue_date": "24 Nov 2026",
+      "maturity_date": "25 May 2027",
+      "cutoff_yield": 2.07,
+      "median_yield": 2.0,
+      "avg_yield": 1.88,
+      "bid_to_cover": 1.99,
+      "total_bids_m": 17102.8,
+      "url": "https://www.mas.gov.sg/bonds-and-bills/auctions-and-issuance-calendar/auction-t-bill?issue_code=BS26123A&issue_date=2026-11-24"
+    },
+    "recent": [
+      {
+        "issue_code": "BS26123A",
+        "tenor": "6-Month T-Bill",
+        "auction_date": "19 Nov 2026",
+        "issue_date": "24 Nov 2026",
+        "maturity_date": "25 May 2027",
+        "cutoff_yield": 2.07,
+        "median_yield": 2.0,
+        "avg_yield": 1.88,
+        "bid_to_cover": 1.99,
+        "total_bids_m": 17102.8,
+        "url": "https://www.mas.gov.sg/bonds-and-bills/auctions-and-issuance-calendar/auction-t-bill?issue_code=BS26123A&issue_date=2026-11-24"
+      },
+      {
+        "issue_code": "BS26122V",
+        "tenor": "6-Month T-Bill",
+        "auction_date": "04 Nov 2026",
+        "issue_date": "10 Nov 2026",
+        "maturity_date": "11 May 2027",
+        "cutoff_yield": 1.86,
+        "median_yield": 1.8,
+        "avg_yield": 1.63,
+        "bid_to_cover": 2.45,
+        "total_bids_m": 20812.7,
+        "url": "https://www.mas.gov.sg/bonds-and-bills/auctions-and-issuance-calendar/auction-t-bill?issue_code=BS26122V&issue_date=2026-11-10"
+      },
+      {
+        "issue_code": "BS26121N",
+        "tenor": "6-Month T-Bill",
+        "auction_date": "22 Oct 2026",
+        "issue_date": "27 Oct 2026",
+        "maturity_date": "27 Apr 2027",
+        "cutoff_yield": 1.95,
+        "median_yield": 1.9,
+        "avg_yield": 1.83,
+        "bid_to_cover": 1.87,
+        "total_bids_m": 16069.0,
+        "url": "https://www.mas.gov.sg/bonds-and-bills/auctions-and-issuance-calendar/auction-t-bill?issue_code=BS26121N&issue_date=2026-10-27"
+      },
+      {
+        "issue_code": "BS26120W",
+        "tenor": "6-Month T-Bill",
+        "auction_date": "08 Oct 2026",
+        "issue_date": "13 Oct 2026",
+        "maturity_date": "13 Apr 2027",
+        "cutoff_yield": 1.9,
+        "median_yield": 1.86,
+        "avg_yield": 1.76,
+        "bid_to_cover": 2.14,
+        "total_bids_m": 17787.6,
+        "url": "https://www.mas.gov.sg/bonds-and-bills/auctions-and-issuance-calendar/auction-t-bill?issue_code=BS26120W&issue_date=2026-10-13"
+      }
+    ],
+    "next_auction": {
+      "issue_code": "BS26124E",
+      "auction_date": "03 Dec 2026",
+      "issue_date": "08 Dec 2026",
+      "maturity_date": null
+    }
+  },
+  "fixed_deposits": [
+    {
+      "bank": "CIMB Singapore",
+      "best_rate_pa": 2.3,
+      "tenor": "12 months",
+      "min_deposit": 10000,
+      "conditions": "Online FastSaver / StarSaver Fresh Funds",
+      "url": "https://www.cimb.com.sg/en/personal/banking-with-us/accounts/fixed-deposits/why-fixed-deposit.html"
+    },
+    {
+      "bank": "RHB Bank Singapore",
+      "best_rate_pa": 2.3,
+      "tenor": "12 months",
+      "min_deposit": 20000,
+      "conditions": "Personal Banking online / branch placement",
+      "url": "https://rhbgroup.com.sg/"
+    },
+    {
+      "bank": "HL Bank Singapore",
+      "best_rate_pa": 2.2,
+      "tenor": "24 months",
+      "min_deposit": 10000,
+      "conditions": "Promotional online D-Fixed Deposit",
+      "url": "https://www.hlbank.com.sg/"
+    },
+    {
+      "bank": "Bank of China (BOC)",
+      "best_rate_pa": 2.1,
+      "tenor": "12 months",
+      "min_deposit": 20000,
+      "conditions": "Mobile Banking Time Deposit (higher tiers $200k+)",
+      "url": "https://www.bankofchina.com/sg/"
+    },
+    {
+      "bank": "Maybank Singapore",
+      "best_rate_pa": 2.1,
+      "tenor": "6 / 12 months",
+      "min_deposit": 20000,
+      "conditions": "Fresh funds promotional placement",
+      "url": "https://www.maybank2u.com.sg/"
+    },
+    {
+      "bank": "Hong Leong Finance",
+      "best_rate_pa": 2.08,
+      "tenor": "8 months",
+      "min_deposit": 20000,
+      "conditions": "Fixed Deposit promotional tier",
+      "url": "https://www.hlf.com.sg/"
+    },
+    {
+      "bank": "OCBC Bank",
+      "best_rate_pa": 1.85,
+      "tenor": "12 months",
+      "min_deposit": 20000,
+      "conditions": "Fresh funds online via OCBC Digital",
+      "url": "https://www.ocbc.com/personal-banking/deposits/fixed-deposit-account"
+    },
+    {
+      "bank": "UOB",
+      "best_rate_pa": 1.7,
+      "tenor": "12 months",
+      "min_deposit": 10000,
+      "conditions": "Fresh funds via UOB TMRW app",
+      "url": "https://www.uob.com.sg/personal/save/fixed-deposits/singapore-dollar-fixed-deposit.page"
+    },
+    {
+      "bank": "DBS / POSB",
+      "best_rate_pa": 1.0,
+      "tenor": "8\u201312 months",
+      "min_deposit": 1000,
+      "conditions": "Tiered $1,000\u2013$19,999 (balances $20k+ revert to board tier)",
+      "url": "https://www.dbs.com.sg/personal/deposits/fixed-deposits/singapore-dollar-fixed-deposit"
+    }
+  ]
+}

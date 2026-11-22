@@ -64,6 +64,7 @@ jobs:
           python scripts/update-parking.py
           python scripts/update-currency.py
           python scripts/update-events.py
+          python scripts/update-savings-rates.py
           python scripts/render-static-pages.py
 
       - name: Commit updated data

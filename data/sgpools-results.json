@@ -1,7 +1,7 @@
 {
   "source_name": "Singapore Pools",
   "source_url": "https://www.singaporepools.com.sg/en/product/pages/4d_results.aspx",
-  "last_updated": "2026-11-22T04:11:39.489113+00:00",
+  "last_updated": "2026-11-22T04:33:15.494743+00:00",
   "four_d": {
     "source_url": "https://www.singaporepools.com.sg/en/product/pages/4d_results.aspx",
     "data_url": "https://www.singaporepools.com.sg/DataFileArchive/Lottery/Output/fourd_result_top_draws_en.html",
@@ -48,6 +48,12 @@
       "41",
       "42"
     ],
-    "additional_number": "34"
+    "additional_number": "34",
+    "group1_prize": "$1,183,486",
+    "group1_winners": "1",
+    "next_jackpot": "$1,000,000 est",
+    "next_jackpot_amount": 1000000,
+    "next_draw_date": "Mon, 23 Nov 2026, 6.30pm",
+    "is_snowball": false
   }
 }

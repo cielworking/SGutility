@@ -488,6 +488,74 @@ def render_parking_malls_static(carparks_data):
 {no_moto_html}"""
 
 
+def render_savings_mas(savings):
+    tb = (savings or {}).get("tbills") or {}
+    latest_t = tb.get("latest") or {}
+    recent_t = tb.get("recent") or []
+    next_t = tb.get("next_auction") or {}
+    ssb = (savings or {}).get("ssb") or {}
+    updated = html.escape(updated_label((savings or {}).get("last_updated")))
+
+    t_rows = "".join(
+        f'<tr><td><strong>{html.escape(str(r.get("issue_code") or ""))}</strong></td>'
+        f'<td>{html.escape(str(r.get("auction_date") or ""))}</td>'
+        f'<td><strong>{r.get("cutoff_yield")}%</strong></td>'
+        f'<td>{r.get("median_yield")}%</td>'
+        f'<td>{r.get("bid_to_cover")}x</td></tr>'
+        for r in recent_t[:4]
+    )
+    next_tbill_note = (
+        f'Next 6-Month T-Bill auction: <strong>{html.escape(str(next_t.get("issue_code") or ""))}</strong> on <strong>{html.escape(str(next_t.get("auction_date") or ""))}</strong>.'
+        if next_t
+        else ""
+    )
+    ssb_code = html.escape(str(ssb.get("savings_bond_code") or ssb.get("issue_code") or "SSB"))
+    ssb_1y = ssb.get("year1_return")
+    ssb_5y = ssb.get("year5_return")
+    ssb_10y = ssb.get("year10_return")
+    ssb_close = html.escape(str(ssb.get("last_day_to_apply") or ""))
+
+    return f"""<p class="section-note">Pulled directly from official Monetary Authority of Singapore (MAS) APIs · {updated}</p>
+<div class="pool-summary-strip" style="margin-bottom:14px;">
+  <span>Latest 6M T-Bill ({html.escape(str(latest_t.get("issue_code") or "MAS"))}): <strong>{latest_t.get("cutoff_yield", "—")}% p.a.</strong></span>
+  <span>Latest SSB ({ssb_code}) Year 1: <strong>{ssb_1y if ssb_1y is not None else "—"}%</strong></span>
+  <span>SSB 10-Year Avg: <strong>{ssb_10y if ssb_10y is not None else "—"}%</strong> (Apply by {ssb_close or "check MAS"})</span>
+</div>
+<div class="seo-table-wrap">
+  <table class="seo-data-table" aria-label="Recent MAS 6-month T-Bill auction yields">
+    <thead><tr><th>T-Bill Issue</th><th>Auction Date</th><th>Cut-off Yield</th><th>Median Yield</th><th>Bid-to-Cover</th></tr></thead>
+    <tbody>{t_rows}</tbody>
+  </table>
+</div>
+<p class="note" style="margin-top:10px;">{next_tbill_note} Current SSB tranche <strong>{ssb_code}</strong> returns <strong>{ssb_1y}%</strong> (Yr 1), <strong>{ssb_5y}%</strong> (5-Yr avg), and <strong>{ssb_10y}%</strong> (10-Yr avg).</p>"""
+
+
+def render_savings_fd(savings):
+    fds = (savings or {}).get("fixed_deposits") or []
+    rows = "".join(
+        f'<tr><td><a href="{html.escape(str(f.get("url") or "#"), quote=True)}" target="_blank" rel="noopener noreferrer nofollow"><strong>{html.escape(str(f.get("bank") or ""))}</strong></a></td>'
+        f'<td><strong>{Number_fmt(f.get("best_rate_pa"))}</strong></td>'
+        f'<td>{html.escape(str(f.get("tenor") or ""))}</td>'
+        f'<td>${int(f.get("min_deposit") or 0):,}</td>'
+        f'<td>{html.escape(str(f.get("conditions") or ""))}</td></tr>'
+        for f in fds
+    )
+    return f"""<div class="seo-table-wrap">
+  <table class="seo-data-table" aria-label="Singapore bank SGD fixed deposit rates">
+    <thead><tr><th>Bank</th><th>Best Promo Rate</th><th>Tenor</th><th>Min. Deposit</th><th>Key Condition</th></tr></thead>
+    <tbody>{rows}</tbody>
+  </table>
+</div>
+<p class="note">Rates fluctuate frequently and typically require fresh funds via mobile/online banking. Verify exact promotional terms on each bank’s official page before depositing.</p>"""
+
+
+def Number_fmt(v):
+    try:
+        return f"{float(v):.2f}% p.a."
+    except Exception:
+        return "—"
+
+
 def render_petrol_discounts_static(prices, discounts):
     brands_by_name = {
         str(item.get("brand", "")).strip().lower(): item
@@ -645,10 +713,12 @@ def render_home_snapshot(traffic, petrol, coe, bto, weather, pools, cameras_coun
     # 4D / TOTO
     four_d = (pools or {}).get("four_d") or {}
     toto = (pools or {}).get("toto") or {}
+    next_jack = str(toto.get("next_jackpot") or "").strip()
     pools_line = (
         f"4D 1st: <strong>{html.escape(str(four_d.get('first_prize', '—')))}</strong>"
         + (f" ({html.escape(str(four_d.get('draw_date', '')))})" if four_d.get("draw_date") else "")
         + (f" · TOTO Draw {html.escape(str(toto.get('draw_no', '')))}" if toto.get("draw_no") else "")
+        + (f" · Next Jackpot: <strong>{html.escape(next_jack)}</strong>" if next_jack else "")
     )
 
     return f"""<div class="home-utility-grid">
@@ -659,7 +729,7 @@ def render_home_snapshot(traffic, petrol, coe, bto, weather, pools, cameras_coun
         <div class="home-utility-links">
           <a href="/woodlands-checkpoint.html">Woodlands Cams</a>
           <a href="/tuas-checkpoint.html">Tuas Cams</a>
-          <a href="/guides/woodlands-vs-tuas-checkpoint.html">Woodlands vs Tuas</a>
+          <a href="/guides/ktm-shuttle-tebrau-woodlands-jb-train.html">KTM Train to JB</a>
         </div>
       </article>
       <article class="home-utility-card">
@@ -1034,10 +1104,30 @@ def render_sgpools(data, kind):
 </div>"""
     else:
         numbers = [html.escape(str(value)) for value in entry.get("winning_numbers") or []]
+        next_jack = html.escape(str(entry.get("next_jackpot") or ""))
+        next_date = html.escape(str(entry.get("next_draw_date") or ""))
+        snowball = '<span class="lot-pill is-limited" style="margin-left:6px;">Snowball</span>' if entry.get("is_snowball") else ""
+        g1_prize = str(entry.get("group1_prize") or "").strip()
+        g1_win = str(entry.get("group1_winners") or "").strip()
+        g1_html = (
+            f'<span>Last Group 1: <strong>{html.escape(g1_prize)}</strong> ({html.escape(g1_win)} share{"s" if g1_win != "1" else ""})</span>'
+            if g1_prize and g1_win and g1_win != "-"
+            else (f'<span>Last Group 1: <strong>{html.escape(g1_prize)}</strong> (Unclaimed — Snowballs!)</span>' if g1_prize else "")
+        )
+        next_strip = (
+            f"""<div class="pool-summary-strip" style="margin-top:12px;">
+    <span>Next Jackpot: <strong>{next_jack}</strong>{snowball}</span>
+    {f'<span>Next Draw: <strong>{next_date}</strong></span>' if next_date else ''}
+    {g1_html}
+  </div>"""
+            if next_jack
+            else ""
+        )
         panel = f"""<div class="pool-panel">
   <div class="pool-panel-title">{title}</div>
   <div class="toto-numbers">{"".join(f"<span>{number}</span>" for number in numbers)}</div>
   <div class="toto-additional compact"><span>Additional Number</span><strong>{html.escape(str(entry.get("additional_number", "")))}</strong></div>
+  {next_strip}
 </div>"""
 
     return f"""{updated}
@@ -1119,6 +1209,7 @@ def render_sitemap(dates, preserved=None):
         ("https://sgalerts.com/coe-calculator.html", dates.get("coe")),
         ("https://sgalerts.com/parking.html", dates.get("home")),
         ("https://sgalerts.com/speed-cameras.html", dates.get("home")),
+        ("https://sgalerts.com/singapore-fixed-deposit-rates.html", dates.get("savings") or dates.get("home")),
         ("https://sgalerts.com/4d-results.html", dates.get("pools")),
         ("https://sgalerts.com/toto-results.html", dates.get("pools")),
         ("https://sgalerts.com/weather/", dates.get("weather")),
@@ -1197,6 +1288,7 @@ def main():
         "currency": "currency-rates.json",
         "events": "sg-events.json",
         "carparks": "carparks.json",
+        "savings": "savings-rates.json",
     }.items():
         try:
             optional[key] = load_json(filename)
@@ -1220,6 +1312,17 @@ def main():
             "parking.html",
             "PARKING-MALLS",
             render_parking_malls_static(optional["carparks"]),
+        )
+    if optional.get("savings") and (ROOT / "singapore-fixed-deposit-rates.html").exists():
+        replace_static_block(
+            "singapore-fixed-deposit-rates.html",
+            "SAVINGS-MAS",
+            render_savings_mas(optional["savings"]),
+        )
+        replace_static_block(
+            "singapore-fixed-deposit-rates.html",
+            "SAVINGS-FD",
+            render_savings_fd(optional["savings"]),
         )
 
     if optional.get("news"):
@@ -1266,6 +1369,7 @@ def main():
             render_visit_events(optional.get("events")),
         )
     dynamic_dates["currency"] = date_only((optional.get("currency") or {}).get("last_updated"))
+    dynamic_dates["savings"] = date_only((optional.get("savings") or {}).get("last_updated"))
     dynamic_dates["visit"] = max(
         (d for d in (dynamic_dates["currency"], date_only((optional.get("events") or {}).get("last_updated")), dynamic_dates.get("checkpoints")) if d),
         default=None,
