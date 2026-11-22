@@ -24,11 +24,11 @@
   <script>
 (function(){try{var m=localStorage.getItem("sga-theme-mode");if(m!=="light"&&m!=="dark"&&m!=="system")m="system";var d=m==="dark"||(m==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches);var r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-mode",m);}catch(e){var d=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",d?"dark":"light");document.documentElement.setAttribute("data-theme-mode","system");}})();
 </script>
-  <link rel="stylesheet" href="/style.css?v=39">
+  <link rel="stylesheet" href="/style.css?v=40">
   <link rel="stylesheet" href="/assets/leaflet/leaflet.css">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
   <script src="/analytics.js"></script>
-  <script src="/theme.js?v=2" defer></script>
+  <script src="/theme.js?v=3" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -133,7 +133,8 @@
         <div id="cameraResults" class="parking-cards-grid"></div>
       </section>
 
-      <section class="surface-card seo-guide" aria-labelledby="spf-directory-title">
+      <div class="sga-card-pair">
+<section class="surface-card seo-guide" aria-labelledby="spf-directory-title">
         <p class="eyebrow">Complete Expressway &amp; Road List</p>
         <h2 id="spf-directory-title">Official SPF Speed Camera Locations by Expressway &amp; Road</h2>
         <!-- STATIC:SPEED-CAMERAS:START -->
@@ -167,6 +168,7 @@
         </dl></details>
         <nav class="seo-related" aria-label="Related Singapore motoring pages"><strong>Related:</strong> <a href="/parking.html">SG Parking &amp; live lots</a><a href="/singapore-petrol-prices.html">Singapore petrol prices</a><a href="/petrol-discount-calculator.html">Petrol discount calculator</a><a href="/woodlands-checkpoint.html">Woodlands Checkpoint cams</a><a href="/tuas-checkpoint.html">Tuas Checkpoint cams</a><a href="/guides/how-to-check-erp-rates-singapore.html">ERP rates guide</a></nav>
       </section>
+</div>
     </div>
   </main>
 

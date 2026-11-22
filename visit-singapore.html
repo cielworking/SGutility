@@ -25,7 +25,7 @@
   <script>
 (function(){try{var m=localStorage.getItem("sga-theme-mode");if(m!=="light"&&m!=="dark"&&m!=="system")m="system";var d=m==="dark"||(m==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches);var r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-mode",m);}catch(e){var d=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",d?"dark":"light");document.documentElement.setAttribute("data-theme-mode","system");}})();
 </script>
-<link rel="stylesheet" href="/style.css?v=39">
+<link rel="stylesheet" href="/style.css?v=40">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -77,7 +77,7 @@
   ]
 }
   </script>
-<script src="/theme.js?v=2" defer></script>
+<script src="/theme.js?v=3" defer></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
   <script src="/analytics.js"></script>
   <style>
@@ -232,7 +232,8 @@
       </section>
 
       <!-- What's On in Singapore (Auto-Updated) -->
-      <section class="surface-card" aria-labelledby="whats-on-title">
+      <div class="sga-card-pair">
+<section class="surface-card" aria-labelledby="whats-on-title">
         <p class="eyebrow">Live Event &amp; Deal Radar</p>
         <h2 id="whats-on-title">What's On in Singapore: Concerts, Events &amp; Sales</h2>
         <!-- STATIC:VISIT-EVENTS:START -->
@@ -332,9 +333,11 @@
           </div>
         </div>
       </section>
+</div>
 
       <!-- Where to Stay -->
-      <section class="surface-card" aria-labelledby="where-to-stay-title">
+      <div class="sga-card-pair">
+<section class="surface-card" aria-labelledby="where-to-stay-title">
         <p class="eyebrow">Hotel &amp; District Guide</p>
         <h2 id="where-to-stay-title">Where to Stay in Singapore: Best Neighborhoods</h2>
         <div style="overflow-x:auto;">
@@ -437,9 +440,11 @@
           </table>
         </div>
       </section>
+</div>
 
       <!-- 10-Second Tourist Essentials -->
-      <section class="surface-card" aria-labelledby="essentials-title">
+      <div class="sga-card-pair">
+<section class="surface-card" aria-labelledby="essentials-title">
         <p class="eyebrow">Good to Know</p>
         <h2 id="essentials-title">10-Second Singapore Tourist Essentials</h2>
         <div class="essentials-grid">
@@ -506,6 +511,7 @@
 
         <nav class="seo-related" aria-label="Tourist Utilities"><strong>Essential Tools:</strong> <a href="/sgd-currency-converter.html">SGD Currency Converter</a><a href="/singapore-gst-refund-calculator.html">GST Tourist Refund Calculator</a><a href="/guides/sg-arrival-card-entry-guide.html">SG Arrival Card (SGAC) Entry Guide</a><a href="/woodlands-checkpoint.html">Woodlands Causeway Cameras (JB Day Trip)</a></nav>
       </section>
+</div>
     </div>
   </main>
 

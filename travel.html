@@ -24,7 +24,7 @@
   <script>
 (function(){try{var m=localStorage.getItem("sga-theme-mode");if(m!=="light"&&m!=="dark"&&m!=="system")m="system";var d=m==="dark"||(m==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches);var r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-mode",m);}catch(e){var d=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",d?"dark":"light");document.documentElement.setAttribute("data-theme-mode","system");}})();
 </script>
-  <link rel="stylesheet" href="/style.css?v=39">
+  <link rel="stylesheet" href="/style.css?v=40">
   <script type="application/ld+json" data-seo-page="travel.html">
 {
   "@context": "https://schema.org",
@@ -95,7 +95,7 @@
   ]
 }
   </script>
-  <script src="/theme.js?v=2" defer></script>
+  <script src="/theme.js?v=3" defer></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
   <script src="/analytics.js"></script>
 </head>
@@ -141,19 +141,26 @@
         <a class="detail-link" href="/guides/causeway-year-end-school-holidays.html">Holiday timing guide →</a>
       </div>
 
-      <section class="surface-card specialist-data-card">
-        <div class="section-header section-header-row">
-          <div class="section-title">
-            <div>
-              <p class="eyebrow">Live AI Route Comparison</p>
-              <h2>Woodlands vs Tuas: Which Crossing Now?</h2>
+      <section class="surface-card specialist-data-card sga-hub-card" data-hub-tabs aria-label="Live Woodlands and Tuas Crossing Hub">
+        <div class="sga-hub-tabs" role="tablist" aria-label="Live crossing views">
+          <button type="button" class="sga-hub-tab" role="tab" aria-selected="true" data-tab-target="advisor">Which Crossing</button>
+          <button type="button" class="sga-hub-tab" role="tab" aria-selected="false" tabindex="-1" data-tab-target="lane-reports">Lane Reports (FC)</button>
+          <button type="button" class="sga-hub-tab" role="tab" aria-selected="false" tabindex="-1" data-tab-target="conditions">Conditions &amp; Rain</button>
+        </div>
+
+        <div class="sga-hub-panel" role="tabpanel" data-tab-panel="advisor">
+          <div class="section-header section-header-row">
+            <div class="section-title">
+              <div>
+                <p class="eyebrow">Live AI Route Comparison</p>
+                <h2>Woodlands vs Tuas: Which Crossing Now?</h2>
+              </div>
+            </div>
+            <div class="card-actions">
+              <button onclick="refreshCheckpointData(true)" class="button button-secondary refresh-btn" type="button">↻ Refresh cams</button>
             </div>
           </div>
-          <div class="card-actions">
-            <button onclick="refreshCheckpointData(true)" class="button button-secondary refresh-btn" type="button">↻ Refresh cams</button>
-          </div>
-        </div>
-        <div class="travel-advisor-card" data-travel-advisor>
+          <div class="travel-advisor-card" data-travel-advisor>
           <!-- STATIC:TRAVEL-ADVISOR:START -->
 <div class="ai-traffic-head">
       <div>
@@ -178,21 +185,23 @@
     </div>
     <p class="ai-traffic-disclaimer">Comparison uses live YOLOX road-camera vehicle density. Indoor immigration hall queues and JB CIQ counters can still vary independently.</p>
 <!-- STATIC:TRAVEL-ADVISOR:END -->
-        </div>
-      </section>
-
-      <section class="surface-card wide-card lane-reports-section" data-lane-reports="all" aria-label="Anonymous live Woodlands and Tuas lane inspection reports"></section>
-
-      <section class="surface-card specialist-data-card" aria-label="Woodlands and Tuas live conditions briefing">
-        <div class="section-header">
-          <div class="section-title">
-            <div>
-              <p class="eyebrow">Live Crossing Conditions</p>
-              <h2>Checkpoint Traffic, Rain, Air Quality &amp; Holiday Briefing</h2>
-            </div>
           </div>
         </div>
-        <div data-travel-briefing>
+
+        <div class="sga-hub-panel" role="tabpanel" data-tab-panel="lane-reports" hidden>
+          <div class="lane-reports-section" data-lane-reports="all" aria-label="Anonymous live Woodlands and Tuas lane inspection reports"></div>
+        </div>
+
+        <div class="sga-hub-panel" role="tabpanel" data-tab-panel="conditions" hidden>
+          <div class="section-header">
+            <div class="section-title">
+              <div>
+                <p class="eyebrow">Live Crossing Conditions</p>
+                <h2>Checkpoint Traffic, Rain, Air Quality &amp; Holiday Briefing</h2>
+              </div>
+            </div>
+          </div>
+          <div data-travel-briefing>
           <!-- STATIC:TRAVEL-BRIEFING:START -->
 <div class="cp-briefing-grid"><article class="cp-briefing-card" data-briefing-card="woodlands">
           <h3>Woodlands Checkpoint · Causeway</h3>
@@ -252,6 +261,7 @@
           </ul>
         </article></div>
 <!-- STATIC:TRAVEL-BRIEFING:END -->
+          </div>
         </div>
       </section>
 
@@ -391,6 +401,7 @@
         </div>
       </section>
 
+      <div class="sga-card-pair">
       <section class="surface-card seo-guide">
         <h2>Customs, Map &amp; Cross-Border Guides</h2>
         <div class="hub-grid">
@@ -435,6 +446,7 @@
           <dt>When should I switch from Woodlands to Tuas?</dt><dd>If Woodlands shows Heavy (46+ vehicles) on Cam 2702 and Tuas Cam 4713 is Smooth or Moderate, switching to Tuas can save 30–60 minutes depending on your JB destination.</dd>
         </dl></details>
       </section>
+      </div>
     </div>
   </main>
 

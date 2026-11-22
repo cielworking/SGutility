@@ -25,7 +25,7 @@
   <script>
 (function(){try{var m=localStorage.getItem("sga-theme-mode");if(m!=="light"&&m!=="dark"&&m!=="system")m="system";var d=m==="dark"||(m==="system"&&window.matchMedia("(prefers-color-scheme: dark)").matches);var r=document.documentElement;r.setAttribute("data-theme",d?"dark":"light");r.setAttribute("data-theme-mode",m);}catch(e){var d=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.setAttribute("data-theme",d?"dark":"light");document.documentElement.setAttribute("data-theme-mode","system");}})();
 </script>
-  <link rel="stylesheet" href="/style.css?v=39">
+  <link rel="stylesheet" href="/style.css?v=40">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -82,7 +82,7 @@
     ]
   }
   </script>
-  <script src="/theme.js?v=2" defer></script>
+  <script src="/theme.js?v=3" defer></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXKD1E3N5Z"></script>
   <script src="/analytics.js"></script>
 </head>
@@ -123,7 +123,8 @@
     </section>
 
     <div class="specialist-layout">
-      <section class="surface-card specialist-data-card">
+      <div class="sga-card-pair">
+<section class="surface-card specialist-data-card">
         <div class="section-header section-header-row">
           <div class="section-title">
             <div>
@@ -169,6 +170,7 @@
         </div>
         <div id="fdCalcOut" class="seo-table-wrap"></div>
       </section>
+</div>
 
       <section class="surface-card seo-guide">
         <p class="eyebrow">Singapore Bank Comparison</p>

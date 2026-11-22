@@ -99,6 +99,7 @@
     });
     initNavHoverMenus();
     initPwaInstall();
+    initHubTabs();
   }
 
   function initNavHoverMenus() {
@@ -308,6 +309,32 @@
         if (!deferredInstallPrompt) showBanner("ios");
       }, 1500);
     }
+  }
+
+  function initHubTabs() {
+    var groups = document.querySelectorAll("[data-hub-tabs]");
+    if (!groups.length) return;
+    Array.prototype.forEach.call(groups, function (group) {
+      if (group.getAttribute("data-hub-tabs-wired") === "1") return;
+      group.setAttribute("data-hub-tabs-wired", "1");
+      var tabs = Array.prototype.slice.call(group.querySelectorAll('[role="tab"]'));
+      var panels = Array.prototype.slice.call(group.querySelectorAll('[role="tabpanel"]'));
+      function activate(tabId) {
+        tabs.forEach(function (t) {
+          var active = t.getAttribute("data-tab-target") === tabId;
+          t.setAttribute("aria-selected", active ? "true" : "false");
+          t.tabIndex = active ? 0 : -1;
+        });
+        panels.forEach(function (p) {
+          p.hidden = p.getAttribute("data-tab-panel") !== tabId;
+        });
+      }
+      tabs.forEach(function (t) {
+        t.addEventListener("click", function () {
+          activate(t.getAttribute("data-tab-target"));
+        });
+      });
+    });
   }
 
   if (document.readyState === "loading") {

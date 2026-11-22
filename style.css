@@ -6575,6 +6575,112 @@ table tbody td,
   }
 }
 
+/* ==========================================================================
+   Side-by-Side Card Pairs & Unified Hub Tabs (Reduces Endless Scrolling)
+   ========================================================================== */
+.sga-card-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.sga-card-pair > .surface-card {
+  margin: 0;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .sga-card-pair {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+}
+
+.sga-hub-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.sga-hub-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-bottom: 2px solid var(--wf-ink);
+  background: var(--wf-paper-2);
+}
+
+.sga-hub-tab {
+  min-height: 48px;
+  padding: 11px 12px;
+  border: 0;
+  border-right: 2px solid var(--wf-ink);
+  border-radius: 0;
+  background: transparent;
+  color: var(--wf-ink);
+  font-family: var(--font);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 80ms steps(1), color 80ms steps(1);
+}
+
+.sga-hub-tab:last-child {
+  border-right: 0;
+}
+
+.sga-hub-tab:hover {
+  background: var(--wf-paper-3);
+  color: var(--wf-cobalt);
+}
+
+.sga-hub-tab[aria-selected="true"] {
+  background: oklch(16% 0.014 262);
+  color: var(--wf-amber);
+}
+
+.sga-hub-panel {
+  padding: 20px 22px;
+}
+
+.sga-hub-panel[hidden] {
+  display: none !important;
+}
+
+.sga-hub-panel .lane-reports-section {
+  border: 0 !important;
+  padding: 0;
+  background: transparent !important;
+}
+
+@media (max-width: 640px) {
+  .sga-hub-tab {
+    padding: 10px 6px;
+    font-size: 0.72rem;
+    line-height: 1.25;
+  }
+
+  .sga-hub-panel {
+    padding: 14px;
+  }
+}
+
+:root[data-theme="dark"] .sga-hub-tabs {
+  background: var(--wf-paper-3);
+  border-bottom-color: var(--wf-rule);
+}
+
+:root[data-theme="dark"] .sga-hub-tab {
+  border-right-color: var(--wf-rule);
+  color: var(--wf-ink);
+}
+
+:root[data-theme="dark"] .sga-hub-tab[aria-selected="true"] {
+  background: var(--wf-cobalt);
+  color: oklch(99.5% 0.003 250);
+}
+
+
 
 
 
