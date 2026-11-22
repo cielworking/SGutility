@@ -59,18 +59,22 @@
       .replace(/\bSundays? and Public Holidays?\b/gi, "Sun & PH")
       .replace(/\bFirst (\d+ )?hours?\b/gi, (_, n) => (n ? `1st ${n.trim()}hr` : "1st hr"))
       .replace(/\bFirst 30 mins\b/gi, "1st 30m")
+      .replace(/\bFirst min\b/gi, "1st min")
       .replace(/\bSubsequent\b/gi, "Sub.")
+      .replace(/\bsub\.\s*0\s*mins?\s*free[;,\s]*/gi, "")
       .replace(/\bsub\.\s*30\s*min(?:s|utes)?\b/gi, "sub. 30m")
       .replace(/\bsub\.\s*15\s*min(?:s|utes)?\b/gi, "sub. 15m")
       .replace(/\bper 30 mins?\b/gi, "/ 30m")
       .replace(/\bper (?:hour|hr)\b/gi, "/ hr")
       .replace(/\bper entry\b/gi, "/ entry")
       .replace(/\bper min(?:ute)?\b/gi, "/ min")
-      .replace(/\b(?:hrs?|mins?) grace period[;:\s]*/gi, "")
-      .replace(/\b12:00 AM - 12:00 AM\s*/gi, "All day: ")
+      .replace(/\b0?\s*(?:hours?|hrs?|mins?)\s*grace period[;:\s]*/gi, " ")
+      .replace(/\b(\d+m grace)\s*·\s*\/\s*(30m|hr|min|entry)\s*(\$\d+(?:\.\d{2})?)/gi, "$3 / $2 ($1)")
+      .replace(/\b12:00 AM - 12:00 AM\s*/gi, "24h: ")
       .replace(/\b0?7\.00am\s*-\s*0?7\.00am\b/gi, "24h")
       .replace(/\.00(am|pm)/gi, "$1")
       .replace(/\s+([;,])/g, "$1")
+      .replace(/\s{2,}/g, " ")
       .replace(/\.\s*$/g, "")
       .trim();
   }
@@ -80,9 +84,9 @@
     if (!t || /^commercial gantry/i.test(t) || t === "-") return fallback;
     if (/^no motorcycle parking/i.test(t)) return "No bike parking";
     if (/^free\b/i.test(t)) return "Free";
-    const m = t.match(/\$\d+(?:\.\d{2})?\s*(?:\/\s*(?:1st\s*\d*\s*hrs?|hr|hour|30\s*m(?:in)?|15\s*m(?:in)?|min|entry|day|session)|for\s+1st\s+\d*\s*hrs?|per\s+(?:entry|hr|hour|min|30\s*min|day))?/i);
-    if (m) {
-      return m[0]
+    const suffixMatch = t.match(/\$\d+(?:\.\d{2})?\s*(?:\/\s*(?:1st\s*\d*\s*(?:hr|30m|min)|hr|hour|30\s*m(?:in)?|15\s*m(?:in)?|min|entry|day|session)|for\s+1st\s+\d*\s*hrs?|per\s+(?:entry|hr|hour|min|30\s*min|day))/i);
+    if (suffixMatch) {
+      return suffixMatch[0]
         .replace(/\bfor 1st (\d*)\s*hrs?\b/i, (_, n) => `/ 1st ${n ? n + " " : ""}hr`)
         .replace(/\bper entry\b/i, "/ entry")
         .replace(/\bper hr\b|\bper hour\b/i, "/ hr")
@@ -90,13 +94,20 @@
         .replace(/\s+/g, " ")
         .trim();
     }
+    const prefixMatch = t.match(/(?:(1st\s*(?:30m|min|hr))|\/\s*(30m|15m|hr|min|entry))\s*(\$\d+(?:\.\d{2})?)/i);
+    if (prefixMatch) {
+      const unit = (prefixMatch[1] || prefixMatch[2]).trim();
+      return `${prefixMatch[3]} / ${unit}`;
+    }
+    const bareDollar = t.match(/\$\d+(?:\.\d{2})?/);
+    if (bareDollar) return bareDollar[0];
     return t.length > 26 ? t.slice(0, 24).trim() + "…" : t;
   }
 
   function findNearestBikeFallback(cp) {
     if (!dataset?.carparks?.length || cp.source_type === "HDB / data.gov.sg") return null;
     let best = null;
-    let bestDist = 0.85;
+    let bestDist = 1.6;
     for (const cand of dataset.carparks) {
       if (cand.id === cp.id || cand.no_moto) continue;
       const isHdb = cand.source_type === "HDB / data.gov.sg";

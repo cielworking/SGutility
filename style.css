@@ -4812,8 +4812,12 @@ select.fuel-selector,
   gap: 5px;
   padding: 8px 10px;
   border-radius: 8px;
-  background: color-mix(in srgb, var(--surface-muted, var(--bg-soft, #0f172a)) 55%, transparent);
+  background: #f1f5f9;
   border: 1px solid var(--border);
+}
+
+:root[data-theme="dark"] .parking-rate-rows {
+  background: rgba(15, 23, 42, 0.58);
 }
 
 .parking-rate-row {
