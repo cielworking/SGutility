@@ -6353,10 +6353,11 @@ table tbody td,
    Auto-adapts via viewport breakpoints, clamp(), safe-area-inset, & 44px targets
    ========================================================================== */
 
-/* Tablet / Split-Screen Laptop (701px–1080px): prevent nav/theme-toggle collision */
+/* Tablet / Split-Screen Laptop (701px–1080px): wrap nav cleanly so More is never clipped */
 @media (min-width: 701px) and (max-width: 1080px) {
   .site-header .header-inner {
     gap: 10px;
+    padding: 8px 0;
     width: min(var(--content), calc(100% - 24px));
   }
 
@@ -6367,18 +6368,13 @@ table tbody td,
   .site-header .primary-nav {
     flex: 1 1 auto;
     min-width: 0;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .site-header .primary-nav::-webkit-scrollbar {
-    display: none;
+    flex-wrap: wrap;
+    row-gap: 2px;
   }
 
   .site-header .primary-nav summary {
-    padding: 7px 6px;
-    font-size: 0.75rem;
+    padding: 6px 6px;
+    font-size: 0.74rem;
   }
 }
 
@@ -6556,9 +6552,15 @@ table tbody td,
 
 /* Compact Phones (<= 400px: iPhone SE, small Androids) */
 @media (max-width: 400px) {
-  .lr-btn {
-    padding: 8px 8px;
+  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .section-header .card-actions .detail-link {
+    padding: 10px 6px;
     font-size: 0.72rem;
+  }
+
+  .lr-btn {
+    min-height: 44px;
+    padding: 8px 6px;
+    font-size: 0.68rem;
     gap: 4px;
   }
 
@@ -6569,7 +6571,7 @@ table tbody td,
 
   .lr-btn kbd {
     padding: 1px 4px;
-    font-size: 0.68rem;
+    font-size: 0.64rem;
   }
 }
 
