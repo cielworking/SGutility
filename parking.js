@@ -85,6 +85,12 @@
     if (/^no motorcycle parking/i.test(t)) return "No bike parking";
     if (/^free\b/i.test(t)) return "Free";
     const suffixMatch = t.match(/\$\d+(?:\.\d{2})?\s*(?:\/\s*(?:1st\s*\d*\s*(?:hr|30m|min)|hr|hour|30\s*m(?:in)?|15\s*m(?:in)?|min|entry|day|session)|for\s+1st\s+\d*\s*hrs?|per\s+(?:entry|hr|hour|min|30\s*min|day))/i);
+    const prefixMatch = t.match(/(?:(1st\s*(?:\d+\s*)?(?:30m|min|hr))|\/\s*(30m|15m|hr|min|entry))\s*(\$\d+(?:\.\d{2})?)/i);
+    const usePrefix = prefixMatch && (!suffixMatch || prefixMatch.index < suffixMatch.index);
+    if (usePrefix) {
+      const unit = (prefixMatch[1] || prefixMatch[2]).trim();
+      return `${prefixMatch[3]} / ${unit}`;
+    }
     if (suffixMatch) {
       return suffixMatch[0]
         .replace(/\bfor 1st (\d*)\s*hrs?\b/i, (_, n) => `/ 1st ${n ? n + " " : ""}hr`)
@@ -93,11 +99,6 @@
         .replace(/\bper min\b/i, "/ min")
         .replace(/\s+/g, " ")
         .trim();
-    }
-    const prefixMatch = t.match(/(?:(1st\s*(?:30m|min|hr))|\/\s*(30m|15m|hr|min|entry))\s*(\$\d+(?:\.\d{2})?)/i);
-    if (prefixMatch) {
-      const unit = (prefixMatch[1] || prefixMatch[2]).trim();
-      return `${prefixMatch[3]} / ${unit}`;
     }
     const bareDollar = t.match(/\$\d+(?:\.\d{2})?/);
     if (bareDollar) return bareDollar[0];
