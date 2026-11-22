@@ -33,7 +33,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: .cache/models
-          key: yolox-s-onnx-v1
+          key: yolox-m-onnx-v1
 
       - name: Install Python dependencies
         run: pip install requests beautifulsoup4 onnxruntime pillow numpy

@@ -1,12 +1,15 @@
 """
-Analyze live LTA Woodlands & Tuas checkpoint camera images with Apache-2.0 YOLOX-S (ONNX)
-and lane direction polygons, writing data/checkpoint-traffic.json and data/checkpoint-history.json.
+Analyze live LTA Woodlands & Tuas checkpoint camera images with Apache-2.0 YOLOX-M (ONNX)
+using per-camera road-focused SAHI zoom tiles and lane direction polygons, writing
+data/checkpoint-traffic.json and data/checkpoint-history.json.
 """
 
 from __future__ import annotations
 
+import argparse
 import io
 import json
+import os
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -17,8 +20,9 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 CHECKPOINTS_FILE = BASE_DIR / "data" / "checkpoints.json"
 TRAFFIC_FILE = BASE_DIR / "data" / "checkpoint-traffic.json"
 HISTORY_FILE = BASE_DIR / "data" / "checkpoint-history.json"
-MODEL_PATH = BASE_DIR / ".cache" / "models" / "yolox_s.onnx"
-MODEL_URL = "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s.onnx"
+CUSTOM_MODEL_PATH = BASE_DIR / ".cache" / "models" / "sgalerts_custom.onnx"
+MODEL_PATH = BASE_DIR / ".cache" / "models" / "yolox_m.onnx"
+MODEL_URL = "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_m.onnx"
 
 SGT = timezone(timedelta(hours=8), name="SGT")
 VEHICLE_CLASSES = {2: "car", 3: "motorcycle", 5: "bus", 7: "truck"}
@@ -123,12 +127,79 @@ def load_level(weighted_score: float, smooth_max: float = 25.0, moderate_max: fl
     return "Heavy"
 
 
+# Per-camera road-focused SAHI zoom tiles in 1920x1069 reference coordinates.
+# Concentrates inference resolution on distant Causeway/viaduct decks & motorcycle lanes
+# instead of wasting compute on sky, sea, and buildings.
+CAMERA_TILES = {
+    "2701": [
+        (1220, 200, 1920, 520),   # Far Causeway deck (small distant cars & buses)
+        (920, 360, 1620, 740),    # Mid-far Causeway deck & inbound motorcycle lane
+        (560, 520, 1320, 960),    # Mid Causeway deck & water-pipe motorcycle lane
+        (260, 680, 1080, 1069),   # Near Causeway deck (both directions)
+    ],
+    "2702": [
+        (300, 0, 1060, 520),      # Distant BKE / Woodlands Checkpoint lanes
+        (300, 260, 1260, 860),    # Mid BKE both directions
+        (860, 340, 1920, 1069),   # Right outbound queues towards Woodlands
+        (280, 520, 1260, 1069),   # Lower inbound & outbound lanes
+    ],
+    "4703": [
+        (100, 0, 1020, 420),      # Far Tuas Second Link viaduct
+        (560, 120, 1520, 680),    # Mid viaduct both directions & contraflow zone
+        (1160, 220, 1920, 840),   # Right viaduct towards SG / contraflow
+        (0, 360, 960, 1040),      # Lower-left curved motorcycle & car ramp
+        (740, 480, 1780, 1040),   # Lower-mid viaduct ramp towards JB
+    ],
+    "4713": [
+        (1160, 10, 1880, 520),    # Far JOHOR viaduct top
+        (1180, 320, 1920, 920),   # Mid JOHOR viaduct merge
+        (0, 620, 800, 960),       # Bottom horizontal motorcycle approach (left)
+        (600, 620, 1440, 960),    # Bottom horizontal motorcycle approach (mid-right)
+    ],
+    "4712": [
+        (240, 0, 1120, 580),      # Distant AYE towards Tuas
+        (240, 460, 1180, 1069),   # Near AYE towards Tuas
+        (720, 0, 1920, 600),      # Distant AYE towards SG
+        (900, 460, 1920, 1069),   # Near AYE towards SG
+    ],
+}
+
+
 def ensure_model() -> Path:
+    custom_env = os.environ.get("SGALERTS_CUSTOM_ONNX", "").strip()
+    if custom_env:
+        env_path = Path(custom_env)
+        if env_path.exists() and env_path.stat().st_size > 1_000_000:
+            return env_path
+    if CUSTOM_MODEL_PATH.exists() and CUSTOM_MODEL_PATH.stat().st_size > 1_000_000:
+        return CUSTOM_MODEL_PATH
     MODEL_PATH.parent.mkdir(parents=True, exist_ok=True)
-    if not MODEL_PATH.exists() or MODEL_PATH.stat().st_size < 10_000_000:
-        print(f"Downloading YOLOX-S ONNX model to {MODEL_PATH}...")
+    if not MODEL_PATH.exists() or MODEL_PATH.stat().st_size < 50_000_000:
+        print(f"Downloading YOLOX-M ONNX model to {MODEL_PATH}...")
         urllib.request.urlretrieve(MODEL_URL, MODEL_PATH)
     return MODEL_PATH
+
+
+def build_camera_tiles(camera_id: str | None, width: int, height: int) -> list[tuple[int, int, int, int]]:
+    regions: list[tuple[int, int, int, int]] = [(0, 0, width, height)]
+    if width < 640 or height < 640:
+        return regions
+    preset = CAMERA_TILES.get(str(camera_id or ""))
+    if preset:
+        sx, sy = width / 1920.0, height / 1069.0
+        for x1, y1, x2, y2 in preset:
+            rx1 = max(0, min(width - 1, int(round(x1 * sx))))
+            ry1 = max(0, min(height - 1, int(round(y1 * sy))))
+            rx2 = max(rx1 + 1, min(width, int(round(x2 * sx))))
+            ry2 = max(ry1 + 1, min(height, int(round(y2 * sy))))
+            regions.append((rx1, ry1, rx2, ry2))
+        return regions
+    xs = [0, max(0, (width - 640) // 2), max(0, width - 640)]
+    ys = [0, max(0, height - 640)]
+    for y in ys:
+        for x in xs:
+            regions.append((x, y, min(width, x + 640), min(height, y + 640)))
+    return regions
 
 
 def preprocess_crop(img, input_size=(640, 640)):
@@ -188,27 +259,13 @@ def nms(boxes, scores, iou_thresh: float = 0.40) -> list[int]:
     return keep
 
 
-def detect_vehicles(sess, img, conf_thresh: float = 0.26, bike_conf_thresh: float = 0.16):
+def detect_vehicles(sess, img, camera_id: str | None = None, conf_thresh: float = 0.25, bike_conf_thresh: float = 0.15):
     import numpy as np
 
     inp_name = sess.get_inputs()[0].name
     out_name = sess.get_outputs()[0].name
     W, H = img.size
-    regions = [(0, 0, W, H)]
-    if W >= 640 and H >= 640:
-        xs = [0, max(0, (W - 640) // 2), max(0, W - 640)]
-        ys = [0, max(0, H - 640)]
-        for y in ys:
-            for x in xs:
-                regions.append((x, y, x + 640, y + 640))
-        # High-resolution zoom tiles for dense distant queues (4713 JOHOR curve, 2701 Causeway, 4703/2702 middle decks)
-        sx, sy = W / 1920.0, H / 1069.0
-        for zx1, zy1, zx2, zy2 in (
-            (1160, 80, 1740, 620),
-            (480, 100, 1180, 720),
-            (1080, 180, 1900, 780),
-        ):
-            regions.append((int(zx1 * sx), int(zy1 * sy), int(zx2 * sx), int(zy2 * sy)))
+    regions = build_camera_tiles(camera_id, W, H)
 
     all_boxes, all_scores, all_cls = [], [], []
     for rx1, ry1, rx2, ry2 in regions:
@@ -246,7 +303,7 @@ def detect_vehicles(sess, img, conf_thresh: float = 0.26, bike_conf_thresh: floa
     return boxes[keep], scores[keep], clss[keep]
 
 
-def analyze_checkpoint_group(sess, cameras: list[dict]) -> dict:
+def analyze_checkpoint_group(sess, cameras: list[dict], save_samples_dir: Path | None = None) -> dict:
     from PIL import Image
 
     totals = {"car": 0, "motorcycle": 0, "bus": 0, "truck": 0}
@@ -264,12 +321,16 @@ def analyze_checkpoint_group(sess, cameras: list[dict]) -> dict:
             resp = requests.get(url, timeout=20)
             resp.raise_for_status()
             img = Image.open(io.BytesIO(resp.content)).convert("RGB")
+            if save_samples_dir is not None:
+                save_samples_dir.mkdir(parents=True, exist_ok=True)
+                stamp = datetime.now(SGT).strftime("%Y%m%d_%H%M%S")
+                img.save(save_samples_dir / f"cam_{cid}_{stamp}.jpg", quality=92)
         except Exception as exc:
             cam_summaries.append({"camera_id": cid, "error": str(exc)})
             continue
 
         W, H = img.size
-        boxes, _, clss = detect_vehicles(sess, img)
+        boxes, _, clss = detect_vehicles(sess, img, camera_id=cid)
         cam_counts = {"car": 0, "motorcycle": 0, "bus": 0, "truck": 0}
         cam_dir = {"towards_jb": 0, "towards_sg": 0}
 
@@ -376,7 +437,7 @@ def update_history(traffic: dict) -> dict:
     snapshots = snapshots[-MAX_HISTORY_ENTRIES:]
 
     history = {
-        "model": "YOLOX-S ONNX (road-zone vehicle detection)",
+        "model": "YOLOX-M ONNX (road-zone SAHI tiled detection)",
         "last_updated": traffic["last_updated"],
         "snapshot_count": len(snapshots),
         "snapshots": snapshots,
@@ -397,6 +458,15 @@ def select_dashboard_cameras(cameras: list[dict], location_key: str) -> list[dic
 def main() -> None:
     import onnxruntime as ort
 
+    parser = argparse.ArgumentParser(description="Analyze LTA checkpoint cameras with YOLOX-M ONNX.")
+    parser.add_argument(
+        "--save-samples",
+        type=Path,
+        default=None,
+        help="Optional directory to archive raw camera frames for Colab distillation/fine-tuning.",
+    )
+    args = parser.parse_args()
+
     if not CHECKPOINTS_FILE.exists():
         raise FileNotFoundError(f"Missing {CHECKPOINTS_FILE}")
     checkpoints = json.loads(CHECKPOINTS_FILE.read_text(encoding="utf-8"))
@@ -405,11 +475,24 @@ def main() -> None:
     sess = ort.InferenceSession(str(model_path), providers=["CPUExecutionProvider"])
 
     now_utc = datetime.now(timezone.utc)
-    woodlands = analyze_checkpoint_group(sess, select_dashboard_cameras(checkpoints.get("woodlands", []), "woodlands"))
-    tuas = analyze_checkpoint_group(sess, select_dashboard_cameras(checkpoints.get("tuas", []), "tuas"))
+    woodlands = analyze_checkpoint_group(
+        sess,
+        select_dashboard_cameras(checkpoints.get("woodlands", []), "woodlands"),
+        save_samples_dir=args.save_samples,
+    )
+    tuas = analyze_checkpoint_group(
+        sess,
+        select_dashboard_cameras(checkpoints.get("tuas", []), "tuas"),
+        save_samples_dir=args.save_samples,
+    )
 
+    model_label = (
+        f"Custom Distilled ONNX ({model_path.name})"
+        if model_path.name != MODEL_PATH.name
+        else "YOLOX-M ONNX (road-zone SAHI tiled detection)"
+    )
     traffic = {
-        "model": "YOLOX-S ONNX (COCO vehicles in calibrated road polygons)",
+        "model": model_label,
         "source_name": checkpoints.get("source_name", "LTA / data.gov.sg"),
         "last_updated": now_utc.isoformat(),
         "note": "AI counts visible vehicles on public LTA approach cameras. Actual immigration counter queues inside the complex may differ.",

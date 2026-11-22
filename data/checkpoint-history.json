@@ -1,7 +1,7 @@
 {
-  "model": "YOLOX-S ONNX (road-zone vehicle detection)",
-  "last_updated": "2026-11-22T11:20:12.361576+00:00",
-  "snapshot_count": 84,
+  "model": "YOLOX-M ONNX (road-zone SAHI tiled detection)",
+  "last_updated": "2026-11-22T12:42:31.031092+00:00",
+  "snapshot_count": 82,
   "snapshots": [
     {
       "timestamp_sgt": "2026-11-17T00:30:35.852913+08:00",
@@ -1057,43 +1057,17 @@
       "tuas_to_sg": 11
     },
     {
-      "timestamp_sgt": "2026-11-22T13:22:26.185838+08:00",
+      "timestamp_sgt": "2026-11-22T20:42:37.864843+08:00",
       "woodlands_status": "Heavy",
-      "woodlands_vehicles": 66,
-      "woodlands_load": 70.0,
-      "woodlands_to_jb": 27,
-      "woodlands_to_sg": 39,
-      "tuas_status": "Smooth",
-      "tuas_vehicles": 7,
-      "tuas_load": 6.5,
-      "tuas_to_jb": 1,
-      "tuas_to_sg": 6
-    },
-    {
-      "timestamp_sgt": "2026-11-22T16:44:26.051041+08:00",
-      "woodlands_status": "Heavy",
-      "woodlands_vehicles": 48,
-      "woodlands_load": 51.0,
-      "woodlands_to_jb": 13,
-      "woodlands_to_sg": 35,
+      "woodlands_vehicles": 82,
+      "woodlands_load": 93.0,
+      "woodlands_to_jb": 41,
+      "woodlands_to_sg": 41,
       "tuas_status": "Heavy",
-      "tuas_vehicles": 54,
-      "tuas_load": 57.0,
-      "tuas_to_jb": 29,
-      "tuas_to_sg": 25
-    },
-    {
-      "timestamp_sgt": "2026-11-22T19:20:15.179960+08:00",
-      "woodlands_status": "Moderate",
-      "woodlands_vehicles": 27,
-      "woodlands_load": 32.0,
-      "woodlands_to_jb": 18,
-      "woodlands_to_sg": 9,
-      "tuas_status": "Heavy",
-      "tuas_vehicles": 58,
-      "tuas_load": 56.0,
-      "tuas_to_jb": 36,
-      "tuas_to_sg": 22
+      "tuas_vehicles": 53,
+      "tuas_load": 56.5,
+      "tuas_to_jb": 45,
+      "tuas_to_sg": 8
     }
   ],
   "by_day_hour": [
@@ -1421,24 +1395,10 @@
     },
     {
       "day": "Sun",
-      "hour": 13,
+      "hour": 20,
       "samples": 1,
-      "woodlands_avg_load": 70.0,
-      "tuas_avg_load": 6.5
-    },
-    {
-      "day": "Sun",
-      "hour": 16,
-      "samples": 1,
-      "woodlands_avg_load": 51.0,
-      "tuas_avg_load": 57.0
-    },
-    {
-      "day": "Sun",
-      "hour": 19,
-      "samples": 1,
-      "woodlands_avg_load": 32.0,
-      "tuas_avg_load": 56.0
+      "woodlands_avg_load": 93.0,
+      "tuas_avg_load": 56.5
     }
   ]
 }

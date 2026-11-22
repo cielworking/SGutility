@@ -62,6 +62,20 @@ class CheckpointAiTests(unittest.TestCase):
         self.assertEqual(row["woodlands_avg_load"], 15.0)
         self.assertEqual(row["tuas_avg_load"], 5.0)
 
+    def test_camera_sahi_tiles_are_valid_and_bounded(self):
+        mod = load_analyzer()
+        for cid in ("2701", "2702", "4703", "4713"):
+            tiles = mod.build_camera_tiles(cid, 1920, 1069)
+            self.assertGreaterEqual(len(tiles), 5)
+            self.assertEqual(tiles[0], (0, 0, 1920, 1069))
+            for x1, y1, x2, y2 in tiles:
+                self.assertGreaterEqual(x1, 0)
+                self.assertGreaterEqual(y1, 0)
+                self.assertLessEqual(x2, 1920)
+                self.assertLessEqual(y2, 1069)
+                self.assertLess(x1, x2)
+                self.assertLess(y1, y2)
+
     def test_generated_traffic_json_schema(self):
         traffic_path = ROOT / "data" / "checkpoint-traffic.json"
         self.assertTrue(traffic_path.exists())
