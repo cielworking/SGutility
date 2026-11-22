@@ -111,14 +111,83 @@ def is_tuas_contraflow(iso_ts: str | None) -> bool:
     )
 
 
-def classify_direction(camera_id: str, cx: float, cy: float, width: int, height: int, iso_ts: str | None = None) -> str:
+# Middle viaduct wedge on Camera 4703 (Tuas Second Link) that switches direction when ICA deploys
+# contraflow cones: white headlights face the camera when contraflow is active (towards SG), while
+# red tail-lights face the camera during normal outbound flow (towards JB).
+TUAS_4703_CONTRAFLOW_WEDGE = [
+    (185, 0),
+    (700, 175),
+    (1320, 420),
+    (1920, 650),
+    (1920, 860),
+    (1760, 840),
+    (1620, 725),
+    (1320, 555),
+    (1020, 415),
+    (720, 285),
+    (460, 185),
+    (185, 65),
+]
+
+
+def detect_4703_contraflow(img, iso_ts: str | None = None) -> bool:
+    import numpy as np
+    from PIL import Image, ImageDraw
+
+    scheduled = is_tuas_contraflow(iso_ts)
+    W, H = img.size
+    if W < 320 or H < 200:
+        return scheduled
+
+    sx, sy = W / 1920.0, H / 1069.0
+    poly = [(int(round(x * sx)), int(round(y * sy))) for x, y in TUAS_4703_CONTRAFLOW_WEDGE]
+    mask_img = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(mask_img).polygon(poly, fill=255)
+    roi = np.asarray(mask_img) > 0
+    if not np.any(roi):
+        return scheduled
+
+    arr = np.asarray(img, dtype=np.float32)
+    r, g, b = arr[:, :, 0], arr[:, :, 1], arr[:, :, 2]
+    luma = 0.299 * r + 0.587 * g + 0.114 * b
+    sky_luma = float(np.mean(luma[: max(1, int(H * 0.15)), int(W * 0.55) :]))
+    if sky_luma >= 105.0:
+        return scheduled
+
+    white_hl = (r >= 205.0) & (g >= 205.0) & (b >= 195.0) & (np.abs(r - b) < 35.0)
+    red_tl = (r >= 150.0) & ((r - np.maximum(g, b)) >= 40.0)
+    white_ratio = float(np.mean(white_hl[roi]))
+    red_ratio = float(np.mean(red_tl[roi]))
+
+    # Strong visual white-headlight stream in middle wedge => contraflow active (even on Public Holidays / Sat nights)
+    if white_ratio >= 0.015 and white_ratio >= 2.2 * max(red_ratio, 0.001):
+        return True
+    # Strong visual red-taillight stream in middle wedge => normal JB-bound flow
+    if red_ratio >= 0.015 and red_ratio >= 2.0 * max(white_ratio, 0.001):
+        return False
+    return scheduled
+
+
+def classify_direction(
+    camera_id: str,
+    cx: float,
+    cy: float,
+    width: int,
+    height: int,
+    iso_ts: str | None = None,
+    contraflow_active: bool | None = None,
+) -> str:
     # Normalize coordinates to 1920x1069 reference frame
     nx = cx * (1920.0 / max(1, width))
     ny = cy * (1069.0 / max(1, height))
     cam_cfg = CAMERA_ZONES.get(str(camera_id))
     if not cam_cfg:
         return "other"
-    zones = cam_cfg["contraflow_zones"] if ("contraflow_zones" in cam_cfg and is_tuas_contraflow(iso_ts)) else cam_cfg["zones"]
+    use_contraflow = (
+        ("contraflow_zones" in cam_cfg)
+        and (contraflow_active if contraflow_active is not None else is_tuas_contraflow(iso_ts))
+    )
+    zones = cam_cfg["contraflow_zones"] if use_contraflow else cam_cfg["zones"]
     for direction, poly in zones.items():
         if point_in_polygon(nx, ny, poly):
             return direction
@@ -423,11 +492,12 @@ def analyze_checkpoint_group(sess, cameras: list[dict], save_samples_dir: Path |
         boxes, _, clss = detect_vehicles(sess, img, camera_id=cid)
         cam_counts = {"car": 0, "motorcycle": 0, "bus": 0, "truck": 0}
         cam_dir = {"towards_jb": 0, "towards_sg": 0}
+        contraflow_override = detect_4703_contraflow(img, cam.get("timestamp")) if cid == "4703" else None
 
         for box, cls_id in zip(boxes, clss):
             cx = float((box[0] + box[2]) / 2.0)
             cy = float((box[1] + box[3]) / 2.0)
-            direction = classify_direction(cid, cx, cy, W, H, cam.get("timestamp"))
+            direction = classify_direction(cid, cx, cy, W, H, cam.get("timestamp"), contraflow_active=contraflow_override)
             if direction == "ignored":
                 continue
             label = VEHICLE_CLASSES[int(cls_id)]

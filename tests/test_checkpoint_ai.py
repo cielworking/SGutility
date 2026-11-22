@@ -112,6 +112,20 @@ class CheckpointAiTests(unittest.TestCase):
         empty_night = Image.new("RGB", (1920, 1069), (45, 48, 52))
         self.assertEqual(mod.estimate_2702_bike_viaduct_count(empty_night), 0)
 
+    def test_4703_visual_contraflow_headlights_vs_taillights(self):
+        from PIL import Image, ImageDraw
+
+        mod = load_analyzer()
+        # Saturday night (outside scheduled contraflow) with strong white headlights in wedge -> visually detects True
+        img_white = Image.new("RGB", (1920, 1069), (30, 32, 38))
+        ImageDraw.Draw(img_white).rectangle([800, 300, 1300, 500], fill=(235, 235, 230))
+        self.assertTrue(mod.detect_4703_contraflow(img_white, "2026-11-21T21:00:00+08:00"))
+
+        # Sunday night (inside scheduled contraflow) with strong red tail-lights in wedge -> visually overrides to False
+        img_red = Image.new("RGB", (1920, 1069), (30, 32, 38))
+        ImageDraw.Draw(img_red).rectangle([800, 300, 1300, 500], fill=(220, 40, 40))
+        self.assertFalse(mod.detect_4703_contraflow(img_red, "2026-11-22T21:00:00+08:00"))
+
     def test_generated_traffic_json_schema(self):
         traffic_path = ROOT / "data" / "checkpoint-traffic.json"
         self.assertTrue(traffic_path.exists())
