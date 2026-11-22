@@ -105,6 +105,13 @@ class CheckpointAiTests(unittest.TestCase):
         self.assertAlmostEqual(float(conf[0]), 0.85, places=5)
         self.assertAlmostEqual(float(conf[1]), 0.72, places=5)
 
+    def test_2702_bike_viaduct_estimator_empty_returns_zero(self):
+        from PIL import Image
+
+        mod = load_analyzer()
+        empty_night = Image.new("RGB", (1920, 1069), (45, 48, 52))
+        self.assertEqual(mod.estimate_2702_bike_viaduct_count(empty_night), 0)
+
     def test_generated_traffic_json_schema(self):
         traffic_path = ROOT / "data" / "checkpoint-traffic.json"
         self.assertTrue(traffic_path.exists())

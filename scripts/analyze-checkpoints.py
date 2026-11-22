@@ -343,6 +343,56 @@ def detect_vehicles(sess, img, camera_id: str | None = None, conf_thresh: float 
     return boxes[keep], scores[keep], clss[keep]
 
 
+# Dedicated elevated motorcycle viaduct on Camera 2702 (Woodlands Approach / BKE -> Towards JB).
+# At night, packed motorcycles fuse into a solid river of white headlights that COCO box detectors
+# miss completely; occupancy estimation on this bike-only deck recovers dense queue counts.
+WOODLANDS_2702_BIKE_VIADUCT = [
+    (490, 265),
+    (1120, 405),
+    (1870, 965),
+    (1710, 1040),
+    (1085, 455),
+    (490, 315),
+]
+
+
+def estimate_2702_bike_viaduct_count(img) -> int:
+    import numpy as np
+    from PIL import Image, ImageDraw
+
+    W, H = img.size
+    if W < 320 or H < 200:
+        return 0
+    sx, sy = W / 1920.0, H / 1069.0
+    poly = [(int(round(x * sx)), int(round(y * sy))) for x, y in WOODLANDS_2702_BIKE_VIADUCT]
+    mask_img = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(mask_img).polygon(poly, fill=255)
+    roi = np.asarray(mask_img) > 0
+    if not np.any(roi):
+        return 0
+
+    arr = np.asarray(img, dtype=np.float32)
+    luma = 0.299 * arr[:, :, 0] + 0.587 * arr[:, :, 1] + 0.114 * arr[:, :, 2]
+    gx = np.abs(np.diff(luma, axis=1, prepend=luma[:, :1]))
+    gy = np.abs(np.diff(luma, axis=0, prepend=luma[:1, :]))
+    edge_ratio = float(np.mean((gx + gy)[roi] >= 28.0))
+    sky_luma = float(np.mean(luma[: max(1, int(H * 0.15)), int(W * 0.5) :]))
+
+    if sky_luma < 105.0:
+        # Night / dusk: bright white headlight coverage gated by edge texture
+        bright_ratio = float(np.mean(luma[roi] >= 185.0))
+        if bright_ratio <= 0.015 or edge_ratio < 0.13:
+            return 0
+        est = int(round(((bright_ratio - 0.015) / 0.14) * 75.0))
+        return max(0, min(120, est))
+
+    # Daytime: dense helmet/motorcycle high-frequency edge texture vs smooth empty tarmac
+    if edge_ratio <= 0.16:
+        return 0
+    est = int(round(((edge_ratio - 0.16) / 0.22) * 65.0))
+    return max(0, min(100, est))
+
+
 def analyze_checkpoint_group(sess, cameras: list[dict], save_samples_dir: Path | None = None) -> dict:
     from PIL import Image
 
@@ -391,6 +441,16 @@ def analyze_checkpoint_group(sess, cameras: list[dict], save_samples_dir: Path |
                     weighted_jb += weight
                 else:
                     weighted_sg += weight
+
+        if cid == "2702":
+            viaduct_bikes = estimate_2702_bike_viaduct_count(img)
+            if viaduct_bikes > cam_counts["motorcycle"]:
+                extra_bikes = viaduct_bikes - cam_counts["motorcycle"]
+                cam_counts["motorcycle"] += extra_bikes
+                totals["motorcycle"] += extra_bikes
+                cam_dir["towards_jb"] += extra_bikes
+                directions["towards_jb"] += extra_bikes
+                weighted_jb += 0.5 * extra_bikes
 
         cam_summaries.append({
             "camera_id": cid,
