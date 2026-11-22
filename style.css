@@ -5274,3 +5274,120 @@ select.fuel-selector,
 .theme-control {
   width: fit-content;
 }
+
+.sga-pwa-banner {
+  position: fixed;
+  z-index: 135;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: min(410px, calc(100vw - 32px));
+  padding: 12px 14px;
+  border: 1px solid rgba(12, 37, 84, 0.16);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 14px 36px rgba(12, 37, 84, 0.18);
+  backdrop-filter: blur(10px);
+  color: var(--text);
+}
+
+.sga-pwa-main {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.sga-pwa-icon {
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.sga-pwa-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.sga-pwa-copy strong {
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+.sga-pwa-copy span {
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
+.sga-pwa-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.sga-pwa-install {
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.sga-pwa-install:hover {
+  background: var(--brand-strong);
+}
+
+.sga-pwa-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.sga-pwa-close:hover {
+  color: var(--text);
+  border-color: var(--brand);
+}
+
+:root[data-theme="dark"] .sga-pwa-banner {
+  background: rgba(15, 23, 42, 0.96);
+  border-color: rgba(148, 163, 184, 0.28);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 700px) {
+  .sga-pwa-banner {
+    left: 12px;
+    right: 12px;
+    bottom: calc(var(--tabbar-height, 60px) + env(safe-area-inset-bottom, 0px) + 10px);
+    max-width: none;
+  }
+}
+
+@media (display-mode: standalone) {
+  .sga-pwa-banner {
+    display: none !important;
+  }
+}
+
