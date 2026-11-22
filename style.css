@@ -6348,5 +6348,231 @@ table tbody td,
   color: var(--wf-amber);
 }
 
+/* ==========================================================================
+   Universal Fluid Responsive System (iPhone, Android, iPad, Foldable, Desktop)
+   Auto-adapts via viewport breakpoints, clamp(), safe-area-inset, & 44px targets
+   ========================================================================== */
+
+/* Tablet / Split-Screen Laptop (701px–1080px): prevent nav/theme-toggle collision */
+@media (min-width: 701px) and (max-width: 1080px) {
+  .site-header .header-inner {
+    gap: 10px;
+    width: min(var(--content), calc(100% - 24px));
+  }
+
+  .site-header .brand small {
+    display: none;
+  }
+
+  .site-header .primary-nav {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-header .primary-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-header .primary-nav summary {
+    padding: 7px 6px;
+    font-size: 0.75rem;
+  }
+}
+
+/* All Phones & Compact Tablets (<= 780px) */
+@media (max-width: 780px) {
+  /* P0: Fix homepage hero 520px flex-basis dead vertical space when stacked */
+  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .section-header {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .section-header .section-title {
+    flex: 0 1 auto;
+    width: 100%;
+  }
+
+  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .section-header h1 {
+    font-size: clamp(1.22rem, 5.2vw, 1.55rem) !important;
+    line-height: 1.15;
+  }
+
+  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .section-header p:not(.eyebrow) {
+    font-size: 0.84rem !important;
+    line-height: 1.45;
+  }
+
+  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .section-header .card-actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .section-header .card-actions .detail-link {
+    justify-content: center;
+    text-align: center;
+    min-height: 44px;
+    padding: 10px 8px;
+    font-size: 0.78rem;
+  }
+
+  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .home-utility-grid {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  /* P1: Compact subpage heroes so primary content & cameras start above the fold */
+  .page-hero {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .page-hero-main {
+    gap: 12px;
+  }
+
+  .page-hero-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(1.25rem, 5.4vw, 1.55rem);
+    line-height: 1.16;
+  }
+
+  .page-hero p:not(.eyebrow) {
+    font-size: 0.84rem;
+    line-height: 1.45;
+  }
+
+  .page-hero .hero-actions,
+  .specialist-hero-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+  }
+
+  .share-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .share-bar button,
+  .share-bar a {
+    min-height: 40px;
+    padding: 7px 10px;
+    font-size: 0.78rem;
+  }
+
+  /* P1: 44px minimum touch targets (iOS HIG & Android Material) + prevent iOS input zoom (16px) */
+  input[type="text"],
+  input[type="search"],
+  input[type="number"],
+  input[type="email"],
+  select,
+  textarea {
+    font-size: 16px;
+    min-height: 44px;
+  }
+
+  .lr-refresh-btn,
+  .hub-links .chip,
+  .news-controls button,
+  .guide-filters button,
+  .region-tablist [role="tab"],
+  .air-country-tabs button,
+  .detail-link,
+  .back-link,
+  .contact-button,
+  .home-utility-links a,
+  .filter-chip,
+  .vehicle-toggle button,
+  #generate-toto {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lr-breakdown summary,
+  .lr-legend summary {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+  }
+
+  .lane-reports-section {
+    padding: 16px 14px;
+  }
+
+  .lr-card {
+    padding: 14px 12px;
+  }
+
+  /* Compact, touch-friendly tables on phones */
+  .table-wrap,
+  .table-scroll,
+  .petrol-table-wrap,
+  .seo-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+
+  table th,
+  table td,
+  .seo-data-table th,
+  .seo-data-table td,
+  .petrol-table th,
+  .petrol-table td,
+  .effective-table th,
+  .effective-table td {
+    padding: 8px 9px;
+    font-size: 0.78rem;
+  }
+
+  table td a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+  }
+
+  /* Safe-area horizontal padding for notched iPhones & Android gesture bars */
+  .dashboard,
+  .content-page {
+    padding-left: max(12px, env(safe-area-inset-left, 0px));
+    padding-right: max(12px, env(safe-area-inset-right, 0px));
+  }
+}
+
+/* Compact Phones (<= 400px: iPhone SE, small Androids) */
+@media (max-width: 400px) {
+  .lr-btn {
+    padding: 8px 8px;
+    font-size: 0.72rem;
+    gap: 4px;
+  }
+
+  .lr-btn span,
+  .lr-btn kbd {
+    white-space: nowrap;
+  }
+
+  .lr-btn kbd {
+    padding: 1px 4px;
+    font-size: 0.68rem;
+  }
+}
+
+
 
 
