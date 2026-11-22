@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-22T20:50:57.646066+08:00",
+  "last_updated": "2026-11-22T22:25:37.430702+08:00",
   "headlines": [
     {
       "category": "Singapore",
@@ -22,7 +22,7 @@
     {
       "category": "Singapore",
       "title": "Golden Horse Awards 2026: Singapore’s The Violinist wins Best Animated Feature, Best Adapted Screenplay",
-      "summary": "Five Singapore films received a record 15 nominations this year: The Violinist, We Are All Strangers, Ah Girl, Buah and She Said.",
+      "summary": "Five Singapore films received a record 15 nominations this year, with The Violinist and We Are All Strangers among the winners.",
       "image": "https://dam.mediacorp.sg/image/upload/s--wno_b4HG--/c_crop,h_1079,w_1919,x_40,y_1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/10/01/sc033_sh02_still.png?itok=R1feQL8n",
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/entertainment/63rd-golden-horse-awards-2026-winners-singapore-6572846",
@@ -111,6 +111,15 @@
     },
     {
       "category": "Crime",
+      "title": "16-year-old to be charged after allegedly punching a policeman in Bedok",
+      "summary": "The teenager was arrested after he pushed the officer and threw punches at the officer’s face.",
+      "image": "",
+      "source": "Straits Times",
+      "url": "https://www.straitstimes.com/singapore/16-year-old-to-be-charged-after-allegedly-punching-a-policeman-in-bedok",
+      "published": "2026-11-22 22:05"
+    },
+    {
+      "category": "Crime",
       "title": "Man arrested for allegedly driving under influence of drugs after accident in Jurong East",
       "summary": "Two vaporisers and four pods found in his possession were seized.",
       "image": "",
@@ -138,9 +147,54 @@
     },
     {
       "category": "IT & Gadgets",
+      "title": "Nintendo’s Switch 2 console is $50 off for Black Friday",
+      "summary": "Those hoping to save some cash on a Nintendo Switch 2 can do so starting today, November 22nd, through Saturday, December 5th, giving you plenty of time to think about it after...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/257769_Switch_2_AKrales_0093_fe9169.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/gadgets/1038181/nintendo-switch-2-black-friday-deal-mario-kart-world-bundle-2026-sale",
+      "published": "2026-11-22 22:00"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "‘The show is starting soon. Please turn on your headphones.’",
+      "summary": "Up a few concrete steps and through the front door of a 200-year-old row house in New York City, I follow a crowd of people into the 178-seat SoHo Playhouse. As we filter to our...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/love-me-off-broadway-auracast-1.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1038879/off-broadway-love-me-auracast",
+      "published": "2026-11-22 22:00"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "How Tamagotchis got us hooked on digital pets",
+      "summary": "If you were are a kid in the late 1990s, there's a near-100 percent chance you either had a Tamagotchi or knew someone who did. The tiny digital pets came out of nowhere and...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/VRH_Tamagotchi_Site.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/podcast/1039716/tamagotchi-history-digital-pets-anniversary",
+      "published": "2026-11-22 21:15"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Your questions about Apple HomeView’s audio, answered",
+      "summary": "After I published my review of the HomeView, Apple's first smart display, y'all still had a ton of questions about how it works as a smart speaker. So, I spent a bunch more time...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/268864_Smart_home_photos_HMCRAE94.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/tech/1038713/apple-homeview-audio-smart-speaker-spotify-airplay",
+      "published": "2026-11-22 21:00"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "The vibe-coding revolution is coming to all the gadgets",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the vibe-hacking of everything, follow David Pierce. The Stepback...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/AI_vibe_coding_hacker_hardware.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+      "published": "2026-11-22 21:00"
+    },
+    {
+      "category": "IT & Gadgets",
       "title": "Exclusive-Like SpaceX, Anthropic ran an unusual IPO process, chafing some bankers",
       "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--drI9xcNC--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-22T110252Z_1_LYNXNPEMAL06L_RTROPTP_3_ANTHROPIC-IPO-PROCESS.JPG?itok=cVhSJPU6",
+      "image": "https://dam.mediacorp.sg/image/upload/s--Me1QiBnX--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-22T125442Z_2_LYNXNPEMAL06L_RTROPTP_3_ANTHROPIC-IPO-PROCESS.JPG?itok=FkVu__3A",
       "source": "CNA Business",
       "url": "https://www.channelnewsasia.com/business/exclusive-spacex-anthropic-ran-unusual-ipo-process-chafing-some-bankers-6572821",
       "published": "2026-11-22 19:02"
@@ -180,51 +234,6 @@
       "source": "SoyaCincau",
       "url": "https://soyacincau.com/2026/11/22/myevoc-malaysia-needs-better-enforcement-ev-charging-safety-not-more-regulations/",
       "published": "2026-11-22 10:14"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "4 Singapore Semiconductor Stocks To Watch After The Recent Tech Sell-Off: AEM Holdings; UMS Integration; Frencken Group; Micro-Mechanics",
-      "summary": "Three Singapore semiconductor stocks have fallen around 30% in a month. The post 4 Singapore Semiconductor Stocks To Watch After The Recent Tech Sell-Off: AEM Holdings; UMS...",
-      "image": "https://dollarsandsense.sg/wp-content/uploads/2026/11/iStock-2219867997-300x200.jpg",
-      "source": "DollarsAndSense",
-      "url": "https://dollarsandsense.sg/singapore-semiconductor-stocks-tech-sell-off/",
-      "published": "2026-11-22 08:00"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Fullerton Health data breach: Migrant workers face risks of employment scams, impersonation",
-      "summary": "Worker groups say leaked names, addresses and phone numbers could make fake work permit and job messages harder to spot.",
-      "image": "https://dam.mediacorp.sg/image/upload/s--exbfVRmU--/c_crop,h_664,w_1181,x_1,y_7/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2024/11/08/20241106_raj_br_clinics_fullerton.jpg?itok=MzhUGsd7",
-      "source": "CNA Singapore",
-      "url": "https://www.channelnewsasia.com/singapore/fullerton-health-data-breach-migrant-workers-6565521",
-      "published": "2026-11-22 06:00"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Amazon is complaining about NYC Council on shipping labels, too",
-      "summary": "Amazon is leaving no venue unexplored in its fight against the New York City Council and the Delivery Protection Act. The company is now putting labels on shipments claiming that...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/PXL_20261121_204528314.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1039564/amazon-nyc-council-packages-shipping-label",
-      "published": "2026-11-22 05:59"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "The UN fails to agree on rules regulating ‘killer robots’",
-      "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\"...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13611631/503831564.jpg.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
-      "published": "2026-11-22 04:03"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "The FBI and USDA were reportedly hacked",
-      "summary": "Friday, it was reported that both the US Department of Agriculture (USDA) and the FBI were hacked. In reporting on the FBI hack, CNN noted that this is the second such attack on...",
-      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/23318430/akrales_220309_4977_0038.jpg?quality=90&strip=all&crop=0,0,100,100",
-      "source": "The Verge",
-      "url": "https://www.theverge.com/tech/1039543/fbi-usda-hacked",
-      "published": "2026-11-22 01:42"
     },
     {
       "category": "Finance",
