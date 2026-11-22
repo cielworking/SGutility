@@ -5583,12 +5583,12 @@ body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .secti
 }
 
 body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .section-header .section-title {
-  flex: 1 1 560px;
+  flex: 1 1 520px;
   min-width: 0;
 }
 
 body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .section-header .card-actions {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
