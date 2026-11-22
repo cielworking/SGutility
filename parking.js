@@ -47,6 +47,39 @@
     return searchedLocation || userLocation;
   }
 
+  function cleanRateText(raw) {
+    return String(raw || "")
+      .replace(/\s+/g, " ")
+      .replace(/\bor part thereof\.?/gi, "")
+      .replace(/Monday to Thursday/gi, "Mon–Thu")
+      .replace(/Monday to Friday/gi, "Mon–Fri")
+      .replace(/Monday to Saturday/gi, "Mon–Sat")
+      .replace(/Friday to Sunday and Public Holidays?/gi, "Fri–Sun & PH")
+      .replace(/Saturday, Sunday and Public Holidays?/gi, "Sat, Sun & PH")
+      .replace(/Sundays? and Public Holidays?/gi, "Sun & PH")
+      .replace(/\.00(am|pm)/gi, "$1")
+      .replace(/\s+([;,])/g, "$1")
+      .replace(/\.\s*$/g, "")
+      .trim();
+  }
+
+  function extractShortPrice(text, fallback) {
+    const t = cleanRateText(text);
+    if (!t || /^commercial gantry/i.test(t) || t === "-") return fallback;
+    if (/^free\b/i.test(t)) return "Free";
+    const m = t.match(/\$\d+(?:\.\d{2})?\s*(?:\/\s*(?:1st\s*hr|hr|hour|30\s*m(?:in)?|15\s*m(?:in)?|min|entry|day|session)|for\s+1st\s+\d*\s*hrs?|per\s+(?:entry|hr|hour|min|30\s*min|day))?/i);
+    if (m) {
+      return m[0]
+        .replace(/\bfor 1st hr\b/i, "/ 1st hr")
+        .replace(/\bper entry\b/i, "/ entry")
+        .replace(/\bper hr\b|\bper hour\b/i, "/ hr")
+        .replace(/\bper min\b/i, "/ min")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+    return t.length > 26 ? t.slice(0, 24).trim() + "…" : t;
+  }
+
   function estimateCost(cp) {
     const dayEl = document.getElementById("parkingDayType");
     const hrsEl = document.getElementById("parkingDuration");
@@ -54,23 +87,23 @@
     const hours = Number(hrsEl ? hrsEl.value : 2);
 
     if (vehicleMode === "motorcycle") {
-      if (cp.free_bike) return cp.bike_rate || "Free motorcycle parking";
-      if (day === "sun_ph" && cp.free_sun_ph) return "Free (Sun & PH 7am–10:30pm)";
+      if (cp.free_bike) return "Free bike parking";
+      if (day === "sun_ph" && cp.free_sun_ph) return "Free (Sun & PH)";
       if (cp.source_type === "LTA Commercial Rates" || cp.source_type === "SG Commercial Directory" || cp.source_type === "Commercial reference") {
-        return cp.bike_rate || "Commercial gantry rate";
+        return extractShortPrice(cp.bike_rate, "Check signage");
       }
-      return hours >= 10 ? "$0.65 day + $0.65 night cap" : "$0.10/30m ($0.65 cap/session)";
+      return hours >= 10 ? "$0.65 day + $0.65 night" : "$0.65 cap / session";
     }
 
-    if (day === "sun_ph" && cp.free_sun_ph) return "Free (Sun & PH 7am–10:30pm)";
+    if (day === "sun_ph" && cp.free_sun_ph) return "Free (Sun & PH)";
     if (cp.source_type === "LTA Commercial Rates") {
-      if (day === "sun_ph" && cp.sunday_rate && cp.sunday_rate !== "-") return `Sun/PH: ${cp.sunday_rate}`;
-      return cp.weekday_rate || cp.car_rate;
+      const src = (day === "sun_ph" && cp.sunday_rate && cp.sunday_rate !== "-") ? cp.sunday_rate : (cp.weekday_rate || cp.car_rate);
+      return extractShortPrice(src, "Gantry rate");
     }
     if (cp.source_type === "SG Commercial Directory" || cp.source_type === "Commercial reference") {
-      return cp.car_rate || "Commercial gantry rate";
+      return extractShortPrice(cp.car_rate, "Check signage");
     }
-    if (hours === 10) return cp.night_parking ? "$5.00 max overnight cap" : "No overnight parking";
+    if (hours === 10) return cp.night_parking ? "$5.00 overnight cap" : "No overnight";
     const halfHours = Math.max(1, Math.ceil(hours * 2));
     const unit = cp.area_tier === "central" ? 1.2 : 0.6;
     return `$${(halfHours * unit).toFixed(2)} est. (${hours}h HDB)`;
@@ -313,15 +346,47 @@
   }
 
   function rateDetailsHtml(cp) {
+    const searchQuery = encodeURIComponent(`${cp.name} Singapore ${vehicleMode === "motorcycle" ? "motorcycle" : "car"} parking rates`);
+    const liveSearchLink = `<a class="parking-rate-search" href="https://www.google.com/search?q=${searchQuery}" target="_blank" rel="noopener noreferrer">Check live rate ↗</a>`;
+
     if (cp.source_type === "LTA Commercial Rates" && vehicleMode === "car") {
-      const parts = [];
-      if (cp.weekday_rate && cp.weekday_rate !== "-") parts.push(`Wkday: ${esc(cp.weekday_rate)}`);
-      if (cp.weekday_rate_2 && cp.weekday_rate_2 !== "-") parts.push(esc(cp.weekday_rate_2));
-      if (cp.saturday_rate && cp.saturday_rate !== "-") parts.push(`Sat: ${esc(cp.saturday_rate)}`);
-      if (cp.sunday_rate && cp.sunday_rate !== "-") parts.push(`Sun/PH: ${esc(cp.sunday_rate)}`);
-      return parts.join(" · ");
+      const rows = [];
+      const wk1 = cleanRateText(cp.weekday_rate);
+      const wk2 = cleanRateText(cp.weekday_rate_2);
+      const sat = cleanRateText(cp.saturday_rate);
+      const sun = cleanRateText(cp.sunday_rate);
+
+      const satSameWk = /^same as weekday/i.test(sat);
+      const sunSameSat = /^same as sat/i.test(sun);
+      const sunSameWk = /^same as weekday/i.test(sun);
+
+      if (wk1 && wk1 !== "-") {
+        const label = (satSameWk && (sunSameWk || sunSameSat)) ? "Daily" : "Weekday";
+        rows.push([label, wk1]);
+      }
+      if (wk2 && wk2 !== "-" && wk2.toLowerCase() !== wk1.toLowerCase()) {
+        rows.push(["Evening", wk2]);
+      }
+      if (sat && sat !== "-" && !satSameWk) {
+        const label = sunSameSat ? "Sat & Sun" : "Saturday";
+        rows.push([label, sat]);
+      }
+      if (sun && sun !== "-" && !sunSameSat && !(satSameWk && sunSameWk)) {
+        rows.push(["Sun & PH", sun]);
+      }
+
+      if (rows.length) {
+        return `<div class="parking-rate-rows">${rows.map(([k, v]) => `<div class="parking-rate-row"><span class="parking-rate-label">${esc(k)}</span><span class="parking-rate-val">${esc(v)}</span></div>`).join("")}</div>`;
+      }
     }
-    return esc(vehicleMode === "motorcycle" ? cp.bike_rate : cp.car_rate);
+
+    const raw = vehicleMode === "motorcycle" ? cp.bike_rate : cp.car_rate;
+    const cleaned = cleanRateText(raw);
+    if (!cleaned || /^commercial gantry rate/i.test(cleaned)) {
+      return `<div class="parking-rate-empty"><span>Gantry rate — check signage on arrival</span>${liveSearchLink}</div>`;
+    }
+    const label = vehicleMode === "motorcycle" ? (cp.free_bike ? "Free" : "Bike") : (cp.source_type === "HDB / data.gov.sg" ? "HDB" : "Rate");
+    return `<div class="parking-rate-rows"><div class="parking-rate-row"><span class="parking-rate-label${cp.free_bike && vehicleMode === "motorcycle" ? " is-free" : ""}">${label}</span><span class="parking-rate-val">${esc(cleaned)}</span></div></div>`;
   }
 
   function renderCards(items) {

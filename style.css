@@ -4807,14 +4807,85 @@ select.fuel-selector,
   color: #34d399;
 }
 
+.parking-rate-rows {
+  display: grid;
+  gap: 5px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface-muted, var(--bg-soft, #0f172a)) 55%, transparent);
+  border: 1px solid var(--border);
+}
+
+.parking-rate-row {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 0.8rem;
+  line-height: 1.42;
+}
+
+.parking-rate-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--brand-strong);
+  white-space: nowrap;
+}
+
+.parking-rate-label.is-free {
+  color: #059669;
+}
+
+:root[data-theme="dark"] .parking-rate-label.is-free {
+  color: #34d399;
+}
+
+.parking-rate-val {
+  color: var(--text);
+}
+
+.parking-rate-empty {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: 1px dashed var(--border-strong);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.parking-rate-search {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--brand-strong);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.parking-rate-search:hover {
+  text-decoration: underline;
+}
+
 .parking-card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  padding-top: 6px;
+  padding-top: 8px;
   border-top: 1px solid var(--border);
-  font-size: 0.82rem;
+  font-size: 0.84rem;
+}
+
+.parking-card-footer strong {
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .parking-card-actions {
