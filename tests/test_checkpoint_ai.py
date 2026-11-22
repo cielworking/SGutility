@@ -35,12 +35,23 @@ class CheckpointAiTests(unittest.TestCase):
         self.assertEqual(mod.classify_direction("2701", 1150, 775, 1920, 1069), "towards_sg")
         self.assertEqual(mod.classify_direction("2701", 200, 150, 1920, 1069), "ignored")
 
+    def test_tuas_contraflow_windows(self):
+        mod = load_analyzer()
+        # Weekday morning contraflow
+        self.assertTrue(mod.is_tuas_contraflow("2026-11-23T07:30:00+08:00"))
+        # Sunday night return contraflow (10:31 PM SGT)
+        self.assertTrue(mod.is_tuas_contraflow("2026-11-22T22:31:00+08:00"))
+        # Midday weekday (no contraflow)
+        self.assertFalse(mod.is_tuas_contraflow("2026-11-23T14:00:00+08:00"))
+
     def test_direction_zones_for_tuas_4703(self):
         mod = load_analyzer()
         # 4703 covers towards_sg (upper-right carriageway) and towards_jb (lower curved viaduct & bike ramp); sea is ignored
-        self.assertEqual(mod.classify_direction("4703", 1250, 220, 1920, 1069), "towards_sg")
-        self.assertEqual(mod.classify_direction("4703", 820, 450, 1920, 1069), "towards_jb")
-        self.assertEqual(mod.classify_direction("4703", 200, 400, 1920, 1069), "ignored")
+        self.assertEqual(mod.classify_direction("4703", 1250, 220, 1920, 1069, "2026-11-23T14:00:00+08:00"), "towards_sg")
+        self.assertEqual(mod.classify_direction("4703", 820, 450, 1920, 1069, "2026-11-23T14:00:00+08:00"), "towards_jb")
+        self.assertEqual(mod.classify_direction("4703", 200, 400, 1920, 1069, "2026-11-23T14:00:00+08:00"), "ignored")
+        # During Sunday night contraflow, middle viaduct lanes belong to towards_sg
+        self.assertEqual(mod.classify_direction("4703", 1100, 380, 1920, 1069, "2026-11-22T22:31:00+08:00"), "towards_sg")
 
     def test_direction_zones_for_tuas_4713(self):
         mod = load_analyzer()

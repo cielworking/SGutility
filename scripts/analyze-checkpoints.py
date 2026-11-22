@@ -101,8 +101,14 @@ def is_tuas_contraflow(iso_ts: str | None) -> bool:
         dt_sgt = dt.astimezone(SGT)
     except Exception:
         dt_sgt = datetime.now(SGT)
+    wd = dt_sgt.weekday()  # 0=Mon .. 6=Sun
     hour = dt_sgt.hour + dt_sgt.minute / 60.0
-    return dt_sgt.weekday() < 5 and 5.0 <= hour < 10.0
+    # Weekday morning peak (Mon-Fri 05:00-10:00 SGT) + Sunday evening/night return peak (Sun 15:00-24:00, Mon 00:00-01:00 SGT)
+    return (
+        (wd < 5 and 5.0 <= hour < 10.0)
+        or (wd == 6 and hour >= 15.0)
+        or (wd == 0 and hour < 1.0)
+    )
 
 
 def classify_direction(camera_id: str, cx: float, cy: float, width: int, height: int, iso_ts: str | None = None) -> str:

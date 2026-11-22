@@ -56,9 +56,14 @@ const MODEL_VERSION = "v10-yolox-detr-calibrated";
 function isTuasContraflow(isoTs) {
   const d = isoTs ? new Date(isoTs) : new Date();
   const sgt = new Date(d.getTime() + 8 * 3600 * 1000);
-  const day = sgt.getUTCDay(); // 1=Mon .. 5=Fri
+  const day = sgt.getUTCDay(); // 0=Sun, 1=Mon .. 6=Sat
   const hour = sgt.getUTCHours() + sgt.getUTCMinutes() / 60;
-  return day >= 1 && day <= 5 && hour >= 5.0 && hour < 10.0;
+  // Weekday morning peak (Mon-Fri 05:00-10:00 SGT) + Sunday evening/night return peak (Sun 15:00-24:00, Mon 00:00-01:00 SGT)
+  return (
+    (day >= 1 && day <= 5 && hour >= 5.0 && hour < 10.0) ||
+    (day === 0 && hour >= 15.0) ||
+    (day === 1 && hour < 1.0)
+  );
 }
 
 function pointInPoly(x, y, poly) {
