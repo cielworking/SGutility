@@ -4,7 +4,10 @@ import tempfile
 import unittest
 from datetime import timedelta
 from pathlib import Path
+from types import SimpleNamespace
 from unittest.mock import patch
+
+import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -37,6 +40,52 @@ class WeatherTests(unittest.TestCase):
             rows=update.singapore_air_history('psi')
         self.assertEqual(len(rows),2)
         self.assertEqual(rows[0]['timestamp'],first['timestamp'])
+
+    def test_sg_requests_are_paced_and_429_waits_past_rate_limit_window(self):
+        resp_429 = SimpleNamespace(status_code=429, headers={})
+        resp_200 = SimpleNamespace(
+            status_code=200,
+            headers={},
+            raise_for_status=lambda: None,
+            json=lambda: {"code": 0, "data": {"items": [{"ok": True}]}},
+        )
+        now = [100.0]
+        sleeps = []
+
+        def fake_sleep(seconds):
+            sleeps.append(seconds)
+            now[0] += seconds
+
+        with (
+            patch.object(update, "_last_sg_request", None),
+            patch.object(update.time, "monotonic", side_effect=lambda: now[0]),
+            patch.object(update.time, "sleep", side_effect=fake_sleep),
+            patch.object(update.session, "get", side_effect=[resp_200, resp_429, resp_200]) as mock_get,
+        ):
+            first = update.get(update.BASE_SG + "psi")
+            second = update.get(update.BASE_SG + "pm25", date="2026-11-22")
+        self.assertEqual(first["code"], 0)
+        self.assertEqual(second["code"], 0)
+        self.assertEqual(mock_get.call_count, 3)
+        self.assertGreaterEqual(sleeps[0], update.SG_REQUEST_INTERVAL)
+        self.assertGreaterEqual(sleeps[1], update.RATE_LIMIT_WAIT_SECONDS)
+
+    def test_sg_429_exhaustion_is_bounded_and_preserves_cache(self):
+        def raise_http_429():
+            raise requests.HTTPError("429 Too Many Requests")
+
+        resp_429 = SimpleNamespace(status_code=429, headers={"Retry-After": "12"}, raise_for_status=raise_http_429)
+        sleeps = []
+        with (
+            patch.object(update, "_last_sg_request", None),
+            patch.object(update, "SG_REQUEST_INTERVAL", 0),
+            patch.object(update.time, "sleep", side_effect=sleeps.append),
+            patch.object(update.session, "get", return_value=resp_429) as mock_get,
+        ):
+            with self.assertRaises(requests.HTTPError):
+                update.get(update.BASE_SG + "pm25")
+        self.assertEqual(mock_get.call_count, update.MAX_RATE_LIMIT_RETRIES + 1)
+        self.assertEqual(sleeps, [12.0, 12.0])
 
     def test_regional_outlook_uses_official_regions_and_drops_expired_periods(self):
         now = layout.datetime.now(layout.TZ)

@@ -1,5 +1,6 @@
 """Cache official public feeds. Each source fails independently; retain last good data."""
 import json
+import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -11,14 +12,51 @@ ROOT = Path(__file__).resolve().parents[1]
 SGT = timezone(timedelta(hours=8))
 BASE_SG = "https://api-open.data.gov.sg/v2/real-time/api/"
 APIMS = "https://eqms.doe.gov.my/api3/publicmapproxy/PUBLIC_DISPLAY/CAQM_MCAQM_Current_Reading/MapServer/0/query"
+# data.gov.sg enforces an unauthenticated 6-request burst limit with a ~10s window
+# and omits Retry-After headers on 429 responses. Space BASE_SG calls and wait past
+# that 10s window on bounded 429 retries so sg_pm25_history is never starved.
+SG_REQUEST_INTERVAL = 2.2
+RATE_LIMIT_WAIT_SECONDS = 10.5
+MAX_RATE_LIMIT_RETRIES = 2
+_last_sg_request = None
+
 session = requests.Session()
-session.mount("https://", HTTPAdapter(max_retries=Retry(total=2, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504])))
+session.mount("https://", HTTPAdapter(max_retries=Retry(total=2, backoff_factor=1, status_forcelist=[500, 502, 503, 504])))
+
+
+def _pace_sg_request():
+    global _last_sg_request
+    if _last_sg_request is not None and SG_REQUEST_INTERVAL > 0:
+        remaining = SG_REQUEST_INTERVAL - (time.monotonic() - _last_sg_request)
+        if remaining > 0:
+            time.sleep(remaining)
+    _last_sg_request = time.monotonic()
+
+
+def _retry_after_seconds(response):
+    raw = (getattr(response, "headers", None) or {}).get("Retry-After")
+    if raw:
+        try:
+            return max(1.0, min(float(raw), 30.0))
+        except ValueError:
+            pass
+    return RATE_LIMIT_WAIT_SECONDS
 
 
 def get(url, **params):
-    r = session.get(url, params=params, timeout=35)
-    r.raise_for_status()
-    return r.json()
+    is_sg = url.startswith(BASE_SG)
+    for attempt in range(MAX_RATE_LIMIT_RETRIES + 1):
+        if is_sg:
+            _pace_sg_request()
+        r = session.get(url, params=params, timeout=35)
+        if r.status_code == 429 and attempt < MAX_RATE_LIMIT_RETRIES:
+            time.sleep(_retry_after_seconds(r))
+            if is_sg:
+                global _last_sg_request
+                _last_sg_request = time.monotonic()
+            continue
+        r.raise_for_status()
+        return r.json()
 
 
 def sg(endpoint):
