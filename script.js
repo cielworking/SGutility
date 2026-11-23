@@ -1670,6 +1670,23 @@ function updateTravelBriefing(force = false) {
   }
 }
 
+function formatNextAiScan(isoStr, intervalMins = 15) {
+  if (!isoStr) return "";
+  const ms = Date.parse(isoStr);
+  if (!Number.isFinite(ms)) return "";
+  try {
+    const nextDate = new Date(ms + intervalMins * 60 * 1000);
+    return nextDate.toLocaleTimeString("en-SG", {
+      timeZone: "Asia/Singapore",
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+    });
+  } catch {
+    return "";
+  }
+}
+
 function renderTravelAdvisor() {
   updateTravelBriefing();
   const advisor = document.querySelector("[data-travel-advisor]");
@@ -1686,13 +1703,16 @@ function renderTravelAdvisor() {
   const wClass = wJb <= tJb ? " is-recommended" : "";
   const tClass = tJb < wJb ? " is-recommended" : "";
 
+  const nextAdv = formatNextAiScan(checkpointTraffic.last_updated, 15);
+  const nextAdvTxt = nextAdv ? ` · Next AI scan ~${escapeHtml(nextAdv)}` : "";
+
   advisor.innerHTML = `
     <div class="ai-traffic-head">
       <div>
         <span class="ai-traffic-kicker">AI Crossing Advisor · Towards JB &amp; Return</span>
         <strong>Lighter SG → JB approach now: ${escapeHtml(jbRec)}</strong>
       </div>
-      <span class="ai-traffic-time">Updated ${escapeHtml(formatTimestamp(checkpointTraffic.last_updated))}</span>
+      <span class="ai-traffic-time">AI checked ${escapeHtml(formatTimestamp(checkpointTraffic.last_updated))}${nextAdvTxt}</span>
     </div>
     <div class="travel-advisor-grid">
       <div class="travel-route-box${wClass}">
@@ -1702,7 +1722,7 @@ function renderTravelAdvisor() {
         <a class="detail-link" href="/woodlands-checkpoint.html">All Woodlands cameras →</a>
       </div>
       <div class="travel-route-box${tClass}">
-        <strong>Tuas Second Link (Cam 4703 &amp; 4712)</strong>
+        <strong>Tuas Second Link (Cam 4703 &amp; 4713)</strong>
         <span>Status: <strong>${escapeHtml(t.status || "—")}</strong> (${tTotal} vehicles detected)</span>
         <span>Towards JB: ${tJb} (${escapeHtml(t.towards_jb_status || "—")}) · Towards SG: ${Number(t.towards_sg || 0)} (${escapeHtml(t.towards_sg_status || "—")})</span>
         <a class="detail-link" href="/tuas-checkpoint.html">All Tuas cameras →</a>
@@ -1725,12 +1745,14 @@ function renderCheckpointAi() {
     const camIds = (loc.cameras || []).map(c => c.camera_id).filter(Boolean).join(" & ");
     const camLabel = camIds ? ` (Cam ${escapeHtml(camIds)})` : "";
     const camTs = (loc.cameras || []).find(c => c.timestamp)?.timestamp || checkpointTraffic.last_updated;
+    const nextScan = formatNextAiScan(checkpointTraffic.last_updated || camTs, 15);
+    const nextScanTxt = nextScan ? ` · Next scan ~${escapeHtml(nextScan)}` : "";
     panel.innerHTML = `
       <div class="ai-traffic-head">
         <div>
           <span class="ai-traffic-kicker">AI traffic density${camLabel}</span>
           <strong>${escapeHtml(status)}</strong>
-          <span class="ai-traffic-time"> · Updated ${escapeHtml(formatTimestamp(camTs))}</span>
+          <span class="ai-traffic-time"> · AI checked ${escapeHtml(formatTimestamp(camTs))}${nextScanTxt}</span>
         </div>
         <span class="ai-status-pill is-${escapeHtml(slug)}">${escapeHtml(status)} (${Number(loc.total_vehicles || 0)} detected)</span>
       </div>

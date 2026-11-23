@@ -124,7 +124,18 @@ def render_checkpoint_ai(traffic, location_key):
     cam_ids = " &amp; ".join(str(c.get("camera_id")) for c in (loc.get("cameras") or []) if c.get("camera_id"))
     cam_label = f" (Cam {cam_ids})" if cam_ids else ""
     cam_ts = next((c.get("timestamp") for c in (loc.get("cameras") or []) if c.get("timestamp")), None) or traffic.get("last_updated")
-    checked = html.escape(updated_label(cam_ts))
+    checked = html.escape(updated_label(cam_ts).replace("Updated ", "AI checked "))
+    next_scan = ""
+    try:
+        base_dt = datetime.fromisoformat(str(traffic.get("last_updated") or cam_ts).replace("Z", "+00:00"))
+        if base_dt.tzinfo is None:
+            base_dt = base_dt.replace(tzinfo=SGT)
+        next_dt = base_dt.astimezone(SGT) + timedelta(minutes=15)
+        h12 = next_dt.hour % 12 or 12
+        ampm = "pm" if next_dt.hour >= 12 else "am"
+        next_scan = f" · Next scan ~{h12}:{next_dt.strftime('%M')} {ampm}"
+    except Exception:
+        next_scan = ""
     note = (
         "Live AI count: Cam 4713 (JOHOR queue) + Cam 4703 (JB ramp/bikes & SG lanes); indoor immigration hall queues may differ."
         if location_key == "tuas"
@@ -135,7 +146,7 @@ def render_checkpoint_ai(traffic, location_key):
         <div>
           <span class="ai-traffic-kicker">AI traffic density{cam_label}</span>
           <strong>{html.escape(status)}</strong>
-          <span class="ai-traffic-time"> · {checked}</span>
+          <span class="ai-traffic-time"> · {checked}{next_scan}</span>
         </div>
         <span class="ai-status-pill is-{status_slug}">{html.escape(status)} ({total} detected)</span>
       </div>
@@ -310,13 +321,24 @@ def render_travel_advisor(traffic):
     rec = "Tuas Second Link" if t_jb < w_jb else "Woodlands Causeway" if w_jb < t_jb else "Tie — check both cameras"
     w_cls = " is-recommended" if w_jb <= t_jb else ""
     t_cls = " is-recommended" if t_jb < w_jb else ""
-    checked = html.escape(updated_label(traffic.get("last_updated")))
+    checked = html.escape(updated_label(traffic.get("last_updated")).replace("Updated ", "AI checked "))
+    next_adv = ""
+    try:
+        base_dt = datetime.fromisoformat(str(traffic.get("last_updated")).replace("Z", "+00:00"))
+        if base_dt.tzinfo is None:
+            base_dt = base_dt.replace(tzinfo=SGT)
+        next_dt = base_dt.astimezone(SGT) + timedelta(minutes=15)
+        h12 = next_dt.hour % 12 or 12
+        ampm = "pm" if next_dt.hour >= 12 else "am"
+        next_adv = f" · Next AI scan ~{h12}:{next_dt.strftime('%M')} {ampm}"
+    except Exception:
+        next_adv = ""
     return f"""<div class="ai-traffic-head">
       <div>
         <span class="ai-traffic-kicker">AI Crossing Advisor · Towards JB &amp; Return</span>
         <strong>Lighter SG → JB approach now: {html.escape(rec)}</strong>
       </div>
-      <span class="ai-traffic-time">{checked}</span>
+      <span class="ai-traffic-time">{checked}{next_adv}</span>
     </div>
     <div class="travel-advisor-grid">
       <div class="travel-route-box{w_cls}">
