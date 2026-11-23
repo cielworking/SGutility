@@ -448,16 +448,48 @@
     return `<div class="parking-rate-rows"><div class="parking-rate-row"><span class="parking-rate-label${cp.free_bike && vehicleMode === "motorcycle" ? " is-free" : ""}">${label}</span>${formatRateLines(cleaned)}</div></div>`;
   }
 
+  let visibleLimit = 0;
+  let lastItemsKey = "";
+
+  function pageStep() {
+    return window.matchMedia && window.matchMedia("(max-width: 700px)").matches ? 12 : 30;
+  }
+
   function renderCards(items) {
     const grid = document.getElementById("parkingResults");
     const countNote = document.getElementById("parkingResultNote");
     if (!grid) return;
 
-    const shown = items.slice(0, 60);
+    const itemsKey = items.length + ":" + (items[0] ? items[0].cp.id : "");
+    if (itemsKey !== lastItemsKey || !visibleLimit) {
+      lastItemsKey = itemsKey;
+      visibleLimit = pageStep();
+    }
+
+    const shown = items.slice(0, Math.min(visibleLimit, 120));
     if (countNote) {
       countNote.textContent = items.length
-        ? `Showing ${shown.length} of ${items.length.toLocaleString()} matching carparks — click any carpark card below to pin and zoom it on the map.`
+        ? `Showing ${shown.length} of ${items.length.toLocaleString()} matching carparks — tap a carpark card to pin and zoom it on the map.`
         : "No carparks match those filters. Try clearing a filter or searching a Singapore postal code (e.g. 460401) or area.";
+    }
+
+    let moreWrap = document.getElementById("parkingMoreWrap");
+    if (!moreWrap) {
+      moreWrap = document.createElement("div");
+      moreWrap.id = "parkingMoreWrap";
+      moreWrap.className = "parking-more-wrap";
+      grid.insertAdjacentElement("afterend", moreWrap);
+    }
+    const canShowMore = shown.length < Math.min(items.length, 120);
+    moreWrap.innerHTML = canShowMore
+      ? `<button type="button" class="parking-more-btn">Show ${Math.min(pageStep(), Math.min(items.length, 120) - shown.length)} more carparks</button>`
+      : "";
+    const moreBtn = moreWrap.querySelector(".parking-more-btn");
+    if (moreBtn) {
+      moreBtn.addEventListener("click", () => {
+        visibleLimit += pageStep();
+        renderCards(items);
+      });
     }
 
     grid.innerHTML = shown.map(({ cp, lotInfo, dist }) => `

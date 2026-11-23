@@ -6032,6 +6032,303 @@ table tbody td,
 }
 
 /* ==========================================================================
+   Desktop/Mobile UX Pass (visual audit): readable prose, wider desktop,
+   compact mobile heroes, sane CTAs, parking pagination
+   ========================================================================== */
+
+/* Prose is sans-serif for readability; Chivo Mono stays on headings, figures, nav, buttons, tables */
+:root {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Chivo Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4,
+.brand strong,
+.primary-nav summary,
+.primary-nav a,
+.nav-panel a,
+button,
+.button,
+.detail-link,
+.back-link,
+.contact-button,
+.eyebrow,
+.home-utility-kicker,
+.parking-tag,
+.parking-code,
+.lr-badge,
+.lr-btn,
+.lr-zone-tag,
+.sga-hub-tab,
+.petrol-header,
+.effective-header,
+th,
+kbd,
+code,
+strong.figure,
+.row > strong,
+.petrol-row > span,
+.effective-table-row > span,
+.parking-card-footer strong,
+.live-badge,
+.toto-numbers span,
+.number-grid span {
+  font-family: var(--font-mono);
+}
+
+p, li, dd, dt, td, small, summary p,
+.section-note,
+.ai-traffic-disclaimer,
+.note,
+.lr-sub,
+.lr-latest,
+.lr-footer-note,
+.parking-rate-val,
+.cp-briefing-val,
+.seo-guide p,
+.seo-guide li {
+  font-family: var(--font-sans);
+}
+
+:root[data-theme="dark"] {
+  --muted: #a9b4c2;
+}
+
+/* Wider desktop so wide screens are not 40% empty and side-by-side tables fit */
+@media (min-width: 1440px) {
+  :root {
+    --content: 1320px;
+  }
+
+  .content-page {
+    width: min(1320px, calc(100% - 64px));
+  }
+}
+
+@media (min-width: 1700px) {
+  :root {
+    --content: 1400px;
+  }
+
+  .content-page {
+    width: min(1400px, calc(100% - 96px));
+  }
+}
+
+/* Side-by-side data cards: tables must scroll inside the card, never clip */
+.sga-card-pair .table-wrap,
+.sga-card-pair .table-scroll,
+.sga-card-pair [class*="table"] {
+  max-width: 100%;
+}
+
+.sga-card-pair table {
+  min-width: 100%;
+}
+
+.sga-card-pair .specialist-data-card > p,
+.sga-card-pair .section-header > p {
+  margin-left: 0;
+}
+
+/* Hero CTAs: real buttons, arrows never orphaned */
+.page-hero .detail-link,
+.page-hero .back-link,
+.specialist-hero .detail-link,
+.card-actions .detail-link {
+  padding: 10px 16px;
+  font-size: 0.84rem;
+  white-space: nowrap;
+}
+
+/* iPad / small laptop header: stay on one row */
+@media (min-width: 701px) and (max-width: 1080px) {
+  .site-header .header-inner {
+    flex-wrap: nowrap;
+  }
+
+  .site-header .brand strong {
+    font-size: 16px;
+  }
+
+  .site-header .primary-nav {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
+
+  .site-header .primary-nav summary {
+    padding: 6px 5px;
+    font-size: 0.7rem;
+    letter-spacing: -0.03em;
+  }
+
+  .site-header .theme-choice {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+/* Parking: Show-more instead of rendering 60 cards at once */
+.parking-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 4px;
+}
+
+.parking-more-btn {
+  min-height: 46px;
+  padding: 11px 22px;
+  border: 2px solid var(--wf-ink);
+  border-radius: 0;
+  background: var(--wf-cobalt);
+  color: var(--wf-accent-ink);
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 0.86rem;
+  cursor: pointer;
+}
+
+.parking-more-btn:hover {
+  background: var(--wf-ink);
+  border-color: var(--wf-ink);
+  color: var(--wf-amber);
+}
+
+/* Parking desktop: map and list share the screen so carparks are visible sooner */
+@media (min-width: 1100px) {
+  .parking-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+  }
+
+  .parking-split .parking-map-col {
+    position: sticky;
+    top: calc(var(--header-height) + 12px);
+  }
+
+  .parking-split .parking-map-col #parkingMap {
+    height: min(72vh, 720px);
+    margin-bottom: 0;
+  }
+
+  .parking-split .parking-cards-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .parking-split #parkingResultNote {
+    margin: 0 0 12px;
+  }
+}
+
+/* COE desktop: scannable 5-card KPI departure-board grid instead of 1050px empty-middle rows */
+@media (min-width: 780px) {
+  #coeResult {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+
+  #coeResult > .row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px;
+    border: 2px solid var(--wf-ink);
+    border-top: 4px solid var(--wf-cobalt);
+    background: var(--wf-paper);
+  }
+
+  :root[data-theme="dark"] #coeResult > .row {
+    border-color: var(--wf-rule);
+    border-top-color: var(--wf-cobalt);
+    background: var(--wf-paper-3);
+  }
+
+  #coeResult > .row > span {
+    font-size: 0.84rem;
+    line-height: 1.35;
+  }
+
+  #coeResult > .row > strong {
+    font-size: 1.35rem;
+    line-height: 1.15;
+    text-align: left;
+  }
+
+  #coeResult > .note,
+  #coeResult > .meta,
+  #coeResult > p {
+    grid-column: 1 / -1;
+  }
+}
+
+/* iPad petrol table: tighten cell padding so all 6 fuel columns fit without slicing Diesel */
+@media (min-width: 701px) and (max-width: 960px) {
+  .petrol-header > span,
+  .petrol-row > span {
+    padding: 8px 6px;
+    font-size: 0.78rem;
+  }
+}
+
+/* Mobile: get live data above the fold */
+@media (max-width: 640px) {
+  .content-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-hero-icon {
+    display: none;
+  }
+
+  .page-hero {
+    padding: 14px;
+  }
+
+  .travel-alert-banner {
+    order: 5;
+    padding: 10px 12px;
+    font-size: 0.8rem;
+    line-height: 1.45;
+  }
+
+  .travel-alert-banner > div {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .travel-alert-banner > div:hover,
+  .travel-alert-banner:focus-within > div {
+    display: block;
+    -webkit-line-clamp: unset;
+  }
+
+  .specialist-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .share-bar {
+    order: 9;
+  }
+}
+
+
+/* ==========================================================================
    Anonymous Live Checkpoint Lane Reports (Wayfind Departure Board)
    ========================================================================== */
 .lane-reports-section {
