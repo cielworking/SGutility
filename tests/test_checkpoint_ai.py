@@ -126,6 +126,27 @@ class CheckpointAiTests(unittest.TestCase):
         ImageDraw.Draw(img_red).rectangle([800, 300, 1300, 500], fill=(220, 40, 40))
         self.assertFalse(mod.detect_4703_contraflow(img_red, "2026-11-22T21:00:00+08:00"))
 
+    def test_yolo26_e2e_decoder_and_smart_zoom_subtiles(self):
+        import numpy as np
+
+        mod = load_analyzer()
+        # Synthetic YOLO26 NMS-free E2E output: shape (1, 2, 6) -> [x1, y1, x2, y2, conf, cls]
+        raw = [np.array([[[10.0, 20.0, 50.0, 60.0, 0.91, 0.0], [100.0, 120.0, 130.0, 150.0, 0.84, 1.0]]], dtype=np.float32)]
+        xyxy, cls_ids, conf = mod.decode_yolo26_e2e_outputs(raw)
+        self.assertEqual(xyxy.shape, (2, 4))
+        self.assertEqual(list(cls_ids), [2, 3])
+        self.assertAlmostEqual(float(conf[0]), 0.91, places=5)
+
+        subtiles = mod.split_smart_zoom_subtiles(300, 200, 1100, 800)
+        self.assertEqual(len(subtiles), 4)
+        for sx1, sy1, sx2, sy2 in subtiles:
+            self.assertGreaterEqual(sx1, 300)
+            self.assertGreaterEqual(sy1, 200)
+            self.assertLessEqual(sx2, 1100)
+            self.assertLessEqual(sy2, 800)
+            self.assertLess(sx1, sx2)
+            self.assertLess(sy1, sy2)
+
     def test_generated_traffic_json_schema(self):
         traffic_path = ROOT / "data" / "checkpoint-traffic.json"
         self.assertTrue(traffic_path.exists())

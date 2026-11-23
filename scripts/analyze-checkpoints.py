@@ -283,11 +283,55 @@ def build_camera_tiles(camera_id: str | None, width: int, height: int) -> list[t
 YOLO11_4CLASS_TO_COCO = {0: 2, 1: 3, 2: 5, 3: 7}
 
 
-def is_yolo11_session(sess) -> bool:
+def detect_onnx_format(sess) -> str:
+    """Detect ONNX output layout: 'yolo26_e2e' (1, N, 6), 'yolo11' (1, 4+C, N), or 'yolox' (1, N, 5+C)."""
     shape = sess.get_outputs()[0].shape
-    if len(shape) == 3 and isinstance(shape[1], int) and isinstance(shape[2], int):
-        return shape[1] < shape[2]
-    return False
+    if len(shape) == 3:
+        d1, d2 = shape[1], shape[2]
+        if isinstance(d2, int) and d2 == 6:
+            return "yolo26_e2e"
+        if isinstance(d1, int) and isinstance(d2, int) and d1 < d2:
+            return "yolo11"
+    return "yolox"
+
+
+def is_yolo11_session(sess) -> bool:
+    return detect_onnx_format(sess) == "yolo11"
+
+
+def decode_yolo26_e2e_outputs(outputs, num_custom_classes: int = 4):
+    import numpy as np
+
+    # Ultralytics YOLO26 NMS-free end-to-end ONNX output: (1, max_det, 6) -> [x1, y1, x2, y2, conf, cls_id]
+    preds = outputs[0][0]
+    if preds.size == 0:
+        return np.empty((0, 4)), np.empty((0,), dtype=int), np.empty((0,))
+    xyxy = preds[:, :4].astype(np.float32)
+    conf = preds[:, 4].astype(np.float32)
+    raw_ids = preds[:, 5].astype(int)
+    # If all detected class IDs are within 0..3 and model is a 4-class custom distilled student, remap to COCO IDs
+    if len(raw_ids) and int(raw_ids.max()) < num_custom_classes:
+        cls_ids = np.vectorize(lambda c: YOLO11_4CLASS_TO_COCO.get(int(c), -1))(raw_ids)
+    else:
+        cls_ids = raw_ids
+    return xyxy, cls_ids, conf
+
+
+def split_smart_zoom_subtiles(rx1: int, ry1: int, rx2: int, ry2: int, overlap: float = 0.12) -> list[tuple[int, int, int, int]]:
+    """Split a dense/jammed road tile into 2x2 overlapping super-zoom subtiles (~2x closer resolution)."""
+    rw, rh = rx2 - rx1, ry2 - ry1
+    if rw < 420 or rh < 260:
+        return []
+    mx = rx1 + rw // 2
+    my = ry1 + rh // 2
+    ox = int(rw * overlap)
+    oy = int(rh * overlap)
+    return [
+        (rx1, ry1, min(rx2, mx + ox), min(ry2, my + oy)),
+        (max(rx1, mx - ox), ry1, rx2, min(ry2, my + oy)),
+        (rx1, max(ry1, my - oy), min(rx2, mx + ox), ry2),
+        (max(rx1, mx - ox), max(ry1, my - oy), rx2, ry2),
+    ]
 
 
 def preprocess_crop(img, input_size=(640, 640), normalize_rgb: bool = False):
@@ -366,21 +410,25 @@ def nms(boxes, scores, iou_thresh: float = 0.40) -> list[int]:
     return keep
 
 
-def detect_vehicles(sess, img, camera_id: str | None = None, conf_thresh: float = 0.25, bike_conf_thresh: float = 0.15):
+def _run_region_inference(sess, inp_name, out_name, fmt: str, img, region, W: int, H: int, conf_thresh: float, bike_conf_thresh: float):
     import numpy as np
 
-    inp_name = sess.get_inputs()[0].name
-    out_name = sess.get_outputs()[0].name
-    yolo11_mode = is_yolo11_session(sess)
-    W, H = img.size
-    regions = build_camera_tiles(camera_id, W, H)
+    rx1, ry1, rx2, ry2 = region
+    crop = img.crop((rx1, ry1, rx2, ry2))
+    blob, scale = preprocess_crop(crop, normalize_rgb=(fmt != "yolox"))
+    raw = sess.run([out_name], {inp_name: blob})
 
-    all_boxes, all_scores, all_cls = [], [], []
-    for rx1, ry1, rx2, ry2 in regions:
-        crop = img.crop((rx1, ry1, rx2, ry2))
-        blob, scale = preprocess_crop(crop, normalize_rgb=yolo11_mode)
-        raw = sess.run([out_name], {inp_name: blob})
-        if yolo11_mode:
+    if fmt == "yolo26_e2e":
+        xyxy, cls_ids, conf = decode_yolo26_e2e_outputs(raw)
+        is_veh = np.isin(cls_ids, list(VEHICLE_CLASSES.keys()))
+        is_bike = (cls_ids == 3) & (conf >= bike_conf_thresh)
+        is_other = (cls_ids != 3) & is_veh & (conf >= conf_thresh)
+        mask = is_bike | is_other
+        if not np.any(mask):
+            return None
+        boxes = xyxy[mask] / scale
+    else:
+        if fmt == "yolo11":
             xywh, cls_ids, conf = decode_yolo11_outputs(raw)
         else:
             preds = decode_outputs(raw)
@@ -394,24 +442,68 @@ def detect_vehicles(sess, img, camera_id: str | None = None, conf_thresh: float 
         mask = is_bike | is_other
         filt = xywh[mask]
         if not len(filt):
-            continue
+            return None
         cx, cy, bw, bh = filt[:, 0], filt[:, 1], filt[:, 2], filt[:, 3]
         boxes = np.stack([cx - bw / 2, cy - bh / 2, cx + bw / 2, cy + bh / 2], axis=1) / scale
-        boxes[:, [0, 2]] += rx1
-        boxes[:, [1, 3]] += ry1
-        areas = (boxes[:, 2] - boxes[:, 0]) * (boxes[:, 3] - boxes[:, 1])
-        valid = areas < (0.08 * W * H)
-        if np.any(valid):
-            all_boxes.append(boxes[valid])
-            all_scores.append(conf[mask][valid])
-            all_cls.append(cls_ids[mask][valid])
+
+    boxes[:, [0, 2]] += rx1
+    boxes[:, [1, 3]] += ry1
+    areas = (boxes[:, 2] - boxes[:, 0]) * (boxes[:, 3] - boxes[:, 1])
+    valid = areas < (0.08 * W * H)
+    if not np.any(valid):
+        return None
+    return boxes[valid], conf[mask][valid], cls_ids[mask][valid]
+
+
+def detect_vehicles(
+    sess,
+    img,
+    camera_id: str | None = None,
+    conf_thresh: float = 0.25,
+    bike_conf_thresh: float = 0.15,
+    smart_zoom_min_hits: int = 8,
+    max_smart_zoom_tiles: int = 2,
+):
+    import numpy as np
+
+    inp_name = sess.get_inputs()[0].name
+    out_name = sess.get_outputs()[0].name
+    fmt = detect_onnx_format(sess)
+    W, H = img.size
+    regions = build_camera_tiles(camera_id, W, H)
+
+    all_boxes, all_scores, all_cls = [], [], []
+    dense_tiles: list[tuple[int, tuple[int, int, int, int]]] = []
+
+    # Pass 1: Full frame + per-camera calibrated road-zone tiles
+    for idx, region in enumerate(regions):
+        res = _run_region_inference(sess, inp_name, out_name, fmt, img, region, W, H, conf_thresh, bike_conf_thresh)
+        if res is None:
+            continue
+        b, s, c = res
+        all_boxes.append(b)
+        all_scores.append(s)
+        all_cls.append(c)
+        if idx > 0 and len(b) >= smart_zoom_min_hits:
+            dense_tiles.append((len(b), region))
+
+    # Pass 2 (Adaptive Smart Zoom): Auto super-zoom into the busiest jammed tiles (2x2 sub-crops)
+    dense_tiles.sort(key=lambda item: item[0], reverse=True)
+    for _, busy_region in dense_tiles[:max_smart_zoom_tiles]:
+        for sub_region in split_smart_zoom_subtiles(*busy_region):
+            res = _run_region_inference(sess, inp_name, out_name, fmt, img, sub_region, W, H, conf_thresh, bike_conf_thresh)
+            if res is not None:
+                b, s, c = res
+                all_boxes.append(b)
+                all_scores.append(s)
+                all_cls.append(c)
 
     if not all_boxes:
         return np.empty((0, 4)), np.empty((0,)), np.empty((0,), dtype=int)
     boxes = np.concatenate(all_boxes, axis=0)
     scores = np.concatenate(all_scores, axis=0)
     clss = np.concatenate(all_cls, axis=0)
-    keep = nms(boxes, scores, 0.40)
+    keep = nms(boxes, scores, 0.42)
     return boxes[keep], scores[keep], clss[keep]
 
 
