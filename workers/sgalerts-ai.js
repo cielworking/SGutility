@@ -17,16 +17,16 @@ const CAMERA_ZONES = {
   "2701": {
     name: "Woodlands Causeway",
     zones: {
-      // Upper-left carriageway of the Causeway deck: outbound traffic heading to Johor Bahru
-      towards_jb: [[330, 940], [1920, 235], [1920, 340], [560, 1045]],
-      // Lower-right carriageway & motorcycle lane beside the 3 white water pipes: inbound traffic to Woodlands
-      towards_sg: [[560, 1045], [1920, 340], [1920, 430], [680, 1069]],
+      // Upper-left narrow outbound strip along the Causeway seawall heading to Johor Bahru
+      towards_jb: [[230, 960], [1920, 210], [1920, 280], [415, 990]],
+      // Wide main Causeway deck below the median barrier + water-pipe motorcycle lane heading into Woodlands (SG)
+      towards_sg: [[415, 990], [1920, 280], [1920, 440], [720, 1069]],
     },
   },
   "2702": {
     name: "Woodlands Checkpoint / BKE",
     zones: {
-      towards_jb: [[520, 220], [1920, 400], [1920, 1069], [545, 1069]],
+      towards_jb: [[480, 230], [1920, 400], [1920, 1069], [1380, 1069], [920, 560], [480, 340]],
       towards_sg: [[300, 0], [510, 0], [535, 1069], [300, 1069]],
     },
   },
@@ -51,7 +51,7 @@ const CAMERA_ZONES = {
   },
 };
 
-const MODEL_VERSION = "v10-yolox-detr-calibrated";
+const MODEL_VERSION = "v11-yolox-detr-calibrated";
 
 function isTuasContraflow(isoTs) {
   const d = isoTs ? new Date(isoTs) : new Date();
