@@ -17,10 +17,10 @@ const CAMERA_ZONES = {
   "2701": {
     name: "Woodlands Causeway",
     zones: {
-      // Upper-left narrow outbound strip along the Causeway seawall heading to Johor Bahru
-      towards_jb: [[230, 960], [1920, 210], [1920, 280], [415, 990]],
-      // Wide main Causeway deck below the median barrier + water-pipe motorcycle lane heading into Woodlands (SG)
-      towards_sg: [[415, 990], [1920, 280], [1920, 440], [720, 1069]],
+      // Upper-left carriageway above the Causeway central barrier: outbound traffic heading to Johor Bahru
+      towards_jb: [[230, 960], [1920, 210], [1920, 362], [535, 1069]],
+      // Lower-right carriageway & water-pipe motorcycle lane below the central barrier: inbound into Woodlands (SG)
+      towards_sg: [[535, 1069], [1920, 362], [1920, 455], [750, 1069]],
     },
   },
   "2702": {
@@ -51,7 +51,7 @@ const CAMERA_ZONES = {
   },
 };
 
-const MODEL_VERSION = "v11-yolox-detr-calibrated";
+const MODEL_VERSION = "v12-yolox-detr-calibrated";
 
 function isTuasContraflow(isoTs) {
   const d = isoTs ? new Date(isoTs) : new Date();
@@ -242,10 +242,10 @@ export default {
       const picked = targetIds.map(id => byId[id]).filter(Boolean);
       const latestTs = picked.map(c => c.timestamp).filter(Boolean).sort().pop() || new Date().toISOString();
 
-      // 1. If GitHub Actions YOLOX-S is within 8 minutes of LTA's live frame, serve YOLOX-S at 0 Neurons
+      // 1. If GitHub Actions YOLOX-M + SAHI is within 22 minutes of LTA's live frame, serve YOLOX-M at 0 Neurons
       const ghCamTs = getLatestCamTs(ghData);
       const ageMs = (Date.parse(latestTs) || 0) - (Date.parse(ghCamTs) || 0);
-      if (ghData?.woodlands && ghData?.tuas && ageMs <= 8 * 60 * 1000) {
+      if (ghData?.woodlands && ghData?.tuas && ageMs <= 22 * 60 * 1000) {
         const payload = { ...ghData, ok: true, model_version: MODEL_VERSION, source_mode: "yolox-github" };
         const resp = new Response(JSON.stringify(payload), {
           status: 200,

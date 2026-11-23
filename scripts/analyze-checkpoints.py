@@ -38,10 +38,10 @@ CAMERA_ZONES = {
     "2701": {
         "name": "Woodlands Causeway",
         "zones": {
-            # Upper-left narrow outbound strip along the Causeway seawall heading to Johor Bahru
-            "towards_jb": [(230, 960), (1920, 210), (1920, 280), (415, 990)],
-            # Wide main Causeway deck below the median barrier + water-pipe motorcycle lane heading into Woodlands (SG)
-            "towards_sg": [(415, 990), (1920, 280), (1920, 440), (720, 1069)],
+            # Upper-left carriageway above the Causeway central barrier: outbound traffic heading to Johor Bahru
+            "towards_jb": [(230, 960), (1920, 210), (1920, 362), (535, 1069)],
+            # Lower-right carriageway & water-pipe motorcycle lane below the central barrier: inbound into Woodlands (SG)
+            "towards_sg": [(535, 1069), (1920, 362), (1920, 455), (750, 1069)],
         },
     },
     "2702": {
@@ -218,6 +218,7 @@ CAMERA_TILES = {
         (300, 0, 1060, 520),      # Distant BKE / Woodlands Checkpoint lanes
         (300, 260, 1260, 860),    # Mid BKE both directions
         (860, 340, 1920, 1069),   # Right outbound queues towards Woodlands
+        (1150, 420, 1880, 1040),  # Tight zoom on elevated motorcycle flyover
         (280, 520, 1260, 1069),   # Lower inbound & outbound lanes
     ],
     "4703": [
