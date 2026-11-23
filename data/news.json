@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-23T18:56:26.537111+08:00",
+  "last_updated": "2026-11-23T19:05:44.088928+08:00",
   "headlines": [
     {
       "category": "Singapore",
@@ -192,6 +192,15 @@
     },
     {
       "category": "IT & Gadgets",
+      "title": "Meta Muse can now do your Black Friday shopping at Walmart",
+      "summary": "Walmart will now let Meta's Muse shop on its website on your behalf, allowing the AI agent to find and purchase Black Friday deals. The retail giant is rolling out a live...",
+      "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/11/Walmart-Meta-Muse-Agent-Gateway.jpg?quality=90&strip=all&crop=0,0,100,100",
+      "source": "The Verge",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+      "published": "2026-11-23 19:00"
+    },
+    {
+      "category": "IT & Gadgets",
       "title": "Exclusive-Some US banks tighten AI-agent controls on concern about models escaping safeguards",
       "summary": "",
       "image": "https://dam.mediacorp.sg/image/upload/s--UCYgPwL4--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-23T100657Z_1_LYNXNPEMAM0M9_RTROPTP_3_USA-STOCKS-CLOSE.JPG?itok=ZcDNvKQV",
@@ -261,15 +270,6 @@
       "source": "SoyaCincau",
       "url": "https://soyacincau.com/2026/11/23/wise-malaysia-win-rm10000-travel-year-end-holiday-spend/",
       "published": "2026-11-23 11:30"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "Alibaba’s new Qwen4-Max AI promises better coding and reasoning at lower cost",
-      "summary": "Alibaba has introduced Qwen4-Max, its latest flagship AI model which promises better performance for coding, complex reasoning, visual understanding and autonomous AI tasks. The...",
-      "image": "https://soyacincau.com/wp-content/uploads/2026/11/261123-qwencloud-qwen4-max-150x150.jpg",
-      "source": "SoyaCincau",
-      "url": "https://soyacincau.com/2026/11/23/alibaba-qwen4-max-ai-model-2-4-trillion-parameters/",
-      "published": "2026-11-23 11:00"
     },
     {
       "category": "Finance",
@@ -444,8 +444,8 @@
     },
     {
       "category": "Housing",
-      "title": "New neighbourhood planned for Pasir Ris, HDB to keep about 13ha of coastal, forested habitats",
-      "summary": "In planning for the site, HDB commissioned an Environmental Impact Assessment and engaged nature groups.",
+      "title": "New neighbourhood planned for Pasir Ris; HDB to keep about 13ha of coastal, forested habitats",
+      "summary": "In planning for the site, HDB commissioned an environmental impact assessment and engaged with nature groups.",
       "image": "",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/housing/new-neighbourhood-planned-for-pasir-ris-hdb-to-keep-about-13ha-of-coastal-forested-habitats",
