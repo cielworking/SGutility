@@ -464,8 +464,10 @@ def estimate_2702_bike_viaduct_count(img) -> int:
 
     if excess <= 0.025 or deck_ratio <= 0.065:
         return 0
-    est = int(round(((excess - 0.025) / 0.14) * 95.0))
-    return max(0, min(140, est))
+    # Calibrated to real Woodlands 2702 motorcycle flyover capacity:
+    # excess ~0.075 (packed dusk rush) => ~140 bikes; excess ~0.15+ (packed solid night) => 220-240 bikes
+    est = int(round(((excess - 0.025) / 0.055) * 145.0))
+    return max(0, min(240, est))
 
 
 def analyze_checkpoint_group(sess, cameras: list[dict], save_samples_dir: Path | None = None) -> dict:
