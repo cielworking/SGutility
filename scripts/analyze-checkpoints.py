@@ -415,51 +415,57 @@ def detect_vehicles(sess, img, camera_id: str | None = None, conf_thresh: float 
     return boxes[keep], scores[keep], clss[keep]
 
 
-# Dedicated elevated motorcycle viaduct on Camera 2702 (Woodlands Approach / BKE -> Towards JB).
-# At night, packed motorcycles fuse into a solid river of white headlights that COCO box detectors
-# miss completely; occupancy estimation on this bike-only deck recovers dense queue counts.
+# Dedicated elevated motorcycle viaduct inner road deck on Camera 2702 (Woodlands -> Towards JB),
+# inset inside the concrete parapet walls. Compared against the adjacent BKE road deck in the same
+# frame using 24/7 local bright-headlight pinpoint peaks (Singapore motorcycles run headlights 24/7).
 WOODLANDS_2702_BIKE_VIADUCT = [
-    (490, 265),
-    (1120, 405),
-    (1870, 965),
-    (1710, 1040),
-    (1085, 455),
-    (490, 315),
+    (1110, 425),
+    (1240, 465),
+    (1830, 960),
+    (1745, 1005),
+    (1195, 505),
+    (1090, 445),
+]
+WOODLANDS_2702_REF_ROAD = [
+    (340, 420),
+    (490, 420),
+    (510, 880),
+    (340, 880),
 ]
 
 
 def estimate_2702_bike_viaduct_count(img) -> int:
     import numpy as np
-    from PIL import Image, ImageDraw
+    from PIL import Image, ImageDraw, ImageFilter
 
     W, H = img.size
     if W < 320 or H < 200:
         return 0
     sx, sy = W / 1920.0, H / 1069.0
-    poly = [(int(round(x * sx)), int(round(y * sy))) for x, y in WOODLANDS_2702_BIKE_VIADUCT]
-    mask_img = Image.new("L", (W, H), 0)
-    ImageDraw.Draw(mask_img).polygon(poly, fill=255)
-    roi = np.asarray(mask_img) > 0
-    if not np.any(roi):
+
+    def poly_mask(pts):
+        m = Image.new("L", (W, H), 0)
+        ImageDraw.Draw(m).polygon([(int(round(x * sx)), int(round(y * sy))) for x, y in pts], fill=255)
+        return np.asarray(m) > 0
+
+    deck_roi = poly_mask(WOODLANDS_2702_BIKE_VIADUCT)
+    ref_roi = poly_mask(WOODLANDS_2702_REF_ROAD)
+    if not np.any(deck_roi) or not np.any(ref_roi):
         return 0
 
-    arr = np.asarray(img, dtype=np.float32)
-    luma = 0.299 * arr[:, :, 0] + 0.587 * arr[:, :, 1] + 0.114 * arr[:, :, 2]
-    gx = np.abs(np.diff(luma, axis=1, prepend=luma[:, :1]))
-    gy = np.abs(np.diff(luma, axis=0, prepend=luma[:1, :]))
-    edge_ratio = float(np.mean((gx + gy)[roi] >= 28.0))
-    sky_luma = float(np.mean(luma[: max(1, int(H * 0.15)), int(W * 0.5) :]))
+    gray = img.convert("L")
+    arr = np.asarray(gray, dtype=np.float32)
+    blur = np.asarray(gray.filter(ImageFilter.BoxBlur(4)), dtype=np.float32)
+    # Local bright pinpoint peaks (motorcycle headlights standing out against dark bikes/helmets)
+    peaks = (arr - blur >= 24.0) & (arr >= 140.0)
+    deck_ratio = float(np.mean(peaks[deck_roi]))
+    ref_ratio = float(np.mean(peaks[ref_roi]))
+    excess = deck_ratio - ref_ratio
 
-    if sky_luma < 105.0:
-        # Night / dusk: bright white headlight coverage gated by edge texture
-        bright_ratio = float(np.mean(luma[roi] >= 185.0))
-        if bright_ratio <= 0.015 or edge_ratio < 0.13:
-            return 0
-        est = int(round(((bright_ratio - 0.015) / 0.14) * 75.0))
-        return max(0, min(120, est))
-
-    # In daylight, YOLOX-M + SAHI tiles detect individual motorcycles directly without concrete-wall edge false positives
-    return 0
+    if excess <= 0.025 or deck_ratio <= 0.065:
+        return 0
+    est = int(round(((excess - 0.025) / 0.14) * 95.0))
+    return max(0, min(140, est))
 
 
 def analyze_checkpoint_group(sess, cameras: list[dict], save_samples_dir: Path | None = None) -> dict:

@@ -1,19 +1,19 @@
 {
   "model": "YOLOX-M ONNX (road-zone SAHI tiled detection)",
   "source_name": "LTA / data.gov.sg",
-  "last_updated": "2026-11-23T10:48:06.532838+00:00",
+  "last_updated": "2026-11-23T10:50:29.951070+00:00",
   "note": "AI counts visible vehicles on public LTA approach cameras. Actual immigration counter queues inside the complex may differ.",
   "woodlands": {
     "status": "Heavy",
     "towards_jb_status": "Heavy",
     "towards_sg_status": "Smooth",
-    "total_vehicles": 72,
-    "weighted_load": 104.0,
-    "towards_jb": 64,
+    "total_vehicles": 100,
+    "weighted_load": 118.0,
+    "towards_jb": 92,
     "towards_sg": 8,
     "counts": {
       "car": 37,
-      "motorcycle": 2,
+      "motorcycle": 30,
       "bus": 29,
       "truck": 4
     },
@@ -36,12 +36,12 @@
         "camera_id": "2702",
         "label": "Woodlands Checkpoint / BKE",
         "timestamp": "2026-11-23T18:46:11+08:00",
-        "total_vehicles": 23,
-        "towards_jb": 20,
+        "total_vehicles": 51,
+        "towards_jb": 48,
         "towards_sg": 3,
         "counts": {
           "car": 21,
-          "motorcycle": 1,
+          "motorcycle": 29,
           "bus": 0,
           "truck": 1
         }
