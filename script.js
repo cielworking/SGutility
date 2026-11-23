@@ -1569,7 +1569,7 @@ function pm25BandLabel(v) {
 function currentHolidayBriefingHtml() {
   const todaySgt = new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Singapore" });
   const windows = [
-    ["2026-12-31", 'Year-end school holidays, Sat 21 Nov – Thu 31 Dec 2026: typically busiest towards JB Friday afternoons as the holidays begin, and coming back Sunday evenings throughout the holidays. <a href="/guides/causeway-year-end-school-holidays.html">Holiday peaks →</a>'],
+    ["2027-01-03", 'Year-end school holidays &amp; ICA festive advisory (Fri 20 Nov 2026 – Sun 3 Jan 2027, including Fri 25 Dec Christmas &amp; Fri 1 Jan New Year long weekends): ICA warns car waits can reach up to 3 hours during peak Fri/Sat outbound and Sun return surges. <a href="/guides/causeway-year-end-school-holidays.html">Holiday peaks →</a>'],
     ["2027-02-15", 'New Year &amp; Chinese New Year 2027 (6–9 Feb 2027 long weekend): heavy outbound queues towards JB expected Thu/Fri before CNY and return surges Sun/Mon into Singapore. <a href="/guides/cny-2027-causeway-jb-traffic.html">CNY 2027 peaks →</a>'],
     ["2027-03-22", 'March school holidays &amp; Hari Raya Puasa (13–21 Mar 2027): expect heavy SG → JB queues on Friday 12 March and return congestion Sunday evenings. <a href="/guides/singapore-public-holidays-2027-long-weekends.html">2027 holiday calendar →</a>'],
     ["2027-05-03", 'Good Friday (26 Mar) &amp; Labour Day (1 May 2027) long weekends: cross before 6:30 am or after 10:30 pm on long-weekend Fridays to avoid peak Causeway queues. <a href="/guides/singapore-public-holidays-2027-long-weekends.html">Long weekends →</a>'],
