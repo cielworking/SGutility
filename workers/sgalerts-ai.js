@@ -18,16 +18,16 @@ const CAMERA_ZONES = {
     name: "Woodlands Causeway",
     zones: {
       // Upper-left carriageway above the Causeway central barrier: outbound traffic heading to Johor Bahru
-      towards_jb: [[230, 960], [1920, 210], [1920, 362], [535, 1069]],
+      towards_jb: [[230, 960], [1920, 210], [1920, 385], [735, 1069]],
       // Lower-right carriageway & water-pipe motorcycle lane below the central barrier: inbound into Woodlands (SG)
-      towards_sg: [[535, 1069], [1920, 362], [1920, 455], [750, 1069]],
+      towards_sg: [[735, 1069], [1920, 385], [1920, 480], [980, 1069]],
     },
   },
   "2702": {
     name: "Woodlands Checkpoint / BKE",
     zones: {
-      towards_jb: [[480, 230], [1920, 400], [1920, 1069], [1380, 1069], [920, 560], [480, 340]],
-      towards_sg: [[300, 0], [510, 0], [535, 1069], [300, 1069]],
+      towards_jb: [[440, 0], [560, 0], [660, 260], [1920, 400], [1920, 1069], [1230, 1069], [1060, 780], [820, 550], [520, 330], [440, 180]],
+      towards_sg: [[300, 0], [425, 0], [470, 350], [520, 860], [310, 860]],
     },
   },
   "4703": {
@@ -45,13 +45,13 @@ const CAMERA_ZONES = {
   "4713": {
     name: "Tuas Checkpoint (Outbound to Johor)",
     zones: {
-      // Right-hand JOHOR viaduct + bottom horizontal motorcycle approach lane (excludes left AYE ramp & median barrier block)
-      towards_jb: [[1180, 20], [1860, 20], [1920, 480], [1920, 910], [0, 910], [0, 770], [1380, 770], [1200, 560]],
+      // Right-hand JOHOR viaduct + bottom horizontal motorcycle approach lane (excludes left AYE ramp & median barrier blocks)
+      towards_jb: [[1180, 20], [1860, 20], [1920, 480], [1920, 910], [0, 910], [0, 770], [1640, 770], [1640, 650], [1380, 620], [1200, 560]],
     },
   },
 };
 
-const MODEL_VERSION = "v12-yolox-detr-calibrated";
+const MODEL_VERSION = "v13-yolox-detr-calibrated";
 
 function isTuasContraflow(isoTs) {
   const d = isoTs ? new Date(isoTs) : new Date();
@@ -111,11 +111,37 @@ function loadLevel(score, smoothMax = 15, modMax = 27) {
   return "Heavy";
 }
 
+function getJpegDimensions(bytes) {
+  let i = 2;
+  while (i + 9 < bytes.length) {
+    if (bytes[i] !== 0xff) {
+      i += 1;
+      continue;
+    }
+    const marker = bytes[i + 1];
+    if (marker >= 0xc0 && marker <= 0xc3) {
+      const h = (bytes[i + 5] << 8) | bytes[i + 6];
+      const w = (bytes[i + 7] << 8) | bytes[i + 8];
+      if (w > 0 && h > 0) return { width: w, height: h };
+    }
+    const len = (bytes[i + 2] << 8) | bytes[i + 3];
+    if (len < 2) break;
+    i += 2 + len;
+  }
+  return { width: 1920, height: 1080 };
+}
+
 async function detectCameraDetr(env, cam) {
   const imgRes = await fetch(cam.image);
   if (!imgRes.ok) throw new Error("Failed image " + cam.camera_id);
   const buf = await imgRes.arrayBuffer();
-  const detections = await env.AI.run("@cf/facebook/detr-resnet-50", { image: [...new Uint8Array(buf)] });
+  const bytes = new Uint8Array(buf);
+  const { width: imgW, height: imgH } = getJpegDimensions(bytes);
+  const detrScale = Math.min(800 / Math.min(imgW, imgH), 1333 / Math.max(imgW, imgH));
+  const detrW = Math.max(1, Math.round(imgW * detrScale));
+  const detrH = Math.max(1, Math.round(imgH * detrScale));
+
+  const detections = await env.AI.run("@cf/facebook/detr-resnet-50", { image: [...bytes] });
   const list = Array.isArray(detections) ? detections : (detections?.result || []);
 
   const candidateBoxes = [];
@@ -127,8 +153,8 @@ async function detectCameraDetr(env, cam) {
     if (score < minScore) continue;
     const { xmin, ymin, xmax, ymax } = det.box;
     const isNorm = xmax <= 1.05 && ymax <= 1.05;
-    const scaleX = isNorm ? 1920 : (1920 / 1333);
-    const scaleY = isNorm ? 1069 : (1069 / 800);
+    const scaleX = isNorm ? 1920 : (1920 / detrW);
+    const scaleY = isNorm ? 1069 : (1069 / detrH);
     const box = {
       xmin: Number(xmin) * scaleX,
       ymin: Number(ymin) * scaleY,
@@ -242,10 +268,10 @@ export default {
       const picked = targetIds.map(id => byId[id]).filter(Boolean);
       const latestTs = picked.map(c => c.timestamp).filter(Boolean).sort().pop() || new Date().toISOString();
 
-      // 1. If GitHub Actions YOLOX-M + SAHI is within 22 minutes of LTA's live frame, serve YOLOX-M at 0 Neurons
+      // 1. If GitHub Actions YOLOX-M + SAHI is within 30 minutes of LTA's live frame, serve YOLOX-M at 0 Neurons
       const ghCamTs = getLatestCamTs(ghData);
       const ageMs = (Date.parse(latestTs) || 0) - (Date.parse(ghCamTs) || 0);
-      if (ghData?.woodlands && ghData?.tuas && ageMs <= 22 * 60 * 1000) {
+      if (ghData?.woodlands && ghData?.tuas && ageMs <= 30 * 60 * 1000) {
         const payload = { ...ghData, ok: true, model_version: MODEL_VERSION, source_mode: "yolox-github" };
         const resp = new Response(JSON.stringify(payload), {
           status: 200,

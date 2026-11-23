@@ -30,10 +30,26 @@ class CheckpointAiTests(unittest.TestCase):
 
     def test_direction_zones_for_woodlands_2701(self):
         mod = load_analyzer()
-        # Point in upper-left Johor-bound carriageway vs lower-right Woodlands carriageway vs ignored water
+        # Upper-left Johor-bound carriageway (including right-most lane near central divider)
         self.assertEqual(mod.classify_direction("2701", 1150, 680, 1920, 1069), "towards_jb")
-        self.assertEqual(mod.classify_direction("2701", 1150, 810, 1920, 1069), "towards_sg")
+        self.assertEqual(mod.classify_direction("2701", 880, 943, 1920, 1069), "towards_jb")
+        self.assertEqual(mod.classify_direction("2701", 757, 1000, 1920, 1069), "towards_jb")
+        self.assertEqual(mod.classify_direction("2701", 964, 898, 1920, 1069), "towards_jb")
+        # Lower-right Woodlands carriageway below the actual concrete central divider
+        self.assertEqual(mod.classify_direction("2701", 1150, 890, 1920, 1069), "towards_sg")
+        self.assertEqual(mod.classify_direction("2701", 1500, 680, 1920, 1069), "towards_sg")
+        # Sea / water reflections ignored
         self.assertEqual(mod.classify_direction("2701", 200, 150, 1920, 1069), "ignored")
+
+    def test_direction_zones_for_woodlands_2702(self):
+        mod = load_analyzer()
+        # CAUSEWAY bus/car queue and upper outbound BKE queue belong to towards_jb
+        self.assertEqual(mod.classify_direction("2702", 1100, 740, 1920, 1069), "towards_jb")
+        self.assertEqual(mod.classify_direction("2702", 1220, 860, 1920, 1069), "towards_jb")
+        self.assertEqual(mod.classify_direction("2702", 490, 100, 1920, 1069), "towards_jb")
+        # BKE exit carriageway belongs to towards_sg, but BKE City overhead gantry sign is ignored
+        self.assertEqual(mod.classify_direction("2702", 380, 500, 1920, 1069), "towards_sg")
+        self.assertEqual(mod.classify_direction("2702", 420, 920, 1920, 1069), "ignored")
 
     def test_tuas_contraflow_windows(self):
         mod = load_analyzer()
@@ -55,9 +71,33 @@ class CheckpointAiTests(unittest.TestCase):
 
     def test_direction_zones_for_tuas_4713(self):
         mod = load_analyzer()
-        # 4713 right-hand JOHOR queue is towards_jb; left AYE carriageway is ignored (4703 covers towards_sg)
+        # 4713 right-hand JOHOR queue + bottom bike lane are towards_jb; left AYE & concrete median barrier are ignored
         self.assertEqual(mod.classify_direction("4713", 1450, 350, 1920, 1069), "towards_jb")
+        self.assertEqual(mod.classify_direction("4713", 600, 840, 1920, 1069), "towards_jb")
         self.assertEqual(mod.classify_direction("4713", 600, 420, 1920, 1069), "ignored")
+        self.assertEqual(mod.classify_direction("4713", 1540, 700, 1920, 1069), "ignored")
+
+    def test_worker_and_python_polygons_stay_in_sync(self):
+        import re
+
+        mod = load_analyzer()
+        worker_src = (ROOT / "workers" / "sgalerts-ai.js").read_text(encoding="utf-8")
+        m = re.search(r"const CAMERA_ZONES = (\{.*?\n\});", worker_src, re.S)
+        self.assertIsNotNone(m, "CAMERA_ZONES block missing in workers/sgalerts-ai.js")
+        js_obj = re.sub(r"//[^\n]*", "", m.group(1))
+        js_obj = re.sub(r"(\b[a-zA-Z_][a-zA-Z0-9_]*\b)\s*:", r'"\1":', js_obj)
+        js_obj = re.sub(r",\s*([}\]])", r"\1", js_obj)
+        worker_zones = json.loads(js_obj)
+
+        for cid in ("2701", "2702", "4703", "4713"):
+            py_cfg = mod.CAMERA_ZONES[cid]
+            js_cfg = worker_zones[cid]
+            for key in ("zones", "contraflow_zones"):
+                if key in py_cfg:
+                    self.assertIn(key, js_cfg, f"{cid}.{key} missing in worker")
+                    for direction, poly in py_cfg[key].items():
+                        expected = [[x, y] for x, y in poly]
+                        self.assertEqual(js_cfg[key][direction], expected, f"Polygon drift in {cid}.{key}.{direction}")
 
     def test_hourly_averages_grouping(self):
         mod = load_analyzer()
@@ -116,10 +156,16 @@ class CheckpointAiTests(unittest.TestCase):
         from PIL import Image, ImageDraw
 
         mod = load_analyzer()
-        # Saturday night (outside scheduled contraflow) with strong white headlights in wedge -> visually detects True
+        # Saturday night (outside scheduled contraflow) with blazing saturated white headlights in wedge -> True
         img_white = Image.new("RGB", (1920, 1069), (30, 32, 38))
-        ImageDraw.Draw(img_white).rectangle([800, 300, 1300, 500], fill=(235, 235, 230))
+        ImageDraw.Draw(img_white).rectangle([800, 300, 1300, 500], fill=(250, 250, 246))
         self.assertTrue(mod.detect_4703_contraflow(img_white, "2026-11-21T21:00:00+08:00"))
+
+        # Normal Monday night with white car roofs (220,220,220) and red taillights -> must NOT false-trigger contraflow
+        img_normal = Image.new("RGB", (1920, 1069), (30, 32, 38))
+        ImageDraw.Draw(img_normal).rectangle([800, 300, 1200, 480], fill=(220, 220, 220))
+        ImageDraw.Draw(img_normal).rectangle([1200, 420, 1360, 520], fill=(210, 40, 40))
+        self.assertFalse(mod.detect_4703_contraflow(img_normal, "2026-11-23T20:31:00+08:00"))
 
         # Sunday night (inside scheduled contraflow) with strong red tail-lights in wedge -> visually overrides to False
         img_red = Image.new("RGB", (1920, 1069), (30, 32, 38))

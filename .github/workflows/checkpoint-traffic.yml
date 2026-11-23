@@ -2,15 +2,16 @@ name: Update Checkpoint AI Traffic
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    # Off-minute 15-min cadence avoids GitHub Actions :00/:05/:15/:30 cron throttling
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: dashboard-data
-  cancel-in-progress: false
+  group: checkpoint-traffic
+  cancel-in-progress: true
 
 jobs:
   checkpoint-traffic:

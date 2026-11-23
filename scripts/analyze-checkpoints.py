@@ -39,18 +39,18 @@ CAMERA_ZONES = {
         "name": "Woodlands Causeway",
         "zones": {
             # Upper-left carriageway above the Causeway central barrier: outbound traffic heading to Johor Bahru
-            "towards_jb": [(230, 960), (1920, 210), (1920, 362), (535, 1069)],
+            "towards_jb": [(230, 960), (1920, 210), (1920, 385), (735, 1069)],
             # Lower-right carriageway & water-pipe motorcycle lane below the central barrier: inbound into Woodlands (SG)
-            "towards_sg": [(535, 1069), (1920, 362), (1920, 455), (750, 1069)],
+            "towards_sg": [(735, 1069), (1920, 385), (1920, 480), (980, 1069)],
         },
     },
     "2702": {
         "name": "Woodlands Checkpoint / BKE",
         "zones": {
-            # Dedicated CAUSEWAY approach ramp (under CAUSEWAY sign) + right-hand elevated motorcycle flyover
-            "towards_jb": [(480, 230), (1920, 400), (1920, 1069), (1380, 1069), (920, 560), (480, 340)],
-            # Left BKE carriageway exiting Woodlands Checkpoint into Singapore
-            "towards_sg": [(300, 0), (510, 0), (535, 1069), (300, 1069)],
+            # Upper outbound BKE queue + dedicated CAUSEWAY approach ramp + right-hand elevated motorcycle flyover
+            "towards_jb": [(440, 0), (560, 0), (660, 260), (1920, 400), (1920, 1069), (1230, 1069), (1060, 780), (820, 550), (520, 330), (440, 180)],
+            # Left BKE carriageway exiting Woodlands Checkpoint into Singapore (stops above BKE City gantry sign at y=860)
+            "towards_sg": [(300, 0), (425, 0), (470, 350), (520, 860), (310, 860)],
         },
     },
     "4703": {
@@ -70,8 +70,8 @@ CAMERA_ZONES = {
     "4713": {
         "name": "Tuas Checkpoint (Outbound to Johor)",
         "zones": {
-            # Right-hand viaduct heading towards Johor + bottom horizontal motorcycle approach lane (excludes median barrier block)
-            "towards_jb": [(1180, 20), (1860, 20), (1920, 480), (1920, 910), (0, 910), (0, 770), (1380, 770), (1200, 560)],
+            # Right-hand viaduct heading towards Johor + bottom horizontal motorcycle approach lane (excludes median barrier blocks)
+            "towards_jb": [(1180, 20), (1860, 20), (1920, 480), (1920, 910), (0, 910), (0, 770), (1640, 770), (1640, 650), (1380, 620), (1200, 560)],
         },
     },
     "4712": {
@@ -116,19 +116,18 @@ def is_tuas_contraflow(iso_ts: str | None) -> bool:
 # Middle viaduct wedge on Camera 4703 (Tuas Second Link) that switches direction when ICA deploys
 # contraflow cones: white headlights face the camera when contraflow is active (towards SG), while
 # red tail-lights face the camera during normal outbound flow (towards JB).
+# Inset inside the core middle viaduct lane on Camera 4703 (away from the upper concrete divider
+# where normal towards_sg bus headlights shine, and away from the floodlit bottom-right ramp).
 TUAS_4703_CONTRAFLOW_WEDGE = [
-    (185, 0),
-    (700, 175),
-    (1320, 420),
-    (1920, 650),
-    (1920, 860),
-    (1760, 840),
-    (1620, 725),
-    (1320, 555),
-    (1020, 415),
-    (720, 285),
-    (460, 185),
-    (185, 65),
+    (260, 55),
+    (680, 205),
+    (1280, 445),
+    (1580, 580),
+    (1520, 685),
+    (1240, 535),
+    (960, 405),
+    (660, 275),
+    (260, 115),
 ]
 
 
@@ -156,17 +155,18 @@ def detect_4703_contraflow(img, iso_ts: str | None = None) -> bool:
     if sky_luma >= 105.0:
         return scheduled
 
-    white_hl = (r >= 205.0) & (g >= 205.0) & (b >= 195.0) & (np.abs(r - b) < 35.0)
+    # Saturated white headlights only (excludes white car roofs/concrete under floodlights)
+    white_hl = (r >= 242.0) & (g >= 242.0) & (b >= 235.0) & (np.abs(r - b) < 25.0)
     red_tl = (r >= 150.0) & ((r - np.maximum(g, b)) >= 40.0)
     white_ratio = float(np.mean(white_hl[roi]))
     red_ratio = float(np.mean(red_tl[roi]))
 
-    # Strong visual white-headlight stream in middle wedge => contraflow active (even on Public Holidays / Sat nights)
-    if white_ratio >= 0.015 and white_ratio >= 2.2 * max(red_ratio, 0.001):
-        return True
     # Strong visual red-taillight stream in middle wedge => normal JB-bound flow
-    if red_ratio >= 0.015 and red_ratio >= 2.0 * max(white_ratio, 0.001):
+    if red_ratio >= 0.012 and red_ratio >= 2.0 * max(white_ratio, 0.001):
         return False
+    # Strong blazing white-headlight stream with negligible taillights => contraflow active (e.g. PH / Sat night)
+    if white_ratio >= 0.025 and red_ratio < 0.008 and white_ratio >= 4.0 * max(red_ratio, 0.002):
+        return True
     return scheduled
 
 
