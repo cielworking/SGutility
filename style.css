@@ -7003,10 +7003,13 @@ p, li, dd, dt, td, small, summary p,
 
 @media (max-width: 720px) {
   .site-header .sga-fb-trigger {
+    height: 32px;
     padding: 0 9px;
-  }
-  .site-header .sga-fb-trigger-label {
-    display: none;
+    gap: 5px;
+    font-size: 0.72rem;
+    white-space: nowrap;
+    border-color: var(--wf-amber);
+    color: oklch(97% 0.006 250);
   }
 }
 
@@ -7251,6 +7254,232 @@ p, li, dd, dt, td, small, summary p,
 .sga-fb-submit:disabled {
   opacity: 0.6;
   cursor: wait;
+}
+
+/* ==========================================================================
+   UX Polish: Compact Petrol Tables + Sticky Frozen Brand Column (Light & Dark)
+   ========================================================================== */
+.petrol-table,
+.effective-table,
+.seo-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.petrol-header,
+.petrol-row {
+  min-width: 500px;
+  grid-template-columns: minmax(118px, 1.25fr) repeat(5, minmax(72px, 1fr));
+  overflow: visible;
+}
+
+.effective-header,
+.effective-table-row {
+  min-width: 520px;
+  grid-template-columns: minmax(112px, 1.15fr) minmax(68px, 0.7fr) minmax(160px, 1.4fr) minmax(88px, 0.85fr);
+  overflow: visible;
+}
+
+.petrol-header > span:first-child,
+.petrol-row > .brand-cell,
+.effective-header > span:first-child,
+.effective-table-row > :first-child,
+.seo-table-wrap .seo-data-table th:first-child,
+.seo-table-wrap .seo-data-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  box-shadow: 4px 0 8px -4px rgba(15, 23, 42, 0.16);
+}
+
+.petrol-header > span:first-child,
+.effective-header > span:first-child,
+.seo-table-wrap .seo-data-table th:first-child {
+  z-index: 3;
+  background: #f1f4f8;
+}
+
+.petrol-row > .brand-cell,
+.effective-table-row > :first-child,
+.seo-table-wrap .seo-data-table td:first-child {
+  background: #ffffff;
+}
+
+.petrol-row:nth-child(odd) > .brand-cell {
+  background: #fbfcfd;
+}
+
+:root[data-theme="dark"] .petrol-header > span:first-child,
+:root[data-theme="dark"] .effective-header > span:first-child,
+:root[data-theme="dark"] .seo-table-wrap .seo-data-table th:first-child {
+  background: #18253c;
+  box-shadow: 4px 0 10px -4px rgba(0, 0, 0, 0.55);
+}
+
+:root[data-theme="dark"] .petrol-row > .brand-cell,
+:root[data-theme="dark"] .effective-table-row > :first-child,
+:root[data-theme="dark"] .seo-table-wrap .seo-data-table td:first-child {
+  background: var(--surface, #0f172a);
+  box-shadow: 4px 0 10px -4px rgba(0, 0, 0, 0.55);
+}
+
+:root[data-theme="dark"] .petrol-row:nth-child(odd) > .brand-cell {
+  background: #0e1828;
+}
+
+@media (max-width: 640px) {
+  .petrol-header > span,
+  .petrol-row > span,
+  .petrol-row > div,
+  .effective-header > span,
+  .effective-table-row > * {
+    padding: 9px 8px;
+  }
+
+  .brand-cell,
+  .effective-brand {
+    gap: 6px;
+  }
+}
+
+/* ==========================================================================
+   UX Polish: Color-Coded Travel Hub Tabs (Clear 3-Tab Discoverability)
+   ========================================================================== */
+.sga-hub-tabs {
+  gap: 0;
+  background: var(--wf-paper-2);
+}
+
+.sga-hub-tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-top: 3px solid transparent;
+  font-weight: 700;
+  transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.sga-hub-tab::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Tab 1: Which Crossing (Cobalt Blue) */
+.sga-hub-tab[data-tab-target="advisor"] {
+  border-top-color: #2563eb;
+  color: #1d4ed8;
+  background: rgba(37, 99, 235, 0.07);
+}
+.sga-hub-tab[data-tab-target="advisor"]::before {
+  background: #2563eb;
+}
+
+/* Tab 2: Lane Reports (Warm Amber / Orange) */
+.sga-hub-tab[data-tab-target="lane-reports"] {
+  border-top-color: #d97706;
+  color: #b45309;
+  background: rgba(217, 119, 6, 0.08);
+}
+.sga-hub-tab[data-tab-target="lane-reports"]::before {
+  background: #d97706;
+}
+
+/* Tab 3: Conditions & Rain (Emerald / Teal) */
+.sga-hub-tab[data-tab-target="conditions"] {
+  border-top-color: #059669;
+  color: #047857;
+  background: rgba(5, 150, 105, 0.08);
+}
+.sga-hub-tab[data-tab-target="conditions"]::before {
+  background: #059669;
+}
+
+/* Active tab: strong dark-ink contrast plate with matching accent bar & dot */
+.sga-hub-tab[aria-selected="true"] {
+  background: oklch(16% 0.014 262);
+  color: #ffffff;
+}
+.sga-hub-tab[data-tab-target="advisor"][aria-selected="true"] {
+  border-top-color: #60a5fa;
+  color: #93c5fd;
+}
+.sga-hub-tab[data-tab-target="advisor"][aria-selected="true"]::before {
+  background: #60a5fa;
+}
+.sga-hub-tab[data-tab-target="lane-reports"][aria-selected="true"] {
+  border-top-color: #fbbf24;
+  color: #fde68a;
+}
+.sga-hub-tab[data-tab-target="lane-reports"][aria-selected="true"]::before {
+  background: #fbbf24;
+}
+.sga-hub-tab[data-tab-target="conditions"][aria-selected="true"] {
+  border-top-color: #34d399;
+  color: #a7f3d0;
+}
+.sga-hub-tab[data-tab-target="conditions"][aria-selected="true"]::before {
+  background: #34d399;
+}
+
+/* Dark mode inactive & active tab colors */
+:root[data-theme="dark"] .sga-hub-tab[data-tab-target="advisor"] {
+  color: #93c5fd;
+  background: rgba(37, 99, 235, 0.14);
+  border-top-color: #3b82f6;
+}
+:root[data-theme="dark"] .sga-hub-tab[data-tab-target="advisor"]::before {
+  background: #60a5fa;
+}
+
+:root[data-theme="dark"] .sga-hub-tab[data-tab-target="lane-reports"] {
+  color: #fcd34d;
+  background: rgba(245, 158, 11, 0.14);
+  border-top-color: #f59e0b;
+}
+:root[data-theme="dark"] .sga-hub-tab[data-tab-target="lane-reports"]::before {
+  background: #fbbf24;
+}
+
+:root[data-theme="dark"] .sga-hub-tab[data-tab-target="conditions"] {
+  color: #6ee7b7;
+  background: rgba(16, 185, 129, 0.14);
+  border-top-color: #10b981;
+}
+:root[data-theme="dark"] .sga-hub-tab[data-tab-target="conditions"]::before {
+  background: #34d399;
+}
+
+:root[data-theme="dark"] .sga-hub-tab[data-tab-target="advisor"][aria-selected="true"] {
+  background: #1d4ed8;
+  color: #ffffff;
+  border-top-color: #93c5fd;
+}
+:root[data-theme="dark"] .sga-hub-tab[data-tab-target="lane-reports"][aria-selected="true"] {
+  background: #b45309;
+  color: #ffffff;
+  border-top-color: #fde68a;
+}
+:root[data-theme="dark"] .sga-hub-tab[data-tab-target="conditions"][aria-selected="true"] {
+  background: #047857;
+  color: #ffffff;
+  border-top-color: #a7f3d0;
+}
+
+@media (max-width: 640px) {
+  .sga-hub-tab {
+    gap: 5px;
+    padding: 10px 6px;
+  }
+  .sga-hub-tab::before {
+    width: 6px;
+    height: 6px;
+  }
 }
 
 
