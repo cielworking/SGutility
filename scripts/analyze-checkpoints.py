@@ -548,18 +548,27 @@ def estimate_2702_bike_viaduct_count(img) -> int:
     gray = img.convert("L")
     arr = np.asarray(gray, dtype=np.float32)
     blur = np.asarray(gray.filter(ImageFilter.BoxBlur(4)), dtype=np.float32)
-    # Local bright pinpoint peaks (motorcycle headlights standing out against dark bikes/helmets)
-    peaks = (arr - blur >= 24.0) & (arr >= 140.0)
+    diff = arr - blur
+
+    # Signal 1: Local bright pinpoint peaks (motorcycle headlights standing out strongly at dusk/night)
+    peaks = (diff >= 24.0) & (arr >= 140.0)
     deck_ratio = float(np.mean(peaks[deck_roi]))
     ref_ratio = float(np.mean(peaks[ref_roi]))
     excess = deck_ratio - ref_ratio
+    est_peaks = 0
+    if excess > 0.025 and deck_ratio > 0.065:
+        est_peaks = int(round(((excess - 0.025) / 0.055) * 145.0))
 
-    if excess <= 0.025 or deck_ratio <= 0.065:
-        return 0
-    # Calibrated to real Woodlands 2702 motorcycle flyover capacity:
-    # excess ~0.075 (packed dusk rush) => ~140 bikes; excess ~0.15+ (packed solid night) => 220-240 bikes
-    est = int(round(((excess - 0.025) / 0.055) * 145.0))
-    return max(0, min(240, est))
+    # Signal 2: High-frequency helmet/bike clutter vs smooth BKE reference road (captures packed overcast/daytime queues)
+    tex = np.abs(diff) >= 14.0
+    deck_tex = float(np.mean(tex[deck_roi]))
+    ref_tex = float(np.mean(tex[ref_roi]))
+    tex_excess = deck_tex - ref_tex
+    est_tex = 0
+    if tex_excess > 0.07 and deck_tex > 0.18:
+        est_tex = int(round(((tex_excess - 0.07) / 0.14) * 195.0))
+
+    return max(0, min(240, max(est_peaks, est_tex)))
 
 
 def analyze_checkpoint_group(sess, cameras: list[dict], save_samples_dir: Path | None = None) -> dict:
