@@ -12,7 +12,6 @@ class FeedbackTests(unittest.TestCase):
             "sga-fb-trigger",
             "sga-fb-footer-prompt",
             "https://sgalerts.com/api/feedback",
-            "sga-fb-hp",
         ):
             self.assertIn(token, src)
 

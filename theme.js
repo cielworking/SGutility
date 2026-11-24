@@ -429,7 +429,6 @@
             '<label class="sga-fb-label" for="sga-fb-email">Email <small>(optional, only if you want a reply)</small></label>' +
             '<input id="sga-fb-email" class="sga-fb-input" type="email" maxlength="160" placeholder="you@example.com" autocomplete="email" />' +
           '</div>' +
-          '<input type="text" name="website" class="sga-fb-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />' +
           '<div class="sga-fb-status" role="status" aria-live="polite"></div>' +
           '<div class="sga-fb-actions">' +
             '<span class="sga-fb-privacy">Private — only the SG Alerts team sees this.</span>' +
@@ -442,7 +441,6 @@
     var form = backdrop.querySelector("form");
     var textarea = backdrop.querySelector("#sga-fb-msg");
     var emailInput = backdrop.querySelector("#sga-fb-email");
-    var hpInput = backdrop.querySelector(".sga-fb-hp");
     var statusEl = backdrop.querySelector(".sga-fb-status");
     var submitBtn = backdrop.querySelector(".sga-fb-submit");
     var topicBtns = backdrop.querySelectorAll(".sga-fb-chip");
@@ -510,7 +508,6 @@
         rating: state.rating,
         message: msg,
         email: (emailInput.value || "").trim(),
-        website: hpInput.value || "",
         page: window.location.pathname + (window.location.search || ""),
         viewport: window.innerWidth <= 640 ? "mobile (" + window.innerWidth + "px)" : "desktop (" + window.innerWidth + "px)",
       };

@@ -10,17 +10,23 @@ const ALLOWED_TOPICS = {
   general: "General",
 };
 
-const CORS = {
-  "Access-Control-Allow-Origin": "https://sgalerts.com",
-  "Access-Control-Allow-Methods": "GET, POST, PATCH, DELETE, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type, Authorization",
-};
+const ALLOWED_ORIGINS = new Set(["https://sgalerts.com", "https://www.sgalerts.com"]);
 
-function jsonResp(data, status = 200, extraHeaders = {}) {
+function corsHeaders(request) {
+  const origin = request.headers.get("Origin") || "";
+  return {
+    "Access-Control-Allow-Origin": ALLOWED_ORIGINS.has(origin) ? origin : "https://sgalerts.com",
+    "Access-Control-Allow-Methods": "GET, POST, PATCH, DELETE, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, Authorization",
+    Vary: "Origin",
+  };
+}
+
+function jsonResp(request, data, status = 200, extraHeaders = {}) {
   return new Response(JSON.stringify(data), {
     status,
     headers: {
-      ...CORS,
+      ...corsHeaders(request),
       "Content-Type": "application/json; charset=utf-8",
       "Cache-Control": "no-store",
       ...extraHeaders,
@@ -116,7 +122,7 @@ async function saveItems(env, items) {
 export default {
   async fetch(request, env, ctx) {
     if (request.method === "OPTIONS") {
-      return new Response(null, { status: 204, headers: CORS });
+      return new Response(null, { status: 204, headers: corsHeaders(request) });
     }
 
     // Public write-only submission endpoint
@@ -125,19 +131,14 @@ export default {
       try {
         body = await request.json();
       } catch {
-        return jsonResp({ ok: false, error: "Invalid JSON" }, 400);
-      }
-
-      // Honeypot spam trap: bots fill hidden 'website' field
-      if (String(body.website || "").trim()) {
-        return jsonResp({ ok: true, id: "ok" }, 200);
+        return jsonResp(request, { ok: false, error: "Invalid JSON" }, 400);
       }
 
       const rawTopic = String(body.topic || "general").trim().toLowerCase();
       const topic = Object.prototype.hasOwnProperty.call(ALLOWED_TOPICS, rawTopic) ? rawTopic : "general";
       const message = String(body.message || "").trim().slice(0, 2000);
       if (message.length < 3) {
-        return jsonResp({ ok: false, error: "Please write at least 3 characters." }, 400);
+        return jsonResp(request, { ok: false, error: "Please write at least 3 characters." }, 400);
       }
 
       const ratingNum = Number(body.rating);
@@ -151,7 +152,7 @@ export default {
       const rlKey = "rl:" + (await hashIp(ip));
       const curCount = Number((await env.FEEDBACK_KV.get(rlKey)) || 0);
       if (curCount >= RATE_LIMIT_MAX) {
-        return jsonResp({ ok: false, error: "Too many submissions. Please try again later." }, 429);
+        return jsonResp(request, { ok: false, error: "Too many submissions. Please try again later." }, 429);
       }
 
       const item = {
@@ -170,14 +171,16 @@ export default {
       items.unshift(item);
       await saveItems(env, items);
       ctx.waitUntil(env.FEEDBACK_KV.put(rlKey, String(curCount + 1), { expirationTtl: RATE_LIMIT_WINDOW_SEC }));
-      ctx.waitUntil(notifyTelegram(env, item));
+      try {
+        await notifyTelegram(env, item);
+      } catch {}
 
-      return jsonResp({ ok: true, id: item.id }, 201);
+      return jsonResp(request, { ok: true, id: item.id }, 201);
     }
 
     // Strictly private admin endpoints (only owner with FEEDBACK_ADMIN_KEY can read/update/delete)
     if (!isAuthorized(request, env)) {
-      return jsonResp({ ok: false, error: "Unauthorized" }, 401);
+      return jsonResp(request, { ok: false, error: "Unauthorized" }, 401);
     }
 
     if (request.method === "GET") {
@@ -185,7 +188,7 @@ export default {
       const telegramConfigured = Boolean(
         String(env.TELEGRAM_BOT_TOKEN || "").trim() && String(env.TELEGRAM_CHAT_ID || "").trim()
       );
-      return jsonResp({ ok: true, telegram_configured: telegramConfigured, count: items.length, items });
+      return jsonResp(request, { ok: true, telegram_configured: telegramConfigured, count: items.length, items });
     }
 
     if (request.method === "PATCH") {
@@ -193,31 +196,31 @@ export default {
       try {
         body = await request.json();
       } catch {
-        return jsonResp({ ok: false, error: "Invalid JSON" }, 400);
+        return jsonResp(request, { ok: false, error: "Invalid JSON" }, 400);
       }
       const id = String(body.id || "").trim();
       const status = body.status === "done" ? "done" : "new";
-      if (!id) return jsonResp({ ok: false, error: "Missing id" }, 400);
+      if (!id) return jsonResp(request, { ok: false, error: "Missing id" }, 400);
 
       const items = await loadItems(env);
       const target = items.find(i => i.id === id);
-      if (!target) return jsonResp({ ok: false, error: "Not found" }, 404);
+      if (!target) return jsonResp(request, { ok: false, error: "Not found" }, 404);
       target.status = status;
       await saveItems(env, items);
-      return jsonResp({ ok: true, item: target });
+      return jsonResp(request, { ok: true, item: target });
     }
 
     if (request.method === "DELETE") {
       const url = new URL(request.url);
       const id = String(url.searchParams.get("id") || "").trim();
-      if (!id) return jsonResp({ ok: false, error: "Missing id" }, 400);
+      if (!id) return jsonResp(request, { ok: false, error: "Missing id" }, 400);
 
       const items = await loadItems(env);
       const next = items.filter(i => i.id !== id);
       await saveItems(env, next);
-      return jsonResp({ ok: true, removed: items.length - next.length });
+      return jsonResp(request, { ok: true, removed: items.length - next.length });
     }
 
-    return jsonResp({ ok: false, error: "Method not allowed" }, 405);
+    return jsonResp(request, { ok: false, error: "Method not allowed" }, 405);
   },
 };
