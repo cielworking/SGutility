@@ -15,7 +15,7 @@ def pages():
             and not name.startswith("tmp")
         ]
         for filename in filenames:
-            if filename.endswith(".html") and not filename.startswith("_"):
+            if filename.endswith(".html") and not filename.startswith("_") and filename != "feedback-admin.html":
                 yield Path(dirpath) / filename
 
 

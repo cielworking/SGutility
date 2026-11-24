@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>SG Alerts — Private Feedback Inbox</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #121b2e;
+      --border: #26344f;
+      --text: #eef2ff;
+      --muted: #94a3b8;
+      --accent: #2563eb;
+      --ok: #10b981;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .wrap { max-width: 920px; margin: 0 auto; }
+    h1 { margin: 0 0 6px; font-size: 1.4rem; }
+    .sub { margin: 0 0 20px; color: var(--muted); font-size: 0.88rem; }
+    .bar {
+      display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+      padding: 14px; border: 2px solid var(--border); background: var(--card); margin-bottom: 18px;
+    }
+    input, select, button {
+      font: inherit; font-size: 0.86rem; padding: 8px 11px;
+      border: 1.5px solid var(--border); background: #0b1220; color: var(--text);
+    }
+    input[type="password"] { flex: 1 1 260px; }
+    button { cursor: pointer; font-weight: 600; }
+    button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    button.danger { border-color: var(--danger); color: #fca5a5; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; font-size: 0.84rem; color: var(--muted); }
+    .pill { display: inline-block; padding: 2px 8px; font-size: 0.74rem; font-weight: 700; border: 1px solid var(--border); }
+    .pill.ok { border-color: var(--ok); color: var(--ok); }
+    .pill.warn { border-color: var(--warn); color: var(--warn); }
+    .list { display: flex; flex-direction: column; gap: 12px; }
+    .item {
+      padding: 14px 16px; border: 2px solid var(--border); background: var(--card);
+    }
+    .item.is-done { opacity: 0.6; }
+    .item-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 8px; font-size: 0.8rem; color: var(--muted); }
+    .item-msg { white-space: pre-wrap; line-height: 1.48; margin: 0 0 10px; font-size: 0.94rem; }
+    .item-actions { display: flex; gap: 8px; }
+    .empty { padding: 28px; text-align: center; color: var(--muted); border: 2px dashed var(--border); }
+  </style>
+</head>
+<body data-no-feedback="1">
+  <div class="wrap">
+    <h1>SG Alerts — Private Feedback Inbox</h1>
+    <p class="sub">Protected by your Cloudflare Worker secret. Visitors cannot read this data.</p>
+
+    <div class="bar">
+      <input id="keyInput" type="password" placeholder="Enter FEEDBACK_ADMIN_KEY" autocomplete="off" />
+      <button id="loadBtn" class="primary" type="button">Unlock &amp; Load</button>
+      <select id="topicFilter" aria-label="Filter by topic">
+        <option value="all">All topics</option>
+        <option value="feature">Feature request</option>
+        <option value="bug">Bug / wrong data</option>
+        <option value="checkpoints">Checkpoints / AI</option>
+        <option value="general">General</option>
+      </select>
+      <select id="statusFilter" aria-label="Filter by status">
+        <option value="all">All statuses</option>
+        <option value="new">New only</option>
+        <option value="done">Done only</option>
+      </select>
+    </div>
+
+    <div id="metaRow" class="meta-row"></div>
+    <div id="list" class="list"><div class="empty">Enter your secret key above to view private feedback.</div></div>
+  </div>
+
+  <script>
+    (function () {
+      var KEY_STORE = "sga_fb_admin_key";
+      var keyInput = document.getElementById("keyInput");
+      var loadBtn = document.getElementById("loadBtn");
+      var topicFilter = document.getElementById("topicFilter");
+      var statusFilter = document.getElementById("statusFilter");
+      var metaRow = document.getElementById("metaRow");
+      var listEl = document.getElementById("list");
+      var allItems = [];
+      var tgReady = false;
+
+      try {
+        var saved = localStorage.getItem(KEY_STORE);
+        if (saved) keyInput.value = saved;
+      } catch (e) {}
+
+      function esc(s) {
+        return String(s || "").replace(/[&<>"]/g, function (c) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+        });
+      }
+
+      function fmtSgt(iso) {
+        try {
+          var d = new Date(iso);
+          return new Date(d.getTime() + 8 * 3600000).toISOString().slice(0, 16).replace("T", " ") + " SGT";
+        } catch (e) { return iso || ""; }
+      }
+
+      function render() {
+        var tf = topicFilter.value;
+        var sf = statusFilter.value;
+        var filtered = allItems.filter(function (i) {
+          if (tf !== "all" && i.topic !== tf) return false;
+          if (sf !== "all" && i.status !== sf) return false;
+          return true;
+        });
+        metaRow.innerHTML =
+          '<span>Total: <strong>' + allItems.length + '</strong> (showing ' + filtered.length + ')</span>' +
+          '<span class="pill ' + (tgReady ? "ok" : "warn") + '">Telegram alerts: ' + (tgReady ? "Connected" : "Not configured yet") + '</span>';
+
+        if (!filtered.length) {
+          listEl.innerHTML = '<div class="empty">No feedback matching this filter yet.</div>';
+          return;
+        }
+        listEl.innerHTML = filtered.map(function (i) {
+          var stars = i.rating ? " · " + "★".repeat(i.rating) + "☆".repeat(5 - i.rating) : "";
+          return (
+            '<div class="item ' + (i.status === "done" ? "is-done" : "") + '" data-id="' + esc(i.id) + '">' +
+              '<div class="item-head">' +
+                '<span><span class="pill">' + esc(i.topic) + '</span>' + stars + ' · <strong>' + esc(i.page || "/") + '</strong>' + (i.viewport ? ' · ' + esc(i.viewport) : '') + '</span>' +
+                '<span>' + esc(fmtSgt(i.created_at)) + (i.email ? ' · Reply: ' + esc(i.email) : '') + '</span>' +
+              '</div>' +
+              '<p class="item-msg">' + esc(i.message) + '</p>' +
+              '<div class="item-actions">' +
+                '<button type="button" data-act="toggle">' + (i.status === "done" ? "Mark New" : "Mark Done") + '</button>' +
+                '<button type="button" class="danger" data-act="delete">Delete</button>' +
+              '</div>' +
+            '</div>'
+          );
+        }).join("");
+      }
+
+      function load() {
+        var key = (keyInput.value || "").trim();
+        if (!key) return;
+        try { localStorage.setItem(KEY_STORE, key); } catch (e) {}
+        listEl.innerHTML = '<div class="empty">Loading...</div>';
+        fetch("https://sgalerts.com/api/feedback", {
+          headers: { Authorization: "Bearer " + key },
+        })
+          .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
+          .then(function (res) {
+            if (!res.ok || !res.d.ok) throw new Error(res.d.error || "Unauthorized");
+            allItems = res.d.items || [];
+            tgReady = Boolean(res.d.telegram_configured);
+            render();
+          })
+          .catch(function (err) {
+            listEl.innerHTML = '<div class="empty">Error: ' + esc(err.message) + '</div>';
+          });
+      }
+
+      listEl.addEventListener("click", function (ev) {
+        var btn = ev.target.closest("button[data-act]");
+        if (!btn) return;
+        var card = btn.closest(".item");
+        var id = card.getAttribute("data-id");
+        var key = (keyInput.value || "").trim();
+        var act = btn.getAttribute("data-act");
+        if (act === "toggle") {
+          var item = allItems.find(function (x) { return x.id === id; });
+          var nextStatus = item && item.status === "done" ? "new" : "done";
+          fetch("https://sgalerts.com/api/feedback", {
+            method: "PATCH",
+            headers: { "Content-Type": "application/json", Authorization: "Bearer " + key },
+            body: JSON.stringify({ id: id, status: nextStatus }),
+          }).then(load);
+        } else if (act === "delete") {
+          fetch("https://sgalerts.com/api/feedback?id=" + encodeURIComponent(id), {
+            method: "DELETE",
+            headers: { Authorization: "Bearer " + key },
+          }).then(load);
+        }
+      });
+
+      loadBtn.addEventListener("click", load);
+      topicFilter.addEventListener("change", render);
+      statusFilter.addEventListener("change", render);
+      if (keyInput.value) load();
+    })();
+  </script>
+</body>
+</html>
