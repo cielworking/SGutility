@@ -1,6 +1,24 @@
 {
-  "last_updated": "2026-11-24T17:21:15.345871+08:00",
+  "last_updated": "2026-11-24T17:48:39.192828+08:00",
   "headlines": [
+    {
+      "category": "Singapore",
+      "title": "Tengah resident shocked after Grab delivery rider calls her out for ordering from Jurong West eatery 4.9km away",
+      "summary": "The rider then cancelled the order.",
+      "image": "https://static.mothership.sg/1/2026/11/Article-Cover-Pic-2000-x-1050-2026-11-24T130853.633.jpg",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/grab-delivery-rider-calls-out-tengah-resident/",
+      "published": "2026-11-24 22:41"
+    },
+    {
+      "category": "Singapore",
+      "title": "M'sia girl, 25, dies after car mounts kerb & rolls 7 times, boyfriend allegedly drink-drove after agreeing not to",
+      "summary": "The 20-year-old boyfriend attended the girl's wake and kowtowed at the demand of her parents.",
+      "image": "https://static.mothership.sg/1/2026/11/25yo-msian-girl-passes.png",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/msia-girl-dies-boyfriend-drink-drive/",
+      "published": "2026-11-24 22:03"
+    },
     {
       "category": "Singapore",
       "title": "PSLE 2026 results: 98.5% of Primary 6 students can progress to secondary school",
@@ -27,24 +45,6 @@
       "source": "Mothership",
       "url": "https://mothership.sg/2026/11/ya-hua-rou-gu-cha-closing-outram/",
       "published": "2026-11-24 20:22"
-    },
-    {
-      "category": "Singapore",
-      "title": "Woman confronts man allegedly taking photos of her & other women at ION Orchard; man says 'it's not upskirt'",
-      "summary": "She urged other women not to dismiss their instincts out of fear of being seen as \"dramatic\".",
-      "image": "https://static.mothership.sg/1/2026/11/cover-pic-2-2.png",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/ion-orchard-man-photo-women/",
-      "published": "2026-11-24 18:52"
-    },
-    {
-      "category": "Singapore",
-      "title": "StarHub to merge with M1 by 1st half of 2027; acquire Circles Life S'pore",
-      "summary": "Together, the two telcos serve 4.1 million customers.",
-      "image": "https://static.mothership.sg/1/2026/11/cover-pic-1-8.png",
-      "source": "Mothership",
-      "url": "https://mothership.sg/2026/11/starhub-m1-merge/",
-      "published": "2026-11-24 18:17"
     },
     {
       "category": "Singapore",
@@ -93,6 +93,15 @@
     },
     {
       "category": "Crime",
+      "title": "Private pickleball coach cordons off Tampines HDB common area for lessons, gets into fight with resident who protested",
+      "summary": "When a student questioned him about location, the coach retorted: \"Do you think I'm a scammer?\"",
+      "image": "https://static.mothership.sg/1/2026/11/IMG_3981.png",
+      "source": "Mothership",
+      "url": "https://mothership.sg/2026/11/private-pickleball-coach-cordon-hdb-area/",
+      "published": "2026-11-24 22:23"
+    },
+    {
+      "category": "Crime",
       "title": "S'pore police officer, 43, molested junior colleague in 2015 after she fell asleep, gets 6 months' jail",
       "summary": "He was sentenced on Nov. 23.",
       "image": "https://static.mothership.sg/1/2026/11/police-cover-pic.jpg",
@@ -138,15 +147,6 @@
     },
     {
       "category": "Crime",
-      "title": "Social media companies not liable for Buffalo mass shooting, New York's highest court rules",
-      "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--IwtxEuML--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-23T223611Z_4_LYNXNPEMAM1LK_RTROPTP_3_NEW-YORK-SHOOTING.JPG?itok=iyXd2-3y",
-      "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/business/social-media-companies-not-liable-buffalo-mass-shooting-new-yorks-highest-court-rules-6575981",
-      "published": "2026-11-24 04:36"
-    },
-    {
-      "category": "Crime",
       "title": "Ex-supervisor at student care provider who pocketed over $380k gets 3½ years’ jail",
       "summary": "Tharanyaa Mohan was convicted of four counts of criminal breach of trust after a trial.",
       "image": "",
@@ -175,11 +175,20 @@
     {
       "category": "Crime",
       "title": "3 people taken to hospital after three-vehicle accident in Hougang",
-      "summary": "A 28-year-old male driver is assisting with ongoing investigations, the police said.",
+      "summary": "A 28-year-old male driver is assisting with investigations, the police said.",
       "image": "",
       "source": "Straits Times",
       "url": "https://www.straitstimes.com/singapore/3-people-taken-to-hospital-after-three-vehicle-accident-in-hougang",
       "published": "2026-11-24 13:05"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Jensen Huang’s stunning return as Nvidia CEO: A timeline of events",
+      "summary": "From scandal and resignation to a comeback that sent Nvidia shares soaring 31.5 per cent in a day, CNA traces Jensen Huang’s dramatic fall and rise - and the stock’s wild ride...",
+      "image": "https://dam.mediacorp.sg/image/upload/s--KTLHoAdF--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-24T075853Z_1_LYNXNPEMAN0JR_RTROPTP_3_NVIDIA-CEO.JPG?itok=vlrKUc13",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/nvidia-jensen-huang-resignation-return-stocks-6577476",
+      "published": "2026-11-24 17:37"
     },
     {
       "category": "IT & Gadgets",
@@ -189,6 +198,15 @@
       "source": "SoyaCincau",
       "url": "https://soyacincau.com/2026/11/24/honor-magic-9-pro-max-malaysia-launch-preorder-pricing-specs/",
       "published": "2026-11-24 17:08"
+    },
+    {
+      "category": "IT & Gadgets",
+      "title": "Fantasy football's AI managers close the gap but elite humans still hold the edge",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--H43qgdDe--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-24T093737Z_1_LYNXNPEMAN0PQ_RTROPTP_3_SOCCER-ENGLAND-HUL-MUN.JPG?itok=CcHQeaj2",
+      "source": "CNA Business",
+      "url": "https://www.channelnewsasia.com/business/fantasy-footballs-ai-managers-close-gap-elite-humans-still-hold-edge-6577736",
+      "published": "2026-11-24 17:01"
     },
     {
       "category": "IT & Gadgets",
@@ -254,24 +272,6 @@
       "published": "2026-11-24 11:54"
     },
     {
-      "category": "IT & Gadgets",
-      "title": "US lawmakers criticise Nvidia decision to reinstate Huang as CEO",
-      "summary": "President Donald Trump said he pressed Nvidia’s board to bring Jensen Huang back, while lawmakers are seeking answers about why the board reversed its decision.",
-      "image": "https://dam.mediacorp.sg/image/upload/s--_tXdF4Fj--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-23T151540Z_1_LYNXNPEMAM15U_RTROPTP_3_NVIDIA-AI-CONGRESS-HUANG.JPG?itok=ucySJd9S",
-      "source": "CNA Business",
-      "url": "https://www.channelnewsasia.com/world/us-lawmakers-criticise-nvidia-decision-reinstate-huang-ceo-6575546",
-      "published": "2026-11-24 10:26"
-    },
-    {
-      "category": "IT & Gadgets",
-      "title": "CIMB OCTO app now lets you track carbon footprint from your card spending",
-      "summary": "Ever wondered how much carbon emissions are associated with your everyday spending? CIMB has introduced a new Carbon Tracker feature on its CIMB OCTO app which allows you to...",
-      "image": "https://soyacincau.com/wp-content/uploads/2026/11/261124-cimb-octo-carbon-tracker-150x150.jpg",
-      "source": "SoyaCincau",
-      "url": "https://soyacincau.com/2026/11/24/cimb-octo-app-carbon-footprint-tracker/",
-      "published": "2026-11-24 10:22"
-    },
-    {
       "category": "Finance",
       "title": "Japan cuts view on consumer spending for 1st time since 2024",
       "summary": "",
@@ -293,7 +293,7 @@
       "category": "Finance",
       "title": "Proposed StarHub-M1 deal: No mobile price plan changes for 2027, but analysts see pressure to lift profits",
       "summary": "The combination of StarHub, M1 and Circles.Life would put it close to market leader Singtel in subscriber numbers.",
-      "image": "https://dam.mediacorp.sg/image/upload/s--b5YJoRhi--/c_crop,h_574,w_1021,x_1,y_153/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/24/starhub-and-m1-1.jpg?itok=JpOnafcG",
+      "image": "https://dam.mediacorp.sg/image/upload/s--QIikUiNZ--/c_crop,h_607,w_1080,x_0,y_1/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/24/2-panel-composite-11.png?itok=6Gd81FQp",
       "source": "CNA Singapore",
       "url": "https://www.channelnewsasia.com/business/starhub-m1-merger-circles-acquisition-mobile-price-plan-profits-6577486",
       "published": "2026-11-24 15:46"
