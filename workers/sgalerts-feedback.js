@@ -1,5 +1,6 @@
 const KV_KEY = "feedback_items_v1";
 const MAX_ITEMS = 300;
+const MAX_DAILY_SUBMISSIONS = 100;
 const RATE_LIMIT_MAX = 5;
 const RATE_LIMIT_WINDOW_SEC = 3600;
 
@@ -147,6 +148,14 @@ export default {
       const page = String(body.page || "/").trim().slice(0, 300);
       const viewport = String(body.viewport || "").trim().slice(0, 40);
 
+      // Global daily cap across all IPs (protects KV write quota & Telegram from distributed floods)
+      const items = await loadItems(env);
+      const today = new Date().toISOString().slice(0, 10);
+      const todayCount = items.filter(i => String(i.created_at || "").startsWith(today)).length;
+      if (todayCount >= MAX_DAILY_SUBMISSIONS) {
+        return jsonResp(request, { ok: false, error: "Feedback inbox reached today's limit. Please try again tomorrow." }, 429);
+      }
+
       // Per-IP rate limit (5 submissions per hour)
       const ip = request.headers.get("CF-Connecting-IP") || "";
       const rlKey = "rl:" + (await hashIp(ip));
@@ -167,7 +176,6 @@ export default {
         status: "new",
       };
 
-      const items = await loadItems(env);
       items.unshift(item);
       await saveItems(env, items);
       ctx.waitUntil(env.FEEDBACK_KV.put(rlKey, String(curCount + 1), { expirationTtl: RATE_LIMIT_WINDOW_SEC }));

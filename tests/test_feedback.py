@@ -24,6 +24,7 @@ class FeedbackTests(unittest.TestCase):
             "isAuthorized(request, env)",
             "Unauthorized",
             "RATE_LIMIT_MAX",
+            "MAX_DAILY_SUBMISSIONS",
         ):
             self.assertIn(token, src)
 
