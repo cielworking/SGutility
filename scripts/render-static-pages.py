@@ -136,11 +136,19 @@ def render_checkpoint_ai(traffic, location_key):
         next_scan = f" · Next scan ~{h12}:{next_dt.strftime('%M')} {ampm}"
     except Exception:
         next_scan = ""
-    note = (
-        "Live AI count: Cam 4713 (JOHOR queue) + Cam 4703 (JB ramp/bikes & SG lanes); indoor immigration hall queues may differ."
-        if location_key == "tuas"
-        else "Live AI vehicle count on public LTA road cameras; indoor immigration hall queues may differ."
-    )
+    def rough(val):
+        n = max(0, int(round(val or 0)))
+        if n == 0:
+            return "0"
+        if n < 10:
+            return "&lt;10"
+        if n < 20:
+            return "~10+"
+        if n < 100:
+            return f"~{(n // 10) * 10}+"
+        return f"~{(n // 20) * 20}+"
+
+    note = "Rough visual estimate from public LTA CCTV — not an exact vehicle count; indoor immigration hall queues may differ."
     return f"""<div class="ai-traffic-panel" data-checkpoint-ai="{html.escape(location_key, quote=True)}">
       <div class="ai-traffic-head">
         <div>
@@ -148,12 +156,12 @@ def render_checkpoint_ai(traffic, location_key):
           <strong>{html.escape(status)}</strong>
           <span class="ai-traffic-time"> · {checked}{next_scan}</span>
         </div>
-        <span class="ai-status-pill is-{status_slug}">{html.escape(status)} ({total} detected)</span>
+        <span class="ai-status-pill is-{status_slug}">{html.escape(status)} ({rough(total)} est.)</span>
       </div>
       <div class="ai-traffic-stats">
-        <span><strong>Towards JB:</strong> {to_jb} ({jb_status})</span>
-        <span><strong>Towards SG:</strong> {to_sg} ({sg_status})</span>
-        <span><strong>Mix:</strong> {cars} cars · {motos} bikes · {heavy} buses/trucks</span>
+        <span><strong>Towards JB:</strong> {jb_status} ({rough(to_jb)})</span>
+        <span><strong>Towards SG:</strong> {sg_status} ({rough(to_sg)})</span>
+        <span><strong>Est. mix:</strong> {rough(cars)} cars · {rough(motos)} bikes · {rough(heavy)} buses/trucks</span>
       </div>
       <p class="ai-traffic-disclaimer">{note}</p>
     </div>"""

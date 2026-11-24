@@ -1,7 +1,7 @@
 {
   "model": "YOLOX-M ONNX (road-zone SAHI tiled detection)",
-  "last_updated": "2026-11-24T09:46:29.039767+00:00",
-  "snapshot_count": 117,
+  "last_updated": "2026-11-24T09:46:05.774306+00:00",
+  "snapshot_count": 114,
   "snapshots": [
     {
       "timestamp_sgt": "2026-11-17T00:30:35.852913+08:00",
@@ -1473,56 +1473,17 @@
       "tuas_to_sg": 65
     },
     {
-      "timestamp_sgt": "2026-11-24T17:21:38.115719+08:00",
+      "timestamp_sgt": "2026-11-24T17:46:24.043351+08:00",
       "woodlands_status": "Heavy",
-      "woodlands_vehicles": 304,
-      "woodlands_load": 243.0,
-      "woodlands_to_jb": 249,
-      "woodlands_to_sg": 55,
+      "woodlands_vehicles": 398,
+      "woodlands_load": 301.5,
+      "woodlands_to_jb": 313,
+      "woodlands_to_sg": 85,
       "tuas_status": "Heavy",
-      "tuas_vehicles": 152,
-      "tuas_load": 159.0,
-      "tuas_to_jb": 87,
-      "tuas_to_sg": 65
-    },
-    {
-      "timestamp_sgt": "2026-11-24T17:24:21.848639+08:00",
-      "woodlands_status": "Heavy",
-      "woodlands_vehicles": 335,
-      "woodlands_load": 266.0,
-      "woodlands_to_jb": 252,
-      "woodlands_to_sg": 83,
-      "tuas_status": "Heavy",
-      "tuas_vehicles": 124,
-      "tuas_load": 125.5,
-      "tuas_to_jb": 76,
-      "tuas_to_sg": 48
-    },
-    {
-      "timestamp_sgt": "2026-11-24T17:31:46.737719+08:00",
-      "woodlands_status": "Heavy",
-      "woodlands_vehicles": 322,
-      "woodlands_load": 243.5,
-      "woodlands_to_jb": 264,
-      "woodlands_to_sg": 58,
-      "tuas_status": "Heavy",
-      "tuas_vehicles": 148,
-      "tuas_load": 153.5,
-      "tuas_to_jb": 98,
-      "tuas_to_sg": 50
-    },
-    {
-      "timestamp_sgt": "2026-11-24T17:46:45.396366+08:00",
-      "woodlands_status": "Heavy",
-      "woodlands_vehicles": 417,
-      "woodlands_load": 330.0,
-      "woodlands_to_jb": 306,
-      "woodlands_to_sg": 111,
-      "tuas_status": "Heavy",
-      "tuas_vehicles": 140,
-      "tuas_load": 144.0,
-      "tuas_to_jb": 91,
-      "tuas_to_sg": 49
+      "tuas_vehicles": 197,
+      "tuas_load": 179.0,
+      "tuas_to_jb": 143,
+      "tuas_to_sg": 54
     }
   ],
   "by_day_hour": [
@@ -1942,9 +1903,9 @@
     {
       "day": "Tue",
       "hour": 17,
-      "samples": 6,
-      "woodlands_avg_load": 248.0,
-      "tuas_avg_load": 151.6
+      "samples": 3,
+      "woodlands_avg_load": 235.7,
+      "tuas_avg_load": 168.8
     }
   ]
 }

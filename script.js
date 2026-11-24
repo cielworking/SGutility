@@ -1717,19 +1717,28 @@ function renderTravelAdvisor() {
     <div class="travel-advisor-grid">
       <div class="travel-route-box${wClass}">
         <strong>Woodlands Causeway (Cam 2701 &amp; 2702)</strong>
-        <span>Status: <strong>${escapeHtml(w.status || "—")}</strong> (${wTotal} vehicles detected)</span>
-        <span>Towards JB: ${wJb} (${escapeHtml(w.towards_jb_status || "—")}) · Towards SG: ${Number(w.towards_sg || 0)} (${escapeHtml(w.towards_sg_status || "—")})</span>
+        <span>Status: <strong>${escapeHtml(w.status || "—")}</strong> (${formatRoughCount(wTotal)} est.)</span>
+        <span>Towards JB: ${escapeHtml(w.towards_jb_status || "—")} (${formatRoughCount(wJb)}) · Towards SG: ${escapeHtml(w.towards_sg_status || "—")} (${formatRoughCount(w.towards_sg)})</span>
         <a class="detail-link" href="/woodlands-checkpoint.html">All Woodlands cameras →</a>
       </div>
       <div class="travel-route-box${tClass}">
         <strong>Tuas Second Link (Cam 4703 &amp; 4713)</strong>
-        <span>Status: <strong>${escapeHtml(t.status || "—")}</strong> (${tTotal} vehicles detected)</span>
-        <span>Towards JB: ${tJb} (${escapeHtml(t.towards_jb_status || "—")}) · Towards SG: ${Number(t.towards_sg || 0)} (${escapeHtml(t.towards_sg_status || "—")})</span>
+        <span>Status: <strong>${escapeHtml(t.status || "—")}</strong> (${formatRoughCount(tTotal)} est.)</span>
+        <span>Towards JB: ${escapeHtml(t.towards_jb_status || "—")} (${formatRoughCount(tJb)}) · Towards SG: ${escapeHtml(t.towards_sg_status || "—")} (${formatRoughCount(t.towards_sg)})</span>
         <a class="detail-link" href="/tuas-checkpoint.html">All Tuas cameras →</a>
       </div>
     </div>
-    <p class="ai-traffic-disclaimer">For reference only — not 100% accurate. Public LTA CCTV images are compressed, so small or distant vehicles (especially bikes) may be undercounted; indoor immigration hall queues may also differ.</p>
+    <p class="ai-traffic-disclaimer">Rough visual estimate from public LTA CCTV — not an exact vehicle count; indoor immigration hall queues may differ.</p>
   `;
+}
+
+function formatRoughCount(value) {
+  const n = Math.max(0, Math.round(Number(value || 0)));
+  if (n === 0) return "0";
+  if (n < 10) return "<10";
+  if (n < 20) return "~10+";
+  if (n < 100) return `~${Math.floor(n / 10) * 10}+`;
+  return `~${Math.floor(n / 20) * 20}+`;
 }
 
 function renderCheckpointAi() {
@@ -1754,14 +1763,14 @@ function renderCheckpointAi() {
           <strong>${escapeHtml(status)}</strong>
           <span class="ai-traffic-time"> · AI checked ${escapeHtml(formatTimestamp(camTs))}${nextScanTxt}</span>
         </div>
-        <span class="ai-status-pill is-${escapeHtml(slug)}">${escapeHtml(status)} (${Number(loc.total_vehicles || 0)} detected)</span>
+        <span class="ai-status-pill is-${escapeHtml(slug)}">${escapeHtml(status)} (${formatRoughCount(loc.total_vehicles)} est.)</span>
       </div>
       <div class="ai-traffic-stats">
-        <span><strong>Towards JB:</strong> ${Number(loc.towards_jb || 0)} (${escapeHtml(loc.towards_jb_status || "—")})</span>
-        <span><strong>Towards SG:</strong> ${Number(loc.towards_sg || 0)} (${escapeHtml(loc.towards_sg_status || "—")})</span>
-        <span><strong>Mix:</strong> ${Number(counts.car || 0)} cars · ${Number(counts.motorcycle || 0)} bikes · ${heavy} buses/trucks</span>
+        <span><strong>Towards JB:</strong> ${escapeHtml(loc.towards_jb_status || "—")} (${formatRoughCount(loc.towards_jb)})</span>
+        <span><strong>Towards SG:</strong> ${escapeHtml(loc.towards_sg_status || "—")} (${formatRoughCount(loc.towards_sg)})</span>
+        <span><strong>Est. mix:</strong> ${formatRoughCount(counts.car)} cars · ${formatRoughCount(counts.motorcycle)} bikes · ${formatRoughCount(heavy)} buses/trucks</span>
       </div>
-      <p class="ai-traffic-disclaimer">For reference only — not 100% accurate. Public LTA CCTV images are compressed, so small or distant vehicles (especially bikes) may be undercounted; indoor immigration hall queues may also differ.</p>
+      <p class="ai-traffic-disclaimer">Rough visual estimate from public LTA CCTV — not an exact vehicle count; indoor immigration hall queues may differ.</p>
     `;
   });
   renderTravelAdvisor();

@@ -571,6 +571,57 @@ def estimate_2702_bike_viaduct_count(img) -> int:
     return max(0, min(240, max(est_peaks, est_tex)))
 
 
+# Dedicated right-side motorcycle queue lane on Camera 4713 (Tuas Outbound -> Towards JB),
+# compared against the smooth left AYE carriageway in the same frame.
+TUAS_4713_BIKE_LANE = [
+    (1450, 325),
+    (1540, 325),
+    (1840, 560),
+    (1740, 610),
+    (1440, 415),
+]
+TUAS_4713_REF_ROAD = [
+    (250, 520),
+    (680, 400),
+    (720, 530),
+    (280, 670),
+]
+
+
+def estimate_4713_bike_lane_count(img) -> int:
+    import numpy as np
+    from PIL import Image, ImageDraw, ImageFilter
+
+    W, H = img.size
+    if W < 320 or H < 200:
+        return 0
+    sx, sy = W / 1920.0, H / 1069.0
+
+    def poly_mask(pts):
+        m = Image.new("L", (W, H), 0)
+        ImageDraw.Draw(m).polygon([(int(round(x * sx)), int(round(y * sy))) for x, y in pts], fill=255)
+        return np.asarray(m) > 0
+
+    deck_roi = poly_mask(TUAS_4713_BIKE_LANE)
+    ref_roi = poly_mask(TUAS_4713_REF_ROAD)
+    if not np.any(deck_roi) or not np.any(ref_roi):
+        return 0
+
+    gray = img.convert("L")
+    arr = np.asarray(gray, dtype=np.float32)
+    blur = np.asarray(gray.filter(ImageFilter.BoxBlur(4)), dtype=np.float32)
+    tex = np.abs(arr - blur) >= 14.0
+    deck_tex = float(np.mean(tex[deck_roi]))
+    ref_tex = float(np.mean(tex[ref_roi]))
+    tex_excess = deck_tex - ref_tex
+
+    # Strictly above empty-lane parapet baseline (~0.19) to avoid false positives when only cars are queued
+    if tex_excess <= 0.22 or deck_tex <= 0.44:
+        return 0
+    est = int(round(((tex_excess - 0.22) / 0.17) * 140.0))
+    return max(0, min(180, est))
+
+
 def analyze_checkpoint_group(sess, cameras: list[dict], save_samples_dir: Path | None = None) -> dict:
     from PIL import Image
 
@@ -625,6 +676,15 @@ def analyze_checkpoint_group(sess, cameras: list[dict], save_samples_dir: Path |
             viaduct_bikes = estimate_2702_bike_viaduct_count(img)
             if viaduct_bikes > cam_counts["motorcycle"]:
                 extra_bikes = viaduct_bikes - cam_counts["motorcycle"]
+                cam_counts["motorcycle"] += extra_bikes
+                totals["motorcycle"] += extra_bikes
+                cam_dir["towards_jb"] += extra_bikes
+                directions["towards_jb"] += extra_bikes
+                weighted_jb += 0.5 * extra_bikes
+        elif cid == "4713":
+            lane_bikes = estimate_4713_bike_lane_count(img)
+            if lane_bikes > cam_counts["motorcycle"]:
+                extra_bikes = lane_bikes - cam_counts["motorcycle"]
                 cam_counts["motorcycle"] += extra_bikes
                 totals["motorcycle"] += extra_bikes
                 cam_dir["towards_jb"] += extra_bikes
