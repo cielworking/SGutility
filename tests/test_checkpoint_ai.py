@@ -30,15 +30,15 @@ class CheckpointAiTests(unittest.TestCase):
 
     def test_direction_zones_for_woodlands_2701(self):
         mod = load_analyzer()
-        # Upper-left Johor-bound carriageway (including right-most lane near central divider)
-        self.assertEqual(mod.classify_direction("2701", 1150, 680, 1920, 1069), "towards_jb")
-        self.assertEqual(mod.classify_direction("2701", 880, 943, 1920, 1069), "towards_jb")
-        self.assertEqual(mod.classify_direction("2701", 757, 1000, 1920, 1069), "towards_jb")
-        self.assertEqual(mod.classify_direction("2701", 964, 898, 1920, 1069), "towards_jb")
-        # Lower-right Woodlands carriageway below the actual concrete central divider
-        self.assertEqual(mod.classify_direction("2701", 1150, 890, 1920, 1069), "towards_sg")
-        self.assertEqual(mod.classify_direction("2701", 1500, 680, 1920, 1069), "towards_sg")
-        # Sea / water reflections ignored
+        # Upper-left Johor-bound carriageway (above central concrete median: e.g. lorry at (1000,690), car at (1260,595))
+        self.assertEqual(mod.classify_direction("2701", 1000, 690, 1920, 1069), "towards_jb")
+        self.assertEqual(mod.classify_direction("2701", 1260, 595, 1920, 1069), "towards_jb")
+        # Lower-right Woodlands-bound carriageway & bike lane (between central median and KTM railway fence)
+        self.assertEqual(mod.classify_direction("2701", 1240, 660, 1920, 1069), "towards_sg")
+        self.assertEqual(mod.classify_direction("2701", 964, 898, 1920, 1069), "towards_sg")
+        self.assertEqual(mod.classify_direction("2701", 880, 943, 1920, 1069), "towards_sg")
+        # KTM railway tracks, PUB water pipes, and sea are ignored
+        self.assertEqual(mod.classify_direction("2701", 1150, 890, 1920, 1069), "ignored")
         self.assertEqual(mod.classify_direction("2701", 200, 150, 1920, 1069), "ignored")
 
     def test_direction_zones_for_woodlands_2702(self):

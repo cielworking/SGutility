@@ -1,7 +1,7 @@
 {
   "model": "YOLOX-M ONNX (road-zone SAHI tiled detection)",
-  "last_updated": "2026-11-24T00:24:43.711000+00:00",
-  "snapshot_count": 112,
+  "last_updated": "2026-11-24T01:26:31.222792+00:00",
+  "snapshot_count": 110,
   "snapshots": [
     {
       "timestamp_sgt": "2026-11-17T00:30:35.852913+08:00",
@@ -1421,43 +1421,17 @@
       "tuas_to_sg": 16
     },
     {
-      "timestamp_sgt": "2026-11-23T20:47:39.308747+08:00",
+      "timestamp_sgt": "2026-11-24T09:27:02.301742+08:00",
       "woodlands_status": "Heavy",
-      "woodlands_vehicles": 279,
-      "woodlands_load": 167.0,
-      "woodlands_to_jb": 276,
-      "woodlands_to_sg": 3,
+      "woodlands_vehicles": 87,
+      "woodlands_load": 108.0,
+      "woodlands_to_jb": 72,
+      "woodlands_to_sg": 15,
       "tuas_status": "Heavy",
-      "tuas_vehicles": 60,
-      "tuas_load": 60.5,
-      "tuas_to_jb": 47,
-      "tuas_to_sg": 13
-    },
-    {
-      "timestamp_sgt": "2026-11-24T05:20:23.330813+08:00",
-      "woodlands_status": "Heavy",
-      "woodlands_vehicles": 39,
-      "woodlands_load": 43.0,
-      "woodlands_to_jb": 34,
-      "woodlands_to_sg": 5,
-      "tuas_status": "Smooth",
-      "tuas_vehicles": 4,
-      "tuas_load": 8.0,
-      "tuas_to_jb": 0,
-      "tuas_to_sg": 4
-    },
-    {
-      "timestamp_sgt": "2026-11-24T08:25:09.185579+08:00",
-      "woodlands_status": "Heavy",
-      "woodlands_vehicles": 116,
-      "woodlands_load": 151.0,
-      "woodlands_to_jb": 115,
-      "woodlands_to_sg": 1,
-      "tuas_status": "Heavy",
-      "tuas_vehicles": 87,
-      "tuas_load": 92.0,
-      "tuas_to_jb": 30,
-      "tuas_to_sg": 57
+      "tuas_vehicles": 111,
+      "tuas_load": 118.0,
+      "tuas_to_jb": 46,
+      "tuas_to_sg": 65
     }
   ],
   "by_day_hour": [
@@ -1499,9 +1473,9 @@
     {
       "day": "Tue",
       "hour": 9,
-      "samples": 3,
-      "woodlands_avg_load": 136.3,
-      "tuas_avg_load": 36.0
+      "samples": 4,
+      "woodlands_avg_load": 129.2,
+      "tuas_avg_load": 56.5
     },
     {
       "day": "Tue",
