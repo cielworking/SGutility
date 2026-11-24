@@ -1,7 +1,7 @@
 {
   "model": "YOLOX-M ONNX (road-zone SAHI tiled detection)",
-  "last_updated": "2026-11-24T01:26:31.222792+00:00",
-  "snapshot_count": 110,
+  "last_updated": "2026-11-24T01:29:17.063936+00:00",
+  "snapshot_count": 111,
   "snapshots": [
     {
       "timestamp_sgt": "2026-11-17T00:30:35.852913+08:00",
@@ -1432,6 +1432,19 @@
       "tuas_load": 118.0,
       "tuas_to_jb": 46,
       "tuas_to_sg": 65
+    },
+    {
+      "timestamp_sgt": "2026-11-24T09:29:30.645087+08:00",
+      "woodlands_status": "Heavy",
+      "woodlands_vehicles": 87,
+      "woodlands_load": 108.0,
+      "woodlands_to_jb": 72,
+      "woodlands_to_sg": 15,
+      "tuas_status": "Heavy",
+      "tuas_vehicles": 111,
+      "tuas_load": 118.0,
+      "tuas_to_jb": 46,
+      "tuas_to_sg": 65
     }
   ],
   "by_day_hour": [
@@ -1466,16 +1479,16 @@
     {
       "day": "Tue",
       "hour": 8,
-      "samples": 2,
-      "woodlands_avg_load": 140.2,
-      "tuas_avg_load": 90.2
+      "samples": 1,
+      "woodlands_avg_load": 129.5,
+      "tuas_avg_load": 88.5
     },
     {
       "day": "Tue",
       "hour": 9,
-      "samples": 4,
-      "woodlands_avg_load": 129.2,
-      "tuas_avg_load": 56.5
+      "samples": 5,
+      "woodlands_avg_load": 125.0,
+      "tuas_avg_load": 68.8
     },
     {
       "day": "Tue",
@@ -1844,16 +1857,9 @@
     {
       "day": "Mon",
       "hour": 20,
-      "samples": 2,
-      "woodlands_avg_load": 190.5,
-      "tuas_avg_load": 60.5
-    },
-    {
-      "day": "Tue",
-      "hour": 5,
       "samples": 1,
-      "woodlands_avg_load": 43.0,
-      "tuas_avg_load": 8.0
+      "woodlands_avg_load": 214.0,
+      "tuas_avg_load": 60.5
     }
   ]
 }
