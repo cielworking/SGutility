@@ -228,6 +228,23 @@ function getLatestCamTs(data) {
 }
 
 export default {
+  // Cloudflare Cron Trigger (*/15 * * * *): reliably dispatches GitHub Actions YOLOX workflow
+  // because GitHub's native `on: schedule` cron gets throttled to 8-10 hour gaps.
+  async scheduled(_event, env, _ctx) {
+    const token = String(env.GH_WORKFLOW_TOKEN || "").trim();
+    if (!token) return;
+    await fetch("https://api.github.com/repos/cielworking/SGutility/actions/workflows/checkpoint-traffic.yml/dispatches", {
+      method: "POST",
+      headers: {
+        Authorization: "Bearer " + token,
+        Accept: "application/vnd.github+json",
+        "User-Agent": "sgalerts-ai-worker",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ref: "main" }),
+    });
+  },
+
   async fetch(request, env, ctx) {
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: CORS });
