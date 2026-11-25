@@ -1877,18 +1877,83 @@ function initGuideFilters() {
   const bar = document.querySelector(".guide-filters");
   if (!bar) return;
   const cards = Array.from(document.querySelectorAll(".guide-card"));
+  const searchInput = document.getElementById("guideSearchInput");
+  const grid = document.getElementById("guidesGrid") || cards[0]?.parentElement;
+  const INITIAL_LIMIT = 9;
+  let activeFilter = "all";
+  let expandedAll = false;
+
+  // Add counts to filter buttons
+  bar.querySelectorAll("button[data-guide-filter]").forEach((btn) => {
+    const f = btn.getAttribute("data-guide-filter");
+    const n = f === "all" ? cards.length : cards.filter((c) => c.getAttribute("data-guide") === f).length;
+    btn.textContent = `${btn.textContent.replace(/\s*\(\d+\)$/, "")} (${n})`;
+  });
+
+  let moreWrap = document.getElementById("guidesMoreWrap");
+  if (!moreWrap && grid) {
+    moreWrap = document.createElement("div");
+    moreWrap.id = "guidesMoreWrap";
+    moreWrap.className = "guides-more-wrap";
+    const moreBtn = document.createElement("button");
+    moreBtn.type = "button";
+    moreBtn.className = "guides-more-btn";
+    moreBtn.addEventListener("click", () => {
+      expandedAll = !expandedAll;
+      applyGuideFilter();
+    });
+    moreWrap.appendChild(moreBtn);
+    grid.insertAdjacentElement("afterend", moreWrap);
+  }
+
+  function applyGuideFilter() {
+    const q = (searchInput?.value || "").trim().toLowerCase();
+    const matched = cards.filter((card) => {
+      const catOk = activeFilter === "all" || card.getAttribute("data-guide") === activeFilter;
+      if (!catOk) return false;
+      if (!q) return true;
+      return (card.textContent || "").toLowerCase().includes(q);
+    });
+
+    const cap = activeFilter === "all" && !q && !expandedAll ? INITIAL_LIMIT : matched.length;
+    const visibleSet = new Set(matched.slice(0, cap));
+    cards.forEach((card) => {
+      const vis = visibleSet.has(card);
+      card.hidden = !vis;
+      card.style.display = vis ? "" : "none";
+    });
+
+    if (moreWrap) {
+      const btn = moreWrap.querySelector("button");
+      if (activeFilter === "all" && !q && matched.length > INITIAL_LIMIT) {
+        moreWrap.hidden = false;
+        btn.textContent = expandedAll
+          ? "Show fewer guides"
+          : `Show all ${matched.length} guides (+${matched.length - INITIAL_LIMIT} more)`;
+      } else {
+        moreWrap.hidden = true;
+      }
+    }
+  }
+
   bar.addEventListener("click", (event) => {
     const button = event.target.closest("button[data-guide-filter]");
     if (!button || !bar.contains(button)) return;
-    const filter = button.getAttribute("data-guide-filter");
+    activeFilter = button.getAttribute("data-guide-filter") || "all";
+    expandedAll = false;
     bar.querySelectorAll("button[data-guide-filter]").forEach((item) => {
       item.setAttribute("aria-pressed", item === button ? "true" : "false");
     });
-    cards.forEach((card) => {
-      const show = filter === "all" || card.getAttribute("data-guide") === filter;
-      card.hidden = !show;
-    });
+    applyGuideFilter();
   });
+
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      applyGuideFilter();
+    });
+  }
+
+  applyGuideFilter();
 }
 
 function initShareBars() {

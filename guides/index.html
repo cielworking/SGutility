@@ -172,6 +172,12 @@
         "position": 22,
         "url": "https://sgalerts.com/guides/ktm-shuttle-tebrau-woodlands-jb-train.html",
         "name": "KTM Shuttle Tebrau Guide: Woodlands to JB Sentral Train Times & Fares"
+      },
+      {
+        "@type": "ListItem",
+        "position": 23,
+        "url": "https://sgalerts.com/guides/singapore-mall-hdb-parking-rates.html",
+        "name": "Singapore Mall & HDB Parking Rates Guide (Car & Motorcycle)"
       }
     ]
   }
@@ -209,16 +215,26 @@
         </div>
       </div>
     </section>
-    <div class="guide-filters" role="toolbar" aria-label="Filter guides">
-      <button type="button" data-guide-filter="all" aria-pressed="true">All</button>
-      <button type="button" data-guide-filter="land">Land crossings</button>
-      <button type="button" data-guide-filter="motoring">Motoring</button>
-      <button type="button" data-guide-filter="fuel">Fuel</button>
-      <button type="button" data-guide-filter="housing">Housing</button>
-      <button type="button" data-guide-filter="air">Air quality</button>
-      <button type="button" data-guide-filter="weather">Weather</button>
+    <div class="guides-hub-controls">
+      <div class="guides-search-wrap">
+        <input id="guideSearchInput" class="guides-search-input" type="search" placeholder="Search 23 guides (e.g. mall parking, VEP, 3/4 tank, MyICA, COE, BTO)..." aria-label="Search Singapore guides">
+      </div>
+      <div class="guide-filters" role="toolbar" aria-label="Filter guides">
+        <button type="button" data-guide-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-guide-filter="land">Land crossings</button>
+        <button type="button" data-guide-filter="motoring">Parking &amp; Motoring</button>
+        <button type="button" data-guide-filter="fuel">Fuel</button>
+        <button type="button" data-guide-filter="housing">Housing</button>
+        <button type="button" data-guide-filter="air">Air quality</button>
+        <button type="button" data-guide-filter="weather">Weather</button>
+      </div>
     </div>
-    <div class="specialist-layout" style="max-width:52rem;margin:0 auto;padding:0 1rem 2rem;">
+    <div class="guides-bento-grid" id="guidesGrid">
+      <a class="surface-card guide-card" data-guide="motoring" href="/guides/singapore-mall-hdb-parking-rates.html">
+        <p class="eyebrow">Parking &amp; Motoring</p>
+        <h2>Singapore Mall &amp; HDB Parking Rates (Car &amp; Motorcycle)</h2>
+        <p>Standard $0.65 HDB bike &amp; car rates, Free Sunday/PH rules, popular shopping mall rates, and malls with free motorcycle lots.</p>
+      </a>
       <a class="surface-card guide-card" data-guide="land" href="/guides/sg-arrival-card-entry-guide.html" style="display:block;padding:1.25rem;margin-bottom:1rem;text-decoration:none;color:inherit;">
         <p class="eyebrow">Visit Singapore &amp; Customs</p>
         <h2 style="margin:0.25rem 0;">SG Arrival Card (SGAC) entry guide &amp; customs rules</h2>

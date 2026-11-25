@@ -7609,6 +7609,369 @@ kbd, code, pre {
   }
 }
 
+/* ==========================================================================
+   1. Tactile Glowing 3-Way Theme Switcher (System · Light · Dark) +
+      Radial Page-Turning View Transition (Inspired by Tactile Halo Switch)
+   ========================================================================== */
+.site-header .theme-control {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 34px);
+  align-items: center;
+  padding: 3px;
+  gap: 0;
+  border-radius: 12px;
+  background: oklch(90% 0.010 75);
+  border: 1px solid oklch(83% 0.012 75);
+  box-shadow: inset 0 2px 4px rgba(15, 20, 35, 0.10);
+  isolation: isolate;
+}
+
+:root[data-theme="dark"] .site-header .theme-control {
+  background: oklch(13% 0.014 268);
+  border-color: oklch(100% 0 0 / 0.10);
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.65);
+}
+
+/* Physical sliding squircle thumb with ambient rim halo */
+.site-header .theme-control::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 34px;
+  height: calc(100% - 6px);
+  border-radius: 9px;
+  z-index: 0;
+  pointer-events: none;
+  transition:
+    transform 380ms cubic-bezier(0.34, 1.38, 0.64, 1),
+    background-color 280ms ease,
+    box-shadow 320ms ease,
+    border-color 280ms ease;
+  /* Light warm golden-amber sunlight halo */
+  background: linear-gradient(180deg, #ffffff 0%, #f8f4ec 100%);
+  border: 1px solid rgba(251, 176, 59, 0.55);
+  box-shadow:
+    0 0 14px 2px rgba(251, 176, 59, 0.48),
+    0 2px 6px rgba(180, 110, 20, 0.22),
+    inset 0 1px 1px rgba(255, 255, 255, 0.95);
+}
+
+:root[data-theme="dark"] .site-header .theme-control::before {
+  /* Dark cool periwinkle moonlight halo */
+  background: linear-gradient(180deg, oklch(27% 0.028 270) 0%, oklch(19% 0.022 268) 100%);
+  border: 1px solid rgba(139, 156, 255, 0.58);
+  box-shadow:
+    0 0 15px 2px rgba(120, 142, 255, 0.52),
+    0 2px 8px rgba(0, 0, 0, 0.6),
+    inset 0 1px 1px rgba(210, 220, 255, 0.38);
+}
+
+:root[data-theme-mode="system"] .site-header .theme-control::before {
+  transform: translateX(0%);
+}
+:root[data-theme-mode="light"] .site-header .theme-control::before {
+  transform: translateX(100%);
+}
+:root[data-theme-mode="dark"] .site-header .theme-control::before {
+  transform: translateX(200%);
+}
+
+.site-header .theme-choice {
+  position: relative;
+  z-index: 1;
+  width: 34px;
+  height: 30px;
+  border-radius: 9px;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--wf-muted);
+  transition: color 220ms ease, transform 220ms ease;
+}
+
+.site-header .theme-choice svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 420ms cubic-bezier(0.34, 1.45, 0.64, 1), filter 260ms ease;
+}
+
+:root[data-theme-mode="system"] .site-header .theme-choice[data-theme-choice="system"],
+:root[data-theme-mode="light"] .site-header .theme-choice[data-theme-choice="light"] {
+  color: #b45309;
+}
+
+:root[data-theme-mode="system"][data-theme="dark"] .site-header .theme-choice[data-theme-choice="system"],
+:root[data-theme-mode="dark"] .site-header .theme-choice[data-theme-choice="dark"] {
+  color: #e0e7ff;
+}
+
+/* Signature turning/morphing icon micro-animations on active state */
+:root[data-theme-mode="light"] .site-header .theme-choice[data-theme-choice="light"] svg {
+  transform: rotate(90deg) scale(1.1);
+  filter: drop-shadow(0 0 5px rgba(245, 158, 11, 0.55));
+}
+
+:root[data-theme-mode="dark"] .site-header .theme-choice[data-theme-choice="dark"] svg {
+  transform: rotate(-18deg) scale(1.1);
+  filter: drop-shadow(0 0 6px rgba(165, 180, 252, 0.7));
+}
+
+:root[data-theme-mode="system"] .site-header .theme-choice[data-theme-choice="system"] svg {
+  transform: scale(1.06);
+}
+
+@media (max-width: 720px) {
+  .site-header .theme-control {
+    grid-template-columns: repeat(3, 30px);
+    padding: 2px;
+  }
+  .site-header .theme-control::before {
+    top: 2px;
+    left: 2px;
+    width: 30px;
+    height: calc(100% - 4px);
+  }
+  .site-header .theme-choice {
+    width: 30px;
+    height: 28px;
+  }
+}
+
+/* Smooth circular page-turning sweep from the clicked theme button */
+:root[data-vt-switching="1"]::view-transition-old(root),
+:root[data-vt-switching="1"]::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+:root[data-vt-switching="1"]::view-transition-new(root) {
+  animation: sga-theme-turn 460ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes sga-theme-turn {
+  from {
+    clip-path: circle(0px at var(--vt-x, 95%) var(--vt-y, 36px));
+  }
+  to {
+    clip-path: circle(var(--vt-r, 150vmax) at var(--vt-x, 95%) var(--vt-y, 36px));
+  }
+}
+
+/* ==========================================================================
+   2. Anti-Endless-Scroll: Compact Reference Guide Drawers on Utility Pages
+   ========================================================================== */
+.surface-card.is-seo-drawer-host {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.sga-seo-drawer {
+  margin: 0;
+}
+
+.sga-seo-drawer-summary {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 18px;
+  padding: 16px 22px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 150ms ease;
+}
+
+.sga-seo-drawer-summary::-webkit-details-marker {
+  display: none;
+}
+
+.sga-seo-drawer-summary:hover {
+  background: oklch(50% 0.02 268 / 0.05);
+}
+
+.sga-seo-drawer-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1 1 260px;
+}
+
+.sga-seo-drawer-kicker {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--wf-muted);
+}
+
+.sga-seo-drawer-titles strong {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--wf-ink);
+}
+
+.sga-seo-drawer-cta {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.sga-seo-drawer-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--wf-cobalt);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--wf-rule);
+  background: var(--wf-paper);
+}
+
+:root[data-theme="dark"] .sga-seo-drawer-link {
+  background: oklch(100% 0 0 / 0.05);
+  border-color: oklch(100% 0 0 / 0.12);
+  color: var(--dusk-periwinkle-hi);
+}
+
+.sga-seo-drawer-link:hover {
+  background: var(--brand-soft);
+}
+
+.sga-seo-drawer-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: var(--wf-cobalt);
+  color: var(--wf-accent-ink);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.sga-seo-drawer-toggle svg {
+  transition: transform 200ms ease;
+}
+
+.sga-seo-drawer[open] .sga-seo-drawer-toggle svg {
+  transform: rotate(180deg);
+}
+
+.sga-seo-drawer-body {
+  padding: 4px 22px 22px;
+  border-top: 1px solid var(--wf-rule);
+}
+
+@media (max-width: 640px) {
+  .sga-seo-drawer-summary {
+    padding: 14px 16px;
+  }
+  .sga-seo-drawer-body {
+    padding: 4px 16px 18px;
+  }
+}
+
+/* ==========================================================================
+   3. Scannable 3-Column Bento Guides Hub + Instant Search (/guides/)
+   ========================================================================== */
+.guides-hub-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 18px 0 20px;
+}
+
+.guides-search-wrap {
+  width: 100%;
+  max-width: 520px;
+}
+
+.guides-search-input {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 999px !important;
+  font-size: 0.9rem;
+}
+
+.guides-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 310px), 1fr));
+  gap: 16px;
+  padding: 0 0 20px;
+}
+
+.guides-bento-grid .guide-card {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6px;
+  margin: 0 !important;
+  padding: 20px !important;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.guides-bento-grid .guide-card[hidden] {
+  display: none !important;
+}
+
+.guides-bento-grid .guide-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in oklab, var(--wf-cobalt) 45%, var(--wf-rule));
+}
+
+.guides-bento-grid .guide-card h2 {
+  font-size: 1.08rem;
+  line-height: 1.26;
+  margin: 2px 0 4px !important;
+}
+
+.guides-bento-grid .guide-card p:not(.eyebrow) {
+  margin: 0;
+  font-size: 0.87rem;
+  line-height: 1.5;
+  color: var(--wf-muted);
+}
+
+.guides-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 6px 0 28px;
+}
+
+.guides-more-wrap[hidden] {
+  display: none !important;
+}
+
+.guides-more-btn {
+  min-height: 44px;
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: 1px solid var(--wf-rule);
+  background: var(--wf-paper-3);
+  color: var(--wf-ink);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+
+:root[data-theme="dark"] .guides-more-btn {
+  background: var(--wf-paper-2);
+  border-color: oklch(100% 0 0 / 0.12);
+}
+
+.guides-more-btn:hover {
+  background: var(--wf-cobalt);
+  border-color: var(--wf-cobalt);
+  color: var(--wf-accent-ink);
+}
+
 
 
 

@@ -66,14 +66,53 @@
     }
   }
 
-  function setMode(mode, persist) {
+  function setMode(mode, persist, triggerEl) {
     if (MODES.indexOf(mode) === -1) mode = "system";
+    var prevTheme = document.documentElement.getAttribute("data-theme") || effectiveTheme(readMode());
+    var nextTheme = effectiveTheme(mode);
     if (persist) {
       try {
         window.localStorage.setItem(STORAGE_KEY, mode);
       } catch (error) {
         /* Storage can be unavailable in private modes; the choice still applies for this page. */
       }
+    }
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (
+      persist &&
+      prevTheme !== nextTheme &&
+      !reduceMotion &&
+      typeof document.startViewTransition === "function"
+    ) {
+      var x = window.innerWidth - 48;
+      var y = 36;
+      if (triggerEl && typeof triggerEl.getBoundingClientRect === "function") {
+        var rect = triggerEl.getBoundingClientRect();
+        x = Math.round(rect.left + rect.width / 2);
+        y = Math.round(rect.top + rect.height / 2);
+      }
+      var endRadius = Math.hypot(
+        Math.max(x, window.innerWidth - x),
+        Math.max(y, window.innerHeight - y)
+      );
+      var root = document.documentElement;
+      root.style.setProperty("--vt-x", x + "px");
+      root.style.setProperty("--vt-y", y + "px");
+      root.style.setProperty("--vt-r", Math.ceil(endRadius) + "px");
+      root.setAttribute("data-vt-switching", "1");
+      var vt = document.startViewTransition(function () {
+        paint(mode);
+      });
+      if (vt && vt.finished && typeof vt.finished.finally === "function") {
+        vt.finished.finally(function () {
+          root.removeAttribute("data-vt-switching");
+        });
+      } else {
+        window.setTimeout(function () {
+          root.removeAttribute("data-vt-switching");
+        }, 550);
+      }
+      return;
     }
     paint(mode);
   }
@@ -83,7 +122,7 @@
     var choices = document.querySelectorAll("[data-theme-choice]");
     for (var index = 0; index < choices.length; index++) {
       choices[index].addEventListener("click", function () {
-        setMode(this.getAttribute("data-theme-choice"), true);
+        setMode(this.getAttribute("data-theme-choice"), true, this);
       });
     }
     var onSystemChange = function () {
@@ -100,6 +139,7 @@
     initNavHoverMenus();
     initPwaInstall();
     initHubTabs();
+    initCompactSeoGuides();
     initFeedbackWidget();
   }
 
@@ -336,6 +376,66 @@
         });
       });
     });
+  }
+
+  function initCompactSeoGuides() {
+    var path = window.location.pathname || "/";
+    if (path.indexOf("/guides/") === 0) return;
+    var guides = document.querySelectorAll(".surface-card.seo-guide");
+    if (!guides.length) return;
+    var isParking = /\/parking(\.html)?$/i.test(path);
+
+    for (var i = 0; i < guides.length; i++) {
+      var section = guides[i];
+      if (section.getAttribute("data-seo-compact") === "1") continue;
+      // Keep live credit-card net petrol table expanded on petrol page
+      if (section.querySelector("#petrol-discounts-title")) continue;
+      section.setAttribute("data-seo-compact", "1");
+
+      var h2 = section.querySelector("h2");
+      var eyebrow = section.querySelector(".eyebrow");
+      var titleText = h2 ? h2.textContent.trim() : "Reference Guide & FAQs";
+      var kickerText = eyebrow ? eyebrow.textContent.trim() : "Reference guide";
+
+      var details = document.createElement("details");
+      details.className = "sga-seo-drawer";
+      if (window.location.hash && section.querySelector(window.location.hash)) {
+        details.open = true;
+      }
+
+      var summary = document.createElement("summary");
+      summary.className = "sga-seo-drawer-summary";
+      var guideHref = isParking ? "/guides/singapore-mall-hdb-parking-rates.html" : "/guides/";
+      var guideLinkLabel = isParking ? "Open full Parking Guide \u2192" : "All Guides \u2192";
+      summary.innerHTML =
+        '<div class="sga-seo-drawer-titles">' +
+          '<span class="sga-seo-drawer-kicker">' + kickerText.replace(/</g, "&lt;") + '</span>' +
+          '<strong>' + titleText.replace(/</g, "&lt;") + '</strong>' +
+        '</div>' +
+        '<div class="sga-seo-drawer-cta">' +
+          '<a class="sga-seo-drawer-link" href="' + guideHref + '">' + guideLinkLabel + '</a>' +
+          '<span class="sga-seo-drawer-toggle">Read guide &amp; rates <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>' +
+        '</div>';
+
+      // Prevent clicking the dedicated guide link from toggling the accordion
+      var directLink = summary.querySelector(".sga-seo-drawer-link");
+      if (directLink) {
+        directLink.addEventListener("click", function (ev) {
+          ev.stopPropagation();
+        });
+      }
+
+      var body = document.createElement("div");
+      body.className = "sga-seo-drawer-body";
+      while (section.firstChild) {
+        body.appendChild(section.firstChild);
+      }
+
+      details.appendChild(summary);
+      details.appendChild(body);
+      section.classList.add("is-seo-drawer-host");
+      section.appendChild(details);
+    }
   }
 
   function initFeedbackWidget() {
