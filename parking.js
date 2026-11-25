@@ -538,7 +538,17 @@
       }
       const marker = markersById[id];
       if (marker) marker.openPopup();
-      document.getElementById("parkingMap")?.scrollIntoView({ behavior: "smooth", block: "center" });
+      if (window.innerWidth < 1100) {
+        document.getElementById("parkingMap")?.scrollIntoView({ behavior: "smooth", block: "center" });
+      } else {
+        const mapEl = document.getElementById("parkingMap");
+        if (mapEl) {
+          const r = mapEl.getBoundingClientRect();
+          if (r.top < 0 || r.bottom > window.innerHeight) {
+            mapEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          }
+        }
+      }
     }
 
     grid.querySelectorAll("article.parking-card[data-focus-lat]").forEach((card) => {
