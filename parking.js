@@ -575,6 +575,29 @@
     if (!query || query.length < 3 || query === lastGeocodedQuery) return;
     lastGeocodedQuery = query;
     try {
+      // Primary: official Singapore SLA OneMap Elastic Search (fast & exact for SG buildings, condos, MRTs & 6-digit postals)
+      const omUrl = `https://www.onemap.gov.sg/api/common/elastic/search?searchVal=${encodeURIComponent(query)}&returnGeom=Y&getAddrDetails=Y&pageNum=1`;
+      const omRes = await fetch(omUrl);
+      if (omRes.ok) {
+        const omJson = await omRes.json();
+        const hit = Array.isArray(omJson?.results) ? omJson.results[0] : null;
+        if (hit && Number.isFinite(Number(hit.LATITUDE)) && Number.isFinite(Number(hit.LONGITUDE))) {
+          const currentVal = (document.getElementById("parkingSearch")?.value || "").trim();
+          if (currentVal !== query) return;
+          const lat = Number(hit.LATITUDE);
+          const lng = Number(hit.LONGITUDE);
+          searchedLocation = {
+            lat,
+            lng,
+            address: hit.BUILDING && hit.BUILDING !== "NIL" ? `${hit.BUILDING} (${hit.ADDRESS || query})` : (hit.ADDRESS || query),
+          };
+          if (map) map.setView([lat, lng], 18, { animate: true });
+          renderAll();
+          return;
+        }
+      }
+
+      // Fallback: OpenStreetMap Nominatim (SG)
       const url = `${NOMINATIM_SEARCH_URL}?format=json&countrycodes=sg&limit=1&q=${encodeURIComponent(query)}`;
       const res = await fetch(url);
       if (!res.ok) return;
@@ -584,7 +607,6 @@
       const lat = Number(first.lat);
       const lng = Number(first.lon);
       if (!Number.isFinite(lat) || !Number.isFinite(lng)) return;
-      // Ignore stale responses if the user changed the query
       const currentVal = (document.getElementById("parkingSearch")?.value || "").trim();
       if (currentVal !== query) return;
       searchedLocation = {
@@ -634,18 +656,242 @@
     });
 
     const searchInput = document.getElementById("parkingSearch");
+    let suggestMenu = null;
+    let suggestItems = [];
+    let activeSuggestIdx = -1;
+    let omSuggestTimer = null;
+    let omSeq = 0;
+
+    if (searchInput && !searchInput.parentElement.classList.contains("parking-search-wrap")) {
+      const wrap = document.createElement("div");
+      wrap.className = "parking-search-wrap";
+      searchInput.parentNode.insertBefore(wrap, searchInput);
+      wrap.appendChild(searchInput);
+      suggestMenu = document.createElement("div");
+      suggestMenu.id = "parkingSuggestMenu";
+      suggestMenu.className = "parking-suggest-menu";
+      suggestMenu.setAttribute("role", "listbox");
+      suggestMenu.hidden = true;
+      wrap.appendChild(suggestMenu);
+      searchInput.setAttribute("autocomplete", "off");
+      searchInput.setAttribute("aria-autocomplete", "list");
+      searchInput.setAttribute("aria-controls", "parkingSuggestMenu");
+    }
+
+    function closeSuggestions() {
+      if (!suggestMenu) return;
+      suggestMenu.hidden = true;
+      activeSuggestIdx = -1;
+    }
+
+    function selectSuggestion(item) {
+      if (!item || !searchInput) return;
+      clearTimeout(searchDebounce);
+      clearTimeout(omSuggestTimer);
+      searchInput.value = item.fillText || item.title;
+      lastGeocodedQuery = searchInput.value.trim();
+      searchedLocation = {
+        lat: item.lat,
+        lng: item.lng,
+        address: item.subtitle ? `${item.title} (${item.subtitle})` : item.title,
+      };
+      selectedCarparkId = item.cpId || null;
+      closeSuggestions();
+      renderAll();
+      if (map) {
+        map.setView([item.lat, item.lng], 18, { animate: true });
+        if (item.cpId && markersById[item.cpId]) {
+          markersById[item.cpId].openPopup();
+        }
+      }
+    }
+
+    function highlightText(text, rawQuery) {
+      const clean = esc(text || "");
+      const toks = normText(rawQuery).split(/\s+/).filter((t) => t.length >= 2);
+      if (!toks.length) return clean;
+      const pattern = toks.map((t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+      try {
+        return clean.replace(new RegExp(`(${pattern})`, "gi"), "<mark>$1</mark>");
+      } catch {
+        return clean;
+      }
+    }
+
+    function renderSuggestMenu(rawVal) {
+      if (!suggestMenu) return;
+      if (!suggestItems.length) {
+        closeSuggestions();
+        return;
+      }
+      suggestMenu.innerHTML = suggestItems.map((it, idx) => `
+        <button type="button" class="parking-suggest-item${idx === activeSuggestIdx ? " is-active" : ""}" role="option" aria-selected="${idx === activeSuggestIdx ? "true" : "false"}" data-sidx="${idx}">
+          <span class="parking-suggest-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <span class="parking-suggest-main">
+            <strong>${highlightText(it.title, rawVal)}</strong>
+            <small>${esc(it.subtitle || "")}</small>
+          </span>
+          <span class="parking-suggest-badge">${esc(it.badge || "")}</span>
+        </button>
+      `).join("");
+      suggestMenu.hidden = false;
+    }
+
+    function buildLocalSuggestions(rawVal) {
+      if (!dataset?.carparks?.length || rawVal.length < 2) return [];
+      const qLower = rawVal.toLowerCase();
+      const qNorm = normText(rawVal);
+      const toks = qNorm.split(/\s+/).filter(Boolean);
+      if (!toks.length) return [];
+
+      const scored = [];
+      for (const cp of dataset.carparks) {
+        const nameNorm = normText(cp.name);
+        const idLower = String(cp.id || "").toLowerCase();
+        const hayNorm = normText(`${cp.id} ${cp.name} ${cp.address || ""} ${cp.postal || ""}`);
+        if (!toks.every((t) => hayNorm.includes(t)) && !idLower.includes(qLower)) continue;
+
+        let score = 10;
+        if (idLower === qLower || String(cp.postal || "") === rawVal) score = 100;
+        else if (nameNorm.startsWith(qNorm)) score = 90;
+        else if (toks.every((t) => nameNorm.includes(t))) score = 75;
+        else if (nameNorm.includes(toks[0])) score = 55;
+        if (cp.source_type === "LTA Commercial Rates" || cp.source_type === "SG Commercial Directory" || cp.source_type === "Commercial reference") {
+          score += 6;
+        }
+        scored.push({ score, cp });
+      }
+      scored.sort((a, b) => b.score - a.score || a.cp.name.localeCompare(b.cp.name));
+      return scored.slice(0, 6).map(({ cp }) => {
+        const lotInfo = getLotInfo(cp);
+        const isComm = cp.source_type === "LTA Commercial Rates" || cp.source_type === "SG Commercial Directory" || cp.source_type === "Commercial reference";
+        let badge = isComm ? "Mall / Bldg" : (cp.free_bike ? "Free Bike" : "HDB");
+        if (lotInfo && (lotInfo.type === "Y" || vehicleMode === "car")) {
+          badge = `${lotInfo.avail} lots`;
+        }
+        return {
+          cpId: cp.id,
+          title: cp.name,
+          fillText: cp.name,
+          subtitle: cp.address && normText(cp.address) !== normText(cp.name) ? `${cp.id} · ${cp.address}` : cp.id,
+          badge,
+          lat: cp.lat,
+          lng: cp.lng,
+        };
+      });
+    }
+
+    async function fetchOneMapSuggestions(rawVal, seq) {
+      if (rawVal.length < 2) return;
+      try {
+        const url = `https://www.onemap.gov.sg/api/common/elastic/search?searchVal=${encodeURIComponent(rawVal)}&returnGeom=Y&getAddrDetails=Y&pageNum=1`;
+        const res = await fetch(url);
+        if (!res.ok || seq !== omSeq) return;
+        const data = await res.json();
+        if (seq !== omSeq) return;
+        const curVal = (searchInput?.value || "").trim();
+        if (curVal !== rawVal) return;
+
+        const seenNorm = new Set(suggestItems.map((i) => normText(i.title)));
+        const extras = [];
+        for (const r of (data?.results || []).slice(0, 5)) {
+          const lat = Number(r.LATITUDE);
+          const lng = Number(r.LONGITUDE);
+          if (!Number.isFinite(lat) || !Number.isFinite(lng)) continue;
+          const bldg = r.BUILDING && r.BUILDING !== "NIL" ? r.BUILDING : "";
+          const title = bldg || r.ADDRESS || rawVal;
+          const nTitle = normText(title);
+          if (seenNorm.has(nTitle)) continue;
+          seenNorm.add(nTitle);
+          extras.push({
+            cpId: null,
+            title,
+            fillText: title,
+            subtitle: r.ADDRESS && r.ADDRESS !== title ? r.ADDRESS : (r.POSTAL && r.POSTAL !== "NIL" ? `Singapore ${r.POSTAL}` : "Singapore Place"),
+            badge: r.POSTAL && r.POSTAL !== "NIL" ? `S(${r.POSTAL})` : "SG Map",
+            lat,
+            lng,
+          });
+          if (extras.length >= 3) break;
+        }
+        if (extras.length) {
+          suggestItems = [...suggestItems.slice(0, 5), ...extras].slice(0, 8);
+          renderSuggestMenu(rawVal);
+        }
+      } catch {}
+    }
+
+    suggestMenu?.addEventListener("mousedown", (ev) => {
+      // Prevent input blur before click fires
+      ev.preventDefault();
+    });
+
+    suggestMenu?.addEventListener("click", (ev) => {
+      const btn = ev.target.closest("button[data-sidx]");
+      if (!btn) return;
+      const idx = Number(btn.getAttribute("data-sidx"));
+      if (suggestItems[idx]) selectSuggestion(suggestItems[idx]);
+    });
+
+    searchInput?.addEventListener("keydown", (ev) => {
+      if (!suggestMenu || suggestMenu.hidden || !suggestItems.length) return;
+      if (ev.key === "ArrowDown") {
+        ev.preventDefault();
+        activeSuggestIdx = (activeSuggestIdx + 1) % suggestItems.length;
+        renderSuggestMenu(searchInput.value.trim());
+      } else if (ev.key === "ArrowUp") {
+        ev.preventDefault();
+        activeSuggestIdx = (activeSuggestIdx - 1 + suggestItems.length) % suggestItems.length;
+        renderSuggestMenu(searchInput.value.trim());
+      } else if (ev.key === "Enter") {
+        ev.preventDefault();
+        const pick = suggestItems[activeSuggestIdx >= 0 ? activeSuggestIdx : 0];
+        if (pick) selectSuggestion(pick);
+      } else if (ev.key === "Escape") {
+        closeSuggestions();
+      }
+    });
+
+    searchInput?.addEventListener("focus", () => {
+      const val = searchInput.value.trim();
+      if (val.length >= 2 && suggestItems.length) {
+        suggestMenu.hidden = false;
+      }
+    });
+
+    document.addEventListener("click", (ev) => {
+      if (suggestMenu && !suggestMenu.hidden && !ev.target.closest(".parking-search-wrap")) {
+        closeSuggestions();
+      }
+    });
+
     searchInput?.addEventListener("input", () => {
       const val = searchInput.value.trim();
       clearTimeout(searchDebounce);
+      clearTimeout(omSuggestTimer);
       selectedCarparkId = null;
+      activeSuggestIdx = -1;
       if (!val) {
         searchedLocation = null;
         lastGeocodedQuery = "";
+        suggestItems = [];
+        closeSuggestions();
         renderAll();
         return;
       }
+      if (val.length >= 2) {
+        suggestItems = buildLocalSuggestions(val);
+        renderSuggestMenu(val);
+        const mySeq = ++omSeq;
+        omSuggestTimer = setTimeout(() => fetchOneMapSuggestions(val, mySeq), 140);
+      } else {
+        suggestItems = [];
+        closeSuggestions();
+      }
       renderAll();
-      const delay = /^\d{6}$/.test(val) ? 120 : 350;
+      const delay = /^\d{6}$/.test(val) ? 120 : 420;
       searchDebounce = setTimeout(() => geocodeWithOneMap(val), delay);
     });
 

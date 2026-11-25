@@ -7610,13 +7610,18 @@ kbd, code, pre {
 }
 
 /* ==========================================================================
-   1. Tactile Glowing 3-Way Theme Switcher (System · Light · Dark) +
+   1. Tactile Glowing 2-Way Theme Switcher (Light · Dark) +
       Radial Page-Turning View Transition (Inspired by Tactile Halo Switch)
    ========================================================================== */
+.site-header .theme-choice[data-theme-choice="system"],
+.theme-control .theme-choice[data-theme-choice="system"] {
+  display: none !important;
+}
+
 .site-header .theme-control {
   position: relative;
   display: inline-grid;
-  grid-template-columns: repeat(3, 34px);
+  grid-template-columns: repeat(2, 34px);
   align-items: center;
   padding: 3px;
   gap: 0;
@@ -7633,7 +7638,7 @@ kbd, code, pre {
   box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.65);
 }
 
-/* Physical sliding squircle thumb with ambient rim halo */
+/* Physical sliding squircle thumb with ambient rim halo (Slot 0 = Light, Slot 1 = Dark) */
 .site-header .theme-control::before {
   content: "";
   position: absolute;
@@ -7644,6 +7649,7 @@ kbd, code, pre {
   border-radius: 9px;
   z-index: 0;
   pointer-events: none;
+  transform: translateX(0%);
   transition:
     transform 380ms cubic-bezier(0.34, 1.38, 0.64, 1),
     background-color 280ms ease,
@@ -7659,6 +7665,7 @@ kbd, code, pre {
 }
 
 :root[data-theme="dark"] .site-header .theme-control::before {
+  transform: translateX(100%);
   /* Dark cool periwinkle moonlight halo */
   background: linear-gradient(180deg, oklch(27% 0.028 270) 0%, oklch(19% 0.022 268) 100%);
   border: 1px solid rgba(139, 156, 255, 0.58);
@@ -7666,16 +7673,6 @@ kbd, code, pre {
     0 0 15px 2px rgba(120, 142, 255, 0.52),
     0 2px 8px rgba(0, 0, 0, 0.6),
     inset 0 1px 1px rgba(210, 220, 255, 0.38);
-}
-
-:root[data-theme-mode="system"] .site-header .theme-control::before {
-  transform: translateX(0%);
-}
-:root[data-theme-mode="light"] .site-header .theme-control::before {
-  transform: translateX(100%);
-}
-:root[data-theme-mode="dark"] .site-header .theme-control::before {
-  transform: translateX(200%);
 }
 
 .site-header .theme-choice {
@@ -7696,34 +7693,28 @@ kbd, code, pre {
   transition: transform 420ms cubic-bezier(0.34, 1.45, 0.64, 1), filter 260ms ease;
 }
 
-:root[data-theme-mode="system"] .site-header .theme-choice[data-theme-choice="system"],
-:root[data-theme-mode="light"] .site-header .theme-choice[data-theme-choice="light"] {
+:root[data-theme="light"] .site-header .theme-choice[data-theme-choice="light"] {
   color: #b45309;
 }
 
-:root[data-theme-mode="system"][data-theme="dark"] .site-header .theme-choice[data-theme-choice="system"],
-:root[data-theme-mode="dark"] .site-header .theme-choice[data-theme-choice="dark"] {
+:root[data-theme="dark"] .site-header .theme-choice[data-theme-choice="dark"] {
   color: #e0e7ff;
 }
 
 /* Signature turning/morphing icon micro-animations on active state */
-:root[data-theme-mode="light"] .site-header .theme-choice[data-theme-choice="light"] svg {
+:root[data-theme="light"] .site-header .theme-choice[data-theme-choice="light"] svg {
   transform: rotate(90deg) scale(1.1);
   filter: drop-shadow(0 0 5px rgba(245, 158, 11, 0.55));
 }
 
-:root[data-theme-mode="dark"] .site-header .theme-choice[data-theme-choice="dark"] svg {
+:root[data-theme="dark"] .site-header .theme-choice[data-theme-choice="dark"] svg {
   transform: rotate(-18deg) scale(1.1);
   filter: drop-shadow(0 0 6px rgba(165, 180, 252, 0.7));
 }
 
-:root[data-theme-mode="system"] .site-header .theme-choice[data-theme-choice="system"] svg {
-  transform: scale(1.06);
-}
-
 @media (max-width: 720px) {
   .site-header .theme-control {
-    grid-template-columns: repeat(3, 30px);
+    grid-template-columns: repeat(2, 30px);
     padding: 2px;
   }
   .site-header .theme-control::before {
@@ -7970,6 +7961,143 @@ kbd, code, pre {
   background: var(--wf-cobalt);
   border-color: var(--wf-cobalt);
   color: var(--wf-accent-ink);
+}
+
+/* ==========================================================================
+   4. Google Maps-Style Instant Autocomplete Dropdown (#parkingSearch)
+   ========================================================================== */
+.parking-search-wrap {
+  position: relative;
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.parking-search-wrap .parking-search-input {
+  width: 100%;
+}
+
+.parking-suggest-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 1200;
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  border-radius: 14px;
+  border: 1px solid var(--wf-rule);
+  background: var(--wf-paper-3);
+  color: var(--wf-ink);
+  box-shadow: 0 20px 44px -12px rgba(15, 23, 42, 0.28);
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.parking-suggest-menu[hidden] {
+  display: none !important;
+}
+
+:root[data-theme="dark"] .parking-suggest-menu {
+  background: oklch(22% 0.018 268 / 0.98);
+  border-color: oklch(100% 0 0 / 0.12);
+  box-shadow: inset 0 1px 0 oklch(100% 0 0 / 0.08), 0 24px 56px -12px rgba(0, 0, 0, 0.78);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+.parking-suggest-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 11px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+.parking-suggest-item:hover,
+.parking-suggest-item.is-active {
+  background: var(--brand-soft);
+}
+
+:root[data-theme="dark"] .parking-suggest-item:hover,
+:root[data-theme="dark"] .parking-suggest-item.is-active {
+  background: oklch(77% 0.10 274 / 0.16);
+}
+
+.parking-suggest-icon {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: oklch(50% 0.02 268 / 0.08);
+  color: var(--wf-cobalt);
+}
+
+:root[data-theme="dark"] .parking-suggest-icon {
+  background: oklch(100% 0 0 / 0.06);
+  color: var(--dusk-periwinkle-hi);
+}
+
+.parking-suggest-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.parking-suggest-main strong {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--wf-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.parking-suggest-main strong mark {
+  background: transparent;
+  color: var(--wf-cobalt);
+  font-weight: 700;
+}
+
+:root[data-theme="dark"] .parking-suggest-main strong mark {
+  color: var(--dusk-periwinkle-hi);
+}
+
+.parking-suggest-main small {
+  font-size: 0.75rem;
+  color: var(--wf-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.parking-suggest-badge {
+  flex: 0 0 auto;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--wf-rule);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--wf-muted);
+  white-space: nowrap;
+}
+
+:root[data-theme="dark"] .parking-suggest-badge {
+  border-color: oklch(100% 0 0 / 0.12);
+  color: var(--wf-ink-2);
 }
 
 

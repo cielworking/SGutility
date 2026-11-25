@@ -62,7 +62,9 @@
     var choices = document.querySelectorAll("[data-theme-choice]");
     for (var index = 0; index < choices.length; index++) {
       var choice = choices[index];
-      choice.setAttribute("aria-pressed", choice.getAttribute("data-theme-choice") === mode ? "true" : "false");
+      var cMode = choice.getAttribute("data-theme-choice");
+      var isPressed = cMode === theme || (cMode === "system" && mode === "system");
+      choice.setAttribute("aria-pressed", isPressed ? "true" : "false");
     }
   }
 
