@@ -8263,6 +8263,46 @@ html.sga-sheet-open body {
   overscroll-behavior: none;
 }
 
+/* Crisp Scannable Key-Points Box for Guides */
+.sga-tldr-box {
+  margin: 0 0 18px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid color-mix(in oklab, var(--wf-cobalt) 32%, var(--wf-rule));
+  background: var(--brand-soft);
+}
+
+:root[data-theme="dark"] .sga-tldr-box {
+  background: oklch(77% 0.10 274 / 0.10);
+  border-color: oklch(77% 0.10 274 / 0.28);
+}
+
+.sga-tldr-box strong.sga-tldr-title {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--wf-cobalt);
+}
+
+:root[data-theme="dark"] .sga-tldr-box strong.sga-tldr-title {
+  color: var(--dusk-periwinkle-hi);
+}
+
+.sga-tldr-box ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 5px;
+}
+
+.sga-tldr-box li {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
 
 
 
