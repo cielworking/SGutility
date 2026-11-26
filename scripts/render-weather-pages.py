@@ -130,18 +130,18 @@ def esc(value):
 TAB_ICONS = {
     "home": '<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',
     "travel": '<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/>',
-    "housing": '<path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/>',
+    "parking": '<rect width="18" height="18" x="3" y="3" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>',
     "weather": '<path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M16 14v6"/><path d="M8 14v6"/><path d="M12 16v6"/>',
     "more": '<line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/>',
 }
 
 
 def mobile_tabbar(current):
-    """Fixed bottom tab bar shared with the static pages (<=700px only)."""
+    """Fixed bottom tab bar shared across all pages (<=700px only)."""
     groups = {
-        "home": {"home", "news"},
+        "home": {"home"},
         "travel": {"travel", "woodlands", "tuas"},
-        "housing": {"housing", "bto", "housing-calc", "housing-qa"},
+        "parking": {"parking", "speed-cameras"},
         "weather": {"rain", "rain-sg", "rain-my", "haze", "haze-my"},
     }
     svg = ('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" '
@@ -152,23 +152,30 @@ def mobile_tabbar(current):
         cur = ' aria-current="page"' if current in groups[key] else ""
         return f'<a class="tabbar-item" href="{href}"{cur}>{svg.format(TAB_ICONS[key])}<span>{label}</span></a>'
 
+    more_cur = ' aria-current="page"' if not any(current in vals for vals in groups.values()) else ""
     links = (
-        '<a href="/visit-singapore.html">Visit Singapore</a><a href="/sgd-currency-converter.html">SGD Currency Converter</a>'
-        '<a href="/singapore-gst-refund-calculator.html">GST Refund Calculator</a>'
-        '<a href="/parking.html">SG Parking</a><a href="/speed-cameras.html">Speed Cameras</a>'
-        '<a href="/singapore-petrol-prices.html">Petrol prices</a><a href="/latest-coe-prices.html">COE prices</a>'
-        '<a href="/bto-launches.html">BTO launches</a><a href="/singapore/haze/">Haze &amp; PSI</a>'
-        '<a href="/woodlands-checkpoint.html">Checkpoints</a><a href="/guides/">All Guides</a>'
-        '<a href="/4d-results.html">4D results</a><a href="/toto-results.html">TOTO results</a>'
-        '<a href="/about.html">About</a><a href="/contact.html">Contact</a>'
+        '<a href="/visit-singapore.html">Visit Singapore</a>'
+        '<a href="/singapore-petrol-prices.html">Petrol prices</a>'
+        '<a href="/latest-coe-prices.html">COE prices</a>'
+        '<a href="/housing.html">Housing &amp; BTO</a>'
+        '<a href="/singapore-fixed-deposit-rates.html">Fixed Deposits</a>'
+        '<a href="/speed-cameras.html">Speed Cameras</a>'
+        '<a href="/guides/">All Guides</a>'
+        '<a href="/news.html">SG News</a>'
+        '<a href="/4d-results.html">4D results</a>'
+        '<a href="/toto-results.html">TOTO results</a>'
+        '<a href="/sgd-currency-converter.html">SGD Converter</a>'
+        '<a href="/singapore-gst-refund-calculator.html">GST Refund</a>'
+        '<a href="/about.html">About</a>'
+        '<a href="/contact.html">Contact</a>'
     )
     return (
         '<nav class="mobile-tabbar" aria-label="Mobile quick navigation">'
         + tab("/", "Home", "home")
         + tab("/travel.html", "Travel", "travel")
-        + tab("/housing.html", "Housing", "housing")
+        + tab("/parking.html", "Parking", "parking")
         + tab("/weather/", "Weather", "weather")
-        + f'<details class="tabbar-more"><summary class="tabbar-item">{svg.format(TAB_ICONS["more"])}<span>More</span></summary>'
+        + f'<details class="tabbar-more"><summary class="tabbar-item"{more_cur}>{svg.format(TAB_ICONS["more"])}<span>More</span></summary>'
           '<div class="tabbar-sheet" id="tabbar-more-sheet"><p class="tabbar-sheet-title">More on SG Alerts</p>'
           f'<div class="tabbar-sheet-links">{links}</div></div></details></nav>'
     )

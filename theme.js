@@ -224,13 +224,26 @@
       });
     });
 
-    var tabbarMenus = Array.prototype.slice.call(document.querySelectorAll(".tabbar-more"));
-    tabbarMenus.forEach(function (menu) {
-      menu.addEventListener("click", function (event) {
-        if (event.target && event.target.closest && event.target.closest(".tabbar-sheet a")) {
-          menu.open = false;
-        }
-      });
+    function closeOpenTabbarSheets(event) {
+      var target = event && event.target;
+      var openSheets = document.querySelectorAll(".tabbar-more[open]");
+      if (!openSheets.length) return;
+      if (target && target.closest && (target.closest(".tabbar-sheet") || target.closest(".tabbar-more > summary"))) {
+        return;
+      }
+      for (var i = 0; i < openSheets.length; i++) {
+        openSheets[i].open = false;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var target = event.target;
+      if (target && target.closest && target.closest(".tabbar-sheet a")) {
+        var parentMore = target.closest(".tabbar-more");
+        if (parentMore) parentMore.open = false;
+        return;
+      }
+      closeOpenTabbarSheets(event);
     });
 
     document.addEventListener("keydown", function (event) {
@@ -242,9 +255,10 @@
           sync(menu);
         }
       });
-      tabbarMenus.forEach(function (menu) {
-        if (menu.open) menu.open = false;
-      });
+      var openSheets = document.querySelectorAll(".tabbar-more[open]");
+      for (var i = 0; i < openSheets.length; i++) {
+        openSheets[i].open = false;
+      }
     });
 
     document.addEventListener("pointerdown", function (event) {
@@ -258,11 +272,7 @@
           }
         });
       }
-      if (!target || !target.closest || !target.closest(".tabbar-more")) {
-        tabbarMenus.forEach(function (menu) {
-          if (menu.open) menu.open = false;
-        });
-      }
+      closeOpenTabbarSheets(event);
     });
   }
 
