@@ -8193,95 +8193,17 @@ kbd, code, pre {
     font-size: 0.8rem;
   }
 
-  /* Mirror desktop 2-column dashboard grids on phones (>= 350px) */
+  /* Mirror desktop 2-column KPI & camera grids on phones (>= 350px) */
   .summary-grid,
   .parking-summary-grid,
-  .checkpoint-grid,
-  .cp-briefing-grid,
-  .bto-grid,
-  .pool-side-grid,
-  .petrol-discount-cards,
-  .guides-bento-grid {
+  .checkpoint-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 10px !important;
-  }
-
-  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .home-utility-grid,
-  .home-utility-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 10px !important;
-    padding: 14px !important;
-  }
-
-  .home-utility-card {
-    padding: 12px 12px 13px !important;
-    gap: 6px !important;
-  }
-
-  .home-utility-kicker {
-    font-size: 0.66rem;
-    line-height: 1.25;
-  }
-
-  .home-utility-card h2 {
-    font-size: 0.92rem !important;
-    line-height: 1.25;
-  }
-
-  .home-utility-card p {
-    font-size: 0.76rem !important;
-    line-height: 1.4;
-  }
-
-  .home-utility-links {
-    gap: 5px;
-    margin-top: auto;
-  }
-
-  .home-utility-links a {
-    min-height: 30px !important;
-    padding: 4px 8px !important;
-    font-size: 0.69rem !important;
-  }
-
-  .cp-briefing-card {
-    padding: 12px !important;
-  }
-
-  .cp-briefing-card h3 {
-    font-size: 0.94rem;
-    margin-bottom: 6px;
-  }
-
-  .cp-briefing-row {
-    padding: 7px 0;
-    font-size: 0.78rem;
-  }
-
-  .guides-bento-grid .guide-card {
-    padding: 13px 12px !important;
-  }
-
-  .guides-bento-grid .guide-card h2 {
-    font-size: 0.92rem !important;
-  }
-
-  .guides-bento-grid .guide-card p:not(.eyebrow) {
-    font-size: 0.76rem !important;
-    line-height: 1.4;
   }
 }
 
 @media (max-width: 700px) {
-  /* Restore the desktop top navigation bar on mobile as a crisp scrollable strip */
-  body {
-    padding-bottom: 18px !important;
-  }
-
-  .mobile-tabbar {
-    display: none !important;
-  }
-
+  /* Restore desktop top navigation bar on mobile with wrap (overflow: visible so dropdowns never clip) */
   .site-header .header-inner {
     flex-wrap: wrap !important;
     row-gap: 6px;
@@ -8297,19 +8219,12 @@ kbd, code, pre {
     order: 3;
     flex: 1 0 100%;
     width: 100%;
-    flex-wrap: nowrap !important;
+    flex-wrap: wrap !important;
     align-items: center;
-    gap: 2px;
-    overflow-x: auto;
-    overflow-y: visible;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-    padding-top: 4px;
+    gap: 3px 4px;
+    overflow: visible !important;
+    padding-top: 5px;
     border-top: 1px solid var(--wf-rule);
-  }
-
-  .site-header .primary-nav::-webkit-scrollbar {
-    display: none;
   }
 
   .site-header .primary-nav > .nav-menu,
@@ -8319,19 +8234,16 @@ kbd, code, pre {
 
   .site-header .primary-nav summary,
   .site-header .primary-nav > a {
-    min-height: 32px !important;
-    padding: 5px 9px !important;
-    font-size: 0.74rem !important;
+    min-height: 30px !important;
+    padding: 4px 8px !important;
+    font-size: 0.72rem !important;
     white-space: nowrap;
   }
 }
 
 @media (max-width: 350px) {
-  .home-utility-grid,
   .summary-grid,
   .parking-summary-grid,
-  .cp-briefing-grid,
-  .guides-bento-grid,
   #coeResult {
     grid-template-columns: minmax(0, 1fr) !important;
   }

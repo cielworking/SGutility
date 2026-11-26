@@ -180,19 +180,18 @@
             sync(other);
           }
         });
-        if (panel && sum && window.innerWidth <= 700) {
-          var r = sum.getBoundingClientRect();
-          panel.style.position = "fixed";
-          panel.style.top = Math.round(r.bottom + 6) + "px";
-          panel.style.left = Math.max(10, Math.min(Math.round(r.left), window.innerWidth - 230)) + "px";
-          panel.style.right = "auto";
-          panel.style.zIndex = "300";
-        } else if (panel) {
+        if (panel && sum) {
           panel.style.position = "";
           panel.style.top = "";
-          panel.style.left = "";
-          panel.style.right = "";
           panel.style.zIndex = "";
+          var r = sum.getBoundingClientRect();
+          if (r.left + 210 > window.innerWidth) {
+            panel.style.left = "auto";
+            panel.style.right = "0";
+          } else {
+            panel.style.left = "0";
+            panel.style.right = "auto";
+          }
         }
       });
 
