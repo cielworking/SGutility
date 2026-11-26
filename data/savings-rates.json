@@ -1,7 +1,7 @@
 {
   "source_name": "Monetary Authority of Singapore (MAS) & Singapore Bank Boards",
   "source_url": "https://www.mas.gov.sg/bonds-and-bills",
-  "last_updated": "2026-11-26T05:02:08.978497+00:00",
+  "last_updated": "2026-11-26T15:13:17.362953+00:00",
   "ssb": {
     "issue_code": "GX26120A",
     "savings_bond_code": "SBDEC26",
@@ -84,7 +84,7 @@
       "issue_code": "BS26124E",
       "auction_date": "03 Dec 2026",
       "issue_date": "08 Dec 2026",
-      "maturity_date": null
+      "maturity_date": "08 Jun 2027"
     }
   },
   "fixed_deposits": [
