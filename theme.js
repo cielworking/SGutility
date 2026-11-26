@@ -224,6 +224,15 @@
       });
     });
 
+    var tabbarMenus = Array.prototype.slice.call(document.querySelectorAll(".tabbar-more"));
+    tabbarMenus.forEach(function (menu) {
+      menu.addEventListener("click", function (event) {
+        if (event.target && event.target.closest && event.target.closest(".tabbar-sheet a")) {
+          menu.open = false;
+        }
+      });
+    });
+
     document.addEventListener("keydown", function (event) {
       if (event.key !== "Escape") return;
       menus.forEach(function (menu) {
@@ -233,17 +242,27 @@
           sync(menu);
         }
       });
+      tabbarMenus.forEach(function (menu) {
+        if (menu.open) menu.open = false;
+      });
     });
 
     document.addEventListener("pointerdown", function (event) {
-      if (event.target.closest && event.target.closest(".primary-nav")) return;
-      menus.forEach(function (menu) {
-        if (menu.open) {
-          clearTimer(menu);
-          menu.open = false;
-          sync(menu);
-        }
-      });
+      var target = event.target;
+      if (!target || !target.closest || !target.closest(".primary-nav")) {
+        menus.forEach(function (menu) {
+          if (menu.open) {
+            clearTimer(menu);
+            menu.open = false;
+            sync(menu);
+          }
+        });
+      }
+      if (!target || !target.closest || !target.closest(".tabbar-more")) {
+        tabbarMenus.forEach(function (menu) {
+          if (menu.open) menu.open = false;
+        });
+      }
     });
   }
 
