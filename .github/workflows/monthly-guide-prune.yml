@@ -1,0 +1,33 @@
+name: Monthly Guide Expiry Prune
+
+on:
+  schedule:
+    # 1st of every month at 02:00 SGT (18:00 UTC on last day / 01:00 UTC on 1st -> 09:00 SGT)
+    - cron: "0 18 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  prune:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Prune expired dated guide items
+        run: python scripts/prune-expired-guide-items.py
+      - name: Commit changes if any
+        run: |
+          if [ -n "$(git status --porcelain guides/)" ]; then
+            git config user.name "SG Alerts Bot"
+            git config user.email "bot@sgalerts.com"
+            git add guides/
+            git commit -m "chore: auto-prune expired dated guide items"
+            git pull --rebase -X theirs origin main
+            git push origin main
+          else
+            echo "No expired guide items to prune."
+          fi

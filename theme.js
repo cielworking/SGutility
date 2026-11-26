@@ -142,7 +142,20 @@
     initPwaInstall();
     initHubTabs();
     initCompactSeoGuides();
+    initAutoExpire();
     initFeedbackWidget();
+  }
+
+  function initAutoExpire() {
+    var nodes = document.querySelectorAll("[data-expires]");
+    if (!nodes.length) return;
+    var nowSg = new Date(Date.now() + 8 * 3600000).toISOString().slice(0, 10);
+    for (var i = 0; i < nodes.length; i++) {
+      var exp = (nodes[i].getAttribute("data-expires") || "").trim();
+      if (/^\d{4}-\d{2}-\d{2}$/.test(exp) && nowSg > exp) {
+        nodes[i].remove();
+      }
+    }
   }
 
   function initNavHoverMenus() {
