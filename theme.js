@@ -170,6 +170,8 @@
       sync(menu);
       menu.addEventListener("toggle", function () {
         sync(menu);
+        var panel = menu.querySelector(".nav-panel");
+        var sum = menu.querySelector("summary");
         if (!menu.open) return;
         menus.forEach(function (other) {
           if (other !== menu && other.open) {
@@ -178,6 +180,20 @@
             sync(other);
           }
         });
+        if (panel && sum && window.innerWidth <= 700) {
+          var r = sum.getBoundingClientRect();
+          panel.style.position = "fixed";
+          panel.style.top = Math.round(r.bottom + 6) + "px";
+          panel.style.left = Math.max(10, Math.min(Math.round(r.left), window.innerWidth - 230)) + "px";
+          panel.style.right = "auto";
+          panel.style.zIndex = "300";
+        } else if (panel) {
+          panel.style.position = "";
+          panel.style.top = "";
+          panel.style.left = "";
+          panel.style.right = "";
+          panel.style.zIndex = "";
+        }
       });
 
       menu.addEventListener("pointerenter", function (e) {

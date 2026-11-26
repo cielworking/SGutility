@@ -8100,6 +8100,243 @@ kbd, code, pre {
   color: var(--wf-ink-2);
 }
 
+/* ==========================================================================
+   5. Desktop-Parity Mobile Layout (<= 780px)
+   Mirrors the desktop dashboard look, top nav bar, KPI cards & 2-col grids
+   on mobile phones without horizontal overflow.
+   ========================================================================== */
+
+/* COE KPI departure-board cards on ALL viewports (2-col on mobile, auto-fit on desktop) */
+#coeResult {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (min-width: 780px) {
+  #coeResult {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+}
+
+#coeResult > .row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 13px 14px;
+  border-radius: 14px !important;
+  border: 1px solid var(--wf-rule) !important;
+  border-top: 3px solid var(--wf-cobalt) !important;
+  background: var(--wf-paper-3);
+}
+
+:root[data-theme="dark"] #coeResult > .row {
+  background: oklch(23% 0.017 268 / 0.78);
+  border-color: oklch(100% 0 0 / 0.08) !important;
+  border-top-color: var(--wf-cobalt) !important;
+  box-shadow: inset 0 1px 0 oklch(100% 0 0 / 0.06);
+}
+
+#coeResult > .row > span {
+  font-size: 0.78rem;
+  line-height: 1.32;
+}
+
+#coeResult > .row > strong {
+  font-size: 1.15rem;
+  line-height: 1.15;
+  text-align: left;
+  max-width: 100%;
+}
+
+#coeResult > .note,
+#coeResult > .meta,
+#coeResult > p {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 780px) {
+  /* Keep desktop visual order & hero icon */
+  .page-hero-icon {
+    display: inline-flex !important;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .travel-alert-banner {
+    order: 0 !important;
+  }
+
+  .share-bar {
+    order: 0 !important;
+  }
+
+  /* Keep hero CTAs as sleek desktop-style pill buttons instead of full-width blocks */
+  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .section-header .card-actions,
+  .page-hero .hero-actions,
+  .specialist-hero-actions {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: auto;
+  }
+
+  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .section-header .card-actions .detail-link,
+  .page-hero .hero-actions .detail-link,
+  .specialist-hero-actions .detail-link {
+    min-height: 38px;
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  /* Mirror desktop 2-column dashboard grids on phones (>= 350px) */
+  .summary-grid,
+  .parking-summary-grid,
+  .checkpoint-grid,
+  .cp-briefing-grid,
+  .bto-grid,
+  .pool-side-grid,
+  .petrol-discount-cards,
+  .guides-bento-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+  }
+
+  body.home-compact .content-grid > .surface-card.wide-card:first-of-type > .home-utility-grid,
+  .home-utility-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    padding: 14px !important;
+  }
+
+  .home-utility-card {
+    padding: 12px 12px 13px !important;
+    gap: 6px !important;
+  }
+
+  .home-utility-kicker {
+    font-size: 0.66rem;
+    line-height: 1.25;
+  }
+
+  .home-utility-card h2 {
+    font-size: 0.92rem !important;
+    line-height: 1.25;
+  }
+
+  .home-utility-card p {
+    font-size: 0.76rem !important;
+    line-height: 1.4;
+  }
+
+  .home-utility-links {
+    gap: 5px;
+    margin-top: auto;
+  }
+
+  .home-utility-links a {
+    min-height: 30px !important;
+    padding: 4px 8px !important;
+    font-size: 0.69rem !important;
+  }
+
+  .cp-briefing-card {
+    padding: 12px !important;
+  }
+
+  .cp-briefing-card h3 {
+    font-size: 0.94rem;
+    margin-bottom: 6px;
+  }
+
+  .cp-briefing-row {
+    padding: 7px 0;
+    font-size: 0.78rem;
+  }
+
+  .guides-bento-grid .guide-card {
+    padding: 13px 12px !important;
+  }
+
+  .guides-bento-grid .guide-card h2 {
+    font-size: 0.92rem !important;
+  }
+
+  .guides-bento-grid .guide-card p:not(.eyebrow) {
+    font-size: 0.76rem !important;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Restore the desktop top navigation bar on mobile as a crisp scrollable strip */
+  body {
+    padding-bottom: 18px !important;
+  }
+
+  .mobile-tabbar {
+    display: none !important;
+  }
+
+  .site-header .header-inner {
+    flex-wrap: wrap !important;
+    row-gap: 6px;
+    padding: 8px 0 6px !important;
+  }
+
+  .site-header .brand {
+    flex: 1 1 auto;
+  }
+
+  .site-header .primary-nav {
+    display: flex !important;
+    order: 3;
+    flex: 1 0 100%;
+    width: 100%;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    gap: 2px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 4px;
+    border-top: 1px solid var(--wf-rule);
+  }
+
+  .site-header .primary-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-header .primary-nav > .nav-menu,
+  .site-header .primary-nav > a {
+    flex: 0 0 auto !important;
+  }
+
+  .site-header .primary-nav summary,
+  .site-header .primary-nav > a {
+    min-height: 32px !important;
+    padding: 5px 9px !important;
+    font-size: 0.74rem !important;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 350px) {
+  .home-utility-grid,
+  .summary-grid,
+  .parking-summary-grid,
+  .cp-briefing-grid,
+  .guides-bento-grid,
+  #coeResult {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}
+
 
 
 
