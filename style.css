@@ -7646,6 +7646,7 @@ kbd, code, pre {
   left: 3px;
   width: 34px;
   height: calc(100% - 6px);
+  box-sizing: border-box;
   border-radius: 9px;
   z-index: 0;
   pointer-events: none;
@@ -7680,6 +7681,15 @@ kbd, code, pre {
   z-index: 1;
   width: 34px;
   height: 30px;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 9px;
   background: transparent !important;
   box-shadow: none !important;
@@ -7714,18 +7724,21 @@ kbd, code, pre {
 
 @media (max-width: 720px) {
   .site-header .theme-control {
-    grid-template-columns: repeat(2, 30px);
+    grid-template-columns: repeat(2, 32px);
     padding: 2px;
   }
   .site-header .theme-control::before {
     top: 2px;
     left: 2px;
-    width: 30px;
+    width: 32px;
     height: calc(100% - 4px);
+    box-sizing: border-box;
   }
   .site-header .theme-choice {
-    width: 30px;
+    width: 32px;
     height: 28px;
+    min-width: 0 !important;
+    min-height: 0 !important;
   }
 }
 
@@ -8199,45 +8212,6 @@ kbd, code, pre {
   .checkpoint-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     gap: 10px !important;
-  }
-}
-
-@media (max-width: 700px) {
-  /* Restore desktop top navigation bar on mobile with wrap (overflow: visible so dropdowns never clip) */
-  .site-header .header-inner {
-    flex-wrap: wrap !important;
-    row-gap: 6px;
-    padding: 8px 0 6px !important;
-  }
-
-  .site-header .brand {
-    flex: 1 1 auto;
-  }
-
-  .site-header .primary-nav {
-    display: flex !important;
-    order: 3;
-    flex: 1 0 100%;
-    width: 100%;
-    flex-wrap: wrap !important;
-    align-items: center;
-    gap: 3px 4px;
-    overflow: visible !important;
-    padding-top: 5px;
-    border-top: 1px solid var(--wf-rule);
-  }
-
-  .site-header .primary-nav > .nav-menu,
-  .site-header .primary-nav > a {
-    flex: 0 0 auto !important;
-  }
-
-  .site-header .primary-nav summary,
-  .site-header .primary-nav > a {
-    min-height: 30px !important;
-    padding: 4px 8px !important;
-    font-size: 0.72rem !important;
-    white-space: nowrap;
   }
 }
 
