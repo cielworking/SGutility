@@ -1,4 +1,4 @@
-const STATIC_CACHE = "sga-static-v2";
+const STATIC_CACHE = "sga-static-v3";
 const RUNTIME_CACHE = "sga-runtime-v1";
 const PRECACHE_URLS = [
   "/offline.html",
@@ -71,7 +71,7 @@ self.addEventListener("fetch", (event) => {
   // Network-first for CSS & JS so home-screen PWA users always get UI/logic updates on first open
   if (/\.(?:css|js)$/i.test(url.pathname)) {
     event.respondWith(
-      fetch(request)
+      fetch(request, { cache: "no-cache" })
         .then((response) => {
           if (response && response.ok) {
             const copy = response.clone();

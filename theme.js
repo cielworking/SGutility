@@ -224,6 +224,39 @@
       });
     });
 
+    var tabbarBackdrop = null;
+    function getTabbarBackdrop() {
+      if (tabbarBackdrop) return tabbarBackdrop;
+      tabbarBackdrop = document.createElement("div");
+      tabbarBackdrop.id = "sga-tabbar-backdrop";
+      tabbarBackdrop.className = "sga-tabbar-backdrop";
+      tabbarBackdrop.hidden = true;
+      var dismiss = function (ev) {
+        if (ev) ev.preventDefault();
+        closeAllTabbarSheets();
+      };
+      tabbarBackdrop.addEventListener("touchstart", dismiss, { passive: false });
+      tabbarBackdrop.addEventListener("pointerdown", dismiss);
+      tabbarBackdrop.addEventListener("click", dismiss);
+      document.body.appendChild(tabbarBackdrop);
+      return tabbarBackdrop;
+    }
+
+    function syncTabbarBackdrop() {
+      var anyOpen = document.querySelectorAll(".tabbar-more[open]").length > 0;
+      var bd = getTabbarBackdrop();
+      bd.hidden = !anyOpen;
+      document.documentElement.classList.toggle("sga-sheet-open", anyOpen);
+    }
+
+    function closeAllTabbarSheets() {
+      var openSheets = document.querySelectorAll(".tabbar-more[open]");
+      for (var i = 0; i < openSheets.length; i++) {
+        openSheets[i].open = false;
+      }
+      syncTabbarBackdrop();
+    }
+
     function closeOpenTabbarSheets(event) {
       var target = event && event.target;
       var openSheets = document.querySelectorAll(".tabbar-more[open]");
@@ -231,16 +264,21 @@
       if (target && target.closest && (target.closest(".tabbar-sheet") || target.closest(".tabbar-more > summary"))) {
         return;
       }
-      for (var i = 0; i < openSheets.length; i++) {
-        openSheets[i].open = false;
-      }
+      closeAllTabbarSheets();
     }
+
+    Array.prototype.slice.call(document.querySelectorAll(".tabbar-more")).forEach(function (m) {
+      m.addEventListener("toggle", syncTabbarBackdrop);
+    });
+
+    document.addEventListener("touchstart", function (event) {
+      closeOpenTabbarSheets(event);
+    }, { passive: true });
 
     document.addEventListener("click", function (event) {
       var target = event.target;
       if (target && target.closest && target.closest(".tabbar-sheet a")) {
-        var parentMore = target.closest(".tabbar-more");
-        if (parentMore) parentMore.open = false;
+        closeAllTabbarSheets();
         return;
       }
       closeOpenTabbarSheets(event);
@@ -255,10 +293,7 @@
           sync(menu);
         }
       });
-      var openSheets = document.querySelectorAll(".tabbar-more[open]");
-      for (var i = 0; i < openSheets.length; i++) {
-        openSheets[i].open = false;
-      }
+      closeAllTabbarSheets();
     });
 
     document.addEventListener("pointerdown", function (event) {
