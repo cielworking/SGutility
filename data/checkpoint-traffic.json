@@ -1,7 +1,7 @@
 {
   "model": "YOLOX-M ONNX (road-zone SAHI tiled detection)",
   "source_name": "LTA / data.gov.sg",
-  "last_updated": "2026-11-27T18:57:12.863984+00:00",
+  "last_updated": "2026-11-27T19:01:13.597690+00:00",
   "note": "AI counts visible vehicles on public LTA approach cameras. Actual immigration counter queues inside the complex may differ.",
   "woodlands": {
     "status": "Smooth",
