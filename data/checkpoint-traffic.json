@@ -1,94 +1,94 @@
 {
   "model": "YOLOX-M ONNX (road-zone SAHI tiled detection)",
   "source_name": "LTA / data.gov.sg",
-  "last_updated": "2026-11-27T14:53:34.468109+00:00",
+  "last_updated": "2026-11-27T15:01:09.328589+00:00",
   "note": "AI counts visible vehicles on public LTA approach cameras. Actual immigration counter queues inside the complex may differ.",
   "woodlands": {
     "status": "Heavy",
     "towards_jb_status": "Heavy",
     "towards_sg_status": "Moderate",
-    "total_vehicles": 297,
-    "weighted_load": 177.5,
-    "towards_jb": 274,
-    "towards_sg": 23,
+    "total_vehicles": 290,
+    "weighted_load": 173.5,
+    "towards_jb": 275,
+    "towards_sg": 15,
     "counts": {
-      "car": 55,
+      "car": 45,
       "motorcycle": 241,
-      "bus": 0,
+      "bus": 3,
       "truck": 1
     },
     "cameras": [
       {
         "camera_id": "2701",
         "label": "Woodlands Causeway",
-        "timestamp": "2026-11-27T22:51:32+08:00",
-        "total_vehicles": 30,
-        "towards_jb": 11,
-        "towards_sg": 19,
+        "timestamp": "2026-11-27T22:56:12+08:00",
+        "total_vehicles": 20,
+        "towards_jb": 9,
+        "towards_sg": 11,
         "counts": {
-          "car": 28,
+          "car": 16,
           "motorcycle": 1,
-          "bus": 0,
-          "truck": 1
+          "bus": 3,
+          "truck": 0
         }
       },
       {
         "camera_id": "2702",
         "label": "Woodlands Checkpoint / BKE",
-        "timestamp": "2026-11-27T22:51:32+08:00",
-        "total_vehicles": 267,
-        "towards_jb": 263,
+        "timestamp": "2026-11-27T22:56:12+08:00",
+        "total_vehicles": 270,
+        "towards_jb": 266,
         "towards_sg": 4,
         "counts": {
-          "car": 27,
+          "car": 29,
           "motorcycle": 240,
           "bus": 0,
-          "truck": 0
+          "truck": 1
         }
       }
     ]
   },
   "tuas": {
-    "status": "Moderate",
-    "towards_jb_status": "Moderate",
+    "status": "Heavy",
+    "towards_jb_status": "Heavy",
     "towards_sg_status": "Smooth",
-    "total_vehicles": 33,
-    "weighted_load": 27.5,
-    "towards_jb": 30,
-    "towards_sg": 3,
+    "total_vehicles": 44,
+    "weighted_load": 45.0,
+    "towards_jb": 44,
+    "towards_sg": 0,
     "counts": {
-      "car": 16,
-      "motorcycle": 15,
+      "car": 28,
+      "motorcycle": 10,
       "bus": 1,
-      "truck": 1
+      "truck": 5
     },
     "cameras": [
       {
         "camera_id": "4703",
         "label": "Tuas Second Link",
-        "timestamp": "2026-11-27T22:51:32+08:00",
-        "total_vehicles": 26,
-        "towards_jb": 23,
-        "towards_sg": 3,
+        "timestamp": "2026-11-27T22:56:12+08:00",
+        "total_vehicles": 17,
+        "towards_jb": 17,
+        "towards_sg": 0,
         "counts": {
-          "car": 10,
-          "motorcycle": 15,
+          "car": 5,
+          "motorcycle": 10,
           "bus": 0,
-          "truck": 1
+          "truck": 2
         }
       },
       {
         "camera_id": "4713",
         "label": "Tuas Checkpoint (Outbound to Johor)",
-        "timestamp": "2026-11-27T22:51:32+08:00",
-        "total_vehicles": 7,
-        "towards_jb": 7,
+        "timestamp": "2026-11-27T22:56:12+08:00",
+        "total_vehicles": 27,
+        "towards_jb": 27,
         "towards_sg": 0,
         "counts": {
-          "car": 6,
+          "car": 23,
           "motorcycle": 0,
           "bus": 1,
-          "truck": 0
+          "truck": 3
         }
       }
     ]
