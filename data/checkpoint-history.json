@@ -1,7 +1,7 @@
 {
   "model": "YOLOX-M ONNX (road-zone SAHI tiled detection)",
-  "last_updated": "2026-11-28T01:31:10.883051+00:00",
-  "snapshot_count": 485,
+  "last_updated": "2026-11-28T01:46:13.700394+00:00",
+  "snapshot_count": 486,
   "snapshots": [
     {
       "timestamp_sgt": "2026-11-17T00:30:35.852913+08:00",
@@ -6307,6 +6307,19 @@
       "tuas_load": 110.5,
       "tuas_to_jb": 80,
       "tuas_to_sg": 26
+    },
+    {
+      "timestamp_sgt": "2026-11-28T09:46:32.987202+08:00",
+      "woodlands_status": "Heavy",
+      "woodlands_vehicles": 134,
+      "woodlands_load": 179.0,
+      "woodlands_to_jb": 64,
+      "woodlands_to_sg": 70,
+      "tuas_status": "Heavy",
+      "tuas_vehicles": 107,
+      "tuas_load": 111.5,
+      "tuas_to_jb": 63,
+      "tuas_to_sg": 44
     }
   ],
   "by_day_hour": [
@@ -6565,9 +6578,9 @@
     {
       "day": "Sat",
       "hour": 9,
-      "samples": 5,
-      "woodlands_avg_load": 168.4,
-      "tuas_avg_load": 103.9
+      "samples": 6,
+      "woodlands_avg_load": 170.2,
+      "tuas_avg_load": 105.2
     },
     {
       "day": "Sat",
